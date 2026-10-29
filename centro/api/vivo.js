@@ -8,13 +8,16 @@ const YT = 'https://www.googleapis.com/youtube/v3';
 const AGENTE = 'victoria-centro/1.0 (+https://vercel.com)';
 const RED_CORTA = {instagram: 'ig', tiktok: 'tt', youtube: 'yt', facebook: 'fb'};
 let memoria = {hasta: 0, datos: null};
+// Publer contesta a veces en 0.3 s y a veces en más de 10 s, y sus estadísticas no cambian cada
+// minuto: se guarda 10 min y, si falla, se usa lo último bueno (hasta 6 h) sin alarmar.
+let ultimoPubler = {hasta: 0, valido: 0, datos: null, cuando: null};
 
 const primeraLinea = (texto) => ((texto || '').trim().split('\n')[0] || '').split(/\s+/).join(' ').toLowerCase();
 const dia = (fecha) => fecha.toISOString().slice(0, 10);
 
-async function pedir(url, opciones, nombre) {
-  // Cada llamada tiene 8 s: una red lenta no puede tumbar todo el centro (Vercel corta a los 30 s).
-  const r = await fetch(url, {...opciones, signal: AbortSignal.timeout(8000)});
+async function pedir(url, opciones, nombre, espera = 8000) {
+  // Cada llamada tiene su límite: una red lenta no puede tumbar todo el centro (Vercel corta a los 60 s).
+  const r = await fetch(url, {...opciones, signal: AbortSignal.timeout(espera)});
   if (!r.ok) throw new Error(`${nombre} respondió ${r.status}`);
   return r.json();
 }
@@ -85,7 +88,11 @@ async function publer(estado, videos) {
   const porVideo = {};
   for (let pagina = 0; pagina < 30; pagina++) {
     if (Date.now() > limite) throw new Error('Publer tardó demasiado; se muestran los números guardados');
-    const r = await pedir(`${PUBLER}/analytics/post_insights?from=${dia(desde)}&to=${dia(hasta)}&page=${pagina}`, {headers: cabeceras}, 'Publer');
+    const inicio = Date.now();
+    const url = `${PUBLER}/analytics/post_insights?from=${dia(desde)}&to=${dia(hasta)}&page=${pagina}`;
+    const r = await pedir(url, {headers: cabeceras}, 'Publer', 18_000)
+      .catch(() => pedir(url, {headers: cabeceras}, 'Publer', 18_000));  // un reintento
+    console.log(`publer pagina ${pagina}: ${(r.posts || []).length} posts en ${Date.now() - inicio} ms`);
     const lote = r.posts || [];
     for (const p of lote) {
       const red = RED_CORTA[cuentas[p.account_id]];
@@ -115,7 +122,18 @@ export default async function handler(req, res) {
 
   const estado = leer('estado.json')[0];
   const videos = leer('videos.json');
-  const [yt, pb] = await Promise.allSettled([youtube(estado, videos), publer(estado, videos)]);
+  const ahora = Date.now();
+  const [yt, pbNuevo] = await Promise.allSettled([
+    youtube(estado, videos),
+    ahora < ultimoPubler.hasta ? Promise.resolve(ultimoPubler.datos) : publer(estado, videos),
+  ]);
+  let pb = pbNuevo;
+  if (pb.status === 'fulfilled' && ahora >= ultimoPubler.hasta) {
+    ultimoPubler = {hasta: ahora + 10 * 60_000, valido: ahora + 6 * 3600_000, datos: pb.value, cuando: new Date(ahora).toISOString()};
+  } else if (pb.status === 'rejected') {
+    console.log(`publer falló: ${pb.reason?.message}`);
+    if (ultimoPubler.datos && ahora < ultimoPubler.valido) pb = {status: 'fulfilled', value: ultimoPubler.datos};
+  }
   const porVideo = {};
   for (const [fuente, resultado] of [['yt', yt], ['pb', pb]]) {
     if (resultado.status !== 'fulfilled') continue;
@@ -126,6 +144,7 @@ export default async function handler(req, res) {
   const datos = {
     actualizado: new Date().toISOString(),
     canal: yt.status === 'fulfilled' ? {suscriptores: yt.value.suscriptores, vistas: yt.value.vistas} : null,
+    publer_actualizado: pb.status === 'fulfilled' ? ultimoPubler.cuando : null,
     porVideo,
     errores: [
       ...(yt.status === 'rejected' ? [`YouTube: ${yt.reason.message}`] : []),

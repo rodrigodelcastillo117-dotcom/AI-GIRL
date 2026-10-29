@@ -67,14 +67,18 @@ async function consola(lineas) {
 }
 
 async function arrancar(conAnimacion) {
-  const [foto, vivo] = await Promise.all([pedir('/api/estado'), pedir('/api/vivo').catch((err) => ({errores: [err.message], porVideo: {}}))]);
+  // El tablero sale con la última foto; lo en vivo se suma cuando llega (Publer puede tardar).
+  const vivoEnCamino = pedir('/api/vivo').catch((err) => ({errores: [err.message], porVideo: {}}));
+  const foto = await pedir('/api/estado');
+  const vivo = await Promise.race([vivoEnCamino, new Promise((listo) => setTimeout(() => listo(null), 4000))]);
   FOTO = foto;
   VIVO = vivo;
+  if (!vivo) vivoEnCamino.then((v) => { if (!VIVO) { VIVO = v; dibujarTodo(); } });
   if (conAnimacion) {
     await consola([
       ['Autenticando operador', true],
-      ['Enlace con YouTube', !vivo.errores?.some((x) => x.startsWith('YouTube'))],
-      ['Enlace con Publer (TikTok · Instagram)', !vivo.errores?.some((x) => x.startsWith('Publer'))],
+      ['Enlace con YouTube', Boolean(vivo) && !vivo.errores?.some((x) => x.startsWith('YouTube'))],
+      ['Enlace con Publer (TikTok · Instagram)', Boolean(vivo) && !vivo.errores?.some((x) => x.startsWith('Publer'))],
       [`Cargando ${foto.videos.length} videos del plan`, true],
       [`Reactor de créditos: ${fmt(resumen().restantes)}`, true],
       ['Centro de mando en línea', true],
@@ -270,7 +274,7 @@ function dibujarRedes() {
       hay = true;
       v += Number(m.v) || 0; l += Number(m.l) || 0; c += Number(m.c) || 0; s += (Number(m.s) || 0) + (Number(m.g) || 0);
     }
-    const enVivo = red.clave === 'yt' ? Boolean(VIVO?.canal) : !(VIVO?.errores || []).some((e) => e.startsWith('Publer'));
+    const enVivo = red.clave === 'yt' ? Boolean(VIVO?.canal) : Boolean(VIVO) && !(VIVO.errores || []).some((e) => e.startsWith('Publer'));
     const tarjeta = crear('article', {className: 'red'});
     tarjeta.style.setProperty('--acento', red.color);
     const valor = crear('div', {className: 'vistas'});
