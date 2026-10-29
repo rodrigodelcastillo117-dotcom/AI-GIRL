@@ -487,6 +487,12 @@ def main():
     open(os.path.join(PUBLICO, 'sitemap.xml'), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls) + '</urlset>\n')
+    # URLs limpias (/aguinaldo) con rewrites y no con cleanUrls: cleanUrls redirige todo .html, también
+    # el archivo de verificación de Google Search Console, y Google lo pide sin redirección.
+    ruta_vercel = os.path.join(RAIZ, 'sitio', 'vercel.json')
+    vercel = json.load(open(ruta_vercel))
+    vercel['rewrites'] = [{'source': f'/{h["slug"]}', 'destination': f'/{h["slug"]}.html'} for h in HERRAMIENTAS]
+    open(ruta_vercel, 'w').write(json.dumps(vercel, ensure_ascii=False, indent=2) + '\n')
     open(os.path.join(PUBLICO, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nSitemap: {DOMINIO}/sitemap.xml\n')
     # La portada lleva el mismo menú, en HTML fijo para que Google siga los enlaces.
     portada = os.path.join(PUBLICO, 'index.html')

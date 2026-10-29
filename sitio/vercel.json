@@ -1,7 +1,36 @@
 {
   "outputDirectory": "public",
-  "cleanUrls": true,
   "headers": [
-    { "source": "/guia/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] }
+    {
+      "source": "/guia/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/aguinaldo",
+      "destination": "/aguinaldo.html"
+    },
+    {
+      "source": "/interes-compuesto",
+      "destination": "/interes-compuesto.html"
+    },
+    {
+      "source": "/regla-50-30-20",
+      "destination": "/regla-50-30-20.html"
+    },
+    {
+      "source": "/fondo-de-emergencia",
+      "destination": "/fondo-de-emergencia.html"
+    },
+    {
+      "source": "/pagar-deudas",
+      "destination": "/pagar-deudas.html"
+    }
   ]
 }
