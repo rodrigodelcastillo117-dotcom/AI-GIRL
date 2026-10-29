@@ -222,7 +222,9 @@ Embudo de ingresos: la página pública es `config.json → enlace_venta`
 paga. `seo.py` pone el enlace con `?ref=yt` en la descripción de YouTube y "enlace en mi perfil"
 en Instagram y TikTok; la descripción de YouTube lleva también la plantilla (`enlace_producto`, que
 abre la página en `#tablero`). El pago de Hotmart ya está activo (`config.json → pago_hotmart`); el
-botón le agrega `?src=<red>` para saber de dónde vino cada venta. Para activar la lista de correos se llena `CONFIG` en
+botón le agrega `?src=<red>` para saber de dónde vino cada venta. Las calculadoras gratis (`/aguinaldo`, `/pagar-deudas`...)
+se generan con `python scripts/sitio.py`. Google Search Console está verificado con
+`sitio/public/google7564e845b5da9769.html`: no se borra ni se renombra, o se pierde la verificación. Para activar la lista de correos se llena `CONFIG` en
 `sitio/public/index.html`.
 
 ## 8. Registro
