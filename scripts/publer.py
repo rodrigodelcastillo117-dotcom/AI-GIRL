@@ -22,7 +22,8 @@ import uuid
 BASE = 'https://app.publer.com/api/v1'
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
-REDES = ('instagram', 'tiktok', 'youtube', 'facebook')
+# YouTube no va por Publer (costaría una cuenta extra): lo sube scripts/youtube.py con la API gratis.
+REDES = ('instagram', 'tiktok', 'facebook')
 
 
 def _pedir(metodo, ruta, workspace=None, cuerpo=None, multipart=None):

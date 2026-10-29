@@ -104,6 +104,11 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
   Solo publica en cuentas cuyo nombre contiene `filtro_cuentas`. Si la API responde algo
   inesperado, consultar https://publer.com/docs, corregir `scripts/publer.py`, volver a intentar
   una vez y dejar la corrección en el commit.
+- **YouTube Shorts va aparte, sin Publer:** si existen `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET` y
+  `YOUTUBE_REFRESH_TOKEN` en el entorno, `python scripts/youtube.py subir <video> "<título>"
+  <texto.txt> <hora_utc>` con el mismo texto y la misma hora. Si no existen, se omite YouTube y se
+  menciona en el reporte. Si responde `invalid_grant`, el permiso venció: reportarlo (no se arregla
+  solo).
 
 ## 8. Registro
 
