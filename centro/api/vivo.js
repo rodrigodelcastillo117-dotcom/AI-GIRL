@@ -13,7 +13,8 @@ const primeraLinea = (texto) => ((texto || '').trim().split('\n')[0] || '').spli
 const dia = (fecha) => fecha.toISOString().slice(0, 10);
 
 async function pedir(url, opciones, nombre) {
-  const r = await fetch(url, opciones);
+  // Cada llamada tiene 8 s: una red lenta no puede tumbar todo el centro (Vercel corta a los 30 s).
+  const r = await fetch(url, {...opciones, signal: AbortSignal.timeout(8000)});
   if (!r.ok) throw new Error(`${nombre} respondió ${r.status}`);
   return r.json();
 }
@@ -73,11 +74,18 @@ async function publer(estado, videos) {
   const cuentas = estado.cuentas_publer || {};
   const porLinea = Object.fromEntries(videos.filter((v) => v.linea).map((v) => [v.linea, v.id]));
   const porMinuto = Object.fromEntries(videos.filter((v) => v.publica_utc).map((v) => [v.publica_utc.slice(0, 16), v.id]));
+  // Solo desde el primer video de Victoria: los cientos de posts viejos de la cuenta no son suyos
+  // y leerlos de 10 en 10 pasaba de los 30 s que da Vercel.
+  const fechas = videos.filter((v) => v.publica_utc).map((v) => new Date(v.publica_utc).getTime());
+  if (!fechas.length) return {porVideo: {}};
   const hoy = new Date();
-  const desde = new Date(hoy.getTime() - 90 * 864e5);
+  const desde = new Date(Math.max(Math.min(...fechas) - 2 * 864e5, hoy.getTime() - 90 * 864e5));
+  const hasta = new Date(hoy.getTime() + 864e5);
+  const limite = Date.now() + 20_000;
   const porVideo = {};
-  for (let pagina = 0; pagina < 20; pagina++) {
-    const r = await pedir(`${PUBLER}/analytics/post_insights?from=${dia(desde)}&to=${dia(hoy)}&page=${pagina}`, {headers: cabeceras}, 'Publer');
+  for (let pagina = 0; pagina < 30; pagina++) {
+    if (Date.now() > limite) throw new Error('Publer tardó demasiado; se muestran los números guardados');
+    const r = await pedir(`${PUBLER}/analytics/post_insights?from=${dia(desde)}&to=${dia(hasta)}&page=${pagina}`, {headers: cabeceras}, 'Publer');
     const lote = r.posts || [];
     for (const p of lote) {
       const red = RED_CORTA[cuentas[p.account_id]];
