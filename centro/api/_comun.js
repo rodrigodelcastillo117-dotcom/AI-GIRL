@@ -1,7 +1,6 @@
 // Acceso con contraseña (CLAVE_CENTRO) y lectura de la última foto de datos (datos/, no es público).
 import crypto from 'node:crypto';
 import fs from 'node:fs';
-import path from 'node:path';
 
 const GALLETA = 'centro';
 
@@ -30,5 +29,6 @@ export function negar(res) {
 }
 
 export function leer(nombre) {
-  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'datos', nombre), 'utf8'));
+  // Relativo a este archivo: en Vercel el repo vive en /var/task/centro, no en el directorio de trabajo.
+  return JSON.parse(fs.readFileSync(new URL(`../datos/${nombre}`, import.meta.url), 'utf8'));
 }
