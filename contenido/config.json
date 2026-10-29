@@ -98,6 +98,18 @@
    "etiqueta": "🧮 Calcula en cuántos meses sales de tus deudas",
    "pie": "🧮 Calcula en cuántos meses sales de tus deudas: enlace en mi perfil 👆",
    "comentario": "Calcula gratis en cuántos meses sales de tus deudas y cuál pagar primero 👉 {enlace}"
+  },
+  "fondo": {
+   "enlace": "https://victoriatheceo.vercel.app/fondo-de-emergencia",
+   "etiqueta": "🧮 Calcula tu fondo de emergencia gratis",
+   "pie": "🧮 Calcula cuánto necesitas de fondo de emergencia: enlace en mi perfil 👆",
+   "comentario": "Calcula gratis cuánto necesitas de fondo de emergencia y en cuántos meses llegas 👉 {enlace}"
+  },
+  "presupuesto": {
+   "enlace": "https://victoriatheceo.vercel.app/regla-50-30-20",
+   "etiqueta": "🧮 Haz tu presupuesto 50/30/20 gratis",
+   "pie": "🧮 Haz tu presupuesto 50/30/20 gratis: enlace en mi perfil 👆",
+   "comentario": "Haz tu presupuesto 50/30/20 gratis y compáralo con lo que gastas hoy 👉 {enlace}"
   }
  }
 }

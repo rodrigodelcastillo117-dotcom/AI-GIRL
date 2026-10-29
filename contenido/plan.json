@@ -1116,6 +1116,241 @@
         "desde": "2026-12-10",
         "hasta": "2027-01-10"
       }
+    },
+    {
+      "id": "22",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
+      "subtitulos": [
+        "Tu propósito de año nuevo",
+        "no es el gym,",
+        "es tu fondo de emergencia:",
+        "de 3 a 6 meses de gastos,",
+        "como recomienda la CONDUSEF."
+      ],
+      "palabras_clave": [
+        "propósito",
+        "gym",
+        "emergencia",
+        "3",
+        "6"
+      ],
+      "fuente": "Recomendación de la CONDUSEF: fondo de emergencia de 3 a 6 meses de gastos",
+      "locacion": "gimnasio",
+      "vestuario": "Conjunto deportivo de diseñador blanco: top, leggings y sudadera corta, coleta alta",
+      "accion": "De pie junto a las pesas del gimnasio con una toalla al hombro, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia. 🎯\nDe 3 a 6 meses de tus gastos, como recomienda la CONDUSEF.\n\nGuárdalo y empieza esta quincena.",
+      "seo": {
+        "palabra_clave": "fondo de emergencia",
+        "titulo": "Fondo de emergencia, tu propósito 2027 🎯",
+        "descripcion_inicio": "Fondo de emergencia: junta de 3 a 6 meses de tus gastos, como recomienda la CONDUSEF. Es el propósito de año nuevo que más te va a cuidar.\nCalcula cuánto necesitas y en cuántos meses llegas con mi calculadora gratis.",
+        "tags_concretas": [
+          "fondo de emergencia",
+          "cuanto debe tener un fondo de emergencia",
+          "propositos de año nuevo",
+          "ahorro 2027",
+          "como ahorrar dinero",
+          "condusef ahorro",
+          "fondo de emergencia 6 meses",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#fondodeemergencia",
+          "#propositos2027",
+          "#ahorro",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El mejor propósito de año nuevo cabe en una cuenta de ahorro.",
+        "Si en enero se te descompone el coche, ¿de dónde sale el dinero?"
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "llamado": "fondo",
+      "ventana": {
+        "desde": "2027-01-02",
+        "hasta": "2027-01-20"
+      }
+    },
+    {
+      "id": "23",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "El pago mínimo de tu tarjeta es una trampa: suele ser del dos al cinco por ciento de tu deuda. Lo demás sigue cobrando intereses. Paga más.",
+      "subtitulos": [
+        "El pago mínimo de tu tarjeta",
+        "es una trampa:",
+        "suele ser del 2 al 5%",
+        "de tu deuda.",
+        "Lo demás sigue cobrando intereses.",
+        "Paga más."
+      ],
+      "palabras_clave": [
+        "mínimo",
+        "trampa",
+        "5%",
+        "intereses"
+      ],
+      "fuente": "CONDUSEF: el pago mínimo suele ser del 2% al 5% del saldo; recomienda cubrir el pago para no generar intereses",
+      "locacion": "cocina",
+      "vestuario": "Mono negro de manga larga con cinturón dorado, aretes de aro dorados",
+      "accion": "Recargada en la barra de la cocina revisando un estado de cuenta en papel, Capital sentado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "El pago mínimo de tu tarjeta es una trampa. ⚠️\nSuele ser del 2% al 5% de tu deuda y lo demás sigue cobrando intereses. La CONDUSEF recomienda pagar el monto para no generar intereses.\n\n📚 CONDUSEF",
+      "seo": {
+        "palabra_clave": "pago mínimo de tarjeta",
+        "titulo": "Pago mínimo de tarjeta, por qué es trampa ⚠️",
+        "descripcion_inicio": "Pago mínimo de tarjeta de crédito: según la CONDUSEF suele ser del 2% al 5% de tu deuda, y pagar solo eso alarga la deuda y los intereses.\nLa CONDUSEF recomienda pagar el monto para no generar intereses. Calcula tu plan para salir de deudas gratis.",
+        "tags_concretas": [
+          "pago minimo tarjeta de credito",
+          "pago para no generar intereses",
+          "que pasa si pago el minimo",
+          "intereses tarjeta de credito",
+          "como salir de deudas",
+          "condusef tarjeta de credito",
+          "cuesta de enero",
+          "deudas"
+        ],
+        "hashtags": [
+          "#tarjetadecredito",
+          "#deudas",
+          "#cuestadeenero",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Pagar el mínimo es la forma más cara de pagar tu tarjeta.",
+        "Tu banco ama que pagues solo el mínimo."
+      ],
+      "adn": {
+        "tipo_gancho": "error"
+      },
+      "llamado": "deudas",
+      "ventana": {
+        "desde": "2027-01-06",
+        "hasta": "2027-01-31"
+      }
+    },
+    {
+      "id": "24",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Meses sin intereses no es dinero gratis. Cada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.",
+      "subtitulos": [
+        "Meses sin intereses",
+        "no es dinero gratis.",
+        "Cada mensualidad se come tu sueldo",
+        "de los próximos meses.",
+        "Antes de firmar,",
+        "suma todas las que ya traes."
+      ],
+      "palabras_clave": [
+        "gratis",
+        "mensualidad",
+        "sueldo",
+        "suma"
+      ],
+      "fuente": "Profeco y CONDUSEF, recomendaciones para evitar deudas: las compras a meses sin planear reducen tu ingreso disponible",
+      "locacion": "sala",
+      "vestuario": "Abrigo largo gris oxford sobre suéter rosa palo de cuello alto, pantalón negro",
+      "accion": "Sentada en el sofá de la sala con varias bolsas de compras sin logos a un lado, Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Meses sin intereses no es dinero gratis. 💳\nCada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.\n\n📚 Profeco y CONDUSEF",
+      "seo": {
+        "palabra_clave": "meses sin intereses",
+        "titulo": "Meses sin intereses no es dinero gratis 💳",
+        "descripcion_inicio": "Meses sin intereses: cada mensualidad se come tu sueldo de los próximos meses. Profeco y la CONDUSEF advierten que comprar a meses sin planear reduce tu ingreso disponible.\nAntes de firmar, suma las que ya traes y revisa tu presupuesto 50/30/20 gratis.",
+        "tags_concretas": [
+          "meses sin intereses",
+          "compras a meses sin intereses",
+          "cuesta de enero",
+          "presupuesto mensual",
+          "tarjeta de credito",
+          "como no endeudarse",
+          "profeco condusef",
+          "regla 50 30 20"
+        ],
+        "hashtags": [
+          "#mesessinintereses",
+          "#cuestadeenero",
+          "#tarjetadecredito",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Los meses sin intereses son el préstamo que no sientes.",
+        "Tu sueldo de marzo ya lo gastaste en diciembre."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "llamado": "presupuesto",
+      "ventana": {
+        "desde": "2027-01-12",
+        "hasta": "2027-01-31"
+      }
+    },
+    {
+      "id": "25",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
+      "subtitulos": [
+        "Haz tu presupuesto de enero",
+        "en un minuto:",
+        "50% a lo necesario,",
+        "30 a lo que quieres",
+        "y 20 a ahorro y deudas."
+      ],
+      "palabras_clave": [
+        "minuto",
+        "50%",
+        "30",
+        "20"
+      ],
+      "fuente": "Regla 50/30/20: Elizabeth Warren y Amelia Warren Tyagi, All Your Worth (2005)",
+      "locacion": "oficina",
+      "vestuario": "Camisa de seda color lavanda, pantalón sastre beige, reloj plateado",
+      "accion": "Sentada al escritorio con una libreta abierta y una pluma en la mano, Capital sentado junto al escritorio.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Haz tu presupuesto de enero en un minuto. 📊\n50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas.\n\n📚 Elizabeth Warren y Amelia Warren Tyagi, All Your Worth",
+      "seo": {
+        "palabra_clave": "presupuesto 50/30/20",
+        "titulo": "Presupuesto 50/30/20 en un minuto 📊",
+        "descripcion_inicio": "Presupuesto 50/30/20: 50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas. La regla de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005).\nHaz el tuyo gratis con mi calculadora 50/30/20.",
+        "tags_concretas": [
+          "regla 50 30 20",
+          "presupuesto 50 30 20",
+          "como hacer un presupuesto",
+          "presupuesto mensual",
+          "cuesta de enero",
+          "como organizar mi sueldo",
+          "elizabeth warren",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#presupuesto",
+          "#regla503020",
+          "#cuestadeenero",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Si tu sueldo se te va en una semana, te falta esta regla.",
+        "Tres números para que enero no te gane."
+      ],
+      "adn": {
+        "tipo_gancho": "regla"
+      },
+      "llamado": "presupuesto",
+      "ventana": {
+        "desde": "2027-01-18",
+        "hasta": "2027-02-10"
+      }
     }
   ]
 }
