@@ -1,7 +1,7 @@
 # Pipeline automático: un video de Victoria
 
 Lo ejecuta la tarea programada cada 2 días, dentro de la conversación de Claude donde se armó
-el proyecto (ahí tiene las claves, permiso de push y el tablero). Publica directo, sin aprobación humana. Por eso la
+el proyecto (ahí tiene las claves y permiso de push). Publica directo, sin aprobación humana. Por eso la
 regla principal es: **si algo no pasa el control de calidad, NO se publica** y se registra el fallo.
 
 ## 0. Preparación
@@ -35,7 +35,7 @@ Cada video debe salir mejor que el anterior. Antes de generar:
 
 1. Lee `contenido/aprendizajes.json`: cada `regla` técnica se aplica a los prompts de los pasos 3 y
    4 de esta ejecución (composición, cámara, referencias).
-2. Lee las métricas de `tablero/datos/videos.json` (columnas `v_*`, `l_*`, `c_*`, `s_*`, `g_*`).
+2. Lee las métricas de `centro/datos/videos.json` (columnas `v_*`, `l_*`, `c_*`, `s_*`, `g_*`).
    Con 8 o más videos medidos:
    - Si un pilar o una hora promedia claramente más vistas (al menos 30% más con 2+ videos), mueve
      al frente los pendientes de ese pilar y usa esa hora en los que digan "a definir".
@@ -143,6 +143,7 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 ## 8. Registro
 
 En `plan.json`, en el video: `"estado": "programado"`, `"publica_utc"`, `"archivo"`,
+`"publicacion": {"youtube": "<enlace del Short>"}` (el centro lo usa para leer sus vistas),
 `"openart": {"foto": id, "video": id}`, `"creditos"` usados, `"qa"` (`{"similitud": 0.9x, "notas": ...}`).
 Copiar el MP4 final a `videos/`.
 
@@ -152,17 +153,14 @@ Agrega un renglón a `contenido/ejecuciones.json`: `fecha_utc`, `tipo` (generar 
 
 Commit y push a `main`. Si el push falla, dilo en el reporte: lo publicado ya quedó publicado.
 
-## 10. Tablero (claude.ai/artifact/6435cYreJdchM2stgce3DN)
+## 10. Centro de mando (Vercel, proyecto `victoria-centro`)
 
 1. `python scripts/tablero.py` (con `PUBLER_API_KEY` en el entorno lee las estadísticas de Publer).
-   Genera en `tablero/datos/`: `videos.json`, `ejecuciones.json`, `aprendizajes.json`,
+   Genera en `centro/datos/`: `videos.json`, `ejecuciones.json`, `aprendizajes.json`,
    `mejores_horas.json` y `estado.json`.
-2. Sube cada archivo al tablero con la herramienta Artifact (`url` del tablero, `file_path`,
-   `asset: true`); cada respuesta da un `url` `/_blob/...`.
-3. Con ArtifactData, en `datasets/<id>` (ids: `videos`, `ejecuciones`, `aprendizajes`,
-   `mejores_horas`, `estado`) actualiza `source.url` con ese `/_blob/...` y
-   `updated: {at: <ahora ISO>, by: "Tarea programada"}` (lee el documento primero y pasa su versión).
-4. Si las herramientas Artifact o ArtifactData no existen en la sesión, sáltalo y dilo en el reporte.
+2. Inclúyelos en el commit del paso 8. Al hacer push a `main`, Vercel vuelve a publicar el centro
+   solo. Las vistas en vivo no dependen de esto: el centro las pide cada minuto a YouTube y Publer
+   (`centro/api/vivo.js`); estos archivos son la última foto (plan, créditos, bitácora, lecciones).
 
 ## 9. Reporte final (después del paso 10)
 

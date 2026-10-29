@@ -1,18 +1,18 @@
-"""Arma los datos del tablero de Victoria en tablero/datos/.
+"""Arma los datos del centro de mando de Victoria (centro/, en Vercel) en centro/datos/.
 
 Uso: python tablero.py
 
-- videos.json: un renglón por video del plan, con su cuadro (miniatura) y sus estadísticas por red
-  (v_ vistas, l_ likes, c_ comentarios, s_ compartidos, g_ guardados; sufijos ig, tt, yt, fb).
-  Las estadísticas vienen de la API de Publer si hay PUBLER_API_KEY; si no, se conservan las
-  anteriores.
+- videos.json: un renglón por video del plan, con su cuadro (miniatura), su id de YouTube, la
+  primera línea de su post y sus estadísticas por red (v_ vistas, l_ likes, c_ comentarios,
+  s_ compartidos, g_ guardados; sufijos ig, tt, yt, fb). Las estadísticas vienen de la API de
+  Publer si hay PUBLER_API_KEY; si no, se conservan las anteriores. El centro además las lee en
+  vivo (centro/api/vivo.js); estas son la última foto por si la consulta en vivo falla.
 - ejecuciones.json y aprendizajes.json: copias de contenido/.
 - mejores_horas.json: rejilla día × hora de Publer (best_times); vacía (puntaje nulo) si no hay datos.
 - estado.json: un renglón con la próxima ejecución (la tarea cada 2 días o una única de
   config.json → ejecuciones_unicas, la que llegue antes), la foto de perfil y datos fijos del canal.
 
-El tablero no acepta archivos sin renglones: ninguno de estos queda vacío.
-Después, la sesión que lo corre sube los archivos al tablero (docs/PIPELINE.md, paso 10).
+Después se hace commit y push: Vercel vuelve a publicar el centro solo (docs/PIPELINE.md, paso 10).
 """
 import base64
 import datetime
@@ -22,7 +22,7 @@ import subprocess
 import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SALIDA = os.path.join(RAIZ, 'tablero', 'datos')
+SALIDA = os.path.join(RAIZ, 'centro', 'datos')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 DIAS = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom']
@@ -46,7 +46,7 @@ def a_mexico(utc):
 
 
 def miniatura(ruta, segundo=3.0, ancho=180):
-    """Un cuadro del video como JPEG en data URL (el tablero solo acepta imágenes embebidas)."""
+    """Un cuadro del video como JPEG en data URL, para no publicar los videos en el centro."""
     if not ruta or not os.path.exists(ruta):
         return ''
     jpg = subprocess.run(['ffmpeg', '-loglevel', 'error', '-ss', str(segundo), '-i', ruta, '-frames:v', '1',
@@ -80,10 +80,14 @@ def metricas_publer(filas):
             break
         pagina += 1
     por_minuto = {f['publica_utc'][:16]: f['id'] for f in filas if f.get('publica_utc')}
+    por_linea = {f['linea']: f['id'] for f in filas if f.get('linea')}
     por_video = {}
     for p in posts:
         red = red_de.get(p.get('account_id'))
-        video = por_minuto.get((p.get('scheduled_at') or '').replace(' ', 'T')[:16])
+        minuto = ''
+        if p.get('scheduled_at'):
+            minuto = datetime.datetime.fromisoformat(p['scheduled_at'].replace('Z', '+00:00')).astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M')
+        video = por_linea.get(primera_linea(p.get('text'))) or por_minuto.get(minuto)
         if not red or not video:
             continue
         a = p.get('analytics') or {}
@@ -98,6 +102,15 @@ def metricas_publer(filas):
                 clave = (DIAS_EN.get(dia, dia), hora)
                 puntajes.setdefault(clave, []).append(puntaje or 0)
     return por_video, puntajes
+
+
+def primera_linea(texto):
+    lineas = (texto or '').strip().splitlines()
+    return ' '.join(lineas[0].split()).lower() if lineas else ''
+
+
+def youtube_id(enlace):
+    return (enlace or '').rstrip('/').split('/')[-1].split('=')[-1] if enlace else ''
 
 
 def proxima_ejecucion(ahora):
@@ -128,6 +141,8 @@ def main():
             'creditos': v.get('creditos') if isinstance(v.get('creditos'), int) else None,
             'publica_utc': v.get('publica_utc', ''),
             'miniatura': miniatura(os.path.join(RAIZ, v['archivo'])) if v.get('archivo') else '',
+            'youtube_id': youtube_id((v.get('publicacion') or {}).get('youtube')),
+            'linea': primera_linea(v.get('texto_post')),
         }
         for corto in CAMPOS:
             for red in REDES.values():
@@ -173,6 +188,9 @@ def main():
         'proxima_que': proxima_que if proxima else '',
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'creditos_plan_mes': 12000,
+        'similitud_minima': config.get('similitud_minima_audio'),
+        'cuentas_publer': config.get('cuentas_publer', {}),
+        'canal_youtube': config.get('canal_youtube', ''),
         'foto_perfil': foto,
     }])
 

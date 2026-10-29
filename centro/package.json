@@ -1,0 +1,6 @@
+{
+  "name": "victoria-centro",
+  "private": true,
+  "type": "module",
+  "description": "Centro de mando de VictoriatheCEO en Vercel: página estática en public/ y funciones en api/."
+}

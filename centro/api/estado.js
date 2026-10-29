@@ -1,0 +1,16 @@
+// La última foto que dejó la tarea automática: plan, bitácora, lecciones, mejores horas y estado.
+import {autorizado, leer, negar} from './_comun.js';
+
+export default function handler(req, res) {
+  if (!autorizado(req)) return negar(res);
+  res.setHeader('Cache-Control', 'private, no-store');
+  const estado = leer('estado.json')[0];
+  delete estado.cuentas_publer;
+  res.status(200).json({
+    estado,
+    videos: leer('videos.json'),
+    ejecuciones: leer('ejecuciones.json'),
+    aprendizajes: leer('aprendizajes.json'),
+    mejores_horas: leer('mejores_horas.json'),
+  });
+}

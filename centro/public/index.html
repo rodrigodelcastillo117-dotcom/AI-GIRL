@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#020406">
+  <title>Victoria · Centro de mando</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,2 29,9 29,23 16,30 3,23 3,9' fill='%23020406' stroke='%23f5c542' stroke-width='2'/%3E%3Ctext x='16' y='21.5' font-size='14' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@300;400&family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <canvas id="particulas" aria-hidden="true"></canvas>
+  <div class="brillo" aria-hidden="true"></div>
+  <div class="rejilla" aria-hidden="true"></div>
+  <div class="lineas" aria-hidden="true"></div>
+
+  <section class="acceso" id="acceso" hidden>
+    <div class="acceso-caja">
+      <div class="sello" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <g class="anillo-c"><circle cx="100" cy="100" r="98" fill="none" stroke="#49d6ec" stroke-opacity=".25" stroke-dasharray="1 5"/></g>
+          <g class="anillo-a"><circle cx="100" cy="100" r="86" fill="none" stroke="#49d6ec" stroke-width="1.5" stroke-dasharray="3 7" opacity=".8"/></g>
+          <g class="anillo-b"><circle cx="100" cy="100" r="72" fill="none" stroke="#f5c542" stroke-width="3" stroke-dasharray="52 20" opacity=".9"/></g>
+          <polygon points="100,46 147,73 147,127 100,154 53,127 53,73" fill="rgba(245,197,66,.05)" stroke="#f5c542" stroke-opacity=".6"/>
+          <text class="letra" x="100" y="127" text-anchor="middle">V</text>
+        </svg>
+      </div>
+      <h1>Victoria <b>// Centro de mando</b></h1>
+      <p>Acceso restringido · solo personal autorizado</p>
+      <form id="formulario">
+        <label for="clave" hidden>Clave de acceso</label>
+        <input id="clave" name="clave" type="password" autocomplete="current-password" placeholder="CLAVE DE ACCESO" required>
+        <button class="boton" type="submit">Entrar</button>
+        <p class="error" id="error-acceso" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="arranque" id="arranque" hidden><pre id="consola"></pre></section>
+
+  <div id="tablero" hidden>
+    <header class="barra">
+      <div class="marca">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#f5c542" stroke-width="1.6"/><text x="16" y="21" font-size="13" font-family="Orbitron, Arial" font-weight="800" fill="#f5c542" text-anchor="middle">V</text></svg>
+        <span>Victoria <b>The CEO</b> · Centro de mando</span>
+      </div>
+      <div class="espacio"></div>
+      <div class="pulso" id="pulso"><i></i>En vivo · <b id="hace">—</b></div>
+      <div class="reloj" id="reloj">—</div>
+      <button class="salir" id="salir" type="button">Salir</button>
+    </header>
+    <div class="cinta" aria-label="Últimos eventos"><div class="cinta-movil" id="cinta"></div></div>
+
+    <main>
+      <section class="heroe aparece">
+        <div class="avatar">
+          <svg viewBox="0 0 210 210" aria-hidden="true">
+            <g class="anillo-c"><circle cx="105" cy="105" r="104" fill="none" stroke="#49d6ec" stroke-opacity=".22" stroke-dasharray="1 5"/></g>
+            <g class="anillo-a"><circle cx="105" cy="105" r="94" fill="none" stroke="#49d6ec" stroke-width="1.5" stroke-dasharray="3 7" opacity=".85"/></g>
+            <g class="anillo-b"><circle cx="105" cy="105" r="80" fill="none" stroke="#f5c542" stroke-width="3" stroke-dasharray="48 18" opacity=".9"/></g>
+          </svg>
+          <div class="foto" id="foto"></div>
+        </div>
+        <div class="identidad">
+          <div class="usuario">@victoriatheceo · Personaje IA · Instagram · TikTok · YouTube</div>
+          <h1 class="glitch" data-texto="Victoria The CEO">Victoria <b>The CEO</b></h1>
+          <p class="lema"><b id="l-publicados">—</b> videos en redes, <b id="l-listos">—</b> listos para salir y energía para <b id="l-alcanzan">—</b> videos más.</p>
+          <div class="gran-numero"><span class="valor" id="vistas-totales">—</span><span class="que">vistas totales en vivo</span></div>
+        </div>
+        <div class="mision">
+          <div class="codigo">Próxima misión</div>
+          <div class="cuenta" id="cuenta">—</div>
+          <div class="que"><b id="mision-que">—</b><br><span id="mision-cuando">—</span></div>
+        </div>
+      </section>
+
+      <div class="aviso" id="aviso" hidden></div>
+
+      <div class="seccion">Redes en vivo <small>se actualiza cada minuto</small></div>
+      <section class="redes" id="redes"></section>
+
+      <section class="mosaicos aparece">
+        <div class="mosaico oro"><div class="lbl">Suscriptores YouTube</div><div class="val" id="m-subs">—</div><div class="sub">en vivo</div></div>
+        <div class="mosaico"><div class="lbl">Likes totales</div><div class="val" id="m-likes">—</div><div class="sub">todas las redes</div></div>
+        <div class="mosaico"><div class="lbl">Calidad promedio</div><div class="val" id="m-calidad">—</div><div class="sub">audio contra guion</div></div>
+        <div class="mosaico"><div class="lbl">En cola</div><div class="val" id="m-cola">—</div><div class="sub">guiones por generar</div></div>
+        <div class="mosaico rojo"><div class="lbl">Fallos</div><div class="val" id="m-fallos">—</div><div class="sub">ejecuciones sin publicar</div></div>
+        <div class="mosaico oro"><div class="lbl">Lecciones</div><div class="val" id="m-lecciones">—</div><div class="sub">aplicadas a cada video</div></div>
+      </section>
+
+      <div class="seccion">Sistema de energía</div>
+      <section class="rejilla-paneles">
+        <article class="panel">
+          <div class="codigo">PWR-01</div>
+          <h2>Reactor de créditos</h2>
+          <div class="grafica reactor" id="g-reactor"></div>
+          <div class="autonomia">
+            <div><small>Usados</small><b id="a-usados">—</b></div>
+            <div><small>Por video</small><b id="a-costo">—</b></div>
+            <div><small>Días de vuelo</small><b id="a-dias">—</b></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="codigo">PWR-02</div>
+          <h2>Saldo en el tiempo</h2>
+          <p class="nota">Créditos de OpenArt que quedaron después de cada ejecución.</p>
+          <div class="grafica" id="g-saldo"></div>
+        </article>
+        <article class="panel">
+          <div class="codigo">PWR-03</div>
+          <h2>Consumo por ejecución</h2>
+          <p class="nota">Créditos usados en cada ejecución, en orden.</p>
+          <div class="grafica" id="g-gasto"></div>
+        </article>
+      </section>
+
+      <div class="seccion">Hangar</div>
+      <article class="panel">
+        <div class="codigo">VID-01</div>
+        <h2>Videos de Victoria</h2>
+        <p class="nota">Un cuadro real de cada video, su estado y sus vistas en vivo. Desliza para ver los que siguen.</p>
+        <div class="hangar" id="hangar"></div>
+      </article>
+
+      <div class="seccion">Evolución</div>
+      <section class="rejilla-paneles">
+        <article class="panel">
+          <div class="codigo">EVO-01</div>
+          <h2>Calidad video a video</h2>
+          <p class="nota">Qué tanto coincide lo que dice Victoria con el guion. Mínimo aceptado: <b id="minimo-calidad">—</b>.</p>
+          <div class="grafica" id="g-calidad"></div>
+        </article>
+        <article class="panel">
+          <div class="codigo">EVO-02</div>
+          <h2>Vistas video a video</h2>
+          <p class="nota">Vistas de cada video por red, en vivo.</p>
+          <div class="leyenda"><span><i style="background:#ff3b55"></i>YouTube</span><span><i style="background:#49d6ec"></i>TikTok</span><span><i style="background:#f5c542"></i>Instagram</span></div>
+          <p class="vacio" id="vacio-vistas" hidden>Todavía sin vistas medidas. Aparecen en cuanto salga el primer video.</p>
+          <div class="grafica" id="g-vistas"></div>
+        </article>
+      </section>
+
+      <div class="seccion">Radar</div>
+      <section class="rejilla-paneles">
+        <article class="panel ancho">
+          <div class="codigo">RDR-01</div>
+          <h2>Mapa de mejores horas</h2>
+          <p class="nota">Interacción de la audiencia por día y hora según Publer (hora de tu cuenta de Publer). Entre más dorado, mejor momento para publicar.</p>
+          <p class="vacio" id="vacio-horas" hidden>Sin datos todavía: Publer lo calcula cuando hay interacción.</p>
+          <div class="grafica" id="g-calor"></div>
+        </article>
+        <article class="panel">
+          <div class="codigo">RDR-02</div>
+          <h2>Duelo de horarios</h2>
+          <p class="nota">Vistas promedio por video según la hora en que salió.</p>
+          <p class="vacio" id="vacio-hora" hidden>Se compara cuando haya videos medidos en dos horas distintas.</p>
+          <div class="grafica" id="g-hora"></div>
+        </article>
+        <article class="panel">
+          <div class="codigo">RDR-03</div>
+          <h2>Qué tema pega</h2>
+          <p class="nota">Vistas promedio por video en cada pilar.</p>
+          <p class="vacio" id="vacio-pilar" hidden>Aparece cuando haya videos medidos.</p>
+          <div class="grafica" id="g-pilar"></div>
+        </article>
+        <article class="panel">
+          <div class="codigo">RDR-04</div>
+          <h2>Mejor día</h2>
+          <p class="nota">Vistas promedio por video según el día en que salió.</p>
+          <p class="vacio" id="vacio-dia" hidden>Aparece cuando haya videos medidos.</p>
+          <div class="grafica" id="g-dia"></div>
+        </article>
+      </section>
+
+      <div class="seccion">Inteligencia</div>
+      <section class="rejilla-paneles">
+        <article class="panel">
+          <div class="codigo">INT-01</div>
+          <h2>Qué hacer ahora</h2>
+          <p class="nota">Se recalcula con cada actualización a partir de vistas, bitácora y créditos.</p>
+          <ol class="lista" id="mejoras"></ol>
+        </article>
+        <article class="panel">
+          <div class="codigo">INT-02</div>
+          <h2>Lecciones aprendidas</h2>
+          <p class="nota">Lo que el sistema aprendió y aplica en cada video nuevo para que salga mejor que el anterior.</p>
+          <ol class="lista" id="lecciones"></ol>
+        </article>
+      </section>
+
+      <div class="seccion">Bitácora</div>
+      <section class="rejilla-paneles">
+        <article class="panel ancho">
+          <div class="codigo">OPS-01</div>
+          <h2>Plan de vuelo</h2>
+          <p class="nota">Todos los videos del plan: lo publicado, lo listo y lo que sigue.</p>
+          <div class="caja-tabla"><table>
+            <thead><tr><th>#</th><th>Estado</th><th>Pilar</th><th>Locación</th><th>Gancho</th><th>Sale (México)</th><th class="n">Vistas</th><th class="n">Calidad</th><th class="n">Créditos</th></tr></thead>
+            <tbody id="t-plan"></tbody>
+          </table></div>
+        </article>
+        <article class="panel ancho">
+          <div class="codigo">OPS-02</div>
+          <h2>Registro de ejecuciones</h2>
+          <p class="nota">Cada ejecución: qué hizo, cómo terminó y cuánta energía gastó.</p>
+          <div class="caja-tabla"><table>
+            <thead><tr><th>Cuándo (México)</th><th>Tipo</th><th>Video</th><th>Resultado</th><th>Detalle</th><th class="n">Usados</th><th class="n">Restantes</th></tr></thead>
+            <tbody id="t-bitacora"></tbody>
+          </table></div>
+        </article>
+      </section>
+    </main>
+    <footer class="pie" id="pie">—</footer>
+  </div>
+</body>
+</html>
