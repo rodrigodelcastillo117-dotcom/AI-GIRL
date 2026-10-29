@@ -6,16 +6,20 @@ Lee PUBLER_API_KEY del entorno (nunca del repo). Comandos:
       Lista workspaces y cuentas conectadas.
   python publer.py publicar video.mp4 texto.txt "2026-10-30T02:47:00Z" "Título corto" [--prueba]
       Sube el video, programa el post en las cuentas de Victoria y espera el resultado.
+      Omite las cuentas que ya tienen un post con la misma primera línea (programado o publicado),
+      por si una ejecución anterior publicó pero no pudo guardar su estado en el repo.
       --prueba arma el payload y lo imprime sin llamar a la API.
 
 Solo publica en cuentas cuyo nombre contiene FILTRO_CUENTAS (contenido/config.json), para no
 publicar nunca en las cuentas de otras marcas del mismo workspace.
 """
+import datetime
 import json
 import os
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import uuid
 
@@ -75,6 +79,31 @@ def cuentas_victoria(ws):
     filtro = CONFIG['filtro_cuentas'].lower()
     elegidas = [c for c in todas if c.get('provider') in REDES and filtro in (c.get('name') or '').lower()]
     return todas, elegidas
+
+
+def _primera_linea(texto):
+    lineas = (texto or '').strip().splitlines()
+    return ' '.join(lineas[0].split()).lower() if lineas else ''
+
+
+def ya_programadas(ws, cuentas, texto):
+    """IDs de las cuentas que ya tienen un post con la misma primera línea, programado o publicado."""
+    linea = _primera_linea(texto)
+    hoy = datetime.date.today()
+    filtros = [('state', 'all'), ('from', (hoy - datetime.timedelta(days=30)).isoformat()),
+               ('to', (hoy + datetime.timedelta(days=60)).isoformat())]
+    filtros += [('account_ids[]', c['id']) for c in cuentas]
+    ids, pagina = set(), 0
+    while True:
+        r = _pedir('GET', '/posts?' + urllib.parse.urlencode(filtros + [('page', pagina)]), ws)
+        for p in _lista(r, 'posts'):
+            if any(x in (p.get('state') or '') for x in ('failed', 'deleted', 'draft')):
+                continue
+            if _primera_linea(p.get('text')) == linea:
+                ids.add(str(p.get('account_id')))
+        pagina += 1
+        if pagina >= min(r.get('total_pages') or 0 if isinstance(r, dict) else 0, 20):
+            return ids
 
 
 def esperar_job(ws, job_id, intentos=60):
@@ -158,6 +187,17 @@ def main():
     if not cuentas:
         sys.exit(f"ERROR: no hay cuentas cuyo nombre contenga '{CONFIG['filtro_cuentas']}'. No publico nada.")
     print('Cuentas:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas))
+    try:
+        repetidas = ya_programadas(ws, cuentas, texto)
+    except SystemExit as e:
+        print(f'AVISO: no pude revisar si ya existía el post ({e}); sigo.')
+        repetidas = set()
+    if repetidas:
+        print('Ya estaba programado o publicado en:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas if str(c['id']) in repetidas))
+        cuentas = [c for c in cuentas if str(c['id']) not in repetidas]
+        if not cuentas:
+            print('OMITIDO: este post ya existe en todas las cuentas de Victoria. No subo nada.')
+            return
 
     subida = _pedir('POST', '/media', ws, multipart=(os.path.basename(video), open(video, 'rb').read(), 'video/mp4'))
     media_id = subida.get('id') or (subida.get('data') or {}).get('id')

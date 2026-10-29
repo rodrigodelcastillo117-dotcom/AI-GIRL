@@ -1,214 +1,308 @@
 <meta name="dash-one-writer">
 <style>
-  /* Centro de mando: negro de batcueva, dorado de batiseñal, cian de reactor, rojo de alerta. Una sola apariencia oscura a propósito. */
+  /* HUD de mando: negro de batcueva con rejilla viva, cian de reactor para datos, dorado para energía, rojo solo para alertas. Una sola apariencia oscura a propósito. */
   #dash-root { --dash-gutter: 0; }
-  .vt {
-    --vt-bg: #05070a; --vt-panel: #0a0f15; --vt-panel-2: #0e151d; --vt-line: #1b2632; --vt-line-hi: #2a3a4a;
-    --vt-gold: #f2c230; --vt-gold-dim: #6e5a1c; --vt-cyan: #49d6ec; --vt-cyan-dim: #1d5964;
-    --vt-red: #e5304a; --vt-green: #3ddc97; --vt-text: #e8eef4; --vt-muted: #8896a6; --vt-faint: #4c5a69;
-    --vt-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-    background: radial-gradient(1200px 500px at 85% -10%, rgba(73, 214, 236, .08), transparent 60%),
-                radial-gradient(900px 400px at 0% 0%, rgba(242, 194, 48, .07), transparent 60%), var(--vt-bg);
-    color: var(--vt-text); font-family: var(--font-anthropic-sans);
+  .hx {
+    --hx-bg: #030507; --hx-panel: rgba(8, 16, 24, .78); --hx-panel-solid: #08111a; --hx-line: rgba(73, 214, 236, .18); --hx-line-hi: rgba(73, 214, 236, .42);
+    --hx-cyan: #49d6ec; --hx-cyan-soft: rgba(73, 214, 236, .12); --hx-gold: #f5c542; --hx-gold-soft: rgba(245, 197, 66, .14);
+    --hx-red: #ff3b55; --hx-green: #39e3a0; --hx-text: #e9f6fb; --hx-muted: #7f97a8; --hx-faint: #3c5160;
+    --hx-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    position: relative; overflow: hidden; color: var(--hx-text); font-family: var(--font-anthropic-sans); color-scheme: dark;
+    background:
+      radial-gradient(900px 480px at 50% -12%, rgba(73, 214, 236, .14), transparent 65%),
+      radial-gradient(700px 400px at 100% 100%, rgba(245, 197, 66, .07), transparent 60%),
+      var(--hx-bg);
     padding-block: var(--cds-pad-xl);
     padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
-    color-scheme: dark;
   }
-  .vt-wrap { max-width: 1280px; margin-inline: auto; display: grid; gap: var(--cds-gap-lg); }
-  .vt b { font-weight: 600; }
-
-  .vt-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-lg); }
-  .vt-reactor { width: 72px; height: 72px; flex: none; }
-  .vt-reactor .r1 { fill: none; stroke: var(--vt-cyan); stroke-width: 2; opacity: .9; }
-  .vt-reactor .r2 { fill: none; stroke: var(--vt-gold); stroke-width: 6; stroke-dasharray: 10 6; }
-  .vt-reactor .core { fill: var(--vt-cyan); filter: drop-shadow(0 0 8px var(--vt-cyan)); }
+  .hx::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+    background-image: linear-gradient(rgba(73, 214, 236, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(73, 214, 236, .06) 1px, transparent 1px);
+    background-size: 44px 44px; mask-image: radial-gradient(ellipse at 50% 30%, #000 30%, transparent 80%); }
+  .hx::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(255, 255, 255, .018) 0 1px, transparent 1px 3px); }
   @media (prefers-reduced-motion: no-preference) {
-    .vt-reactor .r2 { transform-origin: 36px 36px; animation: vt-spin 18s linear infinite; }
-    @keyframes vt-spin { to { transform: rotate(360deg); } }
+    .hx::before { animation: hx-grid 30s linear infinite; }
+    @keyframes hx-grid { to { background-position: 0 44px, 44px 0; } }
+    .hx-ring-a { transform-origin: 90px 90px; animation: hx-spin 22s linear infinite; }
+    .hx-ring-b { transform-origin: 90px 90px; animation: hx-spin 14s linear infinite reverse; }
+    @keyframes hx-spin { to { transform: rotate(360deg); } }
+    .hx-live i { animation: hx-pulse 1.6s ease-in-out infinite; }
+    @keyframes hx-pulse { 50% { opacity: .35; } }
   }
-  .vt-title { min-width: 0; flex: 1 1 18rem; display: grid; gap: var(--cds-gap-xs); }
-  .vt-kicker { font-family: var(--vt-mono); font-size: var(--cds-font-size-caption); letter-spacing: .28em; color: var(--vt-gold); text-transform: uppercase; }
-  .vt-title h1 { margin: 0; font-size: clamp(1.7rem, 3.4vw, 2.6rem); font-weight: 300; letter-spacing: .06em; text-transform: uppercase; text-wrap: balance; }
-  .vt-title h1 span { color: var(--vt-gold); font-weight: 600; }
-  .vt-takeaway { margin: 0; color: var(--vt-muted); max-width: 70ch; }
-  .vt-takeaway b { color: var(--vt-text); font-variant-numeric: tabular-nums; }
-  .vt-status { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--vt-mono); font-size: var(--cds-font-size-caption); letter-spacing: .12em;
-    text-transform: uppercase; padding: .45rem .8rem; border: 1px solid var(--vt-line-hi); border-radius: 999px; background: var(--vt-panel); }
-  .vt-status i { width: .5rem; height: .5rem; border-radius: 50%; background: var(--vt-faint); box-shadow: 0 0 10px currentColor; }
-  .vt-status.ok i { background: var(--vt-green); color: var(--vt-green); }
-  .vt-status.run i { background: var(--vt-cyan); color: var(--vt-cyan); }
-  .vt-status.bad i { background: var(--vt-red); color: var(--vt-red); }
+  .hx-wrap { position: relative; z-index: 1; max-width: 1320px; margin-inline: auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--cds-gap-lg); }
+  .hx-wrap > * { min-width: 0; }
 
-  .vt-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: var(--cds-gap-md); }
-  .vt-tile { position: relative; background: linear-gradient(180deg, var(--vt-panel-2), var(--vt-panel)); border: 1px solid var(--vt-line);
-    border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); overflow: hidden; }
-  .vt-tile::before { content: ""; position: absolute; inset: 0 auto auto 0; width: 28px; height: 2px; background: var(--vt-gold); }
-  .vt-tile.cyan::before { background: var(--vt-cyan); }
-  .vt-tile.red::before { background: var(--vt-red); }
-  .vt-label { font-family: var(--vt-mono); font-size: var(--cds-font-size-caption); letter-spacing: .14em; text-transform: uppercase; color: var(--vt-muted); }
-  .vt-num { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 300; line-height: 1.05; font-variant-numeric: tabular-nums; color: var(--vt-text); }
-  .vt-tile.gold .vt-num { color: var(--vt-gold); }
-  .vt-sub { font-size: var(--cds-font-size-caption); color: var(--vt-muted); }
+  .hx-panel { position: relative; min-width: 0; background: var(--hx-panel); border: 1px solid var(--hx-line); border-radius: 4px;
+    padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; backdrop-filter: blur(6px); }
+  .hx-panel::before, .hx-panel::after { content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--hx-gold); pointer-events: none; }
+  .hx-panel::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+  .hx-panel::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+  .hx-code { font-family: var(--hx-mono); font-size: .68rem; letter-spacing: .26em; text-transform: uppercase; color: var(--hx-cyan); }
+  .hx-panel h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--hx-text); }
+  .hx-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--hx-muted); }
+  .hx-vacio { margin: 0; padding: .7rem .9rem; border: 1px dashed var(--hx-line-hi); border-radius: 4px; color: var(--hx-muted); font-size: var(--cds-font-size-caption); font-family: var(--hx-mono); letter-spacing: .04em; }
+  .hx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .hx-wide { grid-column: 1 / -1; }
+  .hx-sep { display: flex; align-items: center; gap: .8rem; font-family: var(--hx-mono); font-size: .7rem; letter-spacing: .34em; text-transform: uppercase; color: var(--hx-gold); }
+  .hx-sep::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--hx-gold-soft), transparent); }
 
-  .vt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
-  .vt-card { min-width: 0; background: var(--vt-panel); border: 1px solid var(--vt-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg);
-    display: grid; gap: var(--cds-gap-sm); align-content: start; position: relative; }
-  .vt-card.wide { grid-column: 1 / -1; }
-  .vt-card h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); letter-spacing: .04em; text-transform: uppercase; display: flex; align-items: center; gap: .6rem; }
-  .vt-card h2::before { content: ""; width: .55rem; height: .55rem; transform: rotate(45deg); border: 1.5px solid var(--vt-gold); }
-  .vt-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--vt-muted); }
-  .vt-vacio { margin: 0; padding: var(--cds-pad-md); border: 1px dashed var(--vt-line-hi); border-radius: var(--cds-radius); color: var(--vt-muted); font-size: var(--cds-font-size-caption); }
-  .vt-section { font-family: var(--vt-mono); font-size: var(--cds-font-size-caption); letter-spacing: .3em; text-transform: uppercase; color: var(--vt-cyan); margin: var(--cds-pad-sm) 0 0; }
+  .hx-hero { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--cds-gap-lg); align-items: center; }
+  @media (max-width: 760px) { .hx-hero { grid-template-columns: minmax(0, 1fr); } }
+  .hx-avatar { position: relative; width: 180px; height: 180px; }
+  .hx-avatar svg { position: absolute; inset: 0; width: 180px; height: 180px; }
+  .hx-avatar .foto { position: absolute; inset: 30px; border-radius: 50%; overflow: hidden; border: 2px solid var(--hx-gold); box-shadow: 0 0 28px rgba(245, 197, 66, .35); background: #0b141c; }
+  .hx-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hx-ring-a circle { fill: none; stroke: var(--hx-cyan); stroke-width: 1.5; stroke-dasharray: 3 7; opacity: .8; }
+  .hx-ring-b circle { fill: none; stroke: var(--hx-gold); stroke-width: 3; stroke-dasharray: 46 18; opacity: .9; }
+  .hx-id { display: grid; grid-template-columns: minmax(0, 1fr); gap: .35rem; min-width: 0; }
+  .hx-id h1 { margin: 0; font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 200; letter-spacing: .14em; text-transform: uppercase; line-height: 1; text-wrap: balance; }
+  .hx-id h1 b { font-weight: 600; color: var(--hx-gold); text-shadow: 0 0 18px rgba(245, 197, 66, .35); }
+  .hx-tag { font-family: var(--hx-mono); font-size: .75rem; letter-spacing: .2em; color: var(--hx-muted); text-transform: uppercase; }
+  .hx-takeaway { margin: .3rem 0 0; color: var(--hx-muted); max-width: 64ch; }
+  .hx-takeaway b { color: var(--hx-text); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .hx-live { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--hx-mono); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase;
+    padding: .4rem .75rem; border: 1px solid var(--hx-line-hi); border-radius: 2px; background: rgba(3, 8, 12, .7); width: fit-content; max-width: 100%; }
+  .hx-live i { width: .5rem; height: .5rem; border-radius: 50%; background: var(--hx-faint); flex: none; }
+  .hx-live.ok i { background: var(--hx-green); box-shadow: 0 0 10px var(--hx-green); }
+  .hx-live.run i { background: var(--hx-cyan); box-shadow: 0 0 10px var(--hx-cyan); }
+  .hx-live.bad i { background: var(--hx-red); box-shadow: 0 0 10px var(--hx-red); }
 
-  .vt-chart { position: relative; min-height: 220px; }
-  .vt-chart.short { min-height: 190px; }
-  .vt-chart svg { display: block; }
-  .vt-chart text { fill: var(--vt-muted); font-size: 11px; font-family: var(--vt-mono); }
-  .vt-chart .grid line { stroke: var(--vt-line); }
-  .vt-chart .domain { stroke: var(--vt-line-hi); }
-  .vt-tip { position: absolute; pointer-events: none; background: #111a23; border: 1px solid var(--vt-line-hi); border-radius: var(--cds-radius);
-    padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); color: var(--vt-text); white-space: nowrap; box-shadow: 0 8px 24px rgba(0,0,0,.5); }
-  .vt-tip span { color: var(--vt-muted); }
+  .hx-count { display: grid; gap: .4rem; justify-items: end; text-align: right; }
+  @media (max-width: 760px) { .hx-count { justify-items: start; text-align: left; } }
+  .hx-count .reloj { display: flex; gap: .4rem; font-family: var(--hx-mono); font-variant-numeric: tabular-nums; }
+  .hx-count .reloj span { display: grid; justify-items: center; min-width: 3.1rem; padding: .45rem .3rem; border: 1px solid var(--hx-line-hi); background: rgba(73, 214, 236, .06); }
+  .hx-count .reloj b { font-size: 1.7rem; font-weight: 300; color: var(--hx-cyan); text-shadow: 0 0 14px rgba(73, 214, 236, .5); }
+  .hx-count .reloj small { font-size: .58rem; letter-spacing: .2em; color: var(--hx-muted); }
 
-  .vt-gauge-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--cds-gap-sm); }
-  .vt-gauge { min-height: 170px; }
-  .vt-gauge .big { fill: var(--vt-gold); font-family: var(--font-anthropic-sans); font-weight: 300; }
-  .vt-gauge .cap { fill: var(--vt-muted); font-family: var(--vt-mono); font-size: 11px; letter-spacing: .12em; }
+  .hx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: var(--cds-gap-md); }
+  .hx-tile { position: relative; background: var(--hx-panel); border: 1px solid var(--hx-line); border-radius: 4px; padding: .85rem 1rem; display: grid; gap: .3rem; overflow: hidden; }
+  .hx-tile::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--hx-cyan); box-shadow: 0 0 12px var(--hx-cyan); }
+  .hx-tile.gold::before { background: var(--hx-gold); box-shadow: 0 0 12px var(--hx-gold); }
+  .hx-tile.red::before { background: var(--hx-red); box-shadow: 0 0 12px var(--hx-red); }
+  .hx-tile .lbl { font-family: var(--hx-mono); font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; color: var(--hx-muted); }
+  .hx-tile .val { font-size: clamp(1.7rem, 2.6vw, 2.25rem); font-weight: 200; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .hx-tile.gold .val { color: var(--hx-gold); }
+  .hx-tile .sub { font-size: .72rem; color: var(--hx-muted); }
 
-  .vt-table-box { overflow: auto; max-height: 26rem; border: 1px solid var(--vt-line); border-radius: var(--cds-radius); }
-  .vt table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
-  .vt th { position: sticky; top: 0; background: var(--vt-panel-2); text-align: left; font-family: var(--vt-mono); font-weight: 500; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--vt-muted); padding: .6rem .75rem; border-bottom: 1px solid var(--vt-line-hi); white-space: nowrap; }
-  .vt td { padding: .55rem .75rem; border-bottom: 1px solid var(--vt-line); color: var(--vt-text); }
-  .vt td.n, .vt th.n { text-align: right; }
-  .vt tbody tr:hover td { background: rgba(73, 214, 236, .05); }
-  .vt-chip { display: inline-block; padding: .15rem .55rem; border-radius: 999px; font-family: var(--vt-mono); font-size: .7rem; letter-spacing: .08em;
-    text-transform: uppercase; border: 1px solid var(--vt-line-hi); color: var(--vt-muted); white-space: nowrap; }
-  .vt-chip.ok { color: var(--vt-green); border-color: rgba(61,220,151,.4); }
-  .vt-chip.run { color: var(--vt-cyan); border-color: rgba(73,214,236,.4); }
-  .vt-chip.ready { color: var(--vt-gold); border-color: rgba(242,194,48,.45); }
-  .vt-chip.bad { color: var(--vt-red); border-color: rgba(229,48,74,.5); }
+  .hx-chart { position: relative; min-height: 220px; }
+  .hx-chart.short { min-height: 190px; }
+  .hx-chart:empty { min-height: 0; }
+  .hx-chart svg { display: block; }
+  .hx-chart text { fill: var(--hx-muted); font-size: 11px; font-family: var(--hx-mono); }
+  .hx-chart .grid line { stroke: rgba(73, 214, 236, .09); }
+  .hx-tip { position: absolute; pointer-events: none; z-index: 3; background: #06121b; border: 1px solid var(--hx-line-hi); border-radius: 2px;
+    padding: .3rem .55rem; font-family: var(--hx-mono); font-size: .7rem; color: var(--hx-text); white-space: nowrap; box-shadow: 0 0 18px rgba(73, 214, 236, .2); }
+  .hx-tip span { color: var(--hx-muted); }
 
-  .vt-mejoras { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--cds-gap-sm); }
-  .vt-mejoras li { display: grid; grid-template-columns: auto 1fr; gap: .75rem; align-items: start; padding: .7rem .85rem; background: var(--vt-panel-2);
-    border: 1px solid var(--vt-line); border-left: 3px solid var(--vt-cyan); border-radius: var(--cds-radius); }
-  .vt-mejoras li.alerta { border-left-color: var(--vt-red); }
-  .vt-mejoras li.idea { border-left-color: var(--vt-gold); }
-  .vt-mejoras small { font-family: var(--vt-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--vt-muted); font-size: .68rem; padding-top: .15rem; }
+  .hx-energia { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--cds-gap-sm); }
+  .hx-reactor { min-height: 230px; }
+  .hx-reactor text.num { fill: var(--hx-gold); font-family: var(--font-anthropic-sans); font-weight: 200; }
+  .hx-reactor text.cap { fill: var(--hx-muted); font-size: 9px; letter-spacing: .18em; }
+  .hx-reactor text.pct { fill: var(--hx-cyan); font-size: 12px; letter-spacing: .1em; }
+  .hx-autonomia { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+  .hx-autonomia div { border: 1px solid var(--hx-line); padding: .55rem .6rem; display: grid; gap: .15rem; }
+  .hx-autonomia small { font-family: var(--hx-mono); font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: var(--hx-muted); }
+  .hx-autonomia b { font-size: 1.15rem; font-weight: 300; font-variant-numeric: tabular-nums; color: var(--hx-text); }
 
-  .vt [data-dash-source-state=empty] { color: transparent; }
-  .vt [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
-  .vt :focus-visible { outline: 2px solid var(--vt-cyan); outline-offset: 2px; }
+  .hx-hangar { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(9.5rem, 11rem); gap: var(--cds-gap-md); overflow-x: auto; padding-bottom: .4rem; scrollbar-color: var(--hx-faint) transparent; }
+  .hx-card { position: relative; border: 1px solid var(--hx-line); background: var(--hx-panel-solid); display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+  .hx-card .poster { position: relative; aspect-ratio: 9 / 16; max-width: 100%; background: repeating-linear-gradient(45deg, #08131c 0 8px, #0a1823 8px 16px); display: grid; place-items: center; }
+  .hx-card .poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hx-card .poster em { font-style: normal; font-family: var(--hx-mono); font-size: .62rem; letter-spacing: .2em; color: var(--hx-faint); text-transform: uppercase; padding: .5rem; text-align: center; }
+  .hx-card .num { position: absolute; top: .4rem; left: .45rem; font-family: var(--hx-mono); font-size: .72rem; color: var(--hx-gold); background: rgba(3, 5, 7, .75); padding: .1rem .35rem; }
+  .hx-card .info { padding: .55rem .6rem .7rem; display: grid; gap: .3rem; align-content: start; }
+  .hx-card .info p { margin: 0; font-size: .72rem; color: var(--hx-muted); line-height: 1.35; }
+  .hx-card .info .met { font-family: var(--hx-mono); font-size: .66rem; color: var(--hx-text); letter-spacing: .04em; }
+
+  .hx-chip { display: inline-block; width: max-content; padding: .12rem .45rem; font-family: var(--hx-mono); font-size: .6rem; letter-spacing: .14em; text-transform: uppercase;
+    border: 1px solid var(--hx-faint); color: var(--hx-muted); white-space: nowrap; }
+  .hx-chip.ok { color: var(--hx-green); border-color: rgba(57, 227, 160, .45); }
+  .hx-chip.run { color: var(--hx-cyan); border-color: rgba(73, 214, 236, .5); }
+  .hx-chip.ready { color: var(--hx-gold); border-color: rgba(245, 197, 66, .5); }
+  .hx-chip.bad { color: var(--hx-red); border-color: rgba(255, 59, 85, .55); }
+
+  .hx-table-box { overflow: auto; max-height: 24rem; border: 1px solid var(--hx-line); }
+  .hx table { width: 100%; border-collapse: collapse; font-size: .76rem; font-variant-numeric: tabular-nums; }
+  .hx th { position: sticky; top: 0; background: #07121b; text-align: left; font-family: var(--hx-mono); font-weight: 400; font-size: .64rem; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--hx-cyan); padding: .6rem .7rem; border-bottom: 1px solid var(--hx-line-hi); white-space: nowrap; }
+  .hx td { padding: .5rem .7rem; border-bottom: 1px solid rgba(73, 214, 236, .07); color: var(--hx-text); }
+  .hx td.n, .hx th.n { text-align: right; }
+  .hx tbody tr:hover td { background: rgba(73, 214, 236, .05); }
+
+  .hx-lista { margin: 0; padding: 0; list-style: none; display: grid; gap: .5rem; }
+  .hx-lista li { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: .7rem; padding: .6rem .75rem; background: rgba(73, 214, 236, .04); border-left: 2px solid var(--hx-cyan); font-size: .82rem; }
+  .hx-lista li.alerta { border-left-color: var(--hx-red); background: rgba(255, 59, 85, .05); }
+  .hx-lista li.idea, .hx-lista li.contenido { border-left-color: var(--hx-gold); background: rgba(245, 197, 66, .04); }
+  .hx-lista small { font-family: var(--hx-mono); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--hx-muted); padding-top: .15rem; }
+  .hx-lista li span { display: grid; gap: .2rem; }
+  .hx-lista li span i { font-style: normal; color: var(--hx-muted); font-size: .74rem; }
+
+  .hx [data-dash-source-state=empty] { color: transparent; }
+  .hx [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .hx :focus-visible { outline: 2px solid var(--hx-cyan); outline-offset: 2px; }
 </style>
 
-<div class="vt">
-  <div class="vt-wrap">
-    <header class="vt-head">
-      <svg class="vt-reactor" viewBox="0 0 72 72" aria-hidden="true">
-        <circle class="r1" cx="36" cy="36" r="33"></circle>
-        <circle class="r2" cx="36" cy="36" r="24"></circle>
-        <circle class="r1" cx="36" cy="36" r="15"></circle>
-        <circle class="core" cx="36" cy="36" r="7"></circle>
-      </svg>
-      <div class="vt-title">
-        <div class="vt-kicker">@victoriatheceo · Centro de mando</div>
-        <h1 id="titulo">Victoria <span>The CEO</span></h1>
-        <p class="vt-takeaway"><b data-draw="s-publicados" data-source="resumen" data-field="publicados">—</b> videos publicados o programados, <b data-draw="s-fallos" data-source="resumen" data-field="fallos">—</b> fallos de calidad y créditos para unos <b data-draw="s-alcanzan" data-source="resumen" data-field="videos_que_alcanzan">—</b> videos más.</p>
+<div class="hx">
+  <div class="hx-wrap">
+    <header class="hx-hero" id="inicio">
+      <div class="hx-avatar">
+        <svg viewBox="0 0 180 180" aria-hidden="true">
+          <g class="hx-ring-a"><circle cx="90" cy="90" r="86"></circle></g>
+          <g class="hx-ring-b"><circle cx="90" cy="90" r="74"></circle></g>
+        </svg>
+        <div class="foto" data-draw="foto" data-source="estado"></div>
       </div>
-      <div class="vt-status" data-draw="estado-sistema" data-source="ejecuciones">—</div>
+      <div class="hx-id">
+        <div class="hx-tag">@victoriatheceo · Centro de mando · Personaje IA</div>
+        <h1>Victoria <b>The CEO</b></h1>
+        <p class="hx-takeaway"><b data-draw="s-publicados" data-source="resumen" data-field="publicados">—</b> videos programados o en redes, <b data-draw="s-listos" data-source="resumen" data-field="listos">—</b> listos para salir y energía para unos <b data-draw="s-alcanzan" data-source="resumen" data-field="videos_que_alcanzan">—</b> videos más.</p>
+        <div class="hx-live" data-draw="estado-sistema" data-source="ejecuciones">—</div>
+      </div>
+      <div class="hx-count" id="proxima">
+        <div class="hx-code">Próxima misión</div>
+        <div class="reloj" data-draw="cuenta" data-source="estado">—</div>
+        <p class="hx-note"><b data-draw="s-proxima-que" data-source="estado">—</b>, hora de México: <b data-draw="s-proxima" data-source="estado">—</b></p>
+      </div>
     </header>
 
-    <section class="vt-tiles" aria-label="Indicadores principales">
-      <div class="vt-tile gold"><div class="vt-label">Publicados</div><div class="vt-num" data-draw="t-publicados" data-source="resumen" data-field="publicados">—</div><div class="vt-sub">programados o ya en redes</div></div>
-      <div class="vt-tile cyan"><div class="vt-label">Vistas totales</div><div class="vt-num" data-draw="t-vistas" data-source="resumen" data-field="vistas">—</div><div class="vt-sub">todas las redes, según Publer</div></div>
-      <div class="vt-tile"><div class="vt-label">En cola</div><div class="vt-num" data-draw="t-cola" data-source="resumen" data-field="en_cola">—</div><div class="vt-sub">guiones listos para generar</div></div>
-      <div class="vt-tile red"><div class="vt-label">Fallos</div><div class="vt-num" data-draw="t-fallos" data-source="resumen" data-field="fallos">—</div><div class="vt-sub">ejecuciones que no publicaron</div></div>
-      <div class="vt-tile gold"><div class="vt-label">Créditos restantes</div><div class="vt-num" data-draw="t-restantes" data-source="resumen" data-field="creditos_restantes">—</div><div class="vt-sub">saldo de OpenArt</div></div>
-      <div class="vt-tile cyan"><div class="vt-label">Créditos usados</div><div class="vt-num" data-draw="t-usados" data-source="resumen" data-field="creditos_usados">—</div><div class="vt-sub">desde el primer día</div></div>
+    <section class="hx-tiles" aria-label="Telemetría">
+      <div class="hx-tile gold"><div class="lbl">En redes</div><div class="val" data-draw="t-publicados" data-source="resumen" data-field="publicados">—</div><div class="sub">programados o publicados</div></div>
+      <div class="hx-tile"><div class="lbl">Vistas totales</div><div class="val" data-draw="t-vistas" data-source="resumen" data-field="vistas">—</div><div class="sub">todas las redes, según Publer</div></div>
+      <div class="hx-tile"><div class="lbl">Calidad promedio</div><div class="val" data-draw="t-calidad" data-source="resumen" data-field="calidad_promedio">—</div><div class="sub">audio contra guion</div></div>
+      <div class="hx-tile"><div class="lbl">En cola</div><div class="val" data-draw="t-cola" data-source="resumen" data-field="en_cola">—</div><div class="sub">guiones por generar</div></div>
+      <div class="hx-tile red"><div class="lbl">Fallos</div><div class="val" data-draw="t-fallos" data-source="resumen" data-field="fallos">—</div><div class="sub">ejecuciones sin publicar</div></div>
+      <div class="hx-tile gold"><div class="lbl">Lecciones</div><div class="val" data-draw="t-lecciones" data-source="resumen" data-field="lecciones">—</div><div class="sub">aplicadas a cada video nuevo</div></div>
     </section>
 
-    <div class="vt-section">Energía · créditos de OpenArt</div>
-    <div class="vt-grid">
-      <article class="vt-card" id="medidor">
-        <h2>Tanque de créditos</h2>
-        <p class="vt-note">Saldo actual contra lo que había al empezar.</p>
-        <div class="vt-gauge vt-chart short" data-draw="g-tanque" data-source="resumen"></div>
-        <p class="vt-note">Costo promedio por video: <b data-draw="s-costo" data-source="resumen" data-field="costo_promedio_video">—</b> créditos. Al ritmo de uno cada 2 días alcanza para unos <b data-draw="s-dias" data-source="resumen" data-field="dias_que_alcanzan">—</b> días.</p>
+    <div class="hx-sep">Sistema de energía</div>
+    <div class="hx-grid">
+      <article class="hx-panel" id="energia">
+        <div class="hx-code">PWR-01</div>
+        <h2>Reactor de créditos</h2>
+        <div class="hx-reactor hx-chart" data-draw="g-reactor" data-source="resumen"></div>
+        <div class="hx-autonomia">
+          <div><small>Usados</small><b data-draw="a-usados" data-source="resumen" data-field="creditos_usados">—</b></div>
+          <div><small>Por video</small><b data-draw="a-costo" data-source="resumen" data-field="costo_promedio_video">—</b></div>
+          <div><small>Días de vuelo</small><b data-draw="a-dias" data-source="resumen" data-field="dias_que_alcanzan">—</b></div>
+        </div>
       </article>
-      <article class="vt-card" id="saldo">
+      <article class="hx-panel" id="saldo">
+        <div class="hx-code">PWR-02</div>
         <h2>Saldo en el tiempo</h2>
-        <p class="vt-note">Créditos restantes después de cada ejecución.</p>
-        <div class="vt-chart" data-draw="g-saldo" data-source="ejecuciones"></div>
+        <p class="hx-note">Créditos restantes de OpenArt después de cada ejecución.</p>
+        <div class="hx-chart" data-draw="g-saldo" data-source="ejecuciones"></div>
       </article>
-      <article class="vt-card" id="gasto">
-        <h2>Gasto por ejecución</h2>
-        <p class="vt-note">Créditos usados en cada ejecución.</p>
-        <div class="vt-chart" data-draw="g-gasto" data-source="ejecuciones"></div>
+      <article class="hx-panel" id="gasto">
+        <div class="hx-code">PWR-03</div>
+        <h2>Consumo por ejecución</h2>
+        <p class="hx-note">Créditos usados en cada ejecución, en orden.</p>
+        <div class="hx-chart" data-draw="g-gasto" data-source="ejecuciones"></div>
       </article>
     </div>
 
-    <div class="vt-section">Radar · cómo vamos en redes</div>
-    <div class="vt-grid">
-      <article class="vt-card wide" id="redes">
+    <div class="hx-sep">Hangar</div>
+    <article class="hx-panel" id="hangar">
+      <div class="hx-code">VID-01</div>
+      <h2>Videos de Victoria</h2>
+      <p class="hx-note">Cuadro real de cada video generado, su estado y su rendimiento. Desliza para ver los que siguen.</p>
+      <div class="hx-hangar" data-draw="hangar" data-source="videos"></div>
+    </article>
+
+    <div class="hx-sep">Evolución</div>
+    <div class="hx-grid">
+      <article class="hx-panel" id="calidad">
+        <div class="hx-code">EVO-01</div>
+        <h2>Calidad video a video</h2>
+        <p class="hx-note">Qué tanto coincide lo que dice Victoria con el guion (mínimo aceptado: 85%).</p>
+        <div class="hx-chart short" data-draw="g-calidad" data-source="evolucion"></div>
+      </article>
+      <article class="hx-panel" id="vistas">
+        <div class="hx-code">EVO-02</div>
+        <h2>Vistas video a video</h2>
+        <p class="hx-note">Vistas totales de cada video en todas las redes.</p>
+        <p class="hx-vacio" data-vacio="vistas" hidden>Sin vistas medidas todavía. Se llena en cuanto Publer reporte los primeros videos.</p>
+        <div class="hx-chart short" data-draw="g-vistas" data-source="evolucion"></div>
+      </article>
+    </div>
+
+    <div class="hx-sep">Radar de redes</div>
+    <div class="hx-grid">
+      <article class="hx-panel hx-wide" id="redes">
+        <div class="hx-code">RDR-01</div>
         <h2>Rendimiento por red</h2>
-        <p class="vt-note">Totales de los videos de Victoria en cada red, medidos por Publer en cada ejecución.</p>
-        <p class="vt-vacio" data-vacio="por_red" hidden>Todavía no hay estadísticas. Se llenan solas después de que se publiquen los primeros videos.</p>
-        <div class="vt-table-box">
+        <p class="hx-note">Totales de los videos de Victoria en cada red, medidos por Publer en cada ejecución.</p>
+        <p class="hx-vacio" data-vacio="por_red" hidden>Sin estadísticas todavía: aparecen solas después de los primeros videos publicados.</p>
+        <div class="hx-table-box" data-lleno="por_red">
           <table data-source="por_red" data-row-key="red">
-            <thead><tr><th data-field="red">Red</th><th class="n" data-field="posts">Videos</th><th class="n" data-field="vistas">Vistas</th><th class="n" data-field="likes">Likes</th><th class="n" data-field="comentarios">Comentarios</th><th class="n" data-field="compartidos">Compartidos</th><th class="n" data-field="guardados">Guardados</th><th class="n" data-field="vistas_promedio">Vistas por video</th></tr></thead>
+            <thead><tr><th data-field="red">Red</th><th class="n" data-field="videos">Videos</th><th class="n" data-field="vistas">Vistas</th><th class="n" data-field="likes">Likes</th><th class="n" data-field="comentarios">Comentarios</th><th class="n" data-field="compartidos">Compartidos</th><th class="n" data-field="guardados">Guardados</th><th class="n" data-field="vistas_por_video">Vistas por video</th></tr></thead>
             <tbody data-draw="tabla-redes"></tbody>
           </table>
         </div>
       </article>
-      <article class="vt-card" id="mejores-horas">
-        <h2>Mejores horas</h2>
-        <p class="vt-note">Puntaje de interacción de tu audiencia por día y hora (en la zona horaria de tu cuenta de Publer), calculado por Publer.</p>
-        <p class="vt-vacio" data-vacio="mejores_horas" hidden>Sin datos todavía: Publer necesita publicaciones con interacción para calcularlo.</p>
-        <div class="vt-chart" data-draw="g-calor" data-source="mejores_horas"></div>
+      <article class="hx-panel" id="mejores-horas">
+        <div class="hx-code">RDR-02</div>
+        <h2>Mapa de mejores horas</h2>
+        <p class="hx-note">Interacción de tu audiencia por día y hora, calculada por Publer (en la zona horaria de tu cuenta de Publer).</p>
+        <p class="hx-vacio" data-vacio="mejores_horas" hidden>Sin datos todavía: Publer lo calcula cuando haya interacción en los videos.</p>
+        <div class="hx-chart" data-draw="g-calor" data-source="mejores_horas"></div>
       </article>
-      <article class="vt-card" id="prueba-horario">
-        <h2>Prueba de horario</h2>
-        <p class="vt-note">Vistas promedio por video según la hora en que salió: 12:43 contra 20:47.</p>
-        <p class="vt-vacio" data-vacio="por_hora" hidden>Sin datos todavía: se compara cuando haya videos medidos en las dos horas.</p>
-        <div class="vt-chart short" data-draw="g-hora" data-source="por_hora"></div>
+      <article class="hx-panel" id="prueba-horario">
+        <div class="hx-code">RDR-03</div>
+        <h2>Duelo de horarios</h2>
+        <p class="hx-note">Vistas promedio por video: 12:43 contra 20:47.</p>
+        <p class="hx-vacio" data-vacio="por_hora" hidden>Sin datos todavía: se compara cuando haya videos medidos en las dos horas.</p>
+        <div class="hx-chart short" data-draw="g-hora" data-source="por_hora"></div>
       </article>
-      <article class="vt-card" id="temas">
-        <h2>Qué tema funciona</h2>
-        <p class="vt-note">Vistas promedio por video en cada pilar.</p>
-        <p class="vt-vacio" data-vacio="por_pilar" hidden>Sin datos todavía: aparece cuando haya videos medidos.</p>
-        <div class="vt-chart short" data-draw="g-pilar" data-source="por_pilar"></div>
+      <article class="hx-panel" id="temas">
+        <div class="hx-code">RDR-04</div>
+        <h2>Qué tema pega</h2>
+        <p class="hx-note">Vistas promedio por video en cada pilar.</p>
+        <p class="hx-vacio" data-vacio="por_pilar" hidden>Sin datos todavía: aparece cuando haya videos medidos.</p>
+        <div class="hx-chart short" data-draw="g-pilar" data-source="por_pilar"></div>
       </article>
-      <article class="vt-card" id="dias">
+      <article class="hx-panel" id="dias">
+        <div class="hx-code">RDR-05</div>
         <h2>Mejor día</h2>
-        <p class="vt-note">Vistas promedio por video según el día de la semana en que salió.</p>
-        <p class="vt-vacio" data-vacio="por_dia" hidden>Sin datos todavía: aparece cuando haya videos medidos.</p>
-        <div class="vt-chart short" data-draw="g-dia" data-source="por_dia"></div>
+        <p class="hx-note">Vistas promedio por video según el día en que salió.</p>
+        <p class="hx-vacio" data-vacio="por_dia" hidden>Sin datos todavía: aparece cuando haya videos medidos.</p>
+        <div class="hx-chart short" data-draw="g-dia" data-source="por_dia"></div>
       </article>
     </div>
 
-    <div class="vt-section">Inteligencia · qué hacer</div>
-    <article class="vt-card" id="mejoras">
-      <h2>Mejoras sugeridas</h2>
-      <p class="vt-note">Se recalculan solas con cada ejecución, a partir de las métricas, la bitácora y los créditos.</p>
-      <ol class="vt-mejoras" data-draw="lista-mejoras" data-source="mejoras"></ol>
-    </article>
+    <div class="hx-sep">Inteligencia</div>
+    <div class="hx-grid">
+      <article class="hx-panel" id="mejoras">
+        <div class="hx-code">INT-01</div>
+        <h2>Qué hacer ahora</h2>
+        <p class="hx-note">Se recalcula con cada ejecución a partir de métricas, bitácora y créditos.</p>
+        <ol class="hx-lista" data-draw="lista-mejoras" data-source="mejoras"></ol>
+      </article>
+      <article class="hx-panel" id="lecciones">
+        <div class="hx-code">INT-02</div>
+        <h2>Lecciones aprendidas</h2>
+        <p class="hx-note">Lo que el sistema aprendió y aplica en cada video nuevo para que salga mejor que el anterior.</p>
+        <ol class="hx-lista" data-draw="lista-lecciones" data-source="aprendizajes"></ol>
+      </article>
+    </div>
 
-    <div class="vt-section">Operación · videos y bitácora</div>
-    <div class="vt-grid">
-      <article class="vt-card wide" id="calendario">
-        <h2>Calendario de videos</h2>
-        <p class="vt-note">Todo el plan: lo publicado, lo que sigue y lo que falló.</p>
-        <div class="vt-table-box">
+    <div class="hx-sep">Bitácora</div>
+    <div class="hx-grid">
+      <article class="hx-panel hx-wide" id="calendario">
+        <div class="hx-code">OPS-01</div>
+        <h2>Plan de vuelo</h2>
+        <p class="hx-note">Todos los videos del plan: lo publicado, lo listo y lo que sigue.</p>
+        <div class="hx-table-box">
           <table data-source="videos" data-row-key="id">
-            <thead><tr><th data-field="id">#</th><th data-field="estado">Estado</th><th data-field="pilar">Pilar</th><th data-field="locacion">Locación</th><th data-field="fuente">Fuente</th><th data-field="publica_mx">Sale (México)</th><th class="n" data-field="qa_similitud">Calidad audio</th><th class="n" data-field="creditos">Créditos</th></tr></thead>
+            <thead><tr><th data-field="id">#</th><th data-field="estado">Estado</th><th data-field="pilar">Pilar</th><th data-field="locacion">Locación</th><th data-field="gancho">Gancho</th><th data-field="publica_mx">Sale (México)</th><th class="n" data-field="qa_similitud">Calidad</th><th class="n" data-field="creditos">Créditos</th></tr></thead>
             <tbody data-draw="tabla-videos"></tbody>
           </table>
         </div>
       </article>
-      <article class="vt-card wide" id="bitacora">
-        <h2>Bitácora y errores</h2>
-        <p class="vt-note">Cada ejecución: qué hizo, cómo terminó y cuánto gastó.</p>
-        <div class="vt-table-box">
+      <article class="hx-panel hx-wide" id="bitacora">
+        <div class="hx-code">OPS-02</div>
+        <h2>Registro de ejecuciones</h2>
+        <p class="hx-note">Cada ejecución: qué hizo, cómo terminó y cuánta energía gastó.</p>
+        <div class="hx-table-box">
           <table data-source="ejecuciones" data-row-key="fecha_utc">
             <thead><tr><th data-field="fecha_utc">Cuándo (México)</th><th data-field="tipo">Tipo</th><th data-field="video_id">Video</th><th data-field="resultado">Resultado</th><th data-field="detalle">Detalle</th><th class="n" data-field="creditos_usados">Usados</th><th class="n" data-field="creditos_restantes">Restantes</th></tr></thead>
             <tbody data-draw="tabla-bitacora"></tbody>
@@ -220,25 +314,32 @@
 </div>
 
 <script>
-  const PRESUPUESTO_MES = 12000;
+  const REDES_CORTAS = ['ig', 'tt', 'yt', 'fb'];
+  const totalVistas = (v) => REDES_CORTAS.reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0);
+  const medido = (v) => REDES_CORTAS.some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== '');
 
   dash.calc('resumen', {
     title: 'Resumen del canal',
-    description: 'Cuenta videos por estado, fallos y vistas, y calcula créditos usados, restantes y cuántos videos alcanzan.',
-    inputs: ['videos', 'ejecuciones', 'metricas'],
-    fn: (videos, ejecuciones, metricas) => {
+    description: 'Cuenta videos por estado, fallos, vistas y lecciones; promedia la calidad de audio; calcula créditos usados, restantes y cuántos videos alcanzan.',
+    inputs: ['videos', 'ejecuciones', 'aprendizajes'],
+    fn: (videos, ejecuciones, aprendizajes) => {
       const orden = [...ejecuciones].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1));
       const ultima = orden[orden.length - 1];
       const usados = ejecuciones.reduce((s, e) => s + (Number(e.creditos_usados) || 0), 0);
-      const generados = ejecuciones.filter((e) => e.tipo === 'generar' && e.resultado !== 'fallido' && Number(e.creditos_usados) > 0);
+      const generados = ejecuciones.filter((e) => e.tipo === 'generar' && Number(e.creditos_usados) > 0);
       const costo = generados.length ? Math.round(generados.reduce((s, e) => s + Number(e.creditos_usados), 0) / generados.length) : 510;
       const restantes = ultima ? Number(ultima.creditos_restantes) : null;
       const alcanzan = restantes == null ? null : Math.floor(restantes / costo);
+      const calidades = videos.map((v) => Number(v.qa_similitud)).filter((q) => q > 0);
+      const vistas = videos.reduce((s, v) => s + ['ig', 'tt', 'yt', 'fb'].reduce((t, r) => t + (Number(v[`v_${r}`]) || 0), 0), 0);
       return [{
         publicados: videos.filter((v) => v.estado === 'programado' || v.estado === 'publicado').length,
-        en_cola: videos.filter((v) => v.estado === 'pendiente' || v.estado === 'listo_para_publicar').length,
+        listos: videos.filter((v) => v.estado === 'listo_para_publicar').length,
+        en_cola: videos.filter((v) => v.estado === 'pendiente').length,
         fallos: ejecuciones.filter((e) => e.resultado === 'fallido').length,
-        vistas: metricas.reduce((s, m) => s + (Number(m.video_views) || 0), 0),
+        vistas,
+        calidad_promedio: calidades.length ? calidades.reduce((s, q) => s + q, 0) / calidades.length : null,
+        lecciones: aprendizajes.length,
         creditos_restantes: restantes,
         creditos_usados: usados,
         creditos_iniciales: restantes == null ? null : restantes + usados,
@@ -249,69 +350,81 @@
     },
   });
 
-  dash.calc('por_pilar', {title: 'Vistas por pilar', description: 'Suma las vistas de cada video en todas las redes y promedia por pilar.', inputs: ['videos', 'metricas'], fn: (videos, metricas) => {
-    const vistas = new Map();
-    metricas.forEach((m) => { if (m.video_id) vistas.set(m.video_id, (vistas.get(m.video_id) || 0) + (Number(m.video_views) || 0)); });
-    const grupos = new Map();
-    videos.forEach((v) => { if (!vistas.has(v.id)) return; const g = grupos.get(v.pilar) || {grupo: v.pilar, videos: 0, total: 0}; g.videos += 1; g.total += vistas.get(v.id); grupos.set(v.pilar, g); });
-    return [...grupos.values()].map((g) => ({grupo: g.grupo, videos: g.videos, vistas_promedio: Math.round(g.total / g.videos)}));
+  dash.calc('evolucion', {title: 'Evolución por video', description: 'Calidad de audio y vistas totales (todas las redes) de cada video ya generado, en orden.', inputs: ['videos'], fn: (videos) =>
+    videos.filter((v) => Number(v.qa_similitud) > 0).map((v) => ({
+      id: v.id,
+      calidad: Number(v.qa_similitud),
+      vistas: ['ig', 'tt', 'yt', 'fb'].some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== '') ? ['ig', 'tt', 'yt', 'fb'].reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0) : null,
+    })),
+  });
+
+  dash.calc('por_red', {title: 'Totales por red', description: 'Suma las estadísticas de Publer de los videos de Victoria en cada red.', inputs: ['videos'], fn: (videos) => {
+    const nombres = {ig: 'instagram', tt: 'tiktok', yt: 'youtube', fb: 'facebook'};
+    return Object.keys(nombres).map((r) => {
+      const medidos = videos.filter((v) => v[`v_${r}`] != null && v[`v_${r}`] !== '');
+      const suma = (p) => medidos.reduce((s, v) => s + (Number(v[`${p}_${r}`]) || 0), 0);
+      return {red: nombres[r], videos: medidos.length, vistas: suma('v'), likes: suma('l'), comentarios: suma('c'), compartidos: suma('s'), guardados: suma('g'),
+        vistas_por_video: medidos.length ? Math.round(suma('v') / medidos.length) : 0};
+    }).filter((x) => x.videos > 0).sort((a, b) => b.vistas - a.vistas);
   }});
 
-  dash.calc('por_hora', {title: 'Vistas por hora de publicación', description: 'Suma las vistas de cada video en todas las redes y promedia por la hora planeada de salida.', inputs: ['videos', 'metricas'], fn: (videos, metricas) => {
-    const vistas = new Map();
-    metricas.forEach((m) => { if (m.video_id) vistas.set(m.video_id, (vistas.get(m.video_id) || 0) + (Number(m.video_views) || 0)); });
-    const grupos = new Map();
-    videos.forEach((v) => { if (!vistas.has(v.id) || !v.hora_plan) return; const g = grupos.get(v.hora_plan) || {grupo: v.hora_plan, videos: 0, total: 0}; g.videos += 1; g.total += vistas.get(v.id); grupos.set(v.hora_plan, g); });
-    return [...grupos.values()].map((g) => ({grupo: g.grupo, videos: g.videos, vistas_promedio: Math.round(g.total / g.videos)}));
-  }});
-
-  dash.calc('por_dia', {title: 'Vistas por día de la semana', description: 'Suma las vistas de cada video en todas las redes y promedia por el día en que salió.', inputs: ['videos', 'metricas'], fn: (videos, metricas) => {
-    const vistas = new Map();
-    metricas.forEach((m) => { if (m.video_id) vistas.set(m.video_id, (vistas.get(m.video_id) || 0) + (Number(m.video_views) || 0)); });
-    const orden = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
-    const grupos = new Map();
-    videos.forEach((v) => { if (!vistas.has(v.id) || !v.dia) return; const g = grupos.get(v.dia) || {grupo: v.dia, videos: 0, total: 0}; g.videos += 1; g.total += vistas.get(v.id); grupos.set(v.dia, g); });
-    return [...grupos.values()].sort((a, b) => orden.indexOf(a.grupo) - orden.indexOf(b.grupo)).map((g) => ({grupo: g.grupo, videos: g.videos, vistas_promedio: Math.round(g.total / g.videos)}));
-  }});
-
-  dash.calc('por_red', {title: 'Totales por red', description: 'Suma las estadísticas de Publer de los videos de Victoria en cada red.', inputs: ['metricas'], fn: (metricas) => {
-    const grupos = new Map();
-    metricas.forEach((m) => {
-      const g = grupos.get(m.red) || {red: m.red, posts: 0, vistas: 0, likes: 0, comentarios: 0, compartidos: 0, guardados: 0};
-      g.posts += 1; g.vistas += Number(m.video_views) || 0; g.likes += Number(m.likes) || 0; g.comentarios += Number(m.comentarios) || 0;
-      g.compartidos += Number(m.compartidos) || 0; g.guardados += Number(m.guardados) || 0;
-      grupos.set(m.red, g);
+  dash.calc('por_pilar', {title: 'Vistas por pilar', description: 'Vistas totales de cada video medido, promediadas por pilar.', inputs: ['videos'], fn: (videos) => {
+    const g = new Map();
+    videos.forEach((v) => {
+      if (!['ig', 'tt', 'yt', 'fb'].some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== '')) return;
+      const x = g.get(v.pilar) || {grupo: v.pilar, videos: 0, total: 0};
+      x.videos += 1; x.total += ['ig', 'tt', 'yt', 'fb'].reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0); g.set(v.pilar, x);
     });
-    return [...grupos.values()].map((g) => ({...g, vistas_promedio: Math.round(g.vistas / g.posts)})).sort((a, b) => b.vistas - a.vistas);
+    return [...g.values()].map((x) => ({grupo: x.grupo, videos: x.videos, vistas_promedio: Math.round(x.total / x.videos)}));
+  }});
+  dash.calc('por_hora', {title: 'Vistas por hora de salida', description: 'Vistas totales de cada video medido, promediadas por la hora planeada de salida.', inputs: ['videos'], fn: (videos) => {
+    const g = new Map();
+    videos.forEach((v) => {
+      if (!v.hora_plan || !['ig', 'tt', 'yt', 'fb'].some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== '')) return;
+      const x = g.get(v.hora_plan) || {grupo: v.hora_plan, videos: 0, total: 0};
+      x.videos += 1; x.total += ['ig', 'tt', 'yt', 'fb'].reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0); g.set(v.hora_plan, x);
+    });
+    return [...g.values()].map((x) => ({grupo: x.grupo, videos: x.videos, vistas_promedio: Math.round(x.total / x.videos)}));
+  }});
+  dash.calc('por_dia', {title: 'Vistas por día de la semana', description: 'Vistas totales de cada video medido, promediadas por el día en que salió.', inputs: ['videos'], fn: (videos) => {
+    const orden = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
+    const g = new Map();
+    videos.forEach((v) => {
+      if (!v.dia || !['ig', 'tt', 'yt', 'fb'].some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== '')) return;
+      const x = g.get(v.dia) || {grupo: v.dia, videos: 0, total: 0};
+      x.videos += 1; x.total += ['ig', 'tt', 'yt', 'fb'].reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0); g.set(v.dia, x);
+    });
+    return [...g.values()].sort((a, b) => orden.indexOf(a.grupo) - orden.indexOf(b.grupo)).map((x) => ({grupo: x.grupo, videos: x.videos, vistas_promedio: Math.round(x.total / x.videos)}));
   }});
 
-  dash.calc('mejoras', {title: 'Mejoras sugeridas', description: 'Reglas fijas sobre métricas, bitácora y créditos: cuántos datos faltan, qué tema y hora ganan, fallos y saldo.', inputs: ['videos', 'ejecuciones', 'metricas'], fn: (videos, ejecuciones, metricas) => {
+  dash.calc('mejoras', {title: 'Qué hacer ahora', description: 'Reglas fijas sobre métricas, bitácora y créditos: cuántos datos faltan, qué tema y hora ganan, fallos, saldo y guiones en cola.', inputs: ['videos', 'ejecuciones'], fn: (videos, ejecuciones) => {
     const lista = [];
-    const vistas = new Map();
-    metricas.forEach((m) => { if (m.video_id) vistas.set(m.video_id, (vistas.get(m.video_id) || 0) + (Number(m.video_views) || 0)); });
-    const medidos = videos.filter((v) => vistas.has(v.id));
+    const total = (v) => ['ig', 'tt', 'yt', 'fb'].reduce((s, r) => s + (Number(v[`v_${r}`]) || 0), 0);
+    const medidos = videos.filter((v) => ['ig', 'tt', 'yt', 'fb'].some((r) => v[`v_${r}`] != null && v[`v_${r}`] !== ''));
     if (medidos.length < 8) {
-      lista.push({tipo: 'dato', texto: `Hay ${medidos.length} videos con estadísticas. Con 8 o más ya se puede decidir la mejor hora y el mejor tema sin adivinar.`});
+      lista.push({tipo: 'dato', texto: `${medidos.length} de 8 videos medidos. Con 8 ya se decide la mejor hora y el mejor tema con datos, no a ojo.`});
     } else {
       const mejor = (campo) => {
         const g = new Map();
-        medidos.forEach((v) => { const x = g.get(v[campo]) || {n: 0, t: 0}; x.n += 1; x.t += vistas.get(v.id); g.set(v[campo], x); });
+        medidos.forEach((v) => { const x = g.get(v[campo]) || {n: 0, t: 0}; x.n += 1; x.t += total(v); g.set(v[campo], x); });
         return [...g.entries()].map(([k, x]) => ({k, p: x.t / x.n, n: x.n})).filter((x) => x.n >= 2).sort((a, b) => b.p - a.p);
       };
       const pilares = mejor('pilar');
-      if (pilares.length > 1) lista.push({tipo: 'idea', texto: `El pilar "${pilares[0].k}" promedia ${Math.round(pilares[0].p).toLocaleString('es-MX')} vistas por video y "${pilares[pilares.length - 1].k}" solo ${Math.round(pilares[pilares.length - 1].p).toLocaleString('es-MX')}: más guiones del primero.`});
+      if (pilares.length > 1) lista.push({tipo: 'idea', texto: `"${pilares[0].k}" promedia ${Math.round(pilares[0].p).toLocaleString('es-MX')} vistas por video contra ${Math.round(pilares[pilares.length - 1].p).toLocaleString('es-MX')} de "${pilares[pilares.length - 1].k}": más guiones del primero.`});
       const horas = mejor('hora_plan');
-      if (horas.length > 1) lista.push({tipo: 'idea', texto: `A las ${horas[0].k} los videos promedian ${Math.round(horas[0].p).toLocaleString('es-MX')} vistas contra ${Math.round(horas[horas.length - 1].p).toLocaleString('es-MX')} a las ${horas[horas.length - 1].k}: fija esa hora para todos.`});
+      if (horas.length > 1) lista.push({tipo: 'idea', texto: `A las ${horas[0].k} promedia ${Math.round(horas[0].p).toLocaleString('es-MX')} vistas contra ${Math.round(horas[horas.length - 1].p).toLocaleString('es-MX')} a las ${horas[horas.length - 1].k}: fija esa hora.`});
     }
-    const fallos = ejecuciones.filter((e) => e.resultado === 'fallido');
-    if (fallos.length) lista.push({tipo: 'alerta', texto: `${fallos.length} ejecuciones no publicaron. La última: ${fallos[fallos.length - 1].detalle}`});
+    const listos = videos.filter((v) => v.estado === 'listo_para_publicar').length;
+    if (listos) lista.push({tipo: 'dato', texto: `${listos} videos ya generados esperan salir: se publican en las siguientes ejecuciones sin gastar créditos.`});
+    const fallos = [...ejecuciones].filter((e) => e.resultado === 'fallido').sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1));
+    if (fallos.length) lista.push({tipo: 'alerta', texto: `${fallos.length} ejecución(es) no publicaron. Última: ${fallos[fallos.length - 1].detalle}`});
     const orden = [...ejecuciones].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1));
     const ultima = orden[orden.length - 1];
     if (ultima) {
       const n = Math.floor(Number(ultima.creditos_restantes) / 510);
       lista.push(n < 6
-        ? {tipo: 'alerta', texto: `Quedan créditos para unos ${n} videos. Recarga OpenArt o baja la frecuencia antes de quedarte sin publicar.`}
-        : {tipo: 'dato', texto: `Hay créditos para unos ${n} videos más: unos ${n * 2} días al ritmo de uno cada 2 días.`});
+        ? {tipo: 'alerta', texto: `Energía para solo ${n} videos. Recarga OpenArt o baja la frecuencia.`}
+        : {tipo: 'dato', texto: `Energía para unos ${n} videos más: ${n * 2} días al ritmo de uno cada 2 días.`});
     }
     const cola = videos.filter((v) => v.estado === 'pendiente').length;
     if (cola <= 3) lista.push({tipo: 'alerta', texto: `Quedan ${cola} guiones en cola. Pide a Claude el siguiente plan de 15 videos.`});
@@ -319,34 +432,70 @@
   }});
 
   const fmt = d3.format(',');
+  const pct = d3.format('.0%');
   const compacto = (n) => (Math.abs(n) >= 10000 ? new Intl.NumberFormat('es-MX', {notation: 'compact', maximumFractionDigits: 1}).format(n) : fmt(n));
-  const mx = (iso) => { if (!iso) return ''; const d = new Date(iso); return d.toLocaleString('es-MX', {timeZone: 'America/Mexico_City', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'}); };
+  const mx = (iso, opciones = {day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'}) => (iso ? new Date(iso).toLocaleString('es-MX', {timeZone: 'America/Mexico_City', ...opciones}) : '');
   const ESTADOS = {pendiente: ['En cola', ''], listo_para_publicar: ['Listo', 'ready'], en_proceso: ['Generando', 'run'], en_curso: ['En curso', 'run'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'bad'], omitido: ['Omitido', '']};
-  const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación económica'};
+  const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación $'};
   const REDES = {instagram: 'Instagram', tiktok: 'TikTok', youtube: 'YouTube', facebook: 'Facebook'};
-  const AMARILLO = '#f2c230', CIAN = '#49d6ec', ROJO = '#e5304a', PANEL = '#0e151d';
+  const ORO = '#f5c542', CIAN = '#49d6ec', ROJO = '#ff3b55', FONDO = '#08111a';
 
-  const uno = (id, campo) => { const r = dash.data(id); return r.status === 'ok' && r.data[0] ? r.data[0][campo] : null; };
-  const numero = (nombre, id, campo, formato = fmt) => dash.draw(nombre, (el) => { const v = uno(id, campo); el.textContent = v == null ? '—' : formato(v); });
-
+  const fila = (id) => { const r = dash.data(id); return r.status === 'ok' && r.data[0] ? r.data[0] : null; };
+  const numero = (nombre, id, campo, formato = fmt) => dash.draw(nombre, (el) => { const f = fila(id); el.textContent = f && f[campo] != null ? formato(f[campo]) : '—'; });
   numero('s-publicados', 'resumen', 'publicados');
-  numero('s-fallos', 'resumen', 'fallos');
+  numero('s-listos', 'resumen', 'listos');
   numero('s-alcanzan', 'resumen', 'videos_que_alcanzan');
   numero('t-publicados', 'resumen', 'publicados');
   numero('t-vistas', 'resumen', 'vistas', compacto);
+  numero('t-calidad', 'resumen', 'calidad_promedio', pct);
   numero('t-cola', 'resumen', 'en_cola');
   numero('t-fallos', 'resumen', 'fallos');
-  numero('t-restantes', 'resumen', 'creditos_restantes');
-  numero('t-usados', 'resumen', 'creditos_usados');
-  numero('s-costo', 'resumen', 'costo_promedio_video');
-  numero('s-dias', 'resumen', 'dias_que_alcanzan');
+  numero('t-lecciones', 'resumen', 'lecciones');
+  numero('a-usados', 'resumen', 'creditos_usados');
+  numero('a-costo', 'resumen', 'costo_promedio_video');
+  numero('a-dias', 'resumen', 'dias_que_alcanzan');
 
   dash.onData(() => {
-    for (const id of ['por_red', 'mejores_horas', 'por_hora', 'por_pilar', 'por_dia']) {
-      const r = dash.data(id);
-      const vacio = r.status === 'ok' && r.data.length === 0;
-      document.querySelectorAll(`[data-vacio="${id}"]`).forEach((p) => { p.hidden = !vacio; });
-    }
+    const vacio = (id, prueba) => { const r = dash.data(id); return r.status === 'ok' && prueba(r.data); };
+    const marca = (nombre, valor) => document.querySelectorAll(`[data-vacio="${nombre}"]`).forEach((p) => { p.hidden = !valor; });
+    marca('por_red', vacio('por_red', (d) => d.length === 0));
+    document.querySelectorAll('[data-lleno="por_red"]').forEach((caja) => { caja.hidden = !vacio('por_red', (d) => d.length > 0); });
+    marca('por_hora', vacio('por_hora', (d) => d.length === 0));
+    marca('por_pilar', vacio('por_pilar', (d) => d.length === 0));
+    marca('por_dia', vacio('por_dia', (d) => d.length === 0));
+    marca('mejores_horas', vacio('mejores_horas', (d) => d.every((x) => x.puntaje == null || x.puntaje === '')));
+    marca('vistas', vacio('evolucion', (d) => d.every((x) => x.vistas == null)));
+  });
+
+  dash.draw('foto', (el) => {
+    const f = fila('estado');
+    el.replaceChildren();
+    if (!f || !f.foto_perfil) return;
+    el.append(Object.assign(document.createElement('img'), {src: f.foto_perfil, alt: 'Victoria y Capital'}));
+  });
+
+  dash.draw('s-proxima-que', (el) => { const f = fila('estado'); el.textContent = f && f.proxima_que ? f.proxima_que : '—'; });
+  dash.draw('s-proxima', (el) => { const f = fila('estado'); el.textContent = f && f.proxima_ejecucion_utc ? mx(f.proxima_ejecucion_utc, {weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '—'; });
+
+  dash.draw('cuenta', {
+    mount(el) {
+      const pintar = () => {
+        const f = fila('estado');
+        const objetivo = f && f.proxima_ejecucion_utc ? new Date(f.proxima_ejecucion_utc).getTime() : null;
+        if (!objetivo) { el.textContent = '—'; return; }
+        let s = Math.max(0, Math.floor((objetivo - Date.now()) / 1000));
+        const partes = [['días', Math.floor(s / 86400)], ['hrs', Math.floor((s %= 86400) / 3600)], ['min', Math.floor((s %= 3600) / 60)], ['seg', s % 60]];
+        el.replaceChildren(...partes.map(([etq, n]) => {
+          const caja = document.createElement('span');
+          caja.append(Object.assign(document.createElement('b'), {textContent: String(n).padStart(2, '0')}), Object.assign(document.createElement('small'), {textContent: etq}));
+          return caja;
+        }));
+      };
+      pintar();
+      return {pintar, reloj: setInterval(pintar, 1000)};
+    },
+    update(el, hecho) { hecho.pintar(); },
+    unmount(el, hecho) { clearInterval(hecho.reloj); },
   });
 
   dash.draw('estado-sistema', (el) => {
@@ -356,69 +505,81 @@
     if (r.status !== 'ok' || !r.data.length) { el.append('—'); return; }
     const ultima = [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1)).pop();
     const [texto, clase] = ESTADOS[ultima.resultado] || [ultima.resultado, ''];
-    el.classList.add(clase === 'ready' ? 'ok' : clase || 'ok');
-    el.append(`Última ejecución: ${texto} · ${mx(ultima.fecha_utc)}`);
+    el.classList.add(clase === 'ready' || !clase ? 'ok' : clase);
+    el.append(`Última ejecución · ${texto} · ${mx(ultima.fecha_utc)}`);
   });
 
   function tooltip(el) {
     el.style.position = 'relative';
     const t = document.createElement('div');
-    t.className = 'vt-tip'; t.hidden = true; el.append(t);
+    t.className = 'hx-tip'; t.hidden = true; el.append(t);
     return {
-      mostrar(evento, titulo, valor) {
-        t.replaceChildren(Object.assign(document.createElement('span'), {textContent: titulo + '  '}), document.createTextNode(valor));
+      mostrar(e, titulo, valor) {
+        t.replaceChildren(Object.assign(document.createElement('span'), {textContent: `${titulo}  `}), document.createTextNode(valor));
         t.hidden = false;
         const caja = el.getBoundingClientRect();
-        const x = Math.min(Math.max(evento.clientX - caja.left + 12, 0), caja.width - t.offsetWidth);
-        t.style.left = `${x}px`; t.style.top = `${Math.max(evento.clientY - caja.top - 36, 0)}px`;
+        t.style.left = `${Math.min(Math.max(e.clientX - caja.left + 12, 0), Math.max(caja.width - t.offsetWidth, 0))}px`;
+        t.style.top = `${Math.max(e.clientY - caja.top - 34, 0)}px`;
       },
       ocultar() { t.hidden = true; },
     };
   }
 
-  dash.draw('g-tanque', (el) => {
+  dash.draw('g-reactor', (el) => {
     el.replaceChildren();
-    const restantes = uno('resumen', 'creditos_restantes');
-    const iniciales = uno('resumen', 'creditos_iniciales') || PRESUPUESTO_MES;
-    if (restantes == null) return;
-    const w = Math.max(el.clientWidth, 240), h = 170, r = Math.min(w / 2 - 16, 120);
+    const f = fila('resumen');
+    if (!f || f.creditos_restantes == null) return;
+    const w = Math.max(el.clientWidth, 240), h = 230, r = Math.min(w / 2 - 14, 104);
     const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`);
-    const g = svg.append('g').attr('transform', `translate(${w / 2},${r + 18})`);
-    const arco = d3.arc().innerRadius(r - 14).outerRadius(r).cornerRadius(3);
-    const inicio = -Math.PI / 2, fin = Math.PI / 2, pct = Math.max(0, Math.min(1, restantes / iniciales));
-    g.append('path').attr('d', arco({startAngle: inicio, endAngle: fin})).attr('fill', '#16212c');
-    for (let i = 0; i <= 10; i++) {
-      const a = inicio + (fin - inicio) * i / 10;
-      g.append('line').attr('x1', Math.sin(a) * (r + 4)).attr('y1', -Math.cos(a) * (r + 4)).attr('x2', Math.sin(a) * (r + 9)).attr('y2', -Math.cos(a) * (r + 9)).attr('stroke', '#2a3a4a').attr('stroke-width', 1.5);
-    }
-    g.append('path').attr('d', arco({startAngle: inicio, endAngle: inicio + (fin - inicio) * pct})).attr('fill', pct < 0.25 ? ROJO : AMARILLO).style('filter', `drop-shadow(0 0 6px ${pct < 0.25 ? ROJO : AMARILLO})`);
-    g.append('text').attr('class', 'big').attr('text-anchor', 'middle').attr('y', -16).attr('font-size', Math.round(r / 3)).text(fmt(restantes));
-    g.append('text').attr('class', 'cap').attr('text-anchor', 'middle').attr('y', 6).text(`DE ${fmt(iniciales)} · ${Math.round(pct * 100)}% DEL TANQUE`);
+    const g = svg.append('g').attr('transform', `translate(${w / 2},${h / 2})`);
+    const segmentos = 48, lleno = f.creditos_restantes / (f.creditos_iniciales || 12000);
+    const arco = d3.arc().innerRadius(r - 16).outerRadius(r).padAngle(0.025);
+    const color = lleno < 0.25 ? ROJO : ORO;
+    d3.range(segmentos).forEach((i) => {
+      const a0 = (i / segmentos) * 2 * Math.PI, a1 = ((i + 1) / segmentos) * 2 * Math.PI;
+      const on = i / segmentos < lleno;
+      g.append('path').attr('d', arco({startAngle: a0, endAngle: a1})).attr('fill', on ? color : '#14212c').attr('opacity', on ? 0.95 : 1)
+        .style('filter', on ? `drop-shadow(0 0 4px ${color})` : null);
+    });
+    g.append('circle').attr('r', r - 26).attr('fill', 'none').attr('stroke', CIAN).attr('stroke-opacity', 0.35).attr('stroke-dasharray', '2 5');
+    g.append('circle').attr('r', r - 32).attr('fill', 'rgba(73,214,236,.06)').attr('stroke', CIAN).attr('stroke-opacity', 0.5);
+    g.append('text').attr('class', 'pct').attr('text-anchor', 'middle').attr('y', -Math.round(r / 4.2)).text(`${Math.round(lleno * 100)}%`);
+    g.append('text').attr('class', 'num').attr('text-anchor', 'middle').attr('y', Math.round(r / 9)).style('font-size', `${Math.round(r / 3.4)}px`).text(fmt(f.creditos_restantes));
+    g.append('text').attr('class', 'cap').attr('text-anchor', 'middle').attr('y', Math.round(r / 3.1)).text('CRÉDITOS');
   });
 
-  function barras(el, filas, {etiqueta, valor, color, formato = fmt, alto = 200}) {
+  function barras(el, filas, {etiqueta, valor, color, formato = fmt, alto = 200, linea = null}) {
     el.replaceChildren();
     if (!filas.length) return;
     const tip = tooltip(el);
-    const w = Math.max(el.clientWidth, 260), m = {t: 22, r: 12, b: 28, l: 12};
+    const w = Math.max(el.clientWidth, 260), m = {t: 22, r: 10, b: 28, l: 10};
     const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${alto}`);
-    const x = d3.scaleBand(filas.map(etiqueta), [m.l, w - m.r]).padding(0.35);
-    const y = d3.scaleLinear([0, d3.max(filas, valor) || 1], [alto - m.b, m.t]).nice();
+    const x = d3.scaleBand(filas.map(etiqueta), [m.l, w - m.r]).padding(0.38);
+    const tope = Math.max(d3.max(filas, valor) || 1, linea || 0);
+    const y = d3.scaleLinear([0, tope], [alto - m.b, m.t]).nice();
     svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y).attr('y2', y);
+    const ancho = Math.min(x.bandwidth(), 40);
+    const id = `hx-g-${Math.random().toString(36).slice(2, 8)}`;
+    const grad = svg.append('defs').append('linearGradient').attr('id', id).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    grad.append('stop').attr('offset', 0).style('stop-color', color).style('stop-opacity', 1);
+    grad.append('stop').attr('offset', 1).style('stop-color', color).style('stop-opacity', 0.25);
     svg.append('g').selectAll('rect').data(filas).join('rect')
-      .attr('x', (d) => x(etiqueta(d))).attr('width', Math.min(x.bandwidth(), 46)).attr('y', (d) => y(valor(d))).attr('height', (d) => y(0) - y(valor(d)))
-      .attr('rx', 3).attr('fill', color).attr('transform', (d) => `translate(${(x.bandwidth() - Math.min(x.bandwidth(), 46)) / 2},0)`)
+      .attr('x', (d) => x(etiqueta(d)) + (x.bandwidth() - ancho) / 2).attr('width', ancho).attr('y', (d) => y(valor(d))).attr('height', (d) => y(0) - y(valor(d)))
+      .attr('rx', 2).attr('fill', `url(#${id})`).attr('stroke', color).attr('stroke-opacity', 0.8)
       .on('pointermove', (e, d) => tip.mostrar(e, etiqueta(d), formato(valor(d)))).on('pointerleave', () => tip.ocultar());
     svg.append('g').selectAll('text').data(filas).join('text').attr('text-anchor', 'middle')
-      .attr('x', (d) => x(etiqueta(d)) + x.bandwidth() / 2).attr('y', (d) => y(valor(d)) - 6).style('fill', '#e8eef4').text((d) => formato(valor(d)));
-    const eje = svg.append('g').attr('transform', `translate(0,${alto - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(10));
-    eje.attr('font-size', null).attr('font-family', null);
+      .attr('x', (d) => x(etiqueta(d)) + x.bandwidth() / 2).attr('y', (d) => y(valor(d)) - 6).style('fill', '#e9f6fb').text((d) => formato(valor(d)));
+    if (linea != null) {
+      svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(linea)).attr('y2', y(linea)).attr('stroke', ROJO).attr('stroke-dasharray', '4 4').attr('stroke-opacity', 0.8);
+      svg.append('text').attr('x', w - m.r).attr('y', y(linea) - 5).attr('text-anchor', 'end').style('fill', ROJO).text(`mínimo ${formato(linea)}`);
+    }
+    svg.append('g').attr('transform', `translate(0,${alto - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(10)).call((g) => g.select('.domain').attr('stroke', 'rgba(73,214,236,.3)')).attr('font-size', null).attr('font-family', null);
   }
 
   dash.draw('g-gasto', (el) => {
     const r = dash.data('ejecuciones');
-    const filas = r.status === 'ok' ? [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1)).map((e, i) => ({...e, n: `${i + 1}${e.video_id ? ' · v' + e.video_id : ''}`})) : [];
-    barras(el, filas, {etiqueta: (d) => d.n, valor: (d) => Number(d.creditos_usados) || 0, color: AMARILLO});
+    const filas = r.status === 'ok' ? [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1)).map((e, i) => ({...e, n: e.video_id ? `v${e.video_id}` : `#${i + 1}`})) : [];
+    barras(el, filas, {etiqueta: (d) => d.n, valor: (d) => Number(d.creditos_usados) || 0, color: ORO});
   });
 
   dash.draw('g-saldo', (el) => {
@@ -427,43 +588,80 @@
     if (r.status !== 'ok' || !r.data.length) return;
     const filas = [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1));
     const usados = d3.sum(filas, (d) => Number(d.creditos_usados) || 0);
-    const puntos = [{n: 'inicio', restantes: Number(filas[filas.length - 1].creditos_restantes) + usados}, ...filas.map((e, i) => ({n: `${i + 1}`, restantes: Number(e.creditos_restantes), detalle: e.detalle}))];
+    const puntos = [{n: 'inicio', restantes: Number(filas[filas.length - 1].creditos_restantes) + usados, detalle: 'Saldo inicial'},
+      ...filas.map((e, i) => ({n: e.video_id ? `v${e.video_id}` : `#${i + 1}`, restantes: Number(e.creditos_restantes), detalle: e.detalle}))];
     const tip = tooltip(el);
-    const w = Math.max(el.clientWidth, 260), h = 220, m = {t: 24, r: 56, b: 28, l: 12};
+    const w = Math.max(el.clientWidth, 260), h = 220, m = {t: 24, r: 50, b: 28, l: 12};
     const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`);
     const x = d3.scalePoint(puntos.map((d) => d.n), [m.l + 8, w - m.r]);
     const y = d3.scaleLinear([0, d3.max(puntos, (d) => d.restantes)], [h - m.b, m.t]).nice();
     svg.append('g').attr('class', 'grid').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y).attr('y2', y);
-    const id = 'vt-saldo-grad';
+    const id = `hx-s-${Math.random().toString(36).slice(2, 8)}`;
     const grad = svg.append('defs').append('linearGradient').attr('id', id).attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
     [[0, .26], [.25, .16], [.5, .08], [.75, .03], [1, 0]].forEach(([o, a]) => grad.append('stop').attr('offset', o).style('stop-color', CIAN).style('stop-opacity', a));
     svg.append('path').datum(puntos).attr('fill', `url(#${id})`).attr('d', d3.area().x((d) => x(d.n)).y0(y(0)).y1((d) => y(d.restantes)));
-    svg.append('path').datum(puntos).attr('fill', 'none').attr('stroke', CIAN).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x((d) => x(d.n)).y((d) => y(d.restantes)));
-    svg.append('g').selectAll('circle').data(puntos).join('circle').attr('cx', (d) => x(d.n)).attr('cy', (d) => y(d.restantes)).attr('r', 4).attr('fill', PANEL).attr('stroke', CIAN).attr('stroke-width', 2)
-      .on('pointermove', (e, d) => tip.mostrar(e, d.detalle || 'Saldo inicial', `${fmt(d.restantes)} créditos`)).on('pointerleave', () => tip.ocultar());
+    svg.append('path').datum(puntos).attr('fill', 'none').attr('stroke', CIAN).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
+      .style('filter', `drop-shadow(0 0 4px ${CIAN})`).attr('d', d3.line().x((d) => x(d.n)).y((d) => y(d.restantes)));
+    svg.append('g').selectAll('circle').data(puntos).join('circle').attr('cx', (d) => x(d.n)).attr('cy', (d) => y(d.restantes)).attr('r', 4).attr('fill', FONDO).attr('stroke', CIAN).attr('stroke-width', 2)
+      .on('pointermove', (e, d) => tip.mostrar(e, d.detalle, `${fmt(d.restantes)} créditos`)).on('pointerleave', () => tip.ocultar());
     const ultimo = puntos[puntos.length - 1];
-    svg.append('text').attr('x', x(ultimo.n) + 8).attr('y', y(ultimo.restantes) + 4).style('fill', CIAN).text(fmt(ultimo.restantes));
-    svg.append('g').attr('transform', `translate(${w - m.r + 6},0)`).call(d3.axisRight(y).ticks(4).tickSize(0).tickFormat(compacto)).call((g) => g.select('.domain').remove()).attr('font-size', null).attr('font-family', null);
-    svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(10)).attr('font-size', null).attr('font-family', null);
+    svg.append('text').attr('x', x(ultimo.n) + 8).attr('y', y(ultimo.restantes) + 4).style('fill', CIAN).text(compacto(ultimo.restantes));
+    svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(10)).call((g) => g.select('.domain').attr('stroke', 'rgba(73,214,236,.3)')).attr('font-size', null).attr('font-family', null);
+  });
+
+  dash.draw('hangar', (el) => {
+    const r = dash.data('videos');
+    el.replaceChildren();
+    if (r.status !== 'ok') return;
+    r.data.forEach((v) => {
+      const card = document.createElement('div');
+      card.className = 'hx-card';
+      const poster = document.createElement('div');
+      poster.className = 'poster';
+      if (v.miniatura) poster.append(Object.assign(document.createElement('img'), {src: v.miniatura, alt: `Video ${v.id}`, loading: 'lazy'}));
+      else poster.append(Object.assign(document.createElement('em'), {textContent: `${(v.locacion || '').replace('_', ' ')} · por generar`}));
+      poster.append(Object.assign(document.createElement('span'), {className: 'num', textContent: v.id}));
+      const info = document.createElement('div');
+      info.className = 'info';
+      const [texto, clase] = ESTADOS[v.estado] || [v.estado, ''];
+      info.append(Object.assign(document.createElement('span'), {className: `hx-chip ${clase}`, textContent: texto}));
+      info.append(Object.assign(document.createElement('p'), {textContent: v.gancho}));
+      const partes = [PILARES[v.pilar] || v.pilar];
+      if (Number(v.qa_similitud) > 0) partes.push(`calidad ${pct(Number(v.qa_similitud))}`);
+      const vistas = REDES_CORTAS.some((x) => v[`v_${x}`] != null && v[`v_${x}`] !== '') ? `${compacto(totalVistas(v))} vistas` : null;
+      if (vistas) partes.push(vistas);
+      info.append(Object.assign(document.createElement('p'), {className: 'met', textContent: partes.join(' · ')}));
+      card.append(poster, info);
+      el.append(card);
+    });
+  });
+
+  dash.draw('g-calidad', (el) => {
+    const r = dash.data('evolucion');
+    barras(el, r.status === 'ok' ? r.data : [], {etiqueta: (d) => `v${d.id}`, valor: (d) => d.calidad, color: CIAN, formato: pct, alto: 190, linea: 0.85});
+  });
+  dash.draw('g-vistas', (el) => {
+    const r = dash.data('evolucion');
+    barras(el, r.status === 'ok' ? r.data.filter((d) => d.vistas != null) : [], {etiqueta: (d) => `v${d.id}`, valor: (d) => d.vistas, color: ORO, formato: compacto, alto: 190});
   });
 
   dash.draw('g-calor', (el) => {
     el.replaceChildren();
     const r = dash.data('mejores_horas');
-    if (r.status !== 'ok' || !r.data.length) return;
+    if (r.status !== 'ok') return;
+    const celdas = r.data.map((d) => ({dia: d.dia, hora: Number(d.hora), puntaje: d.puntaje == null || d.puntaje === '' ? null : Number(d.puntaje)}));
+    if (celdas.every((c) => c.puntaje == null)) return;
     const dias = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
-    const celdas = d3.rollups(r.data, (v) => d3.mean(v, (d) => Number(d.puntaje) || 0), (d) => d.dia, (d) => Number(d.hora))
-      .flatMap(([dia, horas]) => horas.map(([hora, puntaje]) => ({dia, hora, puntaje})));
     const tip = tooltip(el);
-    const w = Math.max(el.clientWidth, 280), m = {t: 6, r: 6, b: 24, l: 34}, celda = (w - m.l - m.r) / 24, h = m.t + m.b + celda * 7;
+    const w = Math.max(el.clientWidth, 280), m = {t: 6, r: 6, b: 24, l: 34}, lado = (w - m.l - m.r) / 24, h = m.t + m.b + lado * 7;
     const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`);
-    const color = d3.scaleLinear([0, d3.max(celdas, (d) => d.puntaje) || 1], [0, 1]);
+    const escala = d3.scaleLinear([0, d3.max(celdas, (d) => d.puntaje || 0) || 1], [0, 1]);
     svg.append('g').selectAll('rect').data(celdas).join('rect')
-      .attr('x', (d) => m.l + d.hora * celda + 1).attr('y', (d) => m.t + dias.indexOf(d.dia) * celda + 1).attr('width', celda - 2).attr('height', celda - 2).attr('rx', 2)
-      .attr('fill', (d) => d3.interpolateRgb('#111a23', AMARILLO)(color(d.puntaje)))
-      .on('pointermove', (e, d) => tip.mostrar(e, `${d.dia} ${String(d.hora).padStart(2, '0')}:00`, `puntaje ${d3.format('.1f')(d.puntaje)}`)).on('pointerleave', () => tip.ocultar());
-    svg.append('g').selectAll('text').data(dias).join('text').attr('x', m.l - 6).attr('y', (d, i) => m.t + i * celda + celda / 2 + 4).attr('text-anchor', 'end').text((d) => d);
-    svg.append('g').selectAll('text').data([0, 6, 12, 18, 23]).join('text').attr('x', (d) => m.l + d * celda + celda / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((d) => `${d}h`);
+      .attr('x', (d) => m.l + d.hora * lado + 1).attr('y', (d) => m.t + dias.indexOf(d.dia) * lado + 1).attr('width', lado - 2).attr('height', lado - 2).attr('rx', 1)
+      .attr('fill', (d) => (d.puntaje == null ? '#0b161f' : d3.interpolateRgb('#0e1d28', ORO)(escala(d.puntaje))))
+      .on('pointermove', (e, d) => tip.mostrar(e, `${d.dia} ${String(d.hora).padStart(2, '0')}:00`, d.puntaje == null ? 'sin datos' : `puntaje ${d3.format('.1f')(d.puntaje)}`)).on('pointerleave', () => tip.ocultar());
+    svg.append('g').selectAll('text').data(dias).join('text').attr('x', m.l - 6).attr('y', (d, i) => m.t + i * lado + lado / 2 + 4).attr('text-anchor', 'end').text((d) => d);
+    svg.append('g').selectAll('text').data([0, 6, 12, 18, 23]).join('text').attr('x', (d) => m.l + d * lado + lado / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((d) => `${d}h`);
   });
 
   const porGrupo = (id, color, nombres = {}) => (el) => {
@@ -471,24 +669,35 @@
     barras(el, r.status === 'ok' ? r.data : [], {etiqueta: (d) => nombres[d.grupo] || d.grupo, valor: (d) => d.vistas_promedio, color, formato: compacto, alto: 190});
   };
   dash.draw('g-hora', porGrupo('por_hora', CIAN));
-  dash.draw('g-pilar', porGrupo('por_pilar', AMARILLO, PILARES));
+  dash.draw('g-pilar', porGrupo('por_pilar', ORO, PILARES));
   dash.draw('g-dia', porGrupo('por_dia', CIAN));
 
+  const item = (clase, etiqueta, texto, detalle) => {
+    const li = document.createElement('li');
+    li.className = clase;
+    const cuerpo = document.createElement('span');
+    cuerpo.append(document.createTextNode(texto));
+    if (detalle) cuerpo.append(Object.assign(document.createElement('i'), {textContent: detalle}));
+    li.append(Object.assign(document.createElement('small'), {textContent: etiqueta}), cuerpo);
+    return li;
+  };
   dash.draw('lista-mejoras', (ol) => {
     const r = dash.data('mejoras');
     ol.replaceChildren();
     if (r.status !== 'ok') return;
     const etiquetas = {dato: 'Dato', alerta: 'Alerta', idea: 'Mejora'};
-    r.data.forEach((m) => {
-      const li = document.createElement('li');
-      li.className = m.tipo;
-      li.append(Object.assign(document.createElement('small'), {textContent: etiquetas[m.tipo] || m.tipo}), Object.assign(document.createElement('span'), {textContent: m.texto}));
-      ol.append(li);
-    });
+    r.data.forEach((m) => ol.append(item(m.tipo, etiquetas[m.tipo] || m.tipo, m.texto)));
+  });
+  dash.draw('lista-lecciones', (ol) => {
+    const r = dash.data('aprendizajes');
+    ol.replaceChildren();
+    if (r.status !== 'ok') return;
+    const etiquetas = {tecnico: 'Técnica', contenido: 'Contenido', publicacion: 'Publicar'};
+    [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? 1 : -1)).forEach((a) => ol.append(item(a.tipo, etiquetas[a.tipo] || a.tipo, a.regla, `${a.origen}: ${a.aprendizaje}`)));
   });
 
   const celda = (texto, clase) => { const td = document.createElement('td'); if (clase) td.className = clase; td.textContent = texto; return td; };
-  const chip = (estado) => { const [texto, clase] = ESTADOS[estado] || [estado, '']; const td = document.createElement('td'); td.append(Object.assign(document.createElement('span'), {className: `vt-chip ${clase}`, textContent: texto})); return td; };
+  const chip = (estado) => { const [texto, clase] = ESTADOS[estado] || [estado, '']; const td = document.createElement('td'); td.append(Object.assign(document.createElement('span'), {className: `hx-chip ${clase}`, textContent: texto})); return td; };
 
   dash.draw('tabla-redes', (tbody) => {
     const r = dash.data('por_red');
@@ -497,7 +706,7 @@
     r.data.forEach((d) => {
       const tr = document.createElement('tr');
       tr.dataset.key = d.red;
-      tr.append(celda(REDES[d.red] || d.red), celda(fmt(d.posts), 'n'), celda(fmt(d.vistas), 'n'), celda(fmt(d.likes), 'n'), celda(fmt(d.comentarios), 'n'), celda(fmt(d.compartidos), 'n'), celda(fmt(d.guardados), 'n'), celda(fmt(d.vistas_promedio), 'n'));
+      tr.append(celda(REDES[d.red] || d.red), celda(fmt(d.videos), 'n'), celda(fmt(d.vistas), 'n'), celda(fmt(d.likes), 'n'), celda(fmt(d.comentarios), 'n'), celda(fmt(d.compartidos), 'n'), celda(fmt(d.guardados), 'n'), celda(fmt(d.vistas_por_video), 'n'));
       tbody.append(tr);
     });
   });
@@ -508,8 +717,7 @@
     if (r.status !== 'ok') return;
     r.data.forEach((v) => {
       const tr = document.createElement('tr');
-      const qa = v.qa_similitud === '' || v.qa_similitud == null ? '' : d3.format('.0%')(Number(v.qa_similitud));
-      tr.append(celda(v.id), chip(v.estado), celda(PILARES[v.pilar] || v.pilar), celda(v.locacion.replace('_', ' ')), celda(v.fuente), celda(v.publica_mx), celda(qa, 'n'), celda(v.creditos === '' ? '' : fmt(v.creditos), 'n'));
+      tr.append(celda(v.id), chip(v.estado), celda(PILARES[v.pilar] || v.pilar), celda((v.locacion || '').replace('_', ' ')), celda(v.gancho), celda(v.publica_mx), celda(Number(v.qa_similitud) > 0 ? pct(Number(v.qa_similitud)) : '', 'n'), celda(v.creditos == null ? '' : fmt(v.creditos), 'n'));
       tbody.append(tr);
     });
   });

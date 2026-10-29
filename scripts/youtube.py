@@ -7,7 +7,8 @@ Comandos:
       Muestra el canal al que apunta el permiso.
   python youtube.py subir video.mp4 "Título" descripcion.txt "2026-10-30T02:47:00Z" [--prueba]
       Sube el video programado para esa hora (UTC). Si faltan menos de 15 minutos, lo publica
-      de inmediato. --prueba imprime los metadatos sin llamar a la API.
+      de inmediato. Si el canal ya tiene un video con ese título, no lo vuelve a subir.
+      --prueba imprime los metadatos sin llamar a la API.
 
 Solo sube si el nombre del canal contiene "filtro_cuentas" de contenido/config.json.
 Marca el video como contenido sintético (status.containsSyntheticMedia) por ser hecho con IA.
@@ -67,6 +68,18 @@ def canal(acceso):
     return items[0]['id'], items[0]['snippet']['title']
 
 
+def ya_subido(acceso, canal_id, titulo):
+    """Enlace del video si el canal ya tiene uno con este título (aunque sea privado o programado)."""
+    cabeceras = {'Authorization': f'Bearer {acceso}'}
+    _, cuerpo = _http('GET', f'{API}/channels?part=contentDetails&id={canal_id}', headers=cabeceras)
+    lista = json.loads(cuerpo)['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+    _, cuerpo = _http('GET', f'{API}/playlistItems?part=snippet&maxResults=50&playlistId={lista}', headers=cabeceras)
+    for item in json.loads(cuerpo).get('items') or []:
+        if item['snippet']['title'].strip() == titulo[:100].strip():
+            return 'https://youtube.com/shorts/' + item['snippet']['resourceId']['videoId']
+    return None
+
+
 def metadatos(titulo, descripcion, cuando):
     publica = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00'))
     inmediato = publica - datetime.datetime.now(datetime.timezone.utc) < datetime.timedelta(minutes=15)
@@ -101,6 +114,14 @@ def main():
     canal_id, nombre = canal(acceso)
     if CONFIG['filtro_cuentas'].lower() not in nombre.lower():
         sys.exit(f"ERROR: el permiso apunta al canal '{nombre}', que no es de Victoria. No subo nada.")
+    try:
+        previo = ya_subido(acceso, canal_id, titulo)
+    except SystemExit as e:  # un canal sin videos todavía no tiene lista de subidas
+        print(f'AVISO: no pude revisar si ya estaba subido ({e}); sigo.')
+        previo = None
+    if previo:
+        print(f"OMITIDO: '{nombre}' ya tiene este video: {previo}")
+        return
 
     contenido = open(video, 'rb').read()
     cabeceras, _ = _http(

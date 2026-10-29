@@ -8,7 +8,8 @@ Uso: python tablero.py
   anteriores.
 - ejecuciones.json y aprendizajes.json: copias de contenido/.
 - mejores_horas.json: rejilla día × hora de Publer (best_times); vacía (puntaje nulo) si no hay datos.
-- estado.json: un renglón con la próxima ejecución, la foto de perfil y datos fijos del canal.
+- estado.json: un renglón con la próxima ejecución (la tarea cada 2 días o una única de
+  config.json → ejecuciones_unicas, la que llegue antes), la foto de perfil y datos fijos del canal.
 
 El tablero no acepta archivos sin renglones: ninguno de estos queda vacío.
 Después, la sesión que lo corre sube los archivos al tablero (docs/PIPELINE.md, paso 10).
@@ -111,6 +112,7 @@ def proxima_ejecucion(ahora):
 
 def main():
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
+    config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
     anteriores = metricas_anteriores()
     filas = []
     for v in plan['videos']:
@@ -151,6 +153,13 @@ def main():
 
     ahora = datetime.datetime.now(datetime.timezone.utc)
     proxima = proxima_ejecucion(ahora)
+    unicas = {u['video_id'] for u in config.get('ejecuciones_unicas', [])}
+    listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar' and v['id'] not in unicas), None)
+    proxima_que = f'Publicar video {listo} (ya generado)' if listo else 'Generar y publicar el siguiente video'
+    for u in config.get('ejecuciones_unicas', []):
+        cuando = datetime.datetime.fromisoformat(u['utc'].replace('Z', '+00:00'))
+        if ahora < cuando and (not proxima or cuando < proxima):
+            proxima, proxima_que = cuando, u['que']
     perfil = os.path.join(RAIZ, 'perfil', 'foto-perfil-1080.jpg')
     foto = ''
     if os.path.exists(perfil):
@@ -161,6 +170,7 @@ def main():
         'canal': '@victoriatheceo',
         'frecuencia': 'Un video cada 2 días',
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
+        'proxima_que': proxima_que if proxima else '',
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'creditos_plan_mes': 12000,
         'foto_perfil': foto,

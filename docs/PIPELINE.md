@@ -6,7 +6,8 @@ regla principal es: **si algo no pasa el control de calidad, NO se publica** y s
 ## 0. Preparación
 
 1. El repo debe estar en `/home/user/ai-girl` con permiso de escritura (`add_repo` con
-   `access: "push"` para `rodrigodelcastillo117-dotcom/ai-girl`, luego `git clone`).
+   `access: "push"` para `rodrigodelcastillo117-dotcom/ai-girl`, luego `git clone`). Si `add_repo`
+   no existe en la sesión, clónalo por HTTPS público y sigue: publicar no depende del push.
 2. Entorno de Python para subtítulos:
    `python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q faster-whisper num2words`.
    Con faster-whisper, decodificar el audio con ffmpeg (ver `scripts/transcribir.py`); la versión
@@ -21,6 +22,7 @@ regla principal es: **si algo no pasa el control de calidad, NO se publica** y s
 - **Si hay un video con `"estado": "listo_para_publicar"`**, ese es el de esta ejecución: ya está
   generado, revisado y subtitulado (`archivo`). No generes nada: ve directo al paso 7 con su
   archivo y su `hora_publicacion`, y después a los pasos 8 a 10.
+- Salta los videos que aparezcan en `config.json → ejecuciones_unicas`: los publica otra tarea.
 - Si no, el primero de `contenido/plan.json` con `"estado": "pendiente"`.
 - Confirmar que su `vestuario` no aparece en ningún video con otro estado. Si se repite, cambiarlo
   por uno nuevo acorde a la locación y anotarlo en el plan.
@@ -125,6 +127,10 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
   Solo publica en cuentas cuyo nombre contiene `filtro_cuentas`. Si la API responde algo
   inesperado, consultar https://publer.com/docs, corregir `scripts/publer.py`, volver a intentar
   una vez y dejar la corrección en el commit.
+- **Duplicados:** `publer.py` omite las cuentas que ya tienen un post con la misma primera línea y
+  `youtube.py` no sube un video si el canal ya tiene uno con el mismo título (pasa si una ejecución
+  anterior publicó pero no pudo guardar en el repo). Si responden `OMITIDO`, el video ya estaba
+  programado: regístralo como `programado` y no lo vuelvas a subir.
 - **YouTube Shorts va aparte, sin Publer:** si existen `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET` y
   `YOUTUBE_REFRESH_TOKEN` en el entorno, `python scripts/youtube.py subir <video> "<título>"
   <texto.txt> <hora_utc>` con el mismo texto y la misma hora. Si no existen, se omite YouTube y se
