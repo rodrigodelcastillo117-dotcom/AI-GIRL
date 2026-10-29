@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -76,10 +77,14 @@ def main():
         meta['id'] = id_yt
         cabeceras = {'Authorization': f'Bearer {acceso}', 'Content-Type': 'application/json; charset=UTF-8'}
         youtube._http('PUT', f'{youtube.API}/videos?part=snippet,status', json.dumps(meta).encode(), cabeceras)
-        _, cuerpo = youtube._http('GET', f'{youtube.API}/videos?part=snippet,status&id={id_yt}',
-                                  headers={'Authorization': f'Bearer {acceso}'})
-        item = json.loads(cuerpo)['items'][0]
-        estado = item['status']
+        for intento in range(6):  # YouTube tarda unos segundos en mostrar el cambio
+            _, cuerpo = youtube._http('GET', f'{youtube.API}/videos?part=snippet,status&id={id_yt}',
+                                      headers={'Authorization': f'Bearer {acceso}'})
+            item = json.loads(cuerpo)['items'][0]
+            estado = item['status']
+            if estado.get('publishAt', '')[:16] == cuando[:16]:
+                break
+            time.sleep(5)
         if item['snippet']['title'] != textos['titulo'] or estado.get('publishAt', '')[:16] != cuando[:16]:
             sys.exit(f"ERROR: YouTube no quedó como se pidió: {item['snippet']['title']} · {estado}")
         print(f"YouTube: {enlace} · {estado.get('privacyStatus')} hasta {estado.get('publishAt')} · \"{item['snippet']['title']}\"")
