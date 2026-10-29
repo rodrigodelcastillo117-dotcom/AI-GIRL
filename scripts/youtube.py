@@ -11,8 +11,9 @@ Comandos:
       --tags lee los tags separados por coma (los arma scripts/seo.py); sin él usa unos generales.
       --prueba imprime los metadatos sin llamar a la API.
 
-Solo sube al canal de contenido/config.json → canal_youtube, o a uno cuyo nombre contenga
-"filtro_cuentas" (el canal se llamaba "Nadie Te Lo Explicó" y la API tarda en dar el nombre nuevo).
+Solo sube si el canal del permiso es exactamente contenido/config.json → canal_youtube (regla 1:
+una vez se subieron videos al canal equivocado por no comprobarlo). Sube en privado con hora de
+publicación y después comprueba que YouTube lo tenga así (reglas 2 y 34).
 Marca el video como contenido sintético (status.containsSyntheticMedia) por ser hecho con IA.
 """
 import datetime
@@ -117,8 +118,8 @@ def main():
 
     acceso = token()
     canal_id, nombre = canal(acceso)
-    if canal_id != CONFIG.get('canal_youtube') and CONFIG['filtro_cuentas'].lower() not in nombre.lower():
-        sys.exit(f"ERROR: el permiso apunta al canal '{nombre}', que no es de Victoria. No subo nada.")
+    if canal_id != CONFIG.get('canal_youtube'):
+        sys.exit(f"ERROR: el permiso apunta al canal '{nombre}' ({canal_id}), no a {CONFIG.get('canal_youtube')}. No subo nada.")
     try:
         previo = ya_subido(acceso, canal_id, titulo)
     except SystemExit as e:  # un canal sin videos todavía no tiene lista de subidas
@@ -137,7 +138,11 @@ def main():
     _, cuerpo = _http('PUT', cabeceras['Location'], contenido,
                       {'Authorization': f'Bearer {acceso}', 'Content-Type': 'video/mp4'})
     subido = json.loads(cuerpo)
-    estado = subido.get('status', {})
+    _, cuerpo = _http('GET', f"{API}/videos?part=status,snippet&id={subido['id']}", headers={'Authorization': f'Bearer {acceso}'})
+    revisado = (json.loads(cuerpo).get('items') or [{}])[0]
+    estado = revisado.get('status', {})
+    if not revisado or revisado['snippet']['title'] != meta['snippet']['title'] or estado.get('uploadStatus') in ('failed', 'rejected', 'deleted'):
+        sys.exit(f"ERROR: YouTube no muestra el video como se subió ({subido['id']}): {json.dumps(estado)[:500]}")
     print(f"OK subido a '{nombre}': https://youtube.com/shorts/{subido['id']} "
           f"| privacidad={estado.get('privacyStatus')} publica={estado.get('publishAt', 'ya')}")
 

@@ -10,8 +10,74 @@
   "6a96586502b3146e69fa11b0": "tiktok"
  },
  "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
- "hora_generacion": "06:37",
- "frecuencia": "diaria",
- "un_video_por_dia": true,
- "saltar_dias_que_pierden": true
+ "frecuencia": "cada_2_dias",
+ "dias_entre_videos": 2,
+ "hora_auditoria": "06:37",
+ "prueba_horas": {
+  "franjas": [
+   "18:45",
+   "08:00",
+   "14:00"
+  ],
+  "min_por_franja": 5,
+  "ganadora": null
+ },
+ "titulo_max": 45,
+ "hashtags_fijos": [
+  "#victoriatheceo",
+  "#emprendimiento",
+  "#finanzaspersonales",
+  "#mentalidad"
+ ],
+ "tags_genericas": [
+  "negocios",
+  "dinero",
+  "finanzas personales",
+  "emprendimiento",
+  "mentalidad",
+  "motivacion",
+  "exito",
+  "desarrollo personal",
+  "educacion financiera",
+  "victoria the ceo"
+ ],
+ "tags_formato": {
+  "negocio": [
+   "consejos para emprendedores",
+   "consejos para emprendedoras",
+   "consejos de negocios",
+   "como emprender",
+   "ideas de negocio"
+  ],
+  "finanzas": [
+   "consejos de finanzas",
+   "como ahorrar dinero",
+   "como invertir",
+   "finanzas para principiantes",
+   "libertad financiera"
+  ],
+  "mentalidad": [
+   "bienestar emocional",
+   "como manejar el estres",
+   "habitos saludables",
+   "mentalidad positiva",
+   "consejos de bienestar"
+  ],
+  "vida": [
+   "consejos de vida",
+   "habitos de exito",
+   "rutina diaria",
+   "como ser productivo",
+   "crecimiento personal"
+  ],
+  "motivacion_economica": [
+   "motivacion financiera",
+   "mentalidad millonaria",
+   "consejos de dinero",
+   "disciplina financiera",
+   "como ganar dinero"
+  ]
+ },
+ "enlace_venta": "",
+ "enlace_perfil": ""
 }

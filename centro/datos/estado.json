@@ -1,10 +1,10 @@
 [
  {
   "canal": "@victoriatheceo",
-  "frecuencia": "Un video diario a las 18:45",
-  "proxima_ejecucion_utc": "2026-10-29T12:37:00Z",
-  "proxima_que": "Auditoría (ese día ya sale el video 01 a las 20:47)",
-  "generado_utc": "2026-10-29T04:32:12Z",
+  "frecuencia": "Un video cada 2 días · auditoría diaria 06:37",
+  "proxima_ejecucion_utc": "2026-10-30T02:47:00Z",
+  "proxima_que": "Sale el video 01",
+  "generado_utc": "2026-10-29T04:42:55Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {

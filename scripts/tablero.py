@@ -10,8 +10,8 @@ Uso: python tablero.py
 - ejecuciones.json y aprendizajes.json: copias de contenido/.
 - mejores_horas.json: rejilla día × hora de Publer (best_times); vacía (puntaje nulo) si no hay datos.
 - auditoria.json: copia de contenido/auditoria.json (qué gana, qué pierde y la decisión del día).
-- estado.json: un renglón con la próxima ejecución (la tarea diaria o una única de
-  config.json → ejecuciones_unicas, la que llegue antes), la foto de perfil y datos fijos del canal.
+- estado.json: un renglón con la salida del siguiente video (lo programado o lo que toca según la
+  frecuencia y la prueba de horarios), la foto de perfil y datos fijos del canal.
 
 Después se hace commit y push: Vercel vuelve a publicar el centro solo (docs/PIPELINE.md, paso 10).
 """
@@ -107,17 +107,36 @@ def youtube_id(enlace):
     return (enlace or '').rstrip('/').split('/')[-1].split('=')[-1] if enlace else ''
 
 
-def proxima_ejecucion(ahora, hora_generacion):
-    """La tarea corre todos los días a la hora de config.json → hora_generacion (México)."""
+def siguiente_video(plan, config, auditoria, ahora):
+    """Cuándo sale el siguiente video y cuál: lo ya programado o, si no hay, el que toca según la
+    frecuencia (config.json → dias_entre_videos) y la franja de la prueba de horarios."""
+    futuros = sorted((a_mexico(v['publica_utc']), v['id']) for v in plan['videos']
+                     if v['estado'] == 'programado' and v.get('publica_utc') and a_mexico(v['publica_utc']) > ahora)
+    if futuros:
+        cuando, vid = futuros[0]
+        return cuando, f'Sale el video {vid}'
+    decision = auditoria.get('decision') or {}
+    fechas = [a_mexico(v['publica_utc']).date() for v in plan['videos']
+              if v['estado'] in ('programado', 'publicado') and v.get('publica_utc')]
     local = ahora.astimezone(CDMX)
-    hora, minuto = (int(x) for x in hora_generacion.split(':'))
-    d = local.replace(hour=hora, minute=minuto, second=0, microsecond=0)
-    return d if d > local else d + datetime.timedelta(days=1)
+    dia = max(fechas) + datetime.timedelta(days=config.get('dias_entre_videos', 2)) if fechas else local.date()
+    hora = decision.get('hora_siguiente') or config.get('hora_por_defecto', '18:45')
+    hh, mm = (int(x) for x in hora.split(':'))
+    cuando = datetime.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=CDMX)
+    if cuando <= local:
+        cuando += datetime.timedelta(days=1)
+    listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar'), None)
+    vid = listo or decision.get('video_id') or 'siguiente'
+    return cuando, f'Sale el video {vid} · franja {hora} de la prueba de horarios'
 
 
 def main():
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
+    try:
+        auditoria = json.load(open(os.path.join(RAIZ, 'contenido', 'auditoria.json')))
+    except (OSError, ValueError):
+        auditoria = {'videos_calificados': 0, 'ranking': {}, 'decision': None, 'alertas': [], 'notas': {}}
     anteriores = metricas_anteriores()
     filas = []
     for v in plan['videos']:
@@ -155,30 +174,13 @@ def main():
     guardar('videos.json', filas)
     guardar('ejecuciones.json', json.load(open(os.path.join(RAIZ, 'contenido', 'ejecuciones.json'))))
     guardar('aprendizajes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'aprendizajes.json'))))
-    try:
-        auditoria = json.load(open(os.path.join(RAIZ, 'contenido', 'auditoria.json')))
-    except (OSError, ValueError):
-        auditoria = {'videos_calificados': 0, 'ranking': {}, 'decision': None, 'alertas': [], 'notas': {}}
     json.dump(auditoria, open(os.path.join(SALIDA, 'auditoria.json'), 'w'), ensure_ascii=False, indent=1)
     guardar('mejores_horas.json', [
         {'dia': d, 'hora': h, 'puntaje': (sum(puntajes[(d, h)]) / len(puntajes[(d, h)])) if (d, h) in puntajes else None}
         for d in DIAS for h in range(24)])
 
     ahora = datetime.datetime.now(datetime.timezone.utc)
-    proxima = proxima_ejecucion(ahora, config.get('hora_generacion', '06:37'))
-    unicas = {u['video_id'] for u in config.get('ejecuciones_unicas', [])}
-    listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar' and v['id'] not in unicas), None)
-    proxima_que = f'Publicar video {listo} (ya generado)' if listo else 'Generar y publicar el siguiente video'
-    if proxima:
-        dia = proxima.astimezone(CDMX).date()
-        hoy_sale = next((v for v in plan['videos'] if v['estado'] == 'programado' and v.get('publica_utc')
-                         and a_mexico(v['publica_utc']).date() == dia), None)
-        if hoy_sale:
-            proxima_que = f"Auditoría (ese día ya sale el video {hoy_sale['id']} a las {a_mexico(hoy_sale['publica_utc']).strftime('%H:%M')})"
-    for u in config.get('ejecuciones_unicas', []):
-        cuando = datetime.datetime.fromisoformat(u['utc'].replace('Z', '+00:00'))
-        if ahora < cuando and (not proxima or cuando < proxima):
-            proxima, proxima_que = cuando, u['que']
+    proxima, proxima_que = siguiente_video(plan, config, auditoria, ahora)
     perfil = os.path.join(RAIZ, 'perfil', 'foto-perfil-1080.jpg')
     foto = ''
     if os.path.exists(perfil):
@@ -187,7 +189,7 @@ def main():
         foto = 'data:image/jpeg;base64,' + base64.b64encode(jpg).decode()
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
-        'frecuencia': f"Un video diario a las {config.get('hora_por_defecto', '18:45')}",
+        'frecuencia': f"Un video cada {config.get('dias_entre_videos', 2)} días · auditoría diaria {config.get('hora_auditoria', '06:37')}",
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),

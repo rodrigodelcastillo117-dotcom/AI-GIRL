@@ -1,13 +1,14 @@
-# Pipeline automático: un video de Victoria al día
+# Pipeline automático de Victoria
 
-Lo ejecuta la tarea programada **todos los días a las 6:37 a.m.** (hora de México), dentro de la
-conversación de Claude donde se armó el proyecto (ahí tiene las claves y permiso de push). El
-video sale **a las 6:45 p.m.** del mismo día en Instagram, TikTok y YouTube Shorts. Publica
-directo, sin aprobación humana. Por eso la regla principal es: **si algo no pasa el control de
-calidad, NO se publica** y se registra el fallo.
+La tarea programada corre **todos los días a las 6:37 a.m.** (hora de México) dentro de la
+conversación de Claude donde se armó el proyecto (ahí están las claves y el permiso de push).
+Todos los días **verifica y audita**; **cada 2 días publica** un video en Instagram, TikTok y
+YouTube Shorts, en la franja que toque de la prueba de horarios. Publica directo, sin aprobación
+humana. Regla principal: **si algo no pasa el control de calidad, o si el control no se pudo
+hacer, NO se publica** y se registra (regla 8).
 
-Cada ejecución también **audita**: mide los videos ya publicados, compara qué funciona y qué no
-(tema, fondo, vestimenta, color, gancho, día y hora) y elige el siguiente video con esos datos.
+Antes de todo, lee `docs/REGLAS_APRENDIDAS.md` (34 reglas medidas en 4 canales). Se aplican
+todas; cuando los datos propios digan otra cosa, mandan los propios.
 
 ## 0. Preparación
 
@@ -23,43 +24,56 @@ Cada ejecución también **audita**: mide los videos ya publicados, compara qué
 4. `openart_account_get`: si hay menos créditos que `creditos_minimos_para_correr`
    (`contenido/config.json`), no generar nada, reportar y terminar.
 
-## 1. Medir y auditar (siempre, aunque hoy no se publique)
+## 1. Verificar, medir y auditar (todos los días)
 
 ```
-python scripts/aprender.py medir     # foto de vistas de cada video publicado → contenido/metricas.json
-python scripts/aprender.py auditar   # qué gana y qué pierde, y el siguiente video → contenido/auditoria.json
+python scripts/aprender.py medir     # comprueba en cada red que lo programado salió y guarda vistas
+python scripts/aprender.py auditar   # qué gana, qué pierde, si hoy toca publicar, hora y video
 ```
-Lee el resumen y `contenido/auditoria.json` (`ranking`, `decision`, `alertas`). Cada video se
-califica por sus vistas a ~36 h contra la mediana del canal (índice 1.0 = normal; 1.2 o más gana;
-0.8 o menos pierde, con al menos 3 videos). Nada se da por bueno o malo con menos datos.
+- `medir` solo marca un video como `publicado` cuando lo ve publicado en Instagram, TikTok y
+  YouTube (regla 34). Si algo no salió, lo dice en `contenido/verificacion.json` con el estado
+  exacto: eso va al reporte. Nunca digas "publicado" sin esa comprobación.
+- `auditar` escribe `contenido/auditoria.json`: `ranking` (índice de cada característica: 1.0 es
+  normal, 1.2 o más gana, 0.8 o menos pierde, con al menos 3 videos; los días, con 15),
+  `decision` (`toca_publicar`, `publicar_hoy`, `hora_siguiente`, `prueba_horas`, siguiente video a
+  generar y `cambios_sugeridos`), `reglas_vigentes` (reglas con cifras de los datos propios) y
+  `alertas`.
 
-## 1a. Un video por día
+## 1a. Si hoy NO toca publicar
 
-- Si en `plan.json` ya hay un video `programado` para hoy (fecha de México), hoy no se publica
-  otro: termina con los pasos 8, 10 y 9 (registrar la auditoría y actualizar el centro).
-- Si `auditoria.decision.modo` es `saltar` (el día de hoy pierde de forma consistente), tampoco se
-  publica: se ahorran créditos. Dilo en el reporte.
+Solo pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
+video `listo_para_publicar`, genera uno hoy (pasos 1b a 6) y déjalo listo: así el día de publicar
+ya está hecho y la franja de las 8:00 nunca se pierde.
 
-## 1b. Elegir y mejorar el video
+## 1b. Si hoy SÍ toca publicar
 
-- **Si hay un video `listo_para_publicar`**, ese es el de hoy (ya generado y revisado): ve directo
-  al paso 7 con su `archivo`, y después a los pasos 8, 10 y 9.
-- Si no, el de `auditoria.decision.video_id`. Aplica sus `cambios_sugeridos`: cambia la locación
-  por una del tipo que gana, el estilo de vestimenta por el que gana (con una prenda nueva, nunca
-  repetida) o reescribe la primera frase con el tipo de gancho que gana, sin cambiar la idea ni la
-  fuente, máximo 28 palabras (y entonces actualiza `subtitulos`, `palabras_clave`, `texto_post` y
-  `seo`).
-- Aplica cada `regla` técnica de `contenido/aprendizajes.json` a los prompts de los pasos 3 y 4.
-- Confirma que su `vestuario` no aparece en ningún otro video. Si se repite, cámbialo.
-- Anota en el video `"decision"` (copia de `auditoria.decision`) y `"mejoras_aplicadas"` (qué
-  cambiaste y por qué). Así el centro y la siguiente auditoría saben qué se probó.
+1. Publica el video `listo_para_publicar` (`decision.publicar_hoy`) a la hora
+   `decision.hora_siguiente` de hoy (paso 7). Si esa hora ya pasó o faltan menos de 15 minutos,
+   usa la siguiente franja de hoy de `config.json → prueba_horas.franjas`; nunca se tira un video
+   (regla 31).
+2. Si no había video listo, genera el de `decision.video_id` (pasos 2 a 6) y publícalo hoy.
+3. Después genera el siguiente (`decision.video_id`) y déjalo como `listo_para_publicar`: así
+   siempre hay uno en reserva.
+
+Al generar un video:
+- Aplica `decision.cambios_sugeridos` (fondo, vestimenta, gancho o título que ganan), las
+  `reglas_vigentes` y cada `regla` de `contenido/aprendizajes.json`, sin cambiar la idea ni la
+  fuente. Si cambias el gancho, actualiza `subtitulos`, `palabras_clave`, `texto_post` y `seo`.
+- El guion abre con el gancho en el segundo 0, sin saludo ni introducción (regla 23).
+- Confirma que el `vestuario` no se repite en ningún otro video.
+- Anota en el video `"decision"` (copia de `auditoria.decision`) y `"mejoras_aplicadas"`.
 
 ## 1c. Escribir guiones nuevos (cuando quedan menos de 5)
 
 Escribe 10 videos nuevos al final de `plan.json → videos`, con todos los campos de los demás
-(`id`, `estado: "pendiente"`, `pilar`, `guion` de máximo 28 palabras dicho en español de México,
-`subtitulos` con dígitos, `palabras_clave`, `fuente` real y verificable, `locacion`, `vestuario`
-nuevo, `accion`, `hora_publicacion: "18:45"`, `texto_post` y `seo` según `docs/SEO.md`).
+(`id`, `estado: "pendiente"`, `pilar`, `guion` de máximo 28 palabras dicho en español de México
+que abre con el gancho, `subtitulos` con dígitos, `palabras_clave`, `fuente` real, `locacion`,
+`vestuario` nuevo, `accion`, `hora_publicacion: "rotacion"`, `texto_post` sin hashtags y `seo`
+según `docs/SEO.md`). Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.
+
+- **Cada dato se comprueba antes de escribirlo** (regla 7): busca la fuente con WebSearch y no
+  pongas cifras, fechas ni frases atribuidas que no encuentres. El título no promete más de lo que
+  dice el video.
 
 - 6 de 10 con lo que gana en `auditoria.ranking` (tema, tipo de fondo, vestimenta, gancho) y 4
   probando cosas nuevas o poco probadas: así el sistema no se queda atorado en un solo estilo.
@@ -126,9 +140,14 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
 3. `scripts/qa_audio.py palabras.json "<guion>" <similitud_minima_audio>` debe salir con 0.
 4. Hoja de 6 cuadros (`ffmpeg ... fps=1/2,scale=240:-1,tile=6x1`) y verla: misma cara en todos
    los cuadros, **Capital visible en todos**, sin deformaciones, sin texto raro en pantalla.
-5. Si falla cualquier punto: un solo reintento del video (paso 4). Si vuelve a fallar: marcar el
+5. Gancho en el segundo 0 (regla 23): en `palabras.json` la primera palabra debe empezar antes de
+   0.4 s. Si empieza después, recorta el inicio (`ffmpeg -ss <inicio-0.05> -i video.mp4 -c:v libx264
+   -c:a aac recortado.mp4`) y vuelve a transcribir.
+6. Si falla cualquier punto: un solo reintento del video (paso 4). Si vuelve a fallar: marcar el
    video `"estado": "fallido"` con el motivo en `"qa"`, hacer commit y push, y terminar SIN publicar.
-6. **Aprendizaje:** si algo falló o salió notablemente mejor que antes, agrega un renglón a
+   Si una herramienta de revisión no corre (Whisper, ffmpeg, la hoja de cuadros), eso es un fallo,
+   no un aprobado (regla 8).
+7. **Aprendizaje:** si algo falló o salió notablemente mejor que antes, agrega un renglón a
    `contenido/aprendizajes.json` (`fecha_utc`, `origen`, `tipo`: tecnico, contenido o publicacion,
    `aprendizaje`, `regla` concreta para la próxima vez). No repitas una regla que ya existe.
 
@@ -142,28 +161,25 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 
 ## 7. Publicar
 
-- Textos: `python scripts/seo.py <id> /tmp/seo-<id>` arma `texto_redes.txt` (Instagram y
-  TikTok), `titulo_redes.txt`, `titulo_youtube.txt`, `descripcion_youtube.txt` y
-  `tags_youtube.txt` desde el bloque `seo` del video (reglas en `docs/SEO.md`). Si el video no
-  tiene `seo`, escríbelo primero.
-- Hora: `hora_publicacion` del video (18:45) en `America/Mexico_City`, convertida a UTC en formato
-  ISO (`2026-10-31T00:45:00Z`). Si faltan menos de 15 minutos, usar ahora + 15 minutos.
-- `python scripts/publer.py publicar <video> /tmp/seo-<id>/texto_redes.txt <hora_utc> "<titulo_redes>"`.
-  Solo publica en las cuentas de `config.json → cuentas_publer` (o cuyo nombre contiene
-  `filtro_cuentas`); YouTube solo en `canal_youtube`. La de Instagram se llamaba "Nadie Te lo
-  Explicó" y el canal de YouTube también: Publer y la API pueden seguir dando ese nombre. Si la API responde algo
-  inesperado, consultar https://publer.com/docs, corregir `scripts/publer.py`, volver a intentar
-  una vez y dejar la corrección en el commit.
-- **Duplicados:** `publer.py` omite las cuentas que ya tienen un post con la misma primera línea y
-  `youtube.py` no sube un video si el canal ya tiene uno con el mismo título (pasa si una ejecución
-  anterior publicó pero no pudo guardar en el repo). Si responden `OMITIDO`, el video ya estaba
-  programado: regístralo como `programado` y no lo vuelvas a subir.
-- **YouTube Shorts va aparte, sin Publer:** si existen `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET` y
-  `YOUTUBE_REFRESH_TOKEN` en el entorno, `python scripts/youtube.py subir <video>
-  "<titulo_youtube>" /tmp/seo-<id>/descripcion_youtube.txt <hora_utc> --tags
-  /tmp/seo-<id>/tags_youtube.txt` a la misma hora. Si no existen, se omite YouTube y se
-  menciona en el reporte. Si responde `invalid_grant`, el permiso venció: reportarlo (no se arregla
-  solo).
+1. `python scripts/seo.py <id> /tmp/seo-<id>` (si falla, corrige el bloque `seo` del video y
+   repite): deja `titulo.txt`, `descripcion_youtube.txt`, `tags_youtube.txt` y `texto_redes.txt`.
+2. Hora: la franja que toca (paso 1b) en `America/Mexico_City`, convertida a UTC ISO
+   (`2026-10-31T00:45:00Z`).
+3. Instagram y TikTok: `python scripts/publer.py publicar <video> /tmp/seo-<id>/texto_redes.txt
+   <hora_utc> "$(cat /tmp/seo-<id>/titulo.txt)"`. Hace una petición por red y espera cada job
+   (regla 5); solo usa las cuentas de `config.json → cuentas_publer` (la de Instagram sigue con el
+   nombre viejo "Nadie Te lo Explicó" en Publer). Si la API responde algo inesperado, consulta
+   https://publer.com/docs, corrige `scripts/publer.py`, reintenta una vez y deja la corrección en
+   el commit.
+4. YouTube Shorts (sin Publer): `python scripts/youtube.py subir <video>
+   "$(cat /tmp/seo-<id>/titulo.txt)" /tmp/seo-<id>/descripcion_youtube.txt <hora_utc> --tags
+   /tmp/seo-<id>/tags_youtube.txt`. Comprueba que el canal sea `UCGyza9C58eMH3VnGgkMPr1A`
+   (regla 1), sube en privado con hora de publicación (regla 2) y verifica que YouTube lo tenga así.
+   Si responde `invalid_grant`, el permiso venció: repórtalo.
+5. **Duplicados:** si `publer.py` o `youtube.py` responden `OMITIDO`, el post ya existía:
+   regístralo como `programado` y no lo vuelvas a subir.
+6. Que Publer acepte el job no es "publicado": la confirmación llega en el `medir` del día
+   siguiente (regla 34).
 
 ## 8. Registro
 
@@ -176,7 +192,8 @@ Agrega un renglón a `contenido/ejecuciones.json`: `fecha_utc`, `tipo` (generar 
 `video_id`, `resultado` (programado, fallido u omitido), `detalle` en una frase,
 `creditos_usados` y `creditos_restantes` (de `openart_account_get` al terminar).
 
-Incluye `contenido/metricas.json` y `contenido/auditoria.json` en el commit.
+Incluye `contenido/metricas.json`, `contenido/verificacion.json`, `contenido/auditoria.json` y
+`contenido/config.json` (la prueba de horarios guarda ahí la franja ganadora) en el commit.
 
 Commit y push a `main`. Si el push falla, dilo en el reporte: lo publicado ya quedó publicado.
 
@@ -191,6 +208,8 @@ Commit y push a `main`. Si el push falla, dilo en el reporte: lo publicado ya qu
 
 ## 9. Reporte final (después del paso 10)
 
-Resumen corto: qué video, hora de publicación, cuentas, créditos usados y restantes, qué decidió
-la auditoría y por qué (lo que gana, lo que pierde, lo que se probó hoy) y cualquier problema. Es
-lo que le llega a Rodrigo como notificación.
+Resumen corto: qué se verificó (lo que salió y lo que no, con el estado exacto), qué video se
+programó y a qué hora (franja de la prueba), créditos usados y restantes, qué decidió la auditoría
+(lo que gana, lo que pierde, lo que se probó) y cualquier problema. Los días sin publicación, una
+o dos líneas. Los lunes, pide a Rodrigo capturas de las estadísticas de Instagram y TikTok de la
+semana (regla 33). Es lo que le llega como notificación.

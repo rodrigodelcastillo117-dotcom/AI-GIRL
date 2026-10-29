@@ -29,7 +29,7 @@ AGENTE = 'AI-GIRL-pipeline/1.0 (+https://github.com/rodrigodelcastillo117-dotcom
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
 # YouTube no va por Publer (costaría una cuenta extra): lo sube scripts/youtube.py con la API gratis.
-REDES = ('instagram', 'tiktok', 'facebook')
+REDES = ('instagram', 'tiktok')  # Facebook no: su Reel también sale en el Instagram enlazado (regla 28)
 
 
 def _pedir(metodo, ruta, workspace=None, cuerpo=None, multipart=None):
@@ -178,6 +178,8 @@ def main():
     video, archivo_texto, cuando, titulo = sys.argv[2:6]
     prueba = '--prueba' in sys.argv
     texto = open(archivo_texto).read().strip()
+    if len(titulo.strip()) < 5:  # Instagram pide título y TikTok mínimo 5 caracteres (regla 6)
+        titulo = 'Victoria The CEO'
 
     if prueba:
         falsas = [{'id': 'ID_IG', 'provider': 'instagram'}, {'id': 'ID_TT', 'provider': 'tiktok'}]
@@ -209,16 +211,22 @@ def main():
         sys.exit(f'ERROR: la subida no regresó id de media: {json.dumps(subida)[:1500]}')
     print('Media subido:', media_id)
 
-    r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post(cuentas, media_id, texto, titulo, cuando))
-    job = r.get('job_id') or (r.get('data') or {}).get('job_id')
-    if not job:
-        sys.exit(f'ERROR: Publer no regresó job_id: {json.dumps(r)[:1500]}')
-    resultado = esperar_job(ws, job)
-    fallas = ((resultado.get('result') or resultado).get('payload') or {}).get('failures')
-    print('Resultado:', json.dumps(resultado, ensure_ascii=False)[:2000])
-    if resultado.get('status') == 'failed' or fallas:
-        sys.exit(f'ERROR: Publer reportó fallas: {json.dumps(fallas, ensure_ascii=False)[:1500]}')
-    print(f'OK programado para {cuando} en {len(cuentas)} cuentas. job={job} media={media_id}')
+    # Una petición por red (regla 5): si una falla, las otras no se pierden y se sabe cuál fue.
+    fallidas = []
+    for cuenta in cuentas:
+        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, texto, titulo, cuando))
+        job = r.get('job_id') or (r.get('data') or {}).get('job_id')
+        if not job:
+            fallidas.append(f'{red(cuenta)}: Publer no regresó job_id ({json.dumps(r)[:300]})')
+            continue
+        resultado = esperar_job(ws, job)
+        fallas = ((resultado.get('result') or resultado).get('payload') or {}).get('failures')
+        if resultado.get('status') == 'failed' or fallas:
+            fallidas.append(f'{red(cuenta)}: {json.dumps(fallas or resultado, ensure_ascii=False)[:500]}')
+        else:
+            print(f'OK {red(cuenta)} programado para {cuando} (job {job}). Se confirma que salió en la siguiente medición.')
+    if fallidas:
+        sys.exit('ERROR: Publer reportó fallas en ' + ' | '.join(fallidas))
 
 
 if __name__ == '__main__':

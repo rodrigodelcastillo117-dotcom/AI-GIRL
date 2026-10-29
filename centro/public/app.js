@@ -311,8 +311,9 @@ function dibujarHangar(videos) {
 }
 
 const ATRIBUTOS = {pilar: 'Tema', tipo_fondo: 'Tipo de fondo', locacion: 'Fondo', estilo_vestuario: 'Vestimenta',
-  color_vestuario: 'Color de ropa', tipo_gancho: 'Tipo de gancho', dia: 'Día', hora: 'Hora'};
-const MODOS = {aprovechar: 'Aprovechar', explorar: 'Explorar', saltar: 'Día libre'};
+  color_vestuario: 'Color de ropa', tipo_gancho: 'Tipo de gancho', titulo_emoji: 'Emoji en el título',
+  titulo_largo: 'Largo del título', titulo_tipo: 'Título: afirma o pregunta', dia: 'Día', hora: 'Hora'};
+const MODOS = {aprovechar: 'Aprovechar', explorar: 'Explorar', 'sin guiones': 'Sin guiones'};
 
 function dibujarLaboratorio(a) {
   const caja = $('decision');
@@ -321,7 +322,9 @@ function dibujarLaboratorio(a) {
   if (!d) {
     texto.append(crear('p', {textContent: 'No hay guiones pendientes: el sistema escribe 10 nuevos en la siguiente ejecución.'}));
   } else {
-    texto.append(crear('p', {textContent: d.por_que}));
+    texto.append(crear('p', {textContent: `${d.toca_publicar ? 'Hoy toca publicar' : 'Hoy no toca publicar'} (${d.motivo}). Siguiente a generar: ${d.por_que}`}));
+    if (d.prueba_horas) texto.append(crear('p', {className: 'nota', textContent: `Prueba de horarios: ${d.prueba_horas}. Siguiente franja: ${d.hora_siguiente}.`}));
+    if (a.reglas_vigentes?.length) texto.append(crear('ul', {}, ...a.reglas_vigentes.map((r) => crear('li', {textContent: r}))));
     if (d.cambios_sugeridos?.length) {
       texto.append(crear('ul', {}, ...d.cambios_sugeridos.map((c) => crear('li', {textContent: `${ATRIBUTOS[c.atributo] || c.atributo}: ${c.de} → ${c.a} (${c.por_que})`}))));
     }

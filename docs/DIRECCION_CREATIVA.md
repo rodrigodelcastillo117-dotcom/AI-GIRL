@@ -66,6 +66,14 @@ Quemados en el video. Tipografía Inter, blanca con sombra suave, 2-4 palabras p
 clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la voz real
 (reconocimiento de voz), no con tiempos estimados.
 
+## Los primeros 3 segundos
+
+- Victoria dice el gancho en el segundo 0: sin "hola", sin presentarse, sin pausa. El control de
+  calidad recorta cualquier silencio inicial de más de 0.4 s (`docs/PIPELINE.md`, paso 5).
+- El subtítulo del gancho aparece desde el primer cuadro.
+- Medido en otros canales: menos de 35 % de abandono al inicio dio 934 de alcance; más de 45 %, 194
+  (`docs/REGLAS_APRENDIDAS.md`, regla 23).
+
 ## Lo que no se hace
 
 - Logotipos o marcas reales (Ferrari, Rolex, nombres de estadios): riesgo de marca registrada.

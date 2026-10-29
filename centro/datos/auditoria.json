@@ -1,16 +1,27 @@
 {
- "fecha_utc": "2026-10-29T04:32:10Z",
+ "fecha_utc": "2026-10-29T04:42:53Z",
  "videos_calificados": 0,
  "base_vistas_36h": 0,
  "notas": {},
  "ranking": {},
  "decision": {
+  "toca_publicar": false,
+  "motivo": "el último sale el 2026-10-29; toca publicar en 3 día(s)",
+  "hora_siguiente": "18:45",
+  "prueba_horas": "en prueba: 18:45 0/5, 08:00 0/5, 14:00 0/5",
+  "conteo_horas": {
+   "18:45": 0,
+   "08:00": 0,
+   "14:00": 0
+  },
+  "publicar_hoy": null,
   "video_id": "03",
   "modo": "explorar",
   "esperado": 1.0,
-  "por_que": "Día de exploración: el video 03 prueba 6 características con pocos datos.",
+  "por_que": "Toca explorar: el video 03 prueba 9 características con pocos datos.",
   "cambios_sugeridos": []
  },
+ "reglas_vigentes": [],
  "alertas": [
   "0 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\"."
  ]
