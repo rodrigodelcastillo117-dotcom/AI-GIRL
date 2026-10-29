@@ -102,7 +102,7 @@ def inicio(libro):
 
 def presupuesto(libro):
     h = hoja(libro, 'Presupuesto', 'Presupuesto 50/30/20', 'Lo necesario 50% · Lo que quieres 30% · Ahorro y deudas 20%. Ajústalo a tu vida.', [34, 16, 16, 16, 14])
-    h['B5'] = 'Ingreso mensual (después de impuestos)'
+    h['B5'] = 'Ingreso mensual neto'
     h['B5'].font = FUERTE
     entrada(h['C5'], 20000, DINERO)
     encabezados(h, 7, ['Bolsa', 'Meta', 'Real', 'Diferencia', '% del ingreso'])
