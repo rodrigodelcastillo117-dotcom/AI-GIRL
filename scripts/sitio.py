@@ -11,6 +11,8 @@ import html
 import json
 import os
 
+from PIL import Image, ImageDraw, ImageFont
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUBLICO = os.path.join(RAIZ, 'sitio', 'public')
 DOMINIO = 'https://victoriatheceo.vercel.app'
@@ -369,6 +371,52 @@ alCambiar('calculadora', calcular);''',
     },
 ]
 
+# Tarjeta que sale al compartir el enlace (WhatsApp, Facebook, X): título grande + Victoria.
+VISTA_PREVIA = {
+    'aguinaldo': ('Calcula tu aguinaldo 2026', 'Cuánto te toca y cuánto paga ISR'),
+    'interes-compuesto': ('Cuánto crece tu ahorro', 'Calculadora de interés compuesto'),
+    'regla-50-30-20': ('Tu sueldo en 50/30/20', 'Necesidades, deseos y ahorro'),
+    'fondo-de-emergencia': ('Tu fondo de emergencia', 'Cuánto necesitas y cuándo llegas'),
+    'pagar-deudas': ('Sal de tus deudas', 'Bola de nieve o avalancha'),
+}
+FUENTES_INTER = '/usr/share/fonts/opentype/inter'
+
+
+def vista_previa(slug, titulo, subtitulo):
+    ancho, alto, foto_ancho = 1200, 630, 470
+    lienzo = Image.new('RGB', (ancho, alto), (11, 11, 13))
+    foto = Image.open(os.path.join(PUBLICO, 'img', 'victoria.jpg')).convert('RGB')
+    recorte_alto = round(foto.width * alto / foto_ancho)
+    foto = foto.crop((0, 120, foto.width, 120 + recorte_alto)).resize((foto_ancho, alto))
+    lienzo.paste(foto, (0, 0))
+    sombra = Image.new('L', (160, 1))
+    sombra.putdata([round(255 * i / 159) for i in range(160)])
+    lienzo.paste((11, 11, 13), (foto_ancho - 160, 0, foto_ancho, alto), sombra.resize((160, alto)))
+    d = ImageDraw.Draw(lienzo)
+    fuente = lambda nombre, tam: ImageFont.truetype(f'{FUENTES_INTER}/Inter-{nombre}.otf', tam)
+    x, oro, crema = foto_ancho + 20, (245, 197, 66), (243, 237, 226)
+    d.text((x, 92), 'CALCULADORA GRATIS', font=fuente('SemiBold', 24), fill=oro)
+    # El título se parte en renglones que quepan en el panel
+    grande, renglones, actual = fuente('Black', 72), [], ''
+    for palabra in titulo.split():
+        prueba = f'{actual} {palabra}'.strip()
+        if d.textlength(prueba, font=grande) > ancho - x - 50 and actual:
+            renglones.append(actual)
+            actual = palabra
+        else:
+            actual = prueba
+    renglones.append(actual)
+    y = 140
+    for r in renglones:
+        d.text((x, y), r, font=grande, fill=crema)
+        y += 84
+    d.text((x, y + 18), subtitulo, font=fuente('Regular', 32), fill=(217, 210, 197))
+    d.text((x, alto - 92), 'VICTORIA', font=fuente('SemiBold', 26), fill=crema)
+    d.text((x + d.textlength('VICTORIA ', font=fuente('SemiBold', 26)), alto - 92), 'THE CEO', font=fuente('SemiBold', 26), fill=oro)
+    d.text((x, alto - 56), 'victoriatheceo.vercel.app', font=fuente('Regular', 24), fill=(163, 155, 141))
+    lienzo.save(os.path.join(PUBLICO, 'img', f'og-{slug}.jpg'), quality=86, optimize=True)
+
+
 PLANTILLA = '''<!doctype html>
 <html lang="es">
 <head>
@@ -381,7 +429,10 @@ PLANTILLA = '''<!doctype html>
   <meta property="og:title" content="{titulo}">
   <meta property="og:description" content="{descripcion}">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="{dominio}/img/compartir.jpg">
+  <meta property="og:image" content="{dominio}/img/og-{slug}.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -480,6 +531,7 @@ def pagina(h):
 
 def main():
     for h in HERRAMIENTAS:
+        vista_previa(h['slug'], *VISTA_PREVIA[h['slug']])
         ruta = os.path.join(PUBLICO, f'{h["slug"]}.html')
         open(ruta, 'w').write(pagina(h))
         print(f'{h["slug"]}.html ({os.path.getsize(ruta) // 1024} KB)')
