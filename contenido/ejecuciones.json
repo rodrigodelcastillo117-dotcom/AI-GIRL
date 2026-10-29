@@ -1,0 +1,38 @@
+[
+ {
+  "fecha_utc": "2026-10-29T01:14:00Z",
+  "tipo": "preparacion",
+  "video_id": "",
+  "resultado": "ok",
+  "detalle": "Hoja de la modelo, 5 cuartos y video de prueba de voz",
+  "creditos_usados": 900,
+  "creditos_restantes": 11100
+ },
+ {
+  "fecha_utc": "2026-10-29T01:56:00Z",
+  "tipo": "generar",
+  "video_id": "01",
+  "resultado": "ok",
+  "detalle": "Pelirroja con pecas, Rottweiler, video 01 en el jet y foto de perfil",
+  "creditos_usados": 660,
+  "creditos_restantes": 10440
+ },
+ {
+  "fecha_utc": "2026-10-29T02:23:00Z",
+  "tipo": "extra",
+  "video_id": "",
+  "resultado": "ok",
+  "detalle": "Banner de YouTube",
+  "creditos_usados": 60,
+  "creditos_restantes": 10380
+ },
+ {
+  "fecha_utc": "2026-10-29T02:42:00Z",
+  "tipo": "generar",
+  "video_id": "02",
+  "resultado": "fallido",
+  "detalle": "Video 02 generado y aprobado (audio 92%), pero no se publicó: Publer bloqueó la conexión, el permiso de YouTube es de otro canal y no pudo guardar en el repo.",
+  "creditos_usados": 510,
+  "creditos_restantes": 9870
+ }
+]

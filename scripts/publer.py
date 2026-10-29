@@ -20,6 +20,8 @@ import urllib.request
 import uuid
 
 BASE = 'https://app.publer.com/api/v1'
+# Cloudflare de Publer rechaza la firma por defecto de Python (error 1010); nos identificamos con nombre propio
+AGENTE = 'AI-GIRL-pipeline/1.0 (+https://github.com/rodrigodelcastillo117-dotcom/AI-GIRL)'
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
 # YouTube no va por Publer (costaría una cuenta extra): lo sube scripts/youtube.py con la API gratis.
@@ -30,7 +32,7 @@ def _pedir(metodo, ruta, workspace=None, cuerpo=None, multipart=None):
     clave = os.environ.get('PUBLER_API_KEY')
     if not clave:
         sys.exit('ERROR: falta la variable de entorno PUBLER_API_KEY')
-    headers = {'Authorization': f'Bearer-API {clave}', 'Accept': 'application/json'}
+    headers = {'Authorization': f'Bearer-API {clave}', 'Accept': 'application/json', 'User-Agent': AGENTE}
     if workspace:
         headers['Publer-Workspace-Id'] = workspace
     datos = None

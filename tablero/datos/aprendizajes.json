@@ -1,0 +1,51 @@
+[
+ {
+  "fecha_utc": "2026-10-29T01:20:00Z",
+  "origen": "prueba de voz",
+  "tipo": "tecnico",
+  "aprendizaje": "Wan 3.0 element2video habla español con lip-sync correcto: dijo las 27 palabras exactas del guion.",
+  "regla": "Usar Wan 3.0 element2video, 12 s, 720p, con la voz fija como voice_reference."
+ },
+ {
+  "fecha_utc": "2026-10-29T01:40:00Z",
+  "origen": "hoja de personaje",
+  "tipo": "tecnico",
+  "aprendizaje": "Con 3 imágenes de referencia, Nano Banana 2 a veces copia la tercera tal cual e ignora el cambio pedido (pasó en el cuadro del jet).",
+  "regla": "Para la foto base usar máximo 3 referencias en orden fijo (Victoria, Capital, locación) y revisar que la foto no sea una copia de la locación."
+ },
+ {
+  "fecha_utc": "2026-10-29T01:56:00Z",
+  "origen": "video 01",
+  "tipo": "tecnico",
+  "aprendizaje": "Un acercamiento de cámara fuerte sacó a Capital del cuadro en los últimos 2 segundos.",
+  "regla": "Cámara fija con deriva lateral muy lenta; nunca zoom in ni push-in."
+ },
+ {
+  "fecha_utc": "2026-10-29T01:56:00Z",
+  "origen": "video 01",
+  "tipo": "contenido",
+  "aprendizaje": "Whisper confundió 'mejor' con 'mayor' (62% de confianza): palabras parecidas al final de frase se pierden.",
+  "regla": "En los guiones, poner la palabra clave lejos del final de la frase o reforzarla con una pausa (coma) antes."
+ },
+ {
+  "fecha_utc": "2026-10-29T03:00:00Z",
+  "origen": "video 02",
+  "tipo": "tecnico",
+  "aprendizaje": "Plano medio con Capital sentado al lado, cámara fija: Victoria y Capital visibles en los 6 cuadros revisados.",
+  "regla": "Mantener esta composición como estándar: plano medio, Capital a su lado con la cabeza completa a la vista."
+ },
+ {
+  "fecha_utc": "2026-10-29T03:00:00Z",
+  "origen": "video 02",
+  "tipo": "publicacion",
+  "aprendizaje": "Cloudflare de Publer bloquea la firma por defecto de Python (error 1010).",
+  "regla": "scripts/publer.py se identifica con su propio User-Agent; no quitarlo."
+ },
+ {
+  "fecha_utc": "2026-10-29T03:00:00Z",
+  "origen": "video 02",
+  "tipo": "contenido",
+  "aprendizaje": "Los números dichos en palabras ('ochenta por ciento') se ven mejor en subtítulos como dígitos ('80%') y Whisper los transcribe así.",
+  "regla": "Escribir los subtítulos del plan con dígitos y los guiones hablados con palabras."
+ }
+]

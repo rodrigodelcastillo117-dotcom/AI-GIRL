@@ -2,7 +2,13 @@
   "reglas": {
     "duracion_s": 12,
     "max_palabras_guion": 28,
-    "rotacion_pilares": ["negocio", "finanzas", "mentalidad", "vida", "motivacion_economica"],
+    "rotacion_pilares": [
+      "negocio",
+      "finanzas",
+      "mentalidad",
+      "vida",
+      "motivacion_economica"
+    ],
     "publicacion": "directa",
     "zona_horaria": "America/Mexico_City",
     "prueba_de_horario": "Los videos 02-09 alternan 20:47 y 12:43. Después se fija la hora que gane en retención y alcance.",
@@ -21,35 +27,100 @@
   "videos": [
     {
       "id": "01",
-      "estado": "subido_manual",
+      "estado": "listo_para_publicar",
       "pilar": "motivacion_economica",
       "guion": "El uno por ciento diario te hace treinta y siete veces mejor en un año. Lo explica James Clear. Olvida el gran salto. Hoy, solo tu uno por ciento.",
       "fuente": "James Clear, Hábitos Atómicos (1.01^365 ≈ 37.8)",
       "locacion": "jet",
       "vestuario": "Blazer-vestido marfil con cinturón, medias color piel, joyería dorada, tacones nude",
-      "archivo": "videos/video-01-jet-1porciento-SUBTITULADO.mp4"
+      "archivo": "videos/video-01-jet-1porciento-SUBTITULADO.mp4",
+      "hora_publicacion": "20:47",
+      "publica_utc": "2026-10-30T02:47:00Z",
+      "subtitulos": [
+        "El 1% diario",
+        "te hace 37 veces",
+        "mejor en un año.",
+        "Lo explica James Clear.",
+        "Olvida el gran salto.",
+        "Hoy,",
+        "solo tu 1%."
+      ],
+      "palabras_clave": [
+        "1%",
+        "37",
+        "mejor",
+        "clear",
+        "salto",
+        "hoy"
+      ],
+      "texto_post": "El 1% diario te hace 37 veces mejor en un año. 📈\nNo necesitas un gran salto, necesitas constancia.\n\n📚 James Clear, Hábitos Atómicos\n💾 Guárdalo para cuando lo olvides.\n\n#negocios #mentalidad #emprendimiento #habitosatomicos #finanzaspersonales #motivacion #victoriatheceo",
+      "creditos": 510,
+      "qa": {
+        "similitud": 0.95,
+        "notas": "Revisado a mano. Capital sale del cuadro en los últimos 2 s."
+      },
+      "openart": {
+        "video": "kZkUAtz9kylwIrXTauWE"
+      }
     },
     {
       "id": "02",
-      "estado": "pendiente",
+      "estado": "listo_para_publicar",
       "pilar": "negocio",
       "guion": "El ochenta por ciento de tus ventas suele salir del veinte por ciento de tus clientes. Principio de Pareto. Encuentra a ese veinte y cuídalo como oro.",
-      "subtitulos": ["El 80% de tus ventas", "suele salir del 20%", "de tus clientes.", "Principio de Pareto.", "Encuentra a ese 20%", "y cuídalo como oro."],
-      "palabras_clave": ["80%", "20%", "pareto", "oro"],
+      "subtitulos": [
+        "El 80% de tus ventas",
+        "suele salir del 20%",
+        "de tus clientes.",
+        "Principio de Pareto.",
+        "Encuentra a ese 20%",
+        "y cuídalo como oro."
+      ],
+      "palabras_clave": [
+        "80%",
+        "20%",
+        "pareto",
+        "oro"
+      ],
       "fuente": "Vilfredo Pareto; Richard Koch, El principio 80/20",
       "locacion": "palco_estadio",
       "vestuario": "Blazer azul marino entallado, blusa de seda blanca, jeans de diseñador oscuros, aretes de oro",
       "accion": "Sentada en el asiento de piel del palco, Capital sentado a su lado mirando a cámara.",
       "hora_publicacion": "20:47",
-      "texto_post": "El 80% de tus ventas suele salir del 20% de tus clientes. 🎯\n¿Ya sabes quiénes son los tuyos?\n\n📚 Principio de Pareto · Richard Koch, El principio 80/20\n💾 Guárdalo para tu próxima revisión de clientes.\n\n#negocios #emprendimiento #ventas #pareto #mentalidad #victoriatheceo"
+      "texto_post": "El 80% de tus ventas suele salir del 20% de tus clientes. 🎯\n¿Ya sabes quiénes son los tuyos?\n\n📚 Principio de Pareto · Richard Koch, El principio 80/20\n💾 Guárdalo para tu próxima revisión de clientes.\n\n#negocios #emprendimiento #ventas #pareto #mentalidad #victoriatheceo",
+      "archivo": "videos/video-02-palco-pareto-SUBTITULADO.mp4",
+      "creditos": 510,
+      "qa": {
+        "similitud": 0.92,
+        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos OK."
+      },
+      "openart": {
+        "foto": "CHR8hma1TeWY9weBL2ca",
+        "video": "c5OknrxCOp4J9rGdIPz0"
+      },
+      "intentos_publicacion": [
+        "2026-10-29T03:00Z: Publer 403 (Cloudflare 1010, ya corregido con User-Agent propio); YouTube: el permiso apunta a \"Nadie Te Lo Explicó\"; push al repo sin permiso."
+      ]
     },
     {
       "id": "03",
       "estado": "pendiente",
       "pilar": "finanzas",
       "guion": "¿Cuánto tarda tu dinero en duplicarse? Divide setenta y dos entre tu tasa anual. Al ocho por ciento, nueve años. Es la regla del setenta y dos.",
-      "subtitulos": ["¿Cuánto tarda tu dinero", "en duplicarse?", "Divide 72", "entre tu tasa anual.", "Al 8%, 9 años.", "Es la regla del 72."],
-      "palabras_clave": ["72", "8%", "9", "duplicarse"],
+      "subtitulos": [
+        "¿Cuánto tarda tu dinero",
+        "en duplicarse?",
+        "Divide 72",
+        "entre tu tasa anual.",
+        "Al 8%, 9 años.",
+        "Es la regla del 72."
+      ],
+      "palabras_clave": [
+        "72",
+        "8%",
+        "9",
+        "duplicarse"
+      ],
       "fuente": "Regla del 72 (Luca Pacioli, 1494)",
       "locacion": "yate",
       "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
@@ -62,8 +133,21 @@
       "estado": "pendiente",
       "pilar": "mentalidad",
       "guion": "Escribir lo que te preocupa durante quince minutos aligera la mente. James Pennebaker lo estudió por décadas. Esta noche: papel, pluma y quince minutos para ti.",
-      "subtitulos": ["Escribir lo que te preocupa", "durante 15 minutos", "aligera la mente.", "James Pennebaker", "lo estudió por décadas.", "Esta noche: papel, pluma", "y 15 minutos para ti."],
-      "palabras_clave": ["15", "mente", "pennebaker", "noche"],
+      "subtitulos": [
+        "Escribir lo que te preocupa",
+        "durante 15 minutos",
+        "aligera la mente.",
+        "James Pennebaker",
+        "lo estudió por décadas.",
+        "Esta noche: papel, pluma",
+        "y 15 minutos para ti."
+      ],
+      "palabras_clave": [
+        "15",
+        "mente",
+        "pennebaker",
+        "noche"
+      ],
       "fuente": "James W. Pennebaker, investigación sobre escritura expresiva",
       "locacion": "recamara",
       "vestuario": "Conjunto de pijama de seda color champaña con bata a juego",
@@ -76,8 +160,21 @@
       "estado": "pendiente",
       "pilar": "vida",
       "guion": "Si algo toma menos de dos minutos, hazlo ya. Es la regla de David Allen. Lo pequeño que pospones es lo que más te roba la cabeza.",
-      "subtitulos": ["Si algo toma menos", "de 2 minutos,", "hazlo ya.", "Es la regla de David Allen.", "Lo pequeño que pospones", "es lo que más", "te roba la cabeza."],
-      "palabras_clave": ["2", "ya", "allen", "cabeza"],
+      "subtitulos": [
+        "Si algo toma menos",
+        "de 2 minutos,",
+        "hazlo ya.",
+        "Es la regla de David Allen.",
+        "Lo pequeño que pospones",
+        "es lo que más",
+        "te roba la cabeza."
+      ],
+      "palabras_clave": [
+        "2",
+        "ya",
+        "allen",
+        "cabeza"
+      ],
       "fuente": "David Allen, Organízate con eficacia (Getting Things Done)",
       "locacion": "cocina",
       "vestuario": "Suéter de cachemira color crema, pantalón negro de vestir, reloj dorado",
@@ -90,8 +187,20 @@
       "estado": "pendiente",
       "pilar": "motivacion_economica",
       "guion": "De cada diez pesos que ganes, guarda uno para ti. Lo escribió George Clason hace casi cien años. Págate primero, antes que a nadie.",
-      "subtitulos": ["De cada 10 pesos que ganes,", "guarda 1 para ti.", "Lo escribió George Clason", "hace casi 100 años.", "Págate primero,", "antes que a nadie."],
-      "palabras_clave": ["10", "1", "clason", "primero"],
+      "subtitulos": [
+        "De cada 10 pesos que ganes,",
+        "guarda 1 para ti.",
+        "Lo escribió George Clason",
+        "hace casi 100 años.",
+        "Págate primero,",
+        "antes que a nadie."
+      ],
+      "palabras_clave": [
+        "10",
+        "1",
+        "clason",
+        "primero"
+      ],
       "fuente": "George S. Clason, El hombre más rico de Babilonia (1926)",
       "locacion": "restaurante",
       "vestuario": "Vestido de noche negro de satín con hombros descubiertos, collar de perlas, labios rojos",
@@ -104,8 +213,22 @@
       "estado": "pendiente",
       "pilar": "negocio",
       "guion": "Cuando dudes, imagínate a los ochenta años. ¿Te arrepentirías de no intentarlo? Así decidió Jeff Bezos fundar Amazon. Minimiza arrepentimientos, no riesgos.",
-      "subtitulos": ["Cuando dudes,", "imagínate a los 80 años.", "¿Te arrepentirías", "de no intentarlo?", "Así decidió Jeff Bezos", "fundar Amazon.", "Minimiza arrepentimientos,", "no riesgos."],
-      "palabras_clave": ["80", "bezos", "arrepentimientos", "riesgos"],
+      "subtitulos": [
+        "Cuando dudes,",
+        "imagínate a los 80 años.",
+        "¿Te arrepentirías",
+        "de no intentarlo?",
+        "Así decidió Jeff Bezos",
+        "fundar Amazon.",
+        "Minimiza arrepentimientos,",
+        "no riesgos."
+      ],
+      "palabras_clave": [
+        "80",
+        "bezos",
+        "arrepentimientos",
+        "riesgos"
+      ],
       "fuente": "Jeff Bezos, marco de minimización del arrepentimiento (entrevistas públicas)",
       "locacion": "jet",
       "vestuario": "Traje sastre gris perla de pantalón, blusa de seda negra, lentes de sol en la mano",
@@ -118,8 +241,21 @@
       "estado": "pendiente",
       "pilar": "finanzas",
       "guion": "Regla número uno: no pierdas dinero. Regla número dos: no olvides la regla número uno. Warren Buffett. Antes de invertir, entiende en qué.",
-      "subtitulos": ["Regla número 1:", "no pierdas dinero.", "Regla número 2:", "no olvides la regla número 1.", "Warren Buffett.", "Antes de invertir,", "entiende en qué."],
-      "palabras_clave": ["1", "2", "buffett", "invertir"],
+      "subtitulos": [
+        "Regla número 1:",
+        "no pierdas dinero.",
+        "Regla número 2:",
+        "no olvides la regla número 1.",
+        "Warren Buffett.",
+        "Antes de invertir,",
+        "entiende en qué."
+      ],
+      "palabras_clave": [
+        "1",
+        "2",
+        "buffett",
+        "invertir"
+      ],
       "fuente": "Warren Buffett, frase pública atribuida y repetida por él",
       "locacion": "coche",
       "vestuario": "Blazer camel de lana, suéter negro de cuello alto, lentes de sol en la cabeza",
@@ -132,8 +268,21 @@
       "estado": "pendiente",
       "pilar": "mentalidad",
       "guion": "Dos inhalaciones por la nariz y una exhalación larga por la boca. Cinco minutos al día. En Stanford mejoró el ánimo más que meditar. Pruébalo ahora.",
-      "subtitulos": ["2 inhalaciones por la nariz", "y una exhalación larga", "por la boca.", "5 minutos al día.", "En Stanford mejoró el ánimo", "más que meditar.", "Pruébalo ahora."],
-      "palabras_clave": ["2", "5", "stanford", "ahora"],
+      "subtitulos": [
+        "2 inhalaciones por la nariz",
+        "y una exhalación larga",
+        "por la boca.",
+        "5 minutos al día.",
+        "En Stanford mejoró el ánimo",
+        "más que meditar.",
+        "Pruébalo ahora."
+      ],
+      "palabras_clave": [
+        "2",
+        "5",
+        "stanford",
+        "ahora"
+      ],
       "fuente": "Balban et al., Cell Reports Medicine (2023), suspiro cíclico, Stanford",
       "locacion": "jacuzzi",
       "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
@@ -146,8 +295,21 @@
       "estado": "pendiente",
       "pilar": "vida",
       "guion": "El estudio de Harvard sobre la felicidad lleva más de ochenta años. Su conclusión: las buenas relaciones nos hacen más felices y sanos. Llama hoy a alguien.",
-      "subtitulos": ["El estudio de Harvard", "sobre la felicidad", "lleva más de 80 años.", "Su conclusión:", "las buenas relaciones", "nos hacen más felices y sanos.", "Llama hoy a alguien."],
-      "palabras_clave": ["harvard", "80", "relaciones", "hoy"],
+      "subtitulos": [
+        "El estudio de Harvard",
+        "sobre la felicidad",
+        "lleva más de 80 años.",
+        "Su conclusión:",
+        "las buenas relaciones",
+        "nos hacen más felices y sanos.",
+        "Llama hoy a alguien."
+      ],
+      "palabras_clave": [
+        "harvard",
+        "80",
+        "relaciones",
+        "hoy"
+      ],
       "fuente": "Harvard Study of Adult Development (desde 1938), Robert Waldinger",
       "locacion": "sala",
       "vestuario": "Vestido midi de punto color vino, botas de piel negras, brazalete dorado",
@@ -160,8 +322,20 @@
       "estado": "pendiente",
       "pilar": "motivacion_economica",
       "guion": "El trabajo se expande hasta llenar el tiempo que le das. Ley de Parkinson. Dale a tu proyecto la mitad del tiempo y mira qué pasa.",
-      "subtitulos": ["El trabajo se expande", "hasta llenar el tiempo", "que le das.", "Ley de Parkinson.", "Dale a tu proyecto", "la mitad del tiempo", "y mira qué pasa."],
-      "palabras_clave": ["tiempo", "parkinson", "mitad"],
+      "subtitulos": [
+        "El trabajo se expande",
+        "hasta llenar el tiempo",
+        "que le das.",
+        "Ley de Parkinson.",
+        "Dale a tu proyecto",
+        "la mitad del tiempo",
+        "y mira qué pasa."
+      ],
+      "palabras_clave": [
+        "tiempo",
+        "parkinson",
+        "mitad"
+      ],
       "fuente": "C. Northcote Parkinson, The Economist (1955)",
       "locacion": "gimnasio",
       "vestuario": "Conjunto deportivo de diseñador negro con detalles dorados: leggings, top y chamarra ligera abierta",
@@ -174,8 +348,19 @@
       "estado": "pendiente",
       "pilar": "negocio",
       "guion": "La gente no compra lo que haces, compra por qué lo haces. Lo dijo Simon Sinek. Antes de vender tu producto, vende tu porqué.",
-      "subtitulos": ["La gente no compra", "lo que haces,", "compra por qué lo haces.", "Lo dijo Simon Sinek.", "Antes de vender tu producto,", "vende tu porqué."],
-      "palabras_clave": ["porqué", "sinek", "vender"],
+      "subtitulos": [
+        "La gente no compra",
+        "lo que haces,",
+        "compra por qué lo haces.",
+        "Lo dijo Simon Sinek.",
+        "Antes de vender tu producto,",
+        "vende tu porqué."
+      ],
+      "palabras_clave": [
+        "porqué",
+        "sinek",
+        "vender"
+      ],
       "fuente": "Simon Sinek, Empieza con el porqué (TED 2009)",
       "locacion": "hotel",
       "vestuario": "Traje sastre rojo carmesí de falda, camisola de seda negra, tacones negros",
@@ -188,8 +373,18 @@
       "estado": "pendiente",
       "pilar": "finanzas",
       "guion": "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste. Morgan Housel. Hoy invierte en silencio.",
-      "subtitulos": ["La riqueza es lo que no ves:", "el coche que no compraste,", "el lujo que no presumiste.", "Morgan Housel.", "Hoy invierte en silencio."],
-      "palabras_clave": ["riqueza", "housel", "silencio"],
+      "subtitulos": [
+        "La riqueza es lo que no ves:",
+        "el coche que no compraste,",
+        "el lujo que no presumiste.",
+        "Morgan Housel.",
+        "Hoy invierte en silencio."
+      ],
+      "palabras_clave": [
+        "riqueza",
+        "housel",
+        "silencio"
+      ],
       "fuente": "Morgan Housel, La psicología del dinero",
       "locacion": "golf",
       "vestuario": "Polo blanco ajustado, falda plisada azul marino, visera blanca, guante de golf",
@@ -202,8 +397,20 @@
       "estado": "pendiente",
       "pilar": "mentalidad",
       "guion": "Tu mente no suelta lo que dejaste a medias. Es el efecto Zeigarnik. Si algo te quita el sueño, escribe el siguiente paso y descansa.",
-      "subtitulos": ["Tu mente no suelta", "lo que dejaste a medias.", "Es el efecto Zeigarnik.", "Si algo te quita el sueño,", "escribe el siguiente paso", "y descansa."],
-      "palabras_clave": ["mente", "zeigarnik", "sueño", "descansa"],
+      "subtitulos": [
+        "Tu mente no suelta",
+        "lo que dejaste a medias.",
+        "Es el efecto Zeigarnik.",
+        "Si algo te quita el sueño,",
+        "escribe el siguiente paso",
+        "y descansa."
+      ],
+      "palabras_clave": [
+        "mente",
+        "zeigarnik",
+        "sueño",
+        "descansa"
+      ],
       "fuente": "Bluma Zeigarnik (1927); Masicampo y Baumeister (2011)",
       "locacion": "sillon",
       "vestuario": "Vestido camisero de seda azul cielo, cinturón dorado delgado, pies descalzos",
@@ -216,8 +423,21 @@
       "estado": "pendiente",
       "pilar": "vida",
       "guion": "Haz primero lo que más te cuesta. Brian Tracy lo llama tragarte el sapo. Después de eso, el resto del día es pura ganancia.",
-      "subtitulos": ["Haz primero", "lo que más te cuesta.", "Brian Tracy lo llama", "tragarte el sapo.", "Después de eso,", "el resto del día", "es pura ganancia."],
-      "palabras_clave": ["primero", "tracy", "sapo", "ganancia"],
+      "subtitulos": [
+        "Haz primero",
+        "lo que más te cuesta.",
+        "Brian Tracy lo llama",
+        "tragarte el sapo.",
+        "Después de eso,",
+        "el resto del día",
+        "es pura ganancia."
+      ],
+      "palabras_clave": [
+        "primero",
+        "tracy",
+        "sapo",
+        "ganancia"
+      ],
       "fuente": "Brian Tracy, ¡Tráguese ese sapo!",
       "locacion": "oficina",
       "vestuario": "Blusa blanca de seda con moño al cuello, falda lápiz negra, tacones negros, lentes de armazón delgado",
@@ -230,8 +450,21 @@
       "estado": "pendiente",
       "pilar": "motivacion_economica",
       "guion": "Charlie Munger decía que los primeros cien mil dólares son los más difíciles. Después, el dinero trabaja para ti. Empieza con poco, pero empieza hoy.",
-      "subtitulos": ["Charlie Munger decía", "que los primeros 100,000 dólares", "son los más difíciles.", "Después, el dinero", "trabaja para ti.", "Empieza con poco,", "pero empieza hoy."],
-      "palabras_clave": ["munger", "100,000", "dinero", "hoy"],
+      "subtitulos": [
+        "Charlie Munger decía",
+        "que los primeros 100,000 dólares",
+        "son los más difíciles.",
+        "Después, el dinero",
+        "trabaja para ti.",
+        "Empieza con poco,",
+        "pero empieza hoy."
+      ],
+      "palabras_clave": [
+        "munger",
+        "100,000",
+        "dinero",
+        "hoy"
+      ],
       "fuente": "Charlie Munger, frase pública sobre los primeros 100,000 dólares",
       "locacion": "bar",
       "vestuario": "Vestido de cóctel de terciopelo verde botella, aretes largos de oro, tacones dorados",
