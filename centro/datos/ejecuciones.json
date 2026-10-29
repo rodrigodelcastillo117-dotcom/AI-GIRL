@@ -61,5 +61,14 @@
   "detalle": "Video 01 movido a jueves 17:47 en Instagram, TikTok y YouTube (verificado en Publer y YouTube).",
   "creditos_usados": 0,
   "creditos_restantes": 9870
+ },
+ {
+  "fecha_utc": "2026-10-29T12:50:00Z",
+  "tipo": "auditar",
+  "video_id": "01",
+  "resultado": "omitido",
+  "detalle": "Día sin publicación: video 01 sigue programado hoy 17:47 en Instagram, TikTok y YouTube (comprobado); 02 listo para el sábado.",
+  "creditos_usados": 0,
+  "creditos_restantes": 9870
  }
 ]

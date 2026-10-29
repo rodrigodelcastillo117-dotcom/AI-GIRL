@@ -1,65 +1,74 @@
 [
- {
-  "fecha_utc": "2026-10-29T01:14:00Z",
-  "tipo": "preparacion",
-  "video_id": "",
-  "resultado": "ok",
-  "detalle": "Hoja de la modelo, 5 cuartos y video de prueba de voz",
-  "creditos_usados": 900,
-  "creditos_restantes": 11100
- },
- {
-  "fecha_utc": "2026-10-29T01:56:00Z",
-  "tipo": "generar",
-  "video_id": "01",
-  "resultado": "ok",
-  "detalle": "Pelirroja con pecas, Rottweiler, video 01 en el jet y foto de perfil",
-  "creditos_usados": 660,
-  "creditos_restantes": 10440
- },
- {
-  "fecha_utc": "2026-10-29T02:23:00Z",
-  "tipo": "extra",
-  "video_id": "",
-  "resultado": "ok",
-  "detalle": "Banner de YouTube",
-  "creditos_usados": 60,
-  "creditos_restantes": 10380
- },
- {
-  "fecha_utc": "2026-10-29T02:42:00Z",
-  "tipo": "generar",
-  "video_id": "02",
-  "resultado": "fallido",
-  "detalle": "Video 02 generado y aprobado (audio 92%), pero no se publicó: Publer bloqueó la conexión, el permiso de YouTube es de otro canal y no pudo guardar en el repo.",
-  "creditos_usados": 510,
-  "creditos_restantes": 9870
- },
- {
-  "fecha_utc": "2026-10-29T03:55:00Z",
-  "tipo": "publicar",
-  "video_id": "01",
-  "resultado": "programado",
-  "detalle": "Video 01 programado para hoy 20:47 en Instagram, TikTok y YouTube Shorts (Instagram falló al primer intento por el tipo de post; corregido).",
-  "creditos_usados": 0,
-  "creditos_restantes": 9870
- },
- {
-  "fecha_utc": "2026-10-29T05:00:00Z",
-  "tipo": "publicar",
-  "video_id": "01",
-  "resultado": "programado",
-  "detalle": "Video 01 movido a jueves 17:45 en YouTube con título SEO nuevo; Instagram y TikTok siguen a las 20:47 hasta moverlos a mano en Publer.",
-  "creditos_usados": 0,
-  "creditos_restantes": 9870
- },
- {
-  "fecha_utc": "2026-10-29T05:20:00Z",
-  "tipo": "publicar",
-  "video_id": "01",
-  "resultado": "programado",
-  "detalle": "Video 01 movido a jueves 17:47 en Instagram, TikTok y YouTube (verificado en Publer y YouTube).",
-  "creditos_usados": 0,
-  "creditos_restantes": 9870
- }
+  {
+    "fecha_utc": "2026-10-29T01:14:00Z",
+    "tipo": "preparacion",
+    "video_id": "",
+    "resultado": "ok",
+    "detalle": "Hoja de la modelo, 5 cuartos y video de prueba de voz",
+    "creditos_usados": 900,
+    "creditos_restantes": 11100
+  },
+  {
+    "fecha_utc": "2026-10-29T01:56:00Z",
+    "tipo": "generar",
+    "video_id": "01",
+    "resultado": "ok",
+    "detalle": "Pelirroja con pecas, Rottweiler, video 01 en el jet y foto de perfil",
+    "creditos_usados": 660,
+    "creditos_restantes": 10440
+  },
+  {
+    "fecha_utc": "2026-10-29T02:23:00Z",
+    "tipo": "extra",
+    "video_id": "",
+    "resultado": "ok",
+    "detalle": "Banner de YouTube",
+    "creditos_usados": 60,
+    "creditos_restantes": 10380
+  },
+  {
+    "fecha_utc": "2026-10-29T02:42:00Z",
+    "tipo": "generar",
+    "video_id": "02",
+    "resultado": "fallido",
+    "detalle": "Video 02 generado y aprobado (audio 92%), pero no se publicó: Publer bloqueó la conexión, el permiso de YouTube es de otro canal y no pudo guardar en el repo.",
+    "creditos_usados": 510,
+    "creditos_restantes": 9870
+  },
+  {
+    "fecha_utc": "2026-10-29T03:55:00Z",
+    "tipo": "publicar",
+    "video_id": "01",
+    "resultado": "programado",
+    "detalle": "Video 01 programado para hoy 20:47 en Instagram, TikTok y YouTube Shorts (Instagram falló al primer intento por el tipo de post; corregido).",
+    "creditos_usados": 0,
+    "creditos_restantes": 9870
+  },
+  {
+    "fecha_utc": "2026-10-29T05:00:00Z",
+    "tipo": "publicar",
+    "video_id": "01",
+    "resultado": "programado",
+    "detalle": "Video 01 movido a jueves 17:45 en YouTube con título SEO nuevo; Instagram y TikTok siguen a las 20:47 hasta moverlos a mano en Publer.",
+    "creditos_usados": 0,
+    "creditos_restantes": 9870
+  },
+  {
+    "fecha_utc": "2026-10-29T05:20:00Z",
+    "tipo": "publicar",
+    "video_id": "01",
+    "resultado": "programado",
+    "detalle": "Video 01 movido a jueves 17:47 en Instagram, TikTok y YouTube (verificado en Publer y YouTube).",
+    "creditos_usados": 0,
+    "creditos_restantes": 9870
+  },
+  {
+    "fecha_utc": "2026-10-29T12:50:00Z",
+    "tipo": "auditar",
+    "video_id": "01",
+    "resultado": "omitido",
+    "detalle": "Día sin publicación: video 01 sigue programado hoy 17:47 en Instagram, TikTok y YouTube (comprobado); 02 listo para el sábado.",
+    "creditos_usados": 0,
+    "creditos_restantes": 9870
+  }
 ]
