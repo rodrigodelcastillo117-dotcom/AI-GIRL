@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de fondo de emergencia: cuánto necesitas y en cuánto tiempo llegas</title>
+  <meta name="description" content="Calcula gratis tu fondo de emergencia de 3 a 6 meses de gastos fijos, cuánto te falta y en cuántos meses lo completas ahorrando cada mes.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/fondo-de-emergencia">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de fondo de emergencia: cuánto necesitas y en cuánto tiempo llegas">
+  <meta property="og:description" content="Calcula gratis tu fondo de emergencia de 3 a 6 meses de gastos fijos, cuánto te falta y en cuántos meses lo completas ahorrando cada mes.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/fondo-de-emergencia">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de fondo de emergencia: cuánto necesitas y en cuánto tiempo llegas", "url": "https://victoriatheceo.vercel.app/fondo-de-emergencia", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuántos meses necesito?", "acceptedAnswer": {"@type": "Answer", "text": "La CONDUSEF recomienda de 3 a 6 meses de tus gastos. Si tu ingreso es variable o mantienes a alguien, apunta a 6."}}, {"@type": "Question", "name": "¿Primero el fondo o primero invertir?", "acceptedAnswer": {"@type": "Answer", "text": "Primero el fondo. Sin colchón, cualquier emergencia te obliga a endeudarte o a vender en mal momento."}}, {"@type": "Question", "name": "¿Qué cuenta como gasto fijo?", "acceptedAnswer": {"@type": "Answer", "text": "Lo que pagas sí o sí cada mes: vivienda, comida, salud, transporte, servicios y los pagos de tus deudas."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>Tu <span>fondo de emergencia</span></h1>
+      <p class="lema">De 3 a 6 meses de tus gastos fijos, guardados para cuando algo se rompe. Mira cuánto necesitas y cuándo llegas.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <label>Gastos fijos al mes <small>(vivienda, comida, salud, transporte, servicios y deudas)</small>
+        <input id="gastos" inputmode="decimal" value="12000"></label>
+      <div class="fila">
+        <label>Meses de colchón <select id="meses"><option>3</option><option>4</option><option>5</option><option selected>6</option></select></label>
+        <label>Ya tienes ahorrado <input id="tienes" inputmode="decimal" value="0"></label>
+      </div>
+      <label>Puedes ahorrar al mes <input id="mensual" inputmode="decimal" value="1500"></label>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Tu meta</div>
+      <div class="cifra" id="meta">$0</div>
+      <ul class="desglose">
+        <li>Te falta<b id="falta"></b></li>
+        <li>Avance<b id="avance"></b></li>
+        <li>Llegas en<b id="tiempo"></b></li>
+      </ul>
+      <div class="barras"><div><i id="barra" style="width:0%"></i></div></div>
+      <p class="nota">Guárdalo donde lo puedas sacar rápido y sin perder dinero: no es para invertir en algo riesgoso.</p>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Sigue tu avance cada mes.</h2>
+        <p class="lema" style="margin:0">El tablero de la CEO lleva tu fondo de emergencia con meta, avance y meses para llegar, junto con tu presupuesto, tus deudas y tus metas.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Cuántos meses necesito?</h3>
+      <p>La CONDUSEF recomienda de 3 a 6 meses de tus gastos. Si tu ingreso es variable o mantienes a alguien, apunta a 6.</p>
+      <h3>¿Primero el fondo o primero invertir?</h3>
+      <p>Primero el fondo. Sin colchón, cualquier emergencia te obliga a endeudarte o a vender en mal momento.</p>
+      <h3>¿Qué cuenta como gasto fijo?</h3>
+      <p>Lo que pagas sí o sí cada mes: vivienda, comida, salud, transporte, servicios y los pagos de tus deudas.</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia" class="actual">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+function calcular() {
+  const meta = numero('gastos') * Number(document.getElementById('meses').value);
+  const tienes = numero('tienes'), mensual = numero('mensual');
+  const falta = Math.max(0, meta - tienes);
+  const avance = meta ? Math.min(100, 100 * tienes / meta) : 0;
+  document.getElementById('meta').textContent = pesos(meta);
+  document.getElementById('falta').textContent = pesos(falta);
+  document.getElementById('avance').textContent = `${avance.toFixed(0)}%`;
+  document.getElementById('barra').style.width = `${avance}%`;
+  let tiempo = '¡Ya llegaste!';
+  if (falta > 0) {
+    if (mensual <= 0) tiempo = 'Pon cuánto puedes ahorrar';
+    else {
+      const meses = Math.ceil(falta / mensual);
+      const fecha = new Date(); fecha.setMonth(fecha.getMonth() + meses);
+      tiempo = `${meses} meses (${fecha.toLocaleDateString('es-MX', {month: 'long', year: 'numeric'})})`;
+    }
+  }
+  document.getElementById('tiempo').textContent = tiempo;
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'fondo-de-emergencia');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Calcula cuánto necesitas de fondo de emergencia: https://victoriatheceo.vercel.app/fondo-de-emergencia?ref=wa');
+  </script>
+</body>
+</html>

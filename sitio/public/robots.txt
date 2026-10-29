@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://victoriatheceo.vercel.app/sitemap.xml

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora para salir de deudas: método bola de nieve o avalancha</title>
+  <meta name="description" content="Calcula gratis en cuántos meses sales de tus deudas y cuánto pagas de intereses con el método bola de nieve o el de avalancha. Te dice qué deuda pagar primero.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/pagar-deudas">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora para salir de deudas: método bola de nieve o avalancha">
+  <meta property="og:description" content="Calcula gratis en cuántos meses sales de tus deudas y cuánto pagas de intereses con el método bola de nieve o el de avalancha. Te dice qué deuda pagar primero.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/pagar-deudas">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora para salir de deudas: método bola de nieve o avalancha", "url": "https://victoriatheceo.vercel.app/pagar-deudas", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es el método bola de nieve?", "acceptedAnswer": {"@type": "Answer", "text": "Pagas el mínimo en todas y lo extra va a la deuda más chica. Cuando la liquidas, lo que pagabas ahí se suma a la siguiente. Lo popularizó Dave Ramsey."}}, {"@type": "Question", "name": "¿Qué es el método avalancha?", "acceptedAnswer": {"@type": "Answer", "text": "Igual, pero lo extra va primero a la deuda con la tasa de interés más alta. Matemáticamente es el que menos intereses te cobra."}}, {"@type": "Question", "name": "¿Cuál me conviene?", "acceptedAnswer": {"@type": "Answer", "text": "Si te cuesta mantener el plan, bola de nieve: las victorias rápidas motivan. Si quieres pagar lo menos posible, avalancha."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>Sal de tus <span>deudas</span></h1>
+      <p class="lema">Pon tus deudas y lo que puedes abonar de más cada mes. Te digo en qué orden pagarlas, cuándo terminas y cuánto te ahorras.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <div id="deudas"></div>
+      <button type="button" class="boton secundario" id="agregar">+ Agregar otra deuda</button>
+      <label>Puedes abonar de más cada mes <small>(además de los pagos mínimos)</small>
+        <input id="extra" inputmode="decimal" value="1000"></label>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Tu plan</div>
+      <div id="plan"></div>
+      <p class="nota">Usa la tasa de interés anual de tu estado de cuenta. Es una simulación con pagos fijos y sin cargos
+        nuevos: tu banco puede calcular distinto.</p>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Lleva tu plan de deudas al día.</h2>
+        <p class="lema" style="margin:0">El tablero de la CEO ordena tus deudas con bola de nieve o avalancha, te dice cuánto te cuestan en intereses al mes y lo conecta con tu presupuesto y tu fondo de emergencia.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Qué es el método bola de nieve?</h3>
+      <p>Pagas el mínimo en todas y lo extra va a la deuda más chica. Cuando la liquidas, lo que pagabas ahí se suma a la siguiente. Lo popularizó Dave Ramsey.</p>
+      <h3>¿Qué es el método avalancha?</h3>
+      <p>Igual, pero lo extra va primero a la deuda con la tasa de interés más alta. Matemáticamente es el que menos intereses te cobra.</p>
+      <h3>¿Cuál me conviene?</h3>
+      <p>Si te cuesta mantener el plan, bola de nieve: las victorias rápidas motivan. Si quieres pagar lo menos posible, avalancha.</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas" class="actual">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+const EJEMPLO = [['Tarjeta A', 18000, 60, 900], ['Tarjeta B', 6000, 45, 300], ['Préstamo', 25000, 30, 1200]];
+const caja = document.getElementById('deudas');
+function fila(datos = ['', '', '', '']) {
+  if (caja.children.length >= 8) return;
+  const n = caja.children.length + 1;
+  const campos = [['Nombre', 'text', `Deuda ${n}`], ['Saldo', 'decimal', '0'], ['Tasa anual %', 'decimal', '0'], ['Pago mínimo', 'decimal', '0']];
+  caja.append(crear('div', {className: 'deuda'}, ...campos.map(([nombre, tipo, ph], i) =>
+    crear('label', {}, nombre, crear('input', {type: 'text', inputMode: tipo === 'text' ? 'text' : 'decimal', placeholder: ph, value: datos[i] ?? ''})))));
+}
+EJEMPLO.forEach(fila);
+document.getElementById('agregar').addEventListener('click', () => { fila(); calcular(); });
+const valor = (texto) => { const v = parseFloat(String(texto).replace(/[,\s$%]/g, '')); return Number.isFinite(v) ? v : 0; };
+function leerDeudas() {
+  return [...caja.children].map((d, i) => {
+    const c = d.querySelectorAll('input');
+    return {nombre: c[0].value.trim() || `Deuda ${i + 1}`, saldo: valor(c[1].value), tasa: valor(c[2].value), minimo: valor(c[3].value)};
+  }).filter((d) => d.saldo > 0);
+}
+function simular(deudas, extra, orden) {
+  const ds = deudas.map((d) => ({...d})).sort(orden);
+  const presupuesto = ds.reduce((s, d) => s + d.minimo, 0) + extra;
+  let meses = 0, intereses = 0;
+  const liquidadas = [];
+  while (ds.some((d) => d.saldo > 0.005) && meses < 600) {
+    meses++;
+    for (const d of ds) if (d.saldo > 0) { const i = d.saldo * d.tasa / 1200; d.saldo += i; intereses += i; }
+    let disponible = presupuesto;
+    for (const d of ds) if (d.saldo > 0) { const p = Math.min(d.minimo, d.saldo); d.saldo -= p; disponible -= p; }
+    for (const d of ds) if (d.saldo > 0 && disponible > 0) { const p = Math.min(disponible, d.saldo); d.saldo -= p; disponible -= p; }
+    for (const d of ds) if (d.saldo <= 0.005 && !liquidadas.find((x) => x.nombre === d.nombre)) { d.saldo = 0; liquidadas.push({nombre: d.nombre, mes: meses}); }
+  }
+  return {meses, intereses, liquidadas, termina: meses < 600};
+}
+const enMeses = (m) => m >= 12 ? `${m} meses (${(m / 12).toFixed(1)} años)` : `${m} meses`;
+function bloque(titulo, r, explica) {
+  return crear('div', {className: 'tarjeta', style: 'margin-top:12px'},
+    crear('h3', {textContent: titulo, style: 'margin-top:0'}), crear('p', {className: 'nota', textContent: explica, style: 'margin-top:0'}),
+    crear('ul', {className: 'desglose'},
+      crear('li', {}, 'Sin deudas en', crear('b', {textContent: r.termina ? enMeses(r.meses) : 'más de 50 años'})),
+      crear('li', {}, 'Intereses que pagas', crear('b', {textContent: pesos(r.intereses)})),
+      crear('li', {}, 'Orden', crear('b', {textContent: r.liquidadas.map((x) => x.nombre).join(' → ') || '—'}))));
+}
+function calcular() {
+  const deudas = leerDeudas(), extra = numero('extra');
+  const plan = document.getElementById('plan');
+  if (!deudas.length) return plan.replaceChildren(crear('p', {className: 'nota', textContent: 'Pon al menos una deuda con saldo.'}));
+  const bola = simular(deudas, extra, (a, b) => a.saldo - b.saldo);
+  const avalancha = simular(deudas, extra, (a, b) => b.tasa - a.tasa);
+  const ahorro = bola.intereses - avalancha.intereses;
+  const resumen = !avalancha.termina
+    ? crear('p', {className: 'aviso', textContent: 'Con estos pagos tus deudas casi no bajan: los intereses se comen lo que abonas. Sube lo que pagas de más o pide reestructurar.'})
+    : crear('p', {className: 'bien', textContent: ahorro > 1
+        ? `Avalancha te ahorra ${pesos(ahorro)} en intereses. Bola de nieve te da la primera victoria en ${bola.liquidadas[0]?.mes ?? '—'} meses.`
+        : `Con tus deudas los dos métodos cuestan casi lo mismo: elige el que te motive más.`});
+  plan.replaceChildren(resumen,
+    bloque('Avalancha', avalancha, 'Primero la de la tasa más alta: es la que menos intereses te cobra en total.'),
+    bloque('Bola de nieve', bola, 'Primero la más chica: la liquidas rápido y esa victoria te mantiene motivada.'));
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'pagar-deudas');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Calcula en cuántos meses sales de tus deudas: https://victoriatheceo.vercel.app/pagar-deudas?ref=wa');
+  </script>
+</body>
+</html>

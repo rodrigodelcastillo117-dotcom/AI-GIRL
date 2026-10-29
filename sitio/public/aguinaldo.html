@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de aguinaldo 2026: cuánto te toca y cuánto paga ISR</title>
+  <meta name="description" content="Calcula gratis tu aguinaldo 2026 según la Ley Federal del Trabajo: mínimo 15 días, parte proporcional y cuánto queda libre de ISR ($3,519.30). Con un plan para no gastártelo en enero.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/aguinaldo">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de aguinaldo 2026: cuánto te toca y cuánto paga ISR">
+  <meta property="og:description" content="Calcula gratis tu aguinaldo 2026 según la Ley Federal del Trabajo: mínimo 15 días, parte proporcional y cuánto queda libre de ISR ($3,519.30). Con un plan para no gastártelo en enero.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/aguinaldo">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de aguinaldo 2026: cuánto te toca y cuánto paga ISR", "url": "https://victoriatheceo.vercel.app/aguinaldo", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuándo me tienen que pagar el aguinaldo?", "acceptedAnswer": {"@type": "Answer", "text": "Antes del 20 de diciembre. Lo dice el artículo 87 de la Ley Federal del Trabajo."}}, {"@type": "Question", "name": "¿Cuántos días me tocan?", "acceptedAnswer": {"@type": "Answer", "text": "Por lo menos 15 días de salario. Muchas empresas dan más: si es tu caso, cambia el número de días."}}, {"@type": "Question", "name": "¿Y si no trabajé todo el año o ya renuncié?", "acceptedAnswer": {"@type": "Answer", "text": "Te toca la parte proporcional al tiempo que trabajaste, aunque ya no estés en la empresa cuando se paga (artículo 87 de la Ley Federal del Trabajo)."}}, {"@type": "Question", "name": "¿El aguinaldo paga impuestos?", "acceptedAnswer": {"@type": "Answer", "text": "Hasta el equivalente a 30 días queda libre de ISR (artículo 93, fracción XIV de la Ley del ISR). Se calcula con la UMA: 30 × $117.31 = $3,519.30 en 2026. Lo que pase de eso sí paga ISR y tu empresa te lo retiene."}}, {"@type": "Question", "name": "¿Cómo sacan mi salario diario?", "acceptedAnswer": {"@type": "Answer", "text": "Aquí dividimos tu sueldo mensual entre 30, que es lo más común. Tu recibo puede usar otro cálculo; si no te cuadra, pregúntale a tu área de nómina."}}, {"@type": "Question", "name": "¿Y si trabajo para el gobierno?", "acceptedAnswer": {"@type": "Answer", "text": "Puede aplicarte otra ley con más días de aguinaldo. Pon tus días en el campo y el cálculo se ajusta."}}, {"@type": "Question", "name": "¿Y si no me pagan?", "acceptedAnswer": {"@type": "Answer", "text": "Puedes pedir asesoría gratuita en la Procuraduría Federal de la Defensa del Trabajo (PROFEDET)."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>Calcula tu <span>aguinaldo 2026</span></h1>
+      <p class="lema">Por ley son mínimo 15 días de salario, pagados antes del 20 de diciembre. Pon tus datos y te digo cuánto te toca, cuánto está libre de impuestos y cómo repartirlo para que sí te sirva.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <label>Sueldo mensual bruto <small>(antes de impuestos, como dice tu recibo)</small>
+        <input id="sueldo" inputmode="decimal" placeholder="15,000" value="15000"></label>
+      <label>Días de aguinaldo <small>(la ley da mínimo 15; si tu empresa da más, pon los tuyos)</small>
+        <input id="dias" inputmode="numeric" value="15"></label>
+      <div class="fila">
+        <label>Fecha de ingreso <small>(solo si entraste en 2026)</small>
+          <input id="ingreso" type="date" min="2026-01-01" max="2026-12-31"></label>
+        <label>Fecha de salida <small>(solo si ya no trabajas ahí)</small>
+          <input id="salida" type="date" min="2026-01-01" max="2026-12-31"></label>
+      </div>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Tu aguinaldo</div>
+      <div class="cifra" id="total">$0</div>
+      <ul class="desglose">
+        <li>Salario diario <span class="letra-chica">(sueldo ÷ 30)</span><b id="diario"></b></li>
+        <li>Días trabajados en 2026<b id="trabajados"></b></li>
+        <li>Libre de ISR<b id="exento"></b></li>
+        <li>Parte que paga ISR<b id="gravado"></b></li>
+      </ul>
+      <p class="nota" id="nota"></p>
+      <h3>Mi plan para que no se te vaya en enero</h3>
+      <p class="nota">Es mi regla, no una ley: primero lo que te cobra intereses o tu colchón, luego tus metas y al
+        final el gusto, sin culpa. Cambia los porcentajes si quieres.</p>
+      <div class="fila" style="grid-template-columns: repeat(3, 1fr); align-items: end">
+        <label>Deudas/fondo % <input id="p1" inputmode="numeric" value="50"></label>
+        <label>Metas % <input id="p2" inputmode="numeric" value="30"></label>
+        <label>Gusto % <input id="p3" inputmode="numeric" value="20"></label>
+      </div>
+      <div class="barras" id="plan"></div>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Ya sabes cuánto te toca. Ahora que sí te rinda.</h2>
+        <p class="lema" style="margin:0">El tablero de la CEO es mi plantilla para decidir a dónde va cada peso: tu aguinaldo, tus deudas, tu fondo de emergencia y tus metas, todo calculado solo en Excel o Google Sheets.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Cuándo me tienen que pagar el aguinaldo?</h3>
+      <p>Antes del 20 de diciembre. Lo dice el artículo 87 de la Ley Federal del Trabajo.</p>
+      <h3>¿Cuántos días me tocan?</h3>
+      <p>Por lo menos 15 días de salario. Muchas empresas dan más: si es tu caso, cambia el número de días.</p>
+      <h3>¿Y si no trabajé todo el año o ya renuncié?</h3>
+      <p>Te toca la parte proporcional al tiempo que trabajaste, aunque ya no estés en la empresa cuando se paga (artículo 87 de la Ley Federal del Trabajo).</p>
+      <h3>¿El aguinaldo paga impuestos?</h3>
+      <p>Hasta el equivalente a 30 días queda libre de ISR (artículo 93, fracción XIV de la Ley del ISR). Se calcula con la UMA: 30 × $117.31 = $3,519.30 en 2026. Lo que pase de eso sí paga ISR y tu empresa te lo retiene.</p>
+      <h3>¿Cómo sacan mi salario diario?</h3>
+      <p>Aquí dividimos tu sueldo mensual entre 30, que es lo más común. Tu recibo puede usar otro cálculo; si no te cuadra, pregúntale a tu área de nómina.</p>
+      <h3>¿Y si trabajo para el gobierno?</h3>
+      <p>Puede aplicarte otra ley con más días de aguinaldo. Pon tus días en el campo y el cálculo se ajusta.</p>
+      <h3>¿Y si no me pagan?</h3>
+      <p>Puedes pedir asesoría gratuita en la Procuraduría Federal de la Defensa del Trabajo (PROFEDET).</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo" class="actual">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <section><div class="etiqueta">Fuentes</div><ul class="fuentes"><li><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf" rel="noopener" target="_blank">Ley Federal del Trabajo, artículo 87 (Cámara de Diputados)</a></li><li><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf" rel="noopener" target="_blank">Ley del Impuesto sobre la Renta, artículo 93, fracción XIV (Cámara de Diputados)</a></li><li><a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf" rel="noopener" target="_blank">INEGI, valor de la UMA 2026: $117.31 diarios (comunicado 1/26)</a></li></ul></section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+const TOPE = 3519.3;
+const DIA = 864e5;
+function calcular() {
+  const sueldo = numero('sueldo'), dias = numero('dias');
+  const inicio = document.getElementById('ingreso').value ? new Date(document.getElementById('ingreso').value) : new Date('2026-01-01');
+  const fin = document.getElementById('salida').value ? new Date(document.getElementById('salida').value) : new Date('2026-12-31');
+  const trabajados = Math.max(0, Math.min(365, Math.round((fin - inicio) / DIA) + 1));
+  const diario = sueldo / 30;
+  const total = diario * dias * trabajados / 365;
+  const exento = Math.min(total, TOPE);
+  const gravado = Math.max(0, total - TOPE);
+  document.getElementById('total').textContent = pesos(total, 2);
+  document.getElementById('diario').textContent = pesos(diario, 2);
+  document.getElementById('trabajados').textContent = trabajados === 365 ? '365 (todo el año)' : String(trabajados);
+  document.getElementById('exento').textContent = pesos(exento, 2);
+  document.getElementById('gravado').textContent = pesos(gravado, 2);
+  document.getElementById('nota').textContent = gravado > 0
+    ? `Los primeros ${pesos(TOPE, 2)} no pagan ISR. Los ${pesos(gravado, 2)} restantes sí: tu empresa te retiene el impuesto y cuánto depende de tu sueldo, así que en tu cuenta te llegará algo menos que el total.`
+    : 'Todo tu aguinaldo queda libre de ISR: es menor a 30 UMA (' + pesos(TOPE, 2) + ' en 2026).';
+  const partes = [['Deudas o fondo de emergencia', numero('p1'), 'a'], ['Metas', numero('p2'), 'b'], ['Gusto', numero('p3'), 'c']];
+  const suma = partes.reduce((s, p) => s + p[1], 0) || 1;
+  document.getElementById('plan').replaceChildren(...partes.map(([nombre, pct, clase]) => crear('div', {},
+    crear('span', {textContent: `${nombre}: ${pesos(total * pct / suma)}`}),
+    crear('i', {className: clase, style: `width:${Math.round(100 * pct / suma)}%`}))));
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'aguinaldo');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Calcula cuánto te toca de aguinaldo y cuánto paga ISR, gratis: https://victoriatheceo.vercel.app/aguinaldo?ref=wa');
+  </script>
+</body>
+</html>

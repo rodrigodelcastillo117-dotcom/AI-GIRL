@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora regla 50/30/20: divide tu sueldo en necesidades, deseos y ahorro</title>
+  <meta name="description" content="Calcula gratis tu presupuesto con la regla 50/30/20: cuánto va a necesidades, a deseos y a ahorro y deudas, y compáralo con lo que gastas hoy.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/regla-50-30-20">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora regla 50/30/20: divide tu sueldo en necesidades, deseos y ahorro">
+  <meta property="og:description" content="Calcula gratis tu presupuesto con la regla 50/30/20: cuánto va a necesidades, a deseos y a ahorro y deudas, y compáralo con lo que gastas hoy.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/regla-50-30-20">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora regla 50/30/20: divide tu sueldo en necesidades, deseos y ahorro", "url": "https://victoriatheceo.vercel.app/regla-50-30-20", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿De dónde sale la regla 50/30/20?", "acceptedAnswer": {"@type": "Answer", "text": "La propusieron Elizabeth Warren y Amelia Warren Tyagi en su libro All Your Worth (2005)."}}, {"@type": "Question", "name": "¿Los pagos de mis deudas van en necesidades?", "acceptedAnswer": {"@type": "Answer", "text": "Los pagos mínimos, sí. Lo que abones de más para salir antes va en el 20%."}}, {"@type": "Question", "name": "¿Y si mis necesidades pasan del 50%?", "acceptedAnswer": {"@type": "Answer", "text": "Pasa mucho. Es un punto de partida: empieza por ahorrar algo fijo cada mes aunque sea menos del 20% y ve ajustando."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>Tu sueldo con la <span>regla 50/30/20</span></h1>
+      <p class="lema">La mitad para lo necesario, 30% para lo que quieres y 20% para ahorrar y salir de deudas. Pon tu ingreso y mira cómo queda.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <label>Ingreso mensual neto <small>(lo que te llega después de impuestos)</small>
+        <input id="ingreso" inputmode="decimal" value="15000"></label>
+      <p class="nota">Opcional: lo que gastas hoy, para comparar.</p>
+      <div class="fila" style="grid-template-columns: repeat(3, 1fr); align-items: end">
+        <label>Necesidades <input id="g1" inputmode="decimal" placeholder="0"></label>
+        <label>Deseos <input id="g2" inputmode="decimal" placeholder="0"></label>
+        <label>Ahorro y deudas <input id="g3" inputmode="decimal" placeholder="0"></label>
+      </div>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Así se reparte tu ingreso</div>
+      <ul class="desglose" id="reparto"></ul>
+      <p class="nota" id="nota"></p>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Lleva tu 50/30/20 mes a mes.</h2>
+        <p class="lema" style="margin:0">El tablero de la CEO trae el presupuesto 50/30/20 que se calcula solo, te dice cuánto te sobra o te falta y lo conecta con tu ahorro, tus deudas y tus metas.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿De dónde sale la regla 50/30/20?</h3>
+      <p>La propusieron Elizabeth Warren y Amelia Warren Tyagi en su libro All Your Worth (2005).</p>
+      <h3>¿Los pagos de mis deudas van en necesidades?</h3>
+      <p>Los pagos mínimos, sí. Lo que abones de más para salir antes va en el 20%.</p>
+      <h3>¿Y si mis necesidades pasan del 50%?</h3>
+      <p>Pasa mucho. Es un punto de partida: empieza por ahorrar algo fijo cada mes aunque sea menos del 20% y ve ajustando.</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20" class="actual">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+function calcular() {
+  const ingreso = numero('ingreso');
+  const partes = [['Necesidades (50%)', 0.5, 'g1'], ['Deseos (30%)', 0.3, 'g2'], ['Ahorro y deudas (20%)', 0.2, 'g3']];
+  const comparar = partes.some(([, , id]) => numero(id) > 0);
+  document.getElementById('reparto').replaceChildren(...partes.map(([nombre, pct, id]) => {
+    const meta = ingreso * pct, real = numero(id);
+    const fila = crear('li', {}, crear('span', {textContent: nombre}), crear('b', {textContent: pesos(meta)}));
+    if (comparar) {
+      const dif = real - meta;
+      const ahorro = id === 'g3';
+      const bien = ahorro ? dif >= 0 : dif <= 0;
+      fila.append(crear('span', {className: bien ? 'bien' : 'aviso', textContent: dif === 0 ? ' justo' : ` ${dif > 0 ? '+' : '−'}${pesos(Math.abs(dif))}`}));
+    }
+    return fila;
+  }));
+  document.getElementById('nota').textContent = comparar
+    ? 'En verde vas bien; en rojo te pasas (o, en ahorro, te falta). Es un punto de partida: ajústalo a tu vida.'
+    : 'Necesidades: vivienda, comida, transporte, servicios, salud y los pagos mínimos de tus deudas. Deseos: lo demás. El 20% es para ahorrar y para pagar deudas de más.';
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'regla-50-30-20');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Divide tu sueldo con la regla 50/30/20, gratis: https://victoriatheceo.vercel.app/regla-50-30-20?ref=wa');
+  </script>
+</body>
+</html>

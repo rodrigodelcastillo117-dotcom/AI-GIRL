@@ -7,7 +7,8 @@
   <meta name="description" content="Descarga gratis Las 30 reglas de la CEO: dinero, negocio y mente fuerte, cada una con su fuente y una acción para hoy.">
   <meta property="og:title" content="Las 30 reglas de la CEO · gratis">
   <meta property="og:description" content="Dinero, negocio y mente fuerte. Una regla por página, con fuente real y una acción para hoy.">
-  <meta property="og:image" content="/img/compartir.jpg">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/">
   <meta name="theme-color" content="#0b0b0d">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +48,18 @@
     .redes { display: flex; gap: 10px; flex-wrap: wrap; }
     .redes a { flex: 1 1 140px; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-align: center; text-decoration: none; font-weight: 600; }
     footer { width: min(560px, 100%); margin: 0 auto; padding: 24px 20px 48px; color: var(--tenue); font-size: .75rem; line-height: 1.6; border-top: 1px solid var(--linea); }
+      .destacada { display: block; padding: 16px; border-radius: 14px; background: var(--oro); color: var(--negro); text-decoration: none; font-weight: 900; font-size: 1.08rem; margin: 0 0 12px; }
+    .destacada small { display: block; font-weight: 600; font-size: .82rem; margin-top: 2px; }
+    .herramientas { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 420px) { .herramientas { grid-template-columns: 1fr; } }
+    .herramientas a { display: block; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-decoration: none; font-weight: 600; line-height: 1.35; }
+    .herramientas a small { display: block; color: var(--tenue); font-weight: 400; font-size: .8rem; margin-top: 4px; }
+    .galeria { display: flex; align-items: flex-start; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 0 16px; padding-bottom: 6px; }
+    .galeria figure { flex: 0 0 85%; margin: 0; scroll-snap-align: start; }
+    .galeria img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--linea); background: #fff; }
+    .galeria figcaption { font-size: .78rem; color: var(--tenue); margin-top: 6px; }
   </style>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <header class="heroe">
@@ -59,6 +71,13 @@
       <div id="captura"></div>
     </div>
   </header>
+
+  <section class="bloque" id="calculadoras">
+    <div class="etiqueta">Gratis · temporada de aguinaldo</div>
+    <h2>Calculadoras de Victoria</h2>
+    <a class="destacada" href="/aguinaldo">Calcula tu aguinaldo 2026 →<small>Cuánto te toca, cuánto paga ISR y cómo repartirlo</small></a>
+    <div class="herramientas"><!--herramientas--><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a><!--/herramientas--></div>
+  </section>
 
   <section class="bloque">
     <div class="etiqueta">Lo que vas a aprender</div>
@@ -79,6 +98,11 @@
     <div class="producto">
       <img class="portada" src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel">
       <p>La plantilla para aplicar las reglas con tus números, en Excel o Google Sheets:</p>
+      <div class="galeria">
+        <figure><img src="/img/hoja-presupuesto.jpg" alt="Hoja de presupuesto 50/30/20 de la plantilla" loading="lazy" width="900" height="590"><figcaption>Presupuesto 50/30/20 · escribes en lo amarillo</figcaption></figure>
+        <figure><img src="/img/hoja-deudas.jpg" alt="Hoja para salir de deudas con bola de nieve y avalancha" loading="lazy" width="900" height="403"><figcaption>Deudas: orden bola de nieve y avalancha</figcaption></figure>
+        <figure><img src="/img/hoja-interes.jpg" alt="Hoja de interés compuesto año por año" loading="lazy" width="862" height="753"><figcaption>Interés compuesto año por año</figcaption></figure>
+      </div>
       <ul>
         <li>Presupuesto 50/30/20 que se calcula solo</li>
         <li>Págate primero, mes a mes</li>
@@ -106,41 +130,15 @@
     Los temas de bienestar no sustituyen la ayuda de un profesional de la salud.
   </footer>
 
+  <script src="/comun.js"></script>
   <script>
-    // Se llenan cuando existan las cuentas. kitAccion: la URL "action" exacta del código de inserción
-    // del formulario de Kit (lista de correos). pago: el enlace de pago de Hotmart de la plantilla.
-    const CONFIG = {kitAccion: '', pago: 'https://pay.hotmart.com/T108246040P', precio: '$231.76 MXN', notaPrecio: 'IVA incluido · pago único'};
     const GUIA = '/guia/las-30-reglas-de-la-ceo.pdf';
-    const ref = new URLSearchParams(location.search).get('ref') || 'directo';
-    const crear = (tag, props = {}, ...hijos) => { const el = Object.assign(document.createElement(tag), props); el.append(...hijos); return el; };
-
-    const captura = document.getElementById('captura');
-    if (CONFIG.kitAccion) {
-      // Con Kit: la guía llega por correo y la persona queda en la lista (con la red de donde vino).
-      const form = crear('form', {method: 'post', action: CONFIG.kitAccion});
-      form.append(
-        crear('input', {type: 'email', name: 'email_address', required: true, placeholder: 'Tu correo', autocomplete: 'email'}),
-        crear('input', {type: 'hidden', name: 'fields[origen]', value: ref}),
-        crear('button', {className: 'boton', type: 'submit', textContent: 'Quiero la guía gratis'}),
-        crear('p', {className: 'letra-chica', textContent: 'Te la mando a tu correo. Sin spam; te puedes salir cuando quieras.'}));
-      captura.append(form);
-    } else {
-      captura.append(crear('div', {className: 'descarga'},
-        crear('a', {className: 'boton', href: `${GUIA}?ref=${encodeURIComponent(ref)}`, textContent: 'Descargar la guía gratis (PDF)', download: ''}),
-        crear('p', {className: 'letra-chica', textContent: '36 páginas · se lee bien en el celular.'})));
-    }
-
-    const venta = document.getElementById('venta');
-    // src: Hotmart lo guarda en cada venta, así se sabe de qué red vino.
-    if (CONFIG.pago) {
-      venta.append(
-        crear('div', {className: 'precio', textContent: CONFIG.precio}),
-        crear('p', {className: 'letra-chica', textContent: CONFIG.notaPrecio}),
-        crear('a', {className: 'boton', href: `${CONFIG.pago}${CONFIG.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(ref)}`, textContent: 'Lo quiero'}),
-        crear('p', {className: 'letra-chica', textContent: 'Garantía de 7 días: si no te sirve, te regresan tu dinero. Pago seguro con Hotmart: tarjeta, Mercado Pago o PayPal.'}));
-    } else {
-      venta.append(crear('p', {className: 'letra-chica', textContent: 'Muy pronto. Descarga la guía y te aviso primero.'}));
-    }
+    document.getElementById('captura').append(crear('div', {className: 'descarga'},
+      crear('a', {className: 'boton', href: `${GUIA}?ref=${encodeURIComponent(REF)}`, textContent: 'Descargar la guía gratis (PDF)', download: ''}),
+      crear('p', {className: 'letra-chica', textContent: '37 páginas · se lee bien en el celular.'})));
+    bloqueVenta(document.getElementById('venta'), '');
+    // El botón de la plantilla dice "Lo quiero" en la portada.
+    document.querySelector('#venta .boton').textContent = 'Lo quiero';
   </script>
 </body>
 </html>

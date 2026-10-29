@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de interés compuesto: cuánto crece tu ahorro mes a mes</title>
+  <meta name="description" content="Calcula gratis cuánto crece tu dinero con interés compuesto: monto inicial, ahorro mensual, tasa y años. Incluye la regla del 72 para saber en cuánto tiempo se duplica.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/interes-compuesto">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de interés compuesto: cuánto crece tu ahorro mes a mes">
+  <meta property="og:description" content="Calcula gratis cuánto crece tu dinero con interés compuesto: monto inicial, ahorro mensual, tasa y años. Incluye la regla del 72 para saber en cuánto tiempo se duplica.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/interes-compuesto">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de interés compuesto: cuánto crece tu ahorro mes a mes", "url": "https://victoriatheceo.vercel.app/interes-compuesto", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es el interés compuesto?", "acceptedAnswer": {"@type": "Answer", "text": "Es ganar intereses sobre los intereses que ya ganaste. Al principio se nota poco; con los años, la mayor parte de lo que tienes viene de los intereses."}}, {"@type": "Question", "name": "¿Qué es la regla del 72?", "acceptedAnswer": {"@type": "Answer", "text": "Divide 72 entre la tasa anual y sabrás en cuántos años se duplica tu dinero, más o menos. Al 8% anual: unos 9 años. La describió Luca Pacioli en 1494."}}, {"@type": "Question", "name": "¿Qué tasa pongo?", "acceptedAnswer": {"@type": "Answer", "text": "La que te dé hoy tu instrumento de ahorro. Las tasas cambian y ninguna está garantizada: úsala como ejemplo, no como promesa."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>Calculadora de <span>interés compuesto</span></h1>
+      <p class="lema">El dinero que ahorras gana intereses, y esos intereses ganan intereses. Mira cuánto crece lo tuyo con el tiempo.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <div class="fila">
+        <label>Monto inicial <input id="inicial" inputmode="decimal" value="0"></label>
+        <label>Ahorro cada mes <input id="mensual" inputmode="decimal" value="1000"></label>
+      </div>
+      <div class="fila">
+        <label>Tasa anual % <small>(fija, de ejemplo)</small><input id="tasa" inputmode="decimal" value="8"></label>
+        <label>Años <input id="anos" inputmode="numeric" value="20"></label>
+      </div>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Al final tendrías</div>
+      <div class="cifra" id="total">$0</div>
+      <ul class="desglose">
+        <li>Lo que pusiste tú<b id="puesto"></b></li>
+        <li>Lo que ganó en intereses<b id="intereses"></b></li>
+        <li>Se duplica cada <span class="letra-chica">(regla del 72)</span><b id="duplica"></b></li>
+      </ul>
+      <table><thead><tr><th>Año</th><th class="num">Pusiste</th><th class="num">Tendrías</th></tr></thead><tbody id="tabla"></tbody></table>
+      <p class="nota">Ejemplo con tasa fija y capitalización mensual, sin inflación, comisiones ni impuestos. Es educativo:
+        no es una recomendación de inversión y ninguna tasa está garantizada.</p>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Haz este cálculo con tus metas reales.</h2>
+        <p class="lema" style="margin:0">En El tablero de la CEO tienes el interés compuesto, la regla del 72 y cuánto apartar al mes para cada meta, junto con tu presupuesto, tus deudas y tu fondo de emergencia.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Qué es el interés compuesto?</h3>
+      <p>Es ganar intereses sobre los intereses que ya ganaste. Al principio se nota poco; con los años, la mayor parte de lo que tienes viene de los intereses.</p>
+      <h3>¿Qué es la regla del 72?</h3>
+      <p>Divide 72 entre la tasa anual y sabrás en cuántos años se duplica tu dinero, más o menos. Al 8% anual: unos 9 años. La describió Luca Pacioli en 1494.</p>
+      <h3>¿Qué tasa pongo?</h3>
+      <p>La que te dé hoy tu instrumento de ahorro. Las tasas cambian y ninguna está garantizada: úsala como ejemplo, no como promesa.</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto" class="actual">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+function valorFuturo(inicial, mensual, tasa, meses) {
+  const r = tasa / 100 / 12;
+  if (!r) return inicial + mensual * meses;
+  const f = Math.pow(1 + r, meses);
+  return inicial * f + mensual * (f - 1) / r;
+}
+function calcular() {
+  const inicial = numero('inicial'), mensual = numero('mensual'), tasa = numero('tasa');
+  const anos = Math.max(0, Math.min(60, Math.round(numero('anos'))));
+  const total = valorFuturo(inicial, mensual, tasa, anos * 12);
+  const puesto = inicial + mensual * anos * 12;
+  document.getElementById('total').textContent = pesos(total);
+  document.getElementById('puesto').textContent = pesos(puesto);
+  document.getElementById('intereses').textContent = pesos(total - puesto);
+  document.getElementById('duplica').textContent = tasa > 0 ? `${(72 / tasa).toFixed(1)} años` : '—';
+  const hitos = [...new Set([1, 5, 10, 15, 20, 25, 30, 40, 50, 60].filter((a) => a < anos).concat(anos))].filter((a) => a > 0);
+  document.getElementById('tabla').replaceChildren(...hitos.map((a) => crear('tr', {},
+    crear('td', {textContent: String(a)}), crear('td', {className: 'num', textContent: pesos(inicial + mensual * a * 12)}),
+    crear('td', {className: 'num', textContent: pesos(valorFuturo(inicial, mensual, tasa, a * 12))}))));
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'interes-compuesto');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Mira cuánto crece tu ahorro con interés compuesto: https://victoriatheceo.vercel.app/interes-compuesto?ref=wa');
+  </script>
+</body>
+</html>
