@@ -43,6 +43,7 @@
     .producto { border: 1px solid var(--linea); border-radius: 16px; padding: 20px; background: linear-gradient(160deg, rgba(245, 197, 66, .1), rgba(245, 197, 66, 0) 60%); }
     .producto ul { margin: 0 0 16px; padding-left: 18px; color: #d9d2c5; line-height: 1.7; }
     .precio { font-size: 1.6rem; font-weight: 900; color: var(--oro); }
+    .portada { display: block; width: 100%; border-radius: 12px; margin: 0 0 16px; }
     .redes { display: flex; gap: 10px; flex-wrap: wrap; }
     .redes a { flex: 1 1 140px; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-align: center; text-decoration: none; font-weight: 600; }
     footer { width: min(560px, 100%); margin: 0 auto; padding: 24px 20px 48px; color: var(--tenue); font-size: .75rem; line-height: 1.6; border-top: 1px solid var(--linea); }
@@ -76,6 +77,7 @@
     <div class="etiqueta">Para ponerlo en práctica</div>
     <h2>El tablero de la CEO</h2>
     <div class="producto">
+      <img class="portada" src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel">
       <p>La plantilla para aplicar las reglas con tus números, en Excel o Google Sheets:</p>
       <ul>
         <li>Presupuesto 50/30/20 que se calcula solo</li>
@@ -107,7 +109,7 @@
   <script>
     // Se llenan cuando existan las cuentas. kitAccion: la URL "action" exacta del código de inserción
     // del formulario de Kit (lista de correos). pago: el enlace de pago de Hotmart de la plantilla.
-    const CONFIG = {kitAccion: '', pago: ''};
+    const CONFIG = {kitAccion: '', pago: 'https://pay.hotmart.com/T108246040P', precio: '$231.76 MXN', notaPrecio: 'IVA incluido · pago único'};
     const GUIA = '/guia/las-30-reglas-de-la-ceo.pdf';
     const ref = new URLSearchParams(location.search).get('ref') || 'directo';
     const crear = (tag, props = {}, ...hijos) => { const el = Object.assign(document.createElement(tag), props); el.append(...hijos); return el; };
@@ -129,9 +131,16 @@
     }
 
     const venta = document.getElementById('venta');
-    venta.append(CONFIG.pago
-      ? crear('a', {className: 'boton', href: `${CONFIG.pago}${CONFIG.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(ref)}`, textContent: 'Lo quiero'})
-      : crear('p', {className: 'letra-chica', textContent: 'Muy pronto. Descarga la guía y te aviso primero.'}));
+    // src: Hotmart lo guarda en cada venta, así se sabe de qué red vino.
+    if (CONFIG.pago) {
+      venta.append(
+        crear('div', {className: 'precio', textContent: CONFIG.precio}),
+        crear('p', {className: 'letra-chica', textContent: CONFIG.notaPrecio}),
+        crear('a', {className: 'boton', href: `${CONFIG.pago}${CONFIG.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(ref)}`, textContent: 'Lo quiero'}),
+        crear('p', {className: 'letra-chica', textContent: 'Garantía de 7 días: si no te sirve, te regresan tu dinero. Pago seguro con Hotmart: tarjeta, Mercado Pago o PayPal.'}));
+    } else {
+      venta.append(crear('p', {className: 'letra-chica', textContent: 'Muy pronto. Descarga la guía y te aviso primero.'}));
+    }
   </script>
 </body>
 </html>

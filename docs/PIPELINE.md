@@ -214,7 +214,9 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 Embudo de ingresos: la página pública es `config.json → enlace_venta`
 (https://victoriatheceo.vercel.app, carpeta `sitio/`). Ahí está la guía gratis y la plantilla de
 paga. `seo.py` pone el enlace con `?ref=yt` en la descripción de YouTube y "enlace en mi perfil"
-en Instagram y TikTok. Para activar la lista de correos y el pago se llena `CONFIG` en
+en Instagram y TikTok; la descripción de YouTube lleva también la plantilla (`enlace_producto`, que
+abre la página en `#tablero`). El pago de Hotmart ya está activo (`config.json → pago_hotmart`); el
+botón le agrega `?src=<red>` para saber de dónde vino cada venta. Para activar la lista de correos se llena `CONFIG` en
 `sitio/public/index.html`.
 
 ## 8. Registro

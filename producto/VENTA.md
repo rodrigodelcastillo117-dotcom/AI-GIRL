@@ -11,6 +11,9 @@ Todo para copiar y pegar en Hotmart. Archivos: `producto/plantilla/el-tablero-de
 - **Idioma:** Español
 - **Precio:** $199 MXN
 - **Garantía:** 7 días (si no le sirve, se le devuelve su dinero)
+- **Enlace de pago:** https://pay.hotmart.com/T108246040P (activo desde el 29-oct-2026). En México el
+  checkout muestra $199.79 + IVA $31.97 = **$231.76 MXN**; la página dice ese total para que no haya sorpresa.
+  Formas de pago vistas: tarjeta, Mercado Pago, PayPal y dos tarjetas (sin OXXO).
 
 **Descripción corta:**
 Tu dinero en una sola hoja: presupuesto 50/30/20, fondo de emergencia, deudas, interés compuesto y

@@ -71,7 +71,8 @@ def main():
   <div class="etiqueta">Sigamos</div>
   <h2>Una regla nueva cada dos días.</h2>
   <p>Encuéntrame como <b>@victoriatheceo</b> en Instagram, TikTok y YouTube.</p>
-  <p>Muy pronto: <b>El tablero de la CEO</b>, la plantilla para poner en práctica estas reglas con tus números.</p>
+  <p><b>El tablero de la CEO</b>: la plantilla para poner en práctica estas reglas con tus números (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo).</p>
+  <p><a class="enlace" href="https://victoriatheceo.vercel.app/?ref=guia#tablero">victoriatheceo.vercel.app</a></p>
   <ul class="avisos">{avisos}</ul>
 </section>''')
 
@@ -98,6 +99,7 @@ p {{ font-size: 11pt; line-height: 1.55; color: #d9d2c5; }}
 .marca b {{ color: #f5c542; }}
 .gratis {{ display: inline-block; margin-top: 3mm; padding: 2mm 4mm; border: 1px solid #f5c542; color: #f5c542; font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; }}
 .firma {{ color: #f5c542; font-weight: 600; }}
+.enlace {{ color: #f5c542; font-weight: 900; font-size: 13pt; text-decoration: none; }}
 .divisor {{ display: flex; flex-direction: column; justify-content: center; }}
 .divisor h2 {{ font-size: 36pt; }}
 .linea {{ width: 30mm; height: 2px; background: #f5c542; }}

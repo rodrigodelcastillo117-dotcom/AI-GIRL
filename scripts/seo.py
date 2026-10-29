@@ -71,7 +71,10 @@ def etiquetas(seo, pilar, config):
 
 
 def con_ref(enlace, red):
-    return f"{enlace}{'&' if '?' in enlace else '?'}ref={red}" if enlace else ''
+    if not enlace:
+        return ''
+    base, _, ancla = enlace.partition('#')  # el ?ref va antes del #ancla
+    return f"{base}{'&' if '?' in base else '?'}ref={red}" + (f'#{ancla}' if ancla else '')
 
 
 def textos(video, plan, config):
@@ -85,6 +88,7 @@ def textos(video, plan, config):
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
     hashtags = list(dict.fromkeys(config['hashtags_fijos'] + seo['hashtags']))
     enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
+                                                     ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt')),
                                                      ('Más de Victoria', con_ref(config.get('enlace_perfil'), 'yt'))) if e][:2]
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
     descripcion = '\n\n'.join(x for x in [
