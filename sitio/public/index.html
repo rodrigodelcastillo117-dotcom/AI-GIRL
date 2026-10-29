@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victoria The CEO · Las 30 reglas de la CEO gratis</title>
+  <meta name="description" content="Descarga gratis Las 30 reglas de la CEO: dinero, negocio y mente fuerte, cada una con su fuente y una acción para hoy.">
+  <meta property="og:title" content="Las 30 reglas de la CEO · gratis">
+  <meta property="og:description" content="Dinero, negocio y mente fuerte. Una regla por página, con fuente real y una acción para hoy.">
+  <meta property="og:image" content="/img/compartir.jpg">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --negro: #0b0b0d; --oro: #f5c542; --crema: #f3ede2; --tenue: #a39b8d; --linea: rgba(245, 197, 66, .22); }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--negro); color: var(--crema); font-family: Inter, system-ui, sans-serif; }
+    a { color: inherit; }
+    .heroe { position: relative; min-height: 92vh; display: grid; align-items: end; overflow: hidden; }
+    .heroe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .heroe::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 11, 13, .1) 25%, rgba(11, 11, 13, .96) 78%); }
+    .caja { position: relative; z-index: 1; width: min(560px, 100%); margin: 0 auto; padding: 0 20px 40px; }
+    .marca { font-size: .78rem; letter-spacing: .32em; font-weight: 600; }
+    .marca b { color: var(--oro); }
+    h1 { font-weight: 900; font-size: clamp(2.3rem, 9vw, 3.4rem); line-height: 1.02; margin: 12px 0; }
+    h1 span { color: var(--oro); }
+    .lema { color: #d9d2c5; font-size: 1.05rem; line-height: 1.5; margin: 0 0 22px; }
+    form, .descarga { display: grid; gap: 10px; }
+    input[type=email] { width: 100%; padding: 16px; border-radius: 12px; border: 1px solid var(--linea); background: rgba(255, 255, 255, .06); color: var(--crema); font: inherit; font-size: 1rem; }
+    .boton { display: block; width: 100%; padding: 16px; border: 0; border-radius: 12px; background: var(--oro); color: var(--negro); font: inherit; font-weight: 900; font-size: 1.05rem; text-align: center; text-decoration: none; cursor: pointer; }
+    .boton:hover { filter: brightness(1.08); }
+    .letra-chica { font-size: .78rem; color: var(--tenue); line-height: 1.5; margin: 6px 0 0; }
+    .gracias { display: none; padding: 16px; border: 1px solid var(--oro); border-radius: 12px; }
+    section.bloque { width: min(560px, 100%); margin: 0 auto; padding: 44px 20px; border-top: 1px solid var(--linea); }
+    .etiqueta { font-size: .72rem; letter-spacing: .3em; text-transform: uppercase; color: var(--oro); font-weight: 600; }
+    h2 { font-weight: 900; font-size: 1.7rem; line-height: 1.15; margin: 10px 0 18px; }
+    ol { margin: 0; padding: 0; list-style: none; counter-reset: r; display: grid; gap: 12px; }
+    ol li { counter-increment: r; display: grid; grid-template-columns: 42px 1fr; gap: 10px; align-items: start; line-height: 1.45; color: #d9d2c5; }
+    ol li::before { content: counter(r, decimal-leading-zero); font-weight: 900; color: var(--oro); font-size: 1.1rem; }
+    ol li b { color: var(--crema); }
+    .producto { border: 1px solid var(--linea); border-radius: 16px; padding: 20px; background: linear-gradient(160deg, rgba(245, 197, 66, .1), rgba(245, 197, 66, 0) 60%); }
+    .producto ul { margin: 0 0 16px; padding-left: 18px; color: #d9d2c5; line-height: 1.7; }
+    .precio { font-size: 1.6rem; font-weight: 900; color: var(--oro); }
+    .redes { display: flex; gap: 10px; flex-wrap: wrap; }
+    .redes a { flex: 1 1 140px; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-align: center; text-decoration: none; font-weight: 600; }
+    footer { width: min(560px, 100%); margin: 0 auto; padding: 24px 20px 48px; color: var(--tenue); font-size: .75rem; line-height: 1.6; border-top: 1px solid var(--linea); }
+  </style>
+</head>
+<body>
+  <header class="heroe">
+    <img src="/img/victoria.jpg" alt="Victoria, con su Rottweiler Capital, en un jet privado">
+    <div class="caja">
+      <div class="marca">VICTORIA <b>THE CEO</b></div>
+      <h1>Las 30 reglas de la CEO, <span>gratis</span>.</h1>
+      <p class="lema">Dinero, negocio y mente fuerte. Una regla por página, con su fuente real y una acción para hoy.</p>
+      <div id="captura"></div>
+    </div>
+  </header>
+
+  <section class="bloque">
+    <div class="etiqueta">Lo que vas a aprender</div>
+    <h2>Lo que nadie te enseñó del dinero.</h2>
+    <ol>
+      <li><span><b>Págate primero.</b> Por qué el ahorro es lo primero que sale, no lo que sobra.</span></li>
+      <li><span><b>La regla 50/30/20.</b> Tu sueldo en tres bolsas, sin hojas de cálculo eternas.</span></li>
+      <li><span><b>Fondo de emergencia.</b> Cuántos meses de gastos necesitas antes de invertir.</span></li>
+      <li><span><b>La regla del 72.</b> En cuántos años se duplica tu dinero, con una división.</span></li>
+      <li><span><b>Perder duele el doble.</b> El sesgo que te hace vender con pánico.</span></li>
+      <li><span><b>Y 25 más</b> de Buffett, Munger, Housel, Harvard y Stanford.</span></li>
+    </ol>
+  </section>
+
+  <section class="bloque" id="tablero">
+    <div class="etiqueta">Para ponerlo en práctica</div>
+    <h2>El tablero de la CEO</h2>
+    <div class="producto">
+      <p>La plantilla para aplicar las reglas con tus números, en Excel o Google Sheets:</p>
+      <ul>
+        <li>Presupuesto 50/30/20 que se calcula solo</li>
+        <li>Págate primero, mes a mes</li>
+        <li>Fondo de emergencia con meta y avance</li>
+        <li>Deudas: orden bola de nieve y avalancha</li>
+        <li>Interés compuesto y regla del 72</li>
+        <li>Metas con lo que tienes que apartar al mes</li>
+      </ul>
+      <div id="venta"></div>
+    </div>
+  </section>
+
+  <section class="bloque">
+    <div class="etiqueta">Una regla nueva cada dos días</div>
+    <h2>Sígueme</h2>
+    <div class="redes">
+      <a href="https://www.youtube.com/@victoriatheceo">YouTube</a>
+      <a href="https://www.instagram.com/victoriatheceo">Instagram</a>
+      <a href="https://www.tiktok.com/@victoriatheceo">TikTok</a>
+    </div>
+  </section>
+
+  <footer>
+    Victoria es un personaje creado con inteligencia artificial. Contenido educativo: no es asesoría financiera, legal ni de inversión.
+    Los temas de bienestar no sustituyen la ayuda de un profesional de la salud.
+  </footer>
+
+  <script>
+    // Se llenan cuando existan las cuentas. kitAccion: la URL "action" exacta del código de inserción
+    // del formulario de Kit (lista de correos). pago: el enlace de pago de Hotmart de la plantilla.
+    const CONFIG = {kitAccion: '', pago: ''};
+    const GUIA = '/guia/las-30-reglas-de-la-ceo.pdf';
+    const ref = new URLSearchParams(location.search).get('ref') || 'directo';
+    const crear = (tag, props = {}, ...hijos) => { const el = Object.assign(document.createElement(tag), props); el.append(...hijos); return el; };
+
+    const captura = document.getElementById('captura');
+    if (CONFIG.kitAccion) {
+      // Con Kit: la guía llega por correo y la persona queda en la lista (con la red de donde vino).
+      const form = crear('form', {method: 'post', action: CONFIG.kitAccion});
+      form.append(
+        crear('input', {type: 'email', name: 'email_address', required: true, placeholder: 'Tu correo', autocomplete: 'email'}),
+        crear('input', {type: 'hidden', name: 'fields[origen]', value: ref}),
+        crear('button', {className: 'boton', type: 'submit', textContent: 'Quiero la guía gratis'}),
+        crear('p', {className: 'letra-chica', textContent: 'Te la mando a tu correo. Sin spam; te puedes salir cuando quieras.'}));
+      captura.append(form);
+    } else {
+      captura.append(crear('div', {className: 'descarga'},
+        crear('a', {className: 'boton', href: `${GUIA}?ref=${encodeURIComponent(ref)}`, textContent: 'Descargar la guía gratis (PDF)', download: ''}),
+        crear('p', {className: 'letra-chica', textContent: '36 páginas · se lee bien en el celular.'})));
+    }
+
+    const venta = document.getElementById('venta');
+    venta.append(CONFIG.pago
+      ? crear('a', {className: 'boton', href: `${CONFIG.pago}${CONFIG.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(ref)}`, textContent: 'Lo quiero'})
+      : crear('p', {className: 'letra-chica', textContent: 'Muy pronto. Descarga la guía y te aviso primero.'}));
+  </script>
+</body>
+</html>
