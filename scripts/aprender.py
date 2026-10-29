@@ -226,6 +226,22 @@ def ajenos(plan):
             for p in r.get('posts') or [] if primera_linea(p.get('text')) not in propias]
 
 
+def comentar_enlace(video, plan, avisos):
+    """Primer comentario con el enlace de la guía en el video de YouTube recién verificado (regla 25)."""
+    config = cargar('config.json', {})
+    publicacion = video.setdefault('publicacion', {})
+    if not config.get('enlace_venta') or publicacion.get('comentario_youtube') or not publicacion.get('youtube'):
+        return
+    import seo
+    import youtube
+    try:
+        texto = seo.textos(video, plan, config)['comentario_youtube']
+        id_yt = publicacion['youtube'].rstrip('/').split('/')[-1].split('=')[-1]
+        publicacion['comentario_youtube'] = youtube.comentar(youtube.token(), id_yt, texto)
+    except SystemExit as e:
+        avisos.append(f"No pude dejar el comentario con enlace en el video {video['id']}: {str(e)[:200]}")
+
+
 def verificar(plan, ahora, avisos):
     """Marca "publicado" solo lo que se ve publicado en la red; avisa de lo que no salió (regla 34)."""
     programados = [v for v in plan['videos'] + plan.get('largos', []) if v.get('estado') == 'programado' and v.get('publica_utc')
@@ -254,6 +270,7 @@ def verificar(plan, ahora, avisos):
         else:
             v['estado'] = 'publicado'
             v.setdefault('publicacion', {}).update({r: d['enlace'] for r, d in redes.items() if d.get('enlace')})
+            comentar_enlace(v, plan, avisos)
     guardar('plan.json', plan)
     return problemas
 

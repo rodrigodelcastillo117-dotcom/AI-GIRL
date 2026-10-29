@@ -84,7 +84,8 @@ def textos(video, plan, config):
     cierre = plan['reglas']['cierre_de_texto']
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
     hashtags = list(dict.fromkeys(config['hashtags_fijos'] + seo['hashtags']))
-    enlaces = [e for e in (con_ref(config.get('enlace_venta'), 'yt'), con_ref(config.get('enlace_perfil'), 'yt')) if e][:2]
+    enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
+                                                     ('Más de Victoria', con_ref(config.get('enlace_perfil'), 'yt'))) if e][:2]
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
     descripcion = '\n\n'.join(x for x in [
         seo['descripcion_inicio'].strip(),
@@ -97,12 +98,14 @@ def textos(video, plan, config):
     ] if x)[:4900]
     redes = '\n\n'.join(x for x in [
         post,
-        'Enlace en mi perfil 👆' if config.get('enlace_venta') else '',
+        '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '',
         ' '.join(hashtags[:9]),  # 3-4 fijos + 3-5 del video
         cierre,
     ] if x)
     tags = etiquetas(seo, video['pilar'], config)
-    return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags), 'texto_redes': redes}
+    comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), 'yt')) if config.get('enlace_venta') else ''
+    return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags), 'texto_redes': redes,
+            'comentario_youtube': comentario}
 
 
 def main():

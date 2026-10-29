@@ -85,6 +85,14 @@ def ya_subido(acceso, canal_id, titulo):
     return None
 
 
+def comentar(acceso, video_id, texto):
+    """Primer comentario del canal en un video ya público (regla 25). Fijarlo es manual: la API no lo permite."""
+    cuerpo = {'snippet': {'videoId': video_id, 'topLevelComment': {'snippet': {'textOriginal': texto}}}}
+    _, respuesta = _http('POST', f'{API}/commentThreads?part=snippet', json.dumps(cuerpo).encode(),
+                         {'Authorization': f'Bearer {acceso}', 'Content-Type': 'application/json; charset=UTF-8'})
+    return json.loads(respuesta)['id']
+
+
 def metadatos(titulo, descripcion, cuando, tags=None):
     publica = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00'))
     inmediato = publica - datetime.datetime.now(datetime.timezone.utc) < datetime.timedelta(minutes=15)

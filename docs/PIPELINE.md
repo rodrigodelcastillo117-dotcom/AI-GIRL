@@ -208,7 +208,14 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 5. **Duplicados:** si `publer.py` o `youtube.py` responden `OMITIDO`, el post ya existía:
    regístralo como `programado` y no lo vuelvas a subir.
 6. Que Publer acepte el job no es "publicado": la confirmación llega en el `medir` del día
-   siguiente (regla 34).
+   siguiente (regla 34). Cuando `medir` confirma un video, deja solo el primer comentario en YouTube
+   con el enlace de la guía (`config.json → comentario_youtube`, regla 25); fijarlo es manual.
+
+Embudo de ingresos: la página pública es `config.json → enlace_venta`
+(https://victoriatheceo.vercel.app, carpeta `sitio/`). Ahí está la guía gratis y la plantilla de
+paga. `seo.py` pone el enlace con `?ref=yt` en la descripción de YouTube y "enlace en mi perfil"
+en Instagram y TikTok. Para activar la lista de correos y el pago se llena `CONFIG` en
+`sitio/public/index.html`.
 
 ## 8. Registro
 
