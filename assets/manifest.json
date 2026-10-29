@@ -115,5 +115,6 @@
       "resultado": "Dijo las 27 palabras del guion exactas (verificado con Whisper). Identidad estable los 12 s.",
       "subtitulado": "prueba-video-subtitulado.mp4"
     }
-  }
+  },
+  "locaciones_nuevas_generadas": {}
 }

@@ -28,9 +28,11 @@ for i, g in enumerate(grupos):
     ini = g[0]['start']
     fin = grupos[i + 1][0]['start'] if i + 1 < len(grupos) else g[-1]['end'] + 0.3
     partes = []
-    for w in g:
-        t = limpia(w['w'])
-        partes.append(r'{\c&H3CB4E6&}' + t + r'{\c&HFFFFFF&}' if limpia(w['w']).lower() in clave else t)
+    # Cada elemento puede ser una palabra o una frase completa (de frases_a_tiempos.py)
+    for token in (tok for w in g for tok in w['w'].split()):
+        t = limpia(token)
+        llave = re.sub(r'[¿¡?!:;.,"]', '', t).lower()
+        partes.append(r'{\c&H3CB4E6&}' + t + r'{\c&HFFFFFF&}' if llave in clave else t)
     lineas.append(f"Dialogue: 0,{ts(ini)},{ts(fin)},Sub,,0,0,0,,{' '.join(partes)}")
 
 ass = f"""[Script Info]

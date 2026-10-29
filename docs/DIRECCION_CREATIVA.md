@@ -43,10 +43,11 @@ mundo del personaje sea consistente.
 Nunca se repite: cada combinación (prenda + color + tela) queda registrada como usada. El vestuario
 siempre corresponde a la locación (tabla anterior).
 
-## Perrito
+## Capital, el Rottweiler
 
-Un solo perro fijo, con hoja de referencia propia: pomerania blanca miniatura. Aparece en 1 de cada 4
-videos, en brazos o en su regazo. Los animales en video generan más errores, por eso no siempre.
+Un solo perro fijo, con hoja de referencia propia (`assets/rottweiler-hoja.png`): Rottweiler adulto,
+collar de piel negro con placa dorada. Aparece en **todos** los videos, a su lado y dentro del cuadro
+de principio a fin. (El pomerania blanco quedó descartado.)
 
 ## Personas de fondo
 
@@ -55,8 +56,9 @@ En 1 de cada 3 videos: mesero, piloto, bartender, caddie, socios de negocios. Si
 
 ## Movimiento
 
-Cámara con movimiento lento (dolly in, paneo suave, órbita corta). Caminar mientras habla, solo de vez
-en cuando: es lo que más falla en lip-sync.
+Plano medio con movimiento lateral lento. **Nada de acercamientos fuertes**: en el video 01 la cámara
+se acercó y sacó a Capital del cuadro. Caminar mientras habla, solo de vez en cuando: es lo que más
+falla en lip-sync.
 
 ## Subtítulos
 
