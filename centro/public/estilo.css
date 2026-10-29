@@ -211,3 +211,23 @@ td.n, th.n { text-align: right; }
 tbody tr:hover td { background: rgba(73, 214, 236, .05); }
 .pie { position: relative; z-index: 2; text-align: center; padding: 0 16px 34px; font-family: var(--mono); font-size: .64rem; letter-spacing: .12em; color: var(--apagado); text-transform: uppercase; }
 .aviso { border: 1px solid rgba(255, 59, 85, .45); background: rgba(255, 59, 85, .06); color: #ffb3bf; padding: 10px 14px; font-family: var(--mono); font-size: .72rem; line-height: 1.6; }
+
+/* ===== Laboratorio ===== */
+.decision { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 640px) { .decision { grid-template-columns: minmax(0, 1fr); } }
+.decision .modo { font-family: var(--titulo); font-size: 1.1rem; letter-spacing: .18em; text-transform: uppercase; padding: 14px 18px; border: 1px solid currentColor; text-align: center; }
+.decision .modo small { display: block; font-family: var(--mono); font-size: .6rem; letter-spacing: .2em; color: var(--tenue); margin-top: 6px; }
+.decision .modo.aprovechar { color: var(--oro); }
+.decision .modo.explorar { color: var(--cian); }
+.decision .modo.saltar { color: var(--rojo); }
+.decision p { margin: 0 0 8px; line-height: 1.5; }
+.decision ul { margin: 0; padding-left: 18px; color: var(--tenue); font-size: .84rem; line-height: 1.6; }
+.atributo { display: grid; gap: 8px; }
+.atributo .fila { display: grid; grid-template-columns: minmax(5.5rem, 8rem) minmax(0, 1fr) 4.6rem; gap: 10px; align-items: center; font-size: .8rem; }
+.atributo .fila span:first-child { color: var(--texto); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.atributo .barra-ind { position: relative; height: 14px; background: rgba(73, 214, 236, .06); border: 1px solid var(--linea); }
+.atributo .barra-ind i { position: absolute; inset: 0 auto 0 0; background: var(--cian); opacity: .75; }
+.atributo .barra-ind.gana i { background: var(--oro); opacity: .95; box-shadow: 0 0 10px rgba(245, 197, 66, .5); }
+.atributo .barra-ind.pierde i { background: var(--rojo); }
+.atributo .barra-ind b { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--texto); opacity: .5; }
+.atributo .fila em { font-style: normal; font-family: var(--mono); font-size: .72rem; text-align: right; color: var(--tenue); white-space: nowrap; }

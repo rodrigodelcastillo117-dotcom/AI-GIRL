@@ -4,12 +4,13 @@ Uso: python tablero.py
 
 - videos.json: un renglón por video del plan, con su cuadro (miniatura), su id de YouTube, la
   primera línea de su post y sus estadísticas por red (v_ vistas, l_ likes, c_ comentarios,
-  s_ compartidos, g_ guardados; sufijos ig, tt, yt, fb). Las estadísticas vienen de la API de
-  Publer si hay PUBLER_API_KEY; si no, se conservan las anteriores. El centro además las lee en
+  s_ compartidos, g_ guardados; sufijos ig, tt, yt, fb). Las estadísticas son la última foto de
+  contenido/metricas.json (scripts/aprender.py medir). El centro además las lee en
   vivo (centro/api/vivo.js); estas son la última foto por si la consulta en vivo falla.
 - ejecuciones.json y aprendizajes.json: copias de contenido/.
 - mejores_horas.json: rejilla día × hora de Publer (best_times); vacía (puntaje nulo) si no hay datos.
-- estado.json: un renglón con la próxima ejecución (la tarea cada 2 días o una única de
+- auditoria.json: copia de contenido/auditoria.json (qué gana, qué pierde y la decisión del día).
+- estado.json: un renglón con la próxima ejecución (la tarea diaria o una única de
   config.json → ejecuciones_unicas, la que llegue antes), la foto de perfil y datos fijos del canal.
 
 Después se hace commit y push: Vercel vuelve a publicar el centro solo (docs/PIPELINE.md, paso 10).
@@ -63,37 +64,30 @@ def metricas_anteriores():
     return {f['id']: {k: v for k, v in f.items() if k[:2] in ('v_', 'l_', 'c_', 's_', 'g_')} for f in previas}
 
 
-def metricas_publer(filas):
-    """{video_id: {v_ig: n, ...}} y la rejilla de mejores horas, desde Publer."""
+def metricas_historial():
+    """{video_id: {v_ig: n, ...}} con la foto más reciente de contenido/metricas.json (scripts/aprender.py medir)."""
+    try:
+        historial = json.load(open(os.path.join(RAIZ, 'contenido', 'metricas.json')))
+    except (OSError, ValueError):
+        return {}
+    ultima = {}
+    for foto in historial:
+        ultima[foto['video_id']] = foto  # el historial está en orden de fecha
+    por_video = {}
+    for vid, foto in ultima.items():
+        for red in ('yt', 'tt', 'ig'):
+            for corto in ('v', 'l', 'c', 's'):
+                if red in foto:
+                    por_video.setdefault(vid, {})[f'{corto}_{red}'] = foto[red].get(corto, 0)
+    return por_video
+
+
+def mejores_horas_publer():
+    """Rejilla día × hora de Publer (best_times), promediada entre las cuentas de Victoria."""
     import publer
     ws = publer.workspace_id()
     _, victoria = publer.cuentas_victoria(ws)
-    red_de = {c['id']: REDES.get(c['provider'], c['provider']) for c in victoria}
     hoy = datetime.date.today()
-    desde = (hoy - datetime.timedelta(days=90)).isoformat()
-    posts, pagina = [], 0
-    while pagina < 30:
-        r = publer._pedir('GET', f'/analytics/post_insights?from={desde}&to={hoy.isoformat()}&page={pagina}', ws)
-        lote = r.get('posts') or []
-        posts += lote
-        if len(lote) < 10:
-            break
-        pagina += 1
-    por_minuto = {f['publica_utc'][:16]: f['id'] for f in filas if f.get('publica_utc')}
-    por_linea = {f['linea']: f['id'] for f in filas if f.get('linea')}
-    por_video = {}
-    for p in posts:
-        red = red_de.get(p.get('account_id'))
-        minuto = ''
-        if p.get('scheduled_at'):
-            minuto = datetime.datetime.fromisoformat(p['scheduled_at'].replace('Z', '+00:00')).astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M')
-        video = por_linea.get(primera_linea(p.get('text'))) or por_minuto.get(minuto)
-        if not red or not video:
-            continue
-        a = p.get('analytics') or {}
-        destino = por_video.setdefault(video, {})
-        for corto, campo in CAMPOS.items():
-            destino[f'{corto}_{red}'] = (destino.get(f'{corto}_{red}') or 0) + (a.get(campo) or 0)
     puntajes = {}
     for c in victoria:
         r = publer._pedir('GET', f"/analytics/{c['id']}/best_times?from={(hoy - datetime.timedelta(days=30)).isoformat()}&to={hoy.isoformat()}", ws)
@@ -101,7 +95,7 @@ def metricas_publer(filas):
             for hora, puntaje in enumerate(horas or []):
                 clave = (DIAS_EN.get(dia, dia), hora)
                 puntajes.setdefault(clave, []).append(puntaje or 0)
-    return por_video, puntajes
+    return puntajes
 
 
 def primera_linea(texto):
@@ -113,14 +107,12 @@ def youtube_id(enlace):
     return (enlace or '').rstrip('/').split('/')[-1].split('=')[-1] if enlace else ''
 
 
-def proxima_ejecucion(ahora):
-    """La tarea corre los días pares del 2 al 30 a las 5:37 hora de México."""
+def proxima_ejecucion(ahora, hora_generacion):
+    """La tarea corre todos los días a la hora de config.json → hora_generacion (México)."""
     local = ahora.astimezone(CDMX)
-    for dias in range(0, 40):
-        d = (local + datetime.timedelta(days=dias)).replace(hour=5, minute=37, second=0, microsecond=0)
-        if d > local and d.day % 2 == 0 and 2 <= d.day <= 30:
-            return d
-    return None
+    hora, minuto = (int(x) for x in hora_generacion.split(':'))
+    d = local.replace(hour=hora, minute=minuto, second=0, microsecond=0)
+    return d if d > local else d + datetime.timedelta(days=1)
 
 
 def main():
@@ -150,27 +142,39 @@ def main():
         fila.update(anteriores.get(v['id'], {}))
         filas.append(fila)
 
+    por_video = metricas_historial()
+    for f in filas:
+        f.update(por_video.get(f['id'], {}))
     puntajes = {}
     if os.environ.get('PUBLER_API_KEY'):
         try:
-            por_video, puntajes = metricas_publer(filas)
-            for f in filas:
-                f.update(por_video.get(f['id'], {}))
+            puntajes = mejores_horas_publer()
         except SystemExit as e:
-            print(f'AVISO: no se pudieron leer las estadísticas de Publer: {e}')
+            print(f'AVISO: no se pudieron leer las mejores horas de Publer: {e}')
 
     guardar('videos.json', filas)
     guardar('ejecuciones.json', json.load(open(os.path.join(RAIZ, 'contenido', 'ejecuciones.json'))))
     guardar('aprendizajes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'aprendizajes.json'))))
+    try:
+        auditoria = json.load(open(os.path.join(RAIZ, 'contenido', 'auditoria.json')))
+    except (OSError, ValueError):
+        auditoria = {'videos_calificados': 0, 'ranking': {}, 'decision': None, 'alertas': [], 'notas': {}}
+    json.dump(auditoria, open(os.path.join(SALIDA, 'auditoria.json'), 'w'), ensure_ascii=False, indent=1)
     guardar('mejores_horas.json', [
         {'dia': d, 'hora': h, 'puntaje': (sum(puntajes[(d, h)]) / len(puntajes[(d, h)])) if (d, h) in puntajes else None}
         for d in DIAS for h in range(24)])
 
     ahora = datetime.datetime.now(datetime.timezone.utc)
-    proxima = proxima_ejecucion(ahora)
+    proxima = proxima_ejecucion(ahora, config.get('hora_generacion', '06:37'))
     unicas = {u['video_id'] for u in config.get('ejecuciones_unicas', [])}
     listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar' and v['id'] not in unicas), None)
     proxima_que = f'Publicar video {listo} (ya generado)' if listo else 'Generar y publicar el siguiente video'
+    if proxima:
+        dia = proxima.astimezone(CDMX).date()
+        hoy_sale = next((v for v in plan['videos'] if v['estado'] == 'programado' and v.get('publica_utc')
+                         and a_mexico(v['publica_utc']).date() == dia), None)
+        if hoy_sale:
+            proxima_que = f"Auditoría (ese día ya sale el video {hoy_sale['id']} a las {a_mexico(hoy_sale['publica_utc']).strftime('%H:%M')})"
     for u in config.get('ejecuciones_unicas', []):
         cuando = datetime.datetime.fromisoformat(u['utc'].replace('Z', '+00:00'))
         if ahora < cuando and (not proxima or cuando < proxima):
@@ -183,7 +187,7 @@ def main():
         foto = 'data:image/jpeg;base64,' + base64.b64encode(jpg).decode()
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
-        'frecuencia': 'Un video cada 2 días',
+        'frecuencia': f"Un video diario a las {config.get('hora_por_defecto', '18:45')}",
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),

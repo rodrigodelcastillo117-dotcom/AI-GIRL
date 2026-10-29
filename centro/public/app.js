@@ -184,6 +184,7 @@ function mejoras() {
   }
   if (r.cola <= 3) lista.push(['alerta', `Quedan ${r.cola} guiones en cola. Pide a Claude el siguiente plan de videos.`]);
   for (const e of VIVO?.errores || []) lista.push(['alerta', `Sin conexión en vivo con ${e}`]);
+  for (const a of FOTO.auditoria?.alertas || []) lista.push([/pierde|revisar|fallaron|Recargar/.test(a) ? 'alerta' : /gana/.test(a) ? 'idea' : 'dato', a]);
   return lista;
 }
 
@@ -216,6 +217,7 @@ function dibujarTodo() {
   $('pie').textContent = `YouTube en vivo · TikTok e Instagram vía Publer · última foto del sistema: ${mx(estado.generado_utc)} · créditos según la última ejecución`;
 
   dibujarRedes();
+  dibujarLaboratorio(FOTO.auditoria || {});
   dibujarCinta(ejecuciones, aprendizajes);
   dibujarHangar(videos);
   dibujarListas(aprendizajes);
@@ -305,6 +307,50 @@ function dibujarHangar(videos) {
       crear('p', {textContent: v.gancho}),
       crear('p', {className: 'met', textContent: extra.join(' · ')}),
       ...(linea ? [crear('p', {className: 'met', textContent: linea})] : []))));
+  }
+}
+
+const ATRIBUTOS = {pilar: 'Tema', tipo_fondo: 'Tipo de fondo', locacion: 'Fondo', estilo_vestuario: 'Vestimenta',
+  color_vestuario: 'Color de ropa', tipo_gancho: 'Tipo de gancho', dia: 'Día', hora: 'Hora'};
+const MODOS = {aprovechar: 'Aprovechar', explorar: 'Explorar', saltar: 'Día libre'};
+
+function dibujarLaboratorio(a) {
+  const caja = $('decision');
+  const d = a.decision;
+  const texto = crear('div');
+  if (!d) {
+    texto.append(crear('p', {textContent: 'No hay guiones pendientes: el sistema escribe 10 nuevos en la siguiente ejecución.'}));
+  } else {
+    texto.append(crear('p', {textContent: d.por_que}));
+    if (d.cambios_sugeridos?.length) {
+      texto.append(crear('ul', {}, ...d.cambios_sugeridos.map((c) => crear('li', {textContent: `${ATRIBUTOS[c.atributo] || c.atributo}: ${c.de} → ${c.a} (${c.por_que})`}))));
+    }
+  }
+  texto.append(crear('p', {className: 'nota', textContent: `${a.videos_calificados || 0} videos calificados${a.base_vistas_36h ? ` · lo normal: ${fmt(a.base_vistas_36h)} vistas a 36 h` : ''}${a.fecha_utc ? ` · auditoría del ${mx(a.fecha_utc)}` : ''}`}));
+  const modo = d?.modo || 'aprovechar';
+  caja.replaceChildren(crear('div', {className: `modo ${modo}`}, MODOS[modo] || modo, crear('small', {textContent: d?.video_id ? `video ${d.video_id}` : 'sin video'})), texto);
+
+  const lab = $('laboratorio');
+  lab.replaceChildren();
+  const ranking = a.ranking || {};
+  if (!Object.keys(ranking).length) {
+    lab.append(crear('article', {className: 'panel ancho'}, crear('p', {className: 'vacio', textContent: 'Aquí aparece qué tema, fondo, vestimenta, color, gancho y día funcionan mejor. Se llena 36 horas después de que salga el primer video y se vuelve confiable con 6 o más.'})));
+    return;
+  }
+  for (const [atributo, filas] of Object.entries(ranking)) {
+    const tope = Math.max(2, ...filas.map((f) => f.indice));
+    const lista = crear('div', {className: 'atributo'});
+    for (const f of filas) {
+      const barra = crear('div', {className: `barra-ind ${f.estado === 'gana' ? 'gana' : f.estado === 'pierde' ? 'pierde' : ''}`});
+      const relleno = crear('i');
+      relleno.style.width = `${Math.min(100, (f.indice / tope) * 100)}%`;
+      const uno = crear('b');
+      uno.style.left = `${(1 / tope) * 100}%`;
+      barra.append(relleno, uno);
+      barra.title = `${f.estado} · ${f.n} videos · interacción ${pct(f.engagement)}`;
+      lista.append(crear('div', {className: 'fila'}, crear('span', {textContent: PILARES[f.valor] || f.valor.replace('_', ' ')}), barra, crear('em', {textContent: `${f.indice.toFixed(2)} · ${f.n} v`})));
+    }
+    lab.append(crear('article', {className: 'panel'}, crear('div', {className: 'codigo', textContent: `LAB · ${atributo}`}), crear('h2', {textContent: ATRIBUTOS[atributo] || atributo}), lista));
   }
 }
 

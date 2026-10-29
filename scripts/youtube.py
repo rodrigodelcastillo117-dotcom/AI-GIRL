@@ -5,9 +5,10 @@ Comandos:
 
   python youtube.py canal
       Muestra el canal al que apunta el permiso.
-  python youtube.py subir video.mp4 "Título" descripcion.txt "2026-10-30T02:47:00Z" [--prueba]
+  python youtube.py subir video.mp4 "Título" descripcion.txt "2026-10-30T02:47:00Z" [--tags tags.txt] [--prueba]
       Sube el video programado para esa hora (UTC). Si faltan menos de 15 minutos, lo publica
       de inmediato. Si el canal ya tiene un video con ese título, no lo vuelve a subir.
+      --tags lee los tags separados por coma (los arma scripts/seo.py); sin él usa unos generales.
       --prueba imprime los metadatos sin llamar a la API.
 
 Solo sube al canal de contenido/config.json → canal_youtube, o a uno cuyo nombre contenga
@@ -81,7 +82,7 @@ def ya_subido(acceso, canal_id, titulo):
     return None
 
 
-def metadatos(titulo, descripcion, cuando):
+def metadatos(titulo, descripcion, cuando, tags=None):
     publica = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00'))
     inmediato = publica - datetime.datetime.now(datetime.timezone.utc) < datetime.timedelta(minutes=15)
     estado = {'selfDeclaredMadeForKids': False, 'containsSyntheticMedia': True}
@@ -92,7 +93,7 @@ def metadatos(titulo, descripcion, cuando):
     return {
         'snippet': {'title': titulo[:100], 'description': descripcion[:4900], 'categoryId': '27',
                     'defaultLanguage': 'es', 'defaultAudioLanguage': 'es',
-                    'tags': ['negocios', 'finanzas', 'mentalidad', 'victoriatheceo']},
+                    'tags': tags or ['negocios', 'finanzas', 'mentalidad', 'victoria the ceo']},
         'status': estado,
     }
 
@@ -106,7 +107,10 @@ def main():
     if sys.argv[1] != 'subir' or len(sys.argv) < 6:
         sys.exit(__doc__)
     video, titulo, archivo_desc, cuando = sys.argv[2:6]
-    meta = metadatos(titulo, open(archivo_desc).read().strip(), cuando)
+    tags = None
+    if '--tags' in sys.argv:
+        tags = [t.strip() for t in open(sys.argv[sys.argv.index('--tags') + 1]).read().split(',') if t.strip()]
+    meta = metadatos(titulo, open(archivo_desc).read().strip(), cuando, tags)
     if '--prueba' in sys.argv:
         print(json.dumps(meta, ensure_ascii=False, indent=1))
         return

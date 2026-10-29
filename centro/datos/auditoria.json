@@ -1,0 +1,17 @@
+{
+ "fecha_utc": "2026-10-29T04:32:10Z",
+ "videos_calificados": 0,
+ "base_vistas_36h": 0,
+ "notas": {},
+ "ranking": {},
+ "decision": {
+  "video_id": "03",
+  "modo": "explorar",
+  "esperado": 1.0,
+  "por_que": "Día de exploración: el video 03 prueba 6 características con pocos datos.",
+  "cambios_sugeridos": []
+ },
+ "alertas": [
+  "0 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\"."
+ ]
+}

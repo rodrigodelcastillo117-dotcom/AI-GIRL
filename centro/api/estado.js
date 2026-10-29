@@ -1,4 +1,4 @@
-// La última foto que dejó la tarea automática: plan, bitácora, lecciones, mejores horas y estado.
+// La última foto que dejó la tarea automática: plan, bitácora, lecciones, mejores horas, estado y auditoría.
 import {autorizado, leer, negar} from './_comun.js';
 
 export default function handler(req, res) {
@@ -12,5 +12,6 @@ export default function handler(req, res) {
     ejecuciones: leer('ejecuciones.json'),
     aprendizajes: leer('aprendizajes.json'),
     mejores_horas: leer('mejores_horas.json'),
+    auditoria: leer('auditoria.json'),
   });
 }

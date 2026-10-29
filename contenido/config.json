@@ -1,7 +1,7 @@
 {
  "filtro_cuentas": "victoria",
  "zona_horaria": "America/Mexico_City",
- "hora_por_defecto": "20:47",
+ "hora_por_defecto": "18:45",
  "creditos_minimos_para_correr": 1100,
  "max_intentos_video": 2,
  "similitud_minima_audio": 0.85,
@@ -9,5 +9,9 @@
   "6a9658e6510cfb283e2fff83": "instagram",
   "6a96586502b3146e69fa11b0": "tiktok"
  },
- "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A"
+ "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
+ "hora_generacion": "06:37",
+ "frecuencia": "diaria",
+ "un_video_por_dia": true,
+ "saltar_dias_que_pierden": true
 }

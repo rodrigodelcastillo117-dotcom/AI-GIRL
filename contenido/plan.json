@@ -11,11 +11,12 @@
     ],
     "publicacion": "directa",
     "zona_horaria": "America/Mexico_City",
-    "prueba_de_horario": "Los videos 02-09 alternan 20:47 y 12:43. Después se fija la hora que gane en retención y alcance.",
+    "prueba_de_horario": "Todos los videos salen a las 18:45 hora de México, uno diario. El sistema solo propone otra hora si los datos lo justifican (scripts/aprender.py).",
     "perro": "Capital, el Rottweiler, siempre dentro del cuadro de principio a fin.",
     "camara": "Plano medio. Movimiento lento lateral o leve; NUNCA acercamiento fuerte (en el video 01 sacó a Capital del cuadro).",
     "vestuario": "Nunca se repite. Antes de generar, confirmar que no aparece en ningún video con estado distinto de pendiente.",
-    "cierre_de_texto": "Personaje y video creados con IA."
+    "cierre_de_texto": "Personaje y video creados con IA.",
+    "seo": "Cada video lleva \"seo\": palabra_clave, titulo_youtube (empieza con la palabra clave, máximo 70 caracteres más \" #Shorts\"), tags_youtube (8 a 12) y hashtags_youtube (3, el primero #Shorts). Ver docs/SEO.md."
   },
   "locaciones_nuevas": {
     "coche": "Interior de un sedán de lujo moderno, asientos de piel color crema, tablero de madera, ciudad al atardecer por la ventana, sin logotipos de marca. Ella en el asiento trasero, Capital a su lado en el asiento.",
@@ -93,7 +94,7 @@
       "locacion": "palco_estadio",
       "vestuario": "Blazer azul marino entallado, blusa de seda blanca, jeans de diseñador oscuros, aretes de oro",
       "accion": "Sentada en el asiento de piel del palco, Capital sentado a su lado mirando a cámara.",
-      "hora_publicacion": "20:47",
+      "hora_publicacion": "18:45",
       "texto_post": "El 80% de tus ventas suele salir del 20% de tus clientes. 🎯\n¿Ya sabes quiénes son los tuyos?\n\n📚 Principio de Pareto · Richard Koch, El principio 80/20\n💾 Guárdalo para tu próxima revisión de clientes.\n\n#negocios #emprendimiento #ventas #pareto #mentalidad #victoriatheceo",
       "archivo": "videos/video-02-palco-pareto-SUBTITULADO.mp4",
       "creditos": 510,
@@ -107,7 +108,28 @@
       },
       "intentos_publicacion": [
         "2026-10-29T03:00Z: Publer 403 (Cloudflare 1010, ya corregido con User-Agent propio); YouTube: el permiso apunta a \"Nadie Te Lo Explicó\"; push al repo sin permiso."
-      ]
+      ],
+      "seo": {
+        "palabra_clave": "principio de Pareto en ventas",
+        "titulo_youtube": "Principio de Pareto: el 20% de clientes que hace tu 80% de ventas",
+        "tags_youtube": [
+          "principio de pareto",
+          "regla 80 20",
+          "ley de pareto",
+          "pareto en ventas",
+          "como vender mas",
+          "clientes",
+          "ventas",
+          "emprendimiento",
+          "negocios",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#emprendimiento",
+          "#ventas"
+        ]
+      }
     },
     {
       "id": "03",
@@ -132,8 +154,28 @@
       "locacion": "yate",
       "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
       "accion": "Sentada en el sillón blanco de la cubierta, Capital sentado a su lado, mar turquesa detrás.",
-      "hora_publicacion": "12:43",
-      "texto_post": "¿Cuánto tarda tu dinero en duplicarse? ⏳\nDivide 72 entre tu tasa anual. Al 8%: 9 años.\n\n📚 Regla del 72\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#finanzaspersonales #inversion #dinero #educacionfinanciera #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "¿Cuánto tarda tu dinero en duplicarse? ⏳\nDivide 72 entre tu tasa anual. Al 8%: 9 años.\n\n📚 Regla del 72\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#finanzaspersonales #inversion #dinero #educacionfinanciera #victoriatheceo",
+      "seo": {
+        "palabra_clave": "regla del 72",
+        "titulo_youtube": "Regla del 72: cuánto tarda tu dinero en duplicarse",
+        "tags_youtube": [
+          "regla del 72",
+          "duplicar dinero",
+          "interes compuesto",
+          "educacion financiera",
+          "finanzas personales",
+          "inversion para principiantes",
+          "ahorro",
+          "dinero",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#finanzaspersonales",
+          "#educacionfinanciera"
+        ]
+      }
     },
     {
       "id": "04",
@@ -159,8 +201,28 @@
       "locacion": "recamara",
       "vestuario": "Conjunto de pijama de seda color champaña con bata a juego",
       "accion": "Sentada en la orilla de la cama con una libreta en la mano, Capital echado en la alfombra a sus pies con la cabeza levantada.",
-      "hora_publicacion": "20:47",
-      "texto_post": "Escribir lo que te preocupa 15 minutos aligera la mente. ✍️\nEsta noche, pruébalo.\n\n📚 James W. Pennebaker, escritura expresiva\n💛 No sustituye ayuda profesional si la necesitas.\n\n#saludmental #bienestar #habitos #mentalidad #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Escribir lo que te preocupa 15 minutos aligera la mente. ✍️\nEsta noche, pruébalo.\n\n📚 James W. Pennebaker, escritura expresiva\n💛 No sustituye ayuda profesional si la necesitas.\n\n#saludmental #bienestar #habitos #mentalidad #victoriatheceo",
+      "seo": {
+        "palabra_clave": "escritura expresiva",
+        "titulo_youtube": "Escritura expresiva: 15 minutos para soltar lo que te preocupa",
+        "tags_youtube": [
+          "escritura expresiva",
+          "journaling",
+          "diario personal",
+          "bienestar emocional",
+          "manejar el estres",
+          "habitos saludables",
+          "mentalidad",
+          "salud mental",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#bienestar",
+          "#mentalidad"
+        ]
+      }
     },
     {
       "id": "05",
@@ -186,8 +248,28 @@
       "locacion": "cocina",
       "vestuario": "Suéter de cachemira color crema, pantalón negro de vestir, reloj dorado",
       "accion": "De pie detrás de la isla de travertino con una taza de café, Capital sentado junto a la isla.",
-      "hora_publicacion": "12:43",
-      "texto_post": "Si toma menos de 2 minutos, hazlo ya. ⚡\nLo pequeño que pospones es lo que más pesa.\n\n📚 David Allen, Organízate con eficacia\n\n#productividad #habitos #organizacion #mentalidad #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Si toma menos de 2 minutos, hazlo ya. ⚡\nLo pequeño que pospones es lo que más pesa.\n\n📚 David Allen, Organízate con eficacia\n\n#productividad #habitos #organizacion #mentalidad #victoriatheceo",
+      "seo": {
+        "palabra_clave": "regla de los 2 minutos",
+        "titulo_youtube": "Regla de los 2 minutos: el truco de productividad de David Allen",
+        "tags_youtube": [
+          "regla de los 2 minutos",
+          "david allen",
+          "getting things done",
+          "gtd",
+          "productividad",
+          "procrastinacion",
+          "habitos",
+          "organizacion",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#productividad",
+          "#habitos"
+        ]
+      }
     },
     {
       "id": "06",
@@ -212,8 +294,28 @@
       "locacion": "restaurante",
       "vestuario": "Vestido de noche negro de satín con hombros descubiertos, collar de perlas, labios rojos",
       "accion": "Sentada en el banco de terciopelo verde frente a la mesa con velas, Capital sentado junto a la mesa.",
-      "hora_publicacion": "20:47",
-      "texto_post": "De cada 10 pesos que ganes, guarda 1 para ti. 💰\nPágate primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia\n\n#ahorro #finanzaspersonales #dinero #libros #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "De cada 10 pesos que ganes, guarda 1 para ti. 💰\nPágate primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia\n\n#ahorro #finanzaspersonales #dinero #libros #victoriatheceo",
+      "seo": {
+        "palabra_clave": "págate primero",
+        "titulo_youtube": "Págate primero: la regla de ahorro del hombre más rico de Babilonia",
+        "tags_youtube": [
+          "pagate primero",
+          "el hombre mas rico de babilonia",
+          "como ahorrar dinero",
+          "regla del 10 por ciento",
+          "ahorro",
+          "finanzas personales",
+          "libros de finanzas",
+          "dinero",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#ahorro",
+          "#finanzaspersonales"
+        ]
+      }
     },
     {
       "id": "07",
@@ -240,8 +342,28 @@
       "locacion": "jet",
       "vestuario": "Traje sastre gris perla de pantalón, blusa de seda negra, lentes de sol en la mano",
       "accion": "Sentada en el asiento de piel del jet, Capital sentado junto al asiento, ventanas con atardecer.",
-      "hora_publicacion": "12:43",
-      "texto_post": "Imagínate a los 80. ¿Te arrepentirías de no intentarlo? ✈️\n\n📚 Jeff Bezos, marco de minimización del arrepentimiento\n\n#emprendimiento #negocios #decisiones #mentalidad #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Imagínate a los 80. ¿Te arrepentirías de no intentarlo? ✈️\n\n📚 Jeff Bezos, marco de minimización del arrepentimiento\n\n#emprendimiento #negocios #decisiones #mentalidad #victoriatheceo",
+      "seo": {
+        "palabra_clave": "Jeff Bezos decisiones",
+        "titulo_youtube": "Jeff Bezos y la regla del arrepentimiento para decidir",
+        "tags_youtube": [
+          "jeff bezos",
+          "minimizacion del arrepentimiento",
+          "como tomar decisiones",
+          "emprender",
+          "emprendimiento",
+          "amazon",
+          "mentalidad",
+          "negocios",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#emprendimiento",
+          "#decisiones"
+        ]
+      }
     },
     {
       "id": "08",
@@ -267,8 +389,28 @@
       "locacion": "coche",
       "vestuario": "Blazer camel de lana, suéter negro de cuello alto, lentes de sol en la cabeza",
       "accion": "Sentada en el asiento trasero del sedán, Capital sentado a su lado en el asiento.",
-      "hora_publicacion": "20:47",
-      "texto_post": "Regla #1: no pierdas dinero. Regla #2: no olvides la regla #1. 🚗\n\n📚 Warren Buffett\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#inversion #finanzaspersonales #buffett #dinero #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Regla #1: no pierdas dinero. Regla #2: no olvides la regla #1. 🚗\n\n📚 Warren Buffett\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#inversion #finanzaspersonales #buffett #dinero #victoriatheceo",
+      "seo": {
+        "palabra_clave": "regla número 1 de Warren Buffett",
+        "titulo_youtube": "Regla número 1 de Warren Buffett: no pierdas dinero",
+        "tags_youtube": [
+          "warren buffett",
+          "reglas de warren buffett",
+          "no pierdas dinero",
+          "invertir para principiantes",
+          "inversion",
+          "educacion financiera",
+          "finanzas personales",
+          "dinero",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#inversion",
+          "#finanzaspersonales"
+        ]
+      }
     },
     {
       "id": "09",
@@ -294,8 +436,28 @@
       "locacion": "jacuzzi",
       "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
       "accion": "Sentada en el borde del jacuzzi con la bata sobre los hombros, Capital echado en la cubierta junto a ella.",
-      "hora_publicacion": "12:43",
-      "texto_post": "2 inhalaciones por la nariz, 1 exhalación larga por la boca. 5 minutos. 🌬️\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)\n💛 Bienestar, no tratamiento médico.\n\n#saludmental #respiracion #bienestar #estres #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "2 inhalaciones por la nariz, 1 exhalación larga por la boca. 5 minutos. 🌬️\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)\n💛 Bienestar, no tratamiento médico.\n\n#saludmental #respiracion #bienestar #estres #victoriatheceo",
+      "seo": {
+        "palabra_clave": "suspiro cíclico",
+        "titulo_youtube": "Suspiro cíclico: la respiración de 5 minutos que estudió Stanford",
+        "tags_youtube": [
+          "suspiro ciclico",
+          "ejercicio de respiracion",
+          "respiracion para el estres",
+          "stanford",
+          "calma",
+          "bienestar",
+          "estres",
+          "salud mental",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#bienestar",
+          "#respiracion"
+        ]
+      }
     },
     {
       "id": "10",
@@ -321,8 +483,27 @@
       "locacion": "sala",
       "vestuario": "Vestido midi de punto color vino, botas de piel negras, brazalete dorado",
       "accion": "Sentada en el sillón bouclé de la sala con el celular en la mano, Capital sentado a su lado con la cabeza junto a su rodilla.",
-      "hora_publicacion": "20:47",
-      "texto_post": "80+ años de estudio en Harvard: las buenas relaciones nos hacen más felices y sanos. ❤️\n¿A quién vas a llamar hoy?\n\n📚 Harvard Study of Adult Development · Robert Waldinger\n\n#felicidad #relaciones #vida #bienestar #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "80+ años de estudio en Harvard: las buenas relaciones nos hacen más felices y sanos. ❤️\n¿A quién vas a llamar hoy?\n\n📚 Harvard Study of Adult Development · Robert Waldinger\n\n#felicidad #relaciones #vida #bienestar #victoriatheceo",
+      "seo": {
+        "palabra_clave": "estudio de Harvard sobre la felicidad",
+        "titulo_youtube": "Estudio de Harvard sobre la felicidad: 80 años, una conclusión",
+        "tags_youtube": [
+          "estudio de harvard felicidad",
+          "robert waldinger",
+          "felicidad",
+          "relaciones",
+          "harvard",
+          "bienestar",
+          "vida plena",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#felicidad",
+          "#relaciones"
+        ]
+      }
     },
     {
       "id": "11",
@@ -347,8 +528,27 @@
       "locacion": "gimnasio",
       "vestuario": "Conjunto deportivo de diseñador negro con detalles dorados: leggings, top y chamarra ligera abierta",
       "accion": "De pie junto al rack de mancuernas con una toalla al hombro, Capital sentado a su lado.",
-      "hora_publicacion": "12:43",
-      "texto_post": "El trabajo se expande hasta llenar el tiempo que le das. ⏱️\nDale a tu proyecto la mitad del tiempo.\n\n📚 C. Northcote Parkinson, Ley de Parkinson\n\n#productividad #emprendimiento #disciplina #negocios #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "El trabajo se expande hasta llenar el tiempo que le das. ⏱️\nDale a tu proyecto la mitad del tiempo.\n\n📚 C. Northcote Parkinson, Ley de Parkinson\n\n#productividad #emprendimiento #disciplina #negocios #victoriatheceo",
+      "seo": {
+        "palabra_clave": "ley de Parkinson",
+        "titulo_youtube": "Ley de Parkinson: por qué el trabajo llena todo tu tiempo",
+        "tags_youtube": [
+          "ley de parkinson",
+          "gestion del tiempo",
+          "productividad",
+          "procrastinacion",
+          "emprendimiento",
+          "disciplina",
+          "trabajo",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#productividad",
+          "#emprendimiento"
+        ]
+      }
     },
     {
       "id": "12",
@@ -372,8 +572,28 @@
       "locacion": "hotel",
       "vestuario": "Traje sastre rojo carmesí de falda, camisola de seda negra, tacones negros",
       "accion": "Sentada en un sillón de terciopelo del lobby con las piernas cruzadas, Capital sentado a su lado.",
-      "hora_publicacion": "a definir tras la prueba",
-      "texto_post": "La gente no compra lo que haces. Compra por qué lo haces. 🔥\n\n📚 Simon Sinek, Empieza con el porqué\n\n#marketing #ventas #marca #emprendimiento #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "La gente no compra lo que haces. Compra por qué lo haces. 🔥\n\n📚 Simon Sinek, Empieza con el porqué\n\n#marketing #ventas #marca #emprendimiento #victoriatheceo",
+      "seo": {
+        "palabra_clave": "empieza con el porqué",
+        "titulo_youtube": "Empieza con el porqué: la lección de ventas de Simon Sinek",
+        "tags_youtube": [
+          "simon sinek",
+          "empieza con el porque",
+          "circulo dorado",
+          "marketing",
+          "ventas",
+          "marca personal",
+          "branding",
+          "emprendimiento",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#marketing",
+          "#emprendimiento"
+        ]
+      }
     },
     {
       "id": "13",
@@ -396,8 +616,28 @@
       "locacion": "golf",
       "vestuario": "Polo blanco ajustado, falda plisada azul marino, visera blanca, guante de golf",
       "accion": "De pie junto al carrito de golf con un palo apoyado en el pasto, Capital sentado a su lado.",
-      "hora_publicacion": "a definir tras la prueba",
-      "texto_post": "La riqueza es lo que no ves. ⛳\nEl coche que no compraste. El lujo que no presumiste.\n\n📚 Morgan Housel, La psicología del dinero\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#finanzaspersonales #riqueza #ahorro #inversion #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "La riqueza es lo que no ves. ⛳\nEl coche que no compraste. El lujo que no presumiste.\n\n📚 Morgan Housel, La psicología del dinero\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#finanzaspersonales #riqueza #ahorro #inversion #victoriatheceo",
+      "seo": {
+        "palabra_clave": "la psicología del dinero",
+        "titulo_youtube": "La psicología del dinero: la riqueza es lo que no ves",
+        "tags_youtube": [
+          "la psicologia del dinero",
+          "morgan housel",
+          "riqueza",
+          "ahorro",
+          "inversion",
+          "finanzas personales",
+          "libros de finanzas",
+          "dinero",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#finanzaspersonales",
+          "#dinero"
+        ]
+      }
     },
     {
       "id": "14",
@@ -422,8 +662,27 @@
       "locacion": "sillon",
       "vestuario": "Vestido camisero de seda azul cielo, cinturón dorado delgado, pies descalzos",
       "accion": "Sentada en el sillón bouclé del rincón de lectura con un libro cerrado en el regazo, Capital echado junto al sillón con la cabeza levantada.",
-      "hora_publicacion": "a definir tras la prueba",
-      "texto_post": "Tu mente no suelta lo que dejaste a medias. 🧠\nEscribe el siguiente paso y descansa.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)\n\n#saludmental #productividad #descanso #mentalidad #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Tu mente no suelta lo que dejaste a medias. 🧠\nEscribe el siguiente paso y descansa.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)\n\n#saludmental #productividad #descanso #mentalidad #victoriatheceo",
+      "seo": {
+        "palabra_clave": "efecto Zeigarnik",
+        "titulo_youtube": "Efecto Zeigarnik: por qué tu mente no suelta lo pendiente",
+        "tags_youtube": [
+          "efecto zeigarnik",
+          "psicologia",
+          "pendientes",
+          "dormir mejor",
+          "descanso",
+          "productividad",
+          "mente",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#psicologia",
+          "#productividad"
+        ]
+      }
     },
     {
       "id": "15",
@@ -449,8 +708,28 @@
       "locacion": "oficina",
       "vestuario": "Blusa blanca de seda con moño al cuello, falda lápiz negra, tacones negros, lentes de armazón delgado",
       "accion": "Sentada en la silla de piel frente al escritorio de nogal, Capital sentado junto al escritorio.",
-      "hora_publicacion": "a definir tras la prueba",
-      "texto_post": "Haz primero lo que más te cuesta. 🐸\nEl resto del día es pura ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!\n\n#productividad #habitos #disciplina #exito #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Haz primero lo que más te cuesta. 🐸\nEl resto del día es pura ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!\n\n#productividad #habitos #disciplina #exito #victoriatheceo",
+      "seo": {
+        "palabra_clave": "tráguese ese sapo",
+        "titulo_youtube": "Tráguese ese sapo: haz primero lo que más te cuesta",
+        "tags_youtube": [
+          "tragate ese sapo",
+          "brian tracy",
+          "productividad",
+          "procrastinacion",
+          "habitos",
+          "disciplina",
+          "rutina de la mañana",
+          "exito",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#productividad",
+          "#disciplina"
+        ]
+      }
     },
     {
       "id": "16",
@@ -476,8 +755,28 @@
       "locacion": "bar",
       "vestuario": "Vestido de cóctel de terciopelo verde botella, aretes largos de oro, tacones dorados",
       "accion": "Sentada en el banco de piel de la barra con un vaso de agua mineral, Capital echado junto al banco.",
-      "hora_publicacion": "a definir tras la prueba",
-      "texto_post": "Los primeros 100,000 dólares son los más difíciles. Después, el dinero trabaja para ti. 🥂\n\n📚 Charlie Munger\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#dinero #inversion #finanzaspersonales #motivacion #victoriatheceo"
+      "hora_publicacion": "18:45",
+      "texto_post": "Los primeros 100,000 dólares son los más difíciles. Después, el dinero trabaja para ti. 🥂\n\n📚 Charlie Munger\n⚠️ Contenido educativo, no es asesoría financiera.\n\n#dinero #inversion #finanzaspersonales #motivacion #victoriatheceo",
+      "seo": {
+        "palabra_clave": "Charlie Munger primeros 100 mil",
+        "titulo_youtube": "Charlie Munger: los primeros 100 mil dólares son los más difíciles",
+        "tags_youtube": [
+          "charlie munger",
+          "primeros 100 mil",
+          "interes compuesto",
+          "libertad financiera",
+          "ahorro",
+          "inversion",
+          "finanzas personales",
+          "dinero",
+          "victoria the ceo"
+        ],
+        "hashtags_youtube": [
+          "#Shorts",
+          "#dinero",
+          "#inversion"
+        ]
+      }
     }
   ]
 }
