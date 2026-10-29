@@ -63,9 +63,9 @@
   .hx-live { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--hx-mono); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase;
     padding: .4rem .75rem; border: 1px solid var(--hx-line-hi); border-radius: 2px; background: rgba(3, 8, 12, .7); width: fit-content; max-width: 100%; }
   .hx-live i { width: .5rem; height: .5rem; border-radius: 50%; background: var(--hx-faint); flex: none; }
-  .hx-live.ok i { background: var(--hx-green); box-shadow: 0 0 10px var(--hx-green); }
-  .hx-live.run i { background: var(--hx-cyan); box-shadow: 0 0 10px var(--hx-cyan); }
-  .hx-live.bad i { background: var(--hx-red); box-shadow: 0 0 10px var(--hx-red); }
+  .hx-live:has(.ok) i { background: var(--hx-green); box-shadow: 0 0 10px var(--hx-green); }
+  .hx-live:has(.run) i { background: var(--hx-cyan); box-shadow: 0 0 10px var(--hx-cyan); }
+  .hx-live:has(.bad) i { background: var(--hx-red); box-shadow: 0 0 10px var(--hx-red); }
 
   .hx-count { display: grid; gap: .4rem; justify-items: end; text-align: right; }
   @media (max-width: 760px) { .hx-count { justify-items: start; text-align: left; } }
@@ -156,7 +156,7 @@
         <div class="hx-tag">@victoriatheceo · Centro de mando · Personaje IA</div>
         <h1>Victoria <b>The CEO</b></h1>
         <p class="hx-takeaway"><b data-draw="s-publicados" data-source="resumen" data-field="publicados">—</b> videos programados o en redes, <b data-draw="s-listos" data-source="resumen" data-field="listos">—</b> listos para salir y energía para unos <b data-draw="s-alcanzan" data-source="resumen" data-field="videos_que_alcanzan">—</b> videos más.</p>
-        <div class="hx-live" data-draw="estado-sistema" data-source="ejecuciones">—</div>
+        <div class="hx-live"><i></i>Última ejecución · <span data-draw="estado-sistema" data-source="ejecuciones">—</span></div>
       </div>
       <div class="hx-count" id="proxima">
         <div class="hx-code">Próxima misión</div>
@@ -327,9 +327,9 @@
       const ultima = orden[orden.length - 1];
       const usados = ejecuciones.reduce((s, e) => s + (Number(e.creditos_usados) || 0), 0);
       const generados = ejecuciones.filter((e) => e.tipo === 'generar' && Number(e.creditos_usados) > 0);
-      const costo = generados.length ? Math.round(generados.reduce((s, e) => s + Number(e.creditos_usados), 0) / generados.length) : 510;
+      const costo = generados.length ? Math.round(generados.reduce((s, e) => s + Number(e.creditos_usados), 0) / generados.length) : null;
       const restantes = ultima ? Number(ultima.creditos_restantes) : null;
-      const alcanzan = restantes == null ? null : Math.floor(restantes / costo);
+      const alcanzan = restantes == null || !costo ? null : Math.floor(restantes / costo);
       const calidades = videos.map((v) => Number(v.qa_similitud)).filter((q) => q > 0);
       const vistas = videos.reduce((s, v) => s + ['ig', 'tt', 'yt', 'fb'].reduce((t, r) => t + (Number(v[`v_${r}`]) || 0), 0), 0);
       return [{
@@ -420,8 +420,10 @@
     if (fallos.length) lista.push({tipo: 'alerta', texto: `${fallos.length} ejecución(es) no publicaron. Última: ${fallos[fallos.length - 1].detalle}`});
     const orden = [...ejecuciones].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1));
     const ultima = orden[orden.length - 1];
-    if (ultima) {
-      const n = Math.floor(Number(ultima.creditos_restantes) / 510);
+    const generados = ejecuciones.filter((e) => e.tipo === 'generar' && Number(e.creditos_usados) > 0);
+    if (ultima && generados.length) {
+      const costo = generados.reduce((s, e) => s + Number(e.creditos_usados), 0) / generados.length;
+      const n = Math.floor(Number(ultima.creditos_restantes) / costo);
       lista.push(n < 6
         ? {tipo: 'alerta', texto: `Energía para solo ${n} videos. Recarga OpenArt o baja la frecuencia.`}
         : {tipo: 'dato', texto: `Energía para unos ${n} videos más: ${n * 2} días al ritmo de uno cada 2 días.`});
@@ -500,13 +502,12 @@
 
   dash.draw('estado-sistema', (el) => {
     const r = dash.data('ejecuciones');
-    el.replaceChildren(document.createElement('i'));
     el.classList.remove('ok', 'run', 'bad');
-    if (r.status !== 'ok' || !r.data.length) { el.append('—'); return; }
+    if (r.status !== 'ok' || !r.data.length) { el.textContent = '—'; return; }
     const ultima = [...r.data].sort((a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1)).pop();
     const [texto, clase] = ESTADOS[ultima.resultado] || [ultima.resultado, ''];
     el.classList.add(clase === 'ready' || !clase ? 'ok' : clase);
-    el.append(`Última ejecución · ${texto} · ${mx(ultima.fecha_utc)}`);
+    el.textContent = `${texto} · ${mx(ultima.fecha_utc)}`;
   });
 
   function tooltip(el) {
