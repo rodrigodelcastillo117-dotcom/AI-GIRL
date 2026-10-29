@@ -1,0 +1,137 @@
+[
+ {
+  "w": "Las",
+  "start": 0.0,
+  "end": 0.4
+ },
+ {
+  "w": "parejas",
+  "start": 0.4,
+  "end": 0.8
+ },
+ {
+  "w": "que",
+  "start": 0.8,
+  "end": 1.02
+ },
+ {
+  "w": "duran",
+  "start": 1.02,
+  "end": 1.38
+ },
+ {
+  "w": "no",
+  "start": 1.38,
+  "end": 1.6
+ },
+ {
+  "w": "son",
+  "start": 1.6,
+  "end": 1.74
+ },
+ {
+  "w": "las",
+  "start": 1.74,
+  "end": 1.94
+ },
+ {
+  "w": "que",
+  "start": 1.94,
+  "end": 2.1
+ },
+ {
+  "w": "nunca",
+  "start": 2.1,
+  "end": 2.36
+ },
+ {
+  "w": "pelean.",
+  "start": 2.36,
+  "end": 2.92
+ },
+ {
+  "w": "John",
+  "start": 3.4,
+  "end": 3.68
+ },
+ {
+  "w": "Gottman",
+  "start": 3.68,
+  "end": 4.14
+ },
+ {
+  "w": "lo",
+  "start": 4.14,
+  "end": 4.3
+ },
+ {
+  "w": "midió.",
+  "start": 4.3,
+  "end": 4.68
+ },
+ {
+  "w": "Por",
+  "start": 5.22,
+  "end": 5.34
+ },
+ {
+  "w": "cada",
+  "start": 5.34,
+  "end": 5.64
+ },
+ {
+  "w": "momento",
+  "start": 5.64,
+  "end": 6.06
+ },
+ {
+  "w": "negativo,",
+  "start": 6.06,
+  "end": 6.76
+ },
+ {
+  "w": "tienen",
+  "start": 7.08,
+  "end": 7.44
+ },
+ {
+  "w": "cinco",
+  "start": 7.44,
+  "end": 8.02
+ },
+ {
+  "w": "positivos.",
+  "start": 8.02,
+  "end": 8.78
+ },
+ {
+  "w": "Hoy,",
+  "start": 9.42,
+  "end": 9.7
+ },
+ {
+  "w": "dale",
+  "start": 10.2,
+  "end": 10.36
+ },
+ {
+  "w": "tres",
+  "start": 10.36,
+  "end": 10.8
+ },
+ {
+  "w": "a",
+  "start": 10.8,
+  "end": 11.2
+ },
+ {
+  "w": "tu",
+  "start": 11.2,
+  "end": 11.3
+ },
+ {
+  "w": "pareja.",
+  "start": 11.3,
+  "end": 11.74
+ }
+]

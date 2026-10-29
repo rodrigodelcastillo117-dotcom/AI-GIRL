@@ -1,0 +1,119 @@
+{
+  "personaje": {
+    "maestra": {
+      "archivo": "personaje-hoja-v4-pecas.png",
+      "openart_id": "5Lohv653DSwMxmvpyh99",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237529347_d6b689e5_1793237530019_b0f6b3cb.png",
+      "descripcion": "Pelirroja cobriza, ojos verde vivo, pecas ligeras, labios rojos, ~28 años. Referencia de identidad para todas las generaciones."
+    },
+    "pelirroja_sin_pecas_v3": {
+      "archivo": "personaje-hoja-v3-pelirroja.png",
+      "openart_id": "0xESWXTN1hA2JVpNtPHW"
+    },
+    "rubia_v2": {
+      "archivo": "personaje-hoja-v2.png",
+      "openart_id": "m7lvSsURFec3Ne5nA1MO",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236513013_556cdfcb_1793236513647_f177bb9d.png",
+      "motivo": "Reemplazada por la pelirroja; misma cara."
+    },
+    "descartada_v1": {
+      "archivo": "personaje-hoja.png",
+      "openart_id": "ZIWxu1NAHAWnKVYYONV3",
+      "motivo": "Cabello más oscuro y ojos grises; no coincide con el video original."
+    },
+    "cara_origen": {
+      "openart_id": "Rh8Z8xQAxfnqojR4tyv8",
+      "url": "https://cdn.openart.ai/openart-uploads/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/cara-crop_1793236312229_07bcde59.png"
+    }
+  },
+  "cuartos": {
+    "sala": {
+      "archivo": "cuarto-sala.png",
+      "openart_id": "AP8nNPpvgYjknZEaKCii",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236379330_f2b510ac_1793236380192_24d17a02.png"
+    },
+    "oficina": {
+      "archivo": "cuarto-oficina.png",
+      "openart_id": "mVWy6w4XqMqqbGCFN1QO",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236381927_3030488b_1793236384044_5264f671.png"
+    },
+    "cocina": {
+      "archivo": "cuarto-cocina.png",
+      "openart_id": "uXOsCbEC2gpEgZzx4mpu",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236380796_6e8117a1_1793236381441_d25cbc56.png"
+    },
+    "recamara": {
+      "archivo": "cuarto-recamara.png",
+      "openart_id": "RsPfYg3z8RR5SCPvnAUC",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236383138_71a1a4cd_1793236384347_446deffb.png"
+    },
+    "sillon": {
+      "archivo": "cuarto-sillon.png",
+      "openart_id": "e6lIzqiKyIUCcSfb5f5I",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236391367_b55468a8_1793236392336_5925ed61.png"
+    }
+  },
+  "locaciones_lujo": {
+    "jet": {
+      "archivo": "loc-jet.png",
+      "openart_id": "YVk5OY0bep5ozM2oqihJ",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237037329_946b6bb0_1793237037895_9efa1cbf.png"
+    },
+    "yate": {
+      "archivo": "loc-yate.png",
+      "openart_id": "XLhx23uoqGX285vAGuLE",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237042535_4d5a749c_1793237043535_df6ba0a6.png",
+      "nota": "Trae una bandera en la popa; regenerar si se quiere sin bandera."
+    },
+    "gimnasio": {
+      "archivo": "loc-gimnasio.png",
+      "openart_id": "yhXZlrKMDvClhQsb4e9D",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237039435_93a7a7df_1793237040059_c85c984a.png"
+    },
+    "restaurante": {
+      "archivo": "loc-restaurante.png",
+      "openart_id": "vwgYltiGmTrv0y8TY0z3",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237042960_29a18b36_1793237043973_99afa974.png"
+    },
+    "palco_estadio": {
+      "archivo": "loc-palco-estadio.png",
+      "openart_id": "UDG3zLNVTSxOTDJD3k8C",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237051456_6171ec9e_1793237053164_892d78cd.png"
+    }
+  },
+  "perro": {
+    "archivo": "rottweiler-hoja.png",
+    "openart_id": "17LRH2cLV1ZTyyVe8iiW",
+    "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237435131_03f3c9be_1793237436176_de516a2a.png",
+    "descripcion": "Rottweiler adulto, collar de piel negro con placa dorada. Aparece en TODOS los videos."
+  },
+  "voz": {
+    "archivo": "voz-referencia.mp3",
+    "openart_id": "bt2pS1mQ0D2VsmwknVLa",
+    "url": "https://cdn.openart.ai/openart-uploads/production/2026-10/create-video/Gtp6MKXwyYH0MQuQMrcG/voz-referencia_1793237547385_0f21ddd8.mp3",
+    "descripcion": "11.8 s extraídos del video de prueba. Se pasa como audioRole voice_reference."
+  },
+  "pomerania_descartado": {
+    "archivo": "perrito-hoja.png",
+    "openart_id": "GcKN0RBXbVZbJpPzPsBw",
+    "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793237035404_1a0c1859_1793237037647_99b9fdfe.png",
+    "descripcion": "Pomerania blanca miniatura, collar de cadena dorada con dije de lingote."
+  },
+  "pruebas": {
+    "foto_sala_esmeralda": {
+      "archivo": "prueba-sala-esmeralda.png",
+      "openart_id": "5T1CF6ssMFKI0fn8oCxs",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793236588180_9dc694df_1793236588745_8c6411df.png",
+      "vestido": "Vestido cruzado de seda verde esmeralda, manga larga"
+    },
+    "video_wan3_12s": {
+      "openart_history_id": "Y2VatzqFECyq7apxb3Ck",
+      "openart_id": "QE3Efm9PM0jRhFCXwuP3",
+      "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-video/Gtp6MKXwyYH0MQuQMrcG/229e2811ea344423864bb5a095651629-metadata_IaDdQz4l_8fbba285b5c2_1793237056200_db4dee1b.mp4",
+      "modelo": "wan3-0 element2video, 12 s, 720p, 9:16, audio",
+      "creditos": 480,
+      "resultado": "Dijo las 27 palabras del guion exactas (verificado con Whisper). Identidad estable los 12 s.",
+      "subtitulado": "prueba-video-subtitulado.mp4"
+    }
+  }
+}
