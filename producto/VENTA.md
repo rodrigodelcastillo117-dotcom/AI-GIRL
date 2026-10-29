@@ -9,8 +9,8 @@ Todo para copiar y pegar en Hotmart. Archivos: `producto/plantilla/el-tablero-de
 - **Formato:** archivo descargable (Excel, funciona en Google Sheets)
 - **Categoría:** Finanzas e inversiones
 - **Idioma:** Español
-- **Precio:** $149 MXN (lanzamiento; después $199)
-- **Garantía:** 7 días
+- **Precio:** $199 MXN
+- **Garantía:** 7 días (si no le sirve, se le devuelve su dinero)
 
 **Descripción corta:**
 Tu dinero en una sola hoja: presupuesto 50/30/20, fondo de emergencia, deudas, interés compuesto y
