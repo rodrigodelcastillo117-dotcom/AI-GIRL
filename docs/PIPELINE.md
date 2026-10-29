@@ -1,6 +1,7 @@
 # Pipeline automático: un video de Victoria
 
-Lo ejecuta la tarea programada cada 2 días. Publica directo, sin aprobación humana. Por eso la
+Lo ejecuta la tarea programada cada 2 días, dentro de la conversación de Claude donde se armó
+el proyecto (ahí tiene las claves, permiso de push y el tablero). Publica directo, sin aprobación humana. Por eso la
 regla principal es: **si algo no pasa el control de calidad, NO se publica** y se registra el fallo.
 
 ## 0. Preparación
@@ -124,7 +125,9 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
   (`2026-10-30T02:47:00Z`). Si faltan menos de 15 minutos, usar ahora + 15 minutos.
 - Título: la primera línea de `texto_post` sin emojis, máximo 90 caracteres.
 - `python scripts/publer.py publicar <video> <texto.txt> <hora_utc> "<título>"`.
-  Solo publica en cuentas cuyo nombre contiene `filtro_cuentas`. Si la API responde algo
+  Solo publica en las cuentas de `config.json → cuentas_publer` (o cuyo nombre contiene
+  `filtro_cuentas`); YouTube solo en `canal_youtube`. La de Instagram se llamaba "Nadie Te lo
+  Explicó" y el canal de YouTube también: Publer y la API pueden seguir dando ese nombre. Si la API responde algo
   inesperado, consultar https://publer.com/docs, corregir `scripts/publer.py`, volver a intentar
   una vez y dejar la corrección en el commit.
 - **Duplicados:** `publer.py` omite las cuentas que ya tienen un post con la misma primera línea y

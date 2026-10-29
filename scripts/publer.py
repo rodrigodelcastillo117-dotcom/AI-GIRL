@@ -10,8 +10,8 @@ Lee PUBLER_API_KEY del entorno (nunca del repo). Comandos:
       por si una ejecución anterior publicó pero no pudo guardar su estado en el repo.
       --prueba arma el payload y lo imprime sin llamar a la API.
 
-Solo publica en cuentas cuyo nombre contiene FILTRO_CUENTAS (contenido/config.json), para no
-publicar nunca en las cuentas de otras marcas del mismo workspace.
+Solo publica en las cuentas de contenido/config.json → cuentas_publer, o cuyo nombre contiene
+filtro_cuentas, para no publicar nunca en las cuentas de otras marcas del mismo workspace.
 """
 import datetime
 import json
@@ -77,7 +77,9 @@ def workspace_id():
 def cuentas_victoria(ws):
     todas = _lista(_pedir('GET', '/accounts', ws), 'accounts')
     filtro = CONFIG['filtro_cuentas'].lower()
-    elegidas = [c for c in todas if c.get('provider') in REDES and filtro in (c.get('name') or '').lower()]
+    ids = CONFIG.get('cuentas_publer', {})  # la de Instagram era "Nadie Te lo Explicó" y Publer guarda el nombre viejo
+    elegidas = [c for c in todas if c.get('provider') in REDES
+                and (c['id'] in ids or filtro in (c.get('name') or '').lower())]
     return todas, elegidas
 
 
@@ -143,7 +145,7 @@ def armar_post(cuentas, media_id, texto, titulo, cuando):
     for proveedor in {red(c) for c in cuentas}:
         media = [{'id': media_id, 'type': 'video'}]
         if proveedor == 'instagram':
-            redes['instagram'] = {'type': 'reel', 'text': texto, 'media': media,
+            redes['instagram'] = {'type': 'video', 'text': texto, 'media': media,
                                   'details': {'type': 'reel', 'feed': True}}
         elif proveedor == 'tiktok':
             redes['tiktok'] = {'type': 'video', 'title': titulo, 'text': texto, 'media': media,
@@ -185,7 +187,7 @@ def main():
     ws = workspace_id()
     _, cuentas = cuentas_victoria(ws)
     if not cuentas:
-        sys.exit(f"ERROR: no hay cuentas cuyo nombre contenga '{CONFIG['filtro_cuentas']}'. No publico nada.")
+        sys.exit('ERROR: no encontré las cuentas de Victoria en Publer. No publico nada.')
     print('Cuentas:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas))
     try:
         repetidas = ya_programadas(ws, cuentas, texto)

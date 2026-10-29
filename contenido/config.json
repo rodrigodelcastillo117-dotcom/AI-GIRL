@@ -5,11 +5,9 @@
  "creditos_minimos_para_correr": 1100,
  "max_intentos_video": 2,
  "similitud_minima_audio": 0.85,
- "ejecuciones_unicas": [
-  {
-   "utc": "2026-10-30T00:13:00Z",
-   "que": "Publicar video 01",
-   "video_id": "01"
-  }
- ]
+ "cuentas_publer": {
+  "6a9658e6510cfb283e2fff83": "instagram (antes Nadie Te lo Explicó)",
+  "6a96586502b3146e69fa11b0": "tiktok Victoria The CEO"
+ },
+ "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A"
 }

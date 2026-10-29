@@ -27,7 +27,7 @@
   "videos": [
     {
       "id": "01",
-      "estado": "listo_para_publicar",
+      "estado": "programado",
       "pilar": "motivacion_economica",
       "guion": "El uno por ciento diario te hace treinta y siete veces mejor en un año. Lo explica James Clear. Olvida el gran salto. Hoy, solo tu uno por ciento.",
       "fuente": "James Clear, Hábitos Atómicos (1.01^365 ≈ 37.8)",
@@ -61,6 +61,13 @@
       },
       "openart": {
         "video": "kZkUAtz9kylwIrXTauWE"
+      },
+      "publicacion": {
+        "publer": {
+          "instagram": "job 6ae2bec77ca0da5eaf26ef78",
+          "tiktok": "programado 2026-10-29 20:47 CDMX"
+        },
+        "youtube": "https://youtube.com/shorts/v25vIDTienI"
       }
     },
     {

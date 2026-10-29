@@ -47,5 +47,19 @@
   "tipo": "contenido",
   "aprendizaje": "Los números dichos en palabras ('ochenta por ciento') se ven mejor en subtítulos como dígitos ('80%') y Whisper los transcribe así.",
   "regla": "Escribir los subtítulos del plan con dígitos y los guiones hablados con palabras."
+ },
+ {
+  "fecha_utc": "2026-10-29T03:55:00Z",
+  "origen": "video 01",
+  "tipo": "publicacion",
+  "aprendizaje": "Publer rechaza un Reel de Instagram con type \"reel\" (\"Post type is not valid\"); pide type \"video\" con details.type \"reel\".",
+  "regla": "En scripts/publer.py Instagram va como type \"video\" + details.type \"reel\"; no cambiarlo."
+ },
+ {
+  "fecha_utc": "2026-10-29T03:55:00Z",
+  "origen": "cuentas",
+  "tipo": "publicacion",
+  "aprendizaje": "Las cuentas de Victoria eran \"Nadie Te Lo Explicó\" y Publer y YouTube siguen dando el nombre viejo.",
+  "regla": "Reconocer las cuentas por su id (config.json: cuentas_publer y canal_youtube), no solo por el nombre."
  }
 ]

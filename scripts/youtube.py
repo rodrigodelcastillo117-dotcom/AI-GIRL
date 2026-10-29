@@ -10,7 +10,8 @@ Comandos:
       de inmediato. Si el canal ya tiene un video con ese título, no lo vuelve a subir.
       --prueba imprime los metadatos sin llamar a la API.
 
-Solo sube si el nombre del canal contiene "filtro_cuentas" de contenido/config.json.
+Solo sube al canal de contenido/config.json → canal_youtube, o a uno cuyo nombre contenga
+"filtro_cuentas" (el canal se llamaba "Nadie Te Lo Explicó" y la API tarda en dar el nombre nuevo).
 Marca el video como contenido sintético (status.containsSyntheticMedia) por ser hecho con IA.
 """
 import datetime
@@ -112,7 +113,7 @@ def main():
 
     acceso = token()
     canal_id, nombre = canal(acceso)
-    if CONFIG['filtro_cuentas'].lower() not in nombre.lower():
+    if canal_id != CONFIG.get('canal_youtube') and CONFIG['filtro_cuentas'].lower() not in nombre.lower():
         sys.exit(f"ERROR: el permiso apunta al canal '{nombre}', que no es de Victoria. No subo nada.")
     try:
         previo = ya_subido(acceso, canal_id, titulo)

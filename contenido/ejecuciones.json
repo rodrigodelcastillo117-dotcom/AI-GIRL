@@ -34,5 +34,14 @@
   "detalle": "Video 02 generado y aprobado (audio 92%), pero no se publicó: Publer bloqueó la conexión, el permiso de YouTube es de otro canal y no pudo guardar en el repo.",
   "creditos_usados": 510,
   "creditos_restantes": 9870
+ },
+ {
+  "fecha_utc": "2026-10-29T03:55:00Z",
+  "tipo": "publicar",
+  "video_id": "01",
+  "resultado": "programado",
+  "detalle": "Video 01 programado para hoy 20:47 en Instagram, TikTok y YouTube Shorts (Instagram falló al primer intento por el tipo de post; corregido).",
+  "creditos_usados": 0,
+  "creditos_restantes": 9870
  }
 ]
