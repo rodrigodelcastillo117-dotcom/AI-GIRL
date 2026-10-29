@@ -43,5 +43,14 @@
   "detalle": "Video 01 programado para hoy 20:47 en Instagram, TikTok y YouTube Shorts (Instagram falló al primer intento por el tipo de post; corregido).",
   "creditos_usados": 0,
   "creditos_restantes": 9870
+ },
+ {
+  "fecha_utc": "2026-10-29T05:00:00Z",
+  "tipo": "publicar",
+  "video_id": "01",
+  "resultado": "programado",
+  "detalle": "Video 01 movido a jueves 17:45 en YouTube con título SEO nuevo; Instagram y TikTok siguen a las 20:47 hasta moverlos a mano en Publer.",
+  "creditos_usados": 0,
+  "creditos_restantes": 9870
  }
 ]

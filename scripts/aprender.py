@@ -76,6 +76,10 @@ def adn(video):
     estilo = next((e for e, claves in ESTILOS if any(c in vestuario for c in claves)), 'otro')
     if gancho.startswith('¿'):
         tipo = 'pregunta'
+    elif any(p in gancho for p in ('error', 'estás perdiendo', 'te está costando', 'deja de ')):
+        tipo = 'error'
+    elif gancho.startswith(('no ', 'nunca ')) or ' no te va a ' in gancho:
+        tipo = 'contradiccion'
     elif any(p in gancho for p in ('decía', 'lo llama', 'escribió', 'dijo')):
         tipo = 'cita'
     elif any(p in gancho for p in ('estudio', 'ley ', 'efecto', 'principio')):
@@ -204,6 +208,22 @@ def retencion_youtube(videos):
     return {ids[f[0]]: {'ret': round(f[2], 1), 'seg': round(f[3], 1)} for f in filas if f[0] in ids}
 
 
+def ajenos(plan):
+    """Posts publicados en las cuentas de Victoria en los últimos 3 días que no son del plan."""
+    import urllib.parse
+    import publer
+    ws = publer.workspace_id()
+    cuentas = publer.CONFIG.get('cuentas_publer', {})
+    propias = {primera_linea(v.get('texto_post')) for v in plan['videos']}
+    hoy = datetime.date.today()
+    filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
+               ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]
+    r = publer._pedir('GET', '/posts?' + urllib.parse.urlencode(filtros), ws)
+    return [f"Post AJENO publicado en {cuentas.get(p.get('account_id'))} el {str(p.get('scheduled_at'))[:16]}: "
+            f"\"{(p.get('text') or '').strip().splitlines()[0][:60] if (p.get('text') or '').strip() else ''}\" ({p.get('post_link')})"
+            for p in r.get('posts') or [] if primera_linea(p.get('text')) not in propias]
+
+
 def verificar(plan, ahora, avisos):
     """Marca "publicado" solo lo que se ve publicado en la red; avisa de lo que no salió (regla 34)."""
     programados = [v for v in plan['videos'] if v['estado'] == 'programado' and v.get('publica_utc')
@@ -241,6 +261,10 @@ def medir():
     ahora = datetime.datetime.now(datetime.timezone.utc)
     avisos_verificacion = []
     problemas = verificar(plan, ahora, avisos_verificacion)
+    try:
+        problemas += ajenos(plan)
+    except SystemExit as e:
+        avisos_verificacion.append(f'No pude revisar posts ajenos en Publer: {e}')
     guardar('verificacion.json', {'fecha_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'), 'problemas': problemas,
                                   'avisos': avisos_verificacion})
     for p in problemas + avisos_verificacion:

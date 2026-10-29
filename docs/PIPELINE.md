@@ -65,11 +65,18 @@ Al generar un video:
 
 ## 1c. Escribir guiones nuevos (cuando quedan menos de 5)
 
-Escribe 10 videos nuevos al final de `plan.json → videos`, con todos los campos de los demás
+Lee `docs/GUIONES_VIRALES.md`: cada guion cumple su lista de 10 puntos. Escribe 10 videos nuevos
+al final de `plan.json → videos`, con todos los campos de los demás
 (`id`, `estado: "pendiente"`, `pilar`, `guion` de máximo 28 palabras dicho en español de México
 que abre con el gancho, `subtitulos` con dígitos, `palabras_clave`, `fuente` real, `locacion`,
 `vestuario` nuevo, `accion`, `hora_publicacion: "rotacion"`, `texto_post` sin hashtags y `seo`
-según `docs/SEO.md`). Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.
+según `docs/SEO.md`, más `ganchos_alternativos` (las otras 2 primeras frases propuestas) y
+`adn: {"tipo_gancho": "cifra|contradiccion|error|nombre|regla|dato|cita|pregunta|consejo"}`).
+Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.
+
+Para mover un video ya programado: `python scripts/reprogramar.py <id> <hora_utc>` (mueve YouTube
+y dice qué posts de Publer hay que mover a mano: Publer no deja cambiar la hora por API y su
+borrado masivo es peligroso, nunca se usa).
 
 - **Cada dato se comprueba antes de escribirlo** (regla 7): busca la fuente con WebSearch y no
   pongas cifras, fechas ni frases atribuidas que no encuentres. El título no promete más de lo que

@@ -61,5 +61,26 @@
   "tipo": "publicacion",
   "aprendizaje": "Las cuentas de Victoria eran \"Nadie Te Lo Explicó\" y Publer y YouTube siguen dando el nombre viejo.",
   "regla": "Reconocer las cuentas por su id (config.json: cuentas_publer y canal_youtube), no solo por el nombre."
+ },
+ {
+  "fecha_utc": "2026-10-29T05:00:00Z",
+  "origen": "mover video 01",
+  "tipo": "publicacion",
+  "aprendizaje": "El PUT /posts/{id} de Publer acepta la petición pero ignora scheduled_at: la hora no cambia.",
+  "regla": "Para mover un post de Publer: moverlo a mano en su calendario (scripts/reprogramar.py dice cuáles) y verificar."
+ },
+ {
+  "fecha_utc": "2026-10-29T05:00:00Z",
+  "origen": "mover video 01",
+  "tipo": "publicacion",
+  "aprendizaje": "DELETE /posts de Publer borra TODOS los posts no publicados del workspace si no recibe ids válidos (incluye otras marcas).",
+  "regla": "Nunca usar el borrado de Publer desde scripts."
+ },
+ {
+  "fecha_utc": "2026-10-29T05:00:00Z",
+  "origen": "verificación",
+  "tipo": "publicacion",
+  "aprendizaje": "El 28-oct salieron en el Instagram y el TikTok de Victoria posts de \"Nadie Te Lo Explicó\" con \"publicar ahora\", desde el usuario de Rodrigo en Publer (otro sistema usa esas cuentas).",
+  "regla": "La verificación diaria revisa que en las cuentas de Victoria no salga nada ajeno y lo reporta."
  }
 ]
