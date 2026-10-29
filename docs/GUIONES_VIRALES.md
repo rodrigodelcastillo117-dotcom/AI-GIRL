@@ -35,9 +35,22 @@ usan 6 de 10 veces lo que gana y 4 de 10 prueban algo distinto (`docs/PIPELINE.m
 
 ## Monetizar (lo que hay que saber)
 
-- Lo más rápido es **un enlace propio** (producto, curso o afiliado) en la bio y en la descripción
-  de YouTube, con `?ref=` por red (reglas 20, 24, 25, 26). Sin enlace no hay ventas.
-- Pagos de las plataformas (requisitos según lo publicado por cada una; pueden cambiar):
-  YouTube paga Shorts dentro del Programa de Socios (1,000 suscriptores y 10 millones de vistas
-  de Shorts en 90 días); el programa de recompensas de TikTok solo paga videos de más de 1 minuto,
-  así que los de 12 segundos no cuentan; Instagram no tiene pago general por Reels.
+- **El dinero sale del embudo propio, no de las plataformas.** Página
+  (`config.json → enlace_venta`) → guía gratis → plantilla de $231.76 MXN con IVA en Hotmart
+  (`pago_hotmart`). Cada video empuja ahí con `?ref=` por red (reglas 20, 24, 25 y 26).
+- **Videos puente (3 de cada 10 guiones nuevos):** el tema es algo que la plantilla resuelve
+  (presupuesto 50/30/20, págate primero, fondo de emergencia, deudas bola de nieve o avalancha,
+  interés compuesto, regla del 72, metas). El guion da la regla completa y una acción para hoy; en el
+  plan llevan `"puente_producto": true` y `seo.py` cambia el llamado del pie y el comentario de
+  YouTube a la plantilla. El audio no vende: el valor va completo en el video.
+- **YouTube no va a pagar a Victoria** (comprobado el 29-oct-2026): desde julio de 2026 su política de
+  monetización excluye los canales con "AI-generated personas" que dan información de temas
+  sensibles (salud, finanzas, temas legales); su ejemplo: "AI-generated podcast hosts offering financial
+  guidance". YouTube es tráfico hacia el embudo, no ingreso por anuncios. No se persiguen las metas del
+  Programa de Socios. https://support.google.com/youtube/answer/1311392
+- **TikTok** (Programa de Recompensas en México desde octubre de 2025): 10,000 seguidores, 100,000 vistas
+  en 30 días, cuenta personal y videos originales de más de 1 minuto; los de 12 segundos no cuentan.
+  No está comprobado si acepta un personaje hecho con IA.
+- **Instagram** no tiene un pago general por Reels.
+- **Afiliados de Hotmart:** otros pueden vender la plantilla a cambio de una comisión (se activa en
+  Hotmart; no cuesta nada hasta que hay una venta).

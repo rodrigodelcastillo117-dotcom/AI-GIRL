@@ -201,7 +201,8 @@
           "#inversion",
           "#dinero"
         ]
-      }
+      },
+      "puente_producto": true
     },
     {
       "id": "04",
@@ -345,7 +346,8 @@
           "#dinero",
           "#libros"
         ]
-      }
+      },
+      "puente_producto": true
     },
     {
       "id": "07",
@@ -820,7 +822,8 @@
           "#interescompuesto",
           "#dinero"
         ]
-      }
+      },
+      "puente_producto": true
     }
   ]
 }

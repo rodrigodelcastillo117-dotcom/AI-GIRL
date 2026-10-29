@@ -100,14 +100,20 @@ def textos(video, plan, config):
         ' '.join(hashtags[:3]),
         cierre,
     ] if x)[:4900]
+    # Videos puente (el tema lo resuelve la plantilla): el llamado va a la plantilla, no a la guía.
+    puente = video.get('puente_producto') and config.get('enlace_producto')
+    llamado = ('📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
+               '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
     redes = '\n\n'.join(x for x in [
         post,
-        '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '',
+        llamado,
         ' '.join(hashtags[:9]),  # 3-4 fijos + 3-5 del video
         cierre,
     ] if x)
     tags = etiquetas(seo, video['pilar'], config)
     comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), 'yt')) if config.get('enlace_venta') else ''
+    if puente and config.get('comentario_youtube_producto'):
+        comentario = config['comentario_youtube_producto'].format(enlace=con_ref(config['enlace_producto'], 'yt'))
     return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags), 'texto_redes': redes,
             'comentario_youtube': comentario}
 

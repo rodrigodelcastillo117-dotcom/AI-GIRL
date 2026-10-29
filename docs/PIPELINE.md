@@ -104,6 +104,8 @@ borrado masivo es peligroso, nunca se usa).
   pongas cifras, fechas ni frases atribuidas que no encuentres. El título no promete más de lo que
   dice el video.
 
+- 3 de 10 son **videos puente** hacia la plantilla (`"puente_producto": true`, ver
+  `docs/GUIONES_VIRALES.md → Monetizar`).
 - 6 de 10 con lo que gana en `auditoria.ranking` (tema, tipo de fondo, vestimenta, gancho) y 4
   probando cosas nuevas o poco probadas: así el sistema no se queda atorado en un solo estilo.
 - Locaciones: las de `assets/manifest.json` o nuevas descritas en `locaciones_nuevas`.
