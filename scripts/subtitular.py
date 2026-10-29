@@ -8,11 +8,14 @@ def ts(t):
     h, r = divmod(t, 3600); m, s = divmod(r, 60)
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
-# Grupos de máximo 3 palabras; se corta en puntuación
+# Si las palabras traen "corte", se respetan esos cortes de frase;
+# si no, grupos de máximo 3 palabras cortando en puntuación
+con_cortes = any('corte' in w for w in words)
 grupos, actual = [], []
 for w in words:
     actual.append(w)
-    if len(actual) == 3 or re.search(r'[.,:;!?]$', w['w']):
+    fin_grupo = w.get('corte') if con_cortes else (len(actual) == 3 or re.search(r'[.,:;!?]$', w['w']))
+    if fin_grupo:
         grupos.append(actual); actual = []
 if actual:
     grupos.append(actual)

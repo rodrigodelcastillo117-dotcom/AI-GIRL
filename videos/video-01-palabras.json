@@ -1,0 +1,140 @@
+[
+ {
+  "w": "El",
+  "start": 0.0,
+  "end": 0.76,
+  "corte": false
+ },
+ {
+  "w": "1%",
+  "start": 0.76,
+  "end": 1.5,
+  "corte": false
+ },
+ {
+  "w": "diario",
+  "start": 1.5,
+  "end": 2.06,
+  "corte": true
+ },
+ {
+  "w": "te",
+  "start": 2.06,
+  "end": 2.3,
+  "corte": false
+ },
+ {
+  "w": "hace",
+  "start": 2.3,
+  "end": 2.52,
+  "corte": false
+ },
+ {
+  "w": "37",
+  "start": 2.52,
+  "end": 3.26,
+  "corte": false
+ },
+ {
+  "w": "veces",
+  "start": 3.26,
+  "end": 3.74,
+  "corte": true
+ },
+ {
+  "w": "mejor",
+  "start": 3.74,
+  "end": 4.08,
+  "corte": false
+ },
+ {
+  "w": "en",
+  "start": 4.08,
+  "end": 4.3,
+  "corte": false
+ },
+ {
+  "w": "un",
+  "start": 4.3,
+  "end": 4.5,
+  "corte": false
+ },
+ {
+  "w": "año.",
+  "start": 4.5,
+  "end": 5.26,
+  "corte": true
+ },
+ {
+  "w": "Lo",
+  "start": 5.26,
+  "end": 5.5,
+  "corte": false
+ },
+ {
+  "w": "explica",
+  "start": 5.5,
+  "end": 5.92,
+  "corte": false
+ },
+ {
+  "w": "James",
+  "start": 5.92,
+  "end": 6.36,
+  "corte": false
+ },
+ {
+  "w": "Clear.",
+  "start": 6.36,
+  "end": 7.36,
+  "corte": true
+ },
+ {
+  "w": "Olvida",
+  "start": 7.36,
+  "end": 7.8,
+  "corte": false
+ },
+ {
+  "w": "el",
+  "start": 7.8,
+  "end": 8.04,
+  "corte": false
+ },
+ {
+  "w": "gran",
+  "start": 8.04,
+  "end": 8.34,
+  "corte": false
+ },
+ {
+  "w": "salto.",
+  "start": 8.34,
+  "end": 9.4,
+  "corte": true
+ },
+ {
+  "w": "Hoy,",
+  "start": 9.4,
+  "end": 10.3,
+  "corte": true
+ },
+ {
+  "w": "solo",
+  "start": 10.3,
+  "end": 10.6,
+  "corte": false
+ },
+ {
+  "w": "tu",
+  "start": 10.6,
+  "end": 10.84,
+  "corte": false
+ },
+ {
+  "w": "1%.",
+  "start": 10.84,
+  "end": 11.4,
+  "corte": true
+ }
+]
