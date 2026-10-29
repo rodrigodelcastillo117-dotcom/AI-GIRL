@@ -104,6 +104,10 @@ borrado masivo es peligroso, nunca se usa).
   pongas cifras, fechas ni frases atribuidas que no encuentres. El título no promete más de lo que
   dice el video.
 
+- **Temporadas** (aguinaldo, cuesta de enero, regreso a clases, PTU, declaración anual): videos con
+  `"ventana": {"desde", "hasta"}` y `"llamado"` (`config.json → llamados`: su calculadora gratis va
+  primero en la descripción, el pie y el comentario). `aprender.py` los publica primero cuando abre su
+  ventana y nunca fuera de ella. Escríbelos con un mes de anticipación.
 - 3 de 10 son **videos puente** hacia la plantilla (`"puente_producto": true`, ver
   `docs/GUIONES_VIRALES.md → Monetizar`).
 - 6 de 10 con lo que gana en `auditoria.ranking` (tema, tipo de fondo, vestimenta, gancho) y 4

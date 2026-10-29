@@ -23,7 +23,8 @@
     "jacuzzi": "Jacuzzi en rooftop de lujo al atardecer, skyline de ciudad, toallas blancas, copa de agua mineral. Capital echado en la cubierta de madera junto al jacuzzi.",
     "hotel": "Lobby de hotel de lujo: mármol, sillones de terciopelo, lámparas de latón, flores blancas. Ella sentada en un sillón, Capital sentado a su lado.",
     "golf": "Campo de golf verde al amanecer, carrito de golf blanco detrás, colinas suaves. Capital sentado junto a ella.",
-    "bar": "Bar tipo speakeasy: barra de madera oscura, botellas iluminadas en ámbar, luz cálida baja, banco de piel. Capital echado junto al banco."
+    "bar": "Bar tipo speakeasy: barra de madera oscura, botellas iluminadas en ámbar, luz cálida baja, banco de piel. Capital echado junto al banco.",
+    "sala_navidad": "Sala de lujo decorada para Navidad: árbol grande con luces cálidas y esferas doradas, chimenea encendida, sofá de terciopelo color crema, regalos envueltos sin marcas. Ella de pie o sentada junto al árbol, Capital a sus pies."
   },
   "videos": [
     {
@@ -824,6 +825,297 @@
         ]
       },
       "puente_producto": true
+    },
+    {
+      "id": "17",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
+      "subtitulos": [
+        "Si ganas 15 mil al mes,",
+        "tu aguinaldo mínimo",
+        "es de 7,500 pesos brutos.",
+        "Son 15 días de salario,",
+        "pagados antes del 20 de diciembre."
+      ],
+      "palabras_clave": [
+        "aguinaldo",
+        "7500",
+        "15",
+        "20"
+      ],
+      "fuente": "Ley Federal del Trabajo, artículo 87",
+      "locacion": "sala_navidad",
+      "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
+      "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si ganas $15,000 al mes, tu aguinaldo mínimo es de $7,500 brutos. 🎄\nSon 15 días de salario y te lo deben pagar antes del 20 de diciembre.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "seo": {
+        "palabra_clave": "aguinaldo 2026",
+        "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+        "descripcion_inicio": "Aguinaldo 2026: cuánto te toca si ganas 15 mil pesos al mes. Por ley son mínimo 15 días de salario, pagados antes del 20 de diciembre.\nCalcula el tuyo gratis con mi calculadora de aguinaldo.",
+        "tags_concretas": [
+          "aguinaldo 2026",
+          "cuanto me toca de aguinaldo",
+          "calcular aguinaldo",
+          "calculadora de aguinaldo",
+          "aguinaldo ley federal del trabajo",
+          "aguinaldo 15 dias",
+          "cuando pagan el aguinaldo",
+          "aguinaldo mexico"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#aguinaldo2026",
+          "#dinero",
+          "#navidad"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu aguinaldo tiene fecha límite: el 20 de diciembre.",
+        "Quince días de salario: eso es lo mínimo que te deben de aguinaldo."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-10",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "18",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
+      "subtitulos": [
+        "Si renunciaste este año,",
+        "también te toca aguinaldo.",
+        "La ley te da la parte proporcional",
+        "aunque ya no trabajes ahí.",
+        "Revisa que venga en tu finiquito."
+      ],
+      "palabras_clave": [
+        "renunciaste",
+        "aguinaldo",
+        "proporcional",
+        "finiquito"
+      ],
+      "fuente": "Ley Federal del Trabajo, artículo 87",
+      "locacion": "oficina",
+      "vestuario": "Chaqueta de cuero negra sobre vestido de seda color esmeralda, botines negros",
+      "accion": "De pie junto a la puerta de la oficina con una caja de cartón con sus cosas en las manos, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si renunciaste este año, también te toca aguinaldo. 📌\nLa ley te da la parte proporcional aunque ya no trabajes ahí: revisa que venga en tu finiquito.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "seo": {
+        "palabra_clave": "aguinaldo si renunciaste",
+        "titulo": "Aguinaldo si renunciaste este año 📌",
+        "descripcion_inicio": "Aguinaldo si renunciaste este año: la Ley Federal del Trabajo te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.\nCalcula tu aguinaldo proporcional gratis con mi calculadora.",
+        "tags_concretas": [
+          "aguinaldo si renuncie",
+          "aguinaldo proporcional",
+          "finiquito y aguinaldo",
+          "me toca aguinaldo si renuncie",
+          "calcular aguinaldo proporcional",
+          "aguinaldo 2026",
+          "ley federal del trabajo aguinaldo",
+          "finiquito"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#finiquito",
+          "#derechoslaborales",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Que renunciaras no significa que pierdes tu aguinaldo.",
+        "Tu finiquito tiene que traer tu aguinaldo."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-26",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "19",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos.",
+      "subtitulos": [
+        "Tu aguinaldo no paga impuestos",
+        "hasta 3,519 pesos.",
+        "Lo que pase de eso sí paga,",
+        "y por eso a veces",
+        "te llega menos."
+      ],
+      "palabras_clave": [
+        "impuestos",
+        "3519",
+        "menos"
+      ],
+      "fuente": "Ley del ISR, artículo 93, fracción XIV (30 UMA); UMA 2026 de $117.31 diarios (INEGI)",
+      "locacion": "sillon",
+      "vestuario": "Blusa de satín color esmeralda oscuro, pantalón palazzo negro, aretes de oro",
+      "accion": "Sentada en el sillón con una calculadora y un sobre en las manos, Capital acostado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Tu aguinaldo no paga ISR hasta $3,519.30 en 2026. 🧾\nEs el equivalente a 30 UMA. Lo que pase de eso sí paga, y por eso a veces te llega menos.\n\n📚 Ley del ISR, artículo 93, fracción XIV · INEGI, UMA 2026",
+      "seo": {
+        "palabra_clave": "aguinaldo exento de ISR",
+        "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
+        "descripcion_inicio": "Aguinaldo exento de ISR en 2026: hasta 30 UMA, es decir $3,519.30 (UMA diaria de $117.31). Lo que pase de ese tope paga ISR.\nCalcula gratis tu aguinaldo y la parte que paga impuestos con mi calculadora.",
+        "tags_concretas": [
+          "aguinaldo exento de isr",
+          "aguinaldo isr 2026",
+          "cuanto impuesto paga el aguinaldo",
+          "30 uma aguinaldo",
+          "uma 2026",
+          "aguinaldo 2026",
+          "calcular isr aguinaldo",
+          "aguinaldo sat"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#impuestos",
+          "#sat",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Por esto tu aguinaldo te llega menos de lo que calculaste.",
+        "El SAT no toca tu aguinaldo hasta 3,519 pesos."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-20",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "20",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
+      "subtitulos": [
+        "Aguinaldo sin plan",
+        "se acaba en enero.",
+        "Mi regla: la mitad",
+        "a deudas o ahorro,",
+        "30% a una meta",
+        "y 20 a un gusto sin culpa."
+      ],
+      "palabras_clave": [
+        "enero",
+        "mitad",
+        "30%",
+        "20"
+      ],
+      "fuente": "Regla de Victoria (opinión), basada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005)",
+      "locacion": "sala_navidad",
+      "vestuario": "Suéter oversize color marfil de cuello alto, falda midi de satín dorada, aretes de perla",
+      "accion": "Sentada junto al árbol de Navidad con un sobre de dinero en las manos, Capital acostado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Aguinaldo sin plan se acaba en enero. 🎁\nMi regla: la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\n\nGuárdalo para cuando te depositen.",
+      "seo": {
+        "palabra_clave": "qué hacer con tu aguinaldo",
+        "titulo": "Qué hacer con tu aguinaldo en 2026 🎁",
+        "descripcion_inicio": "Qué hacer con tu aguinaldo para que no se acabe en enero: mi regla es la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\nHaz tu plan con mi calculadora de aguinaldo gratis.",
+        "tags_concretas": [
+          "que hacer con el aguinaldo",
+          "como ahorrar el aguinaldo",
+          "plan para el aguinaldo",
+          "no gastar el aguinaldo",
+          "aguinaldo 2026",
+          "regla 50 30 20",
+          "cuesta de enero",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#ahorro",
+          "#cuestadeenero",
+          "#navidad"
+        ]
+      },
+      "ganchos_alternativos": [
+        "La cuesta de enero se decide el día que te pagan el aguinaldo.",
+        "Tu aguinaldo necesita un plan antes de que llegue."
+      ],
+      "adn": {
+        "tipo_gancho": "regla"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-12-04",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "21",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
+      "subtitulos": [
+        "Antes de gastar tu aguinaldo,",
+        "paga tu tarjeta.",
+        "Cada peso que abonas",
+        "deja de cobrarte intereses:",
+        "es la ganancia más segura",
+        "que vas a tener."
+      ],
+      "palabras_clave": [
+        "aguinaldo",
+        "tarjeta",
+        "intereses",
+        "segura"
+      ],
+      "fuente": "CONDUSEF: usar parte del aguinaldo para pagar deudas, primero las de mayor tasa de interés como las tarjetas",
+      "locacion": "restaurante",
+      "vestuario": "Vestido de satín color plata con tirantes delgados, chal negro, pulsera de diamantes",
+      "accion": "Sentada a la mesa del restaurante sosteniendo una tarjeta de crédito dorada sin logos, Capital sentado junto a la mesa.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Antes de gastar tu aguinaldo, paga tu tarjeta. 💳\nCada peso que abonas deja de cobrarte intereses. Si tienes varias deudas, empieza por la de tasa más alta.\n\n📚 Recomendación de la CONDUSEF",
+      "seo": {
+        "palabra_clave": "aguinaldo para pagar deudas",
+        "titulo": "Aguinaldo para pagar deudas de tarjeta 💳",
+        "descripcion_inicio": "Aguinaldo para pagar deudas: la CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de tasa más alta como las tarjetas de crédito.\nCalcula en cuántos meses sales de tus deudas con mi calculadora gratis.",
+        "tags_concretas": [
+          "aguinaldo para pagar deudas",
+          "pagar tarjeta de credito",
+          "como salir de deudas",
+          "deudas de tarjeta de credito",
+          "aguinaldo 2026",
+          "intereses tarjeta de credito",
+          "metodo avalancha",
+          "que hacer con el aguinaldo"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#deudas",
+          "#tarjetadecredito",
+          "#dinero"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu aguinaldo ya tiene dueño si debes en la tarjeta.",
+        "Pagar tu tarjeta es la inversión más segura que existe."
+      ],
+      "adn": {
+        "tipo_gancho": "consejo"
+      },
+      "llamado": "deudas",
+      "ventana": {
+        "desde": "2026-12-10",
+        "hasta": "2027-01-10"
+      }
     }
   ]
 }

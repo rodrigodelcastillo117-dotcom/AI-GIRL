@@ -87,7 +87,10 @@ def textos(video, plan, config):
     cierre = plan['reglas']['cierre_de_texto']
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
     hashtags = list(dict.fromkeys(config['hashtags_fijos'] + seo['hashtags']))
-    enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
+    # Videos de temporada (aguinaldo, deudas...): su calculadora gratis va primero en todo.
+    ll = config.get('llamados', {}).get(video.get('llamado'))
+    enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (((ll['etiqueta'], con_ref(ll['enlace'], 'yt')) if ll else ('', '')),
+                                                     ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
                                                      ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt')),
                                                      ('Más de Victoria', con_ref(config.get('enlace_perfil'), 'yt'))) if e][:2]
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
@@ -102,7 +105,8 @@ def textos(video, plan, config):
     ] if x)[:4900]
     # Videos puente (el tema lo resuelve la plantilla): el llamado va a la plantilla, no a la guía.
     puente = video.get('puente_producto') and config.get('enlace_producto')
-    llamado = ('📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
+    llamado = (ll['pie'] if ll else
+               '📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
                '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
     redes = '\n\n'.join(x for x in [
         post,
@@ -112,7 +116,9 @@ def textos(video, plan, config):
     ] if x)
     tags = etiquetas(seo, video['pilar'], config)
     comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), 'yt')) if config.get('enlace_venta') else ''
-    if puente and config.get('comentario_youtube_producto'):
+    if ll:
+        comentario = ll['comentario'].format(enlace=con_ref(ll['enlace'], 'yt'))
+    elif puente and config.get('comentario_youtube_producto'):
         comentario = config['comentario_youtube_producto'].format(enlace=con_ref(config['enlace_producto'], 'yt'))
     return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags), 'texto_redes': redes,
             'comentario_youtube': comentario}

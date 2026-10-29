@@ -420,7 +420,15 @@ def decidir(plan, ranking, hoy, config):
     base = {'toca_publicar': toca, 'motivo': motivo, 'hora_siguiente': horas['hora_siguiente'],
             'prueba_horas': horas['estado'], 'conteo_horas': horas['conteo'],
             'publicar_hoy': listo['id'] if toca and listo else None}
-    pendientes = [v for v in plan['videos'] if v['estado'] == 'pendiente']
+    # Videos de temporada ("ventana"): solo si salen dentro de sus fechas, y van primero porque caducan.
+    sale = (hoy + datetime.timedelta(days=config.get('dias_entre_videos', 2))).isoformat()
+    en_fecha = lambda v: not v.get('ventana') or v['ventana']['desde'] <= sale <= v['ventana']['hasta']
+    pendientes = [v for v in plan['videos'] if v['estado'] == 'pendiente' and en_fecha(v)]
+    temporada = [v for v in pendientes if v.get('ventana')]
+    if temporada:
+        v = temporada[0]
+        return {**base, 'video_id': v['id'], 'modo': 'temporada', 'esperado': None, 'cambios_sugeridos': [],
+                'por_que': f'Temporada: el video {v["id"]} solo sirve hasta el {v["ventana"]["hasta"]}.'}
     if not pendientes:
         return {**base, 'video_id': None, 'modo': 'sin guiones', 'esperado': None, 'cambios_sugeridos': [],
                 'por_que': 'No hay guiones pendientes: escribir 10 nuevos (paso 1c).'}

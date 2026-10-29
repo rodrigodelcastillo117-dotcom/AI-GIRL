@@ -85,5 +85,19 @@
  "hora_largo": "18:45",
  "shorts_por_largo": 12,
  "comentario_youtube": "Si quieres las 30 reglas completas, cada una con su fuente y una acción para hacer hoy, te dejé mi guía gratis aquí 👉 {enlace}",
- "comentario_youtube_producto": "Si quieres hacerlo con tus propios números, esta es la plantilla que uso (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo) 👉 {enlace}"
+ "comentario_youtube_producto": "Si quieres hacerlo con tus propios números, esta es la plantilla que uso (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo) 👉 {enlace}",
+ "llamados": {
+  "aguinaldo": {
+   "enlace": "https://victoriatheceo.vercel.app/aguinaldo",
+   "etiqueta": "🧮 Calcula tu aguinaldo 2026 gratis",
+   "pie": "🧮 Calcula tu aguinaldo gratis: enlace en mi perfil 👆",
+   "comentario": "Calcula tu aguinaldo 2026 gratis: cuánto te toca, cuánto paga ISR y cómo repartirlo 👉 {enlace}"
+  },
+  "deudas": {
+   "enlace": "https://victoriatheceo.vercel.app/pagar-deudas",
+   "etiqueta": "🧮 Calcula en cuántos meses sales de tus deudas",
+   "pie": "🧮 Calcula en cuántos meses sales de tus deudas: enlace en mi perfil 👆",
+   "comentario": "Calcula gratis en cuántos meses sales de tus deudas y cuál pagar primero 👉 {enlace}"
+  }
+ }
 }
