@@ -109,7 +109,7 @@ function medidas(v) {
   const m = {};
   for (const {clave} of REDES) {
     if (vivo[clave]) m[clave] = vivo[clave];
-    else if (v[`v_${clave}`] != null) m[clave] = {v: v[`v_${clave}`], l: v[`l_${clave}`], c: v[`c_${clave}`], s: v[`s_${clave}`], g: v[`g_${clave}`]};
+    else if (v[`v_${clave}`] != null) m[clave] = {v: v[`v_${clave}`], l: v[`l_${clave}`], c: v[`c_${clave}`], s: v[`s_${clave}`], g: v[`g_${clave}`], ret: v[`r_${clave}`]};
   }
   return m;
 }
@@ -254,6 +254,11 @@ function relojes() {
   cuenta.replaceChildren(...partes.map(([etq, n]) => crear('span', {}, crear('b', {textContent: String(n).padStart(2, '0')}), crear('small', {textContent: etq}))));
 }
 
+function retencionPromedio() {
+  const valores = FOTO.videos.filter(salio).map((v) => medidas(v).yt?.ret).filter((x) => x != null);
+  return valores.length ? `${(valores.reduce((s, x) => s + x, 0) / valores.length).toFixed(1)}%` : '—';
+}
+
 function dibujarRedes() {
   const caja = $('redes');
   caja.replaceChildren();
@@ -274,8 +279,8 @@ function dibujarRedes() {
     tarjeta.append(
       crear('header', {}, crear('h3', {textContent: red.nombre}), crear('span', {className: `etiqueta-vivo${enVivo ? '' : ' foto'}`, textContent: enVivo ? '● en vivo' : 'última foto'})),
       valor,
-      crear('dl', {}, ...[['Likes', l], ['Coment.', c], [red.clave === 'yt' ? 'Videos' : 'Compart.', red.clave === 'yt' ? FOTO.videos.filter((x) => salio(x) && medidas(x).yt).length : s], ['Por video', hay ? v / Math.max(1, FOTO.videos.filter((x) => salio(x) && medidas(x)[red.clave]).length) : 0]]
-        .map(([dt, dd]) => crear('div', {}, crear('dt', {textContent: dt}), crear('dd', {textContent: compacto(dd)})))),
+      crear('dl', {}, ...[['Likes', l], ['Coment.', c], [red.clave === 'yt' ? 'Retención' : 'Compart.', red.clave === 'yt' ? retencionPromedio() : s], ['Por video', hay ? v / Math.max(1, FOTO.videos.filter((x) => salio(x) && medidas(x)[red.clave]).length) : 0]]
+        .map(([dt, dd]) => crear('div', {}, crear('dt', {textContent: dt}), crear('dd', {textContent: typeof dd === 'string' ? dd : compacto(dd)})))),
     );
     caja.append(tarjeta);
   }
@@ -299,7 +304,8 @@ function dibujarHangar(videos) {
     if (medido(v)) poster.append(crear('span', {className: 'ojo', textContent: `▶ ${compacto(vistasDe(v))}`}));
     const [texto, clase] = ESTADOS[v.estado] || [v.estado, ''];
     const m = medidas(v);
-    const linea = !salio(v) ? '' : REDES.filter((r) => m[r.clave]).map((r) => `${r.corto} ${compacto(m[r.clave].v)}`).join(' · ');
+    const linea = !salio(v) ? '' : [...REDES.filter((r) => m[r.clave]).map((r) => `${r.corto} ${compacto(m[r.clave].v)}`),
+      ...(m.yt?.ret != null ? [`visto ${m.yt.ret}%`] : [])].join(' · ');
     const extra = [PILARES[v.pilar] || v.pilar];
     if (Number(v.qa_similitud) > 0) extra.push(`calidad ${pct(Number(v.qa_similitud))}`);
     caja.append(crear('div', {className: 'tarjeta'}, poster, crear('div', {className: 'info'},

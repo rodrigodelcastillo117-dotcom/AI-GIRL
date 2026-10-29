@@ -45,6 +45,19 @@ async function youtube(estado, videos) {
       };
     }
   }
+  if (ids.length) {
+    // Retención: % promedio visto de cada Short (YouTube Analytics; tarda 1 a 3 días en aparecer).
+    try {
+      const hoy = new Date();
+      const r = await pedir('https://youtubeanalytics.googleapis.com/v2/reports?ids=channel==MINE'
+        + `&startDate=${dia(new Date(hoy.getTime() - 60 * 864e5))}&endDate=${dia(hoy)}`
+        + `&metrics=averageViewPercentage&dimensions=video&filters=video==${ids.slice(0, 50).map((v) => v.youtube_id).join(',')}`, cabeceras, 'YouTube Analytics');
+      for (const [idYoutube, retencion] of r.rows || []) {
+        const video = ids.find((v) => v.youtube_id === idYoutube);
+        if (video && porVideo[video.id]) porVideo[video.id].ret = Math.round(retencion * 10) / 10;
+      }
+    } catch { /* sin retención no se pierde lo demás */ }
+  }
   return {suscriptores: Number(s.subscriberCount) || 0, vistas: Number(s.viewCount) || 0, porVideo};
 }
 

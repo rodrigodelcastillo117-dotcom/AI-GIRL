@@ -79,6 +79,8 @@ def metricas_historial():
             for corto in ('v', 'l', 'c', 's'):
                 if red in foto:
                     por_video.setdefault(vid, {})[f'{corto}_{red}'] = foto[red].get(corto, 0)
+        if (foto.get('yt') or {}).get('ret') is not None:
+            por_video.setdefault(vid, {})['r_yt'] = foto['yt']['ret']  # % promedio visto en YouTube
     return por_video
 
 
