@@ -4,3 +4,8 @@ venv*/
 .env
 *.ass
 *-guia.jpg
+# Videos largos: pesan ~85 MB y se vuelven a armar en minutos con scripts/compilar.py
+videos/largos/
+# De cada Short se guarda solo el final subtitulado (el crudo sigue en OpenArt por su id)
+videos/*.mp4
+!videos/*-SUBTITULADO.mp4

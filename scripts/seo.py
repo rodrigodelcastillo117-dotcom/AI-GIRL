@@ -85,9 +85,11 @@ def textos(video, plan, config):
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
     hashtags = list(dict.fromkeys(config['hashtags_fijos'] + seo['hashtags']))
     enlaces = [e for e in (con_ref(config.get('enlace_venta'), 'yt'), con_ref(config.get('enlace_perfil'), 'yt')) if e][:2]
+    capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
     descripcion = '\n\n'.join(x for x in [
         seo['descripcion_inicio'].strip(),
         '\n'.join(enlaces),
+        capitulos,  # solo en videos largos: 0:00 Título... (regla de YouTube: empieza en 0:00, 3 o más)
         post,
         f"Soy Victoria: un consejo de negocios, dinero y mente fuerte cada 2 días. Suscríbete.",
         ' '.join(hashtags[:3]),
@@ -121,7 +123,7 @@ def main():
         sys.exit(1 if malos else 0)
     if len(sys.argv) < 3:
         sys.exit(__doc__)
-    video = next((v for v in plan['videos'] if v['id'] == sys.argv[1]), None)
+    video = next((v for v in plan['videos'] + plan.get('largos', []) if v['id'] == sys.argv[1]), None)
     if not video:
         sys.exit(f'ERROR: no existe el video {sys.argv[1]}')
     os.makedirs(sys.argv[2], exist_ok=True)

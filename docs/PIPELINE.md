@@ -63,6 +63,28 @@ Al generar un video:
 - Confirma que el `vestuario` no se repite en ningún otro video.
 - Anota en el video `"decision"` (copia de `auditoria.decision`) y `"mejoras_aplicadas"`.
 
+## 1d. Video largo (cada 12 Shorts publicados)
+
+Solo los días que NO toca publicar Short, para no encimar:
+1. `python scripts/compilar.py preparar`: si hay 12 Shorts verificados como `publicado` que aún no
+   están en un largo, crea `L01`, `L02`... en `plan.json → largos`, ordenados del que mejor rindió
+   al que menos (el largo abre directo con el mejor, sin introducción: regla 23).
+2. Escribe en ese largo su `texto_post` (primera línea única, el gancho del largo) y su bloque
+   `seo` con las mismas reglas que los Shorts (`docs/SEO.md`), y su `pilar` (el tema que más se
+   repite en sus 12 videos).
+3. `python scripts/compilar.py armar L0N` (unos 5 minutos): horizontal 1920x1080 para YouTube (un
+   vertical de menos de 3 minutos YouTube lo cuenta como Short), vertical para Instagram y TikTok
+   (más de 1 minuto) y miniatura. Revisa 3 cuadros de cada uno (regla 8).
+4. `python scripts/seo.py L0N /tmp/seo-L0N`: la descripción ya lleva los capítulos (0:00 ...).
+5. Publica hoy a la hora `config.json → hora_largo`: YouTube con `youtube.py subir
+   videos/largos/L0N-horizontal.mp4 "$(cat /tmp/seo-L0N/titulo.txt)" /tmp/seo-L0N/descripcion_youtube.txt
+   <hora_utc> --tags /tmp/seo-L0N/tags_youtube.txt --miniatura videos/largos/L0N-miniatura.jpg --largo`;
+   Instagram y TikTok con `publer.py publicar videos/largos/L0N-vertical.mp4 /tmp/seo-L0N/texto_redes.txt
+   <hora_utc> "$(cat /tmp/seo-L0N/titulo.txt)"`.
+6. Registra en el largo `estado: "programado"`, `publica_utc` y `publicacion.youtube` (el enlace
+   /watch). `medir` lo verifica al día siguiente. Los archivos de `videos/largos/` no van al repo:
+   se vuelven a armar con `compilar.py armar` cuando hagan falta.
+
 ## 1c. Escribir guiones nuevos (cuando quedan menos de 5)
 
 Lee `docs/GUIONES_VIRALES.md`: cada guion cumple su lista de 10 puntos. Escribe 10 videos nuevos

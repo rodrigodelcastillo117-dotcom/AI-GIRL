@@ -9,6 +9,8 @@ Comandos:
       Sube el video programado para esa hora (UTC). Si faltan menos de 15 minutos, lo publica
       de inmediato. Si el canal ya tiene un video con ese título, no lo vuelve a subir.
       --tags lee los tags separados por coma (los arma scripts/seo.py); sin él usa unos generales.
+      --miniatura imagen.jpg pone una miniatura propia (YouTube la acepta si el canal está verificado).
+      --largo para videos largos (el enlace que imprime es /watch en vez de /shorts).
       --prueba imprime los metadatos sin llamar a la API.
 
 Solo sube si el canal del permiso es exactamente contenido/config.json → canal_youtube (regla 1:
@@ -143,7 +145,16 @@ def main():
     estado = revisado.get('status', {})
     if not revisado or revisado['snippet']['title'] != meta['snippet']['title'] or estado.get('uploadStatus') in ('failed', 'rejected', 'deleted'):
         sys.exit(f"ERROR: YouTube no muestra el video como se subió ({subido['id']}): {json.dumps(estado)[:500]}")
-    print(f"OK subido a '{nombre}': https://youtube.com/shorts/{subido['id']} "
+    if '--miniatura' in sys.argv:
+        imagen = open(sys.argv[sys.argv.index('--miniatura') + 1], 'rb').read()
+        try:
+            _http('POST', f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={subido['id']}", imagen,
+                  {'Authorization': f'Bearer {acceso}', 'Content-Type': 'image/jpeg'})
+            print('Miniatura puesta.')
+        except SystemExit as e:
+            print(f'AVISO: YouTube no aceptó la miniatura (¿canal sin verificar por teléfono?): {str(e)[:200]}')
+    enlace = f"https://youtube.com/watch?v={subido['id']}" if '--largo' in sys.argv else f"https://youtube.com/shorts/{subido['id']}"
+    print(f"OK subido a '{nombre}': {enlace} "
           f"| privacidad={estado.get('privacyStatus')} publica={estado.get('publishAt', 'ya')}")
 
 

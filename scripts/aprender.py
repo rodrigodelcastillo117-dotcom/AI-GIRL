@@ -186,7 +186,9 @@ def verificar_youtube(videos):
     acceso = youtube.token()
     _, cuerpo = youtube._http('GET', f"{youtube.API}/videos?part=status&id={','.join(list(ids)[:50])}",
                               headers={'Authorization': f'Bearer {acceso}'})
-    return {ids[i['id']]: {'yt': {'estado': i['status'].get('privacyStatus', ''), 'enlace': f"https://youtube.com/shorts/{i['id']}"}}
+    largos = {v['id'] for v in videos if v.get('capitulos')}
+    return {ids[i['id']]: {'yt': {'estado': i['status'].get('privacyStatus', ''),
+                                  'enlace': f"https://youtube.com/{'watch?v=' if ids[i['id']] in largos else 'shorts/'}{i['id']}"}}
             for i in json.loads(cuerpo).get('items') or []}
 
 
@@ -214,7 +216,7 @@ def ajenos(plan):
     import publer
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
-    propias = {primera_linea(v.get('texto_post')) for v in plan['videos']}
+    propias = {primera_linea(v.get('texto_post')) for v in plan['videos'] + plan.get('largos', [])}
     hoy = datetime.date.today()
     filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]
@@ -226,7 +228,7 @@ def ajenos(plan):
 
 def verificar(plan, ahora, avisos):
     """Marca "publicado" solo lo que se ve publicado en la red; avisa de lo que no salió (regla 34)."""
-    programados = [v for v in plan['videos'] if v['estado'] == 'programado' and v.get('publica_utc')
+    programados = [v for v in plan['videos'] + plan.get('largos', []) if v.get('estado') == 'programado' and v.get('publica_utc')
                    and a_utc(v['publica_utc']) + datetime.timedelta(minutes=30) <= ahora]
     if not programados:
         return []
