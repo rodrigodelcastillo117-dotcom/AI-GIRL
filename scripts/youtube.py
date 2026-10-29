@@ -39,14 +39,19 @@ def _http(metodo, url, datos=None, headers=None):
         sys.exit(f'ERROR {e.code} en {metodo} {url.split("?")[0]}: {cuerpo}')
 
 
+def _variable(nombre):
+    # Copiadas de un .env pueden traer comillas o espacios alrededor
+    return os.environ.get(nombre, '').strip().strip('"').strip("'")
+
+
 def token():
-    faltan = [v for v in ('YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET', 'YOUTUBE_REFRESH_TOKEN') if not os.environ.get(v)]
+    faltan = [v for v in ('YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET', 'YOUTUBE_REFRESH_TOKEN') if not _variable(v)]
     if faltan:
         sys.exit('ERROR: faltan variables de entorno: ' + ', '.join(faltan))
     datos = urllib.parse.urlencode({
-        'client_id': os.environ['YOUTUBE_CLIENT_ID'],
-        'client_secret': os.environ['YOUTUBE_CLIENT_SECRET'],
-        'refresh_token': os.environ['YOUTUBE_REFRESH_TOKEN'],
+        'client_id': _variable('YOUTUBE_CLIENT_ID'),
+        'client_secret': _variable('YOUTUBE_CLIENT_SECRET'),
+        'refresh_token': _variable('YOUTUBE_REFRESH_TOKEN'),
         'grant_type': 'refresh_token',
     }).encode()
     _, cuerpo = _http('POST', 'https://oauth2.googleapis.com/token', datos,
