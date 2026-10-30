@@ -189,7 +189,7 @@ async function seguidores(estado) {
       const r = await pedir(`${PUBLER}/analytics/${id}/chart_data?chart_ids[]=followers${extra}&from=${dia(desde)}&to=${dia(hoy)}`, {headers: cabeceras}, 'Publer', 10_000);
       const serie = r.current?.followers || [];
       const ultimo = serie.at(-1)?.last_value;
-      if (ultimo != null) datos[corto] = {seguidores: ultimo, antes: serie.length > 1 ? serie[0].last_value : null};
+      if (ultimo != null) datos[corto] = {seguidores: ultimo, antes: serie.length > 1 ? serie[0].last_value : null, serie: serie.map((x) => x.last_value)};
       if (corto === 'ig') datos.audiencia = {paises: r.current?.countries ?? null, edades: r.current?.ages?.data ?? r.current?.ages ?? null};
     } catch (e) {
       console.log(`seguidores ${red} falló: ${e.message}`);

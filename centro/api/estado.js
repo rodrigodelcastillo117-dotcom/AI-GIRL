@@ -1,5 +1,5 @@
 // La última foto que dejó la tarea automática: plan, bitácora, lecciones, mejores horas, estado y auditoría.
-import {autorizado, leer, negar} from './_comun.js';
+import {autorizado, leer, negar, usuario} from './_comun.js';
 
 const leerSiHay = (nombre) => { try { return leer(nombre); } catch { return []; } };
 
@@ -10,6 +10,7 @@ export default function handler(req, res) {
   delete estado.cuentas_publer;
   res.status(200).json({
     version: process.env.VERCEL_GIT_COMMIT_SHA || process.env.VERCEL_DEPLOYMENT_ID || '',
+    usuario: usuario(req),
     estado,
     videos: leer('videos.json'),
     ejecuciones: leer('ejecuciones.json'),

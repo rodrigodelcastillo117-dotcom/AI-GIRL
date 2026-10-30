@@ -208,6 +208,30 @@ def siguiente_video(plan, config, auditoria, ahora):
     return min([estimado] + ([programado] if programado else []), key=lambda e: e[0])
 
 
+def series_reales(plan, carruseles):
+    """Vistas totales y publicaciones acumuladas por día (México), solo de lo medido y lo programado."""
+    try:
+        historial = json.load(open(os.path.join(RAIZ, 'contenido', 'metricas.json')))
+    except (OSError, ValueError):
+        historial = []
+    por_dia, ultimas, por_red = {}, {}, {}
+    for foto in sorted(historial, key=lambda f: f['fecha_utc']):
+        ultimas[foto['video_id']] = {r: (foto.get(r) or {}).get('v', 0) or 0 for r in ('yt', 'tt', 'ig')}
+        dia = a_mexico(foto['fecha_utc']).date().isoformat()
+        por_dia[dia] = sum(sum(x.values()) for x in ultimas.values())
+        por_red[dia] = {r: sum(x[r] for x in ultimas.values()) for r in ('yt', 'tt', 'ig')}
+    fechas = sorted(min(horas_por_red(x).values()).date().isoformat() for x in plan['videos'] + carruseles
+                    if x.get('estado') in ('programado', 'publicado') and horas_por_red(x))
+    hoy = datetime.datetime.now(CDMX).date().isoformat()
+    publicadas = {}
+    for i, f in enumerate(fechas):
+        if f <= hoy:
+            publicadas[f] = i + 1
+    return ([{'fecha': f, 'v': v} for f, v in sorted(por_dia.items())],
+            [{'fecha': f, 'v': v} for f, v in sorted(publicadas.items())],
+            [{'fecha': f, **v} for f, v in sorted(por_red.items())])
+
+
 def main():
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
@@ -298,6 +322,9 @@ def main():
         'cuentas_publer': config.get('cuentas_publer', {}),
         'canal_youtube': config.get('canal_youtube', ''),
         'prueba_horas': config.get('prueba_horas', {}),
+        'serie_vistas': series_reales(plan, cargar_carruseles())[0],
+        'serie_publicaciones': series_reales(plan, cargar_carruseles())[1],
+        'serie_redes': series_reales(plan, cargar_carruseles())[2],
         'foto_perfil': foto,
     }])
 
