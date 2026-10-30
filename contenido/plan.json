@@ -233,7 +233,9 @@
       "ganchos_alternativos": [
         "¿Cuánto tarda tu dinero en duplicarse?"
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "¿En cuántos años se duplica tu dinero?",
+      "pregunta_comentarios": "¿A qué tasa crece tu dinero hoy?"
     },
     {
       "id": "04",
@@ -291,7 +293,9 @@
       "ganchos_alternativos": [
         "Escribir lo que te preocupa durante quince minutos aligera la mente."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "15 minutos para vaciar tu cabeza",
+      "pregunta_comentarios": "¿Lo pruebas esta noche? Cuéntame cómo te fue."
     },
     {
       "id": "05",
@@ -350,7 +354,9 @@
       "ganchos_alternativos": [
         "Si algo toma menos de dos minutos, hazlo ya."
       ],
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Lo que de verdad te roba energía",
+      "pregunta_comentarios": "¿Cuántos pendientes de 2 minutos traes ahorita?"
     },
     {
       "id": "06",
@@ -409,7 +415,9 @@
       "ganchos_alternativos": [
         "De cada diez pesos que ganes, guarda uno para ti."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Por qué nunca te alcanza para ahorrar",
+      "pregunta_comentarios": "¿Cuánto guardas de cada 10 pesos?"
     },
     {
       "id": "07",
@@ -467,7 +475,9 @@
       "ganchos_alternativos": [
         "Cuando dudes, imagínate a los ochenta años."
       ],
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "La pregunta que creó Amazon",
+      "pregunta_comentarios": "¿Qué te arrepentirías de no intentar?"
     },
     {
       "id": "08",
@@ -524,7 +534,9 @@
       "ganchos_alternativos": [
         "Regla número uno: no pierdas dinero."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Las 2 reglas de Buffett (son la misma)",
+      "pregunta_comentarios": "¿Alguna vez invertiste en algo que no entendías?"
     },
     {
       "id": "09",
@@ -581,7 +593,9 @@
       "ganchos_alternativos": [
         "Dos inhalaciones por la nariz y una exhalación larga por la boca."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "La respiración que le ganó a meditar",
+      "pregunta_comentarios": "¿Lo probaste? ¿Cómo te sentiste?"
     },
     {
       "id": "10",
@@ -637,7 +651,9 @@
       "ganchos_alternativos": [
         "El estudio de Harvard sobre la felicidad lleva más de ochenta años."
       ],
-      "duracion": 10
+      "duracion": 10,
+      "texto_pantalla": "Harvard encontró qué te hace feliz",
+      "pregunta_comentarios": "¿A quién vas a llamar hoy?"
     },
     {
       "id": "11",
@@ -694,7 +710,9 @@
       "ganchos_alternativos": [
         "El trabajo se expande hasta llenar el tiempo que le das."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Por qué todo lo terminas a última hora",
+      "pregunta_comentarios": "¿Qué proyecto llevas meses estirando?"
     },
     {
       "id": "12",
@@ -751,7 +769,9 @@
       "ganchos_alternativos": [
         "La gente no compra lo que haces, compra por qué lo haces."
       ],
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Lo que de verdad compran tus clientes",
+      "pregunta_comentarios": "¿Cuál es el porqué de tu negocio?"
     },
     {
       "id": "13",
@@ -808,7 +828,9 @@
       "ganchos_alternativos": [
         "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste."
       ],
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "La riqueza de verdad no se ve",
+      "pregunta_comentarios": "¿Qué compra te arrepientes de haber hecho?"
     },
     {
       "id": "14",
@@ -867,7 +889,9 @@
       "ganchos_alternativos": [
         "Tu mente no suelta lo que dejaste a medias."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Por qué no puedes dormir con pendientes",
+      "pregunta_comentarios": "¿Qué pendiente no te deja dormir?"
     },
     {
       "id": "15",
@@ -924,7 +948,9 @@
       "ganchos_alternativos": [
         "Haz primero lo que más te cuesta."
       ],
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Antes de ver tu celular, haz esto",
+      "pregunta_comentarios": "¿Cuál es tu sapo de mañana?"
     },
     {
       "id": "16",
@@ -983,7 +1009,9 @@
       "ganchos_alternativos": [
         "Charlie Munger decía que los primeros cien mil dólares son los más difíciles."
       ],
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Los 100 mil más difíciles de tu vida",
+      "pregunta_comentarios": "¿Con cuánto vas a empezar hoy?"
     },
     {
       "id": "17",
@@ -1048,7 +1076,9 @@
         "desde": "2026-11-10",
         "hasta": "2026-12-19"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "¿Cuánto aguinaldo te toca?",
+      "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?"
     },
     {
       "id": "18",
@@ -1113,7 +1143,9 @@
         "desde": "2026-11-26",
         "hasta": "2026-12-19"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "¿Renunciaste? También te toca aguinaldo",
+      "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?"
     },
     {
       "id": "19",
@@ -1177,7 +1209,9 @@
         "desde": "2026-11-20",
         "hasta": "2026-12-19"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Por qué tu aguinaldo llega incompleto",
+      "pregunta_comentarios": "¿Te ha llegado menos aguinaldo del que esperabas?"
     },
     {
       "id": "20",
@@ -1243,7 +1277,9 @@
         "desde": "2026-12-04",
         "hasta": "2026-12-19"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Cómo dividir tu aguinaldo",
+      "pregunta_comentarios": "¿Tú cómo lo divides?"
     },
     {
       "id": "21",
@@ -1309,7 +1345,9 @@
         "desde": "2026-12-10",
         "hasta": "2027-01-10"
       },
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Lo primero que haces con tu aguinaldo",
+      "pregunta_comentarios": "¿A qué deuda va tu aguinaldo primero?"
     },
     {
       "id": "22",
@@ -1375,7 +1413,9 @@
         "desde": "2027-01-02",
         "hasta": "2027-01-20"
       },
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Tu propósito 2027 no es el gym",
+      "pregunta_comentarios": "¿Cuántos meses de gastos tienes guardados?"
     },
     {
       "id": "23",
@@ -1441,7 +1481,9 @@
         "desde": "2027-01-06",
         "hasta": "2027-01-31"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "La trampa del pago mínimo",
+      "pregunta_comentarios": "¿Pagas el mínimo o el total?"
     },
     {
       "id": "24",
@@ -1507,7 +1549,9 @@
         "desde": "2027-01-12",
         "hasta": "2027-01-31"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Meses sin intereses no es gratis",
+      "pregunta_comentarios": "¿Cuántas mensualidades traes ahorita?"
     },
     {
       "id": "25",
@@ -1571,7 +1615,9 @@
         "desde": "2027-01-18",
         "hasta": "2027-02-10"
       },
-      "duracion": 11
+      "duracion": 11,
+      "texto_pantalla": "Tu presupuesto en 3 números",
+      "pregunta_comentarios": "¿Ya hiciste tu presupuesto de enero?"
     },
     {
       "id": "26",
@@ -1634,7 +1680,9 @@
         "tipo_gancho": "dato"
       },
       "puente_producto": true,
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "La pelea que predice el divorcio",
+      "pregunta_comentarios": "¿En tu relación hablan de dinero?"
     },
     {
       "id": "27",
@@ -1696,7 +1744,9 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Pudieron comprar Netflix y se rieron",
+      "pregunta_comentarios": "¿Qué empresa crees que es el próximo Blockbuster?"
     },
     {
       "id": "28",
@@ -1757,7 +1807,9 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 12
+      "duracion": 12,
+      "texto_pantalla": "Costco no gana vendiendo",
+      "pregunta_comentarios": "¿Pagas alguna membresía que no usas?"
     },
     {
       "id": "29",
@@ -1819,7 +1871,8 @@
       "adn": {
         "tipo_gancho": "error"
       },
-      "duracion": 12
+      "duracion": 12,
+      "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea?"
     },
     {
       "id": "30",
@@ -1880,7 +1933,8 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 13
+      "duracion": 13,
+      "pregunta_comentarios": "¿Con cuánto empezaste tu negocio?"
     },
     {
       "id": "31",
@@ -1942,7 +1996,8 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 11
+      "duracion": 11,
+      "pregunta_comentarios": "¿Qué negocio harías mejor que el original?"
     },
     {
       "id": "32",
@@ -1953,7 +2008,7 @@
         "nombre": "asi_empezaron",
         "numero": 1
       },
-      "texto_pantalla": "Así empezaron #1 · Airbnb",
+      "texto_pantalla": "Así empezaron #1: Airbnb casi quiebra",
       "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores llenos de deudas vendieron cajas a cuarenta dólares. Juntaron unos treinta mil y entraron a una aceleradora. Sígueme para la número dos.",
       "subtitulos": [
         "Airbnb casi quiebra",
@@ -2011,7 +2066,8 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "duracion": 16
+      "duracion": 16,
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
       "id": "33",
@@ -2022,7 +2078,7 @@
         "nombre": "asi_empezaron",
         "numero": 2
       },
-      "texto_pantalla": "Así empezaron #2 · Dollar Shave Club",
+      "texto_pantalla": "Así empezaron #2: un video de 4,500 dólares",
       "guion": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Unilever la compró. Sígueme para la número tres.",
       "subtitulos": [
         "Un video de 4,500 dólares",
@@ -2080,7 +2136,8 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 16
+      "duracion": 16,
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
       "id": "34",
@@ -2091,7 +2148,7 @@
         "nombre": "asi_empezaron",
         "numero": 3
       },
-      "texto_pantalla": "Así empezaron #3 · Canva",
+      "texto_pantalla": "Así empezaron #3: Canva y 100 rechazos",
       "guion": "Más de cien inversionistas le dijeron que no a Canva. Su fundadora, Melanie Perkins, mejoraba su presentación después de cada no, hasta que alguien dijo que sí. Tu próximo no también te hace mejor. Sígueme para la número cuatro.",
       "subtitulos": [
         "Más de 100 inversionistas",
@@ -2150,7 +2207,8 @@
       "adn": {
         "tipo_gancho": "historia"
       },
-      "duracion": 17
+      "duracion": 17,
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
       "id": "35",
@@ -2161,7 +2219,7 @@
         "nombre": "asi_empezaron",
         "numero": 4
       },
-      "texto_pantalla": "Así empezaron #4 · Mailchimp",
+      "texto_pantalla": "Así empezaron #4: sin un solo inversionista",
       "guion": "Mailchimp nunca aceptó dinero de inversionistas. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. No necesitas inversionistas para crecer. Sígueme para la número cinco.",
       "subtitulos": [
         "Mailchimp nunca aceptó dinero",
@@ -2219,7 +2277,8 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 15
+      "duracion": 15,
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
       "id": "36",
@@ -2230,7 +2289,7 @@
         "nombre": "asi_empezaron",
         "numero": 5
       },
-      "texto_pantalla": "Así empezaron #5 · Zara",
+      "texto_pantalla": "Así empezaron #5: Zara y unas batas",
       "guion": "El dueño de Zara empezó haciendo batas de baño. En mil novecientos sesenta y tres, Amancio Ortega fundó un taller para hacerlas. Doce años después abrió la primera tienda Zara en A Coruña. Empieza pequeño, pero empieza.",
       "subtitulos": [
         "El dueño de Zara empezó",
@@ -2287,7 +2346,8 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "duracion": 16
+      "duracion": 16,
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     }
   ]
 }

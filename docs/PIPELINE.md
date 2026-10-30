@@ -106,6 +106,8 @@ palabras, tabla en `GUIONES_VIRALES.md`) dicho en español de México que abre c
 `vestuario` nuevo, `accion`, `hora_publicacion: "rotacion"`, `texto_post` sin hashtags y `seo`
 según `docs/SEO.md`, más `ganchos_alternativos` (las otras 2 primeras frases propuestas) y
 `adn: {"tipo_gancho": "cifra|contradiccion|error|nombre|regla|dato|cita|pregunta|consejo|historia|mito"}`).
+Cada video lleva `texto_pantalla` (gancho visual, ver `GANCHOS.md`). y `pregunta_comentarios`
+(una pregunta concreta que la gente quiera contestar; va en el pie de las 3 redes).
 Si es capítulo de una serie, `formato: "serie"` y `serie: {"nombre", "numero"}`: `aprender.py`
 la mete un video sí y uno no, en orden.
 Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.

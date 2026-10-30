@@ -31,6 +31,15 @@ lo refuerza para quien ve sin sonido.
 | Dolor + causa | "Si no puedes dormir pensando en pendientes, es por esto." |
 | Pareja y dinero | "Las peleas por dinero predicen el divorcio más que otras peleas." |
 
+## Gancho en pantalla (`texto_pantalla`)
+
+La mayoría desliza sin sonido: lo primero que lee es el texto fijo de arriba
+(`scripts/titulo_pantalla.py`). No es el título de SEO ("Escritura expresiva de 15 minutos" describe;
+no detiene a nadie). Es un gancho visual de máximo 3 renglones de 22 letras que abre una pregunta y
+no da la respuesta: "Lo que de verdad te roba energía", "La trampa del pago mínimo", "¿Cuánto
+aguinaldo te toca?". En las series lleva el número: "Así empezaron #1: Airbnb casi quiebra".
+`seo.py revisar` no deja pasar un video sin él.
+
 ## Plantillas de internet: cuáles sirven a Victoria
 
 Las listas de "hooks instantáneos" están hechas para creadores humanos que cuentan su historia.

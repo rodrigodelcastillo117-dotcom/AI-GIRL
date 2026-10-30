@@ -17,6 +17,7 @@ Las reglas numeradas están en docs/REGLAS_APRENDIDAS.md; cómo escribir el bloq
 import json
 import os
 import sys
+import textwrap
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOPE_TAGS = 480
@@ -102,6 +103,9 @@ def textos(video, plan, config):
         sys.exit(f"ERROR: el título del video {video['id']} \"{seo['titulo']}\" " + '; '.join(errores))
     cierre = plan['reglas']['cierre_de_texto']
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
+    # Una pregunta concreta saca comentarios, y los comentarios dan alcance (docs/GUIONES_VIRALES.md).
+    if video.get('pregunta_comentarios'):
+        post = f"{post}\n\n💬 {video['pregunta_comentarios']}"
     parrafo = (seo.get('parrafo') or '').strip()
     preguntas = seo.get('preguntas') or []
     # Videos de temporada (aguinaldo, deudas...): su calculadora gratis va primero en todo.
@@ -156,6 +160,10 @@ def main():
         for v in plan['videos']:
             if v['estado'] in ('pendiente', 'listo_para_publicar'):
                 try:
+                    pantalla = v.get('pregunta_pantalla') or v.get('texto_pantalla')
+                    if v['estado'] == 'pendiente' and (not pantalla or len(textwrap.wrap(pantalla.upper(), width=22)) > 3):
+                        sys.exit(f"ERROR: el video {v['id']} necesita texto_pantalla: gancho visual de máximo 3 renglones "
+                                 "de 22 letras, distinto del título de SEO (docs/GANCHOS.md)")
                     t = textos(v, plan, config)
                     print(f"OK {v['id']} ({len(t['titulo'])}) {t['titulo']} · {len(t['tags_youtube'].split(','))} etiquetas")
                 except SystemExit as e:
