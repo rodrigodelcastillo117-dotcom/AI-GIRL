@@ -23,7 +23,7 @@
   ],
   "min_por_franja": 4,
   "ganadoras": {},
-  "nota": "Una rotación por red con sus propias franjas; cada red fija su ganadora (4 por franja, 20% arriba de la segunda) y sigue probando 1 de cada 5.",
+  "nota": "Cada red prueba sus 5 franjas hasta tener 4 publicaciones en cada una; entre las menos probadas va primero la más fuerte para ese día según los estudios (orden_por_dia). Gana la que rinda 20% más que la segunda; luego se usa 4 de cada 5.",
   "franjas_por_red": {
    "ig": [
     "08:00",
@@ -47,7 +47,162 @@
     "20:00"
    ]
   },
-  "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas)."
+  "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas).",
+  "orden_por_dia": {
+   "ig": {
+    "0": [
+     "18:00",
+     "20:00",
+     "12:00",
+     "15:00",
+     "08:00"
+    ],
+    "1": [
+     "18:00",
+     "15:00",
+     "20:00",
+     "12:00",
+     "08:00"
+    ],
+    "2": [
+     "18:00",
+     "12:00",
+     "08:00",
+     "20:00",
+     "15:00"
+    ],
+    "3": [
+     "08:00",
+     "18:00",
+     "12:00",
+     "20:00",
+     "15:00"
+    ],
+    "4": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "08:00",
+     "15:00"
+    ],
+    "5": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "15:00",
+     "08:00"
+    ],
+    "6": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "15:00",
+     "08:00"
+    ]
+   },
+   "tt": {
+    "0": [
+     "13:00",
+     "09:00",
+     "20:00",
+     "17:00",
+     "15:00"
+    ],
+    "1": [
+     "20:00",
+     "17:00",
+     "15:00",
+     "13:00",
+     "09:00"
+    ],
+    "2": [
+     "20:00",
+     "17:00",
+     "15:00",
+     "13:00",
+     "09:00"
+    ],
+    "3": [
+     "20:00",
+     "13:00",
+     "17:00",
+     "15:00",
+     "09:00"
+    ],
+    "4": [
+     "17:00",
+     "20:00",
+     "15:00",
+     "13:00",
+     "09:00"
+    ],
+    "5": [
+     "17:00",
+     "15:00",
+     "20:00",
+     "13:00",
+     "09:00"
+    ],
+    "6": [
+     "09:00",
+     "13:00",
+     "15:00",
+     "17:00",
+     "20:00"
+    ]
+   },
+   "yt": {
+    "0": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "1": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "2": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "3": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "4": [
+     "14:00",
+     "10:00",
+     "12:00",
+     "17:00",
+     "20:00"
+    ],
+    "5": [
+     "14:00",
+     "12:00",
+     "10:00",
+     "17:00",
+     "20:00"
+    ],
+    "6": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ]
+   }
+  }
  },
  "titulo_max": 45,
  "hashtags_fijos": [

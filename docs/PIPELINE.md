@@ -62,7 +62,8 @@ ya está hecho y la franja de las 8:00 nunca se pierde.
 1. Publica el video `listo_para_publicar` (`decision.publicar_hoy`) a la hora de **cada red**
    (`decision.cuando`, paso 7). **Prueba de horarios por red:** Instagram, TikTok y YouTube salen a
    horas distintas y cada red rota por sus propias 5 franjas (`config.json → prueba_horas.franjas_por_red`,
-   sacadas de las gráficas de engagement por red que mandó Rodrigo) hasta tener 4
+   sacadas de las gráficas de engagement por red que mandó Rodrigo; entre las menos probadas va primero
+   la más fuerte para ese día, `prueba_horas.orden_por_dia`) hasta tener 4
    publicaciones en cada una; `aprender.py auditar` compara cada red por franja y por día de la semana
    (videos y carruseles, cada formato contra su propia mediana) y fija la ganadora de cada red
    (`prueba_horas.ganadoras`), que se usa 4 de cada 5 veces. Publer:

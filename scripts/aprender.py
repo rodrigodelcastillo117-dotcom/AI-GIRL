@@ -432,7 +432,10 @@ def horarios(plan, carruseles, config, fecha, ahora):
         if ganadoras.get(r) in libres and sum(conteo[r].values()) % 5:
             f = ganadoras[r]
         else:
-            f = min(libres, key=lambda x: (conteo[r][x], (franjas.index(x) - 2 * i) % len(franjas)))
+            # Entre las menos probadas, primero la más fuerte para este día según los estudios (orden_por_dia).
+            orden = ((prueba.get('orden_por_dia') or {}).get(r) or {}).get(str(fecha.weekday())) or []
+            rango = lambda x: orden.index(x) if x in orden else len(orden) + (franjas.index(x) - 2 * i) % len(franjas)
+            f = min(libres, key=lambda x: (conteo[r][x], rango(x)))
         elegidas[r] = f
         cuando[r] = a_hora(f).astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     estado = ' · '.join(f"{r}: {'fija ' + ganadoras[r] if ganadoras.get(r) else 'en prueba'} ("
