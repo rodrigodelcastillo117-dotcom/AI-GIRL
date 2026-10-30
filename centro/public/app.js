@@ -201,19 +201,15 @@ function dibujarTodo() {
   const {estado, videos, ejecuciones, aprendizajes} = FOTO;
   if (estado.foto_perfil && !$('foto').firstChild) $('foto').append(crear('img', {src: estado.foto_perfil, alt: 'Victoria y Capital'}));
   $('l-publicados').textContent = fmt(r.publicados);
-  $('l-listos').textContent = fmt(r.listos);
+  $('l-listos').textContent = `${fmt(r.listos)} ${r.listos === 1 ? 'video listo' : 'videos listos'}`;
   $('l-alcanzan').textContent = fmt(r.alcanzan);
   contar($('vistas-totales'), r.vistas);
   const sigue = proxima();
   $('mision-que').textContent = sigue?.que || '—';
   $('mision-cuando').textContent = sigue ? mx(sigue.utc, {weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '—';
-  $('minimo-calidad').textContent = pct(estado.similitud_minima);
-  contar($('m-subs'), VIVO?.canal?.suscriptores);
   contar($('m-likes'), r.likes);
-  $('m-calidad').textContent = pct(r.calidad);
   $('m-cola').textContent = fmt(r.cola);
   $('m-fallos').textContent = fmt(r.fallos);
-  $('m-lecciones').textContent = fmt(r.lecciones);
   $('a-usados').textContent = fmt(r.usados);
   $('a-costo').textContent = fmt(r.costo);
   $('a-dias').textContent = r.alcanzan == null ? '—' : fmt(r.alcanzan * 2);
@@ -589,12 +585,10 @@ function dibujarGraficas() {
   const ej = [...FOTO.ejecuciones].sort(porFecha).map((e, i) => ({...e, n: e.video_id ? `v${e.video_id}` : `#${i + 1}`}));
   saldo($('g-saldo'), ej, r);
   barras($('g-gasto'), ej.map((e) => ({k: e.n, v: Number(e.creditos_usados) || 0})), {color: ORO});
-  barras($('g-calidad'), FOTO.videos.filter((v) => Number(v.qa_similitud) > 0).map((v) => ({k: `v${v.id}`, v: Number(v.qa_similitud)})), {color: CIAN, formato: pct, linea: FOTO.estado.similitud_minima});
-  const medidos = FOTO.videos.filter(medido);
+  const medidos = todo().filter(medido);
   $('vacio-vistas').hidden = medidos.length > 0;
   apiladas($('g-vistas'), medidos);
-  calor($('g-calor'), FOTO.mejores_horas);
-  for (const [campo, id, vacio, color, nombres] of [['hora_plan', 'g-hora', 'vacio-hora', CIAN, {}], ['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES], ['dia', 'g-dia', 'vacio-dia', CIAN, {}]]) {
+  for (const [campo, id, vacio, color, nombres] of [['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES]]) {
     let filas = promedioPor(campo);
     if (campo === 'dia') filas.sort((a, b) => DIAS.indexOf(a.grupo) - DIAS.indexOf(b.grupo));
     if (campo === 'hora_plan' && filas.length < 2) filas = [];

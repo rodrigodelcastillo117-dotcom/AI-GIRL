@@ -243,8 +243,6 @@ tr.hoy td { background: rgba(245, 197, 66, .08); }
 /* ---------- Centro de operaciones ---------- */
 .ops { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 18px; }
 .hud { overflow: hidden; }
-.hud::after { content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: repeating-linear-gradient(0deg, rgba(73, 214, 236, .035) 0 1px, transparent 1px 3px); }
 .metas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .meta { position: relative; display: grid; justify-items: center; text-align: center; gap: 4px; }
 .meta svg { width: 100%; max-width: 140px; overflow: visible; }
@@ -273,3 +271,89 @@ tr.hoy td { background: rgba(245, 197, 66, .08); }
 @keyframes girar { to { transform: rotate(360deg); } }
 @keyframes latido { 50% { transform: scale(1.35); opacity: .75; } }
 @media (prefers-reduced-motion: reduce) { .radar .barrido, .radar .blip circle, .meta .marcas { animation: none; } }
+
+/* =====================================================================
+   GOD MODE · capa final (va al último para mandar sobre lo anterior)
+   ===================================================================== */
+/* El contenido de un panel nunca lo ensancha (el hangar empujaba la página en celular). */
+.panel { grid-template-columns: minmax(0, 1fr); }
+
+/* Luz ambiental y retícula muy tenue detrás de todo */
+body { background:
+  radial-gradient(60rem 40rem at 8% -10%, rgba(73, 214, 236, .10), transparent 60%),
+  radial-gradient(50rem 36rem at 105% 110%, rgba(245, 197, 66, .08), transparent 60%),
+  var(--fondo); background-attachment: fixed; }
+main::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .5;
+  background-image: linear-gradient(rgba(73, 214, 236, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(73, 214, 236, .05) 1px, transparent 1px);
+  background-size: 48px 48px; mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%); }
+
+/* Paneles de vidrio con esquinas de visor */
+.panel {
+  --c: rgba(73, 214, 236, .75);
+  background:
+    linear-gradient(var(--c), var(--c)) top 8px left 8px / 14px 1.5px no-repeat,
+    linear-gradient(var(--c), var(--c)) top 8px left 8px / 1.5px 14px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom 8px right 8px / 14px 1.5px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom 8px right 8px / 1.5px 14px no-repeat,
+    repeating-linear-gradient(0deg, rgba(73, 214, 236, .025) 0 1px, transparent 1px 3px),
+    linear-gradient(160deg, rgba(16, 36, 52, .82), rgba(5, 13, 20, .9));
+  border: 1px solid rgba(73, 214, 236, .13);
+  box-shadow: 0 24px 48px -30px rgba(0, 0, 0, .95), inset 0 1px 0 rgba(255, 255, 255, .04);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: border-color .35s ease, box-shadow .35s ease, transform .35s ease;
+}
+.panel:hover { border-color: rgba(73, 214, 236, .4); transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(73, 214, 236, .08), 0 0 36px -12px rgba(73, 214, 236, .45), 0 24px 48px -30px #000; }
+.panel h2 { letter-spacing: .14em; text-shadow: 0 0 18px rgba(73, 214, 236, .25); }
+.panel .codigo { opacity: .85; }
+
+/* Secciones numeradas con línea de escaneo */
+main { counter-reset: seccion; }
+.seccion { counter-increment: seccion; position: relative; font-size: .82rem; margin-top: 18px; }
+.seccion::before { content: counter(seccion, decimal-leading-zero); font-family: var(--mono); font-size: .7rem; letter-spacing: .1em;
+  color: var(--fondo); background: var(--oro); padding: 3px 7px; box-shadow: 0 0 16px rgba(245, 197, 66, .45); }
+.seccion::after { background: linear-gradient(90deg, rgba(245, 197, 66, .55), rgba(73, 214, 236, .25) 40%, transparent);
+  background-size: 200% 100%; animation: escaneo 6s linear infinite; }
+@keyframes escaneo { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+
+/* Números: siempre alineados y con brillo */
+.valor, .val, .cuenta b, .cuenta-red, .meta .nucleo b, .vistas span, td.n { font-variant-numeric: tabular-nums; }
+.gran-numero .valor { text-shadow: 0 0 28px rgba(245, 197, 66, .45), 0 0 2px rgba(255, 255, 255, .6); }
+.mosaico { transition: transform .3s ease, border-color .3s ease; }
+.mosaico:hover { transform: translateY(-2px); border-color: var(--linea-fuerte); }
+
+/* Tablas: encabezado fijo, fila que se ilumina */
+.caja-tabla thead th { position: sticky; top: 0; z-index: 1; background: rgba(5, 13, 20, .96); backdrop-filter: blur(4px); }
+.caja-tabla tbody tr { transition: background .2s ease; }
+.caja-tabla tbody tr:hover td { background: rgba(73, 214, 236, .06); }
+tr.hoy td { box-shadow: inset 0 1px 0 rgba(245, 197, 66, .25), inset 0 -1px 0 rgba(245, 197, 66, .25); }
+
+/* Cuenta regresiva principal enmarcada */
+.mision { position: relative; padding: 14px 18px; border: 1px solid rgba(245, 197, 66, .22);
+  background: linear-gradient(180deg, rgba(245, 197, 66, .06), transparent); }
+.mision .cuenta b { text-shadow: 0 0 18px rgba(245, 197, 66, .55); }
+
+/* Despegues: barra de energía que respira */
+.despegue { position: relative; overflow: hidden; transition: background .3s ease; }
+.despegue::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+  background: linear-gradient(90deg, transparent, var(--acento), transparent); opacity: .6; animation: respira 3s ease-in-out infinite; }
+.despegue:hover { background: rgba(73, 214, 236, .06); }
+@keyframes respira { 50% { opacity: .15; } }
+
+/* Celular */
+@media (max-width: 640px) {
+  main { padding-left: 14px; padding-right: 14px; gap: 20px; }
+  .panel { padding: 16px; }
+  .seccion { letter-spacing: .26em; font-size: .72rem; }
+  .seccion small { display: none; }
+  .metas { gap: 4px; }
+  .meta .nucleo b { font-size: 1.15rem; }
+  .meta .detalle { font-size: .64rem; }
+  .despegue { grid-template-columns: 1fr; }
+  .despegue .cuenta-red { font-size: 1.6rem; }
+  .horarios-red { grid-template-columns: minmax(0, 1fr); }
+  .caja-tabla { max-height: 22rem; }
+}
+@media (prefers-reduced-motion: reduce) { .seccion::after, .despegue::after { animation: none; } .panel:hover { transform: none; } }
+/* Los textos largos (enlaces, rutas) se parten en vez de ensanchar la página en celular */
+.lista span, .lista span > *, .nota, td { min-width: 0; overflow-wrap: anywhere; }
