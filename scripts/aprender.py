@@ -41,7 +41,7 @@ ESTILOS = [('playa', ['traje de baño', 'bikini']), ('deportivo', ['deportivo', 
 COLORES = {'blanco': 'claro', 'blanca': 'claro', 'marfil': 'claro', 'crema': 'claro', 'champaña': 'claro', 'beige': 'claro',
            'negro': 'negro', 'negra': 'negro', 'rojo': 'rojo', 'carmesí': 'rojo', 'vino': 'rojo', 'azul': 'azul',
            'verde': 'verde', 'camel': 'café', 'café': 'café', 'gris': 'gris', 'dorado': 'dorado', 'rosa': 'rosa'}
-NOMBRES = {'pilar': 'El tema', 'tipo_fondo': 'El tipo de fondo', 'locacion': 'El fondo', 'estilo_vestuario': 'La vestimenta',
+NOMBRES = {'pilar': 'El tema', 'formato': 'El formato', 'tipo_fondo': 'El tipo de fondo', 'locacion': 'El fondo', 'estilo_vestuario': 'La vestimenta',
            'color_vestuario': 'El color de ropa', 'tipo_gancho': 'El gancho', 'titulo_emoji': 'El título', 'titulo_largo': 'El largo del título',
            'titulo_tipo': 'El título', 'dia': 'El día', 'hora': 'La hora'}
 NUMEROS = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'veinte', 'treinta',
@@ -90,7 +90,7 @@ def adn(video):
         tipo = 'numero'
     else:
         tipo = 'consejo'
-    datos = {'pilar': video.get('pilar'), 'locacion': video.get('locacion'),
+    datos = {'pilar': video.get('pilar'), 'formato': video.get('formato', 'a_camara'), 'locacion': video.get('locacion'),
              'tipo_fondo': FONDOS.get(video.get('locacion'), 'otro'), 'estilo_vestuario': estilo,
              'color_vestuario': color, 'tipo_gancho': tipo}
     titulo = (video.get('seo') or {}).get('titulo') or primera_linea(video.get('texto_post'))

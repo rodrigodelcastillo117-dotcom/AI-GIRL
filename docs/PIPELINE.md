@@ -108,6 +108,7 @@ borrado masivo es peligroso, nunca se usa).
   `"ventana": {"desde", "hasta"}` y `"llamado"` (`config.json → llamados`: su calculadora gratis va
   primero en la descripción, el pie y el comentario). `aprender.py` los publica primero cuando abre su
   ventana y nunca fuera de ella. Escríbelos con un mes de anticipación.
+- 2 de 10 son **entrevista** (ver "Formato entrevista" en el paso 3), casi siempre de emprendimiento.
 - 3 de 10 son **videos puente** hacia la plantilla (`"puente_producto": true`, ver
   `docs/GUIONES_VIRALES.md → Monetizar`).
 - 6 de 10 con lo que gana en `auditoria.ranking` (tema, tipo de fondo, vestimenta, gancho) y 4
@@ -144,6 +145,27 @@ texture, no text, no logos, no watermark.
 
 Revisar la imagen (descargarla y verla): cara de Victoria (pelirroja, pecas, ojos verdes), Capital
 completo, vestuario correcto, manos y patas sin deformaciones. Si falla, repetir una vez.
+
+### Formato entrevista (`"formato": "entrevista"` en el plan)
+
+Victoria contesta una pregunta como en un clip de podcast: no sale ni se oye el entrevistador; la
+pregunta va escrita en pantalla (`pregunta_pantalla`). Locación `estudio_entrevista`. En el prompt de
+la foto base cambia la mirada y el encuadre:
+```
+... in the interview studio of Image 3 (same place, same light), seated in the velvet armchair, body
+angled three-quarters, looking slightly off-camera to her right as if answering an interviewer who is
+not in frame. A professional podcast microphone on a boom arm in front of her, not covering her face.
+The Rottweiler of Image 2 lies at her feet, fully visible. Medium shot, cinematic studio lighting:
+warm key light, soft fill, rim light on her hair, warm bokeh in the background. Calm, confident,
+expert expression. Elegant and classy, photorealistic, no text, no logos, no watermark.
+```
+Y en el del video, en lugar de "She looks straight into the lens and speaks to the viewer":
+```
+She answers someone just off-camera to her right (the interviewer is never visible or audible),
+eyes mostly on that person with brief natural glances, relaxed conversational hand gestures, ...
+```
+Victoria nunca cuenta anécdotas personales inventadas como si fueran reales: responde con una regla y
+un caso real con fuente (regla 7).
 
 ## 4. Video
 
@@ -196,7 +218,7 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 
 Título fijo arriba (quien desliza sin sonido sabe de qué trata desde el segundo 0):
 ```
-python scripts/titulo_pantalla.py videos/video-<id>-SUBTITULADO.mp4 "$(python -c "import json;print([v for v in json.load(open('contenido/plan.json'))['videos'] if v['id']=='<id>'][0]['seo']['titulo'])")" /tmp/titulo.mp4
+python scripts/titulo_pantalla.py videos/video-<id>-SUBTITULADO.mp4 "$(python -c "import json;v=[v for v in json.load(open('contenido/plan.json'))['videos'] if v['id']=='<id>'][0];print(v.get('pregunta_pantalla') or v['seo']['titulo'])")" /tmp/titulo.mp4
 cp /tmp/titulo.mp4 videos/video-<id>-SUBTITULADO.mp4
 ```
 Revisar un cuadro: el título va en la franja de arriba (techo, cielo o pared) y no tapa la cara.

@@ -26,7 +26,8 @@
     "hotel": "Lobby de hotel de lujo: mármol, sillones de terciopelo, lámparas de latón, flores blancas. Ella sentada en un sillón, Capital sentado a su lado.",
     "golf": "Campo de golf verde al amanecer, carrito de golf blanco detrás, colinas suaves. Capital sentado junto a ella.",
     "bar": "Bar tipo speakeasy: barra de madera oscura, botellas iluminadas en ámbar, luz cálida baja, banco de piel. Capital echado junto al banco.",
-    "sala_navidad": "Sala de lujo decorada para Navidad: árbol grande con luces cálidas y esferas doradas, chimenea encendida, sofá de terciopelo color crema, regalos envueltos sin marcas. Ella de pie o sentada junto al árbol, Capital a sus pies."
+    "sala_navidad": "Sala de lujo decorada para Navidad: árbol grande con luces cálidas y esferas doradas, chimenea encendida, sofá de terciopelo color crema, regalos envueltos sin marcas. Ella de pie o sentada junto al árbol, Capital a sus pies.",
+    "estudio_entrevista": "Estudio de entrevista o podcast de lujo: pared de paneles de madera oscura con estantes y libros, luces cálidas desenfocadas al fondo, sillón de terciopelo verde esmeralda, mesa lateral con una copa de agua, micrófono profesional de podcast en brazo articulado, alfombra persa. Iluminación de cine: luz principal cálida, luz de contorno en el cabello. Sin personas, sin logos, sin texto. Espacio para ella sentada en el sillón y Capital echado a sus pies."
   },
   "videos": [
     {
@@ -1727,6 +1728,188 @@
       "ganchos_alternativos": [
         "Costco gana antes de que compres algo.",
         "El secreto de Costco no son sus precios."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      }
+    },
+    {
+      "id": "29",
+      "estado": "pendiente",
+      "pilar": "negocio",
+      "formato": "entrevista",
+      "pregunta_pantalla": "¿Cuál es el error #1 al emprender?",
+      "guion": "Enamorarte de tu idea antes de que alguien la pague. Vende primero, aunque sea a diez personas. Si nadie paga, no es negocio: es pasatiempo.",
+      "subtitulos": [
+        "Enamorarte de tu idea",
+        "antes de que alguien la pague.",
+        "Vende primero,",
+        "aunque sea a 10 personas.",
+        "Si nadie paga, no es negocio:",
+        "es pasatiempo."
+      ],
+      "palabras_clave": [
+        "idea",
+        "pague",
+        "10",
+        "pasatiempo"
+      ],
+      "fuente": "Eric Ries, El método Lean Startup (2011): validar con clientes reales antes de construir (producto mínimo viable)",
+      "locacion": "estudio_entrevista",
+      "vestuario": "Traje sastre color crema de tres piezas, blusa de seda dorada, aretes de oro",
+      "accion": "Sentada en el sillón del estudio, de tres cuartos, mirando a alguien fuera de cuadro a su derecha; micrófono de podcast en brazo articulado frente a ella sin taparle la cara; Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "El error #1 al emprender: enamorarte de tu idea antes de que alguien la pague. 🎙️\nVende primero, aunque sea a 10 personas. Si nadie paga, no es negocio: es pasatiempo.\n\n📚 Eric Ries, El método Lean Startup",
+      "seo": {
+        "palabra_clave": "error al emprender",
+        "titulo": "Error al emprender antes de vender 🎙️",
+        "descripcion_inicio": "Error al emprender: enamorarte de tu idea antes de que alguien la pague. Valida primero con clientes reales, como propone Eric Ries en El método Lean Startup.\nVende antes de construir, aunque sea a 10 personas.",
+        "tags_concretas": [
+          "error al emprender",
+          "como emprender",
+          "validar idea de negocio",
+          "lean startup",
+          "producto minimo viable",
+          "eric ries",
+          "consejos para emprendedores",
+          "primer cliente"
+        ],
+        "hashtags": [
+          "#emprender",
+          "#leanstartup",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "Eric Ries lo explica en El método Lean Startup (2011): antes de invertir meses y dinero en construir, prueba tu idea con clientes reales con la versión más simple posible, un producto mínimo viable. Si alguien paga, tienes señal; si nadie paga, ajusta antes de gastar más. Vender a 10 personas te enseña más que un año de planes.",
+        "preguntas": [
+          "¿Cuál es el error más común al emprender?",
+          "¿Cómo validar una idea de negocio?",
+          "¿Qué es un producto mínimo viable?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu idea no vale nada hasta que alguien la paga."
+      ],
+      "adn": {
+        "tipo_gancho": "error"
+      }
+    },
+    {
+      "id": "30",
+      "estado": "pendiente",
+      "pilar": "negocio",
+      "formato": "entrevista",
+      "pregunta_pantalla": "¿Cuánto dinero necesitas para emprender?",
+      "guion": "Menos del que crees. Sara Blakely empezó Spanx con cinco mil dólares de sus ahorros. Empieza con lo que tienes y crece con lo que vendes.",
+      "subtitulos": [
+        "Menos del que crees.",
+        "Sara Blakely empezó Spanx",
+        "con 5 mil dólares de sus ahorros.",
+        "Empieza con lo que tienes",
+        "y crece con lo que vendes."
+      ],
+      "palabras_clave": [
+        "crees",
+        "blakely",
+        "5",
+        "vendes"
+      ],
+      "fuente": "Fortune y CNBC: Sara Blakely empezó Spanx con 5,000 dólares de sus ahorros y sin inversionistas",
+      "locacion": "estudio_entrevista",
+      "vestuario": "Vestido negro de cuello alto sin mangas, blazer gris carbón sobre los hombros, reloj de oro",
+      "accion": "Sentada en el sillón del estudio, de tres cuartos, mirando a alguien fuera de cuadro a su derecha; micrófono de podcast en brazo articulado frente a ella sin taparle la cara; Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "¿Cuánto dinero necesitas para emprender? Menos del que crees. 🎙️\nSara Blakely empezó Spanx con 5 mil dólares de sus ahorros. Empieza con lo que tienes y crece con lo que vendes.\n\n📚 Fortune, historia de Spanx",
+      "seo": {
+        "palabra_clave": "cuánto dinero necesitas para emprender",
+        "titulo": "Cuánto dinero necesitas para emprender 🎙️",
+        "descripcion_inicio": "Cuánto dinero necesitas para emprender: menos del que crees. Sara Blakely empezó Spanx con 5,000 dólares de sus ahorros y sin inversionistas.\nEmpieza con lo que tienes y crece con lo que vendes.",
+        "tags_concretas": [
+          "cuanto dinero necesito para emprender",
+          "emprender sin dinero",
+          "sara blakely",
+          "historia de spanx",
+          "emprender con poco dinero",
+          "bootstrapping",
+          "ideas de negocio",
+          "consejos para emprendedoras"
+        ],
+        "hashtags": [
+          "#emprender",
+          "#sarablakely",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "Sara Blakely vendía máquinas de fax de puerta en puerta cuando empezó Spanx con 5,000 dólares de sus ahorros, sin inversionistas, según Fortune y CNBC. No necesitas un gran capital para empezar: necesitas un problema real, una primera versión y clientes que paguen. Crece con lo que vendes, no con lo que pides prestado.",
+        "preguntas": [
+          "¿Cuánto dinero necesito para emprender?",
+          "¿Se puede emprender con poco dinero?",
+          "¿Cómo empezó Spanx?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "No necesitas un millón para empezar."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      }
+    },
+    {
+      "id": "31",
+      "estado": "pendiente",
+      "pilar": "negocio",
+      "formato": "entrevista",
+      "pregunta_pantalla": "¿Necesitas una idea original para emprender?",
+      "guion": "No. Google no fue el primer buscador. Facebook no fue la primera red social. Gana quien lo hace mejor, no quien llega primero.",
+      "subtitulos": [
+        "No.",
+        "Google no fue el primer buscador.",
+        "Facebook no fue",
+        "la primera red social.",
+        "Gana quien lo hace mejor,",
+        "no quien llega primero."
+      ],
+      "palabras_clave": [
+        "no",
+        "google",
+        "facebook",
+        "mejor"
+      ],
+      "fuente": "Historia de internet: antes de Google existían AltaVista y Excite; antes de Facebook, Friendster y MySpace",
+      "locacion": "estudio_entrevista",
+      "vestuario": "Suéter de punto color camel con cuello V, pantalón de pinzas blanco, collar de oro delgado",
+      "accion": "Sentada en el sillón del estudio, de tres cuartos, mirando a alguien fuera de cuadro a su derecha; micrófono de podcast en brazo articulado frente a ella sin taparle la cara; Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "¿Necesitas una idea original para emprender? No. 🎙️\nGoogle no fue el primer buscador. Facebook no fue la primera red social. Gana quien lo hace mejor, no quien llega primero.\n\n📚 Antes de Google: AltaVista y Excite. Antes de Facebook: Friendster y MySpace.",
+      "seo": {
+        "palabra_clave": "idea de negocio original",
+        "titulo": "Idea de negocio original, no la necesitas 🎙️",
+        "descripcion_inicio": "Idea de negocio original: no la necesitas. Google no fue el primer buscador y Facebook no fue la primera red social; ganaron por hacerlo mejor.\nEncuentra un negocio que ya funcione y hazlo mejor.",
+        "tags_concretas": [
+          "idea de negocio original",
+          "ideas de negocio",
+          "necesito una idea original",
+          "como emprender",
+          "ventaja competitiva",
+          "historia de google",
+          "historia de facebook",
+          "consejos para emprendedores"
+        ],
+        "hashtags": [
+          "#ideasdenegocio",
+          "#emprender",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "Antes de Google ya existían buscadores como AltaVista y Excite, y antes de Facebook estaban Friendster y MySpace. No ganaron por llegar primero: ganaron por hacerlo mejor. Si ya hay negocios como el que quieres, es buena señal: hay clientes que pagan. Tu trabajo es encontrar qué hacen mal y resolverlo mejor.",
+        "preguntas": [
+          "¿Necesito una idea original para emprender?",
+          "¿Cómo encontrar una idea de negocio?",
+          "¿Cómo competir con negocios que ya existen?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu idea no tiene que ser nueva."
       ],
       "adn": {
         "tipo_gancho": "contradiccion"
