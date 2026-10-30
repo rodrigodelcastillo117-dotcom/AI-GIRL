@@ -480,6 +480,10 @@ def reglas_vigentes(ranking, config):
 
 def alertas(plan, ranking, notas, ejecuciones, config, hoy):
     lista = []
+    vence = config.get('instagram_token_vence')  # el permiso de Instagram del centro dura 60 días
+    if vence and (datetime.date.fromisoformat(vence) - hoy).days <= 7:
+        lista.append(f'El permiso de Instagram del centro vence el {vence}: genera uno nuevo en Meta (Instagram > '
+                     'API setup > Generate token) y cámbialo en Vercel (INSTAGRAM_TOKEN). Luego actualiza la fecha en config.json.')
     verificacion = cargar('verificacion.json', {})
     lista += verificacion.get('problemas', [])  # solo lo comprobado en cada red (regla 34)
     medidos = len(notas)

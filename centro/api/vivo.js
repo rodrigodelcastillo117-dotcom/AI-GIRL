@@ -11,6 +11,11 @@ let memoria = {hasta: 0, datos: null};
 // Publer contesta a veces en 0.3 s y a veces en más de 10 s, y sus estadísticas no cambian cada
 // minuto: se guarda 10 min y, si falla, se usa lo último bueno (hasta 6 h) sin alarmar.
 let ultimoPubler = {hasta: 0, valido: 0, datos: null, cuando: null};
+// Instagram directo (API oficial, sin esperar las 24 h de Publer): cada 5 min para no pasar el límite
+// de llamadas por hora de Instagram.
+const IG = 'https://graph.instagram.com/v26.0';
+const IG_METRICAS = 'views,reach,saved,shares';  // "views" puede tardar hasta 48 h (doc de Meta)
+let ultimoInstagram = {hasta: 0, datos: null, cuando: null, error: null};
 
 const primeraLinea = (texto) => ((texto || '').trim().split('\n')[0] || '').split(/\s+/).join(' ').toLowerCase();
 const dia = (fecha) => fecha.toISOString().slice(0, 10);
@@ -127,6 +132,43 @@ async function publer(estado, videos) {
   return {porVideo};
 }
 
+async function instagram(videos) {
+  const token = variable('INSTAGRAM_TOKEN');
+  if (!token) return null;  // sin token se sigue con Publer
+  const leerIG = (ruta) => pedir(`${IG}${ruta}${ruta.includes('?') ? '&' : '?'}access_token=${encodeURIComponent(token)}`, {}, 'Instagram', 10_000);
+  const yo = await leerIG('/me?fields=user_id,username').catch(() => {
+    throw new Error('el permiso (INSTAGRAM_TOKEN) no sirve o ya venció: genera uno nuevo en Meta y cámbialo en Vercel');
+  });
+  const cuenta = yo.data?.[0] || yo;  // la doc muestra la respuesta dentro de "data"
+  // Con el login de Instagram la API no da el texto del post: cada reel se reconoce por su hora de
+  // publicación (Publer publica a la hora programada, con 1 o 2 minutos de diferencia).
+  const fechas = videos.filter((v) => v.publica_utc).map((v) => ({id: v.id, t: new Date(v.publica_utc).getTime()}));
+  if (!fechas.length) return {porVideo: {}, cuenta: cuenta.username};
+  const desde = Math.floor((Math.min(...fechas.map((f) => f.t)) - 2 * 864e5) / 1000);
+  const campos = 'id,timestamp,permalink,like_count,comments_count,media_type';
+  const lista = await leerIG(`/${cuenta.user_id || cuenta.id}/media?fields=${campos}&since=${desde}&limit=50`);
+  const medios = await Promise.all((lista.data || []).map((m) => (m.timestamp ? m : leerIG(`/${m.id}?fields=${campos}`))));
+  const porVideo = {};
+  await Promise.all(medios.map(async (m) => {
+    const t = new Date(m.timestamp).getTime();
+    const video = fechas.find((f) => Math.abs(f.t - t) <= 20 * 60_000)?.id;
+    if (!video) return;
+    const fila = {v: null, l: Number(m.like_count) || 0, c: Number(m.comments_count) || 0, s: 0, g: 0, alcance: 0, enlace: m.permalink, directo: true};
+    for (const metricas of [IG_METRICAS, 'reach,saved,shares']) {  // si "views" no existe, al menos lo demás
+      try {
+        const r = await leerIG(`/${m.id}/insights?metric=${metricas}`);
+        const valor = (nombre) => r.data?.find((x) => x.name === nombre)?.values?.[0]?.value;
+        if (valor('views') != null) fila.v = Number(valor('views'));
+        Object.assign(fila, {s: Number(valor('shares')) || 0, g: Number(valor('saved')) || 0, alcance: Number(valor('reach')) || 0});
+        delete fila.sinInsights;
+        break;
+      } catch (e) { fila.sinInsights = e.message; }
+    }
+    porVideo[video] = fila;
+  }));
+  return {porVideo, cuenta: cuenta.username};
+}
+
 export default async function handler(req, res) {
   if (!autorizado(req)) return negar(res);
   res.setHeader('Cache-Control', 'private, no-store');
@@ -135,10 +177,18 @@ export default async function handler(req, res) {
   const estado = leer('estado.json')[0];
   const videos = leer('videos.json');
   const ahora = Date.now();
-  const [yt, pbNuevo] = await Promise.allSettled([
+  const [yt, pbNuevo, igNuevo] = await Promise.allSettled([
     youtube(estado, videos),
     ahora < ultimoPubler.hasta ? Promise.resolve(ultimoPubler.datos) : publer(estado, videos),
+    ahora < ultimoInstagram.hasta ? Promise.resolve(ultimoInstagram.datos) : instagram(videos),
   ]);
+  if (ahora >= ultimoInstagram.hasta) {
+    ultimoInstagram = igNuevo.status === 'fulfilled'
+      ? {hasta: ahora + 5 * 60_000, datos: igNuevo.value, cuando: new Date(ahora).toISOString(), error: null}
+      : {...ultimoInstagram, hasta: ahora + 60_000, error: igNuevo.reason?.message};
+    if (igNuevo.status === 'rejected') console.log(`instagram falló: ${igNuevo.reason?.message}`);
+  }
+  const ig = ultimoInstagram.datos;
   let pb = pbNuevo;
   if (pb.status === 'fulfilled' && ahora >= ultimoPubler.hasta) {
     ultimoPubler = {hasta: ahora + 10 * 60_000, valido: ahora + 6 * 3600_000, datos: pb.value, cuando: new Date(ahora).toISOString()};
@@ -153,14 +203,17 @@ export default async function handler(req, res) {
       porVideo[id] = {...porVideo[id], ...(fuente === 'yt' ? {yt: redes} : redes)};
     }
   }
+  for (const [id, fila] of Object.entries(ig?.porVideo || {})) porVideo[id] = {...porVideo[id], ig: fila};  // Instagram directo manda
   const datos = {
     actualizado: new Date().toISOString(),
     canal: yt.status === 'fulfilled' ? {suscriptores: yt.value.suscriptores, vistas: yt.value.vistas} : null,
     publer_actualizado: pb.status === 'fulfilled' ? ultimoPubler.cuando : null,
+    instagram_actualizado: ig ? ultimoInstagram.cuando : null,
     porVideo,
     errores: [
       ...(yt.status === 'rejected' ? [`YouTube: ${yt.reason.message}`] : []),
       ...(pb.status === 'rejected' ? [`Publer: ${pb.reason.message}`] : []),
+      ...(ultimoInstagram.error ? [`Instagram: ${ultimoInstagram.error}`] : []),
     ],
   };
   memoria = {hasta: Date.now() + 55_000, datos};

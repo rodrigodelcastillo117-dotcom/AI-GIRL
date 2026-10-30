@@ -267,20 +267,23 @@ function dibujarRedes() {
   const caja = $('redes');
   caja.replaceChildren();
   for (const red of REDES) {
-    let v = 0, l = 0, c = 0, s = 0, hay = false, enCamino = false;
+    let v = 0, l = 0, c = 0, s = 0, hay = false, enCamino = false, sinVistas = false;
     for (const video of FOTO.videos.filter(salio)) {
       const m = medidas(video)[red.clave];
       if (!m) continue;
       if (m.pendiente) { enCamino = true; continue; }
       hay = true;
+      if (m.v == null) sinVistas = true;  // Instagram directo: likes y comentarios ya, vistas con retraso
       v += Number(m.v) || 0; l += Number(m.l) || 0; c += Number(m.c) || 0; s += (Number(m.s) || 0) + (Number(m.g) || 0);
     }
-    const enVivo = red.clave === 'yt' ? Boolean(VIVO?.canal) : Boolean(VIVO) && !(VIVO.errores || []).some((e) => e.startsWith('Publer'));
+    const directo = red.clave === 'ig' && Boolean(VIVO?.instagram_actualizado);
+    const enVivo = red.clave === 'yt' ? Boolean(VIVO?.canal) : directo || (Boolean(VIVO) && !(VIVO.errores || []).some((e) => e.startsWith('Publer')));
     const tarjeta = crear('article', {className: 'red'});
     tarjeta.style.setProperty('--acento', red.color);
     const valor = crear('div', {className: 'vistas'});
-    const numero = crear('span', {textContent: hay ? fmt(v) : enCamino ? '—' : '0'});
-    valor.append(numero, crear('small', {textContent: !hay && enCamino ? 'publicado · Publer manda las cifras en unas horas' : 'vistas'}));
+    const numero = crear('span', {textContent: hay && !(sinVistas && !v) ? fmt(v) : enCamino || sinVistas ? '—' : '0'});
+    valor.append(numero, crear('small', {textContent: !hay && enCamino ? 'publicado · Publer manda las cifras en unas horas'
+      : sinVistas && !v ? 'vistas: Instagram las entrega con retraso' : 'vistas'}));
     tarjeta.append(
       crear('header', {}, crear('h3', {textContent: red.nombre}), crear('span', {className: `etiqueta-vivo${enVivo ? '' : ' foto'}`, textContent: enVivo ? '● en vivo' : 'última foto'})),
       valor,
