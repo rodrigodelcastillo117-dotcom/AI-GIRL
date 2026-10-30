@@ -202,6 +202,52 @@ async function seguidores(estado) {
   return datos;
 }
 
+let ultimasVentas = {hasta: 0, datos: null};
+
+// Ventas reales de Hotmart (90 días), cada 15 min. Credenciales en Vercel: HOTMART_CLIENT_ID y HOTMART_CLIENT_SECRET
+// (o HOTMART_BASIC). El origen sale del src que pone la página: "tt-aguinaldo" -> TikTok.
+async function ventas() {
+  if (Date.now() < ultimasVentas.hasta) return ultimasVentas.datos;
+  let id = variable('HOTMART_CLIENT_ID'), secreto = variable('HOTMART_CLIENT_SECRET');
+  let basic = variable('HOTMART_BASIC').replace(/^Basic\s+/i, '');
+  if (!basic && id && secreto) basic = Buffer.from(`${id}:${secreto}`).toString('base64');
+  if (basic && !(id && secreto)) [id, secreto] = Buffer.from(basic, 'base64').toString('utf8').split(':');
+  if (!basic) return {conectado: false};
+  const token = await pedir(`https://api-sec-vlc.hotmart.com/security/oauth/token?grant_type=client_credentials&client_id=${encodeURIComponent(id)}&client_secret=${encodeURIComponent(secreto)}`,
+    {method: 'POST', headers: {Authorization: `Basic ${basic}`, 'Content-Type': 'application/json'}}, 'Hotmart (credenciales)', 10_000);
+  const hasta = Date.now(), desde = hasta - 90 * 864e5;
+  const items = [];
+  let pagina = '';
+  for (let i = 0; i < 10; i++) {
+    const r = await pedir(`https://developers.hotmart.com/payments/api/v1/sales/history?start_date=${desde}&end_date=${hasta}&max_results=50${pagina ? `&page_token=${encodeURIComponent(pagina)}` : ''}`,
+      {headers: {Authorization: `Bearer ${token.access_token}`, 'Content-Type': 'application/json'}}, 'Hotmart (ventas)', 12_000);
+    items.push(...(r.items || []));
+    pagina = r.page_info?.next_page_token;
+    if (!pagina) break;
+  }
+  const origen = (x) => {
+    const t = x.purchase?.tracking || {};
+    const s = String(t.source || t.source_sck || t.src || '').toLowerCase().split('-')[0];
+    return ['yt', 'tt', 'ig', 'guia', 'directo'].includes(s) ? s : s ? 'otro' : 'sin_origen';
+  };
+  const aprobadas = items.filter((x) => ['APPROVED', 'COMPLETE'].includes(x.purchase?.status));
+  const porRed = {};
+  let ingresos = 0, moneda = '';
+  for (const x of aprobadas) {
+    const red = origen(x);
+    const valor = Number(x.purchase?.price?.value) || 0;
+    porRed[red] = {ventas: (porRed[red]?.ventas || 0) + 1, ingresos: (porRed[red]?.ingresos || 0) + valor};
+    ingresos += valor;
+    moneda ||= x.purchase?.price?.currency_value || x.purchase?.price?.currency_code || '';
+  }
+  // Solo la forma de los datos, nunca datos del comprador: sirve para comprobar que se lee bien.
+  console.log(`hotmart: ${items.length} movimientos, ${aprobadas.length} aprobadas; tracking: ${JSON.stringify(Object.keys(items[0]?.purchase?.tracking || {}))}`);
+  const datos = {conectado: true, ventas: aprobadas.length, ingresos, moneda, porRed, movimientos: items.length,
+    ultimas: aprobadas.slice(0, 5).map((x) => ({fecha: x.purchase?.approved_date || x.purchase?.order_date, red: origen(x), valor: Number(x.purchase?.price?.value) || 0}))};
+  ultimasVentas = {hasta: Date.now() + 15 * 60_000, datos};
+  return datos;
+}
+
 const leerSiHay = (nombre) => { try { return leer(nombre); } catch { return []; } };
 
 export default async function handler(req, res) {
@@ -213,11 +259,12 @@ export default async function handler(req, res) {
   // Videos y carruseles: los dos se miden en vivo (YouTube por id, Publer por la primera línea del pie).
   const videos = [...leer('videos.json'), ...leerSiHay('carruseles.json')];
   const ahora = Date.now();
-  const [yt, pbNuevo, igNuevo, seg] = await Promise.allSettled([
+  const [yt, pbNuevo, igNuevo, seg, ven] = await Promise.allSettled([
     youtube(estado, videos),
     ahora < ultimoPubler.hasta ? Promise.resolve(ultimoPubler.datos) : publer(estado, videos),
     ahora < ultimoInstagram.hasta ? Promise.resolve(ultimoInstagram.datos) : instagram(videos),
     seguidores(estado),
+    ventas(),
   ]);
   if (ahora >= ultimoInstagram.hasta) {
     ultimoInstagram = igNuevo.status === 'fulfilled'
@@ -248,6 +295,7 @@ export default async function handler(req, res) {
     instagram_actualizado: ig ? ultimoInstagram.cuando : null,
     porVideo,
     seguidores: seg.status === 'fulfilled' ? seg.value : null,
+    ventas: ven.status === 'fulfilled' ? ven.value : {conectado: true, error: ven.reason?.message},
     errores: [
       ...(yt.status === 'rejected' ? [`YouTube: ${yt.reason.message}`] : []),
       ...(pb.status === 'rejected' ? [`Publer: ${pb.reason.message}`] : []),

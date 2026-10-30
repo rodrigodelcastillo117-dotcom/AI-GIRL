@@ -449,3 +449,10 @@ html { scroll-behavior: smooth; }
 .esencial .mosaico:has(#m-subs), .esencial .mosaico:has(#m-calidad), .esencial .mosaico:has(#m-lecciones),
 .esencial .panel:has(#g-saldo), .esencial .panel:has(#g-gasto), .esencial .panel:has(#g-calidad), .esencial .panel:has(#g-calor),
 .esencial .panel:has(#lecciones), .esencial .panel:has(#t-plan), .esencial .panel:has(#t-bitacora) { display: none !important; }
+
+/* Ventas por red */
+.ventas { display: grid; gap: 14px; }
+.ventas-cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 12px; }
+.ventas-cifras div { padding: 12px 14px; border: 1px solid var(--linea); background: rgba(73, 214, 236, .04); display: grid; gap: 2px; }
+.ventas-cifras b { font-family: var(--titulo); font-size: 1.8rem; color: var(--oro); text-shadow: 0 0 18px rgba(245, 197, 66, .4); }
+.ventas-cifras small { font-family: var(--mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tenue); }

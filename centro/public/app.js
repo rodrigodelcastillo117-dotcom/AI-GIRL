@@ -243,6 +243,7 @@ function dibujarTodo() {
   dibujarMetas();
   dibujarDespegues();
   dibujarAudiencia();
+  dibujarVentas();
   dibujarHorarios(FOTO.auditoria || {}, estado);
   dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
@@ -527,6 +528,37 @@ function dibujarAudiencia() {
     }));
   };
   caja.replaceChildren(...(paises.length ? [bloque('Países', paises)] : []), ...(edades.length ? [bloque('Edades', edades)] : []));
+}
+
+const NOMBRE_ORIGEN = {yt: 'YouTube', tt: 'TikTok', ig: 'Instagram', guia: 'Guía gratis', directo: 'Directo a la página', otro: 'Otro enlace', sin_origen: 'Sin origen'};
+const COLOR_ORIGEN = {yt: '#ff3b55', tt: '#facc15', ig: '#a855f7', guia: '#49d6ec', directo: '#7f97a8', otro: '#7f97a8', sin_origen: '#34495a'};
+
+function dibujarVentas() {
+  // Solo ventas reales de Hotmart. Si no está conectado o falla, se dice tal cual.
+  const v = VIVO?.ventas;
+  const caja = $('ventas');
+  if (!VIVO) { caja.replaceChildren(crear('p', {className: 'vacio', textContent: 'Conectando con Hotmart…'})); return; }
+  if (!v || v.conectado === false) {
+    caja.replaceChildren(crear('p', {className: 'vacio', textContent: 'Falta conectar Hotmart: en Vercel, proyecto victoria-centro, agrega HOTMART_CLIENT_ID y HOTMART_CLIENT_SECRET.'}));
+    return;
+  }
+  if (v.error) { caja.replaceChildren(crear('p', {className: 'vacio', textContent: `Hotmart no respondió: ${v.error}`})); return; }
+  const dinero = (n) => `$${Math.round(n).toLocaleString('es-MX')}${v.moneda ? ` ${v.moneda}` : ''}`;
+  const filas = Object.entries(v.porRed || {}).sort((a, b) => b[1].ingresos - a[1].ingresos);
+  const tope = Math.max(1, ...filas.map(([, x]) => x.ingresos));
+  caja.replaceChildren(
+    crear('div', {className: 'ventas-cifras'},
+      crear('div', {}, crear('b', {textContent: fmt(v.ventas)}), crear('small', {textContent: v.ventas === 1 ? 'venta' : 'ventas'})),
+      crear('div', {}, crear('b', {textContent: dinero(v.ingresos)}), crear('small', {textContent: 'cobrado'}))),
+    filas.length ? crear('div', {className: 'atributo'}, ...filas.map(([red, x]) => {
+      const barra = crear('div', {className: 'barra-ind'});
+      const relleno = crear('i');
+      relleno.style.width = `${(x.ingresos / tope) * 100}%`;
+      relleno.style.background = COLOR_ORIGEN[red] || '#7f97a8';
+      barra.append(relleno);
+      return crear('div', {className: 'fila'}, crear('span', {textContent: NOMBRE_ORIGEN[red] || red}), barra, crear('em', {textContent: `${fmt(x.ventas)} · ${dinero(x.ingresos)}`}));
+    })) : crear('p', {className: 'vacio', textContent: 'Todavía no hay ventas aprobadas en los últimos 90 días. Aparecen aquí solas en cuanto llegue la primera.'}),
+    ...(v.ultimas?.length ? [crear('ol', {className: 'lista'}, ...v.ultimas.map((u) => elemento('dato', NOMBRE_ORIGEN[u.red] || u.red, dinero(u.valor), u.fecha ? mx(new Date(u.fecha).toISOString()) : '')))] : []));
 }
 
 function siguientePorRed(clave) {
