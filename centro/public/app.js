@@ -4,7 +4,10 @@ const REDES = [
   {clave: 'tt', nombre: 'TikTok', corto: 'TT', color: '#49d6ec'},
   {clave: 'ig', nombre: 'Instagram', corto: 'IG', color: '#f5c542'},
 ];
-const ESTADOS = {pendiente: ['En cola', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', '']};
+const ESTADOS = {pendiente: ['En cola', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', '']};
+const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube'};
+// Todo lo que sale: videos y carruseles (los dos se miden en vivo).
+const todo = () => [...FOTO.videos, ...(FOTO.carruseles || [])];
 const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación $'};
 const DIAS = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
 const ORO = '#f5c542', CIAN = '#49d6ec', ROJO = '#ff3b55', FONDO = '#07111a';
@@ -133,13 +136,13 @@ function resumen() {
   const alcanzan = restantes != null && costo ? Math.floor(restantes / costo) : null;
   const calidades = videos.map((v) => Number(v.qa_similitud)).filter((q) => q > 0);
   let likes = 0;
-  for (const v of videos.filter(salio)) for (const x of Object.values(medidas(v))) likes += Number(x.l) || 0;
+  for (const v of todo().filter(salio)) for (const x of Object.values(medidas(v))) likes += Number(x.l) || 0;
   return {
-    publicados: videos.filter((v) => ['programado', 'publicado'].includes(v.estado)).length,
+    publicados: todo().filter((v) => ['programado', 'publicado'].includes(v.estado)).length,
     listos: videos.filter((v) => v.estado === 'listo_para_publicar').length,
     cola: videos.filter((v) => v.estado === 'pendiente').length,
     fallos: ejecuciones.filter((e) => e.resultado === 'fallido').length,
-    vistas: videos.filter(salio).reduce((s, v) => s + vistasDe(v), 0),
+    vistas: todo().filter(salio).reduce((s, v) => s + vistasDe(v), 0),
     likes,
     calidad: calidades.length ? calidades.reduce((s, q) => s + q, 0) / calidades.length : null,
     lecciones: aprendizajes.length,
@@ -227,6 +230,9 @@ function dibujarTodo() {
   dibujarHangar(videos);
   dibujarListas(aprendizajes);
   dibujarTablas(videos, ejecuciones);
+  dibujarCalendario(FOTO.calendario);
+  dibujarHorarios(FOTO.auditoria || {}, estado);
+  dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
   relojes();
 }
@@ -271,12 +277,20 @@ function retencionPromedio() {
   return valores.length ? `${(valores.reduce((s, x) => s + x, 0) / valores.length).toFixed(1)}%` : '—';
 }
 
+function seguidoresDe(clave) {
+  // YouTube en vivo por su API; Instagram y TikTok por Publer (último dato semanal).
+  const n = clave === 'yt' ? VIVO?.canal?.suscriptores : VIVO?.seguidores?.[clave]?.seguidores;
+  const antes = VIVO?.seguidores?.[clave]?.antes;
+  const cambio = n != null && antes != null && n !== antes ? ` (${n > antes ? '+' : ''}${fmt(n - antes)} en 3 semanas)` : '';
+  return crear('p', {className: 'seguidores', textContent: n == null ? 'Seguidores: —' : `${fmt(n)} ${clave === 'yt' ? 'suscriptores' : 'seguidores'}${cambio}`});
+}
+
 function dibujarRedes() {
   const caja = $('redes');
   caja.replaceChildren();
   for (const red of REDES) {
     let v = 0, l = 0, c = 0, s = 0, hay = false, enCamino = false, sinVistas = false;
-    for (const video of FOTO.videos.filter(salio)) {
+    for (const video of todo().filter(salio)) {
       const m = medidas(video)[red.clave];
       if (!m) continue;
       if (m.pendiente) { enCamino = true; continue; }
@@ -295,7 +309,8 @@ function dibujarRedes() {
     tarjeta.append(
       crear('header', {}, crear('h3', {textContent: red.nombre}), crear('span', {className: `etiqueta-vivo${enVivo ? '' : ' foto'}`, textContent: enVivo ? '● en vivo' : 'última foto'})),
       valor,
-      crear('dl', {}, ...[['Likes', l], ['Coment.', c], [red.clave === 'yt' ? 'Retención' : 'Compart.', red.clave === 'yt' ? retencionPromedio() : s], ['Por video', hay ? v / Math.max(1, FOTO.videos.filter((x) => salio(x) && medidas(x)[red.clave]).length) : 0]]
+      seguidoresDe(red.clave),
+      crear('dl', {}, ...[['Likes', l], ['Coment.', c], [red.clave === 'yt' ? 'Retención' : 'Compart.', red.clave === 'yt' ? retencionPromedio() : s], ['Por post', hay ? v / Math.max(1, todo().filter((x) => salio(x) && medidas(x)[red.clave]).length) : 0]]
         .map(([dt, dd]) => crear('div', {}, crear('dt', {textContent: dt}), crear('dd', {textContent: typeof dd === 'string' ? dd : compacto(dd)})))),
     );
     caja.append(tarjeta);
@@ -345,7 +360,7 @@ function dibujarLaboratorio(a) {
     texto.append(crear('p', {textContent: 'No hay guiones pendientes: el sistema escribe 10 nuevos en la siguiente ejecución.'}));
   } else {
     texto.append(crear('p', {textContent: `${d.toca_publicar ? 'Hoy toca publicar' : 'Hoy no toca publicar'} (${d.motivo}). Siguiente a generar: ${d.por_que}`}));
-    if (d.prueba_horas) texto.append(crear('p', {className: 'nota', textContent: `Prueba de horarios: ${d.prueba_horas}. Siguiente franja: ${d.hora_siguiente}.`}));
+    if (d.horarios) texto.append(crear('p', {className: 'nota', textContent: `Hoy cada red a su hora: ${Object.entries(d.horarios).map(([r, h]) => `${NOMBRE_RED[r]} ${h}`).join(' · ')}.`}));
     if (a.reglas_vigentes?.length) texto.append(crear('ul', {}, ...a.reglas_vigentes.map((r) => crear('li', {textContent: r}))));
     if (d.cambios_sugeridos?.length) {
       texto.append(crear('ul', {}, ...d.cambios_sugeridos.map((c) => crear('li', {textContent: `${ATRIBUTOS[c.atributo] || c.atributo}: ${c.de} → ${c.a} (${c.por_que})`}))));
@@ -401,6 +416,48 @@ function dibujarTablas(videos, ejecuciones) {
     celda(v.gancho), celda(v.publica_mx), celda(medido(v) ? fmt(vistasDe(v)) : '', 'n'), celda(Number(v.qa_similitud) > 0 ? pct(Number(v.qa_similitud)) : '', 'n'), celda(v.creditos == null ? '' : fmt(v.creditos), 'n'))));
   $('t-bitacora').replaceChildren(...[...ejecuciones].sort(porFecha).reverse().map((e) => crear('tr', {}, celda(mx(e.fecha_utc)), celda(e.tipo), celda(e.video_id), chip(e.resultado),
     celda(e.detalle), celda(fmt(Number(e.creditos_usados) || 0), 'n'), celda(fmt(Number(e.creditos_restantes) || 0), 'n'))));
+}
+
+function dibujarCalendario(filas = []) {
+  const hoy = new Date().toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
+  $('t-calendario').replaceChildren(...filas.map((f) => {
+    const vivo = [...(FOTO.carruseles || []), ...FOTO.videos].find((x) => x.id === f.id);
+    const vistas = vivo && salio(vivo) && medido(vivo) ? fmt(vistasDe(vivo)) : '';
+    return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
+      celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
+      celda(f.tipo === 'carrusel' ? 'Carrusel' : 'Video'), celda(f.que),
+      celda(f.horas.ig || '—', 'n'), celda(f.horas.tt || '—', 'n'), celda(f.horas.yt || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
+  }));
+}
+
+function dibujarHorarios(a, estado) {
+  const d = a.decision || {};
+  const datos = a.horarios_por_red || {};
+  const minimo = estado.prueba_horas?.min_por_franja || 4;
+  $('horarios-red').replaceChildren(...['ig', 'tt', 'yt'].map((r) => {
+    const info = datos[r] || {franjas: {}, dias: {}};
+    const conteo = (d.conteo_horas || {})[r] || {};
+    const franjas = estado.prueba_horas?.franjas || Object.keys(conteo);
+    const filas = franjas.map((f) => {
+      const x = (info.franjas || {})[f];
+      return crear('tr', {className: info.ganadora === f ? 'gana' : ''}, celda(f), celda(`${conteo[f] ?? 0}/${minimo}`, 'n'), celda(x ? `${x.indice.toFixed(2)} (${x.n})` : '—', 'n'));
+    });
+    const dias = Object.entries(info.dias || {}).sort((p, q) => q[1].indice - p[1].indice).map(([dia, x]) => `${dia} ${x.indice.toFixed(2)}`).join(' · ');
+    return crear('div', {className: 'red-horas'},
+      crear('h3', {textContent: `${NOMBRE_RED[r]} · ${info.ganadora ? `gana ${info.ganadora}` : 'en prueba'}`}),
+      crear('table', {}, crear('thead', {}, crear('tr', {}, crear('th', {textContent: 'Hora'}), crear('th', {className: 'n', textContent: 'Publicadas'}), crear('th', {className: 'n', textContent: 'Índice'}))), crear('tbody', {}, ...filas)),
+      crear('p', {className: 'nota', textContent: `${d.horarios?.[r] ? `Hoy toca ${d.horarios[r]}. ` : ''}${dias ? `Mejor día: ${dias}` : 'Los días se comparan cuando haya publicaciones medidas.'}`}));
+  }));
+}
+
+function dibujarCarruseles(lista = []) {
+  $('t-carruseles').replaceChildren(...lista.map((c) => {
+    const horas = Object.entries(c.horas || {}).map(([r, h]) => `${NOMBRE_RED[r]} ${h.slice(5)}`).join(' · ');
+    const m = medidas(c);
+    const red = (clave) => celda(salio(c) && m[clave] ? fmt(m[clave].v) : '', 'n');
+    return crear('tr', {}, celda(c.id), chip(c.estado), celda(c.tema), celda(c.gancho), celda(horas || '—'),
+      red('ig'), red('tt'), red('yt'), celda(salio(c) && medido(c) ? fmt(vistasDe(c)) : '', 'n'));
+  }));
 }
 
 // ---------- gráficas ----------

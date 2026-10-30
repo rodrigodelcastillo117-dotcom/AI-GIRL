@@ -95,10 +95,15 @@
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
    "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
-   "programado_utc": "2026-11-02T00:45:00Z",
    "youtube": "https://youtube.com/shorts/OgSZUknXNHc",
    "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
-   "playlist": true
+   "playlist": true,
+   "publica_utc": "2026-11-02T00:45:00Z",
+   "publica_utc_por_red": {
+    "ig": "2026-11-02T00:45:00Z",
+    "tt": "2026-11-02T00:45:00Z",
+    "yt": "2026-11-02T00:45:00Z"
+   }
   },
   {
    "id": "c02",
@@ -176,10 +181,15 @@
    },
    "pilar": "finanzas",
    "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
-   "programado_utc": "2026-10-31T00:45:00Z",
    "youtube": "https://youtube.com/shorts/IPwU8EGGwZU",
    "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
-   "playlist": true
+   "playlist": true,
+   "publica_utc": "2026-10-31T00:45:00Z",
+   "publica_utc_por_red": {
+    "ig": "2026-10-31T00:45:00Z",
+    "tt": "2026-10-31T00:45:00Z",
+    "yt": "2026-10-31T00:45:00Z"
+   }
   },
   {
    "id": "c03",

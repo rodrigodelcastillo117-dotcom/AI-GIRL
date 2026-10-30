@@ -291,6 +291,10 @@ def medir():
         print('VERIFICACIÓN:', p)
     videos = [v for v in plan['videos'] if v.get('publica_utc') and a_utc(v['publica_utc']) <= ahora
               and (ahora - a_utc(v['publica_utc'])).days <= DIAS_DE_MEDICION]
+    for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:  # los carruseles también se miden
+        if c.get('publica_utc') and a_utc(c['publica_utc']) <= ahora and (ahora - a_utc(c['publica_utc'])).days <= DIAS_DE_MEDICION:
+            videos.append({'id': c['id'], 'texto_post': c['texto_post'], 'publica_utc': c['publica_utc'],
+                           'publica_utc_por_red': c.get('publica_utc_por_red'), 'publicacion': {'youtube': c.get('youtube', '')}})
     if not videos:
         print('medir: todavía no hay videos publicados que medir')
         return
@@ -310,8 +314,12 @@ def medir():
     historial = cargar('metricas.json', [])
     for v in videos:
         horas = round((ahora - a_utc(v['publica_utc'])).total_seconds() / 3600, 1)
-        historial.append({'fecha_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'), 'video_id': v['id'], 'horas': horas,
-                          **juntos.get(v['id'], {})})
+        fila = juntos.get(v['id'], {})
+        for r, datos_red in fila.items():  # cada red salió a su hora (prueba de horarios por red)
+            t = (v.get('publica_utc_por_red') or {}).get(r)
+            if t and isinstance(datos_red, dict):
+                datos_red['h'] = round((ahora - a_utc(t)).total_seconds() / 3600, 1)
+        historial.append({'fecha_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'), 'video_id': v['id'], 'horas': horas, **fila})
     guardar('metricas.json', historial)
     for a in avisos:
         print('AVISO medir:', a)
@@ -373,32 +381,85 @@ def comparar(plan, notas, config):
     return base, ranking
 
 
-def prueba_de_horas(plan, ranking, config):
-    """Franja del siguiente video: rota hasta tener min_por_franja en cada una y luego fija la ganadora."""
+CORTAS = ('ig', 'tt', 'yt')
+DIAS_SEMANA = ('lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo')
+
+
+def publicaciones(plan, carruseles):
+    """Cada video o carrusel programado o publicado, con su hora (México) en cada red."""
+    for x in plan['videos'] + carruseles:
+        if x.get('estado') not in ('programado', 'publicado'):
+            continue
+        por_red = x.get('publica_utc_por_red') or ({r: x['publica_utc'] for r in CORTAS} if x.get('publica_utc') else {})
+        yield x, {r: a_utc(t).astimezone(CDMX) for r, t in por_red.items()}
+
+
+def horarios(plan, carruseles, config, fecha, ahora):
+    """Hora de cada red para lo que sale en `fecha`. Cada red rota por las franjas hasta tener
+    min_por_franja en cada una (y empieza en otra franja, así el mismo día salen a horas distintas);
+    con ganadora, 4 de cada 5 publicaciones van a esa hora y 1 sigue probando."""
     prueba = config.get('prueba_horas') or {}
     franjas = prueba.get('franjas') or [config.get('hora_por_defecto', '18:45')]
-    if prueba.get('ganadora'):
-        return {'hora_siguiente': prueba['ganadora'], 'estado': f"fija en {prueba['ganadora']}", 'conteo': {}}
-    conteo = {f: 0 for f in franjas}
-    for v in plan['videos']:
-        if v['estado'] in ('programado', 'publicado') and v.get('publica_utc'):
-            hora = a_utc(v['publica_utc']).astimezone(CDMX).strftime('%H:%M')
-            if hora in conteo:
-                conteo[hora] += 1
-    minimo_franja = prueba.get('min_por_franja', 5)
-    filas = {f['valor']: f for f in ranking.get('hora', [])}
-    medidas = [filas[f] for f in franjas if f in filas and filas[f]['n'] >= minimo_franja]
-    if len(medidas) == len(franjas) and len(franjas) > 1:
-        orden = sorted(medidas, key=lambda f: -f['indice'])
-        if orden[0]['indice'] >= 1.2 * orden[1]['indice'] or min(conteo.values()) >= minimo_franja + 3:
-            prueba['ganadora'] = orden[0]['valor']
+    minimo_f = prueba.get('min_por_franja', 4)
+    ganadoras = prueba.get('ganadoras') or {}
+    conteo = {r: {f: 0 for f in franjas} for r in CORTAS}
+    for _, horas in publicaciones(plan, carruseles):
+        for r, t in horas.items():
+            if r in conteo and t.strftime('%H:%M') in conteo[r]:
+                conteo[r][t.strftime('%H:%M')] += 1
+    a_hora = lambda f: datetime.datetime.combine(fecha, datetime.time.fromisoformat(f), tzinfo=CDMX)
+    libres = [f for f in franjas if a_hora(f) > ahora + datetime.timedelta(minutes=20)] or franjas[-1:]
+    elegidas, cuando = {}, {}
+    for i, r in enumerate(CORTAS):
+        if ganadoras.get(r) in libres and sum(conteo[r].values()) % 5:
+            f = ganadoras[r]
+        else:
+            f = min(libres, key=lambda x: (conteo[r][x], (franjas.index(x) - 2 * i) % len(franjas)))
+        elegidas[r] = f
+        cuando[r] = a_hora(f).astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    estado = ' · '.join(f"{r}: {'fija ' + ganadoras[r] if ganadoras.get(r) else 'en prueba'} ("
+                        + ', '.join(f'{f} {conteo[r][f]}/{minimo_f}' for f in franjas) + ')' for r in CORTAS)
+    return elegidas, cuando, conteo, estado
+
+
+def horas_por_red(plan, carruseles, historial, config):
+    """Qué franja y qué día rinden más en cada red. Vistas a ~36 h en esa red, divididas entre la
+    mediana de esa red y ese formato (video o carrusel) para no mezclarlos. Fija la ganadora de la red
+    cuando todas las franjas tienen min_por_franja y la mejor rinde 20% más que la segunda."""
+    filas = []
+    for x, horas in publicaciones(plan, carruseles):
+        tipo = 'carrusel' if x['id'].startswith('c') else 'video'
+        for r, t in horas.items():
+            fotos = [(f, (f.get(r) or {}).get('h') or f['horas']) for f in historial
+                     if f['video_id'] == x['id'] and (f.get(r) or {}).get('v') is not None]
+            fotos = [(f, h) for f, h in fotos if 20 <= h <= 60]
+            if fotos:
+                f, _ = min(fotos, key=lambda par: abs(par[1] - HORAS_CALIFICACION))
+                filas.append((r, tipo, t.strftime('%H:%M'), DIAS_SEMANA[t.weekday()], f[r]['v']))
+    medianas = {}
+    for r, tipo, *_, v in filas:
+        medianas.setdefault((r, tipo), []).append(v)
+    medianas = {k: statistics.median(v) for k, v in medianas.items()}
+    prueba = config.get('prueba_horas') or {}
+    minimo_f = prueba.get('min_por_franja', 4)
+    salida = {}
+    for r in CORTAS:
+        grupos = {'franjas': {}, 'dias': {}}
+        for rr, tipo, franja, dia, v in filas:
+            if rr == r:
+                indice = v / medianas[(r, tipo)] if medianas[(r, tipo)] else 0
+                grupos['franjas'].setdefault(franja, []).append(indice)
+                grupos['dias'].setdefault(dia, []).append(indice)
+        salida[r] = {k: {valor: {'n': len(l), 'indice': round(statistics.mean(l), 2)} for valor, l in g.items()}
+                     for k, g in grupos.items()}
+        orden = sorted(salida[r]['franjas'].items(), key=lambda kv: -kv[1]['indice'])
+        completas = all(salida[r]['franjas'].get(f, {}).get('n', 0) >= minimo_f for f in prueba.get('franjas', []))
+        if completas and len(orden) > 1 and orden[0][1]['indice'] >= 1.2 * max(orden[1][1]['indice'], 0.01):
+            prueba.setdefault('ganadoras', {})[r] = orden[0][0]
             config['prueba_horas'] = prueba
             guardar('config.json', config)
-            return {'hora_siguiente': orden[0]['valor'], 'conteo': conteo,
-                    'estado': f"terminó: gana {orden[0]['valor']} (índice {orden[0]['indice']} contra {orden[1]['indice']})"}
-    siguiente = min(franjas, key=lambda f: (conteo[f], franjas.index(f)))
-    return {'hora_siguiente': siguiente, 'conteo': conteo,
-            'estado': 'en prueba: ' + ', '.join(f'{f} {conteo[f]}/{minimo_franja}' for f in franjas)}
+        salida[r]['ganadora'] = (prueba.get('ganadoras') or {}).get(r)
+    return salida
 
 
 def toca_publicar(plan, hoy, config):
@@ -430,10 +491,12 @@ def creditos(video, config):
 
 def decidir(plan, ranking, hoy, config):
     toca, motivo = toca_publicar(plan, hoy, config)
-    horas = prueba_de_horas(plan, ranking, config)
+    carruseles = cargar('carruseles.json', {'carruseles': []})['carruseles']
+    ahora = datetime.datetime.now(datetime.timezone.utc)
+    elegidas, cuando, conteo, estado = horarios(plan, carruseles, config, hoy, ahora)
     listo = next((v for v in plan['videos'] if v['estado'] == 'listo_para_publicar'), None)
-    base = {'toca_publicar': toca, 'motivo': motivo, 'hora_siguiente': horas['hora_siguiente'],
-            'prueba_horas': horas['estado'], 'conteo_horas': horas['conteo'],
+    base = {'toca_publicar': toca, 'motivo': motivo, 'hora_siguiente': elegidas['ig'], 'horarios': elegidas,
+            'cuando': cuando, 'prueba_horas': estado, 'conteo_horas': conteo,
             'publicar_hoy': listo['id'] if toca and listo else None}
     # Videos de temporada ("ventana"): solo si salen dentro de sus fechas, y van primero porque caducan.
     sale = (hoy + datetime.timedelta(days=config.get('dias_entre_videos', 2))).isoformat()
@@ -563,6 +626,7 @@ def auditar():
         'notas': {vid: n for vid, n in sorted(notas.items())},
         'ranking': ranking,
         'decision': decidir(plan, ranking, hoy, config),
+        'horarios_por_red': horas_por_red(plan, cargar('carruseles.json', {'carruseles': []})['carruseles'], historial, config),
         'reglas_vigentes': reglas_vigentes(ranking, config),
         'alertas': alertas(plan, ranking, notas, ejecuciones, config, hoy),
     }
@@ -574,7 +638,14 @@ def auditar():
     print(f"Auditoría: {len(notas)} videos calificados, base {base} vistas a 36 h.")
     for atributo, filas in ranking.items():
         print(f'  {atributo}: ' + ', '.join(f"{f['valor']} {f['indice']} ({f['n']}, {f['estado']})" for f in filas))
-    print(f"Hoy {'SÍ' if d['toca_publicar'] else 'NO'} toca publicar ({d['motivo']}). Hora: {d['hora_siguiente']} · prueba de horas {d['prueba_horas']}.")
+    print(f"Hoy {'SÍ' if d['toca_publicar'] else 'NO'} toca publicar video ({d['motivo']}).")
+    print('Horas de hoy por red: ' + ', '.join(f"{r} {h}" for r, h in d['horarios'].items())
+          + ' · publer: ' + ','.join(f"{r}={d['cuando'][r]}" for r in ('ig', 'tt')) + f" · youtube: {d['cuando']['yt']}")
+    print('Prueba de horarios:', d['prueba_horas'])
+    for r, datos in resultado['horarios_por_red'].items():
+        if datos['franjas']:
+            print(f"  {r}: " + ', '.join(f"{f} {x['indice']} ({x['n']})" for f, x in sorted(datos['franjas'].items()))
+                  + (f" · gana {datos['ganadora']}" if datos['ganadora'] else ''))
     if d.get('publicar_hoy'):
         print(f"Publicar hoy el video listo {d['publicar_hoy']}.")
     print('Siguiente a generar:', d['por_que'], f"({d['segundos']} s, {d['creditos']} créditos)" if d.get('segundos') else '')

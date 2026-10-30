@@ -70,7 +70,7 @@
         <div class="identidad">
           <div class="usuario">@victoriatheceo · Personaje IA · Instagram · TikTok · YouTube</div>
           <h1 class="glitch" data-texto="Victoria The CEO">Victoria <b>The CEO</b></h1>
-          <p class="lema"><b id="l-publicados">—</b> videos en redes, <b id="l-listos">—</b> listos para salir y energía para <b id="l-alcanzan">—</b> videos más.</p>
+          <p class="lema"><b id="l-publicados">—</b> publicaciones en redes, <b id="l-listos">—</b> listos para salir y energía para <b id="l-alcanzan">—</b> videos más.</p>
           <div class="gran-numero"><span class="valor" id="vistas-totales">—</span><span class="que">vistas totales en vivo</span></div>
         </div>
         <div class="mision">
@@ -178,12 +178,40 @@
         </article>
       </section>
 
+      <div class="seccion">Calendario <small>video y carrusel en días alternos · cada red a su hora</small></div>
+      <section class="rejilla-paneles">
+        <article class="panel ancho">
+          <div class="codigo">CAL-01</div>
+          <h2>Algo nuevo cada día</h2>
+          <p class="nota">Lo programado, con la hora de cada red, y lo que toca los días siguientes. Las vistas son en vivo.</p>
+          <div class="caja-tabla"><table>
+            <thead><tr><th>Día</th><th>Tipo</th><th>Qué sale</th><th class="n">Instagram</th><th class="n">TikTok</th><th class="n">YouTube</th><th>Estado</th><th class="n">Vistas</th></tr></thead>
+            <tbody id="t-calendario"></tbody>
+          </table></div>
+        </article>
+        <article class="panel ancho">
+          <div class="codigo">CAL-02</div>
+          <h2>Mejor hora y día por red</h2>
+          <p class="nota">Cada red rota por 5 horarios hasta tener 4 publicaciones en cada uno. Índice 1.0 = lo normal en esa red (videos y carruseles, cada uno contra su propio promedio). Gana el horario que rinde 20% más que el segundo; después se usa 4 de cada 5 veces.</p>
+          <div class="horarios-red" id="horarios-red"></div>
+        </article>
+        <article class="panel ancho">
+          <div class="codigo">CAR-01</div>
+          <h2>Carruseles</h2>
+          <p class="nota">Instagram y TikTok como fotos; YouTube como short con voz. Vistas en vivo por red.</p>
+          <div class="caja-tabla"><table>
+            <thead><tr><th>#</th><th>Estado</th><th>Tema</th><th>Portada</th><th>Sale (México)</th><th class="n">IG</th><th class="n">TT</th><th class="n">YT</th><th class="n">Total</th></tr></thead>
+            <tbody id="t-carruseles"></tbody>
+          </table></div>
+        </article>
+      </section>
+
       <div class="seccion">Laboratorio <small>qué funciona y qué no · se recalcula cada mañana</small></div>
       <section class="rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">LAB-01</div>
           <h2>Decisión de hoy</h2>
-          <p class="nota">Cada video se califica por sus vistas a 36 horas contra lo normal del canal (índice 1.0). Algo gana con 1.2 o más y pierde con 0.8 o menos, con al menos 3 videos (los días de la semana, con 15). De cada 10 videos, 7 aprovechan lo que gana y 3 prueban cosas nuevas. Un video cada 2 días, rotando franjas hasta encontrar la mejor hora.</p>
+          <p class="nota">Cada video se califica por sus vistas a 36 horas contra lo normal del canal (índice 1.0). Algo gana con 1.2 o más y pierde con 0.8 o menos, con al menos 3 videos (los días de la semana, con 15). De cada 10 videos, 7 aprovechan lo que gana y 3 prueban cosas nuevas. Video y carrusel en días alternos; cada red busca su mejor hora por separado.</p>
           <div class="decision" id="decision"></div>
         </article>
       </section>

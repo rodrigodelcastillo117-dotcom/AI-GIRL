@@ -82,5 +82,12 @@
   "tipo": "publicacion",
   "aprendizaje": "El 28-oct salieron en el Instagram y el TikTok de Victoria posts de \"Nadie Te Lo Explicó\" con \"publicar ahora\", desde el usuario de Rodrigo en Publer (otro sistema usa esas cuentas).",
   "regla": "La verificación diaria revisa que en las cuentas de Victoria no salga nada ajeno y lo reporta."
+ },
+ {
+  "fecha_utc": "2026-10-30T09:00:00Z",
+  "origen": "Rodrigo",
+  "tipo": "publicacion",
+  "aprendizaje": "Los posts AJENOS del 24 al 28 de octubre (Nadie Te lo Explicó) los subió Harvey, la automatización del otro proyecto en el droplet. Rodrigo la desconectó de las cuentas de Victoria el 30-oct y archivó esos posts en las apps.",
+  "regla": "Los AJENOS de esas fechas ya están resueltos: mencionarlos solo como resueltos. Un AJENO con fecha posterior al 30-oct es alarma real: va primero en el reporte."
  }
 ]

@@ -169,18 +169,50 @@ async function instagram(videos) {
   return {porVideo, cuenta: cuenta.username};
 }
 
+let ultimosSeguidores = {hasta: 0, datos: null};
+
+// Seguidores de Instagram y TikTok (Publer, gráfica "followers": último valor semanal). Cada 30 min.
+async function seguidores(estado) {
+  if (Date.now() < ultimosSeguidores.hasta) return ultimosSeguidores.datos;
+  const clave = variable('PUBLER_API_KEY');
+  if (!clave) return null;
+  const cabeceras = {Authorization: `Bearer-API ${clave}`, Accept: 'application/json', 'User-Agent': AGENTE,
+                     'Publer-Workspace-Id': variable('PUBLER_WORKSPACE_ID')};
+  const hoy = new Date();
+  const desde = new Date(hoy.getTime() - 21 * 864e5);
+  const datos = {};
+  await Promise.all(Object.entries(estado.cuentas_publer || {}).map(async ([id, red]) => {
+    const corto = {instagram: 'ig', tiktok: 'tt'}[red];
+    if (!corto) return;
+    try {
+      const r = await pedir(`${PUBLER}/analytics/${id}/chart_data?chart_ids[]=followers&from=${dia(desde)}&to=${dia(hoy)}`, {headers: cabeceras}, 'Publer', 10_000);
+      const serie = r.current?.followers || [];
+      const ultimo = serie.at(-1)?.last_value;
+      if (ultimo != null) datos[corto] = {seguidores: ultimo, antes: serie.length > 1 ? serie[0].last_value : null};
+    } catch (e) {
+      console.log(`seguidores ${red} falló: ${e.message}`);
+    }
+  }));
+  ultimosSeguidores = {hasta: Date.now() + 30 * 60_000, datos};
+  return datos;
+}
+
+const leerSiHay = (nombre) => { try { return leer(nombre); } catch { return []; } };
+
 export default async function handler(req, res) {
   if (!autorizado(req)) return negar(res);
   res.setHeader('Cache-Control', 'private, no-store');
   if (memoria.datos && Date.now() < memoria.hasta) return res.status(200).json(memoria.datos);
 
   const estado = leer('estado.json')[0];
-  const videos = leer('videos.json');
+  // Videos y carruseles: los dos se miden en vivo (YouTube por id, Publer por la primera línea del pie).
+  const videos = [...leer('videos.json'), ...leerSiHay('carruseles.json')];
   const ahora = Date.now();
-  const [yt, pbNuevo, igNuevo] = await Promise.allSettled([
+  const [yt, pbNuevo, igNuevo, seg] = await Promise.allSettled([
     youtube(estado, videos),
     ahora < ultimoPubler.hasta ? Promise.resolve(ultimoPubler.datos) : publer(estado, videos),
     ahora < ultimoInstagram.hasta ? Promise.resolve(ultimoInstagram.datos) : instagram(videos),
+    seguidores(estado),
   ]);
   if (ahora >= ultimoInstagram.hasta) {
     ultimoInstagram = igNuevo.status === 'fulfilled'
@@ -210,6 +242,7 @@ export default async function handler(req, res) {
     publer_actualizado: pb.status === 'fulfilled' ? ultimoPubler.cuando : null,
     instagram_actualizado: ig ? ultimoInstagram.cuando : null,
     porVideo,
+    seguidores: seg.status === 'fulfilled' ? seg.value : null,
     errores: [
       ...(yt.status === 'rejected' ? [`YouTube: ${yt.reason.message}`] : []),
       ...(pb.status === 'rejected' ? [`Publer: ${pb.reason.message}`] : []),

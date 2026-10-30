@@ -36,7 +36,7 @@ python scripts/aprender.py auditar   # qué gana, qué pierde, si hoy toca publi
   exacto: eso va al reporte. Nunca digas "publicado" sin esa comprobación.
 - `auditar` escribe `contenido/auditoria.json`: `ranking` (índice de cada característica: 1.0 es
   normal, 1.2 o más gana, 0.8 o menos pierde, con al menos 3 videos; los días, con 15),
-  `decision` (`toca_publicar`, `publicar_hoy`, `hora_siguiente`, `prueba_horas`, siguiente video a
+  `decision` (`toca_publicar`, `publicar_hoy`, `horarios` y `cuando` por red, `prueba_horas`, siguiente video a
   generar y `cambios_sugeridos`), `reglas_vigentes` (reglas con cifras de los datos propios) y
   `alertas`.
 
@@ -51,7 +51,7 @@ más alcance. Instagram y TikTok los contesta Rodrigo en la app.
 
 Sale un **carrusel** (`docs/CARRUSELES.md`): el primero en estado `listo` de
 `contenido/carruseles.json` (los de temporada, si su `ventana` incluye hoy, van primero). Se publica
-a la hora de la decisión: Instagram y TikTok como fotos (`publer_carrusel.py`) y YouTube como short
+a la hora de cada red (`decision.cuando`): Instagram y TikTok como fotos (`publer_carrusel.py`) y YouTube como short
 (`carrusel_video.py short` y `youtube.py subir`). Si no queda ninguno `listo`, escribe 5 nuevos
 (reglas en `CARRUSELES.md`). Luego pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
 video `listo_para_publicar`, genera uno hoy (pasos 1b a 6) y déjalo listo: así el día de publicar
@@ -59,10 +59,15 @@ ya está hecho y la franja de las 8:00 nunca se pierde.
 
 ## 1b. Si hoy SÍ toca publicar
 
-1. Publica el video `listo_para_publicar` (`decision.publicar_hoy`) a la hora
-   `decision.hora_siguiente` de hoy (paso 7). Si esa hora ya pasó o faltan menos de 15 minutos,
-   usa la siguiente franja de hoy de `config.json → prueba_horas.franjas`; nunca se tira un video
-   (regla 31).
+1. Publica el video `listo_para_publicar` (`decision.publicar_hoy`) a la hora de **cada red**
+   (`decision.cuando`, paso 7). **Prueba de horarios por red:** Instagram, TikTok y YouTube salen a
+   horas distintas y cada red rota por las 5 franjas de `config.json → prueba_horas` hasta tener 4
+   publicaciones en cada una; `aprender.py auditar` compara cada red por franja y por día de la semana
+   (videos y carruseles, cada formato contra su propia mediana) y fija la ganadora de cada red
+   (`prueba_horas.ganadoras`), que se usa 4 de cada 5 veces. Publer:
+   `publer.py publicar ... "ig=<decision.cuando.ig>,tt=<decision.cuando.tt>" ...`; YouTube:
+   `youtube.py subir ... <decision.cuando.yt>`. Guarda en el plan `publica_utc_por_red`
+   (`{"ig", "tt", "yt"}`) y `publica_utc` = la más tarde de las tres. Nunca se tira un video (regla 31).
 2. Si no había video listo, genera el de `decision.video_id` (pasos 2 a 6) y publícalo hoy.
 3. Después genera el siguiente (`decision.video_id`) y déjalo como `listo_para_publicar`: así
    siempre hay uno en reserva.

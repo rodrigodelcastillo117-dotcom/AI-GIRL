@@ -15,12 +15,15 @@
  "hora_auditoria": "06:37",
  "prueba_horas": {
   "franjas": [
-   "18:45",
    "08:00",
-   "14:00"
+   "12:30",
+   "15:00",
+   "18:45",
+   "21:00"
   ],
-  "min_por_franja": 5,
-  "ganadora": null
+  "min_por_franja": 4,
+  "ganadoras": {},
+  "nota": "Una rotación por red (ig, tt, yt); cada red fija su ganadora y sigue probando 1 de cada 5."
  },
  "titulo_max": 45,
  "hashtags_fijos": [

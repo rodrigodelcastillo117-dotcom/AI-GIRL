@@ -140,6 +140,13 @@ def red(cuenta):
     return cuenta['provider']
 
 
+def cuando_de(cuando, proveedor):
+    """"2026-11-01T00:45:00Z" (la misma hora en todas) o "ig=...,tt=..." (una hora por red: prueba de horarios)."""
+    if '=' not in cuando:
+        return cuando
+    return dict(x.split('=', 1) for x in cuando.split(','))[{'instagram': 'ig', 'tiktok': 'tt'}[proveedor]]
+
+
 def armar_post(cuentas, media_id, texto, titulo, cuando):
     redes = {}
     for proveedor in {red(c) for c in cuentas}:
@@ -188,7 +195,7 @@ def main():
     if prueba:
         falsas = [{'id': 'ID_IG', 'provider': 'instagram'}, {'id': 'ID_TT', 'provider': 'tiktok'}]
         for c in falsas:
-            print(json.dumps(armar_post([c], 'MEDIA_ID', por_red.get(red(c), texto), titulo, cuando), ensure_ascii=False, indent=1))
+            print(json.dumps(armar_post([c], 'MEDIA_ID', por_red.get(red(c), texto), titulo, cuando_de(cuando, red(c))), ensure_ascii=False, indent=1))
         return
 
     ws = workspace_id()
@@ -219,7 +226,8 @@ def main():
     # Una petición por red (regla 5): si una falla, las otras no se pierden y se sabe cuál fue.
     fallidas = []
     for cuenta in cuentas:
-        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando))
+        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo,
+                                                                  cuando_de(cuando, red(cuenta))))
         job = r.get('job_id') or (r.get('data') or {}).get('job_id')
         if not job:
             fallidas.append(f'{red(cuenta)}: Publer no regresó job_id ({json.dumps(r)[:300]})')
@@ -229,7 +237,7 @@ def main():
         if resultado.get('status') == 'failed' or fallas:
             fallidas.append(f'{red(cuenta)}: {json.dumps(fallas or resultado, ensure_ascii=False)[:500]}')
         else:
-            print(f'OK {red(cuenta)} programado para {cuando} (job {job}). Se confirma que salió en la siguiente medición.')
+            print(f'OK {red(cuenta)} programado para {cuando_de(cuando, red(cuenta))} (job {job}). Se confirma que salió en la siguiente medición.')
     if fallidas:
         sys.exit('ERROR: Publer reportó fallas en ' + ' | '.join(fallidas))
 

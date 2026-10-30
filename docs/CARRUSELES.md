@@ -9,7 +9,8 @@ short con voz. El laboratorio dirá con datos si conviene más foto o video en c
 
 - `contenido/carruseles.json`: cada carrusel (portada, 3-8 datos, cierre, voces, SEO, fuente).
 - `scripts/carrusel.py <id>`: dibuja `carruseles/<id>/00.png...` (1080x1350).
-- `scripts/publer_carrusel.py <id> <cuando_utc>`: lo programa en Instagram y TikTok (`--borrador`
+- `scripts/publer_carrusel.py <id> "ig=<cuando.ig>,tt=<cuando.tt>"`: lo programa en Instagram y TikTok, cada
+  uno a su hora de la prueba de horarios (guarda `publica_utc_por_red` y `publica_utc` en el carrusel) (`--borrador`
   lo deja en Publer sin salir). Instagram va como `"type": "photo"` con varias fotos: Publer
   rechaza `"carousel"` (probado 30-oct-2026).
 - `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube + título, descripción y

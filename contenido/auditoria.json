@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-10-30T07:11:11Z",
+ "fecha_utc": "2026-10-30T08:57:01Z",
  "videos_calificados": 0,
  "base_vistas_36h": 0,
  "notas": {},
@@ -7,12 +7,40 @@
  "decision": {
   "toca_publicar": false,
   "motivo": "el último sale el 2026-10-29; toca publicar en 1 día(s)",
-  "hora_siguiente": "18:45",
-  "prueba_horas": "en prueba: 18:45 0/5, 08:00 0/5, 14:00 0/5",
+  "hora_siguiente": "08:00",
+  "horarios": {
+   "ig": "08:00",
+   "tt": "15:00",
+   "yt": "21:00"
+  },
+  "cuando": {
+   "ig": "2026-10-30T14:00:00Z",
+   "tt": "2026-10-30T21:00:00Z",
+   "yt": "2026-10-31T03:00:00Z"
+  },
+  "prueba_horas": "ig: en prueba (08:00 0/4, 12:30 0/4, 15:00 0/4, 18:45 2/4, 21:00 0/4) · tt: en prueba (08:00 0/4, 12:30 0/4, 15:00 0/4, 18:45 2/4, 21:00 0/4) · yt: en prueba (08:00 0/4, 12:30 0/4, 15:00 0/4, 18:45 2/4, 21:00 0/4)",
   "conteo_horas": {
-   "18:45": 0,
-   "08:00": 0,
-   "14:00": 0
+   "ig": {
+    "08:00": 0,
+    "12:30": 0,
+    "15:00": 0,
+    "18:45": 2,
+    "21:00": 0
+   },
+   "tt": {
+    "08:00": 0,
+    "12:30": 0,
+    "15:00": 0,
+    "18:45": 2,
+    "21:00": 0
+   },
+   "yt": {
+    "08:00": 0,
+    "12:30": 0,
+    "15:00": 0,
+    "18:45": 2,
+    "21:00": 0
+   }
   },
   "publicar_hoy": null,
   "video_id": "32",
@@ -22,6 +50,23 @@
   "por_que": "Serie: toca el capítulo 1 (uno cada 2 videos).",
   "segundos": 16,
   "creditos": 670
+ },
+ "horarios_por_red": {
+  "ig": {
+   "franjas": {},
+   "dias": {},
+   "ganadora": null
+  },
+  "tt": {
+   "franjas": {},
+   "dias": {},
+   "ganadora": null
+  },
+  "yt": {
+   "franjas": {},
+   "dias": {},
+   "ganadora": null
+  }
  },
  "reglas_vigentes": [],
  "alertas": [

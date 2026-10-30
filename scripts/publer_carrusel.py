@@ -1,7 +1,7 @@
 """Programa un carrusel de contenido/carruseles.json en el Instagram y el TikTok de Victoria (Publer).
 
 Uso: python publer_carrusel.py <id> <cuando_utc> [--borrador] [--prueba]
-     cuando_utc: "2026-11-03T00:45:00Z"
+     cuando_utc: "2026-11-03T00:45:00Z" o una hora por red: "ig=2026-11-03T14:00:00Z,tt=2026-11-03T18:30:00Z"
      --borrador  lo deja como borrador en Publer (no sale): para que Rodrigo lo vea antes.
      --prueba    imprime lo que mandaría, sin llamar a Publer.
 
@@ -17,7 +17,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import _pedir, cuentas_victoria, esperar_job, red, workspace_id, ya_programadas  # noqa: E402
+from publer import cuando_de, _pedir, cuentas_victoria, esperar_job, red, workspace_id, ya_programadas  # noqa: E402
 
 
 def red_post(proveedor, tipo_ig, media, texto, titulo):
@@ -65,7 +65,7 @@ def main():
         falsa = [{'id': 'ID_IG', 'provider': 'instagram'}, {'id': 'ID_TT', 'provider': 'tiktok'}]
         media = [{'id': f'MEDIA_{i}', 'type': 'image'} for i in range(len(fotos))]
         for cuenta in falsa:
-            print(json.dumps(cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando, estado), ensure_ascii=False, indent=1))
+            print(json.dumps(cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado), ensure_ascii=False, indent=1))
         return
     ws = workspace_id()
     _, cuentas = cuentas_victoria(ws)
@@ -88,11 +88,11 @@ def main():
     fallidas = []
     for cuenta in cuentas:
         # Instagram: Publer rechaza "carousel" (error interno) y acepta "photo" con varias fotos (probado 30-oct-2026).
-        motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando, estado))
+        motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado))
         if motivo:
             fallidas.append(f'{red(cuenta)}: {motivo}')
         else:
-            print(f'OK {red(cuenta)} {"borrador" if estado == "draft" else "programado para " + cuando}.')
+            print(f'OK {red(cuenta)} {"borrador" if estado == "draft" else "programado para " + cuando_de(cuando, red(cuenta))}.')
     if fallidas:
         sys.exit('ERROR: Publer reportó fallas en ' + ' | '.join(fallidas))
 

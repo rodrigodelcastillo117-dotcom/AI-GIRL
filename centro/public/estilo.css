@@ -231,3 +231,11 @@ tbody tr:hover td { background: rgba(73, 214, 236, .05); }
 .atributo .barra-ind.pierde i { background: var(--rojo); }
 .atributo .barra-ind b { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--texto); opacity: .5; }
 .atributo .fila em { font-style: normal; font-family: var(--mono); font-size: .72rem; text-align: right; color: var(--tenue); white-space: nowrap; }
+
+/* Calendario y prueba de horarios por red */
+tr.hoy td { background: rgba(245, 197, 66, .08); }
+.horarios-red { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.red-horas h3 { margin: 0 0 .5rem; font-size: .95rem; }
+.red-horas table { width: 100%; }
+.red-horas tr.gana td { color: var(--oro, #f5c542); font-weight: 700; }
+.red .seguidores { margin: .25rem 0 .5rem; font-size: .85rem; color: var(--oro); }
