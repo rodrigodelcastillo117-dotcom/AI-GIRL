@@ -15,7 +15,7 @@
     "que": "Sale el carrusel c03 · reglas de los grandes (Instagram 12:30 · TikTok 15:00 · YouTube 21:00)"
    }
   ],
-  "generado_utc": "2026-10-30T17:03:50Z",
+  "generado_utc": "2026-10-30T17:04:27Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -44,8 +44,8 @@
     ],
     "tt": [
      "09:00",
-     "11:00",
      "13:00",
+     "15:00",
      "17:00",
      "20:00"
     ],
@@ -57,7 +57,7 @@
      "20:00"
     ]
    },
-   "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos."
+   "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas)."
   },
   "productos_hotmart": {
    "8834813": "El Tablero de la CEO"

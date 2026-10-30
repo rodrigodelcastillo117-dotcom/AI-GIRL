@@ -34,8 +34,8 @@
    ],
    "tt": [
     "09:00",
-    "11:00",
     "13:00",
+    "15:00",
     "17:00",
     "20:00"
    ],
@@ -47,7 +47,7 @@
     "20:00"
    ]
   },
-  "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos."
+  "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas)."
  },
  "titulo_max": 45,
  "hashtags_fijos": [
