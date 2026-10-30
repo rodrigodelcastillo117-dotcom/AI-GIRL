@@ -1,1510 +1,1736 @@
 {
- "reglas": {
-  "duracion_s": 12,
-  "max_palabras_guion": 28,
-  "rotacion_pilares": [
-   "negocio",
-   "finanzas",
-   "mentalidad",
-   "vida",
-   "motivacion_economica"
-  ],
-  "publicacion": "directa",
-  "zona_horaria": "America/Mexico_City",
-  "prueba_de_horario": "Rotación de franjas (config.json → prueba_horas) hasta tener 5 videos por franja; luego se fija la que gane. Un video cada 2 días.",
-  "perro": "Capital, el Rottweiler, siempre dentro del cuadro de principio a fin.",
-  "camara": "Plano medio. Movimiento lento lateral o leve; NUNCA acercamiento fuerte (en el video 01 sacó a Capital del cuadro).",
-  "vestuario": "Nunca se repite. Antes de generar, confirmar que no aparece en ningún video con estado distinto de pendiente.",
-  "cierre_de_texto": "Personaje y video creados con IA.",
-  "seo": "Bloque \"seo\" por video: palabra_clave, titulo (≤45, afirmación, sin # ni : ni |, emoji opcional al final), descripcion_inicio (2 líneas), tags_concretas y hashtags concretos. Ver docs/SEO.md y docs/REGLAS_APRENDIDAS.md."
- },
- "locaciones_nuevas": {
-  "coche": "Interior de un sedán de lujo moderno, asientos de piel color crema, tablero de madera, ciudad al atardecer por la ventana, sin logotipos de marca. Ella en el asiento trasero, Capital a su lado en el asiento.",
-  "jacuzzi": "Jacuzzi en rooftop de lujo al atardecer, skyline de ciudad, toallas blancas, copa de agua mineral. Capital echado en la cubierta de madera junto al jacuzzi.",
-  "hotel": "Lobby de hotel de lujo: mármol, sillones de terciopelo, lámparas de latón, flores blancas. Ella sentada en un sillón, Capital sentado a su lado.",
-  "golf": "Campo de golf verde al amanecer, carrito de golf blanco detrás, colinas suaves. Capital sentado junto a ella.",
-  "bar": "Bar tipo speakeasy: barra de madera oscura, botellas iluminadas en ámbar, luz cálida baja, banco de piel. Capital echado junto al banco.",
-  "sala_navidad": "Sala de lujo decorada para Navidad: árbol grande con luces cálidas y esferas doradas, chimenea encendida, sofá de terciopelo color crema, regalos envueltos sin marcas. Ella de pie o sentada junto al árbol, Capital a sus pies."
- },
- "videos": [
-  {
-   "id": "01",
-   "estado": "publicado",
-   "pilar": "motivacion_economica",
-   "guion": "El uno por ciento diario te hace treinta y siete veces mejor en un año. Lo explica James Clear. Olvida el gran salto. Hoy, solo tu uno por ciento.",
-   "fuente": "James Clear, Hábitos Atómicos (1.01^365 ≈ 37.8)",
-   "locacion": "jet",
-   "vestuario": "Blazer-vestido marfil con cinturón, medias color piel, joyería dorada, tacones nude",
-   "archivo": "videos/video-01-jet-1porciento-SUBTITULADO.mp4",
-   "hora_publicacion": "20:47",
-   "publica_utc": "2026-10-29T23:47:00Z",
-   "subtitulos": [
-    "El 1% diario",
-    "te hace 37 veces",
-    "mejor en un año.",
-    "Lo explica James Clear.",
-    "Olvida el gran salto.",
-    "Hoy,",
-    "solo tu 1%."
-   ],
-   "palabras_clave": [
-    "1%",
-    "37",
-    "mejor",
-    "clear",
-    "salto",
-    "hoy"
-   ],
-   "texto_post": "El 1% diario te hace 37 veces mejor en un año. 📈\nNo necesitas un gran salto, necesitas constancia.\n\n📚 James Clear, Hábitos Atómicos\n💾 Guárdalo para cuando lo olvides.",
-   "creditos": 510,
-   "qa": {
-    "similitud": 0.95,
-    "notas": "Revisado a mano. Capital sale del cuadro en los últimos 2 s."
-   },
-   "openart": {
-    "video": "kZkUAtz9kylwIrXTauWE"
-   },
-   "publicacion": {
-    "publer": {
-     "instagram": "job 6ae2bec77ca0da5eaf26ef78",
-     "tiktok": "programado 2026-10-29 20:47 CDMX"
+  "reglas": {
+    "duracion_s": 12,
+    "max_palabras_guion": 28,
+    "rotacion_pilares": [
+      "negocio",
+      "finanzas",
+      "mentalidad",
+      "vida",
+      "motivacion_economica",
+      "relaciones",
+      "empresas"
+    ],
+    "publicacion": "directa",
+    "zona_horaria": "America/Mexico_City",
+    "prueba_de_horario": "Rotación de franjas (config.json → prueba_horas) hasta tener 5 videos por franja; luego se fija la que gane. Un video cada 2 días.",
+    "perro": "Capital, el Rottweiler, siempre dentro del cuadro de principio a fin.",
+    "camara": "Plano medio. Movimiento lento lateral o leve; NUNCA acercamiento fuerte (en el video 01 sacó a Capital del cuadro).",
+    "vestuario": "Nunca se repite. Antes de generar, confirmar que no aparece en ningún video con estado distinto de pendiente.",
+    "cierre_de_texto": "Personaje y video creados con IA.",
+    "seo": "Bloque \"seo\" por video: palabra_clave, titulo (≤45, afirmación, sin # ni : ni |, emoji opcional al final), descripcion_inicio (2 líneas), tags_concretas y hashtags concretos. Ver docs/SEO.md y docs/REGLAS_APRENDIDAS.md."
+  },
+  "locaciones_nuevas": {
+    "coche": "Interior de un sedán de lujo moderno, asientos de piel color crema, tablero de madera, ciudad al atardecer por la ventana, sin logotipos de marca. Ella en el asiento trasero, Capital a su lado en el asiento.",
+    "jacuzzi": "Jacuzzi en rooftop de lujo al atardecer, skyline de ciudad, toallas blancas, copa de agua mineral. Capital echado en la cubierta de madera junto al jacuzzi.",
+    "hotel": "Lobby de hotel de lujo: mármol, sillones de terciopelo, lámparas de latón, flores blancas. Ella sentada en un sillón, Capital sentado a su lado.",
+    "golf": "Campo de golf verde al amanecer, carrito de golf blanco detrás, colinas suaves. Capital sentado junto a ella.",
+    "bar": "Bar tipo speakeasy: barra de madera oscura, botellas iluminadas en ámbar, luz cálida baja, banco de piel. Capital echado junto al banco.",
+    "sala_navidad": "Sala de lujo decorada para Navidad: árbol grande con luces cálidas y esferas doradas, chimenea encendida, sofá de terciopelo color crema, regalos envueltos sin marcas. Ella de pie o sentada junto al árbol, Capital a sus pies."
+  },
+  "videos": [
+    {
+      "id": "01",
+      "estado": "publicado",
+      "pilar": "motivacion_economica",
+      "guion": "El uno por ciento diario te hace treinta y siete veces mejor en un año. Lo explica James Clear. Olvida el gran salto. Hoy, solo tu uno por ciento.",
+      "fuente": "James Clear, Hábitos Atómicos (1.01^365 ≈ 37.8)",
+      "locacion": "jet",
+      "vestuario": "Blazer-vestido marfil con cinturón, medias color piel, joyería dorada, tacones nude",
+      "archivo": "videos/video-01-jet-1porciento-SUBTITULADO.mp4",
+      "hora_publicacion": "20:47",
+      "publica_utc": "2026-10-29T23:47:00Z",
+      "subtitulos": [
+        "El 1% diario",
+        "te hace 37 veces",
+        "mejor en un año.",
+        "Lo explica James Clear.",
+        "Olvida el gran salto.",
+        "Hoy,",
+        "solo tu 1%."
+      ],
+      "palabras_clave": [
+        "1%",
+        "37",
+        "mejor",
+        "clear",
+        "salto",
+        "hoy"
+      ],
+      "texto_post": "El 1% diario te hace 37 veces mejor en un año. 📈\nNo necesitas un gran salto, necesitas constancia.\n\n📚 James Clear, Hábitos Atómicos\n💾 Guárdalo para cuando lo olvides.",
+      "creditos": 510,
+      "qa": {
+        "similitud": 0.95,
+        "notas": "Revisado a mano. Capital sale del cuadro en los últimos 2 s."
+      },
+      "openart": {
+        "video": "kZkUAtz9kylwIrXTauWE"
+      },
+      "publicacion": {
+        "publer": {
+          "instagram": "job 6ae2bec77ca0da5eaf26ef78",
+          "tiktok": "programado 2026-10-29 20:47 CDMX"
+        },
+        "youtube": "https://youtube.com/shorts/v25vIDTienI",
+        "ig": "https://www.instagram.com/reel/DfGOOl2k7Zb/",
+        "tt": "https://www.tiktok.com/@victoriatheceo/video/7702240656760048903?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+        "yt": "https://youtube.com/shorts/v25vIDTienI",
+        "comentario_youtube": "UgxvfV1eJOoDuZNEJHN4AaABAg"
+      },
+      "seo": {
+        "palabra_clave": "mejorar 1% diario",
+        "titulo": "Mejorar 1% diario te hace 37 veces mejor 📈",
+        "descripcion_inicio": "Mejorar 1% diario te hace 37 veces mejor en un año: la idea de Hábitos Atómicos de James Clear.\nCómo los pequeños hábitos diarios y la constancia se convierten en grandes resultados.",
+        "tags_concretas": [
+          "mejorar 1% diario",
+          "mejorar 1 por ciento cada dia",
+          "habitos atomicos",
+          "james clear",
+          "regla del 1 por ciento",
+          "pequeños habitos grandes resultados",
+          "habitos diarios",
+          "constancia",
+          "superacion personal"
+        ],
+        "hashtags": [
+          "#habitosatomicos",
+          "#habitos",
+          "#constancia",
+          "#superacionpersonal"
+        ],
+        "parrafo": "La regla del 1% viene de Hábitos Atómicos, el libro de James Clear: si mejoras 1% cada día durante un año, terminas unas 37 veces mejor (1.01 elevado a 365 da 37.8). Funciona con el dinero, con tu negocio y con tus hábitos: no necesitas un cambio enorme, necesitas constancia diaria. Elige hoy un hábito pequeño y repítelo mañana.",
+        "preguntas": [
+          "¿Qué pasa si mejoras 1% cada día?",
+          "¿Qué dice James Clear en Hábitos Atómicos?",
+          "¿Cómo crear hábitos pequeños que den grandes resultados?"
+        ]
+      }
     },
-    "youtube": "https://youtube.com/shorts/v25vIDTienI",
-    "ig": "https://www.instagram.com/reel/DfGOOl2k7Zb/",
-    "tt": "https://www.tiktok.com/@victoriatheceo/video/7702240656760048903?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
-    "yt": "https://youtube.com/shorts/v25vIDTienI",
-    "comentario_youtube": "UgxvfV1eJOoDuZNEJHN4AaABAg"
-   },
-   "seo": {
-    "palabra_clave": "mejorar 1% diario",
-    "titulo": "Mejorar 1% diario te hace 37 veces mejor 📈",
-    "descripcion_inicio": "Mejorar 1% diario te hace 37 veces mejor en un año: la idea de Hábitos Atómicos de James Clear.\nCómo los pequeños hábitos diarios y la constancia se convierten en grandes resultados.",
-    "tags_concretas": [
-     "mejorar 1% diario",
-     "mejorar 1 por ciento cada dia",
-     "habitos atomicos",
-     "james clear",
-     "regla del 1 por ciento",
-     "pequeños habitos grandes resultados",
-     "habitos diarios",
-     "constancia",
-     "superacion personal"
-    ],
-    "hashtags": [
-     "#habitosatomicos",
-     "#habitos",
-     "#constancia",
-     "#superacionpersonal"
-    ],
-    "parrafo": "La regla del 1% viene de Hábitos Atómicos, el libro de James Clear: si mejoras 1% cada día durante un año, terminas unas 37 veces mejor (1.01 elevado a 365 da 37.8). Funciona con el dinero, con tu negocio y con tus hábitos: no necesitas un cambio enorme, necesitas constancia diaria. Elige hoy un hábito pequeño y repítelo mañana.",
-    "preguntas": [
-     "¿Qué pasa si mejoras 1% cada día?",
-     "¿Qué dice James Clear en Hábitos Atómicos?",
-     "¿Cómo crear hábitos pequeños que den grandes resultados?"
-    ]
-   }
-  },
-  {
-   "id": "02",
-   "estado": "listo_para_publicar",
-   "pilar": "negocio",
-   "guion": "El ochenta por ciento de tus ventas suele salir del veinte por ciento de tus clientes. Principio de Pareto. Encuentra a ese veinte y cuídalo como oro.",
-   "subtitulos": [
-    "El 80% de tus ventas",
-    "suele salir del 20%",
-    "de tus clientes.",
-    "Principio de Pareto.",
-    "Encuentra a ese 20%",
-    "y cuídalo como oro."
-   ],
-   "palabras_clave": [
-    "80%",
-    "20%",
-    "pareto",
-    "oro"
-   ],
-   "fuente": "Vilfredo Pareto; Richard Koch, El principio 80/20",
-   "locacion": "palco_estadio",
-   "vestuario": "Blazer azul marino entallado, blusa de seda blanca, jeans de diseñador oscuros, aretes de oro",
-   "accion": "Sentada en el asiento de piel del palco, Capital sentado a su lado mirando a cámara.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "El 80% de tus ventas suele salir del 20% de tus clientes. 🎯\n¿Ya sabes quiénes son los tuyos?\n\n📚 Principio de Pareto · Richard Koch, El principio 80/20\n💾 Guárdalo para tu próxima revisión de clientes.",
-   "archivo": "videos/video-02-palco-pareto-SUBTITULADO.mp4",
-   "creditos": 510,
-   "qa": {
-    "similitud": 0.92,
-    "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos OK."
-   },
-   "openart": {
-    "foto": "CHR8hma1TeWY9weBL2ca",
-    "video": "c5OknrxCOp4J9rGdIPz0"
-   },
-   "intentos_publicacion": [
-    "2026-10-29T03:00Z: Publer 403 (Cloudflare 1010, ya corregido con User-Agent propio); YouTube: el permiso apunta a \"Nadie Te Lo Explicó\"; push al repo sin permiso."
-   ],
-   "seo": {
-    "palabra_clave": "principio de Pareto",
-    "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
-    "descripcion_inicio": "Principio de Pareto en ventas: el 20% de tus clientes suele generar el 80% de tus ingresos.\nCómo aplicar la regla 80/20 en tu negocio para vender más cuidando a tus mejores clientes.",
-    "tags_concretas": [
-     "principio de pareto",
-     "regla 80 20",
-     "ley de pareto",
-     "pareto en ventas",
-     "regla 80/20 en negocios",
-     "como identificar a tus mejores clientes",
-     "el 20 por ciento de clientes",
-     "richard koch",
-     "vilfredo pareto",
-     "ventas"
-    ],
-    "hashtags": [
-     "#ventas",
-     "#pareto",
-     "#regla8020",
-     "#negocios"
-    ],
-    "parrafo": "El principio de Pareto, o regla 80/20, dice que una minoría de causas produce la mayoría de los resultados. En ventas suele verse así: una parte pequeña de tus clientes genera la mayor parte de tus ingresos. Richard Koch lo explica en El principio 80/20. Identifica a ese 20% de clientes, atiéndelos mejor y pregúntales qué más necesitan.",
-    "preguntas": [
-     "¿Qué es el principio de Pareto en ventas?",
-     "¿Cómo aplicar la regla 80/20 en tu negocio?",
-     "¿Cómo encontrar a tus mejores clientes?"
-    ]
-   }
-  },
-  {
-   "id": "03",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "¿Cuánto tarda tu dinero en duplicarse? Divide setenta y dos entre tu tasa anual. Al ocho por ciento, nueve años. Es la regla del setenta y dos.",
-   "subtitulos": [
-    "¿Cuánto tarda tu dinero",
-    "en duplicarse?",
-    "Divide 72",
-    "entre tu tasa anual.",
-    "Al 8%, 9 años.",
-    "Es la regla del 72."
-   ],
-   "palabras_clave": [
-    "72",
-    "8%",
-    "9",
-    "duplicarse"
-   ],
-   "fuente": "Regla del 72 (Luca Pacioli, 1494)",
-   "locacion": "yate",
-   "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
-   "accion": "Sentada en el sillón blanco de la cubierta, Capital sentado a su lado, mar turquesa detrás.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Divide 72 entre tu tasa anual y sabrás en cuántos años se duplica tu dinero. ⏳\nAl 8% anual: 9 años.\n\n📚 Regla del 72\n⚠️ Contenido educativo, no es asesoría financiera.",
-   "seo": {
-    "palabra_clave": "regla del 72",
-    "titulo": "Regla del 72 para duplicar tu dinero 📈",
-    "descripcion_inicio": "Regla del 72: divide 72 entre tu tasa de interés anual y sabrás en cuántos años se duplica tu dinero.\nInterés compuesto explicado fácil, educación financiera para principiantes.",
-    "tags_concretas": [
-     "regla del 72",
-     "cuanto tarda en duplicarse mi dinero",
-     "duplicar dinero",
-     "interes compuesto",
-     "interes compuesto explicado",
-     "regla del 72 ejemplo",
-     "tasa de interes anual",
-     "luca pacioli",
-     "inversion para principiantes"
-    ],
-    "hashtags": [
-     "#regladel72",
-     "#interescompuesto",
-     "#inversion",
-     "#dinero"
-    ],
-    "parrafo": "La regla del 72 es un atajo para calcular en cuántos años se duplica tu dinero con interés compuesto: divides 72 entre la tasa de interés anual. Al 8% anual tu dinero se duplica en unos 9 años; al 4%, en 18. Es una aproximación que ya aparece en la obra de Luca Pacioli de 1494 y sirve para comparar opciones de ahorro de un vistazo.",
-    "preguntas": [
-     "¿Qué es la regla del 72?",
-     "¿En cuánto tiempo se duplica mi dinero?",
-     "¿Cómo funciona el interés compuesto?"
-    ]
-   },
-   "puente_producto": true
-  },
-  {
-   "id": "04",
-   "estado": "pendiente",
-   "pilar": "mentalidad",
-   "guion": "Escribir lo que te preocupa durante quince minutos aligera la mente. James Pennebaker lo estudió por décadas. Esta noche: papel, pluma y quince minutos para ti.",
-   "subtitulos": [
-    "Escribir lo que te preocupa",
-    "durante 15 minutos",
-    "aligera la mente.",
-    "James Pennebaker",
-    "lo estudió por décadas.",
-    "Esta noche: papel, pluma",
-    "y 15 minutos para ti."
-   ],
-   "palabras_clave": [
-    "15",
-    "mente",
-    "pennebaker",
-    "noche"
-   ],
-   "fuente": "James W. Pennebaker, investigación sobre escritura expresiva",
-   "locacion": "recamara",
-   "vestuario": "Conjunto de pijama de seda color champaña con bata a juego",
-   "accion": "Sentada en la orilla de la cama con una libreta en la mano, Capital echado en la alfombra a sus pies con la cabeza levantada.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Escribir lo que te preocupa 15 minutos aligera la mente. ✍️\nEsta noche, pruébalo.\n\n📚 James W. Pennebaker, escritura expresiva\n💛 No sustituye ayuda profesional si la necesitas.",
-   "seo": {
-    "palabra_clave": "escritura expresiva",
-    "titulo": "Escritura expresiva de 15 minutos ✍️",
-    "descripcion_inicio": "Escritura expresiva: escribir 15 minutos lo que te preocupa ayuda a aligerar la mente.\nUn hábito de bienestar emocional estudiado por James Pennebaker, fácil de empezar esta noche.",
-    "tags_concretas": [
-     "escritura expresiva",
-     "james pennebaker",
-     "escribir para soltar preocupaciones",
-     "journaling para principiantes",
-     "diario personal",
-     "escribir 15 minutos",
-     "como soltar preocupaciones",
-     "bienestar emocional"
-    ],
-    "hashtags": [
-     "#escrituraexpresiva",
-     "#bienestar",
-     "#journaling",
-     "#saludmental"
-    ],
-    "parrafo": "La escritura expresiva consiste en escribir unos 15 minutos sobre lo que te preocupa o te duele, sin cuidar la ortografía ni el orden. El psicólogo James W. Pennebaker la estudió durante décadas y encontró beneficios para el bienestar emocional. Es una herramienta sencilla para bajar el estrés y ordenar ideas; no sustituye la ayuda de un profesional.",
-    "preguntas": [
-     "¿Qué es la escritura expresiva?",
-     "¿Cómo escribir para bajar el estrés?",
-     "¿Qué descubrió James Pennebaker?"
-    ]
-   }
-  },
-  {
-   "id": "05",
-   "estado": "pendiente",
-   "pilar": "vida",
-   "guion": "Si algo toma menos de dos minutos, hazlo ya. Es la regla de David Allen. Lo pequeño que pospones es lo que más te roba la cabeza.",
-   "subtitulos": [
-    "Si algo toma menos",
-    "de 2 minutos,",
-    "hazlo ya.",
-    "Es la regla de David Allen.",
-    "Lo pequeño que pospones",
-    "es lo que más",
-    "te roba la cabeza."
-   ],
-   "palabras_clave": [
-    "2",
-    "ya",
-    "allen",
-    "cabeza"
-   ],
-   "fuente": "David Allen, Organízate con eficacia (Getting Things Done)",
-   "locacion": "cocina",
-   "vestuario": "Suéter de cachemira color crema, pantalón negro de vestir, reloj dorado",
-   "accion": "De pie detrás de la isla de travertino con una taza de café, Capital sentado junto a la isla.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Si toma menos de 2 minutos, hazlo ya. ⚡\nLo pequeño que pospones es lo que más pesa.\n\n📚 David Allen, Organízate con eficacia",
-   "seo": {
-    "palabra_clave": "regla de los 2 minutos",
-    "titulo": "Regla de los 2 minutos de David Allen ⚡",
-    "descripcion_inicio": "Regla de los 2 minutos de David Allen: si una tarea toma menos de dos minutos, hazla ya.\nProductividad del método Getting Things Done (Organízate con eficacia) para dejar de posponer.",
-    "tags_concretas": [
-     "regla de los 2 minutos",
-     "regla de los dos minutos",
-     "david allen",
-     "getting things done",
-     "organizate con eficacia",
-     "metodo gtd",
-     "como dejar de procrastinar",
-     "tareas pendientes",
-     "productividad"
-    ],
-    "hashtags": [
-     "#productividad",
-     "#reglade2minutos",
-     "#habitos",
-     "#organizacion"
-    ],
-    "parrafo": "La regla de los 2 minutos es de David Allen, autor de Organízate con eficacia (Getting Things Done): si una tarea toma menos de dos minutos, hazla en ese momento en lugar de anotarla para después. Las tareas pequeñas que se acumulan ocupan espacio en tu cabeza. Aplícala hoy con correos, mensajes y pendientes rápidos y verás cómo se libera tu día.",
-    "preguntas": [
-     "¿Qué es la regla de los 2 minutos?",
-     "¿Cómo dejar de procrastinar tareas pequeñas?",
-     "¿Qué es el método GTD de David Allen?"
-    ]
-   }
-  },
-  {
-   "id": "06",
-   "estado": "pendiente",
-   "pilar": "motivacion_economica",
-   "guion": "De cada diez pesos que ganes, guarda uno para ti. Lo escribió George Clason hace casi cien años. Págate primero, antes que a nadie.",
-   "subtitulos": [
-    "De cada 10 pesos que ganes,",
-    "guarda 1 para ti.",
-    "Lo escribió George Clason",
-    "hace casi 100 años.",
-    "Págate primero,",
-    "antes que a nadie."
-   ],
-   "palabras_clave": [
-    "10",
-    "1",
-    "clason",
-    "primero"
-   ],
-   "fuente": "George S. Clason, El hombre más rico de Babilonia (1926)",
-   "locacion": "restaurante",
-   "vestuario": "Vestido de noche negro de satín con hombros descubiertos, collar de perlas, labios rojos",
-   "accion": "Sentada en el banco de terciopelo verde frente a la mesa con velas, Capital sentado junto a la mesa.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "De cada 10 pesos que ganes, guarda 1 para ti. 💰\nPágate primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia",
-   "seo": {
-    "palabra_clave": "págate primero",
-    "titulo": "Págate primero con el 10% de lo que ganas 💰",
-    "descripcion_inicio": "Págate primero: guarda al menos el 10% de lo que ganas antes de pagar a nadie más.\nLa regla de ahorro de El hombre más rico de Babilonia, de George S. Clason.",
-    "tags_concretas": [
-     "pagate primero",
-     "paga primero a ti mismo",
-     "el hombre mas rico de babilonia",
-     "george clason",
-     "ahorrar el 10 por ciento",
-     "como ahorrar dinero cada mes",
-     "regla del 10 por ciento",
-     "ahorro"
-    ],
-    "hashtags": [
-     "#ahorro",
-     "#pagateprimero",
-     "#dinero",
-     "#libros"
-    ],
-    "parrafo": "Págate primero es la regla de ahorro de El hombre más rico de Babilonia, el libro de George S. Clason de 1926: de cada 10 pesos que ganes, guarda al menos 1 para ti antes de pagar cualquier otra cosa. El ahorro no es lo que sobra al final del mes, es lo primero que sale. Aparta ese 10% el día que te pagan y no lo toques.",
-    "preguntas": [
-     "¿Qué significa págate primero?",
-     "¿Cuánto debo ahorrar de mi sueldo?",
-     "¿Qué enseña El hombre más rico de Babilonia?"
-    ]
-   },
-   "puente_producto": true
-  },
-  {
-   "id": "07",
-   "estado": "pendiente",
-   "pilar": "negocio",
-   "guion": "Cuando dudes, imagínate a los ochenta años. ¿Te arrepentirías de no intentarlo? Así decidió Jeff Bezos fundar Amazon. Minimiza arrepentimientos, no riesgos.",
-   "subtitulos": [
-    "Cuando dudes,",
-    "imagínate a los 80 años.",
-    "¿Te arrepentirías",
-    "de no intentarlo?",
-    "Así decidió Jeff Bezos",
-    "fundar Amazon.",
-    "Minimiza arrepentimientos,",
-    "no riesgos."
-   ],
-   "palabras_clave": [
-    "80",
-    "bezos",
-    "arrepentimientos",
-    "riesgos"
-   ],
-   "fuente": "Jeff Bezos, marco de minimización del arrepentimiento (entrevistas públicas)",
-   "locacion": "jet",
-   "vestuario": "Traje sastre gris perla de pantalón, blusa de seda negra, lentes de sol en la mano",
-   "accion": "Sentada en el asiento de piel del jet, Capital sentado junto al asiento, ventanas con atardecer.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Imagínate a los 80. ¿Te arrepentirías de no intentarlo? ✈️\n\n📚 Jeff Bezos, marco de minimización del arrepentimiento",
-   "seo": {
-    "palabra_clave": "Jeff Bezos",
-    "titulo": "Jeff Bezos y la regla del arrepentimiento",
-    "descripcion_inicio": "Jeff Bezos y el marco de minimización del arrepentimiento: imagínate a los 80 años antes de decidir.\nCómo decidió fundar Amazon y cómo usarlo para emprender sin quedarte con las ganas.",
-    "tags_concretas": [
-     "jeff bezos",
-     "minimizacion del arrepentimiento",
-     "regret minimization framework",
-     "como tomar decisiones dificiles",
-     "como decidir emprender",
-     "jeff bezos amazon historia",
-     "emprender sin miedo",
-     "decisiones"
-    ],
-    "hashtags": [
-     "#jeffbezos",
-     "#decisiones",
-     "#emprender",
-     "#negocios"
-    ],
-    "parrafo": "Jeff Bezos contó en entrevistas que decidió dejar su trabajo y fundar Amazon con un marco de minimización del arrepentimiento: imaginarse a los 80 años y preguntarse de qué se arrepentiría. Sirve para decisiones grandes como emprender, cambiar de trabajo o lanzar un proyecto. Pregúntate si te arrepentirías más de intentarlo o de no hacerlo.",
-    "preguntas": [
-     "¿Qué es el marco de minimización del arrepentimiento?",
-     "¿Cómo decidió Jeff Bezos fundar Amazon?",
-     "¿Cómo tomar una decisión difícil?"
-    ]
-   }
-  },
-  {
-   "id": "08",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Regla número uno: no pierdas dinero. Regla número dos: no olvides la regla número uno. Warren Buffett. Antes de invertir, entiende en qué.",
-   "subtitulos": [
-    "Regla número 1:",
-    "no pierdas dinero.",
-    "Regla número 2:",
-    "no olvides la regla número 1.",
-    "Warren Buffett.",
-    "Antes de invertir,",
-    "entiende en qué."
-   ],
-   "palabras_clave": [
-    "1",
-    "2",
-    "buffett",
-    "invertir"
-   ],
-   "fuente": "Warren Buffett, frase pública atribuida y repetida por él",
-   "locacion": "coche",
-   "vestuario": "Blazer camel de lana, suéter negro de cuello alto, lentes de sol en la cabeza",
-   "accion": "Sentada en el asiento trasero del sedán, Capital sentado a su lado en el asiento.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Regla #1: no pierdas dinero. Regla #2: no olvides la regla #1. 🚗\n\n📚 Warren Buffett\n⚠️ Contenido educativo, no es asesoría financiera.",
-   "seo": {
-    "palabra_clave": "regla número 1 de Warren Buffett",
-    "titulo": "Regla número 1 de Warren Buffett 💵",
-    "descripcion_inicio": "Regla número 1 de Warren Buffett: no pierdas dinero; la número 2, no olvides la número 1.\nAntes de invertir, entiende en qué inviertes: educación financiera, no asesoría.",
-    "tags_concretas": [
-     "warren buffett",
-     "reglas de warren buffett",
-     "regla numero 1 de warren buffett",
-     "no pierdas dinero",
-     "consejos de warren buffett",
-     "invertir para principiantes",
-     "como invertir sin perder dinero",
-     "inversion"
-    ],
-    "hashtags": [
-     "#warrenbuffett",
-     "#inversion",
-     "#dinero",
-     "#educacionfinanciera"
-    ],
-    "parrafo": "Regla número 1: no pierdas dinero. Regla número 2: no olvides la regla número 1. Es una de las frases más conocidas de Warren Buffett y habla de proteger tu capital antes de buscar ganancias. Antes de invertir, entiende en qué pones tu dinero, cuánto puedes perder y por qué. Contenido educativo: no es una recomendación de inversión.",
-    "preguntas": [
-     "¿Cuál es la regla número 1 de Warren Buffett?",
-     "¿Qué hacer antes de invertir?",
-     "¿Cómo proteger tu dinero?"
-    ]
-   }
-  },
-  {
-   "id": "09",
-   "estado": "pendiente",
-   "pilar": "mentalidad",
-   "guion": "Dos inhalaciones por la nariz y una exhalación larga por la boca. Cinco minutos al día. En Stanford mejoró el ánimo más que meditar. Pruébalo ahora.",
-   "subtitulos": [
-    "2 inhalaciones por la nariz",
-    "y una exhalación larga",
-    "por la boca.",
-    "5 minutos al día.",
-    "En Stanford mejoró el ánimo",
-    "más que meditar.",
-    "Pruébalo ahora."
-   ],
-   "palabras_clave": [
-    "2",
-    "5",
-    "stanford",
-    "ahora"
-   ],
-   "fuente": "Balban et al., Cell Reports Medicine (2023), suspiro cíclico, Stanford",
-   "locacion": "jacuzzi",
-   "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
-   "accion": "Sentada en el borde del jacuzzi con la bata sobre los hombros, Capital echado en la cubierta junto a ella.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "2 inhalaciones por la nariz, 1 exhalación larga por la boca. 5 minutos. 🌬️\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)\n💛 Bienestar, no tratamiento médico.",
-   "seo": {
-    "palabra_clave": "suspiro cíclico",
-    "titulo": "Suspiro cíclico para bajar el estrés",
-    "descripcion_inicio": "Suspiro cíclico: dos inhalaciones por la nariz y una exhalación larga por la boca, cinco minutos al día.\nEjercicio de respiración que en un estudio de Stanford (2023) mejoró el ánimo más que la meditación.",
-    "tags_concretas": [
-     "suspiro ciclico",
-     "cyclic sighing",
-     "ejercicio de respiracion",
-     "respiracion para el estres",
-     "respiracion stanford",
-     "como calmar la ansiedad respirando",
-     "respiracion de 5 minutos",
-     "estres"
-    ],
-    "hashtags": [
-     "#respiracion",
-     "#bienestar",
-     "#estres",
-     "#saludmental"
-    ],
-    "parrafo": "El suspiro cíclico es una técnica de respiración: dos inhalaciones por la nariz y una exhalación larga por la boca, durante 5 minutos al día. Un estudio de Stanford publicado en Cell Reports Medicine en 2023 (Balban y colaboradores) encontró que mejoró el ánimo más que la meditación de atención plena. Es una práctica de bienestar, no un tratamiento médico.",
-    "preguntas": [
-     "¿Qué es el suspiro cíclico?",
-     "¿Cómo respirar para bajar el estrés?",
-     "¿Qué encontró el estudio de Stanford sobre la respiración?"
-    ]
-   }
-  },
-  {
-   "id": "10",
-   "estado": "pendiente",
-   "pilar": "vida",
-   "guion": "El estudio de Harvard sobre la felicidad lleva más de ochenta años. Su conclusión: las buenas relaciones nos hacen más felices y sanos. Llama hoy a alguien.",
-   "subtitulos": [
-    "El estudio de Harvard",
-    "sobre la felicidad",
-    "lleva más de 80 años.",
-    "Su conclusión:",
-    "las buenas relaciones",
-    "nos hacen más felices y sanos.",
-    "Llama hoy a alguien."
-   ],
-   "palabras_clave": [
-    "harvard",
-    "80",
-    "relaciones",
-    "hoy"
-   ],
-   "fuente": "Harvard Study of Adult Development (desde 1938), Robert Waldinger",
-   "locacion": "sala",
-   "vestuario": "Vestido midi de punto color vino, botas de piel negras, brazalete dorado",
-   "accion": "Sentada en el sillón bouclé de la sala con el celular en la mano, Capital sentado a su lado con la cabeza junto a su rodilla.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "80+ años de estudio en Harvard: las buenas relaciones nos hacen más felices y sanos. ❤️\n¿A quién vas a llamar hoy?\n\n📚 Harvard Study of Adult Development · Robert Waldinger",
-   "seo": {
-    "palabra_clave": "estudio de Harvard sobre la felicidad",
-    "titulo": "Estudio de Harvard sobre la felicidad ❤️",
-    "descripcion_inicio": "Estudio de Harvard sobre la felicidad: más de 80 años investigando qué nos hace felices y sanos.\nLa conclusión de Robert Waldinger: las buenas relaciones. Llama hoy a alguien.",
-    "tags_concretas": [
-     "estudio de harvard felicidad",
-     "harvard study of adult development",
-     "robert waldinger",
-     "que nos hace felices",
-     "felicidad y relaciones",
-     "estudio mas largo sobre la felicidad",
-     "relaciones",
-     "felicidad"
-    ],
-    "hashtags": [
-     "#felicidad",
-     "#relaciones",
-     "#harvard",
-     "#bienestar"
-    ],
-    "parrafo": "El Estudio de Harvard sobre el Desarrollo Adulto sigue a sus participantes desde 1938 y hoy lo dirige Robert Waldinger. Su conclusión más repetida: las buenas relaciones nos hacen más felices y más sanos. No es el dinero ni la fama lo que más pesa, es la calidad de tus vínculos. Llama hoy a alguien que te importa.",
-    "preguntas": [
-     "¿Qué dice el estudio de Harvard sobre la felicidad?",
-     "¿Qué nos hace felices según la ciencia?",
-     "¿Quién es Robert Waldinger?"
-    ]
-   }
-  },
-  {
-   "id": "11",
-   "estado": "pendiente",
-   "pilar": "motivacion_economica",
-   "guion": "El trabajo se expande hasta llenar el tiempo que le das. Ley de Parkinson. Dale a tu proyecto la mitad del tiempo y mira qué pasa.",
-   "subtitulos": [
-    "El trabajo se expande",
-    "hasta llenar el tiempo",
-    "que le das.",
-    "Ley de Parkinson.",
-    "Dale a tu proyecto",
-    "la mitad del tiempo",
-    "y mira qué pasa."
-   ],
-   "palabras_clave": [
-    "tiempo",
-    "parkinson",
-    "mitad"
-   ],
-   "fuente": "C. Northcote Parkinson, The Economist (1955)",
-   "locacion": "gimnasio",
-   "vestuario": "Conjunto deportivo de diseñador negro con detalles dorados: leggings, top y chamarra ligera abierta",
-   "accion": "De pie junto al rack de mancuernas con una toalla al hombro, Capital sentado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "El trabajo se expande hasta llenar el tiempo que le das. ⏱️\nDale a tu proyecto la mitad del tiempo.\n\n📚 C. Northcote Parkinson, Ley de Parkinson",
-   "seo": {
-    "palabra_clave": "ley de Parkinson",
-    "titulo": "Ley de Parkinson y tu tiempo de trabajo",
-    "descripcion_inicio": "Ley de Parkinson: el trabajo se expande hasta llenar el tiempo que le das.\nCómo usarla para terminar tus proyectos en la mitad del tiempo, según C. Northcote Parkinson.",
-    "tags_concretas": [
-     "ley de parkinson",
-     "ley de parkinson productividad",
-     "el trabajo se expande",
-     "gestion del tiempo",
-     "como terminar proyectos",
-     "northcote parkinson",
-     "fechas limite",
-     "productividad"
-    ],
-    "hashtags": [
-     "#leydeparkinson",
-     "#productividad",
-     "#disciplina",
-     "#negocios"
-    ],
-    "parrafo": "La ley de Parkinson dice que el trabajo se expande hasta llenar el tiempo disponible para terminarlo. La formuló C. Northcote Parkinson en un ensayo en The Economist en 1955. Si le das una semana a una tarea, tardará una semana; si le das dos días, probablemente la termines en dos días. Ponte fechas límite más cortas y concretas.",
-    "preguntas": [
-     "¿Qué es la ley de Parkinson?",
-     "¿Cómo ser más productivo en el trabajo?",
-     "¿Cómo usar fechas límite a tu favor?"
-    ]
-   }
-  },
-  {
-   "id": "12",
-   "estado": "pendiente",
-   "pilar": "negocio",
-   "guion": "La gente no compra lo que haces, compra por qué lo haces. Lo dijo Simon Sinek. Antes de vender tu producto, vende tu porqué.",
-   "subtitulos": [
-    "La gente no compra",
-    "lo que haces,",
-    "compra por qué lo haces.",
-    "Lo dijo Simon Sinek.",
-    "Antes de vender tu producto,",
-    "vende tu porqué."
-   ],
-   "palabras_clave": [
-    "porqué",
-    "sinek",
-    "vender"
-   ],
-   "fuente": "Simon Sinek, Empieza con el porqué (TED 2009)",
-   "locacion": "hotel",
-   "vestuario": "Traje sastre rojo carmesí de falda, camisola de seda negra, tacones negros",
-   "accion": "Sentada en un sillón de terciopelo del lobby con las piernas cruzadas, Capital sentado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "La gente no compra lo que haces. Compra por qué lo haces. 🔥\n\n📚 Simon Sinek, Empieza con el porqué",
-   "seo": {
-    "palabra_clave": "empieza con el porqué",
-    "titulo": "Empieza con el porqué de Simon Sinek 🔥",
-    "descripcion_inicio": "Empieza con el porqué, de Simon Sinek: la gente no compra lo que haces, compra por qué lo haces.\nEl círculo dorado aplicado a ventas, marketing y marca personal.",
-    "tags_concretas": [
-     "empieza con el porque",
-     "simon sinek",
-     "circulo dorado",
-     "golden circle",
-     "start with why",
-     "simon sinek ted",
-     "como vender tu porque",
-     "marca personal",
-     "marketing"
-    ],
-    "hashtags": [
-     "#simonsinek",
-     "#marketing",
-     "#ventas",
-     "#marcapersonal"
-    ],
-    "parrafo": "Empieza con el porqué es la idea de Simon Sinek, popularizada en su charla TED de 2009: la gente no compra lo que haces, compra por qué lo haces. Las marcas que inspiran comunican primero su propósito, después cómo lo hacen y al final qué venden. Antes de vender tu producto, escribe en una frase por qué existe tu negocio.",
-    "preguntas": [
-     "¿Qué es el círculo dorado de Simon Sinek?",
-     "¿Cómo vender con propósito?",
-     "¿Por qué la gente compra una marca?"
-    ]
-   }
-  },
-  {
-   "id": "13",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste. Morgan Housel. Hoy invierte en silencio.",
-   "subtitulos": [
-    "La riqueza es lo que no ves:",
-    "el coche que no compraste,",
-    "el lujo que no presumiste.",
-    "Morgan Housel.",
-    "Hoy invierte en silencio."
-   ],
-   "palabras_clave": [
-    "riqueza",
-    "housel",
-    "silencio"
-   ],
-   "fuente": "Morgan Housel, La psicología del dinero",
-   "locacion": "golf",
-   "vestuario": "Polo blanco ajustado, falda plisada azul marino, visera blanca, guante de golf",
-   "accion": "De pie junto al carrito de golf con un palo apoyado en el pasto, Capital sentado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "La riqueza es lo que no ves. ⛳\nEl coche que no compraste. El lujo que no presumiste.\n\n📚 Morgan Housel, La psicología del dinero\n⚠️ Contenido educativo, no es asesoría financiera.",
-   "seo": {
-    "palabra_clave": "la psicología del dinero",
-    "titulo": "La psicología del dinero de Morgan Housel",
-    "descripcion_inicio": "La psicología del dinero, de Morgan Housel: la riqueza es lo que no ves.\nEl coche que no compraste y el lujo que no presumiste; educación financiera, no asesoría.",
-    "tags_concretas": [
-     "la psicologia del dinero",
-     "morgan housel",
-     "la riqueza es lo que no ves",
-     "psicologia del dinero resumen",
-     "como ser rico",
-     "riqueza silenciosa",
-     "ahorro",
-     "riqueza"
-    ],
-    "hashtags": [
-     "#psicologiadeldinero",
-     "#riqueza",
-     "#ahorro",
-     "#morganhousel"
-    ],
-    "parrafo": "En La psicología del dinero, Morgan Housel explica que la riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste, el dinero que sigue invertido. Gastar en aparentar te hace ver rico; ahorrar e invertir en silencio te hace rico. Contenido educativo: no es una recomendación de inversión.",
-    "preguntas": [
-     "¿Qué enseña La psicología del dinero?",
-     "¿Cuál es la diferencia entre ser rico y parecer rico?",
-     "¿Cómo construir riqueza poco a poco?"
-    ]
-   }
-  },
-  {
-   "id": "14",
-   "estado": "pendiente",
-   "pilar": "mentalidad",
-   "guion": "Tu mente no suelta lo que dejaste a medias. Es el efecto Zeigarnik. Si algo te quita el sueño, escribe el siguiente paso y descansa.",
-   "subtitulos": [
-    "Tu mente no suelta",
-    "lo que dejaste a medias.",
-    "Es el efecto Zeigarnik.",
-    "Si algo te quita el sueño,",
-    "escribe el siguiente paso",
-    "y descansa."
-   ],
-   "palabras_clave": [
-    "mente",
-    "zeigarnik",
-    "sueño",
-    "descansa"
-   ],
-   "fuente": "Bluma Zeigarnik (1927); Masicampo y Baumeister (2011)",
-   "locacion": "sillon",
-   "vestuario": "Vestido camisero de seda azul cielo, cinturón dorado delgado, pies descalzos",
-   "accion": "Sentada en el sillón bouclé del rincón de lectura con un libro cerrado en el regazo, Capital echado junto al sillón con la cabeza levantada.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Tu mente no suelta lo que dejaste a medias. 🧠\nEscribe el siguiente paso y descansa.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)",
-   "seo": {
-    "palabra_clave": "efecto Zeigarnik",
-    "titulo": "Efecto Zeigarnik y las tareas pendientes 🧠",
-    "descripcion_inicio": "Efecto Zeigarnik: tu mente no suelta lo que dejaste a medias.\nPor qué escribir el siguiente paso de una tarea pendiente te ayuda a descansar (Masicampo y Baumeister, 2011).",
-    "tags_concretas": [
-     "efecto zeigarnik",
-     "bluma zeigarnik",
-     "tareas pendientes",
-     "no puedo dejar de pensar en pendientes",
-     "como dormir sin pensar en trabajo",
-     "psicologia",
-     "descanso",
-     "mente"
-    ],
-    "hashtags": [
-     "#efectozeigarnik",
-     "#psicologia",
-     "#productividad",
-     "#descanso"
-    ],
-    "parrafo": "El efecto Zeigarnik describe que la mente recuerda más las tareas sin terminar que las terminadas; lo describió Bluma Zeigarnik en 1927. Un estudio de Masicampo y Baumeister (2011) encontró que escribir un plan concreto para la tarea pendiente reduce esos pensamientos que no te dejan en paz. Si algo te quita el sueño, anota el siguiente paso y descansa.",
-    "preguntas": [
-     "¿Qué es el efecto Zeigarnik?",
-     "¿Cómo dejar de pensar en pendientes?",
-     "¿Por qué no puedo dormir pensando en el trabajo?"
-    ]
-   }
-  },
-  {
-   "id": "15",
-   "estado": "pendiente",
-   "pilar": "vida",
-   "guion": "Haz primero lo que más te cuesta. Brian Tracy lo llama tragarte el sapo. Después de eso, el resto del día es pura ganancia.",
-   "subtitulos": [
-    "Haz primero",
-    "lo que más te cuesta.",
-    "Brian Tracy lo llama",
-    "tragarte el sapo.",
-    "Después de eso,",
-    "el resto del día",
-    "es pura ganancia."
-   ],
-   "palabras_clave": [
-    "primero",
-    "tracy",
-    "sapo",
-    "ganancia"
-   ],
-   "fuente": "Brian Tracy, ¡Tráguese ese sapo!",
-   "locacion": "oficina",
-   "vestuario": "Blusa blanca de seda con moño al cuello, falda lápiz negra, tacones negros, lentes de armazón delgado",
-   "accion": "Sentada en la silla de piel frente al escritorio de nogal, Capital sentado junto al escritorio.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Haz primero lo que más te cuesta. 🐸\nEl resto del día es pura ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!",
-   "seo": {
-    "palabra_clave": "tráguese ese sapo",
-    "titulo": "Tráguese ese sapo de Brian Tracy 🐸",
-    "descripcion_inicio": "Tráguese ese sapo, de Brian Tracy: haz primero lo que más te cuesta.\nUn hábito de productividad contra la procrastinación: después, el resto del día es pura ganancia.",
-    "tags_concretas": [
-     "traguese ese sapo",
-     "tragate ese sapo",
-     "brian tracy",
-     "eat that frog",
-     "como dejar de procrastinar",
-     "haz primero lo mas dificil",
-     "rutina de la mañana",
-     "productividad"
-    ],
-    "hashtags": [
-     "#tragateesesapo",
-     "#productividad",
-     "#habitos",
-     "#disciplina"
-    ],
-    "parrafo": "Tráguese ese sapo es el método de productividad de Brian Tracy: haz primero, a primera hora, la tarea más difícil o importante del día. Después de eso, el resto del día es pura ganancia. Funciona contra la procrastinación porque quitas lo que más pesa cuando tienes más energía.",
-    "preguntas": [
-     "¿Qué significa tragarse el sapo?",
-     "¿Cómo dejar de procrastinar?",
-     "¿Qué tarea hacer primero en el día?"
-    ]
-   }
-  },
-  {
-   "id": "16",
-   "estado": "pendiente",
-   "pilar": "motivacion_economica",
-   "guion": "Charlie Munger decía que los primeros cien mil dólares son los más difíciles. Después, el dinero trabaja para ti. Empieza con poco, pero empieza hoy.",
-   "subtitulos": [
-    "Charlie Munger decía",
-    "que los primeros 100,000 dólares",
-    "son los más difíciles.",
-    "Después, el dinero",
-    "trabaja para ti.",
-    "Empieza con poco,",
-    "pero empieza hoy."
-   ],
-   "palabras_clave": [
-    "munger",
-    "100,000",
-    "dinero",
-    "hoy"
-   ],
-   "fuente": "Charlie Munger, frase pública sobre los primeros 100,000 dólares",
-   "locacion": "bar",
-   "vestuario": "Vestido de cóctel de terciopelo verde botella, aretes largos de oro, tacones dorados",
-   "accion": "Sentada en el banco de piel de la barra con un vaso de agua mineral, Capital echado junto al banco.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Los primeros 100,000 dólares son los más difíciles. Después, el dinero trabaja para ti. 🥂\n\n📚 Charlie Munger\n⚠️ Contenido educativo, no es asesoría financiera.",
-   "seo": {
-    "palabra_clave": "Charlie Munger",
-    "titulo": "Charlie Munger y los primeros 100 mil dólares",
-    "descripcion_inicio": "Charlie Munger decía que los primeros 100 mil dólares son los más difíciles de juntar.\nDespués, el interés compuesto trabaja para ti: empieza con poco, pero empieza hoy.",
-    "tags_concretas": [
-     "charlie munger",
-     "los primeros 100 mil dolares",
-     "charlie munger 100 mil",
-     "interes compuesto",
-     "como juntar mi primer capital",
-     "libertad financiera",
-     "ahorro e inversion",
-     "inversion"
-    ],
-    "hashtags": [
-     "#charliemunger",
-     "#inversion",
-     "#interescompuesto",
-     "#dinero"
-    ],
-    "parrafo": "Charlie Munger, socio de Warren Buffett, decía que los primeros 100,000 dólares son los más difíciles de juntar. Al principio solo trabaja tu esfuerzo; cuando ya tienes capital, el interés compuesto empieza a trabajar contigo. Por eso importa empezar a ahorrar e invertir pronto, aunque sea poco. Contenido educativo: no es una recomendación de inversión.",
-    "preguntas": [
-     "¿Por qué los primeros 100 mil son los más difíciles?",
-     "¿Cómo empezar a ahorrar desde cero?",
-     "¿Qué decía Charlie Munger del dinero?"
-    ]
-   },
-   "puente_producto": true
-  },
-  {
-   "id": "17",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
-   "subtitulos": [
-    "Si ganas 15 mil al mes,",
-    "tu aguinaldo mínimo",
-    "es de 7,500 pesos brutos.",
-    "Son 15 días de salario,",
-    "pagados antes del 20 de diciembre."
-   ],
-   "palabras_clave": [
-    "aguinaldo",
-    "7500",
-    "15",
-    "20"
-   ],
-   "fuente": "Ley Federal del Trabajo, artículo 87",
-   "locacion": "sala_navidad",
-   "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
-   "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Si ganas $15,000 al mes, tu aguinaldo mínimo es de $7,500 brutos. 🎄\nSon 15 días de salario y te lo deben pagar antes del 20 de diciembre.\n\n📚 Ley Federal del Trabajo, artículo 87",
-   "seo": {
-    "palabra_clave": "aguinaldo 2026",
-    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
-    "descripcion_inicio": "Aguinaldo 2026: cuánto te toca si ganas 15 mil pesos al mes. Por ley son mínimo 15 días de salario, pagados antes del 20 de diciembre.\nCalcula el tuyo gratis con mi calculadora de aguinaldo.",
-    "tags_concretas": [
-     "aguinaldo 2026",
-     "cuanto me toca de aguinaldo",
-     "calcular aguinaldo",
-     "calculadora de aguinaldo",
-     "aguinaldo ley federal del trabajo",
-     "aguinaldo 15 dias",
-     "cuando pagan el aguinaldo",
-     "aguinaldo mexico"
-    ],
-    "hashtags": [
-     "#aguinaldo",
-     "#aguinaldo2026",
-     "#dinero",
-     "#navidad"
-    ],
-    "parrafo": "Por la Ley Federal del Trabajo (artículo 87), el aguinaldo es de mínimo 15 días de salario y se paga antes del 20 de diciembre. Si ganas 15,000 pesos al mes, tu salario diario es de 500 pesos y tu aguinaldo mínimo es de 7,500 pesos brutos. Hasta 3,519.30 pesos están libres de ISR en 2026; el resto paga impuesto.",
-    "preguntas": [
-     "¿Cuánto me toca de aguinaldo si gano 15 mil?",
-     "¿Cuándo pagan el aguinaldo?",
-     "¿Cómo se calcula el aguinaldo?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Tu aguinaldo tiene fecha límite: el 20 de diciembre.",
-    "Quince días de salario: eso es lo mínimo que te deben de aguinaldo."
-   ],
-   "adn": {
-    "tipo_gancho": "cifra"
-   },
-   "llamado": "aguinaldo",
-   "ventana": {
-    "desde": "2026-11-10",
-    "hasta": "2026-12-19"
-   }
-  },
-  {
-   "id": "18",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
-   "subtitulos": [
-    "Si renunciaste este año,",
-    "también te toca aguinaldo.",
-    "La ley te da la parte proporcional",
-    "aunque ya no trabajes ahí.",
-    "Revisa que venga en tu finiquito."
-   ],
-   "palabras_clave": [
-    "renunciaste",
-    "aguinaldo",
-    "proporcional",
-    "finiquito"
-   ],
-   "fuente": "Ley Federal del Trabajo, artículo 87",
-   "locacion": "oficina",
-   "vestuario": "Chaqueta de cuero negra sobre vestido de seda color esmeralda, botines negros",
-   "accion": "De pie junto a la puerta de la oficina con una caja de cartón con sus cosas en las manos, Capital sentado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Si renunciaste este año, también te toca aguinaldo. 📌\nLa ley te da la parte proporcional aunque ya no trabajes ahí: revisa que venga en tu finiquito.\n\n📚 Ley Federal del Trabajo, artículo 87",
-   "seo": {
-    "palabra_clave": "aguinaldo si renunciaste",
-    "titulo": "Aguinaldo si renunciaste este año 📌",
-    "descripcion_inicio": "Aguinaldo si renunciaste este año: la Ley Federal del Trabajo te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.\nCalcula tu aguinaldo proporcional gratis con mi calculadora.",
-    "tags_concretas": [
-     "aguinaldo si renuncie",
-     "aguinaldo proporcional",
-     "finiquito y aguinaldo",
-     "me toca aguinaldo si renuncie",
-     "calcular aguinaldo proporcional",
-     "aguinaldo 2026",
-     "ley federal del trabajo aguinaldo",
-     "finiquito"
-    ],
-    "hashtags": [
-     "#aguinaldo",
-     "#finiquito",
-     "#derechoslaborales",
-     "#dinero"
-    ],
-    "parrafo": "Según el artículo 87 de la Ley Federal del Trabajo, si no trabajaste el año completo te toca la parte proporcional del aguinaldo, aunque ya no estés en la empresa cuando se paga. Por eso, si renunciaste o te despidieron, tu finiquito debe incluir el aguinaldo proporcional a los días que trabajaste. Revísalo antes de firmar.",
-    "preguntas": [
-     "¿Me toca aguinaldo si renuncié?",
-     "¿Cómo calcular el aguinaldo proporcional?",
-     "¿Qué debe incluir mi finiquito?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Que renunciaras no significa que pierdes tu aguinaldo.",
-    "Tu finiquito tiene que traer tu aguinaldo."
-   ],
-   "adn": {
-    "tipo_gancho": "dato"
-   },
-   "llamado": "aguinaldo",
-   "ventana": {
-    "desde": "2026-11-26",
-    "hasta": "2026-12-19"
-   }
-  },
-  {
-   "id": "19",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos.",
-   "subtitulos": [
-    "Tu aguinaldo no paga impuestos",
-    "hasta 3,519 pesos.",
-    "Lo que pase de eso sí paga,",
-    "y por eso a veces",
-    "te llega menos."
-   ],
-   "palabras_clave": [
-    "impuestos",
-    "3519",
-    "menos"
-   ],
-   "fuente": "Ley del ISR, artículo 93, fracción XIV (30 UMA); UMA 2026 de $117.31 diarios (INEGI)",
-   "locacion": "sillon",
-   "vestuario": "Blusa de satín color esmeralda oscuro, pantalón palazzo negro, aretes de oro",
-   "accion": "Sentada en el sillón con una calculadora y un sobre en las manos, Capital acostado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Tu aguinaldo no paga ISR hasta $3,519.30 en 2026. 🧾\nEs el equivalente a 30 UMA. Lo que pase de eso sí paga, y por eso a veces te llega menos.\n\n📚 Ley del ISR, artículo 93, fracción XIV · INEGI, UMA 2026",
-   "seo": {
-    "palabra_clave": "aguinaldo exento de ISR",
-    "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
-    "descripcion_inicio": "Aguinaldo exento de ISR en 2026: hasta 30 UMA, es decir $3,519.30 (UMA diaria de $117.31). Lo que pase de ese tope paga ISR.\nCalcula gratis tu aguinaldo y la parte que paga impuestos con mi calculadora.",
-    "tags_concretas": [
-     "aguinaldo exento de isr",
-     "aguinaldo isr 2026",
-     "cuanto impuesto paga el aguinaldo",
-     "30 uma aguinaldo",
-     "uma 2026",
-     "aguinaldo 2026",
-     "calcular isr aguinaldo",
-     "aguinaldo sat"
-    ],
-    "hashtags": [
-     "#aguinaldo",
-     "#impuestos",
-     "#sat",
-     "#dinero"
-    ],
-    "parrafo": "El artículo 93, fracción XIV de la Ley del ISR exenta el aguinaldo hasta el equivalente a 30 días; en la práctica se calcula con la UMA. Con la UMA de 2026 ($117.31 diarios, según el INEGI) el tope es de $3,519.30. Si tu aguinaldo es mayor, el excedente paga ISR y tu empresa te lo retiene, por eso a veces te llega menos de lo que calculaste.",
-    "preguntas": [
-     "¿Cuánto del aguinaldo está exento de ISR?",
-     "¿Por qué mi aguinaldo llega con descuento?",
-     "¿Cuánto vale la UMA en 2026?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Por esto tu aguinaldo te llega menos de lo que calculaste.",
-    "El SAT no toca tu aguinaldo hasta 3,519 pesos."
-   ],
-   "adn": {
-    "tipo_gancho": "cifra"
-   },
-   "llamado": "aguinaldo",
-   "ventana": {
-    "desde": "2026-11-20",
-    "hasta": "2026-12-19"
-   }
-  },
-  {
-   "id": "20",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
-   "subtitulos": [
-    "Aguinaldo sin plan",
-    "se acaba en enero.",
-    "Mi regla: la mitad",
-    "a deudas o ahorro,",
-    "30% a una meta",
-    "y 20 a un gusto sin culpa."
-   ],
-   "palabras_clave": [
-    "enero",
-    "mitad",
-    "30%",
-    "20"
-   ],
-   "fuente": "Regla de Victoria (opinión), basada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005)",
-   "locacion": "sala_navidad",
-   "vestuario": "Suéter oversize color marfil de cuello alto, falda midi de satín dorada, aretes de perla",
-   "accion": "Sentada junto al árbol de Navidad con un sobre de dinero en las manos, Capital acostado a sus pies.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Aguinaldo sin plan se acaba en enero. 🎁\nMi regla: la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\n\nGuárdalo para cuando te depositen.",
-   "seo": {
-    "palabra_clave": "qué hacer con tu aguinaldo",
-    "titulo": "Qué hacer con tu aguinaldo en 2026 🎁",
-    "descripcion_inicio": "Qué hacer con tu aguinaldo para que no se acabe en enero: mi regla es la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\nHaz tu plan con mi calculadora de aguinaldo gratis.",
-    "tags_concretas": [
-     "que hacer con el aguinaldo",
-     "como ahorrar el aguinaldo",
-     "plan para el aguinaldo",
-     "no gastar el aguinaldo",
-     "aguinaldo 2026",
-     "regla 50 30 20",
-     "cuesta de enero",
-     "ahorro"
-    ],
-    "hashtags": [
-     "#aguinaldo",
-     "#ahorro",
-     "#cuestadeenero",
-     "#navidad"
-    ],
-    "parrafo": "Mi regla para el aguinaldo: la mitad a deudas caras o a tu fondo de emergencia, 30% a una meta concreta y 20% a darte un gusto sin culpa. Está inspirada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi. La CONDUSEF también recomienda usar parte del aguinaldo para pagar deudas, sobre todo las de tasa más alta.",
-    "preguntas": [
-     "¿Qué hacer con el aguinaldo?",
-     "¿Cómo no gastarse el aguinaldo en enero?",
-     "¿Conviene usar el aguinaldo para pagar deudas?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "La cuesta de enero se decide el día que te pagan el aguinaldo.",
-    "Tu aguinaldo necesita un plan antes de que llegue."
-   ],
-   "adn": {
-    "tipo_gancho": "regla"
-   },
-   "llamado": "aguinaldo",
-   "ventana": {
-    "desde": "2026-12-04",
-    "hasta": "2026-12-19"
-   }
-  },
-  {
-   "id": "21",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
-   "subtitulos": [
-    "Antes de gastar tu aguinaldo,",
-    "paga tu tarjeta.",
-    "Cada peso que abonas",
-    "deja de cobrarte intereses:",
-    "es la ganancia más segura",
-    "que vas a tener."
-   ],
-   "palabras_clave": [
-    "aguinaldo",
-    "tarjeta",
-    "intereses",
-    "segura"
-   ],
-   "fuente": "CONDUSEF: usar parte del aguinaldo para pagar deudas, primero las de mayor tasa de interés como las tarjetas",
-   "locacion": "restaurante",
-   "vestuario": "Vestido de satín color plata con tirantes delgados, chal negro, pulsera de diamantes",
-   "accion": "Sentada a la mesa del restaurante sosteniendo una tarjeta de crédito dorada sin logos, Capital sentado junto a la mesa.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Antes de gastar tu aguinaldo, paga tu tarjeta. 💳\nCada peso que abonas deja de cobrarte intereses. Si tienes varias deudas, empieza por la de tasa más alta.\n\n📚 Recomendación de la CONDUSEF",
-   "seo": {
-    "palabra_clave": "aguinaldo para pagar deudas",
-    "titulo": "Aguinaldo para pagar deudas de tarjeta 💳",
-    "descripcion_inicio": "Aguinaldo para pagar deudas: la CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de tasa más alta como las tarjetas de crédito.\nCalcula en cuántos meses sales de tus deudas con mi calculadora gratis.",
-    "tags_concretas": [
-     "aguinaldo para pagar deudas",
-     "pagar tarjeta de credito",
-     "como salir de deudas",
-     "deudas de tarjeta de credito",
-     "aguinaldo 2026",
-     "intereses tarjeta de credito",
-     "metodo avalancha",
-     "que hacer con el aguinaldo"
-    ],
-    "hashtags": [
-     "#aguinaldo",
-     "#deudas",
-     "#tarjetadecredito",
-     "#dinero"
-    ],
-    "parrafo": "La CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de mayor tasa de interés, como las tarjetas de crédito. Cada peso que abonas a una deuda cara deja de cobrarte intereses. Si tienes varias, el método avalancha (primero la de tasa más alta) es el que menos intereses te cobra en total.",
-    "preguntas": [
-     "¿Conviene pagar la tarjeta con el aguinaldo?",
-     "¿Qué deuda pago primero?",
-     "¿Qué es el método avalancha?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Tu aguinaldo ya tiene dueño si debes en la tarjeta.",
-    "Pagar tu tarjeta es la inversión más segura que existe."
-   ],
-   "adn": {
-    "tipo_gancho": "consejo"
-   },
-   "llamado": "deudas",
-   "ventana": {
-    "desde": "2026-12-10",
-    "hasta": "2027-01-10"
-   }
-  },
-  {
-   "id": "22",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
-   "subtitulos": [
-    "Tu propósito de año nuevo",
-    "no es el gym,",
-    "es tu fondo de emergencia:",
-    "de 3 a 6 meses de gastos,",
-    "como recomienda la CONDUSEF."
-   ],
-   "palabras_clave": [
-    "propósito",
-    "gym",
-    "emergencia",
-    "3",
-    "6"
-   ],
-   "fuente": "Recomendación de la CONDUSEF: fondo de emergencia de 3 a 6 meses de gastos",
-   "locacion": "gimnasio",
-   "vestuario": "Conjunto deportivo de diseñador blanco: top, leggings y sudadera corta, coleta alta",
-   "accion": "De pie junto a las pesas del gimnasio con una toalla al hombro, Capital sentado a su lado.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia. 🎯\nDe 3 a 6 meses de tus gastos, como recomienda la CONDUSEF.\n\nGuárdalo y empieza esta quincena.",
-   "seo": {
-    "palabra_clave": "fondo de emergencia",
-    "titulo": "Fondo de emergencia, tu propósito 2027 🎯",
-    "descripcion_inicio": "Fondo de emergencia: junta de 3 a 6 meses de tus gastos, como recomienda la CONDUSEF. Es el propósito de año nuevo que más te va a cuidar.\nCalcula cuánto necesitas y en cuántos meses llegas con mi calculadora gratis.",
-    "tags_concretas": [
-     "fondo de emergencia",
-     "cuanto debe tener un fondo de emergencia",
-     "propositos de año nuevo",
-     "ahorro 2027",
-     "como ahorrar dinero",
-     "condusef ahorro",
-     "fondo de emergencia 6 meses",
-     "ahorro"
-    ],
-    "hashtags": [
-     "#fondodeemergencia",
-     "#propositos2027",
-     "#ahorro",
-     "#dinero"
-    ],
-    "parrafo": "Un fondo de emergencia es dinero guardado para imprevistos: una enfermedad, una reparación o quedarte sin trabajo. La CONDUSEF recomienda juntar de 3 a 6 meses de tus gastos. Si lo haces tu propósito de año nuevo, apártalo cada quincena y guárdalo donde lo puedas sacar rápido y sin perder dinero.",
-    "preguntas": [
-     "¿Cuánto debe tener un fondo de emergencia?",
-     "¿Cómo empezar a ahorrar en enero?",
-     "¿Dónde guardar el fondo de emergencia?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "El mejor propósito de año nuevo cabe en una cuenta de ahorro.",
-    "Si en enero se te descompone el coche, ¿de dónde sale el dinero?"
-   ],
-   "adn": {
-    "tipo_gancho": "contradiccion"
-   },
-   "llamado": "fondo",
-   "ventana": {
-    "desde": "2027-01-02",
-    "hasta": "2027-01-20"
-   }
-  },
-  {
-   "id": "23",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "El pago mínimo de tu tarjeta es una trampa: suele ser del dos al cinco por ciento de tu deuda. Lo demás sigue cobrando intereses. Paga más.",
-   "subtitulos": [
-    "El pago mínimo de tu tarjeta",
-    "es una trampa:",
-    "suele ser del 2 al 5%",
-    "de tu deuda.",
-    "Lo demás sigue cobrando intereses.",
-    "Paga más."
-   ],
-   "palabras_clave": [
-    "mínimo",
-    "trampa",
-    "5%",
-    "intereses"
-   ],
-   "fuente": "CONDUSEF: el pago mínimo suele ser del 2% al 5% del saldo; recomienda cubrir el pago para no generar intereses",
-   "locacion": "cocina",
-   "vestuario": "Mono negro de manga larga con cinturón dorado, aretes de aro dorados",
-   "accion": "Recargada en la barra de la cocina revisando un estado de cuenta en papel, Capital sentado a sus pies.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "El pago mínimo de tu tarjeta es una trampa. ⚠️\nSuele ser del 2% al 5% de tu deuda y lo demás sigue cobrando intereses. La CONDUSEF recomienda pagar el monto para no generar intereses.\n\n📚 CONDUSEF",
-   "seo": {
-    "palabra_clave": "pago mínimo de tarjeta",
-    "titulo": "Pago mínimo de tarjeta, por qué es trampa ⚠️",
-    "descripcion_inicio": "Pago mínimo de tarjeta de crédito: según la CONDUSEF suele ser del 2% al 5% de tu deuda, y pagar solo eso alarga la deuda y los intereses.\nLa CONDUSEF recomienda pagar el monto para no generar intereses. Calcula tu plan para salir de deudas gratis.",
-    "tags_concretas": [
-     "pago minimo tarjeta de credito",
-     "pago para no generar intereses",
-     "que pasa si pago el minimo",
-     "intereses tarjeta de credito",
-     "como salir de deudas",
-     "condusef tarjeta de credito",
-     "cuesta de enero",
-     "deudas"
-    ],
-    "hashtags": [
-     "#tarjetadecredito",
-     "#deudas",
-     "#cuestadeenero",
-     "#dinero"
-    ],
-    "parrafo": "Según la CONDUSEF, el pago mínimo de la tarjeta de crédito suele ser del 2% al 5% de tu saldo, y pagar solo eso alarga la deuda y los intereses. La CONDUSEF recomienda dejar el pago mínimo para emergencias y cubrir el pago para no generar intereses. Si no te alcanza, paga lo más que puedas por encima del mínimo.",
-    "preguntas": [
-     "¿Qué pasa si solo pago el mínimo de la tarjeta?",
-     "¿Qué es el pago para no generar intereses?",
-     "¿Cómo salir de deudas de tarjeta?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Pagar el mínimo es la forma más cara de pagar tu tarjeta.",
-    "Tu banco ama que pagues solo el mínimo."
-   ],
-   "adn": {
-    "tipo_gancho": "error"
-   },
-   "llamado": "deudas",
-   "ventana": {
-    "desde": "2027-01-06",
-    "hasta": "2027-01-31"
-   }
-  },
-  {
-   "id": "24",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Meses sin intereses no es dinero gratis. Cada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.",
-   "subtitulos": [
-    "Meses sin intereses",
-    "no es dinero gratis.",
-    "Cada mensualidad se come tu sueldo",
-    "de los próximos meses.",
-    "Antes de firmar,",
-    "suma todas las que ya traes."
-   ],
-   "palabras_clave": [
-    "gratis",
-    "mensualidad",
-    "sueldo",
-    "suma"
-   ],
-   "fuente": "Profeco y CONDUSEF, recomendaciones para evitar deudas: las compras a meses sin planear reducen tu ingreso disponible",
-   "locacion": "sala",
-   "vestuario": "Abrigo largo gris oxford sobre suéter rosa palo de cuello alto, pantalón negro",
-   "accion": "Sentada en el sofá de la sala con varias bolsas de compras sin logos a un lado, Capital echado a sus pies.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Meses sin intereses no es dinero gratis. 💳\nCada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.\n\n📚 Profeco y CONDUSEF",
-   "seo": {
-    "palabra_clave": "meses sin intereses",
-    "titulo": "Meses sin intereses no es dinero gratis 💳",
-    "descripcion_inicio": "Meses sin intereses: cada mensualidad se come tu sueldo de los próximos meses. Profeco y la CONDUSEF advierten que comprar a meses sin planear reduce tu ingreso disponible.\nAntes de firmar, suma las que ya traes y revisa tu presupuesto 50/30/20 gratis.",
-    "tags_concretas": [
-     "meses sin intereses",
-     "compras a meses sin intereses",
-     "cuesta de enero",
-     "presupuesto mensual",
-     "tarjeta de credito",
-     "como no endeudarse",
-     "profeco condusef",
-     "regla 50 30 20"
-    ],
-    "hashtags": [
-     "#mesessinintereses",
-     "#cuestadeenero",
-     "#tarjetadecredito",
-     "#dinero"
-    ],
-    "parrafo": "Profeco y la CONDUSEF advierten que comprar a meses sin intereses sin planear reduce tu ingreso disponible: cada mensualidad ya está comprometida antes de que te paguen. Antes de firmar otra compra a meses, suma todas las mensualidades que ya traes y revisa que tu presupuesto aguante.",
-    "preguntas": [
-     "¿Conviene comprar a meses sin intereses?",
-     "¿Cómo sobrevivir a la cuesta de enero?",
-     "¿Cómo hacer un presupuesto mensual?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Los meses sin intereses son el préstamo que no sientes.",
-    "Tu sueldo de marzo ya lo gastaste en diciembre."
-   ],
-   "adn": {
-    "tipo_gancho": "contradiccion"
-   },
-   "llamado": "presupuesto",
-   "ventana": {
-    "desde": "2027-01-12",
-    "hasta": "2027-01-31"
-   }
-  },
-  {
-   "id": "25",
-   "estado": "pendiente",
-   "pilar": "finanzas",
-   "guion": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
-   "subtitulos": [
-    "Haz tu presupuesto de enero",
-    "en un minuto:",
-    "50% a lo necesario,",
-    "30 a lo que quieres",
-    "y 20 a ahorro y deudas."
-   ],
-   "palabras_clave": [
-    "minuto",
-    "50%",
-    "30",
-    "20"
-   ],
-   "fuente": "Regla 50/30/20: Elizabeth Warren y Amelia Warren Tyagi, All Your Worth (2005)",
-   "locacion": "oficina",
-   "vestuario": "Camisa de seda color lavanda, pantalón sastre beige, reloj plateado",
-   "accion": "Sentada al escritorio con una libreta abierta y una pluma en la mano, Capital sentado junto al escritorio.",
-   "hora_publicacion": "rotacion",
-   "texto_post": "Haz tu presupuesto de enero en un minuto. 📊\n50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas.\n\n📚 Elizabeth Warren y Amelia Warren Tyagi, All Your Worth",
-   "seo": {
-    "palabra_clave": "presupuesto 50/30/20",
-    "titulo": "Presupuesto 50/30/20 en un minuto 📊",
-    "descripcion_inicio": "Presupuesto 50/30/20: 50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas. La regla de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005).\nHaz el tuyo gratis con mi calculadora 50/30/20.",
-    "tags_concretas": [
-     "regla 50 30 20",
-     "presupuesto 50 30 20",
-     "como hacer un presupuesto",
-     "presupuesto mensual",
-     "cuesta de enero",
-     "como organizar mi sueldo",
-     "elizabeth warren",
-     "ahorro"
-    ],
-    "hashtags": [
-     "#presupuesto",
-     "#regla503020",
-     "#cuestadeenero",
-     "#dinero"
-    ],
-    "parrafo": "La regla 50/30/20 la propusieron Elizabeth Warren y Amelia Warren Tyagi en su libro All Your Worth (2005): 50% de tu ingreso neto a lo necesario (vivienda, comida, transporte, servicios y pagos mínimos), 30% a lo que quieres y 20% a ahorro y a pagar deudas de más. Es un punto de partida para ordenar tu sueldo en enero; ajústalo a tu vida.",
-    "preguntas": [
-     "¿Qué es la regla 50/30/20?",
-     "¿Cómo hacer un presupuesto mensual?",
-     "¿Cómo organizar mi sueldo?"
-    ]
-   },
-   "ganchos_alternativos": [
-    "Si tu sueldo se te va en una semana, te falta esta regla.",
-    "Tres números para que enero no te gane."
-   ],
-   "adn": {
-    "tipo_gancho": "regla"
-   },
-   "llamado": "presupuesto",
-   "ventana": {
-    "desde": "2027-01-18",
-    "hasta": "2027-02-10"
-   }
-  }
- ]
+    {
+      "id": "02",
+      "estado": "listo_para_publicar",
+      "pilar": "negocio",
+      "guion": "El ochenta por ciento de tus ventas suele salir del veinte por ciento de tus clientes. Principio de Pareto. Encuentra a ese veinte y cuídalo como oro.",
+      "subtitulos": [
+        "El 80% de tus ventas",
+        "suele salir del 20%",
+        "de tus clientes.",
+        "Principio de Pareto.",
+        "Encuentra a ese 20%",
+        "y cuídalo como oro."
+      ],
+      "palabras_clave": [
+        "80%",
+        "20%",
+        "pareto",
+        "oro"
+      ],
+      "fuente": "Vilfredo Pareto; Richard Koch, El principio 80/20",
+      "locacion": "palco_estadio",
+      "vestuario": "Blazer azul marino entallado, blusa de seda blanca, jeans de diseñador oscuros, aretes de oro",
+      "accion": "Sentada en el asiento de piel del palco, Capital sentado a su lado mirando a cámara.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "El 80% de tus ventas suele salir del 20% de tus clientes. 🎯\n¿Ya sabes quiénes son los tuyos?\n\n📚 Principio de Pareto · Richard Koch, El principio 80/20\n💾 Guárdalo para tu próxima revisión de clientes.",
+      "archivo": "videos/video-02-palco-pareto-SUBTITULADO.mp4",
+      "creditos": 510,
+      "qa": {
+        "similitud": 0.92,
+        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos OK."
+      },
+      "openart": {
+        "foto": "CHR8hma1TeWY9weBL2ca",
+        "video": "c5OknrxCOp4J9rGdIPz0"
+      },
+      "intentos_publicacion": [
+        "2026-10-29T03:00Z: Publer 403 (Cloudflare 1010, ya corregido con User-Agent propio); YouTube: el permiso apunta a \"Nadie Te Lo Explicó\"; push al repo sin permiso."
+      ],
+      "seo": {
+        "palabra_clave": "principio de Pareto",
+        "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
+        "descripcion_inicio": "Principio de Pareto en ventas: el 20% de tus clientes suele generar el 80% de tus ingresos.\nCómo aplicar la regla 80/20 en tu negocio para vender más cuidando a tus mejores clientes.",
+        "tags_concretas": [
+          "principio de pareto",
+          "regla 80 20",
+          "ley de pareto",
+          "pareto en ventas",
+          "regla 80/20 en negocios",
+          "como identificar a tus mejores clientes",
+          "el 20 por ciento de clientes",
+          "richard koch",
+          "vilfredo pareto",
+          "ventas"
+        ],
+        "hashtags": [
+          "#ventas",
+          "#pareto",
+          "#regla8020",
+          "#negocios"
+        ],
+        "parrafo": "El principio de Pareto, o regla 80/20, dice que una minoría de causas produce la mayoría de los resultados. En ventas suele verse así: una parte pequeña de tus clientes genera la mayor parte de tus ingresos. Richard Koch lo explica en El principio 80/20. Identifica a ese 20% de clientes, atiéndelos mejor y pregúntales qué más necesitan.",
+        "preguntas": [
+          "¿Qué es el principio de Pareto en ventas?",
+          "¿Cómo aplicar la regla 80/20 en tu negocio?",
+          "¿Cómo encontrar a tus mejores clientes?"
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Una división te dice cuándo se duplica tu dinero. Setenta y dos entre tu tasa anual. Al ocho por ciento: nueve años. Regla del setenta y dos.",
+      "subtitulos": [
+        "Una división te dice",
+        "cuándo se duplica tu dinero.",
+        "72 entre tu tasa anual.",
+        "Al 8%: 9 años.",
+        "Regla del 72."
+      ],
+      "palabras_clave": [
+        "división",
+        "duplica",
+        "72",
+        "8%",
+        "9"
+      ],
+      "fuente": "Regla del 72 (Luca Pacioli, 1494)",
+      "locacion": "yate",
+      "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
+      "accion": "Sentada en el sillón blanco de la cubierta, Capital sentado a su lado, mar turquesa detrás.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Una división te dice cuándo se duplica tu dinero. ⏳\n72 entre tu tasa anual. Al 8% anual: 9 años.\n\n📚 Regla del 72\n⚠️ Contenido educativo, no es asesoría financiera.",
+      "seo": {
+        "palabra_clave": "regla del 72",
+        "titulo": "Regla del 72 para duplicar tu dinero 📈",
+        "descripcion_inicio": "Regla del 72: divide 72 entre tu tasa de interés anual y sabrás en cuántos años se duplica tu dinero.\nInterés compuesto explicado fácil, educación financiera para principiantes.",
+        "tags_concretas": [
+          "regla del 72",
+          "cuanto tarda en duplicarse mi dinero",
+          "duplicar dinero",
+          "interes compuesto",
+          "interes compuesto explicado",
+          "regla del 72 ejemplo",
+          "tasa de interes anual",
+          "luca pacioli",
+          "inversion para principiantes"
+        ],
+        "hashtags": [
+          "#regladel72",
+          "#interescompuesto",
+          "#inversion",
+          "#dinero"
+        ],
+        "parrafo": "La regla del 72 es un atajo para calcular en cuántos años se duplica tu dinero con interés compuesto: divides 72 entre la tasa de interés anual. Al 8% anual tu dinero se duplica en unos 9 años; al 4%, en 18. Es una aproximación que ya aparece en la obra de Luca Pacioli de 1494 y sirve para comparar opciones de ahorro de un vistazo.",
+        "preguntas": [
+          "¿Qué es la regla del 72?",
+          "¿En cuánto tiempo se duplica mi dinero?",
+          "¿Cómo funciona el interés compuesto?"
+        ]
+      },
+      "puente_producto": true,
+      "ganchos_alternativos": [
+        "¿Cuánto tarda tu dinero en duplicarse?"
+      ]
+    },
+    {
+      "id": "04",
+      "estado": "pendiente",
+      "pilar": "mentalidad",
+      "guion": "Si traes la cabeza llena de preocupaciones, haz esto quince minutos. Escribe todo lo que te preocupa, sin filtro. James Pennebaker lo estudió por décadas: aligera la mente.",
+      "subtitulos": [
+        "Si traes la cabeza",
+        "llena de preocupaciones,",
+        "haz esto 15 minutos.",
+        "Escribe todo lo que te preocupa,",
+        "sin filtro.",
+        "James Pennebaker lo estudió",
+        "por décadas: aligera la mente."
+      ],
+      "palabras_clave": [
+        "preocupaciones",
+        "15",
+        "pennebaker",
+        "mente"
+      ],
+      "fuente": "James W. Pennebaker, investigación sobre escritura expresiva",
+      "locacion": "recamara",
+      "vestuario": "Conjunto de pijama de seda color champaña con bata a juego",
+      "accion": "Sentada en la orilla de la cama con una libreta en la mano, Capital echado en la alfombra a sus pies con la cabeza levantada.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si traes la cabeza llena de preocupaciones, escribe 15 minutos. ✍️\nTodo lo que te preocupa, sin filtro. Esta noche, pruébalo.\n\n📚 James W. Pennebaker, escritura expresiva\n💛 No sustituye ayuda profesional si la necesitas.",
+      "seo": {
+        "palabra_clave": "escritura expresiva",
+        "titulo": "Escritura expresiva de 15 minutos ✍️",
+        "descripcion_inicio": "Escritura expresiva: escribir 15 minutos lo que te preocupa ayuda a aligerar la mente.\nUn hábito de bienestar emocional estudiado por James Pennebaker, fácil de empezar esta noche.",
+        "tags_concretas": [
+          "escritura expresiva",
+          "james pennebaker",
+          "escribir para soltar preocupaciones",
+          "journaling para principiantes",
+          "diario personal",
+          "escribir 15 minutos",
+          "como soltar preocupaciones",
+          "bienestar emocional"
+        ],
+        "hashtags": [
+          "#escrituraexpresiva",
+          "#bienestar",
+          "#journaling",
+          "#saludmental"
+        ],
+        "parrafo": "La escritura expresiva consiste en escribir unos 15 minutos sobre lo que te preocupa o te duele, sin cuidar la ortografía ni el orden. El psicólogo James W. Pennebaker la estudió durante décadas y encontró beneficios para el bienestar emocional. Es una herramienta sencilla para bajar el estrés y ordenar ideas; no sustituye la ayuda de un profesional.",
+        "preguntas": [
+          "¿Qué es la escritura expresiva?",
+          "¿Cómo escribir para bajar el estrés?",
+          "¿Qué descubrió James Pennebaker?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Escribir lo que te preocupa durante quince minutos aligera la mente."
+      ]
+    },
+    {
+      "id": "05",
+      "estado": "pendiente",
+      "pilar": "vida",
+      "guion": "Lo que te roba energía no son los problemas grandes: son los pendientes de dos minutos. Regla de David Allen: si toma menos, hazlo ya.",
+      "subtitulos": [
+        "Lo que te roba energía",
+        "no son los problemas grandes:",
+        "son los pendientes",
+        "de 2 minutos.",
+        "Regla de David Allen:",
+        "si toma menos, hazlo ya."
+      ],
+      "palabras_clave": [
+        "energía",
+        "grandes",
+        "2",
+        "allen",
+        "ya"
+      ],
+      "fuente": "David Allen, Organízate con eficacia (Getting Things Done)",
+      "locacion": "cocina",
+      "vestuario": "Suéter de cachemira color crema, pantalón negro de vestir, reloj dorado",
+      "accion": "De pie detrás de la isla de travertino con una taza de café, Capital sentado junto a la isla.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Lo que te roba energía son los pendientes de 2 minutos. ⚡\nSi toma menos de 2 minutos, hazlo ya.\n\n📚 David Allen, Organízate con eficacia",
+      "seo": {
+        "palabra_clave": "regla de los 2 minutos",
+        "titulo": "Regla de los 2 minutos de David Allen ⚡",
+        "descripcion_inicio": "Regla de los 2 minutos de David Allen: si una tarea toma menos de dos minutos, hazla ya.\nProductividad del método Getting Things Done (Organízate con eficacia) para dejar de posponer.",
+        "tags_concretas": [
+          "regla de los 2 minutos",
+          "regla de los dos minutos",
+          "david allen",
+          "getting things done",
+          "organizate con eficacia",
+          "metodo gtd",
+          "como dejar de procrastinar",
+          "tareas pendientes",
+          "productividad"
+        ],
+        "hashtags": [
+          "#productividad",
+          "#reglade2minutos",
+          "#habitos",
+          "#organizacion"
+        ],
+        "parrafo": "La regla de los 2 minutos es de David Allen, autor de Organízate con eficacia (Getting Things Done): si una tarea toma menos de dos minutos, hazla en ese momento en lugar de anotarla para después. Las tareas pequeñas que se acumulan ocupan espacio en tu cabeza. Aplícala hoy con correos, mensajes y pendientes rápidos y verás cómo se libera tu día.",
+        "preguntas": [
+          "¿Qué es la regla de los 2 minutos?",
+          "¿Cómo dejar de procrastinar tareas pequeñas?",
+          "¿Qué es el método GTD de David Allen?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Si algo toma menos de dos minutos, hazlo ya."
+      ]
+    },
+    {
+      "id": "06",
+      "estado": "pendiente",
+      "pilar": "motivacion_economica",
+      "guion": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. De cada diez pesos que ganes, guarda uno primero. Lo escribió George Clason hace casi cien años.",
+      "subtitulos": [
+        "Si ahorras lo que te sobra,",
+        "casi nunca vas a ahorrar.",
+        "De cada 10 pesos que ganes,",
+        "guarda 1 primero.",
+        "Lo escribió George Clason",
+        "hace casi 100 años."
+      ],
+      "palabras_clave": [
+        "sobra",
+        "nunca",
+        "10",
+        "1",
+        "clason"
+      ],
+      "fuente": "George S. Clason, El hombre más rico de Babilonia (1926)",
+      "locacion": "restaurante",
+      "vestuario": "Vestido de noche negro de satín con hombros descubiertos, collar de perlas, labios rojos",
+      "accion": "Sentada en el banco de terciopelo verde frente a la mesa con velas, Capital sentado junto a la mesa.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. 💰\nDe cada 10 pesos que ganes, guarda 1 primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia",
+      "seo": {
+        "palabra_clave": "págate primero",
+        "titulo": "Págate primero con el 10% de lo que ganas 💰",
+        "descripcion_inicio": "Págate primero: guarda al menos el 10% de lo que ganas antes de pagar a nadie más.\nLa regla de ahorro de El hombre más rico de Babilonia, de George S. Clason.",
+        "tags_concretas": [
+          "pagate primero",
+          "paga primero a ti mismo",
+          "el hombre mas rico de babilonia",
+          "george clason",
+          "ahorrar el 10 por ciento",
+          "como ahorrar dinero cada mes",
+          "regla del 10 por ciento",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#ahorro",
+          "#pagateprimero",
+          "#dinero",
+          "#libros"
+        ],
+        "parrafo": "Págate primero es la regla de ahorro de El hombre más rico de Babilonia, el libro de George S. Clason de 1926: de cada 10 pesos que ganes, guarda al menos 1 para ti antes de pagar cualquier otra cosa. El ahorro no es lo que sobra al final del mes, es lo primero que sale. Aparta ese 10% el día que te pagan y no lo toques.",
+        "preguntas": [
+          "¿Qué significa págate primero?",
+          "¿Cuánto debo ahorrar de mi sueldo?",
+          "¿Qué enseña El hombre más rico de Babilonia?"
+        ]
+      },
+      "puente_producto": true,
+      "ganchos_alternativos": [
+        "De cada diez pesos que ganes, guarda uno para ti."
+      ]
+    },
+    {
+      "id": "07",
+      "estado": "pendiente",
+      "pilar": "negocio",
+      "guion": "Jeff Bezos dejó un trabajo seguro con una sola pregunta. Imagínate a los ochenta años: ¿te arrepentirías de no intentarlo? Así fundó Amazon. Minimiza arrepentimientos.",
+      "subtitulos": [
+        "Jeff Bezos dejó un trabajo seguro",
+        "con una sola pregunta.",
+        "Imagínate a los 80 años:",
+        "¿te arrepentirías",
+        "de no intentarlo?",
+        "Así fundó Amazon.",
+        "Minimiza arrepentimientos."
+      ],
+      "palabras_clave": [
+        "bezos",
+        "pregunta",
+        "80",
+        "amazon"
+      ],
+      "fuente": "Jeff Bezos, marco de minimización del arrepentimiento (entrevistas públicas)",
+      "locacion": "jet",
+      "vestuario": "Traje sastre gris perla de pantalón, blusa de seda negra, lentes de sol en la mano",
+      "accion": "Sentada en el asiento de piel del jet, Capital sentado junto al asiento, ventanas con atardecer.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Jeff Bezos dejó un trabajo seguro con una sola pregunta. ✈️\nImagínate a los 80: ¿te arrepentirías de no intentarlo?\n\n📚 Jeff Bezos, marco de minimización del arrepentimiento",
+      "seo": {
+        "palabra_clave": "Jeff Bezos",
+        "titulo": "Jeff Bezos y la regla del arrepentimiento",
+        "descripcion_inicio": "Jeff Bezos y el marco de minimización del arrepentimiento: imagínate a los 80 años antes de decidir.\nCómo decidió fundar Amazon y cómo usarlo para emprender sin quedarte con las ganas.",
+        "tags_concretas": [
+          "jeff bezos",
+          "minimizacion del arrepentimiento",
+          "regret minimization framework",
+          "como tomar decisiones dificiles",
+          "como decidir emprender",
+          "jeff bezos amazon historia",
+          "emprender sin miedo",
+          "decisiones"
+        ],
+        "hashtags": [
+          "#jeffbezos",
+          "#decisiones",
+          "#emprender",
+          "#negocios"
+        ],
+        "parrafo": "Jeff Bezos contó en entrevistas que decidió dejar su trabajo y fundar Amazon con un marco de minimización del arrepentimiento: imaginarse a los 80 años y preguntarse de qué se arrepentiría. Sirve para decisiones grandes como emprender, cambiar de trabajo o lanzar un proyecto. Pregúntate si te arrepentirías más de intentarlo o de no hacerlo.",
+        "preguntas": [
+          "¿Qué es el marco de minimización del arrepentimiento?",
+          "¿Cómo decidió Jeff Bezos fundar Amazon?",
+          "¿Cómo tomar una decisión difícil?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Cuando dudes, imagínate a los ochenta años."
+      ]
+    },
+    {
+      "id": "08",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Warren Buffett tiene dos reglas para invertir, y son la misma. Uno: no pierdas dinero. Dos: no olvides la regla uno. Antes de invertir, entiende en qué.",
+      "subtitulos": [
+        "Warren Buffett tiene dos reglas",
+        "para invertir, y son la misma.",
+        "Uno: no pierdas dinero.",
+        "Dos: no olvides la regla uno.",
+        "Antes de invertir,",
+        "entiende en qué."
+      ],
+      "palabras_clave": [
+        "buffett",
+        "misma",
+        "pierdas",
+        "invertir"
+      ],
+      "fuente": "Warren Buffett, frase pública atribuida y repetida por él",
+      "locacion": "coche",
+      "vestuario": "Blazer camel de lana, suéter negro de cuello alto, lentes de sol en la cabeza",
+      "accion": "Sentada en el asiento trasero del sedán, Capital sentado a su lado en el asiento.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Warren Buffett tiene dos reglas para invertir, y son la misma. 🚗\nRegla #1: no pierdas dinero. Regla #2: no olvides la regla #1.\n\n📚 Warren Buffett\n⚠️ Contenido educativo, no es asesoría financiera.",
+      "seo": {
+        "palabra_clave": "regla número 1 de Warren Buffett",
+        "titulo": "Regla número 1 de Warren Buffett 💵",
+        "descripcion_inicio": "Regla número 1 de Warren Buffett: no pierdas dinero; la número 2, no olvides la número 1.\nAntes de invertir, entiende en qué inviertes: educación financiera, no asesoría.",
+        "tags_concretas": [
+          "warren buffett",
+          "reglas de warren buffett",
+          "regla numero 1 de warren buffett",
+          "no pierdas dinero",
+          "consejos de warren buffett",
+          "invertir para principiantes",
+          "como invertir sin perder dinero",
+          "inversion"
+        ],
+        "hashtags": [
+          "#warrenbuffett",
+          "#inversion",
+          "#dinero",
+          "#educacionfinanciera"
+        ],
+        "parrafo": "Regla número 1: no pierdas dinero. Regla número 2: no olvides la regla número 1. Es una de las frases más conocidas de Warren Buffett y habla de proteger tu capital antes de buscar ganancias. Antes de invertir, entiende en qué pones tu dinero, cuánto puedes perder y por qué. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Cuál es la regla número 1 de Warren Buffett?",
+          "¿Qué hacer antes de invertir?",
+          "¿Cómo proteger tu dinero?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Regla número uno: no pierdas dinero."
+      ]
+    },
+    {
+      "id": "09",
+      "estado": "pendiente",
+      "pilar": "mentalidad",
+      "guion": "Cinco minutos de esta respiración mejoraron el ánimo más que meditar. Lo midió Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Pruébalo ahora.",
+      "subtitulos": [
+        "5 minutos de esta respiración",
+        "mejoraron el ánimo más que meditar.",
+        "Lo midió Stanford.",
+        "2 inhalaciones por la nariz,",
+        "una exhalación larga por la boca.",
+        "Pruébalo ahora."
+      ],
+      "palabras_clave": [
+        "5",
+        "meditar",
+        "stanford",
+        "ahora"
+      ],
+      "fuente": "Balban et al., Cell Reports Medicine (2023), suspiro cíclico, Stanford",
+      "locacion": "jacuzzi",
+      "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
+      "accion": "Sentada en el borde del jacuzzi con la bata sobre los hombros, Capital echado en la cubierta junto a ella.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "5 minutos de esta respiración mejoraron el ánimo más que meditar. 🌬️\n2 inhalaciones por la nariz, 1 exhalación larga por la boca.\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)\n💛 Bienestar, no tratamiento médico.",
+      "seo": {
+        "palabra_clave": "suspiro cíclico",
+        "titulo": "Suspiro cíclico para bajar el estrés",
+        "descripcion_inicio": "Suspiro cíclico: dos inhalaciones por la nariz y una exhalación larga por la boca, cinco minutos al día.\nEjercicio de respiración que en un estudio de Stanford (2023) mejoró el ánimo más que la meditación.",
+        "tags_concretas": [
+          "suspiro ciclico",
+          "cyclic sighing",
+          "ejercicio de respiracion",
+          "respiracion para el estres",
+          "respiracion stanford",
+          "como calmar la ansiedad respirando",
+          "respiracion de 5 minutos",
+          "estres"
+        ],
+        "hashtags": [
+          "#respiracion",
+          "#bienestar",
+          "#estres",
+          "#saludmental"
+        ],
+        "parrafo": "El suspiro cíclico es una técnica de respiración: dos inhalaciones por la nariz y una exhalación larga por la boca, durante 5 minutos al día. Un estudio de Stanford publicado en Cell Reports Medicine en 2023 (Balban y colaboradores) encontró que mejoró el ánimo más que la meditación de atención plena. Es una práctica de bienestar, no un tratamiento médico.",
+        "preguntas": [
+          "¿Qué es el suspiro cíclico?",
+          "¿Cómo respirar para bajar el estrés?",
+          "¿Qué encontró el estudio de Stanford sobre la respiración?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Dos inhalaciones por la nariz y una exhalación larga por la boca."
+      ]
+    },
+    {
+      "id": "10",
+      "estado": "pendiente",
+      "pilar": "vida",
+      "guion": "Harvard lleva más de ochenta años estudiando la felicidad. La respuesta no es el dinero: son las buenas relaciones. Llama hoy a alguien.",
+      "subtitulos": [
+        "Harvard lleva más de 80 años",
+        "estudiando la felicidad.",
+        "La respuesta no es el dinero:",
+        "son las buenas relaciones.",
+        "Llama hoy a alguien."
+      ],
+      "palabras_clave": [
+        "harvard",
+        "80",
+        "dinero",
+        "relaciones"
+      ],
+      "fuente": "Harvard Study of Adult Development (desde 1938), Robert Waldinger",
+      "locacion": "sala",
+      "vestuario": "Vestido midi de punto color vino, botas de piel negras, brazalete dorado",
+      "accion": "Sentada en el sillón bouclé de la sala con el celular en la mano, Capital sentado a su lado con la cabeza junto a su rodilla.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Harvard lleva más de 80 años estudiando la felicidad. ❤️\nLa respuesta no es el dinero: son las buenas relaciones. ¿A quién vas a llamar hoy?\n\n📚 Harvard Study of Adult Development · Robert Waldinger",
+      "seo": {
+        "palabra_clave": "estudio de Harvard sobre la felicidad",
+        "titulo": "Estudio de Harvard sobre la felicidad ❤️",
+        "descripcion_inicio": "Estudio de Harvard sobre la felicidad: más de 80 años investigando qué nos hace felices y sanos.\nLa conclusión de Robert Waldinger: las buenas relaciones. Llama hoy a alguien.",
+        "tags_concretas": [
+          "estudio de harvard felicidad",
+          "harvard study of adult development",
+          "robert waldinger",
+          "que nos hace felices",
+          "felicidad y relaciones",
+          "estudio mas largo sobre la felicidad",
+          "relaciones",
+          "felicidad"
+        ],
+        "hashtags": [
+          "#felicidad",
+          "#relaciones",
+          "#harvard",
+          "#bienestar"
+        ],
+        "parrafo": "El Estudio de Harvard sobre el Desarrollo Adulto sigue a sus participantes desde 1938 y hoy lo dirige Robert Waldinger. Su conclusión más repetida: las buenas relaciones nos hacen más felices y más sanos. No es el dinero ni la fama lo que más pesa, es la calidad de tus vínculos. Llama hoy a alguien que te importa.",
+        "preguntas": [
+          "¿Qué dice el estudio de Harvard sobre la felicidad?",
+          "¿Qué nos hace felices según la ciencia?",
+          "¿Quién es Robert Waldinger?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El estudio de Harvard sobre la felicidad lleva más de ochenta años."
+      ]
+    },
+    {
+      "id": "11",
+      "estado": "pendiente",
+      "pilar": "motivacion_economica",
+      "guion": "Si te dan una semana, vas a tardar una semana. La ley de Parkinson: el trabajo se estira hasta llenar el tiempo. Dale a tu proyecto la mitad.",
+      "subtitulos": [
+        "Si te dan una semana,",
+        "vas a tardar una semana.",
+        "La ley de Parkinson:",
+        "el trabajo se estira",
+        "hasta llenar el tiempo.",
+        "Dale a tu proyecto la mitad."
+      ],
+      "palabras_clave": [
+        "semana",
+        "parkinson",
+        "tiempo",
+        "mitad"
+      ],
+      "fuente": "C. Northcote Parkinson, The Economist (1955)",
+      "locacion": "gimnasio",
+      "vestuario": "Conjunto deportivo de diseñador negro con detalles dorados: leggings, top y chamarra ligera abierta",
+      "accion": "De pie junto al rack de mancuernas con una toalla al hombro, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si te dan una semana, vas a tardar una semana. ⏱️\nEl trabajo se estira hasta llenar el tiempo. Dale a tu proyecto la mitad.\n\n📚 C. Northcote Parkinson, Ley de Parkinson",
+      "seo": {
+        "palabra_clave": "ley de Parkinson",
+        "titulo": "Ley de Parkinson y tu tiempo de trabajo",
+        "descripcion_inicio": "Ley de Parkinson: el trabajo se expande hasta llenar el tiempo que le das.\nCómo usarla para terminar tus proyectos en la mitad del tiempo, según C. Northcote Parkinson.",
+        "tags_concretas": [
+          "ley de parkinson",
+          "ley de parkinson productividad",
+          "el trabajo se expande",
+          "gestion del tiempo",
+          "como terminar proyectos",
+          "northcote parkinson",
+          "fechas limite",
+          "productividad"
+        ],
+        "hashtags": [
+          "#leydeparkinson",
+          "#productividad",
+          "#disciplina",
+          "#negocios"
+        ],
+        "parrafo": "La ley de Parkinson dice que el trabajo se expande hasta llenar el tiempo disponible para terminarlo. La formuló C. Northcote Parkinson en un ensayo en The Economist en 1955. Si le das una semana a una tarea, tardará una semana; si le das dos días, probablemente la termines en dos días. Ponte fechas límite más cortas y concretas.",
+        "preguntas": [
+          "¿Qué es la ley de Parkinson?",
+          "¿Cómo ser más productivo en el trabajo?",
+          "¿Cómo usar fechas límite a tu favor?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El trabajo se expande hasta llenar el tiempo que le das."
+      ]
+    },
+    {
+      "id": "12",
+      "estado": "pendiente",
+      "pilar": "negocio",
+      "guion": "Tus clientes no compran tu producto. Compran por qué lo haces. Lo dijo Simon Sinek. Antes de vender lo que haces, vende tu porqué.",
+      "subtitulos": [
+        "Tus clientes no compran",
+        "tu producto.",
+        "Compran por qué lo haces.",
+        "Lo dijo Simon Sinek.",
+        "Antes de vender lo que haces,",
+        "vende tu porqué."
+      ],
+      "palabras_clave": [
+        "producto",
+        "porqué",
+        "sinek"
+      ],
+      "fuente": "Simon Sinek, Empieza con el porqué (TED 2009)",
+      "locacion": "hotel",
+      "vestuario": "Traje sastre rojo carmesí de falda, camisola de seda negra, tacones negros",
+      "accion": "Sentada en un sillón de terciopelo del lobby con las piernas cruzadas, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Tus clientes no compran tu producto. 🔥\nCompran por qué lo haces.\n\n📚 Simon Sinek, Empieza con el porqué",
+      "seo": {
+        "palabra_clave": "empieza con el porqué",
+        "titulo": "Empieza con el porqué de Simon Sinek 🔥",
+        "descripcion_inicio": "Empieza con el porqué, de Simon Sinek: la gente no compra lo que haces, compra por qué lo haces.\nEl círculo dorado aplicado a ventas, marketing y marca personal.",
+        "tags_concretas": [
+          "empieza con el porque",
+          "simon sinek",
+          "circulo dorado",
+          "golden circle",
+          "start with why",
+          "simon sinek ted",
+          "como vender tu porque",
+          "marca personal",
+          "marketing"
+        ],
+        "hashtags": [
+          "#simonsinek",
+          "#marketing",
+          "#ventas",
+          "#marcapersonal"
+        ],
+        "parrafo": "Empieza con el porqué es la idea de Simon Sinek, popularizada en su charla TED de 2009: la gente no compra lo que haces, compra por qué lo haces. Las marcas que inspiran comunican primero su propósito, después cómo lo hacen y al final qué venden. Antes de vender tu producto, escribe en una frase por qué existe tu negocio.",
+        "preguntas": [
+          "¿Qué es el círculo dorado de Simon Sinek?",
+          "¿Cómo vender con propósito?",
+          "¿Por qué la gente compra una marca?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "La gente no compra lo que haces, compra por qué lo haces."
+      ]
+    },
+    {
+      "id": "13",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Mucha gente que parece rica no lo es. La riqueza es lo que no ves: el coche que no compraste. Morgan Housel. Invierte en silencio.",
+      "subtitulos": [
+        "Mucha gente que parece rica",
+        "no lo es.",
+        "La riqueza es lo que no ves:",
+        "el coche que no compraste.",
+        "Morgan Housel.",
+        "Invierte en silencio."
+      ],
+      "palabras_clave": [
+        "rica",
+        "riqueza",
+        "housel",
+        "silencio"
+      ],
+      "fuente": "Morgan Housel, La psicología del dinero",
+      "locacion": "golf",
+      "vestuario": "Polo blanco ajustado, falda plisada azul marino, visera blanca, guante de golf",
+      "accion": "De pie junto al carrito de golf con un palo apoyado en el pasto, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Mucha gente que parece rica no lo es. ⛳\nLa riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste.\n\n📚 Morgan Housel, La psicología del dinero\n⚠️ Contenido educativo, no es asesoría financiera.",
+      "seo": {
+        "palabra_clave": "la psicología del dinero",
+        "titulo": "La psicología del dinero de Morgan Housel",
+        "descripcion_inicio": "La psicología del dinero, de Morgan Housel: la riqueza es lo que no ves.\nEl coche que no compraste y el lujo que no presumiste; educación financiera, no asesoría.",
+        "tags_concretas": [
+          "la psicologia del dinero",
+          "morgan housel",
+          "la riqueza es lo que no ves",
+          "psicologia del dinero resumen",
+          "como ser rico",
+          "riqueza silenciosa",
+          "ahorro",
+          "riqueza"
+        ],
+        "hashtags": [
+          "#psicologiadeldinero",
+          "#riqueza",
+          "#ahorro",
+          "#morganhousel"
+        ],
+        "parrafo": "En La psicología del dinero, Morgan Housel explica que la riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste, el dinero que sigue invertido. Gastar en aparentar te hace ver rico; ahorrar e invertir en silencio te hace rico. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Qué enseña La psicología del dinero?",
+          "¿Cuál es la diferencia entre ser rico y parecer rico?",
+          "¿Cómo construir riqueza poco a poco?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste."
+      ]
+    },
+    {
+      "id": "14",
+      "estado": "pendiente",
+      "pilar": "mentalidad",
+      "guion": "Si no puedes dormir pensando en pendientes, es por esto. Tu mente no suelta lo que dejaste a medias: efecto Zeigarnik. Escribe el siguiente paso y descansa.",
+      "subtitulos": [
+        "Si no puedes dormir",
+        "pensando en pendientes,",
+        "es por esto.",
+        "Tu mente no suelta",
+        "lo que dejaste a medias:",
+        "efecto Zeigarnik.",
+        "Escribe el siguiente paso",
+        "y descansa."
+      ],
+      "palabras_clave": [
+        "dormir",
+        "pendientes",
+        "zeigarnik",
+        "descansa"
+      ],
+      "fuente": "Bluma Zeigarnik (1927); Masicampo y Baumeister (2011)",
+      "locacion": "sillon",
+      "vestuario": "Vestido camisero de seda azul cielo, cinturón dorado delgado, pies descalzos",
+      "accion": "Sentada en el sillón bouclé del rincón de lectura con un libro cerrado en el regazo, Capital echado junto al sillón con la cabeza levantada.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si no puedes dormir pensando en pendientes, es por esto. 🧠\nTu mente no suelta lo que dejaste a medias. Escribe el siguiente paso y descansa.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)",
+      "seo": {
+        "palabra_clave": "efecto Zeigarnik",
+        "titulo": "Efecto Zeigarnik y las tareas pendientes 🧠",
+        "descripcion_inicio": "Efecto Zeigarnik: tu mente no suelta lo que dejaste a medias.\nPor qué escribir el siguiente paso de una tarea pendiente te ayuda a descansar (Masicampo y Baumeister, 2011).",
+        "tags_concretas": [
+          "efecto zeigarnik",
+          "bluma zeigarnik",
+          "tareas pendientes",
+          "no puedo dejar de pensar en pendientes",
+          "como dormir sin pensar en trabajo",
+          "psicologia",
+          "descanso",
+          "mente"
+        ],
+        "hashtags": [
+          "#efectozeigarnik",
+          "#psicologia",
+          "#productividad",
+          "#descanso"
+        ],
+        "parrafo": "El efecto Zeigarnik describe que la mente recuerda más las tareas sin terminar que las terminadas; lo describió Bluma Zeigarnik en 1927. Un estudio de Masicampo y Baumeister (2011) encontró que escribir un plan concreto para la tarea pendiente reduce esos pensamientos que no te dejan en paz. Si algo te quita el sueño, anota el siguiente paso y descansa.",
+        "preguntas": [
+          "¿Qué es el efecto Zeigarnik?",
+          "¿Cómo dejar de pensar en pendientes?",
+          "¿Por qué no puedo dormir pensando en el trabajo?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu mente no suelta lo que dejaste a medias."
+      ]
+    },
+    {
+      "id": "15",
+      "estado": "pendiente",
+      "pilar": "vida",
+      "guion": "Antes de revisar el celular, haz esto. Primero lo que más te cuesta: Brian Tracy lo llama tragarte el sapo. Lo demás es ganancia.",
+      "subtitulos": [
+        "Antes de revisar el celular,",
+        "haz esto.",
+        "Primero lo que más te cuesta:",
+        "Brian Tracy lo llama",
+        "tragarte el sapo.",
+        "Lo demás es ganancia."
+      ],
+      "palabras_clave": [
+        "celular",
+        "primero",
+        "tracy",
+        "sapo"
+      ],
+      "fuente": "Brian Tracy, ¡Tráguese ese sapo!",
+      "locacion": "oficina",
+      "vestuario": "Blusa blanca de seda con moño al cuello, falda lápiz negra, tacones negros, lentes de armazón delgado",
+      "accion": "Sentada en la silla de piel frente al escritorio de nogal, Capital sentado junto al escritorio.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Antes de revisar el celular, haz esto. 🐸\nPrimero lo que más te cuesta. El resto del día es pura ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!",
+      "seo": {
+        "palabra_clave": "tráguese ese sapo",
+        "titulo": "Tráguese ese sapo de Brian Tracy 🐸",
+        "descripcion_inicio": "Tráguese ese sapo, de Brian Tracy: haz primero lo que más te cuesta.\nUn hábito de productividad contra la procrastinación: después, el resto del día es pura ganancia.",
+        "tags_concretas": [
+          "traguese ese sapo",
+          "tragate ese sapo",
+          "brian tracy",
+          "eat that frog",
+          "como dejar de procrastinar",
+          "haz primero lo mas dificil",
+          "rutina de la mañana",
+          "productividad"
+        ],
+        "hashtags": [
+          "#tragateesesapo",
+          "#productividad",
+          "#habitos",
+          "#disciplina"
+        ],
+        "parrafo": "Tráguese ese sapo es el método de productividad de Brian Tracy: haz primero, a primera hora, la tarea más difícil o importante del día. Después de eso, el resto del día es pura ganancia. Funciona contra la procrastinación porque quitas lo que más pesa cuando tienes más energía.",
+        "preguntas": [
+          "¿Qué significa tragarse el sapo?",
+          "¿Cómo dejar de procrastinar?",
+          "¿Qué tarea hacer primero en el día?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Haz primero lo que más te cuesta."
+      ]
+    },
+    {
+      "id": "16",
+      "estado": "pendiente",
+      "pilar": "motivacion_economica",
+      "guion": "Juntar los primeros cien mil dólares es lo más difícil. Lo decía Charlie Munger. Después, el dinero empieza a trabajar para ti. Empieza con poco, pero hoy.",
+      "subtitulos": [
+        "Juntar los primeros",
+        "100 mil dólares",
+        "es lo más difícil.",
+        "Lo decía Charlie Munger.",
+        "Después, el dinero empieza",
+        "a trabajar para ti.",
+        "Empieza con poco, pero hoy."
+      ],
+      "palabras_clave": [
+        "100",
+        "difícil",
+        "munger",
+        "hoy"
+      ],
+      "fuente": "Charlie Munger, frase pública sobre los primeros 100,000 dólares",
+      "locacion": "bar",
+      "vestuario": "Vestido de cóctel de terciopelo verde botella, aretes largos de oro, tacones dorados",
+      "accion": "Sentada en el banco de piel de la barra con un vaso de agua mineral, Capital echado junto al banco.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Juntar los primeros 100 mil dólares es lo más difícil. 🥂\nDespués, el dinero empieza a trabajar para ti.\n\n📚 Charlie Munger\n⚠️ Contenido educativo, no es asesoría financiera.",
+      "seo": {
+        "palabra_clave": "Charlie Munger",
+        "titulo": "Charlie Munger y los primeros 100 mil dólares",
+        "descripcion_inicio": "Charlie Munger decía que los primeros 100 mil dólares son los más difíciles de juntar.\nDespués, el interés compuesto trabaja para ti: empieza con poco, pero empieza hoy.",
+        "tags_concretas": [
+          "charlie munger",
+          "los primeros 100 mil dolares",
+          "charlie munger 100 mil",
+          "interes compuesto",
+          "como juntar mi primer capital",
+          "libertad financiera",
+          "ahorro e inversion",
+          "inversion"
+        ],
+        "hashtags": [
+          "#charliemunger",
+          "#inversion",
+          "#interescompuesto",
+          "#dinero"
+        ],
+        "parrafo": "Charlie Munger, socio de Warren Buffett, decía que los primeros 100,000 dólares son los más difíciles de juntar. Al principio solo trabaja tu esfuerzo; cuando ya tienes capital, el interés compuesto empieza a trabajar contigo. Por eso importa empezar a ahorrar e invertir pronto, aunque sea poco. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Por qué los primeros 100 mil son los más difíciles?",
+          "¿Cómo empezar a ahorrar desde cero?",
+          "¿Qué decía Charlie Munger del dinero?"
+        ]
+      },
+      "puente_producto": true,
+      "ganchos_alternativos": [
+        "Charlie Munger decía que los primeros cien mil dólares son los más difíciles."
+      ]
+    },
+    {
+      "id": "17",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
+      "subtitulos": [
+        "Si ganas 15 mil al mes,",
+        "tu aguinaldo mínimo",
+        "es de 7,500 pesos brutos.",
+        "Son 15 días de salario,",
+        "pagados antes del 20 de diciembre."
+      ],
+      "palabras_clave": [
+        "aguinaldo",
+        "7500",
+        "15",
+        "20"
+      ],
+      "fuente": "Ley Federal del Trabajo, artículo 87",
+      "locacion": "sala_navidad",
+      "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
+      "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si ganas $15,000 al mes, tu aguinaldo mínimo es de $7,500 brutos. 🎄\nSon 15 días de salario y te lo deben pagar antes del 20 de diciembre.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "seo": {
+        "palabra_clave": "aguinaldo 2026",
+        "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+        "descripcion_inicio": "Aguinaldo 2026: cuánto te toca si ganas 15 mil pesos al mes. Por ley son mínimo 15 días de salario, pagados antes del 20 de diciembre.\nCalcula el tuyo gratis con mi calculadora de aguinaldo.",
+        "tags_concretas": [
+          "aguinaldo 2026",
+          "cuanto me toca de aguinaldo",
+          "calcular aguinaldo",
+          "calculadora de aguinaldo",
+          "aguinaldo ley federal del trabajo",
+          "aguinaldo 15 dias",
+          "cuando pagan el aguinaldo",
+          "aguinaldo mexico"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#aguinaldo2026",
+          "#dinero",
+          "#navidad"
+        ],
+        "parrafo": "Por la Ley Federal del Trabajo (artículo 87), el aguinaldo es de mínimo 15 días de salario y se paga antes del 20 de diciembre. Si ganas 15,000 pesos al mes, tu salario diario es de 500 pesos y tu aguinaldo mínimo es de 7,500 pesos brutos. Hasta 3,519.30 pesos están libres de ISR en 2026; el resto paga impuesto.",
+        "preguntas": [
+          "¿Cuánto me toca de aguinaldo si gano 15 mil?",
+          "¿Cuándo pagan el aguinaldo?",
+          "¿Cómo se calcula el aguinaldo?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu aguinaldo tiene fecha límite: el 20 de diciembre.",
+        "Quince días de salario: eso es lo mínimo que te deben de aguinaldo."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-10",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "18",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
+      "subtitulos": [
+        "Si renunciaste este año,",
+        "también te toca aguinaldo.",
+        "La ley te da la parte proporcional",
+        "aunque ya no trabajes ahí.",
+        "Revisa que venga en tu finiquito."
+      ],
+      "palabras_clave": [
+        "renunciaste",
+        "aguinaldo",
+        "proporcional",
+        "finiquito"
+      ],
+      "fuente": "Ley Federal del Trabajo, artículo 87",
+      "locacion": "oficina",
+      "vestuario": "Chaqueta de cuero negra sobre vestido de seda color esmeralda, botines negros",
+      "accion": "De pie junto a la puerta de la oficina con una caja de cartón con sus cosas en las manos, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Si renunciaste este año, también te toca aguinaldo. 📌\nLa ley te da la parte proporcional aunque ya no trabajes ahí: revisa que venga en tu finiquito.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "seo": {
+        "palabra_clave": "aguinaldo si renunciaste",
+        "titulo": "Aguinaldo si renunciaste este año 📌",
+        "descripcion_inicio": "Aguinaldo si renunciaste este año: la Ley Federal del Trabajo te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.\nCalcula tu aguinaldo proporcional gratis con mi calculadora.",
+        "tags_concretas": [
+          "aguinaldo si renuncie",
+          "aguinaldo proporcional",
+          "finiquito y aguinaldo",
+          "me toca aguinaldo si renuncie",
+          "calcular aguinaldo proporcional",
+          "aguinaldo 2026",
+          "ley federal del trabajo aguinaldo",
+          "finiquito"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#finiquito",
+          "#derechoslaborales",
+          "#dinero"
+        ],
+        "parrafo": "Según el artículo 87 de la Ley Federal del Trabajo, si no trabajaste el año completo te toca la parte proporcional del aguinaldo, aunque ya no estés en la empresa cuando se paga. Por eso, si renunciaste o te despidieron, tu finiquito debe incluir el aguinaldo proporcional a los días que trabajaste. Revísalo antes de firmar.",
+        "preguntas": [
+          "¿Me toca aguinaldo si renuncié?",
+          "¿Cómo calcular el aguinaldo proporcional?",
+          "¿Qué debe incluir mi finiquito?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Que renunciaras no significa que pierdes tu aguinaldo.",
+        "Tu finiquito tiene que traer tu aguinaldo."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-26",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "19",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos.",
+      "subtitulos": [
+        "Tu aguinaldo no paga impuestos",
+        "hasta 3,519 pesos.",
+        "Lo que pase de eso sí paga,",
+        "y por eso a veces",
+        "te llega menos."
+      ],
+      "palabras_clave": [
+        "impuestos",
+        "3519",
+        "menos"
+      ],
+      "fuente": "Ley del ISR, artículo 93, fracción XIV (30 UMA); UMA 2026 de $117.31 diarios (INEGI)",
+      "locacion": "sillon",
+      "vestuario": "Blusa de satín color esmeralda oscuro, pantalón palazzo negro, aretes de oro",
+      "accion": "Sentada en el sillón con una calculadora y un sobre en las manos, Capital acostado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Tu aguinaldo no paga ISR hasta $3,519.30 en 2026. 🧾\nEs el equivalente a 30 UMA. Lo que pase de eso sí paga, y por eso a veces te llega menos.\n\n📚 Ley del ISR, artículo 93, fracción XIV · INEGI, UMA 2026",
+      "seo": {
+        "palabra_clave": "aguinaldo exento de ISR",
+        "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
+        "descripcion_inicio": "Aguinaldo exento de ISR en 2026: hasta 30 UMA, es decir $3,519.30 (UMA diaria de $117.31). Lo que pase de ese tope paga ISR.\nCalcula gratis tu aguinaldo y la parte que paga impuestos con mi calculadora.",
+        "tags_concretas": [
+          "aguinaldo exento de isr",
+          "aguinaldo isr 2026",
+          "cuanto impuesto paga el aguinaldo",
+          "30 uma aguinaldo",
+          "uma 2026",
+          "aguinaldo 2026",
+          "calcular isr aguinaldo",
+          "aguinaldo sat"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#impuestos",
+          "#sat",
+          "#dinero"
+        ],
+        "parrafo": "El artículo 93, fracción XIV de la Ley del ISR exenta el aguinaldo hasta el equivalente a 30 días; en la práctica se calcula con la UMA. Con la UMA de 2026 ($117.31 diarios, según el INEGI) el tope es de $3,519.30. Si tu aguinaldo es mayor, el excedente paga ISR y tu empresa te lo retiene, por eso a veces te llega menos de lo que calculaste.",
+        "preguntas": [
+          "¿Cuánto del aguinaldo está exento de ISR?",
+          "¿Por qué mi aguinaldo llega con descuento?",
+          "¿Cuánto vale la UMA en 2026?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Por esto tu aguinaldo te llega menos de lo que calculaste.",
+        "El SAT no toca tu aguinaldo hasta 3,519 pesos."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-11-20",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "20",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
+      "subtitulos": [
+        "Aguinaldo sin plan",
+        "se acaba en enero.",
+        "Mi regla: la mitad",
+        "a deudas o ahorro,",
+        "30% a una meta",
+        "y 20 a un gusto sin culpa."
+      ],
+      "palabras_clave": [
+        "enero",
+        "mitad",
+        "30%",
+        "20"
+      ],
+      "fuente": "Regla de Victoria (opinión), basada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005)",
+      "locacion": "sala_navidad",
+      "vestuario": "Suéter oversize color marfil de cuello alto, falda midi de satín dorada, aretes de perla",
+      "accion": "Sentada junto al árbol de Navidad con un sobre de dinero en las manos, Capital acostado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Aguinaldo sin plan se acaba en enero. 🎁\nMi regla: la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\n\nGuárdalo para cuando te depositen.",
+      "seo": {
+        "palabra_clave": "qué hacer con tu aguinaldo",
+        "titulo": "Qué hacer con tu aguinaldo en 2026 🎁",
+        "descripcion_inicio": "Qué hacer con tu aguinaldo para que no se acabe en enero: mi regla es la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\nHaz tu plan con mi calculadora de aguinaldo gratis.",
+        "tags_concretas": [
+          "que hacer con el aguinaldo",
+          "como ahorrar el aguinaldo",
+          "plan para el aguinaldo",
+          "no gastar el aguinaldo",
+          "aguinaldo 2026",
+          "regla 50 30 20",
+          "cuesta de enero",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#ahorro",
+          "#cuestadeenero",
+          "#navidad"
+        ],
+        "parrafo": "Mi regla para el aguinaldo: la mitad a deudas caras o a tu fondo de emergencia, 30% a una meta concreta y 20% a darte un gusto sin culpa. Está inspirada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi. La CONDUSEF también recomienda usar parte del aguinaldo para pagar deudas, sobre todo las de tasa más alta.",
+        "preguntas": [
+          "¿Qué hacer con el aguinaldo?",
+          "¿Cómo no gastarse el aguinaldo en enero?",
+          "¿Conviene usar el aguinaldo para pagar deudas?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "La cuesta de enero se decide el día que te pagan el aguinaldo.",
+        "Tu aguinaldo necesita un plan antes de que llegue."
+      ],
+      "adn": {
+        "tipo_gancho": "regla"
+      },
+      "llamado": "aguinaldo",
+      "ventana": {
+        "desde": "2026-12-04",
+        "hasta": "2026-12-19"
+      }
+    },
+    {
+      "id": "21",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
+      "subtitulos": [
+        "Antes de gastar tu aguinaldo,",
+        "paga tu tarjeta.",
+        "Cada peso que abonas",
+        "deja de cobrarte intereses:",
+        "es la ganancia más segura",
+        "que vas a tener."
+      ],
+      "palabras_clave": [
+        "aguinaldo",
+        "tarjeta",
+        "intereses",
+        "segura"
+      ],
+      "fuente": "CONDUSEF: usar parte del aguinaldo para pagar deudas, primero las de mayor tasa de interés como las tarjetas",
+      "locacion": "restaurante",
+      "vestuario": "Vestido de satín color plata con tirantes delgados, chal negro, pulsera de diamantes",
+      "accion": "Sentada a la mesa del restaurante sosteniendo una tarjeta de crédito dorada sin logos, Capital sentado junto a la mesa.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Antes de gastar tu aguinaldo, paga tu tarjeta. 💳\nCada peso que abonas deja de cobrarte intereses. Si tienes varias deudas, empieza por la de tasa más alta.\n\n📚 Recomendación de la CONDUSEF",
+      "seo": {
+        "palabra_clave": "aguinaldo para pagar deudas",
+        "titulo": "Aguinaldo para pagar deudas de tarjeta 💳",
+        "descripcion_inicio": "Aguinaldo para pagar deudas: la CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de tasa más alta como las tarjetas de crédito.\nCalcula en cuántos meses sales de tus deudas con mi calculadora gratis.",
+        "tags_concretas": [
+          "aguinaldo para pagar deudas",
+          "pagar tarjeta de credito",
+          "como salir de deudas",
+          "deudas de tarjeta de credito",
+          "aguinaldo 2026",
+          "intereses tarjeta de credito",
+          "metodo avalancha",
+          "que hacer con el aguinaldo"
+        ],
+        "hashtags": [
+          "#aguinaldo",
+          "#deudas",
+          "#tarjetadecredito",
+          "#dinero"
+        ],
+        "parrafo": "La CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de mayor tasa de interés, como las tarjetas de crédito. Cada peso que abonas a una deuda cara deja de cobrarte intereses. Si tienes varias, el método avalancha (primero la de tasa más alta) es el que menos intereses te cobra en total.",
+        "preguntas": [
+          "¿Conviene pagar la tarjeta con el aguinaldo?",
+          "¿Qué deuda pago primero?",
+          "¿Qué es el método avalancha?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Tu aguinaldo ya tiene dueño si debes en la tarjeta.",
+        "Pagar tu tarjeta es la inversión más segura que existe."
+      ],
+      "adn": {
+        "tipo_gancho": "consejo"
+      },
+      "llamado": "deudas",
+      "ventana": {
+        "desde": "2026-12-10",
+        "hasta": "2027-01-10"
+      }
+    },
+    {
+      "id": "22",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
+      "subtitulos": [
+        "Tu propósito de año nuevo",
+        "no es el gym,",
+        "es tu fondo de emergencia:",
+        "de 3 a 6 meses de gastos,",
+        "como recomienda la CONDUSEF."
+      ],
+      "palabras_clave": [
+        "propósito",
+        "gym",
+        "emergencia",
+        "3",
+        "6"
+      ],
+      "fuente": "Recomendación de la CONDUSEF: fondo de emergencia de 3 a 6 meses de gastos",
+      "locacion": "gimnasio",
+      "vestuario": "Conjunto deportivo de diseñador blanco: top, leggings y sudadera corta, coleta alta",
+      "accion": "De pie junto a las pesas del gimnasio con una toalla al hombro, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia. 🎯\nDe 3 a 6 meses de tus gastos, como recomienda la CONDUSEF.\n\nGuárdalo y empieza esta quincena.",
+      "seo": {
+        "palabra_clave": "fondo de emergencia",
+        "titulo": "Fondo de emergencia, tu propósito 2027 🎯",
+        "descripcion_inicio": "Fondo de emergencia: junta de 3 a 6 meses de tus gastos, como recomienda la CONDUSEF. Es el propósito de año nuevo que más te va a cuidar.\nCalcula cuánto necesitas y en cuántos meses llegas con mi calculadora gratis.",
+        "tags_concretas": [
+          "fondo de emergencia",
+          "cuanto debe tener un fondo de emergencia",
+          "propositos de año nuevo",
+          "ahorro 2027",
+          "como ahorrar dinero",
+          "condusef ahorro",
+          "fondo de emergencia 6 meses",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#fondodeemergencia",
+          "#propositos2027",
+          "#ahorro",
+          "#dinero"
+        ],
+        "parrafo": "Un fondo de emergencia es dinero guardado para imprevistos: una enfermedad, una reparación o quedarte sin trabajo. La CONDUSEF recomienda juntar de 3 a 6 meses de tus gastos. Si lo haces tu propósito de año nuevo, apártalo cada quincena y guárdalo donde lo puedas sacar rápido y sin perder dinero.",
+        "preguntas": [
+          "¿Cuánto debe tener un fondo de emergencia?",
+          "¿Cómo empezar a ahorrar en enero?",
+          "¿Dónde guardar el fondo de emergencia?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El mejor propósito de año nuevo cabe en una cuenta de ahorro.",
+        "Si en enero se te descompone el coche, ¿de dónde sale el dinero?"
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "llamado": "fondo",
+      "ventana": {
+        "desde": "2027-01-02",
+        "hasta": "2027-01-20"
+      }
+    },
+    {
+      "id": "23",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "El pago mínimo de tu tarjeta es una trampa: suele ser del dos al cinco por ciento de tu deuda. Lo demás sigue cobrando intereses. Paga más.",
+      "subtitulos": [
+        "El pago mínimo de tu tarjeta",
+        "es una trampa:",
+        "suele ser del 2 al 5%",
+        "de tu deuda.",
+        "Lo demás sigue cobrando intereses.",
+        "Paga más."
+      ],
+      "palabras_clave": [
+        "mínimo",
+        "trampa",
+        "5%",
+        "intereses"
+      ],
+      "fuente": "CONDUSEF: el pago mínimo suele ser del 2% al 5% del saldo; recomienda cubrir el pago para no generar intereses",
+      "locacion": "cocina",
+      "vestuario": "Mono negro de manga larga con cinturón dorado, aretes de aro dorados",
+      "accion": "Recargada en la barra de la cocina revisando un estado de cuenta en papel, Capital sentado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "El pago mínimo de tu tarjeta es una trampa. ⚠️\nSuele ser del 2% al 5% de tu deuda y lo demás sigue cobrando intereses. La CONDUSEF recomienda pagar el monto para no generar intereses.\n\n📚 CONDUSEF",
+      "seo": {
+        "palabra_clave": "pago mínimo de tarjeta",
+        "titulo": "Pago mínimo de tarjeta, por qué es trampa ⚠️",
+        "descripcion_inicio": "Pago mínimo de tarjeta de crédito: según la CONDUSEF suele ser del 2% al 5% de tu deuda, y pagar solo eso alarga la deuda y los intereses.\nLa CONDUSEF recomienda pagar el monto para no generar intereses. Calcula tu plan para salir de deudas gratis.",
+        "tags_concretas": [
+          "pago minimo tarjeta de credito",
+          "pago para no generar intereses",
+          "que pasa si pago el minimo",
+          "intereses tarjeta de credito",
+          "como salir de deudas",
+          "condusef tarjeta de credito",
+          "cuesta de enero",
+          "deudas"
+        ],
+        "hashtags": [
+          "#tarjetadecredito",
+          "#deudas",
+          "#cuestadeenero",
+          "#dinero"
+        ],
+        "parrafo": "Según la CONDUSEF, el pago mínimo de la tarjeta de crédito suele ser del 2% al 5% de tu saldo, y pagar solo eso alarga la deuda y los intereses. La CONDUSEF recomienda dejar el pago mínimo para emergencias y cubrir el pago para no generar intereses. Si no te alcanza, paga lo más que puedas por encima del mínimo.",
+        "preguntas": [
+          "¿Qué pasa si solo pago el mínimo de la tarjeta?",
+          "¿Qué es el pago para no generar intereses?",
+          "¿Cómo salir de deudas de tarjeta?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Pagar el mínimo es la forma más cara de pagar tu tarjeta.",
+        "Tu banco ama que pagues solo el mínimo."
+      ],
+      "adn": {
+        "tipo_gancho": "error"
+      },
+      "llamado": "deudas",
+      "ventana": {
+        "desde": "2027-01-06",
+        "hasta": "2027-01-31"
+      }
+    },
+    {
+      "id": "24",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Meses sin intereses no es dinero gratis. Cada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.",
+      "subtitulos": [
+        "Meses sin intereses",
+        "no es dinero gratis.",
+        "Cada mensualidad se come tu sueldo",
+        "de los próximos meses.",
+        "Antes de firmar,",
+        "suma todas las que ya traes."
+      ],
+      "palabras_clave": [
+        "gratis",
+        "mensualidad",
+        "sueldo",
+        "suma"
+      ],
+      "fuente": "Profeco y CONDUSEF, recomendaciones para evitar deudas: las compras a meses sin planear reducen tu ingreso disponible",
+      "locacion": "sala",
+      "vestuario": "Abrigo largo gris oxford sobre suéter rosa palo de cuello alto, pantalón negro",
+      "accion": "Sentada en el sofá de la sala con varias bolsas de compras sin logos a un lado, Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Meses sin intereses no es dinero gratis. 💳\nCada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.\n\n📚 Profeco y CONDUSEF",
+      "seo": {
+        "palabra_clave": "meses sin intereses",
+        "titulo": "Meses sin intereses no es dinero gratis 💳",
+        "descripcion_inicio": "Meses sin intereses: cada mensualidad se come tu sueldo de los próximos meses. Profeco y la CONDUSEF advierten que comprar a meses sin planear reduce tu ingreso disponible.\nAntes de firmar, suma las que ya traes y revisa tu presupuesto 50/30/20 gratis.",
+        "tags_concretas": [
+          "meses sin intereses",
+          "compras a meses sin intereses",
+          "cuesta de enero",
+          "presupuesto mensual",
+          "tarjeta de credito",
+          "como no endeudarse",
+          "profeco condusef",
+          "regla 50 30 20"
+        ],
+        "hashtags": [
+          "#mesessinintereses",
+          "#cuestadeenero",
+          "#tarjetadecredito",
+          "#dinero"
+        ],
+        "parrafo": "Profeco y la CONDUSEF advierten que comprar a meses sin intereses sin planear reduce tu ingreso disponible: cada mensualidad ya está comprometida antes de que te paguen. Antes de firmar otra compra a meses, suma todas las mensualidades que ya traes y revisa que tu presupuesto aguante.",
+        "preguntas": [
+          "¿Conviene comprar a meses sin intereses?",
+          "¿Cómo sobrevivir a la cuesta de enero?",
+          "¿Cómo hacer un presupuesto mensual?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Los meses sin intereses son el préstamo que no sientes.",
+        "Tu sueldo de marzo ya lo gastaste en diciembre."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "llamado": "presupuesto",
+      "ventana": {
+        "desde": "2027-01-12",
+        "hasta": "2027-01-31"
+      }
+    },
+    {
+      "id": "25",
+      "estado": "pendiente",
+      "pilar": "finanzas",
+      "guion": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
+      "subtitulos": [
+        "Haz tu presupuesto de enero",
+        "en un minuto:",
+        "50% a lo necesario,",
+        "30 a lo que quieres",
+        "y 20 a ahorro y deudas."
+      ],
+      "palabras_clave": [
+        "minuto",
+        "50%",
+        "30",
+        "20"
+      ],
+      "fuente": "Regla 50/30/20: Elizabeth Warren y Amelia Warren Tyagi, All Your Worth (2005)",
+      "locacion": "oficina",
+      "vestuario": "Camisa de seda color lavanda, pantalón sastre beige, reloj plateado",
+      "accion": "Sentada al escritorio con una libreta abierta y una pluma en la mano, Capital sentado junto al escritorio.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Haz tu presupuesto de enero en un minuto. 📊\n50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas.\n\n📚 Elizabeth Warren y Amelia Warren Tyagi, All Your Worth",
+      "seo": {
+        "palabra_clave": "presupuesto 50/30/20",
+        "titulo": "Presupuesto 50/30/20 en un minuto 📊",
+        "descripcion_inicio": "Presupuesto 50/30/20: 50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas. La regla de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005).\nHaz el tuyo gratis con mi calculadora 50/30/20.",
+        "tags_concretas": [
+          "regla 50 30 20",
+          "presupuesto 50 30 20",
+          "como hacer un presupuesto",
+          "presupuesto mensual",
+          "cuesta de enero",
+          "como organizar mi sueldo",
+          "elizabeth warren",
+          "ahorro"
+        ],
+        "hashtags": [
+          "#presupuesto",
+          "#regla503020",
+          "#cuestadeenero",
+          "#dinero"
+        ],
+        "parrafo": "La regla 50/30/20 la propusieron Elizabeth Warren y Amelia Warren Tyagi en su libro All Your Worth (2005): 50% de tu ingreso neto a lo necesario (vivienda, comida, transporte, servicios y pagos mínimos), 30% a lo que quieres y 20% a ahorro y a pagar deudas de más. Es un punto de partida para ordenar tu sueldo en enero; ajústalo a tu vida.",
+        "preguntas": [
+          "¿Qué es la regla 50/30/20?",
+          "¿Cómo hacer un presupuesto mensual?",
+          "¿Cómo organizar mi sueldo?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Si tu sueldo se te va en una semana, te falta esta regla.",
+        "Tres números para que enero no te gane."
+      ],
+      "adn": {
+        "tipo_gancho": "regla"
+      },
+      "llamado": "presupuesto",
+      "ventana": {
+        "desde": "2027-01-18",
+        "hasta": "2027-02-10"
+      }
+    },
+    {
+      "id": "26",
+      "estado": "pendiente",
+      "pilar": "relaciones",
+      "guion": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. Lo midió un estudio de cuatro mil parejas. Hablen de dinero antes de pelear.",
+      "subtitulos": [
+        "Las peleas por dinero",
+        "predicen el divorcio",
+        "más que otras peleas de pareja.",
+        "Lo midió un estudio",
+        "de 4 mil parejas.",
+        "Hablen de dinero",
+        "antes de pelear."
+      ],
+      "palabras_clave": [
+        "dinero",
+        "divorcio",
+        "4",
+        "hablen"
+      ],
+      "fuente": "Dew, Britt y Huston, \"Examining the Relationship Between Financial Issues and Divorce\", Family Relations 61 (2012): 4,574 parejas",
+      "locacion": "restaurante",
+      "vestuario": "Vestido de seda rojo vino con escote en V, aretes de diamante, cabello recogido",
+      "accion": "Sentada en una mesa para dos con dos copas de vino, Capital sentado junto a la mesa.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. 💔\nHablen de dinero antes de pelear por él.\n\n📚 Dew, Britt y Huston, Family Relations (2012), 4,574 parejas",
+      "seo": {
+        "palabra_clave": "peleas por dinero en pareja",
+        "titulo": "Peleas por dinero en pareja y el divorcio 💔",
+        "descripcion_inicio": "Peleas por dinero en pareja: un estudio con 4,574 parejas (Dew, Britt y Huston, 2012) encontró que los desacuerdos por dinero predicen el divorcio más que otros desacuerdos.\nCómo hablar de dinero en pareja antes de pelear.",
+        "tags_concretas": [
+          "peleas por dinero en pareja",
+          "dinero y pareja",
+          "finanzas en pareja",
+          "como hablar de dinero con tu pareja",
+          "divorcio y dinero",
+          "presupuesto en pareja",
+          "relaciones y dinero",
+          "jeffrey dew"
+        ],
+        "hashtags": [
+          "#pareja",
+          "#finanzasenpareja",
+          "#relaciones",
+          "#dinero"
+        ],
+        "parrafo": "Un estudio publicado en Family Relations en 2012 (Jeffrey Dew, Sonya Britt y Sandra Huston) siguió a 4,574 parejas y encontró que los desacuerdos por dinero eran los que más predecían el divorcio, más que otros tipos de desacuerdo. No es tener poco dinero: es pelear por él. Hablen de dinero con calma y con números, antes de que se vuelva pleito.",
+        "preguntas": [
+          "¿Por qué las parejas pelean por dinero?",
+          "¿Cómo hablar de dinero con tu pareja?",
+          "¿Cómo hacer un presupuesto en pareja?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El dinero rompe más parejas que otras peleas.",
+        "Si se pelean por dinero, pongan atención a esto."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "puente_producto": true
+    },
+    {
+      "id": "27",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "guion": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Fue en dos mil. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño.",
+      "subtitulos": [
+        "Blockbuster pudo comprar Netflix",
+        "por 50 millones de dólares",
+        "y se rio.",
+        "Fue en 2000.",
+        "10 años después,",
+        "Blockbuster quebró.",
+        "Nunca te rías de lo pequeño."
+      ],
+      "palabras_clave": [
+        "netflix",
+        "50",
+        "quebró",
+        "pequeño"
+      ],
+      "fuente": "Marc Randolph, cofundador de Netflix, That Will Never Work (2019); Fortune y CNBC: la oferta de 50 millones de dólares en 2000; Blockbuster se declaró en quiebra en 2010",
+      "locacion": "sillon",
+      "vestuario": "Blazer de terciopelo azul medianoche, top de seda negro, aretes dorados",
+      "accion": "Sentada en el sillón con un control remoto en la mano, Capital echado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Blockbuster pudo comprar Netflix por 50 millones de dólares y se rio. 📼\nFue en 2000. 10 años después, Blockbuster quebró. Nunca te rías de lo pequeño.\n\n📚 Marc Randolph, cofundador de Netflix, That Will Never Work",
+      "seo": {
+        "palabra_clave": "Blockbuster y Netflix",
+        "titulo": "Blockbuster y Netflix por 50 millones 📼",
+        "descripcion_inicio": "Blockbuster y Netflix: en 2000 los fundadores de Netflix le ofrecieron la empresa a Blockbuster por 50 millones de dólares y la rechazó. Blockbuster quebró en 2010.\nLa lección de negocio: nunca subestimes lo pequeño.",
+        "tags_concretas": [
+          "blockbuster y netflix",
+          "historia de netflix",
+          "blockbuster quiebra",
+          "marc randolph",
+          "reed hastings",
+          "casos de negocio",
+          "innovacion disruptiva",
+          "historias de empresas"
+        ],
+        "hashtags": [
+          "#netflix",
+          "#blockbuster",
+          "#negocios",
+          "#emprendimiento"
+        ],
+        "parrafo": "En el año 2000, Reed Hastings y Marc Randolph le ofrecieron Netflix a Blockbuster por 50 millones de dólares. Según Randolph, en Blockbuster se rieron y la rechazaron. Diez años después, en 2010, Blockbuster se declaró en quiebra y Netflix siguió creciendo. La lección para tu negocio: lo que hoy parece pequeño o de nicho puede cambiar tu industria.",
+        "preguntas": [
+          "¿Por qué Blockbuster no compró Netflix?",
+          "¿Cuándo quebró Blockbuster?",
+          "¿Qué aprender de Netflix para tu negocio?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Netflix se vendía en 50 millones y nadie la quiso.",
+        "Este error le costó a Blockbuster su empresa."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      }
+    },
+    {
+      "id": "28",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "guion": "La mitad de lo que gana Costco no viene de lo que vende: viene de las membresías. Clientes que pagan cada año antes de comprar. Ingreso recurrente.",
+      "subtitulos": [
+        "La mitad de lo que gana Costco",
+        "no viene de lo que vende:",
+        "viene de las membresías.",
+        "Clientes que pagan cada año",
+        "antes de comprar.",
+        "Ingreso recurrente."
+      ],
+      "palabras_clave": [
+        "mitad",
+        "costco",
+        "membresías",
+        "recurrente"
+      ],
+      "fuente": "Costco, reporte anual (Form 10-K) del año fiscal 2025: membresías por 5,320 millones de dólares y utilidad de operación de 10,380 millones (cerca de 51%)",
+      "locacion": "oficina",
+      "vestuario": "Camisa blanca de popelina oversize, pantalón de cuero negro, cinturón dorado",
+      "accion": "De pie junto al escritorio con una tarjeta de membresía dorada sin logos en la mano, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "La mitad de lo que gana Costco no viene de lo que vende. 🛒\nViene de las membresías: clientes que pagan cada año antes de comprar. Eso es ingreso recurrente.\n\n📚 Costco, reporte anual del año fiscal 2025",
+      "seo": {
+        "palabra_clave": "modelo de negocio de Costco",
+        "titulo": "Modelo de negocio de Costco 🛒",
+        "descripcion_inicio": "Modelo de negocio de Costco: en su año fiscal 2025 las membresías sumaron 5,320 millones de dólares, cerca de la mitad de su utilidad de operación (10,380 millones), según su reporte anual.\nIngreso recurrente: el cliente paga antes de comprar.",
+        "tags_concretas": [
+          "modelo de negocio de costco",
+          "como gana dinero costco",
+          "membresia costco",
+          "ingreso recurrente",
+          "modelo de suscripcion",
+          "casos de negocio",
+          "negocios rentables",
+          "historias de empresas"
+        ],
+        "hashtags": [
+          "#costco",
+          "#modelodenegocio",
+          "#negocios",
+          "#emprendimiento"
+        ],
+        "parrafo": "Según su reporte anual del año fiscal 2025, Costco cobró 5,320 millones de dólares en membresías y tuvo una utilidad de operación de 10,380 millones: las membresías equivalen a cerca de la mitad. Es un ingreso recurrente: el cliente paga cada año antes de comprar nada. Piensa qué parte de tu negocio podría cobrarse así.",
+        "preguntas": [
+          "¿Cómo gana dinero Costco?",
+          "¿Qué es un ingreso recurrente?",
+          "¿Cómo crear un modelo de membresía para tu negocio?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Costco gana antes de que compres algo.",
+        "El secreto de Costco no son sus precios."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      }
+    }
+  ]
 }

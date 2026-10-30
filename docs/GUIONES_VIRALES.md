@@ -7,7 +7,7 @@ con datos de Victoria.
 
 ## Lista obligatoria (12 segundos, máximo 28 palabras)
 
-1. **Gancho en el segundo 0** (regla 23): la primera frase sola tiene que detener el dedo. Formas
+1. **Gancho en el segundo 0** (regla 23, reglas y fórmulas en `docs/GANCHOS.md`): la primera frase sola, de máximo 10 palabras, tiene que detener el dedo. Formas
    que funcionan: una cifra real que sorprende ("El 1% diario te hace 37 veces mejor"), una
    contradicción ("Ahorrar no te va a hacer rico"), un error que la persona comete ("Estás
    perdiendo dinero cada vez que…"), un nombre que la gente busca (Buffett, Bezos, Harvard).
