@@ -9,6 +9,7 @@ export default function handler(req, res) {
   const estado = leer('estado.json')[0];
   delete estado.cuentas_publer;
   res.status(200).json({
+    version: process.env.VERCEL_GIT_COMMIT_SHA || process.env.VERCEL_DEPLOYMENT_ID || '',
     estado,
     videos: leer('videos.json'),
     ejecuciones: leer('ejecuciones.json'),

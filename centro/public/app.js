@@ -94,7 +94,14 @@ async function arrancar(conAnimacion) {
     armarNavegacion();
     avatar3d();
     setInterval(refrescarVivo, MINUTO);
-    setInterval(async () => { try { FOTO = await pedir('/api/estado'); dibujarTodo(); } catch { /* sigue con la foto anterior */ } }, 5 * MINUTO);
+    setInterval(async () => {
+      try {
+        const nueva = await pedir('/api/estado');
+        if (nueva.version && FOTO.version && nueva.version !== FOTO.version) return location.reload();  // diseño nuevo publicado
+        FOTO = nueva;
+        dibujarTodo();
+      } catch { /* sigue con la foto anterior */ }
+    }, 2 * MINUTO);
     setInterval(relojes, 1000);
     let ancho = innerWidth;
     addEventListener('resize', () => { if (Math.abs(innerWidth - ancho) > 40) { ancho = innerWidth; dibujarGraficas(); } });

@@ -392,3 +392,52 @@ html { scroll-behavior: smooth; }
   .heroe .lema { font-size: .82rem; }
   .gran-numero .valor { font-size: 2.6rem; }
 }
+
+/* =====================================================================
+   BATCOMPUTER / JARVIS · lo que se nota a primera vista
+   ===================================================================== */
+/* Marco del visor sobre la pantalla */
+.hud-marco { position: fixed; inset: 0; z-index: 15; pointer-events: none; }
+.hud-marco .esquina { position: absolute; width: 46px; height: 46px; border: 2px solid var(--oro); filter: drop-shadow(0 0 8px rgba(245, 197, 66, .7)); opacity: .9; }
+.hud-marco .abajo-izq { left: 10px; bottom: 10px; border-right: 0; border-top: 0; }
+.hud-marco .abajo-der { right: 10px; bottom: 10px; border-left: 0; border-top: 0; }
+.hud-marco::before, .hud-marco::after { content: ""; position: absolute; top: 120px; bottom: 70px; width: 8px;
+  background: repeating-linear-gradient(180deg, rgba(73, 214, 236, .55) 0 1px, transparent 1px 22px); opacity: .55; }
+.hud-marco::before { left: 10px; border-left: 1px solid rgba(73, 214, 236, .35); }
+.hud-marco::after { right: 10px; border-right: 1px solid rgba(73, 214, 236, .35); }
+.telemetria { position: absolute; top: 50%; font-family: var(--mono); font-size: .58rem; letter-spacing: .4em; color: rgba(73, 214, 236, .5); white-space: nowrap; }
+.telemetria.izq { left: 24px; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; }
+.telemetria.der { right: 24px; transform: translateY(-50%); writing-mode: vertical-rl; color: rgba(245, 197, 66, .45); }
+/* Haz de escaneo que barre la pantalla */
+.hud-marco .haz { position: absolute; left: 0; right: 0; top: 0; height: 2px; opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(73, 214, 236, .9) 30%, rgba(255, 255, 255, .95) 50%, rgba(73, 214, 236, .9) 70%, transparent);
+  box-shadow: 0 0 24px 4px rgba(73, 214, 236, .35); animation: haz 9s cubic-bezier(.5, 0, .5, 1) infinite; }
+@keyframes haz { 0% { transform: translateY(-10px); opacity: 0; } 8% { opacity: .9; } 55% { opacity: .5; } 70% { transform: translateY(100vh); opacity: 0; } 100% { transform: translateY(100vh); opacity: 0; } }
+@media (max-width: 1100px) { .telemetria, .hud-marco::before, .hud-marco::after { display: none; } .hud-marco .esquina { width: 26px; height: 26px; } }
+
+/* Barra superior con línea de energía */
+.barra { box-shadow: 0 1px 0 rgba(73, 214, 236, .25), 0 10px 30px -18px rgba(73, 214, 236, .6); }
+.barra::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--oro), var(--cian), transparent); background-size: 200% 100%; animation: escaneo 4s linear infinite; }
+
+/* Paneles con esquinas cortadas (visor) */
+.panel, .red, .mosaico, .mision { clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px)); }
+.panel:hover { box-shadow: inset 0 0 0 1px rgba(73, 214, 236, .35), inset 0 0 60px rgba(73, 214, 236, .08); }
+.panel h2::after { content: " ▸▸▸"; color: var(--oro); font-size: .7em; letter-spacing: .1em; opacity: .7; animation: flechas 1.8s steps(3) infinite; }
+@keyframes flechas { 0% { opacity: .25; } 50% { opacity: .9; } 100% { opacity: .25; } }
+
+/* THE CEO en oro metálico con brillo que recorre */
+.heroe .glitch b { background: linear-gradient(100deg, #9c6c17 0%, #f5c542 28%, #fff4c9 42%, #f5c542 56%, #b8862b 100%);
+  background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 14px rgba(245, 197, 66, .45)); animation: oro 5s linear infinite; }
+@keyframes oro { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+
+/* Reactor que late detrás de las vistas totales */
+.gran-numero { position: relative; isolation: isolate; }
+.gran-numero::before { content: ""; position: absolute; z-index: -1; left: -26px; top: 50%; width: 150px; height: 150px; border-radius: 50%;
+  transform: translateY(-50%); background: radial-gradient(circle, rgba(73, 214, 236, .45) 0%, rgba(73, 214, 236, .12) 38%, transparent 62%);
+  box-shadow: 0 0 0 1px rgba(73, 214, 236, .25), 0 0 0 10px rgba(73, 214, 236, .05); animation: reactor 2.8s ease-in-out infinite; }
+@keyframes reactor { 50% { transform: translateY(-50%) scale(1.12); opacity: .7; } }
+.gran-numero .valor { background: linear-gradient(180deg, #ffffff, #9ff0ff 55%, #49d6ec); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+@media (prefers-reduced-motion: reduce) { .hud-marco .haz, .barra::after, .panel h2::after, .heroe .glitch b, .gran-numero::before { animation: none; } }
