@@ -15,6 +15,12 @@ short con voz. El laboratorio dirá con datos si conviene más foto o video en c
   rechaza `"carousel"` (probado 30-oct-2026).
 - `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube + título, descripción y
   etiquetas; después `youtube.py subir carruseles/<id>/short.mp4 "$(cat titulo.txt)" descripcion_youtube.txt <cuando> --tags tags_youtube.txt` y `youtube.py playlist <video_id> <clave>` (PIPELINE 7b).
+- `scripts/publer_carrusel.py <id> auto --reel`: el mismo `short.mp4` como Reel solo en Instagram (0 créditos).
+  Pie: el gancho de la portada arriba y el pie del carrusel debajo (primera línea distinta: así se mide aparte).
+  `auto`: el día del carrusel (o el siguiente si ya hay otro Reel de carrusel ese día) en la franja de Instagram más
+  fuerte del día a 2 h o más de cualquier otro post. Se guarda en `reel_ig`; `aprender.py` lo mide como `igr`
+  (fuera de la prueba de horarios) y el centro lo suma a Instagram del carrusel. La prueba no elige franjas de
+  Instagram a menos de 2 h de un Reel ya programado.
 - `scripts/carrusel_video.py largo <salida> <id>...`: une carruseles en un video largo. Vertical
   para TikTok e Instagram (más de 1 minuto: TikTok solo paga videos de más de 1 minuto) y
   `--horizontal` para YouTube. Cada mes, los carruseles del mes en uno: "Todo lo de <tema> en 5 minutos".

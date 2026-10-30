@@ -600,7 +600,7 @@ function dibujarCalendario(filas = []) {
     const vistas = vivo && salio(vivo) && medido(vivo) ? fmt(vistasDe(vivo)) : '';
     return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
       celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
-      celda(f.tipo === 'carrusel' ? 'Carrusel' : 'Video'), celda(f.que),
+      celda({carrusel: 'Carrusel', reel: 'Reel IG'}[f.tipo] || 'Video'), celda(f.que),
       celda(f.horas.ig || '—', 'n'), celda(f.horas.tt || '—', 'n'), celda(f.horas.yt || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
   }));
 }

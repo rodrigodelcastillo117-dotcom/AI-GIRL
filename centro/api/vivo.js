@@ -84,6 +84,8 @@ async function publer(estado, videos) {
   cabeceras['Publer-Workspace-Id'] = ws;
   const cuentas = estado.cuentas_publer || {};
   const porLinea = Object.fromEntries(videos.filter((v) => v.linea).map((v) => [v.linea, v.id]));
+  // El Reel de Instagram de un carrusel (otra primera línea) se suma a Instagram de ese carrusel.
+  for (const v of videos) if (v.linea_reel) porLinea[v.linea_reel] = v.id;
   const porMinuto = Object.fromEntries(videos.filter((v) => v.publica_utc).map((v) => [v.publica_utc.slice(0, 16), v.id]));
   // Solo desde el primer video de Victoria: los cientos de posts viejos de la cuenta no son suyos
   // y leerlos de 10 en 10 pasaba de los 30 s que da Vercel.

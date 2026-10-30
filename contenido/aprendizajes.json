@@ -110,5 +110,12 @@
   "tipo": "publicacion",
   "aprendizaje": "Publer sí permite cambiar la hora por API: PUT /posts/{id}/reschedule con {\"scheduled_at\": \"...\"} (comprobado con 5 posts el 30-oct). El PUT normal solo cambia texto y título.",
   "regla": "Para mover un post programado usar publer.reprogramar() y comprobar la hora con GET /posts/{id}. Nunca borrar y volver a crear; nunca DELETE /posts."
+ },
+ {
+  "fecha_utc": "2026-10-30T19:55:00Z",
+  "origen": "Medición de Publer (carrusel c03 sin vistas a los 40 min; el Reel del video 01 llegó a 6 cuentas en 19 h)",
+  "tipo": "formato",
+  "aprendizaje": "Con 60 seguidores, un carrusel de fotos en Instagram casi solo lo ven los seguidores: Instagram lleva a no seguidores sobre todo los Reels. Juzgar un post a los 40 minutos no sirve; Publer tarda horas en traer sus números.",
+  "regla": "Cada carrusel sale también como Reel de Instagram con su short (publer_carrusel.py <id> auto --reel, 0 créditos). Se mide aparte (igr) y no cuenta en la prueba de horarios."
  }
 ]

@@ -17,6 +17,8 @@
   "publica_utc": "2026-11-01T23:00:00Z",
   "linea": "aguinaldo 2026: cuánto te toca, cuándo te lo pagan y cuánto paga de isr. 💸",
   "tipo": "carrusel",
+  "linea_reel": "si ganas $15,000 al mes, te toca mínimo $7,500",
+  "reel_ig": "2026-11-01 20:00",
   "publica_utc_por_red": {
    "ig": "2026-11-01T18:00:00Z",
    "tt": "2026-11-01T15:00:00Z",
@@ -41,6 +43,8 @@
   "publica_utc": "2026-10-31T02:00:00Z",
   "linea": "si haces esto con tu dinero, haz esto en su lugar. 💰",
   "tipo": "carrusel",
+  "linea_reel": "si haces esto con tu dinero, haz esto en su lugar",
+  "reel_ig": "2026-10-31 20:00",
   "publica_utc_por_red": {
    "ig": "2026-10-31T00:00:00Z",
    "tt": "2026-10-31T02:00:00Z",
@@ -65,6 +69,8 @@
   "publica_utc": "2026-10-30T23:00:00Z",
   "linea": "reglas de dinero de warren buffett, charlie munger y tres más que vale la pena memorizar. 💡",
   "tipo": "carrusel",
+  "linea_reel": "5 reglas de dinero que repiten los que más saben",
+  "reel_ig": "2026-10-30 20:00",
   "publica_utc_por_red": {
    "ig": "2026-10-30T18:31:52Z",
    "tt": "2026-10-30T23:00:00Z",
@@ -85,6 +91,8 @@
   "publica_utc": "",
   "linea": "lecciones de negocio de blockbuster, costco, amazon y dos ideas que todo emprendedor debería saber. 💼",
   "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
   "publica_utc_por_red": {}
  },
  {
@@ -101,6 +109,8 @@
   "publica_utc": "",
   "linea": "qué hacer con el aguinaldo para que no se acabe en enero. 💸",
   "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
   "publica_utc_por_red": {}
  }
 ]

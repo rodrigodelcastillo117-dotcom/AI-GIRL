@@ -84,8 +84,8 @@ def metricas_historial():
     for vid, foto in ultima.items():
         for red in ('yt', 'tt', 'ig'):
             for corto in ('v', 'l', 'c', 's'):
-                if red in foto:
-                    por_video.setdefault(vid, {})[f'{corto}_{red}'] = foto[red].get(corto, 0)
+                if red in foto or (red == 'ig' and 'igr' in foto):
+                    por_video.setdefault(vid, {})[f'{corto}_{red}'] = de_red(foto, red, corto)
         if (foto.get('yt') or {}).get('ret') is not None:
             por_video.setdefault(vid, {})['r_yt'] = foto['yt']['ret']  # % promedio visto en YouTube
     return por_video
@@ -117,6 +117,13 @@ def youtube_id(enlace):
 
 
 NOMBRES_RED = {'ig': 'Instagram', 'tt': 'TikTok', 'yt': 'YouTube'}
+
+
+def de_red(foto, red, corto='v'):
+    """Número de una red en una medición. En el centro, Instagram de un carrusel suma su Reel ('igr', que
+    aprender.py mide aparte para que no cuente en la prueba de horarios)."""
+    total = (foto.get(red) or {}).get(corto, 0) or 0
+    return total + ((foto.get('igr') or {}).get(corto, 0) or 0 if red == 'ig' else 0)
 
 
 def horas_por_red(item):
@@ -151,6 +158,12 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     for i in range(dias):
         dia = local + datetime.timedelta(days=i)
         hechos = programado.get(dia, [])
+        # El Reel de Instagram de un carrusel va en su propia fila y no ocupa el día (sigue tocando video o carrusel).
+        filas += [{'fecha': dia.isoformat(), 'tipo': 'reel', 'id': '', 'estado': 'programado',
+                   'que': f"Reel de Instagram del carrusel {c['id']} (el mismo video del Short)",
+                   'horas': {'ig': a_mexico(c['reel_ig']['publica_utc']).strftime('%H:%M')}}
+                  for c in carruseles if (c.get('reel_ig') or {}).get('publica_utc')
+                  and a_mexico(c['reel_ig']['publica_utc']).date() == dia]
         if hechos:
             for x, horas in hechos:
                 filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel' if str(x['id']).startswith('c') else 'video',
@@ -216,7 +229,7 @@ def series_reales(plan, carruseles):
         historial = []
     por_dia, ultimas, por_red = {}, {}, {}
     for foto in sorted(historial, key=lambda f: f['fecha_utc']):
-        ultimas[foto['video_id']] = {r: (foto.get(r) or {}).get('v', 0) or 0 for r in ('yt', 'tt', 'ig')}
+        ultimas[foto['video_id']] = {r: de_red(foto, r) for r in ('yt', 'tt', 'ig')}
         dia = a_mexico(foto['fecha_utc']).date().isoformat()
         por_dia[dia] = sum(sum(x.values()) for x in ultimas.values())
         por_red[dia] = {r: sum(x[r] for x in ultimas.values()) for r in ('yt', 'tt', 'ig')}
@@ -284,6 +297,8 @@ def main():
         'horas': {r: h.strftime('%Y-%m-%d %H:%M') for r, h in horas_por_red(c).items()},
         'youtube_id': youtube_id(c.get('youtube')), 'publica_utc': c.get('publica_utc', ''),
         'linea': primera_linea(c.get('texto_post')), 'tipo': 'carrusel',
+        'linea_reel': primera_linea((c.get('reel_ig') or {}).get('texto')),
+        'reel_ig': a_mexico(c['reel_ig']['publica_utc']).strftime('%Y-%m-%d %H:%M') if (c.get('reel_ig') or {}).get('publica_utc') else '',
         'publica_utc_por_red': c.get('publica_utc_por_red') or {},
         **por_video.get(c['id'], {}),
     } for c in carruseles])

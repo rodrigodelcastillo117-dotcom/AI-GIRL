@@ -51,8 +51,10 @@ más alcance. Instagram y TikTok los contesta Rodrigo en la app.
 
 Sale un **carrusel** (`docs/CARRUSELES.md`): el primero en estado `listo` de
 `contenido/carruseles.json` (los de temporada, si su `ventana` incluye hoy, van primero). Se publica
-a la hora de cada red (`decision.cuando`): Instagram y TikTok como fotos (`publer_carrusel.py`) y YouTube como short
-(`carrusel_video.py short` y `youtube.py subir`). Si no queda ninguno `listo`, escribe 5 nuevos
+a la hora de cada red (`decision.cuando`): Instagram y TikTok como fotos (`publer_carrusel.py`), YouTube como short
+(`carrusel_video.py short` y `youtube.py subir`) y ese mismo short como Reel de Instagram
+(`publer_carrusel.py <id> auto --reel`: 0 créditos; el carrusel de fotos casi solo lo ven los seguidores y el Reel
+llega a no seguidores). Si no queda ninguno `listo`, escribe 5 nuevos
 (reglas en `CARRUSELES.md`). Luego pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
 video `listo_para_publicar`, genera uno hoy (pasos 1b a 6) y déjalo listo: así el día de publicar
 ya está hecho y la franja de las 8:00 nunca se pierde.

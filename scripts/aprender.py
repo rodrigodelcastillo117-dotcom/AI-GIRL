@@ -124,6 +124,8 @@ def medir_publer(videos):
     cuentas = publer.CONFIG.get('cuentas_publer', {})
     por_linea = {primera_linea(v.get('texto_post')): v['id'] for v in videos}
     por_minuto = {v['publica_utc'][:16]: v['id'] for v in videos if v.get('publica_utc')}
+    # El Reel de un carrusel (mismo video del Short) va aparte, como 'igr': sumado al carrusel inflaría su hora.
+    reels = {primera_linea(v['texto_reel']): v['id'] for v in videos if v.get('texto_reel')}
     hoy = datetime.date.today()
     datos = {}
     for pagina in range(20):
@@ -136,6 +138,8 @@ def medir_publer(videos):
                 continue
             minuto = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M') if p.get('scheduled_at') else ''
             video = por_linea.get(primera_linea(p.get('text'))) or por_minuto.get(minuto)
+            if primera_linea(p.get('text')) in reels:
+                video, red = reels[primera_linea(p.get('text'))], 'igr'
             if not video:
                 continue
             a = p.get('analytics') or {}
@@ -229,7 +233,8 @@ def ajenos(plan):
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
     propias = {primera_linea(v.get('texto_post')) for v in plan['videos'] + plan.get('largos', [])}
-    propias |= {primera_linea(c.get('texto_post')) for c in cargar('carruseles.json', {'carruseles': []})['carruseles']}
+    for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:
+        propias |= {primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto'))}
     hoy = datetime.date.today()
     filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]
@@ -309,6 +314,12 @@ def sincronizar_horas_publer(carruseles_json, avisos):
         if not red or not p.get('scheduled_at') or any(x in (p.get('state') or '') for x in ('draft', 'failed', 'deleted')):
             continue
         for c in lista:
+            reel = c.get('reel_ig') or {}
+            if reel.get('texto') and primera_linea(reel['texto']) == primera_linea(p.get('text')):
+                real = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M:%SZ')
+                if reel.get('publica_utc') != real:
+                    reel['publica_utc'], cambio = real, True
+                continue
             if primera_linea(c.get('texto_post')) == primera_linea(p.get('text')):
                 real = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M:%SZ')
                 if c['publica_utc_por_red'].get(red) != real:
@@ -347,6 +358,7 @@ def medir():
     for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:  # los carruseles también se miden
         if c.get('publica_utc') and a_utc(c['publica_utc']) <= ahora and (ahora - a_utc(c['publica_utc'])).days <= DIAS_DE_MEDICION:
             videos.append({'id': c['id'], 'texto_post': c['texto_post'], 'publica_utc': c['publica_utc'],
+                           'texto_reel': (c.get('reel_ig') or {}).get('texto'),
                            'publica_utc_por_red': c.get('publica_utc_por_red'), 'publicacion': {'youtube': c.get('youtube', '')}})
     if not videos:
         print('medir: todavía no hay videos publicados que medir')
@@ -466,10 +478,13 @@ def horarios(plan, carruseles, config, fecha, ahora):
             if r in conteo and t.strftime('%H:%M') in conteo[r]:
                 conteo[r][t.strftime('%H:%M')] += 1
     a_hora = lambda f: datetime.datetime.combine(fecha, datetime.time.fromisoformat(f), tzinfo=CDMX)
+    reels = [a_utc(c['reel_ig']['publica_utc']) for c in carruseles if (c.get('reel_ig') or {}).get('publica_utc')]
+    lejos_de_reels = lambda f: all(abs(a_hora(f) - t) >= datetime.timedelta(hours=2) for t in reels)
     elegidas, cuando = {}, {}
     for i, r in enumerate(CORTAS):
         franjas = franjas_de(r, config)
-        libres = [f for f in franjas if a_hora(f) > ahora + datetime.timedelta(minutes=20)] or franjas[-1:]
+        libres = [f for f in franjas if a_hora(f) > ahora + datetime.timedelta(minutes=20)
+                  and (r != 'ig' or lejos_de_reels(f))] or franjas[-1:]
         if ganadoras.get(r) in libres and sum(conteo[r].values()) % 5:
             f = ganadoras[r]
         else:
