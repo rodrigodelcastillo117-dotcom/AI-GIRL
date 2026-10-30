@@ -89,5 +89,12 @@
   "tipo": "publicacion",
   "aprendizaje": "Los posts AJENOS del 24 al 28 de octubre (Nadie Te lo Explicó) los subió Harvey, la automatización del otro proyecto en el droplet. Rodrigo la desconectó de las cuentas de Victoria el 30-oct y archivó esos posts en las apps.",
   "regla": "Los AJENOS de esas fechas ya están resueltos: mencionarlos solo como resueltos. Un AJENO con fecha posterior al 30-oct es alarma real: va primero en el reporte."
+ },
+ {
+  "fecha_utc": "2026-10-30T12:45:00Z",
+  "origen": "auditoría diaria",
+  "tipo": "tecnico",
+  "aprendizaje": "Publer cambió el formato de post_insights: cada métrica llega como {\"name\", \"value\", \"tooltip\"} y video_views viene vacío; medir se cayó con TypeError.",
+  "regla": "Leer las métricas de Publer con valor_publer() (aprender.py) y num() (vivo.js); si video_views viene vacío, las vistas salen de reach."
  }
 ]

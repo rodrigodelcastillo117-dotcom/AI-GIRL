@@ -70,6 +70,9 @@ async function youtube(estado, videos) {
   return {suscriptores: Number(s.subscriberCount) || 0, vistas: Number(s.viewCount) || 0, porVideo};
 }
 
+// Desde el 30-oct-2026 Publer manda cada métrica como {name, value}; antes, un número. Sin video_views, las vistas salen de reach.
+const num = (x) => Number(x && typeof x === 'object' ? x.value : x) || 0;
+
 async function publer(estado, videos) {
   if (!variable('PUBLER_API_KEY')) throw new Error('falta en Vercel: PUBLER_API_KEY');
   const cabeceras = {Authorization: `Bearer-API ${variable('PUBLER_API_KEY')}`, Accept: 'application/json', 'User-Agent': AGENTE};
@@ -109,9 +112,9 @@ async function publer(estado, videos) {
       const destino = (porVideo[video] ||= {});
       const previo = destino[red] || {v: 0, l: 0, c: 0, s: 0, g: 0, alcance: 0};
       destino[red] = {
-        v: previo.v + (Number(a.video_views) || 0), l: previo.l + (Number(a.likes) || 0),
-        c: previo.c + (Number(a.comments) || 0), s: previo.s + (Number(a.shares) || 0),
-        g: previo.g + (Number(a.saves) || 0), alcance: previo.alcance + (Number(a.reach) || 0),
+        v: previo.v + (num(a.video_views) || num(a.reach)), l: previo.l + num(a.likes),
+        c: previo.c + num(a.comments), s: previo.s + num(a.shares),
+        g: previo.g + num(a.saves), alcance: previo.alcance + num(a.reach),
         enlace: p.post_link || p.url || previo.enlace,
       };
     }

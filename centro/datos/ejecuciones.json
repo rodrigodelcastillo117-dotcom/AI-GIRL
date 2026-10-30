@@ -70,5 +70,14 @@
   "detalle": "Día sin publicación: video 01 sigue programado hoy 17:47 en Instagram, TikTok y YouTube (comprobado); 02 listo para el sábado.",
   "creditos_usados": 0,
   "creditos_restantes": 9870
+ },
+ {
+  "fecha_utc": "2026-10-30T12:45:00Z",
+  "tipo": "auditoria",
+  "video_id": "",
+  "resultado": "ok",
+  "detalle": "Día sin video: el carrusel c02 ya estaba programado (18:45 en Instagram, TikTok y YouTube). Medición arreglada: Publer cambió sus métricas a objetos {name, value}. Video 01 a 13 h: YouTube 322, TikTok 89, Instagram 12. Sin comentarios por contestar.",
+  "creditos_usados": 0,
+  "creditos_restantes": 9870
  }
 ]

@@ -108,6 +108,16 @@ def adn(video):
 
 # ---------- medir ----------
 
+def valor_publer(x):
+    """Desde el 30-oct-2026 Publer manda cada métrica como {"name", "value", "tooltip"}; antes, un número."""
+    if isinstance(x, dict):
+        x = x.get('value')
+    try:
+        return int(float(x or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
 def medir_publer(videos):
     import publer
     ws = publer.workspace_id()
@@ -130,8 +140,10 @@ def medir_publer(videos):
                 continue
             a = p.get('analytics') or {}
             destino = datos.setdefault(video, {}).setdefault(red, {'v': 0, 'l': 0, 'c': 0, 's': 0})
-            for corto, campo in (('v', 'video_views'), ('l', 'likes'), ('c', 'comments'), ('s', 'shares')):
-                destino[corto] += int(a.get(campo) or 0)
+            vistas = valor_publer(a.get('video_views'))
+            destino['v'] += vistas if vistas else valor_publer(a.get('reach'))  # Publer dejó video_views vacío (30-oct-2026)
+            for corto, campo in (('l', 'likes'), ('c', 'comments'), ('s', 'shares')):
+                destino[corto] += valor_publer(a.get(campo))
         if len(lote) < 10:
             break
     return datos
