@@ -91,6 +91,8 @@ async function arrancar(conAnimacion) {
   dibujarTodo();
   if (!arrancar.hecho) {
     arrancar.hecho = true;
+    armarNavegacion();
+    avatar3d();
     setInterval(refrescarVivo, MINUTO);
     setInterval(async () => { try { FOTO = await pedir('/api/estado'); dibujarTodo(); } catch { /* sigue con la foto anterior */ } }, 5 * MINUTO);
     setInterval(relojes, 1000);
@@ -242,6 +244,12 @@ function contar(el, destino) {
   const desde = Number(el.dataset.valor) || 0;
   el.dataset.valor = destino;
   if (desde === destino || matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(destino); return; }
+  if (el.dataset.visto) {  // cambió en vivo (no es la primera carga): destello para que se note qué se movió
+    el.classList.remove('cambio');
+    void el.offsetWidth;
+    el.classList.add('cambio');
+  }
+  el.dataset.visto = '1';
   const inicio = performance.now();
   const paso = (t) => {
     const k = Math.min(1, (t - inicio) / 1200);
@@ -404,8 +412,9 @@ function dibujarListas(aprendizajes) {
   const etiquetas = {dato: 'Dato', alerta: 'Alerta', idea: 'Mejora'};
   $('mejoras').replaceChildren(...mejoras().map(([tipo, texto]) => elemento(tipo, etiquetas[tipo], texto)));
   const tipos = {tecnico: 'Técnica', contenido: 'Contenido', publicacion: 'Publicar'};
-  $('lecciones').replaceChildren(...[...aprendizajes].sort((a, b) => (a.fecha_utc < b.fecha_utc ? 1 : -1))
-    .map((a) => elemento(a.tipo, tipos[a.tipo] || a.tipo, a.regla, `${a.origen}: ${a.aprendizaje}`)));
+  const recientes = [...aprendizajes].sort((a, b) => (a.fecha_utc < b.fecha_utc ? 1 : -1));
+  $('lecciones').replaceChildren(...recientes.slice(0, 6).map((a) => elemento(a.tipo, tipos[a.tipo] || a.tipo, a.regla, `${a.origen}: ${a.aprendizaje}`)),
+    ...(recientes.length > 6 ? [crear('li', {className: 'mas', textContent: `+${recientes.length - 6} lecciones más guardadas en el sistema`})] : []));
 }
 
 const celda = (texto, clase = '') => crear('td', {className: clase, textContent: texto ?? ''});
@@ -416,6 +425,41 @@ function dibujarTablas(videos, ejecuciones) {
     celda(v.gancho), celda(v.publica_mx), celda(medido(v) ? fmt(vistasDe(v)) : '', 'n'), celda(Number(v.qa_similitud) > 0 ? pct(Number(v.qa_similitud)) : '', 'n'), celda(v.creditos == null ? '' : fmt(v.creditos), 'n'))));
   $('t-bitacora').replaceChildren(...[...ejecuciones].sort(porFecha).reverse().map((e) => crear('tr', {}, celda(mx(e.fecha_utc)), celda(e.tipo), celda(e.video_id), chip(e.resultado),
     celda(e.detalle), celda(fmt(Number(e.creditos_usados) || 0), 'n'), celda(fmt(Number(e.creditos_restantes) || 0), 'n'))));
+}
+
+// ---------- navegación y efectos ----------
+function armarNavegacion() {
+  // Una pastilla por sección, tomada de la propia página; marca en cuál vas.
+  const secciones = [...document.querySelectorAll('main .seccion')];
+  const nav = $('navegacion');
+  const botones = secciones.map((sec, i) => {
+    sec.id ||= `seccion-${i + 1}`;
+    const nombre = [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
+    return crear('a', {href: `#${sec.id}`, textContent: nombre, className: 'pastilla'});
+  });
+  nav.replaceChildren(...botones);
+  const activo = new IntersectionObserver((entradas) => {
+    for (const e of entradas) {
+      if (!e.isIntersecting) continue;
+      const i = secciones.indexOf(e.target);
+      botones.forEach((b, j) => b.classList.toggle('activa', j === i));
+      botones[i]?.scrollIntoView({block: 'nearest', inline: 'center'});
+    }
+  }, {rootMargin: '-20% 0px -70% 0px'});
+  secciones.forEach((s) => activo.observe(s));
+}
+
+function avatar3d() {
+  // El avatar se inclina con el mouse (solo con mouse y si el sistema no pide menos movimiento).
+  const heroe = document.querySelector('.heroe');
+  const avatar = document.querySelector('.heroe .avatar');
+  if (!heroe || !avatar || !matchMedia('(pointer: fine)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  heroe.addEventListener('pointermove', (e) => {
+    const r = heroe.getBoundingClientRect();
+    avatar.style.setProperty('--rx', `${((e.clientY - r.top) / r.height - 0.5) * -14}deg`);
+    avatar.style.setProperty('--ry', `${((e.clientX - r.left) / r.width - 0.5) * 18}deg`);
+  });
+  heroe.addEventListener('pointerleave', () => { avatar.style.setProperty('--rx', '0deg'); avatar.style.setProperty('--ry', '0deg'); });
 }
 
 // ---------- centro de operaciones (todo con datos reales) ----------

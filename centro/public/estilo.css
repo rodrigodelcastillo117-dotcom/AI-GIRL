@@ -357,3 +357,38 @@ tr.hoy td { box-shadow: inset 0 1px 0 rgba(245, 197, 66, .25), inset 0 -1px 0 rg
 @media (prefers-reduced-motion: reduce) { .seccion::after, .despegue::after { animation: none; } .panel:hover { transform: none; } }
 /* Los textos largos (enlaces, rutas) se parten en vez de ensanchar la página en celular */
 .lista span, .lista span > *, .nota, td { min-width: 0; overflow-wrap: anywhere; }
+
+/* ---------- Navegación por secciones (fija con la barra) ---------- */
+.barra { flex-wrap: wrap; row-gap: 8px; }
+.navegacion { flex-basis: 100%; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 2px 0 0; mask-image: linear-gradient(90deg, transparent, #000 12px, #000 calc(100% - 12px), transparent); }
+.navegacion::-webkit-scrollbar { display: none; }
+.pastilla { flex: none; font-family: var(--etiqueta); font-size: .64rem; letter-spacing: .18em; text-transform: uppercase; text-decoration: none;
+  color: var(--tenue); padding: 6px 12px; border: 1px solid var(--linea); background: rgba(73, 214, 236, .03); transition: color .25s, border-color .25s, background .25s, box-shadow .25s; }
+.pastilla:hover { color: var(--texto); border-color: var(--linea-fuerte); }
+.pastilla.activa { color: var(--fondo); background: var(--cian); border-color: var(--cian); box-shadow: 0 0 18px rgba(73, 214, 236, .55); }
+.seccion { scroll-margin-top: 110px; }
+html { scroll-behavior: smooth; }
+
+/* ---------- Destello cuando un número cambia en vivo ---------- */
+.cambio { animation: destello 1.6s ease-out; }
+@keyframes destello { 0% { color: #fff; text-shadow: 0 0 22px var(--cian), 0 0 44px var(--cian); } 100% { } }
+
+/* ---------- Avatar holográfico en 3D ---------- */
+.heroe { perspective: 900px; }
+.heroe .avatar { transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transform-style: preserve-3d; transition: transform .25s ease-out; }
+.heroe .avatar .foto { transform: translateZ(28px); }
+.heroe .avatar svg { filter: drop-shadow(0 0 14px rgba(245, 197, 66, .35)); }
+
+.lista li.mas { display: block; text-align: center; border-left-color: var(--apagado); color: var(--tenue); font-size: .76rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cambio { animation: none; } }
+/* Celular: encabezado compacto (foto junto al nombre) para que los números se vean de entrada */
+@media (max-width: 640px) {
+  .heroe { grid-template-columns: 104px minmax(0, 1fr); gap: 14px 16px; align-items: center; }
+  .heroe .avatar { width: 104px; height: 104px; }
+  .heroe .avatar .foto { inset: 17px; }
+  .heroe .mision { grid-column: 1 / -1; }
+  .heroe .usuario { font-size: .56rem; letter-spacing: .14em; }
+  .heroe .glitch { font-size: 1.55rem; }
+  .heroe .lema { font-size: .82rem; }
+  .gran-numero .valor { font-size: 2.6rem; }
+}
