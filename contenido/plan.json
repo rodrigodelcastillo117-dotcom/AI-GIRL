@@ -173,7 +173,8 @@
           "¿Cómo aplicar la regla 80/20 en tu negocio?",
           "¿Cómo encontrar a tus mejores clientes?"
         ]
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "03",
@@ -231,7 +232,8 @@
       "puente_producto": true,
       "ganchos_alternativos": [
         "¿Cuánto tarda tu dinero en duplicarse?"
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "04",
@@ -288,7 +290,8 @@
       },
       "ganchos_alternativos": [
         "Escribir lo que te preocupa durante quince minutos aligera la mente."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "05",
@@ -346,7 +349,8 @@
       },
       "ganchos_alternativos": [
         "Si algo toma menos de dos minutos, hazlo ya."
-      ]
+      ],
+      "duracion": 11
     },
     {
       "id": "06",
@@ -404,7 +408,8 @@
       "puente_producto": true,
       "ganchos_alternativos": [
         "De cada diez pesos que ganes, guarda uno para ti."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "07",
@@ -461,7 +466,8 @@
       },
       "ganchos_alternativos": [
         "Cuando dudes, imagínate a los ochenta años."
-      ]
+      ],
+      "duracion": 11
     },
     {
       "id": "08",
@@ -517,7 +523,8 @@
       },
       "ganchos_alternativos": [
         "Regla número uno: no pierdas dinero."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "09",
@@ -573,7 +580,8 @@
       },
       "ganchos_alternativos": [
         "Dos inhalaciones por la nariz y una exhalación larga por la boca."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "10",
@@ -628,7 +636,8 @@
       },
       "ganchos_alternativos": [
         "El estudio de Harvard sobre la felicidad lleva más de ochenta años."
-      ]
+      ],
+      "duracion": 10
     },
     {
       "id": "11",
@@ -684,7 +693,8 @@
       },
       "ganchos_alternativos": [
         "El trabajo se expande hasta llenar el tiempo que le das."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "12",
@@ -740,7 +750,8 @@
       },
       "ganchos_alternativos": [
         "La gente no compra lo que haces, compra por qué lo haces."
-      ]
+      ],
+      "duracion": 11
     },
     {
       "id": "13",
@@ -796,7 +807,8 @@
       },
       "ganchos_alternativos": [
         "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste."
-      ]
+      ],
+      "duracion": 11
     },
     {
       "id": "14",
@@ -854,7 +866,8 @@
       },
       "ganchos_alternativos": [
         "Tu mente no suelta lo que dejaste a medias."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "15",
@@ -910,7 +923,8 @@
       },
       "ganchos_alternativos": [
         "Haz primero lo que más te cuesta."
-      ]
+      ],
+      "duracion": 11
     },
     {
       "id": "16",
@@ -968,7 +982,8 @@
       "puente_producto": true,
       "ganchos_alternativos": [
         "Charlie Munger decía que los primeros cien mil dólares son los más difíciles."
-      ]
+      ],
+      "duracion": 12
     },
     {
       "id": "17",
@@ -1032,7 +1047,8 @@
       "ventana": {
         "desde": "2026-11-10",
         "hasta": "2026-12-19"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "18",
@@ -1096,7 +1112,8 @@
       "ventana": {
         "desde": "2026-11-26",
         "hasta": "2026-12-19"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "19",
@@ -1159,7 +1176,8 @@
       "ventana": {
         "desde": "2026-11-20",
         "hasta": "2026-12-19"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "20",
@@ -1224,7 +1242,8 @@
       "ventana": {
         "desde": "2026-12-04",
         "hasta": "2026-12-19"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "21",
@@ -1289,7 +1308,8 @@
       "ventana": {
         "desde": "2026-12-10",
         "hasta": "2027-01-10"
-      }
+      },
+      "duracion": 11
     },
     {
       "id": "22",
@@ -1354,7 +1374,8 @@
       "ventana": {
         "desde": "2027-01-02",
         "hasta": "2027-01-20"
-      }
+      },
+      "duracion": 11
     },
     {
       "id": "23",
@@ -1419,7 +1440,8 @@
       "ventana": {
         "desde": "2027-01-06",
         "hasta": "2027-01-31"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "24",
@@ -1484,7 +1506,8 @@
       "ventana": {
         "desde": "2027-01-12",
         "hasta": "2027-01-31"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "25",
@@ -1538,8 +1561,7 @@
         ]
       },
       "ganchos_alternativos": [
-        "Si tu sueldo se te va en una semana, te falta esta regla.",
-        "Tres números para que enero no te gane."
+        "Todo el mundo complica su presupuesto de enero. Usa tres números."
       ],
       "adn": {
         "tipo_gancho": "regla"
@@ -1548,7 +1570,8 @@
       "ventana": {
         "desde": "2027-01-18",
         "hasta": "2027-02-10"
-      }
+      },
+      "duracion": 11
     },
     {
       "id": "26",
@@ -1610,7 +1633,8 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "puente_producto": true
+      "puente_producto": true,
+      "duracion": 12
     },
     {
       "id": "27",
@@ -1671,7 +1695,8 @@
       ],
       "adn": {
         "tipo_gancho": "cifra"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "28",
@@ -1731,7 +1756,8 @@
       ],
       "adn": {
         "tipo_gancho": "contradiccion"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "29",
@@ -1792,7 +1818,8 @@
       ],
       "adn": {
         "tipo_gancho": "error"
-      }
+      },
+      "duracion": 12
     },
     {
       "id": "30",
@@ -1852,7 +1879,8 @@
       ],
       "adn": {
         "tipo_gancho": "cifra"
-      }
+      },
+      "duracion": 13
     },
     {
       "id": "31",
@@ -1913,7 +1941,353 @@
       ],
       "adn": {
         "tipo_gancho": "contradiccion"
-      }
+      },
+      "duracion": 11
+    },
+    {
+      "id": "32",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "formato": "serie",
+      "serie": {
+        "nombre": "asi_empezaron",
+        "numero": 1
+      },
+      "texto_pantalla": "Así empezaron #1 · Airbnb",
+      "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores llenos de deudas vendieron cajas a cuarenta dólares. Juntaron unos treinta mil y entraron a una aceleradora. Sígueme para la número dos.",
+      "subtitulos": [
+        "Airbnb casi quiebra",
+        "y se salvó vendiendo cereal.",
+        "En 2008, sus fundadores",
+        "llenos de deudas",
+        "vendieron cajas a 40 dólares.",
+        "Juntaron unos 30 mil",
+        "y entraron a una aceleradora.",
+        "Sígueme para la número 2."
+      ],
+      "palabras_clave": [
+        "airbnb",
+        "cereal",
+        "40",
+        "30",
+        "2"
+      ],
+      "fuente": "Founded.com y Hostaway: en 2008 los fundadores de Airbnb vendieron cajas de cereal \"Obama O's\" y \"Cap'n McCain's\" a 40 dólares, juntaron cerca de 30,000 dólares y entraron a Y Combinator",
+      "locacion": "cocina",
+      "vestuario": "Overol de mezclilla clara sobre camiseta blanca, tenis blancos, coleta alta",
+      "accion": "Recargada en la barra de la cocina con una caja de cereal sin marca en la mano, Capital sentado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Airbnb casi quiebra y se salvó vendiendo cereal. 🥣\nEn 2008, llenos de deudas, sus fundadores vendieron cajas de cereal a 40 dólares, juntaron unos 30 mil y entraron a Y Combinator.\n\nAsí empezaron #1 · Sígueme para la #2.",
+      "seo": {
+        "palabra_clave": "historia de Airbnb",
+        "titulo": "Historia de Airbnb y su cereal 🥣",
+        "descripcion_inicio": "Historia de Airbnb: en 2008 sus fundadores, llenos de deudas, vendieron cajas de cereal \"Obama O's\" a 40 dólares, juntaron unos 30,000 dólares y entraron a Y Combinator.\nAsí empezaron #1: cómo empezaron las empresas que hoy conoces.",
+        "tags_concretas": [
+          "historia de airbnb",
+          "como empezo airbnb",
+          "airbnb cereal",
+          "obama os",
+          "y combinator",
+          "brian chesky",
+          "historias de emprendedores",
+          "como empezaron las empresas"
+        ],
+        "hashtags": [
+          "#airbnb",
+          "#asiempezaron",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "En 2008 los fundadores de Airbnb tenían deudas en sus tarjetas y no conseguían inversionistas. Para seguir vivos diseñaron cajas de cereal de edición limitada, \"Obama O's\" y \"Cap'n McCain's\", y las vendieron a 40 dólares cada una. Juntaron cerca de 30,000 dólares, y esa historia les ayudó a entrar a Y Combinator, la aceleradora que los impulsó.",
+        "preguntas": [
+          "¿Cómo empezó Airbnb?",
+          "¿Qué es el cereal de Airbnb?",
+          "¿Cómo conseguir dinero para tu startup?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El cereal que salvó a Airbnb."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "duracion": 16
+    },
+    {
+      "id": "33",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "formato": "serie",
+      "serie": {
+        "nombre": "asi_empezaron",
+        "numero": 2
+      },
+      "texto_pantalla": "Así empezaron #2 · Dollar Shave Club",
+      "guion": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Unilever la compró. Sígueme para la número tres.",
+      "subtitulos": [
+        "Un video de 4,500 dólares",
+        "terminó en una venta",
+        "de mil millones.",
+        "Dollar Shave Club lo subió a YouTube",
+        "y se le acabó el inventario",
+        "en horas.",
+        "Unilever la compró.",
+        "Sígueme para la número 3."
+      ],
+      "palabras_clave": [
+        "4500",
+        "millones",
+        "youtube",
+        "horas",
+        "3"
+      ],
+      "fuente": "CNBC: Michael Dubin dijo que el video costó 4,500 dólares y que el inventario se agotó en horas; Fortune: Unilever la compró en 2016 por cerca de 1,000 millones de dólares (cifra no oficial)",
+      "locacion": "oficina",
+      "vestuario": "Blazer azul rey oversize sobre top negro, pantalón negro recto, mocasines dorados",
+      "accion": "Sentada al escritorio junto a una laptop cerrada, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Un video de 4,500 dólares terminó en una venta de mil millones. 🪒\nDollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. En 2016, Unilever la compró (según la prensa, por cerca de mil millones de dólares).\n\nAsí empezaron #2 · Sígueme para la #3.",
+      "seo": {
+        "palabra_clave": "historia de Dollar Shave Club",
+        "titulo": "Historia de Dollar Shave Club y su video 🪒",
+        "descripcion_inicio": "Historia de Dollar Shave Club: un video de 4,500 dólares en YouTube agotó su inventario en horas, y en 2016 Unilever compró la empresa por cerca de 1,000 millones de dólares, según la prensa.\nAsí empezaron #2: el poder de un buen video.",
+        "tags_concretas": [
+          "dollar shave club",
+          "historia de dollar shave club",
+          "video viral marketing",
+          "michael dubin",
+          "unilever",
+          "marketing en youtube",
+          "historias de emprendedores",
+          "como empezaron las empresas"
+        ],
+        "hashtags": [
+          "#dollarshaveclub",
+          "#asiempezaron",
+          "#marketing",
+          "#emprendimiento"
+        ],
+        "parrafo": "Michael Dubin, fundador de Dollar Shave Club, contó a CNBC que su primer video costó 4,500 dólares y que el inventario se agotó en horas después de subirlo a YouTube. En 2016, Unilever compró la empresa; la cifra no se hizo pública, pero la prensa la estimó en cerca de 1,000 millones de dólares. Un video bien hecho puede vender más que una campaña cara.",
+        "preguntas": [
+          "¿Cómo empezó Dollar Shave Club?",
+          "¿Cuánto costó el video de Dollar Shave Club?",
+          "¿Cómo hacer un video que venda?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "El video más rentable de la historia de YouTube costó 4,500 dólares."
+      ],
+      "adn": {
+        "tipo_gancho": "cifra"
+      },
+      "duracion": 16
+    },
+    {
+      "id": "34",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "formato": "serie",
+      "serie": {
+        "nombre": "asi_empezaron",
+        "numero": 3
+      },
+      "texto_pantalla": "Así empezaron #3 · Canva",
+      "guion": "Más de cien inversionistas le dijeron que no a Canva. Su fundadora, Melanie Perkins, mejoraba su presentación después de cada no, hasta que alguien dijo que sí. Tu próximo no también te hace mejor. Sígueme para la número cuatro.",
+      "subtitulos": [
+        "Más de 100 inversionistas",
+        "le dijeron que no a Canva.",
+        "Su fundadora, Melanie Perkins,",
+        "mejoraba su presentación",
+        "después de cada no,",
+        "hasta que alguien dijo que sí.",
+        "Tu próximo no",
+        "también te hace mejor.",
+        "Sígueme para la número 4."
+      ],
+      "palabras_clave": [
+        "100",
+        "no",
+        "canva",
+        "sí",
+        "4"
+      ],
+      "fuente": "Fortune y SmartCompany: Melanie Perkins dijo que la rechazaron más de 100 inversionistas y que tras cada rechazo mejoraba su presentación",
+      "locacion": "sala",
+      "vestuario": "Vestido de lino verde salvia con cinturón, sandalias doradas",
+      "accion": "Sentada en el sofá con una tableta en la mano, Capital echado a sus pies.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Más de 100 inversionistas le dijeron que no a Canva. 🎨\nSu fundadora, Melanie Perkins, mejoraba su presentación después de cada no, hasta que alguien dijo que sí.\n\nAsí empezaron #3 · Sígueme para la #4.",
+      "seo": {
+        "palabra_clave": "historia de Canva",
+        "titulo": "Historia de Canva y sus 100 rechazos 🎨",
+        "descripcion_inicio": "Historia de Canva: a Melanie Perkins la rechazaron más de 100 inversionistas, y después de cada rechazo mejoraba su presentación.\nAsí empezaron #3: lo que los emprendedores aprenden de un no.",
+        "tags_concretas": [
+          "historia de canva",
+          "melanie perkins",
+          "como empezo canva",
+          "rechazo de inversionistas",
+          "mujeres emprendedoras",
+          "historias de emprendedoras",
+          "como conseguir inversion",
+          "como empezaron las empresas"
+        ],
+        "hashtags": [
+          "#canva",
+          "#asiempezaron",
+          "#mujeresemprendedoras",
+          "#emprendimiento"
+        ],
+        "parrafo": "Melanie Perkins, cofundadora de Canva, ha contado que la rechazaron más de 100 inversionistas antes de conseguir dinero. Su respuesta no fue rendirse: cada vez que la rechazaban o le hacían una pregunta difícil, mejoraba su presentación. Un no no es el final; es información para hacer mejor tu propuesta.",
+        "preguntas": [
+          "¿Cómo empezó Canva?",
+          "¿Quién es Melanie Perkins?",
+          "¿Qué hacer cuando un inversionista te dice que no?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "A Melanie Perkins la rechazaron más de cien inversionistas."
+      ],
+      "adn": {
+        "tipo_gancho": "historia"
+      },
+      "duracion": 17
+    },
+    {
+      "id": "35",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "formato": "serie",
+      "serie": {
+        "nombre": "asi_empezaron",
+        "numero": 4
+      },
+      "texto_pantalla": "Así empezaron #4 · Mailchimp",
+      "guion": "Mailchimp nunca aceptó dinero de inversionistas. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. No necesitas inversionistas para crecer. Sígueme para la número cinco.",
+      "subtitulos": [
+        "Mailchimp nunca aceptó dinero",
+        "de inversionistas.",
+        "Creció solo con lo que vendía.",
+        "En 2021, Intuit la compró",
+        "por 12 mil millones de dólares.",
+        "No necesitas inversionistas",
+        "para crecer.",
+        "Sígueme para la número 5."
+      ],
+      "palabras_clave": [
+        "nunca",
+        "vendía",
+        "12",
+        "crecer",
+        "5"
+      ],
+      "fuente": "TechCrunch y Built In: Intuit compró Mailchimp en 2021 por 12,000 millones de dólares en efectivo y acciones; Mailchimp no recibió inversión externa desde su fundación en 2001",
+      "locacion": "jet",
+      "vestuario": "Suéter de cachemira negro de cuello redondo, pantalón de pinzas gris, reloj de acero",
+      "accion": "Sentada en el asiento de piel del jet con una libreta en las piernas, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "Mailchimp nunca aceptó dinero de inversionistas. 🐵\nCreció solo con lo que vendía, y en 2021 Intuit la compró por 12 mil millones de dólares.\n\nAsí empezaron #4 · Sígueme para la #5.",
+      "seo": {
+        "palabra_clave": "historia de Mailchimp",
+        "titulo": "Historia de Mailchimp sin inversionistas 🐵",
+        "descripcion_inicio": "Historia de Mailchimp: nunca recibió dinero de inversionistas y en 2021 Intuit la compró por 12,000 millones de dólares.\nAsí empezaron #4: crecer con lo que vendes.",
+        "tags_concretas": [
+          "historia de mailchimp",
+          "mailchimp intuit",
+          "empresa sin inversionistas",
+          "bootstrapping",
+          "crecer sin inversion",
+          "historias de emprendedores",
+          "como empezaron las empresas",
+          "ben chestnut"
+        ],
+        "hashtags": [
+          "#mailchimp",
+          "#asiempezaron",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "Mailchimp se fundó en 2001 y nunca tomó dinero de inversionistas externos: creció con lo que le pagaban sus clientes. En 2021, Intuit la compró por 12,000 millones de dólares en efectivo y acciones, una de las ventas más grandes de una empresa que creció sin inversión externa. No necesitas inversionistas para construir algo grande; necesitas clientes que paguen.",
+        "preguntas": [
+          "¿Cómo empezó Mailchimp?",
+          "¿Se puede crecer sin inversionistas?",
+          "¿Cuánto pagó Intuit por Mailchimp?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "12 mil millones sin un solo inversionista."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "duracion": 15
+    },
+    {
+      "id": "36",
+      "estado": "pendiente",
+      "pilar": "empresas",
+      "formato": "serie",
+      "serie": {
+        "nombre": "asi_empezaron",
+        "numero": 5
+      },
+      "texto_pantalla": "Así empezaron #5 · Zara",
+      "guion": "El dueño de Zara empezó haciendo batas de baño. En mil novecientos sesenta y tres, Amancio Ortega fundó un taller para hacerlas. Doce años después abrió la primera tienda Zara en A Coruña. Empieza pequeño, pero empieza.",
+      "subtitulos": [
+        "El dueño de Zara empezó",
+        "haciendo batas de baño.",
+        "En 1963, Amancio Ortega",
+        "fundó un taller para hacerlas.",
+        "12 años después abrió",
+        "la primera tienda Zara",
+        "en A Coruña.",
+        "Empieza pequeño, pero empieza."
+      ],
+      "palabras_clave": [
+        "zara",
+        "batas",
+        "1963",
+        "empieza"
+      ],
+      "fuente": "Wikipedia, Britannica y Ara: en 1963 Amancio Ortega fundó Confecciones GOA para hacer batas acolchadas; la primera tienda Zara abrió en 1975 en A Coruña",
+      "locacion": "recamara",
+      "vestuario": "Traje de dos piezas color arena, blusa de seda blanca, broche dorado",
+      "accion": "De pie junto a un perchero con prendas de seda colgadas, Capital sentado a su lado.",
+      "hora_publicacion": "rotacion",
+      "texto_post": "El dueño de Zara empezó haciendo batas de baño. 👗\nEn 1963, Amancio Ortega fundó un taller para hacerlas. 12 años después abrió la primera tienda Zara en A Coruña.\n\nAsí empezaron #5 · Empieza pequeño, pero empieza.",
+      "seo": {
+        "palabra_clave": "historia de Zara",
+        "titulo": "Historia de Zara y las batas de baño 👗",
+        "descripcion_inicio": "Historia de Zara: en 1963 Amancio Ortega fundó un taller para hacer batas de baño, y en 1975 abrió la primera tienda Zara en A Coruña.\nAsí empezaron #5: los grandes también empezaron pequeños.",
+        "tags_concretas": [
+          "historia de zara",
+          "amancio ortega",
+          "como empezo zara",
+          "inditex",
+          "confecciones goa",
+          "historias de emprendedores",
+          "como empezaron las empresas",
+          "empezar un negocio pequeño"
+        ],
+        "hashtags": [
+          "#zara",
+          "#asiempezaron",
+          "#emprendimiento",
+          "#negocios"
+        ],
+        "parrafo": "En 1963, Amancio Ortega fundó Confecciones GOA, un taller que hacía batas de baño acolchadas. Doce años después, en 1975, abrió la primera tienda Zara en A Coruña, España. De ahí nació Inditex. Ninguna empresa grande empezó grande: empezó con un producto, un cliente y alguien que no se detuvo.",
+        "preguntas": [
+          "¿Cómo empezó Zara?",
+          "¿Quién es Amancio Ortega?",
+          "¿Cuándo abrió la primera tienda Zara?"
+        ]
+      },
+      "ganchos_alternativos": [
+        "Zara empezó con un taller de batas."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "duracion": 16
     }
   ]
 }

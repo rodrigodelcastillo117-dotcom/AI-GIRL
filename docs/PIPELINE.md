@@ -89,11 +89,13 @@ Solo los días que NO toca publicar Short, para no encimar:
 
 Lee `docs/GUIONES_VIRALES.md`: cada guion cumple su lista de 10 puntos. Escribe 10 videos nuevos
 al final de `plan.json → videos`, con todos los campos de los demás
-(`id`, `estado: "pendiente"`, `pilar`, `guion` de máximo 28 palabras dicho en español de México
-que abre con el gancho, `subtitulos` con dígitos, `palabras_clave`, `fuente` real, `locacion`,
+(`id`, `estado: "pendiente"`, `pilar`, `duracion` en segundos según el tema y `guion` que cabe en ella (segundos × 2.33
+palabras, tabla en `GUIONES_VIRALES.md`) dicho en español de México que abre con el gancho, `subtitulos` con dígitos, `palabras_clave`, `fuente` real, `locacion`,
 `vestuario` nuevo, `accion`, `hora_publicacion: "rotacion"`, `texto_post` sin hashtags y `seo`
 según `docs/SEO.md`, más `ganchos_alternativos` (las otras 2 primeras frases propuestas) y
-`adn: {"tipo_gancho": "cifra|contradiccion|error|nombre|regla|dato|cita|pregunta|consejo"}`).
+`adn: {"tipo_gancho": "cifra|contradiccion|error|nombre|regla|dato|cita|pregunta|consejo|historia|mito"}`).
+Si es capítulo de una serie, `formato: "serie"` y `serie: {"nombre", "numero"}`: `aprender.py`
+la mete un video sí y uno no, en orden.
 Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.
 
 Para mover un video ya programado: `python scripts/reprogramar.py <id> <hora_utc>` (mueve YouTube
@@ -171,7 +173,8 @@ un caso real con fuente (regla 7).
 
 ## 4. Video
 
-`wan3-0` `element2video`: `duration: 12`, `resolution: "720p"`, `aspectRatio: "9:16"`,
+`wan3-0` `element2video`: `duration` = `decision.segundos` de `aprender.py auditar` (la `duracion`
+del video en el plan, 10 a 25 s según el tema; ver `GUIONES_VIRALES.md`), `resolution: "720p"`, `aspectRatio: "9:16"`,
 `audio: true`, `promptExtend: false`, `mode: "standard"`.
 `visualReferences`: foto base, hoja maestra, Rottweiler y la voz
 (`manifest.voz`, `type: "audio"`, `audioRole: "voice_reference"`).
@@ -220,7 +223,7 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 
 Título fijo arriba (quien desliza sin sonido sabe de qué trata desde el segundo 0):
 ```
-python scripts/titulo_pantalla.py videos/video-<id>-SUBTITULADO.mp4 "$(python -c "import json;v=[v for v in json.load(open('contenido/plan.json'))['videos'] if v['id']=='<id>'][0];print(v.get('pregunta_pantalla') or v['seo']['titulo'])")" /tmp/titulo.mp4
+python scripts/titulo_pantalla.py videos/video-<id>-SUBTITULADO.mp4 "$(python -c "import json;v=[v for v in json.load(open('contenido/plan.json'))['videos'] if v['id']=='<id>'][0];print(v.get('pregunta_pantalla') or v.get('texto_pantalla') or v['seo']['titulo'])")" /tmp/titulo.mp4
 cp /tmp/titulo.mp4 videos/video-<id>-SUBTITULADO.mp4
 ```
 Revisar un cuadro: el título va en la franja de arriba (techo, cielo o pared) y no tapa la cara.

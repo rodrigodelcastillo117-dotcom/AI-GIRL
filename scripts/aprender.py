@@ -413,6 +413,20 @@ def toca_publicar(plan, hoy, config):
     return True, f"el último salió el {ultima.isoformat()}"
 
 
+def segundos(video, config):
+    """Segundos del video: los del plan o los que pide su guion (2.33 palabras por segundo).
+    Prorrateo: las reglas cortas salen de 10-12 s y las historias que lo valen, más largas (máximo 25)."""
+    if video.get('duracion'):
+        return video['duracion']
+    s = round(len(video['guion'].split()) / config.get('palabras_por_segundo', 2.33) + 0.4)
+    s += 1 if video.get('formato') == 'entrevista' else 0  # la entrevista lleva pausas
+    return max(config.get('segundos_minimos', 10), min(config.get('segundos_maximos', 25), s))
+
+
+def creditos(video, config):
+    return segundos(video, config) * config.get('creditos_por_segundo', 40) + config.get('creditos_foto', 30)
+
+
 def decidir(plan, ranking, hoy, config):
     toca, motivo = toca_publicar(plan, hoy, config)
     horas = prueba_de_horas(plan, ranking, config)
@@ -432,8 +446,16 @@ def decidir(plan, ranking, hoy, config):
     if not pendientes:
         return {**base, 'video_id': None, 'modo': 'sin guiones', 'esperado': None, 'cambios_sugeridos': [],
                 'por_que': 'No hay guiones pendientes: escribir 10 nuevos (paso 1c).'}
-    valores = {a: {f['valor']: f for f in filas} for a, filas in ranking.items()}
     publicados = [v for v in plan['videos'] if v['estado'] in ('programado', 'publicado', 'listo_para_publicar')]
+    # Series ("Así empezaron #N"): un capítulo cada 2 videos para que el "sígueme para la siguiente"
+    # se cumpla pronto, siempre el número que sigue y sin dos capítulos seguidos.
+    serie = sorted((v for v in pendientes if v.get('serie')), key=lambda v: v['serie']['numero'])
+    if serie and not (publicados and publicados[-1].get('serie')):
+        v = serie[0]
+        return {**base, 'video_id': v['id'], 'modo': 'serie', 'esperado': None, 'cambios_sugeridos': [],
+                'por_que': f'Serie: toca el capítulo {v["serie"]["numero"]} (uno cada 2 videos).'}
+    pendientes = [v for v in pendientes if not v.get('serie')] or pendientes
+    valores = {a: {f['valor']: f for f in filas} for a, filas in ranking.items()}
     ultimo_pilar = publicados[-1]['pilar'] if publicados else None
     explorar = len(publicados) % 10 in (2, 5, 8)  # 3 de cada 10 videos exploran
     candidatos = []
@@ -496,6 +518,18 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
     pendientes = sum(1 for v in plan['videos'] if v['estado'] == 'pendiente')
     if pendientes < 5:
         lista.append(f'Quedan {pendientes} guiones: hay que escribir 10 nuevos (paso 1c).')
+    por_mes = 30 // config.get('dias_entre_videos', 2)
+    siguientes = [v for v in plan['videos'] if v['estado'] == 'pendiente'][:por_mes]
+    gasto = sum(creditos(v, config) for v in siguientes)
+    tope = int(config.get('creditos_al_mes', 12000) * (1 - config.get('reserva_reintentos', 0.15)))
+    if gasto > tope:
+        lista.append(f'Los próximos {len(siguientes)} videos piden {gasto} créditos y el tope del mes es {tope} '
+                     '(deja 15% para reintentos): acortar los guiones más largos.')
+    pps = config.get('palabras_por_segundo', 2.33)
+    for v in plan['videos']:
+        if v['estado'] == 'pendiente' and len(v['guion'].split()) > segundos(v, config) * pps + 1:
+            lista.append(f'El guion del video {v["id"]} no cabe en {segundos(v, config)} s '
+                         f'({len(v["guion"].split())} palabras; máximo {int(segundos(v, config) * pps)}).')
     orden = sorted(ejecuciones, key=lambda e: e['fecha_utc'])
     if orden:
         generados = [e for e in orden if e['tipo'] == 'generar' and e.get('creditos_usados')]
@@ -531,15 +565,18 @@ def auditar():
         'reglas_vigentes': reglas_vigentes(ranking, config),
         'alertas': alertas(plan, ranking, notas, ejecuciones, config, hoy),
     }
-    guardar('auditoria.json', resultado)
     d = resultado['decision']
+    siguiente = next((v for v in plan['videos'] if v['id'] == d.get('video_id')), None)
+    if siguiente:
+        d['segundos'], d['creditos'] = segundos(siguiente, config), creditos(siguiente, config)
+    guardar('auditoria.json', resultado)
     print(f"Auditoría: {len(notas)} videos calificados, base {base} vistas a 36 h.")
     for atributo, filas in ranking.items():
         print(f'  {atributo}: ' + ', '.join(f"{f['valor']} {f['indice']} ({f['n']}, {f['estado']})" for f in filas))
     print(f"Hoy {'SÍ' if d['toca_publicar'] else 'NO'} toca publicar ({d['motivo']}). Hora: {d['hora_siguiente']} · prueba de horas {d['prueba_horas']}.")
     if d.get('publicar_hoy'):
         print(f"Publicar hoy el video listo {d['publicar_hoy']}.")
-    print('Siguiente a generar:', d['por_que'])
+    print('Siguiente a generar:', d['por_que'], f"({d['segundos']} s, {d['creditos']} créditos)" if d.get('segundos') else '')
     for c in d.get('cambios_sugeridos', []):
         print(f"  Cambiar {c['atributo']}: {c['de']} → {c['a']} ({c['por_que']})")
     for r in resultado['reglas_vigentes']:

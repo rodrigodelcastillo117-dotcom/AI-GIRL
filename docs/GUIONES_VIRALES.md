@@ -5,7 +5,22 @@ se vuelva a ver, se guarde y se comparta. Ningún guion garantiza ser viral; lo 
 es que cada uno cumpla esta lista, y el laboratorio (`scripts/aprender.py`) dice cuáles funcionan
 con datos de Victoria.
 
-## Lista obligatoria (12 segundos, máximo 28 palabras)
+## Segundos: prorrateados por tema
+
+Victoria habla unas 2.33 palabras por segundo. Cada video lleva `duracion` en el plan y el guion
+cabe en ella (palabras ≤ segundos × 2.33):
+
+| Tipo | Segundos | Palabras |
+|---|---|---|
+| Regla, tip, dato | 10-12 | 23-28 |
+| Entrevista | 11-15 | 24-33 (lleva pausas) |
+| Historia, caso, serie ("Así empezaron") | 14-20 | 32-46 |
+
+Más segundos solo si cada segundo agrega un dato; relleno = gente que se va antes del final. El mes
+debe caber en 12,000 créditos dejando 15% para reintentos: `aprender.py auditar` avisa si los
+próximos 15 videos se pasan y si algún guion no cabe en sus segundos.
+
+## Lista obligatoria
 
 1. **Gancho en el segundo 0** (regla 23, reglas y fórmulas en `docs/GANCHOS.md`): la primera frase sola, de máximo 10 palabras, tiene que detener el dedo. Formas
    que funcionan: una cifra real que sorprende ("El 1% diario te hace 37 veces mejor"), una

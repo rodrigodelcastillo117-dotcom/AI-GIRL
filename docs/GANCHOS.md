@@ -31,5 +31,26 @@ lo refuerza para quien ve sin sonido.
 | Dolor + causa | "Si no puedes dormir pensando en pendientes, es por esto." |
 | Pareja y dinero | "Las peleas por dinero predicen el divorcio más que otras peleas." |
 
+## Plantillas de internet: cuáles sirven a Victoria
+
+Las listas de "hooks instantáneos" están hechas para creadores humanos que cuentan su historia.
+Victoria es un personaje de IA y no inventa anécdotas (regla de `PIPELINE.md`), así que:
+
+- **Sirven tal cual, hablándole a "tú":** "Si estás haciendo ___, haz esto en su lugar" ·
+  "Probablemente estás haciendo ___ mal" · "Por qué tu ___ no está funcionando" · "El mito sobre
+  ___ que mantiene estancada a la mayoría" · "Todo el mundo complica ___" · "Lo que está arruinando
+  tu ___ en silencio". El hueco siempre se llena con algo concreto (una cifra, un nombre, una cosa
+  que la persona hace), nunca con "esto".
+- **Sirven en tercera persona, con un caso real con fuente** (serie "Así empezaron"): "Todos le
+  dijeron que no iba a funcionar…" → "Más de cien inversionistas le dijeron que no a Canva" ·
+  "Casi renunció a ___" → "Airbnb casi quiebra y se salvó vendiendo cereal" · "Probé 3
+  estrategias" → solo si un estudio real las comparó.
+- **Prohibidas para Victoria:** las de primera persona que inventan una vida ("Cometí este error
+  durante meses", "Pensé que me quedaría estancada", "El consejo que ignoré durante años", "Nadie
+  me dijo que iba a ser así de difícil", "Este ajuste en mi rutina cambió todo") y las que prometen
+  de más ("disparó ___ de la noche a la mañana"): mentira y regla 4.
+- **Vacías si no se llenan bien:** "Necesitas escuchar esto" y "La verdad que nadie te cuenta" no
+  dicen nada (regla 5); solo pasan si lo que sigue es un dato poco conocido y comprobado.
+
 El laboratorio (`scripts/aprender.py`) compara las fórmulas por `adn.tipo_gancho` con las vistas a
 36 h: cuando haya datos, manda lo que gane con la audiencia de Victoria, no esta tabla.

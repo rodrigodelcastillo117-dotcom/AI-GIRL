@@ -134,5 +134,12 @@
   "youtube": 5,
   "instagram": 5,
   "tiktok": 7
- }
+ },
+ "palabras_por_segundo": 2.33,
+ "creditos_por_segundo": 40,
+ "creditos_foto": 30,
+ "segundos_minimos": 10,
+ "segundos_maximos": 25,
+ "creditos_al_mes": 12000,
+ "reserva_reintentos": 0.15
 }

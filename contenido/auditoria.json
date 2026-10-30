@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-10-30T06:33:41Z",
+ "fecha_utc": "2026-10-30T07:11:11Z",
  "videos_calificados": 0,
  "base_vistas_36h": 0,
  "notas": {},
@@ -15,11 +15,13 @@
    "14:00": 0
   },
   "publicar_hoy": null,
-  "video_id": "03",
-  "modo": "explorar",
-  "esperado": 1.0,
-  "por_que": "Toca explorar: el video 03 prueba 9 características con pocos datos.",
-  "cambios_sugeridos": []
+  "video_id": "32",
+  "modo": "serie",
+  "esperado": null,
+  "cambios_sugeridos": [],
+  "por_que": "Serie: toca el capítulo 1 (uno cada 2 videos).",
+  "segundos": 16,
+  "creditos": 670
  },
  "reglas_vigentes": [],
  "alertas": [
