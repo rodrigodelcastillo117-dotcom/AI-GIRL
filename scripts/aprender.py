@@ -288,6 +288,43 @@ def verificar(plan, ahora, avisos):
     return problemas
 
 
+def sincronizar_horas_publer(carruseles_json, avisos):
+    """La hora real de Instagram y TikTok es la que tiene Publer (ahí se pueden mover a mano): se copia al
+    carrusel para que la prueba de horarios cuente la hora real, se haya movido o no."""
+    import urllib.parse
+    import publer
+    datos = cargar(carruseles_json, {'carruseles': []})
+    lista = [c for c in datos['carruseles'] if c.get('publica_utc_por_red') and c.get('estado') in ('programado', 'publicado')]
+    if not lista:
+        return
+    ws = publer.workspace_id()
+    cuentas = publer.CONFIG.get('cuentas_publer', {})
+    hoy = datetime.date.today()
+    filtros = [('state', 'all'), ('from', (hoy - datetime.timedelta(days=DIAS_DE_MEDICION)).isoformat()),
+               ('to', (hoy + datetime.timedelta(days=30)).isoformat())] + [('account_ids[]', c) for c in cuentas]
+    r = publer._pedir('GET', '/posts?' + urllib.parse.urlencode(filtros), ws)
+    cambio = False
+    for p in r.get('posts') or []:
+        red = REDES.get(cuentas.get(p.get('account_id')))
+        if not red or not p.get('scheduled_at') or any(x in (p.get('state') or '') for x in ('draft', 'failed', 'deleted')):
+            continue
+        for c in lista:
+            if primera_linea(c.get('texto_post')) == primera_linea(p.get('text')):
+                real = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M:%SZ')
+                if c['publica_utc_por_red'].get(red) != real:
+                    c['publica_utc_por_red'][red] = real
+                    cambio = True
+                if (c.get('publer_por_mover') or {}).get(red, '')[:16] == real[:16]:
+                    c['publer_por_mover'].pop(red)
+                    cambio = True
+    for c in lista:
+        if c.get('publer_por_mover') == {}:
+            c.pop('publer_por_mover')
+        c['publica_utc'] = max(c['publica_utc_por_red'].values())
+    if cambio:
+        guardar(carruseles_json, datos)
+
+
 def medir():
     plan = cargar('plan.json', {'videos': []})
     ahora = datetime.datetime.now(datetime.timezone.utc)
@@ -303,6 +340,10 @@ def medir():
         print('VERIFICACIÓN:', p)
     videos = [v for v in plan['videos'] if v.get('publica_utc') and a_utc(v['publica_utc']) <= ahora
               and (ahora - a_utc(v['publica_utc'])).days <= DIAS_DE_MEDICION]
+    try:
+        sincronizar_horas_publer('carruseles.json', avisos_verificacion)
+    except SystemExit as e:
+        avisos_verificacion.append(f'No pude leer de Publer la hora real de los carruseles: {e}')
     for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:  # los carruseles también se miden
         if c.get('publica_utc') and a_utc(c['publica_utc']) <= ahora and (ahora - a_utc(c['publica_utc'])).days <= DIAS_DE_MEDICION:
             videos.append({'id': c['id'], 'texto_post': c['texto_post'], 'publica_utc': c['publica_utc'],
