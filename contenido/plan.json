@@ -91,6 +91,12 @@
           "#habitos",
           "#constancia",
           "#superacionpersonal"
+        ],
+        "parrafo": "La regla del 1% viene de Hábitos Atómicos, el libro de James Clear: si mejoras 1% cada día durante un año, terminas unas 37 veces mejor (1.01 elevado a 365 da 37.8). Funciona con el dinero, con tu negocio y con tus hábitos: no necesitas un cambio enorme, necesitas constancia diaria. Elige hoy un hábito pequeño y repítelo mañana.",
+        "preguntas": [
+          "¿Qué pasa si mejoras 1% cada día?",
+          "¿Qué dice James Clear en Hábitos Atómicos?",
+          "¿Cómo crear hábitos pequeños que den grandes resultados?"
         ]
       }
     },
@@ -153,6 +159,12 @@
           "#pareto",
           "#regla8020",
           "#negocios"
+        ],
+        "parrafo": "El principio de Pareto, o regla 80/20, dice que una minoría de causas produce la mayoría de los resultados. En ventas suele verse así: una parte pequeña de tus clientes genera la mayor parte de tus ingresos. Richard Koch lo explica en El principio 80/20. Identifica a ese 20% de clientes, atiéndelos mejor y pregúntales qué más necesitan.",
+        "preguntas": [
+          "¿Qué es el principio de Pareto en ventas?",
+          "¿Cómo aplicar la regla 80/20 en tu negocio?",
+          "¿Cómo encontrar a tus mejores clientes?"
         ]
       }
     },
@@ -201,6 +213,12 @@
           "#interescompuesto",
           "#inversion",
           "#dinero"
+        ],
+        "parrafo": "La regla del 72 es un atajo para calcular en cuántos años se duplica tu dinero con interés compuesto: divides 72 entre la tasa de interés anual. Al 8% anual tu dinero se duplica en unos 9 años; al 4%, en 18. Es una aproximación que ya aparece en la obra de Luca Pacioli de 1494 y sirve para comparar opciones de ahorro de un vistazo.",
+        "preguntas": [
+          "¿Qué es la regla del 72?",
+          "¿En cuánto tiempo se duplica mi dinero?",
+          "¿Cómo funciona el interés compuesto?"
         ]
       },
       "puente_producto": true
@@ -250,6 +268,12 @@
           "#bienestar",
           "#journaling",
           "#saludmental"
+        ],
+        "parrafo": "La escritura expresiva consiste en escribir unos 15 minutos sobre lo que te preocupa o te duele, sin cuidar la ortografía ni el orden. El psicólogo James W. Pennebaker la estudió durante décadas y encontró beneficios para el bienestar emocional. Es una herramienta sencilla para bajar el estrés y ordenar ideas; no sustituye la ayuda de un profesional.",
+        "preguntas": [
+          "¿Qué es la escritura expresiva?",
+          "¿Cómo escribir para bajar el estrés?",
+          "¿Qué descubrió James Pennebaker?"
         ]
       }
     },
@@ -299,6 +323,12 @@
           "#reglade2minutos",
           "#habitos",
           "#organizacion"
+        ],
+        "parrafo": "La regla de los 2 minutos es de David Allen, autor de Organízate con eficacia (Getting Things Done): si una tarea toma menos de dos minutos, hazla en ese momento en lugar de anotarla para después. Las tareas pequeñas que se acumulan ocupan espacio en tu cabeza. Aplícala hoy con correos, mensajes y pendientes rápidos y verás cómo se libera tu día.",
+        "preguntas": [
+          "¿Qué es la regla de los 2 minutos?",
+          "¿Cómo dejar de procrastinar tareas pequeñas?",
+          "¿Qué es el método GTD de David Allen?"
         ]
       }
     },
@@ -346,6 +376,12 @@
           "#pagateprimero",
           "#dinero",
           "#libros"
+        ],
+        "parrafo": "Págate primero es la regla de ahorro de El hombre más rico de Babilonia, el libro de George S. Clason de 1926: de cada 10 pesos que ganes, guarda al menos 1 para ti antes de pagar cualquier otra cosa. El ahorro no es lo que sobra al final del mes, es lo primero que sale. Aparta ese 10% el día que te pagan y no lo toques.",
+        "preguntas": [
+          "¿Qué significa págate primero?",
+          "¿Cuánto debo ahorrar de mi sueldo?",
+          "¿Qué enseña El hombre más rico de Babilonia?"
         ]
       },
       "puente_producto": true
@@ -396,6 +432,12 @@
           "#decisiones",
           "#emprender",
           "#negocios"
+        ],
+        "parrafo": "Jeff Bezos contó en entrevistas que decidió dejar su trabajo y fundar Amazon con un marco de minimización del arrepentimiento: imaginarse a los 80 años y preguntarse de qué se arrepentiría. Sirve para decisiones grandes como emprender, cambiar de trabajo o lanzar un proyecto. Pregúntate si te arrepentirías más de intentarlo o de no hacerlo.",
+        "preguntas": [
+          "¿Qué es el marco de minimización del arrepentimiento?",
+          "¿Cómo decidió Jeff Bezos fundar Amazon?",
+          "¿Cómo tomar una decisión difícil?"
         ]
       }
     },
@@ -444,6 +486,12 @@
           "#inversion",
           "#dinero",
           "#educacionfinanciera"
+        ],
+        "parrafo": "Regla número 1: no pierdas dinero. Regla número 2: no olvides la regla número 1. Es una de las frases más conocidas de Warren Buffett y habla de proteger tu capital antes de buscar ganancias. Antes de invertir, entiende en qué pones tu dinero, cuánto puedes perder y por qué. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Cuál es la regla número 1 de Warren Buffett?",
+          "¿Qué hacer antes de invertir?",
+          "¿Cómo proteger tu dinero?"
         ]
       }
     },
@@ -492,6 +540,12 @@
           "#bienestar",
           "#estres",
           "#saludmental"
+        ],
+        "parrafo": "El suspiro cíclico es una técnica de respiración: dos inhalaciones por la nariz y una exhalación larga por la boca, durante 5 minutos al día. Un estudio de Stanford publicado en Cell Reports Medicine en 2023 (Balban y colaboradores) encontró que mejoró el ánimo más que la meditación de atención plena. Es una práctica de bienestar, no un tratamiento médico.",
+        "preguntas": [
+          "¿Qué es el suspiro cíclico?",
+          "¿Cómo respirar para bajar el estrés?",
+          "¿Qué encontró el estudio de Stanford sobre la respiración?"
         ]
       }
     },
@@ -540,6 +594,12 @@
           "#relaciones",
           "#harvard",
           "#bienestar"
+        ],
+        "parrafo": "El Estudio de Harvard sobre el Desarrollo Adulto sigue a sus participantes desde 1938 y hoy lo dirige Robert Waldinger. Su conclusión más repetida: las buenas relaciones nos hacen más felices y más sanos. No es el dinero ni la fama lo que más pesa, es la calidad de tus vínculos. Llama hoy a alguien que te importa.",
+        "preguntas": [
+          "¿Qué dice el estudio de Harvard sobre la felicidad?",
+          "¿Qué nos hace felices según la ciencia?",
+          "¿Quién es Robert Waldinger?"
         ]
       }
     },
@@ -587,6 +647,12 @@
           "#productividad",
           "#disciplina",
           "#negocios"
+        ],
+        "parrafo": "La ley de Parkinson dice que el trabajo se expande hasta llenar el tiempo disponible para terminarlo. La formuló C. Northcote Parkinson en un ensayo en The Economist en 1955. Si le das una semana a una tarea, tardará una semana; si le das dos días, probablemente la termines en dos días. Ponte fechas límite más cortas y concretas.",
+        "preguntas": [
+          "¿Qué es la ley de Parkinson?",
+          "¿Cómo ser más productivo en el trabajo?",
+          "¿Cómo usar fechas límite a tu favor?"
         ]
       }
     },
@@ -634,6 +700,12 @@
           "#marketing",
           "#ventas",
           "#marcapersonal"
+        ],
+        "parrafo": "Empieza con el porqué es la idea de Simon Sinek, popularizada en su charla TED de 2009: la gente no compra lo que haces, compra por qué lo haces. Las marcas que inspiran comunican primero su propósito, después cómo lo hacen y al final qué venden. Antes de vender tu producto, escribe en una frase por qué existe tu negocio.",
+        "preguntas": [
+          "¿Qué es el círculo dorado de Simon Sinek?",
+          "¿Cómo vender con propósito?",
+          "¿Por qué la gente compra una marca?"
         ]
       }
     },
@@ -679,6 +751,12 @@
           "#riqueza",
           "#ahorro",
           "#morganhousel"
+        ],
+        "parrafo": "En La psicología del dinero, Morgan Housel explica que la riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste, el dinero que sigue invertido. Gastar en aparentar te hace ver rico; ahorrar e invertir en silencio te hace rico. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Qué enseña La psicología del dinero?",
+          "¿Cuál es la diferencia entre ser rico y parecer rico?",
+          "¿Cómo construir riqueza poco a poco?"
         ]
       }
     },
@@ -726,6 +804,12 @@
           "#psicologia",
           "#productividad",
           "#descanso"
+        ],
+        "parrafo": "El efecto Zeigarnik describe que la mente recuerda más las tareas sin terminar que las terminadas; lo describió Bluma Zeigarnik en 1927. Un estudio de Masicampo y Baumeister (2011) encontró que escribir un plan concreto para la tarea pendiente reduce esos pensamientos que no te dejan en paz. Si algo te quita el sueño, anota el siguiente paso y descansa.",
+        "preguntas": [
+          "¿Qué es el efecto Zeigarnik?",
+          "¿Cómo dejar de pensar en pendientes?",
+          "¿Por qué no puedo dormir pensando en el trabajo?"
         ]
       }
     },
@@ -774,6 +858,12 @@
           "#productividad",
           "#habitos",
           "#disciplina"
+        ],
+        "parrafo": "Tráguese ese sapo es el método de productividad de Brian Tracy: haz primero, a primera hora, la tarea más difícil o importante del día. Después de eso, el resto del día es pura ganancia. Funciona contra la procrastinación porque quitas lo que más pesa cuando tienes más energía.",
+        "preguntas": [
+          "¿Qué significa tragarse el sapo?",
+          "¿Cómo dejar de procrastinar?",
+          "¿Qué tarea hacer primero en el día?"
         ]
       }
     },
@@ -822,6 +912,12 @@
           "#inversion",
           "#interescompuesto",
           "#dinero"
+        ],
+        "parrafo": "Charlie Munger, socio de Warren Buffett, decía que los primeros 100,000 dólares son los más difíciles de juntar. Al principio solo trabaja tu esfuerzo; cuando ya tienes capital, el interés compuesto empieza a trabajar contigo. Por eso importa empezar a ahorrar e invertir pronto, aunque sea poco. Contenido educativo: no es una recomendación de inversión.",
+        "preguntas": [
+          "¿Por qué los primeros 100 mil son los más difíciles?",
+          "¿Cómo empezar a ahorrar desde cero?",
+          "¿Qué decía Charlie Munger del dinero?"
         ]
       },
       "puente_producto": true
@@ -869,6 +965,12 @@
           "#aguinaldo2026",
           "#dinero",
           "#navidad"
+        ],
+        "parrafo": "Por la Ley Federal del Trabajo (artículo 87), el aguinaldo es de mínimo 15 días de salario y se paga antes del 20 de diciembre. Si ganas 15,000 pesos al mes, tu salario diario es de 500 pesos y tu aguinaldo mínimo es de 7,500 pesos brutos. Hasta 3,519.30 pesos están libres de ISR en 2026; el resto paga impuesto.",
+        "preguntas": [
+          "¿Cuánto me toca de aguinaldo si gano 15 mil?",
+          "¿Cuándo pagan el aguinaldo?",
+          "¿Cómo se calcula el aguinaldo?"
         ]
       },
       "ganchos_alternativos": [
@@ -927,6 +1029,12 @@
           "#finiquito",
           "#derechoslaborales",
           "#dinero"
+        ],
+        "parrafo": "Según el artículo 87 de la Ley Federal del Trabajo, si no trabajaste el año completo te toca la parte proporcional del aguinaldo, aunque ya no estés en la empresa cuando se paga. Por eso, si renunciaste o te despidieron, tu finiquito debe incluir el aguinaldo proporcional a los días que trabajaste. Revísalo antes de firmar.",
+        "preguntas": [
+          "¿Me toca aguinaldo si renuncié?",
+          "¿Cómo calcular el aguinaldo proporcional?",
+          "¿Qué debe incluir mi finiquito?"
         ]
       },
       "ganchos_alternativos": [
@@ -984,6 +1092,12 @@
           "#impuestos",
           "#sat",
           "#dinero"
+        ],
+        "parrafo": "El artículo 93, fracción XIV de la Ley del ISR exenta el aguinaldo hasta el equivalente a 30 días; en la práctica se calcula con la UMA. Con la UMA de 2026 ($117.31 diarios, según el INEGI) el tope es de $3,519.30. Si tu aguinaldo es mayor, el excedente paga ISR y tu empresa te lo retiene, por eso a veces te llega menos de lo que calculaste.",
+        "preguntas": [
+          "¿Cuánto del aguinaldo está exento de ISR?",
+          "¿Por qué mi aguinaldo llega con descuento?",
+          "¿Cuánto vale la UMA en 2026?"
         ]
       },
       "ganchos_alternativos": [
@@ -1043,6 +1157,12 @@
           "#ahorro",
           "#cuestadeenero",
           "#navidad"
+        ],
+        "parrafo": "Mi regla para el aguinaldo: la mitad a deudas caras o a tu fondo de emergencia, 30% a una meta concreta y 20% a darte un gusto sin culpa. Está inspirada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi. La CONDUSEF también recomienda usar parte del aguinaldo para pagar deudas, sobre todo las de tasa más alta.",
+        "preguntas": [
+          "¿Qué hacer con el aguinaldo?",
+          "¿Cómo no gastarse el aguinaldo en enero?",
+          "¿Conviene usar el aguinaldo para pagar deudas?"
         ]
       },
       "ganchos_alternativos": [
@@ -1102,6 +1222,12 @@
           "#deudas",
           "#tarjetadecredito",
           "#dinero"
+        ],
+        "parrafo": "La CONDUSEF recomienda usar parte del aguinaldo para pagar deudas, empezando por las de mayor tasa de interés, como las tarjetas de crédito. Cada peso que abonas a una deuda cara deja de cobrarte intereses. Si tienes varias, el método avalancha (primero la de tasa más alta) es el que menos intereses te cobra en total.",
+        "preguntas": [
+          "¿Conviene pagar la tarjeta con el aguinaldo?",
+          "¿Qué deuda pago primero?",
+          "¿Qué es el método avalancha?"
         ]
       },
       "ganchos_alternativos": [
@@ -1161,6 +1287,12 @@
           "#propositos2027",
           "#ahorro",
           "#dinero"
+        ],
+        "parrafo": "Un fondo de emergencia es dinero guardado para imprevistos: una enfermedad, una reparación o quedarte sin trabajo. La CONDUSEF recomienda juntar de 3 a 6 meses de tus gastos. Si lo haces tu propósito de año nuevo, apártalo cada quincena y guárdalo donde lo puedas sacar rápido y sin perder dinero.",
+        "preguntas": [
+          "¿Cuánto debe tener un fondo de emergencia?",
+          "¿Cómo empezar a ahorrar en enero?",
+          "¿Dónde guardar el fondo de emergencia?"
         ]
       },
       "ganchos_alternativos": [
@@ -1220,6 +1352,12 @@
           "#deudas",
           "#cuestadeenero",
           "#dinero"
+        ],
+        "parrafo": "Según la CONDUSEF, el pago mínimo de la tarjeta de crédito suele ser del 2% al 5% de tu saldo, y pagar solo eso alarga la deuda y los intereses. La CONDUSEF recomienda dejar el pago mínimo para emergencias y cubrir el pago para no generar intereses. Si no te alcanza, paga lo más que puedas por encima del mínimo.",
+        "preguntas": [
+          "¿Qué pasa si solo pago el mínimo de la tarjeta?",
+          "¿Qué es el pago para no generar intereses?",
+          "¿Cómo salir de deudas de tarjeta?"
         ]
       },
       "ganchos_alternativos": [
@@ -1279,6 +1417,12 @@
           "#cuestadeenero",
           "#tarjetadecredito",
           "#dinero"
+        ],
+        "parrafo": "Profeco y la CONDUSEF advierten que comprar a meses sin intereses sin planear reduce tu ingreso disponible: cada mensualidad ya está comprometida antes de que te paguen. Antes de firmar otra compra a meses, suma todas las mensualidades que ya traes y revisa que tu presupuesto aguante.",
+        "preguntas": [
+          "¿Conviene comprar a meses sin intereses?",
+          "¿Cómo sobrevivir a la cuesta de enero?",
+          "¿Cómo hacer un presupuesto mensual?"
         ]
       },
       "ganchos_alternativos": [
@@ -1337,6 +1481,12 @@
           "#regla503020",
           "#cuestadeenero",
           "#dinero"
+        ],
+        "parrafo": "La regla 50/30/20 la propusieron Elizabeth Warren y Amelia Warren Tyagi en su libro All Your Worth (2005): 50% de tu ingreso neto a lo necesario (vivienda, comida, transporte, servicios y pagos mínimos), 30% a lo que quieres y 20% a ahorro y a pagar deudas de más. Es un punto de partida para ordenar tu sueldo en enero; ajústalo a tu vida.",
+        "preguntas": [
+          "¿Qué es la regla 50/30/20?",
+          "¿Cómo hacer un presupuesto mensual?",
+          "¿Cómo organizar mi sueldo?"
         ]
       },
       "ganchos_alternativos": [

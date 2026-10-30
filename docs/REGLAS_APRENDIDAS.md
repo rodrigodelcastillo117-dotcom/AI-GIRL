@@ -58,6 +58,8 @@ dice "Aquí". Cuando los datos propios contradigan una regla, mandan los datos p
 26. `?ref=<red>` en cada enlace (yt, ig, tt).
 27. Hashtags: 3 o 4 fijos de marca y nicho, bien escritos, + 3 a 5 concretos del video. En el
     pie, nunca en el título.
+    **Actualización 30-oct-2026:** Instagram limita a 5 hashtags por post desde diciembre de 2025;
+    allí van 3 concretos + 2 de marca. TikTok y YouTube siguen la regla original.
 28. Si se conecta una página de Facebook, su Reel sale también en el Instagram enlazado: no
     mandar el mismo video dos veces a Instagram. *Aquí: no se publica en Facebook.*
 

@@ -9,8 +9,9 @@ Escribe en la carpeta:
                            máximo 2 enlaces arriba (reglas 18-20, 26)
 - tags_youtube.txt         30-40 etiquetas en tres capas, máximo 480 caracteres contados como
                            YouTube (reglas 21-22)
-- texto_redes.txt          pie para Instagram y TikTok: post, "enlace en mi perfil" si hay enlace,
-                           3-4 hashtags fijos + 3-5 concretos (reglas 24, 27)
+- texto_instagram.txt      pie de Instagram: post, párrafo, "enlace en mi perfil" y máximo 5 hashtags
+- texto_tiktok.txt         pie de TikTok: lo mismo más las preguntas que se buscan y 7 hashtags
+- texto_redes.txt          igual a texto_instagram.txt (publer.py usa los de cada red si existen)
 Las reglas numeradas están en docs/REGLAS_APRENDIDAS.md; cómo escribir el bloque, en docs/SEO.md.
 """
 import json
@@ -77,6 +78,16 @@ def con_ref(enlace, red):
     return f"{base}{'&' if '?' in base else '?'}ref={red}" + (f'#{ancla}' if ancla else '')
 
 
+def hashtags_para(red, seo, config):
+    """Concretos del video primero (YouTube enseña los 3 primeros sobre el título) y luego los de marca,
+    hasta el máximo de cada red: Instagram corta en 5 desde dic-2025 (regla 27 actualizada)."""
+    marca = config.get('hashtags_marca', ['#finanzaspersonales', '#victoriatheceo'])
+    extra = config['hashtags_fijos'] if red == 'tiktok' else []
+    maximo = config.get('max_hashtags', {}).get(red, 5)
+    concretos = seo['hashtags'][:maximo - len(marca)]
+    return list(dict.fromkeys(concretos + marca + extra + seo['hashtags']))[:maximo]
+
+
 def textos(video, plan, config):
     seo = video.get('seo')
     if not seo:
@@ -86,7 +97,8 @@ def textos(video, plan, config):
         sys.exit(f"ERROR: el título del video {video['id']} \"{seo['titulo']}\" " + '; '.join(errores))
     cierre = plan['reglas']['cierre_de_texto']
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
-    hashtags = list(dict.fromkeys(config['hashtags_fijos'] + seo['hashtags']))
+    parrafo = (seo.get('parrafo') or '').strip()
+    preguntas = seo.get('preguntas') or []
     # Videos de temporada (aguinaldo, deudas...): su calculadora gratis va primero en todo.
     ll = config.get('llamados', {}).get(video.get('llamado'))
     enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (((ll['etiqueta'], con_ref(ll['enlace'], 'yt')) if ll else ('', '')),
@@ -94,13 +106,17 @@ def textos(video, plan, config):
                                                      ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt')),
                                                      ('Más de Victoria', con_ref(config.get('enlace_perfil'), 'yt'))) if e][:2]
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
+    # YouTube: 2 líneas que se buscan, enlaces, el párrafo con variantes de la búsqueda, el post,
+    # las preguntas que la gente escribe y 5 hashtags (regla 18-20). Máximo 4,900 caracteres.
     descripcion = '\n\n'.join(x for x in [
         seo['descripcion_inicio'].strip(),
         '\n'.join(enlaces),
         capitulos,  # solo en videos largos: 0:00 Título... (regla de YouTube: empieza en 0:00, 3 o más)
+        parrafo,
         post,
-        f"Soy Victoria: un consejo de negocios, dinero y mente fuerte cada 2 días. Suscríbete.",
-        ' '.join(hashtags[:3]),
+        ('Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in preguntas)) if preguntas else '',
+        'Soy Victoria: un consejo de negocios, dinero y mente fuerte cada 2 días. Suscríbete para no perderte el siguiente.',
+        ' '.join(hashtags_para('youtube', seo, config)),
         cierre,
     ] if x)[:4900]
     # Videos puente (el tema lo resuelve la plantilla): el llamado va a la plantilla, no a la guía.
@@ -108,20 +124,20 @@ def textos(video, plan, config):
     llamado = (ll['pie'] if ll else
                '📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
                '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
-    redes = '\n\n'.join(x for x in [
-        post,
-        llamado,
-        ' '.join(hashtags[:9]),  # 3-4 fijos + 3-5 del video
-        cierre,
-    ] if x)
+    # Instagram y TikTok buscan por las palabras del pie: el párrafo va completo en los dos.
+    instagram = '\n\n'.join(x for x in [post, parrafo, llamado, ' '.join(hashtags_para('instagram', seo, config)), cierre] if x)[:2200]
+    tiktok = '\n\n'.join(x for x in [
+        post, parrafo, ('🔎 ' + ' '.join(preguntas)) if preguntas else '', llamado,
+        ' '.join(hashtags_para('tiktok', seo, config)), cierre,
+    ] if x)[:4000]
     tags = etiquetas(seo, video['pilar'], config)
     comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), 'yt')) if config.get('enlace_venta') else ''
     if ll:
         comentario = ll['comentario'].format(enlace=con_ref(ll['enlace'], 'yt'))
     elif puente and config.get('comentario_youtube_producto'):
         comentario = config['comentario_youtube_producto'].format(enlace=con_ref(config['enlace_producto'], 'yt'))
-    return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags), 'texto_redes': redes,
-            'comentario_youtube': comentario}
+    return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags),
+            'texto_redes': instagram, 'texto_instagram': instagram, 'texto_tiktok': tiktok, 'comentario_youtube': comentario}
 
 
 def main():

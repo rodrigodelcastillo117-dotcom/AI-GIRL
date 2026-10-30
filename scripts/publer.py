@@ -178,12 +178,17 @@ def main():
     video, archivo_texto, cuando, titulo = sys.argv[2:6]
     prueba = '--prueba' in sys.argv
     texto = open(archivo_texto).read().strip()
+    # Pie propio por red si seo.py lo dejó junto al texto (Instagram admite máximo 5 hashtags).
+    carpeta = os.path.dirname(os.path.abspath(archivo_texto))
+    por_red = {r: open(os.path.join(carpeta, f'texto_{r}.txt')).read().strip()
+               for r in ('instagram', 'tiktok') if os.path.exists(os.path.join(carpeta, f'texto_{r}.txt'))}
     if len(titulo.strip()) < 5:  # Instagram pide título y TikTok mínimo 5 caracteres (regla 6)
         titulo = 'Victoria The CEO'
 
     if prueba:
         falsas = [{'id': 'ID_IG', 'provider': 'instagram'}, {'id': 'ID_TT', 'provider': 'tiktok'}]
-        print(json.dumps(armar_post(falsas, 'MEDIA_ID', texto, titulo, cuando), ensure_ascii=False, indent=1))
+        for c in falsas:
+            print(json.dumps(armar_post([c], 'MEDIA_ID', por_red.get(red(c), texto), titulo, cuando), ensure_ascii=False, indent=1))
         return
 
     ws = workspace_id()
@@ -214,7 +219,7 @@ def main():
     # Una petición por red (regla 5): si una falla, las otras no se pierden y se sabe cuál fue.
     fallidas = []
     for cuenta in cuentas:
-        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, texto, titulo, cuando))
+        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando))
         job = r.get('job_id') or (r.get('data') or {}).get('job_id')
         if not job:
             fallidas.append(f'{red(cuenta)}: Publer no regresó job_id ({json.dumps(r)[:300]})')

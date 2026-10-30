@@ -43,8 +43,18 @@ Las reglas vienen de 4 canales medidos (`docs/REGLAS_APRENDIDAS.md`); cuando los
   (`config.json → tags_genericas`, `tags_formato`) en ese orden, dando prioridad a las concretas
   dentro del tope de 480 caracteres (las que llevan espacios cuentan 3 de más). Con etiquetas de
   varias palabras caben unas 23 a 26; 30 a 40 solo caben si son cortas.
-- `hashtags`: 3 a 5 concretos del video, bien escritos. `seo.py` les antepone los 4 fijos
-  (`config.json → hashtags_fijos`) y los pone en el pie, nunca en el título (regla 27).
+- `parrafo`: 3 a 5 frases naturales que expliquen la idea con **variantes de la búsqueda**
+  (sinónimos, el nombre del autor o la ley, la pregunta que la gente escribe) y solo datos de la
+  `fuente`. Va en la descripción de YouTube y en los pies de Instagram y TikTok, que también se
+  buscan por texto. Nunca una lista de palabras clave sueltas (YouTube lo castiga como spam).
+- `preguntas`: 3 preguntas reales que alguien escribiría en el buscador y que el video responde.
+  Van en YouTube ("Preguntas que responde este video") y en TikTok (línea 🔎).
+- `hashtags`: 3 a 5 concretos del video, bien escritos, del más buscado al menos buscado.
+  `seo.py` arma los de cada red: **YouTube 5** (los 3 primeros salen sobre el título: van los
+  concretos), **Instagram 5** (límite de Instagram desde diciembre de 2025: 3 concretos +
+  `#finanzaspersonales #victoriatheceo`), **TikTok 7** (más los fijos de nicho). Nunca en el título.
+- Las etiquetas de YouTube ya llenan el tope de 480 caracteres; YouTube dice que pesan poco.
+  Lo que más pesa es título, primeras 2 líneas, párrafo y retención.
 
 ## Enlaces
 

@@ -197,7 +197,8 @@ Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 ## 7. Publicar
 
 1. `python scripts/seo.py <id> /tmp/seo-<id>` (si falla, corrige el bloque `seo` del video y
-   repite): deja `titulo.txt`, `descripcion_youtube.txt`, `tags_youtube.txt` y `texto_redes.txt`.
+   repite): deja `titulo.txt`, `descripcion_youtube.txt`, `tags_youtube.txt`, `texto_redes.txt`,
+   `texto_instagram.txt` y `texto_tiktok.txt` (publer.py usa el de cada red).
 2. Hora: la franja que toca (paso 1b) en `America/Mexico_City`, convertida a UTC ISO
    (`2026-10-31T00:45:00Z`).
 3. Instagram y TikTok: `python scripts/publer.py publicar <video> /tmp/seo-<id>/texto_redes.txt

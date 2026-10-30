@@ -111,5 +111,14 @@
    "pie": "🧮 Haz tu presupuesto 50/30/20 gratis: enlace en mi perfil 👆",
    "comentario": "Haz tu presupuesto 50/30/20 gratis y compáralo con lo que gastas hoy 👉 {enlace}"
   }
+ },
+ "hashtags_marca": [
+  "#finanzaspersonales",
+  "#victoriatheceo"
+ ],
+ "max_hashtags": {
+  "youtube": 5,
+  "instagram": 5,
+  "tiktok": 7
  }
 }

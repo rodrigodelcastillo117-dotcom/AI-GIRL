@@ -267,10 +267,11 @@ function dibujarRedes() {
   const caja = $('redes');
   caja.replaceChildren();
   for (const red of REDES) {
-    let v = 0, l = 0, c = 0, s = 0, hay = false;
+    let v = 0, l = 0, c = 0, s = 0, hay = false, enCamino = false;
     for (const video of FOTO.videos.filter(salio)) {
       const m = medidas(video)[red.clave];
       if (!m) continue;
+      if (m.pendiente) { enCamino = true; continue; }
       hay = true;
       v += Number(m.v) || 0; l += Number(m.l) || 0; c += Number(m.c) || 0; s += (Number(m.s) || 0) + (Number(m.g) || 0);
     }
@@ -278,8 +279,8 @@ function dibujarRedes() {
     const tarjeta = crear('article', {className: 'red'});
     tarjeta.style.setProperty('--acento', red.color);
     const valor = crear('div', {className: 'vistas'});
-    const numero = crear('span', {textContent: hay ? fmt(v) : '0'});
-    valor.append(numero, crear('small', {textContent: 'vistas'}));
+    const numero = crear('span', {textContent: hay ? fmt(v) : enCamino ? '—' : '0'});
+    valor.append(numero, crear('small', {textContent: !hay && enCamino ? 'publicado · Publer manda las cifras en unas horas' : 'vistas'}));
     tarjeta.append(
       crear('header', {}, crear('h3', {textContent: red.nombre}), crear('span', {className: `etiqueta-vivo${enVivo ? '' : ' foto'}`, textContent: enVivo ? '● en vivo' : 'última foto'})),
       valor,
@@ -308,7 +309,7 @@ function dibujarHangar(videos) {
     if (medido(v)) poster.append(crear('span', {className: 'ojo', textContent: `▶ ${compacto(vistasDe(v))}`}));
     const [texto, clase] = ESTADOS[v.estado] || [v.estado, ''];
     const m = medidas(v);
-    const linea = !salio(v) ? '' : [...REDES.filter((r) => m[r.clave]).map((r) => `${r.corto} ${compacto(m[r.clave].v)}`),
+    const linea = !salio(v) ? '' : [...REDES.filter((r) => m[r.clave]).map((r) => (m[r.clave].pendiente ? `${r.corto} ✓` : `${r.corto} ${compacto(m[r.clave].v)}`)),
       ...(m.yt?.ret != null ? [`visto ${m.yt.ret}%`] : [])].join(' · ');
     const extra = [PILARES[v.pilar] || v.pilar];
     if (Number(v.qa_similitud) > 0) extra.push(`calidad ${pct(Number(v.qa_similitud))}`);

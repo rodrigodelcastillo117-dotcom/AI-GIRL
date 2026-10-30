@@ -112,6 +112,18 @@ async function publer(estado, videos) {
     }
     if (lote.length < 10) break;
   }
+  // Publer tarda horas en tener estadísticas de un post nuevo; mientras, se marca como publicado
+  // (con su enlace) para que el centro no enseñe un 0 que parece real.
+  const filtros = new URLSearchParams([['state', 'published'], ['from', dia(desde)], ['to', dia(hasta)],
+    ...Object.keys(cuentas).map((c) => ['account_ids[]', c])]);
+  const publicados = await pedir(`${PUBLER}/posts?${filtros}`, {headers: cabeceras}, 'Publer', 12_000).catch(() => ({posts: []}));
+  for (const p of publicados.posts || []) {
+    const red = RED_CORTA[cuentas[p.account_id]];
+    const video = red && porLinea[primeraLinea(p.text)];
+    if (!video) continue;
+    const destino = (porVideo[video] ||= {});
+    destino[red] ||= {pendiente: true, enlace: p.post_link || p.url};
+  }
   return {porVideo};
 }
 
