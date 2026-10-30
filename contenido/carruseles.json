@@ -193,12 +193,12 @@
   },
   {
    "id": "c03",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "reglas_de_los_grandes",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/cocina.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/yate-blazer-blanco.jpg",
     "etiqueta": "REGLAS DE DINERO",
     "titulo": "5 reglas de dinero que repiten los que más saben",
     "voz": "Cinco reglas de dinero que repiten los que más saben."
@@ -264,7 +264,16 @@
      "¿Qué es la regla del 72?",
      "¿Cuánto debo ahorrar de mi sueldo?"
     ]
-   }
+   },
+   "publica_utc_por_red": {
+    "ig": "2026-10-30T18:30:00Z",
+    "tt": "2026-10-30T21:00:00Z",
+    "yt": "2026-10-31T03:00:00Z"
+   },
+   "publica_utc": "2026-10-31T03:00:00Z",
+   "youtube": "https://youtube.com/shorts/CQAdpk1SqR4",
+   "playlist": true,
+   "nota_portada": "Foto con GPT Image 2 (OpenArt): Nano Banana 2 de Google dio 429 cuatro veces el 30-oct."
   },
   {
    "id": "c04",

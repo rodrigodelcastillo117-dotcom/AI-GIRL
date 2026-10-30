@@ -96,5 +96,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Publer cambió el formato de post_insights: cada métrica llega como {\"name\", \"value\", \"tooltip\"} y video_views viene vacío; medir se cayó con TypeError.",
   "regla": "Leer las métricas de Publer con valor_publer() (aprender.py) y num() (vivo.js); si video_views viene vacío, las vistas salen de reach."
+ },
+ {
+  "fecha_utc": "2026-10-30T17:10:00Z",
+  "origen": "carrusel c03",
+  "tipo": "tecnico",
+  "aprendizaje": "Nano Banana 2 (Google, en OpenArt) respondió 429 RESOURCE_EXHAUSTED 4 veces seguidas; no cobró créditos. GPT Image 2 (42 créditos) hizo una portada fiel de Victoria con Capital en el yate.",
+  "regla": "Si Nano Banana 2 da 429 dos veces, usar GPT Image 2 image2image con las mismas referencias y revisar que sea Victoria antes de usarla."
  }
 ]

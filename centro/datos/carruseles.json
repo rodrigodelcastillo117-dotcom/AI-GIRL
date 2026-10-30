@@ -49,19 +49,27 @@
  },
  {
   "id": "c03",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "reglas de los grandes",
   "gancho": "5 reglas de dinero que repiten los que más saben",
   "titulo": "Reglas de dinero de Buffett y Munger 💡",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "fondo": "cocina.jpg",
+  "portada": "yate-blazer-blanco.jpg",
+  "horas": {
+   "ig": "2026-10-30 12:30",
+   "tt": "2026-10-30 15:00",
+   "yt": "2026-10-30 21:00"
+  },
+  "youtube_id": "CQAdpk1SqR4",
+  "publica_utc": "2026-10-31T03:00:00Z",
   "linea": "reglas de dinero de warren buffett, charlie munger y tres más que vale la pena memorizar. 💡",
   "tipo": "carrusel",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "ig": "2026-10-30T18:30:00Z",
+   "tt": "2026-10-30T21:00:00Z",
+   "yt": "2026-10-31T03:00:00Z"
+  }
  },
  {
   "id": "c04",

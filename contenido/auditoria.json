@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-10-30T12:38:38Z",
+ "fecha_utc": "2026-10-30T16:55:28Z",
  "videos_calificados": 0,
  "base_vistas_36h": 0,
  "notas": {},
@@ -7,14 +7,14 @@
  "decision": {
   "toca_publicar": false,
   "motivo": "el último sale el 2026-10-29; toca publicar en 1 día(s)",
-  "hora_siguiente": "08:00",
+  "hora_siguiente": "12:30",
   "horarios": {
-   "ig": "08:00",
+   "ig": "12:30",
    "tt": "15:00",
    "yt": "21:00"
   },
   "cuando": {
-   "ig": "2026-10-30T14:00:00Z",
+   "ig": "2026-10-30T18:30:00Z",
    "tt": "2026-10-30T21:00:00Z",
    "yt": "2026-10-31T03:00:00Z"
   },

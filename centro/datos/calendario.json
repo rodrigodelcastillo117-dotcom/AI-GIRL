@@ -12,6 +12,18 @@
   }
  },
  {
+  "fecha": "2026-10-30",
+  "tipo": "carrusel",
+  "id": "c03",
+  "que": "Sale el carrusel c03 · reglas de los grandes",
+  "estado": "programado",
+  "horas": {
+   "ig": "12:30",
+   "tt": "15:00",
+   "yt": "21:00"
+  }
+ },
+ {
   "fecha": "2026-10-31",
   "tipo": "video",
   "id": "02",
@@ -42,10 +54,10 @@
  {
   "fecha": "2026-11-03",
   "tipo": "carrusel",
-  "id": "c03",
+  "id": "c04",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c03 · reglas de los grandes"
+  "que": "Carrusel c04 · lecciones de negocio"
  },
  {
   "fecha": "2026-11-04",
@@ -58,10 +70,10 @@
  {
   "fecha": "2026-11-05",
   "tipo": "carrusel",
-  "id": "c04",
+  "id": "",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c04 · lecciones de negocio"
+  "que": "Carrusel nuevo (se escribe)"
  },
  {
   "fecha": "2026-11-06",
