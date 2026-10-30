@@ -1,0 +1,175 @@
+{
+ "_nota": "Carruseles de Instagram y TikTok (y su short para YouTube). Cada dato con fuente (regla 7). estado: borrador -> listo (revisado; los 2 primeros los aprueba Rodrigo) -> programado -> publicado. Ver docs/CARRUSELES.md.",
+ "carruseles": [
+  {
+   "id": "c01",
+   "estado": "borrador",
+   "tema": "aguinaldo",
+   "ventana": {
+    "desde": "2026-11-01",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-01-jet.jpg",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $15,000 al mes, te toca mínimo $7,500",
+    "voz": "Si ganas quince mil pesos al mes, tu aguinaldo mínimo es de siete mil quinientos."
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Cuánto te toca?",
+     "texto": "Mínimo 15 días de salario. Lo dice la Ley Federal del Trabajo, artículo 87.",
+     "voz": "Te toca mínimo quince días de salario. Lo dice la Ley Federal del Trabajo."
+    },
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\nCon $15,000: $500 diarios × 15 = $7,500 brutos.",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre.",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Entraste o renunciaste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o renunciaste este año, también te toca la parte proporcional."
+    },
+    {
+     "titulo": "¿Paga impuestos?",
+     "texto": "Los primeros $3,519.30 van libres de ISR (30 UMA de 2026). Solo paga lo que pase de ahí.",
+     "voz": "Los primeros tres mil quinientos diecinueve pesos van libres de impuestos."
+    },
+    {
+     "titulo": "Ejemplo",
+     "texto": "De $7,500: $3,519.30 van libres y el ISR se calcula solo sobre $3,980.70.",
+     "voz": "De siete mil quinientos, el impuesto solo se calcula sobre lo que pasa de ese tope."
+    },
+    {
+     "titulo": "Calcula el tuyo gratis",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo gratis con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo y mándaselo a quien no sabe cuánto le toca.",
+    "texto": "Sígueme: un consejo de dinero cada 2 días.",
+    "voz": "Guárdalo y mándaselo a quien no sabe cuánto le toca."
+   },
+   "fuente": "Ley Federal del Trabajo, art. 87; Ley del ISR, art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI)",
+   "titulo_post": "Aguinaldo 2026: cuánto te toca y cuánto paga ISR",
+   "texto_post": "Aguinaldo 2026: cuánto te toca, cuándo te lo pagan y cuánto paga de ISR. 💸\nSi ganas $15,000 al mes, tu mínimo es de $7,500 brutos.\n\n📚 Ley Federal del Trabajo, art. 87; Ley del ISR, art. 93 fracc. XIV; UMA 2026 (INEGI).\n🧮 Calcula el tuyo gratis: enlace en mi perfil 👆\n📩 Mándaselo a alguien que lo necesite.",
+   "fondo": "assets/fondos/yate.jpg",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 cuánto te toca y su ISR 💸",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo isr",
+     "aguinaldo proporcional",
+     "aguinaldo renuncia",
+     "ley federal del trabajo aguinaldo",
+     "aguinaldo mexico",
+     "cuando pagan el aguinaldo",
+     "aguinaldo exento"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#dinero",
+     "#mexico"
+    ],
+    "preguntas": [
+     "¿Cuánto me toca de aguinaldo?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?",
+     "¿Me toca aguinaldo si renuncié?"
+    ]
+   },
+   "pilar": "finanzas",
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   }
+  },
+  {
+   "id": "c02",
+   "estado": "borrador",
+   "tema": "habitos_dinero",
+   "portada": {
+    "foto": "assets/fotos/video-02-palco.jpg",
+    "etiqueta": "TU DINERO",
+    "titulo": "Si haces esto con tu dinero, haz esto en su lugar",
+    "voz": "Si haces esto con tu dinero, haz esto en su lugar."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Ahorras lo que te sobra",
+     "texto": "→ Ahorra primero: de cada 10 pesos, guarda 1 antes de gastar.\n\nGeorge S. Clason, El hombre más rico de Babilonia (1926)",
+     "voz": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. De cada diez pesos, guarda uno primero."
+    },
+    {
+     "titulo": "Pagas el mínimo de tu tarjeta",
+     "texto": "→ Paga más. El mínimo suele ser del 2% al 5% de tu deuda; lo demás sigue cobrando intereses.\n\nCONDUSEF",
+     "voz": "Si pagas el mínimo de tu tarjeta, lo demás sigue cobrando intereses. Paga más."
+    },
+    {
+     "titulo": "Compras a meses sin sumar",
+     "texto": "→ Antes de firmar, suma todas las mensualidades que ya traes: cada una se come tu sueldo de los próximos meses.\n\nProfeco y CONDUSEF",
+     "voz": "Antes de comprar a meses, suma todas las mensualidades que ya traes."
+    },
+    {
+     "titulo": "No sabes en qué se va tu sueldo",
+     "texto": "→ 50/30/20: 50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas.\n\nWarren y Warren Tyagi, All Your Worth (2005)",
+     "voz": "Usa la regla cincuenta, treinta, veinte."
+    },
+    {
+     "titulo": "No tienes colchón",
+     "texto": "→ Fondo de emergencia: de 3 a 6 meses de tus gastos.\n\nCONDUSEF",
+     "voz": "Y arma tu fondo de emergencia: de tres a seis meses de gastos."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál vas a cambiar primero?",
+    "texto": "Guárdalo y mándaselo a quien lo necesite.\nMis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "¿Cuál vas a cambiar primero? Guárdalo."
+   },
+   "fuente": "Clason (1926); CONDUSEF; Profeco; Warren y Warren Tyagi (2005)",
+   "titulo_post": "5 cambios para tu dinero que sí funcionan",
+   "texto_post": "Si haces esto con tu dinero, haz esto en su lugar. 💰\nCinco cambios con fuente: ahorrar primero, pagar más que el mínimo, sumar tus mensualidades, la regla 50/30/20 y tu fondo de emergencia.\n\n¿Cuál vas a cambiar primero? Te leo en los comentarios.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a alguien que lo necesite.",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "seo": {
+    "palabra_clave": "consejos de dinero",
+    "titulo": "Consejos de dinero que sí funcionan 💰",
+    "tags_concretas": [
+     "consejos de dinero",
+     "como ahorrar dinero",
+     "pago minimo tarjeta",
+     "meses sin intereses",
+     "regla 50 30 20",
+     "fondo de emergencia",
+     "habitos financieros",
+     "errores con el dinero",
+     "como administrar mi sueldo",
+     "educacion financiera"
+    ],
+    "hashtags": [
+     "#ahorro",
+     "#educacionfinanciera",
+     "#dinero",
+     "#tarjetadecredito"
+    ],
+    "preguntas": [
+     "¿Cómo empezar a ahorrar?",
+     "¿Conviene pagar el mínimo de la tarjeta?",
+     "¿Qué es la regla 50/30/20?",
+     "¿Cuánto debe tener mi fondo de emergencia?"
+    ]
+   },
+   "pilar": "finanzas"
+  }
+ ]
+}

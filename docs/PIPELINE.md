@@ -16,7 +16,8 @@ todas; cuando los datos propios digan otra cosa, mandan los propios.
    `access: "push"` para `rodrigodelcastillo117-dotcom/ai-girl`, luego `git clone`). Si `add_repo`
    no existe en la sesión, clónalo por HTTPS público y sigue: publicar no depende del push.
 2. Entorno de Python para subtítulos:
-   `python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q faster-whisper num2words`.
+   `python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q faster-whisper num2words mediapipe opencv-python-headless edge-tts pillow`
+   y `apt-get install -y -q libegl1 libgles2` (MediaPipe los necesita para `qa_sync.py`).
    Con faster-whisper, decodificar el audio con ffmpeg (ver `scripts/transcribir.py`); la versión
    de PyAV del paquete no acepta rutas de archivo directo.
 3. Verificar `PUBLER_API_KEY` en el entorno (`env | grep -c PUBLER_API_KEY`). Si falta: no generar
@@ -41,7 +42,11 @@ python scripts/aprender.py auditar   # qué gana, qué pierde, si hoy toca publi
 
 ## 1a. Si hoy NO toca publicar
 
-Solo pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
+Sale un **carrusel** (`docs/CARRUSELES.md`): el primero en estado `listo` de
+`contenido/carruseles.json` (los de temporada, si su `ventana` incluye hoy, van primero). Se publica
+a la hora de la decisión: Instagram y TikTok como fotos (`publer_carrusel.py`) y YouTube como short
+(`carrusel_video.py short` y `youtube.py subir`). Si no queda ninguno `listo`, escribe 5 nuevos
+(reglas en `CARRUSELES.md`). Luego pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
 video `listo_para_publicar`, genera uno hoy (pasos 1b a 6) y déjalo listo: así el día de publicar
 ya está hecho y la franja de las 8:00 nunca se pierde.
 
@@ -132,6 +137,10 @@ borrado masivo es peligroso, nunca se usa).
 
 ## 3. Foto base
 
+Al aprobarla, guarda una copia en `assets/fotos/video-<id>-<locacion>.jpg` (1200 px de ancho, JPG
+calidad 88; bajar el PNG con `curl -A Mozilla/5.0`, la CDN rechaza otros clientes): es la portada
+de un carrusel, así cada carrusel estrena foto de Victoria sin gastar créditos.
+
 `nano-banana-2` `image2image`, 9:16, 2K, `visualReferences` en este orden:
 hoja maestra de Victoria (`manifest.personaje.maestra`), Rottweiler (`manifest.perro`), locación.
 
@@ -200,6 +209,11 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
 1. Descargar el MP4.
 2. Transcribir: `scripts/transcribir.py video.mp4 palabras.json` (modelo `small`, español).
 3. `scripts/qa_audio.py palabras.json "<guion>" <similitud_minima_audio>` debe salir con 0.
+3b. **Labios en sincronía:** `scripts/qa_sync.py video.mp4 sync.json` debe salir con 0. Mide la
+   apertura de la boca cuadro por cuadro contra la fuerza de la voz y rechaza el video si la voz va
+   atrasada o adelantada, si hay más de 1 s de voz con la boca quieta o de boca moviéndose sin voz.
+   Detecta desfases de toda la pista (probado: 150 ms antes y 250 ms tarde los rechaza); no juzga
+   si cada sílaba tiene la forma de boca exacta: eso se ve en la hoja de cuadros del punto 4.
 4. Hoja de 6 cuadros (`ffmpeg ... fps=1/2,scale=240:-1,tile=6x1`) y verla: misma cara en todos
    los cuadros, **Capital visible en todos**, sin deformaciones, sin texto raro en pantalla.
 5. Gancho en el segundo 0 (regla 23): en `palabras.json` la primera palabra debe empezar antes de

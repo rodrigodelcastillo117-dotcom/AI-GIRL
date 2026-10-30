@@ -11,3 +11,6 @@ videos/*.mp4
 !videos/*-SUBTITULADO.mp4
 # Producto de paga: no va al repo (es público); se entrega en Hotmart
 producto/plantilla/*.xlsx
+
+# Carruseles: se vuelven a dibujar desde contenido/carruseles.json
+carruseles/
