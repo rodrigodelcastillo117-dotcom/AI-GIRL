@@ -10,8 +10,8 @@
   "6a96586502b3146e69fa11b0": "tiktok"
  },
  "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
- "frecuencia": "diaria",
- "dias_entre_videos": 1,
+ "frecuencia": "cada_2_dias",
+ "dias_entre_videos": 2,
  "hora_auditoria": "06:37",
  "prueba_horas": {
   "franjas": [

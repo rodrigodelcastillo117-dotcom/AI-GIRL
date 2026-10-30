@@ -18,7 +18,7 @@ Nombre de la página: **Victoria The CEO**.
 Victoria · The CEO · personaje IA
 Negocio, dinero y mente fuerte en 12 segundos.
 Capital 🐾 siempre a mi lado.
-Nueva idea cada día ↓
+Nueva idea cada 2 días ↓
 ```
 
 **TikTok** (máx. 80 caracteres):

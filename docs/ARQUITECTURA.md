@@ -1,6 +1,6 @@
 # Arquitectura
 
-## Flujo diario (tarea programada en la nube)
+## Flujo cada 2 días (tarea programada en la nube)
 
 1. **Elegir**: siguiente pilar de la rotación (relaciones → negocio → familia → hábitos), un cuarto
    (sala, oficina, cocina, recámara, sillón) y un vestido **nunca usado** del catálogo.
@@ -27,7 +27,7 @@ publicación automática.
 | Generación de imagen y video | OpenArt (plan Plus, 12,000 créditos/mes) |
 | Publicación | Publer Business (API) |
 | Base de datos y dashboard | Supabase + página web |
-| Orquestación | Tarea programada de Claude diaria |
+| Orquestación | Tarea programada de Claude cada 2 días |
 | Secretos | `PUBLER_API_KEY`, `PUBLER_WORKSPACE_ID` como secretos del entorno, nunca en el repo |
 
 ## Presupuesto de créditos (plan Plus)

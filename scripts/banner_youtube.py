@@ -37,7 +37,7 @@ lineas = [
     ('VICTORIA', titulo, (255, 255, 255), 12),
     ('THE CEO', subtitulo, DORADO, 22),
     ('Negocio · Dinero · Mente fuerte', linea3, (255, 255, 255), 2),
-    ('Nuevo video cada día', linea3, DORADO, 2),
+    ('Nuevo video cada 2 días', linea3, DORADO, 2),
 ]
 alturas = [f.getbbox(t)[3] for t, f, _, _ in lineas]
 separacion = 26
