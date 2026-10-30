@@ -141,5 +141,29 @@
  "segundos_minimos": 10,
  "segundos_maximos": 25,
  "creditos_al_mes": 12000,
- "reserva_reintentos": 0.15
+ "reserva_reintentos": 0.15,
+ "playlists_youtube": {
+  "asi_empezaron": {
+   "titulo": "Así empezaron: historias de empresas famosas",
+   "descripcion": "Cómo empezaron Airbnb, Zara, Canva, Mailchimp y más: historias reales de emprendedores con fuente, en menos de 20 segundos. Una nueva cada semana."
+  },
+  "aguinaldo": {
+   "titulo": "Aguinaldo 2026: cuánto te toca y qué hacer",
+   "descripcion": "Cuánto aguinaldo te toca, cuándo te lo pagan, cuánto paga de ISR y qué hacer con él para no llegar a enero sin dinero. Según la Ley Federal del Trabajo.",
+   "id": "PLY764AlG2GHk"
+  },
+  "finanzas": {
+   "titulo": "Finanzas personales: reglas de dinero",
+   "descripcion": "Reglas de dinero que sí funcionan: ahorro, deudas, tarjetas de crédito, presupuesto 50/30/20, fondo de emergencia e interés compuesto. Cada dato con su fuente.",
+   "id": "PLZWt3yJ_354g"
+  },
+  "negocios": {
+   "titulo": "Negocios y emprendimiento",
+   "descripcion": "Lecciones de negocio, errores al emprender y estrategias de empresas como Costco, Netflix y Amazon. Para emprendedores en español."
+  },
+  "mente": {
+   "titulo": "Mente fuerte y productividad",
+   "descripcion": "Hábitos, productividad y mente fuerte con respaldo científico: estrés, pendientes, enfoque y felicidad."
+  }
+ }
 }

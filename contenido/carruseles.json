@@ -97,7 +97,8 @@
    "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
    "programado_utc": "2026-11-02T00:45:00Z",
    "youtube": "https://youtube.com/shorts/OgSZUknXNHc",
-   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API."
+   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
+   "playlist": true
   },
   {
    "id": "c02",
@@ -177,7 +178,8 @@
    "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
    "programado_utc": "2026-10-31T00:45:00Z",
    "youtube": "https://youtube.com/shorts/IPwU8EGGwZU",
-   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API."
+   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
+   "playlist": true
   },
   {
    "id": "c03",

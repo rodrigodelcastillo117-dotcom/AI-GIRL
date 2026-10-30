@@ -285,6 +285,14 @@ se generan con `python scripts/sitio.py`. Google Search Console está verificado
 `sitio/public/google7564e845b5da9769.html`: no se borra ni se renombra, o se pierde la verificación. Para activar la lista de correos se llena `CONFIG` en
 `sitio/public/index.html`.
 
+### 7b. Lista de reproducción de YouTube
+
+Después de cada subida a YouTube (video o short de carrusel):
+`python scripts/youtube.py playlist <video_id> <clave>`, con la clave que da
+`youtube.clave_playlist(video)`: el nombre de la serie, `aguinaldo`, `negocios`, `mente` o `finanzas`.
+Las listas hacen que se vea uno tras otro (más tiempo en el canal) y salen en la búsqueda. Si la
+lista no existe, se crea pública y su id se guarda en `config.json → playlists_youtube`.
+
 ## 8. Registro
 
 En `plan.json`, en el video: `"estado": "programado"`, `"publica_utc"`, `"archivo"`,

@@ -12,6 +12,9 @@ Comandos:
       --miniatura imagen.jpg pone una miniatura propia (YouTube la acepta si el canal está verificado).
       --largo para videos largos (el enlace que imprime es /watch en vez de /shorts).
       --prueba imprime los metadatos sin llamar a la API.
+  python youtube.py playlist <video_id> <clave>
+      Mete el video en su lista de reproducción (claves en config.json → playlists_youtube; la
+      clave de cada video sale de clave_playlist: serie, aguinaldo, negocios, mente o finanzas).
 
 Solo sube si el canal del permiso es exactamente contenido/config.json → canal_youtube (regla 1:
 una vez se subieron videos al canal equivocado por no comprobarlo). Sube en privado con hora de
@@ -93,6 +96,48 @@ def comentar(acceso, video_id, texto):
     return json.loads(respuesta)['id']
 
 
+def clave_playlist(item):
+    """Lista de reproducción de un video o carrusel del plan (config.json → playlists_youtube)."""
+    if item.get('serie'):
+        return item['serie']['nombre']
+    if 'aguinaldo' in (item.get('llamado') or '') + (item.get('tema') or '') + json.dumps(item.get('seo', {})).lower():
+        return 'aguinaldo'
+    pilar = item.get('pilar', '')
+    return ('negocios' if pilar in ('negocio', 'empresas') else 'mente' if pilar in ('mentalidad', 'vida')
+            else 'finanzas')
+
+
+def a_playlist(acceso, video_id, clave):
+    """Mete el video en su lista (la crea pública si no existe). Las listas suben el tiempo de visualización
+    (la gente ve uno tras otro) y aparecen en la búsqueda de YouTube."""
+    datos = CONFIG['playlists_youtube'][clave]
+    cabeceras = {'Authorization': f'Bearer {acceso}'}
+    json_h = {**cabeceras, 'Content-Type': 'application/json; charset=UTF-8'}
+    lista = datos.get('id')
+    if not lista:
+        _, cuerpo = _http('GET', f'{API}/playlists?part=snippet&mine=true&maxResults=50', headers=cabeceras)
+        lista = next((p['id'] for p in json.loads(cuerpo).get('items', []) if p['snippet']['title'] == datos['titulo']), None)
+    nueva = not lista
+    if nueva:
+        cuerpo_lista = {'snippet': {'title': datos['titulo'], 'description': datos['descripcion'], 'defaultLanguage': 'es'},
+                        'status': {'privacyStatus': 'public'}}
+        _, cuerpo = _http('POST', f'{API}/playlists?part=snippet,status', json.dumps(cuerpo_lista).encode(), json_h)
+        lista = json.loads(cuerpo)['id']
+    if not datos.get('id'):  # se guarda: YouTube tarda en listar una lista recién creada (y se duplicaría)
+        ruta = os.path.join(RAIZ, 'contenido', 'config.json')
+        config = json.load(open(ruta))
+        config['playlists_youtube'][clave]['id'] = datos['id'] = lista
+        json.dump(config, open(ruta, 'w'), ensure_ascii=False, indent=1)
+        open(ruta, 'a').write('\n')
+    if not nueva:
+        _, cuerpo = _http('GET', f'{API}/playlistItems?part=snippet&maxResults=50&playlistId={lista}', headers=cabeceras)
+        if any(i['snippet']['resourceId'].get('videoId') == video_id for i in json.loads(cuerpo).get('items', [])):
+            return lista
+    item = {'snippet': {'playlistId': lista, 'resourceId': {'kind': 'youtube#video', 'videoId': video_id}}}
+    _http('POST', f'{API}/playlistItems?part=snippet', json.dumps(item).encode(), json_h)
+    return lista
+
+
 def metadatos(titulo, descripcion, cuando, tags=None):
     publica = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00'))
     inmediato = publica - datetime.datetime.now(datetime.timezone.utc) < datetime.timedelta(minutes=15)
@@ -114,6 +159,9 @@ def main():
         sys.exit(__doc__)
     if sys.argv[1] == 'canal':
         print('Canal: %s (%s)' % canal(token())[::-1])
+        return
+    if sys.argv[1] == 'playlist' and len(sys.argv) == 4:
+        print('ok lista', a_playlist(token(), sys.argv[2], sys.argv[3]))
         return
     if sys.argv[1] != 'subir' or len(sys.argv) < 6:
         sys.exit(__doc__)
