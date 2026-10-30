@@ -40,6 +40,13 @@ python scripts/aprender.py auditar   # qué gana, qué pierde, si hoy toca publi
   generar y `cambios_sugeridos`), `reglas_vigentes` (reglas con cifras de los datos propios) y
   `alertas`.
 
+## 1e. Comentarios de YouTube (todos los días)
+
+`python scripts/comentarios.py pendientes` y contestar cada uno con `responder <id> "texto"`,
+siguiendo las reglas del propio script (corto, voz de Victoria, sin recomendaciones de inversión,
+enlace a la calculadora o la guía si aplica; spam e insultos no se contestan). Más conversación =
+más alcance. Instagram y TikTok los contesta Rodrigo en la app.
+
 ## 1a. Si hoy NO toca publicar
 
 Sale un **carrusel** (`docs/CARRUSELES.md`): el primero en estado `listo` de
