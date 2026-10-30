@@ -108,6 +108,8 @@ borrado masivo es peligroso, nunca se usa).
   `"ventana": {"desde", "hasta"}` y `"llamado"` (`config.json → llamados`: su calculadora gratis va
   primero en la descripción, el pie y el comentario). `aprender.py` los publica primero cuando abre su
   ventana y nunca fuera de ella. Escríbelos con un mes de anticipación.
+- 3 de 10 adaptan un tema o estructura que esté funcionando (`docs/INSPIRACION.md`,
+  `contenido/referencias.json`; los lunes se actualiza con `search_viral_videos`). Nunca se copia texto.
 - 2 de 10 son **entrevista** (ver "Formato entrevista" en el paso 3), casi siempre de emprendimiento.
 - 3 de 10 son **videos puente** hacia la plantilla (`"puente_producto": true`, ver
   `docs/GUIONES_VIRALES.md → Monetizar`).
