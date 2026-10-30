@@ -229,6 +229,7 @@ def main():
             'qa_similitud': qa.get('similitud') if isinstance(qa, dict) else None,
             'creditos': v.get('creditos') if isinstance(v.get('creditos'), int) else None,
             'publica_utc': v.get('publica_utc', ''),
+            'publica_utc_por_red': v.get('publica_utc_por_red') or {},
             'miniatura': miniatura(os.path.join(RAIZ, v['archivo'])) if v.get('archivo') else '',
             'youtube_id': youtube_id((v.get('publicacion') or {}).get('youtube')),
             'linea': primera_linea(v.get('texto_post')),
@@ -259,6 +260,7 @@ def main():
         'horas': {r: h.strftime('%Y-%m-%d %H:%M') for r, h in horas_por_red(c).items()},
         'youtube_id': youtube_id(c.get('youtube')), 'publica_utc': c.get('publica_utc', ''),
         'linea': primera_linea(c.get('texto_post')), 'tipo': 'carrusel',
+        'publica_utc_por_red': c.get('publica_utc_por_red') or {},
         **por_video.get(c['id'], {}),
     } for c in carruseles])
     guardar('calendario.json', calendario(plan, carruseles, config, auditoria, datetime.datetime.now(datetime.timezone.utc)))

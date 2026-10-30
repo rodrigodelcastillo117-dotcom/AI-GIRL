@@ -16,7 +16,12 @@
   "youtube_id": "OgSZUknXNHc",
   "publica_utc": "2026-11-02T00:45:00Z",
   "linea": "aguinaldo 2026: cuánto te toca, cuándo te lo pagan y cuánto paga de isr. 💸",
-  "tipo": "carrusel"
+  "tipo": "carrusel",
+  "publica_utc_por_red": {
+   "ig": "2026-11-02T00:45:00Z",
+   "tt": "2026-11-02T00:45:00Z",
+   "yt": "2026-11-02T00:45:00Z"
+  }
  },
  {
   "id": "c02",
@@ -35,7 +40,12 @@
   "youtube_id": "IPwU8EGGwZU",
   "publica_utc": "2026-10-31T00:45:00Z",
   "linea": "si haces esto con tu dinero, haz esto en su lugar. 💰",
-  "tipo": "carrusel"
+  "tipo": "carrusel",
+  "publica_utc_por_red": {
+   "ig": "2026-10-31T00:45:00Z",
+   "tt": "2026-10-31T00:45:00Z",
+   "yt": "2026-10-31T00:45:00Z"
+  }
  },
  {
   "id": "c03",
@@ -50,7 +60,8 @@
   "youtube_id": "",
   "publica_utc": "",
   "linea": "reglas de dinero de warren buffett, charlie munger y tres más que vale la pena memorizar. 💡",
-  "tipo": "carrusel"
+  "tipo": "carrusel",
+  "publica_utc_por_red": {}
  },
  {
   "id": "c04",
@@ -65,7 +76,8 @@
   "youtube_id": "",
   "publica_utc": "",
   "linea": "lecciones de negocio de blockbuster, costco, amazon y dos ideas que todo emprendedor debería saber. 💼",
-  "tipo": "carrusel"
+  "tipo": "carrusel",
+  "publica_utc_por_red": {}
  },
  {
   "id": "c05",
@@ -80,6 +92,7 @@
   "youtube_id": "",
   "publica_utc": "",
   "linea": "qué hacer con el aguinaldo para que no se acabe en enero. 💸",
-  "tipo": "carrusel"
+  "tipo": "carrusel",
+  "publica_utc_por_red": {}
  }
 ]

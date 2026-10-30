@@ -231,6 +231,9 @@ function dibujarTodo() {
   dibujarListas(aprendizajes);
   dibujarTablas(videos, ejecuciones);
   dibujarCalendario(FOTO.calendario);
+  dibujarMetas();
+  dibujarRadar();
+  dibujarDespegues();
   dibujarHorarios(FOTO.auditoria || {}, estado);
   dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
@@ -261,6 +264,7 @@ function proxima() {
 
 function relojes() {
   if (!FOTO) return;
+  tictac();
   $('reloj').textContent = `CDMX ${new Date().toLocaleTimeString('es-MX', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit', second: '2-digit'})}`;
   const segs = VIVO?.actualizado ? Math.max(0, Math.round((Date.now() - new Date(VIVO.actualizado)) / 1000)) : null;
   $('hace').textContent = segs == null ? '—' : segs < 60 ? `hace ${segs} s` : `hace ${Math.round(segs / 60)} min`;
@@ -416,6 +420,108 @@ function dibujarTablas(videos, ejecuciones) {
     celda(v.gancho), celda(v.publica_mx), celda(medido(v) ? fmt(vistasDe(v)) : '', 'n'), celda(Number(v.qa_similitud) > 0 ? pct(Number(v.qa_similitud)) : '', 'n'), celda(v.creditos == null ? '' : fmt(v.creditos), 'n'))));
   $('t-bitacora').replaceChildren(...[...ejecuciones].sort(porFecha).reverse().map((e) => crear('tr', {}, celda(mx(e.fecha_utc)), celda(e.tipo), celda(e.video_id), chip(e.resultado),
     celda(e.detalle), celda(fmt(Number(e.creditos_usados) || 0), 'n'), celda(fmt(Number(e.creditos_restantes) || 0), 'n'))));
+}
+
+// ---------- centro de operaciones (todo con datos reales) ----------
+const METAS = [1000, 10000, 100000, 1000000];
+const NOTA_META = {tt: {1000: 'enlace en la bio', 10000: 'TikTok empieza a pagar'}, ig: {10000: 'marcas y colaboraciones'}};
+const SVG = 'http://www.w3.org/2000/svg';
+const svgEl = (etiqueta, attrs = {}, ...hijos) => { const el = document.createElementNS(SVG, etiqueta); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...hijos); return el; };
+
+function seguidoresReales(clave) {
+  return clave === 'yt' ? VIVO?.canal?.suscriptores : VIVO?.seguidores?.[clave]?.seguidores;
+}
+
+function dibujarMetas() {
+  $('metas').replaceChildren(...REDES.map((red) => {
+    const n = seguidoresReales(red.clave);
+    const meta = METAS.find((m) => (n ?? 0) < m) || METAS.at(-1);
+    const previa = METAS[METAS.indexOf(meta) - 1] || 0;
+    const avance = n == null ? 0 : Math.max(0, Math.min(1, (n - previa) / (meta - previa)));
+    const largo = 2 * Math.PI * 46;
+    const svg = svgEl('svg', {viewBox: '0 0 120 120', 'aria-hidden': 'true'},
+      svgEl('circle', {cx: 60, cy: 60, r: 54, class: 'marcas'}),
+      svgEl('circle', {cx: 60, cy: 60, r: 46, class: 'pista'}),
+      svgEl('circle', {cx: 60, cy: 60, r: 46, class: 'avance', stroke: red.color, color: red.color,
+        'stroke-dasharray': `${largo * avance} ${largo}`, transform: 'rotate(-90 60 60)'}));
+    const nota = NOTA_META[red.clave]?.[meta];
+    return crear('div', {className: 'meta'}, svg,
+      crear('div', {className: 'nucleo'}, crear('b', {textContent: n == null ? '—' : compacto(n)}), crear('small', {textContent: `${Math.round(avance * 100)}%`})),
+      crear('span', {className: 'rotulo', textContent: red.nombre}),
+      crear('span', {className: 'detalle', textContent: n == null ? 'conectando…' : `meta ${compacto(meta)}${nota ? ` · ${nota}` : ''}`}));
+  }));
+}
+
+function dibujarRadar() {
+  const C = 150, R = 132, DIAS_RADAR = 14;
+  const sector = {yt: -90, tt: 30, ig: 150};  // 120° por red
+  const svg = svgEl('svg', {viewBox: '0 0 300 300', role: 'img', 'aria-label': 'Radar de publicaciones'});
+  const defs = svgEl('defs', {}, svgEl('radialGradient', {id: 'barrido-grad', cx: 0, cy: 0, r: 1, gradientUnits: 'userSpaceOnUse', gradientTransform: `translate(${C} ${C}) scale(${R})`},
+    svgEl('stop', {offset: '0', 'stop-color': '#49d6ec', 'stop-opacity': '.0'}), svgEl('stop', {offset: '1', 'stop-color': '#49d6ec', 'stop-opacity': '.35'})));
+  svg.append(defs);
+  for (const r of [R / 3, (2 * R) / 3, R]) svg.append(svgEl('circle', {cx: C, cy: C, r, class: 'anillo'}));
+  for (const red of REDES) {
+    const a = ((sector[red.clave] - 60) * Math.PI) / 180;
+    svg.append(svgEl('line', {x1: C, y1: C, x2: C + R * Math.cos(a), y2: C + R * Math.sin(a), class: 'eje'}));
+    const m = ((sector[red.clave]) * Math.PI) / 180;
+    svg.append(svgEl('text', {x: C + (R + 12) * Math.cos(m), y: C + (R + 12) * Math.sin(m) + 3, 'text-anchor': 'middle', fill: red.color}, red.corto));
+  }
+  const fin = (-25 * Math.PI) / 180;
+  svg.append(svgEl('g', {class: 'barrido'}, svgEl('path', {d: `M${C} ${C} L${C + R} ${C} A${R} ${R} 0 0 0 ${C + R * Math.cos(fin)} ${C + R * Math.sin(fin)} Z`, fill: 'url(#barrido-grad)'})));
+  const ahora = Date.now();
+  const puntos = [];
+  for (const p of todo().filter(salio)) {
+    for (const red of REDES) {
+      const m = medidas(p)[red.clave];
+      if (!m || m.pendiente) continue;
+      const t = new Date((p.publica_utc_por_red || {})[red.clave] || p.publica_utc).getTime();
+      const dias = (ahora - t) / 864e5;
+      if (!(dias >= 0 && dias <= DIAS_RADAR)) continue;
+      puntos.push({p, red, v: Number(m.v) || 0, dias});
+    }
+  }
+  const tope = Math.max(1, ...puntos.map((x) => x.v));
+  for (const {p, red, v, dias} of puntos) {
+    let semilla = 0;
+    for (const ch of String(p.id)) semilla = (semilla * 31 + ch.charCodeAt(0)) % 997;
+    const ang = ((sector[red.clave] - 50 + (semilla % 100)) * Math.PI) / 180;
+    const dist = 14 + (dias / DIAS_RADAR) * (R - 18);
+    const titulo = svgEl('title', {}, `${String(p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${p.id} · ${red.nombre} · ${fmt(v)} vistas`);
+    svg.append(svgEl('g', {class: 'blip'}, svgEl('circle', {cx: C + dist * Math.cos(ang), cy: C + dist * Math.sin(ang), r: 3 + 9 * Math.sqrt(v / tope), fill: red.color, color: red.color}), titulo));
+  }
+  if (!puntos.length) svg.append(svgEl('text', {x: C, y: C + 4, 'text-anchor': 'middle', class: 'vacio-radar'}, 'esperando la primera medición'));
+  $('radar').replaceChildren(svg);
+}
+
+function siguientePorRed(clave) {
+  let mejor = null;
+  for (const p of todo()) {
+    if (p.estado !== 'programado') continue;
+    const t = new Date((p.publica_utc_por_red || {})[clave] || p.publica_utc || 0).getTime();
+    if (t > Date.now() && (!mejor || t < mejor.t)) mejor = {t, p};
+  }
+  return mejor;
+}
+
+function dibujarDespegues() {
+  $('despegues').replaceChildren(...REDES.map((red) => {
+    const sig = siguientePorRed(red.clave);
+    const cuenta = crear('b', {className: 'cuenta-red', textContent: '—'});
+    if (sig) cuenta.dataset.t = String(sig.t);
+    const fila = crear('div', {className: 'despegue'}, crear('span', {className: 'red-nombre', textContent: red.nombre}), cuenta,
+      crear('small', {textContent: sig ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : 'Nada programado todavía: la auditoría de mañana lo programa'}));
+    fila.style.setProperty('--acento', red.color);
+    return fila;
+  }));
+  tictac();
+}
+
+function tictac() {
+  for (const el of document.querySelectorAll('.cuenta-red[data-t]')) {
+    let s = Math.max(0, Math.floor((Number(el.dataset.t) - Date.now()) / 1000));
+    const d = Math.floor(s / 86400), h = Math.floor((s %= 86400) / 3600), m = Math.floor((s %= 3600) / 60);
+    el.textContent = `${d ? `${d}d ` : ''}${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+  }
 }
 
 function dibujarCalendario(filas = []) {
