@@ -443,3 +443,27 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { .hud-marco .haz, .barra::after, .panel h2::after, .heroe .glitch b, .gran-numero::before { animation: none; } }
 .audiencia { display: grid; gap: 16px; }
 .audiencia h3 { margin: 0 0 6px; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tenue); }
+
+/* ---------- Semáforo del sistema ---------- */
+.semaforo { display: inline-flex; align-items: center; gap: 10px; max-width: 100%; margin: 10px 0 2px; padding: 7px 12px; font-size: .78rem;
+  border: 1px solid var(--linea); background: rgba(73, 214, 236, .04); clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%); }
+.semaforo i { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.semaforo b { font-family: var(--etiqueta); letter-spacing: .16em; text-transform: uppercase; font-size: .7rem; flex: none; }
+.semaforo span { color: var(--tenue); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.semaforo.verde i { background: var(--verde); box-shadow: 0 0 12px var(--verde); animation: latido 2.4s ease-in-out infinite; }
+.semaforo.verde b { color: var(--verde); }
+.semaforo.ambar { border-color: rgba(245, 197, 66, .45); background: rgba(245, 197, 66, .06); }
+.semaforo.ambar i { background: var(--oro); box-shadow: 0 0 12px var(--oro); animation: latido 1.2s ease-in-out infinite; }
+.semaforo.ambar b { color: var(--oro); }
+
+/* ---------- Secciones plegables ---------- */
+.seccion { cursor: pointer; user-select: none; }
+.seccion::after { order: 3; }
+.seccion.plegada { opacity: .85; }
+.resumen-seccion { width: 100%; text-align: left; cursor: pointer; padding: 14px 18px; color: var(--tenue); font: inherit; font-size: .8rem;
+  background: linear-gradient(90deg, rgba(73, 214, 236, .07), transparent); border: 1px dashed var(--linea-fuerte);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%); transition: color .2s, background .2s; }
+.resumen-seccion:hover { color: var(--texto); background: linear-gradient(90deg, rgba(73, 214, 236, .14), transparent); }
+.heroe .identidad, .heroe .mision { min-width: 0; }
+.semaforo { display: flex; width: fit-content; max-width: 100%; }
+.heroe .identidad { grid-template-columns: minmax(0, 1fr); }

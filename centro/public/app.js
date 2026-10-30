@@ -91,6 +91,7 @@ async function arrancar(conAnimacion) {
   dibujarTodo();
   if (!arrancar.hecho) {
     arrancar.hecho = true;
+    armarPlegables();
     armarNavegacion();
     avatar3d();
     setInterval(refrescarVivo, MINUTO);
@@ -234,6 +235,7 @@ function dibujarTodo() {
   $('pie').textContent = `YouTube en vivo · TikTok e Instagram vía Publer · última foto del sistema: ${mx(estado.generado_utc)} · créditos según la última ejecución`;
 
   dibujarRedes();
+  dibujarSemaforo();
   dibujarLaboratorio(FOTO.auditoria || {});
   dibujarCinta(ejecuciones, aprendizajes);
   dibujarHangar(videos);
@@ -438,6 +440,53 @@ function dibujarTablas(videos, ejecuciones) {
     celda(e.detalle), celda(fmt(Number(e.creditos_usados) || 0), 'n'), celda(fmt(Number(e.creditos_restantes) || 0), 'n'))));
 }
 
+// ---------- semáforo: el estado del sistema en una línea (solo con datos reales) ----------
+const AJENOS_RESUELTOS_HASTA = '2026-10-29';
+function dibujarSemaforo() {
+  const avisos = [];
+  for (const e of VIVO?.errores || []) avisos.push(e);
+  const ultima = [...FOTO.ejecuciones].sort(porFecha).at(-1);
+  if (ultima?.resultado === 'fallido') avisos.push(`la última ejecución falló: ${ultima.detalle || ultima.tipo}`);
+  for (const a of FOTO.auditoria?.alertas || []) {
+    // Los posts ajenos de antes del 29-oct ya están resueltos (Harvey se desconectó): no son alarma.
+    const fecha = (a.match(/el (\d{4}-\d{2}-\d{2})/) || [])[1];
+    if (/AJENO/.test(a) && fecha && fecha < AJENOS_RESUELTOS_HASTA) continue;
+    if (/AJENO|falla|falló|vence|Recargar|no cabe|no salió|revisar/i.test(a)) avisos.push(a);
+  }
+  const ok = !avisos.length;
+  $('semaforo').className = `semaforo ${ok ? 'verde' : 'ambar'}`;
+  $('semaforo').replaceChildren(crear('i'), crear('b', {textContent: ok ? 'Todo en orden' : `Revisar (${avisos.length})`}),
+    crear('span', {textContent: ok ? 'publicaciones programadas, datos en vivo y sin fallas' : avisos[0]}));
+  $('semaforo').title = avisos.join('\n');
+}
+
+// ---------- secciones plegables: lo diario abierto, lo técnico plegado (nada se quita) ----------
+const ABIERTAS = ['Centro de operaciones', 'Redes en vivo', 'Calendario', 'Hangar'];
+function armarPlegables() {
+  let guardado = {};
+  try { guardado = JSON.parse(localStorage.getItem('secciones') || '{}'); } catch { /* sin memoria */ }
+  for (const sec of document.querySelectorAll('main .seccion')) {
+    const nombre = [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
+    const bloques = [];
+    for (let n = sec.nextElementSibling; n && !n.classList.contains('seccion'); n = n.nextElementSibling) bloques.push(n);
+    const titulos = bloques.flatMap((b) => [...b.querySelectorAll('h2')].map((h) => h.textContent.replace(/\s*▸+$/, '')));
+    const resumen = crear('button', {type: 'button', className: 'resumen-seccion'});
+    const poner = (abierta) => {
+      bloques.forEach((b) => { b.hidden = !abierta; });
+      sec.classList.toggle('plegada', !abierta);
+      resumen.hidden = abierta;
+      resumen.textContent = `▸ Abrir ${nombre}: ${titulos.join(' · ') || 'detalle'}`;
+      if (abierta) requestAnimationFrame(() => dibujarGraficas());  // las gráficas se miden al abrir
+    };
+    sec.abrir = () => { poner(true); guardado[nombre] = true; try { localStorage.setItem('secciones', JSON.stringify(guardado)); } catch { /* */ } };
+    const alternar = () => { const abrir = sec.classList.contains('plegada'); poner(abrir); guardado[nombre] = abrir; try { localStorage.setItem('secciones', JSON.stringify(guardado)); } catch { /* */ } };
+    sec.addEventListener('click', alternar);
+    resumen.addEventListener('click', () => sec.abrir());
+    sec.after(resumen);
+    poner(guardado[nombre] ?? ABIERTAS.includes(nombre));
+  }
+}
+
 // ---------- navegación y efectos ----------
 function armarNavegacion() {
   // Una pastilla por sección, tomada de la propia página; marca en cuál vas.
@@ -446,7 +495,9 @@ function armarNavegacion() {
   const botones = secciones.map((sec, i) => {
     sec.id ||= `seccion-${i + 1}`;
     const nombre = [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
-    return crear('a', {href: `#${sec.id}`, textContent: nombre, className: 'pastilla'});
+    const boton = crear('a', {href: `#${sec.id}`, textContent: nombre, className: 'pastilla'});
+    boton.addEventListener('click', () => sec.abrir?.());
+    return boton;
   });
   nav.replaceChildren(...botones);
   const activo = new IntersectionObserver((entradas) => {
