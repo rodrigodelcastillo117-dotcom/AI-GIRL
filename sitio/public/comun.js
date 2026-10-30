@@ -26,7 +26,8 @@ const numero = (id) => {
 
 function enlacePago(origen) {
   const src = origen ? `${REF}-${origen}` : REF;
-  return `${VICTORIA.pago}${VICTORIA.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(src)}`;
+  // src y sck con el mismo valor: Hotmart reporta el origen en uno u otro (la API lo da como source_sck).
+  return `${VICTORIA.pago}${VICTORIA.pago.includes('?') ? '&' : '?'}src=${encodeURIComponent(src)}&sck=${encodeURIComponent(src)}`;
 }
 
 // Bloque de venta de la plantilla, con el precio real y la garantía.

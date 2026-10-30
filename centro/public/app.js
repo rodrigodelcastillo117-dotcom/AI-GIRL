@@ -558,6 +558,7 @@ function dibujarVentas() {
       barra.append(relleno);
       return crear('div', {className: 'fila'}, crear('span', {textContent: NOMBRE_ORIGEN[red] || red}), barra, crear('em', {textContent: `${fmt(x.ventas)} · ${dinero(x.ingresos)}`}));
     })) : crear('p', {className: 'vacio', textContent: 'Todavía no hay ventas aprobadas en los últimos 90 días. Aparecen aquí solas en cuanto llegue la primera.'}),
+    ...(v.otros ? [crear('p', {className: 'nota', textContent: `No cuentan aquí ${fmt(v.otros)} ${v.otros === 1 ? 'venta' : 'ventas'} de tus otros productos de Hotmart; este panel es solo de Victoria.`})] : []),
     ...(v.ultimas?.length ? [crear('ol', {className: 'lista'}, ...v.ultimas.map((u) => elemento('dato', NOMBRE_ORIGEN[u.red] || u.red, dinero(u.valor), u.fecha ? mx(new Date(u.fecha).toISOString()) : '')))] : []));
 }
 

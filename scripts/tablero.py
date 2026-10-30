@@ -322,6 +322,7 @@ def main():
         'cuentas_publer': config.get('cuentas_publer', {}),
         'canal_youtube': config.get('canal_youtube', ''),
         'prueba_horas': config.get('prueba_horas', {}),
+        'productos_hotmart': config.get('productos_hotmart', {}),
         'serie_vistas': series_reales(plan, cargar_carruseles())[0],
         'serie_publicaciones': series_reales(plan, cargar_carruseles())[1],
         'serie_redes': series_reales(plan, cargar_carruseles())[2],

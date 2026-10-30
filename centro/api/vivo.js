@@ -206,7 +206,7 @@ let ultimasVentas = {hasta: 0, datos: null};
 
 // Ventas reales de Hotmart (90 días), cada 15 min. Credenciales en Vercel: HOTMART_CLIENT_ID y HOTMART_CLIENT_SECRET
 // (o HOTMART_BASIC). El origen sale del src que pone la página: "tt-aguinaldo" -> TikTok.
-async function ventas() {
+async function ventas(estado) {
   if (Date.now() < ultimasVentas.hasta) return ultimasVentas.datos;
   let id = variable('HOTMART_CLIENT_ID'), secreto = variable('HOTMART_CLIENT_SECRET');
   let basic = variable('HOTMART_BASIC').replace(/^Basic\s+/i, '');
@@ -230,7 +230,11 @@ async function ventas() {
     const s = String(t.source || t.source_sck || t.src || '').toLowerCase().split('-')[0];
     return ['yt', 'tt', 'ig', 'guia', 'directo'].includes(s) ? s : s ? 'otro' : 'sin_origen';
   };
-  const aprobadas = items.filter((x) => ['APPROVED', 'COMPLETE'].includes(x.purchase?.status));
+  // Solo los productos de Victoria (config.json → productos_hotmart); la cuenta tiene otros (los libros de animales).
+  const propios = Object.keys(estado.productos_hotmart || {});
+  const deVictoria = (x) => !propios.length || propios.includes(String(x.product?.id));
+  const todasAprobadas = items.filter((x) => ['APPROVED', 'COMPLETE'].includes(x.purchase?.status));
+  const aprobadas = todasAprobadas.filter(deVictoria);
   const porRed = {};
   let ingresos = 0, moneda = '';
   for (const x of aprobadas) {
@@ -241,8 +245,8 @@ async function ventas() {
     moneda ||= x.purchase?.price?.currency_value || x.purchase?.price?.currency_code || '';
   }
   // Solo la forma de los datos, nunca datos del comprador: sirve para comprobar que se lee bien.
-  console.log(`hotmart: ${items.length} movimientos, ${aprobadas.length} aprobadas; tracking: ${JSON.stringify(Object.keys(items[0]?.purchase?.tracking || {}))}`);
-  const datos = {conectado: true, ventas: aprobadas.length, ingresos, moneda, porRed, movimientos: items.length,
+  console.log(`hotmart: ${items.length} movimientos, ${todasAprobadas.length} aprobadas, ${aprobadas.length} de Victoria; tracking: ${JSON.stringify(Object.keys(items[0]?.purchase?.tracking || {}))}`);
+  const datos = {conectado: true, ventas: aprobadas.length, ingresos, moneda, porRed, movimientos: items.length, otros: todasAprobadas.length - aprobadas.length,
     ultimas: aprobadas.slice(0, 5).map((x) => ({fecha: x.purchase?.approved_date || x.purchase?.order_date, red: origen(x), valor: Number(x.purchase?.price?.value) || 0}))};
   ultimasVentas = {hasta: Date.now() + 15 * 60_000, datos};
   return datos;
@@ -264,7 +268,7 @@ export default async function handler(req, res) {
     ahora < ultimoPubler.hasta ? Promise.resolve(ultimoPubler.datos) : publer(estado, videos),
     ahora < ultimoInstagram.hasta ? Promise.resolve(ultimoInstagram.datos) : instagram(videos),
     seguidores(estado),
-    ventas(),
+    ventas(estado),
   ]);
   if (ahora >= ultimoInstagram.hasta) {
     ultimoInstagram = igNuevo.status === 'fulfilled'
