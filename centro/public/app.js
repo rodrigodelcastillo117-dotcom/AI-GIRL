@@ -89,10 +89,9 @@ async function arrancar(conAnimacion) {
   }
   mostrar('tablero');
   dibujarTodo();
-  bienvenida(foto.usuario || 'Rodrigo');
   if (!arrancar.hecho) {
     arrancar.hecho = true;
-    armarVistas();
+    armarNavegacion();
     avatar3d();
     setInterval(refrescarVivo, MINUTO);
     setInterval(async () => {
@@ -235,11 +234,6 @@ function dibujarTodo() {
   $('pie').textContent = `YouTube en vivo · TikTok e Instagram vía Publer · última foto del sistema: ${mx(estado.generado_utc)} · créditos según la última ejecución`;
 
   dibujarRedes();
-  dibujarSemaforo();
-  dibujarSaludo();
-  dibujarKpis();
-  dibujarComparativo();
-  dibujarTop();
   dibujarLaboratorio(FOTO.auditoria || {});
   dibujarCinta(ejecuciones, aprendizajes);
   dibujarHangar(videos);
@@ -444,266 +438,6 @@ function dibujarTablas(videos, ejecuciones) {
     celda(e.detalle), celda(fmt(Number(e.creditos_usados) || 0), 'n'), celda(fmt(Number(e.creditos_restantes) || 0), 'n'))));
 }
 
-// ---------- bienvenida con el nombre de quien entró (una vez por pestaña) ----------
-function bienvenida(nombre) {
-  try { if (sessionStorage.getItem('bienvenida') === nombre) return; sessionStorage.setItem('bienvenida', nombre); } catch { /* sin memoria */ }
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const letras = crear('div', {className: 'bv-nombre'}, ...[...nombre.toUpperCase()].map((l, i) => {
-    const s = crear('span', {textContent: l});
-    s.style.setProperty('--d', `${i * 70}ms`);
-    return s;
-  }));
-  const capa = crear('div', {className: 'bienvenida', ariaHidden: 'true'},
-    crear('div', {className: 'bv-anillo'}), crear('div', {className: 'bv-sub', textContent: 'Bienvenido al centro de mando'}), letras,
-    crear('div', {className: 'bv-pie', textContent: 'Victoria The CEO · datos en vivo'}));
-  document.body.append(capa);
-  setTimeout(() => capa.classList.add('sale'), 2300);
-  setTimeout(() => capa.remove(), 3100);
-}
-
-// ---------- resumen visual (todo con datos reales) ----------
-const COLOR_RED = {yt: '#ff3b55', tt: '#facc15', ig: '#a855f7'};
-
-function dibujarSaludo() {
-  const h = Number(new Date().toLocaleString('en-US', {timeZone: 'America/Mexico_City', hour: 'numeric', hourCycle: 'h23'}));
-  $('saludo').textContent = `${h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches'}, ${FOTO.usuario || 'Rodrigo'} 👋 · esto pasa hoy con Victoria`;
-}
-
-function chispa(valores, color) {
-  // Minigráfica de una serie real; con menos de 2 puntos lo dice en vez de inventar una curva.
-  const v = valores.filter((x) => Number.isFinite(x));
-  const svg = svgEl('svg', {viewBox: '0 0 120 40', class: 'chispa', preserveAspectRatio: 'none', 'aria-hidden': 'true'});
-  if (v.length < 2) { svg.append(svgEl('text', {x: 120, y: 34, 'text-anchor': 'end', class: 'chispa-vacia'}, 'juntando historial')); return svg; }
-  const min = Math.min(...v), rango = Math.max(...v) - min || 1;
-  const pts = v.map((x, i) => [(i * 118) / (v.length - 1) + 1, 36 - ((x - min) / rango) * 30]);
-  const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
-  const id = `ch${color.slice(1)}`;
-  svg.append(svgEl('defs', {}, svgEl('linearGradient', {id, x1: 0, y1: 0, x2: 0, y2: 1},
-    svgEl('stop', {offset: 0, 'stop-color': color, 'stop-opacity': '.45'}), svgEl('stop', {offset: 1, 'stop-color': color, 'stop-opacity': '0'}))),
-    svgEl('path', {d: `${d} L119 40 L1 40 Z`, fill: `url(#${id})`}),
-    svgEl('path', {d, fill: 'none', stroke: color, 'stroke-width': '2.2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke'}));
-  return svg;
-}
-
-function dibujarKpis() {
-  const r = resumen();
-  const est = FOTO.estado;
-  const seg = REDES.map((red) => seguidoresReales(red.clave));
-  const totalSeg = seg.every((x) => x == null) ? null : seg.reduce((s, x) => s + (Number(x) || 0), 0);
-  const tt = VIVO?.seguidores?.tt?.serie || [], ig = VIVO?.seguidores?.ig?.serie || [];
-  const crecio = ['tt', 'ig'].reduce((s, k) => { const x = VIVO?.seguidores?.[k]; return x?.antes != null ? s + x.seguidores - x.antes : s; }, 0);
-  const saldo = [...FOTO.ejecuciones].sort(porFecha).map((e) => Number(e.creditos_restantes)).filter((x) => x > 0);
-  const tarjetas = [
-    {t: 'Vistas totales', v: r.vistas, sub: `${fmt(r.likes)} likes en las tres redes`, serie: [...(est.serie_vistas || []).map((x) => x.v), r.vistas], color: '#60a5fa'},
-    {t: 'Seguidores', v: totalSeg, sub: crecio ? `${crecio > 0 ? '+' : ''}${fmt(crecio)} en 3 semanas (TikTok + IG)` : 'YouTube + TikTok + Instagram', serie: tt.map((x, i) => x + (ig[i] || 0)), color: '#a78bfa'},
-    {t: 'Publicaciones', v: r.publicados, sub: `${fmt(r.listos)} listo · ${fmt(r.cola)} guiones en cola`, serie: (est.serie_publicaciones || []).map((x) => x.v), color: '#38bdf8'},
-    {t: 'Créditos', v: r.restantes, sub: r.alcanzan == null ? 'OpenArt' : `alcanzan para ${fmt(r.alcanzan)} videos`, serie: saldo, color: '#fbbf24'},
-  ];
-  const caja = $('kpis');
-  if (!caja.childElementCount) {
-    caja.append(...tarjetas.map((k, i) => crear('article', {className: 'kpi', id: `kpi-${i}`},
-      crear('span', {className: 'kpi-titulo', textContent: k.t}), crear('b', {className: 'kpi-valor'}), crear('div', {className: 'kpi-pie'}, crear('small'), crear('i')))));
-  }
-  tarjetas.forEach((k, i) => {
-    const t = $(`kpi-${i}`);
-    t.style.setProperty('--kpi', k.color);
-    contar(t.querySelector('.kpi-valor'), k.v);
-    t.querySelector('small').textContent = k.sub;
-    t.querySelector('i').replaceChildren(chispa(k.serie, k.color));
-  });
-}
-
-function totalesPorRed() {
-  const tot = Object.fromEntries(REDES.map((r) => [r.clave, {v: 0, l: 0, c: 0, s: 0}]));
-  for (const p of todo().filter(salio)) {
-    for (const red of REDES) {
-      const m = medidas(p)[red.clave];
-      if (!m || m.pendiente) continue;
-      for (const k of ['v', 'l', 'c', 's']) tot[red.clave][k] += Number(m[k]) || 0;
-    }
-  }
-  return tot;
-}
-
-function dibujarComparativo() {
-  const tot = totalesPorRed();
-  const total = REDES.reduce((s, r) => s + tot[r.clave].v, 0);
-  // 1. Dona: parte de las vistas de cada red
-  const R = 52, L = 2 * Math.PI * R;
-  const dona = svgEl('svg', {viewBox: '0 0 140 140', class: 'dona', role: 'img', 'aria-label': 'Vistas por red'});
-  dona.append(svgEl('circle', {cx: 70, cy: 70, r: R, fill: 'none', stroke: 'rgba(148,163,255,.12)', 'stroke-width': 14}));
-  let acumulado = 0;
-  for (const red of REDES) {
-    const parte = total ? tot[red.clave].v / total : 0;
-    if (parte > 0) {
-      dona.append(svgEl('circle', {cx: 70, cy: 70, r: R, fill: 'none', stroke: COLOR_RED[red.clave], 'stroke-width': 14, 'stroke-linecap': 'butt',
-        'stroke-dasharray': `${Math.max(0, L * parte - 2)} ${L}`, 'stroke-dashoffset': -L * acumulado, transform: 'rotate(-90 70 70)', class: 'dona-arco'}));
-      acumulado += parte;
-    }
-  }
-  dona.append(svgEl('text', {x: 70, y: 68, 'text-anchor': 'middle', class: 'dona-num'}, total ? compacto(total) : '—'), svgEl('text', {x: 70, y: 86, 'text-anchor': 'middle', class: 'dona-et'}, 'vistas'));
-  const leyenda = crear('ul', {className: 'cmp-leyenda'}, ...REDES.map((red) => crear('li', {},
-    crear('i', {style: `background:${COLOR_RED[red.clave]}`}), crear('span', {textContent: red.nombre}),
-    crear('b', {textContent: total ? `${Math.round((tot[red.clave].v / total) * 100)}%` : '—'}), crear('em', {textContent: fmt(tot[red.clave].v)}))));
-  $('cmp-dona').replaceChildren(crear('div', {className: 'dona-caja'}, dona, leyenda));
-
-  // 2. Líneas: vistas acumuladas por red en el tiempo (historial guardado + el dato en vivo de hoy)
-  const hoy = new Date().toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
-  const puntos = [...(FOTO.estado.serie_redes || []).filter((x) => x.fecha !== hoy), {fecha: hoy, yt: tot.yt.v, tt: tot.tt.v, ig: tot.ig.v}];
-  const W = 320, H = 150, m = {l: 34, r: 10, t: 10, b: 22};
-  const lineas = svgEl('svg', {viewBox: `0 0 ${W} ${H}`, class: 'cmp-svg', role: 'img', 'aria-label': 'Vistas por red en el tiempo'});
-  const maxV = Math.max(1, ...puntos.flatMap((p) => REDES.map((r) => p[r.clave] || 0)));
-  const x = (i) => m.l + (puntos.length > 1 ? (i * (W - m.l - m.r)) / (puntos.length - 1) : (W - m.l - m.r) / 2);
-  const y = (v) => H - m.b - (v / maxV) * (H - m.t - m.b);
-  for (const f of [0, 0.5, 1]) {
-    lineas.append(svgEl('line', {x1: m.l, x2: W - m.r, y1: y(maxV * f), y2: y(maxV * f), class: 'cmp-rejilla'}), svgEl('text', {x: m.l - 6, y: y(maxV * f) + 3, 'text-anchor': 'end', class: 'eje-t'}, compacto(maxV * f)));
-  }
-  puntos.forEach((p, i) => { if (puntos.length <= 8 || i % Math.ceil(puntos.length / 6) === 0 || i === puntos.length - 1) lineas.append(svgEl('text', {x: x(i), y: H - 6, 'text-anchor': 'middle', class: 'eje-t'}, p.fecha.slice(5).replace('-', '/'))); });
-  for (const red of REDES) {
-    const d = puntos.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)} ${y(p[red.clave] || 0).toFixed(1)}`).join(' ');
-    lineas.append(svgEl('path', {d, fill: 'none', stroke: COLOR_RED[red.clave], 'stroke-width': 2.4, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', class: 'linea-red'}));
-    const ult = puntos.at(-1);
-    lineas.append(svgEl('circle', {cx: x(puntos.length - 1), cy: y(ult[red.clave] || 0), r: 4, fill: COLOR_RED[red.clave], class: 'punto-vivo'}, svgEl('title', {}, `${red.nombre}: ${fmt(ult[red.clave] || 0)} vistas hoy`)));
-  }
-  $('cmp-lineas').replaceChildren(lineas);
-
-  // 3. Barras agrupadas: cada métrica con sus tres redes lado a lado
-  const metricas = [['v', 'Vistas'], ['l', 'Likes'], ['c', 'Coment.'], ['s', 'Compart.']];
-  $('cmp-barras').replaceChildren(crear('div', {className: 'grupos'}, ...metricas.map(([k, nombre]) => {
-    const tope = Math.max(1, ...REDES.map((r) => tot[r.clave][k]));
-    return crear('div', {className: 'grupo'}, crear('div', {className: 'barras3'}, ...REDES.map((red) => {
-      const b = crear('div', {className: 'b3', title: `${red.nombre}: ${fmt(tot[red.clave][k])} ${nombre.toLowerCase()}`});
-      b.style.setProperty('--alto', `${(tot[red.clave][k] / tope) * 100}%`);
-      b.style.setProperty('--color', COLOR_RED[red.clave]);
-      b.append(crear('em', {textContent: compacto(tot[red.clave][k])}));
-      return b;
-    })), crear('span', {textContent: nombre}));
-  })));
-}
-
-function dibujarTop() {
-  const lista = todo().filter((p) => salio(p) && medido(p)).map((p) => ({p, v: vistasDe(p), m: medidas(p)})).sort((a, b) => b.v - a.v).slice(0, 5);
-  if (!lista.length) { $('top').replaceChildren(crear('li', {className: 'vacio', textContent: 'Aparece en cuanto haya publicaciones medidas.'})); return; }
-  $('top').replaceChildren(...lista.map(({p, v, m}, i) => {
-    const esCarrusel = String(p.id).startsWith('c');
-    const foto = p.miniatura ? crear('img', {src: p.miniatura, alt: ''}) : crear('span', {className: 'sin-foto', textContent: esCarrusel ? 'CAR' : 'VID'});
-    return crear('li', {}, crear('b', {className: 'pos', textContent: `#${i + 1}`}), crear('div', {className: 'top-foto'}, foto),
-      crear('div', {className: 'top-texto'}, crear('strong', {textContent: p.gancho || p.tema || p.id}),
-        crear('small', {textContent: `${esCarrusel ? 'Carrusel' : 'Video'} ${p.id} · ${REDES.map((r) => m[r.clave] ? `${r.corto} ${compacto(m[r.clave].v)}` : '').filter(Boolean).join(' · ')}`})),
-      crear('em', {className: 'top-v', textContent: compacto(v)}));
-  }));
-}
-
-// ---------- vistas: el tablero como app de mando (nada se quita: cada sección se mueve a su vista) ----------
-const ICONOS = {
-  mision: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/>',
-  contenido: '<rect x="3" y="4" width="18" height="17" rx="1"/><path d="M3 9h18M8 2v4M16 2v4M7 13h3M7 17h3M13 13h4"/>',
-  analisis: '<path d="M3 21h18M6 17V11M11 17V6M16 17v-8M21 17V3"/>',
-  sistema: '<rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
-};
-const VISTAS = [
-  {id: 'mision', nombre: 'Misión', resumen: 'Lo importante de hoy, en vivo', secciones: ['Centro de operaciones', 'Redes en vivo'], inicio: true},
-  {id: 'contenido', nombre: 'Contenido', resumen: 'Qué sale, cuándo y a qué hora en cada red', secciones: ['Calendario', 'Hangar']},
-  {id: 'analisis', nombre: 'Análisis', resumen: 'Qué funciona: horas, temas, días, audiencia y laboratorio', secciones: ['Evolución', 'Radar', 'Laboratorio']},
-  {id: 'sistema', nombre: 'Sistema', resumen: 'Créditos, lecciones y bitácora de cada ejecución', secciones: ['Sistema de energía', 'Inteligencia', 'Bitácora']},
-];
-const nombreSeccion = (sec) => [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
-
-function armarVistas() {
-  const main = document.querySelector('main');
-  const hijos = [...main.children];
-  const primera = hijos.findIndex((n) => n.classList.contains('seccion'));
-  const inicio = hijos.slice(0, primera);
-  const grupos = {};
-  let actual = null;
-  for (const n of hijos.slice(primera)) {
-    if (n.classList.contains('seccion')) { actual = nombreSeccion(n); grupos[actual] = []; }
-    grupos[actual].push(n);
-  }
-  const usadas = new Set(VISTAS.flatMap((v) => v.secciones));
-  const sobrantes = Object.keys(grupos).filter((g) => !usadas.has(g));  // si aparece una sección nueva, va a Sistema
-  const riel = crear('nav', {className: 'riel', ariaLabel: 'Vistas del tablero'});
-  VISTAS.forEach((v, i) => {
-    const vista = crear('section', {className: 'vista', id: `vista-${v.id}`});
-    vista.dataset.vista = v.id;
-    vista.append(crear('header', {className: 'vista-cabeza'},
-      crear('span', {className: 'vista-num', textContent: String(i + 1).padStart(2, '0')}),
-      crear('div', {}, crear('h2', {className: 'vista-titulo', textContent: v.nombre}), crear('p', {textContent: v.resumen}))));
-    if (v.inicio) vista.append(...inicio);
-    for (const g of [...v.secciones, ...(v.id === 'sistema' ? sobrantes : [])]) vista.append(...(grupos[g] || []));
-    vista.querySelectorAll('.panel, .red, .mosaico').forEach((p, j) => p.style.setProperty('--i', Math.min(j, 12)));
-    main.append(vista);
-    const boton = crear('a', {href: `#${v.id}`, className: 'riel-boton'});
-    boton.dataset.vista = v.id;
-    const icono = svgEl('svg', {viewBox: '0 0 24 24', 'aria-hidden': 'true'});
-    icono.innerHTML = ICONOS[v.id];
-    boton.append(icono, crear('span', {textContent: v.nombre}));
-    boton.addEventListener('click', (e) => { e.preventDefault(); mostrarVista(v.id); });
-    riel.append(boton);
-  });
-  document.querySelector('.barra').after(riel);
-  let guardada = null;
-  try { guardada = localStorage.getItem('vista'); } catch { /* sin memoria */ }
-  const pedida = location.hash.slice(1);
-  mostrarVista(VISTAS.some((v) => v.id === pedida) ? pedida : VISTAS.some((v) => v.id === guardada) ? guardada : 'mision', false);
-}
-
-function mostrarVista(id, desplazar = true) {
-  for (const v of document.querySelectorAll('.vista')) v.hidden = v.dataset.vista !== id;
-  for (const b of document.querySelectorAll('.riel-boton')) b.classList.toggle('activa', b.dataset.vista === id);
-  try { localStorage.setItem('vista', id); } catch { /* sin memoria */ }
-  history.replaceState(null, '', `#${id}`);
-  if (desplazar) scrollTo({top: 0, behavior: 'instant'});
-  requestAnimationFrame(() => dibujarGraficas());  // las gráficas se miden ya visibles
-}
-
-// ---------- semáforo: el estado del sistema en una línea (solo con datos reales) ----------
-const AJENOS_RESUELTOS_HASTA = '2026-10-29';
-function dibujarSemaforo() {
-  const avisos = [];
-  for (const e of VIVO?.errores || []) avisos.push(e);
-  const ultima = [...FOTO.ejecuciones].sort(porFecha).at(-1);
-  if (ultima?.resultado === 'fallido') avisos.push(`la última ejecución falló: ${ultima.detalle || ultima.tipo}`);
-  for (const a of FOTO.auditoria?.alertas || []) {
-    // Los posts ajenos de antes del 29-oct ya están resueltos (Harvey se desconectó): no son alarma.
-    const fecha = (a.match(/el (\d{4}-\d{2}-\d{2})/) || [])[1];
-    if (/AJENO/.test(a) && fecha && fecha < AJENOS_RESUELTOS_HASTA) continue;
-    if (/AJENO|falla|falló|vence|Recargar|no cabe|no salió|revisar/i.test(a)) avisos.push(a);
-  }
-  const ok = !avisos.length;
-  $('semaforo').className = `semaforo ${ok ? 'verde' : 'ambar'}`;
-  $('semaforo').replaceChildren(crear('i'), crear('b', {textContent: ok ? 'Todo en orden' : `Revisar (${avisos.length})`}),
-    crear('span', {textContent: ok ? 'publicaciones programadas, datos en vivo y sin fallas' : avisos[0]}));
-  $('semaforo').title = avisos.join('\n');
-}
-
-// ---------- secciones plegables: lo diario abierto, lo técnico plegado (nada se quita) ----------
-const ABIERTAS = ['Centro de operaciones', 'Redes en vivo', 'Calendario', 'Hangar'];
-function armarPlegables() {
-  let guardado = {};
-  try { guardado = JSON.parse(localStorage.getItem('secciones') || '{}'); } catch { /* sin memoria */ }
-  for (const sec of document.querySelectorAll('main .seccion')) {
-    const nombre = [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
-    const bloques = [];
-    for (let n = sec.nextElementSibling; n && !n.classList.contains('seccion'); n = n.nextElementSibling) bloques.push(n);
-    const titulos = bloques.flatMap((b) => [...b.querySelectorAll('h2')].map((h) => h.textContent.replace(/\s*▸+$/, '')));
-    const resumen = crear('button', {type: 'button', className: 'resumen-seccion'});
-    const poner = (abierta) => {
-      bloques.forEach((b) => { b.hidden = !abierta; });
-      sec.classList.toggle('plegada', !abierta);
-      resumen.hidden = abierta;
-      resumen.textContent = `▸ Abrir ${nombre}: ${titulos.join(' · ') || 'detalle'}`;
-      if (abierta) requestAnimationFrame(() => dibujarGraficas());  // las gráficas se miden al abrir
-    };
-    sec.abrir = () => { poner(true); guardado[nombre] = true; try { localStorage.setItem('secciones', JSON.stringify(guardado)); } catch { /* */ } };
-    const alternar = () => { const abrir = sec.classList.contains('plegada'); poner(abrir); guardado[nombre] = abrir; try { localStorage.setItem('secciones', JSON.stringify(guardado)); } catch { /* */ } };
-    sec.addEventListener('click', alternar);
-    resumen.addEventListener('click', () => sec.abrir());
-    sec.after(resumen);
-    poner(guardado[nombre] ?? ABIERTAS.includes(nombre));
-  }
-}
-
 // ---------- navegación y efectos ----------
 function armarNavegacion() {
   // Una pastilla por sección, tomada de la propia página; marca en cuál vas.
@@ -712,9 +446,7 @@ function armarNavegacion() {
   const botones = secciones.map((sec, i) => {
     sec.id ||= `seccion-${i + 1}`;
     const nombre = [...sec.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join('').trim();
-    const boton = crear('a', {href: `#${sec.id}`, textContent: nombre, className: 'pastilla'});
-    boton.addEventListener('click', () => sec.abrir?.());
-    return boton;
+    return crear('a', {href: `#${sec.id}`, textContent: nombre, className: 'pastilla'});
   });
   nav.replaceChildren(...botones);
   const activo = new IntersectionObserver((entradas) => {
