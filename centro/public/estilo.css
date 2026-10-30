@@ -443,3 +443,9 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { .hud-marco .haz, .barra::after, .panel h2::after, .heroe .glitch b, .gran-numero::before { animation: none; } }
 .audiencia { display: grid; gap: 16px; }
 .audiencia h3 { margin: 0 0 6px; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tenue); }
+
+/* Versión esencial (esencial.html): solo lo que sirve para decidir. Los paneles siguen en la página para que nada
+   se rompa; aquí solo se ocultan los repetidos o internos. */
+.esencial .mosaico:has(#m-subs), .esencial .mosaico:has(#m-calidad), .esencial .mosaico:has(#m-lecciones),
+.esencial .panel:has(#g-saldo), .esencial .panel:has(#g-gasto), .esencial .panel:has(#g-calidad), .esencial .panel:has(#g-calor),
+.esencial .panel:has(#lecciones), .esencial .panel:has(#t-plan), .esencial .panel:has(#t-bitacora) { display: none !important; }
