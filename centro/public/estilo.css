@@ -441,3 +441,5 @@ html { scroll-behavior: smooth; }
 .gran-numero .valor { background: linear-gradient(180deg, #ffffff, #9ff0ff 55%, #49d6ec); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
 @media (prefers-reduced-motion: reduce) { .hud-marco .haz, .barra::after, .panel h2::after, .heroe .glitch b, .gran-numero::before { animation: none; } }
+.audiencia { display: grid; gap: 16px; }
+.audiencia h3 { margin: 0 0 6px; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tenue); }

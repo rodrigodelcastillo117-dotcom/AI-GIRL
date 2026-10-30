@@ -185,10 +185,12 @@ async function seguidores(estado) {
     const corto = {instagram: 'ig', tiktok: 'tt'}[red];
     if (!corto) return;
     try {
-      const r = await pedir(`${PUBLER}/analytics/${id}/chart_data?chart_ids[]=followers&from=${dia(desde)}&to=${dia(hoy)}`, {headers: cabeceras}, 'Publer', 10_000);
+      const extra = corto === 'ig' ? '&chart_ids[]=countries&chart_ids[]=ages' : '';  // audiencia: solo Instagram la da
+      const r = await pedir(`${PUBLER}/analytics/${id}/chart_data?chart_ids[]=followers${extra}&from=${dia(desde)}&to=${dia(hoy)}`, {headers: cabeceras}, 'Publer', 10_000);
       const serie = r.current?.followers || [];
       const ultimo = serie.at(-1)?.last_value;
       if (ultimo != null) datos[corto] = {seguidores: ultimo, antes: serie.length > 1 ? serie[0].last_value : null};
+      if (corto === 'ig') datos.audiencia = {paises: r.current?.countries ?? null, edades: r.current?.ages?.data ?? r.current?.ages ?? null};
     } catch (e) {
       console.log(`seguidores ${red} falló: ${e.message}`);
     }

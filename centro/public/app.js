@@ -215,10 +215,14 @@ function dibujarTodo() {
   contar($('vistas-totales'), r.vistas);
   const sigue = proxima();
   $('mision-que').textContent = sigue?.que || '—';
+  $('minimo-calidad').textContent = pct(estado.similitud_minima);
   $('mision-cuando').textContent = sigue ? mx(sigue.utc, {weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '—';
+  contar($('m-subs'), VIVO?.canal?.suscriptores);
   contar($('m-likes'), r.likes);
+  $('m-calidad').textContent = pct(r.calidad);
   $('m-cola').textContent = fmt(r.cola);
   $('m-fallos').textContent = fmt(r.fallos);
+  $('m-lecciones').textContent = fmt(r.lecciones);
   $('a-usados').textContent = fmt(r.usados);
   $('a-costo').textContent = fmt(r.costo);
   $('a-dias').textContent = r.alcanzan == null ? '—' : fmt(r.alcanzan * 2);
@@ -239,6 +243,7 @@ function dibujarTodo() {
   dibujarMetas();
   dibujarRadar();
   dibujarDespegues();
+  dibujarAudiencia();
   dibujarHorarios(FOTO.auditoria || {}, estado);
   dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
@@ -420,8 +425,7 @@ function dibujarListas(aprendizajes) {
   $('mejoras').replaceChildren(...mejoras().map(([tipo, texto]) => elemento(tipo, etiquetas[tipo], texto)));
   const tipos = {tecnico: 'Técnica', contenido: 'Contenido', publicacion: 'Publicar'};
   const recientes = [...aprendizajes].sort((a, b) => (a.fecha_utc < b.fecha_utc ? 1 : -1));
-  $('lecciones').replaceChildren(...recientes.slice(0, 6).map((a) => elemento(a.tipo, tipos[a.tipo] || a.tipo, a.regla, `${a.origen}: ${a.aprendizaje}`)),
-    ...(recientes.length > 6 ? [crear('li', {className: 'mas', textContent: `+${recientes.length - 6} lecciones más guardadas en el sistema`})] : []));
+  $('lecciones').replaceChildren(...recientes.map((a) => elemento(a.tipo, tipos[a.tipo] || a.tipo, a.regla, `${a.origen}: ${a.aprendizaje}`)));
 }
 
 const celda = (texto, clase = '') => crear('td', {className: clase, textContent: texto ?? ''});
@@ -540,6 +544,33 @@ function dibujarRadar() {
   $('radar').replaceChildren(svg);
 }
 
+function dibujarAudiencia() {
+  // Solo lo que manda Instagram; si no manda nada, se dice por qué (nunca se rellena).
+  const a = VIVO?.seguidores?.audiencia;
+  const caja = $('audiencia');
+  const filas = (lista) => lista.map(([nombre, valor]) => ({nombre: String(nombre), valor: Number(valor) || 0})).filter((f) => f.valor > 0).sort((x, y) => y.valor - x.valor).slice(0, 8);
+  const paises = filas(Array.isArray(a?.paises) ? a.paises.map((p) => [p.country || p.name || p.label || p.key, p.value ?? p.count ?? p.percentage]) : Object.entries(a?.paises || {}));
+  const edades = filas(Object.entries(Array.isArray(a?.edades) ? {} : a?.edades || {}));
+  if (!paises.length && !edades.length) {
+    const ig = VIVO?.seguidores?.ig?.seguidores;
+    caja.replaceChildren(crear('p', {className: 'vacio', textContent: a === undefined || !VIVO
+      ? 'Conectando con Publer…'
+      : `Instagram todavía no manda países ni edades: los da a partir de 100 seguidores${ig != null ? ` (hoy ${fmt(ig)})` : ''}. Aparecen aquí solos cuando lleguen.`}));
+    return;
+  }
+  const bloque = (titulo, lista) => {
+    const tope = Math.max(...lista.map((f) => f.valor));
+    return crear('div', {className: 'atributo'}, crear('h3', {textContent: titulo}), ...lista.map((f) => {
+      const barra = crear('div', {className: 'barra-ind'});
+      const relleno = crear('i');
+      relleno.style.width = `${(f.valor / tope) * 100}%`;
+      barra.append(relleno);
+      return crear('div', {className: 'fila'}, crear('span', {textContent: f.nombre}), barra, crear('em', {textContent: fmt(f.valor)}));
+    }));
+  };
+  caja.replaceChildren(...(paises.length ? [bloque('Países', paises)] : []), ...(edades.length ? [bloque('Edades', edades)] : []));
+}
+
 function siguientePorRed(clave) {
   let mejor = null;
   for (const p of todo()) {
@@ -636,10 +667,12 @@ function dibujarGraficas() {
   const ej = [...FOTO.ejecuciones].sort(porFecha).map((e, i) => ({...e, n: e.video_id ? `v${e.video_id}` : `#${i + 1}`}));
   saldo($('g-saldo'), ej, r);
   barras($('g-gasto'), ej.map((e) => ({k: e.n, v: Number(e.creditos_usados) || 0})), {color: ORO});
+  barras($('g-calidad'), FOTO.videos.filter((v) => Number(v.qa_similitud) > 0).map((v) => ({k: `v${v.id}`, v: Number(v.qa_similitud)})), {color: CIAN, formato: pct, linea: FOTO.estado.similitud_minima});
   const medidos = todo().filter(medido);
   $('vacio-vistas').hidden = medidos.length > 0;
   apiladas($('g-vistas'), medidos);
-  for (const [campo, id, vacio, color, nombres] of [['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES]]) {
+  calor($('g-calor'), FOTO.mejores_horas);
+  for (const [campo, id, vacio, color, nombres] of [['hora_plan', 'g-hora', 'vacio-hora', CIAN, {}], ['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES], ['dia', 'g-dia', 'vacio-dia', CIAN, {}]]) {
     let filas = promedioPor(campo);
     if (campo === 'dia') filas.sort((a, b) => DIAS.indexOf(a.grupo) - DIAS.indexOf(b.grupo));
     if (campo === 'hora_plan' && filas.length < 2) filas = [];
