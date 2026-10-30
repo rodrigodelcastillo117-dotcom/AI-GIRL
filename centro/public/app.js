@@ -612,7 +612,7 @@ function dibujarHorarios(a, estado) {
   $('horarios-red').replaceChildren(...['ig', 'tt', 'yt'].map((r) => {
     const info = datos[r] || {franjas: {}, dias: {}};
     const conteo = (d.conteo_horas || {})[r] || {};
-    const franjas = estado.prueba_horas?.franjas || Object.keys(conteo);
+    const franjas = estado.prueba_horas?.franjas_por_red?.[r] || estado.prueba_horas?.franjas || Object.keys(conteo);
     const filas = franjas.map((f) => {
       const x = (info.franjas || {})[f];
       return crear('tr', {className: info.ganadora === f ? 'gana' : ''}, celda(f), celda(`${conteo[f] ?? 0}/${minimo}`, 'n'), celda(x ? `${x.indice.toFixed(2)} (${x.n})` : '—', 'n'));

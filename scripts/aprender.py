@@ -397,6 +397,12 @@ CORTAS = ('ig', 'tt', 'yt')
 DIAS_SEMANA = ('lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo')
 
 
+def franjas_de(red, config):
+    """Horarios a probar en una red (config.json → prueba_horas.franjas_por_red; si no, los comunes)."""
+    prueba = config.get('prueba_horas') or {}
+    return (prueba.get('franjas_por_red') or {}).get(red) or prueba.get('franjas') or [config.get('hora_por_defecto', '18:45')]
+
+
 def publicaciones(plan, carruseles):
     """Cada video o carrusel programado o publicado, con su hora (México) en cada red."""
     for x in plan['videos'] + carruseles:
@@ -411,18 +417,18 @@ def horarios(plan, carruseles, config, fecha, ahora):
     min_por_franja en cada una (y empieza en otra franja, así el mismo día salen a horas distintas);
     con ganadora, 4 de cada 5 publicaciones van a esa hora y 1 sigue probando."""
     prueba = config.get('prueba_horas') or {}
-    franjas = prueba.get('franjas') or [config.get('hora_por_defecto', '18:45')]
     minimo_f = prueba.get('min_por_franja', 4)
     ganadoras = prueba.get('ganadoras') or {}
-    conteo = {r: {f: 0 for f in franjas} for r in CORTAS}
+    conteo = {r: {f: 0 for f in franjas_de(r, config)} for r in CORTAS}
     for _, horas in publicaciones(plan, carruseles):
         for r, t in horas.items():
             if r in conteo and t.strftime('%H:%M') in conteo[r]:
                 conteo[r][t.strftime('%H:%M')] += 1
     a_hora = lambda f: datetime.datetime.combine(fecha, datetime.time.fromisoformat(f), tzinfo=CDMX)
-    libres = [f for f in franjas if a_hora(f) > ahora + datetime.timedelta(minutes=20)] or franjas[-1:]
     elegidas, cuando = {}, {}
     for i, r in enumerate(CORTAS):
+        franjas = franjas_de(r, config)
+        libres = [f for f in franjas if a_hora(f) > ahora + datetime.timedelta(minutes=20)] or franjas[-1:]
         if ganadoras.get(r) in libres and sum(conteo[r].values()) % 5:
             f = ganadoras[r]
         else:
@@ -430,7 +436,7 @@ def horarios(plan, carruseles, config, fecha, ahora):
         elegidas[r] = f
         cuando[r] = a_hora(f).astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     estado = ' · '.join(f"{r}: {'fija ' + ganadoras[r] if ganadoras.get(r) else 'en prueba'} ("
-                        + ', '.join(f'{f} {conteo[r][f]}/{minimo_f}' for f in franjas) + ')' for r in CORTAS)
+                        + ', '.join(f'{f} {conteo[r][f]}/{minimo_f}' for f in franjas_de(r, config)) + ')' for r in CORTAS)
     return elegidas, cuando, conteo, estado
 
 
@@ -465,7 +471,7 @@ def horas_por_red(plan, carruseles, historial, config):
         salida[r] = {k: {valor: {'n': len(l), 'indice': round(statistics.mean(l), 2)} for valor, l in g.items()}
                      for k, g in grupos.items()}
         orden = sorted(salida[r]['franjas'].items(), key=lambda kv: -kv[1]['indice'])
-        completas = all(salida[r]['franjas'].get(f, {}).get('n', 0) >= minimo_f for f in prueba.get('franjas', []))
+        completas = all(salida[r]['franjas'].get(f, {}).get('n', 0) >= minimo_f for f in franjas_de(r, config))
         if completas and len(orden) > 1 and orden[0][1]['indice'] >= 1.2 * max(orden[1][1]['indice'], 0.01):
             prueba.setdefault('ganadoras', {})[r] = orden[0][0]
             config['prueba_horas'] = prueba

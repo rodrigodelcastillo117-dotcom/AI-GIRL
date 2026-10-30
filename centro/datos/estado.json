@@ -15,7 +15,7 @@
     "que": "Sale el carrusel c03 · reglas de los grandes (Instagram 12:30 · TikTok 15:00 · YouTube 21:00)"
    }
   ],
-  "generado_utc": "2026-10-30T16:58:04Z",
+  "generado_utc": "2026-10-30T17:03:50Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -33,7 +33,31 @@
    ],
    "min_por_franja": 4,
    "ganadoras": {},
-   "nota": "Una rotación por red (ig, tt, yt); cada red fija su ganadora y sigue probando 1 de cada 5."
+   "nota": "Una rotación por red con sus propias franjas; cada red fija su ganadora (4 por franja, 20% arriba de la segunda) y sigue probando 1 de cada 5.",
+   "franjas_por_red": {
+    "ig": [
+     "08:00",
+     "12:00",
+     "15:00",
+     "18:00",
+     "20:00"
+    ],
+    "tt": [
+     "09:00",
+     "11:00",
+     "13:00",
+     "17:00",
+     "20:00"
+    ],
+    "yt": [
+     "10:00",
+     "12:00",
+     "14:00",
+     "17:00",
+     "20:00"
+    ]
+   },
+   "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos."
   },
   "productos_hotmart": {
    "8834813": "El Tablero de la CEO"
