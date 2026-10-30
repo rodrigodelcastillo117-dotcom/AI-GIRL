@@ -194,6 +194,13 @@ python scripts/subtitular.py video.mp4 tiempos.json videos/video-<id>-SUBTITULAD
 ```
 Revisar 3 cuadros del video subtitulado: texto legible y sin tapar la cara.
 
+Título fijo arriba (quien desliza sin sonido sabe de qué trata desde el segundo 0):
+```
+python scripts/titulo_pantalla.py videos/video-<id>-SUBTITULADO.mp4 "$(python -c "import json;print([v for v in json.load(open('contenido/plan.json'))['videos'] if v['id']=='<id>'][0]['seo']['titulo'])")" /tmp/titulo.mp4
+cp /tmp/titulo.mp4 videos/video-<id>-SUBTITULADO.mp4
+```
+Revisar un cuadro: el título va en la franja de arriba (techo, cielo o pared) y no tapa la cara.
+
 ## 7. Publicar
 
 1. `python scripts/seo.py <id> /tmp/seo-<id>` (si falla, corrige el bloque `seo` del video y

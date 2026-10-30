@@ -130,9 +130,10 @@ def textos(video, plan, config):
                '📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
                '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
     # Instagram y TikTok buscan por las palabras del pie: el párrafo va completo en los dos.
-    instagram = '\n\n'.join(x for x in [post, parrafo, llamado, ' '.join(hashtags_para('instagram', seo, config)), cierre] if x)[:2200]
+    mandar = config.get('invitacion_mandar', '📩 Mándaselo a alguien que lo necesite.')
+    instagram = '\n\n'.join(x for x in [post, parrafo, mandar, llamado, ' '.join(hashtags_para('instagram', seo, config)), cierre] if x)[:2200]
     tiktok = '\n\n'.join(x for x in [
-        post, parrafo, ('🔎 ' + ' '.join(preguntas)) if preguntas else '', llamado,
+        post, parrafo, ('🔎 ' + ' '.join(preguntas)) if preguntas else '', mandar, llamado,
         ' '.join(hashtags_para('tiktok', seo, config)), cierre,
     ] if x)[:4000]
     tags = etiquetas(seo, video['pilar'], config)

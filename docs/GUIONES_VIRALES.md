@@ -27,6 +27,12 @@ con datos de Victoria.
 10. **Tres ganchos por guion**: al escribir, propone 3 primeras frases (`ganchos_alternativos` en el
     plan) y usa la más específica y sorprendente. Las otras dos quedan para probarlas después.
 
+11. **Que se mande**: lo que más reparte un reel a gente que no te sigue es que lo manden por
+    mensaje. Cada guion tiene que ser algo que alguien le mandaría a su pareja, a su amigo o a su
+    grupo de WhatsApp: útil para México, concreto y con una cifra o una regla que sirve hoy
+    (aguinaldo, tarjeta, sueldo, ahorro, negocio). Las frases célebres solas se mandan poco: úsalas
+    solo si la idea se aplica hoy con un ejemplo en pesos.
+
 ## Qué decide el laboratorio
 
 El tipo de gancho (cifra, contradicción, error, nombre, regla, dato, cita), el tema, el fondo, la
