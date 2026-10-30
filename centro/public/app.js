@@ -201,8 +201,9 @@ function dibujarTodo() {
   $('l-listos').textContent = fmt(r.listos);
   $('l-alcanzan').textContent = fmt(r.alcanzan);
   contar($('vistas-totales'), r.vistas);
-  $('mision-que').textContent = estado.proxima_que || '—';
-  $('mision-cuando').textContent = estado.proxima_ejecucion_utc ? mx(estado.proxima_ejecucion_utc, {weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '—';
+  const sigue = proxima();
+  $('mision-que').textContent = sigue?.que || '—';
+  $('mision-cuando').textContent = sigue ? mx(sigue.utc, {weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'}) : '—';
   $('minimo-calidad').textContent = pct(estado.similitud_minima);
   contar($('m-subs'), VIVO?.canal?.suscriptores);
   contar($('m-likes'), r.likes);
@@ -245,12 +246,19 @@ function contar(el, destino) {
   requestAnimationFrame(paso);
 }
 
+// Siguiente salida: la primera de la foto que aún no pasa (si ya salió, la que sigue).
+function proxima() {
+  const e = FOTO.estado;
+  const lista = e.proximas?.length ? e.proximas : (e.proxima_ejecucion_utc ? [{utc: e.proxima_ejecucion_utc, que: e.proxima_que}] : []);
+  return lista.find((x) => new Date(x.utc).getTime() > Date.now()) || lista.at(-1) || null;
+}
+
 function relojes() {
   if (!FOTO) return;
   $('reloj').textContent = `CDMX ${new Date().toLocaleTimeString('es-MX', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit', second: '2-digit'})}`;
   const segs = VIVO?.actualizado ? Math.max(0, Math.round((Date.now() - new Date(VIVO.actualizado)) / 1000)) : null;
   $('hace').textContent = segs == null ? '—' : segs < 60 ? `hace ${segs} s` : `hace ${Math.round(segs / 60)} min`;
-  const objetivo = FOTO.estado.proxima_ejecucion_utc ? new Date(FOTO.estado.proxima_ejecucion_utc).getTime() : null;
+  const objetivo = proxima() ? new Date(proxima().utc).getTime() : null;
   const cuenta = $('cuenta');
   if (!objetivo) { cuenta.textContent = '—'; return; }
   let s = Math.max(0, Math.floor((objetivo - Date.now()) / 1000));

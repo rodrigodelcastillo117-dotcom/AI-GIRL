@@ -183,6 +183,11 @@ def main():
 
     ahora = datetime.datetime.now(datetime.timezone.utc)
     proxima, proxima_que = siguiente_video(plan, config, auditoria, ahora)
+    # El que sigue después: el centro lo usa cuando el primero ya salió y la foto aún no se rehace
+    # (la foto se regenera en la ejecución diaria; sin esto el contador se quedaba en 00:00:00).
+    proximas = [(proxima, proxima_que)]
+    if proxima:
+        proximas.append(siguiente_video(plan, config, auditoria, proxima + datetime.timedelta(minutes=1)))
     perfil = os.path.join(RAIZ, 'perfil', 'foto-perfil-1080.jpg')
     foto = ''
     if os.path.exists(perfil):
@@ -194,6 +199,7 @@ def main():
         'frecuencia': f"Un video cada {config.get('dias_entre_videos', 2)} días · auditoría diaria {config.get('hora_auditoria', '06:37')}",
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
+        'proximas': [{'utc': c.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'que': q} for c, q in proximas if c],
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'creditos_plan_mes': 12000,
         'similitud_minima': config.get('similitud_minima_audio'),

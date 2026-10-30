@@ -2,9 +2,19 @@
  {
   "canal": "@victoriatheceo",
   "frecuencia": "Un video cada 2 días · auditoría diaria 06:37",
-  "proxima_ejecucion_utc": "2026-10-29T23:47:00Z",
-  "proxima_que": "Sale el video 01",
-  "generado_utc": "2026-10-29T12:43:47Z",
+  "proxima_ejecucion_utc": "2026-11-01T00:45:00Z",
+  "proxima_que": "Sale el video 02 · franja 18:45 de la prueba de horarios",
+  "proximas": [
+   {
+    "utc": "2026-11-01T00:45:00Z",
+    "que": "Sale el video 02 · franja 18:45 de la prueba de horarios"
+   },
+   {
+    "utc": "2026-11-02T00:45:00Z",
+    "que": "Sale el video 02 · franja 18:45 de la prueba de horarios"
+   }
+  ],
+  "generado_utc": "2026-10-30T02:46:40Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
