@@ -241,7 +241,6 @@ function dibujarTodo() {
   dibujarTablas(videos, ejecuciones);
   dibujarCalendario(FOTO.calendario);
   dibujarMetas();
-  dibujarRadar();
   dibujarDespegues();
   dibujarAudiencia();
   dibujarHorarios(FOTO.auditoria || {}, estado);
@@ -503,74 +502,6 @@ function dibujarMetas() {
   }));
 }
 
-function dibujarRadar() {
-  const C = 150, R = 132, DIAS_RADAR = 14;
-  const sector = {yt: -90, tt: 30, ig: 150};  // 120° por red
-  const svg = svgEl('svg', {viewBox: '0 0 300 300', role: 'img', 'aria-label': 'Radar de publicaciones'});
-  const defs = svgEl('defs', {}, svgEl('radialGradient', {id: 'barrido-grad', cx: 0, cy: 0, r: 1, gradientUnits: 'userSpaceOnUse', gradientTransform: `translate(${C} ${C}) scale(${R})`},
-    svgEl('stop', {offset: '0', 'stop-color': '#49d6ec', 'stop-opacity': '.0'}), svgEl('stop', {offset: '1', 'stop-color': '#49d6ec', 'stop-opacity': '.35'})));
-  svg.append(defs);
-  for (const r of [R / 3, (2 * R) / 3, R]) svg.append(svgEl('circle', {cx: C, cy: C, r, class: 'anillo'}));
-  for (const red of REDES) {
-    const a = ((sector[red.clave] - 60) * Math.PI) / 180;
-    svg.append(svgEl('line', {x1: C, y1: C, x2: C + R * Math.cos(a), y2: C + R * Math.sin(a), class: 'eje'}));
-    const m = ((sector[red.clave]) * Math.PI) / 180;
-    svg.append(svgEl('text', {x: C + (R + 12) * Math.cos(m), y: C + (R + 12) * Math.sin(m) + 3, 'text-anchor': 'middle', fill: red.color}, red.corto));
-  }
-  const fin = (-25 * Math.PI) / 180;
-  svg.append(svgEl('g', {class: 'barrido'}, svgEl('path', {d: `M${C} ${C} L${C + R} ${C} A${R} ${R} 0 0 0 ${C + R * Math.cos(fin)} ${C + R * Math.sin(fin)} Z`, fill: 'url(#barrido-grad)'})));
-  const ahora = Date.now();
-  const puntos = [];
-  for (const p of todo().filter(salio)) {
-    for (const red of REDES) {
-      const m = medidas(p)[red.clave];
-      if (!m || m.pendiente) continue;
-      const t = new Date((p.publica_utc_por_red || {})[red.clave] || p.publica_utc).getTime();
-      const dias = (ahora - t) / 864e5;
-      if (!(dias >= 0 && dias <= DIAS_RADAR)) continue;
-      puntos.push({p, red, v: Number(m.v) || 0, dias});
-    }
-  }
-  const tope = Math.max(1, ...puntos.map((x) => x.v));
-  for (const {p, red, v, dias} of puntos) {
-    let semilla = 0;
-    for (const ch of String(p.id)) semilla = (semilla * 31 + ch.charCodeAt(0)) % 997;
-    const ang = ((sector[red.clave] - 50 + (semilla % 100)) * Math.PI) / 180;
-    const dist = 14 + (dias / DIAS_RADAR) * (R - 18);
-    const titulo = svgEl('title', {}, `${String(p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${p.id} · ${red.nombre} · ${fmt(v)} vistas`);
-    svg.append(svgEl('g', {class: 'blip'}, svgEl('circle', {cx: C + dist * Math.cos(ang), cy: C + dist * Math.sin(ang), r: 3 + 9 * Math.sqrt(v / tope), fill: red.color, color: red.color}), titulo));
-  }
-  if (!puntos.length) svg.append(svgEl('text', {x: C, y: C + 4, 'text-anchor': 'middle', class: 'vacio-radar'}, 'esperando la primera medición'));
-  $('radar').replaceChildren(svg);
-}
-
-function dibujarAudiencia() {
-  // Solo lo que manda Instagram; si no manda nada, se dice por qué (nunca se rellena).
-  const a = VIVO?.seguidores?.audiencia;
-  const caja = $('audiencia');
-  const filas = (lista) => lista.map(([nombre, valor]) => ({nombre: String(nombre), valor: Number(valor) || 0})).filter((f) => f.valor > 0).sort((x, y) => y.valor - x.valor).slice(0, 8);
-  const paises = filas(Array.isArray(a?.paises) ? a.paises.map((p) => [p.country || p.name || p.label || p.key, p.value ?? p.count ?? p.percentage]) : Object.entries(a?.paises || {}));
-  const edades = filas(Object.entries(Array.isArray(a?.edades) ? {} : a?.edades || {}));
-  if (!paises.length && !edades.length) {
-    const ig = VIVO?.seguidores?.ig?.seguidores;
-    caja.replaceChildren(crear('p', {className: 'vacio', textContent: a === undefined || !VIVO
-      ? 'Conectando con Publer…'
-      : `Instagram todavía no manda países ni edades: los da a partir de 100 seguidores${ig != null ? ` (hoy ${fmt(ig)})` : ''}. Aparecen aquí solos cuando lleguen.`}));
-    return;
-  }
-  const bloque = (titulo, lista) => {
-    const tope = Math.max(...lista.map((f) => f.valor));
-    return crear('div', {className: 'atributo'}, crear('h3', {textContent: titulo}), ...lista.map((f) => {
-      const barra = crear('div', {className: 'barra-ind'});
-      const relleno = crear('i');
-      relleno.style.width = `${(f.valor / tope) * 100}%`;
-      barra.append(relleno);
-      return crear('div', {className: 'fila'}, crear('span', {textContent: f.nombre}), barra, crear('em', {textContent: fmt(f.valor)}));
-    }));
-  };
-  caja.replaceChildren(...(paises.length ? [bloque('Países', paises)] : []), ...(edades.length ? [bloque('Edades', edades)] : []));
-}
-
 function siguientePorRed(clave) {
   let mejor = null;
   for (const p of todo()) {
@@ -672,7 +603,7 @@ function dibujarGraficas() {
   $('vacio-vistas').hidden = medidos.length > 0;
   apiladas($('g-vistas'), medidos);
   calor($('g-calor'), FOTO.mejores_horas);
-  for (const [campo, id, vacio, color, nombres] of [['hora_plan', 'g-hora', 'vacio-hora', CIAN, {}], ['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES], ['dia', 'g-dia', 'vacio-dia', CIAN, {}]]) {
+  for (const [campo, id, vacio, color, nombres] of [['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES], ['dia', 'g-dia', 'vacio-dia', CIAN, {}]]) {
     let filas = promedioPor(campo);
     if (campo === 'dia') filas.sort((a, b) => DIAS.indexOf(a.grupo) - DIAS.indexOf(b.grupo));
     if (campo === 'hora_plan' && filas.length < 2) filas = [];
