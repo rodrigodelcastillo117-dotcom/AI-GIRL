@@ -2,10 +2,9 @@
 
 Uso: python reprogramar.py <id_video> <hora_utc>     ej. python reprogramar.py 01 2026-10-29T23:45:00Z
 
-- Publer no deja cambiar la hora de un post programado (su PUT ignora scheduled_at) y su borrado
-  (DELETE /posts) borra TODOS los posts no publicados del workspace si no reconoce los ids, incluidas
-  otras marcas: NUNCA se usa. Los posts de Publer se mueven a mano en su calendario; este script dice
-  cuáles y luego verifica.
+- Publer: la hora se cambia con PUT /posts/{id}/reschedule (publer.reprogramar; el PUT normal solo cambia
+  texto y título). Su borrado (DELETE /posts) borra TODOS los posts no publicados del workspace si no
+  reconoce los ids, incluidas otras marcas: NUNCA se usa.
 - YouTube: se actualizan hora, título, descripción y etiquetas del mismo video (sigue privado
   hasta la hora nueva) y se verifica.
 - Actualiza publica_utc del video en contenido/plan.json.
@@ -51,7 +50,7 @@ def main():
     for nombre, texto in textos.items():
         open(os.path.join(carpeta, f'{nombre}.txt'), 'w').write(texto)
 
-    # Publer: solo revisar; moverlos es a mano (ver arriba)
+    # Publer: se mueven con /reschedule y se comprueba la hora que quedó
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
     import datetime
@@ -60,7 +59,12 @@ def main():
     for p in posts_programados(ws, seo_linea(video['texto_post'])):
         hora = datetime.datetime.fromisoformat(p['scheduled_at'].replace('Z', '+00:00'))
         if abs((hora - objetivo).total_seconds()) > 60:
-            pendientes_a_mano.append(f"{cuentas.get(p['account_id'], p['account_id'])} (ahora {p['scheduled_at']})")
+            quedo = publer.reprogramar(ws, p['id'], cuando)
+            nueva = datetime.datetime.fromisoformat(str(quedo).replace('Z', '+00:00')) if quedo else hora
+            if abs((nueva - objetivo).total_seconds()) > 60:
+                pendientes_a_mano.append(f"{cuentas.get(p['account_id'], p['account_id'])} (quedó en {quedo})")
+            else:
+                print(f"Publer: {cuentas.get(p['account_id'])} movido a {quedo}")
         else:
             print(f"Publer: {cuentas.get(p['account_id'])} ya está a la hora nueva")
 

@@ -119,9 +119,10 @@ Si es capítulo de una serie, `formato: "serie"` y `serie: {"nombre", "numero"}`
 la mete un video sí y uno no, en orden.
 Después corre `python scripts/seo.py revisar`: tiene que salir sin errores.
 
-Para mover un video ya programado: `python scripts/reprogramar.py <id> <hora_utc>` (mueve YouTube
-y dice qué posts de Publer hay que mover a mano: Publer no deja cambiar la hora por API y su
-borrado masivo es peligroso, nunca se usa).
+Para mover un video ya programado: `python scripts/reprogramar.py <id> <hora_utc>` (mueve YouTube y
+Publer, este con `PUT /posts/{id}/reschedule` vía `publer.reprogramar`, y comprueba la hora que quedó).
+Un carrusel se mueve igual con `publer.reprogramar(ws, post_id, cuando)` por red. El borrado de Publer
+(DELETE /posts) es peligroso y nunca se usa.
 
 - **Cada dato se comprueba antes de escribirlo** (regla 7): busca la fuente con WebSearch y no
   pongas cifras, fechas ni frases atribuidas que no encuentres. El título no promete más de lo que

@@ -98,15 +98,11 @@
    "youtube": "https://youtube.com/shorts/OgSZUknXNHc",
    "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
    "playlist": true,
-   "publica_utc": "2026-11-02T00:45:00Z",
+   "publica_utc": "2026-11-01T23:00:00Z",
    "publica_utc_por_red": {
-    "ig": "2026-11-02T00:45:00Z",
-    "tt": "2026-11-02T00:45:00Z",
-    "yt": "2026-11-01T23:00:00Z"
-   },
-   "publer_por_mover": {
     "ig": "2026-11-01T18:00:00Z",
-    "tt": "2026-11-01T15:00:00Z"
+    "tt": "2026-11-01T15:00:00Z",
+    "yt": "2026-11-01T23:00:00Z"
    }
   },
   {
@@ -188,15 +184,11 @@
    "youtube": "https://youtube.com/shorts/IPwU8EGGwZU",
    "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API.",
    "playlist": true,
-   "publica_utc": "2026-10-31T00:45:00Z",
+   "publica_utc": "2026-10-31T02:00:00Z",
    "publica_utc_por_red": {
-    "ig": "2026-10-31T00:45:00Z",
-    "tt": "2026-10-31T00:45:00Z",
-    "yt": "2026-10-30T18:00:00Z"
-   },
-   "publer_por_mover": {
     "ig": "2026-10-31T00:00:00Z",
-    "tt": "2026-10-31T02:00:00Z"
+    "tt": "2026-10-31T02:00:00Z",
+    "yt": "2026-10-30T18:00:00Z"
    }
   },
   {
@@ -274,18 +266,15 @@
     ]
    },
    "publica_utc_por_red": {
-    "ig": "2026-10-30T18:30:00Z",
-    "tt": "2026-10-30T21:00:00Z",
+    "ig": "2026-10-30T18:31:52Z",
+    "tt": "2026-10-30T23:00:00Z",
     "yt": "2026-10-30T20:00:00Z"
    },
-   "publica_utc": "2026-10-30T21:00:00Z",
+   "publica_utc": "2026-10-30T23:00:00Z",
    "youtube": "https://youtube.com/shorts/CQAdpk1SqR4",
    "playlist": true,
    "nota_portada": "Foto con GPT Image 2 (OpenArt): Nano Banana 2 de Google dio 429 cuatro veces el 30-oct.",
-   "publer_por_mover": {
-    "ig": "2026-10-31T02:00:00Z",
-    "tt": "2026-10-30T23:00:00Z"
-   }
+   "nota_ig": "Instagram salió a las 12:31 (antes de poder moverlo a las 20:00); cuenta con su hora real."
   },
   {
    "id": "c04",

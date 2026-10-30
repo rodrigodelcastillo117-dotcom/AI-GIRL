@@ -140,6 +140,15 @@ def red(cuenta):
     return cuenta['provider']
 
 
+def reprogramar(ws, post_id, cuando):
+    """Cambia la hora de un post programado (PUT /posts/{id}/reschedule, documentado en
+    publer.com/docs/posting/update-posts/unpublished-posts). Solo posts creados con esta clave y que no
+    estén ya en la cola de publicación. Regresa la hora que quedó en Publer (para comprobarla)."""
+    _pedir('PUT', f'/posts/{post_id}/reschedule', ws, cuerpo={'scheduled_at': cuando})
+    r = _pedir('GET', f'/posts/{post_id}', ws)
+    return (r.get('post') or r).get('scheduled_at')
+
+
 def cuando_de(cuando, proveedor):
     """"2026-11-01T00:45:00Z" (la misma hora en todas) o "ig=...,tt=..." (una hora por red: prueba de horarios)."""
     if '=' not in cuando:

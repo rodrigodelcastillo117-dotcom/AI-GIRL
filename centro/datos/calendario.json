@@ -6,8 +6,8 @@
   "que": "Sale el carrusel c02 · habitos dinero",
   "estado": "programado",
   "horas": {
-   "ig": "18:45",
-   "tt": "18:45",
+   "ig": "18:00",
+   "tt": "20:00",
    "yt": "12:00"
   }
  },
@@ -18,8 +18,8 @@
   "que": "Sale el carrusel c03 · reglas de los grandes",
   "estado": "programado",
   "horas": {
-   "ig": "12:30",
-   "tt": "15:00",
+   "ig": "12:31",
+   "tt": "17:00",
    "yt": "14:00"
   }
  },
@@ -38,8 +38,8 @@
   "que": "Sale el carrusel c01 · aguinaldo",
   "estado": "programado",
   "horas": {
-   "ig": "18:45",
-   "tt": "18:45",
+   "ig": "12:00",
+   "tt": "09:00",
    "yt": "17:00"
   }
  },

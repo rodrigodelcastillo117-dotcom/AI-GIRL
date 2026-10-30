@@ -103,5 +103,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Nano Banana 2 (Google, en OpenArt) respondió 429 RESOURCE_EXHAUSTED 4 veces seguidas; no cobró créditos. GPT Image 2 (42 créditos) hizo una portada fiel de Victoria con Capital en el yate.",
   "regla": "Si Nano Banana 2 da 429 dos veces, usar GPT Image 2 image2image con las mismas referencias y revisar que sea Victoria antes de usarla."
+ },
+ {
+  "fecha_utc": "2026-10-30T18:55:00Z",
+  "origen": "Rodrigo y docs de Publer",
+  "tipo": "publicacion",
+  "aprendizaje": "Publer sí permite cambiar la hora por API: PUT /posts/{id}/reschedule con {\"scheduled_at\": \"...\"} (comprobado con 5 posts el 30-oct). El PUT normal solo cambia texto y título.",
+  "regla": "Para mover un post programado usar publer.reprogramar() y comprobar la hora con GET /posts/{id}. Nunca borrar y volver a crear; nunca DELETE /posts."
  }
 ]
