@@ -502,6 +502,33 @@ function dibujarMetas() {
   }));
 }
 
+function dibujarAudiencia() {
+  // Solo lo que manda Instagram; si no manda nada, se dice por qué (nunca se rellena).
+  const a = VIVO?.seguidores?.audiencia;
+  const caja = $('audiencia');
+  const filas = (lista) => lista.map(([nombre, valor]) => ({nombre: String(nombre), valor: Number(valor) || 0})).filter((f) => f.valor > 0).sort((x, y) => y.valor - x.valor).slice(0, 8);
+  const paises = filas(Array.isArray(a?.paises) ? a.paises.map((p) => [p.country || p.name || p.label || p.key, p.value ?? p.count ?? p.percentage]) : Object.entries(a?.paises || {}));
+  const edades = filas(Object.entries(Array.isArray(a?.edades) ? {} : a?.edades || {}));
+  if (!paises.length && !edades.length) {
+    const ig = VIVO?.seguidores?.ig?.seguidores;
+    caja.replaceChildren(crear('p', {className: 'vacio', textContent: a === undefined || !VIVO
+      ? 'Conectando con Publer…'
+      : `Instagram todavía no manda países ni edades: los da a partir de 100 seguidores${ig != null ? ` (hoy ${fmt(ig)})` : ''}. Aparecen aquí solos cuando lleguen.`}));
+    return;
+  }
+  const bloque = (titulo, lista) => {
+    const tope = Math.max(...lista.map((f) => f.valor));
+    return crear('div', {className: 'atributo'}, crear('h3', {textContent: titulo}), ...lista.map((f) => {
+      const barra = crear('div', {className: 'barra-ind'});
+      const relleno = crear('i');
+      relleno.style.width = `${(f.valor / tope) * 100}%`;
+      barra.append(relleno);
+      return crear('div', {className: 'fila'}, crear('span', {textContent: f.nombre}), barra, crear('em', {textContent: fmt(f.valor)}));
+    }));
+  };
+  caja.replaceChildren(...(paises.length ? [bloque('Países', paises)] : []), ...(edades.length ? [bloque('Edades', edades)] : []));
+}
+
 function siguientePorRed(clave) {
   let mejor = null;
   for (const p of todo()) {
