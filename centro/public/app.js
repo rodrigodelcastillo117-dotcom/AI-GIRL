@@ -184,7 +184,7 @@ function mejoras() {
   if (r.alcanzan != null) {
     lista.push(r.alcanzan < 6
       ? ['alerta', `Energía para solo ${r.alcanzan} videos. Recarga OpenArt o baja la frecuencia.`]
-      : ['dato', `Energía para unos ${r.alcanzan} videos más: ${r.alcanzan * 2} días al ritmo de uno cada 2 días.`]);
+      : ['dato', `Energía para unos ${r.alcanzan} videos más: ${r.alcanzan * (FOTO.estado.dias_entre_videos || 2)} días al ritmo actual.`]);
   }
   if (r.cola <= 3) lista.push(['alerta', `Quedan ${r.cola} guiones en cola. Pide a Claude el siguiente plan de videos.`]);
   for (const e of VIVO?.errores || []) lista.push(['alerta', `Sin conexión en vivo con ${e}`]);

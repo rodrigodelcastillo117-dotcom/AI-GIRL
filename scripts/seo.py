@@ -71,6 +71,11 @@ def etiquetas(seo, pilar, config):
     return orden
 
 
+def cada(config):
+    dias = config.get('dias_entre_videos', 2)
+    return 'cada día' if dias == 1 else f'cada {dias} días'
+
+
 def con_ref(enlace, red):
     if not enlace:
         return ''
@@ -115,7 +120,7 @@ def textos(video, plan, config):
         parrafo,
         post,
         ('Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in preguntas)) if preguntas else '',
-        'Soy Victoria: un consejo de negocios, dinero y mente fuerte cada 2 días. Suscríbete para no perderte el siguiente.',
+        f"Soy Victoria: un consejo de negocios, dinero y mente fuerte {cada(config)}. Suscríbete para no perderte el siguiente.",
         ' '.join(hashtags_para('youtube', seo, config)),
         cierre,
     ] if x)[:4900]

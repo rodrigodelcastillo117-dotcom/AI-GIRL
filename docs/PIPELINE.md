@@ -2,7 +2,7 @@
 
 La tarea programada corre **todos los días a las 6:37 a.m.** (hora de México) dentro de la
 conversación de Claude donde se armó el proyecto (ahí están las claves y el permiso de push).
-Todos los días **verifica y audita**; **cada 2 días publica** un video en Instagram, TikTok y
+Todos los días **verifica, audita y publica** un video (desde el 30-oct-2026; antes cada 2 días) en Instagram, TikTok y
 YouTube Shorts, en la franja que toque de la prueba de horarios. Publica directo, sin aprobación
 humana. Regla principal: **si algo no pasa el control de calidad, o si el control no se pudo
 hacer, NO se publica** y se registra (regla 8).

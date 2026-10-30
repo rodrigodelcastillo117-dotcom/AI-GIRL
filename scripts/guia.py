@@ -69,7 +69,7 @@ def main():
     paginas.append(f'''
 <section class="pagina cierre">
   <div class="etiqueta">Sigamos</div>
-  <h2>Una regla nueva cada dos días.</h2>
+  <h2>Una regla nueva cada día.</h2>
   <p>Encuéntrame como <b>@victoriatheceo</b> en Instagram, TikTok y YouTube.</p>
   <p><b>El tablero de la CEO</b>: la plantilla para poner en práctica estas reglas con tus números (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo).</p>
   <p><a class="enlace" href="https://victoriatheceo.vercel.app/?ref=guia#tablero">victoriatheceo.vercel.app</a></p>

@@ -65,7 +65,7 @@ dice "Aquí". Cuando los datos propios contradigan una regla, mandan los datos p
 
 ## Horarios y frecuencia
 29. Publicar los 7 días; el "peor día" cambia de mes a mes y con menos de 15 videos por día es
-    ruido. *Aquí: Rodrigo decidió un video cada 2 días. Nunca se salta un día por "malo": el día
+    ruido. *Aquí: Rodrigo decidió un video diario desde el 30-oct-2026 (antes cada 2 días). Nunca se salta un día por "malo": el día
     solo cuenta con 15 videos o más.*
 30. Una hora fija por canal; al principio medir franjas 3 o 4 semanas y quedarse con la que gane.
     *Aquí: rotación 18:45, 08:00 y 14:00 (config.json → prueba_horas) hasta tener 5 videos por

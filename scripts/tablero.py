@@ -196,7 +196,9 @@ def main():
         foto = 'data:image/jpeg;base64,' + base64.b64encode(jpg).decode()
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
-        'frecuencia': f"Un video cada {config.get('dias_entre_videos', 2)} días · auditoría diaria {config.get('hora_auditoria', '06:37')}",
+        'frecuencia': (f"Un video {'diario' if config.get('dias_entre_videos', 2) == 1 else 'cada %d días' % config.get('dias_entre_videos', 2)}"
+                       f" · auditoría diaria {config.get('hora_auditoria', '06:37')}"),
+        'dias_entre_videos': config.get('dias_entre_videos', 2),
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
         'proximas': [{'utc': c.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'que': q} for c, q in proximas if c],
