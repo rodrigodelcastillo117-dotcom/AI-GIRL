@@ -48,7 +48,9 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
 5. **SEO** como los videos (`docs/SEO.md`): `seo.palabra_clave` al inicio del título y del pie,
    `titulo` de máximo 45 caracteres, `tags_concretas`, 4 `hashtags` del tema (se suman los de marca:
    Instagram queda en 5, TikTok en 7) y 3-4 `preguntas` que la gente escribe.
-6. **Revisión antes de `listo`**: un segundo agente compara cada dato con su fuente y lee las
+6. **El día que sale**, antes de programarlo: dibujarlo y ver la hoja de diapositivas (texto cortado,
+   portada sin Victoria, foto repetida). Si algo falla, se corrige; nunca se publica sin verlo.
+7. **Revisión antes de `listo`**: un segundo agente compara cada dato con su fuente y lee las
    diapositivas dibujadas (texto cortado, faltas, números que no cuadran). Solo entonces `listo`.
 
 ## Música

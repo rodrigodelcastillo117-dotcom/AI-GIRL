@@ -217,6 +217,7 @@ def ajenos(plan):
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
     propias = {primera_linea(v.get('texto_post')) for v in plan['videos'] + plan.get('largos', [])}
+    propias |= {primera_linea(c.get('texto_post')) for c in cargar('carruseles.json', {'carruseles': []})['carruseles']}
     hoy = datetime.date.today()
     filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]

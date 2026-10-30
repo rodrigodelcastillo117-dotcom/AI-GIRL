@@ -3,7 +3,7 @@
  "carruseles": [
   {
    "id": "c01",
-   "estado": "borrador",
+   "estado": "programado",
    "tema": "aguinaldo",
    "ventana": {
     "desde": "2026-11-01",
@@ -93,11 +93,15 @@
    "enlace": {
     "etiqueta": "🧮 Calcula tu aguinaldo gratis",
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
-   }
+   },
+   "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
+   "programado_utc": "2026-11-02T00:45:00Z",
+   "youtube": "https://youtube.com/shorts/OgSZUknXNHc",
+   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API."
   },
   {
    "id": "c02",
-   "estado": "borrador",
+   "estado": "programado",
    "tema": "habitos_dinero",
    "portada": {
     "foto": "assets/fotos/video-02-palco.jpg",
@@ -169,7 +173,244 @@
      "¿Cuánto debe tener mi fondo de emergencia?"
     ]
    },
-   "pilar": "finanzas"
+   "pilar": "finanzas",
+   "aprobado_por": "Rodrigo, 30-oct-2026 (\"DALE A TODO\")",
+   "programado_utc": "2026-10-31T00:45:00Z",
+   "youtube": "https://youtube.com/shorts/IPwU8EGGwZU",
+   "nota_publer": "Quedaron 2 borradores viejos (diseño anterior) en Publer: no salen solos; nunca se borran por API."
+  },
+  {
+   "id": "c03",
+   "estado": "listo",
+   "tema": "reglas_de_los_grandes",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "REGLAS DE DINERO",
+    "titulo": "5 reglas de dinero que repiten los que más saben",
+    "voz": "Cinco reglas de dinero que repiten los que más saben."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Warren Buffett",
+     "texto": "Regla 1: no pierdas dinero. Regla 2: no olvides la regla 1.\n→ Antes de invertir, entiende en qué.\n\nFrase pública de Warren Buffett",
+     "voz": "Warren Buffett: regla uno, no pierdas dinero. Regla dos, no olvides la regla uno."
+    },
+    {
+     "titulo": "Charlie Munger",
+     "texto": "Los primeros 100 mil dólares son los más difíciles. Después, el dinero empieza a trabajar para ti.\n→ Empieza hoy, aunque sea con poco.\n\nFrase pública de Charlie Munger",
+     "voz": "Charlie Munger: los primeros cien mil son los más difíciles. Empieza hoy."
+    },
+    {
+     "titulo": "George S. Clason",
+     "texto": "De cada 10 pesos que ganes, guarda 1 antes de gastar.\n\nEl hombre más rico de Babilonia (1926)",
+     "voz": "George Clason: de cada diez pesos, guarda uno antes de gastar."
+    },
+    {
+     "titulo": "Morgan Housel",
+     "texto": "La riqueza es lo que no ves: el coche que no compraste.\n\nLa psicología del dinero",
+     "voz": "Morgan Housel: la riqueza es lo que no ves. El coche que no compraste."
+    },
+    {
+     "titulo": "Regla del 72",
+     "texto": "72 ÷ tu tasa anual = los años en que se duplica tu dinero.\nAl 8%: 9 años.\n\nLuca Pacioli (1494)",
+     "voz": "Y la regla del setenta y dos: divide setenta y dos entre tu tasa y sabrás en cuántos años se duplica tu dinero."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu regla de dinero?",
+    "texto": "Escríbela en los comentarios.\nGuárdalo y mándaselo a quien lo necesite.",
+    "voz": "¿Cuál es tu regla? Escríbela en los comentarios."
+   },
+   "fuente": "Warren Buffett y Charlie Munger (frases públicas); George S. Clason (1926); Morgan Housel, La psicología del dinero; regla del 72 (Luca Pacioli, 1494)",
+   "titulo_post": "5 reglas de dinero de Buffett, Munger y más",
+   "texto_post": "Reglas de dinero de Warren Buffett, Charlie Munger y tres más que vale la pena memorizar. 💡\nNo perder dinero, empezar hoy, guardar primero, la riqueza que no se ve y la regla del 72.\n\n¿Cuál es tu regla? Te leo en los comentarios.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a alguien que lo necesite.",
+   "seo": {
+    "palabra_clave": "reglas de dinero",
+    "titulo": "Reglas de dinero de Buffett y Munger 💡",
+    "tags_concretas": [
+     "reglas de dinero",
+     "warren buffett",
+     "charlie munger",
+     "regla del 72",
+     "el hombre mas rico de babilonia",
+     "psicologia del dinero",
+     "frases de dinero",
+     "como ahorrar dinero",
+     "educacion financiera",
+     "consejos de inversion"
+    ],
+    "hashtags": [
+     "#warrenbuffett",
+     "#educacionfinanciera",
+     "#dinero",
+     "#ahorro"
+    ],
+    "preguntas": [
+     "¿Cuáles son las reglas de Warren Buffett?",
+     "¿Qué es la regla del 72?",
+     "¿Cuánto debo ahorrar de mi sueldo?"
+    ]
+   }
+  },
+  {
+   "id": "c04",
+   "estado": "listo",
+   "tema": "lecciones_de_negocio",
+   "pilar": "empresas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "NEGOCIOS",
+    "titulo": "Blockbuster pudo comprar Netflix por $50 millones y se rio",
+    "voz": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Cinco lecciones de negocio."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Blockbuster",
+     "texto": "En 2000 le ofrecieron Netflix por 50 millones de dólares y no la compró. En 2010 quebró.\n→ Nunca te rías de lo pequeño.\n\nMarc Randolph, That Will Never Work (2019); Fortune y CNBC",
+     "voz": "Blockbuster quebró diez años después. Nunca te rías de lo pequeño."
+    },
+    {
+     "titulo": "Costco",
+     "texto": "Cerca de la mitad de su utilidad de operación sale de las membresías: clientes que pagan antes de comprar.\n→ Busca ingreso que se repite.\n\nCostco, reporte anual 10-K, año fiscal 2025",
+     "voz": "Costco gana cerca de la mitad con membresías. Busca ingreso que se repite."
+    },
+    {
+     "titulo": "Amazon",
+     "texto": "Jeff Bezos dejó un trabajo seguro con una pregunta: a los 80 años, ¿me arrepentiría de no intentarlo?\n\nJeff Bezos, entrevistas públicas",
+     "voz": "Bezos dejó un trabajo seguro preguntándose si a los ochenta se arrepentiría."
+    },
+    {
+     "titulo": "Tu porqué",
+     "texto": "La gente no compra lo que haces: compra por qué lo haces.\n\nSimon Sinek, Empieza con el porqué (TED, 2009)",
+     "voz": "La gente no compra lo que haces, compra por qué lo haces."
+    },
+    {
+     "titulo": "Ley de Parkinson",
+     "texto": "El trabajo se estira hasta llenar el tiempo que le das.\n→ Dale a tu proyecto la mitad del tiempo.\n\nC. Northcote Parkinson, The Economist (1955)",
+     "voz": "Y el trabajo se estira hasta llenar el tiempo que le das. Dale la mitad."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál aplicas en tu negocio?",
+    "texto": "Cuéntame en los comentarios.\nGuárdalo para cuando lo necesites.",
+    "voz": "¿Cuál aplicas en tu negocio? Guárdalo."
+   },
+   "fuente": "Marc Randolph, That Will Never Work (2019); Fortune y CNBC; Costco Form 10-K FY2025; Jeff Bezos (entrevistas); Simon Sinek (TED 2009); C. Northcote Parkinson, The Economist (1955)",
+   "titulo_post": "5 lecciones de negocio que valen millones",
+   "texto_post": "Lecciones de negocio de Blockbuster, Costco, Amazon y dos ideas que todo emprendedor debería saber. 💼\nBlockbuster pudo comprar Netflix por 50 millones de dólares en 2000 y en 2010 quebró.\n\n¿Cuál aplicas en tu negocio? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a alguien que está emprendiendo.",
+   "seo": {
+    "palabra_clave": "lecciones de negocio",
+    "titulo": "Lecciones de negocio que valen millones 💼",
+    "tags_concretas": [
+     "lecciones de negocio",
+     "blockbuster netflix",
+     "costco membresias",
+     "jeff bezos",
+     "simon sinek",
+     "ley de parkinson",
+     "consejos para emprendedores",
+     "historias de empresas",
+     "como emprender",
+     "ingresos recurrentes"
+    ],
+    "hashtags": [
+     "#emprendimiento",
+     "#negocios",
+     "#netflix",
+     "#emprendedores"
+    ],
+    "preguntas": [
+     "¿Por qué quebró Blockbuster?",
+     "¿Cómo gana dinero Costco?",
+     "¿Qué es la ley de Parkinson?"
+    ]
+   }
+  },
+  {
+   "id": "c05",
+   "estado": "listo",
+   "tema": "que_hacer_aguinaldo",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-31"
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO",
+    "titulo": "Si no haces esto, tu aguinaldo se acaba en enero",
+    "voz": "Si no haces esto, tu aguinaldo se acaba en enero."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Primero, tu tarjeta",
+     "texto": "Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.\n\nCONDUSEF",
+     "voz": "Primero, abona a tu tarjeta: cada peso deja de cobrarte intereses."
+    },
+    {
+     "titulo": "La deuda más cara, antes",
+     "texto": "Si tienes varias, paga primero la de mayor tasa de interés (casi siempre, las tarjetas).\n\nCONDUSEF",
+     "voz": "Si tienes varias deudas, paga primero la de tasa más alta."
+    },
+    {
+     "titulo": "Divídelo",
+     "texto": "Mi regla: 50% a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\n\nBasada en la regla 50/30/20 (Warren y Warren Tyagi, 2005)",
+     "voz": "Divídelo: mitad a deudas o ahorro, treinta a una meta y veinte a un gusto."
+    },
+    {
+     "titulo": "¿Sin colchón?",
+     "texto": "Empieza tu fondo de emergencia: la meta es de 3 a 6 meses de gastos.\n\nCONDUSEF",
+     "voz": "Si no tienes colchón, empieza tu fondo de emergencia."
+    },
+    {
+     "titulo": "Antes de comprar a meses",
+     "texto": "Suma todas las mensualidades que ya traes: cada una se come tu sueldo de enero.\n\nProfeco y CONDUSEF",
+     "voz": "Y antes de comprar a meses, suma las mensualidades que ya traes."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para cuando te paguen.",
+    "texto": "Calcula tu aguinaldo gratis: enlace en mi perfil.\nMándaselo a quien lo va a gastar todo.",
+    "voz": "Guárdalo para cuando te paguen."
+   },
+   "fuente": "CONDUSEF (uso del aguinaldo, deudas y fondo de emergencia); Profeco; regla 50/30/20 de Warren y Warren Tyagi, All Your Worth (2005)",
+   "titulo_post": "Qué hacer con tu aguinaldo antes de enero",
+   "texto_post": "Qué hacer con el aguinaldo para que no se acabe en enero. 💸\nPrimero tu tarjeta, luego la deuda más cara, divídelo 50/30/20, arma tu colchón y suma tus mensualidades antes de comprar a meses.\n\n🧮 Calcula tu aguinaldo gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien lo va a gastar todo.",
+   "seo": {
+    "palabra_clave": "qué hacer con el aguinaldo",
+    "titulo": "Qué hacer con el aguinaldo antes de enero 💸",
+    "tags_concretas": [
+     "que hacer con el aguinaldo",
+     "en que gastar el aguinaldo",
+     "aguinaldo 2026",
+     "pagar tarjeta con aguinaldo",
+     "ahorrar el aguinaldo",
+     "cuesta de enero",
+     "fondo de emergencia",
+     "deudas de tarjeta",
+     "regla 50 30 20",
+     "finanzas de fin de año"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#ahorro",
+     "#cuestadeenero"
+    ],
+    "preguntas": [
+     "¿Qué hacer con el aguinaldo?",
+     "¿Conviene pagar deudas con el aguinaldo?",
+     "¿Cómo ahorrar el aguinaldo?"
+    ]
+   }
   }
  ]
 }
