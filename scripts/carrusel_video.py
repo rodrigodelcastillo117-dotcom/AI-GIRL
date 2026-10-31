@@ -7,8 +7,10 @@ Uso: python carrusel_video.py short <id>
          Une varios carruseles en un video largo: vertical para TikTok e Instagram (más de 1 minuto),
          --horizontal (1920x1080) para un video largo de YouTube.
 
-Cada diapositiva se queda lo que dura su "voz" más medio segundo de aire. La voz es
-es-MX-DaliaNeural de Edge TTS, no la de Victoria (esa solo sale de OpenArt): por eso solo se usa aquí.
+Cada diapositiva se queda lo que dura su "voz" más medio segundo de aire. La voz es la de Victoria,
+clonada de sus videos con scripts/voz_victoria.py (corre con VOZ_PYTHON, el entorno de voz del paso 0 de
+PIPELINE; Rodrigo la eligió el 31-oct-2026). --voz-edge usa es-MX-DaliaNeural de Edge TTS, la de antes,
+solo si Rodrigo lo pide: sonaba "muy AI".
 """
 import asyncio
 import glob
@@ -39,6 +41,21 @@ def duracion(ruta):
     return float(json.loads(r.stdout)['format']['duration'])
 
 
+def voces_victoria(carpeta, voces):
+    """vozv-XX.mp3 de las frases que falten, con la voz clonada de Victoria y su revisión (voz_victoria.py)."""
+    faltan = [{'texto': t, 'salida': os.path.join(carpeta, f'vozv-{i:02d}.mp3')} for i, t in enumerate(voces)
+              if not os.path.exists(os.path.join(carpeta, f'vozv-{i:02d}.mp3'))]
+    if not faltan:
+        return
+    python = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
+    if not os.path.exists(python):
+        sys.exit(f'ERROR: no está el entorno de voz ({python}); prepáralo con el paso 0 de docs/PIPELINE.md.')
+    lista = os.path.join(carpeta, 'voces.json')
+    json.dump(faltan, open(lista, 'w'), ensure_ascii=False)
+    subprocess.run([python, os.path.join(RAIZ, 'scripts', 'voz_victoria.py'), lista], check=True)
+    os.remove(lista)
+
+
 def tramos(c, horizontal=False):
     """Un MP4 por diapositiva (imagen + su voz). Regresa (rutas, segundos totales)."""
     carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
@@ -48,9 +65,12 @@ def tramos(c, horizontal=False):
         sys.exit(f'ERROR: hay {len(hojas)} diapositivas y {len(voces)} voces: corre primero carrusel.py {c["id"]}')
     marco = ('scale=864:1080,pad=1920:1080:528:0' if horizontal else 'scale=1080:1350,pad=1080:1920:0:285') + f':color={NEGRO},format=yuv420p'
     rutas, total = [], 0.0
+    edge = '--voz-edge' in sys.argv
+    if not edge:
+        voces_victoria(carpeta, voces)
     for i, (hoja, texto) in enumerate(zip(hojas, voces)):
-        audio = os.path.join(carpeta, f'voz-{i:02d}.mp3')
-        if not os.path.exists(audio):
+        audio = os.path.join(carpeta, f'{"voz" if edge else "vozv"}-{i:02d}.mp3')
+        if edge and not os.path.exists(audio):
             asyncio.run(edge_tts.Communicate(texto, VOZ, rate='+5%').save(audio))
         segundos = duracion(audio) + AIRE
         total += segundos

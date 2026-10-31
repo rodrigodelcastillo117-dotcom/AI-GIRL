@@ -20,6 +20,10 @@ todas; cuando los datos propios digan otra cosa, mandan los propios.
    y `apt-get install -y -q libegl1 libgles2` (MediaPipe los necesita para `qa_sync.py`).
    Con faster-whisper, decodificar el audio con ffmpeg (ver `scripts/transcribir.py`); la versión
    de PyAV del paquete no acepta rutas de archivo directo.
+   Entorno de voz (la voz clonada de Victoria para los videos de carrusel, `scripts/voz_victoria.py`):
+   `python3 -m venv /tmp/voz && /tmp/voz/bin/pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu && /tmp/voz/bin/pip install -q chatterbox-tts==0.1.7 faster-whisper num2words`
+   (~2 GB; el modelo, ~3 GB, se baja de Hugging Face la primera vez). `carrusel_video.py` lo busca en
+   `/tmp/voz/bin/python` o en `VOZ_PYTHON`. Tarda ~1 min por frase en CPU: ~10 min por carrusel.
 3. Verificar `PUBLER_API_KEY` en el entorno (`env | grep -c PUBLER_API_KEY`). Si falta: no generar
    nada, reportar y terminar.
 4. `openart_account_get`: si hay menos créditos que `creditos_minimos_para_correr`

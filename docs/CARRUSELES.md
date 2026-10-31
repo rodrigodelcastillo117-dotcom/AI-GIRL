@@ -13,7 +13,8 @@ short con voz. El laboratorio dirá con datos si conviene más foto o video en c
   uno a su hora de la prueba de horarios (guarda `publica_utc_por_red` y `publica_utc` en el carrusel) (`--borrador`
   lo deja en Publer sin salir). Instagram va como `"type": "photo"` con varias fotos: Publer
   rechaza `"carousel"` (probado 30-oct-2026).
-- `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube + título, descripción y
+- `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube, con la voz clonada de Victoria (`voz_victoria.py`: cada frase se
+  transcribe y se repite si no dice lo que debe; nombres en inglés en `voz` como suenan, "Uórren Bófet") + título, descripción y
   etiquetas; después `youtube.py subir carruseles/<id>/short.mp4 "$(cat titulo.txt)" descripcion_youtube.txt <cuando> --tags tags_youtube.txt` y `youtube.py playlist <video_id> <clave>` (PIPELINE 7b).
 - El video del carrusel (`short.mp4`) es SOLO para YouTube. Instagram y TikTok reciben el carrusel en fotos
   (o los videos de Victoria los días de video), nunca este video (Rodrigo, 31-oct-2026). El único que salió, el

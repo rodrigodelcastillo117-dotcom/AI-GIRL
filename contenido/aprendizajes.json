@@ -138,5 +138,12 @@
   "tipo": "regla",
   "aprendizaje": "Rodrigo: \"esos videos SOLO SON PARA YOUTUBE\". Los videos hechos con un carrusel (voz de Edge TTS y fotos) no son de la calidad de los videos de Victoria.",
   "regla": "YouTube, TikTok e Instagram: videos buenos de Victoria. Días sin video: TikTok e Instagram suben el carrusel en fotos y YouTube su versión en video (carrusel_video.py short). Nunca subir el video de un carrusel a Instagram ni a TikTok."
+ },
+ {
+  "fecha_utc": "2026-10-31T13:10:00Z",
+  "origen": "Rodrigo (\"voz muuuuuy AI\"; eligió la muestra B)",
+  "tipo": "voz",
+  "aprendizaje": "La voz de Edge TTS de los videos de carrusel sonaba muy artificial. La voz clonada de Victoria con Chatterbox Multilingual (MIT, CPU, 0 créditos) se parece 0.90-0.95 a su voz de referencia contra 0.76 de Edge, pero a veces cambia una palabra al azar.",
+  "regla": "Los videos de carrusel usan scripts/voz_victoria.py: cada frase se transcribe y se repite hasta 3 veces si no dice lo que debe; si no pasa, no se publica. Edge (--voz-edge) solo si Rodrigo lo pide."
  }
 ]
