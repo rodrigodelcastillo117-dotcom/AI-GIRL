@@ -490,6 +490,16 @@ def franjas_de(red, config):
     return (prueba.get('franjas_por_red') or {}).get(red) or prueba.get('franjas') or [config.get('hora_por_defecto', '18:45')]
 
 
+def franja_de(t, red, config):
+    """Franja de la prueba a la que pertenece una hora real: a 20 min o menos de ella (las 11:17 cuentan
+    en la de las 11:00); si no cae en ninguna, la hora tal cual (no suma a la prueba)."""
+    for f in franjas_de(red, config):
+        h, m = map(int, f.split(':'))
+        if abs(t.hour * 60 + t.minute - (h * 60 + m)) <= 20:
+            return f
+    return t.strftime('%H:%M')
+
+
 def publicaciones(plan, carruseles):
     """Cada video o carrusel programado o publicado, con su hora (México) en cada red."""
     for x in plan['videos'] + carruseles:
@@ -509,8 +519,8 @@ def horarios(plan, carruseles, config, fecha, ahora):
     conteo = {r: {f: 0 for f in franjas_de(r, config)} for r in CORTAS}
     for _, horas in publicaciones(plan, carruseles):
         for r, t in horas.items():
-            if r in conteo and t.strftime('%H:%M') in conteo[r]:
-                conteo[r][t.strftime('%H:%M')] += 1
+            if r in conteo and franja_de(t, r, config) in conteo[r]:
+                conteo[r][franja_de(t, r, config)] += 1
     a_hora = lambda f: datetime.datetime.combine(fecha, datetime.time.fromisoformat(f), tzinfo=CDMX)
     reels = [a_utc(c['reel_ig']['publica_utc']) for c in carruseles if (c.get('reel_ig') or {}).get('publica_utc')]
     lejos_de_reels = lambda f: all(abs(a_hora(f) - t) >= datetime.timedelta(hours=2) for t in reels)
@@ -546,7 +556,7 @@ def horas_por_red(plan, carruseles, historial, config):
             fotos = [(f, h) for f, h in fotos if 20 <= h <= 60]
             if fotos:
                 f, _ = min(fotos, key=lambda par: abs(par[1] - HORAS_CALIFICACION))
-                filas.append((r, tipo, t.strftime('%H:%M'), DIAS_SEMANA[t.weekday()], f[r]['v']))
+                filas.append((r, tipo, franja_de(t, r, config), DIAS_SEMANA[t.weekday()], f[r]['v']))
     medianas = {}
     for r, tipo, *_, v in filas:
         medianas.setdefault((r, tipo), []).append(v)
