@@ -7,14 +7,20 @@ con datos de Victoria.
 
 ## Segundos: prorrateados por tema
 
-Victoria habla unas 2.33 palabras por segundo. Cada video lleva `duracion` en el plan y el guion
-cabe en ella (palabras ≤ segundos × 2.33):
+Victoria habla unas 2.33 palabras por segundo. Los segundos salen de las palabras del guion
+(`aprender.py segundos()`, 10 a 25 s): no se fija `duracion` en el plan salvo que haga falta. Rodrigo
+(31-oct-2026) pidió subirlos un poco y prorratearlos: casi todos salían de 11-12 s.
 
 | Tipo | Segundos | Palabras |
 |---|---|---|
-| Regla, tip, dato | 10-12 | 23-28 |
-| Entrevista | 11-15 | 24-33 (lleva pausas) |
-| Historia, caso, serie ("Así empezaron") | 14-20 | 32-46 |
+| Regla, tip, dato rápido | 12-14 | 28-32 |
+| Explicación con su cuenta o el cómo (aguinaldo, deudas, impuestos) | 16-18 | 37-42 |
+| Entrevista | 14-17 | 30-38 (lleva pausas) |
+| Historia, caso, serie ("Así empezaron") | 18-24 | 42-55 |
+
+Al generar un video, si su guion tiene menos palabras que el mínimo de su tipo, se alarga con un dato
+comprobado (WebSearch, con fuente) antes de generar; nunca con relleno. Promedio esperado: ~16 s,
+unos 670 créditos por video: 15 al mes son ~10,000 de los 12,000 (queda el 15% para reintentos).
 
 Más segundos solo si cada segundo agrega un dato; relleno = gente que se va antes del final. El mes
 debe caber en 12,000 créditos dejando 15% para reintentos: `aprender.py auditar` avisa si los

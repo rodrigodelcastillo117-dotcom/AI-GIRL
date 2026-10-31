@@ -84,6 +84,8 @@ Al generar un video:
   `reglas_vigentes` y cada `regla` de `contenido/aprendizajes.json`, sin cambiar la idea ni la
   fuente. Si cambias el gancho, actualiza `subtitulos`, `palabras_clave`, `texto_post` y `seo`.
 - El guion abre con el gancho en el segundo 0, sin saludo ni introducción (regla 23).
+- Duración prorrateada (`docs/GUIONES_VIRALES.md`, tabla de segundos): si el guion es más corto que el
+  mínimo de su tipo, alárgalo con un dato comprobado antes de generar y actualiza `subtitulos` y `texto_post`.
 - Confirma que el `vestuario` no se repite en ningún otro video.
 - Anota en el video `"decision"` (copia de `auditoria.decision`) y `"mejoras_aplicadas"`.
 

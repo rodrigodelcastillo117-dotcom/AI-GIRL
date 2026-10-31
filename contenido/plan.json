@@ -1,7 +1,7 @@
 {
   "reglas": {
-    "duracion_s": 12,
-    "max_palabras_guion": 28,
+    "duracion_s": "prorrateada por tema: 12 a 24 s (docs/GUIONES_VIRALES.md)",
+    "max_palabras_guion": 55,
     "rotacion_pilares": [
       "negocio",
       "finanzas",
@@ -258,7 +258,6 @@
       "ganchos_alternativos": [
         "¿Cuánto tarda tu dinero en duplicarse?"
       ],
-      "duracion": 12,
       "texto_pantalla": "¿En cuántos años se duplica tu dinero?",
       "pregunta_comentarios": "¿A qué tasa crece tu dinero hoy?"
     },
@@ -318,7 +317,6 @@
       "ganchos_alternativos": [
         "Escribir lo que te preocupa durante quince minutos aligera la mente."
       ],
-      "duracion": 12,
       "texto_pantalla": "15 minutos para vaciar tu cabeza",
       "pregunta_comentarios": "¿Lo pruebas esta noche? Cuéntame cómo te fue."
     },
@@ -379,7 +377,6 @@
       "ganchos_alternativos": [
         "Si algo toma menos de dos minutos, hazlo ya."
       ],
-      "duracion": 11,
       "texto_pantalla": "Lo que de verdad te roba energía",
       "pregunta_comentarios": "¿Cuántos pendientes de 2 minutos traes ahorita?"
     },
@@ -440,7 +437,6 @@
       "ganchos_alternativos": [
         "De cada diez pesos que ganes, guarda uno para ti."
       ],
-      "duracion": 12,
       "texto_pantalla": "Por qué nunca te alcanza para ahorrar",
       "pregunta_comentarios": "¿Cuánto guardas de cada 10 pesos?"
     },
@@ -500,7 +496,6 @@
       "ganchos_alternativos": [
         "Cuando dudes, imagínate a los ochenta años."
       ],
-      "duracion": 11,
       "texto_pantalla": "La pregunta que creó Amazon",
       "pregunta_comentarios": "¿Qué te arrepentirías de no intentar?"
     },
@@ -559,7 +554,6 @@
       "ganchos_alternativos": [
         "Regla número uno: no pierdas dinero."
       ],
-      "duracion": 12,
       "texto_pantalla": "Las 2 reglas de Buffett (son la misma)",
       "pregunta_comentarios": "¿Alguna vez invertiste en algo que no entendías?"
     },
@@ -618,7 +612,6 @@
       "ganchos_alternativos": [
         "Dos inhalaciones por la nariz y una exhalación larga por la boca."
       ],
-      "duracion": 12,
       "texto_pantalla": "La respiración que le ganó a meditar",
       "pregunta_comentarios": "¿Lo probaste? ¿Cómo te sentiste?"
     },
@@ -676,7 +669,6 @@
       "ganchos_alternativos": [
         "El estudio de Harvard sobre la felicidad lleva más de ochenta años."
       ],
-      "duracion": 10,
       "texto_pantalla": "Harvard encontró qué te hace feliz",
       "pregunta_comentarios": "¿A quién vas a llamar hoy?"
     },
@@ -735,7 +727,6 @@
       "ganchos_alternativos": [
         "El trabajo se expande hasta llenar el tiempo que le das."
       ],
-      "duracion": 12,
       "texto_pantalla": "Por qué todo lo terminas a última hora",
       "pregunta_comentarios": "¿Qué proyecto llevas meses estirando?"
     },
@@ -794,7 +785,6 @@
       "ganchos_alternativos": [
         "La gente no compra lo que haces, compra por qué lo haces."
       ],
-      "duracion": 11,
       "texto_pantalla": "Lo que de verdad compran tus clientes",
       "pregunta_comentarios": "¿Cuál es el porqué de tu negocio?"
     },
@@ -853,7 +843,6 @@
       "ganchos_alternativos": [
         "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste."
       ],
-      "duracion": 11,
       "texto_pantalla": "La riqueza de verdad no se ve",
       "pregunta_comentarios": "¿Qué compra te arrepientes de haber hecho?"
     },
@@ -914,7 +903,6 @@
       "ganchos_alternativos": [
         "Tu mente no suelta lo que dejaste a medias."
       ],
-      "duracion": 12,
       "texto_pantalla": "Por qué no puedes dormir con pendientes",
       "pregunta_comentarios": "¿Qué pendiente no te deja dormir?"
     },
@@ -973,7 +961,6 @@
       "ganchos_alternativos": [
         "Haz primero lo que más te cuesta."
       ],
-      "duracion": 11,
       "texto_pantalla": "Antes de ver tu celular, haz esto",
       "pregunta_comentarios": "¿Cuál es tu sapo de mañana?"
     },
@@ -1034,7 +1021,6 @@
       "ganchos_alternativos": [
         "Charlie Munger decía que los primeros cien mil dólares son los más difíciles."
       ],
-      "duracion": 12,
       "texto_pantalla": "Los 100 mil más difíciles de tu vida",
       "pregunta_comentarios": "¿Con cuánto vas a empezar hoy?"
     },
@@ -1042,26 +1028,29 @@
       "id": "17",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. Si no llegan antes del veinte de diciembre, puedes reclamarlo gratis en Profedet.",
+      "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. La cuenta es fácil: tu sueldo diario por quince días. Tu empresa debe pagártelo antes del veinte de diciembre; si no llega, reclámalo gratis en Profedet.",
       "subtitulos": [
-        "Si ganas 15 mil al mes,",
-        "tu aguinaldo mínimo",
-        "es de 7,500 pesos brutos.",
-        "Son 15 días de salario,",
-        "pagados antes del 20 de diciembre."
+        "¿Ganas 15 mil al mes?",
+        "Te tocan mínimo $7,500",
+        "brutos de aguinaldo.",
+        "La cuenta es fácil:",
+        "tu sueldo diario por 15 días.",
+        "Tu empresa debe pagártelo",
+        "antes del 20 de diciembre;",
+        "si no llega,",
+        "reclámalo gratis en Profedet."
       ],
       "palabras_clave": [
         "aguinaldo",
-        "7500",
-        "15",
-        "20"
+        "gratis",
+        "Profedet"
       ],
       "fuente": "Ley Federal del Trabajo, artículo 87; Profedet: asesoría y representación gratuitas si no pagan el aguinaldo (STPS; El Imparcial, 19-oct-2026)",
       "locacion": "sala_navidad",
       "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
       "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Si ganas $15,000 al mes, tu aguinaldo mínimo es de $7,500 brutos. 🎄\nSon 15 días de salario y te lo deben pagar antes del 20 de diciembre.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "texto_post": "¿Ganas $15,000 al mes? Tu aguinaldo mínimo es de $7,500 brutos. 🎄\nLa cuenta: tu sueldo diario × 15 días. Te lo deben pagar antes del 20 de diciembre; si no llega, Profedet te asesora gratis.\n\n📚 Ley Federal del Trabajo, artículo 87 · Profedet (STPS)",
       "seo": {
         "palabra_clave": "aguinaldo 2026",
         "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
@@ -1101,7 +1090,6 @@
         "desde": "2026-11-04",
         "hasta": "2026-12-19"
       },
-      "duracion": 12,
       "texto_pantalla": "¿Cuánto aguinaldo te toca?",
       "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?",
       "guion_anterior": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre."
@@ -1110,16 +1098,18 @@
       "id": "18",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "¿Renunciaste este año? También te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
+      "guion": "¿Renunciaste este año? También te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí: tu sueldo diario, por quince, entre trescientos sesenta y cinco, por los días que trabajaste. Revisa que venga en tu finiquito.",
       "subtitulos": [
-        "Si renunciaste este año,",
-        "también te toca aguinaldo.",
+        "¿Renunciaste este año?",
+        "También te toca aguinaldo.",
         "La ley te da la parte proporcional",
-        "aunque ya no trabajes ahí.",
-        "Revisa que venga en tu finiquito."
+        "aunque ya no trabajes ahí:",
+        "sueldo diario × 15 ÷ 365",
+        "× los días que trabajaste.",
+        "Revisa que venga",
+        "en tu finiquito."
       ],
       "palabras_clave": [
-        "renunciaste",
         "aguinaldo",
         "proporcional",
         "finiquito"
@@ -1129,7 +1119,7 @@
       "vestuario": "Chaqueta de cuero negra sobre vestido de seda color esmeralda, botines negros",
       "accion": "De pie junto a la puerta de la oficina con una caja de cartón con sus cosas en las manos, Capital sentado a su lado.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Si renunciaste este año, también te toca aguinaldo. 📌\nLa ley te da la parte proporcional aunque ya no trabajes ahí: revisa que venga en tu finiquito.\n\n📚 Ley Federal del Trabajo, artículo 87",
+      "texto_post": "¿Renunciaste este año? También te toca aguinaldo. 📌\nLa parte proporcional: sueldo diario × 15 ÷ 365 × los días que trabajaste. Revisa que venga en tu finiquito.\n\n📚 Ley Federal del Trabajo, artículo 87",
       "seo": {
         "palabra_clave": "aguinaldo si renunciaste",
         "titulo": "Aguinaldo si renunciaste este año 📌",
@@ -1169,7 +1159,6 @@
         "desde": "2026-11-08",
         "hasta": "2026-12-19"
       },
-      "duracion": 12,
       "texto_pantalla": "¿Renunciaste? También te toca aguinaldo",
       "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?",
       "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito."
@@ -1380,7 +1369,6 @@
         "desde": "2026-11-28",
         "hasta": "2026-12-19"
       },
-      "duracion": 12,
       "texto_pantalla": "Cómo dividir tu aguinaldo",
       "pregunta_comentarios": "¿Tú cómo lo divides?"
     },
@@ -1448,7 +1436,6 @@
         "desde": "2026-12-10",
         "hasta": "2027-01-10"
       },
-      "duracion": 11,
       "texto_pantalla": "Lo primero que haces con tu aguinaldo",
       "pregunta_comentarios": "¿A qué deuda va tu aguinaldo primero?"
     },
@@ -1516,7 +1503,6 @@
         "desde": "2027-01-02",
         "hasta": "2027-01-20"
       },
-      "duracion": 11,
       "texto_pantalla": "Tu propósito 2027 no es el gym",
       "pregunta_comentarios": "¿Cuántos meses de gastos tienes guardados?"
     },
@@ -1584,7 +1570,6 @@
         "desde": "2027-01-06",
         "hasta": "2027-01-31"
       },
-      "duracion": 12,
       "texto_pantalla": "La trampa del pago mínimo",
       "pregunta_comentarios": "¿Pagas el mínimo o el total?"
     },
@@ -1652,7 +1637,6 @@
         "desde": "2027-01-12",
         "hasta": "2027-01-31"
       },
-      "duracion": 12,
       "texto_pantalla": "Meses sin intereses no es gratis",
       "pregunta_comentarios": "¿Cuántas mensualidades traes ahorita?"
     },
@@ -1718,7 +1702,6 @@
         "desde": "2027-01-18",
         "hasta": "2027-02-10"
       },
-      "duracion": 11,
       "texto_pantalla": "Tu presupuesto en 3 números",
       "pregunta_comentarios": "¿Ya hiciste tu presupuesto de enero?"
     },
@@ -1783,7 +1766,6 @@
         "tipo_gancho": "dato"
       },
       "puente_producto": true,
-      "duracion": 12,
       "texto_pantalla": "La pelea que predice el divorcio",
       "pregunta_comentarios": "¿En tu relación hablan de dinero?"
     },
@@ -1847,7 +1829,6 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 12,
       "texto_pantalla": "Pudieron comprar Netflix y se rieron",
       "pregunta_comentarios": "¿Qué empresa crees que es el próximo Blockbuster?"
     },
@@ -1910,7 +1891,6 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 12,
       "texto_pantalla": "Costco no gana vendiendo",
       "pregunta_comentarios": "¿Pagas alguna membresía que no usas?"
     },
@@ -1974,7 +1954,6 @@
       "adn": {
         "tipo_gancho": "error"
       },
-      "duracion": 12,
       "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea?"
     },
     {
@@ -2036,7 +2015,6 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 13,
       "pregunta_comentarios": "¿Con cuánto empezaste tu negocio?"
     },
     {
@@ -2099,7 +2077,6 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 11,
       "pregunta_comentarios": "¿Qué negocio harías mejor que el original?"
     },
     {
@@ -2169,7 +2146,6 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "duracion": 16,
       "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
@@ -2239,7 +2215,6 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "duracion": 16,
       "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
@@ -2310,7 +2285,6 @@
       "adn": {
         "tipo_gancho": "historia"
       },
-      "duracion": 17,
       "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
@@ -2380,7 +2354,6 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "duracion": 15,
       "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     },
     {
@@ -2449,7 +2422,6 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "duracion": 16,
       "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
     }
   ]
