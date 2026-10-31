@@ -23,34 +23,28 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import _buscar_id, _primera_linea, armar_post, cuando_de, _pedir, cuentas_victoria, esperar_job, red, workspace_id, ya_programadas  # noqa: E402
+from publer import _buscar_id, _primera_linea, armar_post, cuando_de, _pedir, cuentas_victoria, esperar_job, mandar, red, workspace_id, ya_programadas  # noqa: E402
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
 
 
-def red_post(proveedor, tipo_ig, media, texto, titulo):
+def comentario_ig(c, config):
+    """Primer comentario de Instagram: el llamado del carrusel sin enlace (en Instagram solo se toca el de la bio)."""
+    if c.get('enlace'):
+        return f"{c['enlace']['etiqueta']}: el enlace está en mi perfil 👆"
+    return config.get('primer_comentario_instagram')
+
+
+def red_post(proveedor, tipo_ig, media, texto, titulo, comentario=None):
     if proveedor == 'instagram':
-        return {'type': tipo_ig, 'text': texto, 'media': media}
+        return {'type': tipo_ig, 'text': texto, 'media': media, **({'firstComment': comentario} if comentario else {})}
     return {'type': 'photo', 'title': titulo[:90], 'text': texto, 'media': media,
             'details': {'privacy': 'PUBLIC_TO_EVERYONE', 'auto_add_music': True, 'comment': True}}
 
 
-def cuerpo(cuenta, tipo_ig, media, texto, titulo, cuando, estado):
+def cuerpo(cuenta, tipo_ig, media, texto, titulo, cuando, estado, comentario=None):
     return {'bulk': {'state': estado, 'posts': [{
-        'networks': {red(cuenta): red_post(red(cuenta), tipo_ig, media, texto, titulo)},
+        'networks': {red(cuenta): red_post(red(cuenta), tipo_ig, media, texto, titulo, comentario)},
         'accounts': [{'id': cuenta['id'], 'scheduled_at': cuando}]}]}}
-
-
-def mandar(ws, body):
-    """None si Publer lo aceptó; si no, el motivo."""
-    r = _pedir('POST', '/posts/schedule', ws, cuerpo=body)
-    job = r.get('job_id') or (r.get('data') or {}).get('job_id')
-    if not job:
-        return f'Publer no regresó job_id ({json.dumps(r)[:300]})'
-    resultado = esperar_job(ws, job)
-    fallas = ((resultado.get('result') or resultado).get('payload') or {}).get('failures')
-    if resultado.get('status') == 'failed' or fallas:
-        return json.dumps(fallas or resultado, ensure_ascii=False)[:500]
-    return None
 
 
 def texto_reel(c, config):
@@ -114,7 +108,10 @@ def reel(c, cuando, config):
         media_id = _buscar_id(esperar_job(ws, subida['job_id']).get('result'))
     if not media_id:
         sys.exit(f'ERROR: la subida del video no regresó id: {json.dumps(subida)[:500]}')
-    motivo = mandar(ws, armar_post(cuentas, media_id, texto, c['titulo_post'], cuando))
+    motivo = mandar(ws, armar_post(cuentas, media_id, texto, c['titulo_post'], cuando, comentario_ig(c, config)))
+    if motivo:  # si Publer no acepta el primer comentario, sale sin él
+        print(f'AVISO: Publer rechazó el Reel con primer comentario ({motivo[:200]}); lo mando sin comentario.')
+        motivo = mandar(ws, armar_post(cuentas, media_id, texto, c['titulo_post'], cuando))
     if motivo:
         sys.exit(f'ERROR: Publer reportó falla en el Reel: {motivo}')
     yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'video': f'carruseles/{c["id"]}/short.mp4'}
@@ -144,7 +141,8 @@ def main():
         falsa = [{'id': 'ID_IG', 'provider': 'instagram'}, {'id': 'ID_TT', 'provider': 'tiktok'}]
         media = [{'id': f'MEDIA_{i}', 'type': 'image'} for i in range(len(fotos))]
         for cuenta in falsa:
-            print(json.dumps(cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado), ensure_ascii=False, indent=1))
+            print(json.dumps(cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado,
+                                    comentario_ig(c, config) if red(cuenta) == 'instagram' else None), ensure_ascii=False, indent=1))
         return
     ws = workspace_id()
     _, cuentas = cuentas_victoria(ws)
@@ -167,7 +165,11 @@ def main():
     fallidas = []
     for cuenta in cuentas:
         # Instagram: Publer rechaza "carousel" (error interno) y acepta "photo" con varias fotos (probado 30-oct-2026).
-        motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado))
+        comentario = comentario_ig(c, config) if red(cuenta) == 'instagram' else None
+        motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado, comentario))
+        if motivo and comentario:  # si Publer no acepta el primer comentario, sale sin él
+            print(f'AVISO: Publer rechazó el carrusel con primer comentario ({motivo[:200]}); lo mando sin comentario.')
+            motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado))
         if motivo:
             fallidas.append(f'{red(cuenta)}: {motivo}')
         else:

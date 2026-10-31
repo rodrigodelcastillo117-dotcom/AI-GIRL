@@ -156,13 +156,30 @@ def cuando_de(cuando, proveedor):
     return dict(x.split('=', 1) for x in cuando.split(','))[{'instagram': 'ig', 'tiktok': 'tt'}[proveedor]]
 
 
-def armar_post(cuentas, media_id, texto, titulo, cuando):
+def mandar(ws, body):
+    """None si Publer aceptó el post; si no, el motivo."""
+    r = _pedir('POST', '/posts/schedule', ws, cuerpo=body)
+    job = r.get('job_id') or (r.get('data') or {}).get('job_id')
+    if not job:
+        return f'Publer no regresó job_id ({json.dumps(r)[:300]})'
+    resultado = esperar_job(ws, job)
+    fallas = ((resultado.get('result') or resultado).get('payload') or {}).get('failures')
+    if resultado.get('status') == 'failed' or fallas:
+        return json.dumps(fallas or resultado, ensure_ascii=False)[:500]
+    return None
+
+
+def armar_post(cuentas, media_id, texto, titulo, cuando, comentario=None):
+    """comentario: primer comentario de Instagram (networks.instagram.firstComment, docs de Publer). Solo se puede
+    poner al crear el post: el PUT de Publer solo cambia texto y título. TikTok y YouTube no tienen ese campo."""
     redes = {}
     for proveedor in {red(c) for c in cuentas}:
         media = [{'id': media_id, 'type': 'video'}]
         if proveedor == 'instagram':
             redes['instagram'] = {'type': 'video', 'text': texto, 'media': media,
                                   'details': {'type': 'reel', 'feed': True}}
+            if comentario:
+                redes['instagram']['firstComment'] = comentario
         elif proveedor == 'tiktok':
             redes['tiktok'] = {'type': 'video', 'title': titulo, 'text': texto, 'media': media,
                                'details': {'privacy': 'PUBLIC_TO_EVERYONE', 'comment': True}}
@@ -234,19 +251,16 @@ def main():
 
     # Una petición por red (regla 5): si una falla, las otras no se pierden y se sabe cuál fue.
     fallidas = []
+    comentario = CONFIG.get('primer_comentario_instagram')
     for cuenta in cuentas:
-        r = _pedir('POST', '/posts/schedule', ws, cuerpo=armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo,
-                                                                  cuando_de(cuando, red(cuenta))))
-        job = r.get('job_id') or (r.get('data') or {}).get('job_id')
-        if not job:
-            fallidas.append(f'{red(cuenta)}: Publer no regresó job_id ({json.dumps(r)[:300]})')
-            continue
-        resultado = esperar_job(ws, job)
-        fallas = ((resultado.get('result') or resultado).get('payload') or {}).get('failures')
-        if resultado.get('status') == 'failed' or fallas:
-            fallidas.append(f'{red(cuenta)}: {json.dumps(fallas or resultado, ensure_ascii=False)[:500]}')
+        motivo = mandar(ws, armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando_de(cuando, red(cuenta)), comentario))
+        if motivo and comentario and red(cuenta) == 'instagram':  # si Publer no acepta el primer comentario, sale sin él
+            print(f'AVISO: Publer rechazó el post con primer comentario ({motivo[:200]}); lo mando sin comentario.')
+            motivo = mandar(ws, armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando_de(cuando, red(cuenta))))
+        if motivo:
+            fallidas.append(f'{red(cuenta)}: {motivo}')
         else:
-            print(f'OK {red(cuenta)} programado para {cuando_de(cuando, red(cuenta))} (job {job}). Se confirma que salió en la siguiente medición.')
+            print(f'OK {red(cuenta)} programado para {cuando_de(cuando, red(cuenta))}. Se confirma que salió en la siguiente medición.')
     if fallidas:
         sys.exit('ERROR: Publer reportó fallas en ' + ' | '.join(fallidas))
 

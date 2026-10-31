@@ -55,6 +55,9 @@ dice "Aquí". Cuando los datos propios contradigan una regla, mandan los datos p
 25. En YouTube, el enlace va en un primer comentario fijado, escrito como persona, con un solo
     enlace. *Aquí: la API de YouTube puede escribir el comentario (con permiso extra), pero no
     fijarlo; fijarlo es manual.*
+    *En Shorts el enlace del comentario no se puede tocar (YouTube, ago-2023): el comentario también manda al
+    enlace del canal. Instagram: primer comentario automático sin enlace (`firstComment` de Publer, solo al
+    crear el post) que manda a la bio. TikTok: Publer no tiene primer comentario.*
 26. `?ref=<red>` en cada enlace (yt, ig, tt).
 27. Hashtags: 3 o 4 fijos de marca y nicho, bien escritos, + 3 a 5 concretos del video. En el
     pie, nunca en el título.

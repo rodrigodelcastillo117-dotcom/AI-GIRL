@@ -117,5 +117,12 @@
   "tipo": "formato",
   "aprendizaje": "Con 60 seguidores, un carrusel de fotos en Instagram casi solo lo ven los seguidores: Instagram lleva a no seguidores sobre todo los Reels. Juzgar un post a los 40 minutos no sirve; Publer tarda horas en traer sus números.",
   "regla": "Cada carrusel sale también como Reel de Instagram con su short (publer_carrusel.py <id> auto --reel, 0 créditos). Se mide aparte (igr) y no cuenta en la prueba de horarios."
+ },
+ {
+  "fecha_utc": "2026-10-31T01:10:00Z",
+  "origen": "Rodrigo (no había comentarios fijados con enlace) y docs de Publer/YouTube",
+  "tipo": "publicacion",
+  "aprendizaje": "Los Shorts de los carruseles nunca tuvieron comentario con enlace (solo los videos lo tenían) y nadie los fijó. En Shorts, Instagram y TikTok el enlace de un comentario no se puede tocar; el único que funciona es el de la bio o el del canal. Publer solo acepta primer comentario en Instagram (networks.instagram.firstComment) y solo al crear el post.",
+  "regla": "Cada Short de carrusel recibe su comentario con enlace al hacerse público (aprender.py medir) y Rodrigo lo fija a mano (link de Studio en el reporte). Cada post nuevo de Instagram lleva primer comentario que manda a la bio. Si Publer lo rechaza, el post sale sin él."
  }
 ]
