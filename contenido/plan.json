@@ -109,7 +109,7 @@
     },
     {
       "id": "02",
-      "estado": "listo_para_publicar",
+      "estado": "programado",
       "pilar": "negocio",
       "guion": "El ochenta por ciento de tus ventas suele salir del veinte por ciento de tus clientes. Principio de Pareto. Encuentra a ese veinte y cuídalo como oro.",
       "subtitulos": [
@@ -136,7 +136,18 @@
       "creditos": 510,
       "qa": {
         "similitud": 0.92,
-        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos OK."
+        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos OK.",
+        "sincronia": {
+          "cuadros": 360,
+          "fps": 30.0,
+          "cara_en_cuadros": 1.0,
+          "desfase_ms": -100,
+          "correlacion": 0.25,
+          "correlacion_sin_desfase": 0.145,
+          "voz_con_boca_quieta_s": 0.47,
+          "boca_hablando_sin_voz_s": 0.63,
+          "fallas": []
+        }
       },
       "openart": {
         "foto": "CHR8hma1TeWY9weBL2ca",
@@ -174,7 +185,21 @@
           "¿Cómo encontrar a tus mejores clientes?"
         ]
       },
-      "duracion": 12
+      "duracion": 12,
+      "publica_utc_por_red": {
+        "ig": "2026-11-01T02:00:00Z",
+        "tt": "2026-10-31T23:00:00Z",
+        "yt": "2026-10-31T16:00:00Z"
+      },
+      "publica_utc": "2026-11-01T02:00:00Z",
+      "publicacion": {
+        "youtube": "https://youtube.com/shorts/_2hyj6BDQYs",
+        "publer": {
+          "instagram": "programado 2026-10-31 20:00 CDMX (con primer comentario)",
+          "tiktok": "programado 2026-10-31 17:00 CDMX"
+        },
+        "playlist": "negocios"
+      }
     },
     {
       "id": "03",
@@ -1155,23 +1180,24 @@
       "pilar": "finanzas",
       "guion": "¿Por qué tu aguinaldo llega incompleto? Los primeros tres mil quinientos diecinueve pesos no pagan impuestos; lo que pasa de ahí, sí. Es el impuesto, no un error.",
       "subtitulos": [
-        "Tu aguinaldo no paga impuestos",
-        "hasta 3,519 pesos.",
-        "Lo que pase de eso sí paga,",
-        "y por eso a veces",
-        "te llega menos."
+        "¿Por qué tu aguinaldo",
+        "llega incompleto?",
+        "Los primeros 3,519 pesos",
+        "no pagan impuestos;",
+        "lo que pasa de ahí, sí.",
+        "Es el impuesto, no un error."
       ],
       "palabras_clave": [
-        "impuestos",
-        "3519",
-        "menos"
+        "incompleto",
+        "3,519",
+        "impuesto"
       ],
       "fuente": "Ley del ISR, artículo 93, fracción XIV (30 UMA); UMA 2026 de $117.31 diarios (INEGI)",
       "locacion": "sillon",
       "vestuario": "Blusa de satín color esmeralda oscuro, pantalón palazzo negro, aretes de oro",
       "accion": "Sentada en el sillón con una calculadora y un sobre en las manos, Capital acostado a su lado.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Tu aguinaldo no paga ISR hasta $3,519.30 en 2026. 🧾\nEs el equivalente a 30 UMA. Lo que pase de eso sí paga, y por eso a veces te llega menos.\n\n📚 Ley del ISR, artículo 93, fracción XIV · INEGI, UMA 2026",
+      "texto_post": "¿Por qué tu aguinaldo llega incompleto? 🧾\nLos primeros $3,519.30 no pagan ISR en 2026 (30 UMA). Lo que pasa de ahí sí paga: es el impuesto, no un error.\n\n📚 Ley del ISR, artículo 93, fracción XIV · INEGI, UMA 2026",
       "seo": {
         "palabra_clave": "aguinaldo exento de ISR",
         "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",

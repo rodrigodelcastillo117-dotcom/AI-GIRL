@@ -1,79 +1,236 @@
 {
- "fecha_utc": "2026-10-30T17:07:17Z",
- "videos_calificados": 0,
- "base_vistas_36h": 0,
- "notas": {},
- "ranking": {},
+ "fecha_utc": "2026-10-31T12:39:45Z",
+ "videos_calificados": 1,
+ "base_vistas_36h": 714,
+ "notas": {
+  "01": {
+   "vistas_36h": 714,
+   "engagement": 0.035,
+   "retencion": null,
+   "horas": 36.9,
+   "indice": 1.0
+  }
+ },
+ "ranking": {
+  "pilar": [
+   {
+    "valor": "motivacion_economica",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "formato": [
+   {
+    "valor": "a_camara",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "locacion": [
+   {
+    "valor": "jet",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "tipo_fondo": [
+   {
+    "valor": "transporte",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "estilo_vestuario": [
+   {
+    "valor": "ejecutivo",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "color_vestuario": [
+   {
+    "valor": "claro",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "tipo_gancho": [
+   {
+    "valor": "numero",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "titulo_emoji": [
+   {
+    "valor": "con emoji",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "titulo_largo": [
+   {
+    "valor": "31 a 45",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "titulo_tipo": [
+   {
+    "valor": "afirmación",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "dia": [
+   {
+    "valor": "jue",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ],
+  "hora": [
+   {
+    "valor": "17:47",
+    "n": 1,
+    "indice": 1.0,
+    "estado": "en prueba",
+    "engagement": 0.035,
+    "retencion": null
+   }
+  ]
+ },
  "decision": {
-  "toca_publicar": false,
-  "motivo": "el último sale el 2026-10-29; toca publicar en 1 día(s)",
+  "toca_publicar": true,
+  "motivo": "el último salió el 2026-10-29",
   "hora_siguiente": "20:00",
   "horarios": {
    "ig": "20:00",
    "tt": "17:00",
-   "yt": "14:00"
+   "yt": "10:00"
   },
   "cuando": {
-   "ig": "2026-10-31T02:00:00Z",
-   "tt": "2026-10-30T23:00:00Z",
-   "yt": "2026-10-30T20:00:00Z"
+   "ig": "2026-11-01T02:00:00Z",
+   "tt": "2026-10-31T23:00:00Z",
+   "yt": "2026-10-31T16:00:00Z"
   },
-  "prueba_horas": "ig: en prueba (08:00 0/4, 12:00 0/4, 15:00 0/4, 18:00 0/4, 20:00 0/4) · tt: en prueba (09:00 0/4, 13:00 0/4, 15:00 1/4, 17:00 0/4, 20:00 0/4) · yt: en prueba (10:00 0/4, 12:00 0/4, 14:00 0/4, 17:00 0/4, 20:00 0/4)",
+  "prueba_horas": "ig: en prueba (08:00 0/4, 12:00 1/4, 15:00 0/4, 18:00 0/4, 20:00 0/4) · tt: en prueba (09:00 1/4, 13:00 0/4, 15:00 0/4, 17:00 0/4, 20:00 0/4) · yt: en prueba (10:00 0/4, 12:00 1/4, 14:00 1/4, 17:00 1/4, 20:00 0/4)",
   "conteo_horas": {
    "ig": {
     "08:00": 0,
-    "12:00": 0,
+    "12:00": 1,
     "15:00": 0,
     "18:00": 0,
     "20:00": 0
    },
    "tt": {
-    "09:00": 0,
+    "09:00": 1,
     "13:00": 0,
-    "15:00": 1,
+    "15:00": 0,
     "17:00": 0,
     "20:00": 0
    },
    "yt": {
     "10:00": 0,
-    "12:00": 0,
-    "14:00": 0,
-    "17:00": 0,
+    "12:00": 1,
+    "14:00": 1,
+    "17:00": 1,
     "20:00": 0
    }
   },
-  "publicar_hoy": null,
-  "video_id": "32",
-  "modo": "serie",
+  "publicar_hoy": "02",
+  "video_id": "19",
+  "modo": "temporada",
   "esperado": null,
   "cambios_sugeridos": [],
-  "por_que": "Serie: toca el capítulo 1 (uno cada 2 videos).",
-  "segundos": 16,
-  "creditos": 670
+  "por_que": "Temporada: el video 19 solo sirve hasta el 2026-12-19.",
+  "segundos": 12,
+  "creditos": 510
  },
  "horarios_por_red": {
   "ig": {
-   "franjas": {},
-   "dias": {},
+   "franjas": {
+    "17:47": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
+   "dias": {
+    "jueves": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
    "ganadora": null
   },
   "tt": {
-   "franjas": {},
-   "dias": {},
+   "franjas": {
+    "17:47": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
+   "dias": {
+    "jueves": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
    "ganadora": null
   },
   "yt": {
-   "franjas": {},
-   "dias": {},
+   "franjas": {
+    "17:47": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
+   "dias": {
+    "jueves": {
+     "n": 1,
+     "indice": 1.0
+    }
+   },
    "ganadora": null
   }
  },
  "reglas_vigentes": [],
  "alertas": [
-  "Post AJENO publicado en instagram el 2026-10-27T19:05: \"Estas fechas te van a reventar la cabeza\" (https://www.instagram.com/p/DfBNeW-CPNT/)",
-  "Post AJENO publicado en tiktok el 2026-10-27T19:08: \"Estas fechas te van a reventar la cabeza\" (https://www.tiktok.com/@nadieteloexplico1/video/7701518115313618197?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1)",
   "Post AJENO publicado en instagram el 2026-10-28T19:04: \"Tu cuerpo esconde secretos que nadie te contó en el colegio\" (https://www.instagram.com/p/DfDyNfyiPIi/)",
   "Post AJENO publicado en tiktok el 2026-10-28T19:08: \"Tu cuerpo esconde secretos que nadie te contó en el colegio\" (https://www.tiktok.com/@nadieteloexplico1/video/7701889088730762516?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1)",
-  "0 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\"."
+  "1 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\"."
  ]
 }
