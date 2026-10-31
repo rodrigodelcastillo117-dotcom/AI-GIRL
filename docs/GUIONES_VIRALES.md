@@ -54,6 +54,11 @@ próximos 15 videos se pasan y si algún guion no cabe en sus segundos.
     (aguinaldo, tarjeta, sueldo, ahorro, negocio). Las frases célebres solas se mandan poco: úsalas
     solo si la idea se aplica hoy con un ejemplo en pesos.
 
+12. **Tu dinero en México, no frases de famosos** (Rodrigo, 31-oct-2026: "todo lo que dice es de Buffett
+    y así"). Primero lo que le pasa al bolsillo de quien ve: SAT, tarjetas, aguinaldo, sueldo, precios,
+    Buen Fin, inflación, con cifra en pesos y fuente oficial (Profeco, Condusef, SAT, INEGI, Banxico,
+    Conasami). Un famoso solo si su historia se cuenta con un dato que sorprende; máximo 1 de cada 10 guiones.
+
 ## Qué decide el laboratorio
 
 El tipo de gancho (cifra, contradicción, error, nombre, regla, dato, cita), el tema, el fondo, la
