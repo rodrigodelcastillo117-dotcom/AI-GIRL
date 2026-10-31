@@ -293,6 +293,36 @@ def verificar(plan, ahora, avisos):
     return problemas
 
 
+def comentar_carruseles(carruseles_json, avisos):
+    """Primer comentario con el enlace en el Short de cada carrusel ya público (regla 25; fijarlo es manual).
+    En Shorts YouTube no deja tocar enlaces de comentarios (desde ago-2023): por eso también manda al de su canal."""
+    import seo
+    import youtube
+    config = cargar('config.json', {})
+    datos = cargar(carruseles_json, {'carruseles': []})
+    pendientes = {c['youtube'].rstrip('/').split('/')[-1]: c for c in datos['carruseles']
+                  if c.get('youtube') and not c.get('comentario_youtube') and config.get('enlace_venta')}
+    if not pendientes:
+        return
+    acceso = youtube.token()
+    _, cuerpo = youtube._http('GET', f"{youtube.API}/videos?part=status&id={','.join(pendientes)}",
+                              headers={'Authorization': f'Bearer {acceso}'})
+    for item in json.loads(cuerpo).get('items') or []:
+        if item['status'].get('privacyStatus') != 'public':
+            continue
+        c = pendientes[item['id']]
+        if c.get('enlace'):
+            texto = f"{c['enlace']['etiqueta']} 👉 {seo.con_ref(c['enlace']['url'], 'yt')}"
+        else:
+            texto = config['comentario_youtube'].format(enlace=seo.con_ref(config['enlace_venta'], 'yt'))
+        try:
+            c['comentario_youtube'] = youtube.comentar(acceso, item['id'], texto + '\nSi no te deja tocarlo, está en el enlace de mi canal.')
+            avisos.append(f"Fija a mano el comentario con enlace del carrusel {c['id']}: https://studio.youtube.com/video/{item['id']}/comments")
+        except SystemExit as e:
+            avisos.append(f"No pude dejar el comentario con enlace en el Short del carrusel {c['id']}: {str(e)[:200]}")
+    guardar(carruseles_json, datos)
+
+
 def sincronizar_horas_publer(carruseles_json, avisos):
     """La hora real de Instagram y TikTok es la que tiene Publer (ahí se pueden mover a mano): se copia al
     carrusel para que la prueba de horarios cuente la hora real, se haya movido o no."""
@@ -355,6 +385,10 @@ def medir():
         sincronizar_horas_publer('carruseles.json', avisos_verificacion)
     except SystemExit as e:
         avisos_verificacion.append(f'No pude leer de Publer la hora real de los carruseles: {e}')
+    try:
+        comentar_carruseles('carruseles.json', avisos_verificacion)
+    except SystemExit as e:
+        avisos_verificacion.append(f'No pude revisar los comentarios con enlace de los carruseles: {e}')
     for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:  # los carruseles también se miden
         if c.get('publica_utc') and a_utc(c['publica_utc']) <= ahora and (ahora - a_utc(c['publica_utc'])).days <= DIAS_DE_MEDICION:
             videos.append({'id': c['id'], 'texto_post': c['texto_post'], 'publica_utc': c['publica_utc'],
