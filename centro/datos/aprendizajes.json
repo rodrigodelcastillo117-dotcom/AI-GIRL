@@ -110,5 +110,33 @@
   "tipo": "publicacion",
   "aprendizaje": "Publer sí permite cambiar la hora por API: PUT /posts/{id}/reschedule con {\"scheduled_at\": \"...\"} (comprobado con 5 posts el 30-oct). El PUT normal solo cambia texto y título.",
   "regla": "Para mover un post programado usar publer.reprogramar() y comprobar la hora con GET /posts/{id}. Nunca borrar y volver a crear; nunca DELETE /posts."
+ },
+ {
+  "fecha_utc": "2026-10-30T19:55:00Z",
+  "origen": "Medición de Publer (carrusel c03 sin vistas a los 40 min; el Reel del video 01 llegó a 6 cuentas en 19 h)",
+  "tipo": "formato",
+  "aprendizaje": "Con 60 seguidores, un carrusel de fotos en Instagram casi solo lo ven los seguidores: Instagram lleva a no seguidores sobre todo los Reels. Juzgar un post a los 40 minutos no sirve; Publer tarda horas en traer sus números.",
+  "regla": "REEMPLAZADA el 31-oct por decisión de Rodrigo: el video de un carrusel es SOLO para YouTube. Instagram y TikTok reciben videos de Victoria o, los días sin video, el carrusel en fotos."
+ },
+ {
+  "fecha_utc": "2026-10-31T01:10:00Z",
+  "origen": "Rodrigo (no había comentarios fijados con enlace) y docs de Publer/YouTube",
+  "tipo": "publicacion",
+  "aprendizaje": "Los Shorts de los carruseles nunca tuvieron comentario con enlace (solo los videos lo tenían) y nadie los fijó. En Shorts, Instagram y TikTok el enlace de un comentario no se puede tocar; el único que funciona es el de la bio o el del canal. Publer solo acepta primer comentario en Instagram (networks.instagram.firstComment) y solo al crear el post.",
+  "regla": "Cada Short de carrusel recibe su comentario con enlace al hacerse público (aprender.py medir) y Rodrigo lo fija a mano (link de Studio en el reporte). Cada post nuevo de Instagram lleva primer comentario que manda a la bio. Si Publer lo rechaza, el post sale sin él."
+ },
+ {
+  "fecha_utc": "2026-10-31T02:50:00Z",
+  "origen": "Rodrigo (\"¿por qué se subieron 2?\")",
+  "tipo": "publicacion",
+  "aprendizaje": "El 30-oct salieron dos carruseles el mismo día en las 3 redes (c02, ya programado desde la mañana, y c03, que se programó en la tarde para probar horas sin revisar que ese día ya tenía carrusel). Instagram tuvo 3 posts ese día con el Reel de c03.",
+  "regla": "Un video o carrusel por día y por red. publer_carrusel.py se niega a programar si ese día ya sale otra publicación en Instagram o TikTok (--forzar solo si Rodrigo lo pide). El Reel del carrusel sí puede ir el mismo día: es su versión en video."
+ },
+ {
+  "fecha_utc": "2026-10-31T03:05:00Z",
+  "origen": "Rodrigo",
+  "tipo": "regla",
+  "aprendizaje": "Rodrigo: \"esos videos SOLO SON PARA YOUTUBE\". Los videos hechos con un carrusel (voz de Edge TTS y fotos) no son de la calidad de los videos de Victoria.",
+  "regla": "YouTube, TikTok e Instagram: videos buenos de Victoria. Días sin video: TikTok e Instagram suben el carrusel en fotos y YouTube su versión en video (carrusel_video.py short). Nunca subir el video de un carrusel a Instagram ni a TikTok."
  }
 ]

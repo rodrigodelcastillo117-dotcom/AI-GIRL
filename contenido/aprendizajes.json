@@ -116,7 +116,7 @@
   "origen": "Medición de Publer (carrusel c03 sin vistas a los 40 min; el Reel del video 01 llegó a 6 cuentas en 19 h)",
   "tipo": "formato",
   "aprendizaje": "Con 60 seguidores, un carrusel de fotos en Instagram casi solo lo ven los seguidores: Instagram lleva a no seguidores sobre todo los Reels. Juzgar un post a los 40 minutos no sirve; Publer tarda horas en traer sus números.",
-  "regla": "Cada carrusel sale también como Reel de Instagram con su short (publer_carrusel.py <id> auto --reel, 0 créditos). Se mide aparte (igr) y no cuenta en la prueba de horarios."
+  "regla": "REEMPLAZADA el 31-oct por decisión de Rodrigo: el video de un carrusel es SOLO para YouTube. Instagram y TikTok reciben videos de Victoria o, los días sin video, el carrusel en fotos."
  },
  {
   "fecha_utc": "2026-10-31T01:10:00Z",
@@ -131,5 +131,12 @@
   "tipo": "publicacion",
   "aprendizaje": "El 30-oct salieron dos carruseles el mismo día en las 3 redes (c02, ya programado desde la mañana, y c03, que se programó en la tarde para probar horas sin revisar que ese día ya tenía carrusel). Instagram tuvo 3 posts ese día con el Reel de c03.",
   "regla": "Un video o carrusel por día y por red. publer_carrusel.py se niega a programar si ese día ya sale otra publicación en Instagram o TikTok (--forzar solo si Rodrigo lo pide). El Reel del carrusel sí puede ir el mismo día: es su versión en video."
+ },
+ {
+  "fecha_utc": "2026-10-31T03:05:00Z",
+  "origen": "Rodrigo",
+  "tipo": "regla",
+  "aprendizaje": "Rodrigo: \"esos videos SOLO SON PARA YOUTUBE\". Los videos hechos con un carrusel (voz de Edge TTS y fotos) no son de la calidad de los videos de Victoria.",
+  "regla": "YouTube, TikTok e Instagram: videos buenos de Victoria. Días sin video: TikTok e Instagram suben el carrusel en fotos y YouTube su versión en video (carrusel_video.py short). Nunca subir el video de un carrusel a Instagram ni a TikTok."
  }
 ]

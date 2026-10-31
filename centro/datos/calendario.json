@@ -35,31 +35,11 @@
  },
  {
   "fecha": "2026-10-31",
-  "tipo": "reel",
-  "id": "",
-  "estado": "programado",
-  "que": "Reel de Instagram del carrusel c02 (el mismo video del Short)",
-  "horas": {
-   "ig": "20:00"
-  }
- },
- {
-  "fecha": "2026-10-31",
   "tipo": "video",
   "id": "02",
   "estado": "por_programar",
   "horas": {},
   "que": "Video 02 (ya generado)"
- },
- {
-  "fecha": "2026-11-01",
-  "tipo": "reel",
-  "id": "",
-  "estado": "programado",
-  "que": "Reel de Instagram del carrusel c01 (el mismo video del Short)",
-  "horas": {
-   "ig": "20:00"
-  }
  },
  {
   "fecha": "2026-11-01",

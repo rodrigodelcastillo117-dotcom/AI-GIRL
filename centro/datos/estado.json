@@ -3,19 +3,19 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Video y carrusel en días alternos: algo nuevo cada día · cada red a su hora · auditoría diaria 06:37",
   "dias_entre_videos": 2,
-  "proxima_ejecucion_utc": "2026-10-30T20:00:00Z",
-  "proxima_que": "Sale el carrusel c03 · reglas de los grandes (Instagram 12:31 · TikTok 17:00 · YouTube 14:00)",
+  "proxima_ejecucion_utc": "2026-10-31T20:00:00Z",
+  "proxima_que": "Sale el video 02 · la hora de cada red la fija la auditoría de ese día",
   "proximas": [
    {
-    "utc": "2026-10-30T20:00:00Z",
-    "que": "Sale el carrusel c03 · reglas de los grandes (Instagram 12:31 · TikTok 17:00 · YouTube 14:00)"
+    "utc": "2026-10-31T20:00:00Z",
+    "que": "Sale el video 02 · la hora de cada red la fija la auditoría de ese día"
    },
    {
-    "utc": "2026-10-30T23:00:00Z",
-    "que": "Sale el carrusel c03 · reglas de los grandes (Instagram 12:31 · TikTok 17:00 · YouTube 14:00)"
+    "utc": "2026-11-01T15:00:00Z",
+    "que": "Sale el carrusel c01 · aguinaldo (Instagram 12:00 · TikTok 09:00 · YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-10-30T19:23:53Z",
+  "generado_utc": "2026-10-31T03:49:53Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
