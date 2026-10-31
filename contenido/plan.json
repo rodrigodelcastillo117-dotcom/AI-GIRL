@@ -1718,7 +1718,18 @@
           "boca_hablando_sin_voz_s": 0.63,
           "fallas": []
         },
-        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos y título OK. La voz venía 333 ms atrasada respecto a la boca (qa_sync falló); se adelantó el audio 0.25 s sin regenerar y pasó (boca 67 ms adelante, como los videos buenos). La voz arranca a 0.2 s."
+        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos y título OK. La voz venía 333 ms atrasada respecto a la boca (qa_sync falló); se adelantó el audio 0.25 s sin regenerar y pasó (boca 67 ms adelante, como los videos buenos). La voz arranca a 0.2 s. 31-oct: se le pasó naturalizar.py (grano y movimiento de mano) y volvió a pasar la sincronía.",
+        "sincronia_natural": {
+          "cuadros": 360,
+          "fps": 30.0,
+          "cara_en_cuadros": 0.989,
+          "desfase_ms": -67,
+          "correlacion": 0.144,
+          "correlacion_sin_desfase": 0.088,
+          "voz_con_boca_quieta_s": 0.27,
+          "boca_hablando_sin_voz_s": 0.63,
+          "fallas": []
+        }
       },
       "decision": {
         "toca_publicar": true,
