@@ -14,11 +14,12 @@
     "publicacion": "directa",
     "zona_horaria": "America/Mexico_City",
     "prueba_de_horario": "Rotación de franjas (config.json → prueba_horas) hasta tener 5 videos por franja; luego se fija la que gane. Un video cada 2 días.",
-    "perro": "Capital, el Rottweiler, siempre dentro del cuadro de principio a fin.",
-    "camara": "Plano medio. Movimiento lento lateral o leve; NUNCA acercamiento fuerte (en el video 01 sacó a Capital del cuadro).",
+    "perro": "Capital, el Rottweiler, siempre en el cuadro pero natural: echado, respirando, mirando a otro lado; nunca sentado tieso mirando a la cámara (31-oct: \"se ve muy AI\").",
+    "camara": "Estilo celular: Victoria se graba sola, de pecho para arriba, un poco descentrada, luz natural, con leve movimiento de mano; nunca acercamiento fuerte ni plano de estudio perfecto.",
     "vestuario": "Nunca se repite. Antes de generar, confirmar que no aparece en ningún video con estado distinto de pendiente.",
     "cierre_de_texto": "Personaje y video creados con IA.",
-    "seo": "Bloque \"seo\" por video: palabra_clave, titulo (≤45, afirmación, sin # ni : ni |, emoji opcional al final), descripcion_inicio (2 líneas), tags_concretas y hashtags concretos. Ver docs/SEO.md y docs/REGLAS_APRENDIDAS.md."
+    "seo": "Bloque \"seo\" por video: palabra_clave, titulo (≤45, afirmación, sin # ni : ni |, emoji opcional al final), descripcion_inicio (2 líneas), tags_concretas y hashtags concretos. Ver docs/SEO.md y docs/REGLAS_APRENDIDAS.md.",
+    "locaciones": "Lugares reales (sala, cocina, recámara, oficina, coche, café); nada de estadio, jet, yate ni jacuzzi en videos a cámara."
   },
   "locaciones_nuevas": {
     "coche": "Interior de un sedán de lujo moderno, asientos de piel color crema, tablero de madera, ciudad al atardecer por la ventana, sin logotipos de marca. Ella en el asiento trasero, Capital a su lado en el asiento.",
@@ -234,7 +235,7 @@
       ],
       "fuente": "Profeco: en el Buen Fin 2024 solo 52% de los productos analizados bajó de precio (citado en prensa, 2024); historial de precios de Profeco 2026 (UnoTV, oct-2026); Secretaría de Economía: Buen Fin 2026 del 13 al 17 de noviembre",
       "vestuario": "Suéter de cachemir color camel, falda midi de satín negra, collar de perlas",
-      "accion": "Sentada en la sala con el celular en la mano, como tomando foto de un precio; Capital sentado a su lado.",
+      "accion": "Sentada en el sillón de su sala, con el celular en la mano a la altura del pecho; Capital echado en el sillón junto a ella.",
       "texto_pantalla": "¿Las ofertas del Buen Fin son reales?",
       "texto_post": "En un Buen Fin, Profeco encontró que casi la mitad de las \"ofertas\" no bajaban de precio. 🏷️\nToma foto hoy del precio de lo que quieres y compáralo del 13 al 17 de noviembre. Si no bajó, no es oferta.\n\n📚 Profeco · Secretaría de Economía",
       "pregunta_comentarios": "¿Qué vas a comprar en el Buen Fin?",
@@ -272,6 +273,12 @@
           "¿Cómo saber si una oferta del Buen Fin es real?",
           "¿Profeco revisa los precios del Buen Fin?"
         ]
+      },
+      "foto_base_lista": {
+        "openart_id": "2VdmdwwySiHe2YuSA9Bu",
+        "archivo": "assets/fotos/video-37-sala.jpg",
+        "url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/Gtp6MKXwyYH0MQuQMrcG/image_1793486892886_ea585069_1793486893617_411a3203.png",
+        "nota": "Hecha el 31-oct como prueba del estilo celular; no hace falta generar otra (paso 3)."
       }
     },
     {
@@ -547,7 +554,7 @@
       "formato": "a_camara",
       "id": "42",
       "pilar": "motivacion_economica",
-      "locacion": "yate",
+      "locacion": "oficina",
       "guion": "¿Cuánto junta al mes el diez por ciento de los hogares con más ingresos de México? Cerca de setenta y ocho mil pesos. El salario mínimo de este año: unos nueve mil quinientos. ¿En cuál estás tú? Lo importante no es dónde estás: es hacia dónde vas.",
       "subtitulos": [
         "¿Cuánto junta al mes",
@@ -566,8 +573,8 @@
         "salario mínimo"
       ],
       "fuente": "INEGI, ENIGH 2024: ingreso corriente trimestral promedio del decil X de $236,095 por hogar (≈$78,700 al mes); Conasami: salario mínimo general 2026 de $315.04 diarios (≈$9,580 al mes con 30.4 días)",
-      "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha, lentes de sol carey",
-      "accion": "Sentada en la cubierta del yate con el mar detrás; Capital sentado a su lado.",
+      "vestuario": "Blusa de seda blanca con moño al cuello, pantalón negro de talle alto, reloj dorado",
+      "accion": "En su escritorio de casa con la laptop abierta, se graba con el celular; Capital echado bajo el escritorio.",
       "texto_pantalla": "¿Cuánto gana el 10% más rico de México?",
       "texto_post": "¿Cuánto junta al mes el 10% de los hogares con más ingresos de México? 💰\nCerca de $78,000 (INEGI). El salario mínimo de 2026: unos $9,500 al mes.\n\n📚 INEGI, ENIGH 2024 · Conasami",
       "pregunta_comentarios": "¿En cuál estás tú? Sin pena.",
@@ -630,9 +637,9 @@
         "9"
       ],
       "fuente": "Regla del 72 (Luca Pacioli, 1494)",
-      "locacion": "yate",
-      "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
-      "accion": "Sentada en el sillón blanco de la cubierta, Capital sentado a su lado, mar turquesa detrás.",
+      "locacion": "cocina",
+      "vestuario": "Camisa de mezclilla clara arremangada, jeans rectos, aretes de aro dorados pequeños",
+      "accion": "Recargada en la barra de la cocina con una taza de café, se graba con el celular; Capital echado en el piso.",
       "hora_publicacion": "rotacion",
       "texto_post": "¿En cuántos años se duplica tu dinero? ⏳\nDivide 72 entre lo que te paga al año: al 8%, 9 años; al 4%, 18. Por eso cada punto cuenta.\n\n📚 Regla del 72",
       "seo": {
@@ -1012,9 +1019,9 @@
         "ahora"
       ],
       "fuente": "Balban et al., Cell Reports Medicine (2023), suspiro cíclico, Stanford",
-      "locacion": "jacuzzi",
-      "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
-      "accion": "Sentada en el borde del jacuzzi con la bata sobre los hombros, Capital echado en la cubierta junto a ella.",
+      "locacion": "recamara",
+      "vestuario": "Sudadera gris de algodón amplia, leggings negros, cabello en chongo suelto",
+      "accion": "Sentada en la cama con las piernas cruzadas, respirando hondo; Capital echado a los pies de la cama.",
       "hora_publicacion": "rotacion",
       "texto_post": "5 minutos al día de esta respiración mejoraron el ánimo más que meditar. 🌬️\nLo midió un estudio de Stanford: 2 inhalaciones por la nariz y 1 exhalación larga por la boca.\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)",
       "seo": {
@@ -1938,9 +1945,9 @@
         "6"
       ],
       "fuente": "Recomendación de la CONDUSEF: fondo de emergencia de 3 a 6 meses de gastos",
-      "locacion": "gimnasio",
-      "vestuario": "Conjunto deportivo de diseñador blanco: top, leggings y sudadera corta, coleta alta",
-      "accion": "De pie junto a las pesas del gimnasio con una toalla al hombro, Capital sentado a su lado.",
+      "locacion": "sala",
+      "vestuario": "Conjunto deportivo blanco: sudadera corta y leggings, coleta alta",
+      "accion": "Recién llegada del gimnasio, sentada en el sillón con su botella de agua; Capital echado junto a ella.",
       "hora_publicacion": "rotacion",
       "texto_post": "Tu propósito de año nuevo no debería ser el gym. 🎯\nDebería ser tu fondo de emergencia: de 3 a 6 meses de gastos, como recomienda Condusef. Si gastas $10,000 al mes, tu meta es de $30,000 a $60,000.",
       "seo": {
@@ -2860,9 +2867,9 @@
         "5"
       ],
       "fuente": "TechCrunch y Built In: Intuit compró Mailchimp en 2021 por 12,000 millones de dólares en efectivo y acciones; Mailchimp no recibió inversión externa desde su fundación en 2001",
-      "locacion": "jet",
+      "locacion": "oficina",
       "vestuario": "Suéter de cachemira negro de cuello redondo, pantalón de pinzas gris, reloj de acero",
-      "accion": "Sentada en el asiento de piel del jet con una libreta en las piernas, Capital sentado a su lado.",
+      "accion": "En su escritorio con una libreta, se graba con el celular; Capital echado junto a la silla.",
       "hora_publicacion": "rotacion",
       "texto_post": "Mailchimp nunca aceptó dinero de inversionistas. 🐵\nCreció solo con lo que vendía, y en 2021 Intuit la compró por 12 mil millones de dólares.\n\nAsí empezaron #4 · Sígueme para la #5.",
       "seo": {

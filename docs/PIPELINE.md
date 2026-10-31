@@ -169,20 +169,25 @@ de un carrusel, así cada carrusel estrena foto de Victoria sin gastar créditos
 `nano-banana-2` `image2image`, 9:16, 2K, `visualReferences` en este orden:
 hoja maestra de Victoria (`manifest.personaje.maestra`), Rottweiler (`manifest.perro`), locación.
 
-Prompt:
+Si el video ya trae `foto_base_lista` en el plan, se usa esa (no se genera otra).
+
+Prompt (estilo celular desde el 31-oct-2026: el de estudio "se veía muy AI"):
 ```
-Photorealistic vertical frame for a talking-to-camera video. The red-haired woman of Image 1
-(EXACT identity: same face, vivid green eyes, long copper-red wavy hair, red lipstick, subtle light
-freckles across nose and cheeks) in the location of Image 3 (same place, same light). She wears
-<vestuario en inglés>. <accion en inglés>. The Rottweiler of Image 2 (same dog, same markings,
-black leather collar with gold plate) is fully visible next to her. Medium shot, her face large
-and sharp in the upper half, the dog's whole head visible. She looks straight into the lens with
-a confident, magnetic expression. Elegant and classy, photorealistic, natural skin and fur
-texture, no text, no logos, no watermark.
+Candid vertical smartphone frame from a real talking-head video filmed by the creator herself with a
+phone front camera. The red-haired woman of Image 1 (EXACT identity: same face, green eyes, long
+copper-red wavy hair, subtle freckles) in a real, lived-in place like Image 3, with a few everyday
+objects around, natural daylight from a window, slightly uneven soft light, realistic skin texture
+with visible pores and tiny imperfections, natural everyday makeup with a soft red lip, hair natural,
+not styled. She wears <vestuario en inglés>. <accion en inglés>, mid-sentence, talking to the camera.
+Framed from the chest up, slightly off-center, camera at eye level and close, like a real creator
+filming herself. The Rottweiler of Image 2 (same dog, black leather collar with gold plate) relaxed
+next to her (lying down, looking away, partly visible). Not a studio, not glamorous, not symmetrical,
+no posed look, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark.
 ```
 
 Revisar la imagen (descargarla y verla): cara de Victoria (pelirroja, pecas, ojos verdes), Capital
-completo, vestuario correcto, manos y patas sin deformaciones. Si falla, repetir una vez.
+en el cuadro y relajado, vestuario correcto, manos y patas sin deformaciones, que parezca foto de celular
+y no render. Si falla, repetir una vez.
 
 ### Formato entrevista (`"formato": "entrevista"` en el plan)
 
@@ -219,9 +224,11 @@ Talking-to-camera vertical video in the scene of the first reference image (same
 outfit, same light). The woman is EXACTLY the red-haired woman of the second reference image:
 identical face, vivid green eyes, long copper-red wavy hair, red lipstick, subtle light freckles.
 The Rottweiler of the third reference image (same markings, black leather collar with gold plate)
-stays next to her and FULLY INSIDE THE FRAME for the entire video. Medium shot. Static camera
-with only a very slow, subtle lateral drift; NO zoom in, NO push-in. She looks straight into the
-lens and speaks to the viewer in natural Mexican Spanish, confident, warm and magnetic, with clear
+stays next to her, relaxed and INSIDE THE FRAME for the entire video, breathing and moving naturally
+(ear twitch, small head turns). Handheld smartphone selfie video: the camera moves very slightly like a
+phone held by hand; NO zoom in, NO push-in. She looks into the lens and talks like a real person filming
+herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, confident
+and warm, with clear
 accurate lip sync and the same voice as the audio reference. She says exactly: "<guion>"
 Soft room ambience, no music. Photorealistic, cinematic, elegant, no text on screen, no
 subtitles, no logos.
@@ -253,6 +260,9 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
    `aprendizaje`, `regla` concreta para la próxima vez). No repitas una regla que ya existe.
 
 ## 6. Subtítulos
+
+Primero, `python scripts/naturalizar.py video.mp4 video-nat.mp4` (grano fino, movimiento leve de mano y
+color menos saturado: quita el acabado "de IA"); los subtítulos y el título van sobre `video-nat.mp4`.
 
 ```
 python scripts/frases_a_tiempos.py palabras.json frases.json tiempos.json   # frases = "subtitulos" del plan
