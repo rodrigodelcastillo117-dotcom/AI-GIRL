@@ -124,5 +124,12 @@
   "tipo": "publicacion",
   "aprendizaje": "Los Shorts de los carruseles nunca tuvieron comentario con enlace (solo los videos lo tenían) y nadie los fijó. En Shorts, Instagram y TikTok el enlace de un comentario no se puede tocar; el único que funciona es el de la bio o el del canal. Publer solo acepta primer comentario en Instagram (networks.instagram.firstComment) y solo al crear el post.",
   "regla": "Cada Short de carrusel recibe su comentario con enlace al hacerse público (aprender.py medir) y Rodrigo lo fija a mano (link de Studio en el reporte). Cada post nuevo de Instagram lleva primer comentario que manda a la bio. Si Publer lo rechaza, el post sale sin él."
+ },
+ {
+  "fecha_utc": "2026-10-31T02:50:00Z",
+  "origen": "Rodrigo (\"¿por qué se subieron 2?\")",
+  "tipo": "publicacion",
+  "aprendizaje": "El 30-oct salieron dos carruseles el mismo día en las 3 redes (c02, ya programado desde la mañana, y c03, que se programó en la tarde para probar horas sin revisar que ese día ya tenía carrusel). Instagram tuvo 3 posts ese día con el Reel de c03.",
+  "regla": "Un video o carrusel por día y por red. publer_carrusel.py se niega a programar si ese día ya sale otra publicación en Instagram o TikTok (--forzar solo si Rodrigo lo pide). El Reel del carrusel sí puede ir el mismo día: es su versión en video."
  }
 ]

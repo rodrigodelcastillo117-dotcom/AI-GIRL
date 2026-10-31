@@ -5,6 +5,8 @@ Uso: python publer_carrusel.py <id> <cuando_utc> [--borrador] [--prueba]
      python publer_carrusel.py <id> <cuando_utc|auto> --reel [--prueba]
      --borrador  lo deja como borrador en Publer (no sale): para que Rodrigo lo vea antes.
      --prueba    imprime lo que mandaría, sin llamar a Publer.
+     --forzar    deja programarlo aunque ese día ya salga otro video o carrusel en esa red (sin esto, se niega:
+                 el 30-oct salieron c02 y c03 el mismo día por no revisarlo).
      --reel      sube carruseles/<id>/short.mp4 (el mismo video del Short de YouTube: 0 créditos) como Reel
                  solo en Instagram. El carrusel de fotos casi solo lo ven los seguidores; el Reel también
                  llega a no seguidores. "auto" elige la hora (hora_reel). Queda en carruseles.json → reel_ig,
@@ -32,6 +34,17 @@ def comentario_ig(c, config):
     if c.get('enlace'):
         return f"{c['enlace']['etiqueta']}: el enlace está en mi perfil 👆"
     return config.get('primer_comentario_instagram')
+
+
+def ya_sale_ese_dia(c, cuando, todos, plan):
+    """Lo que ya sale el mismo día (México) en Instagram o TikTok: un video o carrusel por día y por red
+    (Rodrigo: video un día, carrusel el siguiente). El Reel del carrusel no cuenta: es su versión en video."""
+    choques = []
+    for proveedor, r in (('instagram', 'ig'), ('tiktok', 'tt')):
+        dia = a_utc(cuando_de(cuando, proveedor)).astimezone(CDMX).date()
+        choques += [f"{r}: {x['id']} a las {h[r].strftime('%H:%M')}" for x, h in publicaciones(plan, todos)
+                    if x['id'] != c['id'] and r in h and h[r].date() == dia]
+    return choques
 
 
 def red_post(proveedor, tipo_ig, media, texto, titulo, comentario=None):
@@ -128,6 +141,11 @@ def main():
         reel(c, cuando, json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))))
         return
     estado = 'draft' if '--borrador' in sys.argv else 'scheduled'
+    if estado == 'scheduled' and '--forzar' not in sys.argv:
+        todos = json.load(open(os.path.join(RAIZ, 'contenido', 'carruseles.json')))['carruseles']
+        choques = ya_sale_ese_dia(c, cuando, todos, json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json'))))
+        if choques:
+            sys.exit(f'ERROR: ese día ya sale otra publicación ({"; ".join(choques)}). Elige otro día o usa --forzar.')
     fotos = sorted(glob.glob(os.path.join(RAIZ, 'carruseles', c['id'], '[0-9][0-9].png')))
     if len(fotos) != len(c['diapositivas']) + 2:
         sys.exit(f'ERROR: faltan fotos en carruseles/{c["id"]}: corre primero carrusel.py {c["id"]}')
