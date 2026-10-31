@@ -309,19 +309,19 @@
      "voz": "Costco gana cerca de la mitad con membresías. Busca ingreso que se repite."
     },
     {
-     "titulo": "Amazon",
-     "texto": "Jeff Bezos dejó un trabajo seguro con una pregunta: a los 80 años, ¿me arrepentiría de no intentarlo?\n\nJeff Bezos, entrevistas públicas",
-     "voz": "Bezos dejó un trabajo seguro preguntándose si a los ochenta se arrepentiría."
+     "titulo": "Spanx",
+     "texto": "Sara Blakely la empezó con 5,000 dólares de sus ahorros y sin inversionistas.\n→ Empieza con lo que tienes.\n\nFortune y CNBC",
+     "voz": "Spanx empezó con cinco mil dólares de ahorros. Empieza con lo que tienes."
     },
     {
-     "titulo": "Tu porqué",
-     "texto": "La gente no compra lo que haces: compra por qué lo haces.\n\nSimon Sinek, Empieza con el porqué (TED, 2009)",
-     "voz": "La gente no compra lo que haces, compra por qué lo haces."
+     "titulo": "Dollar Shave Club",
+     "texto": "Un video de 4,500 dólares en YouTube agotó su inventario en horas. En 2016, Unilever la compró por cerca de 1,000 millones.\n→ Un buen video vende más que una tienda.\n\nCNBC; Fortune",
+     "voz": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones."
     },
     {
-     "titulo": "Ley de Parkinson",
-     "texto": "El trabajo se estira hasta llenar el tiempo que le das.\n→ Dale a tu proyecto la mitad del tiempo.\n\nC. Northcote Parkinson, The Economist (1955)",
-     "voz": "Y el trabajo se estira hasta llenar el tiempo que le das. Dale la mitad."
+     "titulo": "Mailchimp",
+     "texto": "Nunca aceptó dinero de inversionistas. En 2021, Intuit la compró por 12,000 millones de dólares.\n→ Crecer con lo que vendes también funciona.\n\nTechCrunch; Built In",
+     "voz": "Y Mailchimp creció sin inversionistas: la vendieron en doce mil millones."
     }
    ],
    "cierre": {
@@ -329,9 +329,9 @@
     "texto": "Cuéntame en los comentarios.\nGuárdalo para cuando lo necesites.",
     "voz": "¿Cuál aplicas en tu negocio? Guárdalo."
    },
-   "fuente": "Marc Randolph, That Will Never Work (2019); Fortune y CNBC; Costco Form 10-K FY2025; Jeff Bezos (entrevistas); Simon Sinek (TED 2009); C. Northcote Parkinson, The Economist (1955)",
+   "fuente": "Marc Randolph, That Will Never Work (2019); Fortune y CNBC; Costco Form 10-K FY2025; Fortune y CNBC (Spanx); CNBC y Fortune (Dollar Shave Club, Unilever 2016); TechCrunch y Built In (Mailchimp, Intuit 2021)",
    "titulo_post": "5 lecciones de negocio que valen millones",
-   "texto_post": "Lecciones de negocio de Blockbuster, Costco, Amazon y dos ideas que todo emprendedor debería saber. 💼\nBlockbuster pudo comprar Netflix por 50 millones de dólares en 2000 y en 2010 quebró.\n\n¿Cuál aplicas en tu negocio? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a alguien que está emprendiendo.",
+   "texto_post": "Lecciones de negocio de Blockbuster, Costco, Spanx, Dollar Shave Club y Mailchimp, con sus cifras. 💼\nBlockbuster pudo comprar Netflix por 50 millones de dólares en 2000 y en 2010 quebró. Spanx empezó con 5,000 dólares; Mailchimp, sin un solo inversionista.\n\n¿Cuál aplicas en tu negocio? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien dice que sin dinero no se puede emprender.",
    "seo": {
     "palabra_clave": "lecciones de negocio",
     "titulo": "Lecciones de negocio que valen millones 💼",
@@ -339,9 +339,9 @@
      "lecciones de negocio",
      "blockbuster netflix",
      "costco membresias",
-     "jeff bezos",
-     "simon sinek",
-     "ley de parkinson",
+     "spanx sara blakely",
+     "dollar shave club",
+     "mailchimp sin inversionistas",
      "consejos para emprendedores",
      "historias de empresas",
      "como emprender",
@@ -356,9 +356,10 @@
     "preguntas": [
      "¿Por qué quebró Blockbuster?",
      "¿Cómo gana dinero Costco?",
-     "¿Qué es la ley de Parkinson?"
+     "¿Se puede emprender sin inversionistas?"
     ]
-   }
+   },
+   "nota_cambio": "Rodrigo (31-oct): fuera las frases de Bezos, Sinek y Parkinson; empresas con cifras."
   },
   {
    "id": "c05",

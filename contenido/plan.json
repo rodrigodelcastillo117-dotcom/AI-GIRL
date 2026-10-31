@@ -609,13 +609,15 @@
       "id": "03",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Una división te dice cuándo se duplica tu dinero. Setenta y dos entre tu tasa anual. Al ocho por ciento: nueve años. Regla del setenta y dos.",
+      "guion": "¿En cuántos años se duplica tu dinero? Divide setenta y dos entre lo que te paga al año. Si te pagan ocho por ciento: nueve años. Si te pagan cuatro: dieciocho. Por eso cada punto cuenta.",
       "subtitulos": [
-        "Una división te dice",
-        "cuándo se duplica tu dinero.",
-        "72 entre tu tasa anual.",
+        "¿En cuántos años",
+        "se duplica tu dinero?",
+        "Divide 72 entre",
+        "lo que te paga al año.",
         "Al 8%: 9 años.",
-        "Regla del 72."
+        "Al 4%: 18 años.",
+        "Por eso cada punto cuenta."
       ],
       "palabras_clave": [
         "división",
@@ -629,7 +631,7 @@
       "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha en la mano, sandalias doradas",
       "accion": "Sentada en el sillón blanco de la cubierta, Capital sentado a su lado, mar turquesa detrás.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Una división te dice cuándo se duplica tu dinero. ⏳\n72 entre tu tasa anual. Al 8% anual: 9 años.\n\n📚 Regla del 72\n⚠️ Contenido educativo, no es asesoría financiera.",
+      "texto_post": "¿En cuántos años se duplica tu dinero? ⏳\nDivide 72 entre lo que te paga al año: al 8%, 9 años; al 4%, 18. Por eso cada punto cuenta.\n\n📚 Regla del 72",
       "seo": {
         "palabra_clave": "regla del 72",
         "titulo": "Regla del 72 para duplicar tu dinero 📈",
@@ -663,21 +665,26 @@
         "¿Cuánto tarda tu dinero en duplicarse?"
       ],
       "texto_pantalla": "¿En cuántos años se duplica tu dinero?",
-      "pregunta_comentarios": "¿A qué tasa crece tu dinero hoy?"
+      "pregunta_comentarios": "¿Cuánto te paga tu cuenta al año?",
+      "guion_anterior": "Una división te dice cuándo se duplica tu dinero. Setenta y dos entre tu tasa anual. Al ocho por ciento: nueve años. Regla del setenta y dos.",
+      "mandar_a": "quien tiene su dinero parado en el banco",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "04",
       "estado": "pendiente",
       "pilar": "mentalidad",
-      "guion": "Si traes la cabeza llena de preocupaciones, haz esto quince minutos. Escribe todo lo que te preocupa, sin filtro. James Pennebaker lo estudió por décadas: aligera la mente.",
+      "guion": "¿Traes la cabeza llena? Escribe quince minutos todo lo que te preocupa, sin filtro y sin que nadie lo lea. El psicólogo James Pennebaker lo estudió por décadas: aligera la mente.",
       "subtitulos": [
-        "Si traes la cabeza",
-        "llena de preocupaciones,",
-        "haz esto 15 minutos.",
-        "Escribe todo lo que te preocupa,",
-        "sin filtro.",
-        "James Pennebaker lo estudió",
-        "por décadas: aligera la mente."
+        "¿Traes la cabeza llena?",
+        "Escribe 15 minutos",
+        "todo lo que te preocupa,",
+        "sin filtro y sin que nadie lo lea.",
+        "James Pennebaker",
+        "lo estudió por décadas:",
+        "aligera la mente."
       ],
       "palabras_clave": [
         "preocupaciones",
@@ -690,7 +697,7 @@
       "vestuario": "Conjunto de pijama de seda color champaña con bata a juego",
       "accion": "Sentada en la orilla de la cama con una libreta en la mano, Capital echado en la alfombra a sus pies con la cabeza levantada.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Si traes la cabeza llena de preocupaciones, escribe 15 minutos. ✍️\nTodo lo que te preocupa, sin filtro. Esta noche, pruébalo.\n\n📚 James W. Pennebaker, escritura expresiva\n💛 No sustituye ayuda profesional si la necesitas.",
+      "texto_post": "¿Traes la cabeza llena? Escribe 15 minutos. ✍️\nTodo lo que te preocupa, sin filtro y sin que nadie lo lea. El psicólogo James Pennebaker lo estudió por décadas: aligera la mente.\n\n📚 James W. Pennebaker, escritura expresiva",
       "seo": {
         "palabra_clave": "escritura expresiva",
         "titulo": "Escritura expresiva de 15 minutos ✍️",
@@ -722,20 +729,26 @@
         "Escribir lo que te preocupa durante quince minutos aligera la mente."
       ],
       "texto_pantalla": "15 minutos para vaciar tu cabeza",
-      "pregunta_comentarios": "¿Lo pruebas esta noche? Cuéntame cómo te fue."
+      "pregunta_comentarios": "¿Qué es lo que más te preocupa esta semana?",
+      "guion_anterior": "Si traes la cabeza llena de preocupaciones, haz esto quince minutos. Escribe todo lo que te preocupa, sin filtro. James Pennebaker lo estudió por décadas: aligera la mente.",
+      "mandar_a": "quien trae mil cosas en la cabeza",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "05",
       "estado": "pendiente",
       "pilar": "vida",
-      "guion": "Lo que te roba energía no son los problemas grandes: son los pendientes de dos minutos. Regla de David Allen: si toma menos, hazlo ya.",
+      "guion": "¿Por qué el día se te va sin hacer nada grande? Por los pendientes chiquitos. Regla de los dos minutos: si algo toma menos de dos minutos, hazlo ya. Ese correo, esa llamada, ese pago.",
       "subtitulos": [
-        "Lo que te roba energía",
-        "no son los problemas grandes:",
-        "son los pendientes",
-        "de 2 minutos.",
-        "Regla de David Allen:",
-        "si toma menos, hazlo ya."
+        "¿Por qué el día se te va",
+        "sin hacer nada grande?",
+        "Por los pendientes chiquitos.",
+        "Regla de los 2 minutos:",
+        "si toma menos de 2 minutos,",
+        "hazlo ya.",
+        "Ese correo, esa llamada, ese pago."
       ],
       "palabras_clave": [
         "energía",
@@ -749,7 +762,7 @@
       "vestuario": "Suéter de cachemira color crema, pantalón negro de vestir, reloj dorado",
       "accion": "De pie detrás de la isla de travertino con una taza de café, Capital sentado junto a la isla.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Lo que te roba energía son los pendientes de 2 minutos. ⚡\nSi toma menos de 2 minutos, hazlo ya.\n\n📚 David Allen, Organízate con eficacia",
+      "texto_post": "¿Por qué el día se te va sin hacer nada grande? ⚡\nPor los pendientes chiquitos. Regla de los 2 minutos: si toma menos de 2 minutos, hazlo ya.\n\n📚 David Allen, Organízate con eficacia",
       "seo": {
         "palabra_clave": "regla de los 2 minutos",
         "titulo": "Regla de los 2 minutos de David Allen ⚡",
@@ -782,20 +795,27 @@
         "Si algo toma menos de dos minutos, hazlo ya."
       ],
       "texto_pantalla": "Lo que de verdad te roba energía",
-      "pregunta_comentarios": "¿Cuántos pendientes de 2 minutos traes ahorita?"
+      "pregunta_comentarios": "¿Qué pendiente de 2 minutos traes cargando?",
+      "guion_anterior": "Lo que te roba energía no son los problemas grandes: son los pendientes de dos minutos. Regla de David Allen: si toma menos, hazlo ya.",
+      "mandar_a": "quien siempre dice que no le alcanza el día",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "06",
       "estado": "pendiente",
       "pilar": "motivacion_economica",
-      "guion": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. De cada diez pesos que ganes, guarda uno primero. Lo escribió George Clason hace casi cien años.",
+      "guion": "¿Ganas quince mil al mes? Aparta mil quinientos el día que te pagan, antes de gastar un peso. Si ahorras lo que te sobra, nunca sobra. Diez por ciento primero: la regla tiene casi cien años y sigue funcionando.",
       "subtitulos": [
+        "¿Ganas $15,000 al mes?",
+        "Aparta $1,500 el día que te pagan,",
+        "antes de gastar un peso.",
         "Si ahorras lo que te sobra,",
-        "casi nunca vas a ahorrar.",
-        "De cada 10 pesos que ganes,",
-        "guarda 1 primero.",
-        "Lo escribió George Clason",
-        "hace casi 100 años."
+        "nunca sobra.",
+        "10% primero:",
+        "la regla tiene casi 100 años",
+        "y sigue funcionando."
       ],
       "palabras_clave": [
         "sobra",
@@ -809,7 +829,7 @@
       "vestuario": "Vestido de noche negro de satín con hombros descubiertos, collar de perlas, labios rojos",
       "accion": "Sentada en el banco de terciopelo verde frente a la mesa con velas, Capital sentado junto a la mesa.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. 💰\nDe cada 10 pesos que ganes, guarda 1 primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia",
+      "texto_post": "¿Ganas $15,000 al mes? Aparta $1,500 el día que te pagan. 💰\nAntes de gastar un peso. Si ahorras lo que te sobra, nunca sobra: 10% primero.\n\n📚 George S. Clason, El hombre más rico de Babilonia",
       "seo": {
         "palabra_clave": "págate primero",
         "titulo": "Págate primero con el 10% de lo que ganas 💰",
@@ -842,7 +862,12 @@
         "De cada diez pesos que ganes, guarda uno para ti."
       ],
       "texto_pantalla": "Por qué nunca te alcanza para ahorrar",
-      "pregunta_comentarios": "¿Cuánto guardas de cada 10 pesos?"
+      "pregunta_comentarios": "¿Cuánto apartas tú cuando te pagan?",
+      "guion_anterior": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. De cada diez pesos que ganes, guarda uno primero. Lo escribió George Clason hace casi cien años.",
+      "mandar_a": "quien dice que nunca le alcanza para ahorrar",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "07",
@@ -967,14 +992,15 @@
       "id": "09",
       "estado": "pendiente",
       "pilar": "mentalidad",
-      "guion": "Cinco minutos de esta respiración mejoraron el ánimo más que meditar. Lo midió Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Pruébalo ahora.",
+      "guion": "Cinco minutos al día de esta respiración mejoraron el ánimo más que meditar. Lo midió un estudio de Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Hazlo ahorita, conmigo.",
       "subtitulos": [
-        "5 minutos de esta respiración",
+        "5 minutos al día",
+        "de esta respiración",
         "mejoraron el ánimo más que meditar.",
         "Lo midió Stanford.",
         "2 inhalaciones por la nariz,",
-        "una exhalación larga por la boca.",
-        "Pruébalo ahora."
+        "1 exhalación larga por la boca.",
+        "Hazlo ahorita, conmigo."
       ],
       "palabras_clave": [
         "5",
@@ -987,7 +1013,7 @@
       "vestuario": "Traje de baño negro de una pieza con escote elegante, bata de seda blanca sobre los hombros, aretes de oro",
       "accion": "Sentada en el borde del jacuzzi con la bata sobre los hombros, Capital echado en la cubierta junto a ella.",
       "hora_publicacion": "rotacion",
-      "texto_post": "5 minutos de esta respiración mejoraron el ánimo más que meditar. 🌬️\n2 inhalaciones por la nariz, 1 exhalación larga por la boca.\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)\n💛 Bienestar, no tratamiento médico.",
+      "texto_post": "5 minutos al día de esta respiración mejoraron el ánimo más que meditar. 🌬️\nLo midió un estudio de Stanford: 2 inhalaciones por la nariz y 1 exhalación larga por la boca.\n\n📚 Balban et al., Stanford, Cell Reports Medicine (2023)",
       "seo": {
         "palabra_clave": "suspiro cíclico",
         "titulo": "Suspiro cíclico para bajar el estrés",
@@ -1019,7 +1045,12 @@
         "Dos inhalaciones por la nariz y una exhalación larga por la boca."
       ],
       "texto_pantalla": "La respiración que le ganó a meditar",
-      "pregunta_comentarios": "¿Lo probaste? ¿Cómo te sentiste?"
+      "pregunta_comentarios": "¿Lo probaste? ¿Cómo te sentiste?",
+      "guion_anterior": "Cinco minutos de esta respiración mejoraron el ánimo más que meditar. Lo midió Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Pruébalo ahora.",
+      "mandar_a": "quien anda con el estrés hasta el techo",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "10",
@@ -1260,16 +1291,16 @@
       "id": "14",
       "estado": "pendiente",
       "pilar": "mentalidad",
-      "guion": "Si no puedes dormir pensando en pendientes, es por esto. Tu mente no suelta lo que dejaste a medias: efecto Zeigarnik. Escribe el siguiente paso y descansa.",
+      "guion": "¿No puedes dormir pensando en pendientes? Es tu mente, que no suelta lo que dejaste a medias. Un estudio encontró el truco: anota el siguiente paso de cada pendiente y tu cabeza lo suelta.",
       "subtitulos": [
-        "Si no puedes dormir",
-        "pensando en pendientes,",
-        "es por esto.",
+        "¿No puedes dormir",
+        "pensando en pendientes?",
         "Tu mente no suelta",
-        "lo que dejaste a medias:",
-        "efecto Zeigarnik.",
-        "Escribe el siguiente paso",
-        "y descansa."
+        "lo que dejaste a medias.",
+        "Un estudio encontró el truco:",
+        "anota el siguiente paso",
+        "de cada pendiente",
+        "y tu cabeza lo suelta."
       ],
       "palabras_clave": [
         "dormir",
@@ -1282,7 +1313,7 @@
       "vestuario": "Vestido camisero de seda azul cielo, cinturón dorado delgado, pies descalzos",
       "accion": "Sentada en el sillón bouclé del rincón de lectura con un libro cerrado en el regazo, Capital echado junto al sillón con la cabeza levantada.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Si no puedes dormir pensando en pendientes, es por esto. 🧠\nTu mente no suelta lo que dejaste a medias. Escribe el siguiente paso y descansa.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)",
+      "texto_post": "¿No puedes dormir pensando en pendientes? 🧠\nTu mente no suelta lo que dejaste a medias (efecto Zeigarnik). Anota el siguiente paso de cada pendiente y tu cabeza lo suelta.\n\n📚 Efecto Zeigarnik · Masicampo y Baumeister (2011)",
       "seo": {
         "palabra_clave": "efecto Zeigarnik",
         "titulo": "Efecto Zeigarnik y las tareas pendientes 🧠",
@@ -1314,20 +1345,26 @@
         "Tu mente no suelta lo que dejaste a medias."
       ],
       "texto_pantalla": "Por qué no puedes dormir con pendientes",
-      "pregunta_comentarios": "¿Qué pendiente no te deja dormir?"
+      "pregunta_comentarios": "¿Qué pendiente no te deja dormir?",
+      "guion_anterior": "Si no puedes dormir pensando en pendientes, es por esto. Tu mente no suelta lo que dejaste a medias: efecto Zeigarnik. Escribe el siguiente paso y descansa.",
+      "mandar_a": "quien se duerme pensando en el trabajo",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "15",
       "estado": "pendiente",
       "pilar": "vida",
-      "guion": "Antes de revisar el celular, haz esto. Primero lo que más te cuesta: Brian Tracy lo llama tragarte el sapo. Lo demás es ganancia.",
+      "guion": "Lo primero que haces en la mañana decide tu día. Antes de abrir el celular, haz la tarea que más te cuesta. Brian Tracy lo llama tragarse el sapo: después de eso, todo lo demás es ganancia.",
       "subtitulos": [
-        "Antes de revisar el celular,",
-        "haz esto.",
-        "Primero lo que más te cuesta:",
+        "Lo primero que haces en la mañana",
+        "decide tu día.",
+        "Antes de abrir el celular,",
+        "haz la tarea que más te cuesta.",
         "Brian Tracy lo llama",
-        "tragarte el sapo.",
-        "Lo demás es ganancia."
+        "tragarse el sapo:",
+        "lo demás es ganancia."
       ],
       "palabras_clave": [
         "celular",
@@ -1340,7 +1377,7 @@
       "vestuario": "Blusa blanca de seda con moño al cuello, falda lápiz negra, tacones negros, lentes de armazón delgado",
       "accion": "Sentada en la silla de piel frente al escritorio de nogal, Capital sentado junto al escritorio.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Antes de revisar el celular, haz esto. 🐸\nPrimero lo que más te cuesta. El resto del día es pura ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!",
+      "texto_post": "Lo primero que haces en la mañana decide tu día. 🐸\nAntes de abrir el celular, haz la tarea que más te cuesta: tragarse el sapo. Lo demás es ganancia.\n\n📚 Brian Tracy, ¡Tráguese ese sapo!",
       "seo": {
         "palabra_clave": "tráguese ese sapo",
         "titulo": "Tráguese ese sapo de Brian Tracy 🐸",
@@ -1372,7 +1409,12 @@
         "Haz primero lo que más te cuesta."
       ],
       "texto_pantalla": "Antes de ver tu celular, haz esto",
-      "pregunta_comentarios": "¿Cuál es tu sapo de mañana?"
+      "pregunta_comentarios": "¿Cuál es tu sapo de mañana?",
+      "guion_anterior": "Antes de revisar el celular, haz esto. Primero lo que más te cuesta: Brian Tracy lo llama tragarte el sapo. Lo demás es ganancia.",
+      "mandar_a": "quien abre el celular antes de abrir los ojos",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "16",
@@ -1726,14 +1768,16 @@
       "id": "20",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
+      "guion": "¿Tu aguinaldo se acaba en enero? Casi siempre es porque llega sin plan. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa. Si te llegan diez mil: cinco, tres y dos.",
       "subtitulos": [
-        "Aguinaldo sin plan",
-        "se acaba en enero.",
-        "Mi regla: la mitad",
-        "a deudas o ahorro,",
+        "¿Tu aguinaldo se acaba en enero?",
+        "Casi siempre es porque llega sin plan.",
+        "Mi regla:",
+        "50% a deudas o ahorro,",
         "30% a una meta",
-        "y 20 a un gusto sin culpa."
+        "y 20% a un gusto sin culpa.",
+        "Si te llegan $10,000:",
+        "$5,000, $3,000 y $2,000."
       ],
       "palabras_clave": [
         "enero",
@@ -1746,7 +1790,7 @@
       "vestuario": "Suéter oversize color marfil de cuello alto, falda midi de satín dorada, aretes de perla",
       "accion": "Sentada junto al árbol de Navidad con un sobre de dinero en las manos, Capital acostado a sus pies.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Aguinaldo sin plan se acaba en enero. 🎁\nMi regla: la mitad a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa.\n\nGuárdalo para cuando te depositen.",
+      "texto_post": "¿Tu aguinaldo se acaba en enero? 🎁\nMi regla: 50% a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa. Si te llegan $10,000: $5,000, $3,000 y $2,000.",
       "seo": {
         "palabra_clave": "qué hacer con tu aguinaldo",
         "titulo": "Qué hacer con tu aguinaldo en 2026 🎁",
@@ -1789,20 +1833,26 @@
       "texto_pantalla": "Cómo dividir tu aguinaldo",
       "pregunta_comentarios": "¿Tú cómo lo divides?",
       "parte": "Serie Aguinaldo 2026 · parte 4 de 4",
-      "mandar_a": "quien siempre se queda sin aguinaldo en enero"
+      "mandar_a": "quien siempre se queda sin aguinaldo en enero",
+      "guion_anterior": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "21",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
+      "guion": "¿Vas a gastar tu aguinaldo? Primero paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener. Condusef lo dice claro: primero las deudas más caras.",
       "subtitulos": [
-        "Antes de gastar tu aguinaldo,",
-        "paga tu tarjeta.",
+        "¿Vas a gastar tu aguinaldo?",
+        "Primero paga tu tarjeta.",
         "Cada peso que abonas",
         "deja de cobrarte intereses:",
         "es la ganancia más segura",
-        "que vas a tener."
+        "que vas a tener.",
+        "Condusef: primero",
+        "las deudas más caras."
       ],
       "palabras_clave": [
         "aguinaldo",
@@ -1815,7 +1865,7 @@
       "vestuario": "Vestido de satín color plata con tirantes delgados, chal negro, pulsera de diamantes",
       "accion": "Sentada a la mesa del restaurante sosteniendo una tarjeta de crédito dorada sin logos, Capital sentado junto a la mesa.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Antes de gastar tu aguinaldo, paga tu tarjeta. 💳\nCada peso que abonas deja de cobrarte intereses. Si tienes varias deudas, empieza por la de tasa más alta.\n\n📚 Recomendación de la CONDUSEF",
+      "texto_post": "¿Vas a gastar tu aguinaldo? Primero paga tu tarjeta. 💳\nCada peso que abonas deja de cobrarte intereses. Condusef lo dice claro: primero las deudas más caras.\n\n📚 Recomendación de la CONDUSEF",
       "seo": {
         "palabra_clave": "aguinaldo para pagar deudas",
         "titulo": "Aguinaldo para pagar deudas de tarjeta 💳",
@@ -1856,19 +1906,26 @@
         "hasta": "2027-01-10"
       },
       "texto_pantalla": "Lo primero que haces con tu aguinaldo",
-      "pregunta_comentarios": "¿A qué deuda va tu aguinaldo primero?"
+      "pregunta_comentarios": "¿Cuánto debes en tu tarjeta?",
+      "guion_anterior": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
+      "mandar_a": "quien ya tiene planes para su aguinaldo",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "22",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
+      "guion": "Tu propósito de año nuevo no debería ser el gym: debería ser tu fondo de emergencia. Condusef recomienda de tres a seis meses de gastos. Si gastas diez mil al mes, tu meta es de treinta a sesenta mil.",
       "subtitulos": [
         "Tu propósito de año nuevo",
-        "no es el gym,",
-        "es tu fondo de emergencia:",
-        "de 3 a 6 meses de gastos,",
-        "como recomienda la CONDUSEF."
+        "no debería ser el gym:",
+        "debería ser tu fondo de emergencia.",
+        "Condusef recomienda",
+        "de 3 a 6 meses de gastos.",
+        "Si gastas $10,000 al mes,",
+        "tu meta es de $30,000 a $60,000."
       ],
       "palabras_clave": [
         "propósito",
@@ -1882,7 +1939,7 @@
       "vestuario": "Conjunto deportivo de diseñador blanco: top, leggings y sudadera corta, coleta alta",
       "accion": "De pie junto a las pesas del gimnasio con una toalla al hombro, Capital sentado a su lado.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia. 🎯\nDe 3 a 6 meses de tus gastos, como recomienda la CONDUSEF.\n\nGuárdalo y empieza esta quincena.",
+      "texto_post": "Tu propósito de año nuevo no debería ser el gym. 🎯\nDebería ser tu fondo de emergencia: de 3 a 6 meses de gastos, como recomienda Condusef. Si gastas $10,000 al mes, tu meta es de $30,000 a $60,000.",
       "seo": {
         "palabra_clave": "fondo de emergencia",
         "titulo": "Fondo de emergencia, tu propósito 2027 🎯",
@@ -1923,7 +1980,12 @@
         "hasta": "2027-01-20"
       },
       "texto_pantalla": "Tu propósito 2027 no es el gym",
-      "pregunta_comentarios": "¿Cuántos meses de gastos tienes guardados?"
+      "pregunta_comentarios": "¿Cuántos meses aguantarías sin sueldo?",
+      "guion_anterior": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
+      "mandar_a": "quien ya está haciendo su lista de propósitos",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "23",
@@ -1995,7 +2057,7 @@
     },
     {
       "id": "24",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "finanzas",
       "guion": "Meses sin intereses no es dinero gratis. Cada mensualidad se come tu sueldo de los próximos meses. Antes de firmar, suma todas las que ya traes.",
       "subtitulos": [
@@ -2058,19 +2120,23 @@
         "hasta": "2027-01-31"
       },
       "texto_pantalla": "Meses sin intereses no es gratis",
-      "pregunta_comentarios": "¿Cuántas mensualidades traes ahorita?"
+      "pregunta_comentarios": "¿Cuántas mensualidades traes ahorita?",
+      "nota_reserva": "Repetía el 38 (meses sin intereses del Buen Fin)."
     },
     {
       "id": "25",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
+      "guion": "Enero sin presupuesto es enero en números rojos. Haz el tuyo en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres, veinte a ahorro y deudas. Si ganas doce mil: seis mil, tres mil seiscientos y dos mil cuatrocientos.",
       "subtitulos": [
-        "Haz tu presupuesto de enero",
-        "en un minuto:",
+        "Enero sin presupuesto",
+        "es enero en números rojos.",
+        "Haz el tuyo en un minuto:",
         "50% a lo necesario,",
-        "30 a lo que quieres",
-        "y 20 a ahorro y deudas."
+        "30% a lo que quieres,",
+        "20% a ahorro y deudas.",
+        "Si ganas $12,000:",
+        "$6,000, $3,600 y $2,400."
       ],
       "palabras_clave": [
         "minuto",
@@ -2083,7 +2149,7 @@
       "vestuario": "Camisa de seda color lavanda, pantalón sastre beige, reloj plateado",
       "accion": "Sentada al escritorio con una libreta abierta y una pluma en la mano, Capital sentado junto al escritorio.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Haz tu presupuesto de enero en un minuto. 📊\n50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas.\n\n📚 Elizabeth Warren y Amelia Warren Tyagi, All Your Worth",
+      "texto_post": "Enero sin presupuesto es enero en números rojos. 📊\nTu presupuesto en un minuto: 50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas. Si ganas $12,000: $6,000, $3,600 y $2,400.\n\n📚 Elizabeth Warren y Amelia Warren Tyagi, All Your Worth",
       "seo": {
         "palabra_clave": "presupuesto 50/30/20",
         "titulo": "Presupuesto 50/30/20 en un minuto 📊",
@@ -2123,21 +2189,27 @@
         "hasta": "2027-02-10"
       },
       "texto_pantalla": "Tu presupuesto en 3 números",
-      "pregunta_comentarios": "¿Ya hiciste tu presupuesto de enero?"
+      "pregunta_comentarios": "¿Cuánto se te va en lo que quieres?",
+      "guion_anterior": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
+      "mandar_a": "quien siempre llega a fin de mes sin un peso",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "26",
       "estado": "pendiente",
       "pilar": "relaciones",
-      "guion": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. Lo midió un estudio de cuatro mil parejas. Hablen de dinero antes de pelear.",
+      "guion": "¿Pelean por dinero? Ojo: un estudio de más de cuatro mil parejas encontró que las peleas por dinero predicen el divorcio más que otras peleas. Hablen de dinero antes de que sea pelea.",
       "subtitulos": [
-        "Las peleas por dinero",
+        "¿Pelean por dinero?",
+        "Ojo: un estudio de",
+        "más de 4,000 parejas",
+        "encontró que las peleas por dinero",
         "predicen el divorcio",
-        "más que otras peleas de pareja.",
-        "Lo midió un estudio",
-        "de 4 mil parejas.",
+        "más que otras peleas.",
         "Hablen de dinero",
-        "antes de pelear."
+        "antes de que sea pelea."
       ],
       "palabras_clave": [
         "dinero",
@@ -2150,7 +2222,7 @@
       "vestuario": "Vestido de seda rojo vino con escote en V, aretes de diamante, cabello recogido",
       "accion": "Sentada en una mesa para dos con dos copas de vino, Capital sentado junto a la mesa.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. 💔\nHablen de dinero antes de pelear por él.\n\n📚 Dew, Britt y Huston, Family Relations (2012), 4,574 parejas",
+      "texto_post": "¿Pelean por dinero? Ojo con esto. 💔\nUn estudio de más de 4,000 parejas encontró que las peleas por dinero predicen el divorcio más que otras peleas. Hablen de dinero antes de que sea pelea.\n\n📚 Dew, Britt y Huston, Family Relations (2012), 4,574 parejas",
       "seo": {
         "palabra_clave": "peleas por dinero en pareja",
         "titulo": "Peleas por dinero en pareja y el divorcio 💔",
@@ -2187,21 +2259,27 @@
       },
       "puente_producto": true,
       "texto_pantalla": "La pelea que predice el divorcio",
-      "pregunta_comentarios": "¿En tu relación hablan de dinero?"
+      "pregunta_comentarios": "¿En tu casa quién maneja el dinero?",
+      "guion_anterior": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. Lo midió un estudio de cuatro mil parejas. Hablen de dinero antes de pelear.",
+      "mandar_a": "tu pareja (si se atreven)",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "27",
       "estado": "pendiente",
       "pilar": "empresas",
-      "guion": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Fue en dos mil. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño.",
+      "guion": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Fue en el año dos mil. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño: a veces es tu reemplazo.",
       "subtitulos": [
         "Blockbuster pudo comprar Netflix",
         "por 50 millones de dólares",
         "y se rio.",
-        "Fue en 2000.",
+        "Fue en el año 2000.",
         "10 años después,",
         "Blockbuster quebró.",
-        "Nunca te rías de lo pequeño."
+        "Nunca te rías de lo pequeño:",
+        "a veces es tu reemplazo."
       ],
       "palabras_clave": [
         "netflix",
@@ -2214,7 +2292,7 @@
       "vestuario": "Blazer de terciopelo azul medianoche, top de seda negro, aretes dorados",
       "accion": "Sentada en el sillón con un control remoto en la mano, Capital echado a su lado.",
       "hora_publicacion": "rotacion",
-      "texto_post": "Blockbuster pudo comprar Netflix por 50 millones de dólares y se rio. 📼\nFue en 2000. 10 años después, Blockbuster quebró. Nunca te rías de lo pequeño.\n\n📚 Marc Randolph, cofundador de Netflix, That Will Never Work",
+      "texto_post": "Blockbuster pudo comprar Netflix por 50 millones de dólares y se rio. 🎬\nFue en el año 2000. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño: a veces es tu reemplazo.\n\n📚 Marc Randolph, cofundador de Netflix, That Will Never Work",
       "seo": {
         "palabra_clave": "Blockbuster y Netflix",
         "titulo": "Blockbuster y Netflix por 50 millones 📼",
@@ -2250,20 +2328,27 @@
         "tipo_gancho": "cifra"
       },
       "texto_pantalla": "Pudieron comprar Netflix y se rieron",
-      "pregunta_comentarios": "¿Qué empresa crees que es el próximo Blockbuster?"
+      "pregunta_comentarios": "¿Qué negocio crees que va a desaparecer?",
+      "guion_anterior": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Fue en dos mil. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño.",
+      "mandar_a": "quien se burla de los negocios nuevos",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "28",
       "estado": "pendiente",
       "pilar": "empresas",
-      "guion": "La mitad de lo que gana Costco no viene de lo que vende: viene de las membresías. Clientes que pagan cada año antes de comprar. Ingreso recurrente.",
+      "guion": "¿Sabes de dónde sale la mitad de lo que gana Costco? No de lo que vende: de las membresías. Gente que paga cada año antes de comprar un solo producto. Si tu negocio cobra antes de vender, duermes tranquilo.",
       "subtitulos": [
-        "La mitad de lo que gana Costco",
-        "no viene de lo que vende:",
-        "viene de las membresías.",
-        "Clientes que pagan cada año",
-        "antes de comprar.",
-        "Ingreso recurrente."
+        "¿De dónde sale la mitad",
+        "de lo que gana Costco?",
+        "No de lo que vende:",
+        "de las membresías.",
+        "Gente que paga cada año",
+        "antes de comprar un solo producto.",
+        "Si tu negocio cobra antes de vender,",
+        "duermes tranquilo."
       ],
       "palabras_clave": [
         "mitad",
@@ -2276,7 +2361,7 @@
       "vestuario": "Camisa blanca de popelina oversize, pantalón de cuero negro, cinturón dorado",
       "accion": "De pie junto al escritorio con una tarjeta de membresía dorada sin logos en la mano, Capital sentado a su lado.",
       "hora_publicacion": "rotacion",
-      "texto_post": "La mitad de lo que gana Costco no viene de lo que vende. 🛒\nViene de las membresías: clientes que pagan cada año antes de comprar. Eso es ingreso recurrente.\n\n📚 Costco, reporte anual del año fiscal 2025",
+      "texto_post": "¿Sabes de dónde sale la mitad de lo que gana Costco? 🛒\nNo de lo que vende: de las membresías. Gente que paga cada año antes de comprar un solo producto.\n\n📚 Costco, reporte anual del año fiscal 2025",
       "seo": {
         "palabra_clave": "modelo de negocio de Costco",
         "titulo": "Modelo de negocio de Costco 🛒",
@@ -2312,7 +2397,12 @@
         "tipo_gancho": "contradiccion"
       },
       "texto_pantalla": "Costco no gana vendiendo",
-      "pregunta_comentarios": "¿Pagas alguna membresía que no usas?"
+      "pregunta_comentarios": "¿Tu negocio podría cobrar una membresía?",
+      "guion_anterior": "La mitad de lo que gana Costco no viene de lo que vende: viene de las membresías. Clientes que pagan cada año antes de comprar. Ingreso recurrente.",
+      "mandar_a": "quien tiene un negocio y vive al día",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "29",
@@ -2320,13 +2410,14 @@
       "pilar": "negocio",
       "formato": "entrevista",
       "pregunta_pantalla": "¿Cuál es el error #1 al emprender?",
-      "guion": "Enamorarte de tu idea antes de que alguien la pague. Vende primero, aunque sea a diez personas. Si nadie paga, no es negocio: es pasatiempo.",
+      "guion": "Enamorarte de tu idea antes de que alguien la pague. Antes de gastar un peso, véndela, aunque sea a diez personas. Si nadie paga, no es negocio: es pasatiempo. Así lo enseña El método Lean Startup.",
       "subtitulos": [
         "Enamorarte de tu idea",
         "antes de que alguien la pague.",
-        "Vende primero,",
-        "aunque sea a 10 personas.",
-        "Si nadie paga, no es negocio:",
+        "Antes de gastar un peso,",
+        "véndela, aunque sea a 10 personas.",
+        "Si nadie paga,",
+        "no es negocio:",
         "es pasatiempo."
       ],
       "palabras_clave": [
@@ -2374,7 +2465,12 @@
       "adn": {
         "tipo_gancho": "error"
       },
-      "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea?"
+      "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea?",
+      "guion_anterior": "Enamorarte de tu idea antes de que alguien la pague. Vende primero, aunque sea a diez personas. Si nadie paga, no es negocio: es pasatiempo.",
+      "mandar_a": "quien lleva meses con \"la idea\"",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "30",
@@ -2382,11 +2478,12 @@
       "pilar": "negocio",
       "formato": "entrevista",
       "pregunta_pantalla": "¿Cuánto dinero necesitas para emprender?",
-      "guion": "Menos del que crees. Sara Blakely empezó Spanx con cinco mil dólares de sus ahorros. Empieza con lo que tienes y crece con lo que vendes.",
+      "guion": "Menos de lo que crees. Sara Blakely empezó Spanx con cinco mil dólares de sus ahorros y sin un solo inversionista. Empieza con lo que tienes y crece con lo que vendes.",
       "subtitulos": [
-        "Menos del que crees.",
+        "Menos de lo que crees.",
         "Sara Blakely empezó Spanx",
-        "con 5 mil dólares de sus ahorros.",
+        "con 5,000 dólares de sus ahorros",
+        "y sin un solo inversionista.",
         "Empieza con lo que tienes",
         "y crece con lo que vendes."
       ],
@@ -2435,7 +2532,12 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "pregunta_comentarios": "¿Con cuánto empezaste tu negocio?"
+      "pregunta_comentarios": "¿Con cuánto empezaste tu negocio?",
+      "guion_anterior": "Menos del que crees. Sara Blakely empezó Spanx con cinco mil dólares de sus ahorros. Empieza con lo que tienes y crece con lo que vendes.",
+      "mandar_a": "quien dice que no emprende por falta de dinero",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "31",
@@ -2443,12 +2545,13 @@
       "pilar": "negocio",
       "formato": "entrevista",
       "pregunta_pantalla": "¿Necesitas una idea original para emprender?",
-      "guion": "No. Google no fue el primer buscador. Facebook no fue la primera red social. Gana quien lo hace mejor, no quien llega primero.",
+      "guion": "No. Google no fue el primer buscador: antes estaban AltaVista y Excite. Facebook no fue la primera red social: antes estaban Friendster y MySpace. Gana quien lo hace mejor, no quien llega primero.",
       "subtitulos": [
         "No.",
-        "Google no fue el primer buscador.",
-        "Facebook no fue",
-        "la primera red social.",
+        "Google no fue el primer buscador:",
+        "antes estaban AltaVista y Excite.",
+        "Facebook no fue la primera red social:",
+        "antes estaban Friendster y MySpace.",
         "Gana quien lo hace mejor,",
         "no quien llega primero."
       ],
@@ -2497,7 +2600,12 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "pregunta_comentarios": "¿Qué negocio harías mejor que el original?"
+      "pregunta_comentarios": "¿Qué negocio harías mejor que el original?",
+      "guion_anterior": "No. Google no fue el primer buscador. Facebook no fue la primera red social. Gana quien lo hace mejor, no quien llega primero.",
+      "mandar_a": "quien dice que su idea \"ya existe\"",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "32",
@@ -2509,16 +2617,16 @@
         "numero": 1
       },
       "texto_pantalla": "Así empezaron #1: Airbnb casi quiebra",
-      "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores llenos de deudas vendieron cajas a cuarenta dólares. Juntaron unos treinta mil y entraron a una aceleradora. Sígueme para la número dos.",
+      "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores estaban llenos de deudas y vendieron cajas de cereal de edición especial a cuarenta dólares. Juntaron unos treinta mil y después entraron a una aceleradora. Sígueme para la historia número dos.",
       "subtitulos": [
         "Airbnb casi quiebra",
         "y se salvó vendiendo cereal.",
-        "En 2008, sus fundadores",
-        "llenos de deudas",
-        "vendieron cajas a 40 dólares.",
-        "Juntaron unos 30 mil",
+        "En 2008, llenos de deudas,",
+        "vendieron cajas de cereal",
+        "de edición especial a 40 dólares.",
+        "Juntaron unos 30,000",
         "y entraron a una aceleradora.",
-        "Sígueme para la número 2."
+        "Sígueme para la historia #2."
       ],
       "palabras_clave": [
         "airbnb",
@@ -2566,7 +2674,12 @@
       "adn": {
         "tipo_gancho": "dato"
       },
-      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+      "guion_anterior": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores llenos de deudas vendieron cajas a cuarenta dólares. Juntaron unos treinta mil y entraron a una aceleradora. Sígueme para la número dos.",
+      "mandar_a": "quien está a punto de rendirse con su negocio",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "33",
@@ -2578,16 +2691,18 @@
         "numero": 2
       },
       "texto_pantalla": "Así empezaron #2: un video de 4,500 dólares",
-      "guion": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Unilever la compró. Sígueme para la número tres.",
+      "guion": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Cuatro años después, Unilever compró la empresa. Un buen video puede valer más que una tienda. Sígueme para la número tres.",
       "subtitulos": [
         "Un video de 4,500 dólares",
         "terminó en una venta",
         "de mil millones.",
         "Dollar Shave Club lo subió a YouTube",
-        "y se le acabó el inventario",
-        "en horas.",
-        "Unilever la compró.",
-        "Sígueme para la número 3."
+        "y se le acabó el inventario en horas.",
+        "4 años después,",
+        "Unilever compró la empresa.",
+        "Un buen video puede valer",
+        "más que una tienda.",
+        "Sígueme para la #3."
       ],
       "palabras_clave": [
         "4500",
@@ -2596,7 +2711,7 @@
         "horas",
         "3"
       ],
-      "fuente": "CNBC: Michael Dubin dijo que el video costó 4,500 dólares y que el inventario se agotó en horas; Fortune: Unilever la compró en 2016 por cerca de 1,000 millones de dólares (cifra no oficial)",
+      "fuente": "CNBC: Michael Dubin dijo que el video costó 4,500 dólares y que el inventario se agotó en horas; Fortune: Unilever la compró en 2016 por cerca de 1,000 millones de dólares (cifra no oficial); el video salió en marzo de 2012 (4 años antes de la compra de 2016)",
       "locacion": "oficina",
       "vestuario": "Blazer azul rey oversize sobre top negro, pantalón negro recto, mocasines dorados",
       "accion": "Sentada al escritorio junto a una laptop cerrada, Capital sentado a su lado.",
@@ -2635,7 +2750,12 @@
       "adn": {
         "tipo_gancho": "cifra"
       },
-      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+      "guion_anterior": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Unilever la compró. Sígueme para la número tres.",
+      "mandar_a": "quien dice que las redes no venden",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "34",
@@ -2717,16 +2837,15 @@
         "numero": 4
       },
       "texto_pantalla": "Así empezaron #4: sin un solo inversionista",
-      "guion": "Mailchimp nunca aceptó dinero de inversionistas. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. No necesitas inversionistas para crecer. Sígueme para la número cinco.",
+      "guion": "¿Necesitas inversionistas para crecer? Mailchimp nunca aceptó su dinero. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. Sígueme para la número cinco.",
       "subtitulos": [
-        "Mailchimp nunca aceptó dinero",
-        "de inversionistas.",
+        "¿Necesitas inversionistas",
+        "para crecer?",
+        "Mailchimp nunca aceptó su dinero.",
         "Creció solo con lo que vendía.",
         "En 2021, Intuit la compró",
-        "por 12 mil millones de dólares.",
-        "No necesitas inversionistas",
-        "para crecer.",
-        "Sígueme para la número 5."
+        "por 12,000 millones de dólares.",
+        "Sígueme para la #5."
       ],
       "palabras_clave": [
         "nunca",
@@ -2774,7 +2893,12 @@
       "adn": {
         "tipo_gancho": "contradiccion"
       },
-      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
+      "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+      "guion_anterior": "Mailchimp nunca aceptó dinero de inversionistas. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. No necesitas inversionistas para crecer. Sígueme para la número cinco.",
+      "mandar_a": "quien cree que sin inversionistas no se puede",
+      "mejoras_aplicadas": [
+        "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
+      ]
     },
     {
       "id": "36",
