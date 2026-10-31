@@ -102,6 +102,8 @@ def textos_youtube(c, config):
                                         ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
                                         ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt'))) if u][:2]
     post = '\n'.join(l for l in c['texto_post'].strip().splitlines() if 'enlace en mi perfil' not in l)  # en YouTube va el enlace directo
+    if s['palabra_clave'].lower() not in post.split('\n')[0].lower():  # la búsqueda lee la primera línea (docs/SEO.md)
+        post = s['palabra_clave'][:1].upper() + s['palabra_clave'][1:] + ': ' + post[:1].lower() + post[1:]
     descripcion = '\n\n'.join(x for x in [
         post, '\n'.join(enlaces), f"📚 Fuentes: {c['fuente']}",
         'Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in s['preguntas']),
