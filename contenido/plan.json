@@ -1095,7 +1095,9 @@
       },
       "texto_pantalla": "¿Cuánto aguinaldo te toca?",
       "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?",
-      "guion_anterior": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre."
+      "guion_anterior": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
+      "parte": "Serie Aguinaldo 2026 · parte 2 de 4",
+      "mandar_a": "tu compañero de trabajo que no sabe cuánto le toca"
     },
     {
       "id": "18",
@@ -1164,7 +1166,9 @@
       },
       "texto_pantalla": "¿Renunciaste? También te toca aguinaldo",
       "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?",
-      "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito."
+      "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
+      "parte": "Serie Aguinaldo 2026 · parte 3 de 4",
+      "mandar_a": "quien renunció o cambió de trabajo este año"
     },
     {
       "id": "19",
@@ -1306,7 +1310,9 @@
       "mejoras_aplicadas": [
         "Gancho en pregunta con cifra propia (docs/GANCHOS.md, patrones virales 31-oct)",
         "Plano más cerrado: cara más grande para la sincronía"
-      ]
+      ],
+      "parte": "Serie Aguinaldo 2026 · parte 1 de 4",
+      "mandar_a": "quien está esperando su aguinaldo completo"
     },
     {
       "id": "20",
@@ -1373,7 +1379,9 @@
         "hasta": "2026-12-19"
       },
       "texto_pantalla": "Cómo dividir tu aguinaldo",
-      "pregunta_comentarios": "¿Tú cómo lo divides?"
+      "pregunta_comentarios": "¿Tú cómo lo divides?",
+      "parte": "Serie Aguinaldo 2026 · parte 4 de 4",
+      "mandar_a": "quien siempre se queda sin aguinaldo en enero"
     },
     {
       "id": "21",

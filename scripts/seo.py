@@ -103,6 +103,9 @@ def textos(video, plan, config):
         sys.exit(f"ERROR: el título del video {video['id']} \"{seo['titulo']}\" " + '; '.join(errores))
     cierre = plan['reglas']['cierre_de_texto']
     post = '\n'.join(l for l in video['texto_post'].strip().splitlines() if not l.strip().startswith('#')).strip()
+    if video.get('parte'):  # serie numerada (docs/VIRAL.md): debajo de la primera línea, que es con la que se mide
+        primera, _, resto = post.partition('\n')
+        post = f"{primera}\n📌 {video['parte']}" + (f"\n{resto}" if resto else '')
     # Una pregunta concreta saca comentarios, y los comentarios dan alcance (docs/GUIONES_VIRALES.md).
     if video.get('pregunta_comentarios'):
         post = f"{post}\n\n💬 {video['pregunta_comentarios']}"
@@ -134,7 +137,9 @@ def textos(video, plan, config):
                '📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
                '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
     # Instagram y TikTok buscan por las palabras del pie: el párrafo va completo en los dos.
-    mandar = config.get('invitacion_mandar', '📩 Mándaselo a alguien que lo necesite.')
+    # A quién mandárselo, con nombre y apellido de situación: los envíos son lo que más reparte un reel (docs/VIRAL.md).
+    mandar = (f"📩 Mándaselo a {video['mandar_a']}." if video.get('mandar_a')
+              else config.get('invitacion_mandar', '📩 Mándaselo a alguien que lo necesite.'))
     instagram = '\n\n'.join(x for x in [post, parrafo, mandar, llamado, ' '.join(hashtags_para('instagram', seo, config)), cierre] if x)[:2200]
     tiktok = '\n\n'.join(x for x in [
         post, parrafo, ('🔎 ' + ' '.join(preguntas)) if preguntas else '', mandar, llamado,
