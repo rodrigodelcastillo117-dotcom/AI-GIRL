@@ -738,13 +738,11 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
     pendientes = sum(1 for v in plan['videos'] if v['estado'] == 'pendiente')
     if pendientes < 5:
         lista.append(f'Quedan {pendientes} guiones: hay que escribir 10 nuevos (paso 1c).')
-    por_mes = 30 // config.get('dias_entre_videos', 2)
-    siguientes = [v for v in plan['videos'] if v['estado'] == 'pendiente'][:por_mes]
-    gasto = sum(creditos(v, config) for v in siguientes)
-    tope = int(config.get('creditos_al_mes', 12000) * (1 - config.get('reserva_reintentos', 0.15)))
-    if gasto > tope:
-        lista.append(f'Los próximos {len(siguientes)} videos piden {gasto} créditos y el tope del mes es {tope} '
-                     '(deja 15% para reintentos): acortar los guiones más largos.')
+    p = presupuesto(plan, ejecuciones, config, hoy)
+    if p and p['sobran'] < 0:
+        lista.append(f"Créditos: hasta el {p['renovacion']} se necesitan {p['necesarios']} para {p['videos']} videos y hay "
+                     f"{p['restantes']} (dejando {p['reserva']}): faltan {-p['sobran']}. Los días que no alcance, sale carrusel "
+                     "(gratis) en lugar de video.")
     pps = config.get('palabras_por_segundo', 2.33)
     for v in plan['videos']:
         if v['estado'] == 'pendiente' and len(v['guion'].split()) > segundos(v, config) * pps + 1:
@@ -765,6 +763,24 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
         lista.append('Es lunes: pedir a Rodrigo capturas de las estadísticas de Instagram y TikTok de la semana '
                      '(sus números por API no son fiables, regla 33).')
     return lista
+
+
+def presupuesto(plan, ejecuciones, config, hoy):
+    """Créditos hasta la renovación de OpenArt: se gastan hasta dejar reserva_final_creditos (Rodrigo, 31-oct: "que
+    quedemos con 100 al final"). Videos que faltan = uno cada dias_entre_videos hasta renovacion_creditos."""
+    if not ejecuciones or not config.get('renovacion_creditos'):
+        return None
+    restantes = sorted(ejecuciones, key=lambda e: e['fecha_utc'])[-1]['creditos_restantes']
+    renovacion = datetime.date.fromisoformat(config['renovacion_creditos'])
+    while renovacion <= hoy:  # el ciclo se repite cada mes
+        renovacion = (renovacion.replace(day=1) + datetime.timedelta(days=32)).replace(day=min(renovacion.day, 28))
+    hechos = sum(1 for v in plan['videos'] if v['estado'] == 'listo_para_publicar')  # ya generados: no gastan
+    videos = max(0, -(-(renovacion - hoy).days // config.get('dias_entre_videos', 2)) - hechos)
+    pendientes = [v for v in plan['videos'] if v['estado'] == 'pendiente'][:videos]
+    necesarios = sum(creditos(v, config) for v in pendientes)
+    reserva = config.get('reserva_final_creditos', 100)
+    return {'restantes': restantes, 'renovacion': renovacion.isoformat(), 'videos': len(pendientes),
+            'necesarios': necesarios, 'reserva': reserva, 'sobran': restantes - reserva - necesarios}
 
 
 def auditar():

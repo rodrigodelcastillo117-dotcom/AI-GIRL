@@ -26,8 +26,9 @@ todas; cuando los datos propios digan otra cosa, mandan los propios.
    `/tmp/voz/bin/python` o en `VOZ_PYTHON`. Tarda ~1 min por frase en CPU: ~10 min por carrusel.
 3. Verificar `PUBLER_API_KEY` en el entorno (`env | grep -c PUBLER_API_KEY`). Si falta: no generar
    nada, reportar y terminar.
-4. `openart_account_get`: si hay menos créditos que `creditos_minimos_para_correr`
-   (`contenido/config.json`), no generar nada, reportar y terminar.
+4. `openart_account_get`: se gasta hasta dejar `reserva_final_creditos` (100). Si los créditos no alcanzan para el
+   video de `decision.video_id` (`decision.creditos`) más esos 100, no se genera: ese día sale carrusel (gratis) y
+   se avisa. El presupuesto hasta la renovación (`config.json → renovacion_creditos`) sale en las alertas de `auditar`.
 
 ## 1. Verificar, medir y auditar (todos los días)
 

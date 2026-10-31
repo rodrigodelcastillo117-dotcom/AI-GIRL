@@ -2,7 +2,6 @@
  "filtro_cuentas": "victoria",
  "zona_horaria": "America/Mexico_City",
  "hora_por_defecto": "18:45",
- "creditos_minimos_para_correr": 1100,
  "max_intentos_video": 2,
  "similitud_minima_audio": 0.85,
  "cuentas_publer": {
@@ -340,7 +339,6 @@
  "segundos_minimos": 10,
  "segundos_maximos": 25,
  "creditos_al_mes": 12000,
- "reserva_reintentos": 0.15,
  "playlists_youtube": {
   "asi_empezaron": {
    "titulo": "Así empezaron: historias de empresas famosas",
@@ -368,5 +366,8 @@
  },
  "productos_hotmart": {
   "8834813": "El Tablero de la CEO"
- }
+ },
+ "reserva_final_creditos": 100,
+ "renovacion_creditos": "2026-11-28",
+ "nota_creditos": "12,000 al mes. renovacion_creditos es estimada: el primer registro con 12,000 es del 29-oct-2026; cámbiala por la fecha de cobro real de OpenArt. Se gasta hasta dejar 100 (Rodrigo, 31-oct)."
 }
