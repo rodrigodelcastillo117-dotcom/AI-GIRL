@@ -59,6 +59,12 @@ próximos 15 videos se pasan y si algún guion no cabe en sus segundos.
     Buen Fin, inflación, con cifra en pesos y fuente oficial (Profeco, Condusef, SAT, INEGI, Banxico,
     Conasami). Un famoso solo si su historia se cuenta con un dato que sorprende; máximo 1 de cada 10 guiones.
 
+13. **Cuatro tiempos, siempre** (Rodrigo, 31-oct-2026: "que la gente se quede, hook fuerte, que nunca
+    aburra, que aporte, motive y ayude"): **gancho** (segundo 0-2: pregunta o cifra que te toca) →
+    **dato que sorprende** (con fuente) → **qué hacer hoy** (un paso concreto, en pesos si aplica) →
+    **cierre que motiva o engancha** (frase firme, bucle con el inicio o "sígueme para la parte 2").
+    Si falta un tiempo, el guion no está listo; si necesita más segundos para los cuatro, se usan.
+
 ## Qué decide el laboratorio
 
 El tipo de gancho (cifra, contradicción, error, nombre, regla, dato, cita), el tema, el fondo, la

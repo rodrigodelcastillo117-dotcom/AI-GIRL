@@ -482,17 +482,17 @@
       "id": "41",
       "pilar": "finanzas",
       "locacion": "recamara",
-      "guion": "¿Guardas dinero debajo del colchón? Si la inflación sigue en tres punto seis por ciento, diez mil pesos de hoy van a comprar como ocho mil cuatrocientos en cinco años. No lo pierdes de golpe: se encoge solito. Guardar no es lo mismo que proteger.",
+      "guion": "¿Guardas dinero debajo del colchón? Si la inflación sigue en tres punto seis por ciento, diez mil pesos van a comprar como ocho mil cuatrocientos en cinco años. No lo pierdes de golpe: se encoge solito. Haz que tu ahorro gane por lo menos la inflación.",
       "subtitulos": [
         "¿Guardas dinero",
         "debajo del colchón?",
         "Con inflación de 3.6%,",
-        "$10,000 de hoy",
-        "van a comprar como $8,400",
-        "en 5 años.",
+        "$10,000 van a comprar",
+        "como $8,400 en 5 años.",
         "No lo pierdes de golpe:",
         "se encoge solito.",
-        "Guardar no es lo mismo que proteger."
+        "Haz que tu ahorro gane",
+        "por lo menos la inflación."
       ],
       "palabras_clave": [
         "colchón",
@@ -548,7 +548,7 @@
       "id": "42",
       "pilar": "motivacion_economica",
       "locacion": "yate",
-      "guion": "¿Cuánto junta al mes el diez por ciento de los hogares con más ingresos de México? Cerca de setenta y ocho mil pesos. El salario mínimo de este año: unos nueve mil quinientos. ¿En cuál estás tú?",
+      "guion": "¿Cuánto junta al mes el diez por ciento de los hogares con más ingresos de México? Cerca de setenta y ocho mil pesos. El salario mínimo de este año: unos nueve mil quinientos. ¿En cuál estás tú? Lo importante no es dónde estás: es hacia dónde vas.",
       "subtitulos": [
         "¿Cuánto junta al mes",
         "el 10% de los hogares",
@@ -556,7 +556,9 @@
         "Cerca de $78,000.",
         "El salario mínimo de este año:",
         "unos $9,500.",
-        "¿En cuál estás tú?"
+        "¿En cuál estás tú?",
+        "Lo importante no es dónde estás:",
+        "es hacia dónde vas."
       ],
       "palabras_clave": [
         "10%",
@@ -609,7 +611,7 @@
       "id": "03",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "¿En cuántos años se duplica tu dinero? Divide setenta y dos entre lo que te paga al año. Si te pagan ocho por ciento: nueve años. Si te pagan cuatro: dieciocho. Por eso cada punto cuenta.",
+      "guion": "¿En cuántos años se duplica tu dinero? Divide setenta y dos entre lo que te paga al año. Si te pagan ocho por ciento: nueve años. Si te pagan cuatro: dieciocho. Pregunta hoy cuánto te paga tu cuenta.",
       "subtitulos": [
         "¿En cuántos años",
         "se duplica tu dinero?",
@@ -617,7 +619,8 @@
         "lo que te paga al año.",
         "Al 8%: 9 años.",
         "Al 4%: 18 años.",
-        "Por eso cada punto cuenta."
+        "Pregunta hoy",
+        "cuánto te paga tu cuenta."
       ],
       "palabras_clave": [
         "división",
@@ -2617,7 +2620,7 @@
         "numero": 1
       },
       "texto_pantalla": "Así empezaron #1: Airbnb casi quiebra",
-      "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores estaban llenos de deudas y vendieron cajas de cereal de edición especial a cuarenta dólares. Juntaron unos treinta mil y después entraron a una aceleradora. Sígueme para la historia número dos.",
+      "guion": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores estaban llenos de deudas y vendieron cajas de cereal de edición especial a cuarenta dólares. Juntaron unos treinta mil y después entraron a una aceleradora. Cuando todo se cae, vende lo que puedas. Sígueme para la historia número dos.",
       "subtitulos": [
         "Airbnb casi quiebra",
         "y se salvó vendiendo cereal.",
@@ -2626,6 +2629,8 @@
         "de edición especial a 40 dólares.",
         "Juntaron unos 30,000",
         "y entraron a una aceleradora.",
+        "Cuando todo se cae,",
+        "vende lo que puedas.",
         "Sígueme para la historia #2."
       ],
       "palabras_clave": [
