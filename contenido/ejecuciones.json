@@ -79,5 +79,23 @@
   "detalle": "Día sin video: el carrusel c02 ya estaba programado (18:45 en Instagram, TikTok y YouTube). Medición arreglada: Publer cambió sus métricas a objetos {name, value}. Video 01 a 13 h: YouTube 322, TikTok 89, Instagram 12. Sin comentarios por contestar.",
   "creditos_usados": 0,
   "creditos_restantes": 9870
+ },
+ {
+  "fecha_utc": "2026-10-31T12:55:00Z",
+  "tipo": "publicar",
+  "video_id": "02",
+  "resultado": "programado",
+  "detalle": "Video 02 (Pareto) programado: YouTube 10:00, TikTok 17:00, Instagram 20:00 con primer comentario; labios OK (boca 100 ms adelante).",
+  "creditos_usados": 0,
+  "creditos_restantes": 9809
+ },
+ {
+  "fecha_utc": "2026-10-31T13:20:00Z",
+  "tipo": "generar",
+  "video_id": "19",
+  "resultado": "listo_para_publicar",
+  "detalle": "Video 19 (aguinaldo e ISR, gancho nuevo): 2 fotos (la primera con plano muy abierto), video de 12 s; audio adelantado 0.25 s para corregir la sincronía.",
+  "creditos_usados": 540,
+  "creditos_restantes": 9269
  }
 ]

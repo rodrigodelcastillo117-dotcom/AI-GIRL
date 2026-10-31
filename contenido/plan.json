@@ -1176,7 +1176,7 @@
     },
     {
       "id": "19",
-      "estado": "pendiente",
+      "estado": "listo_para_publicar",
       "pilar": "finanzas",
       "guion": "¿Por qué tu aguinaldo llega incompleto? Los primeros tres mil quinientos diecinueve pesos no pagan impuestos; lo que pasa de ahí, sí. Es el impuesto, no un error.",
       "subtitulos": [
@@ -1240,7 +1240,81 @@
       "duracion": 12,
       "texto_pantalla": "Por qué tu aguinaldo llega incompleto",
       "pregunta_comentarios": "¿Te ha llegado menos aguinaldo del que esperabas?",
-      "guion_anterior": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos."
+      "guion_anterior": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos.",
+      "archivo": "videos/video-19-sillon-isr-SUBTITULADO.mp4",
+      "openart": {
+        "foto": "KMqL9ntwPznfNelUW8tn",
+        "foto_descartada": "Fetp22A1LHcn2PBLz12P (plano abierto, cara chica)",
+        "video": "Fa9SXVQV0vnWfMCRgYNt"
+      },
+      "foto_base": "assets/fotos/video-19-sillon.jpg",
+      "creditos": 540,
+      "qa": {
+        "similitud": 0.93,
+        "sincronia": {
+          "cuadros": 360,
+          "fps": 30.0,
+          "cara_en_cuadros": 0.922,
+          "desfase_ms": -67,
+          "correlacion": 0.183,
+          "correlacion_sin_desfase": 0.124,
+          "voz_con_boca_quieta_s": 0.27,
+          "boca_hablando_sin_voz_s": 0.63,
+          "fallas": []
+        },
+        "notas": "Victoria y Capital visibles en los 6 cuadros; subtítulos y título OK. La voz venía 333 ms atrasada respecto a la boca (qa_sync falló); se adelantó el audio 0.25 s sin regenerar y pasó (boca 67 ms adelante, como los videos buenos). La voz arranca a 0.2 s."
+      },
+      "decision": {
+        "toca_publicar": true,
+        "motivo": "el último salió el 2026-10-29",
+        "hora_siguiente": "20:00",
+        "horarios": {
+          "ig": "20:00",
+          "tt": "17:00",
+          "yt": "10:00"
+        },
+        "cuando": {
+          "ig": "2026-11-01T02:00:00Z",
+          "tt": "2026-10-31T23:00:00Z",
+          "yt": "2026-10-31T16:00:00Z"
+        },
+        "prueba_horas": "ig: en prueba (08:00 0/4, 12:00 1/4, 15:00 0/4, 18:00 0/4, 20:00 0/4) · tt: en prueba (09:00 1/4, 13:00 0/4, 15:00 0/4, 17:00 0/4, 20:00 0/4) · yt: en prueba (10:00 0/4, 12:00 1/4, 14:00 1/4, 17:00 1/4, 20:00 0/4)",
+        "conteo_horas": {
+          "ig": {
+            "08:00": 0,
+            "12:00": 1,
+            "15:00": 0,
+            "18:00": 0,
+            "20:00": 0
+          },
+          "tt": {
+            "09:00": 1,
+            "13:00": 0,
+            "15:00": 0,
+            "17:00": 0,
+            "20:00": 0
+          },
+          "yt": {
+            "10:00": 0,
+            "12:00": 1,
+            "14:00": 1,
+            "17:00": 1,
+            "20:00": 0
+          }
+        },
+        "publicar_hoy": "02",
+        "video_id": "19",
+        "modo": "temporada",
+        "esperado": null,
+        "cambios_sugeridos": [],
+        "por_que": "Temporada: el video 19 solo sirve hasta el 2026-12-19.",
+        "segundos": 12,
+        "creditos": 510
+      },
+      "mejoras_aplicadas": [
+        "Gancho en pregunta con cifra propia (docs/GANCHOS.md, patrones virales 31-oct)",
+        "Plano más cerrado: cara más grande para la sincronía"
+      ]
     },
     {
       "id": "20",

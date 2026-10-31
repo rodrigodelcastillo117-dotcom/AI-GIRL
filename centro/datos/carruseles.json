@@ -13,7 +13,7 @@
    "tt": "2026-11-01 09:00",
    "yt": "2026-11-01 17:00"
   },
-  "youtube_id": "OgSZUknXNHc",
+  "youtube_id": "eYNxOcD44Kw",
   "publica_utc": "2026-11-01T23:00:00Z",
   "linea": "aguinaldo 2026: cuánto te toca, cuándo te lo pagan y cuánto paga de isr. 💸",
   "tipo": "carrusel",
@@ -35,21 +35,33 @@
   "fondo": "restaurante.jpg",
   "portada": "video-02-palco.jpg",
   "horas": {
-   "ig": "2026-10-30 18:00",
-   "tt": "2026-10-30 20:00",
+   "ig": "2026-10-30 18:02",
+   "tt": "2026-10-30 20:05",
    "yt": "2026-10-30 12:00"
   },
   "youtube_id": "IPwU8EGGwZU",
-  "publica_utc": "2026-10-31T02:00:00Z",
+  "publica_utc": "2026-10-31T02:05:59Z",
   "linea": "si haces esto con tu dinero, haz esto en su lugar. 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "ig": "2026-10-31T00:00:00Z",
-   "tt": "2026-10-31T02:00:00Z",
+   "ig": "2026-10-31T00:02:01Z",
+   "tt": "2026-10-31T02:05:59Z",
    "yt": "2026-10-30T18:00:00Z"
-  }
+  },
+  "v_yt": 20,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
+  "v_tt": 197,
+  "l_tt": 4,
+  "c_tt": 0,
+  "s_tt": 0,
+  "v_ig": 6,
+  "l_ig": 5,
+  "c_ig": 4,
+  "s_ig": 0
  },
  {
   "id": "c03",
@@ -62,20 +74,32 @@
   "portada": "yate-blazer-blanco.jpg",
   "horas": {
    "ig": "2026-10-30 12:31",
-   "tt": "2026-10-30 17:00",
+   "tt": "2026-10-30 17:06",
    "yt": "2026-10-30 14:00"
   },
   "youtube_id": "CQAdpk1SqR4",
-  "publica_utc": "2026-10-30T23:00:00Z",
+  "publica_utc": "2026-10-30T23:06:00Z",
   "linea": "reglas de dinero de warren buffett, charlie munger y tres más que vale la pena memorizar. 💡",
   "tipo": "carrusel",
   "linea_reel": "5 reglas de dinero que repiten los que más saben",
-  "reel_ig": "2026-10-30 20:00",
+  "reel_ig": "2026-10-30 20:02",
   "publica_utc_por_red": {
    "ig": "2026-10-30T18:31:52Z",
-   "tt": "2026-10-30T23:00:00Z",
+   "tt": "2026-10-30T23:06:00Z",
    "yt": "2026-10-30T20:00:00Z"
-  }
+  },
+  "v_yt": 27,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
+  "v_tt": 516,
+  "l_tt": 14,
+  "c_tt": 0,
+  "s_tt": 1,
+  "v_ig": 48,
+  "l_ig": 8,
+  "c_ig": 12,
+  "s_ig": 2
  },
  {
   "id": "c04",

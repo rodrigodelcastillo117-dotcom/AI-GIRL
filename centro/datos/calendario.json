@@ -1,45 +1,15 @@
 [
  {
-  "fecha": "2026-10-30",
-  "tipo": "reel",
-  "id": "",
-  "estado": "programado",
-  "que": "Reel de Instagram del carrusel c03 (el mismo video del Short)",
-  "horas": {
-   "ig": "20:00"
-  }
- },
- {
-  "fecha": "2026-10-30",
-  "tipo": "carrusel",
-  "id": "c02",
-  "que": "Sale el carrusel c02 · habitos dinero",
-  "estado": "programado",
-  "horas": {
-   "ig": "18:00",
-   "tt": "20:00",
-   "yt": "12:00"
-  }
- },
- {
-  "fecha": "2026-10-30",
-  "tipo": "carrusel",
-  "id": "c03",
-  "que": "Sale el carrusel c03 · reglas de los grandes",
-  "estado": "programado",
-  "horas": {
-   "ig": "12:31",
-   "tt": "17:00",
-   "yt": "14:00"
-  }
- },
- {
   "fecha": "2026-10-31",
   "tipo": "video",
   "id": "02",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video 02 (ya generado)"
+  "que": "Sale el video 02",
+  "estado": "programado",
+  "horas": {
+   "ig": "20:00",
+   "tt": "17:00",
+   "yt": "10:00"
+  }
  },
  {
   "fecha": "2026-11-01",
@@ -56,10 +26,10 @@
  {
   "fecha": "2026-11-02",
   "tipo": "video",
-  "id": "",
+  "id": "19",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video (lo elige el laboratorio el día anterior)"
+  "que": "Video 19 (ya generado)"
  },
  {
   "fecha": "2026-11-03",
@@ -108,5 +78,13 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "carrusel",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel nuevo (se escribe)"
  }
 ]
