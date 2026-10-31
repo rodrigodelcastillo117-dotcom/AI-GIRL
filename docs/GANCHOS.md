@@ -61,5 +61,20 @@ Victoria es un personaje de IA y no inventa anécdotas (regla de `PIPELINE.md`),
 - **Vacías si no se llenan bien:** "Necesitas escuchar esto" y "La verdad que nadie te cuenta" no
   dicen nada (regla 5); solo pasan si lo que sigue es un dato poco conocido y comprobado.
 
+## Lo que tiene millones de vistas en finanzas en español (revid.ai, 31-oct-2026)
+
+Patrones, no textos (nunca copiar a otro creador). Muestra: 20 videos virales de dinero en español
+(TikTok, Reels, Shorts; 1 a 11 millones de vistas).
+- **Pregunta con una cifra que te toca a ti**, y la respuesta sorprende al final: "¿cuánto le
+  tocaría a cada mexicano si…?" (11.2 M), "cada mexicano debe casi ___" (1.5 M). Para Victoria:
+  "¿Ganas quince mil? Te tocan…", "¿Por qué tu aguinaldo llega incompleto?".
+- **Lista numerada con un hueco abierto**: "5 reglas… y la última es la que casi todos se saltan"
+  (1.3 M), "lo mejor viene al final" (2.9 M). El hueco obliga a ver hasta el final (retención).
+- **Negar lo obvio primero**: "No es abrir un restaurante, ni seguir modas…" y luego la respuesta.
+- **Mito que se cae**: "¿Sabías que ya no existe ___?" (1.1 M), siempre con fuente.
+- **Series numeradas** ("PT48"): la gente sigue la cuenta para ver la siguiente parte.
+- Los de estas cuentas duran 30 a 150 s; los de Victoria, 10 a 25 s por los créditos de OpenArt. Los
+  videos de carrusel (gratis, voz clonada) sí pueden llegar a 57 s: ahí cabe la lista con hueco.
+
 El laboratorio (`scripts/aprender.py`) compara las fórmulas por `adn.tipo_gancho` con las vistas a
 36 h: cuando haya datos, manda lo que gane con la audiencia de Victoria, no esta tabla.

@@ -1017,7 +1017,7 @@
       "id": "17",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
+      "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. Si no llegan antes del veinte de diciembre, puedes reclamarlo gratis en Profedet.",
       "subtitulos": [
         "Si ganas 15 mil al mes,",
         "tu aguinaldo mínimo",
@@ -1031,7 +1031,7 @@
         "15",
         "20"
       ],
-      "fuente": "Ley Federal del Trabajo, artículo 87",
+      "fuente": "Ley Federal del Trabajo, artículo 87; Profedet: asesoría y representación gratuitas si no pagan el aguinaldo (STPS; El Imparcial, 19-oct-2026)",
       "locacion": "sala_navidad",
       "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
       "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
@@ -1069,22 +1069,23 @@
         "Quince días de salario: eso es lo mínimo que te deben de aguinaldo."
       ],
       "adn": {
-        "tipo_gancho": "cifra"
+        "tipo_gancho": "pregunta"
       },
       "llamado": "aguinaldo",
       "ventana": {
-        "desde": "2026-11-10",
+        "desde": "2026-11-04",
         "hasta": "2026-12-19"
       },
       "duracion": 12,
       "texto_pantalla": "¿Cuánto aguinaldo te toca?",
-      "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?"
+      "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?",
+      "guion_anterior": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre."
     },
     {
       "id": "18",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
+      "guion": "¿Renunciaste este año? También te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
       "subtitulos": [
         "Si renunciaste este año,",
         "también te toca aguinaldo.",
@@ -1136,22 +1137,23 @@
         "Tu finiquito tiene que traer tu aguinaldo."
       ],
       "adn": {
-        "tipo_gancho": "dato"
+        "tipo_gancho": "pregunta"
       },
       "llamado": "aguinaldo",
       "ventana": {
-        "desde": "2026-11-26",
+        "desde": "2026-11-08",
         "hasta": "2026-12-19"
       },
       "duracion": 12,
       "texto_pantalla": "¿Renunciaste? También te toca aguinaldo",
-      "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?"
+      "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?",
+      "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito."
     },
     {
       "id": "19",
       "estado": "pendiente",
       "pilar": "finanzas",
-      "guion": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos.",
+      "guion": "¿Por qué tu aguinaldo llega incompleto? Los primeros tres mil quinientos diecinueve pesos no pagan impuestos; lo que pasa de ahí, sí. Es el impuesto, no un error.",
       "subtitulos": [
         "Tu aguinaldo no paga impuestos",
         "hasta 3,519 pesos.",
@@ -1202,16 +1204,17 @@
         "El SAT no toca tu aguinaldo hasta 3,519 pesos."
       ],
       "adn": {
-        "tipo_gancho": "cifra"
+        "tipo_gancho": "pregunta"
       },
       "llamado": "aguinaldo",
       "ventana": {
-        "desde": "2026-11-20",
+        "desde": "2026-11-01",
         "hasta": "2026-12-19"
       },
       "duracion": 12,
       "texto_pantalla": "Por qué tu aguinaldo llega incompleto",
-      "pregunta_comentarios": "¿Te ha llegado menos aguinaldo del que esperabas?"
+      "pregunta_comentarios": "¿Te ha llegado menos aguinaldo del que esperabas?",
+      "guion_anterior": "Tu aguinaldo no paga impuestos hasta tres mil quinientos diecinueve pesos. Lo que pase de eso sí paga, y por eso a veces te llega menos."
     },
     {
       "id": "20",
@@ -1274,7 +1277,7 @@
       },
       "llamado": "aguinaldo",
       "ventana": {
-        "desde": "2026-12-04",
+        "desde": "2026-11-28",
         "hasta": "2026-12-19"
       },
       "duracion": 12,
