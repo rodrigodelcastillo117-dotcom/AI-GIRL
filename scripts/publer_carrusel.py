@@ -20,12 +20,12 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import cuando_de, _pedir, cuentas_victoria, mandar, red, workspace_id, ya_programadas  # noqa: E402
+from publer import comentarios, cuando_de, _pedir, cuentas_victoria, mandar, red, workspace_id, ya_programadas  # noqa: E402
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
 
 
 def comentario_ig(c, config):
-    """Primer comentario de Instagram: el llamado del carrusel sin enlace (en Instagram solo se toca el de la bio)."""
+    """Primer comentario (Instagram y TikTok): el llamado del carrusel sin enlace (ahí solo se toca el de la bio)."""
     if c.get('enlace'):
         return f"{c['enlace']['etiqueta']}: el enlace está en mi perfil 👆"
     return config.get('primer_comentario_instagram')
@@ -44,7 +44,7 @@ def ya_sale_ese_dia(c, cuando, todos, plan):
 
 def red_post(proveedor, tipo_ig, media, texto, titulo, comentario=None):
     if proveedor == 'instagram':
-        return {'type': tipo_ig, 'text': texto, 'media': media, **({'firstComment': comentario} if comentario else {})}
+        return {'type': tipo_ig, 'text': texto, 'media': media}
     return {'type': 'photo', 'title': titulo[:90], 'text': texto, 'media': media,
             'details': {'privacy': 'PUBLIC_TO_EVERYONE', 'auto_add_music': True, 'comment': True}}
 
@@ -52,7 +52,7 @@ def red_post(proveedor, tipo_ig, media, texto, titulo, comentario=None):
 def cuerpo(cuenta, tipo_ig, media, texto, titulo, cuando, estado, comentario=None):
     return {'bulk': {'state': estado, 'posts': [{
         'networks': {red(cuenta): red_post(red(cuenta), tipo_ig, media, texto, titulo, comentario)},
-        'accounts': [{'id': cuenta['id'], 'scheduled_at': cuando}]}]}}
+        'accounts': [{'id': cuenta['id'], 'scheduled_at': cuando, **comentarios(comentario)}]}]}}
 
 
 def main():
@@ -80,7 +80,7 @@ def main():
         media = [{'id': f'MEDIA_{i}', 'type': 'image'} for i in range(len(fotos))]
         for cuenta in falsa:
             print(json.dumps(cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado,
-                                    comentario_ig(c, config) if red(cuenta) == 'instagram' else None), ensure_ascii=False, indent=1))
+                                    comentario_ig(c, config)), ensure_ascii=False, indent=1))
         return
     ws = workspace_id()
     _, cuentas = cuentas_victoria(ws)
@@ -103,7 +103,7 @@ def main():
     fallidas = []
     for cuenta in cuentas:
         # Instagram: Publer rechaza "carousel" (error interno) y acepta "photo" con varias fotos (probado 30-oct-2026).
-        comentario = comentario_ig(c, config) if red(cuenta) == 'instagram' else None
+        comentario = comentario_ig(c, config)
         motivo = mandar(ws, cuerpo(cuenta, 'photo', media, por_red[red(cuenta)], c['titulo_post'], cuando_de(cuando, red(cuenta)), estado, comentario))
         if motivo and comentario:  # si Publer no acepta el primer comentario, sale sin él
             print(f'AVISO: Publer rechazó el carrusel con primer comentario ({motivo[:200]}); lo mando sin comentario.')

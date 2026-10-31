@@ -169,17 +169,21 @@ def mandar(ws, body):
     return None
 
 
+def comentarios(texto):
+    """Comentario de seguimiento que Publer publica 1 minuto después del post (Instagram y TikTok)."""
+    return {'comments': [{'text': texto, 'delay': {'duration': 1, 'unit': 'Minute'}}]} if texto else {}
+
+
 def armar_post(cuentas, media_id, texto, titulo, cuando, comentario=None):
-    """comentario: primer comentario de Instagram (networks.instagram.firstComment, docs de Publer). Solo se puede
-    poner al crear el post: el PUT de Publer solo cambia texto y título. TikTok y YouTube no tienen ese campo."""
+    """comentario: primer comentario, como comentario de seguimiento de la cuenta (accounts[].comments con delay, docs de
+    Publer). networks.instagram.firstComment lo aceptaba pero lo ignoraba (video 02, 31-oct: comments vacío). Solo se
+    puede poner al crear el post: el PUT de Publer solo cambia texto y título."""
     redes = {}
     for proveedor in {red(c) for c in cuentas}:
         media = [{'id': media_id, 'type': 'video'}]
         if proveedor == 'instagram':
             redes['instagram'] = {'type': 'video', 'text': texto, 'media': media,
                                   'details': {'type': 'reel', 'feed': True}}
-            if comentario:
-                redes['instagram']['firstComment'] = comentario
         elif proveedor == 'tiktok':
             redes['tiktok'] = {'type': 'video', 'title': titulo, 'text': texto, 'media': media,
                                'details': {'privacy': 'PUBLIC_TO_EVERYONE', 'comment': True}}
@@ -190,7 +194,7 @@ def armar_post(cuentas, media_id, texto, titulo, cuando, comentario=None):
             redes['facebook'] = {'type': 'video', 'title': titulo, 'text': texto, 'media': media}
     return {'bulk': {'state': 'scheduled', 'posts': [{
         'networks': redes,
-        'accounts': [{'id': c['id'], 'scheduled_at': cuando} for c in cuentas],
+        'accounts': [{'id': c['id'], 'scheduled_at': cuando, **comentarios(comentario)} for c in cuentas],
     }]}}
 
 
@@ -254,7 +258,7 @@ def main():
     comentario = CONFIG.get('primer_comentario_instagram')
     for cuenta in cuentas:
         motivo = mandar(ws, armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando_de(cuando, red(cuenta)), comentario))
-        if motivo and comentario and red(cuenta) == 'instagram':  # si Publer no acepta el primer comentario, sale sin él
+        if motivo and comentario:  # si Publer no acepta el comentario, el post sale sin él
             print(f'AVISO: Publer rechazó el post con primer comentario ({motivo[:200]}); lo mando sin comentario.')
             motivo = mandar(ws, armar_post([cuenta], media_id, por_red.get(red(cuenta), texto), titulo, cuando_de(cuando, red(cuenta))))
         if motivo:

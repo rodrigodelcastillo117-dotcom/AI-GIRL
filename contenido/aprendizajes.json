@@ -152,5 +152,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Wan 3.0 dejó toda la voz 333 ms atrasada respecto a la boca (la voz arrancaba a 0.45 s). Adelantar el audio 0.25 s con ffmpeg (atrim) lo dejó en 67 ms, como los videos buenos, sin gastar otros 480 créditos. Además, la primera foto en plano abierto dejó la cara muy chica.",
   "regla": "Si qa_sync falla solo por un desfase parejo de toda la pista (correlación >= 0.10 en el mejor desfase), primero corrige el audio con ffmpeg (atrim/adelay) y vuelve a correr qa_sync y qa_audio; regenerar solo si no pasa. En la foto base pide \"close medium shot from her knees up\" y que la cara ocupe el tercio de arriba."
+ },
+ {
+  "fecha_utc": "2026-10-31T17:40:00Z",
+  "origen": "Rodrigo (\"no salió el comentario\") y revisión de YouTube",
+  "tipo": "publicacion",
+  "aprendizaje": "Publer aceptó networks.instagram.firstComment pero no lo guardó (comments vacío en el video 02). Además, otra automatización con acceso al canal de YouTube metió el enlace de erroresinvisibles.gumroad.com en las descripciones del 01, c02 y c03 y les puso el idioma del audio en inglés (en-US), lo que confunde a YouTube sobre a quién mostrarlos.",
+  "regla": "Comentario con accounts[].comments (delay 1 min) en Instagram y TikTok; después de que sale, revisar que exista. Cada día revisar que las descripciones de YouTube no tengan enlaces ajenos y que el idioma sea es/es; si cambiaron, restaurarlas y avisar a Rodrigo."
  }
 ]

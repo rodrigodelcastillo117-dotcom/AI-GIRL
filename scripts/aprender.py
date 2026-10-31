@@ -293,6 +293,37 @@ def verificar(plan, ahora, avisos):
     return problemas
 
 
+def vigilar_youtube(plan, avisos):
+    """Otra automatización con acceso al canal metió enlaces ajenos (erroresinvisibles.gumroad.com) en las descripciones
+    y les puso el audio en inglés (30-oct-2026). Cada día: quita los enlaces que no son de Victoria, deja el idioma en
+    español y lo avisa, porque significa que alguien más sigue entrando al canal."""
+    import re
+    import youtube
+    propios = ('victoriatheceo.vercel.app',)
+    ids = [(v.get('publicacion') or {}).get('youtube', '') for v in plan['videos'] + plan.get('largos', [])]
+    ids += [c.get('youtube', '') for c in cargar('carruseles.json', {'carruseles': []})['carruseles']]
+    ids = [i.rstrip('/').split('/')[-1].split('=')[-1] for i in ids if i]
+    if not ids:
+        return
+    acceso = youtube.token()
+    h = {'Authorization': f'Bearer {acceso}', 'Content-Type': 'application/json; charset=UTF-8'}
+    for inicio in range(0, len(ids), 50):
+        _, cuerpo = youtube._http('GET', f"{youtube.API}/videos?part=snippet&id={','.join(ids[inicio:inicio + 50])}", headers=h)
+        for item in json.loads(cuerpo).get('items') or []:
+            sn = item['snippet']
+            ajenos = [u for u in re.findall(r'https?://\S+', sn.get('description', '')) if not any(d in u for d in propios)]
+            if not ajenos and sn.get('defaultAudioLanguage', 'es').startswith('es'):
+                continue
+            lineas = [l for l in sn.get('description', '').split('\n')
+                      if not any(u in l for u in ajenos) and 'Si te gustan estos datos' not in l]
+            limpia = re.sub(r'\n{3,}', '\n\n', '\n'.join(lineas)).strip()
+            nuevo = {'id': item['id'], 'snippet': {'title': sn['title'], 'categoryId': sn['categoryId'], 'description': limpia,
+                     'tags': sn.get('tags', []), 'defaultLanguage': 'es', 'defaultAudioLanguage': 'es'}}
+            youtube._http('PUT', f"{youtube.API}/videos?part=snippet", json.dumps(nuevo).encode(), h)
+            avisos.append(f"Alguien cambió el video de YouTube {item['id']} (enlaces ajenos: {', '.join(ajenos) or 'ninguno'}; "
+                          f"audio {sn.get('defaultAudioLanguage')}). Ya lo restauré. Otra app sigue con acceso al canal.")
+
+
 def comentar_carruseles(carruseles_json, avisos):
     """Primer comentario con el enlace en el Short de cada carrusel ya público (regla 25; fijarlo es manual).
     En Shorts YouTube no deja tocar enlaces de comentarios (desde ago-2023): por eso también manda al de su canal."""
@@ -385,6 +416,10 @@ def medir():
         sincronizar_horas_publer('carruseles.json', avisos_verificacion)
     except SystemExit as e:
         avisos_verificacion.append(f'No pude leer de Publer la hora real de los carruseles: {e}')
+    try:
+        vigilar_youtube(plan, avisos_verificacion)
+    except SystemExit as e:
+        avisos_verificacion.append(f'No pude revisar las descripciones de YouTube: {e}')
     try:
         comentar_carruseles('carruseles.json', avisos_verificacion)
     except SystemExit as e:
