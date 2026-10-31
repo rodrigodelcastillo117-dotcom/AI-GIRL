@@ -116,6 +116,16 @@ def youtube_id(enlace):
     return (enlace or '').rstrip('/').split('/')[-1].split('=')[-1] if enlace else ''
 
 
+def workspace_publer():
+    if not os.environ.get('PUBLER_API_KEY'):
+        return ''
+    try:
+        import publer
+        return publer.workspace_id()
+    except SystemExit:
+        return ''
+
+
 NOMBRES_RED = {'ig': 'Instagram', 'tt': 'TikTok', 'yt': 'YouTube'}
 
 
@@ -335,6 +345,7 @@ def main():
         'creditos_plan_mes': 12000,
         'similitud_minima': config.get('similitud_minima_audio'),
         'cuentas_publer': config.get('cuentas_publer', {}),
+        'publer_workspace': workspace_publer(),  # el centro no lo vuelve a pedir: Publer tarda hasta 20 s en darlo
         'canal_youtube': config.get('canal_youtube', ''),
         'prueba_horas': config.get('prueba_horas', {}),
         'productos_hotmart': config.get('productos_hotmart', {}),

@@ -15,6 +15,7 @@ const MINUTO = 60_000;
 
 let FOTO = null;   // /api/estado
 let VIVO = null;   // /api/vivo
+let AGENDA = null; // /api/agenda: lo programado y lo publicado en cada red, en vivo
 const $ = (id) => document.getElementById(id);
 const crear = (etiqueta, props = {}, ...hijos) => { const el = Object.assign(document.createElement(etiqueta), props); el.append(...hijos); return el; };
 const fmt = (n) => (n == null || Number.isNaN(n) ? '—' : Math.round(n).toLocaleString('es-MX'));
@@ -94,6 +95,8 @@ async function arrancar(conAnimacion) {
     armarNavegacion();
     avatar3d();
     setInterval(refrescarVivo, MINUTO);
+    refrescarAgenda();
+    setInterval(refrescarAgenda, MINUTO);
     setInterval(async () => {
       try {
         const nueva = await pedir('/api/estado');
@@ -106,6 +109,13 @@ async function arrancar(conAnimacion) {
     let ancho = innerWidth;
     addEventListener('resize', () => { if (Math.abs(innerWidth - ancho) > 40) { ancho = innerWidth; dibujarGraficas(); } });
   }
+}
+
+async function refrescarAgenda() {
+  try {
+    const r = await pedir('/api/agenda');
+    if (r.agenda) { AGENDA = r.agenda; dibujarDespegues(); dibujarCalendario(FOTO.calendario); }
+  } catch { /* se queda la última agenda o la de la foto */ }
 }
 
 async function refrescarVivo() {
@@ -563,6 +573,10 @@ function dibujarVentas() {
 }
 
 function siguientePorRed(clave) {
+  if (AGENDA) {  // en vivo de Publer y YouTube
+    const prox = AGENDA.find((x) => x.red === clave && !x.publicado && x.t > Date.now());
+    return prox ? {t: prox.t, p: {id: prox.id, texto: prox.texto}} : null;
+  }
   let mejor = null;
   for (const p of todo()) {
     if (p.estado !== 'programado') continue;
@@ -578,7 +592,7 @@ function dibujarDespegues() {
     const cuenta = crear('b', {className: 'cuenta-red', textContent: '—'});
     if (sig) cuenta.dataset.t = String(sig.t);
     const fila = crear('div', {className: 'despegue'}, crear('span', {className: 'red-nombre', textContent: red.nombre}), cuenta,
-      crear('small', {textContent: sig ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : 'Nada programado todavía: la auditoría de mañana lo programa'}));
+      crear('small', {textContent: sig ? `${sig.p.id ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id}` : sig.p.texto} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : 'Nada programado todavía: la auditoría de mañana lo programa'}));
     fila.style.setProperty('--acento', red.color);
     return fila;
   }));
@@ -593,15 +607,29 @@ function tictac() {
   }
 }
 
+function horasEnVivo(f) {
+  // La hora real de cada red (Publer y YouTube en vivo) manda sobre la de la última foto: si algo se movió o salió
+  // antes, el calendario lo enseña al minuto. "✓" = ya salió.
+  const horas = {...f.horas};
+  for (const x of AGENDA || []) {
+    const fecha = new Date(x.t).toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
+    if (!x.id || x.id !== f.id || fecha !== f.fecha) continue;
+    horas[x.red] = new Date(x.t).toLocaleTimeString('es-MX', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit', hour12: false})
+      + (x.publicado ? ' ✓' : '');
+  }
+  return horas;
+}
+
 function dibujarCalendario(filas = []) {
   const hoy = new Date().toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
   $('t-calendario').replaceChildren(...filas.map((f) => {
+    const horas = horasEnVivo(f);
     const vivo = [...(FOTO.carruseles || []), ...FOTO.videos].find((x) => x.id === f.id);
     const vistas = vivo && salio(vivo) && medido(vivo) ? fmt(vistasDe(vivo)) : '';
     return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
       celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
       celda({carrusel: 'Carrusel', reel: 'Reel IG'}[f.tipo] || 'Video'), celda(f.que),
-      celda(f.horas.ig || '—', 'n'), celda(f.horas.tt || '—', 'n'), celda(f.horas.yt || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
+      celda(horas.ig || '—', 'n'), celda(horas.tt || '—', 'n'), celda(horas.yt || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
   }));
 }
 

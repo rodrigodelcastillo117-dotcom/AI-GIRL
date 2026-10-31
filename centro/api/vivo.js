@@ -27,7 +27,7 @@ async function pedir(url, opciones, nombre, espera = 8000) {
   return r.json();
 }
 
-async function youtube(estado, videos) {
+async function permisoYoutube() {
   const faltan = ['YOUTUBE_CLIENT_ID', 'YOUTUBE_CLIENT_SECRET', 'YOUTUBE_REFRESH_TOKEN'].filter((n) => !variable(n));
   if (faltan.length) throw new Error(`faltan en Vercel: ${faltan.join(', ')}`);
   const {access_token: token} = await pedir('https://oauth2.googleapis.com/token', {
@@ -38,7 +38,11 @@ async function youtube(estado, videos) {
       refresh_token: variable('YOUTUBE_REFRESH_TOKEN'), grant_type: 'refresh_token',
     }),
   }, 'Permiso de YouTube');
-  const cabeceras = {headers: {Authorization: `Bearer ${token}`}};
+  return token;
+}
+
+async function youtube(estado, videos) {
+  const cabeceras = {headers: {Authorization: `Bearer ${await permisoYoutube()}`}};
   const canal = await pedir(`${YT}/channels?part=statistics&id=${estado.canal_youtube}`, cabeceras, 'YouTube');
   const s = canal.items?.[0]?.statistics || {};
   const porVideo = {};
@@ -73,15 +77,21 @@ async function youtube(estado, videos) {
 // Desde el 30-oct-2026 Publer manda cada métrica como {name, value}; antes, un número. Sin video_views, las vistas salen de reach.
 const num = (x) => Number(x && typeof x === 'object' ? x.value : x) || 0;
 
-async function publer(estado, videos) {
+async function cabecerasPubler() {
   if (!variable('PUBLER_API_KEY')) throw new Error('falta en Vercel: PUBLER_API_KEY');
   const cabeceras = {Authorization: `Bearer-API ${variable('PUBLER_API_KEY')}`, Accept: 'application/json', 'User-Agent': AGENTE};
-  let ws = variable('PUBLER_WORKSPACE_ID');
-  if (!ws) {
-    const w = await pedir(`${PUBLER}/workspaces`, {headers: cabeceras}, 'Publer');
-    ws = (Array.isArray(w) ? w : w.workspaces || w.data || [])[0]?.id;
+  // El workspace se pide una vez y se guarda: Publer a veces tarda más de 8 s solo en esto.
+  cabecerasPubler.ws ||= variable('PUBLER_WORKSPACE_ID') || leer('estado.json')[0].publer_workspace;
+  if (!cabecerasPubler.ws) {
+    const w = await pedir(`${PUBLER}/workspaces`, {headers: cabeceras}, 'Publer', 20_000);
+    cabecerasPubler.ws = (Array.isArray(w) ? w : w.workspaces || w.data || [])[0]?.id;
   }
-  cabeceras['Publer-Workspace-Id'] = ws;
+  cabeceras['Publer-Workspace-Id'] = cabecerasPubler.ws;
+  return cabeceras;
+}
+
+async function publer(estado, videos) {
+  const cabeceras = await cabecerasPubler();
   const cuentas = estado.cuentas_publer || {};
   const porLinea = Object.fromEntries(videos.filter((v) => v.linea).map((v) => [v.linea, v.id]));
   // El Reel de Instagram de un carrusel (otra primera línea) se suma a Instagram de ese carrusel.
@@ -135,6 +145,66 @@ async function publer(estado, videos) {
     destino[red] ||= {pendiente: true, enlace: p.post_link || p.url};
   }
   return {porVideo};
+}
+
+// Lo que sale y lo que acaba de salir en cada red, leído en vivo de Publer y YouTube: si un post se mueve o se
+// publica antes, el centro lo ve al minuto siguiente, sin esperar a la rutina de la mañana. Cada 2 min. Va en su
+// propia ruta (/api/agenda): Publer tarda a veces más de 25 s en listar lo programado y no debe frenar lo demás.
+let ultimaAgenda = {hasta: 0, datos: null};
+
+export async function agenda(estado, videos) {
+  if (Date.now() < ultimaAgenda.hasta) return ultimaAgenda.datos;
+  const porLinea = Object.fromEntries(videos.filter((v) => v.linea).map((v) => [v.linea, v.id]));
+  const porYoutube = Object.fromEntries(videos.filter((v) => v.youtube_id).map((v) => [v.youtube_id, v.id]));
+  const cuentas = estado.cuentas_publer || {};
+  const hoy = Date.now();
+  const lista = [];
+  const [pb, yt] = await Promise.allSettled([
+    (async () => {
+      const cabeceras = await cabecerasPubler();
+      await Promise.all(['scheduled', 'published'].map(async (estadoPost) => {
+        const desde = estadoPost === 'scheduled' ? hoy : hoy - 2 * 864e5;
+        const hasta = estadoPost === 'scheduled' ? hoy + 15 * 864e5 : hoy + 864e5;
+        const filtros = new URLSearchParams([['state', estadoPost], ['from', dia(new Date(desde))], ['to', dia(new Date(hasta))],
+          ...Object.keys(cuentas).map((c) => ['account_ids[]', c])]);
+        const r = await pedir(`${PUBLER}/posts?${filtros}`, {headers: cabeceras}, 'Publer', 25_000);
+        for (const p of r.posts || []) {
+          const red = RED_CORTA[cuentas[p.account_id]];
+          if (!red || !p.scheduled_at) continue;
+          lista.push({red, t: new Date(p.scheduled_at).getTime(), id: porLinea[primeraLinea(p.text)] || null,
+            texto: (p.text || '').split('\n')[0].slice(0, 60), publicado: estadoPost === 'published', enlace: p.post_link || null});
+        }
+      }));
+    })(),
+    (async () => {
+      // La lista de subidas del canal incluye los privados con fecha cuando la lee su dueño.
+      const cabeceras = {headers: {Authorization: `Bearer ${await permisoYoutube()}`}};
+      const canal = await pedir(`${YT}/channels?part=contentDetails&id=${estado.canal_youtube}`, cabeceras, 'YouTube');
+      const subidas = canal.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+      if (!subidas) return;
+      const items = await pedir(`${YT}/playlistItems?part=contentDetails&maxResults=25&playlistId=${subidas}`, cabeceras, 'YouTube');
+      const ids = (items.items || []).map((x) => x.contentDetails.videoId);
+      if (!ids.length) return;
+      const d = await pedir(`${YT}/videos?part=status,snippet&id=${ids.join(',')}`, cabeceras, 'YouTube');
+      for (const v of d.items || []) {
+        const fecha = v.status.publishAt || (v.status.privacyStatus === 'public' ? v.snippet.publishedAt : null);
+        if (!fecha) continue;  // privado sin fecha: no sale (p. ej. una versión anterior)
+        const t = new Date(fecha).getTime();
+        if (t < hoy - 2 * 864e5) continue;
+        lista.push({red: 'yt', t, id: porYoutube[v.id] || null, texto: v.snippet.title.slice(0, 60),
+          publicado: v.status.privacyStatus === 'public', enlace: `https://youtube.com/shorts/${v.id}`});
+      }
+    })(),
+  ]);
+  const errores = [pb, yt].filter((x) => x.status === 'rejected').map((x) => x.reason?.message);
+  if (errores.length) console.log(`agenda: ${errores.join(' · ')}`);
+  if (pb.status === 'rejected' && yt.status === 'rejected') throw new Error(errores.join(' · '));
+  // Publer a veces tarda más de 25 s: entonces se queda lo último que sí leyó de Instagram y TikTok.
+  const anterior = ultimaAgenda.datos || [];
+  if (pb.status === 'rejected') lista.push(...anterior.filter((x) => x.red !== 'yt'));
+  if (yt.status === 'rejected') lista.push(...anterior.filter((x) => x.red === 'yt'));
+  ultimaAgenda = {hasta: Date.now() + 2 * 60_000, datos: lista.sort((a, b) => a.t - b.t)};
+  return ultimaAgenda.datos;
 }
 
 async function instagram(videos) {

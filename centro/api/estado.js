@@ -8,6 +8,7 @@ export default function handler(req, res) {
   res.setHeader('Cache-Control', 'private, no-store');
   const estado = leer('estado.json')[0];
   delete estado.cuentas_publer;
+  delete estado.publer_workspace;
   res.status(200).json({
     version: process.env.VERCEL_GIT_COMMIT_SHA || process.env.VERCEL_DEPLOYMENT_ID || '',
     usuario: usuario(req),
