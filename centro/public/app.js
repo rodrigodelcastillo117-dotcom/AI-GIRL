@@ -4,7 +4,7 @@ const REDES = [
   {clave: 'tt', nombre: 'TikTok', corto: 'TT', color: '#facc15'},
   {clave: 'ig', nombre: 'Instagram', corto: 'IG', color: '#a855f7'},
 ];
-const ESTADOS = {pendiente: ['En cola', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', '']};
+const ESTADOS = {pendiente: ['En cola', ''], reserva: ['En reserva', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', '']};
 const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube'};
 // Todo lo que sale: videos y carruseles (los dos se miden en vivo).
 const todo = () => [...FOTO.videos, ...(FOTO.carruseles || [])];

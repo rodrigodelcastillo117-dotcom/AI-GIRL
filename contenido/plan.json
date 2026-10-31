@@ -205,6 +205,407 @@
       "nota_hora": "Rodrigo pidió publicarlo ya (sáb 11:17). 11:17 no es franja de la prueba: no cuenta para la prueba de horarios."
     },
     {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "37",
+      "pilar": "finanzas",
+      "locacion": "sala",
+      "llamado": "buen_fin",
+      "ventana": {
+        "desde": "2026-11-01",
+        "hasta": "2026-11-12"
+      },
+      "guion": "En un Buen Fin, Profeco encontró que casi la mitad de las ofertas no bajaban de precio. Toma foto hoy del precio de lo que quieres y compáralo el trece de noviembre. Si no bajó, no es oferta.",
+      "subtitulos": [
+        "En un Buen Fin, Profeco encontró",
+        "que casi la mitad de las ofertas",
+        "no bajaban de precio.",
+        "Toma foto hoy del precio",
+        "de lo que quieres",
+        "y compáralo el 13 de noviembre.",
+        "Si no bajó,",
+        "no es oferta."
+      ],
+      "palabras_clave": [
+        "Profeco",
+        "mitad",
+        "oferta"
+      ],
+      "fuente": "Profeco: en el Buen Fin 2024 solo 52% de los productos analizados bajó de precio (citado en prensa, 2024); historial de precios de Profeco 2026 (UnoTV, oct-2026); Secretaría de Economía: Buen Fin 2026 del 13 al 17 de noviembre",
+      "vestuario": "Suéter de cachemir color camel, falda midi de satín negra, collar de perlas",
+      "accion": "Sentada en la sala con el celular en la mano, como tomando foto de un precio; Capital sentado a su lado.",
+      "texto_pantalla": "¿Las ofertas del Buen Fin son reales?",
+      "texto_post": "En un Buen Fin, Profeco encontró que casi la mitad de las \"ofertas\" no bajaban de precio. 🏷️\nToma foto hoy del precio de lo que quieres y compáralo del 13 al 17 de noviembre. Si no bajó, no es oferta.\n\n📚 Profeco · Secretaría de Economía",
+      "pregunta_comentarios": "¿Qué vas a comprar en el Buen Fin?",
+      "mandar_a": "quien ya tiene su lista del Buen Fin",
+      "ganchos_alternativos": [
+        "El Buen Fin no siempre te ahorra: compruébalo así.",
+        "Antes del Buen Fin, toma foto de este precio."
+      ],
+      "adn": {
+        "tipo_gancho": "dato"
+      },
+      "seo": {
+        "palabra_clave": "buen fin 2026",
+        "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
+        "descripcion_inicio": "Buen Fin 2026 (13 al 17 de noviembre): cómo saber si una oferta es real. Toma foto del precio antes y compáralo; Profeco tiene un historial de precios.",
+        "tags_concretas": [
+          "buen fin 2026",
+          "buen fin ofertas",
+          "ofertas reales buen fin",
+          "profeco buen fin",
+          "historial de precios profeco",
+          "buen fin fechas",
+          "como ahorrar en el buen fin",
+          "buen fin mexico"
+        ],
+        "hashtags": [
+          "#buenfin",
+          "#buenfin2026",
+          "#profeco",
+          "#ahorro"
+        ],
+        "parrafo": "El Buen Fin 2026 va del 13 al 17 de noviembre. En la edición de 2024, Profeco encontró que solo 52% de los productos que analizó bajó de precio de verdad. Por eso conviene anotar o tomar foto del precio desde antes y compararlo esos días; Profeco también publica un historial de precios de celulares, pantallas y electrodomésticos.",
+        "preguntas": [
+          "¿Cuándo es el Buen Fin 2026?",
+          "¿Cómo saber si una oferta del Buen Fin es real?",
+          "¿Profeco revisa los precios del Buen Fin?"
+        ]
+      }
+    },
+    {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "38",
+      "pilar": "finanzas",
+      "locacion": "oficina",
+      "llamado": "buen_fin",
+      "ventana": {
+        "desde": "2026-11-01",
+        "hasta": "2026-11-16"
+      },
+      "guion": "Meses sin intereses no siempre es lo más barato. Antes de pagar, pregunta el precio de contado: a veces es menor. Y si tus mensualidades ya pasan del treinta por ciento de lo que ganas, ese Buen Fin te va a salir caro.",
+      "subtitulos": [
+        "Meses sin intereses",
+        "no siempre es lo más barato.",
+        "Antes de pagar,",
+        "pregunta el precio de contado:",
+        "a veces es menor.",
+        "Si tus mensualidades ya pasan",
+        "del 30% de lo que ganas,",
+        "ese Buen Fin te va a salir caro."
+      ],
+      "palabras_clave": [
+        "contado",
+        "mensualidades",
+        "caro"
+      ],
+      "fuente": "Profeco: comparar precios, revisar condiciones de los meses sin intereses y que los pagos de crédito no pasen del 30% del ingreso (UnoTV, Buen Fin 2026)",
+      "vestuario": "Traje sastre color vino con blusa de seda marfil, aretes de diamante pequeños",
+      "accion": "En su oficina, sosteniendo una tarjeta de crédito dorada frente a una laptop; Capital echado junto al escritorio.",
+      "texto_pantalla": "¿Meses sin intereses o de contado?",
+      "texto_post": "Meses sin intereses no siempre es lo más barato. 💳\nPregunta el precio de contado antes de pagar: a veces es menor. Y si tus mensualidades ya pasan del 30% de lo que ganas, ya te endeudaste de más.\n\n📚 Profeco",
+      "pregunta_comentarios": "¿Cuántas mensualidades traes ahorita?",
+      "mandar_a": "quien todo lo compra a meses",
+      "ganchos_alternativos": [
+        "Lo que nadie te dice de los meses sin intereses.",
+        "Tus meses sin intereses pueden salir más caros."
+      ],
+      "adn": {
+        "tipo_gancho": "contradiccion"
+      },
+      "seo": {
+        "palabra_clave": "meses sin intereses",
+        "titulo": "Meses sin intereses en el Buen Fin 💳",
+        "descripcion_inicio": "Meses sin intereses en el Buen Fin: no siempre es lo más barato. Compara con el precio de contado y cuida que tus mensualidades no pasen del 30% de tu ingreso.",
+        "tags_concretas": [
+          "meses sin intereses",
+          "meses sin intereses buen fin",
+          "precio de contado",
+          "conviene meses sin intereses",
+          "deudas tarjeta de credito",
+          "buen fin 2026",
+          "profeco buen fin",
+          "mensualidades"
+        ],
+        "hashtags": [
+          "#mesessinintereses",
+          "#buenfin",
+          "#tarjetadecredito",
+          "#finanzaspersonales"
+        ],
+        "parrafo": "Profeco recomienda revisar las condiciones de las promociones a meses sin intereses, comparar precios y no comprometer más del 30% del ingreso en pagos de crédito. A veces el precio de contado es menor que el precio de la promoción a meses.",
+        "preguntas": [
+          "¿Conviene comprar a meses sin intereses?",
+          "¿Los meses sin intereses son más caros?",
+          "¿Cuánto de mi sueldo puedo usar para pagar deudas?"
+        ]
+      }
+    },
+    {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "39",
+      "pilar": "finanzas",
+      "locacion": "oficina",
+      "guion": "¿Depositas efectivo en tu cuenta? Si en un mes pasas de quince mil pesos, tu banco se lo reporta al SAT. No es un impuesto, es un aviso. Pero si no puedes demostrar de dónde salió ese dinero, el SAT te puede revisar.",
+      "subtitulos": [
+        "¿Depositas efectivo en tu cuenta?",
+        "Si en un mes pasas de $15,000,",
+        "tu banco se lo reporta al SAT.",
+        "No es un impuesto,",
+        "es un aviso.",
+        "Si no puedes demostrar",
+        "de dónde salió ese dinero,",
+        "el SAT te puede revisar."
+      ],
+      "palabras_clave": [
+        "efectivo",
+        "SAT",
+        "revisar"
+      ],
+      "fuente": "Ley del ISR, artículo 55, fracción IV (reporte de depósitos en efectivo mayores a $15,000 al mes); SAT: no existe impuesto por depósitos en efectivo (El Contribuyente, jul-2026; El Imparcial, mar-2026)",
+      "vestuario": "Blazer blanco roto de doble botonadura, pantalón recto negro, reloj dorado",
+      "accion": "De pie en su oficina, con un fajo de billetes en una mano y el celular en la otra; Capital sentado a su lado.",
+      "texto_pantalla": "¿El SAT ve tus depósitos en efectivo?",
+      "texto_post": "¿Depositas efectivo? Si en un mes pasas de $15,000, tu banco se lo reporta al SAT. 🏦\nNo es un impuesto: es un aviso. Pero si no puedes demostrar de dónde salió, el SAT te puede revisar.\n\n📚 Ley del ISR, artículo 55, fracción IV · SAT",
+      "pregunta_comentarios": "¿Sabías que el banco le avisa al SAT?",
+      "mandar_a": "quien cobra en efectivo y lo deposita",
+      "ganchos_alternativos": [
+        "Tu banco le avisa al SAT si haces esto.",
+        "15 mil pesos: el número que el SAT vigila."
+      ],
+      "adn": {
+        "tipo_gancho": "pregunta"
+      },
+      "seo": {
+        "palabra_clave": "depósitos en efectivo",
+        "titulo": "Depósitos en efectivo que el SAT ve 🏦",
+        "descripcion_inicio": "Depósitos en efectivo y el SAT: si en un mes depositas más de $15,000 en efectivo, tu banco lo reporta (Ley del ISR, art. 55). No es un impuesto, pero el SAT puede revisar de dónde salió el dinero.",
+        "tags_concretas": [
+          "depositos en efectivo sat",
+          "depositos mayores a 15000",
+          "sat depositos en efectivo",
+          "banco reporta al sat",
+          "cuanto efectivo puedo depositar",
+          "impuesto depositos en efectivo",
+          "sat 2026",
+          "articulo 55 ley del isr"
+        ],
+        "hashtags": [
+          "#sat",
+          "#impuestos",
+          "#efectivo",
+          "#finanzaspersonales"
+        ],
+        "parrafo": "El artículo 55, fracción IV de la Ley del ISR obliga a los bancos a informar al SAT cuando los depósitos en efectivo de una persona pasan de $15,000 en un mes (se suman todos los del mes). El SAT ha aclarado que no existe un impuesto por depositar efectivo, pero puede usar esa información para revisar si el dinero corresponde a ingresos declarados.",
+        "preguntas": [
+          "¿Cuánto efectivo puedo depositar sin que el SAT se entere?",
+          "¿El SAT cobra impuesto por depósitos en efectivo?",
+          "¿Qué pasa si deposito más de 15 mil pesos?"
+        ]
+      }
+    },
+    {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "40",
+      "pilar": "finanzas",
+      "locacion": "cocina",
+      "guion": "¿Pagas solo el mínimo de tu tarjeta? Con diez mil pesos de deuda puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef, con una tasa de cincuenta y cinco por ciento. Paga más que el mínimo, aunque sea poco.",
+      "subtitulos": [
+        "¿Pagas solo el mínimo",
+        "de tu tarjeta?",
+        "Con $10,000 de deuda",
+        "puedes tardar 19 años",
+        "en liquidarla.",
+        "Es el ejemplo de Condusef,",
+        "con una tasa del 55%.",
+        "Paga más que el mínimo,",
+        "aunque sea poco."
+      ],
+      "palabras_clave": [
+        "mínimo",
+        "19 años",
+        "Condusef"
+      ],
+      "fuente": "Condusef: deuda de $10,000 con tasa anual de 55% pagando solo el mínimo = 234 mensualidades, 19 años y medio (Plano Informativo; El Financiero sobre la calculadora de pagos mínimos de Condusef)",
+      "vestuario": "Vestido camisero de lino verde salvia con cinturón café, pulsera de oro delgada",
+      "accion": "Recargada en la barra de la cocina con un estado de cuenta en la mano; Capital sentado junto a ella.",
+      "texto_pantalla": "¿Pagas solo el mínimo?",
+      "texto_post": "¿Pagas solo el mínimo de tu tarjeta? 💳\nCon $10,000 de deuda y una tasa de 55% puedes tardar 19 años y medio en liquidarla, según un ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.\n\n📚 Condusef, calculadora de pagos mínimos",
+      "pregunta_comentarios": "¿Sabías cuánto tardas pagando el mínimo?",
+      "mandar_a": "quien siempre paga el mínimo de su tarjeta",
+      "ganchos_alternativos": [
+        "19 años pagando una deuda de 10 mil pesos.",
+        "El pago mínimo es la trampa más cara de tu tarjeta."
+      ],
+      "adn": {
+        "tipo_gancho": "pregunta"
+      },
+      "seo": {
+        "palabra_clave": "pago mínimo de tarjeta",
+        "titulo": "Pago mínimo de tarjeta y 19 años de deuda 💳",
+        "descripcion_inicio": "Pago mínimo de tarjeta de crédito: con $10,000 de deuda y una tasa anual de 55%, pagar solo el mínimo puede llevar 234 mensualidades (19 años y medio), según un ejemplo de Condusef.",
+        "tags_concretas": [
+          "pago minimo tarjeta",
+          "pago minimo tarjeta de credito",
+          "condusef pago minimo",
+          "cuanto tardo en pagar mi tarjeta",
+          "deuda tarjeta de credito",
+          "calculadora de pagos minimos",
+          "salir de deudas",
+          "intereses tarjeta de credito"
+        ],
+        "hashtags": [
+          "#tarjetadecredito",
+          "#deudas",
+          "#condusef",
+          "#finanzaspersonales"
+        ],
+        "parrafo": "Condusef hizo el ejercicio con una deuda de $10,000 y una tasa anual de 55%: pagando solo el mínimo, se necesitan 234 mensualidades, unos 19 años y medio. Su calculadora de pagos mínimos muestra tu caso con la tasa de tu estado de cuenta; pagar más que el mínimo baja mucho los intereses.",
+        "preguntas": [
+          "¿Cuánto tardo en pagar mi tarjeta con el pago mínimo?",
+          "¿Conviene pagar el mínimo de la tarjeta?",
+          "¿Cómo salir de deudas de tarjeta de crédito?"
+        ]
+      }
+    },
+    {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "41",
+      "pilar": "finanzas",
+      "locacion": "recamara",
+      "guion": "¿Guardas dinero debajo del colchón? Si la inflación sigue en tres punto seis por ciento, diez mil pesos de hoy van a comprar como ocho mil cuatrocientos en cinco años. No lo pierdes de golpe: se encoge solito. Guardar no es lo mismo que proteger.",
+      "subtitulos": [
+        "¿Guardas dinero",
+        "debajo del colchón?",
+        "Con inflación de 3.6%,",
+        "$10,000 de hoy",
+        "van a comprar como $8,400",
+        "en 5 años.",
+        "No lo pierdes de golpe:",
+        "se encoge solito.",
+        "Guardar no es lo mismo que proteger."
+      ],
+      "palabras_clave": [
+        "colchón",
+        "inflación",
+        "proteger"
+      ],
+      "fuente": "INEGI, INPC: inflación anual de 3.62% en la primera quincena de octubre de 2026 (Excélsior, UnoTV); cálculo: 10,000 / 1.0362^5 = 8,371",
+      "vestuario": "Pijama de seda color champaña con bata a juego, pantuflas de terciopelo",
+      "accion": "Sentada en la orilla de la cama, levantando un poco el colchón como si escondiera dinero; Capital echado en la alfombra.",
+      "texto_pantalla": "¿Tu dinero bajo el colchón se encoge?",
+      "texto_post": "¿Guardas dinero debajo del colchón? 🛏️\nSi la inflación sigue en 3.6%, $10,000 de hoy van a comprar como $8,400 en 5 años. No lo pierdes de golpe: se encoge solito.\n\n📚 INEGI, inflación de octubre de 2026",
+      "pregunta_comentarios": "¿Tú dónde guardas tus ahorros?",
+      "mandar_a": "quien todavía guarda su dinero en casa",
+      "ganchos_alternativos": [
+        "Tu dinero bajo el colchón pierde valor cada año.",
+        "10 mil pesos hoy, 8,400 en cinco años."
+      ],
+      "adn": {
+        "tipo_gancho": "pregunta"
+      },
+      "seo": {
+        "palabra_clave": "inflación 2026",
+        "titulo": "Inflación 2026 y tu dinero bajo el colchón 🛏️",
+        "descripcion_inicio": "Inflación 2026 en México: 3.62% anual en octubre (INEGI). Si sigue así, $10,000 guardados en casa comprarán como $8,400 en cinco años.",
+        "tags_concretas": [
+          "inflacion 2026",
+          "inflacion mexico",
+          "dinero debajo del colchon",
+          "poder adquisitivo",
+          "cuanto pierde mi dinero",
+          "inflacion inegi",
+          "ahorro en efectivo",
+          "guardar dinero en casa"
+        ],
+        "hashtags": [
+          "#inflacion",
+          "#ahorro",
+          "#dinero",
+          "#finanzaspersonales"
+        ],
+        "parrafo": "Según el INEGI, la inflación anual en México fue de 3.62% en la primera quincena de octubre de 2026. Si se mantuviera en ese nivel, $10,000 guardados en efectivo tendrían en cinco años el poder de compra de unos $8,371 de hoy (10,000 entre 1.0362 elevado a 5).",
+        "preguntas": [
+          "¿Cuánto pierde mi dinero con la inflación?",
+          "¿Cuál es la inflación en México en 2026?",
+          "¿Es malo guardar dinero en casa?"
+        ]
+      }
+    },
+    {
+      "estado": "pendiente",
+      "hora_publicacion": "rotacion",
+      "formato": "a_camara",
+      "id": "42",
+      "pilar": "motivacion_economica",
+      "locacion": "yate",
+      "guion": "¿Cuánto junta al mes el diez por ciento de los hogares con más ingresos de México? Cerca de setenta y ocho mil pesos. El salario mínimo de este año: unos nueve mil quinientos. ¿En cuál estás tú?",
+      "subtitulos": [
+        "¿Cuánto junta al mes",
+        "el 10% de los hogares",
+        "con más ingresos de México?",
+        "Cerca de $78,000.",
+        "El salario mínimo de este año:",
+        "unos $9,500.",
+        "¿En cuál estás tú?"
+      ],
+      "palabras_clave": [
+        "10%",
+        "78,000",
+        "salario mínimo"
+      ],
+      "fuente": "INEGI, ENIGH 2024: ingreso corriente trimestral promedio del decil X de $236,095 por hogar (≈$78,700 al mes); Conasami: salario mínimo general 2026 de $315.04 diarios (≈$9,580 al mes con 30.4 días)",
+      "vestuario": "Vestido largo de lino blanco con escote cuadrado, sombrero de ala ancha, lentes de sol carey",
+      "accion": "Sentada en la cubierta del yate con el mar detrás; Capital sentado a su lado.",
+      "texto_pantalla": "¿Cuánto gana el 10% más rico de México?",
+      "texto_post": "¿Cuánto junta al mes el 10% de los hogares con más ingresos de México? 💰\nCerca de $78,000 (INEGI). El salario mínimo de 2026: unos $9,500 al mes.\n\n📚 INEGI, ENIGH 2024 · Conasami",
+      "pregunta_comentarios": "¿En cuál estás tú? Sin pena.",
+      "mandar_a": "quien cree que ya es clase media alta",
+      "ganchos_alternativos": [
+        "78 mil al mes: lo que junta el 10% más rico de México.",
+        "¿Eres del 10% que más gana en México?"
+      ],
+      "adn": {
+        "tipo_gancho": "pregunta"
+      },
+      "seo": {
+        "palabra_clave": "cuánto gana el 10% más rico de México",
+        "titulo": "Cuánto gana el 10% más rico de México 💰",
+        "descripcion_inicio": "Cuánto gana el 10% más rico de México: según la ENIGH 2024 del INEGI, el decil X junta unos $78,700 al mes por hogar. El salario mínimo de 2026 es de $315.04 diarios, unos $9,580 al mes.",
+        "tags_concretas": [
+          "decil x mexico",
+          "cuanto gana el 10 mas rico de mexico",
+          "enigh 2024",
+          "salario minimo 2026",
+          "clase alta mexico cuanto gana",
+          "ingreso de los hogares inegi",
+          "clase media mexico",
+          "cuanto ganan los ricos en mexico"
+        ],
+        "hashtags": [
+          "#salariominimo",
+          "#inegi",
+          "#dinero",
+          "#finanzaspersonales"
+        ],
+        "parrafo": "La ENIGH 2024 del INEGI reporta que el 10% de los hogares con más ingresos (decil X) tuvo un ingreso corriente promedio de $236,095 al trimestre, unos $78,700 al mes. El salario mínimo general de 2026 es de $315.04 diarios, unos $9,580 al mes. Ojo: uno es ingreso de todo el hogar y el otro, el sueldo de una persona.",
+        "preguntas": [
+          "¿Cuánto gana el 10% más rico de México?",
+          "¿Cuánto es el salario mínimo en 2026?",
+          "¿Cuánto se necesita ganar para ser clase alta en México?"
+        ]
+      }
+    },
+    {
       "id": "03",
       "estado": "pendiente",
       "pilar": "finanzas",
@@ -445,7 +846,7 @@
     },
     {
       "id": "07",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "negocio",
       "guion": "Jeff Bezos dejó un trabajo seguro con una sola pregunta. Imagínate a los ochenta años: ¿te arrepentirías de no intentarlo? Así fundó Amazon. Minimiza arrepentimientos.",
       "subtitulos": [
@@ -500,11 +901,12 @@
         "Cuando dudes, imagínate a los ochenta años."
       ],
       "texto_pantalla": "La pregunta que creó Amazon",
-      "pregunta_comentarios": "¿Qué te arrepentirías de no intentar?"
+      "pregunta_comentarios": "¿Qué te arrepentirías de no intentar?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "08",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "finanzas",
       "guion": "Warren Buffett tiene dos reglas para invertir, y son la misma. Uno: no pierdas dinero. Dos: no olvides la regla uno. Antes de invertir, entiende en qué.",
       "subtitulos": [
@@ -558,7 +960,8 @@
         "Regla número uno: no pierdas dinero."
       ],
       "texto_pantalla": "Las 2 reglas de Buffett (son la misma)",
-      "pregunta_comentarios": "¿Alguna vez invertiste en algo que no entendías?"
+      "pregunta_comentarios": "¿Alguna vez invertiste en algo que no entendías?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "09",
@@ -620,7 +1023,7 @@
     },
     {
       "id": "10",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "vida",
       "guion": "Harvard lleva más de ochenta años estudiando la felicidad. La respuesta no es el dinero: son las buenas relaciones. Llama hoy a alguien.",
       "subtitulos": [
@@ -673,11 +1076,12 @@
         "El estudio de Harvard sobre la felicidad lleva más de ochenta años."
       ],
       "texto_pantalla": "Harvard encontró qué te hace feliz",
-      "pregunta_comentarios": "¿A quién vas a llamar hoy?"
+      "pregunta_comentarios": "¿A quién vas a llamar hoy?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "11",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "motivacion_economica",
       "guion": "Si te dan una semana, vas a tardar una semana. La ley de Parkinson: el trabajo se estira hasta llenar el tiempo. Dale a tu proyecto la mitad.",
       "subtitulos": [
@@ -731,11 +1135,12 @@
         "El trabajo se expande hasta llenar el tiempo que le das."
       ],
       "texto_pantalla": "Por qué todo lo terminas a última hora",
-      "pregunta_comentarios": "¿Qué proyecto llevas meses estirando?"
+      "pregunta_comentarios": "¿Qué proyecto llevas meses estirando?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "12",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "negocio",
       "guion": "Tus clientes no compran tu producto. Compran por qué lo haces. Lo dijo Simon Sinek. Antes de vender lo que haces, vende tu porqué.",
       "subtitulos": [
@@ -789,11 +1194,12 @@
         "La gente no compra lo que haces, compra por qué lo haces."
       ],
       "texto_pantalla": "Lo que de verdad compran tus clientes",
-      "pregunta_comentarios": "¿Cuál es el porqué de tu negocio?"
+      "pregunta_comentarios": "¿Cuál es el porqué de tu negocio?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "13",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "finanzas",
       "guion": "Mucha gente que parece rica no lo es. La riqueza es lo que no ves: el coche que no compraste. Morgan Housel. Invierte en silencio.",
       "subtitulos": [
@@ -847,7 +1253,8 @@
         "La riqueza es lo que no ves: el coche que no compraste, el lujo que no presumiste."
       ],
       "texto_pantalla": "La riqueza de verdad no se ve",
-      "pregunta_comentarios": "¿Qué compra te arrepientes de haber hecho?"
+      "pregunta_comentarios": "¿Qué compra te arrepientes de haber hecho?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "14",
@@ -969,7 +1376,7 @@
     },
     {
       "id": "16",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "motivacion_economica",
       "guion": "Juntar los primeros cien mil dólares es lo más difícil. Lo decía Charlie Munger. Después, el dinero empieza a trabajar para ti. Empieza con poco, pero hoy.",
       "subtitulos": [
@@ -1025,7 +1432,8 @@
         "Charlie Munger decía que los primeros cien mil dólares son los más difíciles."
       ],
       "texto_pantalla": "Los 100 mil más difíciles de tu vida",
-      "pregunta_comentarios": "¿Con cuánto vas a empezar hoy?"
+      "pregunta_comentarios": "¿Con cuánto vas a empezar hoy?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "17",
@@ -1519,7 +1927,7 @@
     },
     {
       "id": "23",
-      "estado": "pendiente",
+      "estado": "reserva",
       "pilar": "finanzas",
       "guion": "El pago mínimo de tu tarjeta es una trampa: suele ser del dos al cinco por ciento de tu deuda. Lo demás sigue cobrando intereses. Paga más.",
       "subtitulos": [
@@ -1582,7 +1990,8 @@
         "hasta": "2027-01-31"
       },
       "texto_pantalla": "La trampa del pago mínimo",
-      "pregunta_comentarios": "¿Pagas el mínimo o el total?"
+      "pregunta_comentarios": "¿Pagas el mínimo o el total?",
+      "nota_reserva": "Rodrigo (31-oct): menos frases de famosos, más cosas llamativas de México. Sale solo si se acaban los nuevos."
     },
     {
       "id": "24",
