@@ -1,17 +1,5 @@
 [
  {
-  "fecha": "2026-10-31",
-  "tipo": "video",
-  "id": "02",
-  "que": "Sale el video 02",
-  "estado": "programado",
-  "horas": {
-   "ig": "11:17",
-   "tt": "11:17",
-   "yt": "10:00"
-  }
- },
- {
   "fecha": "2026-11-01",
   "tipo": "carrusel",
   "id": "c01",
@@ -86,5 +74,13 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel nuevo (se escribe)"
+ },
+ {
+  "fecha": "2026-11-10",
+  "tipo": "video",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Video (lo elige el laboratorio el día anterior)"
  }
 ]

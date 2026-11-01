@@ -443,6 +443,394 @@
      "¿Cómo ahorrar el aguinaldo?"
     ]
    }
+  },
+  {
+   "id": "c06",
+   "estado": "borrador",
+   "tema": "antes_del_buen_fin",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-01",
+    "hasta": "2026-11-16"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "BUEN FIN 2026",
+    "titulo": "Antes del Buen Fin, haz estas 5 cosas",
+    "voz": "Antes del Buen Fin, haz estas cinco cosas o vas a pagar de más."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Las fechas",
+     "texto": "Del 13 al 17 de noviembre de 2026.\n\nSecretaría de Economía",
+     "voz": "Es del trece al diecisiete de noviembre."
+    },
+    {
+     "titulo": "Foto al precio, hoy",
+     "texto": "Toma foto del precio de lo que quieres desde ya y compáralo esos días. Profeco tiene un historial de precios.\n\nProfeco",
+     "voz": "Toma foto del precio desde hoy y compáralo."
+    },
+    {
+     "titulo": "Casi la mitad no baja",
+     "texto": "En el Buen Fin 2024, Profeco encontró que solo 52% de los productos que revisó bajó de precio.\n\nProfeco (2024)",
+     "voz": "En dos mil veinticuatro, solo la mitad bajó de verdad."
+    },
+    {
+     "titulo": "Meses o contado",
+     "texto": "Pregunta el precio de contado: a veces es menor. Y que tus pagos de crédito no pasen del 30% de lo que ganas.\n\nProfeco",
+     "voz": "Pregunta el precio de contado y no pases del treinta por ciento de tu sueldo en pagos."
+    },
+    {
+     "titulo": "Garantía por escrito",
+     "texto": "Pide la garantía por escrito, con los datos de la tienda y del producto.\n\nProfeco",
+     "voz": "Pide la garantía por escrito."
+    },
+    {
+     "titulo": "Si no te respetan",
+     "texto": "Llama al Teléfono del Consumidor: 800 468 8722 (en la Ciudad de México, 55 5568 8722).\n\nProfeco",
+     "voz": "Y si no te respetan el precio, llama a Profeco."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para el 13 de noviembre.",
+    "texto": "Mándaselo a quien ya tiene su lista.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "Guárdalo para el trece."
+   },
+   "fuente": "Secretaría de Economía (Buen Fin 2026, 13 al 17 de noviembre); Profeco: historial de precios 2026, análisis del Buen Fin 2024 (52% bajó de precio), garantía por escrito, Teléfono del Consumidor 800 468 8722 y 55 5568 8722; pagos de crédito hasta 30% del ingreso",
+   "titulo_post": "Buen Fin 2026: 5 cosas antes de comprar",
+   "texto_post": "Buen Fin 2026: 5 cosas que tienes que hacer antes de comprar. 🛍️\nFoto al precio desde hoy, compara con el de contado, pide la garantía por escrito y, si no te respetan la oferta, llama a Profeco.\n\n¿Qué vas a comprar? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien ya tiene su lista del Buen Fin.",
+   "seo": {
+    "palabra_clave": "buen fin 2026",
+    "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
+    "tags_concretas": [
+     "buen fin 2026",
+     "buen fin fechas",
+     "buen fin profeco",
+     "ofertas reales buen fin",
+     "meses sin intereses buen fin",
+     "garantia buen fin",
+     "telefono del consumidor",
+     "queja profeco",
+     "buen fin mexico",
+     "como ahorrar en el buen fin"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#profeco",
+     "#ahorro"
+    ],
+    "preguntas": [
+     "¿Cuándo es el Buen Fin 2026?",
+     "¿Cómo saber si una oferta del Buen Fin es real?",
+     "¿Dónde me quejo si no respetan una oferta?"
+    ]
+   }
+  },
+  {
+   "id": "c07",
+   "estado": "borrador",
+   "tema": "reglas_tarjeta_credito",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "TARJETA DE CRÉDITO",
+    "titulo": "5 reglas de tu tarjeta que nadie te explica",
+    "voz": "Cinco reglas de tu tarjeta de crédito que nadie te explica."
+   },
+   "diapositivas": [
+    {
+     "titulo": "El pago mínimo",
+     "texto": "Con $10,000 de deuda y tasa de 55%, pagando solo el mínimo tardas 19 años y medio.\n\nCondusef",
+     "voz": "Pagando solo el mínimo, diez mil pesos se vuelven diecinueve años de deuda."
+    },
+    {
+     "titulo": "Paga para no generar intereses",
+     "texto": "Tu estado de cuenta trae ese monto: si lo pagas completo, no te cobran intereses de tus compras.\n\nCondusef",
+     "voz": "Si pagas el monto para no generar intereses, no te cobran intereses."
+    },
+    {
+     "titulo": "Efectivo con la tarjeta, no",
+     "texto": "Sacar efectivo con la tarjeta de crédito cobra comisión (de 3% a 11%, según el banco) e intereses desde el primer día.\n\nCondusef",
+     "voz": "Sacar efectivo con la tarjeta cobra comisión e intereses desde el primer día."
+    },
+    {
+     "titulo": "Suma tus meses",
+     "texto": "Cada compra a meses se come tu sueldo de los próximos meses: súmalas antes de la siguiente.\n\nProfeco y Condusef",
+     "voz": "Suma tus meses antes de comprar otro."
+    },
+    {
+     "titulo": "El 30%",
+     "texto": "Que lo que pagas de créditos al mes no pase del 30% de lo que ganas.\n\nProfeco",
+     "voz": "Y que tus pagos no pasen del treinta por ciento de tu sueldo."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál no sabías?",
+    "texto": "Guárdalo y mándaselo a quien trae la tarjeta al tope.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "¿Cuál no sabías? Guárdalo."
+   },
+   "fuente": "Condusef: ejemplo de pago mínimo (deuda de $10,000 a 55% anual, 234 mensualidades), pago para no generar intereses, comisión por disposición de efectivo de 3% a 11% e intereses desde el primer día (El Imparcial, mar-2026); Profeco: pagos de crédito hasta 30% del ingreso",
+   "titulo_post": "5 reglas de tu tarjeta de crédito",
+   "texto_post": "5 reglas de tu tarjeta de crédito que nadie te explica. 💳\nEl pago mínimo te encadena 19 años, el pago para no generar intereses te libra de ellos y sacar efectivo cobra comisión e intereses desde el primer día.\n\n¿Cuál no sabías? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien trae la tarjeta al tope.",
+   "seo": {
+    "palabra_clave": "tarjeta de crédito",
+    "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
+    "tags_concretas": [
+     "tarjeta de credito",
+     "pago minimo tarjeta",
+     "pago para no generar intereses",
+     "retirar efectivo tarjeta de credito",
+     "comision disposicion de efectivo",
+     "condusef tarjeta",
+     "deudas tarjeta de credito",
+     "meses sin intereses",
+     "como usar la tarjeta de credito",
+     "intereses tarjeta"
+    ],
+    "hashtags": [
+     "#tarjetadecredito",
+     "#deudas",
+     "#condusef",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿Qué pasa si solo pago el mínimo?",
+     "¿Conviene sacar efectivo de la tarjeta de crédito?",
+     "¿Qué es el pago para no generar intereses?"
+    ]
+   }
+  },
+  {
+   "id": "c08",
+   "estado": "borrador",
+   "tema": "gastos_hormiga",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "GASTOS HORMIGA",
+    "titulo": "Tu café diario te cuesta $18,000 al año",
+    "voz": "Tu café de todos los días te puede costar dieciocho mil pesos al año."
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Un café de $50 diario son $1,500 al mes y $18,000 al año.\n\nCálculo: 50 × 30 días y 1,500 × 12 meses",
+     "voz": "Cincuenta pesos diarios son mil quinientos al mes."
+    },
+    {
+     "titulo": "Hasta 12%",
+     "texto": "Los gastos hormiga se pueden comer hasta 12% de tu ingreso.\n\nCondusef",
+     "voz": "Los gastos hormiga se pueden comer hasta el doce por ciento de lo que ganas."
+    },
+    {
+     "titulo": "¿Cuáles son?",
+     "texto": "Café, refrescos, dulces, antojos, cigarros y propinas: compras chicas que no anotas.\n\nCondusef",
+     "voz": "Café, refresco, antojos, propinas: lo que no anotas."
+    },
+    {
+     "titulo": "6 de cada 10",
+     "texto": "6 de cada 10 mexicanos no llevan un registro de sus gastos.\n\nCondusef (Forbes México)",
+     "voz": "Seis de cada diez no anotan sus gastos."
+    },
+    {
+     "titulo": "El reto de 7 días",
+     "texto": "Anota todo lo que gastes una semana, hasta el último peso. Ahí aparece la fuga.\n\nCondusef: registrar tus gastos",
+     "voz": "Anota todo una semana y vas a encontrar la fuga."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu gasto hormiga?",
+    "texto": "Cuéntame en los comentarios.\nMándaselo a quien vive del café de la esquina.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "¿Cuál es el tuyo? Cuéntame."
+   },
+   "fuente": "Condusef: gastos hormiga de hasta 12% del ingreso, ejemplos (café, refrescos, dulces, antojos, cigarros, propinas), 6 de cada 10 mexicanos sin registro de gastos (Forbes México); cálculo propio: 50 × 30 = 1,500; 1,500 × 12 = 18,000",
+   "titulo_post": "Gastos hormiga: tu café te cuesta $18,000 al año",
+   "texto_post": "Gastos hormiga: tu café de $50 diario te cuesta $18,000 al año. ☕\nPueden comerse hasta 12% de tu ingreso y 6 de cada 10 mexicanos ni los anotan. Reto: anota todo una semana.\n\n¿Cuál es tu gasto hormiga? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien vive del café de la esquina.",
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
+    "tags_concretas": [
+     "gastos hormiga",
+     "que son los gastos hormiga",
+     "como ahorrar dinero",
+     "gastos hormiga condusef",
+     "cafe diario cuanto cuesta",
+     "fugas de dinero",
+     "presupuesto personal",
+     "registrar gastos",
+     "ahorrar en mexico",
+     "finanzas personales mexico"
+    ],
+    "hashtags": [
+     "#gastoshormiga",
+     "#ahorro",
+     "#dinero",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Qué son los gastos hormiga?",
+     "¿Cuánto gasto en café al año?",
+     "¿Cómo dejar de gastar en cosas pequeñas?"
+    ]
+   }
+  },
+  {
+   "id": "c09",
+   "estado": "borrador",
+   "tema": "afore_impuestos",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AFORE",
+    "titulo": "Tu Afore puede bajarte impuestos: así funciona",
+    "voz": "Tu Afore te puede bajar impuestos. Así funciona."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Ahorro voluntario",
+     "texto": "Además de lo que pone tu patrón, tú puedes depositar en tu Afore, incluso desde la app Afore Móvil.\n\nConsar · Afore Móvil",
+     "voz": "Tú también puedes depositarle a tu Afore desde la app."
+    },
+    {
+     "titulo": "Se deduce",
+     "texto": "Las aportaciones complementarias de retiro se pueden deducir en tu declaración anual.\n\nLey del ISR, artículo 151",
+     "voz": "Las aportaciones para el retiro se pueden deducir."
+    },
+    {
+     "titulo": "El tope",
+     "texto": "Hasta 10% de tus ingresos del año, sin pasar de 5 UMA anuales (unos $214,000 en 2026).\n\nLey del ISR, art. 151 · UMA 2026: $117.31 diarios",
+     "voz": "Hasta el diez por ciento de lo que ganas al año."
+    },
+    {
+     "titulo": "Se quedan hasta el retiro",
+     "texto": "Para que se puedan deducir, tienen que quedarse en tu cuenta hasta tu retiro.\n\nExpansión, mar-2026",
+     "voz": "Y se quedan hasta tu retiro."
+    },
+    {
+     "titulo": "No todas cuentan",
+     "texto": "Las aportaciones que puedes sacar cuando quieras (a la vista o de corto plazo) no son deducibles.\n\nExpansión; El Imparcial, 2026",
+     "voz": "Las que puedes sacar cuando quieras no cuentan."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para tu declaración.",
+    "texto": "Revisa con tu contador si te conviene.\nMándaselo a quien siempre paga de más.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "Guárdalo para tu declaración."
+   },
+   "fuente": "Ley del ISR, artículo 151 (deducción de aportaciones complementarias de retiro: hasta 10% de ingresos acumulables sin pasar de 5 UMA anuales); UMA 2026 de $117.31 diarios (INEGI); Expansión (mar-2026) y El Imparcial (2026) sobre requisitos; Consar / Afore Móvil",
+   "titulo_post": "Ahorro voluntario en tu Afore y tus impuestos",
+   "texto_post": "Ahorro voluntario Afore: así puede bajarte impuestos. 🧾\nLas aportaciones complementarias de retiro se deducen hasta 10% de tus ingresos (máximo 5 UMA anuales) y se quedan hasta tu retiro.\n\nRevisa con tu contador si te conviene.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien siempre paga de más.",
+   "seo": {
+    "palabra_clave": "ahorro voluntario Afore",
+    "titulo": "Ahorro voluntario Afore y tus impuestos 🧾",
+    "tags_concretas": [
+     "ahorro voluntario afore",
+     "aportaciones voluntarias afore",
+     "deducir afore",
+     "afore impuestos",
+     "declaracion anual deducciones",
+     "articulo 151 ley del isr",
+     "afore movil",
+     "uma 2026",
+     "aportaciones complementarias de retiro",
+     "ahorro para el retiro"
+    ],
+    "hashtags": [
+     "#afore",
+     "#impuestos",
+     "#sat",
+     "#retiro"
+    ],
+    "preguntas": [
+     "¿Las aportaciones voluntarias a la Afore son deducibles?",
+     "¿Cuánto puedo deducir de mi Afore?",
+     "¿Cómo hacer aportaciones voluntarias a mi Afore?"
+    ]
+   }
+  },
+  {
+   "id": "c10",
+   "estado": "borrador",
+   "tema": "cuesta_de_enero",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2027-01-02",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "CUESTA DE ENERO",
+    "titulo": "Si no haces esto, enero te va a doler",
+    "voz": "Si no haces esto, enero te va a doler."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tu presupuesto",
+     "texto": "50% a lo necesario, 30% a lo que quieres y 20% a ahorro y deudas. Con $12,000: $6,000, $3,600 y $2,400.\n\nWarren y Warren Tyagi (2005)",
+     "voz": "Haz tu presupuesto: cincuenta, treinta y veinte."
+    },
+    {
+     "titulo": "Más que el mínimo",
+     "texto": "Pagando solo el mínimo, $10,000 de deuda pueden ser 19 años y medio.\n\nCondusef",
+     "voz": "Paga más que el mínimo de tu tarjeta."
+    },
+    {
+     "titulo": "Suma tus meses",
+     "texto": "Antes de comprar otra cosa a meses, suma todas las mensualidades que ya traes.\n\nProfeco y Condusef",
+     "voz": "Suma tus mensualidades antes de comprar otra."
+    },
+    {
+     "titulo": "Tu colchón",
+     "texto": "Fondo de emergencia: de 3 a 6 meses de gastos. Empieza con lo que puedas.\n\nCondusef",
+     "voz": "Empieza tu fondo de emergencia."
+    },
+    {
+     "titulo": "Cuida lo hormiga",
+     "texto": "Los gastos chicos que no anotas pueden comerse hasta 12% de tu ingreso.\n\nCondusef",
+     "voz": "Y cuida los gastos hormiga."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para el 2 de enero.",
+    "texto": "Mándaselo a quien gastó todo en diciembre.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil.",
+    "voz": "Guárdalo para enero."
+   },
+   "fuente": "Regla 50/30/20: Warren y Warren Tyagi, All Your Worth (2005); Condusef: pago mínimo (deuda de $10,000 a 55%), fondo de emergencia de 3 a 6 meses, gastos hormiga hasta 12%; Profeco y Condusef: mensualidades",
+   "titulo_post": "Cuesta de enero: 5 pasos para librarla",
+   "texto_post": "Cuesta de enero: si no haces esto, enero te va a doler. 📉\nPresupuesto 50/30/20, paga más que el mínimo, suma tus meses, arma tu colchón y cuida los gastos hormiga.\n\n¿Cuál te cuesta más? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien gastó todo en diciembre.",
+   "seo": {
+    "palabra_clave": "cuesta de enero",
+    "titulo": "Cuesta de enero y 5 pasos para librarla 📉",
+    "tags_concretas": [
+     "cuesta de enero",
+     "cuesta de enero 2027",
+     "presupuesto de enero",
+     "regla 50 30 20",
+     "como sobrevivir enero",
+     "pago minimo tarjeta",
+     "fondo de emergencia",
+     "gastos hormiga",
+     "deudas de diciembre",
+     "finanzas de enero"
+    ],
+    "hashtags": [
+     "#cuestadeenero",
+     "#presupuesto",
+     "#ahorro",
+     "#deudas"
+    ],
+    "preguntas": [
+     "¿Cómo sobrevivir la cuesta de enero?",
+     "¿Cómo hacer un presupuesto?",
+     "¿Cuánto debe tener mi fondo de emergencia?"
+    ]
+   }
   }
  ]
 }
