@@ -97,5 +97,14 @@
   "detalle": "Video 19 (aguinaldo e ISR, gancho nuevo): 2 fotos (la primera con plano muy abierto), video de 12 s; audio adelantado 0.25 s para corregir la sincronía.",
   "creditos_usados": 540,
   "creditos_restantes": 9269
+ },
+ {
+  "fecha_utc": "2026-11-01T13:35:00Z",
+  "tipo": "auditoria",
+  "video_id": "",
+  "resultado": "ok",
+  "detalle": "Día de carrusel: c01 ya programado (TikTok 9:00, Instagram 12:00, YouTube 17:00) y comprobado. 5 carruseles nuevos (c06-c10) escritos y revisados por un segundo agente; el video 37 corregido (el 52% era de un estudio de 2017, no de Profeco 2024). 30 créditos: la foto de prueba estilo celular (video 37) del 31-oct.",
+  "creditos_usados": 30,
+  "creditos_restantes": 9239
  }
 ]

@@ -159,5 +159,12 @@
   "tipo": "publicacion",
   "aprendizaje": "Publer aceptó networks.instagram.firstComment pero no lo guardó (comments vacío en el video 02). Además, otra automatización con acceso al canal de YouTube metió el enlace de erroresinvisibles.gumroad.com en las descripciones del 01, c02 y c03 y les puso el idioma del audio en inglés (en-US), lo que confunde a YouTube sobre a quién mostrarlos.",
   "regla": "Comentario con accounts[].comments (delay 1 min) en Instagram y TikTok; después de que sale, revisar que exista. Cada día revisar que las descripciones de YouTube no tengan enlaces ajenos y que el idioma sea es/es; si cambiaron, restaurarlas y avisar a Rodrigo."
+ },
+ {
+  "fecha_utc": "2026-11-01T13:30:00Z",
+  "origen": "Revisión de datos de los carruseles c06-c10 (segundo agente)",
+  "tipo": "contenido",
+  "aprendizaje": "El \"solo 52% de los productos bajó de precio en el Buen Fin\" que la prensa atribuye a Profeco 2024 viene de un estudio de El Colegio de México (2017) con datos de Profeco 2010-2015. La comisión por sacar efectivo de la tarjeta (3%-11%) era de 2011; en 2026 Condusef reporta 6%-10%. \"6 de cada 10 no registran gastos\" era de 2021; ENIF 2024 da 1 de cada 6 que anota.",
+  "regla": "Cada cifra se rastrea hasta su origen y su año antes de usarla; la prensa recicla datos viejos con fecha nueva. El segundo revisor es obligatorio antes de marcar \"listo\"."
  }
 ]

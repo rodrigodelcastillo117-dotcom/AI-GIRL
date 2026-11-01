@@ -139,7 +139,7 @@
  },
  {
   "id": "c06",
-  "estado": "borrador",
+  "estado": "listo",
   "tema": "antes del buen fin",
   "gancho": "Antes del Buen Fin, haz estas 5 cosas",
   "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
@@ -157,7 +157,7 @@
  },
  {
   "id": "c07",
-  "estado": "borrador",
+  "estado": "listo",
   "tema": "reglas tarjeta credito",
   "gancho": "5 reglas de tu tarjeta que nadie te explica",
   "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
@@ -175,9 +175,9 @@
  },
  {
   "id": "c08",
-  "estado": "borrador",
+  "estado": "listo",
   "tema": "gastos hormiga",
-  "gancho": "Tu café diario te cuesta $18,000 al año",
+  "gancho": "Tu café de $50 diario te cuesta $18,000 al año",
   "titulo": "Gastos hormiga que se comen tu sueldo ☕",
   "diapositivas": 7,
   "fondo": "auto",
@@ -193,7 +193,7 @@
  },
  {
   "id": "c09",
-  "estado": "borrador",
+  "estado": "listo",
   "tema": "afore impuestos",
   "gancho": "Tu Afore puede bajarte impuestos: así funciona",
   "titulo": "Ahorro voluntario Afore y tus impuestos 🧾",
@@ -211,7 +211,7 @@
  },
  {
   "id": "c10",
-  "estado": "borrador",
+  "estado": "listo",
   "tema": "cuesta de enero",
   "gancho": "Si no haces esto, enero te va a doler",
   "titulo": "Cuesta de enero y 5 pasos para librarla 📉",
