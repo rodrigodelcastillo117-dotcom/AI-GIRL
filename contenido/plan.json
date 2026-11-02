@@ -1635,7 +1635,7 @@
     },
     {
       "id": "19",
-      "estado": "listo_para_publicar",
+      "estado": "programado",
       "pilar": "finanzas",
       "guion": "¿Por qué tu aguinaldo llega incompleto? Los primeros tres mil quinientos diecinueve pesos no pagan impuestos; lo que pasa de ahí, sí. Es el impuesto, no un error.",
       "subtitulos": [
@@ -1786,7 +1786,21 @@
         "Plano más cerrado: cara más grande para la sincronía"
       ],
       "parte": "Serie Aguinaldo 2026 · parte 1 de 4",
-      "mandar_a": "quien está esperando su aguinaldo completo"
+      "mandar_a": "quien está esperando su aguinaldo completo",
+      "publica_utc_por_red": {
+        "ig": "2026-11-03T02:00:00Z",
+        "tt": "2026-11-02T19:00:00Z",
+        "yt": "2026-11-03T02:00:00Z"
+      },
+      "publica_utc": "2026-11-03T02:00:00Z",
+      "publicacion": {
+        "youtube": "https://youtube.com/shorts/84pixgjFEXU",
+        "playlist": "aguinaldo",
+        "publer": {
+          "instagram": "programado 2-nov 20:00 CDMX, con comentario de seguimiento (Publer lo guardó)",
+          "tiktok": "programado 2-nov 13:00 CDMX (TikTok no guarda comentario de seguimiento)"
+        }
+      }
     },
     {
       "id": "20",

@@ -424,6 +424,9 @@ def medir():
         comentar_carruseles('carruseles.json', avisos_verificacion)
     except SystemExit as e:
         avisos_verificacion.append(f'No pude revisar los comentarios con enlace de los carruseles: {e}')
+    # Lo de arriba agrega avisos (comentarios por fijar, YouTube restaurado) después del primer guardado.
+    guardar('verificacion.json', {'fecha_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'), 'problemas': problemas,
+                                  'avisos': avisos_verificacion})
     for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:  # los carruseles también se miden
         if c.get('publica_utc') and a_utc(c['publica_utc']) <= ahora and (ahora - a_utc(c['publica_utc'])).days <= DIAS_DE_MEDICION:
             videos.append({'id': c['id'], 'texto_post': c['texto_post'], 'publica_utc': c['publica_utc'],
