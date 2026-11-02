@@ -1,23 +1,15 @@
 [
  {
-  "fecha": "2026-11-01",
-  "tipo": "carrusel",
-  "id": "c01",
-  "que": "Sale el carrusel c01 · aguinaldo",
-  "estado": "programado",
-  "horas": {
-   "ig": "12:00",
-   "tt": "09:00",
-   "yt": "17:00"
-  }
- },
- {
   "fecha": "2026-11-02",
   "tipo": "video",
   "id": "19",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video 19 (ya generado)"
+  "que": "Sale el video 19",
+  "estado": "programado",
+  "horas": {
+   "ig": "20:00",
+   "tt": "13:00",
+   "yt": "20:00"
+  }
  },
  {
   "fecha": "2026-11-03",
@@ -30,10 +22,10 @@
  {
   "fecha": "2026-11-04",
   "tipo": "video",
-  "id": "",
+  "id": "37",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video (lo elige el laboratorio el día anterior)"
+  "que": "Video 37 (ya generado)"
  },
  {
   "fecha": "2026-11-05",
@@ -82,5 +74,13 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "carrusel",
+  "id": "c09",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c09 · afore impuestos"
  }
 ]

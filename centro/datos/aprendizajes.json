@@ -166,5 +166,12 @@
   "tipo": "contenido",
   "aprendizaje": "El \"solo 52% de los productos bajó de precio en el Buen Fin\" que la prensa atribuye a Profeco 2024 viene de un estudio de El Colegio de México (2017) con datos de Profeco 2010-2015. La comisión por sacar efectivo de la tarjeta (3%-11%) era de 2011; en 2026 Condusef reporta 6%-10%. \"6 de cada 10 no registran gastos\" era de 2021; ENIF 2024 da 1 de cada 6 que anota.",
   "regla": "Cada cifra se rastrea hasta su origen y su año antes de usarla; la prensa recicla datos viejos con fecha nueva. El segundo revisor es obligatorio antes de marcar \"listo\"."
+ },
+ {
+  "fecha_utc": "2026-11-02T13:45:00Z",
+  "origen": "Video 37 (dos intentos)",
+  "tipo": "tecnico",
+  "aprendizaje": "Wan 3.0 inventó una frase a media grabación (\"no hay uta de bracia\") con el prompt de gestos de manos; qa_audio la dejó pasar con 0.86 porque el resto estaba bien. En los 3 videos de Wan 3.0 la voz sale 330-400 ms atrasada respecto a la boca.",
+  "regla": "Leer siempre el \"dicho\" de qa_audio buscando palabras que no están en el guion, aunque pase el mínimo. En el prompt: \"She says exactly these words and nothing else\" y manos relajadas. Si la voz va atrasada pareja (correlación clara en el mejor desfase), adelantar el audio 0.3 s con atrim antes de regenerar."
  }
 ]

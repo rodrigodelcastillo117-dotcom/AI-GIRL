@@ -106,5 +106,23 @@
   "detalle": "Día de carrusel: c01 ya programado (TikTok 9:00, Instagram 12:00, YouTube 17:00) y comprobado. 5 carruseles nuevos (c06-c10) escritos y revisados por un segundo agente; el video 37 corregido (el 52% era de un estudio de 2017, no de Profeco 2024). 30 créditos: la foto de prueba estilo celular (video 37) del 31-oct.",
   "creditos_usados": 30,
   "creditos_restantes": 9239
+ },
+ {
+  "fecha_utc": "2026-11-02T13:05:00Z",
+  "tipo": "publicar",
+  "video_id": "19",
+  "resultado": "programado",
+  "detalle": "Video 19 (aguinaldo e ISR): TikTok 13:00, Instagram 20:00 (comentario de seguimiento guardado por Publer), YouTube 20:00.",
+  "creditos_usados": 0,
+  "creditos_restantes": 9239
+ },
+ {
+  "fecha_utc": "2026-11-02T13:45:00Z",
+  "tipo": "generar",
+  "video_id": "37",
+  "resultado": "listo_para_publicar",
+  "detalle": "Video 37 (Buen Fin) en estilo celular; el primer intento se descartó (frase inventada y labios fuera de sincronía), el segundo pasó con el audio adelantado 0.3 s.",
+  "creditos_usados": 1520,
+  "creditos_restantes": 7719
  }
 ]
