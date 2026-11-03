@@ -27,6 +27,7 @@ from seo import cada, con_ref, errores_titulo, etiquetas, hashtags_para  # noqa:
 
 VOZ = 'es-MX-DaliaNeural'
 AIRE, MAXIMO_SHORT = 0.5, 57.0
+AIRE_SHORT = 0.25  # menos silencio entre diapositivas: cada pausa es un momento para deslizar
 NEGRO = '0x0b0b0d'
 # Detrás del proxy de la nube, el certificado está en SSL_CERT_FILE; edge-tts solo mira certifi.
 _ca = os.environ.get('SSL_CERT_FILE') or os.environ.get('REQUESTS_CA_BUNDLE')
@@ -56,6 +57,19 @@ def voces_victoria(carpeta, voces):
     os.remove(lista)
 
 
+def movimiento(segundos):
+    """Short vertical que no parezca presentación (3-nov-2026: los shorts de carrusel retienen 18-29% y Victoria
+    hablando 92%): la diapositiva se acerca despacio (6% en todo el tramo) y las franjas de arriba y abajo, que eran
+    negras, llevan la misma diapositiva desenfocada y oscura."""
+    cuadros = max(1, int(segundos * 30))
+    return (f"[0:v]split[a][b];"
+            f"[a]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:4,"
+            f"eq=brightness=-0.28:saturation=0.8[fondo];"
+            f"[b]scale=2160:2700,zoompan=z='1+0.06*on/{cuadros}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+            f":d=1:s=1080x1350:fps=30[frente];"
+            f"[fondo][frente]overlay=0:285,format=yuv420p[v]")
+
+
 def tramos(c, horizontal=False):
     """Un MP4 por diapositiva (imagen + su voz). Regresa (rutas, segundos totales)."""
     carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
@@ -72,10 +86,11 @@ def tramos(c, horizontal=False):
         audio = os.path.join(carpeta, f'{"voz" if edge else "vozv"}-{i:02d}.mp3')
         if edge and not os.path.exists(audio):
             asyncio.run(edge_tts.Communicate(texto, VOZ, rate='+5%').save(audio))
-        segundos = duracion(audio) + AIRE
+        segundos = duracion(audio) + (AIRE if horizontal else AIRE_SHORT)
         total += segundos
         tramo = os.path.join(carpeta, f'tramo-{"h" if horizontal else "v"}-{i:02d}.mp4')
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-i', hoja, '-i', audio, '-vf', marco,
+        filtro = ['-vf', marco] if horizontal else ['-filter_complex', movimiento(segundos), '-map', '[v]', '-map', '1:a']
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-i', hoja, '-i', audio, *filtro,
                         '-af', 'apad', '-t', f'{segundos:.2f}', '-r', '30', '-c:v', 'libx264', '-preset', 'medium',
                         '-crf', '20', '-c:a', 'aac', '-ar', '44100', '-ac', '2', tramo], check=True)
         rutas.append(tramo)

@@ -201,5 +201,12 @@
   "tipo": "regla",
   "aprendizaje": "Errores invisibles (erroresinvisibles.gumroad.com, las listas de psicología) ES DE RODRIGO. El canal de YouTube antes era de ese proyecto y su automatización sigue escribiendo en las descripciones de los videos de Victoria.",
   "regla": "NUNCA preguntarle a Rodrigo si Errores invisibles es suyo ni llamarlo 'app ajena' u 'otra app'. vigilar_youtube sigue dejando las descripciones de Victoria con sus enlaces y audio en español; en el reporte decir 'tu automatización de Errores invisibles' y solo recordarle que la apague para este canal si sigue pasando."
+ },
+ {
+  "fecha_utc": "2026-11-03T21:00:00Z",
+  "origen": "Retención de los shorts de carrusel (YouTube Analytics)",
+  "tipo": "tecnico",
+  "aprendizaje": "Los shorts de carrusel retienen 18-29% (c02 17.8%, c03 28.8%) contra 92% de Victoria hablando (01). Eran una imagen quieta con franjas negras arriba y abajo y medio segundo de silencio entre diapositivas: parecían presentación.",
+  "regla": "Desde el 3-nov los shorts verticales llevan acercamiento lento (6%), las franjas con la diapositiva desenfocada y 0.25 s entre diapositivas (carrusel_video.py). Comparar el % visto de los shorts nuevos contra 18-29%."
  }
 ]
