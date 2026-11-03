@@ -39,8 +39,23 @@ def letra(peso, tam):
     return ImageFont.truetype(FUENTES.format(peso), tam)
 
 
+def con_letra(texto, fuente):
+    """Quita lo que la letra no puede dibujar (los emoji salían como un cuadro: "▯ Mis 30 reglas", c06, 2-nov-2026).
+    En el pie del post los emoji sí se quedan."""
+    if not hasattr(con_letra, 'mapa'):
+        try:
+            from fontTools.ttLib import TTFont
+            con_letra.mapa = set(TTFont(fuente.path).getBestCmap())
+        except Exception:  # sin fontTools: fuera emoji, pictogramas y sus modificadores
+            con_letra.mapa = None
+    tiene = (lambda ch: ord(ch) in con_letra.mapa) if con_letra.mapa else \
+        (lambda ch: not (ord(ch) >= 0x1F000 or 0x2600 <= ord(ch) <= 0x27BF or ord(ch) in (0xFE0F, 0x200D)))
+    return ' '.join(''.join(ch for ch in texto if ch in ' \n' or tiene(ch)).split(' ')).replace(' \n', '\n').replace('\n ', '\n').strip()
+
+
 def renglones(texto, fuente, ancho, d):
     salida = []
+    texto = con_letra(texto, fuente)
     for parrafo in texto.split('\n'):
         actual = ''
         for palabra in parrafo.split():

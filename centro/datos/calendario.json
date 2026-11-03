@@ -17,7 +17,7 @@
   "id": "c06",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c06 · antes del buen fin"
+  "que": "Carrusel c06 · antes del buen fin · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-04",
@@ -28,12 +28,20 @@
   "que": "Video 37 (ya generado)"
  },
  {
-  "fecha": "2026-11-05",
+  "fecha": "2026-11-04",
   "tipo": "carrusel",
   "id": "c04",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c04 · lecciones de negocio"
+  "que": "Carrusel c04 · lecciones de negocio · solo TikTok (carrusel diario)"
+ },
+ {
+  "fecha": "2026-11-05",
+  "tipo": "carrusel",
+  "id": "c07",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c07 · reglas tarjeta credito · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-06",
@@ -44,12 +52,20 @@
   "que": "Video (lo elige el laboratorio el día anterior)"
  },
  {
-  "fecha": "2026-11-07",
+  "fecha": "2026-11-06",
   "tipo": "carrusel",
-  "id": "c07",
+  "id": "c08",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c07 · reglas tarjeta credito"
+  "que": "Carrusel c08 · gastos hormiga · solo TikTok (carrusel diario)"
+ },
+ {
+  "fecha": "2026-11-07",
+  "tipo": "carrusel",
+  "id": "c09",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c09 · afore impuestos · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-08",
@@ -60,12 +76,20 @@
   "que": "Video (lo elige el laboratorio el día anterior)"
  },
  {
-  "fecha": "2026-11-09",
+  "fecha": "2026-11-08",
   "tipo": "carrusel",
-  "id": "c08",
+  "id": "",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c08 · gastos hormiga"
+  "que": "Carrusel nuevo (se escribe) · solo TikTok (carrusel diario)"
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "carrusel",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-10",
@@ -76,11 +100,19 @@
   "que": "Video (lo elige el laboratorio el día anterior)"
  },
  {
-  "fecha": "2026-11-11",
+  "fecha": "2026-11-10",
   "tipo": "carrusel",
-  "id": "c09",
+  "id": "",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c09 · afore impuestos"
+  "que": "Carrusel nuevo (se escribe) · solo TikTok (carrusel diario)"
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "carrusel",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  }
 ]

@@ -54,17 +54,21 @@ más alcance. Instagram y TikTok los contesta Rodrigo en la app.
 
 ## 1a. Si hoy NO toca publicar
 
-Sale un **carrusel** (`docs/CARRUSELES.md`): el primero en estado `listo` de
-`contenido/carruseles.json` (los de temporada, si su `ventana` incluye hoy, van primero). Se publica
-a la hora de cada red (`decision.cuando`): Instagram y TikTok como fotos (`publer_carrusel.py`) y YouTube como short
-(`carrusel_video.py short` y `youtube.py subir`). El video del carrusel es SOLO para YouTube: nunca a Instagram ni a
-TikTok (Rodrigo, 31-oct-2026); ahí solo van los videos de Victoria. Si no queda ninguno `listo`, escribe 5 nuevos
-(reglas en `CARRUSELES.md`). Luego pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
+Sale un **carrusel** (`docs/CARRUSELES.md`). Qué carrusel va a cada red lo decide la auditoría
+(`decision.carruseles`, con los comandos listos; regla de Rodrigo del 2-nov-2026):
+- **TikTok:** el siguiente que no ha salido ahí, en fotos (`publer_carrusel.py <id> "tt=<hora>"`).
+- **Instagram y YouTube:** el que mejor le fue en TikTok y aún no sale ahí (si ninguno se ha probado, el mismo de
+  TikTok). Instagram en fotos (`"ig=<hora>"`) y además su video como Reel (`carrusel_video.py short <id>` y
+  `publer_carrusel.py <id> --reel auto`); YouTube, ese mismo short (`youtube.py subir`, CARRUSELES.md).
+Si son el mismo carrusel, va en un solo comando (`"ig=...,tt=..."`). Si quedan menos de 5 para TikTok, escribe 5
+nuevos (reglas en `CARRUSELES.md`). Luego pasos 8 (registro), 10 (centro) y 9 (reporte de una línea). Excepción: si no hay ningún
 video `listo_para_publicar`, genera uno hoy (pasos 1b a 6) y déjalo listo: así el día de publicar
 ya está hecho y la franja de las 8:00 nunca se pierde.
 
 ## 1b. Si hoy SÍ toca publicar
 
+0. **TikTok también sube su carrusel del día** (`decision.carruseles.tiktok`, a 3 h o más del video:
+   `publer_carrusel.py <id> "tt=<hora>"`). Instagram y YouTube solo el video.
 1. Publica el video `listo_para_publicar` (`decision.publicar_hoy`) a la hora de **cada red**
    (`decision.cuando`, paso 7). **Prueba de horarios por red:** Instagram, TikTok y YouTube salen a
    horas distintas y cada red rota por sus propias 5 franjas (`config.json → prueba_horas.franjas_por_red`,

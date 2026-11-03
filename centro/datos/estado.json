@@ -3,19 +3,19 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Video y carrusel en días alternos: algo nuevo cada día · cada red a su hora · auditoría diaria 06:37",
   "dias_entre_videos": 2,
-  "proxima_ejecucion_utc": "2026-11-02T19:00:00Z",
+  "proxima_ejecucion_utc": "2026-11-03T02:00:00Z",
   "proxima_que": "Sale el video 19 (Instagram 20:00 · TikTok 13:00 · YouTube 20:00)",
   "proximas": [
    {
-    "utc": "2026-11-02T19:00:00Z",
+    "utc": "2026-11-03T02:00:00Z",
     "que": "Sale el video 19 (Instagram 20:00 · TikTok 13:00 · YouTube 20:00)"
    },
    {
-    "utc": "2026-11-03T02:00:00Z",
-    "que": "Sale el video 19 (Instagram 20:00 · TikTok 13:00 · YouTube 20:00)"
+    "utc": "2026-11-04T19:00:00Z",
+    "que": "Sale el video 37 · la hora de cada red la fija la auditoría de ese día"
    }
   ],
-  "generado_utc": "2026-11-02T13:14:42Z",
+  "generado_utc": "2026-11-03T01:30:57Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {

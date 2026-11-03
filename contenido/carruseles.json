@@ -450,13 +450,13 @@
    "estado": "listo",
    "tema": "antes_del_buen_fin",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
    "ventana": {
     "desde": "2026-11-01",
     "hasta": "2026-11-16"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-37-sala.jpg",
     "etiqueta": "BUEN FIN 2026",
     "titulo": "Antes del Buen Fin, haz estas 5 cosas",
     "voz": "Antes del Buen Fin, haz estas cinco cosas o vas a pagar de más."

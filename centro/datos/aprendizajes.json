@@ -173,5 +173,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Wan 3.0 inventó una frase a media grabación (\"no hay uta de bracia\") con el prompt de gestos de manos; qa_audio la dejó pasar con 0.86 porque el resto estaba bien. En los 3 videos de Wan 3.0 la voz sale 330-400 ms atrasada respecto a la boca.",
   "regla": "Leer siempre el \"dicho\" de qa_audio buscando palabras que no están en el guion, aunque pase el mínimo. En el prompt: \"She says exactly these words and nothing else\" y manos relajadas. Si la voz va atrasada pareja (correlación clara en el mejor desfase), adelantar el audio 0.3 s con atrim antes de regenerar."
+ },
+ {
+  "fecha_utc": "2026-11-03T01:45:00Z",
+  "origen": "Datos de la primera semana (Publer, 2-nov) y decisión de Rodrigo",
+  "tipo": "estrategia",
+  "aprendizaje": "En TikTok los carruseles en fotos llegan a ~500 personas (c01 528, c03 524, c02 466) y los videos a ~100 (video 02: 105). En Instagram el Reel del carrusel c03 llegó a 28 (47 vistas) y los carruseles en fotos a 5-9; el video 02, 23.",
+  "regla": "TikTok sube un carrusel en fotos todos los días (los días con video, a 3 h o más del video). Instagram, los días sin video, sube el carrusel en fotos y su video como Reel; YouTube su short. Instagram y YouTube toman el carrusel al que mejor le fue en TikTok. Reemplaza la regla del 31-oct (video del carrusel solo para YouTube). Lo decide aprender.py auditar → decision.carruseles."
  }
 ]

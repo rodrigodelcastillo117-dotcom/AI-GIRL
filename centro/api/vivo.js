@@ -163,7 +163,9 @@ export async function agenda(estado, videos) {
     (async () => {
       const cabeceras = await cabecerasPubler();
       await Promise.all(['scheduled', 'published'].map(async (estadoPost) => {
-        const desde = estadoPost === 'scheduled' ? hoy : hoy - 2 * 864e5;
+        // Publer lee from/to como fechas de México y dia() da la de UTC: desde las 18:00 de México ya es "mañana"
+        // en UTC y se perdía lo de esa noche (2-nov: el Instagram de las 20:00 no salía). Un día de margen.
+        const desde = estadoPost === 'scheduled' ? hoy - 864e5 : hoy - 3 * 864e5;
         const hasta = estadoPost === 'scheduled' ? hoy + 15 * 864e5 : hoy + 864e5;
         const filtros = new URLSearchParams([['state', estadoPost], ['from', dia(new Date(desde))], ['to', dia(new Date(hasta))],
           ...Object.keys(cuentas).map((c) => ['account_ids[]', c])]);

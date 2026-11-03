@@ -150,14 +150,14 @@ def que_sale(item):
 
 def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     """Lo que sale cada día: lo ya programado con su hora en cada red y, los días sin programar, lo que
-    toca (video y carrusel en días alternos)."""
+    toca (video y carrusel en días alternos, y el carrusel de TikTok también los días con video)."""
     local = ahora.astimezone(CDMX).date()
-    programado = {}
-    for x in plan['videos'] + carruseles:
+    programado = {}  # {día: {id: (item, {red: hora})}}: cada red en el día en que sale (un carrusel puede salir
+    for x in plan['videos'] + carruseles:  # en TikTok un día y en Instagram y YouTube otro, regla del 2-nov)
         if x.get('estado') in ('programado', 'publicado'):
-            horas = horas_por_red(x)
-            if horas:
-                programado.setdefault(min(horas.values()).date(), []).append((x, horas))
+            for r, h in horas_por_red(x).items():
+                programado.setdefault(h.date(), {}).setdefault(x['id'], (x, {}))[1][r] = h
+    programado = {dia: list(items.values()) for dia, items in programado.items()}
     fechas_video = sorted(min(horas_por_red(v).values()).date() for v in plan['videos']
                           if v.get('estado') in ('programado', 'publicado') and horas_por_red(v))
     cada = config.get('dias_entre_videos', 2)
@@ -179,20 +179,27 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
                 filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel' if str(x['id']).startswith('c') else 'video',
                               'id': x['id'], 'que': que_sale(x), 'estado': x['estado'],
                               'horas': {r: h.strftime('%H:%M') for r, h in horas.items()}})
+        if hechos and (dia <= local or any(str(x['id']).startswith('c') and 'tt' in h for x, h in hechos)):
             continue
-        es_video = (dia - ultimo).days % cada == 0 and dia > ultimo
-        if es_video:
+        es_video = bool(hechos) or ((dia - ultimo).days % cada == 0 and dia > ultimo)
+        # los de temporada solo dentro de su ventana; los de temporada en ventana van primero
+        validos = [c for c in listos if not c.get('ventana') or c['ventana']['desde'] <= dia.isoformat() <= c['ventana']['hasta']]
+        c = next((x for x in validos if x.get('ventana')), validos[0] if validos else None)
+        if c:
+            listos.remove(c)
+        nombre = f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'
+        if hechos:  # ya está el video del día: falta el carrusel de TikTok
+            filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
+                          'horas': {}, 'que': nombre + ' · solo TikTok (carrusel diario)'})
+        elif es_video:
             vid, video_listo = video_listo, None
             filas.append({'fecha': dia.isoformat(), 'tipo': 'video', 'id': vid or '', 'estado': 'por_programar', 'horas': {},
                           'que': f'Video {vid} (ya generado)' if vid else 'Video (lo elige el laboratorio el día anterior)'})
-        else:
-            # los de temporada solo dentro de su ventana; los de temporada en ventana van primero
-            validos = [c for c in listos if not c.get('ventana') or c['ventana']['desde'] <= dia.isoformat() <= c['ventana']['hasta']]
-            c = next((x for x in validos if x.get('ventana')), validos[0] if validos else None)
-            if c:
-                listos.remove(c)
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'})
+                          'horas': {}, 'que': nombre + ' · solo TikTok (carrusel diario)'})
+        else:
+            filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
+                          'horas': {}, 'que': nombre + ' · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok'})
     return filas
 
 
