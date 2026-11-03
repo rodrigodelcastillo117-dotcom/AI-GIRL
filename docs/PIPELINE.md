@@ -281,6 +281,14 @@ cp /tmp/titulo.mp4 videos/video-<id>-SUBTITULADO.mp4
 ```
 Revisar un cuadro: el título va en la franja de arriba (techo, cielo o pared) y no tapa la cara.
 
+Cierre en pantalla (Rodrigo, 3-nov-2026: cero suscriptores y casi cero comentarios desde que salió Victoria). Los
+últimos 2.2 s llevan la `pregunta_comentarios` del video y "COMENTA Y SÍGUEME" (en una serie, "PARTE N MUY PRONTO:
+SÍGUEME"). Solo texto, el audio se copia: la sincronía no cambia. Se publica el `-FINAL.mp4`:
+```
+python scripts/cierre_pantalla.py videos/video-<id>-SUBTITULADO.mp4 <id> videos/video-<id>-FINAL.mp4
+```
+Revisar el último cuadro: el cierre no tapa la cara y se lee. En el plan, `archivo` apunta al `-FINAL.mp4`.
+
 ## 7. Publicar
 
 1. `python scripts/seo.py <id> /tmp/seo-<id>` (si falla, corrige el bloque `seo` del video y
