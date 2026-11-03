@@ -6,9 +6,12 @@ fotos a 5-9. Por eso:
 
 | Día | TikTok | Instagram | YouTube |
 |---|---|---|---|
-| Con video | el video + **un carrusel en fotos** a otra hora (3 h o más) | el video | el video |
+| Con video | el video + **un carrusel en fotos** a otra hora (3 h o más) | el video | el video + **short de carrusel** a 3 h o más (prueba del 4 al 17 de noviembre) |
 | Sin video | un carrusel en fotos | el carrusel en fotos **+ su video como Reel** (2 h o más después) | el short del carrusel |
 
+- Prueba en YouTube (Rodrigo, 3-nov-2026; `config.json → prueba_youtube_carrusel_diario`): los días con video también
+  sube un short de carrusel (el mejor de TikTok que no haya salido ahí). Al terminar se compara si los videos de
+  Victoria perdieron vistas (antes: 600-690 por video); si bajan, se quita.
 - TikTok gasta un carrusel diario: va primero el de temporada que esté en su ventana y luego el orden del archivo.
 - Instagram y YouTube, los días sin video, suben **el carrusel al que mejor le fue en TikTok** (vistas medidas, 20 h
   o más después de salir ahí) que aún no hayan subido; los de temporada primero porque caducan. Si ninguno se ha

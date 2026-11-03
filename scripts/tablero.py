@@ -190,13 +190,13 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
         nombre = f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'
         if hechos:  # ya está el video del día: falta el carrusel de TikTok
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · solo TikTok (carrusel diario)'})
+                          'horas': {}, 'que': nombre + ' · TikTok (carrusel diario) y short en YouTube (prueba)'})
         elif es_video:
             vid, video_listo = video_listo, None
             filas.append({'fecha': dia.isoformat(), 'tipo': 'video', 'id': vid or '', 'estado': 'por_programar', 'horas': {},
                           'que': f'Video {vid} (ya generado)' if vid else 'Video (lo elige el laboratorio el día anterior)'})
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · solo TikTok (carrusel diario)'})
+                          'horas': {}, 'que': nombre + ' · TikTok (carrusel diario) y short en YouTube (prueba)'})
         else:
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
                           'horas': {}, 'que': nombre + ' · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok'})

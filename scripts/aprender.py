@@ -744,7 +744,7 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     por_red = lambda c: c.get('publica_utc_por_red') or {}
     falta = lambda c, r: c['estado'] in ('listo', 'programado', 'publicado') and r not in por_red(c) and en_ventana(c, hoy)
     sale_hoy = lambda lista, r: [h[r] for _, h in publicaciones(plan, lista) if r in h and h[r].date() == hoy]
-    salida = {'tiktok': None, 'instagram': None, 'notas': []}
+    salida = {'tiktok': None, 'instagram': None, 'youtube': None, 'notas': []}
 
     # TikTok: el primero que no ha salido ahí (temporada primero).
     if any(a_utc(t).astimezone(CDMX).date() == hoy for c in carruseles for r, t in por_red(c).items() if r == 'tt'):
@@ -767,8 +767,26 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
 
     # Instagram y YouTube: solo los días sin video y si Instagram no tiene ya algo hoy.
     video_hoy = bool(d.get('publicar_hoy')) or bool(sale_hoy([], 'ig'))
+    prueba_yt = config.get('prueba_youtube_carrusel_diario') or {}
+    if video_hoy and prueba_yt.get('desde', '9999') <= hoy.isoformat() <= prueba_yt.get('hasta', ''):
+        # Prueba de Rodrigo (3-nov-2026): YouTube también sube un short de carrusel los días con video, a 3 h o
+        # más del video. Al final se compara si el video del día perdió vistas (config → prueba_youtube_carrusel_diario).
+        if sale_hoy(carruseles, 'yt'):
+            salida['notas'].append('YouTube ya tiene su short de carrusel de hoy.')
+        else:
+            sin_yt = lambda c: falta(c, 'yt') and not c.get('youtube')
+            probados = [c for c in carruseles if sin_yt(c) and 'tt' in por_red(c)
+                        and a_utc(por_red(c)['tt']) <= ahora - datetime.timedelta(hours=20)]
+            c = max(probados, key=lambda c: (1 if c.get('ventana') else 0, vistas_tiktok(c['id'], historial) or -1), default=None) \
+                or next((x for x in carruseles if salida['tiktok'] and x['id'] == salida['tiktok']['id'] and sin_yt(x)), None)
+            videos_yt = sale_hoy([], 'yt') + ([a_utc(d['cuando']['yt']).astimezone(CDMX)] if d.get('publicar_hoy') else [])
+            cuando = franja_extra('yt', hoy, videos_yt, d['conteo_horas'], config, ahora) if c else None
+            if c and cuando:
+                salida['youtube'] = {'id': c['id'], 'cuando_yt': cuando}
+            else:
+                salida['notas'].append('YouTube: hoy no hay carrusel u hora libre a 3 h del video para el short extra.')
     if video_hoy:
-        salida['notas'].append('Hoy hay video: Instagram y YouTube suben el video, no carrusel.')
+        salida['notas'].append('Hoy hay video: Instagram sube el video, no carrusel.')
     elif sale_hoy(carruseles, 'ig'):
         salida['notas'].append('Instagram ya tiene su carrusel de hoy.')
     else:
@@ -802,6 +820,10 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
                      f"python scripts/publer_carrusel.py {ig['id']} --reel auto"]
         if ig['cuando_yt']:
             comandos.append(f"youtube.py subir carruseles/{ig['id']}/short.mp4 ... {ig['cuando_yt']} (CARRUSELES.md)")
+    yt = salida['youtube']
+    if yt:
+        comandos += [f"python scripts/carrusel_video.py short {yt['id']}",
+                     f"youtube.py subir carruseles/{yt['id']}/short.mp4 ... {yt['cuando_yt']} (CARRUSELES.md; prueba de carrusel diario en YouTube)"]
     salida['comandos'] = comandos
     return salida
 
@@ -930,6 +952,8 @@ def auditar():
         print(f"Carrusel de TikTok hoy: {k['tiktok']['id']} a las {a_utc(k['tiktok']['cuando']).astimezone(CDMX):%H:%M}.")
     if k['instagram']:
         print(f"Carrusel de Instagram y YouTube hoy: {k['instagram']['id']} ({k['instagram']['por_que']}) + su Reel.")
+    if k.get('youtube'):
+        print(f"Short de carrusel en YouTube hoy (prueba): {k['youtube']['id']} a las {a_utc(k['youtube']['cuando_yt']).astimezone(CDMX):%H:%M}.")
     for n in k['notas']:
         print('Carruseles:', n)
     for c in k['comandos']:
