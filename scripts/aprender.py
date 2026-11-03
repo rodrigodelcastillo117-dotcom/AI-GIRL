@@ -322,6 +322,22 @@ def vigilar_youtube(plan, avisos):
             youtube._http('PUT', f"{youtube.API}/videos?part=snippet", json.dumps(nuevo).encode(), h)
             avisos.append(f"Alguien cambió el video de YouTube {item['id']} (enlaces ajenos: {', '.join(ajenos) or 'ninguno'}; "
                           f"audio {sn.get('defaultAudioLanguage')}). Ya lo restauré. Otra app sigue con acceso al canal.")
+    # El perfil del canal (3-nov-2026 tenía palabras clave de psicología, idioma inglés y descripción vieja): se compara
+    # con config.json → canal_youtube y se restaura si alguien lo cambió.
+    config = cargar('config.json', {})
+    canal = config.get('canal_youtube_perfil')
+    if canal:
+        _, cuerpo = youtube._http('GET', f"{youtube.API}/channels?part=brandingSettings&mine=true", headers=h)
+        item = (json.loads(cuerpo).get('items') or [{}])[0]
+        b = item.get('brandingSettings') or {}
+        ch = b.get('channel') or {}
+        if any(ch.get(k) != canal[k] for k in ('description', 'keywords', 'defaultLanguage')):
+            nuevo = {'channel': {**{k: ch.get(k) for k in ('title', 'country') if ch.get(k)}, **canal}}
+            if b.get('image'):
+                nuevo['image'] = b['image']
+            youtube._http('PUT', f"{youtube.API}/channels?part=brandingSettings",
+                          json.dumps({'id': item['id'], 'brandingSettings': nuevo}).encode(), h)
+            avisos.append('Alguien cambió el perfil del canal de YouTube (descripción, palabras clave o idioma). Ya lo restauré.')
 
 
 def comentar_carruseles(carruseles_json, avisos):

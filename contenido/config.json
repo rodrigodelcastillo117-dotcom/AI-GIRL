@@ -374,5 +374,10 @@
   "desde": "2026-11-04",
   "hasta": "2026-11-17",
   "nota": "Rodrigo (3-nov-2026) aprobó probar 2 semanas: los días con video, YouTube también sube un short de carrusel a 3 h o más del video. Al terminar, comparar las vistas de los videos de Victoria de estas 2 semanas contra las anteriores (600-690 por video): si bajan, se quita; si no, se queda y se suman las vistas de los shorts extra."
+ },
+ "canal_youtube_perfil": {
+  "description": "Victoria es una CEO creada con inteligencia artificial que te explica el dinero en México en menos de un minuto: aguinaldo, SAT, tarjeta de crédito, Afore, Infonavit, finiquito, ahorro y negocios. Cada dato con su fuente oficial (Profeco, Condusef, SAT, Ley Federal del Trabajo).\n\n📌 Suscríbete: un dato de dinero que sí sirve en México, varias veces por semana.\n📥 Mis 30 reglas de la CEO, gratis: https://victoriatheceo.vercel.app?ref=yt\n🧮 Calculadora de aguinaldo 2026: https://victoriatheceo.vercel.app/aguinaldo?ref=yt\n\nContenido educativo; no es asesoría financiera, fiscal ni legal. Victoria es un personaje creado con IA.",
+  "keywords": "\"finanzas personales\" \"finanzas personales mexico\" \"educacion financiera\" aguinaldo \"aguinaldo 2026\" \"cuanto me toca de aguinaldo\" SAT \"tarjeta de credito\" Afore Infonavit finiquito \"derechos laborales\" \"como ahorrar dinero\" ahorro dinero \"buen fin\" \"salario minimo 2026\" negocios emprendimiento \"victoria the ceo\"",
+  "defaultLanguage": "es"
  }
 }

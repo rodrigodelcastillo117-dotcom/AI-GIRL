@@ -187,5 +187,12 @@
   "tipo": "estrategia",
   "aprendizaje": "Hay vistas pero casi no hay seguidores ni envíos. TikTok: ~1,500 personas vieron los 3 carruseles y los seguidores quedaron en 1,167 en la semana (antes subía 15-23 por semana); envíos 0-1 por post en todas las redes. YouTube: los videos de Victoria hablando 600-690 vistas y el 01 con 92% de vista promedio; los shorts de carrusel 35-250 vistas con 18-29% de vista promedio; 8 suscriptores ganados en todo octubre. Instagram: 59-62 seguidores en un mes.",
   "regla": "Cada cierre de carrusel dice qué gana quien sigue a Victoria (\"Sígueme: cada día, un dato de dinero que sí sirve en México\") y a quién mandárselo. Medir seguidores ganados por semana contra vistas: si en 2 semanas no suben, el problema es la promesa de la cuenta, no el alcance. En YouTube el formato que retiene es Victoria hablando, no el carrusel narrado."
+ },
+ {
+  "fecha_utc": "2026-11-03T20:40:00Z",
+  "origen": "Revisión del canal de YouTube",
+  "tipo": "tecnico",
+  "aprendizaje": "El perfil del canal seguía configurado como canal de psicología: palabras clave de 'psicología humana', 'curiosidades de la mente' y 'autoengaño', idioma en inglés y descripción vieja ('cada dos días, 12 segundos'). Había 6 listas públicas de psicología con 86 videos borrados y ninguno vivo.",
+  "regla": "El perfil del canal es de finanzas personales en México, en español (config.json → canal_youtube_perfil); vigilar_youtube lo restaura cada día si alguien lo cambia. Ocultar las listas viejas requiere el OK de Rodrigo."
  }
 ]
