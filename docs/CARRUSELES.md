@@ -47,8 +47,9 @@ Las fotos se vuelven a dibujar igual desde el JSON (las imágenes de Wikimedia o
   deja ahí su foto base (PIPELINE paso 3), así que hay una nueva cada 2 días.
 - Solo Victoria: pelirroja, ojos verdes, con Capital. Nunca otra mujer (hubo una rubia en OpenArt:
   no se usa).
-- Si no queda foto sin usar: generar una con `nano-banana-2` (30 créditos) con el prompt del paso 3
-  en una locación de lujo que no se haya usado, y guardarla en `assets/fotos/`.
+- Si no queda foto sin usar, `carrusel.py` repite la que lleva más tiempo sin salir (nunca una de los últimos 3
+  carruseles): TikTok gasta un carrusel diario y los videos dejan una foto cada 2 días. Solo si sobran créditos,
+  generar una nueva con `nano-banana-2` (~20 créditos) con el prompt del paso 3 y guardarla en `assets/fotos/`.
 
 ## Fondo de los datos: un lugar de lujo distinto en cada carrusel
 

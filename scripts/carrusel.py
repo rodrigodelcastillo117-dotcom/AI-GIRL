@@ -124,9 +124,21 @@ def elegir_foto(c, todos):
     usadas = {x['portada']['foto'] for x in todos if x['id'] != c['id']}
     fotos = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'fotos', '*.jpg')), key=os.path.getmtime, reverse=True)
     libre = next((f for f in fotos if os.path.relpath(f, RAIZ) not in usadas), None)
-    if not libre:
-        sys.exit('ERROR: no queda foto de Victoria sin usar en assets/fotos: genera una (docs/CARRUSELES.md)')
-    return os.path.relpath(libre, RAIZ)
+    if libre:
+        return os.path.relpath(libre, RAIZ)
+    # Sin foto nueva (TikTok gasta un carrusel diario y cada video deja una foto cada 2 días): se repite la que
+    # lleva más tiempo sin salir, nunca una de los últimos 3 carruseles. 0 créditos (Rodrigo, 3-nov-2026: los
+    # créditos no alcanzan ni para los videos). Generar fotos nuevas solo si sobran créditos.
+    if not fotos:
+        sys.exit('ERROR: no hay fotos de Victoria en assets/fotos (docs/CARRUSELES.md)')
+    ultima = {}
+    for x in todos:
+        if x['id'] != c['id'] and x['portada']['foto'] != 'auto':
+            ultima[x['portada']['foto']] = max(ultima.get(x['portada']['foto'], ''), x.get('publica_utc') or '9999')
+    recientes = sorted(ultima, key=ultima.get)[-3:]
+    candidatas = [os.path.relpath(f, RAIZ) for f in fotos if os.path.relpath(f, RAIZ) not in recientes] or \
+        [os.path.relpath(f, RAIZ) for f in fotos]
+    return min(candidatas, key=lambda f: ultima.get(f, ''))
 
 
 def portada(c, total):

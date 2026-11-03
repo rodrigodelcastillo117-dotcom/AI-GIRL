@@ -475,7 +475,7 @@
     {
      "titulo": "Casi la mitad no baja",
      "texto": "Un estudio de El Colegio de México, con datos de Profeco, encontró que en el Buen Fin solo 52% de los electrónicos analizados bajó de precio.\n\nCampos y Medina, El Trimestre Económico (2017)",
-     "voz": "Un estudio encontró que solo la mitad de los productos bajó de verdad."
+     "voz": "Un estudio de electrónicos encontró que solo la mitad bajó de precio de verdad."
     },
     {
      "titulo": "Meses o contado",
@@ -842,6 +842,404 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas."
+  },
+  {
+   "id": "c11",
+   "estado": "borrador",
+   "tema": "finiquito_liquidacion",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "FINIQUITO O LIQUIDACIÓN",
+    "titulo": "Si te corren, esto te toca",
+    "voz": "Si te corren, esto te toca. Y si renuncias, también."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Si renuncias: finiquito",
+     "texto": "Te pagan lo que ya ganaste: días trabajados sin pagar y la parte proporcional de aguinaldo, vacaciones y prima vacacional.\n\nPROFEDET · LFT, arts. 79, 87 y 99",
+     "voz": "Si renuncias, te toca tu finiquito: lo que ya ganaste."
+    },
+    {
+     "titulo": "Si te corren sin causa",
+     "texto": "Además de tu finiquito, puedes reclamar tres meses de salario de indemnización, o pedir que te reinstalen.\n\nPROFEDET · LFT, art. 48",
+     "voz": "Si te corren sin causa, súmale tres meses de salario."
+    },
+    {
+     "titulo": "Prima de antigüedad",
+     "texto": "Doce días de salario por año trabajado. Si te corren, siempre te toca; si renuncias, solo con quince años o más.\n\nLFT, art. 162",
+     "voz": "Más doce días por cada año trabajado."
+    },
+    {
+     "titulo": "Tiene tope",
+     "texto": "Para esa prima, tu salario cuenta hasta el doble del mínimo: $630.08 diarios en 2026 (fuera de la frontera norte).\n\nLFT, arts. 162 y 486 · Conasami",
+     "voz": "Esa prima tiene tope: el doble del salario mínimo."
+    },
+    {
+     "titulo": "Dos meses para reclamar",
+     "texto": "Si te despiden, tienes dos meses para demandar. PROFEDET te asesora gratis: 800-717-2942.\n\nLFT, art. 518 · PROFEDET",
+     "voz": "Y tienes solo dos meses para reclamar."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo antes de firmar tu finiquito.",
+    "texto": "Revisa tu caso con PROFEDET o un abogado laboral.\nMándaselo a quien está por renunciar.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo antes de firmar y sígueme."
+   },
+   "fuente": "PROFEDET (gob.mx, 'Conoce tus derechos en caso de renuncia o despido injustificado'): en renuncia, partes proporcionales de aguinaldo, vacaciones y prima vacacional, y prima de antigüedad con 15 años o más; en despido injustificado, tres meses de salario de indemnización constitucional o reinstalación, prima de antigüedad y partes proporcionales; dos meses para demandar; teléfonos 800 717 2942 y 800 911 7877. Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 48 (tres meses o reinstalación), 79 (vacaciones proporcionales), 87 (aguinaldo proporcional), 99 (salarios devengados irrenunciables), 162 (prima de antigüedad de 12 días por año; en renuncia con 15 años o más; en despido siempre), 486 (tope del doble del salario mínimo), 518 (dos meses para reclamar el despido). Conasami: salario mínimo general 2026 de $315.04 diarios (DOF 9-12-2025); doble = $630.08",
+   "titulo_post": "Finiquito y liquidación: qué te toca",
+   "texto_post": "Finiquito y liquidación no son lo mismo, y la diferencia es dinero. 📄\nSi renuncias, te toca tu finiquito: lo que ya ganaste y lo proporcional de aguinaldo, vacaciones y prima vacacional. Si te corren sin causa, además puedes reclamar tres meses de salario y doce días por año de prima de antigüedad. Tienes dos meses para demandar.\n\nRevisa tu caso con PROFEDET (gratis) o un abogado laboral.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien está por renunciar.",
+   "seo": {
+    "palabra_clave": "finiquito y liquidación",
+    "titulo": "Finiquito y liquidación, qué te toca 📄",
+    "tags_concretas": [
+     "finiquito y liquidacion",
+     "diferencia entre finiquito y liquidacion",
+     "que me toca si renuncio",
+     "que me toca si me despiden",
+     "despido injustificado",
+     "prima de antiguedad",
+     "indemnizacion tres meses",
+     "calcular finiquito 2026",
+     "profedet",
+     "ley federal del trabajo"
+    ],
+    "hashtags": [
+     "#finiquito",
+     "#liquidacion",
+     "#derechoslaborales",
+     "#profedet"
+    ],
+    "preguntas": [
+     "¿Qué me toca si renuncio a mi trabajo?",
+     "¿Cuál es la diferencia entre finiquito y liquidación?",
+     "¿Cuánto me deben pagar si me despiden sin causa?",
+     "¿Cuánto tiempo tengo para demandar un despido?"
+    ]
+   }
+  },
+  {
+   "id": "c12",
+   "estado": "borrador",
+   "tema": "vacaciones_dignas",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "VACACIONES DIGNAS",
+    "titulo": "12 días de vacaciones desde tu primer año",
+    "voz": "Te tocan doce días de vacaciones desde tu primer año."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Doce días desde el primer año",
+     "texto": "Al cumplir un año de trabajo te tocan mínimo 12 días de vacaciones pagadas. Así es desde el 1 de enero de 2023.\n\nLFT, art. 76 (reforma DOF 27-12-2022)",
+     "voz": "Desde dos mil veintitrés, son doce días desde el primer año."
+    },
+    {
+     "titulo": "Dos más cada año",
+     "texto": "Año 2: 14 días. Año 3: 16. Año 4: 18. Año 5: 20. Del año 6 al 10: 22.\n\nPROFEDET · LFT, art. 76",
+     "voz": "Y suben dos días cada año, hasta llegar a veinte."
+    },
+    {
+     "titulo": "Prima vacacional",
+     "texto": "Mínimo 25% extra sobre el salario de tus días de vacaciones. Con $500 diarios y 12 días, son $1,500 más.\n\nLFT, art. 80",
+     "voz": "Más una prima de al menos veinticinco por ciento."
+    },
+    {
+     "titulo": "Doce días seguidos",
+     "texto": "Al menos 12 días deben ser continuos. El resto lo repartes como tú lo necesites.\n\nLFT, art. 78",
+     "voz": "Doce días seguidos, como mínimo."
+    },
+    {
+     "titulo": "No se cambian por dinero",
+     "texto": "No te las pueden pagar en lugar de que las tomes. Si dejas el trabajo antes de cumplir el año, te pagan la parte proporcional.\n\nLFT, art. 79 · PROFEDET",
+     "voz": "Y no te las pueden cambiar por dinero."
+    },
+    {
+     "titulo": "Seis meses para dártelas",
+     "texto": "Tu patrón debe dártelas dentro de los seis meses después de tu aniversario. Tienes un año para reclamarlas.\n\nLFT, arts. 81 y 516",
+     "voz": "Tu patrón tiene seis meses para dártelas."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos días te dan a ti? Comenta.",
+    "texto": "Mándaselo a quien no ha tomado vacaciones este año.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántos días te dan a ti? Comenta y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 76 (mínimo 12 días laborables tras un año, +2 por año hasta 20; desde el sexto año, +2 por cada cinco; reformado DOF 27-12-2022, vigente desde el 1-1-2023), art. 78 (al menos 12 días continuos; el resto a potestad de la persona trabajadora), art. 79 (no se compensan con remuneración; proporcional si la relación termina antes del año), art. 80 (prima no menor de 25%), art. 81 (dentro de los seis meses siguientes al año de servicios), art. 516 (un año para reclamar). PROFEDET (gob.mx, 'Persona trabajadora, las vacaciones son tu derecho', 23-7-2025): tabla 12, 14, 16, 18, 20 y 22 días (años 6 a 10). Ejemplo de prima: $500 x 12 días x 25% = $1,500",
+   "titulo_post": "Días de vacaciones por ley en 2026",
+   "texto_post": "Días de vacaciones por ley: cuántos te tocan en 2026. 🌴\nDesde 2023, al cumplir un año te tocan mínimo 12 días pagados, y suben dos por año hasta 20 en el quinto año. Encima, una prima vacacional de al menos 25%, y no te las pueden cambiar por dinero.\n\n¿Cuántos días te dan a ti? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien no ha tomado vacaciones este año.",
+   "seo": {
+    "palabra_clave": "días de vacaciones por ley",
+    "titulo": "Días de vacaciones por ley en 2026 🌴",
+    "tags_concretas": [
+     "dias de vacaciones por ley",
+     "vacaciones dignas",
+     "cuantos dias de vacaciones me tocan",
+     "tabla de vacaciones 2026",
+     "prima vacacional",
+     "como calcular prima vacacional",
+     "vacaciones primer año 12 dias",
+     "articulo 76 ley federal del trabajo",
+     "vacaciones no se pagan en dinero",
+     "profedet vacaciones"
+    ],
+    "hashtags": [
+     "#vacacionesdignas",
+     "#vacaciones",
+     "#primavacacional",
+     "#derechoslaborales"
+    ],
+    "preguntas": [
+     "¿Cuántos días de vacaciones me tocan por ley?",
+     "¿Cómo se calcula la prima vacacional?",
+     "¿Me pueden pagar las vacaciones en lugar de tomarlas?"
+    ]
+   }
+  },
+  {
+   "id": "c13",
+   "estado": "borrador",
+   "tema": "recibo_nomina",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "RECIBO DE NÓMINA",
+    "titulo": "Si ganas hasta $11,492 al mes, revisa tu nómina",
+    "voz": "Si ganas hasta once mil cuatrocientos noventa y dos pesos al mes, revisa tu nómina."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Subsidio para el empleo",
+     "texto": "Si tus ingresos del mes no pasan de $11,492.66, tienes derecho a un subsidio que se resta de tu ISR: hasta $535.65 al mes en 2026.\n\nDecreto DOF 31-12-2025 · UMA 2026, INEGI",
+     "voz": "Si ganas hasta esa cifra, te toca un subsidio que baja tu ISR."
+    },
+    {
+     "titulo": "Con el mínimo, cero ISR",
+     "texto": "Si en el mes solo ganas el salario mínimo ($315.04 diarios en 2026), no te deben retener ISR.\n\nLey del ISR, art. 96 · Conasami",
+     "voz": "Si ganas el mínimo, no te deben retener ISR."
+    },
+    {
+     "titulo": "Cada pago, su CFDI",
+     "texto": "Tu patrón debe darte un comprobante fiscal (CFDI) de cada pago de nómina. También vale como tu recibo de pago.\n\nLey del ISR, art. 99, fr. III",
+     "voz": "Cada pago de nómina lleva su comprobante fiscal."
+    },
+    {
+     "titulo": "Búscalo en el SAT",
+     "texto": "En el visor de nómina del SAT ves lo que tu patrón reportó que te pagó y te retuvo. Entras con tu RFC y contraseña o e.firma.\n\nSAT",
+     "voz": "Y en el SAT ves lo que tu patrón reportó."
+    },
+    {
+     "titulo": "Tu salario en el IMSS",
+     "texto": "Saca tu constancia de semanas cotizadas y aclara con tu patrón con qué salario te registró: de él dependen tus incapacidades.\n\nIMSS",
+     "voz": "Revisa también con qué salario te registraron en el IMSS."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para tu próxima quincena.",
+    "texto": "Si algo no cuadra, revísalo con tu contador o con PROFEDET.\nMándaselo a quien nunca abre su recibo de nómina.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para tu próxima quincena y sígueme."
+   },
+   "fuente": "Decreto que modifica el diverso que otorga el subsidio para el empleo (DOF 31-12-2025, vigente desde el 1-1-2026): ingresos mensuales hasta $11,492.66, subsidio de hasta 15.02% de la UMA mensual, aplicado contra el ISR del mes; UMA mensual 2026 de $3,566.22 (INEGI, comunicado 1/26) x 15.02% = $535.65. Ley del ISR (texto vigente): art. 96 (no se retiene a quien en el mes solo percibe un salario mínimo general), art. 99, fr. III (el patrón expide y entrega CFDI, que vale como recibo de pago). Conasami: salario mínimo general 2026 de $315.04 diarios. SAT: Visor de comprobantes de nómina para el trabajador (ingresos y retenciones reportados por el patrón; acceso con RFC y contraseña o e.firma). IMSS (gob.mx, 11-7-2025): constancia de semanas cotizadas en línea o en IMSS Digital; sirve para aclarar con el patrón el salario registrado, del que depende el monto de las incapacidades",
+   "titulo_post": "Recibo de nómina: qué revisar",
+   "texto_post": "Recibo de nómina: cinco cosas que vale la pena revisar. 🧾\nSi tus ingresos del mes no pasan de $11,492.66, te toca subsidio para el empleo (hasta $535.65 en 2026); con el salario mínimo no te deben retener ISR, y cada pago debe tener su CFDI, que puedes ver en el visor de nómina del SAT.\n\nSi algo no cuadra, revísalo con tu contador o con PROFEDET.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien nunca abre su recibo de nómina.",
+   "seo": {
+    "palabra_clave": "recibo de nómina",
+    "titulo": "Recibo de nómina y el subsidio 2026 🧾",
+    "tags_concretas": [
+     "recibo de nomina",
+     "como leer mi recibo de nomina",
+     "subsidio para el empleo 2026",
+     "retencion de isr nomina",
+     "cfdi de nomina",
+     "visor de nomina sat",
+     "salario minimo 2026",
+     "semanas cotizadas imss",
+     "salario registrado imss",
+     "isr salario minimo"
+    ],
+    "hashtags": [
+     "#nomina",
+     "#isr",
+     "#sat",
+     "#imss"
+    ],
+    "preguntas": [
+     "¿Cuánto es el subsidio para el empleo en 2026?",
+     "¿Cómo veo mis recibos de nómina en el SAT?",
+     "¿Me deben retener ISR si gano el salario mínimo?",
+     "¿Cómo sé con qué salario me registró mi patrón en el IMSS?"
+    ]
+   }
+  },
+  {
+   "id": "c14",
+   "estado": "borrador",
+   "tema": "subcuenta_vivienda_infonavit",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "INFONAVIT",
+    "titulo": "Si ganas $15,000, tu patrón te guarda unos $750 al mes",
+    "voz": "Si ganas quince mil, tu patrón te guarda unos setecientos cincuenta al mes."
+   },
+   "diapositivas": [
+    {
+     "titulo": "El 5% lo pone tu patrón",
+     "texto": "Tu patrón debe aportar el 5% de tu salario a tu subcuenta de vivienda. Ese dinero es parte de tu patrimonio.\n\nLey del Infonavit, art. 29 · LFT, art. 136",
+     "voz": "El cinco por ciento de tu salario va a tu subcuenta de vivienda."
+    },
+    {
+     "titulo": "Revisa tu saldo",
+     "texto": "Regístrate gratis en Mi Cuenta Infonavit y consulta cuánto llevas ahorrado en tu subcuenta de vivienda.\n\nCondusef · Infonavit",
+     "voz": "Revisa tu saldo gratis en Mi Cuenta Infonavit."
+    },
+    {
+     "titulo": "Gana intereses",
+     "texto": "Tu saldo recibe intereses cada año, con una tasa que debe procurar que no pierda poder de compra.\n\nLey del Infonavit, art. 39",
+     "voz": "Ese saldo gana intereses cada año."
+    },
+    {
+     "titulo": "Si nunca pides crédito",
+     "texto": "No se pierde: al pensionarte, pasa a tu Afore para tu pensión o se te entrega, según tu caso.\n\nLey del Infonavit, art. 40",
+     "voz": "Si nunca pides crédito, no se pierde: va a tu pensión."
+    },
+    {
+     "titulo": "No prescribe",
+     "texto": "Tu derecho a ese dinero no vence. Si cumples 70 sin reclamarlo y ya no trabajas, pasa al Fondo de Pensiones para el Bienestar.\n\nLey del Infonavit, art. 37",
+     "voz": "Y tu derecho a ese dinero no vence."
+    },
+    {
+     "titulo": "También para rentar",
+     "texto": "Con un año de cotización continua puedes entrar al arrendamiento social del Infonavit y usar tu subcuenta como garantía.\n\nLey del Infonavit, art. 41 (reforma DOF 21-02-2025)",
+     "voz": "También te puede servir para rentar."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo y revisa tu saldo hoy.",
+    "texto": "Mándaselo a quien cree que el Infonavit solo sirve para comprar casa.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo, revisa tu saldo hoy y sígueme."
+   },
+   "fuente": "Ley del Infonavit (texto vigente, última reforma DOF 21-02-2025): art. 29, fr. II (el patrón aporta 5% sobre el salario a la subcuenta de vivienda; forma parte del patrimonio de los trabajadores), art. 37 (derecho imprescriptible; a los 70 años sin reclamarlo y sin relación laboral activa, los recursos pasan al Fondo de Pensiones para el Bienestar), art. 39 (intereses anuales; la tasa debe procurar conservar el poder adquisitivo), art. 40 (lo no aplicado a crédito se transfiere a la Afore para la pensión o su entrega), art. 41 (con un año de cotización continua, arrendamiento social y subcuenta como garantía; reformado DOF 21-02-2025). Ley Federal del Trabajo, art. 136 (5% al Fondo Nacional de la Vivienda). Condusef, Revista Proteja su Dinero (oct-2025): registro gratuito en Mi Cuenta Infonavit para consultar el ahorro de la subcuenta. Ejemplo: 5% de $15,000 = $750",
+   "titulo_post": "Subcuenta de vivienda Infonavit: lo que es tuyo",
+   "texto_post": "Subcuenta de vivienda Infonavit: ese 5% es tuyo aunque nunca pidas crédito. 🏠\nTu patrón aporta el 5% de tu salario, el saldo gana intereses, tu derecho no vence y, si no lo usas, al pensionarte pasa a tu Afore. También te puede servir para rentar.\n\nRevisa tu saldo gratis en Mi Cuenta Infonavit.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien cree que el Infonavit solo sirve para comprar casa.",
+   "seo": {
+    "palabra_clave": "subcuenta de vivienda Infonavit",
+    "titulo": "Subcuenta de vivienda Infonavit y tu 5% 🏠",
+    "tags_concretas": [
+     "subcuenta de vivienda infonavit",
+     "saldo infonavit",
+     "como consultar mi saldo infonavit",
+     "mi cuenta infonavit",
+     "aportacion patronal 5 infonavit",
+     "que pasa si no uso mi credito infonavit",
+     "devolucion subcuenta de vivienda",
+     "infonavit para rentar",
+     "arrendamiento social infonavit",
+     "ahorro infonavit afore"
+    ],
+    "hashtags": [
+     "#infonavit",
+     "#vivienda",
+     "#afore",
+     "#credito"
+    ],
+    "preguntas": [
+     "¿Cómo consulto mi saldo del Infonavit?",
+     "¿Qué pasa con mi ahorro del Infonavit si no uso el crédito?",
+     "¿Cuánto aporta mi patrón al Infonavit?",
+     "¿Puedo usar el Infonavit para rentar?"
+    ]
+   }
+  },
+  {
+   "id": "c15",
+   "estado": "borrador",
+   "tema": "aguinaldo_no_pagado",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-12-10",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO",
+    "titulo": "Si no te pagan tu aguinaldo, haz esto",
+    "voz": "Si no te pagan tu aguinaldo, haz esto."
+   },
+   "diapositivas": [
+    {
+     "titulo": "La fecha límite",
+     "texto": "Tu patrón debe pagártelo antes del 20 de diciembre: mínimo quince días de salario.\n\nLFT, art. 87",
+     "voz": "Te lo deben pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "Aunque ya no trabajes ahí",
+     "texto": "Si renunciaste o te corrieron este año, te toca la parte proporcional al tiempo que trabajaste.\n\nLFT, art. 87 · STPS",
+     "voz": "Aunque ya no trabajes ahí, te toca lo proporcional."
+    },
+    {
+     "titulo": "Con el salario mínimo",
+     "texto": "Con el salario mínimo de 2026 ($315.04 diarios), tu aguinaldo de un año completo es de al menos $4,725.60.\n\nLFT, art. 87 · Conasami",
+     "voz": "Con el mínimo, son al menos cuatro mil setecientos veinticinco pesos."
+    },
+    {
+     "titulo": "PROFEDET, gratis",
+     "texto": "Si no te pagan, PROFEDET te orienta, concilia y representa gratis. Llama al 800-717-2942.\n\nPROFEDET",
+     "voz": "Si no te pagan, llama a PROFEDET: es gratis."
+    },
+    {
+     "titulo": "Tienes un año",
+     "texto": "Para reclamarlo tienes un año, contado desde el 20 de diciembre.\n\nLFT, art. 516 · STPS",
+     "voz": "Tienes un año para reclamarlo."
+    },
+    {
+     "titulo": "Multa al patrón",
+     "texto": "Al patrón que no cumple le pueden poner una multa de 50 a 5,000 UMA: de $5,865.50 a $586,550 en 2026.\n\nLFT, arts. 992 y 1002 · UMA 2026, INEGI",
+     "voz": "Y al patrón le pueden poner una multa."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Ya te pagaron? Comenta.",
+    "texto": "Mándaselo a quien todavía no ve su aguinaldo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Ya te pagaron? Comenta y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 87 (antes del 20 de diciembre, mínimo 15 días de salario; parte proporcional aunque ya no se labore), art. 516 (un año para reclamar), art. 992 (multas con la UMA vigente al cometerse la violación), art. 1002 (multa de 50 a 5000 UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): un año a partir del 20 de diciembre; despedidos y quienes renuncian reciben la parte proporcional; multa del art. 1002. PROFEDET (gob.mx, '¿Aún no recibes tu aguinaldo?'): orientación, asesoría, conciliación y representación jurídica gratuitas; 800 911 7877 y 800 717 2942. Conasami: salario mínimo general 2026 de $315.04 diarios (15 días = $4,725.60). INEGI: UMA diaria 2026 de $117.31 (50 UMA = $5,865.50; 5000 UMA = $586,550)",
+   "titulo_post": "Aguinaldo no pagado: qué hacer",
+   "texto_post": "Aguinaldo no pagado: qué hacer si no llega antes del 20 de diciembre. 🎁\nTe lo deben pagar antes del 20 (mínimo quince días de salario), te toca lo proporcional aunque ya no trabajes ahí, y PROFEDET te asesora y representa gratis. Tienes un año para reclamarlo.\n\nLlama a PROFEDET: 800-717-2942.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien todavía no ve su aguinaldo.",
+   "seo": {
+    "palabra_clave": "aguinaldo no pagado",
+    "titulo": "Aguinaldo no pagado, qué hacer en 2026 🎁",
+    "tags_concretas": [
+     "aguinaldo no pagado",
+     "no me pagaron el aguinaldo",
+     "que hacer si no me pagan el aguinaldo",
+     "denunciar aguinaldo profedet",
+     "fecha limite aguinaldo 20 de diciembre",
+     "aguinaldo proporcional",
+     "aguinaldo salario minimo 2026",
+     "multa por no pagar aguinaldo",
+     "plazo para reclamar aguinaldo",
+     "profedet telefono"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#profedet",
+     "#derechoslaborales",
+     "#aguinaldo2026"
+    ],
+    "preguntas": [
+     "¿Qué hago si no me pagaron el aguinaldo?",
+     "¿Dónde denuncio que no me pagaron el aguinaldo?",
+     "¿Cuánto tiempo tengo para reclamar mi aguinaldo?",
+     "¿Me toca aguinaldo si renuncié?"
+    ]
+   }
   }
  ]
 }
