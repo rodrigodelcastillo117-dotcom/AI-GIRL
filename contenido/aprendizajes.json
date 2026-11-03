@@ -193,6 +193,6 @@
   "origen": "Revisión del canal de YouTube",
   "tipo": "tecnico",
   "aprendizaje": "El perfil del canal seguía configurado como canal de psicología: palabras clave de 'psicología humana', 'curiosidades de la mente' y 'autoengaño', idioma en inglés y descripción vieja ('cada dos días, 12 segundos'). Había 6 listas públicas de psicología con 86 videos borrados y ninguno vivo.",
-  "regla": "El perfil del canal es de finanzas personales en México, en español (config.json → canal_youtube_perfil); vigilar_youtube lo restaura cada día si alguien lo cambia. Ocultar las listas viejas requiere el OK de Rodrigo."
+  "regla": "El perfil del canal es de finanzas personales en México, en español (config.json → canal_youtube_perfil); vigilar_youtube lo restaura cada día si alguien lo cambia. Rodrigo dio el OK el 3-nov-2026 y las 6 listas viejas quedaron privadas; en el canal solo quedan públicas las 3 de finanzas."
  }
 ]
