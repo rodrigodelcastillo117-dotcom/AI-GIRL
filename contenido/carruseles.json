@@ -447,7 +447,7 @@
   },
   {
    "id": "c06",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "antes_del_buen_fin",
    "pilar": "finanzas",
    "fondo": "assets/fondos/gimnasio-ciudad.jpg",
@@ -528,7 +528,12 @@
      "¿Dónde me quejo si no respetan una oferta?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "publica_utc_por_red": {
+    "ig": "2026-11-03T21:00:00Z",
+    "tt": "2026-11-03T21:00:00Z"
+   },
+   "publica_utc": "2026-11-03T21:00:00Z"
   },
   {
    "id": "c07",
