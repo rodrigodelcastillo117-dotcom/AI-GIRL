@@ -294,7 +294,7 @@ def verificar(plan, ahora, avisos):
 
 
 def vigilar_youtube(plan, avisos):
-    """Otra automatización con acceso al canal metió enlaces ajenos (erroresinvisibles.gumroad.com) en las descripciones
+    """La automatización de Errores invisibles (ES DE RODRIGO; el canal antes era de ese proyecto) metió sus enlaces (erroresinvisibles.gumroad.com) en las descripciones
     y les puso el audio en inglés (30-oct-2026). Cada día: quita los enlaces que no son de Victoria, deja el idioma en
     español y lo avisa, porque significa que alguien más sigue entrando al canal."""
     import re
@@ -321,7 +321,8 @@ def vigilar_youtube(plan, avisos):
                      'tags': sn.get('tags', []), 'defaultLanguage': 'es', 'defaultAudioLanguage': 'es'}}
             youtube._http('PUT', f"{youtube.API}/videos?part=snippet", json.dumps(nuevo).encode(), h)
             avisos.append(f"Alguien cambió el video de YouTube {item['id']} (enlaces ajenos: {', '.join(ajenos) or 'ninguno'}; "
-                          f"audio {sn.get('defaultAudioLanguage')}). Ya lo restauré. Otra app sigue con acceso al canal.")
+                          f"audio {sn.get('defaultAudioLanguage')}). Ya lo restauré. Fue la automatización de Errores invisibles de Rodrigo "
+                          "(es suya: no preguntar), que sigue escribiendo en este canal.")
     # El perfil del canal (3-nov-2026 tenía palabras clave de psicología, idioma inglés y descripción vieja): se compara
     # con config.json → canal_youtube y se restaura si alguien lo cambió.
     config = cargar('config.json', {})

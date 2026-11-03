@@ -194,5 +194,12 @@
   "tipo": "tecnico",
   "aprendizaje": "El perfil del canal seguía configurado como canal de psicología: palabras clave de 'psicología humana', 'curiosidades de la mente' y 'autoengaño', idioma en inglés y descripción vieja ('cada dos días, 12 segundos'). Había 6 listas públicas de psicología con 86 videos borrados y ninguno vivo.",
   "regla": "El perfil del canal es de finanzas personales en México, en español (config.json → canal_youtube_perfil); vigilar_youtube lo restaura cada día si alguien lo cambia. Rodrigo dio el OK el 3-nov-2026 y las 6 listas viejas quedaron privadas; en el canal solo quedan públicas las 3 de finanzas."
+ },
+ {
+  "fecha_utc": "2026-11-03T21:10:00Z",
+  "origen": "Rodrigo (molesto: ya lo había dicho muchas veces)",
+  "tipo": "regla",
+  "aprendizaje": "Errores invisibles (erroresinvisibles.gumroad.com, las listas de psicología) ES DE RODRIGO. El canal de YouTube antes era de ese proyecto y su automatización sigue escribiendo en las descripciones de los videos de Victoria.",
+  "regla": "NUNCA preguntarle a Rodrigo si Errores invisibles es suyo ni llamarlo 'app ajena' u 'otra app'. vigilar_youtube sigue dejando las descripciones de Victoria con sus enlaces y audio en español; en el reporte decir 'tu automatización de Errores invisibles' y solo recordarle que la apague para este canal si sigue pasando."
  }
 ]
