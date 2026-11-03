@@ -1,23 +1,25 @@
 [
  {
-  "fecha": "2026-11-02",
-  "tipo": "video",
-  "id": "19",
-  "que": "Sale el video 19",
+  "fecha": "2026-11-03",
+  "tipo": "reel",
+  "id": "",
   "estado": "programado",
+  "que": "Reel de Instagram del carrusel c06 (el mismo video del Short)",
   "horas": {
-   "ig": "20:00",
-   "tt": "13:00",
-   "yt": "20:00"
+   "ig": "18:00"
   }
  },
  {
   "fecha": "2026-11-03",
   "tipo": "carrusel",
   "id": "c06",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c06 · antes del buen fin · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Sale el carrusel c06 · antes del buen fin",
+  "estado": "programado",
+  "horas": {
+   "ig": "15:00",
+   "tt": "15:00",
+   "yt": "14:00"
+  }
  },
  {
   "fecha": "2026-11-04",
@@ -78,18 +80,18 @@
  {
   "fecha": "2026-11-08",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c11",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · solo TikTok (carrusel diario)"
+  "que": "Carrusel c11 · finiquito liquidacion · solo TikTok (carrusel diario)"
  },
  {
   "fecha": "2026-11-09",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c12",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Carrusel c12 · vacaciones dignas · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-10",
@@ -102,17 +104,33 @@
  {
   "fecha": "2026-11-10",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c13",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · solo TikTok (carrusel diario)"
+  "que": "Carrusel c13 · recibo nomina · solo TikTok (carrusel diario)"
  },
  {
   "fecha": "2026-11-11",
   "tipo": "carrusel",
+  "id": "c14",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c14 · subcuenta vivienda infonavit · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "video",
   "id": "",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "carrusel",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel nuevo (se escribe) · solo TikTok (carrusel diario)"
  }
 ]

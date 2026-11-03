@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-03T12:39:27Z",
+ "fecha_utc": "2026-11-03T13:05:49Z",
  "videos_calificados": 2,
  "base_vistas_36h": 725.5,
  "notas": {
@@ -191,24 +191,24 @@
  "decision": {
   "toca_publicar": false,
   "motivo": "el último sale el 2026-11-02; toca publicar en 1 día(s)",
-  "hora_siguiente": "15:00",
+  "hora_siguiente": "08:00",
   "horarios": {
-   "ig": "15:00",
-   "tt": "15:00",
-   "yt": "14:00"
+   "ig": "08:00",
+   "tt": "20:00",
+   "yt": "12:00"
   },
   "cuando": {
-   "ig": "2026-11-03T21:00:00Z",
-   "tt": "2026-11-03T21:00:00Z",
-   "yt": "2026-11-03T20:00:00Z"
+   "ig": "2026-11-03T14:00:00Z",
+   "tt": "2026-11-04T02:00:00Z",
+   "yt": "2026-11-03T18:00:00Z"
   },
-  "prueba_horas": "ig: en prueba (08:00 0/4, 11:00 1/4, 12:00 1/4, 15:00 0/4, 18:00 2/4, 20:00 1/4) · tt: en prueba (09:00 1/4, 11:00 1/4, 13:00 1/4, 15:00 0/4, 17:00 1/4, 20:00 1/4) · yt: en prueba (10:00 1/4, 12:00 1/4, 14:00 1/4, 17:00 1/4, 20:00 1/4)",
+  "prueba_horas": "ig: en prueba (08:00 0/4, 11:00 1/4, 12:00 1/4, 15:00 1/4, 18:00 2/4, 20:00 1/4) · tt: en prueba (09:00 1/4, 11:00 1/4, 13:00 1/4, 15:00 1/4, 17:00 1/4, 20:00 1/4) · yt: en prueba (10:00 1/4, 12:00 1/4, 14:00 2/4, 17:00 1/4, 20:00 1/4)",
   "conteo_horas": {
    "ig": {
     "08:00": 0,
     "11:00": 1,
     "12:00": 1,
-    "15:00": 0,
+    "15:00": 1,
     "18:00": 2,
     "20:00": 1
    },
@@ -216,14 +216,14 @@
     "09:00": 1,
     "11:00": 1,
     "13:00": 1,
-    "15:00": 0,
+    "15:00": 1,
     "17:00": 1,
     "20:00": 1
    },
    "yt": {
     "10:00": 1,
     "12:00": 1,
-    "14:00": 1,
+    "14:00": 2,
     "17:00": 1,
     "20:00": 1
    }
@@ -235,24 +235,14 @@
   "cambios_sugeridos": [],
   "por_que": "Temporada: el video 38 solo sirve hasta el 2026-11-16.",
   "carruseles": {
-   "tiktok": {
-    "id": "c06",
-    "cuando": "2026-11-03T21:00:00Z"
-   },
-   "instagram": {
-    "id": "c06",
-    "cuando_ig": "2026-11-03T21:00:00Z",
-    "por_que": "ninguno probado en TikTok todavía: el mismo de TikTok de hoy",
-    "cuando_yt": "2026-11-03T20:00:00Z"
-   },
-   "notas": [],
-   "quedan_tiktok": 4,
-   "comandos": [
-    "python scripts/publer_carrusel.py c06 \"ig=2026-11-03T21:00:00Z,tt=2026-11-03T21:00:00Z\"",
-    "python scripts/carrusel_video.py short c06",
-    "python scripts/publer_carrusel.py c06 --reel auto",
-    "youtube.py subir carruseles/c06/short.mp4 ... 2026-11-03T20:00:00Z (CARRUSELES.md)"
-   ]
+   "tiktok": null,
+   "instagram": null,
+   "notas": [
+    "TikTok ya tiene su carrusel de hoy.",
+    "Instagram ya tiene su carrusel de hoy."
+   ],
+   "quedan_tiktok": 8,
+   "comandos": []
   },
   "segundos": 19,
   "creditos": 790
@@ -387,7 +377,6 @@
  "reglas_vigentes": [],
  "alertas": [
   "2 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\".",
-  "Créditos: hasta el 2026-11-28 se necesitan 8600 para 12 videos y hay 7719 (dejando 100): faltan 981. Los días que no alcance, sale carrusel (gratis) en lugar de video.",
-  "Quedan 4 carruseles para TikTok (sale uno diario): escribir 5 nuevos con datos comprobados (CARRUSELES.md) y su segunda revisión."
+  "Créditos: hasta el 2026-11-28 se necesitan 8600 para 12 videos y hay 7719 (dejando 100): faltan 981. Los días que no alcance, sale carrusel (gratis) en lugar de video."
  ]
 }

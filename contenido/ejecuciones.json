@@ -124,5 +124,14 @@
   "detalle": "Video 37 (Buen Fin) en estilo celular; el primer intento se descartó (frase inventada y labios fuera de sincronía), el segundo pasó con el audio adelantado 0.3 s.",
   "creditos_usados": 1520,
   "creditos_restantes": 7719
+ },
+ {
+  "fecha_utc": "2026-11-03T13:45:00Z",
+  "tipo": "carrusel",
+  "video_id": "c06",
+  "resultado": "ok",
+  "creditos_usados": 0,
+  "creditos_restantes": 7719,
+  "nota": "Medición y auditoría. c06 (Buen Fin) en TikTok e Instagram 15:00, Reel de Instagram 18:00 y short de YouTube 14:00 (4-XMOqZF8qA, lista finanzas); voz de la diapositiva 3 corregida (solo electrónicos). 5 carruseles nuevos c11-c15 escritos y revisados por un segundo agente (correcciones en c11-c14). Portadas: se repite la foto con más tiempo sin salir cuando no hay nueva. YouTube: otra app volvió a meter enlaces de gumroad y audio en-US en los 6 videos; restaurados."
  }
 ]

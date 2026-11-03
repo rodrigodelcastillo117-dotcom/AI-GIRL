@@ -853,12 +853,12 @@
   },
   {
    "id": "c11",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "finiquito_liquidacion",
    "pilar": "finanzas",
-   "fondo": "assets/fondos/jet.jpg",
+   "fondo": "auto",
    "portada": {
-    "foto": "assets/fotos/video-19-sillon.jpg",
+    "foto": "auto",
     "etiqueta": "FINIQUITO O LIQUIDACIÓN",
     "titulo": "Si te corren, esto te toca",
     "voz": "Si te corren, esto te toca. Y si renuncias, también."
@@ -925,16 +925,17 @@
      "¿Cuánto me deben pagar si me despiden sin causa?",
      "¿Cuánto tiempo tengo para demandar un despido?"
     ]
-   }
+   },
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
   },
   {
    "id": "c12",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "vacaciones_dignas",
    "pilar": "finanzas",
-   "fondo": "assets/fondos/palco-vip.jpg",
+   "fondo": "auto",
    "portada": {
-    "foto": "assets/fotos/yate-blazer-blanco.jpg",
+    "foto": "auto",
     "etiqueta": "VACACIONES DIGNAS",
     "titulo": "12 días de vacaciones desde tu primer año",
     "voz": "Te tocan doce días de vacaciones desde tu primer año."
@@ -1005,16 +1006,17 @@
      "¿Cómo se calcula la prima vacacional?",
      "¿Me pueden pagar las vacaciones en lugar de tomarlas?"
     ]
-   }
+   },
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
   },
   {
    "id": "c13",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "recibo_nomina",
    "pilar": "finanzas",
-   "fondo": "assets/fondos/recamara.jpg",
+   "fondo": "auto",
    "portada": {
-    "foto": "assets/fotos/video-02-palco.jpg",
+    "foto": "auto",
     "etiqueta": "RECIBO DE NÓMINA",
     "titulo": "Si ganas hasta $11,492 al mes, revisa tu nómina",
     "voz": "Si ganas hasta once mil cuatrocientos noventa y dos pesos al mes, revisa tu nómina."
@@ -1081,11 +1083,12 @@
      "¿Me deben retener ISR si gano el salario mínimo?",
      "¿Cómo sé con qué salario me registró mi patrón en el IMSS?"
     ]
-   }
+   },
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
   },
   {
    "id": "c14",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "subcuenta_vivienda_infonavit",
    "pilar": "finanzas",
    "fondo": "auto",
@@ -1162,11 +1165,12 @@
      "¿Cuánto aporta mi patrón al Infonavit?",
      "¿Puedo usar el Infonavit para rentar?"
     ]
-   }
+   },
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
   },
   {
    "id": "c15",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "aguinaldo_no_pagado",
    "pilar": "finanzas",
    "fondo": "auto",
@@ -1247,7 +1251,8 @@
      "¿Cuánto tiempo tengo para reclamar mi aguinaldo?",
      "¿Me toca aguinaldo si renuncié?"
     ]
-   }
+   },
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
   }
  ]
 }
