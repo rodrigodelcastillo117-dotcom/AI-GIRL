@@ -63,7 +63,12 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
    cifra concreta ("Si ganas $15,000 al mes, te toca mínimo $7,500"). Nunca primera persona inventada.
 2. **3 a 8 datos**, uno por diapositiva, cada uno con su fuente (regla 7). Título corto que se lee
    en 1 segundo; texto de máximo 30 palabras.
-3. **Cierre** que pide guardar, mandar o comentar (lo que más mueve un carrusel) y la guía gratis.
+3. **Cierre:** el título pide guardar o comentar; el texto lleva **a quién mandárselo** (alguien concreto) y
+   **siempre la razón para seguir**: "Sígueme: cada día, un dato de dinero que sí sirve en México." (Rodrigo,
+   2-nov-2026: en la primera semana los carruseles llegaron a ~1,500 personas en TikTok y los seguidores no
+   subieron; nadie sigue si no le dices qué gana). La `voz` del cierre termina en "y sígueme". La guía gratis ya no
+   va en la diapositiva (va en el primer comentario y en la bio): tres llamados en una diapositiva se estorban.
+   Sin emoji en las diapositivas (la letra no los tiene; `carrusel.py` los quita).
 4. **Voces** cortas: el short no pasa de 57 s (unas 130 palabras en total).
 5. **SEO** como los videos (`docs/SEO.md`): `seo.palabra_clave` al inicio del título y del pie,
    `titulo` de máximo 45 caracteres, `tags_concretas`, 4 `hashtags` del tema (se suman los de marca:
