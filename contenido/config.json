@@ -380,5 +380,20 @@
   "keywords": "\"finanzas personales\" \"finanzas personales mexico\" \"educacion financiera\" aguinaldo \"aguinaldo 2026\" \"cuanto me toca de aguinaldo\" SAT \"tarjeta de credito\" Afore Infonavit finiquito \"derechos laborales\" \"como ahorrar dinero\" ahorro dinero \"buen fin\" \"salario minimo 2026\" negocios emprendimiento \"victoria the ceo\"",
   "defaultLanguage": "es"
  },
- "nota_palabras_por_segundo": "4-nov-2026: la voz real del video 38 dijo 42 palabras en 15.9 s (2.65/s). Con 2.33 se pedían 19 s y Wan rellenaba el tiempo sobrante inventando una frase. Duración = palabras / 2.65 + 1 s."
+ "nota_palabras_por_segundo": "4-nov-2026: la voz real del video 38 dijo 42 palabras en 15.9 s (2.65/s). Con 2.33 se pedían 19 s y Wan rellenaba el tiempo sobrante inventando una frase. Duración = palabras / 2.65 + 1 s.",
+ "pronunciacion": {
+  "México": "Méjico",
+  "mexicano": "mejicano",
+  "mexicana": "mejicana",
+  "mexicanos": "mejicanos",
+  "mexicanas": "mejicanas",
+  "Afore": "Afóre",
+  "Infonavit": "Infonavít",
+  "Netflix": "Nétflix",
+  "Spanx": "Spanks",
+  "Costco": "Cóstco",
+  "Mailchimp": "Méilchimp",
+  "Warren Buffett": "Uórren Bófet"
+ },
+ "nota_pronunciacion": "4-nov-2026 (Rodrigo: \"se le complica México, aguinaldo\"): así se le escribe a Wan y a la voz de los carruseles lo que pronuncia mal. Si qa_audio dice \"no se entiende X\", agregar X aquí con su forma dicha y volver a generar."
 }

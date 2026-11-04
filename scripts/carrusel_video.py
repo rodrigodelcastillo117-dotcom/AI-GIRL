@@ -46,7 +46,9 @@ def voces_victoria(carpeta, voces):
     """vozm-XX.mp3 de las frases que falten: la dice una voz mexicana nativa (Edge TTS, es-MX-DaliaNeural) y
     voz_victoria.py la convierte al timbre de Victoria (Rodrigo, 4-nov-2026: el clon directo "se le complica México,
     aguinaldo"; "arreglemos todo, lo más real posible"). Así la pronunciación es mexicana y la voz, la de Victoria."""
-    faltan = [{'texto': t, 'salida': os.path.join(carpeta, f'vozm-{i:02d}.mp3'),
+    from guion_para_voz import para_voz  # nombres difíciles escritos como se dicen (config.json → pronunciacion)
+    config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
+    faltan = [{'texto': para_voz(t, config), 'salida': os.path.join(carpeta, f'vozm-{i:02d}.mp3'),
                'base': os.path.join(carpeta, f'vozmx-{i:02d}.mp3')} for i, t in enumerate(voces)
               if not os.path.exists(os.path.join(carpeta, f'vozm-{i:02d}.mp3'))]
     if not faltan:

@@ -215,5 +215,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Por segunda vez Wan 3.0 inventó una frase a media grabación, justo después de dos puntos (\"el precio de contado: ...\"). El video pedía 19 s y la voz real dura 15.9 s: el modelo rellenó el tiempo que sobraba. Se salvó cortando el tramo inventado (corte de salto) en vez de pagar otro video. La foto base sacó un logo de Apple en la laptop.",
   "regla": "Duración del video = palabras del guion / 2.65 + 1 s (no 2.33): si sobra tiempo, Wan inventa palabras. En el guion del prompt, sin dos puntos ni punto y coma (solo comas y puntos). Si inventa una frase en un hueco limpio entre palabras, cortarla con ffmpeg antes de pagar otro video. Para alinear la voz atrasada sin cortar la primera palabra: congelar el primer cuadro (tpad) en vez de recortar el audio. En la foto: 'generic laptop with plain lid, no logo'."
+ },
+ {
+  "fecha_utc": "2026-11-04T16:00:00Z",
+  "origen": "Rodrigo: \"hay que mejorar muchísimo la voz, se le complica México, aguinaldo\"",
+  "tipo": "tecnico",
+  "aprendizaje": "Voz de carruseles: Edge es-MX (pronunciación mexicana nativa) convertida al timbre de Victoria con ChatterboxVC dio 0.92-0.95 de parecido y texto 0.86-1.00 en c04 (6 de 7 frases; Spanx falló y pasó al clon). Con frases de 2-4 palabras la conversión se equivoca. Doblar la voz de un video de Wan con esa voz rompió la sincronía (400 ms y 1.8 s de boca sin voz): las pausas dentro de cada oración no coinciden. qa_audio dejaba pasar frases inventadas por similitud alta.",
+  "regla": "Carruseles: voz mexicana convertida (carrusel_video.py) con el clon de respaldo. Videos: no doblar; a Wan se le pasa guion_para_voz.py (pronunciacion de config.json, sin dos puntos) y qa_audio falla con 2+ palabras de más o una palabra clave que no se entiende."
  }
 ]

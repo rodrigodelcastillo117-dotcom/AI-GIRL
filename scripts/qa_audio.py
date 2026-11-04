@@ -15,8 +15,23 @@ palabras = json.load(open(sys.argv[1]))
 dicho = normaliza(' '.join(p['w'] for p in palabras))
 esperado = normaliza(sys.argv[2])
 minimo = float(sys.argv[3]) if len(sys.argv) > 3 else 0.85
-similitud = difflib.SequenceMatcher(None, dicho.split(), esperado.split()).ratio()
+comparar = difflib.SequenceMatcher(None, dicho.split(), esperado.split())
+similitud = comparar.ratio()
 print(f'similitud={similitud:.2f} (mínimo {minimo})')
 print('dicho:   ', dicho)
 print('esperado:', esperado)
-sys.exit(0 if similitud >= minimo else 1)
+# Rodrigo (4-nov-2026): "se le complica México, aguinaldo". La similitud sola dejó pasar una frase inventada (0.86 y
+# 0.91) y palabras mal dichas: se revisa también que no haya 2+ palabras de más seguidas y que cada palabra clave
+# del guion (5+ letras: aguinaldo, méxico, intereses...) se entienda tal cual.
+d, e = dicho.split(), esperado.split()
+fallas = []
+for op, i1, i2, j1, j2 in comparar.get_opcodes():
+    if op in ('delete', 'replace') and i2 - i1 >= 2 and i2 - i1 > (j2 - j1) + 1:
+        fallas.append(f'dijo de más: "{" ".join(d[i1:i2])}"')
+for palabra in sorted({x for x in e if len(x) >= 5} - set(d)):
+    if palabra.endswith('s') and palabra[:-1] in d:  # "meses sin" se oye "mese sin": las dos s se juntan al hablar
+        continue
+    fallas.append(f'no se entiende "{palabra}"')
+for f in fallas:
+    print('FALLA:', f)
+sys.exit(0 if similitud >= minimo and not fallas else 1)

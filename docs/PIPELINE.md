@@ -233,7 +233,7 @@ stays next to her, relaxed and INSIDE THE FRAME for the entire video, breathing 
 phone held by hand; NO zoom in, NO push-in. She looks into the lens and talks like a real person filming
 herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, confident
 and warm, with clear
-accurate lip sync and the same voice as the audio reference. She says exactly: "<guion>"
+accurate lip sync and the same voice as the audio reference. She says exactly these words and nothing else: "<python scripts/guion_para_voz.py <id>>"
 Soft room ambience, no music. Photorealistic, cinematic, elegant, no text on screen, no
 subtitles, no logos.
 ```
@@ -244,7 +244,12 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
 
 1. Descargar el MP4.
 2. Transcribir: `scripts/transcribir.py video.mp4 palabras.json` (modelo `small`, español).
-3. `scripts/qa_audio.py palabras.json "<guion>" <similitud_minima_audio>` debe salir con 0.
+3. `scripts/qa_audio.py palabras.json "<guion>" <similitud_minima_audio>` debe salir con 0. Desde el 4-nov-2026 también
+   falla si Victoria dice 2+ palabras de más seguidas (frase inventada) o si una palabra clave del guion (5+ letras:
+   aguinaldo, México...) no se entiende. Si una palabra no se entiende, agrégala a `config.json → pronunciacion` con
+   su forma dicha ("Méjico") para el siguiente intento. Si inventa una frase en un hueco limpio, se puede cortar con
+   ffmpeg antes de pagar otro video (video 38). Doblar la voz de un video con otra voz NO sirve: la boca deja de
+   cuadrar (probado el 4-nov con `doblar.py`).
 3b. **Labios en sincronía:** `scripts/qa_sync.py video.mp4 sync.json` debe salir con 0. Mide la
    apertura de la boca cuadro por cuadro contra la fuerza de la voz y rechaza el video si la voz va
    atrasada o adelantada, si hay más de 1 s de voz con la boca quieta o de boca moviéndose sin voz.
