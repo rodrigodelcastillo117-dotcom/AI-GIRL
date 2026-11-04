@@ -288,15 +288,16 @@
   },
   {
    "id": "c04",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "lecciones_de_negocio",
    "pilar": "empresas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/jet.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-19-sillon.jpg",
     "etiqueta": "NEGOCIOS",
     "titulo": "Blockbuster pudo comprar Netflix por $50 millones y se rio",
-    "voz": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Cinco lecciones de negocio."
+    "voz": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Cinco lecciones de negocio.",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
    },
    "diapositivas": [
     {
@@ -360,7 +361,11 @@
      "¿Se puede emprender sin inversionistas?"
     ]
    },
-   "nota_cambio": "Rodrigo (31-oct): fuera las frases de Bezos, Sinek y Parkinson; empresas con cifras."
+   "nota_cambio": "Rodrigo (31-oct): fuera las frases de Bezos, Sinek y Parkinson; empresas con cifras.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-04T23:00:00Z"
+   },
+   "publica_utc": "2026-11-04T23:00:00Z"
   },
   {
    "id": "c05",
@@ -531,18 +536,19 @@
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
-    "ig": "2026-11-03T21:00:00Z",
-    "tt": "2026-11-03T21:00:00Z",
+    "ig": "2026-11-03T21:01:59Z",
+    "tt": "2026-11-03T21:05:46Z",
     "yt": "2026-11-03T20:00:00Z"
    },
-   "publica_utc": "2026-11-03T21:00:00Z",
+   "publica_utc": "2026-11-03T21:05:46Z",
    "reel_ig": {
-    "publica_utc": "2026-11-04T00:00:00Z",
+    "publica_utc": "2026-11-04T00:02:15Z",
     "texto": "Antes del Buen Fin, haz estas 5 cosas\nBuen Fin 2026: 5 cosas que tienes que hacer antes de comprar. 🛍️\nFoto al precio desde hoy, compara con el de contado, pide la garantía por escrito y, si no te respetan la oferta, llama a Profeco.\n\n¿Qué vas a comprar? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien ya tiene su lista del Buen Fin.\n\n#buenfin #buenfin2026 #profeco #finanzaspersonales #victoriatheceo",
     "video": "carruseles/c06/short.mp4"
    },
    "youtube": "https://youtube.com/shorts/4-XMOqZF8qA",
-   "playlist": true
+   "playlist": true,
+   "comentario_youtube": "Ugxb7E9mcKDKJC1UzfV4AaABAg"
   },
   {
    "id": "c07",

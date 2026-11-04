@@ -208,7 +208,7 @@
    "nota_hora": "Rodrigo pidió publicarlo ya (sáb 11:17). 11:17 no es franja de la prueba: no cuenta para la prueba de horarios."
   },
   {
-   "estado": "listo_para_publicar",
+   "estado": "programado",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "37",
@@ -357,7 +357,18 @@
    "mejoras_aplicadas": [
     "Foto y video estilo celular (31-oct, \"se ve muy AI\")",
     "Prompt: \"exactly these words and nothing else\", manos relajadas"
-   ]
+   ],
+   "publica_utc_por_red": {
+    "ig": "2026-11-04T14:00:00Z",
+    "tt": "2026-11-05T02:00:00Z",
+    "yt": "2026-11-04T18:00:00Z"
+   },
+   "publica_utc": "2026-11-05T02:00:00Z",
+   "publicacion": {
+    "youtube": "https://youtube.com/shorts/SI04CvAqvjg",
+    "publer": "instagram y tiktok programados 4-nov",
+    "playlist": "finanzas"
+   }
   },
   {
    "estado": "pendiente",
