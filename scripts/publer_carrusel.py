@@ -121,7 +121,9 @@ def hora_reel(c, todos, plan, config, ahora):
 
 def reel(c, cuando, config):
     """Programa el Reel de Instagram del carrusel y lo guarda en carruseles.json → reel_ig."""
-    video = os.path.join(RAIZ, 'carruseles', c['id'], 'short.mp4')
+    video = os.path.join(RAIZ, 'carruseles', c['id'], 'reel.mp4')  # con su propia portada (carrusel.py → 00r.png)
+    if not os.path.exists(video):
+        video = os.path.join(RAIZ, 'carruseles', c['id'], 'short.mp4')
     if not os.path.exists(video):
         sys.exit(f'ERROR: falta {video}: corre primero carrusel_video.py short {c["id"]}')
     datos = json.load(open(RUTA))
@@ -161,7 +163,7 @@ def reel(c, cuando, config):
         sys.exit(f'ERROR: Publer reportó falla en el Reel: {motivo}')
     datos = json.load(open(RUTA))  # releído: la subida tarda y otro paso pudo escribir
     yo = next(x for x in datos['carruseles'] if x['id'] == c['id'])
-    yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'video': f'carruseles/{c["id"]}/short.mp4'}
+    yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'video': os.path.relpath(video, RAIZ)}
     json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
     print(f'OK Reel de Instagram programado para {cuando}.')
 

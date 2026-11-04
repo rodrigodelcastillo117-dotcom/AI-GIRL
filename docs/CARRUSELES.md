@@ -29,6 +29,10 @@ fotos a 5-9. Por eso:
   `publica_utc` y el estado `programado` en el carrusel (`--borrador` lo deja en Publer sin salir). Se niega si choca:
   Instagram, una publicación por día; TikTok, un carrusel por día y a 2 h o más del video. Instagram va como
   `"type": "photo"` con varias fotos: Publer rechaza `"carousel"` (probado 30-oct-2026).
+- **Portada del Reel distinta** (Rodrigo, 4-nov-2026: en el perfil de Instagram el carrusel y su Reel se veían como
+  el mismo post repetido): `carrusel.py` dibuja además `00r.png` con otra foto de Victoria (`portada.foto_reel`, la que
+  lleva más tiempo sin salir), el título de SEO (o `portada.titulo_reel`) en una franja dorada abajo y la cara libre;
+  `carrusel_video.py short` arma `reel.mp4`, que abre con esa portada, y `--reel` sube ese.
 - `scripts/publer_carrusel.py <id> --reel auto`: el `short.mp4` del carrusel como Reel de Instagram, el día de su
   carrusel en fotos, en la franja más fuerte de ese día a 2 h o más de lo demás (guarda `reel_ig`; se mide como `igr`
   y no cuenta en la prueba de horarios). Lleva el mismo primer comentario que el carrusel.

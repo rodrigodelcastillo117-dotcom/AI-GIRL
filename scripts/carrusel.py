@@ -255,6 +255,42 @@ def cierre(c, n, total):
     return lienzo
 
 
+def foto_reel(c, todos):
+    """Otra foto de Victoria para la portada del Reel: la que lleva más tiempo sin salir, nunca la del carrusel."""
+    fotos = sorted(os.path.relpath(f, RAIZ) for f in glob.glob(os.path.join(RAIZ, 'assets', 'fotos', '*.jpg')))
+    otras = [f for f in fotos if f != c['portada']['foto']] or fotos
+    ultima = {}
+    for x in todos:
+        for f in (x['portada'].get('foto'), x['portada'].get('foto_reel')):
+            if f and f != 'auto' and x['id'] != c['id']:
+                ultima[f] = max(ultima.get(f, ''), x.get('publica_utc') or '9999')
+    return min(otras, key=lambda f: (f not in ultima, ultima.get(f, ''), f))  # las nuevas se guardan para carruseles
+
+
+def titulo_reel(c):
+    return (c['portada'].get('titulo_reel') or c['seo'].get('titulo') or c['titulo_post']).strip()
+
+
+def portada_reel(c):
+    """Portada del Reel de Instagram (Rodrigo, 4-nov-2026: en el perfil el carrusel y su Reel se veían como el mismo
+    post repetido). Otra foto, otro título (el de SEO) y otro diseño: título negro sobre una franja dorada abajo, con la
+    cara libre. En la cuadrícula se ven distintos."""
+    p = c['portada']
+    lienzo = recortar(Image.open(os.path.join(RAIZ, p['foto_reel'])).convert('RGB'), ANCHO, ALTO)
+    d = ImageDraw.Draw(lienzo)
+    f, lineas, salto = acomodar(titulo_reel(c).upper(), 'Black', 76, 52, ANCHO - 2 * MARGEN - 40, 280, d, 1.06)
+    alto_franja = len(lineas) * salto + 70
+    arriba = ALTO - 150 - alto_franja
+    d.rectangle((MARGEN - 20, arriba, ANCHO - MARGEN + 20, arriba + alto_franja), fill=ORO)
+    d.text((MARGEN, arriba - 52), p['etiqueta'].upper(), font=letra('Bold', 34), fill=CREMA,
+           stroke_width=3, stroke_fill=NEGRO)
+    escribir(d, (MARGEN + 10, arriba + 35), lineas, f, salto, NEGRO)
+    d.rectangle((0, ALTO - 130, ANCHO, ALTO), fill=NEGRO)
+    d.text((MARGEN, ALTO - 112), 'Victoria es un personaje creado con IA', font=letra('Medium', 22), fill=TENUE)
+    d.text((MARGEN, ALTO - 70), '@victoriatheceo', font=letra('SemiBold', 26), fill=CREMA)
+    return lienzo
+
+
 def dibujar(c, carpeta):
     os.makedirs(carpeta, exist_ok=True)
     total = len(c['diapositivas']) + 2
@@ -263,6 +299,8 @@ def dibujar(c, carpeta):
     for i, hoja in enumerate(hojas):
         rutas.append(os.path.join(carpeta, f'{i:02d}.png'))
         hoja.save(rutas[-1], optimize=True)
+    if c['portada'].get('foto_reel'):  # no cuenta como diapositiva (00r.png): solo abre el Reel
+        portada_reel(c).save(os.path.join(carpeta, '00r.png'), optimize=True)
     return rutas
 
 
@@ -277,6 +315,8 @@ def cargar(id_carrusel):
         c['portada']['foto'], cambio = elegir_foto(c, datos['carruseles']), True
     if c.get('fondo', 'auto') == 'auto':
         c['fondo'], cambio = elegir_fondo(c, datos['carruseles']), True
+    if not c['portada'].get('foto_reel'):
+        c['portada']['foto_reel'], cambio = foto_reel(c, datos['carruseles']), True
     if cambio:
         json.dump(datos, open(ruta, 'w'), ensure_ascii=False, indent=1)
         open(ruta, 'a').write('\n')

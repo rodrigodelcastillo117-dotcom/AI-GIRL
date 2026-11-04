@@ -70,10 +70,13 @@ def movimiento(segundos):
             f"[fondo][frente]overlay=0:285,format=yuv420p[v]")
 
 
-def tramos(c, horizontal=False):
-    """Un MP4 por diapositiva (imagen + su voz). Regresa (rutas, segundos totales)."""
+def tramos(c, horizontal=False, portada=None):
+    """Un MP4 por diapositiva (imagen + su voz). Regresa (rutas, segundos totales). portada: otra imagen para
+    abrir (la del Reel, 00r.png)."""
     carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
     hojas = sorted(glob.glob(os.path.join(carpeta, '[0-9][0-9].png')))
+    if portada:
+        hojas[0] = portada
     voces = [c['portada']['voz']] + [d['voz'] for d in c['diapositivas']] + [c['cierre']['voz']]
     if len(hojas) != len(voces):
         sys.exit(f'ERROR: hay {len(hojas)} diapositivas y {len(voces)} voces: corre primero carrusel.py {c["id"]}')
@@ -137,6 +140,11 @@ def main():
             sys.exit(f'ERROR: el short dura {total:.1f} s; máximo {MAXIMO_SHORT}. Acorta las voces del carrusel {c["id"]}.')
         carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
         unir(rutas, os.path.join(carpeta, 'short.mp4'))
+        portada_reel = os.path.join(carpeta, '00r.png')
+        if os.path.exists(portada_reel):  # el Reel de Instagram abre con su propia portada (otra foto y otro título)
+            r, _ = tramos(c, portada=portada_reel)
+            unir(r, os.path.join(carpeta, 'reel.mp4'))
+            print(f'ok {carpeta}/reel.mp4 (abre con 00r.png)')
         config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
         for nombre, texto in zip(('titulo', 'descripcion_youtube', 'tags_youtube'), textos_youtube(c, config)):
             open(os.path.join(carpeta, f'{nombre}.txt'), 'w').write(texto)
