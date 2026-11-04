@@ -371,7 +371,7 @@
    }
   },
   {
-   "estado": "pendiente",
+   "estado": "en_proceso",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "38",
@@ -438,6 +438,11 @@
      "¿Los meses sin intereses son más caros?",
      "¿Cuánto de mi sueldo puedo usar para pagar deudas?"
     ]
+   },
+   "openart": {
+    "foto": "47pqXyxtcyfNF45eArwm (logo de la laptop borrado a mano; subida besqAk8KnVFIJwNHkKcL)",
+    "foto_descartada": "KaYxP3B3vSmzMBLzFgui (Capital encima del escritorio)",
+    "video": "pxKdAu03Rhbfw57fhM82"
    }
   },
   {
