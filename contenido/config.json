@@ -333,7 +333,7 @@
   "instagram": 5,
   "tiktok": 7
  },
- "palabras_por_segundo": 2.33,
+ "palabras_por_segundo": 2.65,
  "creditos_por_segundo": 40,
  "creditos_foto": 30,
  "segundos_minimos": 10,
@@ -379,5 +379,6 @@
   "description": "Victoria es una CEO creada con inteligencia artificial que te explica el dinero en México en menos de un minuto: aguinaldo, SAT, tarjeta de crédito, Afore, Infonavit, finiquito, ahorro y negocios. Cada dato con su fuente oficial (Profeco, Condusef, SAT, Ley Federal del Trabajo).\n\n📌 Suscríbete: un dato de dinero que sí sirve en México, varias veces por semana.\n📥 Mis 30 reglas de la CEO, gratis: https://victoriatheceo.vercel.app?ref=yt\n🧮 Calculadora de aguinaldo 2026: https://victoriatheceo.vercel.app/aguinaldo?ref=yt\n\nContenido educativo; no es asesoría financiera, fiscal ni legal. Victoria es un personaje creado con IA.",
   "keywords": "\"finanzas personales\" \"finanzas personales mexico\" \"educacion financiera\" aguinaldo \"aguinaldo 2026\" \"cuanto me toca de aguinaldo\" SAT \"tarjeta de credito\" Afore Infonavit finiquito \"derechos laborales\" \"como ahorrar dinero\" ahorro dinero \"buen fin\" \"salario minimo 2026\" negocios emprendimiento \"victoria the ceo\"",
   "defaultLanguage": "es"
- }
+ },
+ "nota_palabras_por_segundo": "4-nov-2026: la voz real del video 38 dijo 42 palabras en 15.9 s (2.65/s). Con 2.33 se pedían 19 s y Wan rellenaba el tiempo sobrante inventando una frase. Duración = palabras / 2.65 + 1 s."
 }

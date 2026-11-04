@@ -656,7 +656,7 @@ def segundos(video, config):
     Prorrateo: las reglas cortas salen de 10-12 s y las historias que lo valen, más largas (máximo 25)."""
     if video.get('duracion'):
         return video['duracion']
-    s = round(len(video['guion'].split()) / config.get('palabras_por_segundo', 2.33) + 0.4)
+    s = round(len(video['guion'].split()) / config.get('palabras_por_segundo', 2.65) + 1.0)  # +1 s de aire; si sobra más, Wan inventa
     s += 1 if video.get('formato') == 'entrevista' else 0  # la entrevista lleva pausas
     return max(config.get('segundos_minimos', 10), min(config.get('segundos_maximos', 25), s))
 

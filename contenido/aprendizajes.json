@@ -208,5 +208,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Los shorts de carrusel retienen 18-29% (c02 17.8%, c03 28.8%) contra 92% de Victoria hablando (01). Eran una imagen quieta con franjas negras arriba y abajo y medio segundo de silencio entre diapositivas: parecían presentación.",
   "regla": "Desde el 3-nov los shorts verticales llevan acercamiento lento (6%), las franjas con la diapositiva desenfocada y 0.25 s entre diapositivas (carrusel_video.py). Comparar el % visto de los shorts nuevos contra 18-29%."
+ },
+ {
+  "fecha_utc": "2026-11-04T13:55:00Z",
+  "origen": "Video 38",
+  "tipo": "tecnico",
+  "aprendizaje": "Por segunda vez Wan 3.0 inventó una frase a media grabación, justo después de dos puntos (\"el precio de contado: ...\"). El video pedía 19 s y la voz real dura 15.9 s: el modelo rellenó el tiempo que sobraba. Se salvó cortando el tramo inventado (corte de salto) en vez de pagar otro video. La foto base sacó un logo de Apple en la laptop.",
+  "regla": "Duración del video = palabras del guion / 2.65 + 1 s (no 2.33): si sobra tiempo, Wan inventa palabras. En el guion del prompt, sin dos puntos ni punto y coma (solo comas y puntos). Si inventa una frase en un hueco limpio entre palabras, cortarla con ffmpeg antes de pagar otro video. Para alinear la voz atrasada sin cortar la primera palabra: congelar el primer cuadro (tpad) en vez de recortar el audio. En la foto: 'generic laptop with plain lid, no logo'."
  }
 ]

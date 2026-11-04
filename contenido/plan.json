@@ -371,7 +371,7 @@
    }
   },
   {
-   "estado": "en_proceso",
+   "estado": "listo_para_publicar",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "38",
@@ -443,6 +443,24 @@
     "foto": "47pqXyxtcyfNF45eArwm (logo de la laptop borrado a mano; subida besqAk8KnVFIJwNHkKcL)",
     "foto_descartada": "KaYxP3B3vSmzMBLzFgui (Capital encima del escritorio)",
     "video": "pxKdAu03Rhbfw57fhM82"
+   },
+   "archivo": "videos/video-38-oficina-FINAL.mp4",
+   "duracion_final_s": 16.6,
+   "creditos": 800,
+   "qa": {
+    "similitud": 0.98,
+    "sincronia": {
+     "cuadros": 496,
+     "fps": 30.0,
+     "cara_en_cuadros": 1.0,
+     "desfase_ms": -33,
+     "correlacion": 0.123,
+     "correlacion_sin_desfase": 0.12,
+     "voz_con_boca_quieta_s": 0.23,
+     "boca_hablando_sin_voz_s": 0.7,
+     "fallas": []
+    },
+    "notas": "Wan 3.0 metió una frase inventada a los 7.0-9.3 s (\"tinkos en libos, la prótik contado\") justo después de \"el precio de contado:\". En vez de pagar otro video (760 créditos) se cortó ese tramo (corte de salto, normal en video de celular) y quedó 0.98 sin palabras de más. Voz 267 ms atrasada: se retrasó el video 0.27 s congelando el primer cuadro (recortar audio cortaba el \"Me\" de \"Meses\"); sincronía -33 ms, correlación 0.12. Capital en los 6 cuadros, sin logos (el de la laptop se borró de la foto base). naturalizar, subtítulos, título y cierre en pantalla."
    }
   },
   {

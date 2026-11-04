@@ -24,18 +24,19 @@
    "tt": "2026-11-01T15:06:29Z",
    "yt": "2026-11-01T23:00:00Z"
   },
-  "v_yt": 293,
+  "v_yt": 314,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 543,
+  "v_tt": 556,
   "l_tt": 7,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 8,
+  "v_ig": 9,
   "l_ig": 6,
   "c_ig": 1,
-  "s_ig": 0
+  "s_ig": 0,
+  "r_yt": 53.4
  },
  {
   "id": "c02",
@@ -74,7 +75,7 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "r_yt": 17.8
+  "r_yt": 20.5
  },
  {
   "id": "c03",
@@ -101,7 +102,7 @@
    "tt": "2026-10-30T23:06:00Z",
    "yt": "2026-10-30T20:00:00Z"
   },
-  "v_yt": 35,
+  "v_yt": 37,
   "l_yt": 0,
   "c_yt": 2,
   "s_yt": 0,
@@ -109,29 +110,35 @@
   "l_tt": 16,
   "c_tt": 0,
   "s_tt": 1,
-  "v_ig": 56,
+  "v_ig": 57,
   "l_ig": 8,
   "c_ig": 12,
   "s_ig": 2,
-  "r_yt": 28.8
+  "r_yt": 29.0
  },
  {
   "id": "c04",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "lecciones de negocio",
   "gancho": "Blockbuster pudo comprar Netflix por $50 millones y se rio",
   "titulo": "Lecciones de negocio que valen millones 💼",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "fondo": "jet.jpg",
+  "portada": "video-19-sillon.jpg",
+  "horas": {
+   "tt": "2026-11-04 17:00",
+   "yt": "2026-11-04 17:00"
+  },
+  "youtube_id": "V7iOZ3wh1zM",
+  "publica_utc": "2026-11-04T23:00:00Z",
   "linea": "lecciones de negocio de blockbuster, costco, spanx, dollar shave club y mailchimp, con sus cifras. 💼",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-04T23:00:00Z",
+   "yt": "2026-11-04T23:00:00Z"
+  }
  },
  {
   "id": "c05",
@@ -161,21 +168,33 @@
   "fondo": "gimnasio-ciudad.jpg",
   "portada": "video-37-sala.jpg",
   "horas": {
-   "ig": "2026-11-03 15:00",
-   "tt": "2026-11-03 15:00",
+   "ig": "2026-11-03 15:01",
+   "tt": "2026-11-03 15:05",
    "yt": "2026-11-03 14:00"
   },
   "youtube_id": "4-XMOqZF8qA",
-  "publica_utc": "2026-11-03T21:00:00Z",
+  "publica_utc": "2026-11-03T21:05:46Z",
   "linea": "buen fin 2026: 5 cosas que tienes que hacer antes de comprar. 🛍️",
   "tipo": "carrusel",
   "linea_reel": "antes del buen fin, haz estas 5 cosas",
-  "reel_ig": "2026-11-03 18:00",
+  "reel_ig": "2026-11-03 18:02",
   "publica_utc_por_red": {
-   "ig": "2026-11-03T21:00:00Z",
-   "tt": "2026-11-03T21:00:00Z",
+   "ig": "2026-11-03T21:01:59Z",
+   "tt": "2026-11-03T21:05:46Z",
    "yt": "2026-11-03T20:00:00Z"
-  }
+  },
+  "v_yt": 92,
+  "l_yt": 3,
+  "c_yt": 2,
+  "s_yt": 0,
+  "v_tt": 255,
+  "l_tt": 12,
+  "c_tt": 0,
+  "s_tt": 1,
+  "v_ig": 33,
+  "l_ig": 9,
+  "c_ig": 7,
+  "s_ig": 0
  },
  {
   "id": "c07",
