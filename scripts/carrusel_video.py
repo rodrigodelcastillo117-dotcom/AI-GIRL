@@ -30,7 +30,7 @@ AIRE, MAXIMO_SHORT = 0.5, 57.0
 AIRE_SHORT = 0.25  # menos silencio entre diapositivas: cada pausa es un momento para deslizar
 NEGRO = '0x0b0b0d'
 # Detrás del proxy de la nube, el certificado está en SSL_CERT_FILE; edge-tts solo mira certifi.
-_ca = os.environ.get('SSL_CERT_FILE') or os.environ.get('REQUESTS_CA_BUNDLE')
+_ca = os.environ.get('SSL_CERT_FILE') or os.environ.get('REQUESTS_CA_BUNDLE') or '/root/.ccr/ca-bundle.crt'
 if _ca and os.path.exists(_ca):
     certifi.where = lambda: _ca
 import edge_tts  # noqa: E402
@@ -43,11 +43,16 @@ def duracion(ruta):
 
 
 def voces_victoria(carpeta, voces):
-    """vozv-XX.mp3 de las frases que falten, con la voz clonada de Victoria y su revisión (voz_victoria.py)."""
-    faltan = [{'texto': t, 'salida': os.path.join(carpeta, f'vozv-{i:02d}.mp3')} for i, t in enumerate(voces)
-              if not os.path.exists(os.path.join(carpeta, f'vozv-{i:02d}.mp3'))]
+    """vozm-XX.mp3 de las frases que falten: la dice una voz mexicana nativa (Edge TTS, es-MX-DaliaNeural) y
+    voz_victoria.py la convierte al timbre de Victoria (Rodrigo, 4-nov-2026: el clon directo "se le complica México,
+    aguinaldo"; "arreglemos todo, lo más real posible"). Así la pronunciación es mexicana y la voz, la de Victoria."""
+    faltan = [{'texto': t, 'salida': os.path.join(carpeta, f'vozm-{i:02d}.mp3'),
+               'base': os.path.join(carpeta, f'vozmx-{i:02d}.mp3')} for i, t in enumerate(voces)
+              if not os.path.exists(os.path.join(carpeta, f'vozm-{i:02d}.mp3'))]
     if not faltan:
         return
+    for f in faltan:
+        asyncio.run(edge_tts.Communicate(f['texto'], VOZ, rate='+4%').save(f['base']))
     python = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
     if not os.path.exists(python):
         sys.exit(f'ERROR: no está el entorno de voz ({python}); prepáralo con el paso 0 de docs/PIPELINE.md.')
@@ -86,7 +91,7 @@ def tramos(c, horizontal=False, portada=None):
     if not edge:
         voces_victoria(carpeta, voces)
     for i, (hoja, texto) in enumerate(zip(hojas, voces)):
-        audio = os.path.join(carpeta, f'{"voz" if edge else "vozv"}-{i:02d}.mp3')
+        audio = os.path.join(carpeta, f'{"voz" if edge else "vozm"}-{i:02d}.mp3')
         if edge and not os.path.exists(audio):
             asyncio.run(edge_tts.Communicate(texto, VOZ, rate='+5%').save(audio))
         segundos = duracion(audio) + (AIRE if horizontal else AIRE_SHORT)

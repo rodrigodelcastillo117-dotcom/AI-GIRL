@@ -1,4 +1,6 @@
-"""Voz de Victoria para los videos de carrusel (solo YouTube): clona la voz de sus videos
+"""Voz de Victoria para los videos de carrusel. Desde el 4-nov-2026 cada frase la dice primero una voz mexicana nativa
+(Edge es-MX, la arma carrusel_video.py en "base") y aquí se convierte al timbre de Victoria con ChatterboxVC: el clon
+directo pronunciaba mal "México" y "aguinaldo". Si la convertida no pasa la revisión, se usa el clon directo, que clona la voz de sus videos
 (assets/voz-referencia.mp3) con Chatterbox Multilingual de Resemble AI (licencia MIT, corre en CPU, 0 créditos).
 Rodrigo eligió esta voz ("B") el 31-oct-2026 frente a la de Edge TTS, que sonaba "muy AI".
 
@@ -32,7 +34,7 @@ from num2words import num2words
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REFERENCIA = os.path.join(RAIZ, 'assets', 'voz-referencia.mp3')
 INTENTOS = 3
-PARECIDO_TEXTO, PARECIDO_VOZ = 0.85, 0.80  # en las pruebas del 31-oct: frases buenas 0.93-1.0 y voz 0.90-0.95
+PARECIDO_TEXTO, PARECIDO_VOZ, PARECIDO_VOZ_MX = 0.85, 0.80, 0.82  # la convertida midió 0.88 el 4-nov; en las pruebas del 31-oct: frases buenas 0.93-1.0 y voz 0.90-0.95
 
 
 def normal(texto):
@@ -61,8 +63,26 @@ def main():
         return e / np.linalg.norm(e)
     voz_victoria = huella(librosa.load(referencia, sr=16000)[0])
 
+    vc = None
     fallas = []
     for f in frases:
+        if f.get('base'):  # voz mexicana nativa convertida al timbre de Victoria (4-nov-2026)
+            if vc is None:
+                from chatterbox.vc import ChatterboxVC
+                vc = ChatterboxVC.from_pretrained(device='cpu')
+            wav = vc.generate(f['base'], target_voice_path=referencia)
+            audio_16k = librosa.resample(wav.squeeze(0).numpy(), orig_sr=vc.sr, target_sr=16000)
+            dicho = ' '.join(s.text.strip() for s in oido.transcribe(audio_16k, language='es')[0])
+            texto_ok, voz_ok = parecido_texto(f['texto'], dicho), float(np.dot(voz_victoria, huella(audio_16k)))
+            print(f'{os.path.basename(f["salida"])} (mexicana convertida): texto {texto_ok:.2f}, voz {voz_ok:.2f} | {dicho}', flush=True)
+            if texto_ok >= PARECIDO_TEXTO and voz_ok >= PARECIDO_VOZ_MX:
+                crudo = f['salida'] + '.wav'
+                torchaudio.save(crudo, wav, vc.sr)
+                subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', '44100',
+                                '-b:a', '160k', f['salida']], check=True)
+                os.remove(crudo)
+                continue
+            print('  no pasó: se hace con el clon directo', flush=True)
         mejor = None
         for intento in range(INTENTOS):
             torch.manual_seed(1000 + intento)
