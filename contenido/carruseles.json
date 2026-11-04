@@ -363,9 +363,12 @@
    },
    "nota_cambio": "Rodrigo (31-oct): fuera las frases de Bezos, Sinek y Parkinson; empresas con cifras.",
    "publica_utc_por_red": {
-    "tt": "2026-11-04T23:00:00Z"
+    "tt": "2026-11-04T23:00:00Z",
+    "yt": "2026-11-04T23:00:00Z"
    },
-   "publica_utc": "2026-11-04T23:00:00Z"
+   "publica_utc": "2026-11-04T23:00:00Z",
+   "youtube": "https://youtube.com/shorts/V7iOZ3wh1zM",
+   "playlist": true
   },
   {
    "id": "c05",
