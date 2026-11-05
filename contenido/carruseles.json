@@ -363,12 +363,13 @@
    },
    "nota_cambio": "Rodrigo (31-oct): fuera las frases de Bezos, Sinek y Parkinson; empresas con cifras.",
    "publica_utc_por_red": {
-    "tt": "2026-11-04T23:00:00Z",
+    "tt": "2026-11-04T23:05:40Z",
     "yt": "2026-11-04T23:00:00Z"
    },
-   "publica_utc": "2026-11-04T23:00:00Z",
+   "publica_utc": "2026-11-04T23:05:40Z",
    "youtube": "https://youtube.com/shorts/V7iOZ3wh1zM",
-   "playlist": true
+   "playlist": true,
+   "comentario_youtube": "UgxAhQjYS5a0ZYiRUC54AaABAg"
   },
   {
    "id": "c05",
@@ -555,15 +556,16 @@
   },
   {
    "id": "c07",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "reglas_tarjeta_credito",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/palco-vip.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-38-oficina.jpg",
     "etiqueta": "TARJETA DE CRÉDITO",
     "titulo": "5 reglas de tu tarjeta que nadie te explica",
-    "voz": "Cinco reglas de tu tarjeta de crédito que nadie te explica."
+    "voz": "Cinco reglas de tu tarjeta de crédito que nadie te explica.",
+    "foto_reel": "assets/fotos/video-01-jet.jpg"
    },
    "diapositivas": [
     {
@@ -627,7 +629,12 @@
      "¿Qué es el pago para no generar intereses?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "publica_utc_por_red": {
+    "ig": "2026-11-05T14:00:00Z",
+    "tt": "2026-11-05T19:00:00Z"
+   },
+   "publica_utc": "2026-11-05T19:00:00Z"
   },
   {
    "id": "c08",

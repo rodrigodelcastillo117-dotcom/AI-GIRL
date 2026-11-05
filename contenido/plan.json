@@ -208,7 +208,7 @@
    "nota_hora": "Rodrigo pidió publicarlo ya (sáb 11:17). 11:17 no es franja de la prueba: no cuenta para la prueba de horarios."
   },
   {
-   "estado": "programado",
+   "estado": "publicado",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "37",
@@ -367,7 +367,11 @@
    "publicacion": {
     "youtube": "https://youtube.com/shorts/SI04CvAqvjg",
     "publer": "instagram y tiktok programados 4-nov",
-    "playlist": "finanzas"
+    "playlist": "finanzas",
+    "ig": "https://www.instagram.com/reel/DfUoKyEDmdI/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7704501495986654465?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/SI04CvAqvjg",
+    "comentario_youtube": "UgwZiKtQEtvBeVaMtp14AaABAg"
    }
   },
   {
