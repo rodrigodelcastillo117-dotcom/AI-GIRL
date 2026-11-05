@@ -142,5 +142,14 @@
   "creditos_usados": 800,
   "creditos_restantes": 6779,
   "detalle": "Rutina 4-nov: video 37 programado (Instagram 8:00, YouTube 12:00, TikTok 20:00) con cierre en pantalla; c04 en TikTok 17:00 y su short en YouTube 17:00 (prueba). Video 38 (meses sin intereses): 2 fotos (la 1a con logo de Apple borrado a mano, la 2a descartada), video Wan 19 s con frase inventada recortada y sincronía corregida. Créditos: 7,599 al empezar, 6,779 al terminar (la bitácora decía 7,719: 120 de diferencia que no salen de aquí)."
+ },
+ {
+  "fecha_utc": "2026-11-05T13:35:00Z",
+  "tipo": "carrusel",
+  "video_id": "c07",
+  "resultado": "ok",
+  "creditos_usados": 0,
+  "creditos_restantes": 6779,
+  "detalle": "Rutina 5-nov: c07 (tarjeta) en Instagram 8:00 y TikTok 13:00 en fotos, short en YouTube 10:00 (I0FGv7MROTI, lista finanzas) y Reel 18:00, primero con la voz mexicana convertida. La revisión de voz se endureció (dejó pasar 'Un deat' de más y 'Soma' por 'Suma'); voz de portada reescrita ('Cinco reglas' sonaba 'sin correglas'). Tu automatización de Errores invisibles cambió 9 videos; restaurados."
  }
 ]

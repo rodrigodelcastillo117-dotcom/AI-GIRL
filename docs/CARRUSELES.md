@@ -77,7 +77,9 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
    subieron; nadie sigue si no le dices qué gana). La `voz` del cierre termina en "y sígueme". La guía gratis ya no
    va en la diapositiva (va en el primer comentario y en la bio): tres llamados en una diapositiva se estorban.
    Sin emoji en las diapositivas (la letra no los tiene; `carrusel.py` los quita).
-4. **Voces** cortas: el short no pasa de 57 s (unas 130 palabras en total).
+4. **Voces** cortas: el short no pasa de 57 s (unas 130 palabras en total), pero no de 2-4 palabras (la conversión a
+   la voz de Victoria se equivoca con frases muy cortas). Nunca empezar una frase con "Cinco reglas": las dos voces
+   dicen "sin correglas" (mejor "Tu tarjeta tiene cinco reglas..."). Nombres en inglés en `config.json → pronunciacion`.
 5. **SEO** como los videos (`docs/SEO.md`): `seo.palabra_clave` al inicio del título y del pie,
    `titulo` de máximo 45 caracteres, `tags_concretas`, 4 `hashtags` del tema (se suman los de marca:
    Instagram queda en 5, TikTok en 7) y 3-4 `preguntas` que la gente escribe.

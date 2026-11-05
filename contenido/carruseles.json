@@ -564,7 +564,7 @@
     "foto": "assets/fotos/video-38-oficina.jpg",
     "etiqueta": "TARJETA DE CRÉDITO",
     "titulo": "5 reglas de tu tarjeta que nadie te explica",
-    "voz": "Cinco reglas de tu tarjeta de crédito que nadie te explica.",
+    "voz": "Tu tarjeta de crédito tiene cinco reglas que nadie te explica.",
     "foto_reel": "assets/fotos/video-01-jet.jpg"
    },
    "diapositivas": [
@@ -632,9 +632,17 @@
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
     "ig": "2026-11-05T14:00:00Z",
-    "tt": "2026-11-05T19:00:00Z"
+    "tt": "2026-11-05T19:00:00Z",
+    "yt": "2026-11-05T16:00:00Z"
    },
-   "publica_utc": "2026-11-05T19:00:00Z"
+   "publica_utc": "2026-11-05T19:00:00Z",
+   "reel_ig": {
+    "publica_utc": "2026-11-06T00:00:00Z",
+    "texto": "5 reglas de tu tarjeta que nadie te explica\n5 reglas de tu tarjeta de crédito que nadie te explica. 💳\nCon $10,000 al 55% anual, el pago mínimo te encadena 19 años y medio; el pago para no generar intereses te libra de los intereses de tus compras, y sacar efectivo cobra comisión e intereses desde el primer día.\n\n¿Cuál no sabías? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien trae la tarjeta al tope.\n\n#tarjetadecredito #deudas #condusef #finanzaspersonales #victoriatheceo",
+    "video": "carruseles/c07/reel.mp4"
+   },
+   "youtube": "https://youtube.com/shorts/I0FGv7MROTI",
+   "playlist": true
   },
   {
    "id": "c08",

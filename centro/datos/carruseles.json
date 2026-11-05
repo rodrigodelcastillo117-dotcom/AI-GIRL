@@ -24,19 +24,19 @@
    "tt": "2026-11-01T15:06:29Z",
    "yt": "2026-11-01T23:00:00Z"
   },
-  "v_yt": 314,
+  "v_yt": 317,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 556,
+  "v_tt": 564,
   "l_tt": 7,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 9,
+  "v_ig": 10,
   "l_ig": 6,
   "c_ig": 1,
   "s_ig": 0,
-  "r_yt": 53.4
+  "r_yt": 51.3
  },
  {
   "id": "c02",
@@ -71,7 +71,7 @@
   "l_tt": 8,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 8,
+  "v_ig": 9,
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
@@ -110,7 +110,7 @@
   "l_tt": 16,
   "c_tt": 0,
   "s_tt": 1,
-  "v_ig": 57,
+  "v_ig": 59,
   "l_ig": 8,
   "c_ig": 12,
   "s_ig": 2,
@@ -126,19 +126,27 @@
   "fondo": "jet.jpg",
   "portada": "video-19-sillon.jpg",
   "horas": {
-   "tt": "2026-11-04 17:00",
+   "tt": "2026-11-04 17:05",
    "yt": "2026-11-04 17:00"
   },
   "youtube_id": "V7iOZ3wh1zM",
-  "publica_utc": "2026-11-04T23:00:00Z",
+  "publica_utc": "2026-11-04T23:05:40Z",
   "linea": "lecciones de negocio de blockbuster, costco, spanx, dollar shave club y mailchimp, con sus cifras. 💼",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-04T23:00:00Z",
+   "tt": "2026-11-04T23:05:40Z",
    "yt": "2026-11-04T23:00:00Z"
-  }
+  },
+  "v_yt": 51,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
+  "v_tt": 148,
+  "l_tt": 2,
+  "c_tt": 0,
+  "s_tt": 0
  },
  {
   "id": "c05",
@@ -183,36 +191,44 @@
    "tt": "2026-11-03T21:05:46Z",
    "yt": "2026-11-03T20:00:00Z"
   },
-  "v_yt": 92,
+  "v_yt": 130,
   "l_yt": 3,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 255,
-  "l_tt": 12,
+  "v_tt": 311,
+  "l_tt": 15,
   "c_tt": 0,
   "s_tt": 1,
-  "v_ig": 33,
-  "l_ig": 9,
+  "v_ig": 43,
+  "l_ig": 11,
   "c_ig": 7,
   "s_ig": 0
  },
  {
   "id": "c07",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "reglas tarjeta credito",
   "gancho": "5 reglas de tu tarjeta que nadie te explica",
   "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "fondo": "palco-vip.jpg",
+  "portada": "video-38-oficina.jpg",
+  "horas": {
+   "ig": "2026-11-05 08:00",
+   "tt": "2026-11-05 13:00",
+   "yt": "2026-11-05 10:00"
+  },
+  "youtube_id": "I0FGv7MROTI",
+  "publica_utc": "2026-11-05T19:00:00Z",
   "linea": "5 reglas de tu tarjeta de crédito que nadie te explica. 💳",
   "tipo": "carrusel",
-  "linea_reel": "",
-  "reel_ig": "",
-  "publica_utc_por_red": {}
+  "linea_reel": "5 reglas de tu tarjeta que nadie te explica",
+  "reel_ig": "2026-11-05 18:00",
+  "publica_utc_por_red": {
+   "ig": "2026-11-05T14:00:00Z",
+   "tt": "2026-11-05T19:00:00Z",
+   "yt": "2026-11-05T16:00:00Z"
+  }
  },
  {
   "id": "c08",

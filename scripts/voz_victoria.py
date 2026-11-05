@@ -39,13 +39,25 @@ PARECIDO_TEXTO, PARECIDO_VOZ, PARECIDO_VOZ_MX = 0.85, 0.80, 0.82  # la convertid
 
 def normal(texto):
     """Minúsculas, sin acentos ni signos y con los números en letra (Whisper escribe "regla 1")."""
-    texto = re.sub(r'\d+', lambda m: ' ' + num2words(int(m.group()), lang='es') + ' ', texto.lower())
+    texto = texto.lower().replace('%', ' por ciento ').replace('$', ' ')
+    texto = re.sub(r'(\d)[.,](\d{3})', r'\1\2', texto)  # "4.500" y "4,500" son cuatro mil quinientos
+    texto = re.sub(r'\d+', lambda m: ' ' + num2words(int(m.group()), lang='es') + ' ', texto)
     texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
     return re.sub(r'[^a-zñ ]', ' ', texto).split()
 
 
 def parecido_texto(esperado, oido):
-    return difflib.SequenceMatcher(None, normal(esperado), normal(oido)).ratio()
+    """Parecido 0-1; vale 0 si dijo 2+ palabras de más seguidas ("... que nadie te explica. Un deat") o si una palabra
+    de 4+ letras del texto no se oye ("Soma" por "Suma"): pasó con 0.90-0.92 el 5-nov-2026."""
+    e, o = normal(esperado), normal(oido)
+    comparar = difflib.SequenceMatcher(None, o, e)
+    for op, i1, i2, j1, j2 in comparar.get_opcodes():
+        if op in ('delete', 'replace') and i2 - i1 >= 2 and i2 - i1 > (j2 - j1) + 1:
+            return 0.0
+    for palabra in {x for x in e if len(x) >= 4} - set(o):
+        if not (palabra.endswith('s') and palabra[:-1] in o):
+            return min(comparar.ratio(), PARECIDO_TEXTO - 0.01)
+    return comparar.ratio()
 
 
 def main():

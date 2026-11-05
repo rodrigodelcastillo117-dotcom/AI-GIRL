@@ -1,34 +1,25 @@
 [
  {
-  "fecha": "2026-11-04",
-  "tipo": "video",
-  "id": "37",
-  "que": "Sale el video 37",
+  "fecha": "2026-11-05",
+  "tipo": "reel",
+  "id": "",
   "estado": "programado",
+  "que": "Reel de Instagram del carrusel c07 (el mismo video del Short)",
   "horas": {
-   "ig": "08:00",
-   "tt": "20:00",
-   "yt": "12:00"
-  }
- },
- {
-  "fecha": "2026-11-04",
-  "tipo": "carrusel",
-  "id": "c04",
-  "que": "Sale el carrusel c04 · lecciones de negocio",
-  "estado": "programado",
-  "horas": {
-   "tt": "17:00",
-   "yt": "17:00"
+   "ig": "18:00"
   }
  },
  {
   "fecha": "2026-11-05",
   "tipo": "carrusel",
   "id": "c07",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c07 · reglas tarjeta credito · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Sale el carrusel c07 · reglas tarjeta credito",
+  "estado": "programado",
+  "horas": {
+   "ig": "08:00",
+   "tt": "13:00",
+   "yt": "10:00"
+  }
  },
  {
   "fecha": "2026-11-06",
@@ -125,5 +116,21 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+ },
+ {
+  "fecha": "2026-11-14",
+  "tipo": "video",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-14",
+  "tipo": "carrusel",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel nuevo (se escribe) · TikTok (carrusel diario) y short en YouTube (prueba)"
  }
 ]
