@@ -34,9 +34,13 @@
   "fecha": "2026-11-08",
   "tipo": "video",
   "id": "17",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video 17 (ya generado)"
+  "que": "Sale el video 17",
+  "estado": "programado",
+  "horas": {
+   "ig": "12:00",
+   "tt": "11:00",
+   "yt": "12:00"
+  }
  },
  {
   "fecha": "2026-11-08",

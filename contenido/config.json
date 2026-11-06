@@ -396,10 +396,7 @@
   "Warren Buffett": "Uórren Bófet"
  },
  "nota_pronunciacion": "4-nov-2026 (Rodrigo: \"se le complica México, aguinaldo\"): así se le escribe a Wan y a la voz de los carruseles lo que pronuncia mal. Si qa_audio dice \"no se entiende X\", agregar X aquí con su forma dicha y volver a generar.",
- "pronunciacion_wan": {
-  "aguinaldo": "aghinaldo",
-  "Aguinaldo": "Aghinaldo",
-  "aguinaldos": "aghinaldos"
- },
- "nota_pronunciacion_wan": "6-nov-2026, Rodrigo: la voz de los videos (Wan) decía \"a-gu-i-naldo\" sonando la u; debe decir \"aginaldo\" con g fuerte. Escrito \"aginaldo\" se leería \"ajinaldo\", por eso \"aghinaldo\". Solo para el texto que lee Wan (guion_para_voz.py), no para subtítulos, pies ni la voz de los carruseles."
+ "pronunciacion_wan": {},
+ "nota_pronunciacion_wan": "6-nov-2026: con \"aguinaldo\" Wan decía a-ɣ-w-i-naldo (suena la u); con \"aghinaldo\" dijo \"ajinado\". Lo que funcionó (prueba con reconocedor de fonemas): escribir \"aguinaldo\" normal y poner en el prompt instruccion_pronunciacion_wan. Verificar siempre con scripts/fonemas.py.",
+ "instruccion_pronunciacion_wan": "The Spanish word aguinaldo is always pronounced with a SILENT u and a hard g, exactly like the English sounds 'ah-ghee-NAHL-doh' (g as in 'go', never like a j, never sounding the u)."
 }

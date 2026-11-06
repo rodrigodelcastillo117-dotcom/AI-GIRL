@@ -1616,7 +1616,7 @@
   },
   {
    "id": "17",
-   "estado": "listo_para_publicar",
+   "estado": "programado",
    "pilar": "finanzas",
    "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. La cuenta es fácil: tu sueldo diario por quince días. Tu empresa debe pagártelo antes del veinte de diciembre; si no llega, reclámalo gratis en Profedet.",
    "subtitulos": [
@@ -1694,8 +1694,7 @@
    },
    "guardar_para": "cuando te paguen el aguinaldo",
    "archivo": "videos/video-17-sala-FINAL.mp4",
-   "creditos": 1340,
-   "pendiente": "Rodrigo confirma de oído que dice \"aginaldo\" (g fuerte, sin u) antes de publicar",
+   "creditos": 1660,
    "qa": {
     "similitud": 0.93,
     "sincronia": {
@@ -1709,7 +1708,18 @@
      "boca_hablando_sin_voz_s": 0.57,
      "fallas": []
     },
-    "notas": "Segundo intento: foto sentada de pecho para arriba, Capital en los 6 cuadros. Voz adelantada 367 ms: se retrasó el audio (adelay). Whisper small oye \"aginado\" (antes \"aguinaldo\" con u) y \"profedad\" (medium oye Profedet); \"pagarlo\" por \"pagártelo\". El primer intento (cuerpo entero) se descartó: Capital salía del cuadro."
+    "notas": "Segundo intento: foto sentada de pecho para arriba, Capital en los 6 cuadros. Voz adelantada 367 ms: se retrasó el audio (adelay). Whisper small oye \"aginado\" (antes \"aguinaldo\" con u) y \"profedad\" (medium oye Profedet); \"pagarlo\" por \"pagártelo\". El primer intento (cuerpo entero) se descartó: Capital salía del cuadro. \"aguinaldo\" sonaba \"ajinado\": se cambió solo esa palabra por la de un clip de prueba de Wan (HDtB2oCIzIKfD143WbaE, 320 créditos) que dice a-ɡ-i-naldo (verificado con reconocedor de fonemas wav2vec2 espeak); sincronía -33 ms, correlación 0.15; audio 0.97."
+   },
+   "publica_utc_por_red": {
+    "ig": "2026-11-08T18:00:00Z",
+    "tt": "2026-11-08T17:00:00Z",
+    "yt": "2026-11-08T18:00:00Z"
+   },
+   "publica_utc": "2026-11-08T18:00:00Z",
+   "publicacion": {
+    "youtube": "https://youtube.com/shorts/E5GH6hKOYog",
+    "publer": "instagram y tiktok programados 6-nov para el 8-nov",
+    "playlist": "aguinaldo"
    }
   },
   {

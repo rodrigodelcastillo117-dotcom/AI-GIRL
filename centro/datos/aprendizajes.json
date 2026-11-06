@@ -243,5 +243,12 @@
   "tipo": "regla",
   "aprendizaje": "La voz mexicana convertida al timbre de Victoria (4-nov) no le gustó a Rodrigo. Los datos de Instagram del 6-nov los sacó de Muse, la IA de Meta.",
   "regla": "Carruseles: siempre la voz clonada de Victoria (vozc). La pronunciación se arregla escribiendo las palabras como se dicen (config.json → pronunciacion), probando variantes que Rodrigo escucha y elige. No cambiar la voz sin que él la apruebe."
+ },
+ {
+  "fecha_utc": "2026-11-06T19:20:00Z",
+  "origen": "Rodrigo: 'dice ajinado no aguinaldo, que la u sea muda'",
+  "tipo": "tecnico",
+  "aprendizaje": "Wan lee español con reglas de escritura: 'aguinaldo' sonaba a-gw-i-naldo y 'aghinaldo' sonaba a-j-i-nado. Con 'aguinaldo' escrito normal más la instrucción 'SILENT u and hard g ... ah-ghee-NAHL-doh' en el prompt dijo a-g-i-naldo. Un reconocedor de fonemas (wav2vec2 xlsr espeak) distingue g/gw/x donde Whisper no. Una palabra mal dicha se puede cambiar por la misma palabra de un clip de prueba con la misma voz si hay pausa después (sincronía se mantuvo).",
+  "regla": "En el prompt de Wan va config.json → instruccion_pronunciacion_wan cuando el guion dice aguinaldo. Revisar las palabras difíciles con scripts/fonemas.py antes de publicar. Para arreglar una palabra: clip de prueba de 8 s (320 créditos) y cambiar solo esa palabra, en vez de rehacer el video."
  }
 ]
