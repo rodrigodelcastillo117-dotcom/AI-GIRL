@@ -151,5 +151,14 @@
   "creditos_usados": 0,
   "creditos_restantes": 6779,
   "detalle": "Rutina 5-nov: c07 (tarjeta) en Instagram 8:00 y TikTok 13:00 en fotos, short en YouTube 10:00 (I0FGv7MROTI, lista finanzas) y Reel 18:00, primero con la voz mexicana convertida. La revisión de voz se endureció (dejó pasar 'Un deat' de más y 'Soma' por 'Suma'); voz de portada reescrita ('Cinco reglas' sonaba 'sin correglas'). Tu automatización de Errores invisibles cambió 9 videos; restaurados."
+ },
+ {
+  "fecha_utc": "2026-11-06T18:50:00Z",
+  "tipo": "generar",
+  "video_id": "17",
+  "resultado": "listo_para_publicar",
+  "creditos_usados": 1340,
+  "creditos_restantes": 5439,
+  "detalle": "Rutina 6-nov: video 38 programado (TikTok 15:00, Instagram y YouTube 20:00); c08 en TikTok 9:00 y su short en YouTube 14:00. Video 17 (aguinaldo 2/4): 1er intento descartado (cuerpo entero, Capital fuera, zoom), 2do con foto de pecho para arriba y 'aghinaldo' en el texto de Wan. Carruseles de vuelta a la voz clonada (Rodrigo no quiere voz nueva). Pies con 'Guárdalo para...' por los datos de Instagram (Muse de Meta)."
  }
 ]

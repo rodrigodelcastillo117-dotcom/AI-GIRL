@@ -1616,7 +1616,7 @@
   },
   {
    "id": "17",
-   "estado": "en_proceso",
+   "estado": "listo_para_publicar",
    "pilar": "finanzas",
    "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. La cuenta es fácil: tu sueldo diario por quince días. Tu empresa debe pagártelo antes del veinte de diciembre; si no llega, reclámalo gratis en Profedet.",
    "subtitulos": [
@@ -1692,7 +1692,25 @@
     "video_descartado": "UkWjvsrahe2UDfURRzpJ (Capital salía del cuadro, zoom)",
     "nota": "\"aghinaldo\" en el texto de Wan para que no diga a-gu-i-naldo"
    },
-   "guardar_para": "cuando te paguen el aguinaldo"
+   "guardar_para": "cuando te paguen el aguinaldo",
+   "archivo": "videos/video-17-sala-FINAL.mp4",
+   "creditos": 1340,
+   "pendiente": "Rodrigo confirma de oído que dice \"aginaldo\" (g fuerte, sin u) antes de publicar",
+   "qa": {
+    "similitud": 0.93,
+    "sincronia": {
+     "cuadros": 480,
+     "fps": 30.0,
+     "cara_en_cuadros": 1.0,
+     "desfase_ms": 0,
+     "correlacion": 0.132,
+     "correlacion_sin_desfase": 0.132,
+     "voz_con_boca_quieta_s": 0.27,
+     "boca_hablando_sin_voz_s": 0.57,
+     "fallas": []
+    },
+    "notas": "Segundo intento: foto sentada de pecho para arriba, Capital en los 6 cuadros. Voz adelantada 367 ms: se retrasó el audio (adelay). Whisper small oye \"aginado\" (antes \"aguinaldo\" con u) y \"profedad\" (medium oye Profedet); \"pagarlo\" por \"pagártelo\". El primer intento (cuerpo entero) se descartó: Capital salía del cuadro."
+   }
   },
   {
    "id": "18",

@@ -12,6 +12,7 @@ Va después de titulo_pantalla.py (PIPELINE paso 6). El audio se copia tal cual:
 """
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -30,6 +31,8 @@ def textos(video):
     pregunta = limpio(video.get('pregunta_comentarios') or '')
     serie = video.get('serie') or {}
     parte = video.get('parte') or ''
+    m = re.search(r'(\d+)\s*(?:de|/)\s*(\d+)', str(parte))  # "parte 2 de 4" o "2/4"
+    parte = f'{m.group(1)}/{m.group(2)}' if m else ''
     if serie.get('numero') and serie.get('total') and serie['numero'] < serie['total']:
         llamado = f"PARTE {serie['numero'] + 1} MUY PRONTO: SÍGUEME"
     elif '/' in str(parte) and int(str(parte).split('/')[0]) < int(str(parte).split('/')[1]):
@@ -63,12 +66,12 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Pregunta,Inter SemiBold,34,&H00FFFFFF,&H00FFFFFF,&H64000000,&H64000000,0,0,0,0,100,100,0,0,3,14,0,5,70,70,0,1
-Style: Llamado,Inter Black,44,&H0042C5F5,&H0042C5F5,&H64000000,&H64000000,0,0,0,0,100,100,1,0,3,16,0,5,60,60,0,1
+Style: Llamado,Inter Black,38,&H0042C5F5,&H0042C5F5,&H64000000,&H64000000,0,0,0,0,100,100,1,0,3,16,0,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-""" + '\n'.join(l.replace(',Pregunta,,0,0,0,,', ',Pregunta,,0,0,0,,{\\pos(360,700)}')
-                .replace(',Llamado,,0,0,0,,', ',Llamado,,0,0,0,,{\\pos(360,800)}') for l in lineas) + '\n'
+""" + '\n'.join(l.replace(',Pregunta,,0,0,0,,', ',Pregunta,,0,0,0,,{\\pos(360,600)}')
+                .replace(',Llamado,,0,0,0,,', ',Llamado,,0,0,0,,{\\pos(360,690)}') for l in lineas) + '\n'
     ruta_ass = salida.rsplit('.', 1)[0] + '-cierre.ass'
     open(ruta_ass, 'w').write(ass)
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', entrada, '-vf', f'ass={ruta_ass}',
