@@ -1616,7 +1616,7 @@
   },
   {
    "id": "17",
-   "estado": "pendiente",
+   "estado": "en_proceso",
    "pilar": "finanzas",
    "guion": "¿Ganas quince mil al mes? Te tocan mínimo siete mil quinientos brutos de aguinaldo. La cuenta es fácil: tu sueldo diario por quince días. Tu empresa debe pagártelo antes del veinte de diciembre; si no llega, reclámalo gratis en Profedet.",
    "subtitulos": [
@@ -1636,7 +1636,7 @@
     "Profedet"
    ],
    "fuente": "Ley Federal del Trabajo, artículo 87; Profedet: asesoría y representación gratuitas si no pagan el aguinaldo (STPS; El Imparcial, 19-oct-2026)",
-   "locacion": "sala_navidad",
+   "locacion": "sala",
    "vestuario": "Vestido de punto rojo navideño ajustado de manga larga, aretes de oro, cabello suelto",
    "accion": "De pie junto al árbol de Navidad, Capital sentado a sus pies.",
    "hora_publicacion": "rotacion",
@@ -1684,7 +1684,12 @@
    "pregunta_comentarios": "¿Ya sabes cuánto te toca este año?",
    "guion_anterior": "Si ganas quince mil al mes, tu aguinaldo mínimo es de siete mil quinientos pesos brutos. Son quince días de salario, pagados antes del veinte de diciembre.",
    "parte": "Serie Aguinaldo 2026 · parte 2 de 4",
-   "mandar_a": "tu compañero de trabajo que no sabe cuánto le toca"
+   "mandar_a": "tu compañero de trabajo que no sabe cuánto le toca",
+   "openart": {
+    "foto": "QccVv7nDVZBS61FGeFkQ",
+    "video": "UkWjvsrahe2UDfURRzpJ",
+    "nota": "Sin árbol de Navidad: sale el 8-nov, todavía es temprano"
+   }
   },
   {
    "id": "18",

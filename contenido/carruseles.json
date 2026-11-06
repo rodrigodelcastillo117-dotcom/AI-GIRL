@@ -722,9 +722,12 @@
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
-    "tt": "2026-11-06T15:00:00Z"
+    "tt": "2026-11-06T15:00:00Z",
+    "yt": "2026-11-06T20:00:00Z"
    },
-   "publica_utc": "2026-11-06T15:00:00Z"
+   "publica_utc": "2026-11-06T20:00:00Z",
+   "youtube": "https://youtube.com/shorts/AO8W9KwN9EA",
+   "playlist": true
   },
   {
    "id": "c09",
