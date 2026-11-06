@@ -10,7 +10,8 @@ def normaliza(texto):
     def numero(m):
         palabras = num2words(int(m.group(1).replace(',', '')), lang='es')
         return palabras + (' por ciento' if m.group(2) else '')
-    texto = re.sub(r'(\d[\d,]*)\s*(%)?', numero, texto)
+    texto = re.sub(r'(\d)\s?[.,]\s?(\d{3})\b', r'\1\2', texto)  # "15 .000", "7.500", "4,500" (Whisper, 6-nov-2026)
+    texto = re.sub(r'(\d[\d,]*)\s*(%)?', lambda m: ' ' + numero(m) + ' ', texto)
     texto = unicodedata.normalize('NFD', texto.lower())
     texto = ''.join(c for c in texto if unicodedata.category(c) != 'Mn')
     return ' '.join(re.sub(r'[^a-z ]', ' ', texto).split())

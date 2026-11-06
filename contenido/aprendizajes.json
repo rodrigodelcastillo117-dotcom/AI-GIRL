@@ -222,5 +222,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Voz de carruseles: Edge es-MX (pronunciación mexicana nativa) convertida al timbre de Victoria con ChatterboxVC dio 0.92-0.95 de parecido y texto 0.86-1.00 en c04 (6 de 7 frases; Spanx falló y pasó al clon). Con frases de 2-4 palabras la conversión se equivoca. Doblar la voz de un video de Wan con esa voz rompió la sincronía (400 ms y 1.8 s de boca sin voz): las pausas dentro de cada oración no coinciden. qa_audio dejaba pasar frases inventadas por similitud alta.",
   "regla": "Carruseles: voz mexicana convertida (carrusel_video.py) con el clon de respaldo. Videos: no doblar; a Wan se le pasa guion_para_voz.py (pronunciacion de config.json, sin dos puntos) y qa_audio falla con 2+ palabras de más o una palabra clave que no se entiende."
+ },
+ {
+  "fecha_utc": "2026-11-06T13:40:00Z",
+  "origen": "Video 17, primer intento",
+  "tipo": "tecnico",
+  "aprendizaje": "Con la foto base de cuerpo entero (de pie, lejos), Wan hizo acercamiento aunque el prompt decía NO zoom, Capital salió del cuadro desde el segundo 5 y la cara quedó chica: qa_sync no pudo medir la boca (correlación 0.03-0.06). Whisper small oyó 'profedad' donde se dice 'Profedet' (medium sí lo oye bien) y los números con espacio ('15 .000') rompían la comparación.",
+  "regla": "Foto base siempre de pecho para arriba, cara grande, Capital pegado a ella (en el sillón o junto a la silla), nunca de cuerpo entero. Si qa_audio marca un nombre propio raro, confirmarlo con Whisper medium antes de rechazar. texto.normaliza junta '15 .000'."
  }
 ]

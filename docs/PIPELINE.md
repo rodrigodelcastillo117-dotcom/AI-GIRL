@@ -184,7 +184,7 @@ objects around, natural daylight from a window, slightly uneven soft light, real
 with visible pores and tiny imperfections, natural everyday makeup with a soft red lip, hair natural,
 not styled. She wears <vestuario en inglés>. <accion en inglés>, mid-sentence, talking to the camera.
 Framed from the chest up, slightly off-center, camera at eye level and close, like a real creator
-filming herself. The Rottweiler of Image 2 (same dog, black leather collar with gold plate) relaxed
+filming herself. (NUNCA de cuerpo entero: el 6-nov Wan hizo zoom, Capital salió del cuadro y la boca no se pudo medir.) The Rottweiler of Image 2 (same dog, black leather collar with gold plate) relaxed
 next to her (lying down, looking away, partly visible). Not a studio, not glamorous, not symmetrical,
 no posed look, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark.
 ```
