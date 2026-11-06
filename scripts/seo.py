@@ -135,7 +135,9 @@ def textos(video, plan, config):
     puente = video.get('puente_producto') and config.get('enlace_producto')
     llamado = (ll['pie'] if ll else
                '📊 La plantilla con la que lo hago con mis números: enlace en mi perfil 👆' if puente else
-               '📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆' if config.get('enlace_venta') else '')
+               # Instagram (6-nov-2026, datos de Rodrigo): 0 toques al enlace de la bio y 0 guardados en 12 posts. El
+               # "enlace en mi perfil" no movía nada: ahora se pide guardarlo, con una razón concreta (guardar_para).
+               f"🔖 Guárdalo para {video.get('guardar_para') or 'cuando lo necesites'}.")
     # Instagram y TikTok buscan por las palabras del pie: el párrafo va completo en los dos.
     # A quién mandárselo, con nombre y apellido de situación: los envíos son lo que más reparte un reel (docs/VIRAL.md).
     mandar = (f"📩 Mándaselo a {video['mandar_a']}." if video.get('mandar_a')

@@ -229,5 +229,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Con la foto base de cuerpo entero (de pie, lejos), Wan hizo acercamiento aunque el prompt decía NO zoom, Capital salió del cuadro desde el segundo 5 y la cara quedó chica: qa_sync no pudo medir la boca (correlación 0.03-0.06). Whisper small oyó 'profedad' donde se dice 'Profedet' (medium sí lo oye bien) y los números con espacio ('15 .000') rompían la comparación.",
   "regla": "Foto base siempre de pecho para arriba, cara grande, Capital pegado a ella (en el sillón o junto a la silla), nunca de cuerpo entero. Si qa_audio marca un nombre propio raro, confirmarlo con Whisper medium antes de rechazar. texto.normaliza junta '15 .000'."
+ },
+ {
+  "fecha_utc": "2026-11-06T14:00:00Z",
+  "origen": "Estadísticas de Instagram que mandó Rodrigo (28 días)",
+  "tipo": "publicacion",
+  "aprendizaje": "786 vistas, 85 personas, 22 visitas al perfil; 0 guardados en 12 posts, 4 envíos, 0 toques al enlace de la bio. Salto de Reels 50-87% (Buffett 87%, Pareto 81.5%): casi todos se van en los primeros segundos. Carruseles en fotos: 91-97% de vistas de seguidores; Reels: 56-74% de no seguidores. Mismo tema en fotos y Reel el mismo día: las fotos ganaron en vistas 3 de 4.",
+  "regla": "El pie pide guardar con una razón concreta (guardar_para), no 'enlace en mi perfil'. Reels para llegar a gente nueva, con el número o la consecuencia en pantalla y en voz desde el segundo 1. Terminar las series que se prometen (aguinaldo 2/4 sale el 8-nov). Volver a pedir estas estadísticas el 20-nov para comparar salto, guardados y toques."
  }
 ]

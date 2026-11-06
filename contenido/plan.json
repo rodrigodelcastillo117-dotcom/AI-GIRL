@@ -1689,7 +1689,8 @@
     "foto": "QccVv7nDVZBS61FGeFkQ",
     "video": "UkWjvsrahe2UDfURRzpJ",
     "nota": "Sin árbol de Navidad: sale el 8-nov, todavía es temprano"
-   }
+   },
+   "guardar_para": "cuando te paguen el aguinaldo"
   },
   {
    "id": "18",
@@ -1760,7 +1761,8 @@
    "pregunta_comentarios": "¿Te pagaron el aguinaldo en tu finiquito?",
    "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
    "parte": "Serie Aguinaldo 2026 · parte 3 de 4",
-   "mandar_a": "quien renunció o cambió de trabajo este año"
+   "mandar_a": "quien renunció o cambió de trabajo este año",
+   "guardar_para": "cuando te paguen el aguinaldo"
   },
   {
    "id": "19",
@@ -2008,7 +2010,8 @@
    "guion_anterior": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "guardar_para": "cuando te paguen el aguinaldo"
   },
   {
    "id": "21",
