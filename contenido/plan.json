@@ -375,7 +375,7 @@
    }
   },
   {
-   "estado": "listo_para_publicar",
+   "estado": "programado",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "38",
@@ -465,6 +465,17 @@
      "fallas": []
     },
     "notas": "Wan 3.0 metió una frase inventada a los 7.0-9.3 s (\"tinkos en libos, la prótik contado\") justo después de \"el precio de contado:\". En vez de pagar otro video (760 créditos) se cortó ese tramo (corte de salto, normal en video de celular) y quedó 0.98 sin palabras de más. Voz 267 ms atrasada: se retrasó el video 0.27 s congelando el primer cuadro (recortar audio cortaba el \"Me\" de \"Meses\"); sincronía -33 ms, correlación 0.12. Capital en los 6 cuadros, sin logos (el de la laptop se borró de la foto base). naturalizar, subtítulos, título y cierre en pantalla."
+   },
+   "publica_utc_por_red": {
+    "ig": "2026-11-07T02:00:00Z",
+    "tt": "2026-11-06T21:00:00Z",
+    "yt": "2026-11-07T02:00:00Z"
+   },
+   "publica_utc": "2026-11-07T02:00:00Z",
+   "publicacion": {
+    "youtube": "https://youtube.com/shorts/3TJ3AGsHl6w",
+    "publer": "instagram y tiktok programados 6-nov",
+    "playlist": "finanzas"
    }
   },
   {
