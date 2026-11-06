@@ -43,18 +43,16 @@ def duracion(ruta):
 
 
 def voces_victoria(carpeta, voces):
-    """vozm-XX.mp3 de las frases que falten: la dice una voz mexicana nativa (Edge TTS, es-MX-DaliaNeural) y
-    voz_victoria.py la convierte al timbre de Victoria (Rodrigo, 4-nov-2026: el clon directo "se le complica México,
-    aguinaldo"; "arreglemos todo, lo más real posible"). Así la pronunciación es mexicana y la voz, la de Victoria."""
-    from guion_para_voz import para_voz  # nombres difíciles escritos como se dicen (config.json → pronunciacion)
+    """vozc-XX.mp3 de las frases que falten, con la voz clonada de Victoria (voz_victoria.py) y su revisión.
+    Las palabras difíciles van escritas como se pronuncian (config.json → pronunciacion, guion_para_voz.py).
+    Rodrigo (6-nov-2026): "no quiero voz nueva, quiero que pronuncie bien las palabras": se probó una voz mexicana
+    convertida al timbre de Victoria (4-nov) y se quitó; se queda su voz y se corrige la pronunciación."""
+    from guion_para_voz import para_voz
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
-    faltan = [{'texto': para_voz(t, config), 'salida': os.path.join(carpeta, f'vozm-{i:02d}.mp3'),
-               'base': os.path.join(carpeta, f'vozmx-{i:02d}.mp3')} for i, t in enumerate(voces)
-              if not os.path.exists(os.path.join(carpeta, f'vozm-{i:02d}.mp3'))]
+    faltan = [{'texto': para_voz(t, config), 'salida': os.path.join(carpeta, f'vozc-{i:02d}.mp3')}
+              for i, t in enumerate(voces) if not os.path.exists(os.path.join(carpeta, f'vozc-{i:02d}.mp3'))]
     if not faltan:
         return
-    for f in faltan:
-        asyncio.run(edge_tts.Communicate(f['texto'], VOZ, rate='+4%').save(f['base']))
     python = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
     if not os.path.exists(python):
         sys.exit(f'ERROR: no está el entorno de voz ({python}); prepáralo con el paso 0 de docs/PIPELINE.md.')
@@ -93,7 +91,7 @@ def tramos(c, horizontal=False, portada=None):
     if not edge:
         voces_victoria(carpeta, voces)
     for i, (hoja, texto) in enumerate(zip(hojas, voces)):
-        audio = os.path.join(carpeta, f'{"voz" if edge else "vozm"}-{i:02d}.mp3')
+        audio = os.path.join(carpeta, f'{"voz" if edge else "vozc"}-{i:02d}.mp3')
         if edge and not os.path.exists(audio):
             asyncio.run(edge_tts.Communicate(texto, VOZ, rate='+5%').save(audio))
         segundos = duracion(audio) + (AIRE if horizontal else AIRE_SHORT)

@@ -236,5 +236,12 @@
   "tipo": "publicacion",
   "aprendizaje": "786 vistas, 85 personas, 22 visitas al perfil; 0 guardados en 12 posts, 4 envíos, 0 toques al enlace de la bio. Salto de Reels 50-87% (Buffett 87%, Pareto 81.5%): casi todos se van en los primeros segundos. Carruseles en fotos: 91-97% de vistas de seguidores; Reels: 56-74% de no seguidores. Mismo tema en fotos y Reel el mismo día: las fotos ganaron en vistas 3 de 4.",
   "regla": "El pie pide guardar con una razón concreta (guardar_para), no 'enlace en mi perfil'. Reels para llegar a gente nueva, con el número o la consecuencia en pantalla y en voz desde el segundo 1. Terminar las series que se prometen (aguinaldo 2/4 sale el 8-nov). Volver a pedir estas estadísticas el 20-nov para comparar salto, guardados y toques."
+ },
+ {
+  "fecha_utc": "2026-11-06T18:20:00Z",
+  "origen": "Rodrigo: \"no quiero voz nueva. quiero que pronuncie bien las palabras\"",
+  "tipo": "regla",
+  "aprendizaje": "La voz mexicana convertida al timbre de Victoria (4-nov) no le gustó a Rodrigo. Los datos de Instagram del 6-nov los sacó de Muse, la IA de Meta.",
+  "regla": "Carruseles: siempre la voz clonada de Victoria (vozc). La pronunciación se arregla escribiendo las palabras como se dicen (config.json → pronunciacion), probando variantes que Rodrigo escucha y elige. No cambiar la voz sin que él la apruebe."
  }
 ]
