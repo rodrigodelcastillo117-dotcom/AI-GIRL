@@ -234,6 +234,7 @@ phone held by hand; NO zoom in, NO push-in. She looks into the lens and talks li
 herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, confident
 and warm, with clear
 accurate lip sync and the same voice as the audio reference. She says exactly these words and nothing else: "<python scripts/guion_para_voz.py <id>>"
+(guion_para_voz.py aplica config.json → pronunciacion y pronunciacion_wan: "aguinaldo" va como "aghinaldo" porque Wan decía "a-gu-i-naldo", 6-nov-2026.)
 Soft room ambience, no music. Photorealistic, cinematic, elegant, no text on screen, no
 subtitles, no logos.
 ```

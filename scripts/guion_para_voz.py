@@ -15,9 +15,13 @@ import sys
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def para_voz(guion, config):
+def para_voz(guion, config, wan=False):
+    """wan=True suma config.json → pronunciacion_wan (lo que solo la voz de los videos dice mal: "a-gu-i-naldo")."""
     texto = guion.replace(':', ',').replace(';', ',')
-    for escrito, dicho in (config.get('pronunciacion') or {}).items():
+    reglas = dict(config.get('pronunciacion') or {})
+    if wan:
+        reglas.update(config.get('pronunciacion_wan') or {})
+    for escrito, dicho in reglas.items():
         texto = re.sub(rf'\b{re.escape(escrito)}\b', dicho, texto)
     return texto
 
@@ -27,4 +31,4 @@ if __name__ == '__main__':
         sys.exit(__doc__)
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
-    print(para_voz(next(v for v in plan['videos'] if v['id'] == sys.argv[1])['guion'], config))
+    print(para_voz(next(v for v in plan['videos'] if v['id'] == sys.argv[1])['guion'], config, wan=True))

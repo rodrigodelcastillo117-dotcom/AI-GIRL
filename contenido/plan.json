@@ -1686,9 +1686,11 @@
    "parte": "Serie Aguinaldo 2026 · parte 2 de 4",
    "mandar_a": "tu compañero de trabajo que no sabe cuánto le toca",
    "openart": {
-    "foto": "QccVv7nDVZBS61FGeFkQ",
-    "video": "UkWjvsrahe2UDfURRzpJ",
-    "nota": "Sin árbol de Navidad: sale el 8-nov, todavía es temprano"
+    "foto": "4D1lcPQbdlpbMOvuNDhz (sentada, de pecho para arriba)",
+    "foto_descartada": "QccVv7nDVZBS61FGeFkQ (de cuerpo entero)",
+    "video": "suVgp4VJR5WDSfpxfS5M",
+    "video_descartado": "UkWjvsrahe2UDfURRzpJ (Capital salía del cuadro, zoom)",
+    "nota": "\"aghinaldo\" en el texto de Wan para que no diga a-gu-i-naldo"
    },
    "guardar_para": "cuando te paguen el aguinaldo"
   },
