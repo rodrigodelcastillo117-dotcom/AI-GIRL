@@ -375,7 +375,7 @@
    }
   },
   {
-   "estado": "programado",
+   "estado": "publicado",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "38",
@@ -475,7 +475,11 @@
    "publicacion": {
     "youtube": "https://youtube.com/shorts/3TJ3AGsHl6w",
     "publer": "instagram y tiktok programados 6-nov",
-    "playlist": "finanzas"
+    "playlist": "finanzas",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7705166038123498758?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "ig": "https://www.instagram.com/reel/DfbEBCmiamE/",
+    "yt": "https://youtube.com/shorts/3TJ3AGsHl6w",
+    "comentario_youtube": "UgyVTI8sNtog2kd_nDx4AaABAg"
    }
   },
   {

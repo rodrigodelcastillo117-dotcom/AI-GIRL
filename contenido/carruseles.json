@@ -722,24 +722,26 @@
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
-    "tt": "2026-11-06T15:00:00Z",
+    "tt": "2026-11-06T15:06:50Z",
     "yt": "2026-11-06T20:00:00Z"
    },
    "publica_utc": "2026-11-06T20:00:00Z",
    "youtube": "https://youtube.com/shorts/AO8W9KwN9EA",
-   "playlist": true
+   "playlist": true,
+   "comentario_youtube": "UgyoD0HNffTN0i1XPgZ4AaABAg"
   },
   {
    "id": "c09",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "afore_impuestos",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-01-jet.jpg",
     "etiqueta": "AFORE",
     "titulo": "Tu Afore puede bajarte impuestos: así funciona",
-    "voz": "Tu Afore te puede bajar impuestos. Así funciona."
+    "voz": "Tu Afore te puede bajar impuestos. Así funciona.",
+    "foto_reel": "assets/fotos/video-38-oficina.jpg"
    },
    "diapositivas": [
     {
@@ -803,7 +805,11 @@
      "¿Cómo hacer aportaciones voluntarias a mi Afore?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-07T23:00:00Z"
+   },
+   "publica_utc": "2026-11-07T23:00:00Z"
   },
   {
    "id": "c10",
