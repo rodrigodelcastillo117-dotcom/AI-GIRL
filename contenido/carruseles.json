@@ -1376,6 +1376,411 @@
     ]
    },
    "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet."
+  },
+  {
+   "id": "c17",
+   "estado": "listo",
+   "tema": "fondo_emergencia_ipab",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "FONDO DE EMERGENCIA",
+    "titulo": "Si gastas $15,000 al mes, necesitas $45,000 guardados",
+    "voz": "Si gastas quince mil al mes, necesitas por lo menos cuarenta y cinco mil guardados."
+   },
+   "diapositivas": [
+    {
+     "titulo": "De 3 a 6 meses",
+     "texto": "Tu fondo de emergencia debe cubrir de tres a seis meses de tus gastos. Si gastas $15,000 al mes: de $45,000 a $90,000.\n\nCondusef, Proteja su Dinero (sep-2024)",
+     "voz": "Tu fondo de emergencia debe cubrir de tres a seis meses de tus gastos."
+    },
+    {
+     "titulo": "Cuenta gastos, no sueldo",
+     "texto": "Suma tus gastos fijos y variables del mes. Si alguien depende de ti o tu ingreso cambia, como el de un freelance, guarda más.\n\nCondusef",
+     "voz": "Se calcula con lo que gastas, no con lo que ganas."
+    },
+    {
+     "titulo": "Aparte y a la mano",
+     "texto": "Guárdalo en una cuenta separada de la de diario, que puedas sacar rápido, con poco riesgo y con pocas o ninguna comisión.\n\nCondusef",
+     "voz": "Guárdalo aparte, en una cuenta que puedas sacar rápido."
+    },
+    {
+     "titulo": "Protegido hasta 400 mil UDIS",
+     "texto": "En un banco, tus cuentas de ahorro, nómina y cheques y tus pagarés tienen seguro del IPAB: hasta 400 mil UDIS por persona y por banco, más de $3 millones.\n\nIPAB · Condusef",
+     "voz": "En un banco, el Ipab protege tu dinero hasta cuatrocientas mil udis: más de tres millones de pesos."
+    },
+    {
+     "titulo": "Gratis y automático",
+     "texto": "No tienes que contratar el seguro del IPAB ni pagarlo. Ojo: tus cuentas en un mismo banco se suman para ese límite.\n\nIPAB · Condusef",
+     "voz": "Ese seguro es gratis y automático, y tus cuentas del mismo banco se suman."
+    },
+    {
+     "titulo": "Lo que no cubre el IPAB",
+     "texto": "Cajas de ahorro, Sofipos, cooperativas, aseguradoras, fondos de inversión, casas de bolsa y banca de desarrollo no tienen el seguro del IPAB.\n\nCondusef, Proteja su Dinero (sep-2024)",
+     "voz": "Ojo: las cajas de ahorro y las Sofipos no tienen el seguro del Ipab."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para tu próxima quincena.",
+    "texto": "Mándaselo a quien no tiene ni un mes guardado.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para tu próxima quincena y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, '¡Que tu cartera no dé el grito!' (1-sep-2024, revista.condusef.gob.mx/ahorro-general/2024/09/fondo-de-emergencia/): fondo equivalente a tres o seis meses de tus gastos mensuales, fijos y variables; con gastos de 15 mil pesos al mes, entre 45 mil y 90 mil; quienes tienen dependientes económicos o ingresos variables (freelancers) deben ahorrar más; guardarlo en una cuenta de una institución financiera, separada de las habituales, de fácil acceso, baja volatilidad y pocas o nulas comisiones. Condusef, revista Proteja su Dinero, 'Tus ahorros están a salvo' (sep-2024, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2024/09/ipab/): el seguro de depósito del IPAB protege hasta 400 mil UDIS por persona y por banco, aproximadamente $3,251,975 a junio de 2024; cubre cuentas de ahorro, de cheques, tarjetas de débito ligadas a cuentas, cuentas de nómina, pagarés con rendimiento liquidable al vencimiento y certificados de depósito; es gratuito y automático; no cubre depósitos en aseguradoras, cajas de ahorro, Sociedades Financieras Populares, cooperativas de ahorro y préstamo, sociedades de inversión, banca de desarrollo ni casas de bolsa. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab): hasta 400,000 UDIS por persona por institución; los saldos de varias cuentas en un mismo banco se suman para el límite. La UDI sube con la inflación, así que 400 mil UDIS siguen siendo más de 3 millones de pesos",
+   "titulo_post": "Fondo de emergencia: cuánto guardar y dónde",
+   "texto_post": "Fondo de emergencia: cuánto guardar y dónde para que esté protegido. 🛟\n1. De 3 a 6 meses de tus gastos (no de tu sueldo). Con $15,000 al mes, de $45,000 a $90,000.\n2. Si alguien depende de ti o tu ingreso cambia, guarda más.\n3. En una cuenta aparte, que puedas sacar rápido y con pocas comisiones.\n4. En un banco, el IPAB protege tus cuentas hasta 400 mil UDIS por persona y por banco (más de $3 millones), gratis y en automático.\n5. Cajas de ahorro, Sofipos y cooperativas no tienen el seguro del IPAB.\n\n📚 Condusef, Proteja su Dinero (sep-2024); IPAB.\n🔖 Guárdalo para tu próxima quincena.\n📩 Mándaselo a quien no tiene ni un mes guardado.",
+   "seo": {
+    "palabra_clave": "fondo de emergencia",
+    "titulo": "Fondo de emergencia de 3 a 6 meses 🛟",
+    "tags_concretas": [
+     "fondo de emergencia",
+     "cuanto debe tener un fondo de emergencia",
+     "donde guardar mi fondo de emergencia",
+     "seguro ipab",
+     "ipab 400 mil udis",
+     "cuenta de ahorro protegida",
+     "condusef fondo de emergencia",
+     "ahorro para emergencias",
+     "cajas de ahorro ipab",
+     "colchon financiero"
+    ],
+    "hashtags": [
+     "#fondodeemergencia",
+     "#ahorro",
+     "#ipab",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Cuánto dinero debo tener en mi fondo de emergencia?",
+     "¿Dónde guardo mi fondo de emergencia?",
+     "¿Hasta cuánto protege el IPAB mis ahorros?",
+     "¿El IPAB protege las cajas de ahorro?"
+    ]
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+  },
+  {
+   "id": "c18",
+   "estado": "listo",
+   "tema": "buro_de_credito",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-37-sala.jpg",
+    "etiqueta": "BURÓ DE CRÉDITO",
+    "titulo": "El Buró de Crédito no es una lista negra",
+    "voz": "El Buró de Crédito no es una lista negra. Esto es lo que sí es."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Es tu historial",
+     "texto": "Es una empresa privada que guarda cómo pagas tus créditos, a tiempo o tarde. Los bancos lo consultan para decidir si te prestan.\n\nCondusef",
+     "voz": "Es tu historial: cómo pagas tus créditos, a tiempo o tarde."
+    },
+    {
+     "titulo": "Gratis cada 12 meses",
+     "texto": "Tienes derecho a tu Reporte de Crédito Especial gratis cada 12 meses, si lo pides por correo electrónico o lo recoges en su oficina.\n\nLRSIC, art. 41",
+     "voz": "Puedes pedir tu reporte gratis una vez cada doce meses."
+    },
+    {
+     "titulo": "En 5 días hábiles",
+     "texto": "Te lo deben enviar o entregar en máximo cinco días hábiles desde que lo pides. Si ves un error, puedes reclamar.\n\nLRSIC, arts. 40 y 42",
+     "voz": "Te lo tienen que dar en cinco días hábiles, y si hay un error, reclamas."
+    },
+    {
+     "titulo": "Un atraso dura 6 años",
+     "texto": "Si dejas de pagar, el registro se borra 72 meses después de que se reportó el primer atraso. Si la deuda está en juicio, puede durar más.\n\nLRSIC, art. 23",
+     "voz": "Un atraso se borra a los seis años del primer incumplimiento."
+    },
+    {
+     "titulo": "Si debías poco, antes",
+     "texto": "Las deudas de hasta mil UDIS se borran antes: en uno, dos o cuatro años, según el monto.\n\nBanxico, Circular 27/2008 · Condusef",
+     "voz": "Si debías poco, se borra antes: en uno, dos o cuatro años."
+    },
+    {
+     "titulo": "Nadie te borra por dinero",
+     "texto": "Si te ofrecen sacarte del Buró a cambio de un pago, es fraude: eso no se puede hacer. Pagar con descuento tampoco borra el registro.\n\nCondusef",
+     "voz": "Y si alguien te cobra por borrarte del Buró, es fraude."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo antes de pedir tu próximo crédito.",
+    "texto": "Mándaselo a quien cree que está boletinado.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo antes de pedir tu próximo crédito y sígueme."
+   },
+   "fuente": "Condusef, '¿En cuánto tiempo me borran del Buró de Crédito?' (gob.mx/condusef/articulos/no-es-una-lista-negra, 12-oct-2016): el Buró de Crédito no es una lista negra; es una Sociedad de Información Crediticia, empresa privada que integra historiales con la información de quienes otorgan créditos, y los otorgantes lo consultan para decidir si prestan; deudas de hasta 25 UDIS se eliminan después de 1 año, de más de 25 y hasta 500 UDIS después de 2, de más de 500 y hasta 1,000 UDIS después de 4, y de más de 1,000 UDIS después de 6 años (si son menores a 400 mil UDIS, sin juicio ni fraude); ofrecen borrarte del Buró a cambio de dinero y eso no se puede hacer; pagar con descuento no borra el registro. Ley para Regular las Sociedades de Información Crediticia (diputados.gob.mx, última reforma DOF 24-01-2024): art. 23 (el incumplimiento se elimina después de 72 meses de haberse incorporado por primera vez; excepción mientras el adeudo esté en juicio; los créditos menores a mil UDIS se eliminan en los términos que fije Banxico), art. 40 (entrega del Reporte de Crédito Especial en cinco días hábiles), art. 41 (envío gratuito cada vez que transcurran doce meses, por correo electrónico o recogiéndolo en la unidad especializada), art. 42 (reclamación si no estás conforme). Banxico, Circular 27/2008, regla decimocuarta: hasta 25 UDIS, 12 meses; más de 25 y hasta 500 UDIS, 24 meses; más de 500 y hasta 1,000 UDIS, 48 meses, contados desde el primer incumplimiento o la última actualización",
+   "titulo_post": "Buró de Crédito: qué es y cuánto dura un atraso",
+   "texto_post": "Buró de Crédito: qué es, cómo ver tu reporte gratis y cuánto dura un atraso. 📋\n1. No es una lista negra: es tu historial de cómo pagas tus créditos.\n2. Tu Reporte de Crédito Especial es gratis cada 12 meses (por correo electrónico o en su oficina) y te lo dan en 5 días hábiles.\n3. Un atraso se borra a los 72 meses (6 años) de que se reportó; si la deuda está en juicio, puede durar más.\n4. Si la deuda era de hasta mil UDIS, se borra en 1, 2 o 4 años según el monto.\n5. Nadie puede borrarte a cambio de dinero: es fraude.\n\n📚 LRSIC, arts. 23, 40, 41 y 42; Banxico, Circular 27/2008; Condusef.\n🔖 Guárdalo para cuando pidas tu próximo crédito.\n📩 Mándaselo a quien cree que está boletinado.",
+   "seo": {
+    "palabra_clave": "buró de crédito",
+    "titulo": "Buró de Crédito, cuánto dura un atraso 📋",
+    "tags_concretas": [
+     "buro de credito",
+     "reporte de credito especial gratis",
+     "cuanto tiempo dura una deuda en buro de credito",
+     "como salir del buro de credito",
+     "buro de credito lista negra",
+     "borrar buro de credito fraude",
+     "historial crediticio",
+     "consultar buro de credito",
+     "reclamacion buro de credito",
+     "condusef buro de credito"
+    ],
+    "hashtags": [
+     "#burodecredito",
+     "#historialcrediticio",
+     "#deudas",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Cuánto tiempo dura una deuda en el Buró de Crédito?",
+     "¿Cómo saco mi reporte de Buró de Crédito gratis?",
+     "¿Alguien me puede borrar del Buró de Crédito?",
+     "¿El Buró de Crédito es una lista negra?"
+    ]
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+  },
+  {
+   "id": "c19",
+   "estado": "listo",
+   "tema": "apps_prestamo_cat",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-19-sillon.jpg",
+    "etiqueta": "APPS DE PRÉSTAMO",
+    "titulo": "Si una app te cobra antes de prestarte, es señal de fraude",
+    "voz": "Si una app te cobra antes de prestarte, es señal de fraude."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Búscala en el SIPRES",
+     "texto": "Antes de pedir, revisa que la empresa esté registrada en el SIPRES de Condusef. Si no aparece, es señal de alerta.\n\nCondusef, Proteja su Dinero (jul-2026)",
+     "voz": "Primero, búscala en el Sípres de Condusef."
+    },
+    {
+     "titulo": "Nada por adelantado",
+     "texto": "Si te pide dinero para “liberar” el préstamo, por seguro, comisión o gestión, no lo des.\n\nCondusef",
+     "voz": "Si te piden dinero para liberar el préstamo, no lo des."
+    },
+    {
+     "titulo": "Cuidado con los permisos",
+     "texto": "Si pide acceso que no necesita a tus contactos, fotos o micrófono, es señal de alerta. Bájala solo de tiendas oficiales.\n\nCondusef, Proteja su Dinero (jul-2026)",
+     "voz": "Si pide tus contactos o tus fotos sin necesitarlos, es señal de alerta."
+    },
+    {
+     "titulo": "Compara el CAT",
+     "texto": "El Costo Anual Total junta en un porcentaje anual los intereses, comisiones y seguros obligatorios. Sirve para comparar créditos entre sí.\n\nBanxico",
+     "voz": "Para comparar, fíjate en el Cat: junta intereses, comisiones y seguros."
+    },
+    {
+     "titulo": "El más bajo que puedas pagar",
+     "texto": "Banxico dice: busca el CAT más bajo entre los créditos que se ajusten a lo que necesitas y puedes pagar. Ojo: se calcula sin IVA.\n\nBanxico",
+     "voz": "Elige el Cat más bajo que puedas pagar, y recuerda que va sin IVA."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo antes de pedir prestado por el celular.",
+    "texto": "Mándaselo a quien está por bajar una app de préstamos.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo antes de pedir prestado y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Créditos desde el celular' (1-jul-2026, revista.condusef.gob.mx/destacados-del-mes/2026/07/creditos-desde-el-celular/): revisar que cuente con registro en el SIPRES de la CONDUSEF; señales de alerta: no aparece registrada en el SIPRES, pide dinero por adelantado para liberar el préstamo, solicita acceso innecesario a contactos, fotos o micrófono, no explica claramente intereses, comisiones o el monto total, presiona para aceptar de inmediato; descargar solo de tiendas oficiales, leer contrato y aviso de privacidad, comparar el CAT. Condusef (búsqueda en condusef.gob.mx, alertas de fraude): no proporciones dinero antes del otorgamiento de un crédito, ya sea por seguro, comisión, gestión o cualquier otro gasto. Banxico, Calculadora del CAT (banxico.org.mx/CAT): medida estandarizada del costo de financiamiento en porcentaje anual que incorpora la totalidad de los costos y gastos inherentes a los créditos, para fines informativos y de comparación; desde el 17-nov-2009 se calcula sin IVA. Banxico, 'Crédito y Costo Anual Total' (banxico.org.mx/sistema-financiero): el CAT incluye intereses ordinarios, comisiones, cargos y primas de seguros requeridas para el otorgamiento del crédito; es el indicador más importante para comparar el costo de los créditos; se debe buscar y seleccionar el CAT más bajo de aquel crédito que sea acorde con las necesidades y la capacidad de pago; se excluye el IVA",
+   "titulo_post": "Apps de préstamo: revisa esto antes de pedir",
+   "texto_post": "Apps de préstamo: 3 señales de alerta y cómo comparar con el CAT antes de pedir. 📱\n1. Busca a la empresa en el SIPRES de Condusef (webapps.condusef.gob.mx/SIPRES). Si no aparece, es señal de alerta.\n2. Si te pide dinero para “liberar” el préstamo, no lo des.\n3. Si pide tus contactos, fotos o micrófono sin necesitarlos, aléjate. Bájala solo de tiendas oficiales.\n4. Compara el CAT: junta intereses, comisiones y seguros obligatorios en un porcentaje anual (sin IVA).\n5. Banxico: busca el CAT más bajo entre los créditos que puedes pagar.\n\n📚 Condusef, Proteja su Dinero (jul-2026); Banxico.\n🔖 Guárdalo para la próxima vez que te ofrezcan un préstamo por el celular.\n📩 Mándaselo a quien está por bajar una app de préstamos.",
+   "seo": {
+    "palabra_clave": "apps de préstamo",
+    "titulo": "Apps de préstamo y el CAT antes de pedir 📱",
+    "tags_concretas": [
+     "apps de prestamo",
+     "apps de prestamo fraudulentas",
+     "como saber si una app de prestamo es segura",
+     "sipres condusef",
+     "montadeudas",
+     "que es el cat",
+     "costo anual total",
+     "comparar creditos",
+     "prestamos por celular",
+     "prestamo con anticipo fraude"
+    ],
+    "hashtags": [
+     "#prestamos",
+     "#fraudes",
+     "#condusef",
+     "#credito"
+    ],
+    "preguntas": [
+     "¿Cómo sé si una app de préstamos es confiable?",
+     "¿Qué es el CAT de un crédito?",
+     "¿Cómo reviso si una financiera está registrada en Condusef?",
+     "¿Es normal que me pidan un pago para liberar un préstamo?"
+    ]
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+  },
+  {
+   "id": "c20",
+   "estado": "listo",
+   "tema": "incapacidad_imss",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-38-oficina.jpg",
+    "etiqueta": "INCAPACIDAD IMSS",
+    "titulo": "Si te enfermas, el IMSS te paga solo el 60%",
+    "voz": "Si te enfermas y te incapacitan, el Seguro Social te paga solo el sesenta por ciento."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Enfermedad general: 60%",
+     "texto": "Si te enfermas de algo que no es del trabajo, el IMSS te paga el 60% de tu último salario diario de cotización.\n\nLSS, art. 98",
+     "voz": "Por enfermedad general te pagan el sesenta por ciento de tu salario de cotización."
+    },
+    {
+     "titulo": "Desde el cuarto día",
+     "texto": "Ese pago empieza el cuarto día de tu incapacidad y dura hasta 52 semanas; con dictamen del IMSS, hasta 26 semanas más.\n\nLSS, art. 96",
+     "voz": "Y empieza hasta el cuarto día de tu incapacidad."
+    },
+    {
+     "titulo": "4 semanas cotizadas",
+     "texto": "Para cobrarlo necesitas al menos cuatro semanas cotizadas justo antes de enfermarte. Si eres eventual, seis en los últimos cuatro meses.\n\nLSS, art. 97",
+     "voz": "Necesitas al menos cuatro semanas cotizadas antes de enfermarte."
+    },
+    {
+     "titulo": "Del trabajo: 100%",
+     "texto": "Si es un accidente o una enfermedad de trabajo, recibes el 100% de tu salario de cotización desde el primer día, sin semanas mínimas.\n\nLSS, art. 58 · IMSS",
+     "voz": "Si fue por tu trabajo, te pagan el cien por ciento desde el primer día."
+    },
+    {
+     "titulo": "Maternidad: 84 días al 100%",
+     "texto": "42 días antes y 42 después del parto, con el 100% de tu último salario de cotización. Necesitas 30 semanas cotizadas en los últimos 12 meses.\n\nLSS, arts. 101 y 102",
+     "voz": "Y por maternidad, ochenta y cuatro días al cien por ciento."
+    },
+    {
+     "titulo": "Todo sale de tu salario registrado",
+     "texto": "Se calcula con el salario con el que tu patrón te registró en el IMSS. Si te registran con menos, cobras menos.\n\nIMSS · LSS",
+     "voz": "Todo sale del salario con el que te registraron: si es menos, cobras menos."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo antes de que lo necesites.",
+    "texto": "Mándaselo a quien está embarazada o acaba de entrar a trabajar.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo antes de que lo necesites y sígueme."
+   },
+   "fuente": "Ley del Seguro Social (diputados.gob.mx, texto vigente, última reforma DOF 15-01-2026): art. 58, fr. I (riesgo de trabajo: cien por ciento del salario en que estuviese cotizando mientras dure la inhabilitación), art. 96 (enfermedad no profesional: subsidio a partir del cuarto día del inicio de la incapacidad, hasta 52 semanas, prorrogable hasta 26 semanas más previo dictamen), art. 97 (cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad; eventuales, seis en los últimos cuatro meses), art. 98 (sesenta por ciento del último salario diario de cotización), art. 101 (maternidad: cien por ciento del último salario diario de cotización durante 42 días anteriores y 42 posteriores al parto; certificado único de 84 días a solicitud), art. 102 (treinta cotizaciones semanales en los doce meses anteriores). IMSS, comunicado 'Incapacidad Temporal de Trabajo del IMSS...' (gob.mx/imss, 15-dic-2021): riesgo de trabajo paga el 100% del salario registrado ante el IMSS desde el primer día y no requiere semanas cotizadas; enfermedad general paga el 60% del salario registrado a partir del cuarto día",
+   "titulo_post": "Incapacidad IMSS: cuánto te pagan",
+   "texto_post": "Incapacidad IMSS: cuánto te pagan si te enfermas, si te accidentas en el trabajo o por maternidad. 🏥\n1. Enfermedad general: 60% de tu último salario de cotización, desde el cuarto día y hasta 52 semanas (26 más con dictamen).\n2. Necesitas 4 semanas cotizadas justo antes (eventuales: 6 en los últimos 4 meses).\n3. Riesgo de trabajo: 100% desde el primer día, sin semanas mínimas.\n4. Maternidad: 84 días (42 antes y 42 después del parto) al 100%, con 30 semanas cotizadas en los últimos 12 meses.\n5. Todo se calcula con el salario con el que te registraron en el IMSS.\n\n📚 Ley del Seguro Social, arts. 58, 96, 97, 98, 101 y 102; IMSS.\n🔖 Guárdalo para el día que te den una incapacidad.\n📩 Mándaselo a quien está embarazada o acaba de entrar a trabajar.",
+   "seo": {
+    "palabra_clave": "incapacidad IMSS",
+    "titulo": "Incapacidad IMSS, cuánto te pagan 🏥",
+    "tags_concretas": [
+     "incapacidad imss",
+     "cuanto paga el imss por incapacidad",
+     "incapacidad por enfermedad general 60%",
+     "incapacidad por riesgo de trabajo",
+     "incapacidad por maternidad imss",
+     "subsidio por incapacidad",
+     "semanas cotizadas incapacidad",
+     "incapacidad desde el cuarto dia",
+     "ley del seguro social articulo 98",
+     "salario base de cotizacion"
+    ],
+    "hashtags": [
+     "#imss",
+     "#incapacidad",
+     "#derechoslaborales",
+     "#segurosocial"
+    ],
+    "preguntas": [
+     "¿Cuánto me paga el IMSS si estoy incapacitado?",
+     "¿Desde qué día paga el IMSS la incapacidad?",
+     "¿Cuántas semanas cotizadas necesito para una incapacidad por maternidad?",
+     "¿Cuánto paga el IMSS por un accidente de trabajo?"
+    ]
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+  },
+  {
+   "id": "c21",
+   "estado": "listo",
+   "tema": "cetes_que_son",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "portada": {
+    "foto": "assets/fotos/yate-blazer-blanco.jpg",
+    "etiqueta": "CETES",
+    "titulo": "Con $100 ya le puedes prestar al gobierno",
+    "voz": "Con cien pesos ya le puedes prestar al gobierno. Se llama comprar Cetes."
+   },
+   "diapositivas": [
+    {
+     "titulo": "Qué son los Cetes",
+     "texto": "Certificados de la Tesorería de la Federación: títulos en pesos que emite el gobierno de México. Al comprarlos, le prestas tu dinero.\n\ncetesdirecto",
+     "voz": "Los Cetes son títulos en pesos que emite el gobierno de México."
+    },
+    {
+     "titulo": "Cómo se gana",
+     "texto": "Los compras con descuento y, al vencer, te pagan su valor de $10 por título. Tu ganancia es la diferencia.\n\ncetesdirecto",
+     "voz": "Los compras con descuento y al vencer te pagan diez pesos por título."
+    },
+    {
+     "titulo": "Desde $100, sin comisiones",
+     "texto": "En cetesdirecto, la plataforma de Nacional Financiera, empiezas con $100 y no cobra comisiones. Tu banco sí puede cobrarte la transferencia.\n\ncetesdirecto · Nafin",
+     "voz": "En Cetesdirecto empiezas con cien pesos y no te cobran comisiones."
+    },
+    {
+     "titulo": "De 28 a 728 días",
+     "texto": "En cetesdirecto hay Cetes a 28, 91, 182, 364 y 728 días, o sea, de un mes a unos dos años. Al vencer, puedes reinvertir en automático.\n\ncetesdirecto",
+     "voz": "Hay Cetes desde un mes hasta unos dos años."
+    },
+    {
+     "titulo": "Qué necesitas",
+     "texto": "Ser mayor de 18, tu INE, CURP y RFC, y la CLABE de una cuenta bancaria a tu nombre en México.\n\ncetesdirecto",
+     "voz": "Necesitas ser mayor de edad y una cuenta de banco a tu nombre."
+    },
+    {
+     "titulo": "Sí pagan impuesto",
+     "texto": "Si ganas, se te retiene ISR, y cetesdirecto reporta tus intereses al SAT.\n\ncetesdirecto",
+     "voz": "Y si ganas, se te retiene impuesto."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para cuando te hablen de Cetes.",
+    "texto": "Es información, no una recomendación de inversión.\nMándaselo a quien siempre pregunta qué son los Cetes.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para cuando te hablen de Cetes y sígueme."
+   },
+   "fuente": "cetesdirecto, 'Preguntas frecuentes' (cetesdirecto.com/sites/portal/preguntasfrecuentes.cetesdirecto): los Cetes son Certificados de la Tesorería de la Federación, instrumentos en pesos que emite el gobierno mexicano; se compran con descuento y la ganancia es la diferencia entre lo pagado y su valor nominal al vencimiento, de 10 pesos; se invierte desde 100 pesos (Ahorro Recurrente y domiciliación desde 300 pesos, reglas 2024); no cobra comisiones por manejo de cuenta ni por transacciones (cada SPEI puede tener costo según tu banco); los Cetes se emiten a plazos cercanos a 1 mes (típicamente 28 días), tres meses, seis meses y un año; reinversión automática al vencimiento en Cetes de 28 días; requisitos: mayor de 18 años, CLABE de una cuenta bancaria propia en México, INE, CURP y RFC; el ISR se retiene solo cuando hay ganancias y cetesdirecto reporta los intereses pagados a la autoridad. Nacional Financiera, 'Cetesdirecto' (gob.mx/nafin/acciones-y-programas/cetesdirecto-204296): plataforma en internet para que cualquier persona adquiera valores gubernamentales sin intermediarios, operada por Nacional Financiera; se pueden comprar títulos desde $100; es gratuita y no cobra comisiones. cetesdirecto, 'Productos' (cetesdirecto.com/sites/portal/productos.cetesdirecto): los cetes tienen plazos disponibles de 28, 91, 182, 364 y 728 días",
+   "titulo_post": "Cetes: qué son y desde cuánto",
+   "texto_post": "Cetes: qué son, cómo se gana y qué necesitas para comprarlos en cetesdirecto. 💵\n1. Son Certificados de la Tesorería de la Federación: títulos en pesos que emite el gobierno de México.\n2. Los compras con descuento y al vencer te pagan $10 por título; tu ganancia es la diferencia.\n3. En cetesdirecto (Nacional Financiera) empiezas con $100 y no cobra comisiones.\n4. Hay plazos de 28, 91, 182, 364 y 728 días.\n5. Necesitas ser mayor de 18, INE, CURP, RFC y una cuenta bancaria a tu nombre.\n6. Si ganas, se te retiene ISR.\n\nEs información, no una recomendación de inversión.\n📚 cetesdirecto; Nacional Financiera.\n🔖 Guárdalo para cuando te hablen de Cetes.\n📩 Mándaselo a quien siempre pregunta qué son los Cetes.",
+   "seo": {
+    "palabra_clave": "cetes",
+    "titulo": "Cetes desde 100 pesos, qué son 💵",
+    "tags_concretas": [
+     "cetes",
+     "que son los cetes",
+     "cetes desde 100 pesos",
+     "cetesdirecto",
+     "como comprar cetes",
+     "plazos de cetes",
+     "cetes 28 91 182 364 728 dias",
+     "requisitos cetesdirecto",
+     "cetes pagan isr",
+     "nacional financiera cetes"
+    ],
+    "hashtags": [
+     "#cetes",
+     "#cetesdirecto",
+     "#ahorro",
+     "#educacionfinanciera"
+    ],
+    "preguntas": [
+     "¿Qué son los Cetes y cómo funcionan?",
+     "¿Con cuánto dinero puedo empezar en cetesdirecto?",
+     "¿Qué necesito para abrir una cuenta en cetesdirecto?",
+     "¿Los Cetes pagan impuestos?"
+    ]
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
   }
  ]
 }
