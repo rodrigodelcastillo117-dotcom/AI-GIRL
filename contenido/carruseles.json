@@ -1207,16 +1207,17 @@
    "estado": "listo",
    "tema": "aguinaldo_no_pagado",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/cocina.jpg",
    "ventana": {
     "desde": "2026-12-10",
     "hasta": "2027-01-31"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-02-palco.jpg",
     "etiqueta": "AGUINALDO",
     "titulo": "Si no te pagan tu aguinaldo, haz esto",
-    "voz": "Si no te pagan tu aguinaldo, haz esto."
+    "voz": "Si no te pagan tu aguinaldo, haz esto.",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg"
    },
    "diapositivas": [
     {
@@ -1236,7 +1237,7 @@
     },
     {
      "titulo": "PROFEDET, gratis",
-     "texto": "Si no te pagan, PROFEDET te orienta, concilia y representa gratis. Llama al 800-717-2942.\n\nPROFEDET",
+     "texto": "Si no te pagan, PROFEDET te orienta, concilia y representa gratis. Búscala en gob.mx/profedet.\n\nPROFEDET",
      "voz": "Si no te pagan, llama a PROFEDET: es gratis."
     },
     {
@@ -1257,7 +1258,7 @@
    },
    "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 87 (antes del 20 de diciembre, mínimo 15 días de salario; parte proporcional aunque ya no se labore), art. 516 (un año para reclamar), art. 992 (multas con la UMA vigente al cometerse la violación), art. 1002 (multa de 50 a 5000 UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): un año a partir del 20 de diciembre; despedidos y quienes renuncian reciben la parte proporcional; multa del art. 1002. PROFEDET (gob.mx, '¿Aún no recibes tu aguinaldo?'): orientación, asesoría, conciliación y representación jurídica gratuitas; 800 911 7877 y 800 717 2942. Conasami: salario mínimo general 2026 de $315.04 diarios (15 días = $4,725.60). INEGI: UMA diaria 2026 de $117.31 (50 UMA = $5,865.50; 5000 UMA = $586,550)",
    "titulo_post": "Aguinaldo no pagado: qué hacer",
-   "texto_post": "Aguinaldo no pagado: qué hacer si no llega antes del 20 de diciembre. 🎁\nTe lo deben pagar antes del 20 (mínimo quince días de salario), te toca lo proporcional aunque ya no trabajes ahí, y PROFEDET te asesora y representa gratis. Tienes un año para reclamarlo.\n\nLlama a PROFEDET: 800-717-2942.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien todavía no ve su aguinaldo.",
+   "texto_post": "Aguinaldo no pagado: qué hacer si no llega antes del 20 de diciembre. 🎁\nTe lo deben pagar antes del 20 (mínimo quince días de salario), te toca lo proporcional aunque ya no trabajes ahí, y PROFEDET te asesora y representa gratis. Tienes un año para reclamarlo.\n\nBusca a PROFEDET (gratis) en gob.mx/profedet.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien todavía no ve su aguinaldo.",
    "seo": {
     "palabra_clave": "aguinaldo no pagado",
     "titulo": "Aguinaldo no pagado, qué hacer en 2026 🎁",
@@ -1290,7 +1291,7 @@
   },
   {
    "id": "c16",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "aguinaldo_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/rincon-lectura.jpg",
@@ -1308,7 +1309,7 @@
    "diapositivas": [
     {
      "titulo": "La fecha límite",
-     "texto": "Antes del 20 de diciembre. Como el 20 cae en domingo, a más tardar el sábado 19.\n\nLFT, art. 87",
+     "texto": "Tu empresa debe pagártelo antes del 20 de diciembre: en 2026, a más tardar el sábado 19.\n\nLFT, art. 87",
      "voz": "Primero: te lo deben pagar antes del veinte de diciembre, a más tardar el sábado diecinueve."
     },
     {
@@ -1323,8 +1324,8 @@
     },
     {
      "titulo": "Si no te pagan: PROFEDET",
-     "texto": "PROFEDET te orienta, te acompaña a conciliar y te representa en juicio, gratis. Llama al 079, la línea del Gobierno de México.\n\nPROFEDET",
-     "voz": "Cuarto: si no te pagan, llama a PROFEDET al cero siete nueve. Es gratis."
+     "texto": "PROFEDET te orienta, te acompaña a conciliar y te representa en juicio, gratis. Búscala en gob.mx/profedet.\n\nPROFEDET",
+     "voz": "Cuarto: si no te pagan, PROFEDET te ayuda gratis."
     },
     {
      "titulo": "Un año para reclamar",
@@ -1337,9 +1338,9 @@
     "texto": "Mándaselo a quien cobra aguinaldo por primera vez.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
     "voz": "Guárdalo para el veinte de diciembre y sígueme."
    },
-   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026): art. 87 (aguinaldo antes del día veinte de diciembre, de quince días de salario por lo menos; parte proporcional al tiempo trabajado aunque ya no se labore en la fecha de pago), art. 516 (las acciones de trabajo prescriben en un año desde el día siguiente a que la obligación es exigible). El 20 de diciembre de 2026 cae en domingo: antes del 20 = a más tardar el sábado 19. Ley del ISR (diputados.gob.mx, última reforma DOF 01-04-2024): art. 93 fracc. XIV (gratificaciones anuales exentas hasta 30 días; desde la desindexación de 2016 se cuentan en UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): el aguinaldo no paga impuestos hasta el equivalente a 30 días de UMA. INEGI (comunicado 1/26, 8-ene-2026): UMA diaria de $117.31 desde el 1 de febrero de 2026; 30 UMA = $3,519.30. PROFEDET (gob.mx, 'Preguntas frecuentes Aguinaldo 2025', noviembre 2025): orientación, asesoría, acompañamiento en la conciliación y representación en juicio gratuitas; atención telefónica en el CISSEL al 079, línea del Gobierno de México; plazo para reclamar de un año a partir del 20 de diciembre",
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026): art. 87 (aguinaldo antes del día veinte de diciembre, de quince días de salario por lo menos; parte proporcional al tiempo trabajado aunque ya no se labore en la fecha de pago), art. 516 (las acciones de trabajo prescriben en un año desde el día siguiente a que la obligación es exigible). El 20 de diciembre de 2026 cae en domingo: antes del 20 = a más tardar el sábado 19. Ley del ISR (diputados.gob.mx, última reforma DOF 01-04-2024): art. 93 fracc. XIV (gratificaciones anuales exentas hasta 30 días; desde la desindexación de 2016 se cuentan en UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): el aguinaldo no paga impuestos hasta el equivalente a 30 días de UMA. INEGI (comunicado 1/26, 8-ene-2026): UMA diaria de $117.31 desde el 1 de febrero de 2026; 30 UMA = $3,519.30. PROFEDET (gob.mx, 'Preguntas frecuentes Aguinaldo 2025', noviembre 2025): orientación, asesoría, acompañamiento en la conciliación y representación en juicio gratuitas; plazo para reclamar de un año a partir del 20 de diciembre",
    "titulo_post": "Aguinaldo 2026 en 5 datos para guardar",
-   "texto_post": "Aguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️\n1. Te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Mínimo 15 días de salario; si no completaste el año, la parte proporcional.\n3. Los primeros $3,519.30 no pagan ISR (30 UMA de 2026).\n4. Si no te pagan, PROFEDET te asesora y representa gratis: llama al 079.\n5. Tienes un año para reclamarlo, contado desde el 20 de diciembre.\n\n📚 LFT, arts. 87 y 516; LISR, art. 93 fracc. XIV; UMA 2026 (INEGI); PROFEDET.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien cobra aguinaldo por primera vez.",
+   "texto_post": "Aguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️\n1. Te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Mínimo 15 días de salario; si no completaste el año, la parte proporcional.\n3. Los primeros $3,519.30 no pagan ISR (30 UMA de 2026).\n4. Si no te pagan, PROFEDET te ayuda gratis: gob.mx/profedet.\n5. Tienes un año para reclamarlo, contado desde el 20 de diciembre.\n\n📚 LFT, arts. 87 y 516; LISR, art. 93 fracc. XIV; UMA 2026 (INEGI); PROFEDET.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien cobra aguinaldo por primera vez.",
    "seo": {
     "palabra_clave": "aguinaldo 2026",
     "titulo": "Aguinaldo 2026 en 5 datos para guardar 🔖",
@@ -1367,7 +1368,8 @@
      "¿Cómo calculo mi aguinaldo proporcional?",
      "¿Hasta cuándo puedo reclamar mi aguinaldo?"
     ]
-   }
+   },
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet."
   }
  ]
 }
