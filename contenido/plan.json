@@ -1728,7 +1728,7 @@
   },
   {
    "id": "18",
-   "estado": "pendiente",
+   "estado": "en_proceso",
    "pilar": "finanzas",
    "guion": "¿Renunciaste este año? También te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí: tu sueldo diario, por quince, entre trescientos sesenta y cinco, por los días que trabajaste. Revisa que venga en tu finiquito.",
    "subtitulos": [
@@ -1796,7 +1796,12 @@
    "guion_anterior": "Si renunciaste este año, también te toca aguinaldo. La ley te da la parte proporcional aunque ya no trabajes ahí. Revisa que venga en tu finiquito.",
    "parte": "Serie Aguinaldo 2026 · parte 3 de 4",
    "mandar_a": "quien renunció o cambió de trabajo este año",
-   "guardar_para": "cuando te paguen el aguinaldo"
+   "guardar_para": "el día que renuncies",
+   "openart": {
+    "foto": "uDtLuGBN0klse5UBiVkz",
+    "video": "hkcYFfaWFXFAxW752xuT",
+    "nota": "con instruccion_pronunciacion_wan"
+   }
   },
   {
    "id": "19",
