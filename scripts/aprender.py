@@ -902,6 +902,18 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
         if alcanzan < 7:
             dias = alcanzan * config.get('dias_entre_videos', 2)
             lista.append(f'Créditos para {alcanzan} videos (unos {dias} días al ritmo actual). Recargar OpenArt.')
+    prueba = config.get('prueba_voz_intima')
+    if prueba:  # Rodrigo, 7-nov-2026: voz cálida e íntima; se decide con datos
+        intimos = sorted((v for v in plan['videos'] if v.get('voz') == 'intima' and v['estado'] == 'publicado'
+                          and v.get('publica_utc')), key=lambda v: v['publica_utc'])
+        if len(intimos) >= prueba.get('videos', 3):
+            ultimo = datetime.date.fromisoformat(intimos[prueba.get('videos', 3) - 1]['publica_utc'][:10])
+            if (hoy - ultimo).days >= 3:
+                lista.append('Prueba de voz íntima lista para evaluar: compara ' + ', '.join(v['id'] for v in intimos)
+                             + ' contra ' + ', '.join(prueba['comparar_con']) + ' (porcentaje visto, guardados, '
+                             'comentarios, visitas al perfil) y decide con Rodrigo si se queda.')
+        else:
+            lista.append(f"Prueba de voz íntima: {len(intimos)} de {prueba.get('videos', 3)} videos publicados.")
     fallas = [e for e in orden[-5:] if e['resultado'] == 'fallido']
     if len(fallas) >= 2:
         lista.append(f'{len(fallas)} de las últimas 5 ejecuciones fallaron: revisar antes de gastar más créditos.')

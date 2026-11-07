@@ -264,5 +264,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Con instruccion_pronunciacion_wan, Wan dijo \"aguinaldo\" bien a la primera (fonemas: a ɣ i n a l d o). Whisper lo transcribe \"a Guinaldo\" y qa_audio lo marca como no entendido aunque está bien dicho.",
   "regla": "Si qa_audio solo falla por \"aguinaldo\" y Whisper oye \"a Guinaldo\", decide con scripts/fonemas.py: \"a ɡ i\" o \"a ɣ i\" aprueba; \"a ɣ w i\" (u sonada) o \"a x i\" (j) reprueba."
+ },
+ {
+  "fecha_utc": "2026-11-07T14:30:00Z",
+  "origen": "Rodrigo",
+  "tipo": "contenido",
+  "aprendizaje": "Rodrigo pidió que Victoria hable \"más sensual, eso vende más\". Acordado: cálida e íntima, no seductora (lo sugerente pierde recomendación a no seguidores en Instagram y TikTok y choca con la credibilidad de un tema de dinero).",
+  "regla": "Prompt de Wan con config.json → tono_voz_wan y \"voz\": \"intima\" en el plan. Prueba de 3 videos contra 17, 18, 37 y 38; se queda solo si gana en porcentaje visto, guardados o comentarios. Nada de voz susurrada o coqueta."
  }
 ]

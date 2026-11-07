@@ -398,5 +398,25 @@
  "nota_pronunciacion": "4-nov-2026 (Rodrigo: \"se le complica México, aguinaldo\"): así se le escribe a Wan y a la voz de los carruseles lo que pronuncia mal. Si qa_audio dice \"no se entiende X\", agregar X aquí con su forma dicha y volver a generar.",
  "pronunciacion_wan": {},
  "nota_pronunciacion_wan": "6-nov-2026: con \"aguinaldo\" Wan decía a-ɣ-w-i-naldo (suena la u); con \"aghinaldo\" dijo \"ajinado\". Lo que funcionó (prueba con reconocedor de fonemas): escribir \"aguinaldo\" normal y poner en el prompt instruccion_pronunciacion_wan. Verificar siempre con scripts/fonemas.py.",
- "instruccion_pronunciacion_wan": "The Spanish word aguinaldo is always pronounced with a SILENT u and a hard g, exactly like the English sounds 'ah-ghee-NAHL-doh' (g as in 'go', never like a j, never sounding the u)."
+ "instruccion_pronunciacion_wan": "The Spanish word aguinaldo is always pronounced with a SILENT u and a hard g, exactly like the English sounds 'ah-ghee-NAHL-doh' (g as in 'go', never like a j, never sounding the u).",
+ "tono_voz_wan": "in a warm, intimate voice, slightly lower and unhurried, as if sharing a secret with a close friend, with a confident smile in her voice (not whispering, not flirty)",
+ "nota_tono_voz_wan": "7-nov-2026 (Rodrigo: \"que hable más sensual, eso vende más\"; acordado: cálida e íntima, no seductora, para no perder alcance ni credibilidad). Va en el prompt de Wan donde antes decía 'confident and warm'. Misma voz de referencia, solo cambia la forma de hablar.",
+ "prueba_voz_intima": {
+  "desde": "2026-11-07",
+  "videos": 3,
+  "tono_anterior": "confident and warm",
+  "comparar_con": [
+   "17",
+   "18",
+   "37",
+   "38"
+  ],
+  "metricas": [
+   "porcentaje visto (YouTube averageViewPercentage, salto en Reels)",
+   "guardados",
+   "comentarios",
+   "visitas al perfil"
+  ],
+  "nota": "Cada video generado con tono_voz_wan lleva \"voz\": \"intima\" en plan.json. Con 3 publicados y 3 días de datos, comparar contra los videos de comparar_con y decidir con Rodrigo. Medir también palabras por segundo reales del primero: si habla más lento, ajustar palabras_por_segundo."
+ }
 }

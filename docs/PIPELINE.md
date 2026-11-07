@@ -231,9 +231,9 @@ The Rottweiler of the third reference image (same markings, black leather collar
 stays next to her, relaxed and INSIDE THE FRAME for the entire video, breathing and moving naturally
 (ear twitch, small head turns). Handheld smartphone selfie video: the camera moves very slightly like a
 phone held by hand; NO zoom in, NO push-in. She looks into the lens and talks like a real person filming
-herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, confident
-and warm, with clear
+herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, <config.json → tono_voz_wan>, with clear
 accurate lip sync and the same voice as the audio reference. She says exactly these words and nothing else: "<python scripts/guion_para_voz.py <id>>"
+(Tono de voz, 7-nov-2026: desde la prueba de voz íntima va config.json → tono_voz_wan en vez de "confident and warm"; anota "voz": "intima" en el video del plan. Si qa_audio dice que faltan palabras al final o habla más lento, mide palabras/segundo y ajusta palabras_por_segundo.)
 (Si el guion dice "aguinaldo", agrega al prompt config.json → instruccion_pronunciacion_wan: sin ella Wan dice "a-gu-i-naldo" y con "aghinaldo" dice "ajinado". Revisa la palabra con `scripts/fonemas.py` (debe salir "a ɡ i n a l d o"), 6-nov-2026.)
 Soft room ambience, no music. Photorealistic, cinematic, elegant, no text on screen, no
 subtitles, no logos.
