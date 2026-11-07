@@ -728,7 +728,12 @@
    "publica_utc": "2026-11-06T20:00:00Z",
    "youtube": "https://youtube.com/shorts/AO8W9KwN9EA",
    "playlist": true,
-   "comentario_youtube": "UgyoD0HNffTN0i1XPgZ4AaABAg"
+   "comentario_youtube": "UgyoD0HNffTN0i1XPgZ4AaABAg",
+   "reel_ig": {
+    "publica_utc": "2026-11-07T21:00:00Z",
+    "texto": "Tu café de $50 diario te cuesta $18,000 al año\nGastos hormiga: tu café de $50 diario te cuesta $18,000 al año. ☕\nPueden comerse hasta 12% de tu ingreso y solo 1 de cada 6 adultos anota sus gastos. Reto: anota todo una semana.\n\n¿Cuál es tu gasto hormiga? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien vive del café de la esquina.\n\n#gastoshormiga #ahorro #dinero #finanzaspersonales #victoriatheceo",
+    "video": "carruseles/c08/reel.mp4"
+   }
   },
   {
    "id": "c09",
@@ -807,9 +812,11 @@
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
-    "tt": "2026-11-07T23:00:00Z"
+    "tt": "2026-11-07T23:00:00Z",
+    "yt": "2026-11-07T16:00:00Z"
    },
-   "publica_utc": "2026-11-07T23:00:00Z"
+   "publica_utc": "2026-11-07T23:00:00Z",
+   "youtube": "y-HMXcYyAHY"
   },
   {
    "id": "c10",
