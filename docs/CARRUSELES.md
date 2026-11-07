@@ -7,7 +7,7 @@ fotos a 5-9. Por eso:
 | Día | TikTok | Instagram | YouTube |
 |---|---|---|---|
 | Con video | el video + **un carrusel en fotos** a otra hora (3 h o más) | el video | el video + **short de carrusel** a 3 h o más (prueba del 4 al 17 de noviembre) |
-| Sin video | un carrusel en fotos | el carrusel en fotos **+ su video como Reel** (2 h o más después) | el short del carrusel |
+| Sin video | un carrusel en fotos | **solo el Reel** del carrusel (sin fotos, 7-nov-2026, Muse de Meta: un formato por idea) | el short del carrusel (si ese ya salió en YouTube, otro) |
 
 - Prueba en YouTube (Rodrigo, 3-nov-2026; `config.json → prueba_youtube_carrusel_diario`): los días con video también
   sube un short de carrusel (el mejor de TikTok que no haya salido ahí). Al terminar se compara si los videos de

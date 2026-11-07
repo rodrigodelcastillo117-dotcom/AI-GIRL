@@ -804,10 +804,11 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
                 salida['notas'].append('YouTube: hoy no hay carrusel u hora libre a 3 h del video para el short extra.')
     if video_hoy:
         salida['notas'].append('Hoy hay video: Instagram sube el video, no carrusel.')
-    elif sale_hoy(carruseles, 'ig'):
+    elif sale_hoy(carruseles, 'ig') or any(a_utc((c.get('reel_ig') or {}).get('publica_utc', '2000-01-01T00:00:00Z'))
+                                            .astimezone(CDMX).date() == hoy for c in carruseles):
         salida['notas'].append('Instagram ya tiene su carrusel de hoy.')
     else:
-        probados = [c for c in carruseles if falta(c, 'ig') and 'tt' in por_red(c)
+        probados = [c for c in carruseles if falta(c, 'ig') and not c.get('reel_ig') and 'tt' in por_red(c)
                     and a_utc(por_red(c)['tt']) <= ahora - datetime.timedelta(hours=20)]
         if probados:
             c = max(probados, key=lambda c: (1 if c.get('ventana') else 0, vistas_tiktok(c['id'], historial) or -1))
@@ -822,19 +823,25 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
                                    'cuando_yt': None if 'yt' in por_red(c) or c.get('youtube') else d['cuando']['yt']}
         else:
             salida['notas'].append('Instagram: no hay carrusel disponible hoy.')
+        # Si el del Reel ya salió en YouTube, YouTube sube otro que aún no tenga (no se queda sin short ese día).
+        if (not salida['instagram'] or not salida['instagram']['cuando_yt']) and not sale_hoy(carruseles, 'yt'):
+            sin_yt = [x for x in carruseles if falta(x, 'yt') and not x.get('youtube') and x['estado'] in ('programado', 'publicado')
+                      and 'tt' in por_red(x)]
+            otro = max(sin_yt, key=lambda x: (1 if x.get('ventana') else 0, vistas_tiktok(x['id'], historial) or -1), default=None) \
+                or next((x for x in carruseles if salida['tiktok'] and x['id'] == salida['tiktok']['id']), None)
+            if otro:
+                salida['youtube'] = {'id': otro['id'], 'cuando_yt': d['cuando']['yt']}
 
+    # Instagram, días sin video: SOLO el Reel del carrusel, sin las fotos (Rodrigo, 7-nov-2026, siguiendo a Muse, la IA de
+    # Meta: "un formato por idea" y "Reels para llegar fuera"; sus datos: fotos 91-97% de seguidores, Reels 56-74% de
+    # no seguidores). Las fotos siguen en TikTok.
     comandos = []
     tt, ig = salida['tiktok'], salida['instagram']
-    if tt and ig and tt['id'] == ig['id']:
-        comandos.append(f"python scripts/publer_carrusel.py {tt['id']} \"ig={ig['cuando_ig']},tt={tt['cuando']}\"")
-    else:
-        if tt:
-            comandos.append(f"python scripts/publer_carrusel.py {tt['id']} \"tt={tt['cuando']}\"")
-        if ig:
-            comandos.append(f"python scripts/publer_carrusel.py {ig['id']} \"ig={ig['cuando_ig']}\"")
+    if tt:
+        comandos.append(f"python scripts/publer_carrusel.py {tt['id']} \"tt={tt['cuando']}\"")
     if ig:
         comandos += [f"python scripts/carrusel_video.py short {ig['id']}",
-                     f"python scripts/publer_carrusel.py {ig['id']} --reel auto"]
+                     f"python scripts/publer_carrusel.py {ig['id']} --reel {ig['cuando_ig']}"]
         if ig['cuando_yt']:
             comandos.append(f"youtube.py subir carruseles/{ig['id']}/short.mp4 ... {ig['cuando_yt']} (CARRUSELES.md)")
     yt = salida['youtube']
@@ -968,7 +975,7 @@ def auditar():
     if k['tiktok']:
         print(f"Carrusel de TikTok hoy: {k['tiktok']['id']} a las {a_utc(k['tiktok']['cuando']).astimezone(CDMX):%H:%M}.")
     if k['instagram']:
-        print(f"Carrusel de Instagram y YouTube hoy: {k['instagram']['id']} ({k['instagram']['por_que']}) + su Reel.")
+        print(f"Reel de Instagram y short de YouTube hoy: {k['instagram']['id']} ({k['instagram']['por_que']}).")
     if k.get('youtube'):
         print(f"Short de carrusel en YouTube hoy (prueba): {k['youtube']['id']} a las {a_utc(k['youtube']['cuando_yt']).astimezone(CDMX):%H:%M}.")
     for n in k['notas']:

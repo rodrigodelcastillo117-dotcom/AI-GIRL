@@ -1287,6 +1287,87 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+  },
+  {
+   "id": "c16",
+   "estado": "borrador",
+   "tema": "aguinaldo_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "ventana": {
+    "desde": "2026-11-08",
+    "hasta": "2026-12-20"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Guarda esto: tu aguinaldo 2026 en 5 datos",
+    "voz": "Guarda esto: tu aguinaldo de dos mil veintiséis en cinco datos.",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "1. La fecha límite",
+     "texto": "Antes del 20 de diciembre. Como el 20 cae en domingo, a más tardar el sábado 19.\n\nLFT, art. 87",
+     "voz": "Primero: te lo deben pagar antes del veinte de diciembre, a más tardar el sábado diecinueve."
+    },
+    {
+     "titulo": "2. Mínimo 15 días",
+     "texto": "Mínimo 15 días de salario. ¿No completaste el año? Te toca la parte proporcional: salario diario × 15 × días trabajados ÷ 365.\n\nLFT, art. 87",
+     "voz": "Segundo: te toca mínimo quince días de salario, y si no completaste el año, la parte proporcional."
+    },
+    {
+     "titulo": "3. Libre de ISR: $3,519.30",
+     "texto": "Los primeros $3,519.30 no pagan ISR: son 30 UMA de $117.31. El impuesto solo se cobra sobre lo que pase de ahí.\n\nLISR, art. 93 fr. XIV · INEGI",
+     "voz": "Tercero: los primeros tres mil quinientos diecinueve pesos van libres de impuesto."
+    },
+    {
+     "titulo": "4. Si no te pagan: PROFEDET",
+     "texto": "PROFEDET te orienta, te acompaña a conciliar y te representa en juicio, gratis. Llama al 079, la línea del Gobierno de México.\n\nPROFEDET",
+     "voz": "Cuarto: si no te pagan, llama a PROFEDET al cero siete nueve. Es gratis."
+    },
+    {
+     "titulo": "5. Un año para reclamar",
+     "texto": "El plazo corre desde el 20 de diciembre: el aguinaldo de 2026 lo puedes reclamar hasta diciembre de 2027.\n\nLFT, art. 516 · PROFEDET",
+     "voz": "Y el último: tienes un año para reclamarlo, hasta diciembre de dos mil veintisiete."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para el 20 de diciembre.",
+    "texto": "Mándaselo a quien cobra aguinaldo por primera vez.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para el veinte de diciembre y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026): art. 87 (aguinaldo antes del día veinte de diciembre, de quince días de salario por lo menos; parte proporcional al tiempo trabajado aunque ya no se labore en la fecha de pago), art. 516 (las acciones de trabajo prescriben en un año desde el día siguiente a que la obligación es exigible). El 20 de diciembre de 2026 cae en domingo: antes del 20 = a más tardar el sábado 19. Ley del ISR (diputados.gob.mx, última reforma DOF 01-04-2024): art. 93 fracc. XIV (gratificaciones anuales exentas hasta 30 días; desde la desindexación de 2016 se cuentan en UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): el aguinaldo no paga impuestos hasta el equivalente a 30 días de UMA. INEGI (comunicado 1/26, 8-ene-2026): UMA diaria de $117.31 desde el 1 de febrero de 2026; 30 UMA = $3,519.30. PROFEDET (gob.mx, 'Preguntas frecuentes Aguinaldo 2025', noviembre 2025): orientación, asesoría, acompañamiento en la conciliación y representación en juicio gratuitas; atención telefónica en el CISSEL al 079, línea del Gobierno de México; plazo para reclamar de un año a partir del 20 de diciembre",
+   "titulo_post": "Aguinaldo 2026 en 5 datos para guardar",
+   "texto_post": "Aguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️\n1. Te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Mínimo 15 días de salario; si no completaste el año, la parte proporcional.\n3. Los primeros $3,519.30 no pagan ISR (30 UMA de 2026).\n4. Si no te pagan, PROFEDET te asesora y representa gratis: llama al 079.\n5. Tienes un año para reclamarlo, contado desde el 20 de diciembre.\n\n📚 LFT, arts. 87 y 516; LISR, art. 93 fracc. XIV; UMA 2026 (INEGI); PROFEDET.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien cobra aguinaldo por primera vez.",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 en 5 datos para guardar 🔖",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "fecha limite aguinaldo 2026",
+     "cuanto me toca de aguinaldo",
+     "aguinaldo proporcional",
+     "aguinaldo exento isr 2026",
+     "uma 2026",
+     "profedet aguinaldo",
+     "plazo para reclamar aguinaldo",
+     "aguinaldo 20 de diciembre",
+     "articulo 87 ley federal del trabajo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#derechoslaborales",
+     "#isr"
+    ],
+    "preguntas": [
+     "¿Cuál es la fecha límite para pagar el aguinaldo 2026?",
+     "¿Cuánto aguinaldo está exento de ISR en 2026?",
+     "¿Cómo calculo mi aguinaldo proporcional?",
+     "¿Hasta cuándo puedo reclamar mi aguinaldo?"
+    ]
+   }
   }
  ]
 }

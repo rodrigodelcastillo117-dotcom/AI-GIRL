@@ -107,7 +107,8 @@ def hora_reel(c, todos, plan, config, ahora):
     reels = [a_utc(x['reel_ig']['publica_utc']).astimezone(CDMX) for x in todos
              if x['id'] != c['id'] and (x.get('reel_ig') or {}).get('publica_utc')]
     prueba = config.get('prueba_horas') or {}
-    dia = a_utc((c.get('publica_utc_por_red') or {}).get('ig') or c['publica_utc']).astimezone(CDMX).date()
+    base = (c.get('publica_utc_por_red') or {}).get('ig') or c.get('publica_utc')
+    dia = a_utc(base).astimezone(CDMX).date() if base else ahora.astimezone(CDMX).date()
     for d in (dia + datetime.timedelta(days=i) for i in range(4)):
         if any(t.date() == d for t in reels):
             continue
@@ -131,8 +132,6 @@ def reel(c, cuando, config):
     if (yo.get('reel_ig') or {}).get('publica_utc'):
         print(f'OMITIDO: el Reel de {c["id"]} ya está en carruseles.json ({yo["reel_ig"]["publica_utc"]}).')
         return
-    if 'ig' not in (yo.get('publica_utc_por_red') or {}):
-        sys.exit(f'ERROR: {c["id"]} todavía no está programado en Instagram en fotos; primero el carrusel, luego su Reel.')
     if cuando == 'auto':
         plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
         cuando = hora_reel(yo, datos['carruseles'], plan, config, datetime.datetime.now(datetime.timezone.utc))
@@ -164,6 +163,8 @@ def reel(c, cuando, config):
     datos = json.load(open(RUTA))  # releído: la subida tarda y otro paso pudo escribir
     yo = next(x for x in datos['carruseles'] if x['id'] == c['id'])
     yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'video': os.path.relpath(video, RAIZ)}
+    if yo['estado'] == 'listo':
+        yo['estado'] = 'programado'
     json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
     print(f'OK Reel de Instagram programado para {cuando}.')
 
