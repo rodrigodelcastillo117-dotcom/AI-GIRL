@@ -257,5 +257,12 @@
   "tipo": "regla",
   "aprendizaje": "Muse vio en Instagram: mismo tema en fotos y Reel el mismo día se estorban; las fotos llegan 91-97% a seguidores y los Reels 56-74% a no seguidores. Rodrigo: 'Muse fue creada por Meta, dueña de Instagram'.",
   "regla": "Instagram, días sin video: solo el Reel del carrusel (el que mejor le fue en TikTok), sin fotos. Las fotos van en TikTok. Los consejos de Muse se siguen; sus cifras sin fuente (p. ej. 'el 80% de tu aguinaldo se va en 3 cosas') no se usan en el contenido."
+ },
+ {
+  "fecha_utc": "2026-11-07T13:40:00Z",
+  "origen": "video 18",
+  "tipo": "tecnico",
+  "aprendizaje": "Con instruccion_pronunciacion_wan, Wan dijo \"aguinaldo\" bien a la primera (fonemas: a ɣ i n a l d o). Whisper lo transcribe \"a Guinaldo\" y qa_audio lo marca como no entendido aunque está bien dicho.",
+  "regla": "Si qa_audio solo falla por \"aguinaldo\" y Whisper oye \"a Guinaldo\", decide con scripts/fonemas.py: \"a ɡ i\" o \"a ɣ i\" aprueba; \"a ɣ w i\" (u sonada) o \"a x i\" (j) reprueba."
  }
 ]

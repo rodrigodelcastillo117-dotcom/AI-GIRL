@@ -250,5 +250,19 @@
   "tipo": "tecnico",
   "aprendizaje": "Wan lee español con reglas de escritura: 'aguinaldo' sonaba a-gw-i-naldo y 'aghinaldo' sonaba a-j-i-nado. Con 'aguinaldo' escrito normal más la instrucción 'SILENT u and hard g ... ah-ghee-NAHL-doh' en el prompt dijo a-g-i-naldo. Un reconocedor de fonemas (wav2vec2 xlsr espeak) distingue g/gw/x donde Whisper no. Una palabra mal dicha se puede cambiar por la misma palabra de un clip de prueba con la misma voz si hay pausa después (sincronía se mantuvo).",
   "regla": "En el prompt de Wan va config.json → instruccion_pronunciacion_wan cuando el guion dice aguinaldo. Revisar las palabras difíciles con scripts/fonemas.py antes de publicar. Para arreglar una palabra: clip de prueba de 8 s (320 créditos) y cambiar solo esa palabra, en vez de rehacer el video."
+ },
+ {
+  "fecha_utc": "2026-11-07T14:00:00Z",
+  "origen": "Rodrigo, siguiendo a Muse (la IA de Meta)",
+  "tipo": "regla",
+  "aprendizaje": "Muse vio en Instagram: mismo tema en fotos y Reel el mismo día se estorban; las fotos llegan 91-97% a seguidores y los Reels 56-74% a no seguidores. Rodrigo: 'Muse fue creada por Meta, dueña de Instagram'.",
+  "regla": "Instagram, días sin video: solo el Reel del carrusel (el que mejor le fue en TikTok), sin fotos. Las fotos van en TikTok. Los consejos de Muse se siguen; sus cifras sin fuente (p. ej. 'el 80% de tu aguinaldo se va en 3 cosas') no se usan en el contenido."
+ },
+ {
+  "fecha_utc": "2026-11-07T13:40:00Z",
+  "origen": "video 18",
+  "tipo": "tecnico",
+  "aprendizaje": "Con instruccion_pronunciacion_wan, Wan dijo \"aguinaldo\" bien a la primera (fonemas: a ɣ i n a l d o). Whisper lo transcribe \"a Guinaldo\" y qa_audio lo marca como no entendido aunque está bien dicho.",
+  "regla": "Si qa_audio solo falla por \"aguinaldo\" y Whisper oye \"a Guinaldo\", decide con scripts/fonemas.py: \"a ɡ i\" o \"a ɣ i\" aprueba; \"a ɣ w i\" (u sonada) o \"a x i\" (j) reprueba."
  }
 ]

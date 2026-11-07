@@ -1,34 +1,24 @@
 [
  {
-  "fecha": "2026-11-06",
-  "tipo": "video",
-  "id": "38",
-  "que": "Sale el video 38",
+  "fecha": "2026-11-07",
+  "tipo": "reel",
+  "id": "",
   "estado": "programado",
+  "que": "Reel de Instagram del carrusel c08 (el mismo video del Short)",
   "horas": {
-   "ig": "20:00",
-   "tt": "15:00",
-   "yt": "20:00"
-  }
- },
- {
-  "fecha": "2026-11-06",
-  "tipo": "carrusel",
-  "id": "c08",
-  "que": "Sale el carrusel c08 · gastos hormiga",
-  "estado": "programado",
-  "horas": {
-   "tt": "09:00",
-   "yt": "14:00"
+   "ig": "15:00"
   }
  },
  {
   "fecha": "2026-11-07",
   "tipo": "carrusel",
   "id": "c09",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c09 · afore impuestos · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Sale el carrusel c09 · afore impuestos",
+  "estado": "programado",
+  "horas": {
+   "tt": "17:00",
+   "yt": "10:00"
+  }
  },
  {
   "fecha": "2026-11-08",
@@ -45,18 +35,18 @@
  {
   "fecha": "2026-11-08",
   "tipo": "carrusel",
-  "id": "c11",
+  "id": "c16",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c11 · finiquito liquidacion · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Carrusel c16 · aguinaldo datos para guardar · TikTok (carrusel diario) y short en YouTube (prueba)"
  },
  {
   "fecha": "2026-11-09",
   "tipo": "carrusel",
-  "id": "c12",
+  "id": "c11",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c12 · vacaciones dignas · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Carrusel c11 · finiquito liquidacion · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-10",
@@ -69,18 +59,18 @@
  {
   "fecha": "2026-11-10",
   "tipo": "carrusel",
-  "id": "c13",
+  "id": "c12",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c13 · recibo nomina · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Carrusel c12 · vacaciones dignas · TikTok (carrusel diario) y short en YouTube (prueba)"
  },
  {
   "fecha": "2026-11-11",
   "tipo": "carrusel",
-  "id": "c14",
+  "id": "c13",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c14 · subcuenta vivienda infonavit · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Carrusel c13 · recibo nomina · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-12",
@@ -93,18 +83,18 @@
  {
   "fecha": "2026-11-12",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c14",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Carrusel c14 · subcuenta vivienda infonavit · TikTok (carrusel diario) y short en YouTube (prueba)"
  },
  {
   "fecha": "2026-11-13",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c17",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Carrusel c17 · fondo emergencia ipab · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-14",
@@ -117,10 +107,10 @@
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "",
+  "id": "c18",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel nuevo (se escribe) · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Carrusel c18 · buro de credito · TikTok (carrusel diario) y short en YouTube (prueba)"
  },
  {
   "fecha": "2026-11-15",
@@ -129,5 +119,21 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c05 · que hacer aguinaldo · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+ },
+ {
+  "fecha": "2026-11-16",
+  "tipo": "video",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-16",
+  "tipo": "carrusel",
+  "id": "c19",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c19 · apps prestamo cat · TikTok (carrusel diario) y short en YouTube (prueba)"
  }
 ]

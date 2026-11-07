@@ -160,5 +160,14 @@
   "creditos_usados": 1340,
   "creditos_restantes": 5439,
   "detalle": "Rutina 6-nov: video 38 programado (TikTok 15:00, Instagram y YouTube 20:00); c08 en TikTok 9:00 y su short en YouTube 14:00. Video 17 (aguinaldo 2/4): 1er intento descartado (cuerpo entero, Capital fuera, zoom), 2do con foto de pecho para arriba y 'aghinaldo' en el texto de Wan. Carruseles de vuelta a la voz clonada (Rodrigo no quiere voz nueva). Pies con 'Guárdalo para...' por los datos de Instagram (Muse de Meta)."
+ },
+ {
+  "fecha_utc": "2026-11-07T13:45:00Z",
+  "tipo": "generar",
+  "video_id": "18",
+  "resultado": "listo_para_publicar",
+  "creditos_usados": 990,
+  "creditos_restantes": 4449,
+  "detalle": "Rutina 7-nov (día de carrusel): c09 en TikTok 17:00 y short en YouTube 10:00 (playlist finanzas); Reel de c08 en Instagram 15:00 con portada propia. Video 18 (aguinaldo 3/4, renuncia) aprobado al primer intento: aguinaldo bien dicho (fonemas a ɣ i n a l d o), voz atrasada 367 ms corregida con tpad, Capital en todos los cuadros. Queda listo, sin programar."
  }
 ]
