@@ -1817,7 +1817,7 @@
      "boca_hablando_sin_voz_s": 0.73,
      "fallas": []
     },
-    "notas": "Primer intento aprobado. Voz atrasada 367 ms: se congeló el primer cuadro 370 ms (tpad) -> desfase 0, correlación 0.177. Whisper small oye \"a Guinaldo\" (qa_audio lo marca porque separa la palabra); el reconocedor de fonemas oye \"t o k a ɣ i n a l d o\": sin w (u muda) y sin x (no es j). ɣ es la g suave normal entre vocales en español. Capital visible en los 6 cuadros, misma cara. Créditos: 5439 -> 4449 (990; se esperaban ~660, no sé por qué la diferencia)."
+    "notas": "Primer intento aprobado. Voz atrasada 367 ms: se congeló el primer cuadro 370 ms (tpad) -> desfase 0, correlación 0.177. Whisper small oye \"a Guinaldo\" (qa_audio lo marca porque separa la palabra); el reconocedor de fonemas oye \"t o k a ɣ i n a l d o\": sin w (u muda) y sin x (no es j). ɣ es la g suave normal entre vocales en español. Capital visible en los 6 cuadros, misma cara. Créditos: 5439 -> 4449 (990; se esperaban ~660, no sé por qué la diferencia). Recorte ajustado a la palabra (2.95-4.0 s del FINAL): \"ɡ i n a l d o\", igual que el clip aprobado del video 17 (\"a ɡ i n a l d o\")."
    }
   },
   {
