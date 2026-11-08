@@ -66,12 +66,17 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
 
 ## Cómo se escribe uno
 
-1. **Gancho de portada** con las plantillas que sí sirven a Victoria (`GANCHOS.md`): "Si haces esto
+0. **Tono:** `docs/PERSONAJE.md` manda (8-nov-2026): Victoria toma postura y cada pieza pide comentar a cambio de
+   algo con una palabra o un número.
+1. **Gancho de portada** (desde el 8-nov, de preferencia `postura`: "Tu aguinaldo no es para regalos"; guarda el
+   tipo en `portada.gancho_tipo`: postura, si o dato) con las plantillas que sí sirven a Victoria (`GANCHOS.md`): "Si haces esto
    con tu dinero, haz esto en su lugar", "El mito sobre ___", "Por qué tu ___ no funciona", o una
    cifra concreta ("Si ganas $15,000 al mes, te toca mínimo $7,500"). Nunca primera persona inventada.
 2. **3 a 8 datos**, uno por diapositiva, cada uno con su fuente (regla 7). Título corto que se lee
    en 1 segundo; texto de máximo 30 palabras.
-3. **Cierre:** el título pide guardar o comentar; el texto lleva **a quién mandárselo** (alguien concreto) y
+3. **Cierre:** el título es la pregunta para comentar de `PERSONAJE.md` (una palabra o un número: "¿Ya te pagaron?
+   Comenta SÍ o NO."; nunca "Te leo" ni "¿Qué opinas?"), y el texto del post la repite con "💬 … Te contesto a
+   todos." antes de "🔖 Guárdalo para…"; el texto lleva **a quién mandárselo** (alguien concreto) y
    **siempre la razón para seguir**: "Sígueme: cada día, un dato de dinero que sí sirve en México." (Rodrigo,
    2-nov-2026: en la primera semana los carruseles llegaron a ~1,500 personas en TikTok y los seguidores no
    subieron; nadie sigue si no le dices qué gana). La `voz` del cierre termina en "y sígueme". La guía gratis ya no

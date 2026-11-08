@@ -459,3 +459,13 @@ html { scroll-behavior: smooth; }
 .ventas-cifras b { font-family: var(--titulo); font-size: 1.8rem; color: var(--oro); text-shadow: 0 0 18px rgba(245, 197, 66, .4); }
 .ventas-cifras small { font-family: var(--mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tenue); }
 @media (max-width: 720px) { .salir.claude .largo { display: none; } }
+/* Respuestas rápidas (8-nov-2026) */
+.respuestas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: 12px; }
+.resp { border: 1px solid var(--linea); padding: 12px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.resp p { margin: 0; font-size: .92rem; line-height: 1.45; overflow-wrap: anywhere; }
+.resp-etq { font-family: var(--etiqueta); font-size: .68rem; letter-spacing: .2em; color: var(--oro); }
+.resp-copiar { justify-self: start; background: none; border: 1px solid var(--oro); color: var(--oro); padding: 5px 10px; font-family: var(--etiqueta); font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; cursor: pointer; }
+.resp-copiar:hover { background: var(--oro); color: #0b0b0b; }
+.resp-calc label { display: grid; gap: 4px; font-size: .78rem; color: var(--tenue); }
+.resp-calc input { background: transparent; border: 1px solid var(--linea-fuerte); color: var(--texto); padding: 8px; font-size: 1rem; width: 100%; box-sizing: border-box; }
+.resp-calc { grid-column: 1 / -1; }

@@ -108,7 +108,7 @@ def textos(video, plan, config):
         post = f"{primera}\n📌 {video['parte']}" + (f"\n{resto}" if resto else '')
     # Una pregunta concreta saca comentarios, y los comentarios dan alcance (docs/GUIONES_VIRALES.md).
     if video.get('pregunta_comentarios'):
-        post = f"{post}\n\n💬 {video['pregunta_comentarios']}"
+        post = f"{post}\n\n💬 {video['pregunta_comentarios']} Te contesto a todos."  # docs/PERSONAJE.md (8-nov-2026)
     parrafo = (seo.get('parrafo') or '').strip()
     preguntas = seo.get('preguntas') or []
     # Videos de temporada (aguinaldo, deudas...): su calculadora gratis va primero en todo.

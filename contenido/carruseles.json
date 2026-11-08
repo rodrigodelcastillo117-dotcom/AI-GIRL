@@ -13,7 +13,8 @@
     "foto": "assets/fotos/video-01-jet.jpg",
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Si ganas $15,000 al mes, te toca mínimo $7,500",
-    "voz": "Si ganas quince mil pesos al mes, tu aguinaldo mínimo es de siete mil quinientos."
+    "voz": "Si ganas quince mil pesos al mes, tu aguinaldo mínimo es de siete mil quinientos.",
+    "gancho_tipo": "si"
    },
    "diapositivas": [
     {
@@ -115,7 +116,8 @@
     "foto": "assets/fotos/video-02-palco.jpg",
     "etiqueta": "TU DINERO",
     "titulo": "Si haces esto con tu dinero, haz esto en su lugar",
-    "voz": "Si haces esto con tu dinero, haz esto en su lugar."
+    "voz": "Si haces esto con tu dinero, haz esto en su lugar.",
+    "gancho_tipo": "si"
    },
    "diapositivas": [
     {
@@ -204,7 +206,8 @@
     "foto": "assets/fotos/yate-blazer-blanco.jpg",
     "etiqueta": "REGLAS DE DINERO",
     "titulo": "5 reglas de dinero que repiten los que más saben",
-    "voz": "Cinco reglas de dinero que repiten los que más saben."
+    "voz": "Cinco reglas de dinero que repiten los que más saben.",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -297,7 +300,8 @@
     "etiqueta": "NEGOCIOS",
     "titulo": "Blockbuster pudo comprar Netflix por $50 millones y se rio",
     "voz": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares, y no quiso. Aquí van cinco lecciones de negocio.",
-    "foto_reel": "assets/fotos/video-02-palco.jpg"
+    "foto_reel": "assets/fotos/video-02-palco.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -388,8 +392,13 @@
    "portada": {
     "foto": "auto",
     "etiqueta": "AGUINALDO",
-    "titulo": "Si no haces esto, tu aguinaldo se acaba en enero",
-    "voz": "Si no haces esto, tu aguinaldo se acaba en enero."
+    "titulo": "Tu aguinaldo no es para regalos",
+    "voz": "Tu aguinaldo no es para regalos. Primero haz esto y enero no te va a doler.",
+    "anterior": {
+     "titulo": "Si no haces esto, tu aguinaldo se acaba en enero",
+     "voz": "Si no haces esto, tu aguinaldo se acaba en enero."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -419,13 +428,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo para cuando te paguen.",
+    "titulo": "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS.",
     "texto": "Calcula tu aguinaldo gratis: enlace en mi perfil.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo para cuando te paguen y sígueme."
+    "voz": "¿En qué se va primero tu aguinaldo? Comenta deuda, ahorro o regalos, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo para cuando te paguen.",
+     "voz": "Guárdalo para cuando te paguen y sígueme."
+    }
    },
    "fuente": "CONDUSEF (uso del aguinaldo, deudas y fondo de emergencia); Profeco; regla 50/30/20 de Warren y Warren Tyagi, All Your Worth (2005)",
    "titulo_post": "Qué hacer con tu aguinaldo antes de enero",
-   "texto_post": "Qué hacer con el aguinaldo para que no se acabe en enero. 💸\nPrimero tu tarjeta, luego la deuda más cara, divídelo 50/30/20, arma tu colchón y suma tus mensualidades antes de comprar a meses.\n\n🔖 Guárdalo para cuando te paguen el aguinaldo.\n🧮 Calculadora de aguinaldo gratis en mi perfil.\n📩 Mándaselo a quien lo va a gastar todo.",
+   "texto_post": "Qué hacer con el aguinaldo para que no se acabe en enero. 💸\nPrimero tu tarjeta, luego la deuda más cara, divídelo 50/30/20, arma tu colchón y suma tus mensualidades antes de comprar a meses.\n\n💬 ¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS. Te contesto a todos.\n🔖 Guárdalo para cuando te paguen el aguinaldo.\n🧮 Calculadora de aguinaldo gratis en mi perfil.\n📩 Mándaselo a quien lo va a gastar todo.",
    "seo": {
     "palabra_clave": "qué hacer con el aguinaldo",
     "titulo": "Qué hacer con el aguinaldo antes de enero 💸",
@@ -452,7 +465,8 @@
      "¿Conviene pagar deudas con el aguinaldo?",
      "¿Cómo ahorrar el aguinaldo?"
     ]
-   }
+   },
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c06",
@@ -469,7 +483,8 @@
     "etiqueta": "BUEN FIN 2026",
     "titulo": "Antes del Buen Fin, haz estas 5 cosas",
     "voz": "Antes del Buen Fin, haz estas cinco cosas o vas a pagar de más.",
-    "foto_reel": "assets/fotos/yate-blazer-blanco.jpg"
+    "foto_reel": "assets/fotos/yate-blazer-blanco.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -565,7 +580,8 @@
     "etiqueta": "TARJETA DE CRÉDITO",
     "titulo": "5 reglas de tu tarjeta que nadie te explica",
     "voz": "Tu tarjeta de crédito tiene cinco reglas que nadie te explica.",
-    "foto_reel": "assets/fotos/video-01-jet.jpg"
+    "foto_reel": "assets/fotos/video-01-jet.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -656,7 +672,8 @@
     "etiqueta": "GASTOS HORMIGA",
     "titulo": "Tu café de $50 diario te cuesta $18,000 al año",
     "voz": "Tu café de todos los días te puede costar dieciocho mil pesos al año.",
-    "foto_reel": "assets/fotos/video-37-sala.jpg"
+    "foto_reel": "assets/fotos/video-37-sala.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -746,7 +763,8 @@
     "etiqueta": "AFORE",
     "titulo": "Tu Afore puede bajarte impuestos: así funciona",
     "voz": "Tu Afore te puede bajar impuestos. Así funciona.",
-    "foto_reel": "assets/fotos/video-38-oficina.jpg"
+    "foto_reel": "assets/fotos/video-38-oficina.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -832,8 +850,13 @@
    "portada": {
     "foto": "auto",
     "etiqueta": "CUESTA DE ENERO",
-    "titulo": "Si no haces esto, enero te va a doler",
-    "voz": "Si no haces esto, enero te va a doler."
+    "titulo": "Enero no duele por la cuesta: duele por diciembre",
+    "voz": "Enero no te duele por la cuesta. Te duele por lo que hiciste en diciembre.",
+    "anterior": {
+     "titulo": "Si no haces esto, enero te va a doler",
+     "voz": "Si no haces esto, enero te va a doler."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -863,13 +886,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo para tu próxima quincena.",
+    "titulo": "¿Qué te pegó más? Comenta MESES, TARJETA u HORMIGA.",
     "texto": "Mándaselo a quien gastó todo en diciembre.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo para tu quincena y sígueme."
+    "voz": "¿Qué te pegó más este enero? Comenta meses, tarjeta u hormiga, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo para tu próxima quincena.",
+     "voz": "Guárdalo para tu quincena y sígueme."
+    }
    },
    "fuente": "Regla 50/30/20: Warren y Warren Tyagi, All Your Worth (2005); Condusef: pago mínimo (deuda de $10,000 a 55%), fondo de emergencia de 3 a 6 meses, gastos hormiga hasta 12%; Profeco y Condusef: mensualidades",
    "titulo_post": "Cuesta de enero: 5 pasos para librarla",
-   "texto_post": "Cuesta de enero: si no haces esto, enero te va a doler. 📉\nPresupuesto 50/30/20, paga más que el mínimo, suma tus meses, arma tu colchón y cuida los gastos hormiga.\n\n¿Cuál te cuesta más? Te leo.\n🔖 Guárdalo para tu primera quincena de enero.\n📩 Mándaselo a quien gastó todo en diciembre.",
+   "texto_post": "Cuesta de enero: si no haces esto, enero te va a doler. 📉\nPresupuesto 50/30/20, paga más que el mínimo, suma tus meses, arma tu colchón y cuida los gastos hormiga.\n\n💬 ¿Qué te pegó más? Comenta MESES, TARJETA u HORMIGA. Te contesto a todos.\n🔖 Guárdalo para tu primera quincena de enero.\n📩 Mándaselo a quien gastó todo en diciembre.",
    "seo": {
     "palabra_clave": "cuesta de enero",
     "titulo": "Cuesta de enero y 5 pasos para librarla 📉",
@@ -897,19 +924,26 @@
      "¿Cuánto debe tener mi fondo de emergencia?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c11",
    "estado": "listo",
    "tema": "finiquito_liquidacion",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/cocina.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
     "etiqueta": "FINIQUITO O LIQUIDACIÓN",
-    "titulo": "Si te corren, esto te toca",
-    "voz": "Si te corren, esto te toca. Y si renuncias, también."
+    "titulo": "Si te corren, no firmes nada sin ver esto",
+    "voz": "Si te corren, no firmes nada sin ver esto. Y si renuncias, tampoco.",
+    "anterior": {
+     "titulo": "Si te corren, esto te toca",
+     "voz": "Si te corren, esto te toca. Y si renuncias, también."
+    },
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-01-jet.jpg"
    },
    "diapositivas": [
     {
@@ -939,13 +973,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo antes de firmar tu finiquito.",
+    "titulo": "¿Renunciaste o te corrieron? Comenta RENUNCIA o DESPIDO y te digo qué te toca.",
     "texto": "Revisa tu caso con PROFEDET o un abogado laboral.\nMándaselo a quien está por renunciar.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo antes de firmar y sígueme."
+    "voz": "¿Renunciaste o te corrieron? Comenta renuncia o despido y te digo qué te toca.",
+    "anterior": {
+     "titulo": "Guárdalo antes de firmar tu finiquito.",
+     "voz": "Guárdalo antes de firmar y sígueme."
+    }
    },
    "fuente": "PROFEDET (gob.mx, 'Conoce tus derechos en caso de renuncia o despido injustificado'): en renuncia, partes proporcionales de aguinaldo, vacaciones y prima vacacional, y prima de antigüedad con 15 años o más; en despido injustificado, tres meses de salario de indemnización constitucional o reinstalación, prima de antigüedad y partes proporcionales; dos meses para demandar; teléfonos 800 717 2942 y 800 911 7877. Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 48 (tres meses o reinstalación), 79 (vacaciones proporcionales), 87 (aguinaldo proporcional), 99 (salarios devengados irrenunciables), 162 (prima de antigüedad de 12 días por año; en renuncia con 15 años o más; en despido siempre), 486 (tope del doble del salario mínimo), 518 (dos meses para reclamar el despido; se suspende al pedir la conciliación, art. 684-B). La prima de antigüedad es para trabajadores de planta (art. 162, primer párrafo). Conasami: salario mínimo general 2026 de $315.04 diarios (DOF 9-12-2025); doble = $630.08",
    "titulo_post": "Finiquito y liquidación: qué te toca",
-   "texto_post": "Finiquito y liquidación no son lo mismo, y la diferencia es dinero. 📄\nSi renuncias, te toca tu finiquito: lo que ya ganaste y lo proporcional de aguinaldo, vacaciones y prima vacacional. Si te corren sin causa, además puedes reclamar tres meses de salario y, si eres de planta, doce días por año de prima de antigüedad. Tienes dos meses para reclamar.\n\nRevisa tu caso con PROFEDET (gratis) o un abogado laboral.\n🔖 Guárdalo para el día que renuncies o te corran.\n📩 Mándaselo a quien está por renunciar.",
+   "texto_post": "Finiquito y liquidación no son lo mismo, y la diferencia es dinero. 📄\nSi renuncias, te toca tu finiquito: lo que ya ganaste y lo proporcional de aguinaldo, vacaciones y prima vacacional. Si te corren sin causa, además puedes reclamar tres meses de salario y, si eres de planta, doce días por año de prima de antigüedad. Tienes dos meses para reclamar.\n\nRevisa tu caso con PROFEDET (gratis) o un abogado laboral.\n💬 ¿Renunciaste o te corrieron? Comenta RENUNCIA o DESPIDO y te digo qué te toca. Te contesto a todos.\n🔖 Guárdalo para el día que renuncies o te corran.\n📩 Mándaselo a quien está por renunciar.",
    "seo": {
     "palabra_clave": "finiquito y liquidación",
     "titulo": "Finiquito y liquidación, qué te toca 📄",
@@ -974,19 +1012,26 @@
      "¿Cuánto tiempo tengo para demandar un despido?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c12",
    "estado": "listo",
    "tema": "vacaciones_dignas",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/yate.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-01-jet.jpg",
     "etiqueta": "VACACIONES DIGNAS",
-    "titulo": "12 días de vacaciones desde tu primer año",
-    "voz": "Te tocan doce días de vacaciones desde tu primer año."
+    "titulo": "Con un año trabajado, menos de 12 días de vacaciones es ilegal",
+    "voz": "Si ya cumpliste un año en tu trabajo, darte menos de doce días de vacaciones es ilegal.",
+    "anterior": {
+     "titulo": "12 días de vacaciones desde tu primer año",
+     "voz": "Te tocan doce días de vacaciones desde tu primer año."
+    },
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-17-sala-roja.jpg"
    },
    "diapositivas": [
     {
@@ -1021,13 +1066,17 @@
     }
    ],
    "cierre": {
-    "titulo": "¿Cuántos días te dan a ti? Comenta.",
+    "titulo": "¿Cuántos días de vacaciones te dan? Comenta el número.",
     "texto": "Mándaselo a quien no ha tomado vacaciones este año.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "¿Cuántos días te dan a ti? Comenta y sígueme."
+    "voz": "¿Cuántos días de vacaciones te dan a ti? Comenta el número y sígueme.",
+    "anterior": {
+     "titulo": "¿Cuántos días te dan a ti? Comenta.",
+     "voz": "¿Cuántos días te dan a ti? Comenta y sígueme."
+    }
    },
    "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 76 (mínimo 12 días laborables tras un año, +2 por año hasta 20; desde el sexto año, +2 por cada cinco; reformado DOF 27-12-2022, vigente desde el 1-1-2023), art. 78 (al menos 12 días continuos; el resto a potestad de la persona trabajadora), art. 79 (no se compensan con remuneración; proporcional si la relación termina antes del año), art. 80 (prima no menor de 25%), art. 81 (dentro de los seis meses siguientes al año de servicios), art. 516 (un año para reclamar, desde el día siguiente a que la obligación es exigible: al vencer los seis meses del art. 81). PROFEDET (gob.mx, 'Persona trabajadora, las vacaciones son tu derecho', 23-7-2025): tabla 12, 14, 16, 18, 20 y 22 días (años 6 a 10). Ejemplo de prima: $500 x 12 días x 25% = $1,500",
    "titulo_post": "Días de vacaciones por ley en 2026",
-   "texto_post": "Días de vacaciones por ley: cuántos te tocan en 2026. 🌴\nDesde 2023, al cumplir un año te tocan mínimo 12 días pagados, y suben dos por año hasta 20 en el quinto año. Encima, una prima vacacional de al menos 25%, y no te las pueden cambiar por dinero.\n\n¿Cuántos días te dan a ti? Te leo.\n🔖 Guárdalo para cuando pidas tus vacaciones.\n📩 Mándaselo a quien no ha tomado vacaciones este año.",
+   "texto_post": "Días de vacaciones por ley: cuántos te tocan en 2026. 🌴\nDesde 2023, al cumplir un año te tocan mínimo 12 días pagados, y suben dos por año hasta 20 en el quinto año. Encima, una prima vacacional de al menos 25%, y no te las pueden cambiar por dinero.\n\n💬 ¿Cuántos días de vacaciones te dan? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para cuando pidas tus vacaciones.\n📩 Mándaselo a quien no ha tomado vacaciones este año.",
    "seo": {
     "palabra_clave": "días de vacaciones por ley",
     "titulo": "Días de vacaciones por ley en 2026 🌴",
@@ -1055,7 +1104,8 @@
      "¿Me pueden pagar las vacaciones en lugar de tomarlas?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c13",
@@ -1066,8 +1116,13 @@
    "portada": {
     "foto": "auto",
     "etiqueta": "RECIBO DE NÓMINA",
-    "titulo": "Si ganas hasta $11,492 al mes, revisa tu nómina",
-    "voz": "Si ganas hasta once mil cuatrocientos noventa y dos pesos al mes, revisa tu nómina."
+    "titulo": "Si nunca abres tu recibo de nómina, estás confiando a ciegas",
+    "voz": "Si nunca abres tu recibo de nómina, estás confiando a ciegas. Revisa esto cada quincena.",
+    "anterior": {
+     "titulo": "Si ganas hasta $11,492 al mes, revisa tu nómina",
+     "voz": "Si ganas hasta once mil cuatrocientos noventa y dos pesos al mes, revisa tu nómina."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1097,13 +1152,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo para tu próxima quincena.",
+    "titulo": "¿Revisas tu recibo cada quincena? Comenta SÍ o NUNCA.",
     "texto": "¿Algo no cuadra? Revísalo con tu contador o PROFEDET.\nMándaselo a quien nunca abre su recibo de nómina.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo para tu próxima quincena y sígueme."
+    "voz": "¿Tú revisas tu recibo cada quincena? Comenta sí o nunca, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo para tu próxima quincena.",
+     "voz": "Guárdalo para tu próxima quincena y sígueme."
+    }
    },
    "fuente": "Decreto que modifica el diverso que otorga el subsidio para el empleo (DOF 31-12-2025, vigente desde el 1-1-2026): ingresos mensuales hasta $11,492.66, subsidio de hasta 15.02% de la UMA mensual, aplicado contra el ISR del mes; UMA mensual 2026 de $3,566.22 (INEGI, comunicado 1/26) x 15.02% = $535.65 (desde el 1-2-2026; en enero de 2026 se aplicó 15.59% de la UMA 2025, transitorio segundo del decreto). Ley del ISR (texto vigente): art. 96 (no se retiene a quien en el mes solo percibe un salario mínimo general), art. 99, fr. III (el patrón expide y entrega CFDI, que vale como recibo de pago). Conasami (DOF 9-12-2025): salario mínimo general 2026 de $315.04 diarios; $440.87 en la Zona Libre de la Frontera Norte. SAT: Visor de comprobantes de nómina para el trabajador (ingresos y retenciones reportados por el patrón; acceso con RFC y contraseña o e.firma). IMSS (gob.mx, 11-7-2025): constancia de semanas cotizadas en línea o en IMSS Digital; sirve para aclarar con el patrón el salario registrado, del que depende el monto de las incapacidades",
    "titulo_post": "Recibo de nómina: qué revisar",
-   "texto_post": "Recibo de nómina: cinco cosas que vale la pena revisar. 🧾\nSi tus ingresos del mes no pasan de $11,492.66, te toca subsidio para el empleo (hasta $535.65 al mes desde febrero de 2026); con el salario mínimo no te deben retener ISR, y cada pago debe tener su CFDI, que puedes ver en el visor de nómina del SAT.\n\nSi algo no cuadra, revísalo con tu contador o con PROFEDET.\n🔖 Guárdalo para cuando te llegue tu próximo recibo.\n📩 Mándaselo a quien nunca abre su recibo de nómina.",
+   "texto_post": "Recibo de nómina: cinco cosas que vale la pena revisar. 🧾\nSi tus ingresos del mes no pasan de $11,492.66, te toca subsidio para el empleo (hasta $535.65 al mes desde febrero de 2026); con el salario mínimo no te deben retener ISR, y cada pago debe tener su CFDI, que puedes ver en el visor de nómina del SAT.\n\nSi algo no cuadra, revísalo con tu contador o con PROFEDET.\n💬 ¿Revisas tu recibo cada quincena? Comenta SÍ o NUNCA. Te contesto a todos.\n🔖 Guárdalo para cuando te llegue tu próximo recibo.\n📩 Mándaselo a quien nunca abre su recibo de nómina.",
    "seo": {
     "palabra_clave": "recibo de nómina",
     "titulo": "Recibo de nómina y el subsidio 2026 🧾",
@@ -1132,7 +1191,8 @@
      "¿Cómo sé con qué salario me registró mi patrón en el IMSS?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c14",
@@ -1143,8 +1203,13 @@
    "portada": {
     "foto": "auto",
     "etiqueta": "INFONAVIT",
-    "titulo": "Si ganas $15,000, tu patrón te guarda unos $750 al mes",
-    "voz": "Si ganas quince mil, tu patrón te guarda unos setecientos cincuenta al mes."
+    "titulo": "Tu patrón te guarda dinero cada mes y tú ni lo sabes",
+    "voz": "Tu patrón te guarda dinero cada mes y tú ni lo sabes. Si ganas quince mil, son unos setecientos cincuenta pesos.",
+    "anterior": {
+     "titulo": "Si ganas $15,000, tu patrón te guarda unos $750 al mes",
+     "voz": "Si ganas quince mil, tu patrón te guarda unos setecientos cincuenta al mes."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1179,13 +1244,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo y revisa tu saldo hoy.",
+    "titulo": "¿Ya revisaste tu saldo? Comenta YA o NUNCA.",
     "texto": "Mándaselo a quien cree que el Infonavit solo sirve para comprar casa.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo, revisa tu saldo hoy y sígueme."
+    "voz": "¿Ya revisaste tu saldo del Infonavit? Comenta ya o nunca, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo y revisa tu saldo hoy.",
+     "voz": "Guárdalo, revisa tu saldo hoy y sígueme."
+    }
    },
    "fuente": "Ley del Infonavit (texto vigente, última reforma DOF 21-02-2025): art. 29, fr. II (el patrón aporta 5% sobre el salario a la subcuenta de vivienda; forma parte del patrimonio de los trabajadores), art. 37 (derecho imprescriptible; a los 70 años sin reclamarlo y sin relación laboral activa, los recursos pasan al Fondo de Pensiones para el Bienestar), art. 39 (intereses anuales; la tasa debe procurar conservar el poder adquisitivo), art. 40 (lo no aplicado a crédito se transfiere, a solicitud del trabajador, a la Afore para la pensión o su entrega), art. 43 Bis (durante un crédito, las aportaciones patronales se aplican a reducir el saldo), art. 41 (con un año de cotización continua, derecho a participar en el arrendamiento social y a usar la subcuenta como garantía conforme a las reglas del Consejo de Administración; reformado DOF 21-02-2025). Ley Federal del Trabajo, art. 136 (5% al Fondo Nacional de la Vivienda). Condusef, Revista Proteja su Dinero (oct-2025): registro gratuito en Mi Cuenta Infonavit para consultar el ahorro de la subcuenta. Ejemplo: 5% de $15,000 = $750",
    "titulo_post": "Subcuenta de vivienda Infonavit: lo que es tuyo",
-   "texto_post": "Subcuenta de vivienda Infonavit: ese 5% es tuyo aunque nunca pidas crédito. 🏠\nTu patrón aporta el 5% de tu salario, el saldo gana intereses, tu derecho no vence y, si no lo usas, al pensionarte pasa a tu Afore. También te puede servir para rentar.\n\nRevisa tu saldo gratis en Mi Cuenta Infonavit.\n🔖 Guárdalo para cuando revises tu cuenta del Infonavit.\n📩 Mándaselo a quien cree que el Infonavit solo sirve para comprar casa.",
+   "texto_post": "Subcuenta de vivienda Infonavit: ese 5% es tuyo aunque nunca pidas crédito. 🏠\nTu patrón aporta el 5% de tu salario, el saldo gana intereses, tu derecho no vence y, si no lo usas, al pensionarte pasa a tu Afore. También te puede servir para rentar.\n\nRevisa tu saldo gratis en Mi Cuenta Infonavit.\n💬 ¿Ya revisaste tu saldo? Comenta YA o NUNCA. Te contesto a todos.\n🔖 Guárdalo para cuando revises tu cuenta del Infonavit.\n📩 Mándaselo a quien cree que el Infonavit solo sirve para comprar casa.",
    "seo": {
     "palabra_clave": "subcuenta de vivienda Infonavit",
     "titulo": "Subcuenta de vivienda Infonavit y tu 5% 🏠",
@@ -1214,7 +1283,8 @@
      "¿Puedo usar el Infonavit para rentar?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c15",
@@ -1229,9 +1299,14 @@
    "portada": {
     "foto": "assets/fotos/video-02-palco.jpg",
     "etiqueta": "AGUINALDO",
-    "titulo": "Si no te pagan tu aguinaldo, haz esto",
-    "voz": "Si no te pagan tu aguinaldo, haz esto.",
-    "foto_reel": "assets/fotos/video-19-sillon.jpg"
+    "titulo": "Si no te pagan el aguinaldo, no es un favor: es ley",
+    "voz": "Si no te pagan tu aguinaldo, no te están haciendo un favor. Es tu derecho, y esto es lo que haces.",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg",
+    "anterior": {
+     "titulo": "Si no te pagan tu aguinaldo, haz esto",
+     "voz": "Si no te pagan tu aguinaldo, haz esto."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1266,13 +1341,17 @@
     }
    ],
    "cierre": {
-    "titulo": "¿Ya te pagaron? Comenta.",
+    "titulo": "¿Ya te pagaron el aguinaldo? Comenta SÍ o NO.",
     "texto": "Mándaselo a quien todavía no ve su aguinaldo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "¿Ya te pagaron? Comenta y sígueme."
+    "voz": "¿Ya te pagaron el aguinaldo? Comenta sí o no, y sígueme.",
+    "anterior": {
+     "titulo": "¿Ya te pagaron? Comenta.",
+     "voz": "¿Ya te pagaron? Comenta y sígueme."
+    }
    },
    "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 87 (antes del 20 de diciembre, mínimo 15 días de salario; parte proporcional aunque ya no se labore), art. 516 (un año para reclamar), art. 992 (multas con la UMA vigente al cometerse la violación), art. 1002 (multa de 50 a 5000 UMA). STPS (gob.mx, 'La PROFEDET es tu aliada en el pago del aguinaldo'): un año a partir del 20 de diciembre; despedidos y quienes renuncian reciben la parte proporcional; multa del art. 1002. PROFEDET (gob.mx, '¿Aún no recibes tu aguinaldo?'): orientación, asesoría, conciliación y representación jurídica gratuitas; 800 911 7877 y 800 717 2942. Conasami: salario mínimo general 2026 de $315.04 diarios (15 días = $4,725.60). INEGI: UMA diaria 2026 de $117.31 (50 UMA = $5,865.50; 5000 UMA = $586,550)",
    "titulo_post": "Aguinaldo no pagado: qué hacer",
-   "texto_post": "Aguinaldo no pagado: qué hacer si no llega antes del 20 de diciembre. 🎁\nTe lo deben pagar antes del 20 (mínimo quince días de salario), te toca lo proporcional aunque ya no trabajes ahí, y PROFEDET te asesora y representa gratis. Tienes un año para reclamarlo.\n\nBusca a PROFEDET (gratis) en gob.mx/profedet.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien todavía no ve su aguinaldo.",
+   "texto_post": "Aguinaldo no pagado: qué hacer si no llega antes del 20 de diciembre. 🎁\nTe lo deben pagar antes del 20 (mínimo quince días de salario), te toca lo proporcional aunque ya no trabajes ahí, y PROFEDET te asesora y representa gratis. Tienes un año para reclamarlo.\n\nBusca a PROFEDET (gratis) en gob.mx/profedet.\n💬 ¿Ya te pagaron el aguinaldo? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien todavía no ve su aguinaldo.",
    "seo": {
     "palabra_clave": "aguinaldo no pagado",
     "titulo": "Aguinaldo no pagado, qué hacer en 2026 🎁",
@@ -1301,7 +1380,8 @@
      "¿Me toca aguinaldo si renuncié?"
     ]
    },
-   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas."
+   "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c16",
@@ -1318,7 +1398,8 @@
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Guarda esto: tu aguinaldo 2026 en 5 datos",
     "voz": "Guarda esto: tu aguinaldo de dos mil veintiséis en cinco datos.",
-    "foto_reel": "assets/fotos/video-02-palco.jpg"
+    "foto_reel": "assets/fotos/video-02-palco.jpg",
+    "gancho_tipo": "dato"
    },
    "diapositivas": [
     {
@@ -1400,8 +1481,13 @@
    "portada": {
     "foto": "assets/fotos/video-18-oficina.jpg",
     "etiqueta": "FONDO DE EMERGENCIA",
-    "titulo": "Si gastas $15,000 al mes, necesitas $45,000 guardados",
-    "voz": "Si gastas quince mil al mes, necesitas por lo menos cuarenta y cinco mil guardados."
+    "titulo": "Ahorrar sin fondo de emergencia es apostar",
+    "voz": "Ahorrar sin fondo de emergencia es apostar. Si gastas quince mil al mes, necesitas por lo menos cuarenta y cinco mil guardados.",
+    "anterior": {
+     "titulo": "Si gastas $15,000 al mes, necesitas $45,000 guardados",
+     "voz": "Si gastas quince mil al mes, necesitas por lo menos cuarenta y cinco mil guardados."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1436,13 +1522,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo para tu próxima quincena.",
+    "titulo": "¿Cuántos meses de gastos tienes guardados? Comenta el número.",
     "texto": "Mándaselo a quien no tiene ni un mes guardado.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo para tu próxima quincena y sígueme."
+    "voz": "¿Cuántos meses de gastos tienes guardados? Comenta el número y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo para tu próxima quincena.",
+     "voz": "Guárdalo para tu próxima quincena y sígueme."
+    }
    },
    "fuente": "Condusef, revista Proteja su Dinero, '¡Que tu cartera no dé el grito!' (1-sep-2024, revista.condusef.gob.mx/ahorro-general/2024/09/fondo-de-emergencia/): fondo equivalente a tres o seis meses de tus gastos mensuales, fijos y variables; con gastos de 15 mil pesos al mes, entre 45 mil y 90 mil; quienes tienen dependientes económicos o ingresos variables (freelancers) deben ahorrar más; guardarlo en una cuenta de una institución financiera, separada de las habituales, de fácil acceso, baja volatilidad y pocas o nulas comisiones. Condusef, revista Proteja su Dinero, 'Tus ahorros están a salvo' (sep-2024, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2024/09/ipab/): el seguro de depósito del IPAB protege hasta 400 mil UDIS por persona y por banco, aproximadamente $3,251,975 a junio de 2024; cubre cuentas de ahorro, de cheques, tarjetas de débito ligadas a cuentas, cuentas de nómina, pagarés con rendimiento liquidable al vencimiento y certificados de depósito; es gratuito y automático; no cubre depósitos en aseguradoras, cajas de ahorro, Sociedades Financieras Populares, cooperativas de ahorro y préstamo, sociedades de inversión, banca de desarrollo ni casas de bolsa. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab): hasta 400,000 UDIS por persona por institución; los saldos de varias cuentas en un mismo banco se suman para el límite. La UDI sube con la inflación, así que 400 mil UDIS siguen siendo más de 3 millones de pesos",
    "titulo_post": "Fondo de emergencia: cuánto guardar y dónde",
-   "texto_post": "Fondo de emergencia: cuánto guardar y dónde para que esté protegido. 🛟\n1. De 3 a 6 meses de tus gastos (no de tu sueldo). Con $15,000 al mes, de $45,000 a $90,000.\n2. Si alguien depende de ti o tu ingreso cambia, guarda más.\n3. En una cuenta aparte, que puedas sacar rápido y con pocas comisiones.\n4. En un banco, el IPAB protege tus cuentas hasta 400 mil UDIS por persona y por banco (más de $3 millones), gratis y en automático.\n5. Cajas de ahorro, Sofipos y cooperativas no tienen el seguro del IPAB.\n\n📚 Condusef, Proteja su Dinero (sep-2024); IPAB.\n🔖 Guárdalo para tu próxima quincena.\n📩 Mándaselo a quien no tiene ni un mes guardado.",
+   "texto_post": "Fondo de emergencia: cuánto guardar y dónde para que esté protegido. 🛟\n1. De 3 a 6 meses de tus gastos (no de tu sueldo). Con $15,000 al mes, de $45,000 a $90,000.\n2. Si alguien depende de ti o tu ingreso cambia, guarda más.\n3. En una cuenta aparte, que puedas sacar rápido y con pocas comisiones.\n4. En un banco, el IPAB protege tus cuentas hasta 400 mil UDIS por persona y por banco (más de $3 millones), gratis y en automático.\n5. Cajas de ahorro, Sofipos y cooperativas no tienen el seguro del IPAB.\n\n📚 Condusef, Proteja su Dinero (sep-2024); IPAB.\n💬 ¿Cuántos meses de gastos tienes guardados? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para tu próxima quincena.\n📩 Mándaselo a quien no tiene ni un mes guardado.",
    "seo": {
     "palabra_clave": "fondo de emergencia",
     "titulo": "Fondo de emergencia de 3 a 6 meses 🛟",
@@ -1471,7 +1561,8 @@
      "¿El IPAB protege las cajas de ahorro?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c18",
@@ -1482,8 +1573,14 @@
    "portada": {
     "foto": "assets/fotos/video-37-sala.jpg",
     "etiqueta": "BURÓ DE CRÉDITO",
-    "titulo": "El Buró de Crédito no es una lista negra",
-    "voz": "El Buró de Crédito no es una lista negra. Esto es lo que sí es."
+    "titulo": "El Buró no es lista negra, y quien te cobra por borrarte te estafa",
+    "voz": "El Buró de Crédito no es una lista negra. Y quien te cobra por borrarte te está estafando.",
+    "anterior": {
+     "titulo": "El Buró de Crédito no es una lista negra",
+     "voz": "El Buró de Crédito no es una lista negra. Esto es lo que sí es."
+    },
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-01-jet.jpg"
    },
    "diapositivas": [
     {
@@ -1518,13 +1615,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo antes de pedir tu próximo crédito.",
+    "titulo": "¿Alguna vez te dijeron que estabas boletinado? Comenta SÍ o NO.",
     "texto": "Mándaselo a quien cree que está boletinado.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo antes de pedir tu próximo crédito y sígueme."
+    "voz": "¿Alguna vez te dijeron que estabas boletinado? Comenta sí o no, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo antes de pedir tu próximo crédito.",
+     "voz": "Guárdalo antes de pedir tu próximo crédito y sígueme."
+    }
    },
    "fuente": "Condusef, '¿En cuánto tiempo me borran del Buró de Crédito?' (gob.mx/condusef/articulos/no-es-una-lista-negra, 12-oct-2016): el Buró de Crédito no es una lista negra; es una Sociedad de Información Crediticia, empresa privada que integra historiales con la información de quienes otorgan créditos, y los otorgantes lo consultan para decidir si prestan; deudas de hasta 25 UDIS se eliminan después de 1 año, de más de 25 y hasta 500 UDIS después de 2, de más de 500 y hasta 1,000 UDIS después de 4, y de más de 1,000 UDIS después de 6 años (si son menores a 400 mil UDIS, sin juicio ni fraude); ofrecen borrarte del Buró a cambio de dinero y eso no se puede hacer; pagar con descuento no borra el registro. Ley para Regular las Sociedades de Información Crediticia (diputados.gob.mx, última reforma DOF 24-01-2024): art. 23 (el incumplimiento se elimina después de 72 meses de haberse incorporado por primera vez; excepción mientras el adeudo esté en juicio; los créditos menores a mil UDIS se eliminan en los términos que fije Banxico), art. 40 (entrega del Reporte de Crédito Especial en cinco días hábiles), art. 41 (envío gratuito cada vez que transcurran doce meses, por correo electrónico o recogiéndolo en la unidad especializada), art. 42 (reclamación si no estás conforme). Banxico, Circular 27/2008, regla decimocuarta: hasta 25 UDIS, 12 meses; más de 25 y hasta 500 UDIS, 24 meses; más de 500 y hasta 1,000 UDIS, 48 meses, contados desde el primer incumplimiento o la última actualización",
    "titulo_post": "Buró de Crédito: qué es y cuánto dura un atraso",
-   "texto_post": "Buró de Crédito: qué es, cómo ver tu reporte gratis y cuánto dura un atraso. 📋\n1. No es una lista negra: es tu historial de cómo pagas tus créditos.\n2. Tu Reporte de Crédito Especial es gratis cada 12 meses (por correo electrónico o en su oficina) y te lo dan en 5 días hábiles.\n3. Un atraso se borra a los 72 meses (6 años) de que se reportó; si la deuda está en juicio, puede durar más.\n4. Si la deuda era de hasta mil UDIS, se borra en 1, 2 o 4 años según el monto.\n5. Nadie puede borrarte a cambio de dinero: es fraude.\n\n📚 LRSIC, arts. 23, 40, 41 y 42; Banxico, Circular 27/2008; Condusef.\n🔖 Guárdalo para cuando pidas tu próximo crédito.\n📩 Mándaselo a quien cree que está boletinado.",
+   "texto_post": "Buró de Crédito: qué es, cómo ver tu reporte gratis y cuánto dura un atraso. 📋\n1. No es una lista negra: es tu historial de cómo pagas tus créditos.\n2. Tu Reporte de Crédito Especial es gratis cada 12 meses (por correo electrónico o en su oficina) y te lo dan en 5 días hábiles.\n3. Un atraso se borra a los 72 meses (6 años) de que se reportó; si la deuda está en juicio, puede durar más.\n4. Si la deuda era de hasta mil UDIS, se borra en 1, 2 o 4 años según el monto.\n5. Nadie puede borrarte a cambio de dinero: es fraude.\n\n📚 LRSIC, arts. 23, 40, 41 y 42; Banxico, Circular 27/2008; Condusef.\n💬 ¿Alguna vez te dijeron que estabas boletinado? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando pidas tu próximo crédito.\n📩 Mándaselo a quien cree que está boletinado.",
    "seo": {
     "palabra_clave": "buró de crédito",
     "titulo": "Buró de Crédito, cuánto dura un atraso 📋",
@@ -1553,7 +1654,8 @@
      "¿El Buró de Crédito es una lista negra?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c19",
@@ -1564,8 +1666,13 @@
    "portada": {
     "foto": "assets/fotos/video-19-sillon.jpg",
     "etiqueta": "APPS DE PRÉSTAMO",
-    "titulo": "Si una app te cobra antes de prestarte, es señal de fraude",
-    "voz": "Si una app te cobra antes de prestarte, es señal de fraude."
+    "titulo": "Si una app te cobra antes de prestarte, bórrala",
+    "voz": "Si una app te cobra antes de prestarte, bórrala. Es una señal clásica de fraude.",
+    "anterior": {
+     "titulo": "Si una app te cobra antes de prestarte, es señal de fraude",
+     "voz": "Si una app te cobra antes de prestarte, es señal de fraude."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1595,13 +1702,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo antes de pedir prestado por el celular.",
+    "titulo": "¿Te ha pasado? Comenta SÍ o NO.",
     "texto": "Mándaselo a quien está por bajar una app de préstamos.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo antes de pedir prestado y sígueme."
+    "voz": "¿Te ha pasado con alguna aplicación? Comenta sí o no, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo antes de pedir prestado por el celular.",
+     "voz": "Guárdalo antes de pedir prestado y sígueme."
+    }
    },
    "fuente": "Condusef, revista Proteja su Dinero, 'Créditos desde el celular' (1-jul-2026, revista.condusef.gob.mx/destacados-del-mes/2026/07/creditos-desde-el-celular/): revisar que cuente con registro en el SIPRES de la CONDUSEF; señales de alerta: no aparece registrada en el SIPRES, pide dinero por adelantado para liberar el préstamo, solicita acceso innecesario a contactos, fotos o micrófono, no explica claramente intereses, comisiones o el monto total, presiona para aceptar de inmediato; descargar solo de tiendas oficiales, leer contrato y aviso de privacidad, comparar el CAT. Condusef (búsqueda en condusef.gob.mx, alertas de fraude): no proporciones dinero antes del otorgamiento de un crédito, ya sea por seguro, comisión, gestión o cualquier otro gasto. Banxico, Calculadora del CAT (banxico.org.mx/CAT): medida estandarizada del costo de financiamiento en porcentaje anual que incorpora la totalidad de los costos y gastos inherentes a los créditos, para fines informativos y de comparación; desde el 17-nov-2009 se calcula sin IVA. Banxico, 'Crédito y Costo Anual Total' (banxico.org.mx/sistema-financiero): el CAT incluye intereses ordinarios, comisiones, cargos y primas de seguros requeridas para el otorgamiento del crédito; es el indicador más importante para comparar el costo de los créditos; se debe buscar y seleccionar el CAT más bajo de aquel crédito que sea acorde con las necesidades y la capacidad de pago; se excluye el IVA",
    "titulo_post": "Apps de préstamo: revisa esto antes de pedir",
-   "texto_post": "Apps de préstamo: 3 señales de alerta y cómo comparar con el CAT antes de pedir. 📱\n1. Busca a la empresa en el SIPRES de Condusef (webapps.condusef.gob.mx/SIPRES). Si no aparece, es señal de alerta.\n2. Si te pide dinero para “liberar” el préstamo, no lo des.\n3. Si pide tus contactos, fotos o micrófono sin necesitarlos, aléjate. Bájala solo de tiendas oficiales.\n4. Compara el CAT: junta intereses, comisiones y seguros obligatorios en un porcentaje anual (sin IVA).\n5. Banxico: busca el CAT más bajo entre los créditos que puedes pagar.\n\n📚 Condusef, Proteja su Dinero (jul-2026); Banxico.\n🔖 Guárdalo para la próxima vez que te ofrezcan un préstamo por el celular.\n📩 Mándaselo a quien está por bajar una app de préstamos.",
+   "texto_post": "Apps de préstamo: 3 señales de alerta y cómo comparar con el CAT antes de pedir. 📱\n1. Busca a la empresa en el SIPRES de Condusef (webapps.condusef.gob.mx/SIPRES). Si no aparece, es señal de alerta.\n2. Si te pide dinero para “liberar” el préstamo, no lo des.\n3. Si pide tus contactos, fotos o micrófono sin necesitarlos, aléjate. Bájala solo de tiendas oficiales.\n4. Compara el CAT: junta intereses, comisiones y seguros obligatorios en un porcentaje anual (sin IVA).\n5. Banxico: busca el CAT más bajo entre los créditos que puedes pagar.\n\n📚 Condusef, Proteja su Dinero (jul-2026); Banxico.\n💬 ¿Te ha pasado? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para la próxima vez que te ofrezcan un préstamo por el celular.\n📩 Mándaselo a quien está por bajar una app de préstamos.",
    "seo": {
     "palabra_clave": "apps de préstamo",
     "titulo": "Apps de préstamo y el CAT antes de pedir 📱",
@@ -1630,7 +1741,8 @@
      "¿Es normal que me pidan un pago para liberar un préstamo?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c20",
@@ -1641,8 +1753,13 @@
    "portada": {
     "foto": "assets/fotos/video-38-oficina.jpg",
     "etiqueta": "INCAPACIDAD IMSS",
-    "titulo": "Si te enfermas, el IMSS te paga solo el 60%",
-    "voz": "Si te enfermas y te incapacitan, el Seguro Social te paga solo el sesenta por ciento."
+    "titulo": "Si te enfermas, el IMSS no te paga tu sueldo completo",
+    "voz": "Si te enfermas, el Seguro Social no te paga tu sueldo completo. Te paga el sesenta por ciento, y no desde el primer día.",
+    "anterior": {
+     "titulo": "Si te enfermas, el IMSS te paga solo el 60%",
+     "voz": "Si te enfermas y te incapacitan, el Seguro Social te paga solo el sesenta por ciento."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1677,13 +1794,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo antes de que lo necesites.",
+    "titulo": "¿Alguna vez te incapacitaron? Comenta SÍ o NO.",
     "texto": "Mándaselo a quien está embarazada o acaba de entrar a trabajar.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo antes de que lo necesites y sígueme."
+    "voz": "¿Alguna vez te incapacitaron? Comenta sí o no, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo antes de que lo necesites.",
+     "voz": "Guárdalo antes de que lo necesites y sígueme."
+    }
    },
    "fuente": "Ley del Seguro Social (diputados.gob.mx, texto vigente, última reforma DOF 15-01-2026): art. 58, fr. I (riesgo de trabajo: cien por ciento del salario en que estuviese cotizando mientras dure la inhabilitación), art. 96 (enfermedad no profesional: subsidio a partir del cuarto día del inicio de la incapacidad, hasta 52 semanas, prorrogable hasta 26 semanas más previo dictamen), art. 97 (cuatro cotizaciones semanales inmediatamente anteriores a la enfermedad; eventuales, seis en los últimos cuatro meses), art. 98 (sesenta por ciento del último salario diario de cotización), art. 101 (maternidad: cien por ciento del último salario diario de cotización durante 42 días anteriores y 42 posteriores al parto; certificado único de 84 días a solicitud), art. 102 (treinta cotizaciones semanales en los doce meses anteriores). IMSS, comunicado 'Incapacidad Temporal de Trabajo del IMSS...' (gob.mx/imss, 15-dic-2021): riesgo de trabajo paga el 100% del salario registrado ante el IMSS desde el primer día y no requiere semanas cotizadas; enfermedad general paga el 60% del salario registrado a partir del cuarto día",
    "titulo_post": "Incapacidad IMSS: cuánto te pagan",
-   "texto_post": "Incapacidad IMSS: cuánto te pagan si te enfermas, si te accidentas en el trabajo o por maternidad. 🏥\n1. Enfermedad general: 60% de tu último salario de cotización, desde el cuarto día y hasta 52 semanas (26 más con dictamen).\n2. Necesitas 4 semanas cotizadas justo antes (eventuales: 6 en los últimos 4 meses).\n3. Riesgo de trabajo: 100% desde el primer día, sin semanas mínimas.\n4. Maternidad: 84 días (42 antes y 42 después del parto) al 100%, con 30 semanas cotizadas en los últimos 12 meses.\n5. Todo se calcula con el salario con el que te registraron en el IMSS.\n\n📚 Ley del Seguro Social, arts. 58, 96, 97, 98, 101 y 102; IMSS.\n🔖 Guárdalo para el día que te den una incapacidad.\n📩 Mándaselo a quien está embarazada o acaba de entrar a trabajar.",
+   "texto_post": "Incapacidad IMSS: cuánto te pagan si te enfermas, si te accidentas en el trabajo o por maternidad. 🏥\n1. Enfermedad general: 60% de tu último salario de cotización, desde el cuarto día y hasta 52 semanas (26 más con dictamen).\n2. Necesitas 4 semanas cotizadas justo antes (eventuales: 6 en los últimos 4 meses).\n3. Riesgo de trabajo: 100% desde el primer día, sin semanas mínimas.\n4. Maternidad: 84 días (42 antes y 42 después del parto) al 100%, con 30 semanas cotizadas en los últimos 12 meses.\n5. Todo se calcula con el salario con el que te registraron en el IMSS.\n\n📚 Ley del Seguro Social, arts. 58, 96, 97, 98, 101 y 102; IMSS.\n💬 ¿Alguna vez te incapacitaron? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para el día que te den una incapacidad.\n📩 Mándaselo a quien está embarazada o acaba de entrar a trabajar.",
    "seo": {
     "palabra_clave": "incapacidad IMSS",
     "titulo": "Incapacidad IMSS, cuánto te pagan 🏥",
@@ -1712,7 +1833,8 @@
      "¿Cuánto paga el IMSS por un accidente de trabajo?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   },
   {
    "id": "c21",
@@ -1723,8 +1845,13 @@
    "portada": {
     "foto": "assets/fotos/yate-blazer-blanco.jpg",
     "etiqueta": "CETES",
-    "titulo": "Con $100 ya le puedes prestar al gobierno",
-    "voz": "Con cien pesos ya le puedes prestar al gobierno. Se llama comprar Cetes."
+    "titulo": "Con $100 ya le prestas al gobierno, y te paga por eso",
+    "voz": "Con cien pesos ya le puedes prestar al gobierno, y te paga por hacerlo. Se llama comprar Cetes.",
+    "anterior": {
+     "titulo": "Con $100 ya le puedes prestar al gobierno",
+     "voz": "Con cien pesos ya le puedes prestar al gobierno. Se llama comprar Cetes."
+    },
+    "gancho_tipo": "postura"
    },
    "diapositivas": [
     {
@@ -1759,13 +1886,17 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdalo para cuando te hablen de Cetes.",
+    "titulo": "¿Ya tienes Cetes? Comenta SÍ o NO.",
     "texto": "Es información, no una recomendación de inversión.\nMándaselo a quien siempre pregunta qué son los Cetes.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
-    "voz": "Guárdalo para cuando te hablen de Cetes y sígueme."
+    "voz": "¿Tú ya tienes Cetes? Comenta sí o no, y sígueme.",
+    "anterior": {
+     "titulo": "Guárdalo para cuando te hablen de Cetes.",
+     "voz": "Guárdalo para cuando te hablen de Cetes y sígueme."
+    }
    },
    "fuente": "cetesdirecto, 'Preguntas frecuentes' (cetesdirecto.com/sites/portal/preguntasfrecuentes.cetesdirecto): los Cetes son Certificados de la Tesorería de la Federación, instrumentos en pesos que emite el gobierno mexicano; se compran con descuento y la ganancia es la diferencia entre lo pagado y su valor nominal al vencimiento, de 10 pesos; se invierte desde 100 pesos (Ahorro Recurrente y domiciliación desde 300 pesos, reglas 2024); no cobra comisiones por manejo de cuenta ni por transacciones (cada SPEI puede tener costo según tu banco); los Cetes se emiten a plazos cercanos a 1 mes (típicamente 28 días), tres meses, seis meses y un año; reinversión automática al vencimiento en Cetes de 28 días; requisitos: mayor de 18 años, CLABE de una cuenta bancaria propia en México, INE, CURP y RFC; el ISR se retiene solo cuando hay ganancias y cetesdirecto reporta los intereses pagados a la autoridad. Nacional Financiera, 'Cetesdirecto' (gob.mx/nafin/acciones-y-programas/cetesdirecto-204296): plataforma en internet para que cualquier persona adquiera valores gubernamentales sin intermediarios, operada por Nacional Financiera; se pueden comprar títulos desde $100; es gratuita y no cobra comisiones. cetesdirecto, 'Productos' (cetesdirecto.com/sites/portal/productos.cetesdirecto): los cetes tienen plazos disponibles de 28, 91, 182, 364 y 728 días",
    "titulo_post": "Cetes: qué son y desde cuánto",
-   "texto_post": "Cetes: qué son, cómo se gana y qué necesitas para comprarlos en cetesdirecto. 💵\n1. Son Certificados de la Tesorería de la Federación: títulos en pesos que emite el gobierno de México.\n2. Los compras con descuento y al vencer te pagan $10 por título; tu ganancia es la diferencia.\n3. En cetesdirecto (Nacional Financiera) empiezas con $100 y no cobra comisiones.\n4. Hay plazos de 28, 91, 182, 364 y 728 días.\n5. Necesitas ser mayor de 18, INE, CURP, RFC y una cuenta bancaria a tu nombre.\n6. Si ganas, se te retiene ISR.\n\nEs información, no una recomendación de inversión.\n📚 cetesdirecto; Nacional Financiera.\n🔖 Guárdalo para cuando te hablen de Cetes.\n📩 Mándaselo a quien siempre pregunta qué son los Cetes.",
+   "texto_post": "Cetes: qué son, cómo se gana y qué necesitas para comprarlos en cetesdirecto. 💵\n1. Son Certificados de la Tesorería de la Federación: títulos en pesos que emite el gobierno de México.\n2. Los compras con descuento y al vencer te pagan $10 por título; tu ganancia es la diferencia.\n3. En cetesdirecto (Nacional Financiera) empiezas con $100 y no cobra comisiones.\n4. Hay plazos de 28, 91, 182, 364 y 728 días.\n5. Necesitas ser mayor de 18, INE, CURP, RFC y una cuenta bancaria a tu nombre.\n6. Si ganas, se te retiene ISR.\n\nEs información, no una recomendación de inversión.\n📚 cetesdirecto; Nacional Financiera.\n💬 ¿Ya tienes Cetes? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando te hablen de Cetes.\n📩 Mándaselo a quien siempre pregunta qué son los Cetes.",
    "seo": {
     "palabra_clave": "cetes",
     "titulo": "Cetes desde 100 pesos, qué son 💵",
@@ -1794,7 +1925,8 @@
      "¿Los Cetes pagan impuestos?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026"
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
   }
  ]
 }

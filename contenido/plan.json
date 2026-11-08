@@ -510,7 +510,7 @@
    "accion": "De pie en su oficina, con un fajo de billetes en una mano y el celular en la otra; Capital sentado a su lado.",
    "texto_pantalla": "¿El SAT ve tus depósitos en efectivo?",
    "texto_post": "¿Depositas efectivo? Si en un mes pasas de $15,000, tu banco se lo reporta al SAT. 🏦\nNo es un impuesto: es un aviso. Pero si no puedes demostrar de dónde salió, el SAT te puede revisar.\n\n📚 Ley del ISR, artículo 55, fracción IV · SAT",
-   "pregunta_comentarios": "¿Sabías que el banco le avisa al SAT?",
+   "pregunta_comentarios": "¿Depositas efectivo seguido? Comenta SÍ o NO.",
    "mandar_a": "quien cobra en efectivo y lo deposita",
    "ganchos_alternativos": [
     "Tu banco le avisa al SAT si haces esto.",
@@ -545,7 +545,8 @@
      "¿El SAT cobra impuesto por depósitos en efectivo?",
      "¿Qué pasa si deposito más de 15 mil pesos?"
     ]
-   }
+   },
+   "pregunta_comentarios_anterior": "¿Sabías que el banco le avisa al SAT?"
   },
   {
    "estado": "pendiente",
@@ -576,7 +577,7 @@
    "accion": "Recargada en la barra de la cocina con un estado de cuenta en la mano; Capital sentado junto a ella.",
    "texto_pantalla": "¿Pagas solo el mínimo?",
    "texto_post": "¿Pagas solo el mínimo de tu tarjeta? 💳\nCon $10,000 de deuda y una tasa de 55% puedes tardar 19 años y medio en liquidarla, según un ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.\n\n📚 Condusef, calculadora de pagos mínimos",
-   "pregunta_comentarios": "¿Sabías cuánto tardas pagando el mínimo?",
+   "pregunta_comentarios": "¿Pagas solo el mínimo? Comenta SÍ o NO.",
    "mandar_a": "quien siempre paga el mínimo de su tarjeta",
    "ganchos_alternativos": [
     "19 años pagando una deuda de 10 mil pesos.",
@@ -611,7 +612,8 @@
      "¿Conviene pagar el mínimo de la tarjeta?",
      "¿Cómo salir de deudas de tarjeta de crédito?"
     ]
-   }
+   },
+   "pregunta_comentarios_anterior": "¿Sabías cuánto tardas pagando el mínimo?"
   },
   {
    "estado": "pendiente",
@@ -642,7 +644,7 @@
    "accion": "Sentada en la orilla de la cama, levantando un poco el colchón como si escondiera dinero; Capital echado en la alfombra.",
    "texto_pantalla": "¿Tu dinero bajo el colchón se encoge?",
    "texto_post": "¿Guardas dinero debajo del colchón? 🛏️\nSi la inflación sigue en 3.6%, $10,000 de hoy van a comprar como $8,400 en 5 años. No lo pierdes de golpe: se encoge solito.\n\n📚 INEGI, inflación de octubre de 2026",
-   "pregunta_comentarios": "¿Tú dónde guardas tus ahorros?",
+   "pregunta_comentarios": "¿Dónde guardas tu ahorro? Comenta BANCO, CASA o NADA.",
    "mandar_a": "quien todavía guarda su dinero en casa",
    "ganchos_alternativos": [
     "Tu dinero bajo el colchón pierde valor cada año.",
@@ -677,7 +679,8 @@
      "¿Cuál es la inflación en México en 2026?",
      "¿Es malo guardar dinero en casa?"
     ]
-   }
+   },
+   "pregunta_comentarios_anterior": "¿Tú dónde guardas tus ahorros?"
   },
   {
    "estado": "pendiente",
@@ -708,7 +711,7 @@
    "accion": "En su escritorio de casa con la laptop abierta, se graba con el celular; Capital echado bajo el escritorio.",
    "texto_pantalla": "¿Cuánto gana el 10% más rico de México?",
    "texto_post": "¿Cuánto junta al mes el 10% de los hogares con más ingresos de México? 💰\nCerca de $78,000 (INEGI). El salario mínimo de 2026: unos $9,500 al mes.\n\n📚 INEGI, ENIGH 2024 · Conasami",
-   "pregunta_comentarios": "¿En cuál estás tú? Sin pena.",
+   "pregunta_comentarios": "¿Cuánto entra en tu casa al mes? Comenta el número.",
    "mandar_a": "quien cree que ya es clase media alta",
    "ganchos_alternativos": [
     "78 mil al mes: lo que junta el 10% más rico de México.",
@@ -743,7 +746,8 @@
      "¿Cuánto es el salario mínimo en 2026?",
      "¿Cuánto se necesita ganar para ser clase alta en México?"
     ]
-   }
+   },
+   "pregunta_comentarios_anterior": "¿En cuál estás tú? Sin pena."
   },
   {
    "id": "03",
@@ -806,12 +810,13 @@
     "¿Cuánto tarda tu dinero en duplicarse?"
    ],
    "texto_pantalla": "¿En cuántos años se duplica tu dinero?",
-   "pregunta_comentarios": "¿Cuánto te paga tu cuenta al año?",
+   "pregunta_comentarios": "¿Cuánto te paga tu cuenta al año? Comenta el porcentaje.",
    "guion_anterior": "Una división te dice cuándo se duplica tu dinero. Setenta y dos entre tu tasa anual. Al ocho por ciento: nueve años. Regla del setenta y dos.",
    "mandar_a": "quien tiene su dinero parado en el banco",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuánto te paga tu cuenta al año?"
   },
   {
    "id": "04",
@@ -870,12 +875,13 @@
     "Escribir lo que te preocupa durante quince minutos aligera la mente."
    ],
    "texto_pantalla": "15 minutos para vaciar tu cabeza",
-   "pregunta_comentarios": "¿Qué es lo que más te preocupa esta semana?",
+   "pregunta_comentarios": "¿Lo vas a probar hoy? Comenta SÍ o NO.",
    "guion_anterior": "Si traes la cabeza llena de preocupaciones, haz esto quince minutos. Escribe todo lo que te preocupa, sin filtro. James Pennebaker lo estudió por décadas: aligera la mente.",
    "mandar_a": "quien trae mil cosas en la cabeza",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué es lo que más te preocupa esta semana?"
   },
   {
    "id": "05",
@@ -936,12 +942,13 @@
     "Si algo toma menos de dos minutos, hazlo ya."
    ],
    "texto_pantalla": "Lo que de verdad te roba energía",
-   "pregunta_comentarios": "¿Qué pendiente de 2 minutos traes cargando?",
+   "pregunta_comentarios": "¿Cuántos pendientes de 2 minutos traes? Comenta el número.",
    "guion_anterior": "Lo que te roba energía no son los problemas grandes: son los pendientes de dos minutos. Regla de David Allen: si toma menos, hazlo ya.",
    "mandar_a": "quien siempre dice que no le alcanza el día",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué pendiente de 2 minutos traes cargando?"
   },
   {
    "id": "06",
@@ -1003,12 +1010,13 @@
     "De cada diez pesos que ganes, guarda uno para ti."
    ],
    "texto_pantalla": "Por qué nunca te alcanza para ahorrar",
-   "pregunta_comentarios": "¿Cuánto apartas tú cuando te pagan?",
+   "pregunta_comentarios": "¿Cuánto apartas cuando te pagan? Comenta el porcentaje.",
    "guion_anterior": "Si ahorras lo que te sobra, casi nunca vas a ahorrar. De cada diez pesos que ganes, guarda uno primero. Lo escribió George Clason hace casi cien años.",
    "mandar_a": "quien dice que nunca le alcanza para ahorrar",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuánto apartas tú cuando te pagan?"
   },
   {
    "id": "07",
@@ -1186,12 +1194,13 @@
     "Dos inhalaciones por la nariz y una exhalación larga por la boca."
    ],
    "texto_pantalla": "La respiración que le ganó a meditar",
-   "pregunta_comentarios": "¿Lo probaste? ¿Cómo te sentiste?",
+   "pregunta_comentarios": "¿Lo hiciste conmigo? Comenta LISTO.",
    "guion_anterior": "Cinco minutos de esta respiración mejoraron el ánimo más que meditar. Lo midió Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Pruébalo ahora.",
    "mandar_a": "quien anda con el estrés hasta el techo",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Lo probaste? ¿Cómo te sentiste?"
   },
   {
    "id": "10",
@@ -1486,12 +1495,13 @@
     "Tu mente no suelta lo que dejaste a medias."
    ],
    "texto_pantalla": "Por qué no puedes dormir con pendientes",
-   "pregunta_comentarios": "¿Qué pendiente no te deja dormir?",
+   "pregunta_comentarios": "¿Cuántos pendientes traes en la cabeza? Comenta el número.",
    "guion_anterior": "Si no puedes dormir pensando en pendientes, es por esto. Tu mente no suelta lo que dejaste a medias: efecto Zeigarnik. Escribe el siguiente paso y descansa.",
    "mandar_a": "quien se duerme pensando en el trabajo",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué pendiente no te deja dormir?"
   },
   {
    "id": "15",
@@ -1550,12 +1560,13 @@
     "Haz primero lo que más te cuesta."
    ],
    "texto_pantalla": "Antes de ver tu celular, haz esto",
-   "pregunta_comentarios": "¿Cuál es tu sapo de mañana?",
+   "pregunta_comentarios": "¿Ya sabes cuál es tu sapo de mañana? Comenta SÍ o NO.",
    "guion_anterior": "Antes de revisar el celular, haz esto. Primero lo que más te cuesta: Brian Tracy lo llama tragarte el sapo. Lo demás es ganancia.",
    "mandar_a": "quien abre el celular antes de abrir los ojos",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuál es tu sapo de mañana?"
   },
   {
    "id": "16",
@@ -2060,14 +2071,15 @@
     "hasta": "2026-12-19"
    },
    "texto_pantalla": "Cómo dividir tu aguinaldo",
-   "pregunta_comentarios": "¿Tú cómo lo divides?",
+   "pregunta_comentarios": "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o GUSTO.",
    "parte": "Serie Aguinaldo 2026 · parte 4 de 4",
    "mandar_a": "quien siempre se queda sin aguinaldo en enero",
    "guion_anterior": "Aguinaldo sin plan se acaba en enero. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa.",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "guardar_para": "cuando te paguen el aguinaldo"
+   "guardar_para": "cuando te paguen el aguinaldo",
+   "pregunta_comentarios_anterior": "¿Tú cómo lo divides?"
   },
   {
    "id": "21",
@@ -2136,12 +2148,13 @@
     "hasta": "2027-01-10"
    },
    "texto_pantalla": "Lo primero que haces con tu aguinaldo",
-   "pregunta_comentarios": "¿Cuánto debes en tu tarjeta?",
+   "pregunta_comentarios": "¿Cuánto debes en tu tarjeta? Comenta el número, sin pena.",
    "guion_anterior": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
    "mandar_a": "quien ya tiene planes para su aguinaldo",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuánto debes en tu tarjeta?"
   },
   {
    "id": "22",
@@ -2210,12 +2223,13 @@
     "hasta": "2027-01-20"
    },
    "texto_pantalla": "Tu propósito 2027 no es el gym",
-   "pregunta_comentarios": "¿Cuántos meses aguantarías sin sueldo?",
+   "pregunta_comentarios": "¿Cuántos meses aguantarías sin sueldo? Comenta el número.",
    "guion_anterior": "Tu propósito de año nuevo no es el gym, es tu fondo de emergencia: de tres a seis meses de gastos, como recomienda la CONDUSEF.",
    "mandar_a": "quien ya está haciendo su lista de propósitos",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuántos meses aguantarías sin sueldo?"
   },
   {
    "id": "23",
@@ -2419,12 +2433,13 @@
     "hasta": "2027-02-10"
    },
    "texto_pantalla": "Tu presupuesto en 3 números",
-   "pregunta_comentarios": "¿Cuánto se te va en lo que quieres?",
+   "pregunta_comentarios": "¿Ya tienes presupuesto para enero? Comenta SÍ o NO.",
    "guion_anterior": "Haz tu presupuesto de enero en un minuto: cincuenta por ciento a lo necesario, treinta a lo que quieres y veinte a ahorro y deudas.",
    "mandar_a": "quien siempre llega a fin de mes sin un peso",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuánto se te va en lo que quieres?"
   },
   {
    "id": "26",
@@ -2489,12 +2504,13 @@
    },
    "puente_producto": true,
    "texto_pantalla": "La pelea que predice el divorcio",
-   "pregunta_comentarios": "¿En tu casa quién maneja el dinero?",
+   "pregunta_comentarios": "¿En tu casa quién maneja el dinero? Comenta YO, MI PAREJA o NADIE.",
    "guion_anterior": "Las peleas por dinero predicen el divorcio más que otras peleas de pareja. Lo midió un estudio de cuatro mil parejas. Hablen de dinero antes de pelear.",
    "mandar_a": "tu pareja (si se atreven)",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿En tu casa quién maneja el dinero?"
   },
   {
    "id": "27",
@@ -2558,12 +2574,13 @@
     "tipo_gancho": "cifra"
    },
    "texto_pantalla": "Pudieron comprar Netflix y se rieron",
-   "pregunta_comentarios": "¿Qué negocio crees que va a desaparecer?",
+   "pregunta_comentarios": "¿Qué negocio va a desaparecer? Comenta uno.",
    "guion_anterior": "Blockbuster pudo comprar Netflix por cincuenta millones de dólares y se rio. Fue en dos mil. Diez años después, Blockbuster quebró. Nunca te rías de lo pequeño.",
    "mandar_a": "quien se burla de los negocios nuevos",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué negocio crees que va a desaparecer?"
   },
   {
    "id": "28",
@@ -2627,12 +2644,13 @@
     "tipo_gancho": "contradiccion"
    },
    "texto_pantalla": "Costco no gana vendiendo",
-   "pregunta_comentarios": "¿Tu negocio podría cobrar una membresía?",
+   "pregunta_comentarios": "¿Tu negocio podría cobrar membresía? Comenta SÍ o NO.",
    "guion_anterior": "La mitad de lo que gana Costco no viene de lo que vende: viene de las membresías. Clientes que pagan cada año antes de comprar. Ingreso recurrente.",
    "mandar_a": "quien tiene un negocio y vive al día",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Tu negocio podría cobrar una membresía?"
   },
   {
    "id": "29",
@@ -2695,12 +2713,13 @@
    "adn": {
     "tipo_gancho": "error"
    },
-   "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea?",
+   "pregunta_comentarios": "¿Cuántas personas ya te pagaron por tu idea? Comenta el número.",
    "guion_anterior": "Enamorarte de tu idea antes de que alguien la pague. Vende primero, aunque sea a diez personas. Si nadie paga, no es negocio: es pasatiempo.",
    "mandar_a": "quien lleva meses con \"la idea\"",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Cuántas personas ya te pagaron por tu idea?"
   },
   {
    "id": "30",
@@ -2762,12 +2781,13 @@
    "adn": {
     "tipo_gancho": "cifra"
    },
-   "pregunta_comentarios": "¿Con cuánto empezaste tu negocio?",
+   "pregunta_comentarios": "¿Con cuánto empezaste tu negocio? Comenta la cifra.",
    "guion_anterior": "Menos del que crees. Sara Blakely empezó Spanx con cinco mil dólares de sus ahorros. Empieza con lo que tienes y crece con lo que vendes.",
    "mandar_a": "quien dice que no emprende por falta de dinero",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Con cuánto empezaste tu negocio?"
   },
   {
    "id": "31",
@@ -2830,12 +2850,13 @@
    "adn": {
     "tipo_gancho": "contradiccion"
    },
-   "pregunta_comentarios": "¿Qué negocio harías mejor que el original?",
+   "pregunta_comentarios": "¿Qué negocio harías mejor que el original? Comenta uno.",
    "guion_anterior": "No. Google no fue el primer buscador. Facebook no fue la primera red social. Gana quien lo hace mejor, no quien llega primero.",
    "mandar_a": "quien dice que su idea \"ya existe\"",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué negocio harías mejor que el original?"
   },
   {
    "id": "32",
@@ -2906,12 +2927,13 @@
    "adn": {
     "tipo_gancho": "dato"
    },
-   "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+   "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
    "guion_anterior": "Airbnb casi quiebra y se salvó vendiendo cereal. En dos mil ocho, sus fundadores llenos de deudas vendieron cajas a cuarenta dólares. Juntaron unos treinta mil y entraron a una aceleradora. Sígueme para la número dos.",
    "mandar_a": "quien está a punto de rendirse con su negocio",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
   },
   {
    "id": "33",
@@ -2982,12 +3004,13 @@
    "adn": {
     "tipo_gancho": "cifra"
    },
-   "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+   "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
    "guion_anterior": "Un video de cuatro mil quinientos dólares terminó en una venta de mil millones. Dollar Shave Club lo subió a YouTube y se le acabó el inventario en horas. Unilever la compró. Sígueme para la número tres.",
    "mandar_a": "quien dice que las redes no venden",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
   },
   {
    "id": "34",
@@ -3057,7 +3080,8 @@
    "adn": {
     "tipo_gancho": "historia"
    },
-   "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
   },
   {
    "id": "35",
@@ -3125,12 +3149,13 @@
    "adn": {
     "tipo_gancho": "contradiccion"
    },
-   "pregunta_comentarios": "¿Qué empresa quieres que cuente después?",
+   "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
    "guion_anterior": "Mailchimp nunca aceptó dinero de inversionistas. Creció solo con lo que vendía. En dos mil veintiuno, Intuit la compró por doce mil millones de dólares. No necesitas inversionistas para crecer. Sígueme para la número cinco.",
    "mandar_a": "quien cree que sin inversionistas no se puede",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
-   ]
+   ],
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
   },
   {
    "id": "36",
@@ -3198,7 +3223,8 @@
    "adn": {
     "tipo_gancho": "dato"
    },
-   "pregunta_comentarios": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
   }
  ]
 }

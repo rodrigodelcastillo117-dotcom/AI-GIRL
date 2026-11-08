@@ -943,6 +943,25 @@ def presupuesto(plan, ejecuciones, config, hoy):
             'necesarios': necesarios, 'reserva': reserva, 'sobran': restantes - reserva - necesarios}
 
 
+def ganchos_carrusel(carruseles, historial):
+    """Prueba de ganchos (Rodrigo, 8-nov-2026, docs/PERSONAJE.md): vistas de TikTok de cada carrusel cerca de las
+    48 h (entre 24 y 96 h), agrupadas por portada.gancho_tipo (postura, si, dato). Gana un tipo con 3 o más
+    carruseles que rinda 20% más que el segundo; ese tipo se usa en los guiones de video (que cuestan créditos)."""
+    tipos = {}
+    for c in carruseles:
+        tomas = [f for f in historial if f['video_id'] == c['id'] and (f.get('tt') or {}).get('v') is not None
+                 and 24 <= (f['tt'].get('h') or f.get('horas') or 0) <= 96]
+        if not tomas:
+            continue
+        cerca = min(tomas, key=lambda f: abs((f['tt'].get('h') or f.get('horas')) - 48))
+        tipos.setdefault((c.get('portada') or {}).get('gancho_tipo', 'dato'), []).append(cerca['tt']['v'])
+    filas = sorted(({'tipo': t, 'n': len(v), 'vistas_48h': round(statistics.mean(v))} for t, v in tipos.items()),
+                   key=lambda f: -f['vistas_48h'])
+    con_datos = [f for f in filas if f['n'] >= 3]
+    gana = con_datos[0]['tipo'] if len(con_datos) >= 2 and con_datos[0]['vistas_48h'] >= 1.2 * con_datos[1]['vistas_48h'] else None
+    return {'tipos': filas, 'gana': gana}
+
+
 def auditar():
     plan = cargar('plan.json', {'videos': []})
     historial = cargar('metricas.json', [])
@@ -971,6 +990,7 @@ def auditar():
     siguiente = next((v for v in plan['videos'] if v['id'] == d.get('video_id')), None)
     if siguiente:
         d['segundos'], d['creditos'] = segundos(siguiente, config), creditos(siguiente, config)
+    resultado['ganchos_carrusel'] = ganchos_carrusel(cargar('carruseles.json', {'carruseles': []})['carruseles'], historial)
     guardar('auditoria.json', resultado)
     print(f"Auditoría: {len(notas)} videos calificados, base {base} vistas a 36 h.")
     for atributo, filas in ranking.items():
@@ -996,6 +1016,9 @@ def auditar():
         print('Carruseles:', n)
     for c in k['comandos']:
         print('  ', c)
+    g = resultado['ganchos_carrusel']
+    print('Ganchos de carrusel en TikTok (vistas a ~48 h): ' + (', '.join(f"{f['tipo']} {f['vistas_48h']} ({f['n']})" for f in g['tipos']) or 'sin datos')
+          + (f" · gana {g['gana']}: úsalo en los guiones de video" if g['gana'] else ' · en prueba (3+ por tipo y 20% de ventaja)'))
     print('Siguiente a generar:', d['por_que'], f"({d['segundos']} s, {d['creditos']} créditos)" if d.get('segundos') else '')
     for c in d.get('cambios_sugeridos', []):
         print(f"  Cambiar {c['atributo']}: {c['de']} → {c['a']} ({c['por_que']})")

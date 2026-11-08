@@ -278,5 +278,12 @@
   "tipo": "tecnico",
   "aprendizaje": "La voz clonada dijo \"PROFEDET\" como \"profedé\" 3 veces seguidas (la t final se pierde y la revisión de texto la rechaza). Con el nombre completo (\"la Procuraduría de la Defensa del Trabajo\") salió a la primera con texto 1.00.",
   "regla": "En la voz de los carruseles, no uses siglas que terminan en consonante (PROFEDET, CONDUSEF): di el nombre completo o \"la Procuraduría\"; la diapositiva puede seguir mostrando la sigla."
+ },
+ {
+  "fecha_utc": "2026-11-08T23:30:00Z",
+  "origen": "Rodrigo",
+  "tipo": "contenido",
+  "aprendizaje": "Rodrigo: \"seguimos MUY MAL, nadie nos sigue, comentan, nada\". A 11 días: ~500 vistas por publicación, casi cero comentarios reales, 0 suscriptores nuevos. Diagnóstico: datos genéricos sin opinión, preguntas que se contestan en la cabeza (\"¿Ya lo sabías?\", \"Te leo\") y nadie contesta en Instagram ni TikTok.",
+  "regla": "docs/PERSONAJE.md manda en el tono: portada con postura (portada.gancho_tipo), cierre con pregunta de una palabra o un número y \"Te contesto a todos\"; Rodrigo contesta en Instagram y TikTok con las Respuestas rápidas del panel. La auditoría compara vistas de TikTok a ~48 h por gancho_tipo; el que gane pasa a los guiones de video."
  }
 ]

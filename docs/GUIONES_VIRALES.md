@@ -1,5 +1,8 @@
 # Guiones virales de Victoria
 
+Tono y opiniones de Victoria: `docs/PERSONAJE.md` (8-nov-2026). Cada guion abre con postura y cierra con una
+pregunta que se contesta con una palabra o un número (`pregunta_comentarios`).
+
 Meta del canal: **monetizar**. Para eso cada guion se escribe para maximizar que se vea completo,
 se vuelva a ver, se guarde y se comparta. Ningún guion garantiza ser viral; lo que sí se controla
 es que cada uno cumpla esta lista, y el laboratorio (`scripts/aprender.py`) dice cuáles funcionan
