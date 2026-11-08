@@ -1,26 +1,5 @@
 [
  {
-  "fecha": "2026-11-07",
-  "tipo": "reel",
-  "id": "",
-  "estado": "programado",
-  "que": "Reel de Instagram del carrusel c08 (el mismo video del Short)",
-  "horas": {
-   "ig": "15:00"
-  }
- },
- {
-  "fecha": "2026-11-07",
-  "tipo": "carrusel",
-  "id": "c09",
-  "que": "Sale el carrusel c09 · afore impuestos",
-  "estado": "programado",
-  "horas": {
-   "tt": "17:00",
-   "yt": "10:00"
-  }
- },
- {
   "fecha": "2026-11-08",
   "tipo": "video",
   "id": "17",
@@ -36,9 +15,12 @@
   "fecha": "2026-11-08",
   "tipo": "carrusel",
   "id": "c16",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c16 · aguinaldo datos para guardar · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Sale el carrusel c16 · aguinaldo datos para guardar",
+  "estado": "programado",
+  "horas": {
+   "tt": "15:00",
+   "yt": "17:00"
+  }
  },
  {
   "fecha": "2026-11-09",
@@ -51,10 +33,10 @@
  {
   "fecha": "2026-11-10",
   "tipo": "video",
-  "id": "",
+  "id": "18",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video (lo elige el laboratorio el día anterior)"
+  "que": "Video 18 (ya generado)"
  },
  {
   "fecha": "2026-11-10",
@@ -135,5 +117,13 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c19 · apps prestamo cat · TikTok (carrusel diario) y short en YouTube (prueba)"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
+  "id": "c20",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c20 · incapacidad imss · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  }
 ]

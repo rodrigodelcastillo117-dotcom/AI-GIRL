@@ -1339,7 +1339,7 @@
     {
      "titulo": "Si no te pagan: PROFEDET",
      "texto": "PROFEDET te orienta, te acompaña a conciliar y te representa en juicio, gratis. Búscala en gob.mx/profedet.\n\nPROFEDET",
-     "voz": "Cuarto: si no te pagan, PROFEDET te ayuda gratis."
+     "voz": "Cuarto: si no te pagan, la Procuraduría de la Defensa del Trabajo te ayuda gratis."
     },
     {
      "titulo": "Un año para reclamar",
@@ -1385,9 +1385,11 @@
    },
    "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet.",
    "publica_utc_por_red": {
-    "tt": "2026-11-08T21:00:00Z"
+    "tt": "2026-11-08T21:00:00Z",
+    "yt": "2026-11-08T23:00:00Z"
    },
-   "publica_utc": "2026-11-08T21:00:00Z"
+   "publica_utc": "2026-11-08T21:00:00Z",
+   "youtube": "VhWYrJ5NmrY"
   },
   {
    "id": "c17",

@@ -28,7 +28,7 @@
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 586,
+  "v_tt": 607,
   "l_tt": 8,
   "c_tt": 0,
   "s_tt": 0,
@@ -71,7 +71,7 @@
   "l_tt": 9,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 9,
+  "v_ig": 10,
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
@@ -147,7 +147,7 @@
   "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0,
-  "r_yt": 28.7
+  "r_yt": 29.9
  },
  {
   "id": "c05",
@@ -192,19 +192,19 @@
    "tt": "2026-11-03T21:05:46Z",
    "yt": "2026-11-03T20:00:00Z"
   },
-  "v_yt": 136,
+  "v_yt": 137,
   "l_yt": 3,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 328,
+  "v_tt": 333,
   "l_tt": 18,
   "c_tt": 0,
   "s_tt": 1,
-  "v_ig": 45,
+  "v_ig": 46,
   "l_ig": 12,
   "c_ig": 7,
   "s_ig": 0,
-  "r_yt": 61.3
+  "r_yt": 62.3
  },
  {
   "id": "c07",
@@ -239,10 +239,11 @@
   "l_tt": 7,
   "c_tt": 0,
   "s_tt": 1,
-  "v_ig": 15,
+  "v_ig": 16,
   "l_ig": 12,
   "c_ig": 6,
-  "s_ig": 0
+  "s_ig": 0,
+  "r_yt": 58.1
  },
  {
   "id": "c08",
@@ -262,19 +263,23 @@
   "linea": "gastos hormiga: tu café de $50 diario te cuesta $18,000 al año. ☕",
   "tipo": "carrusel",
   "linea_reel": "tu café de $50 diario te cuesta $18,000 al año",
-  "reel_ig": "2026-11-07 15:00",
+  "reel_ig": "2026-11-07 15:02",
   "publica_utc_por_red": {
    "tt": "2026-11-06T15:06:50Z",
    "yt": "2026-11-06T20:00:00Z"
   },
-  "v_yt": 232,
+  "v_yt": 378,
   "l_yt": 6,
   "c_yt": 2,
   "s_yt": 0,
-  "v_tt": 179,
+  "v_tt": 181,
   "l_tt": 4,
   "c_tt": 0,
-  "s_tt": 1
+  "s_tt": 1,
+  "v_ig": 12,
+  "l_ig": 2,
+  "c_ig": 1,
+  "s_ig": 0
  },
  {
   "id": "c09",
@@ -286,19 +291,27 @@
   "fondo": "gimnasio-ciudad.jpg",
   "portada": "video-01-jet.jpg",
   "horas": {
-   "tt": "2026-11-07 17:00",
+   "tt": "2026-11-07 17:05",
    "yt": "2026-11-07 10:00"
   },
   "youtube_id": "y-HMXcYyAHY",
-  "publica_utc": "2026-11-07T23:00:00Z",
+  "publica_utc": "2026-11-07T23:05:57Z",
   "linea": "ahorro voluntario afore: así puede bajarte impuestos. 🧾",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-07T23:00:00Z",
+   "tt": "2026-11-07T23:05:57Z",
    "yt": "2026-11-07T16:00:00Z"
-  }
+  },
+  "v_yt": 39,
+  "l_yt": 3,
+  "c_yt": 2,
+  "s_yt": 0,
+  "v_tt": 89,
+  "l_tt": 0,
+  "c_tt": 0,
+  "s_tt": 0
  },
  {
   "id": "c10",
@@ -410,21 +423,27 @@
  },
  {
   "id": "c16",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "aguinaldo datos para guardar",
   "gancho": "Guarda esto: tu aguinaldo 2026 en 5 datos",
   "titulo": "Aguinaldo 2026 en 5 datos para guardar 🔖",
   "diapositivas": 7,
   "fondo": "rincon-lectura.jpg",
   "portada": "video-17-sala-roja.jpg",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "horas": {
+   "tt": "2026-11-08 15:00",
+   "yt": "2026-11-08 17:00"
+  },
+  "youtube_id": "VhWYrJ5NmrY",
+  "publica_utc": "2026-11-08T21:00:00Z",
   "linea": "aguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-08T21:00:00Z",
+   "yt": "2026-11-08T23:00:00Z"
+  }
  },
  {
   "id": "c17",
