@@ -761,6 +761,8 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     por_red = lambda c: c.get('publica_utc_por_red') or {}
     falta = lambda c, r: c['estado'] in ('listo', 'programado', 'publicado') and r not in por_red(c) and en_ventana(c, hoy)
     sale_hoy = lambda lista, r: [h[r] for _, h in publicaciones(plan, lista) if r in h and h[r].date() == hoy]
+    # Solo carruseles (sin los videos del plan): antes el video del día contaba como "short de carrusel de hoy" (8-nov-2026).
+    carrusel_hoy = lambda r: [h[r] for _, h in publicaciones({'videos': []}, carruseles) if r in h and h[r].date() == hoy]
     salida = {'tiktok': None, 'instagram': None, 'youtube': None, 'notas': []}
 
     # TikTok: el primero que no ha salido ahí (temporada primero).
@@ -788,7 +790,7 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     if video_hoy and prueba_yt.get('desde', '9999') <= hoy.isoformat() <= prueba_yt.get('hasta', ''):
         # Prueba de Rodrigo (3-nov-2026): YouTube también sube un short de carrusel los días con video, a 3 h o
         # más del video. Al final se compara si el video del día perdió vistas (config → prueba_youtube_carrusel_diario).
-        if sale_hoy(carruseles, 'yt'):
+        if carrusel_hoy('yt'):
             salida['notas'].append('YouTube ya tiene su short de carrusel de hoy.')
         else:
             sin_yt = lambda c: falta(c, 'yt') and not c.get('youtube')
@@ -804,7 +806,7 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
                 salida['notas'].append('YouTube: hoy no hay carrusel u hora libre a 3 h del video para el short extra.')
     if video_hoy:
         salida['notas'].append('Hoy hay video: Instagram sube el video, no carrusel.')
-    elif sale_hoy(carruseles, 'ig') or any(a_utc((c.get('reel_ig') or {}).get('publica_utc', '2000-01-01T00:00:00Z'))
+    elif carrusel_hoy('ig') or any(a_utc((c.get('reel_ig') or {}).get('publica_utc', '2000-01-01T00:00:00Z'))
                                             .astimezone(CDMX).date() == hoy for c in carruseles):
         salida['notas'].append('Instagram ya tiene su carrusel de hoy.')
     else:
@@ -824,7 +826,7 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
         else:
             salida['notas'].append('Instagram: no hay carrusel disponible hoy.')
         # Si el del Reel ya salió en YouTube, YouTube sube otro que aún no tenga (no se queda sin short ese día).
-        if (not salida['instagram'] or not salida['instagram']['cuando_yt']) and not sale_hoy(carruseles, 'yt'):
+        if (not salida['instagram'] or not salida['instagram']['cuando_yt']) and not carrusel_hoy('yt'):
             sin_yt = [x for x in carruseles if falta(x, 'yt') and not x.get('youtube') and x['estado'] in ('programado', 'publicado')
                       and 'tt' in por_red(x)]
             otro = max(sin_yt, key=lambda x: (1 if x.get('ventana') else 0, vistas_tiktok(x['id'], historial) or -1), default=None) \

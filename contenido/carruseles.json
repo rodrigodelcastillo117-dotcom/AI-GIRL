@@ -730,7 +730,7 @@
    "playlist": true,
    "comentario_youtube": "UgyoD0HNffTN0i1XPgZ4AaABAg",
    "reel_ig": {
-    "publica_utc": "2026-11-07T21:00:00Z",
+    "publica_utc": "2026-11-07T21:02:22Z",
     "texto": "Tu café de $50 diario te cuesta $18,000 al año\nGastos hormiga: tu café de $50 diario te cuesta $18,000 al año. ☕\nPueden comerse hasta 12% de tu ingreso y solo 1 de cada 6 adultos anota sus gastos. Reto: anota todo una semana.\n\n¿Cuál es tu gasto hormiga? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien vive del café de la esquina.\n\n#gastoshormiga #ahorro #dinero #finanzaspersonales #victoriatheceo",
     "video": "carruseles/c08/reel.mp4"
    }
@@ -812,11 +812,12 @@
    },
    "revision": "Revisado por un segundo agente el 1-nov-2026 contra sus fuentes; correcciones aplicadas.",
    "publica_utc_por_red": {
-    "tt": "2026-11-07T23:00:00Z",
+    "tt": "2026-11-07T23:05:57Z",
     "yt": "2026-11-07T16:00:00Z"
    },
-   "publica_utc": "2026-11-07T23:00:00Z",
-   "youtube": "y-HMXcYyAHY"
+   "publica_utc": "2026-11-07T23:05:57Z",
+   "youtube": "y-HMXcYyAHY",
+   "comentario_youtube": "Ugx49_9o990An-ltJSF4AaABAg"
   },
   {
    "id": "c10",
@@ -1304,7 +1305,7 @@
   },
   {
    "id": "c16",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "aguinaldo_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/rincon-lectura.jpg",
@@ -1382,7 +1383,11 @@
      "¿Hasta cuándo puedo reclamar mi aguinaldo?"
     ]
    },
-   "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet."
+   "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-08T21:00:00Z"
+   },
+   "publica_utc": "2026-11-08T21:00:00Z"
   },
   {
    "id": "c17",
