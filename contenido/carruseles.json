@@ -1927,6 +1927,691 @@
    },
    "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
    "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c22",
+   "estado": "listo",
+   "tema": "presupuesto_regalos_navidad",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-lista-cocina.jpg",
+    "etiqueta": "REGALOS DE NAVIDAD",
+    "titulo": "Si el regalo no cabe en tu presupuesto, es deuda",
+    "voz": "Si el regalo no cabe en tu presupuesto, no es regalo: es una deuda con moño. Antes de comprar el primero, haz esta cuenta conmigo.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/navidad-regalos.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Primero, cuánto te llega",
+     "texto": "Tu aguinaldo es de mínimo 15 días de salario y se paga antes del 20 de diciembre. Si ganas $15,000 al mes y trabajaste todo el año: mínimo $7,500.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "Tu aguinaldo es de mínimo quince días de salario, y te lo pagan antes del veinte de diciembre."
+    },
+    {
+     "titulo": "Solo 30% a la Navidad",
+     "texto": "Condusef sugiere dividir tu aguinaldo: 50% a metas financieras, 30% a gastos navideños y 20% a gustos personales. De $7,500, a la Navidad van $2,250.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "La recomendación oficial: solo el treinta por ciento de tu aguinaldo para los gastos de Navidad."
+    },
+    {
+     "titulo": "Presupuesto antes que tienda",
+     "texto": "Haz tu presupuesto antes de recibir el aguinaldo y cíñete a él. Haz tu lista de compras y respétala.\n\nProfeco (nov-2022) · Condusef (dic-2025)",
+     "voz": "Haz tu presupuesto y tu lista antes de pisar la tienda."
+    },
+    {
+     "titulo": "La tarjeta no es sueldo",
+     "texto": "Las tarjetas de crédito no son una extensión de tus ingresos: es dinero prestado que se paga con intereses.\n\nProfeco, Cuida tu aguinaldo (nov-2022)",
+     "voz": "La tarjeta no es más sueldo: es dinero prestado con intereses."
+    },
+    {
+     "titulo": "La regla de las 24 horas",
+     "texto": "Si algo no estaba en tu lista, piénsalo un día antes de comprarlo. Y evita las compras de último momento: no alcanzas a comparar precios.\n\nCondusef (dic-2025 y nov-2019)",
+     "voz": "Si no estaba en tu lista, espera un día antes de comprarlo."
+    },
+    {
+     "titulo": "Regala con intención",
+     "texto": "Elige algo que la otra persona de verdad vaya a usar, o regala una experiencia en lugar de una cosa.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Un buen regalo es el que se usa, no el más caro."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos regalos vas a dar este año? Comenta el número.",
+    "texto": "Mándaselo a quien ya está comprando regalos sin lista.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántos regalos vas a dar este año? Comenta el número y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo, art. 87 (texto vigente, última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): aguinaldo anual equivalente a quince días de salario, por lo menos, pagadero antes del 20 de diciembre; con $15,000 al mes ($500 diarios) y el año completo trabajado son mínimo $7,500 (cálculo propio); quien no cumplió el año recibe la parte proporcional (art. 87, párrafo 2). Condusef, revista Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, act. 6-ene-2026, revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'divide tu bono en partes 50% para metas financieras, 30% para gastos navideños y 20% para gustos personales'; 'Define un presupuesto y respétalo'; 'Regala con intención. Elige algo que la otra persona realmente vaya a usar'; 'Regala experiencias en lugar de cosas'. De $7,500, 30% = $2,250 (cálculo propio). Condusef, Proteja su Dinero, '¿Compras de último minuto?' (1-dic-2025, revista.condusef.gob.mx/presupuesto/gastos/2025/12/herencia-responsable/): 'Método de las 24 horas: si algo no estaba planeado, piénsalo un día antes de comprar'; 'Haz una lista de compras y respétala'. Profeco, 'Cuida tu aguinaldo. Planifica' (30-nov-2022, gob.mx/profeco/documentos/cuida-tu-aguinaldo-planifica): 'Antes de recibirlo, planea tus gastos, realiza un presupuesto y cíñete a él'; 'Usa racionalmente las tarjetas de crédito. No son una extensión de tus ingresos, es dinero prestado a pagar con intereses'. Condusef, Proteja su Dinero, 'En esta navidad rompe la piñata, no tus finanzas' (27-nov-2019, revista.condusef.gob.mx/presupuesto/plan-de-vida-financiero/2019/11/en-esta-navidad-rompe-la-pinata-no-tus-finanzas/): 'No hagas compras de pánico o de último momento' (comprar con tiempo permite comparar precios). Consultado el 9-nov-2026.",
+   "titulo_post": "Regalos de Navidad: presupuesto antes de comprar",
+   "texto_post": "Presupuesto de Navidad: primero la cuenta, luego el moño. 🎁 Santa no paga intereses; tú sí.\n1. Tu aguinaldo es de mínimo 15 días de salario, antes del 20 de diciembre. Con $15,000 al mes y el año completo trabajado: mínimo $7,500.\n2. Condusef sugiere 50% a metas, 30% a gastos navideños y 20% a gustos. De $7,500, a la Navidad van $2,250.\n3. Presupuesto y lista antes de ir a la tienda, y se respetan.\n4. La tarjeta no es más sueldo: es dinero prestado con intereses.\n5. Si no estaba en tu lista, espera 24 horas antes de comprarlo.\n6. Regala algo que se use, o una experiencia.\n\nCapital ya hizo su lista de regalos: una pelota. Presupuesto: cero pesos.\n📚 Ley Federal del Trabajo, art. 87; Condusef, Proteja su Dinero (dic-2025 y nov-2019); Profeco (nov-2022).\n💬 ¿Cuántos regalos vas a dar este año? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para antes de tu primera compra navideña.\n📩 Mándaselo a quien ya está comprando regalos sin lista.",
+   "seo": {
+    "palabra_clave": "presupuesto de navidad",
+    "titulo": "Presupuesto de Navidad con tu aguinaldo 🎁",
+    "tags_concretas": [
+     "presupuesto de navidad",
+     "cuanto gastar en regalos de navidad",
+     "presupuesto para regalos",
+     "aguinaldo 2026",
+     "como dividir mi aguinaldo",
+     "regalos de navidad sin deudas",
+     "regla de las 24 horas",
+     "condusef navidad",
+     "profeco regalos navidad"
+    ],
+    "hashtags": [
+     "#navidad",
+     "#presupuesto",
+     "#aguinaldo",
+     "#regalosdenavidad"
+    ],
+    "preguntas": [
+     "¿Cuánto debo gastar en regalos de Navidad?",
+     "¿Cómo dividir mi aguinaldo?",
+     "¿Cómo hacer un presupuesto para Navidad?",
+     "¿Conviene comprar los regalos con tarjeta de crédito?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c23",
+   "estado": "listo",
+   "tema": "intercambio_posada",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-regalos.jpg",
+    "etiqueta": "INTERCAMBIO Y POSADA",
+    "titulo": "Tu intercambio no debería costarte más de un día de sueldo",
+    "voz": "Mi regla, y no la negocio: tu intercambio no debería costarte más de un día de sueldo. Y no tienes que entrar a todos, aunque la tía insista.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "No es obligatorio",
+     "texto": "No es obligatorio entrar a todos los intercambios. Si entras, acuerden un límite de costo antes de sacar los papelitos.\n\nCondusef, Proteja su Dinero (nov-2019)",
+     "voz": "No es obligatorio entrar a todos los intercambios de diciembre."
+    },
+    {
+     "titulo": "Mi regla: un día de sueldo",
+     "texto": "Opinión mía, no ley: el regalo del intercambio, máximo un día de sueldo. Salario mínimo general 2026: $315.04 (frontera norte: $440.87). Con $15,000 al mes, $500.\n\nConasami, DOF (9-dic-2025)",
+     "voz": "Mi regla: máximo un día de sueldo; con salario mínimo, unos trescientos quince pesos."
+    },
+    {
+     "titulo": "Simbólico también cuenta",
+     "texto": "Propón que los regalos sean algo simbólico o de un costo que no afecte el bolsillo de nadie del grupo.\n\nCondusef, Proteja su Dinero (nov-2019)",
+     "voz": "Propón regalos simbólicos que no le pesen a nadie del grupo."
+    },
+    {
+     "titulo": "Después de las ofertas",
+     "texto": "Organiza el intercambio después de las ofertas: así aprovechas mejores precios y tu dinero rinde más.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Pon la fecha del intercambio después de las ofertas y tu dinero rinde más."
+    },
+    {
+     "titulo": "Posada de cooperación",
+     "texto": "Hagan la posada en casa de alguien y que cada quien coopere con un platillo, bebida o postre. Dividir los gastos aligera el total.\n\nCondusef (nov-2019) · Profeco (dic-2018)",
+     "voz": "En la posada, cada quien lleva algo y el gasto se divide."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿En cuántos intercambios estás este año? Comenta el número.",
+    "texto": "Mándaselo a quien organiza el intercambio de la oficina.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿En cuántos intercambios estás este año? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'En esta navidad rompe la piñata, no tus finanzas' (27-nov-2019, revista.condusef.gob.mx/presupuesto/plan-de-vida-financiero/2019/11/en-esta-navidad-rompe-la-pinata-no-tus-finanzas/): 'No es obligatorio entrar a todos los intercambios o, en su defecto, acuerda un límite de costos'; 'propón que los regalos sean algo simbólico o de un costo que no afecte el bolsillo de todos'; 'te recomendamos organizar la posada o la cena en casa de un amigo, siempre y cuando los demás cooperen con algún platillo, bebida o postre. Al dividir los gastos harán mucho más ligero el gasto total'. Condusef, Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'Acuerda un límite de gasto para los intercambios o regalos'; 'Organiza los intercambios después de las ofertas. Así aprovechas mejores precios y tu dinero rinde más'. Profeco, 'Posadas navideñas: dale, dale, dale, y no pierdas el tino…' (3-dic-2018, gob.mx/profeco/documentos/posadas-navidenas-dale-dale-dale-y-no-pierdas-el-tino-del-consumo-responsable-decembrino): 'Organízate con tus vecinos y amigos para repartirse los gastos'. Conasami, 'Se publican en el DOF los salarios mínimos vigentes a partir del 1 de enero de 2026' (DOF 9-dic-2025, gob.mx/conasami): salario mínimo general 2026 de $315.04 diarios (zona libre de la frontera norte: $440.87). La regla de 'un día de sueldo' es opinión de Victoria, no una norma; $15,000 al mes entre 30 = $500 (cálculo propio). Consultado el 9-nov-2026.",
+   "titulo_post": "Intercambio navideño: cuánto gastar sin culpa",
+   "texto_post": "Intercambio navideño: el regalo es para tu amigo secreto, no para tu banco. 🎁\n1. No es obligatorio entrar a todos los intercambios. Si entras, acuerden un límite antes del sorteo.\n2. Mi regla (opinión, no ley): máximo un día de sueldo. Con salario mínimo general 2026, $315.04 (frontera norte, $440.87); con $15,000 al mes, $500.\n3. Regalos simbólicos también cuentan.\n4. Pon la fecha del intercambio después de las ofertas.\n5. En la posada, cada quien coopera con un platillo, bebida o postre.\n\nCapital ya entró al intercambio: pidió un hueso de menos de un día de sueldo.\n📚 Condusef, Proteja su Dinero (nov-2019 y dic-2025); Profeco (dic-2018); Conasami, DOF (9-dic-2025).\n💬 ¿En cuántos intercambios estás este año? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para cuando pongan el monto del intercambio.\n📩 Mándaselo a quien organiza el intercambio de la oficina.",
+   "seo": {
+    "palabra_clave": "intercambio navideño",
+    "titulo": "Intercambio navideño de un día de sueldo 🎁",
+    "tags_concretas": [
+     "intercambio navideño",
+     "cuanto gastar en un intercambio",
+     "intercambio de regalos",
+     "intercambio de la oficina",
+     "posada navideña",
+     "como ahorrar en la posada",
+     "regalos de intercambio baratos",
+     "salario minimo 2026",
+     "navidad sin deudas"
+    ],
+    "hashtags": [
+     "#intercambio",
+     "#posada",
+     "#navidad",
+     "#ahorro"
+    ],
+    "preguntas": [
+     "¿Cuánto se gasta en un intercambio navideño?",
+     "¿Es obligatorio entrar al intercambio de la oficina?",
+     "¿Cómo ahorrar en una posada?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c24",
+   "estado": "listo",
+   "tema": "meses_sin_intereses_diciembre",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "MESES SIN INTERESES",
+    "titulo": "Los meses sin intereses no son gratis si no tienes el dinero",
+    "voz": "Los meses sin intereses no son gratis si hoy no tienes el dinero: solo son tu sueldo de febrero pagando la Navidad. Antes de la siguiente compra, suma lo que ya debes cada mes.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Suma tus mensualidades",
+     "texto": "Si tienes más de una compra a meses sin intereses, suma las mensualidades para que no rebasen tu presupuesto.\n\nCondusef, Buen Fin 2025 (13-nov-2025)",
+     "voz": "Si traes varias compras a meses, suma todas las mensualidades."
+    },
+    {
+     "titulo": "Van encima del mínimo",
+     "texto": "Si no pagas tu tarjeta completa, las promociones a meses sin intereses son adicionales a tu pago mínimo.\n\nCondusef (12-nov-2019)",
+     "voz": "Si no pagas completo, esas mensualidades van encima de tu pago mínimo."
+    },
+    {
+     "titulo": "Si fallas una, te cobran",
+     "texto": "Si no pagas una mensualidad a tiempo, el banco o la tienda te cobra intereses.\n\nCondusef, Proteja su Dinero (act. feb-2021)",
+     "voz": "Si te atrasas con una mensualidad, te cobran intereses."
+    },
+    {
+     "titulo": "El tope: 30%",
+     "texto": "No es recomendable comprometer más del 30% de tu ingreso. Si ganas $15,000 al mes, la suma de tus pagos mensuales de deudas: máximo $4,500.\n\nCondusef (12-nov-2019)",
+     "voz": "Entre todos tus pagos de deudas, no más del treinta por ciento de lo que ganas al mes."
+    },
+    {
+     "titulo": "Solo lo que dura",
+     "texto": "Úsalos para bienes duraderos, no para consumos pasajeros. La cena se acaba en una noche; la mensualidad sigue.\n\nCondusef, Buen Fin 2025 (13-nov-2025)",
+     "voz": "A meses, solo lo que te va a durar más que la deuda."
+    },
+    {
+     "titulo": "Máximo dos a la vez",
+     "texto": "Condusef recomienda máximo dos artículos a meses sin intereses al mismo tiempo, para no perder la cuenta.\n\nCondusef, Proteja su Dinero (act. feb-2021)",
+     "voz": "Máximo dos compras a meses al mismo tiempo, para no perder la cuenta."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas compras a meses traes hoy? Comenta el número.",
+    "texto": "Mándaselo a quien ya va a comprar los regalos a meses.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas compras a meses traes hoy? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025, gob.mx/condusef/articulos/el-buen-fin-2025-gasta-con-cabeza-no-con-prisa): 'Si tienes más de una compra a MSI, suma las mensualidades para que no excedan tu presupuesto'; 'Úsalos para bienes duraderos, no para consumos pasajeros'; 'Verifica tu capacidad de pago antes de comprar'. Condusef, comunicado '¿Vas a comprar en el Buen Fin?' (12-nov-2019, gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin): 'Los no totaleros deben tener presente que las promociones a meses sin intereses son adicionales al pago mínimo'; 'Conoce tu capacidad de pago, para no incumplir con los pagos mensuales de la deuda que adquieras. No es recomendable comprometer más del 30% de tu ingreso' (se refiere a los pagos mensuales); 'procura adquirir bienes duraderos cuyos beneficios o vida útil se prolonguen' más allá del plazo; pagar de contado o con débito 'no comprometes tus ingresos futuros'. Con $15,000 al mes, 30% = $4,500 en pagos mensuales de deudas (cálculo propio). Condusef, revista Proteja su Dinero, 'Meses ¿sin intereses?' (24-may-2012, actualizado 12-feb-2021, revista.condusef.gob.mx/credito/tarjeta/2012/05/meses-sin-intereses/): si no pagas una mensualidad, 'el banco o la tienda comercial te cobrará intereses'; recomienda 'máximo dos artículos bajo este esquema'. Condusef, Proteja su Dinero, '¿Pasas a cuartos de final… o te eliminan las deudas?' (1-jul-2026, revista.condusef.gob.mx/destacados/2026/07/pasas-a-cuartos-de-final-o-te-eliminan-las-deudas/): 'acumular muchas pequeñas mensualidades asfixiará tus ingresos de los próximos meses'; 'Calcula tu capacidad de pago antes de firmar'. Consultado el 9-nov-2026.",
+   "titulo_post": "Meses sin intereses en diciembre: suma antes de comprar",
+   "texto_post": "Meses sin intereses: no son regalo de Santa, son tu sueldo de febrero pagando diciembre. 💳\n1. Si traes varias compras a meses, suma todas las mensualidades antes de la siguiente.\n2. Si no pagas tu tarjeta completa, esas mensualidades van encima del pago mínimo.\n3. Si te atrasas con una, te cobran intereses.\n4. Todos tus pagos mensuales de deudas, máximo 30% de tu ingreso. Con $15,000 al mes: $4,500.\n5. A meses, solo lo que dura más que la deuda.\n6. Máximo dos compras a meses al mismo tiempo.\n\nCapital paga todo de contado: en croquetas, pero de contado.\n📚 Condusef (nov-2019, nov-2025 y jul-2026); Condusef, Proteja su Dinero (act. feb-2021).\n💬 ¿Cuántas compras a meses traes hoy? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para antes de pasar la tarjeta.\n📩 Mándaselo a quien ya va a comprar los regalos a meses.",
+   "seo": {
+    "palabra_clave": "meses sin intereses",
+    "titulo": "Meses sin intereses no son gratis 💳",
+    "tags_concretas": [
+     "meses sin intereses",
+     "meses sin intereses conviene",
+     "que pasa si no pago meses sin intereses",
+     "meses sin intereses y pago minimo",
+     "compras a meses en diciembre",
+     "cuanto de mi sueldo para deudas",
+     "30 por ciento del ingreso en deudas",
+     "condusef meses sin intereses",
+     "tarjeta de credito navidad"
+    ],
+    "hashtags": [
+     "#mesessinintereses",
+     "#tarjetadecredito",
+     "#deudas",
+     "#navidad"
+    ],
+    "preguntas": [
+     "¿Conviene comprar a meses sin intereses?",
+     "¿Qué pasa si no pago una mensualidad de meses sin intereses?",
+     "¿Los meses sin intereses se suman al pago mínimo?",
+     "¿Cuánto de mi sueldo puedo destinar a deudas?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c25",
+   "estado": "listo",
+   "tema": "tandas_diciembre",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "TANDAS",
+    "titulo": "Una tanda no es ahorro seguro: es confianza sin contrato",
+    "voz": "Una tanda no es ahorro seguro, es confianza sin contrato, y en diciembre la confianza se pone a prueba. Si alguien deja de pagar, no hay a quién reclamar.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Sin regulación",
+     "texto": "Las tandas carecen de regulación: si hay fraude, la Condusef no puede emprender acciones legales por ti.\n\nCondusef, Proteja su Dinero (may-2024)",
+     "voz": "Las tandas no están reguladas: si hay fraude, la autoridad financiera no puede actuar."
+    },
+    {
+     "titulo": "Si alguien no paga",
+     "texto": "Si alguien deja de pagar, no hay una institución ante la cual reclamar. Y si te toca primero, dependes de que todos sigan pagando.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Si alguien deja de pagar, no hay a quién reclamar."
+    },
+    {
+     "titulo": "Cero rendimiento",
+     "texto": "En una tanda tu dinero no genera rendimientos, y no hay contrato ni respaldo legal que te proteja.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Tu dinero en una tanda no gana ni un peso de rendimiento."
+    },
+    {
+     "titulo": "Si hay que invitar, es pirámide",
+     "texto": "Señales de pirámide: te prometen ganancias rápidas, para ganar debes invitar a más gente y el dinero de los nuevos paga a los primeros.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Si para ganar tienes que invitar a más gente, es una pirámide."
+    },
+    {
+     "titulo": "No eres la única persona",
+     "texto": "En 2024, 36.6% de las personas de 18 a 70 años ahorró solo de manera informal; apenas 8.2% ahorró solo en cuentas formales.\n\nINEGI, ENIF 2024 (mar-2025)",
+     "voz": "En México, más de un tercio de las personas de dieciocho a setenta años ahorra solo de manera informal."
+    },
+    {
+     "titulo": "La alternativa formal",
+     "texto": "Ahorra en una institución autorizada y regulada. En un banco, tu cuenta tiene seguro del IPAB hasta 400 mil UDIS por persona y por banco.\n\nCondusef · IPAB",
+     "voz": "Tu ahorro en un banco tiene seguro hasta cuatrocientas mil unidades de inversión por persona en cada banco."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Estás en una tanda ahorita? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien organiza la tanda de diciembre.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Estás en una tanda ahorita? Comenta SÍ o NO y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, '¿Y mi tanda?' (1-may-2024, act. 3-may-2024, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2024/05/y-mi-tanda/): 'Las tandas carecen de regulación, por lo que, en caso de cualquier fraude, la CONDUSEF está impedida' de emprender acciones legales; 'el no pagar el dinero de la tanda puede tener consecuencias legales'; 'existen otras opciones más seguras' para ahorrar. Condusef, Proteja su Dinero, 'Amor, amistad y dinero' (1-feb-2026, act. 3-feb-2026, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2026/02/amor-amistad-y-dinero/): 'Si alguien deja de pagar, no hay a quién reclamar'; 'Si te toca primero, dependes de todos'; 'No hay contrato ni respaldo legal que te proteja'; 'Tu dinero no genera rendimientos'; señales de pirámide: 'Te prometen ganancias rápidas', 'Para ganar, necesitas invitar a más personas', 'El dinero de los nuevos paga a los primeros'. INEGI, Encuesta Nacional de Inclusión Financiera (ENIF) 2024, Reporte de resultados (13-mar-2025, inegi.org.mx/contenidos/saladeprensa/boletines/2025/enif/ENIF2024_RR.pdf): población de 18 a 70 años, 36.6% ahorró exclusivamente de manera informal, 8.2% solo a través de cuentas formales y 21.6% combinó ambos. Condusef, comunicado 'No pongas en riesgo tu dinero, ahorra en mecanismos formales' (6-nov-2015, gob.mx/condusef/prensa): ahorrar en instituciones autorizadas y reguladas, donde 'tu dinero está protegido por un seguro de depósito'. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab/acciones-y-programas/preguntas-frecuentes-ahorradores): hasta 400,000 UDIS por persona por institución; Condusef, Proteja su Dinero, 'Tus ahorros están a salvo' (sep-2024). Consultado el 9-nov-2026.",
+   "titulo_post": "Tandas de ahorro: riesgos y alternativa formal",
+   "texto_post": "Tandas de ahorro: la amistad es eterna, hasta que te toca el número 10. 🤝\n1. Las tandas no están reguladas: si hay fraude, la Condusef no puede emprender acciones legales por ti.\n2. Si alguien deja de pagar, no hay a quién reclamar.\n3. Tu dinero no genera rendimientos y no hay contrato que te proteja.\n4. Si para ganar tienes que invitar a más gente, es pirámide.\n5. En 2024, 36.6% de las personas de 18 a 70 años ahorró solo de manera informal.\n6. En un banco, tu cuenta tiene seguro del IPAB hasta 400 mil UDIS por persona y por banco.\n\nCapital no entra a tandas: dice que su turno siempre es el último.\n📚 Condusef, Proteja su Dinero (may-2024 y feb-2026); INEGI, ENIF 2024; IPAB.\n💬 ¿Estás en una tanda ahorita? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando te inviten a la próxima tanda.\n📩 Mándaselo a quien organiza la tanda de diciembre.",
+   "seo": {
+    "palabra_clave": "tandas de ahorro",
+    "titulo": "Tandas de ahorro sin contrato ni seguro ⚠️",
+    "tags_concretas": [
+     "tandas de ahorro",
+     "riesgos de una tanda",
+     "tanda navideña",
+     "que hacer si no me pagan la tanda",
+     "tanda piramide",
+     "ahorro informal",
+     "ahorro formal",
+     "condusef tandas",
+     "seguro ipab",
+     "enif 2024"
+    ],
+    "hashtags": [
+     "#tandas",
+     "#ahorro",
+     "#fraude",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Es seguro ahorrar en una tanda?",
+     "¿Qué hago si no me pagan mi tanda?",
+     "¿Cómo saber si una tanda es pirámide?",
+     "¿Dónde ahorrar de forma segura?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c26",
+   "estado": "listo",
+   "tema": "diciembre_sin_cuesta_de_enero",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "CUESTA DE ENERO",
+    "titulo": "Si diciembre va a la tarjeta, enero ya está gastado",
+    "voz": "Si diciembre va a la tarjeta, enero ya está gastado antes del Día de Reyes. Esto se hace antes de gastar el primer peso del aguinaldo.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Aparta 10% para enero",
+     "texto": "Guardar al menos 10% de tu aguinaldo te ayuda a enfrentar la cuesta de enero. De $7,500, aparta $750 antes de gastar.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Aparta por lo menos el diez por ciento de tu aguinaldo para enero."
+    },
+    {
+     "titulo": "Págate primero",
+     "texto": "Aplica la estrategia de pagarte primero: ahorra antes de gastar. Lo que sobra se gasta, no al revés.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Primero ahorras, luego gastas, nunca al revés."
+    },
+    {
+     "titulo": "Los pagos de inicio de año",
+     "texto": "Reserva una cantidad de tu aguinaldo para lo que llega a principios de año: predial, otros impuestos y seguros.\n\nCondusef, Proteja su Dinero (nov-2019)",
+     "voz": "Reserva para el predial y los seguros que llegan a principios de año."
+    },
+    {
+     "titulo": "La deuda más cara, primero",
+     "texto": "Paga primero las deudas más caras, como tarjeta de crédito o préstamos personales, y evita empezar el año con ellas.\n\nCondusef (dic-2025) · Profeco (nov-2022)",
+     "voz": "Con el aguinaldo, paga primero la deuda más cara, como la tarjeta."
+    },
+    {
+     "titulo": "Anota todo diciembre",
+     "texto": "Registra todos tus gastos de diciembre. En enero revisa qué compras se salieron de control y qué gastos no calculaste.\n\nCondusef (dic-2025 y ene-2026)",
+     "voz": "Anota cada gasto de diciembre para saber en enero qué se salió de control."
+    },
+    {
+     "titulo": "Tu lista del 1 al 15",
+     "texto": "Enlista lo que debes cubrir del 1 al 15 de enero: renta, servicios, transporte, comida y pagos mínimos de deudas.\n\nCondusef, Proteja su Dinero (ene-2026)",
+     "voz": "Haz hoy la lista de lo que pagas del uno al quince de enero."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué porcentaje de tu aguinaldo vas a guardar para enero? Comenta el número.",
+    "texto": "Mándaselo a quien cada enero jura que nunca más.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Qué porcentaje de tu aguinaldo vas a guardar para enero? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, act. 6-ene-2026, revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'Guardar al menos un 10% de tu aguinaldo será una decisión muy inteligente' para 'afrontar la temida cuesta de enero'; 'aplica la estrategia de pagarte primero, es decir, ahorra antes de gastar'; 'Paga las deudas más caras (como tarjeta de crédito o préstamos personales)'. De $7,500 (aguinaldo mínimo con $15,000 al mes, LFT art. 87), 10% = $750 (cálculo propio). Condusef, Proteja su Dinero, '¿Compras de último minuto?' (1-dic-2025, revista.condusef.gob.mx/presupuesto/gastos/2025/12/herencia-responsable/): 'Registra todos tus gastos'. Condusef, Proteja su Dinero, 'En esta navidad rompe la piñata, no tus finanzas' (27-nov-2019, revista.condusef.gob.mx/presupuesto/plan-de-vida-financiero/2019/11/en-esta-navidad-rompe-la-pinata-no-tus-finanzas/): 'Reserva una cantidad de tu aguinaldo para cubrir estas deudas' (predial, otros impuestos y seguros de inicio de año). Profeco, 'Cuida tu aguinaldo. Planifica' (30-nov-2022, gob.mx/profeco/documentos/cuida-tu-aguinaldo-planifica): 'Paga tus deudas y evita empezar el año con ellas'. Condusef, Proteja su Dinero, 'Tu suero financiero' (1-ene-2026, act. 3-feb-2026, revista.condusef.gob.mx/destacados/2026/01/tu-suero-financiero/): 'Enlista todo lo que necesitas cubrir del 1 al 15: renta, servicios, transporte, comida y pagos mínimos de deudas'; identificar qué compras de diciembre se salieron de control y qué gastos no se calcularon. Relacionado: carrusel c10 (cuesta de enero, ventana 2-31 ene-2027). Consultado el 9-nov-2026.",
+   "titulo_post": "Diciembre sin cuesta de enero: qué hacer hoy",
+   "texto_post": "Cuesta de enero: se esquiva en diciembre, no se sobrevive en enero. 📅 Los Reyes traen regalos, no te pagan la tarjeta.\n1. Aparta al menos 10% de tu aguinaldo para enero. De $7,500: $750.\n2. Págate primero: ahorra antes de gastar.\n3. Reserva para el predial, otros impuestos y seguros de inicio de año.\n4. Paga primero la deuda más cara, como la tarjeta.\n5. Anota cada gasto de diciembre.\n6. Haz la lista de lo que pagas del 1 al 15 de enero: renta, servicios, transporte, comida y mínimos.\n\nCapital ya apartó para enero: enterró tres croquetas en el jardín.\n📚 Condusef, Proteja su Dinero (nov-2019, dic-2025 y ene-2026); Profeco (nov-2022).\n💬 ¿Qué porcentaje de tu aguinaldo vas a guardar para enero? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para el día que te paguen el aguinaldo.\n📩 Mándaselo a quien cada enero jura que nunca más.",
+   "seo": {
+    "palabra_clave": "cuesta de enero",
+    "titulo": "Cuesta de enero se evita en diciembre 📅",
+    "tags_concretas": [
+     "cuesta de enero",
+     "como evitar la cuesta de enero",
+     "cuanto ahorrar del aguinaldo",
+     "gastos de diciembre",
+     "pagarte primero",
+     "pagar deudas con el aguinaldo",
+     "predial en enero",
+     "presupuesto de enero",
+     "condusef cuesta de enero"
+    ],
+    "hashtags": [
+     "#cuestadeenero",
+     "#aguinaldo",
+     "#ahorro",
+     "#deudas"
+    ],
+    "preguntas": [
+     "¿Cómo evitar la cuesta de enero?",
+     "¿Cuánto de mi aguinaldo debo ahorrar?",
+     "¿Qué pagos llegan en enero?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c27",
+   "estado": "listo",
+   "tema": "parejas_quien_paga",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "DINERO EN PAREJA",
+    "titulo": "Mitad y mitad no es justo si no ganan lo mismo",
+    "voz": "Mitad y mitad suena justo hasta que uno gana el doble que el otro. Si están casados, la ley les deja repartir según lo que cada quien puede, así que no peleen con la calculadora.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Lo dice la ley",
+     "texto": "Los cónyuges aportan al hogar y pueden repartir la carga en la forma y proporción que acuerden, según sus posibilidades. Regla federal: revisa también el código civil de tu estado.\n\nCódigo Civil Federal, art. 164",
+     "voz": "La ley deja que cada pareja reparta el gasto según sus posibilidades."
+    },
+    {
+     "titulo": "Aportar menos no quita derechos",
+     "texto": "Los derechos y obligaciones del matrimonio son siempre iguales para los dos, sin importar cuánto aporta cada quien al hogar.\n\nCódigo Civil Federal, art. 164",
+     "voz": "Aporte lo que aporte cada quien, los derechos son iguales para los dos."
+    },
+    {
+     "titulo": "Cuenta lo que cada uno gana",
+     "texto": "Para una economía equitativa, tomen en cuenta lo que cada uno gana y las necesidades personales de cada quien.\n\nCondusef, Proteja su Dinero (feb-2018)",
+     "voz": "Para repartir de forma justa, cuenten lo que gana cada uno."
+    },
+    {
+     "titulo": "Ejemplo proporcional",
+     "texto": "Gastos: $12,000. Sueldos: $20,000 y $10,000. Proporcional: $8,000 y $4,000, 40% del sueldo de cada uno. Mitad y mitad, $6,000 cada uno: 30% de un sueldo y 60% del otro.\n\nEjemplo con números redondos",
+     "voz": "Si reparten en proporción, los dos ponen el cuarenta por ciento de su sueldo."
+    },
+    {
+     "titulo": "Acuérdenlo y revísenlo",
+     "texto": "Si los dos trabajan, convengan cómo se dividirán los gastos. El método que elijan no es para toda la vida.\n\nProfeco, Brújula de Compra (ene-2025)",
+     "voz": "Acuerden cómo se reparte, y cámbienlo cuando cambie su vida."
+    },
+    {
+     "titulo": "Un fondo para cada quien",
+     "texto": "Que cada quien tenga un fondo personal para sus gastos propios: así se cuida la autonomía de los dos.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Y que cada quien tenga un dinero propio para sus gustos."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Quién paga en tu casa? Comenta YO, MI PAREJA, MITAD o PROPORCIONAL.",
+    "texto": "Mándaselo a tu pareja antes de la próxima quincena.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Quién paga en tu casa? Comenta YO, MI PAREJA, MITAD o PROPORCIONAL y sígueme."
+   },
+   "fuente": "Código Civil Federal, art. 164 (texto vigente, última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): 'Los cónyuges contribuirán económicamente al sostenimiento del hogar, a su alimentación y a la de sus hijos, así como a la educación de éstos en los términos que la ley establece, sin perjuicio de distribuirse la carga en la forma y proporción que acuerden para este efecto, según sus posibilidades'; 'Los derechos y obligaciones que nacen del matrimonio serán siempre iguales para los cónyuges e independientes de su aportación económica al sostenimiento del hogar'. El art. 164 aplica a cónyuges (parejas casadas), no a la unión libre; el matrimonio civil se rige por el código civil de cada estado, con reglas similares. Condusef, revista Proteja su Dinero, 'Las finanzas en pareja' (6-feb-2018, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2018/02/las-finanzas-en-pareja/): 'Economía equitativa: tomen en cuenta lo que cada uno gana y las necesidades personales de cada quien'. Profeco, Brújula de Compra, 'Lo tuyo, lo mío, lo nuestro. Finanzas de pareja' (31-ene-2025, gob.mx/profeco/documentos/lo-tuyo-lo-mio-lo-nuestro-finanzas-de-pareja): 'Si los dos trabajan, convenga cómo se dividirán los gastos'; 'los porcentajes dependerán del caso particular de la pareja'; 'Consideren que el método elegido no es para toda la vida'. Condusef, Proteja su Dinero, 'Amor que sí cuenta' (1-feb-2026, act. 11-mar-2026, revista.condusef.gob.mx/presupuesto/2026/02/amor-que-si-cuenta/): cada integrante debe tener un fondo personal o presupuesto propio para preservar su autonomía. Ejemplo proporcional: cálculo propio con números redondos ($12,000 de gastos comunes; ingresos de $20,000 y $10,000). La preferencia por repartir en proporción al ingreso es opinión de Victoria. Consultado el 9-nov-2026.",
+   "titulo_post": "Quién paga en pareja: proporcional o mitad y mitad",
+   "texto_post": "Gastos en pareja: el amor es 50/50, el recibo de la luz no tiene por qué serlo. 💑\n1. Si están casados, la ley deja repartir el gasto del hogar en la forma y proporción que acuerden, según sus posibilidades (Código Civil Federal, art. 164).\n2. Aporte lo que aporte cada quien, los derechos son iguales.\n3. Condusef: tomen en cuenta lo que cada uno gana.\n4. Ejemplo: gastos de $12,000, sueldos de $20,000 y $10,000. Proporcional: $8,000 y $4,000, 40% del sueldo de cada uno. Mitad y mitad: 30% de un sueldo contra 60% del otro.\n5. Acuérdenlo y revísenlo: el método no es para toda la vida.\n6. Un fondo personal para cada quien.\n\nEn mi casa Capital no paga nada, pero se come el 40% del súper.\n📚 Código Civil Federal, art. 164; Condusef, Proteja su Dinero (feb-2018 y feb-2026); Profeco (ene-2025).\n💬 ¿Quién paga en tu casa? Comenta YO, MI PAREJA, MITAD o PROPORCIONAL. Te contesto a todos.\n🔖 Guárdalo para la próxima plática de dinero en pareja.\n📩 Mándaselo a tu pareja antes de la próxima quincena.",
+   "seo": {
+    "palabra_clave": "gastos en pareja",
+    "titulo": "Gastos en pareja proporcionales al sueldo 💑",
+    "tags_concretas": [
+     "gastos en pareja",
+     "quien paga en la pareja",
+     "dividir gastos en pareja",
+     "50 50 en pareja",
+     "gastos proporcionales al ingreso",
+     "finanzas en pareja",
+     "codigo civil articulo 164",
+     "dinero en pareja",
+     "presupuesto de pareja"
+    ],
+    "hashtags": [
+     "#finanzasenpareja",
+     "#pareja",
+     "#presupuesto",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cómo dividir los gastos en pareja?",
+     "¿Es justo pagar mitad y mitad en pareja?",
+     "¿Qué dice la ley sobre los gastos del hogar?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c28",
+   "estado": "listo",
+   "tema": "parejas_deudas_regimen",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/yate.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "ANTES DE CASARTE",
+    "titulo": "Preguntar por sus deudas antes de casarte no es desconfianza",
+    "voz": "Preguntar por las deudas antes de casarte no es desconfianza, es leer lo que vas a firmar. Neta, la ley hasta te pide anotarlas.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Dos regímenes",
+     "texto": "El matrimonio se celebra bajo sociedad conyugal o bajo separación de bienes. Esta es la regla federal: revisa también el código civil de tu estado.\n\nCódigo Civil Federal, art. 178",
+     "voz": "Al casarte eliges sociedad conyugal o separación de bienes."
+    },
+    {
+     "titulo": "No es opcional",
+     "texto": "Con la solicitud de matrimonio en el Registro Civil se presenta un convenio sobre sus bienes, aunque no tengan ninguno: entonces cubre lo que adquieran durante el matrimonio.\n\nCódigo Civil Federal, art. 98, fr. V",
+     "voz": "Ese convenio se firma aunque hoy no tengas ningún bien."
+    },
+    {
+     "titulo": "Sociedad conyugal",
+     "texto": "Sus capitulaciones deben incluir una nota detallada de las deudas de cada quien al casarse y decir si la sociedad responde por ellas.\n\nCódigo Civil Federal, art. 189, fr. III",
+     "voz": "En sociedad conyugal, se anotan las deudas de cada quien y se decide si la sociedad responde por ellas."
+    },
+    {
+     "titulo": "Separación de bienes",
+     "texto": "Cada quien conserva sus bienes y su sueldo. Aun así, se anota un inventario de bienes y las deudas que cada uno tiene al casarse.\n\nCódigo Civil Federal, arts. 211 a 213",
+     "voz": "En separación de bienes, cada quien conserva lo suyo y su sueldo."
+    },
+    {
+     "titulo": "Se puede cambiar",
+     "texto": "Las capitulaciones se pueden firmar antes o durante el matrimonio, y la separación de bienes puede cambiarse por sociedad conyugal.\n\nCódigo Civil Federal, arts. 180, 207 y 209",
+     "voz": "El régimen se puede cambiar después, durante el matrimonio."
+    },
+    {
+     "titulo": "Ocultar deudas tiene nombre",
+     "texto": "Ocultar deudas o pedir préstamos sin avisar es infidelidad financiera. Lo ideal es hablar de sus finanzas al menos una vez al mes.\n\nCondusef, Proteja su Dinero (feb-2025)",
+     "voz": "Esconderle una deuda a tu pareja también es infidelidad, pero financiera."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Sabes cuánto debe tu pareja? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien ya está apartando salón para la boda.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Sabes cuánto debe tu pareja? Comenta SÍ o NO y sígueme."
+   },
+   "fuente": "Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 178 'El contrato de matrimonio debe celebrarse bajo el régimen de sociedad conyugal, o bajo el de separación de bienes'; art. 98, fr. V: a la solicitud de matrimonio se acompaña 'El convenio que los pretendientes deberán celebrar con relación a sus bienes presentes y a los que adquieran durante el matrimonio', que 'No puede dejarse de presentar ... ni aun a pretexto de que los pretendientes carecen de bienes, pues en tal caso, versará sobre los que adquieran durante el matrimonio'; art. 180: las capitulaciones 'pueden otorgarse antes de la celebración del matrimonio o durante él'; art. 189, fr. III: las capitulaciones de sociedad conyugal deben contener 'Nota pormenorizada de las deudas que tenga cada esposo al celebrar el matrimonio, con expresión de si la sociedad ha de responder de ellas, o únicamente de las que se contraigan durante el matrimonio'; art. 207: separación de bienes por capitulaciones anteriores al matrimonio, durante este por convenio, o por sentencia; art. 209: durante el matrimonio la separación de bienes puede ser substituida por la sociedad conyugal; art. 211: las capitulaciones de separación contendrán 'un inventario de los bienes de que sea dueño cada esposo al celebrarse el matrimonio, y nota especificada de las deudas que al casarse tenga cada consorte'; arts. 212 y 213: cada cónyuge conserva la propiedad y administración de sus bienes, y sus salarios y sueldos son propios. El matrimonio civil se rige por el código civil de cada estado (con reglas similares); el Código Civil Federal es la referencia federal. Condusef, revista Proteja su Dinero, '¿Infidelidad financiera?' (1-feb-2025, act. 5-feb-2025, revista.condusef.gob.mx/usuario-inteligente/sabias-que/2025/02/infidelidad/): ocurre 'cuando una persona oculta, miente o es deshonesta respecto a su situación económica', por ejemplo 'Ocultar deudas' o pedir préstamos sin avisar; 'Lo ideal es conversar sobre sus finanzas al menos una vez al mes'. Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Deudas antes de casarte: sociedad conyugal o separación de bienes",
+   "texto_post": "Separación de bienes o sociedad conyugal: el pastel se elige con el corazón, el régimen con la cabeza. ⚖️\n1. Al casarte eliges sociedad conyugal o separación de bienes (Código Civil Federal, art. 178; revisa el código de tu estado).\n2. El convenio de bienes se presenta aunque no tengas ninguno (art. 98, fr. V).\n3. En sociedad conyugal, se anotan las deudas de cada quien y si la sociedad responde por ellas (art. 189, fr. III).\n4. En separación de bienes, cada quien conserva lo suyo y su sueldo, y también se anotan las deudas (arts. 211 a 213).\n5. El régimen se puede cambiar durante el matrimonio (arts. 180, 207 y 209).\n6. Ocultar deudas es infidelidad financiera.\n\nInformación general, no asesoría legal.\nCapital ya firmó separación de bienes: sus juguetes no entran a la sociedad.\n📚 Código Civil Federal, arts. 98, 178, 180, 189, 207 a 213; Condusef, Proteja su Dinero (feb-2025).\n💬 ¿Sabes cuánto debe tu pareja? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de ir al Registro Civil.\n📩 Mándaselo a quien ya está apartando salón para la boda.",
+   "seo": {
+    "palabra_clave": "separación de bienes",
+    "titulo": "Separación de bienes o sociedad conyugal ⚖️",
+    "tags_concretas": [
+     "separacion de bienes",
+     "sociedad conyugal",
+     "sociedad conyugal o separacion de bienes",
+     "capitulaciones matrimoniales",
+     "deudas antes de casarse",
+     "deudas de mi pareja",
+     "codigo civil federal matrimonio",
+     "regimen matrimonial mexico",
+     "infidelidad financiera"
+    ],
+    "hashtags": [
+     "#separaciondebienes",
+     "#sociedadconyugal",
+     "#matrimonio",
+     "#finanzasenpareja"
+    ],
+    "preguntas": [
+     "¿Qué es mejor, sociedad conyugal o separación de bienes?",
+     "¿Qué son las capitulaciones matrimoniales?",
+     "¿Se puede cambiar el régimen de bienes después de casarse?",
+     "¿Qué pasa con las deudas en la sociedad conyugal?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c29",
+   "estado": "listo",
+   "tema": "parejas_cuenta_conjunta",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "CUENTA EN PAREJA",
+    "titulo": "Ni todo junto ni todo separado: una cuenta para la casa",
+    "voz": "Ni todo junto ni todo separado: una cuenta para la casa y otra para cada quien, y todos en paz. Antes de abrir una juntos, revisa estas reglas del seguro.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tres formas",
+     "texto": "Cuentas separadas, una sola cuenta común o un modelo mixto: una cuenta para los gastos compartidos y otra personal para cada quien.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Hay tres formas: separadas, una sola cuenta o un modelo mixto."
+    },
+    {
+     "titulo": "Solidaria o mancomunada",
+     "texto": "En una cuenta solidaria, cualquiera de los titulares dispone del saldo. En una mancomunada, se necesita la firma de los dos.\n\nCondusef (feb-2017) · IPAB, DOF (18-jul-2014)",
+     "voz": "En la solidaria cualquiera saca dinero; en la mancomunada firman los dos."
+    },
+    {
+     "titulo": "Un solo tope de seguro",
+     "texto": "Dos titulares no duplican el seguro: la cuenta se cubre hasta 400 mil UDIS en total, y la parte de cada quien se suma a sus otras cuentas del banco.\n\nLey de Instituciones de Crédito, art. 189 · IPAB, DOF (18-jul-2014)",
+     "voz": "Una cuenta compartida tiene un solo tope de seguro, no uno por persona."
+    },
+    {
+     "titulo": "Pongan el porcentaje",
+     "texto": "Mancomunada: el seguro se reparte según el porcentaje fijado por escrito; si no hay, según el registro del banco y, al final, en partes iguales. Solidaria: partes iguales.\n\nIPAB, DOF (18-jul-2014)",
+     "voz": "En una mancomunada, si aportan distinto, dejen por escrito qué porcentaje es de cada quien."
+    },
+    {
+     "titulo": "Firma no es dueño",
+     "texto": "Quien solo tiene firma autorizada para retirar no es titular: solo los titulares pueden pedir al IPAB el pago del seguro.\n\nIPAB, Preguntas frecuentes",
+     "voz": "Tener firma en la cuenta no te hace titular ante el seguro."
+    },
+    {
+     "titulo": "Revisen juntos",
+     "texto": "Lo ideal es conversar sobre sus finanzas al menos una vez al mes, tengan cuenta compartida o no.\n\nCondusef, Proteja su Dinero (feb-2025)",
+     "voz": "Y revisen sus cuentas juntos por lo menos una vez al mes."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cómo manejan su dinero? Comenta JUNTOS, SEPARADOS o MIXTO.",
+    "texto": "Mándaselo a tu pareja antes de abrir la cuenta.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cómo manejan su dinero? Comenta JUNTOS, SEPARADOS o MIXTO y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Amor que sí cuenta' (1-feb-2026, act. 11-mar-2026, revista.condusef.gob.mx/presupuesto/2026/02/amor-que-si-cuenta/): 'Cuentas separadas: cada quien gestiona su propio dinero'; 'Una sola cuenta: ambos suman sus ingresos en una común de la cual se pagan todos los gastos compartidos'; 'Modelo mixto: cada uno conserva su propia cuenta, pero administran, ahorran y pagan los gastos en conjunto'; 'Lo importante es que se sientan cómodos con el acuerdo que prefieran'. Condusef, Proteja su Dinero núm. 203, 'Productos financieros que puedes adquirir en pareja' (feb-2017, revista.condusef.gob.mx/wp-content/uploads/2017/02/PDF-s_2017_203_pareja.pdf): 'Indistinta o solidaria: cualquiera de los titulares puede disponer del saldo'; 'Conjunta o mancomunada: es necesario la firma y autorización de los dos titulares para disponer del saldo'. Ley de Instituciones de Crédito, art. 189, fr. IV (última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/LIC.pdf): en cuentas colectivas con más de un titular, el IPAB cubre el saldo 'hasta por el límite señalado en el artículo 11 de la Ley de Protección al Ahorro Bancario cualquiera que sea el número de titulares o cotitulares' (400 mil UDIS). IPAB, 'Disposiciones de carácter general para el tratamiento de cuentas colectivas con más de un titular o cotitulares' (DOF 18-jul-2014, dof.gob.mx/nota_detalle.php?codigo=5353015&fecha=18/07/2014): Cuenta Mancomunada, 'indispensable la firma de todos los titulares'; Cuenta Solidaria, 'cualquiera de los titulares o cotitulares puede disponer indistintamente del saldo'; en solidarias el saldo se distribuye 'en proporciones iguales'; en mancomunadas 'en proporción al porcentaje establecido expresamente y por escrito' o, en su defecto, 'conforme a la información relativa que la Institución mantenga en sus Sistemas', y si no se estableció porcentaje, 'en tantas partes iguales como titulares'; el límite de 400 mil UDIS es por persona y por banco (LPAB art. 11; LIC art. 189, fr. III); no son titulares garantizados las personas con firma autorizada que no sean titulares; lo que corresponde a cada quien en una cuenta colectiva se suma a sus otras cuentas en el mismo banco para el límite de 400 mil UDIS. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab/acciones-y-programas/preguntas-frecuentes-ahorradores): 'El titular o titulares son los únicos que pueden solicitar al IPAB el pago de las obligaciones garantizadas'. Condusef, Proteja su Dinero, '¿Infidelidad financiera?' (1-feb-2025): 'Lo ideal es conversar sobre sus finanzas al menos una vez al mes'. Consultado el 9-nov-2026.",
+   "titulo_post": "Cuenta en pareja: junta, separada o mixta",
+   "texto_post": "Cuenta mancomunada o separada: compartir cuenta es más fácil que compartir el control de la tele. 💑\n1. Hay tres formas: cuentas separadas, una sola cuenta o un modelo mixto (una para la casa y otra para cada quien).\n2. Solidaria: cualquiera de los titulares dispone del saldo. Mancomunada: firman los dos.\n3. Una cuenta con dos titulares no duplica el seguro del IPAB: la cuenta se cubre hasta 400 mil UDIS en total, y la parte de cada quien se suma a sus otras cuentas en ese banco.\n4. En una mancomunada, el seguro se reparte según el porcentaje que fijen por escrito; si no hay, según lo que tenga registrado el banco o, al final, en partes iguales.\n5. Tener firma autorizada no te hace titular ante el IPAB.\n6. Revisen sus finanzas juntos al menos una vez al mes.\n\nCapital pidió cuenta mancomunada conmigo: le dije que primero aprenda a firmar.\n📚 Condusef, Proteja su Dinero (feb-2017, feb-2025 y feb-2026); Ley de Instituciones de Crédito, art. 189; IPAB, DOF (18-jul-2014).\n💬 ¿Cómo manejan su dinero? Comenta JUNTOS, SEPARADOS o MIXTO. Te contesto a todos.\n🔖 Guárdalo para cuando vayan a abrir la cuenta.\n📩 Mándaselo a tu pareja antes de abrir la cuenta.",
+   "seo": {
+    "palabra_clave": "cuenta mancomunada",
+    "titulo": "Cuenta mancomunada o separada en pareja 💑",
+    "tags_concretas": [
+     "cuenta mancomunada",
+     "cuenta solidaria",
+     "cuenta conjunta en pareja",
+     "cuenta mancomunada ipab",
+     "cuentas separadas en pareja",
+     "modelo mixto finanzas en pareja",
+     "diferencia cuenta solidaria y mancomunada",
+     "finanzas en pareja",
+     "seguro ipab cuenta conjunta"
+    ],
+    "hashtags": [
+     "#finanzasenpareja",
+     "#cuentamancomunada",
+     "#pareja",
+     "#ahorro"
+    ],
+    "preguntas": [
+     "¿Qué es una cuenta mancomunada?",
+     "¿Cuál es la diferencia entre cuenta solidaria y mancomunada?",
+     "¿El IPAB protege una cuenta mancomunada?",
+     "¿Conviene tener cuenta conjunta con tu pareja?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_c22_c29.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: postura, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
   }
  ]
 }
