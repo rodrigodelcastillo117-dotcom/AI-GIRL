@@ -29,6 +29,19 @@ FUENTE_LFT = ('Ley Federal del Trabajo, artículo 87 (Cámara de Diputados)', 'h
 FUENTE_LISR = ('Ley del Impuesto sobre la Renta, artículo 93, fracción XIV (Cámara de Diputados)', 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf')
 FUENTE_UMA = ('INEGI, valor de la UMA 2026: $117.31 diarios (comunicado 1/26)', 'https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf')
 
+# Finiquito (revisado 9-nov-2026 contra la LFT vigente, última reforma DOF 14-05-2026). Tope de la prima de
+# antigüedad: doble del salario mínimo de la zona (arts. 162 fr. II, 485 y 486).
+TOPE_PRIMA_ANTIGUEDAD = round(2 * SALARIO_MINIMO_2026, 2)
+TOPE_PRIMA_ANTIGUEDAD_FRONTERA = round(2 * SALARIO_MINIMO_FRONTERA_2026, 2)
+FUENTE_LFT_FINIQUITO = ('Ley Federal del Trabajo, artículos 33, 47 a 52, 76, 79, 80, 87, 89, 162, 485, 486 y 516 a 518 (Cámara de Diputados)',
+                        'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf')
+FUENTE_DOF_SALARIOS = ('DOF 9-dic-2025: Resolución de la Conasami que fija los salarios mínimos 2026',
+                       'https://dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025')
+FUENTE_PROFEDET_DESPIDO = ('PROFEDET: ¿Qué hacer si te despiden?',
+                           'https://www.gob.mx/profedet/articulos/que-hacer-si-te-despiden-profedet-defiende-tus-derechos-laborales?idiom=es')
+FUENTE_PROFEDET_VACACIONES = ('PROFEDET: tabla de días de vacaciones (art. 76)',
+                              'https://www.gob.mx/profedet/articulos/la-ley-federal-del-trabajo-es-tu-aliada-en-tu-derecho-a-recibir-vacaciones?idiom=es')
+
 HERRAMIENTAS = [
     {
         'slug': 'aguinaldo',
@@ -112,6 +125,190 @@ alCambiar('calculadora', calcular);''',
         ],
         'fuentes': [FUENTE_LFT, FUENTE_LISR, FUENTE_UMA, FUENTE_CONASAMI],
         'compartir': 'Calcula cuánto te toca de aguinaldo y cuánto paga ISR, gratis:',
+    },
+    {
+        'slug': 'finiquito',
+        'menu': 'Finiquito y liquidación', 'menu_nota': 'Cuánto te toca si renuncias o te corren',
+        'titulo': 'Calculadora de finiquito y liquidación 2026: cuánto te toca si renuncias o te despiden',
+        'descripcion': ('Calcula gratis tu finiquito o liquidación 2026 según la Ley Federal del Trabajo: aguinaldo, vacaciones '
+                        'y prima vacacional proporcionales, 3 meses de indemnización y prima de antigüedad, con el artículo de cada concepto.'),
+        'h1': 'Calcula tu <span>finiquito y liquidación</span>',
+        'lema': ('Lo que la ley te da no es un favor de tu patrón. Renuncies o te corran, hay dinero que ya es tuyo. '
+                 'Pon tus datos y te digo cuánto, concepto por concepto y con el artículo para que lo pidas.'),
+        'formulario': '''
+      <label>¿Por qué terminó tu trabajo?
+        <select id="motivo">
+          <option value="renuncia">Renuncié</option>
+          <option value="injustificado">Me despidieron sin causa</option>
+          <option value="justificado">Me despidieron con causa</option>
+        </select></label>
+      <div class="fila">
+        <label>Tu salario <small>(bruto, como dice tu recibo)</small>
+          <input id="salario" inputmode="decimal" value="15000"></label>
+        <label>¿Al mes o al día?
+          <select id="periodo"><option value="mensual">al mes</option><option value="diario">al día</option></select></label>
+      </div>
+      <div class="fila">
+        <label>Fecha de ingreso <input id="ingreso" type="date" value="2022-11-01"></label>
+        <label>Fecha de salida <small>(tu último día)</small><input id="salida" type="date"></label>
+      </div>
+      <div class="fila">
+        <label>¿Eres de planta? <small>(permanente)</small>
+          <select id="planta"><option value="si">Sí</option><option value="no">No</option></select></label>
+        <label>Zona <small>(para el tope de la prima de antigüedad)</small>
+          <select id="zona"><option value="general">Resto del país</option><option value="frontera">Frontera norte</option></select></label>
+      </div>
+      <div class="fila">
+        <label>Días de aguinaldo <small>(la ley da mínimo 15)</small><input id="dias_aguinaldo" inputmode="numeric" value="15"></label>
+        <label>Prima vacacional % <small>(mínimo 25)</small><input id="prima" inputmode="decimal" value="25"></label>
+      </div>
+      <div class="fila">
+        <label>Vacaciones que ya tomaste de este año de servicio <small>(días adelantados del año que va corriendo; si no, 0)</small>
+          <input id="tomadas" inputmode="decimal" value="0"></label>
+        <label>Vacaciones de años ya cumplidos que no tomaste <small>(días)</small>
+          <input id="pendientes" inputmode="decimal" value="0"></label>
+      </div>
+      <label>Días trabajados que no te han pagado <small>(opcional: tu última quincena o semana)</small>
+        <input id="sin_pagar" inputmode="decimal" value="0"></label>''',
+        'resultado': '''
+      <div class="etiqueta" id="titulo_total">Tu finiquito</div>
+      <div class="cifra" id="total">$0</div>
+      <p class="nota" id="resumen"></p>
+      <ul class="desglose" id="conceptos"></ul>
+      <div id="puede"></div>
+      <p class="nota" id="notas"></p>
+      <p class="nota"><b>Es una estimación, no asesoría legal.</b> No calcula ISR: tu patrón puede retenerte impuesto y lo que te
+        llegue será menos. Usa tu salario diario (mensual ÷ 30, art. 89); para indemnizaciones la ley toma el salario con tus
+        prestaciones (arts. 84 y 89), así que lo real puede ser más. Revisa tu caso gratis en la PROFEDET (079 o 800 911 7877)
+        o con un abogado laboral antes de firmar.</p>''',
+        'script': (f'const SM = {{general: {SALARIO_MINIMO_2026}, frontera: {SALARIO_MINIMO_FRONTERA_2026}}};\n' + '''
+const DIA = 864e5;
+const $ = (id) => document.getElementById(id);
+const fecha = (id) => { const v = $(id).value; if (!v) return null; const [a, m, d] = v.split('-').map(Number); return Date.UTC(a, m - 1, d); };
+const aniversario = (inicio, n) => { const f = new Date(inicio); return Date.UTC(f.getUTCFullYear() + n, f.getUTCMonth(), f.getUTCDate()); };
+// Art. 76 (reforma DOF 27-12-2022): 12, 14, 16, 18, 20 y desde el sexto año +2 cada cinco.
+const diasVacaciones = (ano) => ano < 1 ? 0 : ano <= 5 ? 10 + 2 * ano : 22 + 2 * Math.floor((ano - 6) / 5);
+const dias = (n) => `${n.toLocaleString('es-MX', {maximumFractionDigits: 2})} ${n === 1 ? 'día' : 'días'}`;
+const anosTexto = (n) => `${n} ${n === 1 ? 'año' : 'años'}`;
+if (!$('salida').value) { const h = new Date(); $('salida').value = new Date(h - h.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); }
+
+function calcular() {
+  const motivo = $('motivo').value, planta = $('planta').value === 'si';
+  const diario = $('periodo').value === 'mensual' ? numero('salario') / 30 : numero('salario');
+  const ingreso = fecha('ingreso'), salida = fecha('salida');
+  const lista = $('conceptos'), puede = $('puede');
+  if (ingreso === null || salida === null || salida < ingreso || diario <= 0) {
+    $('total').textContent = pesos(0, 2);
+    $('resumen').textContent = 'Pon tu salario y tus fechas de ingreso y salida (la salida no puede ser antes del ingreso).';
+    lista.replaceChildren(); puede.replaceChildren(); $('notas').textContent = '';
+    return;
+  }
+  // Antigüedad: años completos cumplidos al terminar tu último día y días del año que iba corriendo.
+  const fin = salida + DIA;
+  let anos = 0;
+  while (anos < 80 && aniversario(ingreso, anos + 1) <= fin) anos++;
+  const resto = Math.round((fin - aniversario(ingreso, anos)) / DIA);
+  // Si saliste justo al cumplir el año, ese año completo de vacaciones se debe; si no, la parte proporcional (art. 79).
+  const anoVac = resto === 0 ? anos : anos + 1;
+  const fraccion = resto === 0 ? 1 : resto / 365;
+  const desdeAguinaldo = Math.max(ingreso, Date.UTC(new Date(salida).getUTCFullYear(), 0, 1));
+  const diasAno = Math.min(365, Math.round((fin - desdeAguinaldo) / DIA));
+
+  const conceptos = [];
+  const agregar = (nombre, articulo, detalle, monto) => conceptos.push({nombre, articulo, detalle, monto});
+  const sinPagar = Math.max(0, numero('sin_pagar'));
+  if (sinPagar > 0) agregar('Días trabajados sin pagar', 'art. 82', `${dias(sinPagar)} × ${pesos(diario, 2)}`, sinPagar * diario);
+  const diasAg = Math.max(0, numero('dias_aguinaldo'));
+  agregar('Aguinaldo proporcional', 'art. 87', `${dias(diasAg)} × ${diasAno}/365 de este año`, diario * diasAg * diasAno / 365);
+  const diasVacAno = diasVacaciones(anoVac);
+  const vacDias = Math.max(0, diasVacAno * fraccion - Math.max(0, numero('tomadas'))) + Math.max(0, numero('pendientes'));
+  const vacaciones = vacDias * diario;
+  agregar('Vacaciones', 'arts. 76 y 79', `${dias(Math.round(vacDias * 100) / 100)} (año ${anoVac} de servicio: ${diasVacAno} días${resto ? ` × ${resto}/365` : ''})`, vacaciones);
+  const pct = Math.max(0, numero('prima'));
+  agregar('Prima vacacional', 'art. 80', `${pct}% de tus vacaciones`, vacaciones * pct / 100);
+  const finiquito = conceptos.reduce((s, c) => s + c.monto, 0);
+
+  const notas = [];
+  const sm = SM[$('zona').value];
+  const base = Math.min(Math.max(diario, sm), 2 * sm);
+  const baseTexto = diario > 2 * sm ? `${pesos(base, 2)} (tope: 2 salarios mínimos)` : diario < sm ? `${pesos(base, 2)} (no menos del salario mínimo)` : pesos(base, 2);
+  let liquidacion = 0;
+  if (!planta) notas.push('Prima de antigüedad: no aparece porque la ley solo la da a trabajadores de planta (art. 162).');
+  else if (motivo === 'renuncia' && anos < 15) notas.push(`Prima de antigüedad: si renuncias, solo te toca con 15 años o más de servicio (art. 162, fr. III). Llevas ${anosTexto(anos)}.`);
+  else if (anos > 0 || resto > 0) {
+    if (anos > 0) {
+      agregar('Prima de antigüedad', 'arts. 162, 485 y 486', `12 días × ${anosTexto(anos)} × ${baseTexto}`, 12 * anos * base);
+      liquidacion += 12 * anos * base;
+    }
+    if (resto > 0) notas.push(`Prima de antigüedad: la ley dice "por cada año de servicios", así que aquí solo contamos tus ${anosTexto(anos)} completos. Pregunta en la PROFEDET si te reconocen la parte del año incompleto (${resto} días): serían unos ${pesos(12 * resto / 365 * base, 2)} más.`);
+  }
+  if (motivo === 'injustificado') {
+    agregar('Indemnización: 3 meses de salario', 'art. 48', `90 días × ${pesos(diario, 2)}`, 90 * diario);
+    liquidacion += 90 * diario;
+    const veinte = 20 * anos * diario;
+    puede.replaceChildren(
+      crear('h3', {textContent: 'Puede aplicar (no está sumado)'}),
+      crear('ul', {className: 'desglose'}, crear('li', {},
+        crear('span', {}, '20 días por año de servicio ', crear('span', {className: 'letra-chica', textContent: `(art. 50, fr. II · 20 días × ${anosTexto(anos)} completos)`})),
+        crear('b', {textContent: pesos(veinte, 2)}))),
+      crear('p', {className: 'nota', textContent: 'Si te despiden sin causa, la ley te deja elegir: que te regresen a tu trabajo o los 3 meses (art. 48). Los 20 días por año se pagan además cuando el patrón queda libre de regresarte (art. 49: si tenías menos de un año, eras de confianza, trabajo del hogar, eventual, o el Tribunal decide que el trato directo ya no es posible) o cuando tú te vas por culpa del patrón (arts. 51 y 52). Si había contrato por tiempo determinado, se calcula distinto (art. 50, fr. I). Si llegas a juicio y el patrón no prueba la causa, también se pagan salarios vencidos de hasta 12 meses (art. 48): no están aquí.'}));
+  } else puede.replaceChildren();
+  if (motivo === 'justificado') notas.push('Aunque el despido sea justificado, lo que ya ganaste se paga. El patrón debe darte un aviso por escrito con la causa y la fecha; si no te lo da, se presume que el despido fue injustificado (art. 47).');
+
+  const total = finiquito + liquidacion;
+  $('titulo_total').textContent = motivo === 'injustificado' ? 'Tu liquidación' : 'Tu finiquito';
+  $('total').textContent = pesos(total, 2);
+  $('resumen').textContent = `Salario diario: ${pesos(diario, 2)}. Antigüedad: ${anosTexto(anos)}${resto ? ` y ${dias(resto)}` : ''}.` +
+    (motivo === 'injustificado' ? ` Finiquito ${pesos(finiquito, 2)} + ${liquidacion > 90 * diario + 0.005 ? 'indemnización y prima de antigüedad' : 'indemnización'} ${pesos(liquidacion, 2)}.` : '');
+  lista.replaceChildren(...conceptos.map((c) => crear('li', {},
+    crear('span', {}, `${c.nombre} `, crear('span', {className: 'letra-chica', textContent: `(${c.articulo} · ${c.detalle})`})),
+    crear('b', {textContent: pesos(c.monto, 2)}))),
+    crear('li', {}, crear('span', {}, crear('b', {textContent: 'Total'})), crear('b', {textContent: pesos(total, 2)})));
+  notas.push('El aguinaldo cuenta desde el 1 de enero (o tu ingreso, si entraste este año) y supone que los de años pasados ya te los pagaron.');
+  $('notas').textContent = notas.join(' ');
+}
+alCambiar('calculadora', calcular);'''),
+        'venta_titulo': 'Con tu finiquito en la mano, que no se te vaya en un mes.',
+        'venta_texto': ('Entre un trabajo y otro, ese dinero es tu colchón. El tablero de la CEO te ayuda a estirarlo: presupuesto, '
+                        'fondo de emergencia y deudas, todo calculado solo en Excel o Google Sheets.'),
+        'faq': [
+            ('¿Cuánto me toca de finiquito si renuncio?',
+             'Lo que ya ganaste: los días trabajados que no te han pagado, la parte proporcional de tu aguinaldo (art. 87), tus '
+             'vacaciones no tomadas y las proporcionales del año que iba corriendo (arts. 76 y 79) con su prima vacacional de mínimo '
+             '25% (art. 80). Si eres de planta y tienes 15 años o más, también la prima de antigüedad: 12 días por año (art. 162). '
+             'Por renunciar no hay indemnización.'),
+            ('¿Qué es la liquidación y en qué se diferencia del finiquito?',
+             'El finiquito es lo que ya ganaste y te toca siempre, renuncies o te corran. La liquidación es el finiquito más la '
+             'indemnización por despido injustificado: 3 meses de salario (art. 48) y, si eres de planta, la prima de antigüedad de '
+             '12 días por año (art. 162). En algunos casos se suman 20 días por año (arts. 49, 50 y 52).'),
+            ('¿Me pueden obligar a firmar mi renuncia?',
+             'No. La PROFEDET lo dice claro: no firmes una carta de renuncia ni hojas en blanco; nadie te puede presionar a renunciar. '
+             'Además, la ley anula cualquier renuncia a tus salarios, indemnizaciones y prestaciones, y todo convenio o liquidación '
+             'debe ser por escrito, con el desglose de lo que te pagan, y ratificarse ante el Centro de Conciliación o el Tribunal (art. 33).'),
+            ('¿Cuánto tiempo tengo para reclamar?',
+             'Si te despidieron, 2 meses contados desde el día siguiente a tu despido (art. 518). El plazo se suspende cuando presentas '
+             'tu solicitud en el Centro de Conciliación. Para lo demás (aguinaldo, vacaciones, salarios) la regla general es 1 año '
+             '(art. 516). Si te quieres ir por culpa del patrón, tienes 1 mes (art. 517).'),
+            ('¿Cuándo me toca la prima de antigüedad?',
+             f'Solo si eres de planta. Son 12 días de salario por año, con tu salario topado al doble del mínimo: '
+             f'${TOPE_PRIMA_ANTIGUEDAD:,.2f} diarios en 2026 (${TOPE_PRIMA_ANTIGUEDAD_FRONTERA:,.2f} en la frontera norte). '
+             'Si renuncias, necesitas 15 años o más. Si te despiden, te toca sin importar los años y aunque el despido sea justificado '
+             '(art. 162, fr. III).'),
+            ('¿Cuándo me pagan los 20 días por año?',
+             'No en todo despido. Si te corren sin causa puedes pedir que te regresen o 3 meses de salario (art. 48). Los 20 días por '
+             'año (art. 50) se suman cuando el patrón queda libre de regresarte (art. 49: menos de un año de antigüedad, trabajadores '
+             'de confianza, del hogar, eventuales, entre otros) o cuando tú te separas por una falta del patrón, como bajarte el sueldo '
+             'o no pagarte (arts. 51 y 52).'),
+            ('Si me despidieron con causa, ¿me pagan algo?',
+             'Sí: tu finiquito (lo que ya ganaste) y, si eres de planta, la prima de antigüedad. Lo que no te toca es la indemnización '
+             'de 3 meses. Ojo: el patrón debe darte un aviso por escrito con la causa; si no lo hace, se presume que el despido fue '
+             'injustificado (art. 47).'),
+            ('¿Dónde me asesoran gratis?',
+             'En la PROFEDET (Procuraduría Federal de la Defensa del Trabajo): llama al 079 o al 800 911 7877. Todos sus servicios son '
+             'gratuitos; nadie te puede cobrar por la asesoría.'),
+        ],
+        'fuentes': [FUENTE_LFT_FINIQUITO, FUENTE_DOF_SALARIOS, FUENTE_PROFEDET_DESPIDO, FUENTE_PROFEDET_VACACIONES],
+        'compartir': 'Calcula tu finiquito o liquidación, gratis y con el artículo de cada concepto:',
     },
     {
         'slug': 'interes-compuesto',
@@ -380,6 +577,7 @@ alCambiar('calculadora', calcular);''',
 # Tarjeta que sale al compartir el enlace (WhatsApp, Facebook, X): título grande + Victoria.
 VISTA_PREVIA = {
     'aguinaldo': ('Calcula tu aguinaldo 2026', 'Cuánto te toca y cuánto paga ISR'),
+    'finiquito': ('Calcula tu finiquito 2026', 'Renuncia o despido: cuánto te toca'),
     'interes-compuesto': ('Cuánto crece tu ahorro', 'Calculadora de interés compuesto'),
     'regla-50-30-20': ('Tu sueldo en 50/30/20', 'Necesidades, deseos y ahorro'),
     'fondo-de-emergencia': ('Tu fondo de emergencia', 'Cuánto necesitas y cuándo llegas'),
@@ -418,6 +616,78 @@ def extra_aguinaldo():
       <p>1. Salario diario = sueldo mensual ÷ 30. 2. Aguinaldo = salario diario × 15 (o los días que dé tu empresa).
       3. Si no completaste el año, multiplica por días trabajados ÷ 365. 4. Los primeros ${TOPE_EXENTO_AGUINALDO:,.2f}
       (30 UMA) no pagan ISR.</p>
+    </section>
+"""
+
+
+def dias_vacaciones(ano):
+    """Art. 76 LFT (reforma DOF 27-12-2022): 12, 14, 16, 18, 20 y desde el sexto año +2 cada cinco."""
+    return 0 if ano < 1 else 10 + 2 * ano if ano <= 5 else 22 + 2 * ((ano - 6) // 5)
+
+
+def calcula_finiquito(mensual, ingreso, salida, motivo, planta=True, zona_sm=SALARIO_MINIMO_2026):
+    """La misma cuenta que hace la calculadora en JS (15 días de aguinaldo, prima vacacional 25%, sin vacaciones pendientes)."""
+    from datetime import date, timedelta
+    diario = mensual / 30
+    fin = salida + timedelta(days=1)
+    aniversario = lambda n: date(ingreso.year + n, ingreso.month, ingreso.day)
+    anos = 0
+    while aniversario(anos + 1) <= fin:
+        anos += 1
+    resto = (fin - aniversario(anos)).days
+    ano_vac, fraccion = (anos, 1) if resto == 0 else (anos + 1, resto / 365)
+    dias_ano = min(365, (fin - max(ingreso, date(salida.year, 1, 1))).days)
+    r = {'diario': diario, 'anos': anos, 'resto': resto, 'dias_ano': dias_ano, 'ano_vac': ano_vac,
+         'aguinaldo': diario * 15 * dias_ano / 365, 'dias_vac': dias_vacaciones(ano_vac) * fraccion}
+    r['vacaciones'] = r['dias_vac'] * diario
+    r['prima_vac'] = r['vacaciones'] * 0.25
+    r['finiquito'] = r['aguinaldo'] + r['vacaciones'] + r['prima_vac']
+    base = min(max(diario, zona_sm), 2 * zona_sm)
+    paga_prima = planta and (motivo != 'renuncia' or anos >= 15)
+    r['prima_antiguedad'] = 12 * anos * base if paga_prima else 0
+    r['indemnizacion'] = 90 * diario if motivo == 'injustificado' else 0
+    r['veinte_dias'] = 20 * anos * diario if motivo == 'injustificado' else 0
+    r['total'] = r['finiquito'] + r['prima_antiguedad'] + r['indemnizacion']
+    return r
+
+
+def extra_finiquito():
+    """Tres casos resueltos (9-nov-2026): la gente busca "cuánto me toca de finiquito si renuncio" con su caso."""
+    from datetime import date
+    p = lambda n: f'${n:,.2f}'
+    a = calcula_finiquito(15000, date(2025, 8, 1), date(2026, 10, 31), 'renuncia')
+    b = calcula_finiquito(15000, date(2022, 11, 1), date(2026, 10, 31), 'injustificado')
+    c = calcula_finiquito(25000, date(2010, 7, 1), date(2026, 9, 30), 'renuncia')
+    tabla = ''.join(f'<tr><td>{rango}</td><td>{d} días</td></tr>' for rango, d in (
+        ('1 año', 12), ('2 años', 14), ('3 años', 16), ('4 años', 18), ('5 años', 20), ('6 a 10 años', 22),
+        ('11 a 15 años', 24), ('16 a 20 años', 26), ('21 a 25 años', 28), ('26 a 30 años', 30)))
+    return f"""
+    <section class="ejemplos">
+      <div class="etiqueta">Ejemplos 2026</div>
+      <h2>¿Cuánto me toca de finiquito? Tres casos resueltos</h2>
+      <p class="lema" style="margin:0">Brutos, antes de ISR, con sueldo mensual entre 30, 15 días de aguinaldo, prima vacacional de 25%
+      y sin vacaciones pendientes de años anteriores.</p>
+      <h3>1. Renuncias con 1 año y 3 meses y ganas $15,000 al mes</h3>
+      <p>Entraste el 1-ago-2025 y tu último día es el 31-oct-2026. Salario diario: $500.
+      Aguinaldo: $500 × 15 × {a['dias_ano']}/365 = {p(a['aguinaldo'])}.
+      Vacaciones: vas en tu año 2, que da 14 días; llevas {a['resto']} días de ese año: 14 × {a['resto']}/365 = {a['dias_vac']:.2f} días
+      = {p(a['vacaciones'])}. Prima vacacional: {p(a['prima_vac'])}. Sin prima de antigüedad (al renunciar se necesitan 15 años).
+      <b>Finiquito: {p(a['total'])}</b>.</p>
+      <h3>2. Te despiden sin causa con 4 años y ganas $15,000 al mes</h3>
+      <p>Del 1-nov-2022 al 31-oct-2026, de planta. Finiquito: aguinaldo {p(b['aguinaldo'])} + vacaciones del año 4 (18 días)
+      {p(b['vacaciones'])} + prima vacacional {p(b['prima_vac'])} = {p(b['finiquito'])}. Indemnización: 3 meses = {p(b['indemnizacion'])}
+      (art. 48). Prima de antigüedad: 12 × 4 × $500 = {p(b['prima_antiguedad'])} (art. 162). <b>Liquidación: {p(b['total'])}</b>.
+      Si el patrón queda libre de regresarte o te vas por su culpa (arts. 49 y 52), se suman 20 días × 4 años = {p(b['veinte_dias'])}.</p>
+      <h3>3. Renuncias con 16 años de planta y ganas $25,000 al mes</h3>
+      <p>Del 1-jul-2010 al 30-sep-2026. Salario diario: $833.33. Aguinaldo: {p(c['aguinaldo'])}. Vacaciones: año 17 (26 días) ×
+      {c['resto']}/365 = {p(c['vacaciones'])} + prima vacacional {p(c['prima_vac'])}. Como tienes más de 15 años, sí hay prima de
+      antigüedad, pero con el salario topado al doble del mínimo ({p(TOPE_PRIMA_ANTIGUEDAD)}): 12 × 16 × {p(TOPE_PRIMA_ANTIGUEDAD)} =
+      {p(c['prima_antiguedad'])}. <b>Finiquito: {p(c['total'])}</b>. Si no tomaste las vacaciones de tu año 16, súmalas.</p>
+      <h3>Días de vacaciones por año de servicio (art. 76)</h3>
+      <div class="tabla"><table>
+        <thead><tr><th>Antigüedad</th><th>Vacaciones</th></tr></thead>
+        <tbody>{tabla}</tbody>
+      </table></div>
     </section>
 """
 
@@ -547,6 +817,9 @@ def menu(actual=None):
     return ''.join(enlaces)
 
 
+EXTRAS = {'aguinaldo': extra_aguinaldo, 'finiquito': extra_finiquito}
+
+
 def pagina(h):
     url = f'{DOMINIO}/{h["slug"]}'
     datos = [
@@ -565,7 +838,7 @@ def pagina(h):
     return PLANTILLA.format(
         titulo=e(h['titulo']), descripcion=e(h['descripcion']), url=url, dominio=DOMINIO, h1=h['h1'], lema=e(h['lema']),
         formulario=h['formulario'], resultado=h['resultado'], venta_titulo=e(h['venta_titulo']), venta_texto=e(h['venta_texto']),
-        faq=faq, extra=extra_aguinaldo() if h['slug'] == 'aguinaldo' else '', menu=menu(h['slug']), fuentes=fuentes, script=h['script'], slug=h['slug'], compartir=h['compartir'],
+        faq=faq, extra=EXTRAS.get(h['slug'], lambda: '')(), menu=menu(h['slug']), fuentes=fuentes, script=h['script'], slug=h['slug'], compartir=h['compartir'],
         datos_estructurados=json.dumps(datos, ensure_ascii=False).replace('</', '<\\/'))
 
 
