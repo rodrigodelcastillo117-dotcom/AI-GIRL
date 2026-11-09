@@ -478,3 +478,24 @@ html { scroll-behavior: smooth; }
 .resp-calc p { display: block; -webkit-line-clamp: unset; }
 .resp-calc label { display: grid; gap: 2px; font-size: .7rem; color: var(--tenue); }
 .resp-calc input { background: transparent; border: 1px solid var(--linea-fuerte); color: var(--texto); padding: 4px 6px; font-size: .85rem; width: 100%; box-sizing: border-box; }
+
+/* Mejora día a día (9-nov-2026) */
+.kpis-mejora { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin: 4px 0 10px; }
+.kpi-mejora { border: 1px solid var(--linea); border-left: 3px solid var(--acento); padding: 6px 8px; display: grid; gap: 2px; min-width: 0; }
+.kpi-mejora .red-nombre { font-family: var(--etiqueta); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--acento); }
+.kpi-mejora b { font-family: var(--mono); font-size: 1rem; color: var(--texto); }
+.kpi-mejora small { font-size: .62rem; color: var(--tenue); }
+.sube { color: #3ddc97 !important; }
+.baja { color: #ff5c7a !important; }
+h3.sub { font-family: var(--etiqueta); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--oro); margin: 14px 0 4px; }
+.bitacora { display: grid; gap: 4px; }
+.cambio-fila { display: grid; grid-template-columns: 4.2rem 1fr auto; gap: 8px; align-items: center; border-bottom: 1px solid var(--linea); padding: 5px 0; font-size: .78rem; }
+.cambio-fila b { font-weight: 500; display: block; }
+.cambio-fila small { color: var(--tenue); font-size: .66rem; }
+.cambio-fecha { font-family: var(--mono); font-size: .7rem; color: var(--cian); }
+.cambio-resultado { font-family: var(--mono); font-size: .68rem; color: var(--tenue); text-align: right; }
+@media (max-width: 640px) {
+  .kpis-mejora { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cambio-fila { grid-template-columns: 3.4rem 1fr; }
+  .cambio-resultado { grid-column: 2; text-align: left; }
+}

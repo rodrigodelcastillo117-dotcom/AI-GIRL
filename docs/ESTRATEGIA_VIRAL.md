@@ -62,6 +62,9 @@ subir lo mismo en todas las redes, no perder ningún reel, carrusel, imagen". En
 - Compartidos y guardados por pieza (Instagram, capturas de Rodrigo), comentarios reales, seguidores nuevos por red.
 - Vistas de TikTok a ~48 h por tipo de portada (auditoría: postura / si / dato / meme / mito).
 - Lo que gana se repite; lo que pierde dos semanas seguidas se deja.
+- **Bitácora de cambios** (contenido/cambios.json, sale en el centro → "Mejora día a día"): cada vez que cambie el ritmo,
+  un formato, una serie o la estrategia, se agrega una línea {fecha, cambio, por_que, vigilar: yt|tt|ig|fb|todas}. El centro
+  compara solo las vistas por día de 3 días antes contra 3 días después. Lo que no mejora en una semana se revisa.
 
 ## Lo que solo Rodrigo puede hacer (y más pesa)
 

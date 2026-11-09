@@ -122,6 +122,9 @@ def medir_publer(videos):
     import publer
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
+    # Facebook (9-nov-2026) se mide como 'fb': va en el centro y en la evolución diaria, pero no en la calificación
+    # de videos (total() suma YouTube, TikTok e Instagram) ni en la prueba de horarios.
+    fb = publer.CONFIG.get('facebook_victoria')
     por_linea = {primera_linea(v.get('texto_post')): v['id'] for v in videos}
     por_minuto = {v['publica_utc'][:16]: v['id'] for v in videos if v.get('publica_utc')}
     # El Reel de un carrusel (mismo video del Short) va aparte, como 'igr': sumado al carrusel inflaría su hora.
@@ -133,13 +136,14 @@ def medir_publer(videos):
                                  f'&to={hoy.isoformat()}&page={pagina}', ws)
         lote = r.get('posts') or []
         for p in lote:
-            red = REDES.get(cuentas.get(p.get('account_id')))
+            red = 'fb' if fb and p.get('account_id') == fb else REDES.get(cuentas.get(p.get('account_id')))
             if not red:
                 continue
             minuto = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M') if p.get('scheduled_at') else ''
-            video = por_linea.get(primera_linea(p.get('text'))) or por_minuto.get(minuto)
+            video = por_linea.get(primera_linea(p.get('text'))) or (por_minuto.get(minuto) if red != 'fb' else None)
             if primera_linea(p.get('text')) in reels:
-                video, red = reels[primera_linea(p.get('text'))], 'igr'
+                video = reels[primera_linea(p.get('text'))]
+                red = 'fb' if red == 'fb' else 'igr'  # en Facebook el Reel del carrusel es su único video
             if not video:
                 continue
             a = p.get('analytics') or {}

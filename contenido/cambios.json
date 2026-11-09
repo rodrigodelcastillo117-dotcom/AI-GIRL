@@ -1,0 +1,11 @@
+[
+ {"fecha": "2026-11-02", "cambio": "TikTok: carrusel en fotos todos los días", "por_que": "En TikTok los carruseles llegaban más lejos que los videos", "vigilar": "tt"},
+ {"fecha": "2026-11-07", "cambio": "Instagram: solo el Reel del carrusel, sin las fotos", "por_que": "Muse (IA de Meta): los Reels llegan a no seguidores", "vigilar": "ig"},
+ {"fecha": "2026-11-08", "cambio": "Victoria con postura y pregunta de una palabra en cada pieza", "por_que": "Nadie sigue a un folleto: se sigue a alguien con opinión", "vigilar": "todas"},
+ {"fecha": "2026-11-09", "cambio": "Formato \"Guarda esto: 5 datos\" (c16, primer hit)", "por_que": "3,361 vistas y 14 compartidos en TikTok en 15 h", "vigilar": "tt"},
+ {"fecha": "2026-11-09", "cambio": "Ritmo: TikTok 3, Instagram 2, YouTube 3 al día", "por_que": "Más intentos, más probabilidad de pegar", "vigilar": "todas"},
+ {"fecha": "2026-11-09", "cambio": "Facebook conectado: todo lo de Instagram y los shorts de YouTube", "por_que": "Una red más con el mismo contenido, gratis", "vigilar": "fb"},
+ {"fecha": "2026-11-09", "cambio": "Comentarios de Instagram contestados solos cada 2 h", "por_que": "Contestar rápido da alcance", "vigilar": "ig"},
+ {"fecha": "2026-11-10", "cambio": "Música de fondo en Reels y shorts; martes y viernes un Reel con sonido de la biblioteca", "por_que": "Instagram empuja los Reels con audio", "vigilar": "ig"},
+ {"fecha": "2026-11-10", "cambio": "Serie de parejas primero (c27, c28, c41, c29)", "por_que": "Lo de pareja se comparte y se etiqueta", "vigilar": "todas"}
+]

@@ -20,5 +20,6 @@ export default function handler(req, res) {
     auditoria: leer('auditoria.json'),
     carruseles: leerSiHay('carruseles.json'),
     calendario: leerSiHay('calendario.json'),
+    cambios: leerSiHay('cambios.json'),
   });
 }

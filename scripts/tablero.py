@@ -130,7 +130,7 @@ def metricas_historial():
         ultima[foto['video_id']] = foto  # el historial está en orden de fecha
     por_video = {}
     for vid, foto in ultima.items():
-        for red in ('yt', 'tt', 'ig'):
+        for red in ('yt', 'tt', 'ig', 'fb'):
             for corto in ('v', 'l', 'c', 's'):
                 if red in foto or (red == 'ig' and 'igr' in foto):
                     por_video.setdefault(vid, {})[f'{corto}_{red}'] = de_red(foto, red, corto)
@@ -308,12 +308,14 @@ def series_reales(plan, carruseles):
         historial = json.load(open(os.path.join(RAIZ, 'contenido', 'metricas.json')))
     except (OSError, ValueError):
         historial = []
-    por_dia, ultimas, por_red = {}, {}, {}
+    por_dia, ultimas, por_red, medidas = {}, {}, {}, set()
     for foto in sorted(historial, key=lambda f: f['fecha_utc']):
-        ultimas[foto['video_id']] = {r: de_red(foto, r) for r in ('yt', 'tt', 'ig')}
+        ultimas[foto['video_id']] = {r: de_red(foto, r) for r in ('yt', 'tt', 'ig', 'fb')}
+        medidas |= {r for r in ('yt', 'tt', 'ig', 'fb') if r in foto or (r == 'ig' and 'igr' in foto)}
         dia = a_mexico(foto['fecha_utc']).date().isoformat()
         por_dia[dia] = sum(sum(x.values()) for x in ultimas.values())
-        por_red[dia] = {r: sum(x[r] for x in ultimas.values()) for r in ('yt', 'tt', 'ig')}
+        # una red entra a la serie desde el día en que se midió por primera vez (Facebook no aparece en 0 antes de existir)
+        por_red[dia] = {r: sum(x[r] for x in ultimas.values()) for r in ('yt', 'tt', 'ig', 'fb') if r in medidas}
     fechas = sorted(min(horas_por_red(x).values()).date().isoformat() for x in plan['videos'] + carruseles
                     if x.get('estado') in ('programado', 'publicado') and horas_por_red(x))
     hoy = datetime.datetime.now(CDMX).date().isoformat()
@@ -397,6 +399,10 @@ def main():
     } for c in carruseles])
     guardar('calendario.json', calendario(plan, carruseles, config, auditoria, datetime.datetime.now(datetime.timezone.utc)))
     guardar('ejecuciones.json', json.load(open(os.path.join(RAIZ, 'contenido', 'ejecuciones.json'))))
+    try:  # bitácora de cambios (Rodrigo, 9-nov-2026: "el chiste es mejorar día a día"): qué se cambió y cuándo
+        guardar('cambios.json', json.load(open(os.path.join(RAIZ, 'contenido', 'cambios.json'))))
+    except (OSError, ValueError):
+        guardar('cambios.json', [])
     guardar('aprendizajes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'aprendizajes.json'))))
     json.dump(auditoria, open(os.path.join(SALIDA, 'auditoria.json'), 'w'), ensure_ascii=False, indent=1)
     guardar('mejores_horas.json', [

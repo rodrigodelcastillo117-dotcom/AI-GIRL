@@ -696,6 +696,7 @@ function dibujarGraficas() {
   $('vacio-vistas').hidden = medidos.length > 0;
   apiladas($('g-vistas'), medidos);
   calor($('g-calor'), FOTO.mejores_horas);
+  dibujarMejora();
   // Tema y día: promedio de vistas POR RED (una barra por red, lado a lado), con videos y carruseles (Rodrigo, 9-nov-2026:
   // "¿no debería ser en la misma gráfica por red social?"). Antes sumaba las redes y solo contaba los videos de Victoria.
   for (const [campo, id, vacio, nombres, orden] of [['pilar', 'g-pilar', 'vacio-pilar', PILARES, null], ['dia', 'g-dia', 'vacio-dia', {}, DIAS]]) {
@@ -764,6 +765,96 @@ function agrupadas(caja, grupos, alto = 190) {
     }
   });
   eje(svg, x0, alto, m, grupos.map((d) => d.k));
+}
+
+// ---------- mejora día a día (Rodrigo, 9-nov-2026: "el chiste es mejorar día a día") ----------
+function diarioPorRed() {
+  // De vistas acumuladas por día (la medición de cada mañana) a vistas NUEVAS de cada día, por red.
+  const serie = FOTO.estado?.serie_redes || [];
+  return serie.map((d, i) => {
+    const fila = {fecha: d.fecha};
+    for (const {clave} of REDES) {
+      if (d[clave] == null) continue;
+      const antes = i ? serie[i - 1][clave] ?? 0 : 0;
+      fila[clave] = Math.max(0, d[clave] - antes);
+    }
+    return fila;
+  });
+}
+
+function sumaDias(diario, clave, desde, hasta) {
+  const filas = diario.filter((d) => d.fecha > desde && d.fecha <= hasta && d[clave] != null);
+  return filas.length ? {total: filas.reduce((s, d) => s + d[clave], 0), dias: filas.length} : null;
+}
+
+const diasAntes = (fecha, n) => new Date(new Date(`${fecha}T12:00:00Z`).getTime() - n * 864e5).toISOString().slice(0, 10);
+
+function dibujarMejora() {
+  const diario = diarioPorRed();
+  if (!diario.length) return;
+  const hoy = diario.at(-1).fecha;
+  $('mejora-semana').replaceChildren(...REDES.map((red) => {
+    const ahora = sumaDias(diario, red.clave, diasAntes(hoy, 7), hoy);
+    const antes = sumaDias(diario, red.clave, diasAntes(hoy, 14), diasAntes(hoy, 7));
+    let flecha = 'midiendo', clase = '';
+    if (ahora && antes && antes.dias >= 3 && antes.total > 0) {
+      const cambio = (ahora.total - antes.total) / antes.total;
+      flecha = `${cambio >= 0 ? '▲' : '▼'} ${Math.abs(Math.round(cambio * 100))}%`;
+      clase = cambio >= 0 ? 'sube' : 'baja';
+    }
+    const caja = crear('div', {className: 'kpi-mejora'}, crear('span', {className: 'red-nombre', textContent: red.nombre}),
+      crear('b', {textContent: ahora ? compacto(ahora.total) : '—'}), crear('small', {className: clase, textContent: !ahora ? 'empieza a medirse con su primer post'
+        : flecha === 'midiendo' ? 'aún sin semana anterior para comparar' : `${flecha} vs semana anterior`}));
+    caja.style.setProperty('--acento', red.color);
+    return caja;
+  }));
+  lineasDiarias($('g-diario'), diario);
+  const cambios = [...(FOTO.cambios || [])].sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
+  $('bitacora').replaceChildren(...cambios.map((c) => {
+    const redes = c.vigilar === 'todas' ? REDES.map((r) => r.clave) : [c.vigilar];
+    const promedio = (desde, hasta) => {
+      const partes = redes.map((r) => sumaDias(diario, r, desde, hasta)).filter(Boolean);
+      return partes.length ? partes.reduce((s, x) => s + x.total / x.dias, 0) : null;
+    };
+    const antes = promedio(diasAntes(c.fecha, 4), diasAntes(c.fecha, 1));
+    const despues = promedio(diasAntes(c.fecha, 0), diasAntes(c.fecha, -3));
+    const dias = diario.filter((d) => d.fecha >= c.fecha).length;
+    let resultado = `midiendo · faltan ${Math.max(1, 3 - dias)} día(s)`, clase = '';
+    if (dias >= 3 && antes != null && despues != null && antes > 0) {
+      const x = (despues - antes) / antes;
+      resultado = `${fmt(antes)} → ${fmt(despues)} vistas/día (${x >= 0 ? '▲' : '▼'} ${Math.abs(Math.round(x * 100))}%)`;
+      clase = x >= 0 ? 'sube' : 'baja';
+    }
+    const red = c.vigilar === 'todas' ? 'todas las redes' : NOMBRE_RED[c.vigilar] || c.vigilar;
+    return crear('div', {className: 'cambio-fila'},
+      crear('span', {className: 'cambio-fecha', textContent: new Date(`${c.fecha}T12:00:00`).toLocaleDateString('es-MX', {day: 'numeric', month: 'short'})}),
+      crear('div', {}, crear('b', {textContent: c.cambio}), crear('small', {textContent: `${c.por_que} · se mide en ${red}`})),
+      crear('span', {className: `cambio-resultado ${clase}`, textContent: resultado}));
+  }));
+}
+
+function lineasDiarias(caja, diario, alto = 200) {
+  if (!window.d3 || !diario.length) { caja.replaceChildren(); return; }
+  const {ancho, svg} = lienzo(caja, alto);
+  const tip = globo(caja);
+  const m = {t: 16, r: 10, b: 26, l: 34};
+  const x = d3.scalePoint(diario.map((d) => d.fecha), [m.l, ancho - m.r]);
+  const y = d3.scaleLinear([0, d3.max(diario, (d) => d3.max(REDES, (r) => d[r.clave] || 0)) || 1], [alto - m.b, m.t]).nice();
+  svg.append('g').attr('class', 'guia').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', ancho - m.r).attr('y1', y).attr('y2', y);
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 4).attr('y', (d) => y(d) + 3).attr('text-anchor', 'end').style('fill', '#7f97a6').style('font-size', '9px').text(compacto);
+  for (const red of REDES) {
+    const puntos = diario.filter((d) => d[red.clave] != null);
+    if (!puntos.length) continue;
+    svg.append('path').datum(puntos).attr('fill', 'none').attr('stroke', red.color).attr('stroke-width', 2)
+      .attr('d', d3.line().x((d) => x(d.fecha)).y((d) => y(d[red.clave])));
+    svg.append('g').selectAll('circle').data(puntos).join('circle').attr('r', 3).attr('cx', (d) => x(d.fecha)).attr('cy', (d) => y(d[red.clave])).attr('fill', red.color)
+      .on('pointermove', (e, d) => tip.ver(e, `${red.nombre} · ${new Date(`${d.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})}`, `${fmt(d[red.clave])} vistas nuevas`))
+      .on('pointerleave', () => tip.ocultar());
+  }
+  const cada = Math.max(1, Math.ceil(diario.length / 8));
+  svg.append('g').selectAll('text').data(diario.filter((d, i) => i % cada === 0 || i === diario.length - 1)).join('text')
+    .attr('x', (d) => x(d.fecha)).attr('y', alto - 8).attr('text-anchor', 'middle').style('fill', '#7f97a6').style('font-size', '9px')
+    .text((d) => new Date(`${d.fecha}T12:00:00`).toLocaleDateString('es-MX', {day: 'numeric', month: 'short'}));
 }
 
 function lienzo(caja, alto) {
