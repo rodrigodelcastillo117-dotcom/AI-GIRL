@@ -276,6 +276,41 @@ def dato(diapo, n, total, c):
     return lienzo
 
 
+def meme(diapo, n, total, c):
+    """Diapositiva meme (Rodrigo, 9-nov-2026: "más formatos donde salga Victoria"): su foto a sangre con la situación
+    arriba en franja blanca (estilo meme) y abajo el remate con el dato o la opinión. 0 créditos: fotos de assets/fotos."""
+    foto = diapo['meme']
+    im = Image.open(os.path.join(RAIZ, foto)).convert('RGB')
+    caras = json.load(open(os.path.join(RAIZ, 'assets', 'fotos', 'caras.json')))
+    x, y, w, h = caras.get(os.path.basename(foto), [0.35, 0.2, 0.3, 0.2])
+    W, H = im.size
+    escala = max(ANCHO / W, ALTO / H) * 1.12  # un poco de zoom para que la cara mande
+    im = im.resize((int(W * escala), int(H * escala)), Image.LANCZOS)
+    cx, cy = (x + w / 2) * im.width, (y + h / 2) * im.height
+    izq = int(min(max(cx - ANCHO / 2, 0), im.width - ANCHO))
+    arr = int(min(max(cy - ALTO * 0.42, 0), im.height - ALTO))
+    lienzo = im.crop((izq, arr, izq + ANCHO, arr + ALTO))
+    d = ImageDraw.Draw(lienzo)
+    ft, lt, st = acomodar(diapo['titulo'], 'Black', 64, 40, ANCHO - 2 * MARGEN, 260, d, 1.12)
+    alto_franja = len(lt) * st + 70
+    d.rectangle((0, 0, ANCHO, alto_franja), fill=(255, 255, 255))
+    escribir(d, (MARGEN, 38), lt, ft, st, NEGRO)
+    cuerpo, *fuentes = diapo['texto'].split('\n\n')
+    fc, lc, sc = acomodar(cuerpo, 'Black', 58, 38, ANCHO - 2 * MARGEN, 260, d, 1.15)
+    bloque = len(lc) * sc + (50 if fuentes else 0)
+    sombra = Image.new('L', (1, ALTO))
+    inicio = ALTO - 160 - bloque - 160
+    for yy in range(ALTO):
+        sombra.putpixel((0, yy), int(max(0, min(1, (yy - inicio) / 160)) * 235))
+    lienzo.paste(Image.new('RGB', (ANCHO, ALTO), NEGRO), (0, 0), sombra.resize((ANCHO, ALTO)))
+    d = ImageDraw.Draw(lienzo)
+    yb = escribir(d, (MARGEN, ALTO - 150 - bloque), lc, fc, sc, ORO)
+    if fuentes:
+        d.text((MARGEN, yb + 12), fuentes[0][:80], font=letra('Medium', 24), fill=TENUE)
+    pie(d, n, total)
+    return lienzo
+
+
 def cierre(c, n, total):
     lienzo = Image.new('RGB', (ANCHO, ALTO), ORO)
     d = ImageDraw.Draw(lienzo)
@@ -336,7 +371,7 @@ def portada_reel(c):
 def dibujar(c, carpeta):
     os.makedirs(carpeta, exist_ok=True)
     total = len(c['diapositivas']) + 2
-    hojas = [portada(c, total)] + [dato(x, i + 2, total, c) for i, x in enumerate(c['diapositivas'])] + [cierre(c, total, total)]
+    hojas = [portada(c, total)] + [(meme if x.get('meme') else dato)(x, i + 2, total, c) for i, x in enumerate(c['diapositivas'])] + [cierre(c, total, total)]
     rutas = []
     for i, hoja in enumerate(hojas):
         rutas.append(os.path.join(carpeta, f'{i:02d}.png'))
