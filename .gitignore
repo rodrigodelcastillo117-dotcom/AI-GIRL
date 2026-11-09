@@ -15,3 +15,4 @@ producto/plantilla/*.xlsx
 
 # Carruseles: se vuelven a dibujar desde contenido/carruseles.json
 carruseles/
+videos/calcula/grab/
