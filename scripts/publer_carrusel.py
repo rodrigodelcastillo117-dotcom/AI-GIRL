@@ -55,15 +55,27 @@ def ya_sale_ese_dia(c, cuando, todos, plan, proveedores):
     """Choques del mismo día (México). Instagram: una publicación por día (video o carrusel; el Reel del carrusel
     va aparte). TikTok: un carrusel por día y, si ese día hay video, a 2 h o más de él (el 30-oct salieron c02 y c03
     el mismo día por no revisarlo)."""
+    # Rodrigo, 9-nov-2026 ("quiero hacerme viral"): TikTok puede llevar config.json → tiktok_carruseles_por_dia
+    # carruseles (2), cada uno a 3 h o más de otro carrusel y a 2 h o más de un video.
+    por_dia = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('tiktok_carruseles_por_dia', 1)
     choques = []
     for proveedor in proveedores:
         r = CORTA[proveedor]
         t = a_utc(cuando_de(cuando, proveedor)).astimezone(CDMX)
+        mismos = []
         for x, h in publicaciones(plan, todos):
             if x['id'] == c['id'] or r not in h or h[r].date() != t.date():
                 continue
-            if r == 'ig' or x['id'].startswith('c') or abs(h[r] - t) < datetime.timedelta(hours=2):
+            if r == 'ig':
                 choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')}")
+            elif x['id'].startswith('c'):
+                mismos.append(x['id'])
+                if abs(h[r] - t) < datetime.timedelta(hours=3):
+                    choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')} (menos de 3 h)")
+            elif abs(h[r] - t) < datetime.timedelta(hours=2):
+                choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')}")
+        if r == 'tt' and len(mismos) >= por_dia:
+            choques.append(f"tt: ya hay {len(mismos)} carrusel(es) ese día ({', '.join(mismos)}); máximo {por_dia}")
     return choques
 
 

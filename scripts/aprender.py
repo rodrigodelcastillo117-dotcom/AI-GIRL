@@ -771,23 +771,29 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     carrusel_hoy = lambda r: [h[r] for _, h in publicaciones({'videos': []}, carruseles) if r in h and h[r].date() == hoy]
     salida = {'tiktok': None, 'instagram': None, 'youtube': None, 'notas': []}
 
-    # TikTok: el primero que no ha salido ahí (temporada primero).
-    if any(a_utc(t).astimezone(CDMX).date() == hoy for c in carruseles for r, t in por_red(c).items() if r == 'tt'):
-        salida['notas'].append('TikTok ya tiene su carrusel de hoy.')
-        pendientes_tt = [c for c in carruseles if falta(c, 'tt')]
-    else:
-        pendientes_tt = sorted((c for c in carruseles if falta(c, 'tt')), key=lambda c: 0 if c.get('ventana') else 1)
-        videos_tt = sale_hoy([], 'tt')
-        if d.get('publicar_hoy'):
-            videos_tt.append(a_utc(d['cuando']['tt']).astimezone(CDMX))
-        cuando = franja_extra('tt', hoy, videos_tt, d['conteo_horas'], config, ahora) if videos_tt else d['cuando']['tt']
-        if pendientes_tt and cuando:
-            salida['tiktok'] = {'id': pendientes_tt[0]['id'], 'cuando': cuando}
-            pendientes_tt = pendientes_tt[1:]
-        elif pendientes_tt:
-            salida['notas'].append('TikTok: ya no queda hora libre hoy a 3 h del video; sale mañana.')
-        else:
-            salida['notas'].append('TikTok: no queda ningún carrusel "listo" que no haya salido ahí: escribir 5 nuevos.')
+    # TikTok: los primeros que no han salido ahí (temporada primero). Desde el 9-nov-2026 (Rodrigo: "quiero hacerme
+    # viral") pueden ser config.json → tiktok_carruseles_por_dia al día, a 3 h o más entre sí y del video.
+    cupo = config.get('tiktok_carruseles_por_dia', 1)
+    tt_hoy = [a_utc(t).astimezone(CDMX) for c in carruseles for r, t in por_red(c).items()
+              if r == 'tt' and a_utc(t).astimezone(CDMX).date() == hoy]
+    pendientes_tt = sorted((c for c in carruseles if falta(c, 'tt')), key=lambda c: 0 if c.get('ventana') else 1)
+    ocupadas = sale_hoy([], 'tt') + tt_hoy
+    if d.get('publicar_hoy'):
+        ocupadas.append(a_utc(d['cuando']['tt']).astimezone(CDMX))
+    salida['tiktoks'] = []
+    if len(tt_hoy) >= cupo:
+        salida['notas'].append(f'TikTok ya tiene sus {len(tt_hoy)} carrusel(es) de hoy.')
+    while pendientes_tt and len(tt_hoy) + len(salida['tiktoks']) < cupo:
+        cuando = franja_extra('tt', hoy, ocupadas, d['conteo_horas'], config, ahora) if ocupadas else d['cuando']['tt']
+        if not cuando:
+            salida['notas'].append('TikTok: ya no queda hora libre hoy a 3 h de lo demás; sigue mañana.')
+            break
+        salida['tiktoks'].append({'id': pendientes_tt[0]['id'], 'cuando': cuando})
+        ocupadas.append(a_utc(cuando).astimezone(CDMX))
+        pendientes_tt = pendientes_tt[1:]
+    if not pendientes_tt and not salida['tiktoks'] and len(tt_hoy) < cupo:
+        salida['notas'].append('TikTok: no queda ningún carrusel "listo" que no haya salido ahí: escribir 5 nuevos.')
+    salida['tiktok'] = salida['tiktoks'][0] if salida['tiktoks'] else None
     salida['quedan_tiktok'] = len(pendientes_tt)
 
     # Instagram y YouTube: solo los días sin video y si Instagram no tiene ya algo hoy.
@@ -845,8 +851,8 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     # no seguidores). Las fotos siguen en TikTok.
     comandos = []
     tt, ig = salida['tiktok'], salida['instagram']
-    if tt:
-        comandos.append(f"python scripts/publer_carrusel.py {tt['id']} \"tt={tt['cuando']}\"")
+    for t in salida.get('tiktoks', []):
+        comandos.append(f"python scripts/publer_carrusel.py {t['id']} \"tt={t['cuando']}\"")
     if ig:
         comandos += [f"python scripts/carrusel_video.py short {ig['id']}",
                      f"python scripts/publer_carrusel.py {ig['id']} --reel {ig['cuando_ig']}"]
@@ -1019,7 +1025,7 @@ def auditar():
         print(f"Publicar hoy el video listo {d['publicar_hoy']}.")
     k = d['carruseles']
     if k['tiktok']:
-        print(f"Carrusel de TikTok hoy: {k['tiktok']['id']} a las {a_utc(k['tiktok']['cuando']).astimezone(CDMX):%H:%M}.")
+        print('Carruseles de TikTok hoy: ' + ', '.join(f"{t['id']} a las {a_utc(t['cuando']).astimezone(CDMX):%H:%M}" for t in k['tiktoks']) + '.')
     if k['instagram']:
         print(f"Reel de Instagram y short de YouTube hoy: {k['instagram']['id']} ({k['instagram']['por_que']}).")
     if k.get('youtube'):

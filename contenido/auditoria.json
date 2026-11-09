@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-09T05:31:40Z",
+ "fecha_utc": "2026-11-09T05:38:21Z",
  "videos_calificados": 5,
  "base_vistas_36h": 507,
  "notas": {
@@ -388,10 +388,11 @@
    "instagram": null,
    "youtube": null,
    "notas": [
-    "TikTok ya tiene su carrusel de hoy.",
+    "TikTok: ya no queda hora libre hoy a 3 h de lo demás; sigue mañana.",
     "YouTube ya tiene su short de carrusel de hoy.",
     "Hoy hay video: Instagram sube el video, no carrusel."
    ],
+   "tiktoks": [],
    "quedan_tiktok": 14,
    "comandos": []
   },
