@@ -468,5 +468,15 @@
   "c57"
  ],
  "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Parejas (c27, c41, c28, c29) y la serie Socios en casa (c55-c59, revisada el 9-nov) van primero en TikTok, prioridad_por_dia al día (2) para no tapar la temporada de aguinaldo; se quitan solos cuando ya salieron.",
- "prioridad_por_dia": 2
+ "prioridad_por_dia": 2,
+ "voz_victoria": {
+  "motor": "minimax",
+  "modelo": "minimax/speech-02-hd",
+  "voice_id": "R8_LEAVFNPT",
+  "language_boost": "Spanish",
+  "emotion": "auto",
+  "speed": 1.0,
+  "muestra": "assets/voz-referencia-intima.wav",
+  "nota": "9-nov-2026, Rodrigo: \"sí, conéctala y déjala para siempre\". La voz REAL de sus videos (audio del video 18) clonada con MiniMax Speech 02 HD en Replicate (REPLICATE_API_TOKEN). La misma voz siempre en carruseles, Reels y shorts: si MiniMax falla, se detiene; nunca cambia a otra voz. Si el clon caduca, voz_victoria.py lo vuelve a clonar de la muestra y guarda el voice_id nuevo aquí."
+ }
 }

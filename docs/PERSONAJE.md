@@ -20,8 +20,9 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
 
 - De tú, directa, cálida y segura (desde el 7-nov la voz de los videos es "cálida e íntima": como quien le cuenta
   un secreto a una amiga). Nada de "hola, chicos", nada de presentarse.
-- **La misma voz siempre** (Rodrigo, 9-nov-2026, eligió la "E"): carruseles, Reels y shorts usan la voz clonada de sus
-  videos recientes (assets/voz-referencia-intima.wav, del video 18), más femenina y suave (scripts/voz_victoria.py → ESTILO).
+- **La misma voz siempre** (Rodrigo, 9-nov-2026: "conéctala y déjala para siempre"): carruseles, Reels y shorts usan su
+  voz REAL de los videos (muestra: assets/voz-referencia-intima.wav, del video 18) clonada con MiniMax Speech 02 HD en
+  Replicate (config.json → voz_victoria; scripts/voz_victoria.py). Si MiniMax falla, se detiene: nunca se cambia a otra voz.
   No se cambia sin que Rodrigo la escuche y la apruebe.
 - Español de México natural, con muy poco relleno: "ojo", "neta", "te lo digo claro". Máximo uno por pieza.
 - Frases cortas. Una idea por oración. Números concretos ("$750 al mes", no "una parte de tu sueldo").

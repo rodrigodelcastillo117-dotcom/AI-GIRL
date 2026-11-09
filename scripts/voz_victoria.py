@@ -1,4 +1,8 @@
-"""Voz de Victoria para los videos de carrusel. Desde el 4-nov-2026 cada frase la dice primero una voz mexicana nativa
+"""Voz de Victoria para los videos de carrusel.
+
+DESDE EL 9-NOV-2026 (Rodrigo: "déjala para siempre"): su voz REAL de los videos clonada con MiniMax en Replicate
+(config.json → voz_victoria, con_minimax). Lo de abajo (Chatterbox) queda solo como historia si voz_victoria.motor cambia.
+ Desde el 4-nov-2026 cada frase la dice primero una voz mexicana nativa
 (Edge es-MX, la arma carrusel_video.py en "base") y aquí se convierte al timbre de Victoria con ChatterboxVC: el clon
 directo pronunciaba mal "México" y "aguinaldo". Si la convertida no pasa la revisión, se usa el clon directo, que clona la voz de sus videos
 (assets/voz-referencia.mp3) con Chatterbox Multilingual de Resemble AI (licencia MIT, corre en CPU, 0 créditos).
@@ -32,8 +36,8 @@ from faster_whisper import WhisperModel
 from num2words import num2words
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Rodrigo, 9-nov-2026 ("más femenina, que vaya con la cara de Victoria"), eligió la "E": se clona la voz de sus videos
-# recientes (audio del video 18, voz cálida e íntima) y se dice más suave. La de antes: assets/voz-referencia.mp3.
+# Muestra de su voz REAL (audio del video 18). Desde el 9-nov-2026 la usa MiniMax (con_minimax); Chatterbox solo si
+# voz_victoria.motor cambia. La de antes: assets/voz-referencia.mp3.
 REFERENCIA = os.path.join(RAIZ, 'assets', 'voz-referencia-intima.wav')
 ESTILO = {'exaggeration': 0.4, 'cfg_weight': 0.35}  # más suave y pausada (tono medio ~244 Hz contra 217 de antes)
 INTENTOS = 3
@@ -63,10 +67,98 @@ def parecido_texto(esperado, oido):
     return comparar.ratio()
 
 
+def _replicate(modelo, entrada):
+    """Corre un modelo de Replicate y regresa su salida (espera hasta que termine)."""
+    import time
+    import urllib.request
+    cab = {'Authorization': f"Bearer {os.environ['REPLICATE_API_TOKEN']}", 'Content-Type': 'application/json', 'Prefer': 'wait=60'}
+    req = urllib.request.Request(f'https://api.replicate.com/v1/models/{modelo}/predictions',
+                                 data=json.dumps({'input': entrada}).encode(), headers=cab, method='POST')
+    try:
+        r = json.loads(urllib.request.urlopen(req, timeout=120).read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'Replicate {e.code}: {e.read().decode()[:300]}')
+    while r.get('status') in ('starting', 'processing'):
+        time.sleep(2)
+        r = json.loads(urllib.request.urlopen(urllib.request.Request(r['urls']['get'], headers=cab), timeout=60).read())
+    if r.get('status') != 'succeeded':
+        raise RuntimeError(f"Replicate {r.get('status')}: {r.get('error')}")
+    return r['output']
+
+
+def clonar_de_nuevo(voz):
+    """Vuelve a clonar la voz de Victoria de su muestra (por si MiniMax borró el clon) y guarda el voice_id nuevo."""
+    import base64
+    mp3 = os.path.join(tempfile.mkdtemp(), 'muestra.mp3')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.path.join(RAIZ, voz['muestra']), '-ac', '1', '-ar', '44100', '-b:a', '192k', mp3], check=True)
+    salida = _replicate('minimax/voice-cloning', {'voice_file': 'data:audio/mpeg;base64,' + base64.b64encode(open(mp3, 'rb').read()).decode(),
+                                                  'model': voz['modelo'].split('/')[-1], 'need_noise_reduction': True,
+                                                  'need_volume_normalization': True})
+    ruta = os.path.join(RAIZ, 'contenido', 'config.json')
+    config = json.load(open(ruta))
+    config['voz_victoria']['voice_id'] = salida['voice_id']
+    json.dump(config, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    print(f"clon nuevo de la voz de Victoria: {salida['voice_id']}", flush=True)
+    return salida['voice_id']
+
+
+def con_minimax(frases, voz):
+    """La voz de Victoria desde el 9-nov-2026: su voz REAL clonada con MiniMax (config.json → voz_victoria). Cada frase se
+    revisa con faster-whisper como antes; si no sale bien en INTENTOS, error (no se cambia a otra voz)."""
+    import urllib.request
+    oido = WhisperModel('small', device='cpu', compute_type='int8')
+    fallas = []
+    for f in frases:
+        mejor = None
+        for intento in range(INTENTOS):
+            entrada = {'text': f['texto'], 'voice_id': voz['voice_id'], 'language_boost': voz.get('language_boost', 'Spanish'),
+                       'emotion': voz.get('emotion', 'auto'), 'speed': voz.get('speed', 1.0), 'sample_rate': 44100, 'bitrate': 128000}
+            try:
+                url = _replicate(voz['modelo'], entrada)
+            except RuntimeError as e:
+                if 'voice' in str(e).lower() and intento == 0:  # el clon ya no existe: se vuelve a clonar de la muestra
+                    voz['voice_id'] = clonar_de_nuevo(voz)
+                    continue
+                raise
+            crudo = f"{f['salida']}.{intento}.minimax.mp3"
+            urllib.request.urlretrieve(url, crudo)
+            audio_16k = librosa.load(crudo, sr=16000)[0]
+            dicho = ' '.join(s.text.strip() for s in oido.transcribe(audio_16k, language='es')[0])
+            nota = parecido_texto(f['texto'], dicho)
+            if mejor is None or nota > mejor[0]:
+                if mejor:
+                    os.remove(mejor[1])
+                mejor = (nota, crudo, dicho)
+            else:
+                os.remove(crudo)
+            if nota >= 0.98:
+                break
+        if not mejor:
+            fallas.append(f'"{f["texto"]}": MiniMax no respondió')
+            continue
+        nota, crudo, dicho = mejor
+        print(f'{os.path.basename(f["salida"])} (voz real, MiniMax): texto {nota:.2f} | {dicho}', flush=True)
+        if nota < PARECIDO_TEXTO:
+            os.remove(crudo)
+            fallas.append(f'"{f["texto"]}" se oyó "{dicho}" (texto {nota:.2f})')
+            continue
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', '44100',
+                        '-b:a', '160k', f['salida']], check=True)
+        os.remove(crudo)
+    if fallas:
+        sys.exit('ERROR: estas frases no salieron bien en ' + str(INTENTOS) + ' intentos; reescríbelas y repite:\n'
+                 + '\n'.join(fallas))
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
     frases = json.load(open(sys.argv[1]))
+    voz = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('voz_victoria') or {}
+    if voz.get('motor') == 'minimax':
+        if not os.environ.get('REPLICATE_API_TOKEN'):
+            sys.exit('ERROR: falta REPLICATE_API_TOKEN: sin él no se puede hacer la voz de Victoria (no se usa otra voz).')
+        return con_minimax(frases, voz)
     torch.set_num_threads(os.cpu_count() or 4)
     modelo = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
     oido = WhisperModel('small', device='cpu', compute_type='int8')
