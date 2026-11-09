@@ -822,7 +822,7 @@
   },
   {
    "id": "04",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "mentalidad",
    "guion": "¿Traes la cabeza llena? Escribe quince minutos todo lo que te preocupa, sin filtro y sin que nadie lo lea. El psicólogo James Pennebaker lo estudió por décadas: aligera la mente.",
    "subtitulos": [
@@ -883,11 +883,12 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué es lo que más te preocupa esta semana?"
+   "pregunta_comentarios_anterior": "¿Qué es lo que más te preocupa esta semana?",
+   "motivo_reserva": "Rodrigo, 9-nov-2026: un solo tema (tu dinero en México) visto desde muchos ángulos; salud mental y productividad confunden al algoritmo."
   },
   {
    "id": "05",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "vida",
    "guion": "¿Por qué el día se te va sin hacer nada grande? Por los pendientes chiquitos. Regla de los dos minutos: si algo toma menos de dos minutos, hazlo ya. Ese correo, esa llamada, ese pago.",
    "subtitulos": [
@@ -950,7 +951,8 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué pendiente de 2 minutos traes cargando?"
+   "pregunta_comentarios_anterior": "¿Qué pendiente de 2 minutos traes cargando?",
+   "motivo_reserva": "Rodrigo, 9-nov-2026: un solo tema (tu dinero en México) visto desde muchos ángulos; salud mental y productividad confunden al algoritmo."
   },
   {
    "id": "06",
@@ -1141,7 +1143,7 @@
   },
   {
    "id": "09",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "mentalidad",
    "guion": "Cinco minutos al día de esta respiración mejoraron el ánimo más que meditar. Lo midió un estudio de Stanford. Dos inhalaciones por la nariz, una exhalación larga por la boca. Hazlo ahorita, conmigo.",
    "subtitulos": [
@@ -1202,7 +1204,8 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Lo probaste? ¿Cómo te sentiste?"
+   "pregunta_comentarios_anterior": "¿Lo probaste? ¿Cómo te sentiste?",
+   "motivo_reserva": "Rodrigo, 9-nov-2026: un solo tema (tu dinero en México) visto desde muchos ángulos; salud mental y productividad confunden al algoritmo."
   },
   {
    "id": "10",
@@ -1441,7 +1444,7 @@
   },
   {
    "id": "14",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "mentalidad",
    "guion": "¿No puedes dormir pensando en pendientes? Es tu mente, que no suelta lo que dejaste a medias. Un estudio encontró el truco: anota el siguiente paso de cada pendiente y tu cabeza lo suelta.",
    "subtitulos": [
@@ -1503,11 +1506,12 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué pendiente no te deja dormir?"
+   "pregunta_comentarios_anterior": "¿Qué pendiente no te deja dormir?",
+   "motivo_reserva": "Rodrigo, 9-nov-2026: un solo tema (tu dinero en México) visto desde muchos ángulos; salud mental y productividad confunden al algoritmo."
   },
   {
    "id": "15",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "vida",
    "guion": "Lo primero que haces en la mañana decide tu día. Antes de abrir el celular, haz la tarea que más te cuesta. Brian Tracy lo llama tragarse el sapo: después de eso, todo lo demás es ganancia.",
    "subtitulos": [
@@ -1568,7 +1572,8 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Cuál es tu sapo de mañana?"
+   "pregunta_comentarios_anterior": "¿Cuál es tu sapo de mañana?",
+   "motivo_reserva": "Rodrigo, 9-nov-2026: un solo tema (tu dinero en México) visto desde muchos ángulos; salud mental y productividad confunden al algoritmo."
   },
   {
    "id": "16",
