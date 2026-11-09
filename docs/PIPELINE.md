@@ -295,8 +295,10 @@ python scripts/cierre_pantalla.py videos/video-<id>-SUBTITULADO.mp4 <id> videos/
 ```
 Revisar el último cuadro: el cierre no tapa la cara y se lee. En el plan, `archivo` apunta al `-FINAL.mp4`.
 
-Música de fondo, siempre (9-nov-2026): `python scripts/carrusel_video.py musica videos/video-<id>-FINAL.mp4` (antes guarda
-una copia -SINMUSICA.mp4). Pista de assets/musica/, unos 14 dB debajo de la voz; el video no se toca y la sincronía no cambia.
+Videos de Victoria SIN música de fondo (9-nov-2026): se probó en el 18 y Rodrigo vio la boca fuera de tiempo. La música
+no movió la voz (0 ms medidos), pero qa_sync.py ya no puede medir (lee la fuerza del sonido y la música llena los
+silencios: "boca hablando sin voz"), y un video que no pasa el control no se publica (regla 6 de la rutina). La música
+de fondo va solo en los videos de carrusel (diapositivas, sin labios). `carrusel_video.py musica` queda para videos sin cara.
 
 ## 7. Publicar
 

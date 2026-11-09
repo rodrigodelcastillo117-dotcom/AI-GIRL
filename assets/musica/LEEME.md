@@ -3,7 +3,7 @@
 Rodrigo: "el chiste es usar sonidos, no pasa nada cuáles". Cuatro pistas instrumentales hechas con Suno (chirp-v5-5,
 por la API de AceData), sin canciones de terceros: no hay riesgo de que silencien el video o lo reclamen.
 `carrusel_video.py short` mete una por carrusel (rota con el id) al 11% de volumen, unos 14 dB debajo de la voz.
-`carrusel_video.py musica <video>` hace lo mismo con los videos de Victoria. `--sin-musica` la quita.
+Los videos de Victoria van sin música (con música el control de labios no puede medir: PIPELINE). `--sin-musica` la quita.
 
 - lofi-1.mp3, lofi-2.mp3: lo-fi cálido, 90 BPM ("Money Tip Groove")
 - pop-1.mp3, pop-2.mp3: pop brillante, 100 BPM ("Plucky Savings")
