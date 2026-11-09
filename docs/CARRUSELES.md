@@ -104,7 +104,8 @@ Música en cada red (Rodrigo, 9-nov-2026: "el chiste es usar sonidos... y de vez
 - TikTok: los carruseles en fotos llevan música de la biblioteca de TikTok (auto_add_music), siempre.
 - Instagram, Facebook y YouTube: el video del carrusel (short.mp4 y reel.mp4) lleva música de fondo propia de
   assets/musica/ (ver su LEEME.md), bajita debajo de la voz. Los videos de Victoria NO (sincronía de labios: PIPELINE).
-- Martes y viernes (config → sonido_biblioteca_ig), el Reel de la mañana lo sube Rodrigo desde Instagram con un sonido
-  de la biblioteca: `publer_carrusel.py <id> --reel <hora> --manual` programa Facebook, anota el Reel y le imprime el
-  texto; se le manda carruseles/<id>/reel-limpio.mp4 (sin música, para que el sonido de la biblioteca quede limpio).
+- Instagram (desde el 9-nov-2026, Rodrigo: "tú súbelo"): todos los Reels van directo con la API de Meta y una canción
+  en tendencia de la biblioteca de Instagram al 15% debajo de la voz (`scripts/ig_reel_musica.py`; Publer no puede poner
+  sonidos de la biblioteca). Meta no deja programar: `--programar <hora>` anota el Reel, un recordatorio (send_later) a esa
+  hora corre `--publicar`. El video sale de reel-limpio.mp4 y se sirve desde la rama medios-ig del repo (público).
 - Canciones en tendencia metidas al archivo = video silenciado o reclamado: no se hace.
