@@ -1,5 +1,5 @@
 // Respuestas rápidas (8-nov-2026, docs/PERSONAJE.md): Victoria promete "Te contesto a todos" en cada post.
-// En YouTube contesta Claude; en Instagram y TikTok contesta Rodrigo desde aquí, idealmente en la primera hora.
+// En YouTube e Instagram contesta Claude solo (comentarios.py, comentarios_ig.py, cada 2 h); en TikTok contesta Rodrigo desde aquí (su API no deja responder).
 (() => {
   const UMA_2026 = 117.31; // INEGI, vigente desde el 1-feb-2026: tope exento de ISR = 30 UMA
   const EXENTO = +(UMA_2026 * 30).toFixed(2);

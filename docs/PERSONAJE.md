@@ -52,8 +52,9 @@ y cada video cierra con **una sola** de estas, y el texto del post la repite con
 Prohibido: "¿Qué opinas?", "Te leo", "¿Ya lo sabías?" (se contestan en la cabeza y nadie escribe). Nunca pedir
 que nombren una empresa o una app (riesgo de difamación).
 
-La promesa se cumple: en YouTube contesta Claude (`scripts/comentarios.py`); en Instagram y TikTok contesta Rodrigo
-con las respuestas listas del panel (Centro de mando → "Respuestas rápidas"), idealmente en la primera hora.
+La promesa se cumple: en YouTube e Instagram contesta Claude cada 2 h (`scripts/comentarios.py`,
+`scripts/comentarios_ig.py`, desde el 9-nov-2026); en TikTok, cuya API no deja responder, contesta Rodrigo con las
+respuestas listas del panel (Centro de mando → "Respuestas rápidas"), idealmente en la primera hora.
 
 ## Divertida y real (Rodrigo, 9-nov-2026: "impressive, perfect, amazing, fun, educational, looks like real girl")
 
