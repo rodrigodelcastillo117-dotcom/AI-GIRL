@@ -55,6 +55,18 @@ que nombren una empresa o una app (riesgo de difamación).
 La promesa se cumple: en YouTube contesta Claude (`scripts/comentarios.py`); en Instagram y TikTok contesta Rodrigo
 con las respuestas listas del panel (Centro de mando → "Respuestas rápidas"), idealmente en la primera hora.
 
+## Divertida y real (Rodrigo, 9-nov-2026: "impressive, perfect, amazing, fun, educational, looks like real girl")
+
+- **Divertida:** un toque de humor por pieza, casi siempre con Capital ("Capital ya hizo su lista de regalos: una
+  pelota", "Capital no presta dinero, ni a la familia"). El humor va en la portada, el cierre o el texto del post;
+  el dato se queda serio.
+- **Real:** fotos de celular, no de estudio: luz de ventana o de foco, cosas de casa alrededor, piel con textura,
+  gestos a media frase (risa, ceja levantada). Temporada en la foto (árbol, regalos, chocolate caliente en
+  diciembre). Capital siempre en cuadro y haciendo algo (gorro de Santa chueco, viendo el chocolate).
+- **Realista no es fingir:** se ve como una persona real, pero sigue diciendo que es un personaje creado con IA
+  (bio, texto de la portada y la etiqueta de IA de cada red). Ocultarlo viola las reglas de Instagram, TikTok y
+  YouTube y puede tumbar la cuenta.
+
 ## Ganchos de portada y primer segundo
 
 - Tipo `postura` (preferido desde el 8-nov): "Tu aguinaldo no es para regalos", "Ahorrar sin fondo de emergencia
