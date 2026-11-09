@@ -3872,6 +3872,626 @@
    },
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
    "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c44",
+   "estado": "listo",
+   "tema": "sueldos_enfermera",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "serie": {
+    "nombre": "Sueldos en México",
+    "numero": 1,
+    "total": 5
+   },
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "SUELDOS EN MÉXICO · PARTE 1 DE 5",
+    "titulo": "¿Cuánto gana una enfermera en México, según el INEGI?",
+    "voz": "¿Cuánto gana una enfermera en México? Te digo lo que reportan en la encuesta oficial y cómo lo repartiría yo.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "$9,335 al mes",
+     "texto": "En el primer trimestre de 2026, las enfermeras técnicas ganaron en promedio $9,335 al mes. Son unas 97,900 personas.\n\nData México con datos de la ENOE del INEGI (2026-T1)",
+     "voz": "Una enfermera técnica gana en promedio nueve mil trescientos treinta y cinco pesos al mes."
+    },
+    {
+     "titulo": "Es un promedio",
+     "texto": "Promedio no es lo que gana la mayoría: unas ganan menos y otras más. Trabajan unas 38.6 horas a la semana y 19.9% son informales.\n\nData México · ENOE, INEGI (2026-T1)",
+     "voz": "Ojo, es un promedio: unas ganan menos y otras ganan más."
+    },
+    {
+     "titulo": "Debajo del mínimo",
+     "texto": "Es lo que reportan en la encuesta del INEGI, con medio tiempo e informales incluidos. Queda $247 abajo del salario mínimo general de 2026: $9,582.47 al mes.\n\nConasami (dic-2025) · Data México · ENOE, INEGI",
+     "voz": "Según la encuesta, queda unos doscientos cuarenta y siete pesos abajo del salario mínimo mensual."
+    },
+    {
+     "titulo": "50%: lo necesario",
+     "texto": "Si ganara $9,335, así lo repartiría yo: $4,667.50 para renta, comida, transporte y servicios.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Si ganara eso, la mitad, unos cuatro mil seiscientos sesenta y siete pesos, va a lo necesario."
+    },
+    {
+     "titulo": "30% gustos, 20% ahorro",
+     "texto": "$2,800.50 para gustos y $1,867 para ahorro y deudas. Primero, tu fondo de emergencia.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Unos dos mil ochocientos a gustos, y mil ochocientos sesenta y siete a ahorro y deudas."
+    },
+    {
+     "titulo": "El domingo vale más",
+     "texto": "Si te rige la Ley Federal del Trabajo y te toca guardia en domingo, te deben pagar una prima de 25% extra, por lo menos.\n\nLey Federal del Trabajo, art. 71",
+     "voz": "Si te rige la ley del trabajo y te toca domingo, te pagan veinticinco por ciento más."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel.",
+    "texto": "Mándaselo a tu amiga enfermera.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu profesión? Coméntala en una palabra y la reviso en un próximo carrusel, y sígueme."
+   },
+   "fuente": "Data México (Secretaría de Economía; antes datamexico.org, hoy economia.gob.mx/datamexico), perfil de ocupación, cubo inegi_enoe construido con la Encuesta Nacional de Ocupación y Empleo (ENOE) del INEGI, población ocupada, último trimestre publicado en el perfil: 2026-T1 (primer trimestre de 2026). El salario es el promedio mensual (promedio ponderado) que reportan las personas en la encuesta; un promedio no es lo que gana la mayoría. Perfil: https://www.economia.gob.mx/datamexico/es/profile/occupation/enfermeras-tecnicas. Enfermeras (Técnicas), SINCO 2811, 2026-T1: 'La fuerza laboral de Enfermeras (Técnicas) durante el primer trimestre de 2026 fue 97.9k personas, cuyo salario promedió los $9.33k MX trabajando alrededor de 38.6 horas a la semana'; valor exacto del perfil (mensualWage) $9,334.93, redondeado a $9,335; población ocupada 97,886; 19.9% trabajadores informales; trimestre anterior (2025-T4) $9,538.92. Diferencia con el mínimo: $9,582.47 - $9,335 = $247.47 (cálculo propio). Se usa la ocupación 2811 porque 'Enfermeras Especialistas' (2426) tiene solo 11.2 mil personas en la muestra y un salario muy volátil ($20,739 a $11,075 en un trimestre). Conasami, comunicado 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (gob.mx/conasami/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026): el salario mínimo general pasa de 278.80 a 315.04 pesos diarios y 'alcanzará los 9 mil 582.47 pesos mensuales' (315.04 x 365 / 12; con 30.4 días saldría $9,577.22). Tabla de Salarios Mínimos 2026 de Conasami (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf): Zona del Salario Mínimo General $315.04 diarios; Zona Libre de la Frontera Norte $440.87; resolución en el DOF del 9-12-2025 (dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025). Ley Federal del Trabajo (última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf), art. 71: 'Las personas que laboren en domingo tendrán derecho a una prima adicional de un veinticinco por ciento, por lo menos, sobre el salario de los días ordinarios de trabajo' (párrafo reformado DOF 01-05-2026). Aplica a quien se rige por el apartado A (hospitales privados, por ejemplo); quien trabaja para el Estado puede tener otra ley o contrato. Reparto 50/30/20 de $9,335: 50% = $4,667.50, 30% = $2,800.50, 20% = $1,867 (cálculo propio; es la regla que usa Victoria, opinión, no una norma oficial). Consultado el 9-nov-2026.",
+   "titulo_post": "Cuánto gana una enfermera en México",
+   "texto_post": "Cuánto gana una enfermera en México: el dato oficial y cómo lo repartiría yo. 🩺\n1. Las enfermeras técnicas ganaron en promedio $9,335 al mes en el primer trimestre de 2026 (Data México, con la ENOE del INEGI). Son unas 97,900 personas.\n2. Es un promedio: unas ganan menos y otras más. Trabajan unas 38.6 horas a la semana y 19.9% son informales.\n3. Es lo que reportan en la encuesta del INEGI (incluye medio tiempo e informales): queda $247 abajo del salario mínimo general de 2026 ($9,582.47 al mes).\n4. Si ganara eso, así lo repartiría yo (mi regla 50/30/20, es opinión): $4,667.50 a lo necesario, $2,800.50 a gustos y $1,867 a ahorro y deudas.\n5. Si te rige la Ley Federal del Trabajo y trabajas en domingo, te toca una prima de 25% extra, por lo menos.\n\nCapital quiere ser enfermero: ya practica cuidando mis pantuflas. A mordidas.\n📚 Data México (Secretaría de Economía) con la ENOE del INEGI, 2026-T1; Conasami (dic-2025); Ley Federal del Trabajo, art. 71.\n💬 ¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel. Te contesto a todos.\n🔖 Guárdalo para cuando negocies tu sueldo.\n📩 Mándaselo a tu amiga enfermera.",
+   "seo": {
+    "palabra_clave": "cuánto gana una enfermera",
+    "titulo": "Cuánto gana una enfermera en México 🩺",
+    "tags_concretas": [
+     "cuanto gana una enfermera",
+     "sueldo de enfermera en mexico",
+     "salario enfermera 2026",
+     "cuanto gana una enfermera tecnica",
+     "sueldo promedio enfermeria",
+     "enfermera salario minimo",
+     "prima dominical enfermera",
+     "regla 50 30 20",
+     "sueldos en mexico"
+    ],
+    "hashtags": [
+     "#enfermera",
+     "#sueldos",
+     "#salario",
+     "#enfermeria"
+    ],
+    "preguntas": [
+     "¿Cuánto gana una enfermera en México?",
+     "¿Cuánto gana una enfermera técnica al mes?",
+     "¿Cuánto es el salario mínimo mensual en 2026?",
+     "¿Cuánto pagan por trabajar en domingo?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Sueldos en México' (gancho dato), reparto 50/30/20 marcado como opinión de Victoria, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c45",
+   "estado": "listo",
+   "tema": "sueldos_maestra_primaria",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "serie": {
+    "nombre": "Sueldos en México",
+    "numero": 2,
+    "total": 5
+   },
+   "portada": {
+    "foto": "assets/fotos/enero-oficina-casa.jpg",
+    "etiqueta": "SUELDOS EN MÉXICO · PARTE 2 DE 5",
+    "titulo": "¿Cuánto gana una maestra de primaria, según el INEGI?",
+    "voz": "¿Cuánto gana una maestra de primaria? Te digo lo que reportan en la encuesta oficial y cómo lo repartiría yo.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "$9,180 al mes",
+     "texto": "En el primer trimestre de 2026, quienes dan clases en primaria ganaron en promedio $9,180 al mes. Son unas 670,000 personas; 70.4% son mujeres.\n\nData México con datos de la ENOE del INEGI (2026-T1)",
+     "voz": "Quien da clases en primaria gana en promedio nueve mil ciento ochenta pesos al mes."
+    },
+    {
+     "titulo": "Es un promedio",
+     "texto": "Promedio no es lo que gana la mayoría: unas ganan menos y otras más. Además, reportan en promedio 26.9 horas de trabajo a la semana.\n\nData México · ENOE, INEGI (2026-T1)",
+     "voz": "Es un promedio, y en promedio trabajan unas veintisiete horas a la semana."
+    },
+    {
+     "titulo": "Debajo del mínimo",
+     "texto": "Es lo que reportan en la encuesta del INEGI, con medio tiempo e informales incluidos: $402 abajo del salario mínimo general de 2026, que es de $9,582.47 al mes.\n\nConasami (dic-2025) · Data México · ENOE, INEGI",
+     "voz": "Según la encuesta, y con menos horas, queda unos cuatrocientos pesos abajo del mínimo."
+    },
+    {
+     "titulo": "50%: lo necesario",
+     "texto": "Si ganara $9,180, así lo repartiría yo: $4,590 para renta, comida, transporte y servicios.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Si ganara eso, cuatro mil quinientos noventa pesos irían a lo necesario."
+    },
+    {
+     "titulo": "30% gustos, 20% ahorro",
+     "texto": "$2,754 para gustos y $1,836 para ahorro y deudas. Primero, tu fondo de emergencia.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Dos mil setecientos cincuenta y cuatro a gustos, y mil ochocientos treinta y seis a ahorro."
+    },
+    {
+     "titulo": "Tu aguinaldo depende de quién te paga",
+     "texto": "Si te paga el gobierno federal, tu aguinaldo es de 40 días como mínimo; en escuela particular, de 15. Si eres de sistema estatal, revisa la ley de tu estado.\n\nLey Federal de los Trabajadores al Servicio del Estado, art. 42 Bis · Ley Federal del Trabajo, art. 87",
+     "voz": "Si te paga el gobierno federal, tu aguinaldo es de cuarenta días como mínimo; en escuela particular, quince."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel.",
+    "texto": "Mándaselo a tu maestra favorita.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu profesión? Coméntala en una palabra y la reviso en un próximo carrusel, y sígueme."
+   },
+   "fuente": "Data México (Secretaría de Economía; antes datamexico.org, hoy economia.gob.mx/datamexico), perfil de ocupación, cubo inegi_enoe construido con la Encuesta Nacional de Ocupación y Empleo (ENOE) del INEGI, población ocupada, último trimestre publicado en el perfil: 2026-T1 (primer trimestre de 2026). El salario es el promedio mensual (promedio ponderado) que reportan las personas en la encuesta; un promedio no es lo que gana la mayoría. Perfil: https://www.economia.gob.mx/datamexico/es/profile/occupation/profesores-de-ensenanza-primaria. Profesores de Enseñanza Primaria, SINCO 2332, 2026-T1: 'La fuerza laboral de Profesores de Enseñanza Primaria durante el primer trimestre de 2026 fue 670k personas, cuyo salario promedió los $9.18k MX trabajando alrededor de 26.9 horas a la semana'; 29.6% hombres y 70.4% mujeres; valor exacto del perfil (mensualWage) $9,180.13, redondeado a $9,180; población ocupada 670,251; trimestre anterior (2025-T4) $7,690.77 (el perfil reporta un alza de 19.4%: es una encuesta y el promedio se mueve entre trimestres). Diferencia con el mínimo: $9,582.47 - $9,180 = $402.47 (cálculo propio). Conasami, comunicado 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (gob.mx/conasami/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026): el salario mínimo general pasa de 278.80 a 315.04 pesos diarios y 'alcanzará los 9 mil 582.47 pesos mensuales' (315.04 x 365 / 12; con 30.4 días saldría $9,577.22). Tabla de Salarios Mínimos 2026 de Conasami (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf): Zona del Salario Mínimo General $315.04 diarios; Zona Libre de la Frontera Norte $440.87; resolución en el DOF del 9-12-2025 (dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025). Ley Federal de los Trabajadores al Servicio del Estado (última reforma DOF 15-01-2026, diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf), art. 42 Bis: aguinaldo anual 'que deberá pagarse en un 50% antes del 15 de diciembre y el otro 50% a más tardar el 15 de enero, y que será equivalente a 40 días del salario, cuando menos, sin deducción alguna'. Ley Federal del Trabajo (última reforma DOF 14-05-2026), art. 87: aguinaldo 'que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos'. Las maestras de sistemas estatales pueden regirse por la ley de su estado (por eso la diapositiva dice 'gobierno federal'). Reparto 50/30/20 de $9,180: 50% = $4,590, 30% = $2,754, 20% = $1,836 (cálculo propio; es la regla que usa Victoria, opinión, no una norma oficial). Consultado el 9-nov-2026.",
+   "titulo_post": "Cuánto gana un maestro de primaria en México",
+   "texto_post": "Cuánto gana un maestro de primaria en México: el dato oficial y cómo lo repartiría yo. 🍎\n1. Quienes dan clases en primaria ganaron en promedio $9,180 al mes en el primer trimestre de 2026 (Data México, con la ENOE del INEGI). Son unas 670,000 personas y 70.4% son mujeres.\n2. Es un promedio y reportan en promedio 26.9 horas de trabajo a la semana.\n3. Es lo que reportan en la encuesta del INEGI (incluye medio tiempo e informales): queda $402 abajo del salario mínimo general de 2026 ($9,582.47 al mes).\n4. Si ganara eso, así lo repartiría yo (mi regla 50/30/20, es opinión): $4,590 a lo necesario, $2,754 a gustos y $1,836 a ahorro y deudas.\n5. Aguinaldo: si te paga el gobierno federal, 40 días como mínimo; en escuela particular, 15 días por lo menos, antes del 20 de diciembre; si eres de sistema estatal, depende de la ley de tu estado.\n\nCapital reprobó la clase de 'no comerse la tarea'. Dos veces.\n📚 Data México (Secretaría de Economía) con la ENOE del INEGI, 2026-T1; Conasami (dic-2025); Ley Federal de los Trabajadores al Servicio del Estado, art. 42 Bis; Ley Federal del Trabajo, art. 87.\n💬 ¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel. Te contesto a todos.\n🔖 Guárdalo para cuando te toque revisar tu aguinaldo.\n📩 Mándaselo a tu maestra favorita.",
+   "seo": {
+    "palabra_clave": "cuánto gana un maestro de primaria",
+    "titulo": "Cuánto gana un maestro de primaria en México",
+    "tags_concretas": [
+     "cuanto gana un maestro de primaria",
+     "sueldo de maestro en mexico",
+     "salario maestra de primaria 2026",
+     "sueldo promedio profesor primaria",
+     "aguinaldo maestros 40 dias",
+     "aguinaldo maestro escuela particular",
+     "maestros salario minimo",
+     "regla 50 30 20",
+     "sueldos en mexico"
+    ],
+    "hashtags": [
+     "#maestros",
+     "#sueldos",
+     "#aguinaldo",
+     "#salario"
+    ],
+    "preguntas": [
+     "¿Cuánto gana un maestro de primaria en México?",
+     "¿Cuántos días de aguinaldo le tocan a un maestro?",
+     "¿Cuánto gana una maestra de escuela particular?",
+     "¿Cuánto es el salario mínimo mensual en 2026?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Sueldos en México' (gancho dato), reparto 50/30/20 marcado como opinión de Victoria, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c46",
+   "estado": "listo",
+   "tema": "sueldos_policia",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "serie": {
+    "nombre": "Sueldos en México",
+    "numero": 3,
+    "total": 5
+   },
+   "portada": {
+    "foto": "assets/fotos/video-37-sala.jpg",
+    "etiqueta": "SUELDOS EN MÉXICO · PARTE 3 DE 5",
+    "titulo": "¿Cuánto gana un policía en México, según el INEGI?",
+    "voz": "¿Cuánto gana un policía en México? Lo que reportan en la encuesta oficial y cómo lo repartiría yo.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/yate-blazer-blanco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "$8,637 al mes",
+     "texto": "En el primer trimestre de 2026, policías y agentes de tránsito ganaron en promedio $8,637 al mes. Son unas 297,000 personas.\n\nData México con datos de la ENOE del INEGI (2026-T1)",
+     "voz": "Un policía o agente de tránsito gana en promedio ocho mil seiscientos treinta y siete pesos al mes."
+    },
+    {
+     "titulo": "60.8 horas a la semana",
+     "texto": "Es un promedio, y reportan 60.8 horas de trabajo a la semana. Echando cuentas, salen unos $33 por hora.\n\nData México · ENOE, INEGI (2026-T1) · cálculo de Victoria",
+     "voz": "Y trabajan casi sesenta y una horas a la semana: unos treinta y tres pesos por hora."
+    },
+    {
+     "titulo": "Debajo del mínimo",
+     "texto": "Es lo que reportan en la encuesta del INEGI, con todo y trabajos informales: $945 abajo del salario mínimo general de 2026, que es de $9,582.47 al mes.\n\nConasami (dic-2025) · Data México · ENOE, INEGI",
+     "voz": "Según la encuesta, queda unos novecientos cuarenta y cinco pesos abajo del mínimo mensual."
+    },
+    {
+     "titulo": "50%: lo necesario",
+     "texto": "Si ganara $8,637, así lo repartiría yo: $4,318.50 para renta, comida, transporte y servicios.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Si ganara eso, unos cuatro mil trescientos dieciocho pesos irían a lo necesario."
+    },
+    {
+     "titulo": "30% gustos, 20% ahorro",
+     "texto": "$2,591.10 para gustos y $1,727.40 para ahorro y deudas. Primero, tu fondo de emergencia.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Unos dos mil quinientos noventa a gustos, y mil setecientos veintisiete a ahorro."
+    },
+    {
+     "titulo": "Tu ley es otra",
+     "texto": "Los policías no se rigen por la Ley Federal del Trabajo: la Constitución dice que se rigen por sus propias leyes. Pide la tuya y revisa tus prestaciones.\n\nConstitución, art. 123, apartado B, fr. XIII",
+     "voz": "Ojo: los policías no se rigen por la ley del trabajo, sino por sus propias leyes. Pide la tuya."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel.",
+    "texto": "Mándaselo a quien trabaja en seguridad en tu familia.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu profesión? Coméntala en una palabra y la reviso en un próximo carrusel, y sígueme."
+   },
+   "fuente": "Data México (Secretaría de Economía; antes datamexico.org, hoy economia.gob.mx/datamexico), perfil de ocupación, cubo inegi_enoe construido con la Encuesta Nacional de Ocupación y Empleo (ENOE) del INEGI, población ocupada, último trimestre publicado en el perfil: 2026-T1 (primer trimestre de 2026). El salario es el promedio mensual (promedio ponderado) que reportan las personas en la encuesta; un promedio no es lo que gana la mayoría. Perfil: https://www.economia.gob.mx/datamexico/es/profile/occupation/policias-y-agentes-de-transito. Policías y Agentes de Tránsito, SINCO 5312, 2026-T1: 'La fuerza laboral de Policías y Agentes de Tránsito durante el primer trimestre de 2026 fue 297k personas, cuyo salario promedió los $8.64k MX trabajando alrededor de 60.8 horas a la semana'; 77.1% hombres y 22.9% mujeres; valor exacto del perfil (mensualWage) $8,636.90, redondeado a $8,637; población ocupada 297,349; 12.4% informales; trimestre anterior (2025-T4) $9,018.25. Diferencia con el mínimo: $9,582.47 - $8,637 = $945.47 (cálculo propio). Conasami, comunicado 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (gob.mx/conasami/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026): el salario mínimo general pasa de 278.80 a 315.04 pesos diarios y 'alcanzará los 9 mil 582.47 pesos mensuales' (315.04 x 365 / 12; con 30.4 días saldría $9,577.22). Tabla de Salarios Mínimos 2026 de Conasami (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf): Zona del Salario Mínimo General $315.04 diarios; Zona Libre de la Frontera Norte $440.87; resolución en el DOF del 9-12-2025 (dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025). Constitución Política de los Estados Unidos Mexicanos (última reforma DOF 07-10-2026, diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf), art. 123, apartado B, fr. XIII: 'Los militares, marinos, integrantes de la Guardia Nacional, personal del servicio exterior, agentes del Ministerio Público, peritos y los miembros de las instituciones policiales, se regirán por sus propias leyes.' Sueldo por hora: $8,636.90 / (60.8 horas x 52 / 12 semanas al mes = 263.47 horas) = $32.78, unos $33 (cálculo propio con el promedio de horas del perfil). Reparto 50/30/20 de $8,637: 50% = $4,318.50, 30% = $2,591.10, 20% = $1,727.40 (cálculo propio; es la regla que usa Victoria, opinión, no una norma oficial). Consultado el 9-nov-2026.",
+   "titulo_post": "Cuánto gana un policía en México",
+   "texto_post": "Cuánto gana un policía en México: el dato oficial, sus horas y cómo lo repartiría yo. 👮\n1. Policías y agentes de tránsito ganaron en promedio $8,637 al mes en el primer trimestre de 2026 (Data México, con la ENOE del INEGI). Son unas 297,000 personas.\n2. Es un promedio, y reportan 60.8 horas de trabajo a la semana: unos $33 por hora (mi cálculo).\n3. Es lo que reportan en la encuesta del INEGI (incluye trabajos informales): queda $945 abajo del salario mínimo general de 2026 ($9,582.47 al mes).\n4. Si ganara eso, así lo repartiría yo (mi regla 50/30/20, es opinión): $4,318.50 a lo necesario, $2,591.10 a gustos y $1,727.40 a ahorro y deudas.\n5. Los policías no se rigen por la Ley Federal del Trabajo, sino por sus propias leyes (Constitución, art. 123, apartado B, fr. XIII): pide la tuya y revisa tus prestaciones.\n\nCapital se cree policía del edificio: vigila la puerta todo el día y no deja pasar ni al repartidor.\n📚 Data México (Secretaría de Economía) con la ENOE del INEGI, 2026-T1; Conasami (dic-2025); Constitución, art. 123, apartado B, fr. XIII.\n💬 ¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel. Te contesto a todos.\n🔖 Guárdalo para cuando revises tus prestaciones.\n📩 Mándaselo a quien trabaja en seguridad en tu familia.",
+   "seo": {
+    "palabra_clave": "cuánto gana un policía",
+    "titulo": "Cuánto gana un policía en México 👮",
+    "tags_concretas": [
+     "cuanto gana un policia",
+     "sueldo de policia en mexico",
+     "salario policia 2026",
+     "cuanto gana un agente de transito",
+     "sueldo promedio policia",
+     "horas que trabaja un policia",
+     "policia salario minimo",
+     "regla 50 30 20",
+     "sueldos en mexico"
+    ],
+    "hashtags": [
+     "#policia",
+     "#sueldos",
+     "#salario",
+     "#trabajo"
+    ],
+    "preguntas": [
+     "¿Cuánto gana un policía en México?",
+     "¿Cuántas horas trabaja un policía a la semana?",
+     "¿Los policías se rigen por la Ley Federal del Trabajo?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Sueldos en México' (gancho dato), reparto 50/30/20 marcado como opinión de Victoria, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c47",
+   "estado": "listo",
+   "tema": "sueldos_programador",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "serie": {
+    "nombre": "Sueldos en México",
+    "numero": 4,
+    "total": 5
+   },
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "SUELDOS EN MÉXICO · PARTE 4 DE 5",
+    "titulo": "¿Cuánto gana un programador en México, según el INEGI?",
+    "voz": "¿Cuánto gana un programador en México? Te digo lo que reportan en la encuesta oficial y cómo lo repartiría yo.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/video-38-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "$11,043 al mes",
+     "texto": "En el primer trimestre de 2026, desarrolladores y analistas de software ganaron en promedio $11,043 al mes. Son unas 390,000 personas.\n\nData México con datos de la ENOE del INEGI (2026-T1)",
+     "voz": "Un programador gana en promedio once mil cuarenta y tres pesos al mes."
+    },
+    {
+     "titulo": "Es un promedio",
+     "texto": "Promedio no es lo que gana la mayoría. Dato bueno: mujeres ($11,029) y hombres ($11,046) ganaron casi lo mismo, aunque solo 17.4% son mujeres.\n\nData México · ENOE, INEGI (2026-T1)",
+     "voz": "Es un promedio, y aquí mujeres y hombres ganan casi lo mismo."
+    },
+    {
+     "titulo": "Arriba del mínimo",
+     "texto": "Según lo que reportan en la encuesta del INEGI, son $1,461 más que el salario mínimo general de 2026 ($9,582.47 al mes), con unas 39 horas a la semana.\n\nConasami (dic-2025) · Data México · ENOE, INEGI",
+     "voz": "Según la encuesta, son unos mil cuatrocientos sesenta pesos más que el salario mínimo mensual."
+    },
+    {
+     "titulo": "50%: lo necesario",
+     "texto": "Si ganara $11,043, así lo repartiría yo: $5,521.50 para renta, comida, transporte y servicios.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Si ganara eso, unos cinco mil quinientos veintiún pesos irían a lo necesario."
+    },
+    {
+     "titulo": "30% gustos, 20% ahorro",
+     "texto": "$3,312.90 para gustos y $2,208.60 para ahorro y deudas. Primero, tu fondo de emergencia.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Unos tres mil trescientos doce a gustos, y dos mil doscientos ocho a ahorro."
+    },
+    {
+     "titulo": "¿Honorarios o empleo?",
+     "texto": "Si trabajas subordinado a alguien a cambio de un salario, la ley dice que hay relación de trabajo, sin importar cómo se llame tu contrato.\n\nLey Federal del Trabajo, art. 20",
+     "voz": "Si tienes jefe y te pagan salario, hay relación de trabajo, se llame como se llame tu contrato."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel.",
+    "texto": "Mándaselo a tu amigo programador.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu profesión? Coméntala en una palabra y la reviso en un próximo carrusel, y sígueme."
+   },
+   "fuente": "Data México (Secretaría de Economía; antes datamexico.org, hoy economia.gob.mx/datamexico), perfil de ocupación, cubo inegi_enoe construido con la Encuesta Nacional de Ocupación y Empleo (ENOE) del INEGI, población ocupada, último trimestre publicado en el perfil: 2026-T1 (primer trimestre de 2026). El salario es el promedio mensual (promedio ponderado) que reportan las personas en la encuesta; un promedio no es lo que gana la mayoría. Perfil: https://www.economia.gob.mx/datamexico/es/profile/occupation/desarrolladores-y-analistas-de-software-y-multimedia. Desarrolladores y Analistas de Software y Multimedia, SINCO 2271, 2026-T1: 'La fuerza laboral de Desarrolladores y Analistas de Software y Multimedia durante el primer trimestre de 2026 fue 390k personas, cuyo salario promedió los $11k MX trabajando alrededor de 39 horas a la semana'; 82.6% hombres y 17.4% mujeres; valor exacto del perfil (mensualWage) $11,043.33, redondeado a $11,043; hombres $11,046.31 (meanSalaryMan) y mujeres $11,029.13 (meanSalaryWoman); población ocupada 390,092; 14.2% informales; trimestre anterior (2025-T4) $10,587.86. Diferencia con el mínimo: $11,043 - $9,582.47 = $1,460.53 (cálculo propio). Conasami, comunicado 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (gob.mx/conasami/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026): el salario mínimo general pasa de 278.80 a 315.04 pesos diarios y 'alcanzará los 9 mil 582.47 pesos mensuales' (315.04 x 365 / 12; con 30.4 días saldría $9,577.22). Tabla de Salarios Mínimos 2026 de Conasami (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf): Zona del Salario Mínimo General $315.04 diarios; Zona Libre de la Frontera Norte $440.87; resolución en el DOF del 9-12-2025 (dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025). Ley Federal del Trabajo (última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf), art. 20: 'Se entiende por relación de trabajo, cualquiera que sea el acto que le dé origen, la prestación de un trabajo personal subordinado a una persona, mediante el pago de un salario.' 14.2% de los desarrolladores son informales (perfil de Data México). Reparto 50/30/20 de $11,043: 50% = $5,521.50, 30% = $3,312.90, 20% = $2,208.60 (cálculo propio; es la regla que usa Victoria, opinión, no una norma oficial). Consultado el 9-nov-2026.",
+   "titulo_post": "Cuánto gana un programador en México",
+   "texto_post": "Cuánto gana un programador en México: el dato oficial y cómo lo repartiría yo. 💻\n1. Desarrolladores y analistas de software ganaron en promedio $11,043 al mes en el primer trimestre de 2026 (Data México, con la ENOE del INEGI). Son unas 390,000 personas.\n2. Es un promedio. Mujeres ($11,029) y hombres ($11,046) ganaron casi lo mismo, aunque solo 17.4% son mujeres.\n3. Según lo que reportan en la encuesta del INEGI, son $1,461 más que el salario mínimo general de 2026 ($9,582.47 al mes), con unas 39 horas a la semana.\n4. Si ganara eso, así lo repartiría yo (mi regla 50/30/20, es opinión): $5,521.50 a lo necesario, $3,312.90 a gustos y $2,208.60 a ahorro y deudas.\n5. Si trabajas subordinado a alguien a cambio de un salario, hay relación de trabajo, se llame como se llame tu contrato (Ley Federal del Trabajo, art. 20).\n\nCapital ya aprendió a programar: un ladrido es sí, dos es no, y morder el cable es error.\n📚 Data México (Secretaría de Economía) con la ENOE del INEGI, 2026-T1; Conasami (dic-2025); Ley Federal del Trabajo, art. 20.\n💬 ¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel. Te contesto a todos.\n🔖 Guárdalo para antes de firmar tu próximo contrato.\n📩 Mándaselo a tu amigo programador.",
+   "seo": {
+    "palabra_clave": "cuánto gana un programador",
+    "titulo": "Cuánto gana un programador en México 💻",
+    "tags_concretas": [
+     "cuanto gana un programador",
+     "sueldo de programador en mexico",
+     "salario desarrollador de software 2026",
+     "cuanto gana un desarrollador de software",
+     "sueldo promedio programador",
+     "honorarios o relacion laboral",
+     "programador salario mujeres y hombres",
+     "regla 50 30 20",
+     "sueldos en mexico"
+    ],
+    "hashtags": [
+     "#programador",
+     "#sueldos",
+     "#salario",
+     "#tecnologia"
+    ],
+    "preguntas": [
+     "¿Cuánto gana un programador en México?",
+     "¿Cuánto gana un desarrollador de software al mes?",
+     "¿Trabajar por honorarios es relación laboral?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Sueldos en México' (gancho dato), reparto 50/30/20 marcado como opinión de Victoria, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c48",
+   "estado": "listo",
+   "tema": "sueldos_mesero",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "serie": {
+    "nombre": "Sueldos en México",
+    "numero": 5,
+    "total": 5
+   },
+   "portada": {
+    "foto": "assets/fotos/pareja-cuenta-restaurante.jpg",
+    "etiqueta": "SUELDOS EN MÉXICO · PARTE 5 DE 5",
+    "titulo": "¿Cuánto gana un mesero en México, según el INEGI?",
+    "voz": "¿Cuánto gana un mesero? Lo que reportan en la encuesta oficial y lo que dice la ley de propinas.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "$6,833 al mes",
+     "texto": "En el primer trimestre de 2026, los meseros ganaron en promedio $6,833 al mes. Son unas 618,000 personas, mitad hombres y mitad mujeres.\n\nData México con datos de la ENOE del INEGI (2026-T1)",
+     "voz": "Un mesero gana en promedio seis mil ochocientos treinta y tres pesos al mes."
+    },
+    {
+     "titulo": "Casi dos de cada tres, informales",
+     "texto": "Es un promedio: unos ganan menos y otros más. 65.3% trabaja en la informalidad y reportan unas 41.2 horas a la semana.\n\nData México · ENOE, INEGI (2026-T1)",
+     "voz": "Es un promedio, y casi dos de cada tres trabajan en la informalidad."
+    },
+    {
+     "titulo": "Debajo del mínimo",
+     "texto": "Es lo que reportan en la encuesta del INEGI, con medio tiempo e informales incluidos: $2,749 abajo del salario mínimo general de 2026 ($9,582.47 al mes).\n\nConasami (dic-2025) · Data México · ENOE, INEGI",
+     "voz": "Según la encuesta, eso queda unos dos mil setecientos cuarenta y nueve pesos abajo del salario mínimo mensual."
+    },
+    {
+     "titulo": "50%: lo necesario",
+     "texto": "Si ganara $6,833, así lo repartiría yo: $3,416.50 para renta, comida, transporte y servicios.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Si ganara eso, unos tres mil cuatrocientos dieciséis pesos irían a lo necesario."
+    },
+    {
+     "titulo": "30% gustos, 20% ahorro",
+     "texto": "$2,049.90 para gustos y $1,366.60 para ahorro y deudas. Primero, tu fondo de emergencia.\n\nOpinión de Victoria (regla 50/30/20)",
+     "voz": "Unos dos mil cuarenta y nueve a gustos, y mil trescientos sesenta y seis a ahorro."
+    },
+    {
+     "titulo": "Las propinas son tuyas",
+     "texto": "Por ley, las propinas son parte del salario de quien trabaja en restaurantes, y el patrón no puede quedarse con ellas ni con una parte.\n\nLey Federal del Trabajo, art. 346",
+     "voz": "Y por ley, las propinas son parte de tu salario: tu patrón no puede quedarse con ellas."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel.",
+    "texto": "Mándaselo a tu amiga que trabaja de mesera.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu profesión? Coméntala en una palabra y la reviso en un próximo carrusel, y sígueme."
+   },
+   "fuente": "Data México (Secretaría de Economía; antes datamexico.org, hoy economia.gob.mx/datamexico), perfil de ocupación, cubo inegi_enoe construido con la Encuesta Nacional de Ocupación y Empleo (ENOE) del INEGI, población ocupada, último trimestre publicado en el perfil: 2026-T1 (primer trimestre de 2026). El salario es el promedio mensual (promedio ponderado) que reportan las personas en la encuesta; un promedio no es lo que gana la mayoría. Perfil: https://www.economia.gob.mx/datamexico/es/profile/occupation/meseros. Meseros, SINCO 5116, 2026-T1: 'La fuerza laboral de Meseros durante el primer trimestre de 2026 fue 618k personas, cuyo salario promedió los $6.83k MX trabajando alrededor de 41.2 horas a la semana'; 50% hombres ($7.38k) y 50% mujeres ($6.29k); valor exacto del perfil (mensualWage) $6,832.53, redondeado a $6,833; población ocupada 618,238; 65.3% trabajadores informales; trimestre anterior (2025-T4) $5,508.68. Diferencia con el mínimo: $9,582.47 - $6,833 = $2,749.47 (cálculo propio). 'Casi dos de cada tres' en la voz = 65.3%. Conasami, comunicado 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (gob.mx/conasami/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026): el salario mínimo general pasa de 278.80 a 315.04 pesos diarios y 'alcanzará los 9 mil 582.47 pesos mensuales' (315.04 x 365 / 12; con 30.4 días saldría $9,577.22). Tabla de Salarios Mínimos 2026 de Conasami (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf): Zona del Salario Mínimo General $315.04 diarios; Zona Libre de la Frontera Norte $440.87; resolución en el DOF del 9-12-2025 (dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025). Ley Federal del Trabajo (última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf), art. 344 (el capítulo aplica a trabajadores en hoteles, casas de asistencia, restaurantes, fondas, cafés, bares y establecimientos análogos) y art. 346: 'Las propinas son parte del salario de los trabajadores a que se refiere este capítulo en los términos del artículo 347. Los patrones no podrán reservarse ni tener participación alguna en ellas.' Reparto 50/30/20 de $6,833: 50% = $3,416.50, 30% = $2,049.90, 20% = $1,366.60 (cálculo propio; es la regla que usa Victoria, opinión, no una norma oficial). Consultado el 9-nov-2026.",
+   "titulo_post": "Cuánto gana un mesero en México",
+   "texto_post": "Cuánto gana un mesero en México: el dato oficial y cómo lo repartiría yo. 🍽️\n1. Los meseros ganaron en promedio $6,833 al mes en el primer trimestre de 2026 (Data México, con la ENOE del INEGI). Son unas 618,000 personas, mitad hombres y mitad mujeres.\n2. Es un promedio: 65.3% trabaja en la informalidad y reportan unas 41.2 horas a la semana.\n3. Es lo que reportan en la encuesta del INEGI (incluye medio tiempo e informales): queda $2,749 abajo del salario mínimo general de 2026 ($9,582.47 al mes).\n4. Si ganara eso, así lo repartiría yo (mi regla 50/30/20, es opinión): $3,416.50 a lo necesario, $2,049.90 a gustos y $1,366.60 a ahorro y deudas.\n5. Las propinas son parte del salario y el patrón no puede quedarse con ellas ni con una parte (Ley Federal del Trabajo, art. 346).\n\nCapital trabajaría de mesero, pero se come las propinas. Y los platos.\n📚 Data México (Secretaría de Economía) con la ENOE del INEGI, 2026-T1; Conasami (dic-2025); Ley Federal del Trabajo, arts. 344 y 346.\n💬 ¿Cuál es tu profesión? Coméntala y la reviso en un próximo carrusel. Te contesto a todos.\n🔖 Guárdalo para cuando te quieran quitar las propinas.\n📩 Mándaselo a tu amiga que trabaja de mesera.",
+   "seo": {
+    "palabra_clave": "cuánto gana un mesero",
+    "titulo": "Cuánto gana un mesero en México 🍽️",
+    "tags_concretas": [
+     "cuanto gana un mesero",
+     "sueldo de mesero en mexico",
+     "salario mesero 2026",
+     "las propinas son del mesero",
+     "el patron se puede quedar con las propinas",
+     "sueldo promedio mesera",
+     "meseros informalidad",
+     "regla 50 30 20",
+     "sueldos en mexico"
+    ],
+    "hashtags": [
+     "#mesero",
+     "#propinas",
+     "#sueldos",
+     "#salario"
+    ],
+    "preguntas": [
+     "¿Cuánto gana un mesero en México?",
+     "¿El patrón se puede quedar con las propinas?",
+     "¿Las propinas son parte del salario?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Sueldos en México' (gancho dato), reparto 50/30/20 marcado como opinión de Victoria, humor con Capital y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c49",
+   "estado": "listo",
+   "tema": "consejos_del_tio_1",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "serie": {
+    "nombre": "Victoria vs. los consejos de tu tío",
+    "numero": 1,
+    "total": 2
+   },
+   "portada": {
+    "foto": "assets/fotos/video-02-palco.jpg",
+    "etiqueta": "VICTORIA VS. TU TÍO · PARTE 1 DE 2",
+    "titulo": "Tu tío te quiere, pero no todos sus consejos de dinero sirven",
+    "voz": "Tu tío te quiere, pero no todos sus consejos de dinero sirven. Califiqué cinco, con fuente.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-18-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/video-19-sillon.jpg",
+     "titulo": "1. Tu tío: “Compra terreno, es lo más seguro”",
+     "texto": "A MEDIAS. Los derechos de una parcela ejidal sin dominio pleno solo se venden a ejidatarios o avecindados del mismo ejido, por escrito, ante fedatario y avisando al comisariado.\n\nLey Agraria, art. 80",
+     "voz": "Compra terreno, es lo más seguro. A medias: si es ejidal, no se vende como cualquier lote."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "2. Tu tío: “Las tarjetas son del diablo”",
+     "texto": "A MEDIAS. Si pagas el total cada mes, no pagas intereses: es la única forma de usar ese crédito sin costo. El diablo es el pago mínimo.\n\nCondusef (2-ago-2019)",
+     "voz": "Las tarjetas son del diablo. A medias: si pagas el total cada mes, no pagas intereses."
+    },
+    {
+     "meme": "assets/fotos/video-37-sala.jpg",
+     "titulo": "3. Tu tío: “Guarda el dinero en el colchón”",
+     "texto": "NO. Con la inflación, cada peso compra menos con el tiempo. En un banco, tu dinero tiene seguro: hasta 400 mil UDIS por persona y por banco.\n\nBanxico Educa · IPAB",
+     "voz": "Guarda el dinero en el colchón. No: ahí se lo come la inflación y no tiene seguro."
+    },
+    {
+     "meme": "assets/fotos/navidad-lista-cocina.jpg",
+     "titulo": "4. Tu tío: “Una tanda es igual que ahorrar”",
+     "texto": "NO. Te ayuda a apartar, pero tu dinero no genera rendimientos, no hay contrato y, si alguien deja de pagar, no hay a quién reclamar.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Una tanda es igual que ahorrar. No: no da rendimientos y, si alguien no paga, no hay a quién reclamar."
+    },
+    {
+     "meme": "assets/fotos/enero-oficina-casa.jpg",
+     "titulo": "5. Tu tío: “Guarda para cuando no haya”",
+     "texto": "TIENE RAZÓN. Se recomienda un fondo de emergencia de tres a seis meses de tus gastos, en una cuenta separada y de fácil acceso.\n\nCondusef, Proteja su Dinero (sep-2024)",
+     "voz": "Guarda para cuando no haya. Tiene razón: junta de tres a seis meses de tus gastos."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál te ha dicho tu tío? Comenta el número.",
+    "texto": "Mándaselo al grupo de la familia.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál te ha dicho tu tío? Comenta el número y sígueme."
+   },
+   "fuente": "Ley Agraria (última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/LAgra.pdf), art. 80: 'Los ejidatarios podrán enajenar sus derechos parcelarios a otros ejidatarios o avecindados del mismo núcleo de población'; para su validez se requiere la conformidad por escrito ante dos testigos 'ratificada ante fedatario público', notificar al cónyuge, concubina o concubinario y los hijos (derecho del tanto, 30 días naturales) y 'Dar aviso por escrito al comisariado ejidal'; después el Registro Agrario Nacional la inscribe. La excepción es la parcela cuyo dominio pleno aprobó la asamblea y que el ejidatario asumió (arts. 81 y 82); por eso la diapositiva dice 'sin dominio pleno'. Condusef, '¿Cómo pagas tu tarjeta de crédito?' (2-ago-2019, gob.mx/condusef/articulos/como-pagas-tu-tarjeta-de-credito): ser 'totalero', 'el usuario que paga su saldo de forma completa cada mes para no generar intereses; es la única forma de obtener financiamiento sin costo'. Banxico Educa, 'Inflación' (educa.banxico.org.mx/yo-y-la-economia/oferta-y-demanda/3/inflacion.html): la inflación 'implica una disminución en el valor real del dinero, lo que significa que, con el tiempo, cada unidad de moneda compra menos bienes y servicios'. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab/acciones-y-programas/preguntas-frecuentes-ahorradores): 'El IPAB garantiza hasta 400,000 Unidades de Inversión por persona por institución'. El efectivo guardado en casa no tiene ese seguro. Condusef, revista Proteja su Dinero, 'Amor, amistad y dinero' (1-feb-2026, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2026/02/amor-amistad-y-dinero/): tandas, 'Lo bueno: Te ayuda a ahorrar'; 'Lo malo: Si alguien deja de pagar, no hay a quién reclamar'; 'No hay contrato ni respaldo legal que te proteja'; 'Tu dinero no genera rendimientos'. Condusef, '¿Y mi tanda?' (may-2024, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2024/05/y-mi-tanda/): 'Las tandas carecen de regulación'. Condusef, revista Proteja su Dinero, '¡Que tu cartera no dé el grito!' (1-sep-2024, revista.condusef.gob.mx/ahorro-general/2024/09/fondo-de-emergencia/): fondo de emergencia 'equivalente a tres o seis meses de tus gastos mensuales'; la cuenta 'debe ser de fácil acceso, estar separada de tus cuentas habituales'. Los veredictos (TIENE RAZÓN, NO, A MEDIAS) son de Victoria con base en esas fuentes. Consultado el 9-nov-2026.",
+   "titulo_post": "Consejos de dinero de tu tío, calificados",
+   "texto_post": "Consejos de dinero de tu tío: los califiqué con fuente oficial, con todo respeto para los tíos. 👀\n1. “Compra terreno, es lo más seguro”: A MEDIAS. Solo si está en regla; de una parcela ejidal sin dominio pleno, sus derechos solo se venden a ejidatarios o avecindados del mismo ejido, por escrito y ante fedatario (Ley Agraria, art. 80).\n2. “Las tarjetas son del diablo”: A MEDIAS. Si pagas el total cada mes, no pagas intereses (Condusef).\n3. “Guarda el dinero en el colchón”: NO. La inflación se lo come y en casa no tiene seguro; en un banco, el IPAB cubre hasta 400 mil UDIS por persona y por banco.\n4. “Una tanda es igual que ahorrar”: NO. No genera rendimientos, no hay contrato y, si alguien no paga, no hay a quién reclamar (Condusef).\n5. “Guarda para cuando no haya”: TIENE RAZÓN. Junta de tres a seis meses de tus gastos en una cuenta separada (Condusef).\n\nCapital también tiene un tío: le dijo que enterrara sus huesos en un terreno. A él sí le funcionó.\n📚 Ley Agraria, art. 80; Condusef (ago-2019, sep-2024, feb-2026); Banxico Educa; IPAB.\n💬 ¿Cuál te ha dicho tu tío? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para la próxima comida familiar.\n📩 Mándaselo al grupo de la familia.",
+   "seo": {
+    "palabra_clave": "consejos de dinero",
+    "titulo": "Consejos de dinero de tu tío, calificados 👀",
+    "tags_concretas": [
+     "consejos de dinero",
+     "consejos de dinero de la familia",
+     "es seguro comprar terreno ejidal",
+     "guardar dinero en el colchon",
+     "las tandas son ahorro",
+     "tarjeta de credito totalero",
+     "fondo de emergencia cuantos meses",
+     "mitos de dinero en mexico",
+     "victoria vs tu tio"
+    ],
+    "hashtags": [
+     "#consejosdedinero",
+     "#ahorro",
+     "#familia",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Es seguro comprar un terreno ejidal?",
+     "¿Una tanda es lo mismo que ahorrar?",
+     "¿Es malo guardar el dinero en casa?",
+     "¿De cuántos meses debe ser el fondo de emergencia?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Victoria vs. los consejos de tu tío' (postura, formato meme con fotos de Victoria, 0 créditos), respeto a la familia: el chiste es la práctica, no la persona (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c50",
+   "estado": "listo",
+   "tema": "consejos_del_tio_2",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "serie": {
+    "nombre": "Victoria vs. los consejos de tu tío",
+    "numero": 2,
+    "total": 2
+   },
+   "portada": {
+    "foto": "assets/fotos/yate-blazer-blanco.jpg",
+    "etiqueta": "VICTORIA VS. TU TÍO · PARTE 2 DE 2",
+    "titulo": "Tres de estos cinco consejos de tu tío fallan",
+    "voz": "Tu tío tiene buena intención, pero tres de estos cinco consejos de dinero fallan. Revisa cuáles.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/navidad-regalos.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/video-38-oficina.jpg",
+     "titulo": "1. Tu tío: “Invierte en lo que te recomendó el compadre”",
+     "texto": "NO. Primero revisa que la empresa tenga registro en el SIPRES de la Condusef. Si para ganar tienes que invitar a más gente, es pirámide.\n\nCondusef, Proteja su Dinero (jul-2026 y feb-2026)",
+     "voz": "Invierte en lo que dijo el compadre. No: primero revisa que la empresa esté registrada."
+    },
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "2. Tu tío: “El aguinaldo es para gastarse”",
+     "texto": "NO. Primero paga las deudas más caras, como la tarjeta, y guarda al menos 10% para la cuesta de enero.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "El aguinaldo es para gastarse. No: primero las deudas caras y guarda por lo menos el diez por ciento."
+    },
+    {
+     "meme": "assets/fotos/video-17-sala-roja.jpg",
+     "titulo": "3. Tu tío: “No pidas aumento, agradece que tienes trabajo”",
+     "texto": "NO. Tu salario lo convienen tú y tu patrón, y a trabajo igual, salario igual. Pedir aumento no es ser malagradecido.\n\nLey Federal del Trabajo, arts. 83 y 86",
+     "voz": "No pidas aumento. No: tu salario se negocia, y a trabajo igual, salario igual."
+    },
+    {
+     "meme": "assets/fotos/video-02-palco.jpg",
+     "titulo": "4. Tu tío: “Nunca des tus datos del banco por teléfono”",
+     "texto": "TIENE RAZÓN. El banco no te pide por llamada, mensaje o correo tu contraseña, token, NIP ni el código de tu tarjeta. Si dudas, cuelga y llama tú.\n\nProfeco (10-jun-2021) · Condusef (dic-2019)",
+     "voz": "Nunca des tus datos del banco por teléfono. Tiene toda la razón: si dudas, cuelga y llama tú."
+    },
+    {
+     "meme": "assets/fotos/video-37-sala.jpg",
+     "titulo": "5. Tu tío: “Con que pagues el mínimo, no pasa nada”",
+     "texto": "A MEDIAS. Te evitas intereses moratorios y afectar tu historial, pero sí pagas intereses ordinarios y, si lo haces seguido, te puede causar un problema a largo plazo.\n\nProfeco (17-sep-2021)",
+     "voz": "Con que pagues el mínimo, no pasa nada. A medias: igual pagas intereses por lo que debes."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál te ha dicho tu tío? Comenta el número.",
+    "texto": "Mándaselo al grupo de la familia.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál te ha dicho tu tío? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Créditos desde el celular' (1-jul-2026, revista.condusef.gob.mx/destacados-del-mes/2026/07/creditos-desde-el-celular/): 'Para verificar si una institución opera legalmente, es recomendable revisar que cuente con registro en el SIPRES de la CONDUSEF'. Condusef, Proteja su Dinero, 'Amor, amistad y dinero' (1-feb-2026, revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2026/02/amor-amistad-y-dinero/): esquemas piramidales, 'Te prometen ganancias rápidas', 'Para ganar, necesitas invitar a más personas', 'El dinero de los nuevos paga a los primeros'. Condusef, Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'Paga las deudas más caras (como tarjeta de crédito o préstamos personales)'; 'Guardar al menos un 10% de tu aguinaldo será una decisión muy inteligente porque te permitirá afrontar la temida cuesta de enero'. Ley Federal del Trabajo (última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf), art. 83: 'El trabajador y el patrón podrán convenir el monto, siempre que se trate de un salario remunerador'; art. 86: 'A trabajo igual, desempeñado en puesto, jornada y condiciones de eficiencia también iguales, debe corresponder salario igual'. Profeco, 'Seguridad al pagar con tarjetas de débito y crédito' (10-jun-2021, gob.mx/profeco/articulos/seguridad-al-pagar-con-tarjetas-de-debito-y-credito): 'El banco no te contactará a través de correo, SMS o llamadas para solicitar datos confidenciales como: acceso, contraseña, token, NIP o CVV'. Condusef, Proteja su Dinero núm. 237, 'Cuidado con el hackeo' (dic-2019, revista.condusef.gob.mx/wp-content/uploads/2019/11/PDF-s_237_cuidado.pdf): '¡Cuelga y no respondas el mensaje!'; 'Ningún Banco te pide estos datos por teléfono, correo o mensaje. Si tienes dudas, llama al número de la institución'. Profeco, '¿Pagos mínimos en tarjetas? Solo cuando sea necesario' (17-sep-2021, gob.mx/profeco/articulos/pagos-minimos-en-tarjetas-solo-cuando-sea-necesario): con el pago mínimo 'evitas que tu tarjeta de crédito quede inhabilitada, el cobro de intereses moratorios (aunque sí pagarás intereses ordinarios), cargos por falta de pago y afectar tu estatus crediticio'; hacerlo de forma periódica 'puede provocarte un problema financiero a largo plazo'. Los veredictos (TIENE RAZÓN, NO, A MEDIAS) son de Victoria con base en esas fuentes. Consultado el 9-nov-2026.",
+   "titulo_post": "Consejos financieros de tu tío, parte 2",
+   "texto_post": "Consejos financieros de tu tío, parte 2: buena intención, pero tres de cinco fallan. 🧐\n1. “Invierte en lo que te recomendó el compadre”: NO. Primero revisa que la empresa tenga registro en el SIPRES de la Condusef; si para ganar hay que invitar a más gente, es pirámide.\n2. “El aguinaldo es para gastarse”: NO. Primero las deudas más caras y guarda al menos 10% para la cuesta de enero (Condusef).\n3. “No pidas aumento, agradece que tienes trabajo”: NO. Tu salario lo convienen tú y tu patrón, y a trabajo igual, salario igual (Ley Federal del Trabajo, arts. 83 y 86).\n4. “Nunca des tus datos del banco por teléfono”: TIENE RAZÓN. El banco no te pide contraseña, token, NIP ni el código de tu tarjeta por llamada, mensaje o correo (Profeco y Condusef).\n5. “Con que pagues el mínimo, no pasa nada”: A MEDIAS. Te evitas moratorios, pero sí pagas intereses ordinarios (Profeco).\n\nCapital ya mandó este carrusel al grupo de la familia. Su tío lo dejó en visto.\n📚 Condusef, Proteja su Dinero (dic-2019, dic-2025, feb-2026, jul-2026); Ley Federal del Trabajo, arts. 83 y 86; Profeco (2021).\n💬 ¿Cuál te ha dicho tu tío? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para la próxima vez que te den un consejo de dinero.\n📩 Mándaselo al grupo de la familia.",
+   "seo": {
+    "palabra_clave": "consejos financieros",
+    "titulo": "Consejos financieros de tu tío, parte 2 🧐",
+    "tags_concretas": [
+     "consejos financieros",
+     "consejos financieros de la familia",
+     "inversion piramide como saber",
+     "que hacer con el aguinaldo",
+     "pedir aumento de sueldo",
+     "el banco pide datos por telefono",
+     "pago minimo tarjeta intereses",
+     "sipres condusef",
+     "victoria vs tu tio"
+    ],
+    "hashtags": [
+     "#consejosfinancieros",
+     "#aguinaldo",
+     "#familia",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cómo saber si una inversión es pirámide?",
+     "¿El banco te puede pedir tu NIP por teléfono?",
+     "¿Qué pasa si solo pago el mínimo de la tarjeta?",
+     "¿Qué hago con mi aguinaldo?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
+   "personaje": "2026-11-09: serie 'Victoria vs. los consejos de tu tío' (postura, formato meme con fotos de Victoria, 0 créditos), respeto a la familia: el chiste es la práctica, no la persona (docs/PERSONAJE.md)"
   }
  ]
 }

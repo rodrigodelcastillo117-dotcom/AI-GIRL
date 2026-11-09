@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-09T06:07:03Z",
+ "fecha_utc": "2026-11-09T06:14:12Z",
  "videos_calificados": 5,
  "base_vistas_36h": 507,
  "notas": {
@@ -409,7 +409,7 @@
      "cuando": "2026-11-09T15:00:00Z"
     }
    ],
-   "quedan_tiktok": 20,
+   "quedan_tiktok": 27,
    "comandos": [
     "python scripts/publer_carrusel.py c11 \"tt=2026-11-09T19:00:00Z\"",
     "python scripts/publer_carrusel.py c12 \"tt=2026-11-09T15:00:00Z\"",
