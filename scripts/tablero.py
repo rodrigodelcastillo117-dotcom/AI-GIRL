@@ -354,6 +354,7 @@ def main():
             'miniatura': miniatura(os.path.join(RAIZ, v['archivo'])) if v.get('archivo') else '',
             'youtube_id': youtube_id((v.get('publicacion') or {}).get('youtube')),
             'linea': primera_linea(v.get('texto_post')),
+            'titulo': (v.get('seo') or {}).get('titulo') or v.get('texto_pantalla') or '',
         }
         for corto in CAMPOS:
             for red in REDES.values():
@@ -425,7 +426,7 @@ def main():
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
         'frecuencia': (lambda r: f"Al día: TikTok {r.get('tt', 1)} · Instagram {r.get('ig', 1)} (mañana y tarde) · YouTube "
-                       f"{r.get('yt', 1)} · Facebook igual que Instagram · video de Victoria cada {config.get('dias_entre_videos', 2)} días"
+                       f"{r.get('yt', 1)} · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada {config.get('dias_entre_videos', 2)} días"
                        f" · auditoría diaria {config.get('hora_auditoria', '06:37')}")(config.get('publicaciones_por_dia') or {}),
         'dias_entre_videos': config.get('dias_entre_videos', 2),
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',

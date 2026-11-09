@@ -66,6 +66,13 @@ subir lo mismo en todas las redes, no perder ningún reel, carrusel, imagen". En
   un formato, una serie o la estrategia, se agrega una línea {fecha, cambio, por_que, vigilar: yt|tt|ig|fb|todas}. El centro
   compara solo las vistas por día de 3 días antes contra 3 días después. Lo que no mejora en una semana se revisa.
 
+## Muse (la IA de Meta) como asesora de Instagram y Facebook
+
+Rodrigo, 9-nov-2026. Muse ve lo que Claude no (alcance, guardados, de dónde llega la gente, qué empuja Meta). No se conecta
+por API (pagar dos veces y dos managers dando órdenes): una vez por semana Rodrigo copia el reporte del centro
+("Mejora día a día" → "Copiar reporte para Muse"), lo pega en Muse y le pasa a Claude lo que conteste. Claude decide qué
+se aplica, lo programa y lo apunta en contenido/cambios.json para medir si funcionó. Una sola cabeza al mando.
+
 ## Lo que solo Rodrigo puede hacer (y más pesa)
 
 1. Bio con el enlace (https://victoriatheceo.vercel.app/?ref=ig / ?ref=tt).

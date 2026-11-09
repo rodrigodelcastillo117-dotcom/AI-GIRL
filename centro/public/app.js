@@ -809,6 +809,8 @@ function dibujarMejora() {
     return caja;
   }));
   lineasDiarias($('g-diario'), diario);
+  prepararMuse();
+  if ($('texto-muse')) $('texto-muse').textContent = reporteMuse();
   const cambios = [...(FOTO.cambios || [])].sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
   $('bitacora').replaceChildren(...cambios.map((c) => {
     const redes = c.vigilar === 'todas' ? REDES.map((r) => r.clave) : [c.vigilar];
@@ -831,6 +833,64 @@ function dibujarMejora() {
       crear('div', {}, crear('b', {textContent: c.cambio}), crear('small', {textContent: `${c.por_que} · se mide en ${red}`})),
       crear('span', {className: `cambio-resultado ${clase}`, textContent: resultado}));
   }));
+}
+
+// ---------- reporte para Muse (Rodrigo, 9-nov-2026: Muse ve lo de Instagram y Facebook que Claude no; Claude ejecuta y mide) ----------
+function reporteMuse() {
+  const diario = diarioPorRed();
+  const hoy = diario.at(-1)?.fecha || new Date().toISOString().slice(0, 10);
+  const desde = diasAntes(hoy, 7);
+  const lineas = [];
+  lineas.push('Hola Muse. Soy el manager (Claude) de @victoriatheceo en Instagram y de la página de Facebook "Victoria the CEO".');
+  lineas.push('Victoria es un personaje creado con IA (y así se declara) que habla de dinero en México: aguinaldo, deudas, ahorro, derechos laborales, dinero en pareja.');
+  lineas.push(`Ritmo: ${FOTO.estado?.frecuencia || ''}.`);
+  lineas.push('', `VISTAS NUEVAS, últimos 7 días contra los 7 anteriores (hasta ${hoy}):`);
+  for (const red of REDES) {
+    const a = sumaDias(diario, red.clave, desde, hoy);
+    const b = sumaDias(diario, red.clave, diasAntes(hoy, 14), desde);
+    lineas.push(`- ${red.nombre}: ${a ? fmt(a.total) : 'sin datos'}${b && b.total ? ` (antes ${fmt(b.total)})` : ''}`);
+  }
+  const hora = (x, clave) => x.publica_utc_por_red?.[clave] || (clave === 'ig' && x.reel_ig ? `${x.reel_ig.replace(' ', 'T')}:00-06:00` : null);
+  for (const [clave, nombre] of [['ig', 'INSTAGRAM'], ['fb', 'FACEBOOK']]) {
+    const posts = todo().filter((x) => { const t = hora(x, clave); return t && t.slice(0, 10) > desde && new Date(t) <= Date.now(); })
+      .sort((a, b) => (hora(a, clave) < hora(b, clave) ? -1 : 1));
+    lineas.push('', `${nombre}, lo que salió en la semana (fecha y hora de México · vistas · likes · comentarios de otras personas · compartidos):`);
+    if (!posts.length) lineas.push('- nada medido todavía');
+    for (const x of posts) {
+      const m = medidas(x)[clave] || {};
+      const t = new Date(hora(x, clave)).toLocaleString('es-MX', {timeZone: 'America/Mexico_City', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'});
+      lineas.push(`- ${t} · "${String(x.id).startsWith('c') ? x.gancho : x.titulo || x.gancho}" (${String(x.id).startsWith('c') ? 'Reel de carrusel' : 'video de Victoria'}) · ${m.v ?? '—'} · ${m.l ?? '—'} · ${m.c ?? '—'} · ${m.s ?? '—'}`);
+    }
+  }
+  const tt = todo().filter((x) => salio(x) && medidas(x).tt).sort((a, b) => (medidas(b).tt.v || 0) - (medidas(a).tt.v || 0)).slice(0, 3);
+  lineas.push('', 'Lo que mejor funciona en TikTok (para que compares):');
+  for (const x of tt) lineas.push(`- "${x.gancho}": ${fmt(medidas(x).tt.v)} vistas`);
+  const cambios = (FOTO.cambios || []).filter((c) => c.fecha > diasAntes(hoy, 10));
+  if (cambios.length) {
+    lineas.push('', 'Lo que cambiamos estos días:');
+    for (const c of cambios) lineas.push(`- ${c.fecha}: ${c.cambio}`);
+  }
+  lineas.push('', 'Preguntas:',
+    '1. Con lo que tú ves en Instagram y Facebook (alcance, de dónde llega la gente, guardados, compartidos, retención), ¿qué está frenando a la cuenta?',
+    '2. ¿Qué 3 cambios concretos harías esta semana en Instagram y en Facebook (horario, duración, portada, primeros 3 segundos, texto, audio, formato)?',
+    '3. ¿Qué tema o formato de los que subimos tiene más potencial en Meta y por qué?',
+    'Respóndeme en viñetas cortas y con números cuando los tengas.');
+  return lineas.join('\n');
+}
+
+function prepararMuse() {
+  const boton = $('copiar-muse');
+  if (!boton || boton.dataset.listo) return;
+  boton.dataset.listo = '1';
+  boton.addEventListener('click', async () => {
+    const texto = reporteMuse();
+    $('texto-muse').textContent = texto;
+    try { await navigator.clipboard.writeText(texto); } catch (e) {
+      const t = document.createElement('textarea'); t.value = texto; document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); } catch (e2) { /* sin portapapeles: queda en "Ver el reporte" */ } t.remove();
+    }
+    const antes = boton.textContent; boton.textContent = 'Copiado: pégalo en Muse'; setTimeout(() => { boton.textContent = antes; }, 2500);
+  });
 }
 
 function lineasDiarias(caja, diario, alto = 200) {
