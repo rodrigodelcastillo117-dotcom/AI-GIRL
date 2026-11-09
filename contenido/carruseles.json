@@ -4509,6 +4509,263 @@
    },
    "revision": "Escrito el 9-nov-2026; segunda revisión de datos por otro agente el 9-nov-2026 (scratchpad revision_c44_c50.md): todas las cifras cuadran; correcciones aplicadas. Sigue en borrador hasta dibujarlo y revisar las diapositivas.",
    "personaje": "2026-11-09: serie 'Victoria vs. los consejos de tu tío' (postura, formato meme con fotos de Victoria, 0 créditos), respeto a la familia: el chiste es la práctica, no la persona (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c52",
+   "estado": "listo",
+   "tema": "aguinaldo_datos_para_guardar_parte_2",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/yate.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-20"
+   },
+   "serie": {
+    "nombre": "Aguinaldo 2026",
+    "numero": 2,
+    "total": 2
+   },
+   "portada": {
+    "foto": "assets/fotos/capital-cafe.jpg",
+    "etiqueta": "AGUINALDO 2026 · PARTE 2",
+    "titulo": "Guarda esto: tu aguinaldo 2026, parte 2 (5 datos más)",
+    "voz": "Guarda esto: tu aguinaldo de dos mil veintiséis, parte dos. Cinco datos más.",
+    "foto_reel": "assets/fotos/navidad-regalos.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Mínimo, tu salario diario por 15. Si ganas $15,000 al mes: $15,000 ÷ 30 = $500 diarios; $500 × 15 = $7,500 brutos.\n\nLFT, arts. 87 y 89 · PROFEDET",
+     "voz": "Primero: tu salario diario por quince, como mínimo. Con quince mil al mes, siete mil quinientos antes de impuestos."
+    },
+    {
+     "titulo": "Medio año, la mitad",
+     "texto": "¿Entraste a medio año? Te toca la parte proporcional al tiempo trabajado: con seis meses, la mitad. Con $15,000 al mes, unos $3,750.\n\nLFT, art. 87 · PROFEDET",
+     "voz": "Segundo: si trabajaste medio año, te toca la mitad. Con quince mil al mes, unos tres mil setecientos cincuenta."
+    },
+    {
+     "titulo": "Eventual o de temporada, también",
+     "texto": "Eventual, por temporada, por obra, de confianza, a prueba o del hogar: si trabajas subordinado a un patrón, te toca aguinaldo.\n\nPROFEDET, preguntas frecuentes",
+     "voz": "Tercero: si eres eventual, de temporada o de confianza, también te toca aguinaldo."
+    },
+    {
+     "titulo": "Estas incapacidades sí cuentan",
+     "texto": "La incapacidad por maternidad, el permiso de paternidad y la incapacidad por accidente de trabajo cuentan como tiempo trabajado para tu aguinaldo.\n\nPROFEDET, preguntas frecuentes",
+     "voz": "Cuarto: la incapacidad por maternidad y el permiso de paternidad cuentan como días trabajados."
+    },
+    {
+     "titulo": "Sin vales y sin pretextos",
+     "texto": "Se paga en efectivo o, si tú aceptas, por depósito o transferencia. Nunca en vales. Y no te lo pueden negar por \"falta de utilidades\".\n\nLFT, art. 101 · PROFEDET",
+     "voz": "Y el último: nunca en vales, y no te lo pueden negar porque a la empresa le fue mal."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos días de aguinaldo te dan? Comenta el número.",
+    "texto": "Mándaselo a quien entró a trabajar este año.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántos días de aguinaldo te dan? Comenta el número y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 87 ('aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos'; quienes no cumplieron el año tienen derecho a 'la parte proporcional del mismo, conforme al tiempo que hubieren trabajado'); art. 89 ('Cuando el salario se fije por semana o por mes, se dividirá entre siete o entre treinta, según el caso, para determinar el salario diario'); art. 101 ('El salario en efectivo deberá pagarse precisamente en moneda de curso legal, no siendo permitido hacerlo en mercancías, vales, fichas o cualquier otro signo representativo'; con consentimiento previo, por depósito, tarjeta de débito o transferencia, con costos a cargo del patrón). PROFEDET, 'Preguntas Frecuentes Aguinaldo 2025' (noviembre 2025, https://www.gob.mx/profedet/documentos/preguntas-frecuentes-aguinaldo-2025; PDF: https://www.gob.mx/cms/uploads/attachment/file/1036814/Aguinaldo_2025_Preguntas_Frecuentes.pdf): P1 tienen derecho 'Todas las personas trabajadoras, ya sea de base, de confianza, de planta, sindicalizadas, aquellas contratadas por obra, tiempo determinado, temporada, por tiempo indeterminado sujeto a prueba o sujeto a capacitación inicial, eventuales, comisionistas... del hogar', es decir, quienes 'ofrecen sus servicios de manera subordinada a un empleador'; P4 'Multiplica tu salario base o cuota diaria por 15'; P5 con salario fijo se usa la cuota diaria; P7 la parte proporcional 'de acuerdo con el tiempo que hayan laborado en el año calendario'; P8 eventuales: sí; P12 los periodos pre y postnatales 'deben ser considerados como días trabajados para el cálculo del Aguinaldo'; P13 en incapacidad temporal por accidente de trabajo 'se consideran trabajadores en activo' y reciben 'su Aguinaldo completo, ya sea por parte de la empresa o de las instituciones de seguridad social'; P14 el permiso de paternidad 'se considera como tiempo laborado'; P18 'El empleador no puede argumentar dificultades económicas de la empresa o falta de utilidades para eludir su pago o reducir su importe'; P20 'no está permitido realizar el pago con mercancías, vales, fichas'. PROFEDET, 'PROFEDET defiende tu derecho a recibir tu Aguinaldo 2025' (22-dic-2025, https://www.gob.mx/profedet/es/articulos/profedet-defiende-tu-derecho-a-recibir-tu-aguinaldo-2025-415741?idiom=es): el aguinaldo 'debe pagarse en efectivo, con cheque, depósito o transferencia bancaria'. P3 'como mínimo, el equivalente a 15 días'. Cálculos propios: $15,000 ÷ 30 = $500 diarios; $500 × 15 = $7,500 brutos (antes de ISR); medio año = 1/2 × $7,500 = $3,750 (con días exactos, 182 a 184 de 365 días, da entre $3,740 y $3,781: por eso 'unos $3,750'). Relacionado: c16 (parte 1: fecha límite, 15 días, exención de ISR, PROFEDET, plazo de un año). Consultado el 9-nov-2026.",
+   "titulo_post": "Aguinaldo 2026 parte 2: 5 datos más para guardar",
+   "texto_post": "Aguinaldo 2026, parte 2: lo que la ley te da no es un favor de tu patrón, así que haz la cuenta. 5 datos más, ahora con pesos (la parte 1 está en mi perfil). 🧾\n1. La cuenta: salario diario × 15, como mínimo. Con $15,000 al mes: $500 × 15 = $7,500 brutos.\n2. ¿Medio año trabajado? Te toca la mitad: unos $3,750 con ese sueldo.\n3. Eventual, por temporada, por obra, de confianza o del hogar: también te toca.\n4. La incapacidad por maternidad, el permiso de paternidad y la incapacidad por accidente de trabajo cuentan como tiempo trabajado.\n5. Se paga en efectivo o, si tú aceptas, por depósito; nunca en vales, y no te lo pueden negar por \"falta de utilidades\".\nCapital también pidió su aguinaldo: quince días de croquetas, ni uno menos.\n\n📚 LFT, arts. 87, 89 y 101; PROFEDET, Preguntas frecuentes Aguinaldo 2025.\n💬 ¿Cuántos días de aguinaldo te dan? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para cuando revises tu recibo del aguinaldo.\n📩 Mándaselo a quien entró a trabajar este año.",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "como calcular mi aguinaldo",
+     "aguinaldo proporcional 6 meses",
+     "aguinaldo trabajador eventual",
+     "aguinaldo incapacidad maternidad",
+     "aguinaldo permiso de paternidad",
+     "aguinaldo en vales",
+     "aguinaldo falta de utilidades",
+     "profedet preguntas frecuentes aguinaldo",
+     "articulo 101 ley federal del trabajo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#derechoslaborales",
+     "#profedet"
+    ],
+    "preguntas": [
+     "¿Cómo calculo mi aguinaldo 2026?",
+     "¿Cuánto aguinaldo me toca si trabajé seis meses?",
+     "¿Los trabajadores eventuales tienen derecho a aguinaldo?",
+     "¿Me pueden pagar el aguinaldo en vales?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c52_c54.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c53",
+   "estado": "listo",
+   "tema": "despido_diciembre_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/capital-no-presta.jpg",
+    "etiqueta": "FINIQUITO Y LIQUIDACIÓN",
+    "titulo": "Guarda esto: si te corren en diciembre, 5 datos",
+    "voz": "Guarda esto: si te corren en diciembre, estos cinco datos son dinero tuyo.",
+    "foto_reel": "assets/fotos/video-38-oficina.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "El aguinaldo va en tu finiquito",
+     "texto": "Si te corren antes del 20 de diciembre, te toca la parte proporcional del aguinaldo. Se paga al terminar, como parte de tu finiquito.\n\nLFT, art. 87 · PROFEDET",
+     "voz": "Primero: aunque te corran antes del veinte, te toca tu aguinaldo proporcional."
+    },
+    {
+     "titulo": "Vacaciones y su prima",
+     "texto": "Te pagan las vacaciones que no tomaste y las proporcionales, más la prima vacacional: mínimo 25% sobre ellas. En el primer año, la base son 12 días.\n\nLFT, arts. 76, 79 y 80",
+     "voz": "Segundo: te pagan las vacaciones que no tomaste y las proporcionales, más una prima de al menos veinticinco por ciento."
+    },
+    {
+     "titulo": "Sin causa: tres meses",
+     "texto": "Si te corren sin causa, puedes pedir tres meses de salario o que te reinstalen. No firmes una renuncia ni hojas en blanco.\n\nLFT, art. 48 · PROFEDET",
+     "voz": "Tercero: si te corren sin causa, puedes pedir tres meses de salario o que te reinstalen. Y no firmes renuncia."
+    },
+    {
+     "titulo": "Prima de antigüedad",
+     "texto": "Si eres de planta: 12 días de salario por año trabajado, aunque te corran con causa. Tu salario cuenta con tope: el doble del mínimo.\n\nLFT, arts. 162 y 486",
+     "voz": "Cuarto: si eres de planta, te tocan doce días de salario por cada año trabajado."
+    },
+    {
+     "titulo": "Dos meses para reclamar el despido",
+     "texto": "Para reclamar el despido tienes dos meses desde el día siguiente; pedir la conciliación detiene el plazo. PROFEDET te asesora gratis: gob.mx/profedet.\n\nLFT, art. 518 · PROFEDET",
+     "voz": "Y el último: tienes dos meses para reclamar el despido; la Procuraduría de la Defensa del Trabajo ayuda gratis."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Te han corrido en diciembre? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien tiene miedo de que lo corran antes de Navidad.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Te han corrido en diciembre? Comenta sí o no, y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 87 (aguinaldo antes del 20 de diciembre; parte proporcional 'independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo'); art. 76 (más de un año de servicios: vacaciones 'en ningún caso podrá ser inferior a doce días laborables', +2 por año hasta 20 y desde el sexto año +2 cada cinco); art. 79 (las vacaciones no se compensan con dinero mientras dura la relación, pero 'Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcionada al tiempo de servicios prestados'); art. 80 ('prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones'); art. 48 (reinstalación 'o que se le indemnice con el importe de tres meses de salario', previa conciliación); art. 162 (trabajadores de planta: 'doce días de salario, por cada año de servicios'; se paga 'a los que sean separados de su empleo, independientemente de la justificación o injustificación del despido'; para el salario se estará a los arts. 485 y 486); art. 486 (si el salario 'excede del doble del salario mínimo del área geográfica', se considera esa cantidad como salario máximo); art. 518 ('Prescriben en dos meses las acciones de los trabajadores que sean separados del trabajo'; corre desde el día siguiente a la separación y se suspende al presentar la solicitud de conciliación del art. 684-B); art. 516 (las demás acciones de trabajo, como reclamar aguinaldo, vacaciones o salarios, 'prescriben en un año'; por eso los dos meses del art. 518 son solo para reclamar el despido; PROFEDET, FAQ P21: el aguinaldo se reclama en 'un año'); arts. 531 (la Procuraduría de la Defensa del Trabajo tiene procuradores nombrados por el Secretario del Trabajo, 'por los Gobernadores de los Estados o por el Jefe de Gobierno de la Ciudad de México') y 534 ('Los servicios que preste la Procuraduría de la Defensa del Trabajo serán gratuitos'); art. 47 (el patrón debe dar aviso escrito con la causa; sin aviso se presume el despido no justificado). No se usó el art. 50 (20 días por año): solo aplica cuando el patrón queda eximido de reinstalar (art. 49) o el trabajador rescinde por culpa del patrón (art. 52), no en todo despido. PROFEDET, '¿Sabes cuáles son tus derechos en caso de renuncia o despido injustificado?' (7-sep-2026, https://www.gob.mx/profedet/es/articulos/sabes-cuales-son-tus-derechos-en-caso-de-renuncia-o-despido-injustificado?idiom=es): en despido injustificado se puede reclamar 'Tres meses de salario por concepto de indemnización constitucional', 'Prima de antigüedad', 'Partes proporcionales de aguinaldo; vacaciones y prima vacacional', o la reinstalación; 'plazo de dos meses para entablar una demanda'; orientación, asesoría, conciliación y representación jurídica gratuitas. PROFEDET, '¿Qué hacer si te despiden? Profedet defiende tus derechos laborales' (26-sep-2025, https://www.gob.mx/profedet/es/articulos/que-hacer-si-te-despiden-profedet-defiende-tus-derechos-laborales?idiom=es): 'No firmes una carta de renuncia. No firmes hojas en blanco. Nadie te puede presionar a renunciar.' PROFEDET, 'Preguntas Frecuentes Aguinaldo 2025' (nov-2025, https://www.gob.mx/cms/uploads/attachment/file/1036814/Aguinaldo_2025_Preguntas_Frecuentes.pdf): P16 quienes 'hayan sido despedidas antes del 20 de diciembre' tienen derecho a la parte proporcional; P15 el proporcional 'deberá ser pagado en el momento de la terminación de la relación laboral, como parte de su liquidación o finiquito'. PROFEDET, 'Persona trabajadora, las vacaciones son tu derecho' (23-jul-2025, https://www.gob.mx/profedet/es/articulos/persona-trabajadora-las-vacaciones-son-tu-derecho?idiom=es): año 1, 12 días; prima vacacional no menor a 25%; si la relación termina antes del año, remuneración proporcional. Coincide con la calculadora https://victoriatheceo.vercel.app/finiquito (3 meses art. 48; prima de antigüedad 12 días por año con tope del doble del mínimo; 20 días por año solo en los casos de los arts. 49 y 52). Consultado el 9-nov-2026.",
+   "titulo_post": "Si te corren en diciembre: 5 datos de tu finiquito",
+   "texto_post": "Finiquito y liquidación: si te corren en diciembre, guarda estos 5 datos. Lo que la ley te da no es un favor. 📄\n1. Aunque te corran antes del 20 de diciembre, te toca el aguinaldo proporcional, y va en tu finiquito.\n2. Te pagan las vacaciones que no tomaste y las proporcionales, más la prima vacacional: mínimo 25%.\n3. Si te corren sin causa: puedes pedir tres meses de salario o que te reinstalen. No firmes renuncia ni hojas en blanco.\n4. Si eres de planta: prima de antigüedad de 12 días por año, aunque haya causa (salario topado al doble del mínimo).\n5. Para reclamar el despido tienes dos meses; PROFEDET (o la procuraduría del trabajo de tu estado) te asesora gratis: gob.mx/profedet.\nCapital ya se leyó la ley: si lo corren del sillón, pide sus tres meses de croquetas.\n\n📚 LFT, arts. 48, 76, 79, 80, 87, 162, 486, 516, 518, 531 y 534; PROFEDET.\n🧮 Calcula el tuyo gratis en mi perfil 👆\n💬 ¿Te han corrido en diciembre? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar cualquier papel.\n📩 Mándaselo a quien tiene miedo de que lo corran antes de Navidad.",
+   "seo": {
+    "palabra_clave": "finiquito",
+    "titulo": "Finiquito si te corren en diciembre 📄",
+    "tags_concretas": [
+     "finiquito",
+     "liquidacion por despido injustificado",
+     "finiquito y liquidacion 2026",
+     "me despidieron en diciembre",
+     "aguinaldo proporcional despido",
+     "prima de antiguedad",
+     "tres meses de indemnizacion",
+     "vacaciones proporcionales finiquito",
+     "plazo para demandar despido",
+     "profedet despido"
+    ],
+    "hashtags": [
+     "#finiquito",
+     "#liquidacion",
+     "#derechoslaborales",
+     "#profedet"
+    ],
+    "preguntas": [
+     "¿Me toca aguinaldo si me despiden en diciembre?",
+     "¿Cuánto me toca de liquidación si me corren sin causa?",
+     "¿Cuánto tiempo tengo para demandar por despido?",
+     "¿Qué es la prima de antigüedad?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c52_c54.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c54",
+   "estado": "listo",
+   "tema": "quincena_diciembre_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "ventana": {
+    "desde": "2026-11-16",
+    "hasta": "2026-12-20"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-compras-calle.jpg",
+    "etiqueta": "QUINCENA DE DICIEMBRE",
+    "titulo": "Guarda esto: tu quincena de diciembre, 5 datos",
+    "voz": "Guarda esto: tu quincena de diciembre en cinco datos, antes de gastar un peso.",
+    "foto_reel": "assets/fotos/capital-tarjeta.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tu aguinaldo, antes del 20",
+     "texto": "Te lo deben pagar antes del 20 de diciembre: en 2026, a más tardar el sábado 19. Mínimo 15 días de salario.\n\nLFT, art. 87",
+     "voz": "Primero: te deben pagar tu aguinaldo antes del veinte de diciembre, a más tardar el sábado diecinueve."
+    },
+    {
+     "titulo": "Primero, la deuda más cara",
+     "texto": "Paga primero las deudas más caras, como la tarjeta de crédito o los préstamos personales, y evita empezar el año con ellas.\n\nCondusef (dic-2025) · Profeco",
+     "voz": "Segundo: paga primero la deuda más cara, como la tarjeta o un préstamo personal."
+    },
+    {
+     "titulo": "Aparta 10% para enero",
+     "texto": "Guarda al menos 10% de tu aguinaldo para la cuesta de enero. De $7,500 brutos, aparta $750 antes de gastar: págate primero.\n\nCondusef (dic-2025)",
+     "voz": "Tercero: aparta al menos el diez por ciento para enero, antes de gastar."
+    },
+    {
+     "titulo": "Tus meses se suman",
+     "texto": "La mensualidad a meses sin intereses se suma a tu pago mínimo. Si tienes varias compras, suma las mensualidades: que no rebasen tu presupuesto.\n\nCondusef (2019 y 2025)",
+     "voz": "Cuarto: tus meses sin intereses se suman al pago mínimo. Súmalos antes de comprar."
+    },
+    {
+     "titulo": "Ticket y garantía",
+     "texto": "Compara precios antes de comprar, exige siempre tu ticket o factura y, si compras electrodomésticos, pide la garantía por escrito.\n\nProfeco",
+     "voz": "Y el último: compara precios, pide siempre tu ticket y la garantía por escrito."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS.",
+    "texto": "Mándaselo a quien ya gastó el aguinaldo antes de cobrarlo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿En qué se va primero tu aguinaldo? Comenta deuda, ahorro o regalos, y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf), art. 87: aguinaldo 'que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos'. El 20 de diciembre de 2026 cae en domingo: antes del 20 = a más tardar el sábado 19. Condusef, revista Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, act. 6-ene-2026, https://revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'Paga las deudas más caras (como tarjeta de crédito o préstamos personales)'; 'Guardar al menos un 10% de tu aguinaldo será una decisión muy inteligente porque te permitirá afrontar la temida \"cuesta de enero\"'; 'aplica la estrategia de pagarte primero, es decir, ahorra antes de gastar'. De $7,500 (aguinaldo mínimo con $15,000 al mes), 10% = $750 (cálculo propio, sobre el monto bruto antes de ISR). La línea 'Mi regla: el aguinaldo no es para regalos...' del texto del post es opinión de Victoria (PERSONAJE.md, opinión 1), no dato. Profeco, 'Cuida tu aguinaldo. Planifica' (30-nov-2022, https://www.gob.mx/profeco/documentos/cuida-tu-aguinaldo-planifica): 'Paga tus deudas y evita empezar el año con ellas'; 'Date tu tiempo para comparar precios'; 'Exige siempre el ticket y/o factura de las compras para el caso de un reclamo posterior'; 'Si compras aparatos electrodomésticos, pide garantía por escrito'. Condusef, comunicado '¿Vas a comprar en el Buen Fin?' (12-nov-2019, https://www.gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin): 'la mensualidad por comprar a meses sin intereses se agrega de manera adicional al pago mínimo'. Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025, https://www.gob.mx/condusef/articulos/el-buen-fin-2025-gasta-con-cabeza-no-con-prisa): 'Si tienes más de una compra a MSI, suma las mensualidades para que no excedan tu presupuesto'. Relacionado: c16 (fecha límite), c24 (meses sin intereses), c26 (cuesta de enero). Consultado el 9-nov-2026.",
+   "titulo_post": "Tu quincena de diciembre en 5 datos para guardar",
+   "texto_post": "Quincena de diciembre: 5 datos para que el aguinaldo te dure más que la posada. 💸\nMi regla: el aguinaldo no es para regalos. Primero la deuda cara, luego el colchón, luego lo demás.\n1. El aguinaldo te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Primero la deuda más cara, como la tarjeta o un préstamo personal (Condusef y Profeco).\n3. Aparta al menos 10% para enero: de $7,500 brutos, $750 antes de gastar (Condusef).\n4. Los meses sin intereses se suman a tu pago mínimo: suma tus mensualidades antes de comprar (Condusef).\n5. Compara precios, exige tu ticket y pide la garantía por escrito (Profeco).\nCapital ya hizo su presupuesto de diciembre: una pelota, de contado.\n\n📚 LFT, art. 87; Condusef (2019, 2025); Profeco (2022).\n💬 ¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS. Te contesto a todos.\n🔖 Guárdalo para el día que te caiga la quincena.\n📩 Mándaselo a quien ya gastó el aguinaldo antes de cobrarlo.",
+   "seo": {
+    "palabra_clave": "quincena de diciembre",
+    "titulo": "Quincena de diciembre y 5 datos de dinero 💸",
+    "tags_concretas": [
+     "quincena de diciembre",
+     "aguinaldo 2026",
+     "que hacer con mi aguinaldo",
+     "cuesta de enero",
+     "ahorrar 10 por ciento aguinaldo",
+     "pagar deudas con aguinaldo",
+     "meses sin intereses pago minimo",
+     "condusef aguinaldo",
+     "profeco garantia por escrito",
+     "compras de diciembre"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#cuestadeenero",
+     "#ahorro",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Qué hago con mi aguinaldo?",
+     "¿Cuánto debo ahorrar de mi aguinaldo para enero?",
+     "¿Los meses sin intereses se suman al pago mínimo?",
+     "¿Qué deuda pago primero con el aguinaldo?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c52_c54.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Guarda esto (el del hit c16)"
   }
  ]
 }
