@@ -100,6 +100,11 @@ TikTok le pone música automática al carrusel (`auto_add_music`). Los sonidos e
 Instagram y TikTok solo se pueden poner a mano desde la app: ninguna API los da. Si Rodrigo quiere
 un sonido en tendencia, lo pone él al publicar desde Publer o la app.
 
-9-nov-2026: Rodrigo quiere música viral y no pistas generadas (se probó Suno y se quitó). Canciones en tendencia
-metidas al archivo = video silenciado o reclamado: no se hace. Si hay pistas con licencia, van en assets/musica/ y
-`carrusel_video.py` las mezcla sola (ver assets/musica/LEEME.md).
+Música en cada red (Rodrigo, 9-nov-2026: "el chiste es usar sonidos... y de vez en cuando sonidos de biblioteca"):
+- TikTok: los carruseles en fotos llevan música de la biblioteca de TikTok (auto_add_music), siempre.
+- Instagram, Facebook y YouTube: el video del carrusel (short.mp4 y reel.mp4) y los videos de Victoria llevan música de
+  fondo propia de assets/musica/ (ver su LEEME.md), bajita debajo de la voz. Videos de Victoria: `carrusel_video.py musica`.
+- Martes y viernes (config → sonido_biblioteca_ig), el Reel de la mañana lo sube Rodrigo desde Instagram con un sonido
+  de la biblioteca: `publer_carrusel.py <id> --reel <hora> --manual` programa Facebook, anota el Reel y le imprime el
+  texto; se le manda carruseles/<id>/reel-limpio.mp4 (sin música, para que el sonido de la biblioteca quede limpio).
+- Canciones en tendencia metidas al archivo = video silenciado o reclamado: no se hace.

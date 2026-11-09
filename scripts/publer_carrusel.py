@@ -161,8 +161,11 @@ def reel(c, cuando, config):
         return
     ws = workspace_id()
     todas, cuentas = cuentas_victoria(ws)
-    cuentas = [x for x in cuentas if red(x) == 'instagram' and not ya_ig]  # con Reel ya programado, solo falta Facebook
-    if not cuentas and not ya_ig:
+    # --manual (config → sonido_biblioteca_ig): Instagram lo sube Rodrigo desde la app con un sonido de la biblioteca;
+    # aquí solo sale Facebook y se anota el Reel como manual.
+    manual = '--manual' in sys.argv and not ya_ig
+    cuentas = [x for x in cuentas if red(x) == 'instagram' and not ya_ig and not manual]
+    if not cuentas and not ya_ig and not manual:
         sys.exit('ERROR: no encontré el Instagram de Victoria en Publer. No publico nada.')
     fb = facebook_victoria(todas)
     if fb and not yo.get('facebook'):
@@ -171,15 +174,12 @@ def reel(c, cuando, config):
     texto_fb = texto_facebook(texto, enlace.get('url'), enlace.get('etiqueta'))
     ya = ya_programadas(ws, cuentas, texto)
     cuentas = [x for x in cuentas if str(x['id']) not in ya]
-    if not cuentas:
+    if not cuentas and not manual:
         print('OMITIDO: este Reel ya está programado o publicado en Instagram y Facebook.')
         return
-    subida = _pedir('POST', '/media', ws, multipart=(f'{c["id"]}-reel.mp4', open(video, 'rb').read(), 'video/mp4'))
-    media_id = subida.get('id') or (subida.get('data') or {}).get('id')
-    if not media_id and subida.get('job_id'):
-        media_id = _buscar_id(esperar_job(ws, subida['job_id']).get('result'))
-    if not media_id:
-        sys.exit(f'ERROR: la subida del video no regresó id: {json.dumps(subida)[:500]}')
+    media_id = None
+    if cuentas:
+        media_id = subir_video(ws, c, video)
     fallas, salieron = [], []
     for cuenta in cuentas:  # una petición por red (regla 5): si Facebook falla, Instagram no se pierde
         t = texto_fb if red(cuenta) == 'facebook' else texto
@@ -196,6 +196,18 @@ def reel(c, cuando, config):
     yo = next(x for x in datos['carruseles'] if x['id'] == c['id'])
     if 'facebook' in salieron:
         yo['facebook'] = {'publica_utc': cuando}
+    if manual:
+        limpio = os.path.join(RAIZ, 'carruseles', c['id'], 'reel-limpio.mp4')
+        yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'manual': True,
+                         'video': os.path.relpath(limpio if os.path.exists(limpio) else video, RAIZ)}
+        if yo['estado'] == 'listo':
+            yo['estado'] = 'programado'
+        json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
+        print(f"MANUAL para Rodrigo: sube {yo['reel_ig']['video']} como Reel desde Instagram a las "
+              f"{a_utc(cuando).astimezone(CDMX):%H:%M}, con un sonido de la biblioteca (bajito) y este texto:\n{texto}")
+        if fallas:
+            sys.exit('ERROR: Publer reportó falla: ' + ' | '.join(fallas))
+        return
     if 'instagram' not in salieron:  # solo salió (o falló) Facebook: reel_ig no se toca
         json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
         if fallas:
@@ -207,6 +219,16 @@ def reel(c, cuando, config):
     json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
     if fallas:
         sys.exit('ERROR: Publer reportó falla: ' + ' | '.join(fallas))
+
+
+def subir_video(ws, c, video):
+    subida = _pedir('POST', '/media', ws, multipart=(f'{c["id"]}-reel.mp4', open(video, 'rb').read(), 'video/mp4'))
+    media_id = subida.get('id') or (subida.get('data') or {}).get('id')
+    if not media_id and subida.get('job_id'):
+        media_id = _buscar_id(esperar_job(ws, subida['job_id']).get('result'))
+    if not media_id:
+        sys.exit(f'ERROR: la subida del video no regresó id: {json.dumps(subida)[:500]}')
+    return media_id
 
 
 def main():

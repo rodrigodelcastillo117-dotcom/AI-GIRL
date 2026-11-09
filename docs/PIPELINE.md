@@ -295,8 +295,8 @@ python scripts/cierre_pantalla.py videos/video-<id>-SUBTITULADO.mp4 <id> videos/
 ```
 Revisar el último cuadro: el cierre no tapa la cara y se lee. En el plan, `archivo` apunta al `-FINAL.mp4`.
 
-Música de fondo: solo si hay pistas con licencia en assets/musica/ (hoy vacía: ver su LEEME.md):
-`python scripts/carrusel_video.py musica videos/video-<id>-FINAL.mp4`. El video no se toca y la sincronía no cambia.
+Música de fondo, siempre (9-nov-2026): `python scripts/carrusel_video.py musica videos/video-<id>-FINAL.mp4` (antes guarda
+una copia -SINMUSICA.mp4). Pista de assets/musica/, unos 14 dB debajo de la voz; el video no se toca y la sincronía no cambia.
 
 ## 7. Publicar
 

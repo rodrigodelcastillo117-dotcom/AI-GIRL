@@ -448,5 +448,12 @@
  "prioridad_reel_ig": [],
  "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube.",
  "facebook_victoria": "6af202cb29e54cb1259515de",
- "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok."
+ "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok.",
+ "sonido_biblioteca_ig": {
+  "dias": [
+   1,
+   4
+  ],
+  "nota": "9-nov-2026, Rodrigo: \"usar sonidos... y de vez en cuando sonidos de biblioteca\". Martes y viernes, el Reel de la mañana NO lo sube Publer: la rutina le manda a Rodrigo reel-limpio.mp4 (sin música) y el texto, y él lo sube desde Instagram con un sonido de la biblioteca, bajito. Facebook y YouTube salen solos con la música de fondo. TikTok ya pone música de su biblioteca a los carruseles (auto_add_music)."
+ }
 }

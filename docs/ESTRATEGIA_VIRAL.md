@@ -43,6 +43,9 @@ subir lo mismo en todas las redes, no perder ningún reel, carrusel, imagen". En
   cola pasa de 3 días, la auditoría lo avisa: subir esa red a 3 o bajar TikTok. Los de temporada que caducan antes
   de llegar no salen (sería contenido viejo).
 - Videos de Victoria (Wan): cada 3 días, solo temas fuertes. Videos de 0 créditos: "calcúlalo conmigo".
+- Música en todo: TikTok pone la de su biblioteca a los carruseles; Instagram, Facebook y YouTube llevan música de fondo
+  propia; martes y viernes un Reel de Instagram va con sonido de la biblioteca, subido por Rodrigo (CARRUSELES.md → Música).
+- Facebook recibe lo de Instagram y además los shorts de YouTube, con el enlace directo (ahí sí se toca).
 - Facebook (página "Victoria the CEO", desde el 9-nov-2026): todo lo de Instagram sale también ahí, a la misma hora,
   sin hacer nada aparte. Lo que ya había salido antes en las otras redes se subió del 9 al 13-nov, dos por día.
 

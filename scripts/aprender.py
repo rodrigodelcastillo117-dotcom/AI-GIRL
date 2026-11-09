@@ -892,8 +892,12 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
         if x['id'] not in hechos:
             comandos.append(f"python scripts/carrusel_video.py short {x['id']}")
             hechos.add(x['id'])
-    for ig in salida['instagrams']:
-        comandos.append(f"python scripts/publer_carrusel.py {ig['id']} --reel {ig['cuando_ig']}")
+    biblioteca = hoy.weekday() in (config.get('sonido_biblioteca_ig') or {}).get('dias', [])
+    for i, ig in enumerate(salida['instagrams']):
+        # Martes y viernes el primer Reel lo sube Rodrigo con un sonido de la biblioteca (config → sonido_biblioteca_ig)
+        manual = ' --manual' if biblioteca and i == 0 else ''
+        ig['manual'] = bool(manual)
+        comandos.append(f"python scripts/publer_carrusel.py {ig['id']} --reel {ig['cuando_ig']}{manual}")
     for yt in salida['youtubes']:
         comandos.append(f"youtube.py subir carruseles/{yt['id']}/short.mp4 ... {yt['cuando_yt']} (CARRUSELES.md)")
         if config.get('facebook_victoria') and yt['id'] not in ids_ig:
@@ -1070,7 +1074,8 @@ def auditar():
     if k['tiktok']:
         print('Carruseles de TikTok hoy: ' + ', '.join(f"{t['id']} a las {a_utc(t['cuando']).astimezone(CDMX):%H:%M}" for t in k['tiktoks']) + '.')
     for x in k.get('instagrams', []):
-        print(f"Reel de Instagram ({x['turno']}): {x['id']} a las {a_utc(x['cuando_ig']).astimezone(CDMX):%H:%M} ({x['por_que']}).")
+        print(f"Reel de Instagram ({x['turno']}): {x['id']} a las {a_utc(x['cuando_ig']).astimezone(CDMX):%H:%M} ({x['por_que']})"
+              + (" · LO SUBE RODRIGO con un sonido de la biblioteca" if x.get('manual') else '') + '.')
     for x in k.get('youtubes', []):
         print(f"Short de YouTube: {x['id']} a las {a_utc(x['cuando_yt']).astimezone(CDMX):%H:%M} ({x['por_que']}).")
     print(f"En cola: TikTok {k.get('quedan_tiktok')}, Instagram {k.get('quedan_instagram')}, YouTube {k.get('quedan_youtube')} carruseles.")

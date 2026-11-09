@@ -1,8 +1,13 @@
-# Música de fondo de los videos de carrusel
+# Música de fondo de los videos (9-nov-2026)
 
-Vacía a propósito (9-nov-2026): Rodrigo no quiere pistas de Suno; quiere música viral. La música viral (canciones en
-tendencia) solo se puede poner desde la app de cada red: si se mete al archivo, Instagram y TikTok silencian el video
-y YouTube lo reclama por derechos. Ver docs/CARRUSELES.md → Música.
+Rodrigo: "el chiste es usar sonidos, no pasa nada cuáles". Cuatro pistas instrumentales hechas con Suno (chirp-v5-5,
+por la API de AceData), sin canciones de terceros: no hay riesgo de que silencien el video o lo reclamen.
+`carrusel_video.py short` mete una por carrusel (rota con el id) al 11% de volumen, unos 14 dB debajo de la voz.
+`carrusel_video.py musica <video>` hace lo mismo con los videos de Victoria. `--sin-musica` la quita.
 
-Si algún día se ponen aquí pistas con licencia de uso comercial (.mp3), `carrusel_video.py short` las mezcla solas
-debajo de la voz (11% de volumen); `carrusel_video.py musica <video>` hace lo mismo con los videos de Victoria.
+- lofi-1.mp3, lofi-2.mp3: lo-fi cálido, 90 BPM ("Money Tip Groove")
+- pop-1.mp3, pop-2.mp3: pop brillante, 100 BPM ("Plucky Savings")
+
+Ojo: Instagram cuenta esta música como "audio original". El empujón de la página del audio solo lo da un sonido de su
+biblioteca elegido en la app: eso se hace a mano los días de config.json → sonido_biblioteca_ig (Rodrigo lo sube).
+Los derechos de uso comercial dependen del plan de la cuenta de Suno/AceData.

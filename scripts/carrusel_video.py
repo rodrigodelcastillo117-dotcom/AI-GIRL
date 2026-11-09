@@ -118,8 +118,8 @@ def unir(rutas, salida, musica=None):
 
 
 def pista_para(cid):
-    """Música de fondo del carrusel: una de assets/musica/*.mp3 (la misma para el mismo carrusel). Hoy la carpeta está
-    vacía a propósito (Rodrigo, 9-nov-2026: nada de Suno; la música viral solo se pone desde la app): sin pistas, sin música."""
+    """Música de fondo del carrusel (Rodrigo, 9-nov-2026: "el chiste es usar sonidos"): una de assets/musica/*.mp3, la
+    misma para el mismo carrusel y rotando entre carruseles. Sin pistas en la carpeta, sin música."""
     pistas = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'musica', '*.mp3')))
     if not pistas or '--sin-musica' in sys.argv:
         return None
@@ -173,7 +173,12 @@ def main():
         portada_reel = os.path.join(carpeta, '00r.png')
         if os.path.exists(portada_reel):  # el Reel de Instagram abre con su propia portada (otra foto y otro título)
             r, _ = tramos(c, portada=portada_reel)
-            unir(r, os.path.join(carpeta, 'reel.mp4'), pista)
+            reel = os.path.join(carpeta, 'reel.mp4')
+            unir(r, reel)
+            # Sin música, para los días en que Rodrigo lo sube con un sonido de la biblioteca de Instagram
+            subprocess.run(['cp', reel, os.path.join(carpeta, 'reel-limpio.mp4')], check=True)
+            if pista:
+                con_musica(reel, pista)
             print(f'ok {carpeta}/reel.mp4 (abre con 00r.png)')
         config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
         for nombre, texto in zip(('titulo', 'descripcion_youtube', 'tags_youtube'), textos_youtube(c, config)):
