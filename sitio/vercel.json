@@ -17,6 +17,10 @@
       "destination": "/aguinaldo.html"
     },
     {
+      "source": "/finiquito",
+      "destination": "/finiquito.html"
+    },
+    {
       "source": "/interes-compuesto",
       "destination": "/interes-compuesto.html"
     },
