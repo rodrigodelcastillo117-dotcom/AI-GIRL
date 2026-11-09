@@ -36,8 +36,8 @@ linea3 = ImageFont.truetype(FUENTES + 'Inter-Medium.otf', 34)
 lineas = [
     ('VICTORIA', titulo, (255, 255, 255), 12),
     ('THE CEO', subtitulo, DORADO, 22),
-    ('Negocio · Dinero · Mente fuerte', linea3, (255, 255, 255), 2),
-    ('Nuevo video cada 2 días', linea3, DORADO, 2),
+    ('Tu dinero en México, sin rodeos', linea3, (255, 255, 255), 2),
+    ('Algo nuevo cada día', linea3, DORADO, 2),
 ]
 alturas = [f.getbbox(t)[3] for t, f, _, _ in lineas]
 separacion = 26
