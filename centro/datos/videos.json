@@ -210,7 +210,7 @@
   "pilar": "finanzas",
   "locacion": "cocina",
   "fuente": "Condusef: deuda de $10,000 con tasa anual de 55% pagando solo el mínimo = 234 mensualidades, 19 años y medio (Plano Informativo; El Financiero sobre la calculadora de pagos mínimos de Condusef)",
-  "gancho": "¿Pagas solo el mínimo de tu tarjeta? Con diez mil pesos de deuda puedes tardar diecinueve ",
+  "gancho": "Pagar solo el mínimo de tu tarjeta es rentarle tu sueldo al banco",
   "hora_plan": "rotacion",
   "publica_mx": "",
   "dia": "",
@@ -358,7 +358,7 @@
  },
  {
   "id": "04",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "mentalidad",
   "locacion": "recamara",
   "fuente": "James W. Pennebaker, investigación sobre escritura expresiva",
@@ -396,7 +396,7 @@
  },
  {
   "id": "05",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "vida",
   "locacion": "cocina",
   "fuente": "David Allen, Organízate con eficacia (Getting Things Done)",
@@ -548,7 +548,7 @@
  },
  {
   "id": "09",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "mentalidad",
   "locacion": "recamara",
   "fuente": "Balban et al., Cell Reports Medicine (2023), suspiro cíclico, Stanford",
@@ -738,7 +738,7 @@
  },
  {
   "id": "14",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "mentalidad",
   "locacion": "sillon",
   "fuente": "Bluma Zeigarnik (1927); Masicampo y Baumeister (2011)",
@@ -776,7 +776,7 @@
  },
  {
   "id": "15",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "vida",
   "locacion": "oficina",
   "fuente": "Brian Tracy, ¡Tráguese ese sapo!",
@@ -979,7 +979,7 @@
   "pilar": "finanzas",
   "locacion": "sala_navidad",
   "fuente": "Regla de Victoria (opinión), basada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005)",
-  "gancho": "¿Tu aguinaldo se acaba en enero? Casi siempre es porque llega sin plan",
+  "gancho": "Tu aguinaldo no es para regalos",
   "hora_plan": "rotacion",
   "publica_mx": "",
   "dia": "",
@@ -1017,7 +1017,7 @@
   "pilar": "finanzas",
   "locacion": "restaurante",
   "fuente": "CONDUSEF: usar parte del aguinaldo para pagar deudas, primero las de mayor tasa de interés como las tarjetas",
-  "gancho": "¿Vas a gastar tu aguinaldo? Primero paga tu tarjeta",
+  "gancho": "Si traes deuda de tarjeta, tu aguinaldo ya tiene dueño",
   "hora_plan": "rotacion",
   "publica_mx": "",
   "dia": "",
@@ -1431,7 +1431,7 @@
  },
  {
   "id": "32",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "empresas",
   "locacion": "cocina",
   "fuente": "Founded.com y Hostaway: en 2008 los fundadores de Airbnb vendieron cajas de cereal \"Obama O's\" y \"Cap'n McCain's\" a 40 dólares, juntaron cerca de 30,000 dólares y entraron a Y Combinator",
@@ -1469,7 +1469,7 @@
  },
  {
   "id": "33",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "empresas",
   "locacion": "oficina",
   "fuente": "CNBC: Michael Dubin dijo que el video costó 4,500 dólares y que el inventario se agotó en horas; Fortune: Unilever la compró en 2016 por cerca de 1,000 millones de dólares (cifra no oficial); el video salió en marzo de 2012 (4 años antes de la compra de 2016)",
@@ -1507,7 +1507,7 @@
  },
  {
   "id": "34",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "empresas",
   "locacion": "sala",
   "fuente": "Fortune y SmartCompany: Melanie Perkins dijo que la rechazaron más de 100 inversionistas y que tras cada rechazo mejoraba su presentación",
@@ -1545,7 +1545,7 @@
  },
  {
   "id": "35",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "empresas",
   "locacion": "oficina",
   "fuente": "TechCrunch y Built In: Intuit compró Mailchimp en 2021 por 12,000 millones de dólares en efectivo y acciones; Mailchimp no recibió inversión externa desde su fundación en 2001",
@@ -1583,7 +1583,7 @@
  },
  {
   "id": "36",
-  "estado": "pendiente",
+  "estado": "reserva",
   "pilar": "empresas",
   "locacion": "recamara",
   "fuente": "Wikipedia, Britannica y Ara: en 1963 Amancio Ortega fundó Confecciones GOA para hacer batas acolchadas; la primera tienda Zara abrió en 1975 en A Coruña",

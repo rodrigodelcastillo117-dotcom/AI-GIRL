@@ -683,6 +683,12 @@ def decidir(plan, ranking, hoy, config):
         v = temporada[0]
         return {**base, 'video_id': v['id'], 'modo': 'temporada', 'esperado': None, 'cambios_sugeridos': [],
                 'por_que': f'Temporada: el video {v["id"]} solo sirve hasta el {v["ventana"]["hasta"]}.'}
+    # Prioridad a mano (Rodrigo, 9-nov-2026: "hagamos lo mejor"): con pocos créditos, primero estos ids si siguen pendientes.
+    prioridad = [v for i in config.get('prioridad_videos', []) for v in pendientes if v['id'] == i]
+    if prioridad:
+        v = prioridad[0]
+        return {**base, 'video_id': v['id'], 'modo': 'prioridad', 'esperado': None, 'cambios_sugeridos': [],
+                'por_que': f'Prioridad: el video {v["id"]} va primero (config.json → prioridad_videos).'}
     if not pendientes:
         return {**base, 'video_id': None, 'modo': 'sin guiones', 'esperado': None, 'cambios_sugeridos': [],
                 'por_que': 'No hay guiones pendientes: escribir 10 nuevos (paso 1c).'}

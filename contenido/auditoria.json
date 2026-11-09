@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-08T23:44:24Z",
+ "fecha_utc": "2026-11-09T01:33:04Z",
  "videos_calificados": 5,
  "base_vistas_36h": 507,
  "notas": {
@@ -378,11 +378,11 @@
    }
   },
   "publicar_hoy": null,
-  "video_id": "32",
-  "modo": "serie",
+  "video_id": "40",
+  "modo": "prioridad",
   "esperado": null,
   "cambios_sugeridos": [],
-  "por_que": "Serie: toca el capítulo 1 (uno cada 2 videos).",
+  "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
   "carruseles": {
    "tiktok": null,
    "instagram": null,
@@ -392,11 +392,11 @@
     "YouTube ya tiene su short de carrusel de hoy.",
     "Hoy hay video: Instagram sube el video, no carrusel."
    ],
-   "quedan_tiktok": 9,
+   "quedan_tiktok": 12,
    "comandos": []
   },
-  "segundos": 21,
-  "creditos": 870
+  "segundos": 19,
+  "creditos": 790
  },
  "horarios_por_red": {
   "ig": {
@@ -589,7 +589,7 @@
  "alertas": [
   "5 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\".",
   "El tema \"finanzas\" pierde: índice 0.73 en 3 videos.",
-  "Créditos: hasta el 2026-11-28 se necesitan 5910 para 9 videos y hay 4449 (dejando 100): faltan 1561. Los días que no alcance, sale carrusel (gratis) en lugar de video.",
+  "Créditos: hasta el 2026-11-28 se necesitan 6550 para 9 videos y hay 4449 (dejando 100): faltan 2201. Los días que no alcance, sale carrusel (gratis) en lugar de video.",
   "Créditos para 4 videos (unos 8 días al ritmo actual). Recargar OpenArt.",
   "Prueba de voz íntima: 0 de 3 videos publicados."
  ],

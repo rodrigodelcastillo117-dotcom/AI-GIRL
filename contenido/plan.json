@@ -2878,7 +2878,7 @@
   },
   {
    "id": "32",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "empresas",
    "formato": "serie",
    "serie": {
@@ -2951,11 +2951,12 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
+   "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
   },
   {
    "id": "33",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "empresas",
    "formato": "serie",
    "serie": {
@@ -3028,11 +3029,12 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
+   "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
   },
   {
    "id": "34",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "empresas",
    "formato": "serie",
    "serie": {
@@ -3099,11 +3101,12 @@
     "tipo_gancho": "historia"
    },
    "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
-   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
+   "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
   },
   {
    "id": "35",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "empresas",
    "formato": "serie",
    "serie": {
@@ -3173,11 +3176,12 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
+   "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
   },
   {
    "id": "36",
-   "estado": "pendiente",
+   "estado": "reserva",
    "pilar": "empresas",
    "formato": "serie",
    "serie": {
@@ -3242,7 +3246,8 @@
     "tipo_gancho": "dato"
    },
    "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
-   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?"
+   "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
+   "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
   }
  ]
 }
