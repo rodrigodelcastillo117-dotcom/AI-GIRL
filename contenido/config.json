@@ -439,8 +439,12 @@
   "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20."
  },
  "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov.",
- "tiktok_carruseles_por_dia": 2,
- "nota_tiktok_carruseles_por_dia": "9-nov-2026 (Rodrigo: \"quiero hacerme viral\"): 2 carruseles diarios en TikTok (gratis), a 3 h o más entre sí y del video. Más intentos = más probabilidad de pegar.",
+ "publicaciones_por_dia": {
+  "tt": 3,
+  "ig": 2,
+  "yt": 2
+ },
+ "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red.",
  "prioridad_reel_ig": [],
  "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube."
 }

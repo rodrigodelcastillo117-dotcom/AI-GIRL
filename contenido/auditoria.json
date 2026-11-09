@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-09T14:52:39Z",
+ "fecha_utc": "2026-11-09T15:55:04Z",
  "videos_calificados": 6,
  "base_vistas_36h": 457.5,
  "notas": {
@@ -415,16 +415,53 @@
   "cambios_sugeridos": [],
   "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
   "carruseles": {
-   "tiktok": null,
-   "instagram": null,
-   "youtube": null,
-   "notas": [
-    "TikTok ya tiene sus 2 carrusel(es) de hoy.",
-    "Instagram ya tiene su carrusel de hoy."
+   "tiktok": {
+    "id": "c13",
+    "cuando": "2026-11-10T02:00:00Z"
+   },
+   "instagram": {
+    "id": "c09",
+    "cuando_ig": "2026-11-09T17:00:00Z",
+    "turno": "mañana",
+    "por_que": "115 vistas en TikTok; lleva 1 día(s) esperando"
+   },
+   "youtube": {
+    "id": "c12",
+    "cuando_yt": "2026-11-09T20:00:00Z",
+    "por_que": "sin medir vistas en TikTok; lleva 0 día(s) esperando"
+   },
+   "tiktoks": [
+    {
+     "id": "c13",
+     "cuando": "2026-11-10T02:00:00Z"
+    }
    ],
-   "tiktoks": [],
-   "quedan_tiktok": 27,
-   "comandos": []
+   "instagrams": [
+    {
+     "id": "c09",
+     "cuando_ig": "2026-11-09T17:00:00Z",
+     "turno": "mañana",
+     "por_que": "115 vistas en TikTok; lleva 1 día(s) esperando"
+    }
+   ],
+   "youtubes": [
+    {
+     "id": "c12",
+     "cuando_yt": "2026-11-09T20:00:00Z",
+     "por_que": "sin medir vistas en TikTok; lleva 0 día(s) esperando"
+    }
+   ],
+   "notas": [],
+   "quedan_tiktok": 26,
+   "quedan_instagram": 3,
+   "quedan_youtube": 1,
+   "comandos": [
+    "python scripts/publer_carrusel.py c13 \"tt=2026-11-10T02:00:00Z\"",
+    "python scripts/carrusel_video.py short c09",
+    "python scripts/carrusel_video.py short c12",
+    "python scripts/publer_carrusel.py c09 --reel 2026-11-09T17:00:00Z",
+    "youtube.py subir carruseles/c12/short.mp4 ... 2026-11-09T20:00:00Z (CARRUSELES.md)"
+   ]
   },
   "segundos": 19,
   "creditos": 790

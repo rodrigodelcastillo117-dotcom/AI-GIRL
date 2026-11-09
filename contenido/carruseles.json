@@ -836,7 +836,12 @@
    },
    "publica_utc": "2026-11-07T23:05:57Z",
    "youtube": "y-HMXcYyAHY",
-   "comentario_youtube": "Ugx49_9o990An-ltJSF4AaABAg"
+   "comentario_youtube": "Ugx49_9o990An-ltJSF4AaABAg",
+   "reel_ig": {
+    "publica_utc": "2026-11-09T17:00:00Z",
+    "texto": "Tu Afore puede bajarte impuestos: así funciona\nAhorro voluntario Afore: así puede bajarte impuestos. 🧾\nLas aportaciones complementarias de retiro se deducen hasta 10% de tus ingresos (máximo 5 UMA anuales) y se quedan hasta tu retiro.\n\nRevisa con tu contador si te conviene.\n🔖 Guárdalo para tu declaración anual.\n📩 Mándaselo a quien siempre paga de más.\n\n#afore #impuestos #sat #finanzaspersonales #victoriatheceo",
+    "video": "carruseles/c09/reel.mp4"
+   }
   },
   {
    "id": "c10",
@@ -1120,12 +1125,12 @@
   },
   {
    "id": "c13",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "recibo_nomina",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/jet.jpg",
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/video-01-jet.jpg",
     "etiqueta": "RECIBO DE NÓMINA",
     "titulo": "Si nunca abres tu recibo de nómina, estás confiando a ciegas",
     "voz": "Si nunca abres tu recibo de nómina, estás confiando a ciegas. Revisa esto cada quincena.",
@@ -1133,7 +1138,8 @@
      "titulo": "Si ganas hasta $11,492 al mes, revisa tu nómina",
      "voz": "Si ganas hasta once mil cuatrocientos noventa y dos pesos al mes, revisa tu nómina."
     },
-    "gancho_tipo": "postura"
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
    },
    "diapositivas": [
     {
@@ -1203,7 +1209,11 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
-   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)",
+   "publica_utc_por_red": {
+    "tt": "2026-11-10T02:00:00Z"
+   },
+   "publica_utc": "2026-11-10T02:00:00Z"
   },
   {
    "id": "c14",

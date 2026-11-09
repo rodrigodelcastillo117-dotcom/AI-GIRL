@@ -8,7 +8,8 @@ Uso: python publer_carrusel.py <id> <cuando_utc> [--borrador] [--prueba] [--forz
      --prueba    imprime lo que mandaría, sin llamar a Publer.
      --forzar    lo programa aunque choque con otra publicación de ese día (ver ya_sale_ese_dia).
      --reel      sube el video del carrusel (carruseles/<id>/short.mp4, carrusel_video.py short) como Reel de
-                 Instagram, el día de su carrusel en fotos y a 2 h o más de lo demás ("auto").
+                 Instagram, el día de su carrusel en fotos y a 3 h o más de lo demás ("auto"). Con hora fija también
+                 revisa el máximo del día (config → publicaciones_por_dia['ig']); --forzar lo salta.
 
 Qué sale y dónde (Rodrigo, 2-nov-2026, con los datos de la semana: en TikTok los carruseles llegan a ~500
 personas y los videos a ~100; en Instagram el Reel del carrusel c03 llegó a 28 y las fotos a 9):
@@ -52,30 +53,30 @@ def redes_de(cuando):
 
 
 def ya_sale_ese_dia(c, cuando, todos, plan, proveedores):
-    """Choques del mismo día (México). Instagram: una publicación por día (video o carrusel; el Reel del carrusel
-    va aparte). TikTok: un carrusel por día y, si ese día hay video, a 2 h o más de él (el 30-oct salieron c02 y c03
-    el mismo día por no revisarlo)."""
-    # Rodrigo, 9-nov-2026 ("quiero hacerme viral"): TikTok puede llevar config.json → tiktok_carruseles_por_dia
-    # carruseles (2), cada uno a 3 h o más de otro carrusel y a 2 h o más de un video.
-    por_dia = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('tiktok_carruseles_por_dia', 1)
+    """Choques del mismo día (México). Rodrigo, 9-nov-2026: config.json → publicaciones_por_dia (TikTok 3, Instagram 2,
+    YouTube 2), contando el video del día, y a 3 h o más de otra publicación de la misma red (a 2 h de un video en
+    TikTok). El 30-oct salieron c02 y c03 casi juntos por no revisarlo."""
+    por_dia = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('publicaciones_por_dia') or {}
     choques = []
     for proveedor in proveedores:
         r = CORTA[proveedor]
         t = a_utc(cuando_de(cuando, proveedor)).astimezone(CDMX)
         mismos = []
+        for x in todos:  # los Reels de carrusel no están en publicaciones(): van aparte en reel_ig
+            hr = (x.get('reel_ig') or {}).get('publica_utc') if r == 'ig' and x['id'] != c['id'] else None
+            if hr and a_utc(hr).astimezone(CDMX).date() == t.date():
+                mismos.append(f"{x['id']} (Reel)")
+                if abs(a_utc(hr).astimezone(CDMX) - t) < datetime.timedelta(hours=3):
+                    choques.append(f"ig: Reel de {x['id']} a las {a_utc(hr).astimezone(CDMX):%H:%M} (menos de 3 h)")
         for x, h in publicaciones(plan, todos):
             if x['id'] == c['id'] or r not in h or h[r].date() != t.date():
                 continue
-            if r == 'ig':
-                choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')}")
-            elif x['id'].startswith('c'):
-                mismos.append(x['id'])
-                if abs(h[r] - t) < datetime.timedelta(hours=3):
-                    choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')} (menos de 3 h)")
-            elif abs(h[r] - t) < datetime.timedelta(hours=2):
-                choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')}")
-        if r == 'tt' and len(mismos) >= por_dia:
-            choques.append(f"tt: ya hay {len(mismos)} carrusel(es) ese día ({', '.join(mismos)}); máximo {por_dia}")
+            mismos.append(x['id'])
+            cerca = datetime.timedelta(hours=3 if x['id'].startswith('c') else 2)
+            if abs(h[r] - t) < cerca:
+                choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')} (menos de {cerca.seconds // 3600} h)")
+        if len(mismos) >= por_dia.get(r, 1):
+            choques.append(f"{r}: ya hay {len(mismos)} publicación(es) ese día ({', '.join(mismos)}); máximo {por_dia.get(r, 1)}")
     return choques
 
 
@@ -113,8 +114,8 @@ def texto_reel(c, config):
 
 
 def hora_reel(c, todos, plan, config, ahora):
-    """El día del carrusel en Instagram (si ya no da o ya hay otro Reel de carrusel, el siguiente), en la
-    franja de Instagram más fuerte para ese día (orden_por_dia) a 2 h o más de cualquier otro post."""
+    """El día del carrusel en Instagram (si ese día ya tiene sus config → publicaciones_por_dia['ig'], el siguiente), en
+    la franja de Instagram más fuerte para ese día (orden_por_dia) a 3 h o más de cualquier otro post."""
     ocupadas = [h['ig'] for _, h in publicaciones(plan, todos) if 'ig' in h]
     reels = [a_utc(x['reel_ig']['publica_utc']).astimezone(CDMX) for x in todos
              if x['id'] != c['id'] and (x.get('reel_ig') or {}).get('publica_utc')]
@@ -122,12 +123,12 @@ def hora_reel(c, todos, plan, config, ahora):
     base = (c.get('publica_utc_por_red') or {}).get('ig') or c.get('publica_utc')
     dia = a_utc(base).astimezone(CDMX).date() if base else ahora.astimezone(CDMX).date()
     for d in (dia + datetime.timedelta(days=i) for i in range(4)):
-        if any(t.date() == d for t in reels):
+        if sum(1 for t in ocupadas + reels if t.date() == d) >= (config.get('publicaciones_por_dia') or {}).get('ig', 1):
             continue
         orden = ((prueba.get('orden_por_dia') or {}).get('ig') or {}).get(str(d.weekday())) or prueba['franjas_por_red']['ig']
         for f in orden:
             t = datetime.datetime.combine(d, datetime.time.fromisoformat(f), tzinfo=CDMX)
-            if t > ahora + datetime.timedelta(minutes=20) and all(abs(t - o) >= datetime.timedelta(hours=2) for o in ocupadas + reels):
+            if t > ahora + datetime.timedelta(minutes=20) and all(abs(t - o) >= datetime.timedelta(hours=3) for o in ocupadas + reels):
                 return t.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     sys.exit(f'ERROR: no encontré hora libre para el Reel de {c["id"]} en 4 días; pásala a mano.')
 
@@ -144,9 +145,13 @@ def reel(c, cuando, config):
     if (yo.get('reel_ig') or {}).get('publica_utc'):
         print(f'OMITIDO: el Reel de {c["id"]} ya está en carruseles.json ({yo["reel_ig"]["publica_utc"]}).')
         return
+    plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     if cuando == 'auto':
-        plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
         cuando = hora_reel(yo, datos['carruseles'], plan, config, datetime.datetime.now(datetime.timezone.utc))
+    elif '--forzar' not in sys.argv:
+        choques = ya_sale_ese_dia(yo, cuando, datos['carruseles'], plan, ['instagram'])
+        if choques:
+            sys.exit(f'ERROR: el Reel choca con otra publicación de ese día ({"; ".join(choques)}). Otra hora, o --forzar.')
     texto = texto_reel(c, config)
     if '--prueba' in sys.argv:
         print(json.dumps(armar_post([{'id': 'ID_IG', 'provider': 'instagram'}], 'MEDIA_ID', texto, c['titulo_post'], cuando,

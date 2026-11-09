@@ -27,14 +27,15 @@ fotos a 5-9. Por eso:
 - `scripts/publer_carrusel.py <id> "ig=<hora>,tt=<hora>"`: lo programa en fotos en Instagram y TikTok, cada uno a
   su hora de la prueba de horarios; con una sola red (`"tt=<hora>"`) solo en esa. Guarda `publica_utc_por_red`,
   `publica_utc` y el estado `programado` en el carrusel (`--borrador` lo deja en Publer sin salir). Se niega si choca:
-  Instagram, una publicación por día; TikTok, un carrusel por día y a 2 h o más del video. Instagram va como
+  config → publicaciones_por_dia (desde el 9-nov-2026: TikTok 3, Instagram 2, YouTube 2, contando el video), a 3 h o
+  más entre carruseles y a 2 h de un video. Instagram va como
   `"type": "photo"` con varias fotos: Publer rechaza `"carousel"` (probado 30-oct-2026).
 - **Portada del Reel distinta** (Rodrigo, 4-nov-2026: en el perfil de Instagram el carrusel y su Reel se veían como
   el mismo post repetido): `carrusel.py` dibuja además `00r.png` con otra foto de Victoria (`portada.foto_reel`, la que
   lleva más tiempo sin salir), el título de SEO (o `portada.titulo_reel`) en una franja dorada abajo y la cara libre;
   `carrusel_video.py short` arma `reel.mp4`, que abre con esa portada, y `--reel` sube ese.
 - `scripts/publer_carrusel.py <id> --reel auto`: el `short.mp4` del carrusel como Reel de Instagram, el día de su
-  carrusel en fotos, en la franja más fuerte de ese día a 2 h o más de lo demás (guarda `reel_ig`; se mide como `igr`
+  carrusel en fotos, en la franja más fuerte de ese día a 3 h o más de lo demás (guarda `reel_ig`; se mide como `igr`
   y no cuenta en la prueba de horarios). Lleva el mismo primer comentario que el carrusel.
 - `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube, con la voz clonada de Victoria (`voz_victoria.py`: cada frase se
   transcribe y se repite si no dice lo que debe; nombres en inglés en `voz` como suenan, "Uórren Bófet") + título, descripción y
