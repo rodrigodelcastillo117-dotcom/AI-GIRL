@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-09T01:33:04Z",
+ "fecha_utc": "2026-11-09T04:57:46Z",
  "videos_calificados": 5,
  "base_vistas_36h": 507,
  "notas": {
@@ -339,7 +339,7 @@
  },
  "decision": {
   "toca_publicar": false,
-  "motivo": "el último sale el 2026-11-08; toca publicar en 2 día(s)",
+  "motivo": "el último sale el 2026-11-08; toca publicar en 3 día(s)",
   "hora_siguiente": "20:00",
   "horarios": {
    "ig": "20:00",
@@ -589,8 +589,7 @@
  "alertas": [
   "5 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\".",
   "El tema \"finanzas\" pierde: índice 0.73 en 3 videos.",
-  "Créditos: hasta el 2026-11-28 se necesitan 6550 para 9 videos y hay 4449 (dejando 100): faltan 2201. Los días que no alcance, sale carrusel (gratis) en lugar de video.",
-  "Créditos para 4 videos (unos 8 días al ritmo actual). Recargar OpenArt.",
+  "Créditos para 4 videos (unos 12 días al ritmo actual). Recargar OpenArt.",
   "Prueba de voz íntima: 0 de 3 videos publicados."
  ],
  "ganchos_carrusel": {

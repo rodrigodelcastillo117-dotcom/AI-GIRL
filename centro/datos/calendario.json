@@ -32,6 +32,14 @@
  },
  {
   "fecha": "2026-11-10",
+  "tipo": "carrusel",
+  "id": "c22",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c22 · presupuesto regalos navidad · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+ },
+ {
+  "fecha": "2026-11-11",
   "tipo": "video",
   "id": "18",
   "estado": "por_programar",
@@ -39,28 +47,12 @@
   "que": "Video 18 (ya generado)"
  },
  {
-  "fecha": "2026-11-10",
-  "tipo": "carrusel",
-  "id": "c22",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c22 · presupuesto regalos navidad · TikTok (carrusel diario) y short en YouTube (prueba)"
- },
- {
   "fecha": "2026-11-11",
   "tipo": "carrusel",
   "id": "c23",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c23 · intercambio posada · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "video",
-  "id": "",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video (lo elige el laboratorio el día anterior)"
+  "que": "Carrusel c23 · intercambio posada · TikTok (carrusel diario) y short en YouTube (prueba)"
  },
  {
   "fecha": "2026-11-12",
@@ -68,7 +60,7 @@
   "id": "c24",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c24 · meses sin intereses diciembre · TikTok (carrusel diario) y short en YouTube (prueba)"
+  "que": "Carrusel c24 · meses sin intereses diciembre · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
  },
  {
   "fecha": "2026-11-13",
@@ -104,6 +96,14 @@
  },
  {
   "fecha": "2026-11-16",
+  "tipo": "carrusel",
+  "id": "c12",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c12 · vacaciones dignas · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+ },
+ {
+  "fecha": "2026-11-17",
   "tipo": "video",
   "id": "",
   "estado": "por_programar",
@@ -111,19 +111,11 @@
   "que": "Video (lo elige el laboratorio el día anterior)"
  },
  {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c12",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c12 · vacaciones dignas · TikTok (carrusel diario) y short en YouTube (prueba)"
- },
- {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
   "id": "c13",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c13 · recibo nomina · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok"
+  "que": "Carrusel c13 · recibo nomina · TikTok (carrusel diario) y short en YouTube (prueba)"
  }
 ]

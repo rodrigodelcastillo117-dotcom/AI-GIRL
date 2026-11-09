@@ -10,7 +10,7 @@
  },
  "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
  "frecuencia": "cada_2_dias",
- "dias_entre_videos": 2,
+ "dias_entre_videos": 3,
  "hora_auditoria": "06:37",
  "prueba_horas": {
   "franjas": [
@@ -437,5 +437,6 @@
   ],
   "hecho": false,
   "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20."
- }
+ },
+ "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov."
 }
