@@ -215,6 +215,36 @@ def imagen(spec, guardada):
     return None
 
 
+def cara(foto, lado, borde=ORO):
+    """Victoria en círculo (Rodrigo, 9-nov-2026: "que Victoria salga en carruseles"): la cara de una de sus fotos,
+    recortada con la caja de assets/fotos/caras.json (OpenCV, se calcula una vez) y con aro."""
+    x, y, w, h = json.load(open(os.path.join(RAIZ, 'assets', 'fotos', 'caras.json')))[os.path.basename(foto)]
+    im = Image.open(os.path.join(RAIZ, foto)).convert('RGB')
+    W, H = im.size
+    cx, cy, r = (x + w / 2) * W, (y + h / 2) * H, max(w * W, h * H) * 0.95
+    c = im.crop((int(cx - r), int(cy - r * 0.95), int(cx + r), int(cy + r * 1.05))).resize((lado, lado), Image.LANCZOS)
+    m = Image.new('L', (lado * 4, lado * 4), 0)
+    ImageDraw.Draw(m).ellipse((0, 0, lado * 4 - 1, lado * 4 - 1), fill=255)
+    m = m.resize((lado, lado), Image.LANCZOS)
+    salida = Image.new('RGBA', (lado + 12, lado + 12), (0, 0, 0, 0))
+    ImageDraw.Draw(salida).ellipse((0, 0, lado + 11, lado + 11), fill=borde)
+    salida.paste(c, (6, 6), m)
+    return salida
+
+
+def caras_disponibles():
+    ruta = os.path.join(RAIZ, 'assets', 'fotos', 'caras.json')
+    return sorted('assets/fotos/' + f for f in json.load(open(ruta))) if os.path.exists(ruta) else []
+
+
+def cara_para(c, n):
+    """Una foto distinta por diapositiva; el arranque depende del carrusel para que no todos se vean iguales."""
+    fotos = [f for f in caras_disponibles() if f != c['portada'].get('foto')] or caras_disponibles()
+    if not fotos:
+        return None
+    return fotos[(sum(map(ord, c['id'])) + n) % len(fotos)]
+
+
 def dato(diapo, n, total, c):
     cid = c['id']
     lienzo = lienzo_oscuro(c)
@@ -238,6 +268,10 @@ def dato(diapo, n, total, c):
         caja = recortar(foto[0], ANCHO - 2 * MARGEN, 420, arriba=0.2)
         lienzo.paste(caja, (MARGEN, ALTO - 130 - 470))
         d.text((MARGEN, ALTO - 130 - 40), foto[1][:90], font=letra('Medium', 20), fill=TENUE)
+    foto_cara = cara_para(c, n) if c.get('caras', True) else None
+    if foto_cara:
+        im = cara(foto_cara, 150)
+        lienzo.paste(im, (ANCHO - MARGEN - im.width, 60), im)
     pie(d, n, total)
     return lienzo
 
@@ -246,9 +280,17 @@ def cierre(c, n, total):
     lienzo = Image.new('RGB', (ANCHO, ALTO), ORO)
     d = ImageDraw.Draw(lienzo)
     ancho = ANCHO - 2 * MARGEN
-    ft, lt, st = acomodar(c['cierre']['titulo'], 'Black', 96, 56, ancho, 560, d, 1.08)
-    fc, lc, sc = acomodar(c['cierre']['texto'], 'Medium', 50, 32, ancho, 360, d, 1.35)
-    y = (ALTO - (len(lt) * st + 60 + len(lc) * sc)) // 2
+    foto_cara = cara_para(c, n) if c.get('caras', True) else None
+    arriba = 0
+    if foto_cara:  # Victoria pregunta: su cara arriba, como si te hablara ella
+        im = cara(foto_cara, 230, NEGRO)
+        lienzo.paste(im, (MARGEN, 110), im)
+        d.text((MARGEN + im.width + 28, 110 + im.height // 2 - 50), 'Victoria', font=letra('Black', 52), fill=NEGRO)
+        d.text((MARGEN + im.width + 28, 110 + im.height // 2 + 12), 'y Capital', font=letra('Medium', 36), fill=NEGRO)
+        arriba = 110 + im.height + 40
+    ft, lt, st = acomodar(c['cierre']['titulo'], 'Black', 96, 56, ancho, 560 - (arriba and 120), d, 1.08)
+    fc, lc, sc = acomodar(c['cierre']['texto'], 'Medium', 50, 32, ancho, 360 - (arriba and 60), d, 1.35)
+    y = max(arriba, (ALTO - (len(lt) * st + 60 + len(lc) * sc)) // 2 + arriba // 3)
     y = escribir(d, (MARGEN, y), lt, ft, st, NEGRO) + 60
     escribir(d, (MARGEN, y), lc, fc, sc, NEGRO)
     pie(d, n, total, NEGRO)
