@@ -285,5 +285,12 @@
   "tipo": "contenido",
   "aprendizaje": "Rodrigo: \"seguimos MUY MAL, nadie nos sigue, comentan, nada\". A 11 días: ~500 vistas por publicación, casi cero comentarios reales, 0 suscriptores nuevos. Diagnóstico: datos genéricos sin opinión, preguntas que se contestan en la cabeza (\"¿Ya lo sabías?\", \"Te leo\") y nadie contesta en Instagram ni TikTok.",
   "regla": "docs/PERSONAJE.md manda en el tono: portada con postura (portada.gancho_tipo), cierre con pregunta de una palabra o un número y \"Te contesto a todos\"; Rodrigo contesta en Instagram y TikTok con las Respuestas rápidas del panel. La auditoría compara vistas de TikTok a ~48 h por gancho_tipo; el que gane pasa a los guiones de video."
+ },
+ {
+  "fecha_utc": "2026-11-09T06:30:00Z",
+  "origen": "Rodrigo",
+  "tipo": "contenido",
+  "aprendizaje": "Rodrigo quiere más formatos donde salga Victoria sin gastar créditos. Hechos: cara de Victoria en cada diapositiva y en el cierre de los carruseles (assets/fotos/caras.json), video \"calcúlalo conmigo\" (grabación de la calculadora + voz clonada + cara en círculo + subtítulos, 26 s, plan C1), calculadora de finiquito y carruseles Mito o verdad.",
+  "regla": "Formatos de 0 créditos: carrusel con cara de Victoria, calcúlalo conmigo (scripts/grabar_calculadora.js), Mito o verdad, Victoria responde (cuando haya comentarios). Videos de Wan solo para los temas fuertes."
  }
 ]

@@ -1839,6 +1839,67 @@
    }
   },
   {
+   "id": "C1",
+   "estado": "listo_para_publicar",
+   "pilar": "finanzas",
+   "formato": "calculadora_en_pantalla",
+   "palabras_clave": [
+    "aguinaldo",
+    "7,500",
+    "impuesto"
+   ],
+   "fuente": "Ley Federal del Trabajo, art. 87 (15 días); Ley del ISR, art. 93 fr. XIV (30 UMA); UMA 2026 $117.31 (INEGI)",
+   "locacion": "pantalla",
+   "vestuario": "",
+   "accion": "Grabación de la calculadora de aguinaldo con la cara de Victoria en la esquina y su voz clonada.",
+   "hora_publicacion": "rotacion",
+   "texto_post": "Calcula tu aguinaldo 2026 en 10 segundos. 🧮\nCon $15,000 al mes te tocan mínimo $7,500 (15 días de salario) y los primeros $3,519.30 no pagan ISR. Pon tu sueldo y sale solo.\n\n📚 Ley Federal del Trabajo, art. 87 · Ley del ISR, art. 93 fr. XIV · INEGI, UMA 2026",
+   "seo": {
+    "palabra_clave": "calcular aguinaldo 2026",
+    "titulo": "Calcular aguinaldo 2026 en 10 segundos 🧮",
+    "descripcion_inicio": "Calcular aguinaldo 2026: pon tu sueldo mensual y la calculadora te dice cuánto te toca (mínimo 15 días) y cuánto queda libre de ISR ($3,519.30).\nCalculadora gratis: https://victoriatheceo.vercel.app/aguinaldo?ref=yt",
+    "tags_concretas": [
+     "calcular aguinaldo 2026",
+     "calculadora de aguinaldo",
+     "cuanto me toca de aguinaldo",
+     "aguinaldo 2026",
+     "aguinaldo 15 dias",
+     "aguinaldo 15000",
+     "aguinaldo isr 2026",
+     "como calcular el aguinaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#calculadora",
+     "#dinero"
+    ],
+    "parrafo": "El aguinaldo mínimo son 15 días de salario (artículo 87 de la Ley Federal del Trabajo) y se paga antes del 20 de diciembre. Para sacarlo divide tu sueldo mensual entre 30 y multiplícalo por 15. Con $15,000 al mes son $7,500. Los primeros $3,519.30 (30 UMA de 2026) no pagan ISR.",
+    "preguntas": [
+     "¿Cómo calculo mi aguinaldo 2026?",
+     "¿Cuánto aguinaldo me toca si gano 15 mil?",
+     "¿Cuánto del aguinaldo paga ISR?"
+    ]
+   },
+   "adn": {
+    "tipo_gancho": "pregunta"
+   },
+   "llamado": "aguinaldo",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-19"
+   },
+   "duracion": 26,
+   "texto_pantalla": "Calcula tu aguinaldo en 10 segundos",
+   "pregunta_comentarios": "¿Cuánto te salió? Comenta el número.",
+   "guardar_para": "cuando te paguen el aguinaldo",
+   "archivo": "videos/calcula-aguinaldo-FINAL.mp4",
+   "creditos": 0,
+   "qa": {
+    "notas": "9-nov-2026: grabación de pantalla de la calculadora en vivo (Playwright) con la voz clonada de Victoria (texto 0.92–1.00), cara en círculo y subtítulos. Revisados 5 cuadros: la voz coincide con lo que se ve (15000 → $7,500 → libre de ISR $3,519.30). 0 créditos."
+   }
+  },
+  {
    "id": "19",
    "estado": "publicado",
    "pilar": "finanzas",
