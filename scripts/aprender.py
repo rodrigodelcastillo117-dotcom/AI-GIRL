@@ -919,7 +919,8 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
     if orden:
         generados = [e for e in orden if e['tipo'] == 'generar' and e.get('creditos_usados')]
         costo = statistics.mean(e['creditos_usados'] for e in generados) if generados else 540
-        alcanzan = int(orden[-1]['creditos_restantes'] // costo)
+        ultimo = next((e['creditos_restantes'] for e in reversed(orden) if e.get('creditos_restantes') is not None), 0)
+        alcanzan = int(ultimo // costo)
         if alcanzan < 7:
             dias = alcanzan * config.get('dias_entre_videos', 2)
             lista.append(f'Créditos para {alcanzan} videos (unos {dias} días al ritmo actual). Recargar OpenArt.')
@@ -955,7 +956,10 @@ def presupuesto(plan, ejecuciones, config, hoy):
     quedemos con 100 al final"). Videos que faltan = uno cada dias_entre_videos hasta renovacion_creditos."""
     if not ejecuciones or not config.get('renovacion_creditos'):
         return None
-    restantes = sorted(ejecuciones, key=lambda e: e['fecha_utc'])[-1]['creditos_restantes']
+    con_dato = [e for e in ejecuciones if e.get('creditos_restantes') is not None]  # 9-nov: una ejecución sin dato no rompe la auditoría
+    if not con_dato:
+        return None
+    restantes = sorted(con_dato, key=lambda e: e['fecha_utc'])[-1]['creditos_restantes']
     renovacion = datetime.date.fromisoformat(config['renovacion_creditos'])
     while renovacion <= hoy:  # el ciclo se repite cada mes
         renovacion = (renovacion.replace(day=1) + datetime.timedelta(days=32)).replace(day=min(renovacion.day, 28))
