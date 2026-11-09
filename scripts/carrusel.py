@@ -284,9 +284,11 @@ def meme(diapo, n, total, c):
     caras = json.load(open(os.path.join(RAIZ, 'assets', 'fotos', 'caras.json')))
     x, y, w, h = caras.get(os.path.basename(foto), [0.35, 0.2, 0.3, 0.2])
     W, H = im.size
-    escala = max(ANCHO / W, ALTO / H) * 1.12  # un poco de zoom para que la cara mande
+    escala = max(ANCHO / W, ALTO / H) * diapo.get('zoom', 1.12)  # un poco de zoom para que la cara mande
     im = im.resize((int(W * escala), int(H * escala)), Image.LANCZOS)
     cx, cy = (x + w / 2) * im.width, (y + h / 2) * im.height
+    if diapo.get('foco') is not None:  # punto vertical a centrar (0-1), p. ej. entre Victoria y Capital
+        cy = diapo['foco'] * im.height + ALTO * 0.42 - ALTO / 2
     izq = int(min(max(cx - ANCHO / 2, 0), im.width - ANCHO))
     arr = int(min(max(cy - ALTO * 0.42, 0), im.height - ALTO))
     lienzo = im.crop((izq, arr, izq + ANCHO, arr + ALTO))

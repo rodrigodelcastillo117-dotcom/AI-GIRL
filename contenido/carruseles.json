@@ -2940,6 +2940,94 @@
    },
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_finiquito_mitos.md); correcciones aplicadas.",
    "personaje": "2026-11-09: formato Mito o verdad (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c51",
+   "estado": "listo",
+   "tema": "capital_juzga_gastos",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "portada": {
+    "foto": "assets/fotos/capital-tarjeta.jpg",
+    "etiqueta": "CAPITAL JUZGA TUS GASTOS",
+    "titulo": "Capital juzga tus gastos (y no tiene piedad)",
+    "voz": "Capital juzga tus gastos, y no tiene piedad. A ver cuántos te tocan.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/enero-oficina-casa.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/capital-cafe.jpg",
+     "foco": 0.62,
+     "zoom": 1.0,
+     "titulo": "Capital viendo tu café de todos los días",
+     "texto": "Los gastos hormiga pueden comerse hasta 12% de tu ingreso. Anota todo una semana.\n\nCondusef",
+     "voz": "Capital viendo tu café de todos los días. Los gastos hormiga se comen hasta el doce por ciento."
+    },
+    {
+     "meme": "assets/fotos/capital-tarjeta.jpg",
+     "foco": 0.4,
+     "zoom": 1.0,
+     "titulo": "Capital cuando sacas la tarjeta para \"un gustito\"",
+     "texto": "Si no la pagas completa cada mes, ese gustito te cobra intereses.\n\nCondusef",
+     "voz": "Capital cuando sacas la tarjeta para un gustito. Si no la pagas completa, te cobra intereses."
+    },
+    {
+     "meme": "assets/fotos/capital-no-presta.jpg",
+     "foco": 0.5,
+     "zoom": 1.0,
+     "titulo": "Capital cuando tu primo te pide prestado \"nomás hasta la quincena\"",
+     "texto": "Presta solo lo que puedas perder. Si no regresa, que no te deje sin renta.\n\nOpinión de Victoria",
+     "voz": "Capital cuando tu primo te pide prestado. Presta solo lo que puedas perder."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Capital cuando le enseñas tu lista de regalos",
+     "texto": "Si el regalo no cabe en tu presupuesto, es deuda con moño.\n\nOpinión de Victoria",
+     "voz": "Capital cuando le enseñas tu lista de regalos. Si no cabe en tu presupuesto, es deuda con moño."
+    },
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "Capital cuando dices \"a meses sin intereses no cuenta\"",
+     "texto": "Sí cuenta: suma tus mensualidades antes de comprar otra.\n\nCondusef",
+     "voz": "Capital cuando dices que a meses sin intereses no cuenta. Sí cuenta: suma tus mensualidades."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas veces te juzgaría Capital? Comenta del 0 al 5.",
+    "texto": "Mándaselo a quien siempre dice \"nomás es un cafecito\".\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas veces te juzgaría Capital? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef: los gastos hormiga pueden representar hasta 12% del ingreso (mismo dato del carrusel c08, ya revisado). Condusef: pagar el total de la tarjeta cada mes evita intereses (c31, revisado; https://www.gob.mx/condusef/articulos/como-pagas-tu-tarjeta-de-credito). Condusef Buen Fin 2025 (13-nov-2025): si tienes más de una compra a meses sin intereses, suma las mensualidades (c24, revisado). Las otras dos son opiniones de Victoria y lo dicen.",
+   "titulo_post": "Capital juzga tus gastos",
+   "texto_post": "Capital juzga tus gastos y no tiene piedad. 🐾\n1. El café diario: los gastos hormiga pueden comerse hasta 12% de tu ingreso (Condusef).\n2. La tarjeta para \"un gustito\": si no la pagas completa, te cobra intereses.\n3. El primo que pide \"nomás hasta la quincena\": presta solo lo que puedas perder.\n4. La lista de regalos: si no cabe en tu presupuesto, es deuda con moño.\n5. \"A meses no cuenta\": sí cuenta, suma tus mensualidades.\nCapital no presta dinero, ni a la familia.\n\n📚 Condusef\n💬 ¿Cuántas veces te juzgaría Capital? Comenta del 0 al 5. Te contesto a todos.\n🔖 Guárdalo para la próxima vez que vayas a pagar con tarjeta.\n📩 Mándaselo a quien siempre dice \"nomás es un cafecito\".",
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "Gastos hormiga que Capital juzga 🐾",
+    "tags_concretas": [
+     "gastos hormiga",
+     "que son los gastos hormiga",
+     "como ahorrar dinero",
+     "tarjeta de credito intereses",
+     "meses sin intereses",
+     "prestar dinero a familiares",
+     "memes de dinero",
+     "rottweiler"
+    ],
+    "hashtags": [
+     "#gastoshormiga",
+     "#ahorro",
+     "#memes",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Qué son los gastos hormiga?",
+     "¿Cuánto se gasta en gastos hormiga?",
+     "¿Los meses sin intereses son deuda?"
+    ]
+   },
+   "revision": "9-nov-2026: los tres datos ya pasaron revisión en c08, c24 y c31; lo demás son opiniones marcadas.",
+   "personaje": "2026-11-09: serie Capital juzga (fotos de Capital con cara de juicio)"
   }
  ]
 }
