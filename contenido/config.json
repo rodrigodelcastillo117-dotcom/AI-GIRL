@@ -424,5 +424,18 @@
   "39",
   "41"
  ],
- "nota_prioridad_videos": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México. Los de temporada (aguinaldo) siguen yendo antes por su ventana. Quitar o cambiar cuando renueven créditos."
+ "nota_prioridad_videos": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México. Los de temporada (aguinaldo) siguen yendo antes por su ventana. Quitar o cambiar cuando renueven créditos.",
+ "largo_tematico": {
+  "titulo": "Aguinaldo 2026: todo lo que necesitas saber",
+  "desde": "2026-12-01",
+  "videos": [
+   "19",
+   "17",
+   "18",
+   "20",
+   "21"
+  ],
+  "hecho": false,
+  "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20."
+ }
 }

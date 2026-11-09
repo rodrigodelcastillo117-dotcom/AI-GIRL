@@ -922,6 +922,12 @@ def alertas(plan, ranking, notas, ejecuciones, config, hoy):
                              'comentarios, visitas al perfil) y decide con Rodrigo si se queda.')
         else:
             lista.append(f"Prueba de voz íntima: {len(intimos)} de {prueba.get('videos', 3)} videos publicados.")
+    largo = config.get('largo_tematico')  # 9-nov-2026: video largo por tema para búsquedas de YouTube
+    if largo and not largo.get('hecho') and hoy.isoformat() >= largo['desde']:
+        listos = [i for i in largo['videos'] if any(v['id'] == i and v['estado'] == 'publicado' for v in plan['videos'])]
+        lista.append(f"Video largo \"{largo['titulo']}\": {len(listos)} de {len(largo['videos'])} videos ya publicados "
+                     f"({', '.join(listos) or 'ninguno'}). Armarlo con compilar.py probar {' '.join(listos)} cuando pase de 3 min "
+                     "y subirlo como largo (PIPELINE 1d); luego poner hecho: true en config.json → largo_tematico.")
     fallas = [e for e in orden[-5:] if e['resultado'] == 'fallido']
     if len(fallas) >= 2:
         lista.append(f'{len(fallas)} de las últimas 5 ejecuciones fallaron: revisar antes de gastar más créditos.')
