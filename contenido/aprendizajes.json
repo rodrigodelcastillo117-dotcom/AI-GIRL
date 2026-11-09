@@ -306,5 +306,12 @@
   "tipo": "contenido",
   "aprendizaje": "Primer hit: c16 \"Guarda esto: tu aguinaldo 2026 en 5 datos\" llegó a 3,361 vistas en TikTok en 15.6 h (59 likes, 14 compartidos), 7 veces lo mejor anterior (c01, 607). Tema de temporada (aguinaldo) + promesa de guardar + 5 datos concretos con fecha y cifra.",
   "regla": "Repetir el formato \"Guarda esto: ___ en 5 datos\" en temas de temporada (aguinaldo parte 2, si te corren en diciembre, quincena de diciembre). Cuando una pieza rompe en TikTok, ese mismo día va como Reel a Instagram y se propone para empujar con dinero el viernes."
+ },
+ {
+  "fecha_utc": "2026-11-09T16:00:00Z",
+  "origen": "Rodrigo",
+  "tipo": "tecnico",
+  "aprendizaje": "Instagram conectado para comentarios: app de Meta \"Victoria Comentarios\" con token de usuario del sistema (no caduca), guardado como secreto de red del entorno para graph.facebook.com (no está en el repo). La cuenta es @victoriatheceo (id 17841478105608541; en Publer sigue con el nombre viejo \"Nadie Te lo Explicó\"). Leer y contestar probado el 9-nov.",
+  "regla": "Comentarios de Instagram: python3 scripts/comentarios_ig.py pendientes / responder <id> \"texto\" (mismas reglas que YouTube). Corre cada 2 h en la tarea de comentarios. Si da 401/403, el token se revocó: pedirle a Rodrigo uno nuevo con request_credential, nunca por chat."
  }
 ]

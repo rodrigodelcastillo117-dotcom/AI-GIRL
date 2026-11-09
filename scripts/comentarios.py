@@ -3,8 +3,8 @@
 Uso: python comentarios.py pendientes                 comentarios de otros sin respuesta del canal
      python comentarios.py responder <id> "texto"     responde como el canal
 
-Contestar rápido mueve el algoritmo (más conversación = más alcance). Instagram y TikTok se
-contestan a mano en la app: sus APIs no están conectadas aquí.
+Contestar rápido mueve el algoritmo (más conversación = más alcance). Instagram: scripts/comentarios_ig.py
+(desde el 9-nov-2026). TikTok se contesta a mano: su API no deja responder comentarios.
 Reglas de la respuesta (las escribe quien corre la rutina, nunca una plantilla fija):
 - Corta (1-2 frases), en la voz de Victoria, en español de México, y que invite a seguir hablando.
 - Nunca una recomendación de inversión concreta, ni consejo médico o legal personal (regla del canal).
