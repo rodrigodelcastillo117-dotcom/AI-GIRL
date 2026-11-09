@@ -32,7 +32,10 @@ from faster_whisper import WhisperModel
 from num2words import num2words
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REFERENCIA = os.path.join(RAIZ, 'assets', 'voz-referencia.mp3')
+# Rodrigo, 9-nov-2026 ("más femenina, que vaya con la cara de Victoria"), eligió la "E": se clona la voz de sus videos
+# recientes (audio del video 18, voz cálida e íntima) y se dice más suave. La de antes: assets/voz-referencia.mp3.
+REFERENCIA = os.path.join(RAIZ, 'assets', 'voz-referencia-intima.wav')
+ESTILO = {'exaggeration': 0.4, 'cfg_weight': 0.35}  # más suave y pausada (tono medio ~244 Hz contra 217 de antes)
 INTENTOS = 3
 PARECIDO_TEXTO, PARECIDO_VOZ, PARECIDO_VOZ_MX = 0.85, 0.80, 0.82  # la convertida midió 0.88 el 4-nov; en las pruebas del 31-oct: frases buenas 0.93-1.0 y voz 0.90-0.95
 
@@ -98,7 +101,7 @@ def main():
         mejor = None
         for intento in range(INTENTOS):
             torch.manual_seed(1000 + intento)
-            wav = modelo.generate(f['texto'], language_id='es', audio_prompt_path=referencia)
+            wav = modelo.generate(f['texto'], language_id='es', audio_prompt_path=referencia, **ESTILO)
             audio_16k = librosa.resample(wav.squeeze(0).numpy(), orig_sr=modelo.sr, target_sr=16000)
             dicho = ' '.join(s.text.strip() for s in oido.transcribe(audio_16k, language='es')[0])
             nota = (parecido_texto(f['texto'], dicho), float(np.dot(voz_victoria, huella(audio_16k))))
