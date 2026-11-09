@@ -14,6 +14,7 @@
     ['SÍ / YA', '¡Eso! 🙌 Guárdalo para cuando alguien te pregunte, y mándaselo a quien todavía no lo sabe.'],
     ['NO / NUNCA', 'Hoy es buen día para empezar 😉 Guárdalo y revísalo esta semana; cualquier duda me escribes aquí.'],
     ['UN NÚMERO', 'Gracias por contarme. Con ese dato ya sabes dónde estás; el siguiente paso está en el post 🐾'],
+    ['COMENTARON SU PROFESIÓN', '¡Anotada! 📝 La reviso con datos oficiales en una de las siguientes partes de la serie. Sígueme para que no te la pierdas 🐾'],
     ['TE HACEN UNA PREGUNTA', 'Muy buena pregunta. Te contesto con un post esta semana: sígueme para que no te lo pierdas.'],
     ['PIDEN DÓNDE INVERTIR', 'No doy recomendaciones de inversión: te explico cómo funciona cada cosa para que tú decidas con datos.'],
   ];
@@ -57,7 +58,9 @@
     const parte = dias < 365 ? ` por ${dias} días trabajados (la parte proporcional)` : '';
     document.getElementById('r-texto').textContent =
       `Con ${pesos(s)} al mes te tocan mínimo ${pesos(ag)} brutos de aguinaldo${parte}: 15 días de salario. ` +
-      `Los primeros ${pesos(EXENTO)} van sin ISR. Te lo deben pagar antes del 20 de diciembre 🔖`;
+      `Los primeros ${pesos(EXENTO)} van sin ISR. Te lo deben pagar antes del 20 de diciembre 🔖 ` +
+      `Y tu sueldo, así lo repartiría yo (mi regla 50/30/20): ${pesos(s * 0.5)} a lo necesario, ${pesos(s * 0.3)} a gustos ` +
+      `y ${pesos(s * 0.2)} a ahorro y deudas. Capital ya apartó lo suyo 🐾`;
   };
   calc.addEventListener('input', actualizar);
 
