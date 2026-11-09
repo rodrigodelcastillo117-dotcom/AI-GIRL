@@ -56,3 +56,11 @@ td.num, th.num { text-align: right; white-space: nowrap; }
 @media (max-width: 560px) { .deuda { grid-template-columns: 1fr 1fr; } .deuda label:first-child { grid-column: 1 / -1; } }
 .secundario { background: transparent; color: var(--crema); border: 1px solid var(--linea); font-weight: 600; }
 footer { padding: 24px 0 48px; color: var(--tenue); font-size: .75rem; line-height: 1.6; border-top: 1px solid var(--linea); }
+/* Ejemplos por sueldo (9-nov-2026) */
+.ejemplos .tabla { overflow-x: auto; margin: 14px 0; }
+.ejemplos table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.ejemplos th, .ejemplos td { padding: 8px 6px; text-align: right; border-bottom: 1px solid rgba(255,255,255,.12); white-space: nowrap; }
+.ejemplos th:first-child, .ejemplos td:first-child { text-align: left; }
+.ejemplos th { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; opacity: .8; }
+.ejemplos h3 { margin: 18px 0 6px; }
+.ejemplos p { margin: 0; line-height: 1.55; }

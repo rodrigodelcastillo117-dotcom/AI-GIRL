@@ -19,7 +19,11 @@ DOMINIO = 'https://victoriatheceo.vercel.app'
 
 # UMA diaria 2026: INEGI, comunicado 1/26 (DOF 9-ene-2026), vigente desde el 1-feb-2026.
 UMA_DIARIA = 117.31
-TOPE_EXENTO_AGUINALDO = round(30 * UMA_DIARIA, 2)  # LISR art. 93, fr. XIV: 30 días -> $3,519.30
+TOPE_EXENTO_AGUINALDO = round(30 * UMA_DIARIA, 2)
+# Conasami, salarios mínimos 2026 (DOF 9-dic-2025): general y zona libre de la frontera norte.
+SALARIO_MINIMO_2026 = 315.04
+SALARIO_MINIMO_FRONTERA_2026 = 440.87
+FUENTE_CONASAMI = ('Conasami, salarios mínimos 2026 (DOF 9-dic-2025)', 'https://www.gob.mx/conasami')  # LISR art. 93, fr. XIV: 30 días -> $3,519.30
 
 FUENTE_LFT = ('Ley Federal del Trabajo, artículo 87 (Cámara de Diputados)', 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf')
 FUENTE_LISR = ('Ley del Impuesto sobre la Renta, artículo 93, fracción XIV (Cámara de Diputados)', 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf')
@@ -103,8 +107,10 @@ alCambiar('calculadora', calcular);''',
             ('¿Cómo sacan mi salario diario?', 'Aquí dividimos tu sueldo mensual entre 30, que es lo más común. Tu recibo puede usar otro cálculo; si no te cuadra, pregúntale a tu área de nómina.'),
             ('¿Y si trabajo para el gobierno?', 'Puede aplicarte otra ley con más días de aguinaldo. Pon tus días en el campo y el cálculo se ajusta.'),
             ('¿Y si no me pagan?', 'Puedes pedir asesoría gratuita en la Procuraduría Federal de la Defensa del Trabajo (PROFEDET).'),
+            ('¿Cuánto aguinaldo me toca si gano 10 mil pesos al mes?', 'Con los 15 días de ley y el año completo: $10,000 ÷ 30 × 15 = $5,000 brutos. Los primeros $3,519.30 no pagan ISR.'),
+            ('¿Cuánto aguinaldo me toca con el salario mínimo?', 'En 2026 el salario mínimo general es de $315.04 diarios: 15 días son $4,725.60. En la frontera norte, $440.87 diarios: $6,613.05.'),
         ],
-        'fuentes': [FUENTE_LFT, FUENTE_LISR, FUENTE_UMA],
+        'fuentes': [FUENTE_LFT, FUENTE_LISR, FUENTE_UMA, FUENTE_CONASAMI],
         'compartir': 'Calcula cuánto te toca de aguinaldo y cuánto paga ISR, gratis:',
     },
     {
@@ -382,6 +388,40 @@ VISTA_PREVIA = {
 FUENTES_INTER = '/usr/share/fonts/opentype/inter'
 
 
+def extra_aguinaldo():
+    """Ejemplos por sueldo (9-nov-2026): la gente busca "aguinaldo si gano 10 mil"; Google premia la respuesta directa."""
+    filas = ''
+    for sueldo in (8000, 10000, 12000, 15000, 20000, 25000, 30000):
+        ag = sueldo / 30 * 15
+        exento = min(ag, TOPE_EXENTO_AGUINALDO)
+        filas += (f'<tr><td>${sueldo:,.0f}</td><td>${ag:,.0f}</td><td>${exento:,.0f}</td>'
+                  f'<td>${ag - exento:,.0f}</td></tr>')
+    sm = SALARIO_MINIMO_2026 * 15
+    smf = SALARIO_MINIMO_FRONTERA_2026 * 15
+    return f"""
+    <section class="ejemplos">
+      <div class="etiqueta">Ejemplos 2026</div>
+      <h2>¿Cuánto aguinaldo me toca si gano…?</h2>
+      <p class="lema" style="margin:0">Brutos, con los 15 días mínimos de ley, todo el año trabajado y sueldo mensual entre 30 (cifras redondeadas).
+      La parte gravada paga ISR según tu tabla; tu empresa te lo retiene.</p>
+      <div class="tabla"><table>
+        <thead><tr><th>Sueldo/mes</th><th>Aguinaldo</th><th>Sin ISR</th><th>Con ISR</th></tr></thead>
+        <tbody>{filas}</tbody>
+      </table></div>
+      <h3>Con el salario mínimo</h3>
+      <p>Salario mínimo general 2026: ${SALARIO_MINIMO_2026:,.2f} diarios × 15 = <b>${sm:,.2f}</b>. En la zona libre de la
+      frontera norte: ${SALARIO_MINIMO_FRONTERA_2026:,.2f} × 15 = <b>${smf:,.2f}</b>.</p>
+      <h3>Si no trabajaste todo el año</h3>
+      <p>Se paga la parte proporcional: aguinaldo × días trabajados ÷ 365. Ejemplo: $15,000 al mes y 200 días trabajados:
+      $7,500 × 200 ÷ 365 = <b>${7500 * 200 / 365:,.2f}</b>. Te toca aunque ya no trabajes ahí.</p>
+      <h3>Cómo se calcula, paso a paso</h3>
+      <p>1. Salario diario = sueldo mensual ÷ 30. 2. Aguinaldo = salario diario × 15 (o los días que dé tu empresa).
+      3. Si no completaste el año, multiplica por días trabajados ÷ 365. 4. Los primeros ${TOPE_EXENTO_AGUINALDO:,.2f}
+      (30 UMA) no pagan ISR.</p>
+    </section>
+"""
+
+
 def vista_previa(slug, titulo, subtitulo):
     ancho, alto, foto_ancho = 1200, 630, 470
     lienzo = Image.new('RGB', (ancho, alto), (11, 11, 13))
@@ -457,7 +497,7 @@ PLANTILLA = '''<!doctype html>
       </div>
       <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
     </div>
-
+{extra}
     <section>
       <div class="venta">
         <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
@@ -525,7 +565,7 @@ def pagina(h):
     return PLANTILLA.format(
         titulo=e(h['titulo']), descripcion=e(h['descripcion']), url=url, dominio=DOMINIO, h1=h['h1'], lema=e(h['lema']),
         formulario=h['formulario'], resultado=h['resultado'], venta_titulo=e(h['venta_titulo']), venta_texto=e(h['venta_texto']),
-        faq=faq, menu=menu(h['slug']), fuentes=fuentes, script=h['script'], slug=h['slug'], compartir=h['compartir'],
+        faq=faq, extra=extra_aguinaldo() if h['slug'] == 'aguinaldo' else '', menu=menu(h['slug']), fuentes=fuentes, script=h['script'], slug=h['slug'], compartir=h['compartir'],
         datos_estructurados=json.dumps(datos, ensure_ascii=False).replace('</', '<\\/'))
 
 
