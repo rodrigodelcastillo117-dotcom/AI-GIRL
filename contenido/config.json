@@ -455,5 +455,12 @@
    4
   ],
   "nota": "9-nov-2026, Rodrigo: \"usar sonidos... y de vez en cuando sonidos de biblioteca\". Martes y viernes, el Reel de la mañana NO lo sube Publer: la rutina le manda a Rodrigo reel-limpio.mp4 (sin música) y el texto, y él lo sube desde Instagram con un sonido de la biblioteca, bajito. Facebook y YouTube salen solos con la música de fondo. TikTok ya pone música de su biblioteca a los carruseles (auto_add_music)."
- }
+ },
+ "prioridad_carruseles": [
+  "c27",
+  "c41",
+  "c28",
+  "c29"
+ ],
+ "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Estos salen primero en TikTok (y de ahí a las demás redes); se quitan solos de la cola cuando ya salieron."
 }

@@ -788,7 +788,10 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
 
     # TikTok: los primeros que no han salido ahí (temporada primero).
     ocupadas = ya_hoy('tt')
-    pendientes_tt = sorted((c for c in carruseles if falta(c, 'tt')), key=lambda c: 0 if c.get('ventana') else 1)
+    # config → prioridad_carruseles va primero (9-nov-2026: la serie de parejas llevaba días atorada detrás de la temporada)
+    prioridad = config.get('prioridad_carruseles', [])
+    pendientes_tt = sorted((c for c in carruseles if falta(c, 'tt')),
+                           key=lambda c: (prioridad.index(c['id']) if c['id'] in prioridad else len(prioridad) + (0 if c.get('ventana') else 1)))
     if len(ocupadas) >= cupos['tt']:
         salida['notas'].append(f'TikTok ya tiene sus {len(ocupadas)} publicaciones de hoy.')
     while pendientes_tt and len(ocupadas) < cupos['tt']:
