@@ -3,9 +3,10 @@ const REDES = [
   {clave: 'yt', nombre: 'YouTube', corto: 'YT', color: '#ff3b55'},
   {clave: 'tt', nombre: 'TikTok', corto: 'TT', color: '#facc15'},
   {clave: 'ig', nombre: 'Instagram', corto: 'IG', color: '#a855f7'},
+  {clave: 'fb', nombre: 'Facebook', corto: 'FB', color: '#1877f2'},  // página "Victoria the CEO" desde el 9-nov-2026
 ];
 const ESTADOS = {pendiente: ['En cola', ''], reserva: ['En reserva', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', '']};
-const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube'};
+const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube', fb: 'Facebook'};
 // Todo lo que sale: videos y carruseles (los dos se miden en vivo).
 const todo = () => [...FOTO.videos, ...(FOTO.carruseles || [])];
 const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación $'};
@@ -82,7 +83,7 @@ async function arrancar(conAnimacion) {
     await consola([
       ['Autenticando operador', true],
       ['Enlace con YouTube', Boolean(vivo) && !vivo.errores?.some((x) => x.startsWith('YouTube'))],
-      ['Enlace con Publer (TikTok · Instagram)', Boolean(vivo) && !vivo.errores?.some((x) => x.startsWith('Publer'))],
+      ['Enlace con Publer (TikTok · Instagram · Facebook)', Boolean(vivo) && !vivo.errores?.some((x) => x.startsWith('Publer'))],
       [`Cargando ${foto.videos.length} videos del plan`, true],
       [`Reactor de créditos: ${fmt(resumen().restantes)}`, true],
       ['Centro de mando en línea', true],
@@ -241,7 +242,7 @@ function dibujarTodo() {
   $('aviso').hidden = !errores.length;
   $('aviso').textContent = errores.length ? `Conexión en vivo incompleta: ${errores.join(' · ')}. Se muestran los últimos números guardados.` : '';
   $('pulso').classList.toggle('falla', errores.length > 0);
-  $('pie').textContent = `YouTube en vivo · TikTok e Instagram vía Publer · última foto del sistema: ${mx(estado.generado_utc)} · créditos según la última ejecución`;
+  $('pie').textContent = `YouTube en vivo · TikTok, Instagram y Facebook vía Publer · última foto del sistema: ${mx(estado.generado_utc)} · créditos según la última ejecución`;
 
   dibujarRedes();
   dibujarLaboratorio(FOTO.auditoria || {});
@@ -308,7 +309,7 @@ function retencionPromedio() {
 }
 
 function seguidoresDe(clave) {
-  // YouTube en vivo por su API; Instagram y TikTok por Publer (último dato semanal).
+  // YouTube en vivo por su API; Instagram, TikTok y Facebook por Publer (último dato semanal).
   const n = clave === 'yt' ? VIVO?.canal?.suscriptores : VIVO?.seguidores?.[clave]?.seguidores;
   const antes = VIVO?.seguidores?.[clave]?.antes;
   const cambio = n != null && antes != null && n !== antes ? ` (${n > antes ? '+' : ''}${fmt(n - antes)} en 3 semanas)` : '';
@@ -485,7 +486,7 @@ function avatar3d() {
 
 // ---------- centro de operaciones (todo con datos reales) ----------
 const METAS = [1000, 10000, 100000, 1000000];
-const NOTA_META = {tt: {1000: 'enlace en la bio', 10000: 'TikTok empieza a pagar'}, ig: {10000: 'marcas y colaboraciones'}};
+const NOTA_META = {tt: {1000: 'enlace en la bio', 10000: 'TikTok empieza a pagar'}, ig: {10000: 'marcas y colaboraciones'}, yt: {1000: 'YouTube empieza a pagar (con las vistas o horas que pide)'}};
 const SVG = 'http://www.w3.org/2000/svg';
 const svgEl = (etiqueta, attrs = {}, ...hijos) => { const el = document.createElementNS(SVG, etiqueta); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...hijos); return el; };
 
@@ -629,7 +630,7 @@ function dibujarCalendario(filas = []) {
     return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
       celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
       celda({carrusel: 'Carrusel', reel: 'Reel IG'}[f.tipo] || 'Video'), celda(f.que),
-      celda(horas.ig || '—', 'n'), celda(horas.tt || '—', 'n'), celda(horas.yt || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
+      celda(horas.ig || '—', 'n'), celda(horas.tt || '—', 'n'), celda(horas.yt || '—', 'n'), celda(horas.fb || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
   }));
 }
 
@@ -659,7 +660,7 @@ function dibujarCarruseles(lista = []) {
     const m = medidas(c);
     const red = (clave) => celda(salio(c) && m[clave] ? fmt(m[clave].v) : '', 'n');
     return crear('tr', {}, celda(c.id), chip(c.estado), celda(c.tema), celda(c.gancho), celda(horas || '—'),
-      red('ig'), red('tt'), red('yt'), celda(salio(c) && medido(c) ? fmt(vistasDe(c)) : '', 'n'));
+      red('ig'), red('tt'), red('yt'), red('fb'), celda(salio(c) && medido(c) ? fmt(vistasDe(c)) : '', 'n'));
   }));
 }
 

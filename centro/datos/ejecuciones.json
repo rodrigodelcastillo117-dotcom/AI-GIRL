@@ -178,5 +178,14 @@
   "creditos_usados": 0,
   "creditos_restantes": 4449,
   "detalle": "Rutina 8-nov (día de video 17, ya programado desde el 6-nov: TikTok 11:00, Instagram y YouTube 12:00). c16 en TikTok 15:00 y su short en YouTube 17:00 (prueba, playlist aguinaldo). No se generó video: el 18 está listo_para_publicar (estaba mal marcado como 'listo'). Arreglado: la auditoría contaba el video del día como short de carrusel. Voz de c16: PROFEDET -> nombre completo. 12 videos de YouTube restaurados de la automatización de Errores invisibles."
+ },
+ {
+  "fecha_utc": "2026-11-09T13:40:00Z",
+  "tipo": "carrusel",
+  "video_id": null,
+  "resultado": "programado",
+  "creditos_usados": 60,
+  "creditos_restantes": 4209,
+  "detalle": "Rutina 9-nov (lunes, primer día como manager): TikTok c12 9:00 y c11 13:00 (primer día con 2 carruseles); Reel de Instagram c16 15:00 (cambiado de c09 por el hit de c16: 3,361 vistas en TikTok en 15 h, 14 compartidos); short de c11 en YouTube 20:00. c04 marcado fuera de tema. Escritos c52-c54 'Guarda esto' (en revisión). 60 créditos en 3 fotos de Capital (9-nov madrugada)."
  }
 ]

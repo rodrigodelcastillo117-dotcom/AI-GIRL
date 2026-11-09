@@ -259,7 +259,7 @@ async function seguidores(estado) {
   const desde = new Date(hoy.getTime() - 21 * 864e5);
   const datos = {};
   await Promise.all(Object.entries(estado.cuentas_publer || {}).map(async ([id, red]) => {
-    const corto = {instagram: 'ig', tiktok: 'tt'}[red];
+    const corto = {instagram: 'ig', tiktok: 'tt', facebook: 'fb'}[red];  // Facebook desde el 9-nov-2026
     if (!corto) return;
     try {
       const extra = corto === 'ig' ? '&chart_ids[]=countries&chart_ids[]=ages' : '';  // audiencia: solo Instagram la da

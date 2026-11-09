@@ -127,6 +127,7 @@ def workspace_publer():
 
 
 NOMBRES_RED = {'ig': 'Instagram', 'tt': 'TikTok', 'yt': 'YouTube'}
+INICIO_FB = '2026-11-09'  # desde aquí lo que sale en Instagram sale también en Facebook, a la misma hora
 
 
 def de_red(foto, red, corto='v'):
@@ -137,8 +138,13 @@ def de_red(foto, red, corto='v'):
 
 
 def horas_por_red(item):
-    """{red: hora México} de un video o carrusel programado (una hora por red desde la prueba por red)."""
-    por_red = item.get('publica_utc_por_red') or ({r: item['publica_utc'] for r in NOMBRES_RED} if item.get('publica_utc') else {})
+    """{red: hora México} de un video o carrusel programado (una hora por red desde la prueba por red). Facebook: su
+    hora propia (item['facebook'], lo atrasado) o, desde INICIO_FB, la de Instagram de los videos."""
+    por_red = dict(item.get('publica_utc_por_red') or ({r: item['publica_utc'] for r in NOMBRES_RED} if item.get('publica_utc') else {}))
+    if (item.get('facebook') or {}).get('publica_utc') and not str(item['id']).startswith('c'):
+        por_red['fb'] = item['facebook']['publica_utc']
+    elif not str(item['id']).startswith('c') and por_red.get('ig', '') >= INICIO_FB + 'T12':
+        por_red['fb'] = por_red['ig']
     return {r: a_mexico(t) for r, t in por_red.items()}
 
 
@@ -169,37 +175,47 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
         dia = local + datetime.timedelta(days=i)
         hechos = programado.get(dia, [])
         # El Reel de Instagram de un carrusel va en su propia fila y no ocupa el día (sigue tocando video o carrusel).
-        filas += [{'fecha': dia.isoformat(), 'tipo': 'reel', 'id': '', 'estado': 'programado',
-                   'que': f"Reel de Instagram del carrusel {c['id']} (el mismo video del Short)",
-                   'horas': {'ig': a_mexico(c['reel_ig']['publica_utc']).strftime('%H:%M')}}
-                  for c in carruseles if (c.get('reel_ig') or {}).get('publica_utc')
-                  and a_mexico(c['reel_ig']['publica_utc']).date() == dia]
+        for c in carruseles:
+            reel = (c.get('reel_ig') or {}).get('publica_utc')
+            fb = (c.get('facebook') or {}).get('publica_utc')
+            horas = {}
+            if reel and a_mexico(reel).date() == dia:
+                horas['ig'] = a_mexico(reel).strftime('%H:%M')
+            if fb and a_mexico(fb).date() == dia:
+                horas['fb'] = a_mexico(fb).strftime('%H:%M')
+            if horas:
+                que = (f"Reel del carrusel {c['id']} (el mismo video del Short)" if 'ig' in horas
+                       else f"Video del carrusel {c['id']} en Facebook (ya salió en las otras redes)")
+                filas.append({'fecha': dia.isoformat(), 'tipo': 'reel', 'id': c['id'], 'estado': 'programado',
+                              'que': que, 'horas': horas})
         if hechos:
             for x, horas in hechos:
+                que = que_sale(x) + (' en Facebook (ya salió en las otras redes)' if set(horas) == {'fb'} else '')
                 filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel' if str(x['id']).startswith('c') else 'video',
-                              'id': x['id'], 'que': que_sale(x), 'estado': x['estado'],
+                              'id': x['id'], 'que': que, 'estado': x['estado'],
                               'horas': {r: h.strftime('%H:%M') for r, h in horas.items()}})
-        if hechos and (dia <= local or any(str(x['id']).startswith('c') and 'tt' in h for x, h in hechos)):
-            continue
-        es_video = bool(hechos) or ((dia - ultimo).days % cada == 0 and dia > ultimo)
-        # los de temporada solo dentro de su ventana; los de temporada en ventana van primero
-        validos = [c for c in listos if not c.get('ventana') or c['ventana']['desde'] <= dia.isoformat() <= c['ventana']['hasta']]
-        c = next((x for x in validos if x.get('ventana')), validos[0] if validos else None)
-        if c:
-            listos.remove(c)
-        nombre = f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'
-        if hechos:  # ya está el video del día: falta el carrusel de TikTok
-            filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · TikTok (carrusel diario) y short en YouTube (prueba)'})
-        elif es_video:
+        if dia <= local:
+            continue  # hoy y antes: solo lo que de verdad está programado
+        # Días por venir: lo que toca con el ritmo de config → publicaciones_por_dia (TikTok 3 al día, el video cuenta).
+        en_tt = sum(1 for x, h in hechos if 'tt' in h)
+        video_ya = any(not str(x['id']).startswith('c') and 'tt' in h for x, h in hechos)
+        es_video = video_ya or ((dia - ultimo).days % cada == 0 and dia > ultimo)
+        if es_video and not video_ya:
             vid, video_listo = video_listo, None
             filas.append({'fecha': dia.isoformat(), 'tipo': 'video', 'id': vid or '', 'estado': 'por_programar', 'horas': {},
-                          'que': f'Video {vid} (ya generado)' if vid else 'Video (lo elige el laboratorio el día anterior)'})
+                          'que': f'Video {vid} (ya generado) · TikTok, Instagram, Facebook y YouTube' if vid
+                          else 'Video (lo elige el laboratorio el día anterior)'})
+            en_tt += 1
+        cupo = (config.get('publicaciones_por_dia') or {}).get('tt', 1)
+        for _ in range(max(0, cupo - en_tt)):
+            # los de temporada solo dentro de su ventana; los de temporada en ventana van primero
+            validos = [c for c in listos if not c.get('ventana') or c['ventana']['desde'] <= dia.isoformat() <= c['ventana']['hasta']]
+            c = next((x for x in validos if x.get('ventana')), validos[0] if validos else None)
+            if c:
+                listos.remove(c)
+            nombre = f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · TikTok (carrusel diario) y short en YouTube (prueba)'})
-        else:
-            filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · TikTok; Instagram (fotos y Reel) y YouTube suben el que mejor le fue en TikTok'})
+                          'horas': {}, 'que': nombre + ' · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube'})
     return filas
 
 
@@ -275,8 +291,9 @@ def main():
         local = a_mexico(v.get('publica_utc'))
         qa = v.get('qa')
         fila = {
-            'id': v['id'], 'estado': v['estado'], 'pilar': v['pilar'], 'locacion': v['locacion'],
-            'fuente': v.get('fuente', ''), 'gancho': v['guion'].split('.')[0][:90],
+            # .get: los videos "calcúlalo conmigo" (C1, 9-nov-2026) no traen guion de Wan ni locación
+            'id': v['id'], 'estado': v['estado'], 'pilar': v.get('pilar', ''), 'locacion': v.get('locacion', ''),
+            'fuente': v.get('fuente', ''), 'gancho': (v.get('guion') or v.get('titulo') or v.get('texto_post') or '').split('.')[0][:90],
             'hora_plan': v.get('hora_publicacion', ''),
             'publica_mx': local.strftime('%Y-%m-%d %H:%M') if local else '',
             'dia': DIAS[local.weekday()] if local else '',
@@ -342,8 +359,9 @@ def main():
         foto = 'data:image/jpeg;base64,' + base64.b64encode(jpg).decode()
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
-        'frecuencia': (f"Video y carrusel en días alternos: algo nuevo cada día · cada red a su hora"
-                       f" · auditoría diaria {config.get('hora_auditoria', '06:37')}"),
+        'frecuencia': (lambda r: f"Al día: TikTok {r.get('tt', 1)} · Instagram {r.get('ig', 1)} (mañana y tarde) · YouTube "
+                       f"{r.get('yt', 1)} · Facebook igual que Instagram · video de Victoria cada {config.get('dias_entre_videos', 2)} días"
+                       f" · auditoría diaria {config.get('hora_auditoria', '06:37')}")(config.get('publicaciones_por_dia') or {}),
         'dias_entre_videos': config.get('dias_entre_videos', 2),
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
@@ -351,7 +369,9 @@ def main():
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'creditos_plan_mes': 12000,
         'similitud_minima': config.get('similitud_minima_audio'),
-        'cuentas_publer': config.get('cuentas_publer', {}),
+        # Facebook solo para el centro (números en vivo y agenda); medir sigue con Instagram y TikTok.
+        'cuentas_publer': {**config.get('cuentas_publer', {}),
+                           **({config['facebook_victoria']: 'facebook'} if config.get('facebook_victoria') else {})},
         'publer_workspace': workspace_publer(),  # el centro no lo vuelve a pedir: Publer tarda hasta 20 s en darlo
         'canal_youtube': config.get('canal_youtube', ''),
         'prueba_horas': config.get('prueba_horas', {}),
