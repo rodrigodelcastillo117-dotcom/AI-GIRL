@@ -27,7 +27,7 @@ fotos a 5-9. Por eso:
 - `scripts/publer_carrusel.py <id> "ig=<hora>,tt=<hora>"`: lo programa en fotos en Instagram y TikTok, cada uno a
   su hora de la prueba de horarios; con una sola red (`"tt=<hora>"`) solo en esa. Guarda `publica_utc_por_red`,
   `publica_utc` y el estado `programado` en el carrusel (`--borrador` lo deja en Publer sin salir). Se niega si choca:
-  config → publicaciones_por_dia (desde el 9-nov-2026: TikTok 3, Instagram 2, YouTube 2, contando el video), a 3 h o
+  config → publicaciones_por_dia (desde el 9-nov-2026: TikTok 3, Instagram 2, YouTube 3, contando el video), a 3 h o
   más entre carruseles y a 2 h de un video. Instagram va como
   `"type": "photo"` con varias fotos: Publer rechaza `"carousel"` (probado 30-oct-2026).
 - **Portada del Reel distinta** (Rodrigo, 4-nov-2026: en el perfil de Instagram el carrusel y su Reel se veían como

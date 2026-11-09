@@ -834,8 +834,10 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
             return f'hit en TikTok ({v} vistas): va primero (config → prioridad_reel_ig)'
         if 'tt' not in por_red(c):
             return 'sale hoy en TikTok y todavía no hay probados que falten'
-        dias = (ahora - hoy_cdmx(por_red(c)['tt'])).days
-        return f'{v if v is not None else "sin medir"} vistas en TikTok; lleva {dias} día(s) esperando'
+        t_tt = hoy_cdmx(por_red(c)['tt'])
+        if t_tt > ahora:
+            return f'sale en TikTok hoy a las {t_tt:%H:%M}; no quedan probados que falten aquí'
+        return f'{v if v is not None else "sin medir"} vistas en TikTok; lleva {(ahora - t_tt).days} día(s) esperando'
 
     # Instagram: un Reel en la mañana (antes de las 13:00) y otro en la tarde; el video del día ocupa su turno.
     tiene_ig = lambda c: (c.get('reel_ig') or {}).get('publica_utc')

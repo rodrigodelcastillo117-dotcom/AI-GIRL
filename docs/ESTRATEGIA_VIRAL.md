@@ -36,10 +36,10 @@ subir lo mismo en todas las redes, no perder ningún reel, carrusel, imagen". En
 
 - TikTok: **3 al día**. El video de Victoria cuenta como uno; lo demás, carruseles en fotos con música recomendada.
 - Instagram: **2 al día**, uno antes de las 13:00 y otro después. Reel del carrusel (o el video de Victoria ese día).
-- YouTube: **2 al día**: el video de Victoria o shorts de carrusel.
+- YouTube: **3 al día** (Rodrigo, 9-nov-2026, para no atrasarse): el video de Victoria o shorts de carrusel.
 - Todo carrusel pasa por las tres redes: primero TikTok (donde se prueba), luego Instagram y YouTube en este orden:
   hits, los que ya llevan 7 días esperando, los probados (temporada y vistas). La auditoría muestra la cola de cada red.
-- Ojo con la cuenta: TikTok saca 3 y las otras 2, así que Instagram y YouTube se atrasan ~1 carrusel al día. Si la
+- Ojo con la cuenta: TikTok saca 3 e Instagram 2, así que Instagram se atrasa ~1 carrusel al día (YouTube va al parejo). Si la
   cola pasa de 3 días, la auditoría lo avisa: subir esa red a 3 o bajar TikTok. Los de temporada que caducan antes
   de llegar no salen (sería contenido viejo).
 - Videos de Victoria (Wan): cada 3 días, solo temas fuertes. Videos de 0 créditos: "calcúlalo conmigo".
