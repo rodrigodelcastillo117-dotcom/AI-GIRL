@@ -555,15 +555,15 @@
    "id": "40",
    "pilar": "finanzas",
    "locacion": "cocina",
-   "guion": "¿Pagas solo el mínimo de tu tarjeta? Con diez mil pesos de deuda puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef, con una tasa de cincuenta y cinco por ciento. Paga más que el mínimo, aunque sea poco.",
+   "guion": "Pagar solo el mínimo de tu tarjeta es rentarle tu sueldo al banco. Con diez mil pesos de deuda y una tasa de cincuenta y cinco por ciento, puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.",
    "subtitulos": [
-    "¿Pagas solo el mínimo",
-    "de tu tarjeta?",
+    "Pagar solo el mínimo",
+    "es rentarle tu sueldo al banco.",
     "Con $10,000 de deuda",
+    "y una tasa del 55%,",
     "puedes tardar 19 años",
     "en liquidarla.",
-    "Es el ejemplo de Condusef,",
-    "con una tasa del 55%.",
+    "Es el ejemplo de Condusef.",
     "Paga más que el mínimo,",
     "aunque sea poco."
    ],
@@ -575,7 +575,7 @@
    "fuente": "Condusef: deuda de $10,000 con tasa anual de 55% pagando solo el mínimo = 234 mensualidades, 19 años y medio (Plano Informativo; El Financiero sobre la calculadora de pagos mínimos de Condusef)",
    "vestuario": "Vestido camisero de lino verde salvia con cinturón café, pulsera de oro delgada",
    "accion": "Recargada en la barra de la cocina con un estado de cuenta en la mano; Capital sentado junto a ella.",
-   "texto_pantalla": "¿Pagas solo el mínimo?",
+   "texto_pantalla": "Pagar el mínimo es rentarle tu sueldo al banco",
    "texto_post": "¿Pagas solo el mínimo de tu tarjeta? 💳\nCon $10,000 de deuda y una tasa de 55% puedes tardar 19 años y medio en liquidarla, según un ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.\n\n📚 Condusef, calculadora de pagos mínimos",
    "pregunta_comentarios": "¿Pagas solo el mínimo? Comenta SÍ o NO.",
    "mandar_a": "quien siempre paga el mínimo de su tarjeta",
@@ -613,7 +613,9 @@
      "¿Cómo salir de deudas de tarjeta de crédito?"
     ]
    },
-   "pregunta_comentarios_anterior": "¿Sabías cuánto tardas pagando el mínimo?"
+   "pregunta_comentarios_anterior": "¿Sabías cuánto tardas pagando el mínimo?",
+   "guion_anterior_personaje": "¿Pagas solo el mínimo de tu tarjeta? Con diez mil pesos de deuda puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef, con una tasa de cincuenta y cinco por ciento. Paga más que el mínimo, aunque sea poco.",
+   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)"
   },
   {
    "estado": "pendiente",
@@ -2008,16 +2010,18 @@
    "id": "20",
    "estado": "pendiente",
    "pilar": "finanzas",
-   "guion": "¿Tu aguinaldo se acaba en enero? Casi siempre es porque llega sin plan. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa. Si te llegan diez mil: cinco, tres y dos.",
+   "guion": "Tu aguinaldo no es para regalos. Bueno, no todo. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa. Si te llegan diez mil: cinco, tres y dos. Capital ya apartó lo suyo: una pelota.",
    "subtitulos": [
-    "¿Tu aguinaldo se acaba en enero?",
-    "Casi siempre es porque llega sin plan.",
+    "Tu aguinaldo no es para regalos.",
+    "Bueno, no todo.",
     "Mi regla:",
     "50% a deudas o ahorro,",
     "30% a una meta",
     "y 20% a un gusto sin culpa.",
     "Si te llegan $10,000:",
-    "$5,000, $3,000 y $2,000."
+    "$5,000, $3,000 y $2,000.",
+    "Capital ya apartó lo suyo:",
+    "una pelota."
    ],
    "palabras_clave": [
     "enero",
@@ -2027,8 +2031,8 @@
    ],
    "fuente": "Regla de Victoria (opinión), basada en la regla 50/30/20 de Elizabeth Warren y Amelia Warren Tyagi (All Your Worth, 2005)",
    "locacion": "sala_navidad",
-   "vestuario": "Suéter oversize color marfil de cuello alto, falda midi de satín dorada, aretes de perla",
-   "accion": "Sentada junto al árbol de Navidad con un sobre de dinero en las manos, Capital acostado a sus pies.",
+   "vestuario": "Suéter oversize color marfil de punto, aretes pequeños de oro",
+   "accion": "Sentada en el piso de la sala junto al árbol de Navidad, con unos regalos a medio envolver; Capital echado pegado a ella con un gorrito rojo de Santa chueco y cara de \"no me impresiona\".",
    "hora_publicacion": "rotacion",
    "texto_post": "¿Tu aguinaldo se acaba en enero? 🎁\nMi regla: 50% a deudas o ahorro, 30% a una meta y 20% a un gusto sin culpa. Si te llegan $10,000: $5,000, $3,000 y $2,000.",
    "seo": {
@@ -2070,7 +2074,7 @@
     "desde": "2026-11-28",
     "hasta": "2026-12-19"
    },
-   "texto_pantalla": "Cómo dividir tu aguinaldo",
+   "texto_pantalla": "Tu aguinaldo no es para regalos",
    "pregunta_comentarios": "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o GUSTO.",
    "parte": "Serie Aguinaldo 2026 · parte 4 de 4",
    "mandar_a": "quien siempre se queda sin aguinaldo en enero",
@@ -2079,22 +2083,25 @@
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
    "guardar_para": "cuando te paguen el aguinaldo",
-   "pregunta_comentarios_anterior": "¿Tú cómo lo divides?"
+   "pregunta_comentarios_anterior": "¿Tú cómo lo divides?",
+   "guion_anterior_personaje": "¿Tu aguinaldo se acaba en enero? Casi siempre es porque llega sin plan. Mi regla: la mitad a deudas o ahorro, treinta por ciento a una meta y veinte a un gusto sin culpa. Si te llegan diez mil: cinco, tres y dos.",
+   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)"
   },
   {
    "id": "21",
    "estado": "pendiente",
    "pilar": "finanzas",
-   "guion": "¿Vas a gastar tu aguinaldo? Primero paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener. Condusef lo dice claro: primero las deudas más caras.",
+   "guion": "Si traes deuda de tarjeta, tu aguinaldo ya tiene dueño. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener. Condusef lo dice claro: primero las deudas más caras. Lo demás, después.",
    "subtitulos": [
-    "¿Vas a gastar tu aguinaldo?",
-    "Primero paga tu tarjeta.",
+    "Si traes deuda de tarjeta,",
+    "tu aguinaldo ya tiene dueño.",
     "Cada peso que abonas",
     "deja de cobrarte intereses:",
     "es la ganancia más segura",
     "que vas a tener.",
     "Condusef: primero",
-    "las deudas más caras."
+    "las deudas más caras.",
+    "Lo demás, después."
    ],
    "palabras_clave": [
     "aguinaldo",
@@ -2147,20 +2154,22 @@
     "desde": "2026-12-10",
     "hasta": "2027-01-10"
    },
-   "texto_pantalla": "Lo primero que haces con tu aguinaldo",
+   "texto_pantalla": "Tu aguinaldo ya tiene dueño",
    "pregunta_comentarios": "¿Cuánto debes en tu tarjeta? Comenta el número, sin pena.",
    "guion_anterior": "Antes de gastar tu aguinaldo, paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener.",
    "mandar_a": "quien ya tiene planes para su aguinaldo",
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Cuánto debes en tu tarjeta?"
+   "pregunta_comentarios_anterior": "¿Cuánto debes en tu tarjeta?",
+   "guion_anterior_personaje": "¿Vas a gastar tu aguinaldo? Primero paga tu tarjeta. Cada peso que abonas deja de cobrarte intereses: es la ganancia más segura que vas a tener. Condusef lo dice claro: primero las deudas más caras.",
+   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)"
   },
   {
    "id": "22",
    "estado": "pendiente",
    "pilar": "finanzas",
-   "guion": "Tu propósito de año nuevo no debería ser el gym: debería ser tu fondo de emergencia. Condusef recomienda de tres a seis meses de gastos. Si gastas diez mil al mes, tu meta es de treinta a sesenta mil.",
+   "guion": "Tu propósito de año nuevo no debería ser el gym: debería ser tu fondo de emergencia. Condusef recomienda de tres a seis meses de gastos. Si gastas diez mil al mes, tu meta es de treinta a sesenta mil. Capital ya empezó el suyo: croquetas para seis meses.",
    "subtitulos": [
     "Tu propósito de año nuevo",
     "no debería ser el gym:",
@@ -2168,7 +2177,9 @@
     "Condusef recomienda",
     "de 3 a 6 meses de gastos.",
     "Si gastas $10,000 al mes,",
-    "tu meta es de $30,000 a $60,000."
+    "tu meta es de $30,000 a $60,000.",
+    "Capital ya empezó el suyo:",
+    "croquetas para seis meses."
    ],
    "palabras_clave": [
     "propósito",
@@ -2229,7 +2240,9 @@
    "mejoras_aplicadas": [
     "Guion reescrito 31-oct (Rodrigo: \"muy cabrón\"): gancho con pregunta o cifra propia, pesos, final que engancha"
    ],
-   "pregunta_comentarios_anterior": "¿Cuántos meses aguantarías sin sueldo?"
+   "pregunta_comentarios_anterior": "¿Cuántos meses aguantarías sin sueldo?",
+   "guion_anterior_personaje": "Tu propósito de año nuevo no debería ser el gym: debería ser tu fondo de emergencia. Condusef recomienda de tres a seis meses de gastos. Si gastas diez mil al mes, tu meta es de treinta a sesenta mil.",
+   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)"
   },
   {
    "id": "23",
