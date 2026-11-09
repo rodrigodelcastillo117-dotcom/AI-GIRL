@@ -825,7 +825,13 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
     else:
         probados = [c for c in carruseles if falta(c, 'ig') and not c.get('reel_ig') and 'tt' in por_red(c)
                     and a_utc(por_red(c)['tt']) <= ahora - datetime.timedelta(hours=20)]
-        if probados:
+        # Hits marcados por la revisión vespertina (config.json → prioridad_reel_ig) van primero, aunque tengan < 20 h.
+        hits = [x for i in config.get('prioridad_reel_ig', []) for x in carruseles
+                if x['id'] == i and falta(x, 'ig') and not x.get('reel_ig') and 'tt' in por_red(x)]
+        if hits:
+            c = hits[0]
+            por_que = f"hit en TikTok ({vistas_tiktok(c['id'], historial)} vistas): va primero (config → prioridad_reel_ig)"
+        elif probados:
             c = max(probados, key=lambda c: (1 if c.get('ventana') else 0, vistas_tiktok(c['id'], historial) or -1))
             por_que = f"el que mejor le fue en TikTok entre los que faltan ({vistas_tiktok(c['id'], historial)} vistas)"
         elif salida['tiktok']:
