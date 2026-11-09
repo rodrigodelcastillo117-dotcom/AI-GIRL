@@ -22,6 +22,16 @@
  {
   "fecha": "2026-11-09",
   "tipo": "reel",
+  "id": "c11",
+  "estado": "programado",
+  "que": "Video del carrusel c11 en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "22:30"
+  }
+ },
+ {
+  "fecha": "2026-11-09",
+  "tipo": "reel",
   "id": "c16",
   "estado": "programado",
   "que": "Reel del carrusel c16 (el mismo video del Short)",
@@ -217,6 +227,16 @@
  },
  {
   "fecha": "2026-11-13",
+  "tipo": "reel",
+  "id": "c13",
+  "estado": "programado",
+  "que": "Video del carrusel c13 en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "21:30"
+  }
+ },
+ {
+  "fecha": "2026-11-13",
   "tipo": "carrusel",
   "id": "c43",
   "estado": "por_programar",
@@ -238,6 +258,16 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c53 · despido diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-14",
+  "tipo": "reel",
+  "id": "c03",
+  "estado": "programado",
+  "que": "Video del carrusel c03 en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "09:30"
+  }
  },
  {
   "fecha": "2026-11-14",
