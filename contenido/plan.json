@@ -555,41 +555,41 @@
    "id": "40",
    "pilar": "finanzas",
    "locacion": "cocina",
-   "guion": "Pagar solo el mínimo de tu tarjeta es rentarle tu sueldo al banco. Con diez mil pesos de deuda y una tasa de cincuenta y cinco por ciento, puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.",
+   "guion": "Pagar solo el mínimo de tu tarjeta es rentarle tu sueldo al banco. Con doce mil pesos de deuda y pagando solo trescientos cincuenta al mes, tardas casi seis años y pagas más del doble. Es el ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.",
    "subtitulos": [
     "Pagar solo el mínimo",
     "es rentarle tu sueldo al banco.",
-    "Con $10,000 de deuda",
-    "y una tasa del 55%,",
-    "puedes tardar 19 años",
-    "en liquidarla.",
+    "Con $12,000 de deuda",
+    "y pagando solo $350 al mes,",
+    "tardas casi 6 años",
+    "y pagas más del doble.",
     "Es el ejemplo de Condusef.",
     "Paga más que el mínimo,",
     "aunque sea poco."
    ],
    "palabras_clave": [
     "mínimo",
-    "19 años",
-    "Condusef"
+    "6 años",
+    "doble"
    ],
-   "fuente": "Condusef: deuda de $10,000 con tasa anual de 55% pagando solo el mínimo = 234 mensualidades, 19 años y medio (Plano Informativo; El Financiero sobre la calculadora de pagos mínimos de Condusef)",
+   "fuente": "Condusef, comunicado de la calculadora de pagos mínimos (5-mar-2013): deuda de $12,000 con tasa anual de 30% pagando solo el mínimo de $350: 5 años 11 meses y unos $27,254 en total. https://www.gob.mx/condusef/prensa/calculadora-de-pagos-minimos-calcula-el-tuyo. (9-nov-2026: se quitó el ejemplo de $10,000 al 55% y 19 años porque solo aparece en notas de prensa, no en una página oficial.)",
    "vestuario": "Vestido camisero de lino verde salvia con cinturón café, pulsera de oro delgada",
    "accion": "Recargada en la barra de la cocina con un estado de cuenta en la mano; Capital sentado junto a ella.",
    "texto_pantalla": "Pagar el mínimo es rentarle tu sueldo al banco",
-   "texto_post": "¿Pagas solo el mínimo de tu tarjeta? 💳\nCon $10,000 de deuda y una tasa de 55% puedes tardar 19 años y medio en liquidarla, según un ejemplo de Condusef. Paga más que el mínimo, aunque sea poco.\n\n📚 Condusef, calculadora de pagos mínimos",
+   "texto_post": "Pagar solo el mínimo de tu tarjeta es rentarle tu sueldo al banco. 💳\nCon $12,000 de deuda al 30% anual y pagando solo $350 al mes, tardas casi 6 años y pagas unos $27,254: más del doble. Paga más que el mínimo, aunque sea poco.\n\n📚 Condusef, calculadora de pagos mínimos",
    "pregunta_comentarios": "¿Pagas solo el mínimo? Comenta SÍ o NO.",
    "mandar_a": "quien siempre paga el mínimo de su tarjeta",
    "ganchos_alternativos": [
-    "19 años pagando una deuda de 10 mil pesos.",
-    "El pago mínimo es la trampa más cara de tu tarjeta."
+    "Pagar solo el mínimo puede costarte más del doble.",
+    "Casi 6 años pagando una deuda de 12 mil pesos."
    ],
    "adn": {
     "tipo_gancho": "pregunta"
    },
    "seo": {
     "palabra_clave": "pago mínimo de tarjeta",
-    "titulo": "Pago mínimo de tarjeta y 19 años de deuda 💳",
-    "descripcion_inicio": "Pago mínimo de tarjeta de crédito: con $10,000 de deuda y una tasa anual de 55%, pagar solo el mínimo puede llevar 234 mensualidades (19 años y medio), según un ejemplo de Condusef.",
+    "titulo": "Pago mínimo de tarjeta y 6 años de deuda 💳",
+    "descripcion_inicio": "Pago mínimo de tarjeta de crédito: con $12,000 de deuda al 30% anual y pagando solo $350 al mes, tardas 5 años y 11 meses y pagas unos $27,254, según un ejemplo de Condusef.",
     "tags_concretas": [
      "pago minimo tarjeta",
      "pago minimo tarjeta de credito",
@@ -606,7 +606,7 @@
      "#condusef",
      "#finanzaspersonales"
     ],
-    "parrafo": "Condusef hizo el ejercicio con una deuda de $10,000 y una tasa anual de 55%: pagando solo el mínimo, se necesitan 234 mensualidades, unos 19 años y medio. Su calculadora de pagos mínimos muestra tu caso con la tasa de tu estado de cuenta; pagar más que el mínimo baja mucho los intereses.",
+    "parrafo": "Condusef hizo el ejercicio con una deuda de $12,000, una tasa anual de 30% y un pago mínimo de $350: se tarda 5 años y 11 meses y se pagan unos $27,254 en total, más del doble. Su calculadora de pagos mínimos muestra tu caso con la tasa de tu estado de cuenta; pagar más que el mínimo baja mucho los intereses.",
     "preguntas": [
      "¿Cuánto tardo en pagar mi tarjeta con el pago mínimo?",
      "¿Conviene pagar el mínimo de la tarjeta?",

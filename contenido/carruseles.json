@@ -866,8 +866,8 @@
     },
     {
      "titulo": "Más que el mínimo",
-     "texto": "Pagando solo el mínimo, $10,000 de deuda a 55% anual pueden ser 19 años y medio.\n\nCondusef",
-     "voz": "Paga más que el mínimo de tu tarjeta."
+     "texto": "Con $12,000 de deuda pagando solo el mínimo de $350: casi 6 años y más del doble.\n\nCondusef, calculadora de pagos mínimos",
+     "voz": "Pagando solo el mínimo, doce mil pesos de deuda pueden ser casi seis años."
     },
     {
      "titulo": "Suma tus meses",
@@ -2653,8 +2653,8 @@
     {
      "meme": "assets/fotos/enero-oficina-casa.jpg",
      "titulo": "Yo en enero abriendo el estado de cuenta de la tarjeta",
-     "texto": "Con $10,000 de deuda al 55% y pagando solo el mínimo: 19 años.\n\nCondusef, ejemplo de pago mínimo",
-     "voz": "Yo en enero abriendo el estado de cuenta. Pagando solo el mínimo, una deuda puede durar diecinueve años."
+     "texto": "Con $12,000 de deuda pagando solo el mínimo de $350: casi 6 años y más del doble.\n\nCondusef, calculadora de pagos mínimos",
+     "voz": "Yo en enero abriendo el estado de cuenta. Pagando solo el mínimo, una deuda puede durar casi seis años."
     },
     {
      "meme": "assets/fotos/pareja-cuenta-restaurante.jpg",
@@ -2668,9 +2668,9 @@
     "texto": "Mándaselo a quien ya está haciendo su lista de regalos.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
     "voz": "¿Cuál eres tú? Comenta el número, y sígueme."
    },
-   "fuente": "Ley Federal del Trabajo, art. 87 (aguinaldo antes del 20 de diciembre), https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf. Condusef: deuda de $10,000 con tasa anual de 55% pagando solo el mínimo = 234 mensualidades, unos 19 años y medio (mismo dato del video 40, plan.json). Las otras tres son opiniones de Victoria (docs/PERSONAJE.md) y lo dicen en la diapositiva.",
+   "fuente": "Ley Federal del Trabajo, art. 87 (aguinaldo antes del 20 de diciembre), https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf. Condusef (5-mar-2013): $12,000 al 30% anual pagando solo el mínimo de $350 = 5 años 11 meses y unos $27,254 en total, https://www.gob.mx/condusef/prensa/calculadora-de-pagos-minimos-calcula-el-tuyo. Las otras tres son opiniones de Victoria (docs/PERSONAJE.md) y lo dicen en la diapositiva.",
    "titulo_post": "Diciembre en 5 memes de dinero",
-   "texto_post": "Diciembre en 5 memes (y lo que nadie te dice de tu dinero). 😅🎄\n1. Meses sin intereses: si hoy no tienes el dinero, es deuda.\n2. El aguinaldo te lo deben pagar antes del 20 de diciembre.\n3. Un regalo que no cabe en tu presupuesto es deuda.\n4. Con $10,000 de deuda al 55% pagando solo el mínimo: unos 19 años (Condusef).\n5. Mitad y mitad no es justo si no ganan lo mismo.\nCapital ya escogió su meme: el 3, y sigue ofendido.\n\n📚 Ley Federal del Trabajo, art. 87 · Condusef\n💬 ¿Cuál eres tú? Comenta 1, 2, 3, 4 o 5. Te contesto a todos.\n🔖 Guárdalo para antes de tus compras de diciembre.\n📩 Mándaselo a quien ya está haciendo su lista de regalos.",
+   "texto_post": "Diciembre en 5 memes (y lo que nadie te dice de tu dinero). 😅🎄\n1. Meses sin intereses: si hoy no tienes el dinero, es deuda.\n2. El aguinaldo te lo deben pagar antes del 20 de diciembre.\n3. Un regalo que no cabe en tu presupuesto es deuda.\n4. Con $12,000 de deuda pagando solo el mínimo de $350: casi 6 años y más del doble (Condusef).\n5. Mitad y mitad no es justo si no ganan lo mismo.\nCapital ya escogió su meme: el 3, y sigue ofendido.\n\n📚 Ley Federal del Trabajo, art. 87 · Condusef\n💬 ¿Cuál eres tú? Comenta 1, 2, 3, 4 o 5. Te contesto a todos.\n🔖 Guárdalo para antes de tus compras de diciembre.\n📩 Mándaselo a quien ya está haciendo su lista de regalos.",
    "seo": {
     "palabra_clave": "memes de dinero",
     "titulo": "Memes de dinero de diciembre 😅",
