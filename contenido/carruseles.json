@@ -2698,6 +2698,248 @@
    },
    "revision": "9-nov-2026: datos de art. 87 LFT y del ejemplo de Condusef ya revisados en c16/c24 y el video 40; lo demás son opiniones marcadas como tales.",
    "personaje": "2026-11-09: formato meme con fotos de Victoria (0 créditos)"
+  },
+  {
+   "id": "c30",
+   "estado": "listo",
+   "tema": "mitos_aguinaldo_nomina",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-20"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-lista-cocina.jpg",
+    "etiqueta": "MITO O VERDAD",
+    "titulo": "¿Mito o verdad? 5 cosas que crees del aguinaldo",
+    "voz": "Lo que la ley te da no es un favor de tu patrón. A ver cuántas de estas cinco te sabes.",
+    "gancho_tipo": "mito",
+    "foto_reel": "assets/fotos/enero-oficina-casa.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "VERDAD: Te tocan mínimo 15 días de salario",
+     "texto": "La ley fija el aguinaldo en 15 días de salario por lo menos. Tu contrato puede darte más días, nunca menos.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "Verdad: te tocan por lo menos quince días de salario de aguinaldo."
+    },
+    {
+     "titulo": "VERDAD: Si renuncias, igual te toca",
+     "texto": "Si no completaste el año, te pagan la parte proporcional a lo que trabajaste, sigas en la empresa o ya no.\n\nLey Federal del Trabajo, art. 87, párr. 2",
+     "voz": "Verdad: si renuncias antes de diciembre, igual te toca tu aguinaldo proporcional."
+    },
+    {
+     "titulo": "MITO: Te lo pueden pagar en enero",
+     "texto": "Se paga antes del 20 de diciembre. Si llega en enero, ya llegó tarde y tu patrón está fuera de la ley.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "Mito: que te paguen el aguinaldo en enero; la ley dice antes del veinte de diciembre."
+    },
+    {
+     "titulo": "A MEDIAS: El aguinaldo no paga impuestos",
+     "texto": "Está exento de ISR hasta 30 veces la UMA diaria ($3,519.30 en 2026); lo demás, paga. Si ganas el salario mínimo, tus 15 días de ley no pagan.\n\nLey del ISR, art. 93, fr. I y XIV · Decreto de desindexación (DOF 27-01-2016) · SAT (jun-2026)",
+     "voz": "A medias: que el aguinaldo no paga impuestos; solo una parte está libre del impuesto sobre la renta."
+    },
+    {
+     "titulo": "MITO: Te pueden descontar lo que sea",
+     "texto": "Los descuentos al salario están prohibidos, salvo los casos que marca la ley, como anticipos, crédito de vivienda o pensión alimenticia, y con sus topes.\n\nLey Federal del Trabajo, art. 110",
+     "voz": "Mito: que tu patrón pueda descontarte lo que quiera; solo puede lo que permite la ley."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas te sabías? Comenta el número del 0 al 5.",
+    "texto": "Mándaselo a tu amiga que va a renunciar antes de diciembre.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas te sabías? Comenta el número del cero al cinco y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo, art. 87 (última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): 'Los trabajadores tendrán derecho a un aguinaldo anual que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos'; 'Los que no hayan cumplido el año de servicios, independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo, tendrán derecho a que se les pague la parte proporcional del mismo, conforme al tiempo que hubieren trabajado, cualquiera que fuere éste'. LFT, art. 110: 'Los descuentos en los salarios de los trabajadores, están prohibidos salvo en los casos y con los requisitos siguientes': fr. I deudas con el patrón por anticipo de salarios, pagos en exceso, errores, pérdidas o averías (máximo un mes de salario y no más del 30 % del excedente del salario mínimo); fr. III abonos de créditos del Fondo Nacional de la Vivienda; fr. IV cuotas de cooperativas y cajas de ahorro con conformidad del trabajador; fr. V 'Pago de pensiones alimenticias en favor de acreedores alimentarios, decretado por la autoridad competente', entre otras. Ley del Impuesto sobre la Renta, art. 93, fr. XIV (última reforma DOF 01-04-2024, diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf): no se paga ISR por 'Las gratificaciones que reciban los trabajadores de sus patrones, durante un año de calendario, hasta el equivalente del salario mínimo general del área geográfica del trabajador elevado a 30 días, cuando dichas gratificaciones se otorguen en forma general'. Decreto por el que se reforman y adicionan diversas disposiciones de la CPEUM en materia de desindexación del salario mínimo (DOF 27-01-2016), transitorio Tercero: 'todas las menciones al salario mínimo como unidad de cuenta, índice, base, medida o referencia para determinar la cuantía de las obligaciones y supuestos previstos en las leyes federales… se entenderán referidas a la Unidad de Medida y Actualización' (diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf). INEGI, comunicado 1/26: UMA 2026 = $117.31 diarios (30 × $117.31 = $3,519.30). SAT, respuesta al planteamiento 11 en la 'Segunda Reunión 2026 con las Coordinaciones Nacionales de Síndicos del Contribuyente' (10-jun-2026, gob.mx/cms/uploads/attachment/file/1085884/Minuta_segunda_reunion_2026_VF_24.06.2026.pdf): exento 'hasta el equivalente del salario mínimo general del área geográfica de la persona trabajadora elevado a 30 días (30 veces el valor diario de la UMA equivalente a $117.31 X 30 = $3,519), por el excedente se pagará el ISR'; para quienes ganan el salario mínimo aplica el art. 93, fr. I (prestaciones que no excedan los mínimos de la legislación laboral, como el aguinaldo, no pagan ISR). Consultado el 9-nov-2026.",
+   "titulo_post": "Aguinaldo y nómina: mito o verdad",
+   "texto_post": "Mitos del aguinaldo: lo que la ley te da no es un favor de tu patrón. 🎁\n1. VERDAD: te tocan mínimo 15 días de salario.\n2. VERDAD: si renuncias o no completaste el año, te toca la parte proporcional, sigas en la empresa o no.\n3. MITO: que te lo paguen en enero. Por ley es antes del 20 de diciembre.\n4. A MEDIAS: solo está libre de ISR hasta 30 veces la UMA diaria ($3,519.30 en 2026); el excedente sí paga. Si ganas el salario mínimo, tus 15 días de ley no pagan.\n5. MITO: tu patrón no puede descontarte lo que quiera; solo en los casos y con los topes del artículo 110 de la Ley Federal del Trabajo.\n\nCapital también recibe aguinaldo: una croqueta extra por cada día trabajado. Y no la presta.\n📚 Ley Federal del Trabajo, arts. 87 y 110; Ley del ISR, art. 93, fr. I y XIV; Decreto de desindexación del salario mínimo (DOF 27-01-2016), transitorio tercero; SAT, Segunda Reunión 2026 con Síndicos del Contribuyente (jun-2026).\n💬 ¿Cuántas te sabías? Comenta el número del 0 al 5. Te contesto a todos.\n🔖 Guárdalo para cuando revises tu recibo de diciembre.\n📩 Mándaselo a tu amiga que va a renunciar antes de diciembre.",
+   "seo": {
+    "palabra_clave": "mitos del aguinaldo",
+    "titulo": "Mitos del aguinaldo y lo que dice la ley 🎁",
+    "tags_concretas": [
+     "mitos del aguinaldo",
+     "aguinaldo proporcional",
+     "aguinaldo si renuncio",
+     "cuando se paga el aguinaldo",
+     "aguinaldo 15 dias de salario",
+     "aguinaldo exento de isr",
+     "descuentos de nomina permitidos",
+     "articulo 87 ley federal del trabajo",
+     "articulo 110 ley federal del trabajo",
+     "aguinaldo 2026"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#leyfederaldeltrabajo",
+     "#nomina"
+    ],
+    "preguntas": [
+     "¿Si renuncio me toca aguinaldo?",
+     "¿Cuándo es la fecha límite para pagar el aguinaldo?",
+     "¿El aguinaldo paga ISR?",
+     "¿Qué descuentos me puede hacer mi patrón?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_finiquito_mitos.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Mito o verdad (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c31",
+   "estado": "listo",
+   "tema": "mitos_tarjeta_buro",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "portada": {
+    "foto": "assets/fotos/navidad-compras-calle.jpg",
+    "etiqueta": "MITO O VERDAD",
+    "titulo": "¿Mito o verdad? 5 cosas que crees de tu tarjeta y el Buró",
+    "voz": "Pagar el mínimo es rentarle tu sueldo al banco. A ver cuántas de estas cinco te sabes.",
+    "gancho_tipo": "mito",
+    "foto_reel": "assets/fotos/enero-oficina-casa.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "MITO: Con el pago mínimo no pagas intereses",
+     "texto": "El mínimo te evita intereses moratorios, pero pagas intereses ordinarios por todo el saldo que no cubriste.\n\nProfeco (17-sep-2021)",
+     "voz": "Mito: que pagando el mínimo no pagas intereses; sí pagas, por todo lo que quedó."
+    },
+    {
+     "titulo": "VERDAD: Si pagas el total, no pagas intereses",
+     "texto": "Pagar tu saldo completo cada mes (ser totalero) es la única forma de usar el crédito de tu tarjeta sin pagar intereses. Ojo: sacar efectivo con ella sí te cuesta.\n\nCondusef (2-ago-2019)",
+     "voz": "Verdad: si pagas el total cada mes, tu tarjeta no te cobra intereses."
+    },
+    {
+     "titulo": "VERDAD: El Buró también guarda tus pagos a tiempo",
+     "texto": "No es una lista de morosos: es un historial que registra cada pago puntual, igual que tus atrasos.\n\nCondusef, Proteja su Dinero (sep-2026) · LRSIC, art. 23",
+     "voz": "Verdad: el Buró de Crédito también guarda cuando pagas a tiempo, no solo tus atrasos."
+    },
+    {
+     "titulo": "MITO: Si pagas tu deuda, se borra del Buró",
+     "texto": "Pagar no borra el registro al instante: se elimina según el monto, de 1 a 6 años. Quien te cobra por borrarte, te estafa.\n\nLRSIC, art. 23 · Condusef (oct-2016)",
+     "voz": "Mito: que pagando tu deuda desaparezca del Buró; el registro se queda hasta seis años."
+    },
+    {
+     "titulo": "A MEDIAS: Ver tu reporte de crédito es gratis",
+     "texto": "Gratis una vez cada 12 meses, por correo electrónico o recogiéndolo. Más veces, o si te lo mandan en sobre a tu casa, ya no es gratis por ley.\n\nLRSIC, arts. 40 y 41 · Condusef (oct-2016)",
+     "voz": "A medias: tu reporte de crédito es gratis, pero solo una vez cada doce meses."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas te sabías? Comenta el número del 0 al 5.",
+    "texto": "Mándaselo a tu amigo que solo paga el mínimo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas te sabías? Comenta el número del cero al cinco y sígueme."
+   },
+   "fuente": "Profeco, '¿Pagos mínimos en tarjetas? Solo cuando sea necesario' (17-sep-2021, gob.mx/profeco/articulos/pagos-minimos-en-tarjetas-solo-cuando-sea-necesario): con el pago mínimo 'los tarjetahabientes pagan intereses por el resto del saldo no cubierto'; evita intereses moratorios, 'aunque sí pagarás intereses ordinarios'. Condusef, '¿Cómo pagas tu tarjeta de crédito?' (2-ago-2019, gob.mx/condusef/articulos/como-pagas-tu-tarjeta-de-credito): el totalero 'es el usuario que paga su saldo de forma completa cada mes para no generar intereses', la única forma de obtener financiamiento sin costo; pagando solo el mínimo tardas más 'ya que sólo estarás abonando a intereses'; al disponer efectivo con la tarjeta 'te pueden cobrar hasta el 10% de lo que dispongas'. Condusef, Proteja su Dinero, 'Desmitificando el Buró' (8-sep-2026, act. 1-oct-2026, revista.condusef.gob.mx/credito/2026/09/desmitificando-el-buro/): 'No es una lista de personas morosas'; 'Cada pago puntual queda registrado'; 'La información permanece en las SICs durante un tiempo determinado por la ley', que 'puede ir entre 1 a 6 años' según el monto. Ley para Regular las Sociedades de Información Crediticia, art. 23 (última reforma DOF 24-01-2024, diputados.gob.mx/LeyesBiblio/pdf/LRSIC.pdf): conservan los historiales 'al menos durante un plazo de setenta y dos meses'; pueden eliminar 'aquella información que refleje el cumplimiento de cualquier obligación, después de setenta y dos meses'; en créditos con incumplimientos y pagos, eliminan cada período de incumplimiento a los 72 meses contados desde el primer incumplimiento de cada periodo; los créditos menores a 1,000 UDIS se eliminan en los términos que fije el Banco de México. Condusef, '¿En cuánto tiempo me borran del Buró de Crédito?' (12-oct-2016, gob.mx/condusef/articulos/no-es-una-lista-negra): hasta 25 UDIS, un año; más de 25 y hasta 500 UDIS, dos años; más de 500 y hasta 1000 UDIS, cuatro años; más de 1000 UDIS, seis años (si son menores a 400 mil UDIS, sin proceso judicial ni fraude); 'Cuando pagas una deuda con descuento, tu información aún permanece en el Buró de Crédito'; 'Ofrecen borrarte del Buró de Crédito a cambio de dinero; eso no se puede hacer'; 'tienes derecho a solicitar tu reporte de crédito gratis una vez cada 12 meses'. LRSIC, art. 40, cuarto párrafo: el reporte se entrega, a elección del Cliente, 'I. Ponerlo a su disposición en la unidad especializada de la Sociedad; II. Enviarlo a la dirección de correo electrónico que haya señalado en la solicitud correspondiente; III. Enviarlo en sobre cerrado con acuse de recibo a la dirección que haya señalado'. LRSIC, art. 41: 'Los Clientes tendrán derecho a solicitar a las Sociedades el envío gratuito de su Reporte de Crédito Especial cada vez que transcurran doce meses. Lo anterior, siempre que soliciten que el envío respectivo se lleve a cabo por correo electrónico o que acudan a recogerlo a la unidad especializada de la Sociedad'; si piden el envío por la fr. III del art. 40 (sobre cerrado a su domicilio) 'o tratándose de una solicitud adicional del Reporte de Crédito Especial, la Sociedad deberá ajustarse a las disposiciones de carácter general a que se refiere el artículo 12', es decir, ya no es gratis por ley. Consultado el 9-nov-2026.",
+   "titulo_post": "Tarjeta y Buró: mito o verdad",
+   "texto_post": "Mitos del Buró de Crédito y de tu tarjeta: pagar el mínimo es rentarle tu sueldo al banco. 💳\n1. MITO: con el pago mínimo no pagas intereses. Te evita los moratorios, pero pagas intereses ordinarios por todo lo que no cubriste.\n2. VERDAD: si pagas el total cada mes (totalero), tu tarjeta no te cobra intereses. Ojo: sacar efectivo con ella sí cuesta (hasta 10 % de lo que dispongas, según Condusef).\n3. VERDAD: el Buró no es lista negra; también registra cada pago puntual.\n4. MITO: que pagar tu deuda la borre del Buró al instante. Se elimina según el monto, de 1 a 6 años. Quien te cobra por borrarte, te estafa.\n5. A MEDIAS: tu reporte de crédito especial es gratis una vez cada 12 meses, por correo electrónico o recogiéndolo. Más veces, o en sobre a tu casa, ya no es gratis por ley.\n\nCapital revisó su Buró: cero atrasos, porque nunca ha pedido prestado. Ni prestado, ni a mí.\n📚 Profeco (sep-2021); Condusef (oct-2016, ago-2019 y Proteja su Dinero, sep-2026); Ley para Regular las Sociedades de Información Crediticia, arts. 23, 40 y 41.\n💬 ¿Cuántas te sabías? Comenta el número del 0 al 5. Te contesto a todos.\n🔖 Guárdalo para cuando te llegue el estado de cuenta.\n📩 Mándaselo a tu amigo que solo paga el mínimo.",
+   "seo": {
+    "palabra_clave": "mitos del buró de crédito",
+    "titulo": "Mitos del Buró de Crédito y tu tarjeta 💳",
+    "tags_concretas": [
+     "mitos del buró de crédito",
+     "buró de crédito lista negra",
+     "cuánto tiempo dura el buró de crédito",
+     "pago mínimo tarjeta de crédito",
+     "pago mínimo genera intereses",
+     "totalero tarjeta de crédito",
+     "reporte de crédito gratis",
+     "si pago mi deuda me borran del buró",
+     "borrar buró de crédito fraude"
+    ],
+    "hashtags": [
+     "#burodecredito",
+     "#tarjetadecredito",
+     "#credito",
+     "#deudas"
+    ],
+    "preguntas": [
+     "¿Si pago el mínimo me cobran intereses?",
+     "¿Si pago mi deuda me borran del Buró de Crédito?",
+     "¿Cuánto tiempo dura una deuda en el Buró de Crédito?",
+     "¿Cómo saco mi reporte de crédito gratis?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_finiquito_mitos.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Mito o verdad (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c32",
+   "estado": "listo",
+   "tema": "mitos_ahorro_inversion",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "MITO O VERDAD",
+    "titulo": "¿Mito o verdad? 5 cosas que crees de tu ahorro",
+    "voz": "Ahorrar sin saber quién cuida tu dinero también es apostar. A ver cuántas de estas cinco te sabes.",
+    "gancho_tipo": "mito",
+    "foto_reel": "assets/fotos/enero-oficina-casa.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "VERDAD: Con Cetes le prestas al gobierno",
+     "texto": "Los Cetes son el instrumento de deuda más antiguo del Gobierno Federal: los compras abajo de 10 pesos y al vencer te pagan los 10.\n\nBanco de México · SHCP",
+     "voz": "Verdad: cuando compras Certificados de la Tesorería, le prestas dinero al Gobierno Federal."
+    },
+    {
+     "titulo": "A MEDIAS: El IPAB protege todo tu dinero en el banco",
+     "texto": "Protege depósitos como cuentas de cheques, de ahorro, pagarés y certificados de depósito, hasta 400 mil UDIS por persona y por banco. Lo que pase de ahí, no.\n\nLey de Protección al Ahorro Bancario, art. 11 · IPAB",
+     "voz": "A medias: el seguro protege tu dinero en el banco, pero solo hasta un tope por persona y por banco."
+    },
+    {
+     "titulo": "MITO: El IPAB cubre tu fondo de inversión",
+     "texto": "El seguro de depósitos no cubre fondos de inversión, aseguradoras, cajas de ahorro ni casas de bolsa, aunque te los ofrezcan en la sucursal del banco.\n\nIPAB (oct-2019)",
+     "voz": "Mito: que el seguro del banco cubra tus fondos de inversión, aunque los compres ahí."
+    },
+    {
+     "titulo": "MITO: El dinero de tu Afore es de la Afore",
+     "texto": "Por ley, lo que hay en tu cuenta individual es tuyo. Además no se puede embargar ni dar en garantía, salvo las aportaciones voluntarias.\n\nLey del Seguro Social, art. 169",
+     "voz": "Mito: que el dinero de tu cuenta para el retiro sea de la administradora; es tuyo."
+    },
+    {
+     "titulo": "VERDAD: Puedes cambiarte de Afore",
+     "texto": "Una vez al año, o antes si te vas a una con mayor rendimiento neto (ahí te quedas 12 meses). Cambiarte no tiene comisión.\n\nLey de los Sistemas de Ahorro para el Retiro, arts. 37 y 74",
+     "voz": "Verdad: puedes cambiar tu cuenta para el retiro de administradora una vez al año."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas te sabías? Comenta el número del 0 al 5.",
+    "texto": "Mándaselo a tu papá, que nunca ha abierto su estado de cuenta del retiro.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas te sabías? Comenta el número del cero al cinco y sígueme."
+   },
+   "fuente": "Banco de México, 'Mercado de valores gubernamentales', cap. II, 'Tipos de instrumentos y su colocación' (banxico.org.mx/elib/mercado-valores-gub/OEBPS/Text/ii.html): los Cetes son 'el instrumento de deuda más antiguo emitido por el Gobierno Federal'; 'se comercializan a descuento (por debajo de su valor nominal)' y 'liquidan su valor nominal en la fecha de vencimiento'; valor nominal: 10 pesos. SHCP, 'Valores Gubernamentales en el Mercado Local' (16-ago-2011, gob.mx/shcp/documentos/valores-gubernamentales-en-el-mercado-local): 'el Gobierno Federal emite y subasta cuatro tipos de instrumentos'; Cetes: 'Tienen un valor nominal de 10 pesos'. Ley de Protección al Ahorro Bancario, art. 11 (última reforma DOF 11-05-2022, diputados.gob.mx/LeyesBiblio/pdf/LPAB.pdf): el IPAB pagará las obligaciones garantizadas 'hasta por una cantidad equivalente a cuatrocientas mil unidades de inversión por persona, física o moral, cualquiera que sea el número y clase de dichas obligaciones a su favor y a cargo de una misma Institución'; art. 10, fr. III: no garantiza 'Los pasivos documentados en títulos negociables, así como los títulos emitidos al portador'. IPAB, 'Preguntas frecuentes Ahorradores' (gob.mx/ipab/acciones-y-programas/preguntas-frecuentes-ahorradores): las obligaciones garantizadas 'incluyen cuentas de cheques, ahorro, pagarés y certificados de depósito', 'hasta 400,000 Unidades de Inversión por persona por institución'. IPAB, 'Productos bancarios protegidos por el IPAB' (2-oct-2019, gob.mx/ipab/articulos/productos-bancarios-protegidos-por-el-ipab): 'el Seguro de Depósitos Bancarios no garantiza entre otros, las inversiones en sociedades de inversión, aseguradoras, cajas de ahorro, sociedades de ahorro y préstamo popular, casas de bolsa o en los bancos de desarrollo', 'aunque estas sean ofrecidas en sucursales bancarias'. Ley del Seguro Social, art. 169 (última reforma DOF 15-01-2026, diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf): 'Los recursos depositados en la cuenta individual de cada trabajador son propiedad de éste con las modalidades que se establecen en esta Ley'; 'Estos recursos son inembargables y no podrán otorgarse como garantía. Lo anterior no será aplicable para los recursos depositados en la subcuenta de aportaciones voluntarias'. Ley de los Sistemas de Ahorro para el Retiro, art. 74 (última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/LSAR.pdf): 'Los trabajadores tendrán derecho a traspasar su cuenta individual de una administradora a otra una vez transcurrido un año, contado a partir de que el trabajador se registró o de la última ocasión en que haya ejercitado su derecho al traspaso. Podrá hacerlo antes del año, cuando traspase su cuenta individual a una administradora cuyas sociedades de inversión hubieren registrado un mayor Rendimiento Neto'; quienes lo hagan 'deberán permanecer al menos doce meses en la última administradora elegida'. LSAR, art. 37: 'En ningún caso, las administradoras podrán cobrar comisiones por el traspaso de las cuentas individuales'. Solo información: no es recomendación de inversión. Consultado el 9-nov-2026.",
+   "titulo_post": "Ahorro, Cetes y Afore: mito o verdad",
+   "texto_post": "Mitos del ahorro: ahorrar sin saber quién cuida tu dinero también es apostar. 🏦\n1. VERDAD: con Cetes le prestas al Gobierno Federal. Los compras abajo de 10 pesos y al vencer te pagan los 10.\n2. A MEDIAS: el IPAB protege tus depósitos (cheques, ahorro, pagarés, certificados de depósito), pero solo hasta 400 mil UDIS por persona y por banco.\n3. MITO: el IPAB no cubre fondos de inversión, aseguradoras, cajas de ahorro ni casas de bolsa, aunque te los ofrezcan en la sucursal.\n4. MITO: el dinero de tu Afore es tuyo por ley, no de la Afore.\n5. VERDAD: puedes cambiarte de Afore una vez al año, o antes si es a una con mayor rendimiento neto. Sin comisión.\n\nCapital tampoco tiene seguro de depósitos: entierra sus croquetas en el jardín y dice que es renta fija.\nSolo información, no es recomendación de inversión.\n📚 Banco de México; SHCP; Ley de Protección al Ahorro Bancario, art. 11; IPAB (2019 y Preguntas frecuentes); Ley del Seguro Social, art. 169; Ley de los Sistemas de Ahorro para el Retiro, arts. 37 y 74.\n💬 ¿Cuántas te sabías? Comenta el número del 0 al 5. Te contesto a todos.\n🔖 Guárdalo para cuando revises dónde tienes tu ahorro.\n📩 Mándaselo a tu papá, que nunca ha abierto su estado de cuenta del retiro.",
+   "seo": {
+    "palabra_clave": "mitos del ahorro",
+    "titulo": "Mitos del ahorro con Cetes, IPAB y Afore 🏦",
+    "tags_concretas": [
+     "mitos del ahorro",
+     "qué son los cetes",
+     "cetes gobierno federal",
+     "seguro ipab 400 mil udis",
+     "ipab protege fondos de inversión",
+     "de quién es el dinero de la afore",
+     "cómo cambiarme de afore",
+     "traspaso de afore sin comisión",
+     "ahorro e inversión básica"
+    ],
+    "hashtags": [
+     "#ahorro",
+     "#cetes",
+     "#afore",
+     "#ipab"
+    ],
+    "preguntas": [
+     "¿Qué cubre el seguro del IPAB?",
+     "¿El IPAB protege los fondos de inversión?",
+     "¿El dinero de la Afore es mío?",
+     "¿Cada cuánto me puedo cambiar de Afore?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (scratchpad revision_finiquito_mitos.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato Mito o verdad (docs/PERSONAJE.md)"
   }
  ]
 }
