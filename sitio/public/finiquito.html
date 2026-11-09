@@ -93,6 +93,8 @@
       Aguinaldo: $500 × 15 × 304/365 = $6,246.58.
       Vacaciones: vas en tu año 2, que da 14 días; llevas 92 días de ese año: 14 × 92/365 = 3.53 días
       = $1,764.38. Prima vacacional: $441.10. Sin prima de antigüedad (al renunciar se necesitan 15 años).
+      Si todavía no tomabas los 12 días de tu primer año (los ganaste el 1-ago-2026 y tenías 6 meses para disfrutarlos, art. 81),
+      súmalos: 12 × $500 + 25% = $7,500.00, y el finiquito sube a $15,952.05.
       <b>Finiquito: $8,452.05</b>.</p>
       <h3>2. Te despiden sin causa con 4 años y ganas $15,000 al mes</h3>
       <p>Del 1-nov-2022 al 31-oct-2026, de planta. Finiquito: aguinaldo $6,246.58 + vacaciones del año 4 (18 días)
@@ -206,6 +208,9 @@ function calcular() {
   const finiquito = conceptos.reduce((s, c) => s + c.monto, 0);
 
   const notas = [];
+  if (diasAg < 15) notas.push('Pusiste menos de 15 días de aguinaldo: la ley da mínimo 15 (art. 87).');
+  if (pct < 25) notas.push('Pusiste menos de 25% de prima vacacional: la ley da mínimo 25% (art. 80).');
+  if (new Date(salida).getUTCFullYear() < 2026) notas.push('Saliste antes de 2026: aquí usamos el salario mínimo 2026 para el tope de la prima de antigüedad, y antes de 2023 las vacaciones eran menos días. Revisa tu caso en la PROFEDET.');
   const sm = SM[$('zona').value];
   const base = Math.min(Math.max(diario, sm), 2 * sm);
   const baseTexto = diario > 2 * sm ? `${pesos(base, 2)} (tope: 2 salarios mínimos)` : diario < sm ? `${pesos(base, 2)} (no menos del salario mínimo)` : pesos(base, 2);
@@ -222,13 +227,18 @@ function calcular() {
   if (motivo === 'injustificado') {
     agregar('Indemnización: 3 meses de salario', 'art. 48', `90 días × ${pesos(diario, 2)}`, 90 * diario);
     liquidacion += 90 * diario;
-    const veinte = 20 * anos * diario;
+    // Con menos de un año (art. 49, fr. I) el patrón puede no reinstalarte pagando el art. 50: mostramos la parte proporcional.
+    const veinte = anos > 0 ? 20 * anos * diario : 20 * resto / 365 * diario;
+    const veinteDetalle = anos > 0 ? `20 días × ${anosTexto(anos)} completos` : `parte proporcional de ${dias(resto)}`;
+    const veinteResto = anos === 0
+      ? ` Con menos de un año de servicio, el patrón puede no regresarte pagando esta indemnización (art. 49, fr. I). La ley habla de "cada uno de los años", así que esta cifra es la parte proporcional: confírmala en la PROFEDET.`
+      : resto > 0 ? ` Por los ${dias(resto)} del año que iba corriendo serían unos ${pesos(20 * resto / 365 * diario, 2)} más; pregunta en la PROFEDET si te los reconocen.` : '';
     puede.replaceChildren(
       crear('h3', {textContent: 'Puede aplicar (no está sumado)'}),
       crear('ul', {className: 'desglose'}, crear('li', {},
-        crear('span', {}, '20 días por año de servicio ', crear('span', {className: 'letra-chica', textContent: `(art. 50, fr. II · 20 días × ${anosTexto(anos)} completos)`})),
+        crear('span', {}, '20 días por año de servicio ', crear('span', {className: 'letra-chica', textContent: `(art. 50, fr. II · ${veinteDetalle})`})),
         crear('b', {textContent: pesos(veinte, 2)}))),
-      crear('p', {className: 'nota', textContent: 'Si te despiden sin causa, la ley te deja elegir: que te regresen a tu trabajo o los 3 meses (art. 48). Los 20 días por año se pagan además cuando el patrón queda libre de regresarte (art. 49: si tenías menos de un año, eras de confianza, trabajo del hogar, eventual, o el Tribunal decide que el trato directo ya no es posible) o cuando tú te vas por culpa del patrón (arts. 51 y 52). Si había contrato por tiempo determinado, se calcula distinto (art. 50, fr. I). Si llegas a juicio y el patrón no prueba la causa, también se pagan salarios vencidos de hasta 12 meses (art. 48): no están aquí.'}));
+      crear('p', {className: 'nota', textContent: 'Si te despiden sin causa, la ley te deja elegir: que te regresen a tu trabajo o los 3 meses (art. 48). Los 20 días por año se pagan además cuando el patrón queda libre de regresarte (art. 49: si tenías menos de un año, eras de confianza, trabajo del hogar, eventual, o el Tribunal decide que el trato directo ya no es posible) o cuando tú te vas por culpa del patrón (arts. 51 y 52). Si había contrato por tiempo determinado, se calcula distinto (art. 50, fr. I). Si llegas a juicio y el patrón no prueba la causa, también se pagan salarios vencidos de hasta 12 meses (art. 48): no están aquí.' + veinteResto}));
   } else puede.replaceChildren();
   if (motivo === 'justificado') notas.push('Aunque el despido sea justificado, lo que ya ganaste se paga. El patrón debe darte un aviso por escrito con la causa y la fecha; si no te lo da, se presume que el despido fue injustificado (art. 47).');
 
