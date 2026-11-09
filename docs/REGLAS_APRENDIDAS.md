@@ -64,7 +64,9 @@ dice "Aquí". Cuando los datos propios contradigan una regla, mandan los datos p
     **Actualización 30-oct-2026:** Instagram limita a 5 hashtags por post desde diciembre de 2025;
     allí van 3 concretos + 2 de marca. TikTok y YouTube siguen la regla original.
 28. Si se conecta una página de Facebook, su Reel sale también en el Instagram enlazado: no
-    mandar el mismo video dos veces a Instagram. *Aquí: no se publica en Facebook.*
+    mandar el mismo video dos veces a Instagram. *Aquí (desde el 9-nov-2026): la página "Victoria the CEO" recibe
+    todo lo de Instagram como video normal de Facebook (no Reel), a la misma hora; publer.py y publer_carrusel.py
+    --reel lo hacen solos. El compartido automático de Meta no sirve: solo comparte al perfil personal de Rodrigo.*
 
 ## Horarios y frecuencia
 29. Publicar los 7 días; el "peor día" cambia de mes a mes y con menos de 15 videos por día es

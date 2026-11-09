@@ -14,7 +14,8 @@
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Si ganas $15,000 al mes, te toca mínimo $7,500",
     "voz": "Si ganas quince mil pesos al mes, tu aguinaldo mínimo es de siete mil quinientos.",
-    "gancho_tipo": "si"
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
    },
    "diapositivas": [
     {
@@ -106,7 +107,10 @@
     "yt": "2026-11-01T23:00:00Z"
    },
    "nota_voz": "Rehecho el 31-oct con la voz clonada de Victoria (Rodrigo eligió la \"B\"). El anterior (OgSZUknXNHc, voz de Edge) quedó privado y sin fecha: no sale.",
-   "comentario_youtube": "Ugw2Bv8Wc-rm5UAkekN4AaABAg"
+   "comentario_youtube": "Ugw2Bv8Wc-rm5UAkekN4AaABAg",
+   "facebook": {
+    "publica_utc": "2026-11-12T03:30:00Z"
+   }
   },
   {
    "id": "c02",
@@ -117,7 +121,8 @@
     "etiqueta": "TU DINERO",
     "titulo": "Si haces esto con tu dinero, haz esto en su lugar",
     "voz": "Si haces esto con tu dinero, haz esto en su lugar.",
-    "gancho_tipo": "si"
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
    },
    "diapositivas": [
     {
@@ -194,7 +199,10 @@
     "tt": "2026-10-31T02:05:59Z",
     "yt": "2026-10-30T18:00:00Z"
    },
-   "comentario_youtube": "UgwyiCDUBYNzDiQlHXt4AaABAg"
+   "comentario_youtube": "UgwyiCDUBYNzDiQlHXt4AaABAg",
+   "facebook": {
+    "publica_utc": "2026-11-13T15:30:00Z"
+   }
   },
   {
    "id": "c03",
@@ -568,7 +576,10 @@
    },
    "youtube": "https://youtube.com/shorts/4-XMOqZF8qA",
    "playlist": true,
-   "comentario_youtube": "Ugxb7E9mcKDKJC1UzfV4AaABAg"
+   "comentario_youtube": "Ugxb7E9mcKDKJC1UzfV4AaABAg",
+   "facebook": {
+    "publica_utc": "2026-11-10T02:30:00Z"
+   }
   },
   {
    "id": "c07",
@@ -751,6 +762,9 @@
     "publica_utc": "2026-11-07T21:02:22Z",
     "texto": "Tu café de $50 diario te cuesta $18,000 al año\nGastos hormiga: tu café de $50 diario te cuesta $18,000 al año. ☕\nPueden comerse hasta 12% de tu ingreso y solo 1 de cada 6 adultos anota sus gastos. Reto: anota todo una semana.\n\n¿Cuál es tu gasto hormiga? Te leo.\n📥 Mis 30 reglas de la CEO, gratis: enlace en mi perfil 👆\n📩 Mándaselo a quien vive del café de la esquina.\n\n#gastoshormiga #ahorro #dinero #finanzaspersonales #victoriatheceo",
     "video": "carruseles/c08/reel.mp4"
+   },
+   "facebook": {
+    "publica_utc": "2026-11-12T15:30:00Z"
    }
   },
   {
@@ -841,6 +855,9 @@
     "publica_utc": "2026-11-09T17:00:00Z",
     "texto": "Tu Afore puede bajarte impuestos: así funciona\nAhorro voluntario Afore: así puede bajarte impuestos. 🧾\nLas aportaciones complementarias de retiro se deducen hasta 10% de tus ingresos (máximo 5 UMA anuales) y se quedan hasta tu retiro.\n\nRevisa con tu contador si te conviene.\n🔖 Guárdalo para tu declaración anual.\n📩 Mándaselo a quien siempre paga de más.\n\n#afore #impuestos #sat #finanzaspersonales #victoriatheceo",
     "video": "carruseles/c09/reel.mp4"
+   },
+   "facebook": {
+    "publica_utc": "2026-11-13T03:30:00Z"
    }
   },
   {
@@ -1501,6 +1518,9 @@
     "publica_utc": "2026-11-09T21:00:00Z",
     "texto": "Guarda esto: tu aguinaldo 2026 en 5 datos\nAguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️\n1. Te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Mínimo 15 días de salario; si no completaste el año, la parte proporcional.\n3. Los primeros $3,519.30 no pagan ISR (30 UMA de 2026).\n4. Si no te pagan, PROFEDET te ayuda gratis: gob.mx/profedet.\n5. Tienes un año para reclamarlo, contado desde el 20 de diciembre.\n\n📚 LFT, arts. 87 y 516; LISR, art. 93 fracc. XIV; UMA 2026 (INEGI); PROFEDET.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien cobra aguinaldo por primera vez.\n\n#aguinaldo #aguinaldo2026 #derechoslaborales #finanzaspersonales #victoriatheceo",
     "video": "carruseles/c16/reel.mp4"
+   },
+   "facebook": {
+    "publica_utc": "2026-11-09T21:00:00Z"
    }
   },
   {

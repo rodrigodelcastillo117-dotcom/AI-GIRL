@@ -1,7 +1,7 @@
 """Programa un carrusel de contenido/carruseles.json en el Instagram y/o el TikTok de Victoria (Publer).
 
 Uso: python publer_carrusel.py <id> <cuando_utc> [--borrador] [--prueba] [--forzar]
-     python publer_carrusel.py <id> --reel [auto|<cuando_utc>] [--prueba]
+     python publer_carrusel.py <id> --reel [auto|<cuando_utc>] [--prueba] [--solo-facebook]
      cuando_utc: "2026-11-03T00:45:00Z" (las dos redes) o una hora por red: "ig=...,tt=..."; con una sola red
                  ("tt=2026-11-03T21:00:00Z") se programa solo en esa red.
      --borrador  lo deja como borrador en Publer (no sale): para que Rodrigo lo vea antes.
@@ -29,7 +29,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import (_buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
+from publer import (facebook_victoria, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
                     esperar_job, mandar, red, workspace_id, ya_programadas)
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
 
@@ -142,13 +142,15 @@ def reel(c, cuando, config):
         sys.exit(f'ERROR: falta {video}: corre primero carrusel_video.py short {c["id"]}')
     datos = json.load(open(RUTA))
     yo = next(x for x in datos['carruseles'] if x['id'] == c['id'])
-    if (yo.get('reel_ig') or {}).get('publica_utc'):
-        print(f'OMITIDO: el Reel de {c["id"]} ya está en carruseles.json ({yo["reel_ig"]["publica_utc"]}).')
+    # --solo-facebook: carruseles que ya salieron en las otras redes, solo a la página de Facebook (9-nov-2026)
+    ya_ig = bool((yo.get('reel_ig') or {}).get('publica_utc')) or '--solo-facebook' in sys.argv
+    if ya_ig and yo.get('facebook'):
+        print(f'OMITIDO: el Reel de {c["id"]} ya está en Facebook ({yo["facebook"]["publica_utc"]}).')
         return
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     if cuando == 'auto':
         cuando = hora_reel(yo, datos['carruseles'], plan, config, datetime.datetime.now(datetime.timezone.utc))
-    elif '--forzar' not in sys.argv:
+    elif '--forzar' not in sys.argv and not ya_ig:
         choques = ya_sale_ese_dia(yo, cuando, datos['carruseles'], plan, ['instagram'])
         if choques:
             sys.exit(f'ERROR: el Reel choca con otra publicación de ese día ({"; ".join(choques)}). Otra hora, o --forzar.')
@@ -158,12 +160,17 @@ def reel(c, cuando, config):
                                     comentario_ig(c, config)), ensure_ascii=False, indent=1))
         return
     ws = workspace_id()
-    _, cuentas = cuentas_victoria(ws)
-    cuentas = [x for x in cuentas if red(x) == 'instagram']
-    if not cuentas:
+    todas, cuentas = cuentas_victoria(ws)
+    cuentas = [x for x in cuentas if red(x) == 'instagram' and not ya_ig]  # con Reel ya programado, solo falta Facebook
+    if not cuentas and not ya_ig:
         sys.exit('ERROR: no encontré el Instagram de Victoria en Publer. No publico nada.')
-    if ya_programadas(ws, cuentas, texto):
-        print('OMITIDO: este Reel ya está programado o publicado en Instagram.')
+    fb = facebook_victoria(todas)
+    if fb:
+        cuentas.append(fb)  # 9-nov-2026: el Reel de Instagram sale también en la página de Facebook, a la misma hora
+    ya = ya_programadas(ws, cuentas, texto)
+    cuentas = [x for x in cuentas if str(x['id']) not in ya]
+    if not cuentas:
+        print('OMITIDO: este Reel ya está programado o publicado en Instagram y Facebook.')
         return
     subida = _pedir('POST', '/media', ws, multipart=(f'{c["id"]}-reel.mp4', open(video, 'rb').read(), 'video/mp4'))
     media_id = subida.get('id') or (subida.get('data') or {}).get('id')
@@ -171,19 +178,32 @@ def reel(c, cuando, config):
         media_id = _buscar_id(esperar_job(ws, subida['job_id']).get('result'))
     if not media_id:
         sys.exit(f'ERROR: la subida del video no regresó id: {json.dumps(subida)[:500]}')
-    motivo = mandar(ws, armar_post(cuentas, media_id, texto, c['titulo_post'], cuando, comentario_ig(c, config)))
-    if motivo:  # si Publer no acepta el primer comentario, sale sin él
-        print(f'AVISO: Publer rechazó el Reel con primer comentario ({motivo[:200]}); lo mando sin comentario.')
-        motivo = mandar(ws, armar_post(cuentas, media_id, texto, c['titulo_post'], cuando))
-    if motivo:
-        sys.exit(f'ERROR: Publer reportó falla en el Reel: {motivo}')
+    fallas, salieron = [], []
+    for cuenta in cuentas:  # una petición por red (regla 5): si Facebook falla, Instagram no se pierde
+        motivo = mandar(ws, armar_post([cuenta], media_id, texto, c['titulo_post'], cuando, comentario_ig(c, config)))
+        if motivo:  # si Publer no acepta el primer comentario, sale sin él
+            print(f'AVISO: Publer rechazó el {red(cuenta)} con primer comentario ({motivo[:200]}); lo mando sin comentario.')
+            motivo = mandar(ws, armar_post([cuenta], media_id, texto, c['titulo_post'], cuando))
+        if motivo:
+            fallas.append(f'{red(cuenta)}: {motivo}')
+        else:
+            salieron.append(red(cuenta))
+            print(f'OK {red(cuenta)} programado para {cuando}.')
     datos = json.load(open(RUTA))  # releído: la subida tarda y otro paso pudo escribir
     yo = next(x for x in datos['carruseles'] if x['id'] == c['id'])
+    if 'facebook' in salieron:
+        yo['facebook'] = {'publica_utc': cuando}
+    if 'instagram' not in salieron:  # solo salió (o falló) Facebook: reel_ig no se toca
+        json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
+        if fallas:
+            sys.exit('ERROR: Publer reportó falla: ' + ' | '.join(fallas))
+        return
     yo['reel_ig'] = {'publica_utc': cuando, 'texto': texto, 'video': os.path.relpath(video, RAIZ)}
     if yo['estado'] == 'listo':
         yo['estado'] = 'programado'
     json.dump(datos, open(RUTA, 'w'), ensure_ascii=False, indent=1)
-    print(f'OK Reel de Instagram programado para {cuando}.')
+    if fallas:
+        sys.exit('ERROR: Publer reportó falla: ' + ' | '.join(fallas))
 
 
 def main():

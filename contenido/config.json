@@ -446,5 +446,7 @@
  },
  "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red. 9-nov-2026, más tarde: Rodrigo aprobó YouTube a 3 al día (para que no se atrase respecto a TikTok).",
  "prioridad_reel_ig": [],
- "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube."
+ "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube.",
+ "facebook_victoria": "6af202cb29e54cb1259515de",
+ "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok."
 }

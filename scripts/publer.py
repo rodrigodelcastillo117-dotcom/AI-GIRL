@@ -9,6 +9,8 @@ Lee PUBLER_API_KEY del entorno (nunca del repo). Comandos:
       Omite las cuentas que ya tienen un post con la misma primera línea (programado o publicado),
       por si una ejecución anterior publicó pero no pudo guardar su estado en el repo.
       --prueba arma el payload y lo imprime sin llamar a la API.
+      Desde el 9-nov-2026 lo que sale en Instagram sale también en la página de Facebook (config → facebook_victoria),
+      a la hora de Instagram. --solo-facebook lo publica solo en esa página (para lo ya publicado en las otras redes).
 
 Solo publica en las cuentas de contenido/config.json → cuentas_publer, o cuyo nombre contiene
 filtro_cuentas, para no publicar nunca en las cuentas de otras marcas del mismo workspace.
@@ -29,7 +31,7 @@ AGENTE = 'AI-GIRL-pipeline/1.0 (+https://github.com/rodrigodelcastillo117-dotcom
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
 # YouTube no va por Publer (costaría una cuenta extra): lo sube scripts/youtube.py con la API gratis.
-REDES = ('instagram', 'tiktok')  # Facebook no: su Reel también sale en el Instagram enlazado (regla 28)
+REDES = ('instagram', 'tiktok')  # Facebook va aparte (facebook_victoria): como video normal, no Reel (regla 28)
 
 
 def _pedir(metodo, ruta, workspace=None, cuerpo=None, multipart=None):
@@ -72,6 +74,13 @@ def workspace_id():
     if not ws:
         sys.exit('ERROR: la clave no tiene workspaces')
     return ws[0]['id']
+
+
+def facebook_victoria(todas):
+    """La página de Facebook de Victoria (config.json → facebook_victoria, desde el 9-nov-2026), o None. Va aparte de
+    cuentas_victoria para que medir y el tablero sigan solo con Instagram y TikTok."""
+    fb = CONFIG.get('facebook_victoria')
+    return next((c for c in todas if fb and c['id'] == fb and c.get('provider') == 'facebook'), None)
 
 
 def cuentas_victoria(ws):
@@ -153,7 +162,8 @@ def cuando_de(cuando, proveedor):
     """"2026-11-01T00:45:00Z" (la misma hora en todas) o "ig=...,tt=..." (una hora por red: prueba de horarios)."""
     if '=' not in cuando:
         return cuando
-    return dict(x.split('=', 1) for x in cuando.split(','))[{'instagram': 'ig', 'tiktok': 'tt'}[proveedor]]
+    # Facebook sale a la hora de Instagram (9-nov-2026).
+    return dict(x.split('=', 1) for x in cuando.split(','))[{'instagram': 'ig', 'tiktok': 'tt', 'facebook': 'ig'}[proveedor]]
 
 
 def mandar(ws, body):
@@ -219,6 +229,8 @@ def main():
     carpeta = os.path.dirname(os.path.abspath(archivo_texto))
     por_red = {r: open(os.path.join(carpeta, f'texto_{r}.txt')).read().strip()
                for r in ('instagram', 'tiktok') if os.path.exists(os.path.join(carpeta, f'texto_{r}.txt'))}
+    if 'instagram' in por_red:
+        por_red['facebook'] = por_red['instagram']  # Facebook lleva el pie de Instagram
     if len(titulo.strip()) < 5:  # Instagram pide título y TikTok mínimo 5 caracteres (regla 6)
         titulo = 'Victoria The CEO'
 
@@ -229,9 +241,16 @@ def main():
         return
 
     ws = workspace_id()
-    _, cuentas = cuentas_victoria(ws)
+    todas, cuentas = cuentas_victoria(ws)
     if not cuentas:
         sys.exit('ERROR: no encontré las cuentas de Victoria en Publer. No publico nada.')
+    fb = facebook_victoria(todas)
+    if '--solo-facebook' in sys.argv:  # 9-nov-2026: lo ya publicado en las otras redes, solo a la página nueva
+        if not fb:
+            sys.exit('ERROR: no encontré la página de Facebook de Victoria (config → facebook_victoria).')
+        cuentas = [fb]
+    elif fb and any(red(c) == 'instagram' for c in cuentas):
+        cuentas.append(fb)  # lo que sale en Instagram sale también en Facebook
     print('Cuentas:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas))
     try:
         repetidas = ya_programadas(ws, cuentas, texto)
