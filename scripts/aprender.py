@@ -765,7 +765,8 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
       (los de temporada primero, porque caducan); si no hay ninguno probado, el mismo de TikTok de hoy. Instagram
       lo sube en fotos y además su video como Reel (publer_carrusel.py --reel); YouTube, su short."""
     por_red = lambda c: c.get('publica_utc_por_red') or {}
-    falta = lambda c, r: c['estado'] in ('listo', 'programado', 'publicado') and r not in por_red(c) and en_ventana(c, hoy)
+    falta = lambda c, r: (c['estado'] in ('listo', 'programado', 'publicado') and r not in por_red(c) and en_ventana(c, hoy)
+                          and not c.get('fuera_de_tema'))  # 9-nov-2026: un solo tema
     sale_hoy = lambda lista, r: [h[r] for _, h in publicaciones(plan, lista) if r in h and h[r].date() == hoy]
     # Solo carruseles (sin los videos del plan): antes el video del día contaba como "short de carrusel de hoy" (8-nov-2026).
     carrusel_hoy = lambda r: [h[r] for _, h in publicaciones({'videos': []}, carruseles) if r in h and h[r].date() == hoy]

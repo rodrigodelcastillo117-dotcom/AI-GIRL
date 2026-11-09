@@ -13,6 +13,11 @@ crecer este canal, en todos lados". Este documento es el plan. La rutina diaria 
 
 Tu dinero en México. Nada de salud mental, productividad ni historias de empresas por ahora (en reserva).
 
+## Lo que ya funcionó
+
+- **9-nov-2026: c16 "Guarda esto: tu aguinaldo 2026 en 5 datos"**: 3,361 vistas en TikTok en 15 h, 14 compartidos
+  (7 veces lo mejor anterior). Formato "Guarda esto: ___ en 5 datos" + tema de temporada + cifras con fecha. Se repite.
+
 ## Series (cada una es una promesa: "sígueme para la siguiente")
 
 | Serie | Formato | Por qué |

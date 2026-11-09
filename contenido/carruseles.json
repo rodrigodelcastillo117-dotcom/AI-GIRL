@@ -373,7 +373,8 @@
    "publica_utc": "2026-11-04T23:05:40Z",
    "youtube": "https://youtube.com/shorts/V7iOZ3wh1zM",
    "playlist": true,
-   "comentario_youtube": "UgxAhQjYS5a0ZYiRUC54AaABAg"
+   "comentario_youtube": "UgxAhQjYS5a0ZYiRUC54AaABAg",
+   "fuera_de_tema": "9-nov-2026: negocios, fuera del tema único (dinero en México); no se repite en otras redes."
   },
   {
    "id": "c05",
@@ -929,7 +930,7 @@
   },
   {
    "id": "c11",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "finiquito_liquidacion",
    "pilar": "finanzas",
    "fondo": "assets/fondos/cocina.jpg",
@@ -1013,11 +1014,15 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
-   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)",
+   "publica_utc_por_red": {
+    "tt": "2026-11-09T19:00:00Z"
+   },
+   "publica_utc": "2026-11-09T19:00:00Z"
   },
   {
    "id": "c12",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "vacaciones_dignas",
    "pilar": "finanzas",
    "fondo": "assets/fondos/yate.jpg",
@@ -1105,7 +1110,11 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
-   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)",
+   "publica_utc_por_red": {
+    "tt": "2026-11-09T15:00:00Z"
+   },
+   "publica_utc": "2026-11-09T15:00:00Z"
   },
   {
    "id": "c13",
@@ -1399,7 +1408,7 @@
     "titulo": "Guarda esto: tu aguinaldo 2026 en 5 datos",
     "voz": "Guarda esto: tu aguinaldo de dos mil veintiséis en cinco datos.",
     "foto_reel": "assets/fotos/video-02-palco.jpg",
-    "gancho_tipo": "dato"
+    "gancho_tipo": "guarda_esto"
    },
    "diapositivas": [
     {
@@ -1466,11 +1475,17 @@
    },
    "revision": "Revisado contra fuentes oficiales el 7-nov-2026 7-nov: se quitó el teléfono de PROFEDET (las fuentes no coinciden: 079 vs 800 717 2942); se manda a gob.mx/profedet.",
    "publica_utc_por_red": {
-    "tt": "2026-11-08T21:00:00Z",
+    "tt": "2026-11-08T21:06:03Z",
     "yt": "2026-11-08T23:00:00Z"
    },
-   "publica_utc": "2026-11-08T21:00:00Z",
-   "youtube": "VhWYrJ5NmrY"
+   "publica_utc": "2026-11-08T23:00:00Z",
+   "youtube": "VhWYrJ5NmrY",
+   "comentario_youtube": "UgycRk8RtsTXL5FteaF4AaABAg",
+   "reel_ig": {
+    "publica_utc": "2026-11-09T21:00:00Z",
+    "texto": "Guarda esto: tu aguinaldo 2026 en 5 datos\nAguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️\n1. Te lo pagan antes del 20 de diciembre: a más tardar el sábado 19.\n2. Mínimo 15 días de salario; si no completaste el año, la parte proporcional.\n3. Los primeros $3,519.30 no pagan ISR (30 UMA de 2026).\n4. Si no te pagan, PROFEDET te ayuda gratis: gob.mx/profedet.\n5. Tienes un año para reclamarlo, contado desde el 20 de diciembre.\n\n📚 LFT, arts. 87 y 516; LISR, art. 93 fracc. XIV; UMA 2026 (INEGI); PROFEDET.\n🔖 Guárdalo para el 20 de diciembre.\n📩 Mándaselo a quien cobra aguinaldo por primera vez.\n\n#aguinaldo #aguinaldo2026 #derechoslaborales #finanzaspersonales #victoriatheceo",
+    "video": "carruseles/c16/reel.mp4"
+   }
   },
   {
    "id": "c17",
