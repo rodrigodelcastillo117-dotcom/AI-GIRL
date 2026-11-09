@@ -7,7 +7,7 @@ YouTube Shorts, en la franja que toque de la prueba de horarios. Publica directo
 humana. Regla principal: **si algo no pasa el control de calidad, o si el control no se pudo
 hacer, NO se publica** y se registra (regla 8).
 
-Antes de todo, lee `docs/PERSONAJE.md` (quién es Victoria, sus opiniones y cómo pide comentarios) y `docs/REGLAS_APRENDIDAS.md` (34 reglas medidas en 4 canales). Se aplican
+Antes de todo, lee `docs/ESTRATEGIA_VIRAL.md` (el plan de crecimiento: series, ritmo, qué se mide), `docs/PERSONAJE.md` (quién es Victoria, sus opiniones y cómo pide comentarios) y `docs/REGLAS_APRENDIDAS.md` (34 reglas medidas en 4 canales). Se aplican
 todas; cuando los datos propios digan otra cosa, mandan los propios.
 
 ## 0. Preparación
