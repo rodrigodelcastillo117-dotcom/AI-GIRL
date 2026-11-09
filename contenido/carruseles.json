@@ -4800,6 +4800,459 @@
    },
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c52_c54.md); correcciones aplicadas.",
    "personaje": "2026-11-09: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c55",
+   "estado": "borrador",
+   "tema": "socios_junta_mensual_presupuesto",
+   "pilar": "finanzas",
+   "serie": {
+    "nombre": "Socios en casa",
+    "numero": 1,
+    "total": 5
+   },
+   "fondo": "assets/fondos/recamara.jpg",
+   "portada": {
+    "foto": "assets/fotos/enero-oficina-casa.jpg",
+    "etiqueta": "SOCIOS EN CASA · PARTE 1 DE 5",
+    "titulo": "Tu casa es una empresa de dos socios, y no hacen juntas",
+    "voz": "Tu casa es una empresa de dos socios, y casi ninguna pareja hace junta. Aquí va la orden del día, con fuentes oficiales.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Agenden la junta",
+     "texto": "Dediquen un día a hablar solo de finanzas: cada semana, cada 15 días o cada mes, según lo que necesiten.\n\nProfeco, Brújula de Compra (ene-2025)",
+     "voz": "Pongan fecha fija para hablar solo de dinero: cada semana, cada quincena o cada mes."
+    },
+    {
+     "titulo": "Punto 1: todo sobre la mesa",
+     "texto": "Cada quien pone sobre la mesa su ingreso, sus bienes, tarjetas, deudas, nivel de ahorro y hábitos de compra.\n\nProfeco, Brújula de Compra (ene-2025)",
+     "voz": "Primer punto: cada quien enseña su ingreso, sus tarjetas, sus deudas y su ahorro."
+    },
+    {
+     "titulo": "Punto 2: el presupuesto",
+     "texto": "Planeen cada mes o quincena cuánto va a gastos fijos, gastos variables, ahorro y fondo de emergencias, y deudas. Revísenlo cuando cambien los ingresos.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Segundo: repartan el dinero en gastos fijos, gastos variables, ahorro y deudas."
+    },
+    {
+     "titulo": "Punto 3: ¿gusto o necesidad?",
+     "texto": "Revisen gasto por gasto: si es gusto o necesidad, si se puede ajustar, el valor nuevo y la tarea de cada quien.\n\nCondusef, hoja “Plan de ajustes en los gastos” (feb-2026)",
+     "voz": "Tercero: gasto por gasto, ¿es gusto o necesidad?, ¿y se puede ajustar?"
+    },
+    {
+     "titulo": "Punto 4: los puestos",
+     "texto": "Acuerden quién administra el dinero, quién paga los servicios y quién lleva el control de los gastos. Usen un calendario de pagos.\n\nProfeco, Brújula de Compra (ene-2025)",
+     "voz": "Cuarto: repartan puestos. Quién administra, quién paga los servicios y quién lleva las cuentas."
+    },
+    {
+     "titulo": "Punto 5: metas con fecha",
+     "texto": "Cada quien dice sus planes a corto, mediano y largo plazo; luego, los de pareja: casa, viaje o negocio. Así trazan una línea de tiempo.\n\nProfeco, Brújula de Compra (ene-2025)",
+     "voz": "Y quinto: metas de cada quien y metas de pareja, con fecha."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cada cuánto hacen junta de dinero? Comenta SEMANA, QUINCENA, MES o NUNCA.",
+    "texto": "Mándaselo a tu pareja y agenden la primera junta.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cada cuánto hacen junta de dinero? Comenta semana, quincena, mes o nunca, y sígueme."
+   },
+   "fuente": "Profeco, Brújula de Compra, 'Lo tuyo, lo mío, lo nuestro. Finanzas de pareja' (31-ene-2025, https://www.gob.mx/profeco/documentos/lo-tuyo-lo-mio-lo-nuestro-finanzas-de-pareja): 'Dediquen un día para hablar de las finanzas cada semana, cada 15 días o al mes, según sus necesidades, de preferencia que sea exclusivamente del tema'; 'Cada cónyuge deberá poner sobre la mesa: su ingreso, los bienes con los que cuenta, las inversiones, tarjetas de crédito, deudas a corto y largo plazo, el nivel de ahorro y sus hábitos de compra'; 'Si los dos trabajan, convenga cómo se dividirán los gastos, quién administrará el dinero, quién pagará las cuentas de los servicios, quién llevará el control de los gastos'; 'Utilicen un calendario para registrar fechas de pago'; 'Cada uno debe exponer sus planes a corto, mediano y largo plazo (...) y exponer los planes en pareja (adquirir una casa, viajar una vez al año a la playa o iniciar un negocio propio). Todo esto, con el fin de trazar una línea de tiempo y planear adecuadamente el ahorro y el gasto'. Condusef, revista Proteja su Dinero, 'Amor que sí cuenta' (1-feb-2026, act. 11-mar-2026, https://revista.condusef.gob.mx/presupuesto/2026/02/amor-que-si-cuenta/): 'lo ideal es hacer una planeación mensual o quincenal' para 'Gastos fijos', 'Gastos variables', 'Ahorro y fondo de emergencias' y 'Deudas, si las hay. Es necesario acordar quién paga qué'; 'Este presupuesto debe revisarse periódicamente al menos una vez al mes o cuando haya cambios en ingresos o responsabilidades'. Condusef, hoja descargable 'Plan de ajustes en los gastos' del mismo número (feb-2026, https://revista.condusef.gob.mx/wp-content/uploads/2026/02/cuentahoja_311.pdf): columnas 'Gasto del mes', 'Tipo: Gusto / Necesidad', 'Se puede ajustar: Sí / No', 'Valor nuevo', 'Tarea'. Llamarle 'junta de socios' y 'orden del día' es el formato de Victoria; los datos son de Profeco y Condusef. Consultado el 9-nov-2026.",
+   "titulo_post": "Presupuesto en pareja: la junta de socios",
+   "texto_post": "Presupuesto en pareja: tu casa es una empresa de dos socios, y las empresas hacen junta. 💼\n1. Agenden un día solo para hablar de dinero: cada semana, cada 15 días o cada mes (Profeco).\n2. Cada quien pone sobre la mesa su ingreso, bienes, tarjetas, deudas, ahorro y hábitos de compra.\n3. Planeen cada mes o quincena: gastos fijos, gastos variables, ahorro y fondo de emergencias, y deudas. Revísenlo cuando cambien los ingresos (Condusef).\n4. Gasto por gasto: ¿gusto o necesidad?, ¿se puede ajustar?\n5. Repartan puestos: quién administra, quién paga los servicios y quién lleva el control. Con calendario de pagos.\n6. Metas de cada quien y de pareja, con fecha.\n\nEn mi casa la junta es de tres: Capital no vota, pero veta cualquier recorte a las croquetas.\n📚 Profeco, Brújula de Compra (ene-2025); Condusef, Proteja su Dinero (feb-2026).\n💬 ¿Cada cuánto hacen junta de dinero? Comenta SEMANA, QUINCENA, MES o NUNCA. Te contesto a todos.\n🔖 Guárdalo para su primera junta de socios.\n📩 Mándaselo a tu pareja y agenden la primera junta.",
+   "seo": {
+    "palabra_clave": "presupuesto en pareja",
+    "titulo": "Presupuesto en pareja con junta de socios 💼",
+    "tags_concretas": [
+     "presupuesto en pareja",
+     "como hacer un presupuesto en pareja",
+     "finanzas en pareja",
+     "junta de dinero en pareja",
+     "hablar de dinero con mi pareja",
+     "metas financieras en pareja",
+     "gastos fijos y variables",
+     "organizar el dinero en pareja",
+     "dinero en pareja"
+    ],
+    "hashtags": [
+     "#presupuestoenpareja",
+     "#finanzasenpareja",
+     "#presupuesto",
+     "#pareja"
+    ],
+    "preguntas": [
+     "¿Cómo hacer un presupuesto en pareja?",
+     "¿Cada cuánto hablar de dinero con tu pareja?",
+     "¿Cómo organizar las finanzas en pareja?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c56",
+   "estado": "borrador",
+   "tema": "socios_capitulaciones_contrato",
+   "pilar": "finanzas",
+   "serie": {
+    "nombre": "Socios en casa",
+    "numero": 2,
+    "total": 5
+   },
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-38-oficina.jpg",
+    "etiqueta": "SOCIOS EN CASA · PARTE 2 DE 5",
+    "titulo": "Casarte sin leer tus capitulaciones es firmar una sociedad a ciegas",
+    "voz": "Casarte sin leer tus capitulaciones es firmar una sociedad a ciegas. La ley las trata casi como un contrato de socios.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Qué son",
+     "texto": "Los pactos con los que los esposos forman la sociedad conyugal o la separación de bienes, y dicen cómo se administran. Regla federal: cada estado tiene su código civil.\n\nCódigo Civil Federal, art. 179",
+     "voz": "Las capitulaciones son los pactos que dicen qué es de quién y cómo se administra."
+    },
+    {
+     "titulo": "Literal: socios",
+     "texto": "En lo que sus capitulaciones no digan, la sociedad conyugal se rige por las reglas del contrato de sociedad.\n\nCódigo Civil Federal, art. 183",
+     "voz": "Y en lo que no digan, la sociedad conyugal sigue las reglas de una sociedad. Literal, socios."
+    },
+    {
+     "titulo": "Nombren administrador",
+     "texto": "En sociedad conyugal deben decir quién la administra y con qué facultades, si el sueldo de cada quien se comparte y en qué proporción, y cómo se liquida.\n\nCódigo Civil Federal, art. 189, fr. VI, VII y IX",
+     "voz": "Ahí se escribe quién administra y si el sueldo de cada quien se comparte."
+    },
+    {
+     "titulo": "Los dos son dueños",
+     "texto": "Mientras exista la sociedad conyugal, los bienes comunes son de los dos. El administrador se puede cambiar sin dar razones; si no se ponen de acuerdo, decide un juez familiar.\n\nCódigo Civil Federal, art. 194",
+     "voz": "Los bienes comunes son de los dos, y el administrador se puede cambiar."
+    },
+    {
+     "titulo": "Puede ser mixto",
+     "texto": "La separación de bienes puede ser absoluta o parcial. Si es parcial, lo que no quede separado entra a la sociedad conyugal.\n\nCódigo Civil Federal, art. 208",
+     "voz": "También pueden separar unos bienes y compartir otros."
+    },
+    {
+     "titulo": "A veces, ante notario",
+     "texto": "Si en sociedad conyugal se hacen copartícipes de un bien que lo exige, como una casa, las capitulaciones van en escritura pública. La separación antes de la boda, no.\n\nCódigo Civil Federal, arts. 185 y 210",
+     "voz": "Y si meten una casa a la sociedad, eso va en escritura ante notario."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Con qué régimen te casaste o te casarías? Comenta SOCIEDAD, SEPARACIÓN o NO SÉ.",
+    "texto": "Mándaselo a tu pareja antes de ir al Registro Civil.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Con qué régimen te casaste o te casarías? Comenta sociedad, separación o no sé, y sígueme."
+   },
+   "fuente": "Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 179 'Las capitulaciones matrimoniales son los pactos que los esposos celebran para constituir la sociedad conyugal o la separación de bienes y reglamentar la administración de éstos en uno y en otro caso'; art. 183 'La sociedad conyugal se regirá por las capitulaciones matrimoniales que la constituyan, y en lo que no estuviere expresamente estipulado, por las disposiciones relativas al contrato de sociedad'; art. 189: las capitulaciones de sociedad conyugal deben contener, fr. VI 'La declaración de si el producto del trabajo de cada consorte corresponde exclusivamente al que lo ejecutó, o si debe dar participación de ese producto al otro consorte y en qué proporción', fr. VII 'La declaración terminante acerca de quién debe ser el administrador de la sociedad, expresándose con claridad las facultades que se le conceden', fr. IX 'Las bases para liquidar la sociedad'; art. 194 'El dominio de los bienes comunes reside en ambos cónyuges mientras subsista la sociedad conyugal. La administración quedará a cargo de quien los cónyuges hubiesen designado en las capitulaciones matrimoniales, estipulación que podrá ser libremente modificada, sin necesidad de expresión de causa, y en caso de desacuerdo, el Juez de lo Familiar resolverá lo conducente'; art. 208 'La separación de bienes puede ser absoluta o parcial. En el segundo caso, los bienes que no estén comprendidos en las capitulaciones de separación, serán objeto de la sociedad conyugal'; art. 185: las capitulaciones de sociedad conyugal 'constarán en escritura pública cuando los esposos pacten hacerse copartícipes o transferirse la propiedad de bienes que ameriten tal requisito para que la traslación sea válida'; art. 210 'No es necesario que consten en escritura pública las capitulaciones en que se pacte la separación de bienes, antes de la celebración del matrimonio'. 'Como una casa' es ejemplo de bien inmueble (su compraventa va en escritura). El matrimonio civil se rige por el código civil de cada estado, con reglas similares; el Código Civil Federal es la referencia. No repite lo de c28 (arts. 98, 178, 180, 189 fr. III, 207, 209, 211 a 213). Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Capitulaciones matrimoniales: el contrato de socios",
+   "texto_post": "Capitulaciones matrimoniales: el contrato de socios de tu matrimonio, y casi nadie lo lee. ⚖️\n1. Son los pactos que forman la sociedad conyugal o la separación de bienes y dicen cómo se administran (Código Civil Federal, art. 179; revisa el código de tu estado).\n2. En lo que no digan, la sociedad conyugal se rige por las reglas del contrato de sociedad (art. 183).\n3. Deben decir quién administra, si el sueldo de cada quien se comparte y cómo se liquida (art. 189).\n4. Los bienes comunes son de los dos y el administrador se puede cambiar; si no hay acuerdo, decide un juez familiar (art. 194).\n5. La separación de bienes puede ser parcial (art. 208).\n6. Si se hacen copartícipes de una casa, va en escritura pública (arts. 185 y 210).\n\nInformación general, no asesoría legal.\nCapital ya se nombró socio administrador: administra el sillón y no acepta auditorías.\n📚 Código Civil Federal, arts. 179, 183, 185, 189, 194, 208 y 210.\n💬 ¿Con qué régimen te casaste o te casarías? Comenta SOCIEDAD, SEPARACIÓN o NO SÉ. Te contesto a todos.\n🔖 Guárdalo para antes de ir al Registro Civil.\n📩 Mándaselo a tu pareja antes de ir al Registro Civil.",
+   "seo": {
+    "palabra_clave": "capitulaciones matrimoniales",
+    "titulo": "Capitulaciones matrimoniales en 6 datos ⚖️",
+    "tags_concretas": [
+     "capitulaciones matrimoniales",
+     "que son las capitulaciones matrimoniales",
+     "sociedad conyugal",
+     "separacion de bienes",
+     "separacion de bienes parcial",
+     "administrador de la sociedad conyugal",
+     "regimen matrimonial mexico",
+     "codigo civil federal matrimonio",
+     "contrato matrimonial"
+    ],
+    "hashtags": [
+     "#capitulacionesmatrimoniales",
+     "#sociedadconyugal",
+     "#separaciondebienes",
+     "#matrimonio"
+    ],
+    "preguntas": [
+     "¿Qué son las capitulaciones matrimoniales?",
+     "¿Quién administra los bienes en la sociedad conyugal?",
+     "¿Se puede tener separación de bienes parcial?",
+     "¿Las capitulaciones matrimoniales van ante notario?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c57",
+   "estado": "borrador",
+   "tema": "socios_credito_vivienda_pareja",
+   "pilar": "finanzas",
+   "serie": {
+    "nombre": "Socios en casa",
+    "numero": 3,
+    "total": 5
+   },
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "SOCIOS EN CASA · PARTE 3 DE 5",
+    "titulo": "Si la casa es de los dos, que el papel lo diga",
+    "voz": "Si la casa es de los dos, que el papel lo diga. Esto dice la ley del crédito en pareja.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-17-sala-roja.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Pueden sumar ingresos",
+     "texto": "Las reglas de crédito del Infonavit toman en cuenta tu salario o el ingreso conjunto, si hay acuerdo de los interesados. En el Fovissste, el ingreso conyugal.\n\nLey del Infonavit, art. 47 · Ley del ISSSTE, art. 179",
+     "voz": "El instituto de vivienda puede tomar en cuenta el ingreso de los dos, si ambos están de acuerdo."
+    },
+    {
+     "titulo": "Si alguien pierde el empleo",
+     "texto": "Si dejas de recibir salario, el Infonavit te da prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 meses en total.\n\nLey del Infonavit, art. 41",
+     "voz": "Si uno pierde el empleo, hay prórrogas sin intereses de hasta dos años en total."
+    },
+    {
+     "titulo": "Seguro incluido",
+     "texto": "Los créditos del Infonavit tienen un seguro por muerte o incapacidad total permanente que libera la deuda. Su costo lo paga el Instituto.\n\nLey del Infonavit, art. 51",
+     "voz": "Y traen un seguro que libera la deuda por muerte o incapacidad total."
+    },
+    {
+     "titulo": "Nombren beneficiarios",
+     "texto": "Al firmar el crédito o después, puedes designar ante el Infonavit a las personas que podrían quedarse con la vivienda si mueres.\n\nLey del Infonavit, art. 51",
+     "voz": "Puedes dejar por escrito quién se quedaría con la casa."
+    },
+    {
+     "titulo": "Sin porcentaje, mitad y mitad",
+     "texto": "En copropiedad, la ley presume que las partes son iguales mientras no se pruebe lo contrario. Si uno puso más enganche, que quede por escrito.\n\nCódigo Civil Federal, art. 942 · Opinión de Victoria",
+     "voz": "En copropiedad y sin porcentajes, la ley presume mitad y mitad."
+    },
+    {
+     "titulo": "Si se separan",
+     "texto": "Nadie está obligado a seguir en copropiedad. Si la casa no se puede dividir y no se ponen de acuerdo, se vende y se reparte el precio.\n\nCódigo Civil Federal, arts. 939 y 940",
+     "voz": "Y si se separan sin acuerdo, la casa se vende y se reparte el dinero."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿A nombre de quién está tu casa? Comenta MÍO, SUYO, LOS DOS o RENTO.",
+    "texto": "Mándaselo a tu pareja antes de firmar el crédito.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿A nombre de quién está tu casa? Comenta mío, suyo, los dos o rento, y sígueme."
+   },
+   "fuente": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (última reforma DOF 21-02-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf): art. 47: las reglas de otorgamiento de créditos 'tomarán en cuenta (...) su salario o el ingreso conjunto si hay acuerdo de los interesados'; art. 41: 'Cuando una persona trabajadora derechohabiente hubiere recibido crédito del Instituto y éste tenga conocimiento de que ha dejado de percibir ingresos salariales, le otorgará prórrogas en los pagos (...) Durante dichas prórrogas no se generarán intereses ordinarios'; 'no podrán ser mayores de doce meses cada una, ni exceder en su conjunto más de veinticuatro meses y terminarán anticipadamente cuando la persona trabajadora inicie una nueva relación laboral'; art. 51: 'Los créditos que el Instituto otorgue a las personas trabajadoras estarán cubiertos por un seguro para los casos de incapacidad total permanente o de muerte, que libere a la persona trabajadora o a sus personas beneficiarias de las obligaciones'; 'El costo del seguro (...) quedará a cargo del Instituto'; 'En el acto de otorgamiento del crédito o de forma posterior, las personas trabajadoras acreditadas podrán manifestar expresamente su voluntad ante el Instituto para designar a las personas que, en caso de su muerte, podrán adjudicarse el inmueble objeto del crédito en calidad de beneficiarias, conforme a las formalidades, prelación y condiciones establecidas en los artículos 40 y 42'. Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (última reforma DOF 15-01-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf): art. 179: los créditos del Fondo de la Vivienda se otorgan tomando en cuenta, entre otros, 'su sueldo o el ingreso conyugal si hay acuerdo de las personas interesadas'. Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 942 'Se presumirán iguales, mientras no se prueba lo contrario, las porciones correspondientes a los partícipes en la comunidad'; art. 939 'Los que por cualquier título tienen el dominio legal de una cosa, no pueden ser obligados a conservarlo indiviso'; art. 940 'Si el dominio no es divisible, o la cosa no admite cómoda división y los partícipes no se convienen en que sea adjudicada a alguno de ellos, se procederá a su venta y a la repartición de su precio entre los interesados'. 'Si uno puso más enganche, que quede por escrito' es opinión de Victoria y lo dice la diapositiva. Si están casados en sociedad conyugal, la casa puede ser bien común (ver c56); la copropiedad aplica cuando la compran a nombre de los dos. No se usaron montos ni requisitos de 'Unamos Créditos' ni del crédito conyugal Fovissste-Infonavit: el portal del Infonavit (portalmx.infonavit.org.mx) no respondió el 9-nov-2026 y solo había notas de prensa. Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Crédito Infonavit en pareja: lo que dice la ley",
+   "texto_post": "Crédito Infonavit en pareja: si la casa es de los dos, que el papel lo diga. 🏠\n1. La ley deja que el Infonavit tome en cuenta el ingreso conjunto si los dos están de acuerdo (Ley del Infonavit, art. 47); en el Fovissste, el ingreso conyugal (Ley del ISSSTE, art. 179).\n2. Si pierdes el empleo, hay prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 en total (art. 41).\n3. El crédito trae un seguro por muerte o incapacidad total permanente que libera la deuda, pagado por el Instituto (art. 51).\n4. Puedes designar beneficiarios que podrían quedarse con la vivienda (art. 51).\n5. En copropiedad, si no ponen porcentajes, la ley presume partes iguales (Código Civil Federal, art. 942). Si uno puso más enganche, anótenlo.\n6. Si se separan sin acuerdo y la casa no se puede dividir, se vende y se reparte el precio (arts. 939 y 940).\n\nInformación general, no asesoría legal.\nCapital ya pidió su parte de la copropiedad: el sillón entero.\n📚 Ley del Infonavit, arts. 41, 47 y 51; Ley del ISSSTE, art. 179; Código Civil Federal, arts. 939, 940 y 942.\n💬 ¿A nombre de quién está tu casa? Comenta MÍO, SUYO, LOS DOS o RENTO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar su crédito.\n📩 Mándaselo a tu pareja antes de firmar el crédito.",
+   "seo": {
+    "palabra_clave": "crédito infonavit en pareja",
+    "titulo": "Crédito Infonavit en pareja y la escritura 🏠",
+    "tags_concretas": [
+     "credito infonavit en pareja",
+     "comprar casa en pareja",
+     "credito conyugal infonavit",
+     "ingreso conjunto infonavit",
+     "copropiedad casa pareja",
+     "seguro credito infonavit",
+     "prorroga infonavit desempleo",
+     "beneficiarios credito infonavit",
+     "casa a nombre de los dos"
+    ],
+    "hashtags": [
+     "#infonavit",
+     "#creditohipotecario",
+     "#casapropia",
+     "#finanzasenpareja"
+    ],
+    "preguntas": [
+     "¿Se puede sacar un crédito Infonavit en pareja?",
+     "¿Qué pasa con la casa si la pareja se separa?",
+     "¿Qué pasa con mi crédito Infonavit si pierdo el empleo?",
+     "¿El crédito Infonavit tiene seguro de vida?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c58",
+   "estado": "borrador",
+   "tema": "socios_negocio_en_pareja",
+   "pilar": "finanzas",
+   "serie": {
+    "nombre": "Socios en casa",
+    "numero": 4,
+    "total": 5
+   },
+   "fondo": "assets/fondos/jet.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-01-jet.jpg",
+    "etiqueta": "SOCIOS EN CASA · PARTE 4 DE 5",
+    "titulo": "Emprender con tu pareja sin papeles no es confianza, es riesgo",
+    "voz": "Emprender con tu pareja sin papeles no es confianza, es riesgo. Esto dice la ley.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-37-sala.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Siete tipos de sociedad",
+     "texto": "La ley reconoce siete tipos de sociedad mercantil, entre ellos la anónima, la de responsabilidad limitada y, desde 2016, la sociedad por acciones simplificada (SAS).\n\nLey General de Sociedades Mercantiles, art. 1",
+     "voz": "La ley reconoce siete tipos de sociedad mercantil."
+    },
+    {
+     "titulo": "Quién pone qué",
+     "texto": "La escritura de la sociedad dice qué aporta cada socio, quién administra y cómo se reparten utilidades y pérdidas.\n\nLey General de Sociedades Mercantiles, art. 6",
+     "voz": "En el acta va qué pone cada quien, quién administra y cómo se reparten ganancias."
+    },
+    {
+     "titulo": "Si no lo pactan",
+     "texto": "Salvo pacto en contrario, las ganancias y pérdidas de los socios capitalistas se reparten en proporción a lo que aportó cada uno.\n\nLey General de Sociedades Mercantiles, art. 16",
+     "voz": "Si no pactan nada, se reparte según lo que aportó cada uno."
+    },
+    {
+     "titulo": "La SAS",
+     "texto": "Se forma con una o más personas físicas en el sistema electrónico de la Secretaría de Economía, sin escritura pública y sin costo de constitución. Todos necesitan e.firma.\n\nLGSM, arts. 260 y 262 · Secretaría de Economía",
+     "voz": "La sociedad por acciones simplificada se arma en línea con la Secretaría de Economía, sin escritura."
+    },
+    {
+     "titulo": "Con tope",
+     "texto": "Sus ingresos anuales no pueden pasar de $7,678,849.94 (cifra 2026). Si los rebasa, debe transformarse en otro tipo de sociedad.\n\nLGSM, art. 260 · DOF 26-12-2025",
+     "voz": "Pero tiene tope: casi siete millones setecientos mil pesos al año."
+    },
+    {
+     "titulo": "Patrimonio aparte",
+     "texto": "En la anónima, la de responsabilidad limitada y la SAS, los socios solo están obligados a pagar sus aportaciones. La sociedad inscrita es una persona distinta.\n\nLGSM, arts. 2, 58, 87 y 260",
+     "voz": "En esas sociedades, cada socio solo está obligado a pagar lo que aportó."
+    },
+    {
+     "titulo": "Si está a tu nombre",
+     "texto": "Sin sociedad, el negocio y sus deudas son tuyos. Y el deudor responde con todos sus bienes, salvo los inembargables. Revísalo con un abogado.\n\nCódigo Civil Federal, art. 2964",
+     "voz": "Si el negocio está solo a tu nombre, respondes con todos tus bienes."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Emprenderías con tu pareja? Comenta SÍ, NO o YA LO HICE.",
+    "texto": "Mándaselo a tu pareja antes de abrir el negocio.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Emprenderías con tu pareja? Comenta sí, no o ya lo hice, y sígueme."
+   },
+   "fuente": "Ley General de Sociedades Mercantiles (última reforma DOF 20-10-2023; cantidades actualizadas por acuerdo DOF 26-12-2025; https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSM.pdf): art. 1: reconoce siete especies (nombre colectivo, comandita simple, responsabilidad limitada, anónima, comandita por acciones, cooperativa y 'VII. Sociedad por acciones simplificada', fracción adicionada DOF 14-03-2016); art. 2 'Las sociedades mercantiles inscritas en el Registro Público de Comercio, tienen personalidad jurídica distinta de la de los socios'; art. 6: la escritura constitutiva contiene 'La expresión de lo que cada socio aporte en dinero o en otros bienes' (fr. VI), 'La manera conforme a la cual haya de administrarse la sociedad y las facultades de los administradores' (fr. VIII) y 'La manera de hacer la distribución de las utilidades y pérdidas entre los miembros de la sociedad' (fr. X); art. 16: 'salvo pacto en contrario (...) La distribución de las ganancias o pérdidas entre los socios capitalistas se hará proporcionalmente a sus aportaciones'; art. 58: socios de la S. de R.L. 'solamente están obligados al pago de sus aportaciones'; art. 87: socios de la S.A. 'cuya obligación se limita al pago de sus acciones'; art. 260: la SAS 'se constituye con una o más personas físicas que solamente están obligadas al pago de sus aportaciones representadas en acciones'; 'Los ingresos totales anuales de una sociedad por acciones simplificada no podrá rebasar de $7,678,849.94. En caso de rebasar el monto respectivo, la sociedad por acciones simplificada deberá transformarse en otro régimen societario' (cantidad actualizada por acuerdo DOF 26-12-2025, vigente en 2026); art. 262: requisitos: uno o más accionistas, estatutos del sistema electrónico de constitución de la Secretaría de Economía, autorización de uso de denominación y 'que todos los accionistas cuenten con certificado de firma electrónica avanzada vigente'; 'En ningún caso se exigirá el requisito de escritura pública, póliza o cualquier otra formalidad adicional'; art. 263, fr. VI: 'La utilización de fedatarios públicos es optativa'. Secretaría de Economía, 'Constituye tu empresa en 24 horas' (gob.mx/tuempresa, 24-feb-2018, https://www.gob.mx/tuempresa/articulos/crea-tu-sociedad-por-acciones): se crea 'de manera gratuita'; 'No genera gastos en la constitución de la sociedad'; requisitos 'Firma electrónica (e.firma) de todos los accionistas' (su cifra de 5 millones de pesos está desactualizada: manda la ley). Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 2964 'El deudor responde del cumplimiento de sus obligaciones con todos sus bienes, con excepción de aquellos que, conforme a la ley, son inalienables o no embargables'. 'Sin sociedad, el negocio y sus deudas son tuyos' aplica cuando el negocio opera a nombre de una persona física. No se dice que el alta en el RFC de la SAS sea en línea: desde 2026 sigue la Resolución Miscelánea Fiscal y no se comprobó en el SAT. Información general, no asesoría legal ni fiscal. Consultado el 9-nov-2026.",
+   "titulo_post": "Negocio en pareja: ponlo por escrito",
+   "texto_post": "Negocio en pareja: emprender sin papeles no es confianza, es riesgo. 💼\n1. La ley reconoce siete tipos de sociedad mercantil; la más nueva es la sociedad por acciones simplificada (SAS) (Ley General de Sociedades Mercantiles, art. 1).\n2. La escritura dice qué aporta cada socio, quién administra y cómo se reparten utilidades y pérdidas (art. 6).\n3. Si no lo pactan, ganancias y pérdidas se reparten en proporción a lo que aportó cada uno (art. 16).\n4. La SAS se forma en el sistema de la Secretaría de Economía, sin escritura pública y sin costo de constitución; todos necesitan e.firma (arts. 260 y 262).\n5. Tope de ingresos de la SAS en 2026: $7,678,849.94 al año (art. 260).\n6. En la S.A., la S. de R.L. y la SAS, los socios solo están obligados a pagar sus aportaciones (arts. 58, 87 y 260).\n7. Si el negocio está a tu nombre, sin sociedad, respondes con todos tus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n\nInformación general, no asesoría legal ni fiscal.\nCapital y yo somos socios: yo pongo el capital (literal) y él, la seguridad del local.\n📚 Ley General de Sociedades Mercantiles, arts. 1, 2, 6, 16, 58, 87, 260 y 262; Secretaría de Economía; Código Civil Federal, art. 2964.\n💬 ¿Emprenderías con tu pareja? Comenta SÍ, NO o YA LO HICE. Te contesto a todos.\n🔖 Guárdalo para antes de abrir su negocio.\n📩 Mándaselo a tu pareja o a tu socio antes de abrir el negocio.",
+   "seo": {
+    "palabra_clave": "negocio en pareja",
+    "titulo": "Negocio en pareja con sociedad SAS 💼",
+    "tags_concretas": [
+     "negocio en pareja",
+     "emprender en pareja",
+     "sociedad por acciones simplificada",
+     "que es una sas",
+     "como crear una sas",
+     "tipos de sociedades mercantiles",
+     "tope de ingresos sas 2026",
+     "persona fisica o persona moral",
+     "socios de un negocio"
+    ],
+    "hashtags": [
+     "#emprender",
+     "#negocioenpareja",
+     "#emprendimiento",
+     "#finanzasenpareja"
+    ],
+    "preguntas": [
+     "¿Cómo poner un negocio con mi pareja?",
+     "¿Qué es una sociedad por acciones simplificada?",
+     "¿Cuánto puede facturar una SAS en 2026?",
+     "¿Qué pasa si el negocio está a mi nombre y tiene deudas?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c59",
+   "estado": "borrador",
+   "tema": "socios_deudas_quiebra_pareja",
+   "pilar": "finanzas",
+   "serie": {
+    "nombre": "Socios en casa",
+    "numero": 5,
+    "total": 5
+   },
+   "fondo": "assets/fondos/restaurante.jpg",
+   "portada": {
+    "foto": "assets/fotos/capital-no-presta.jpg",
+    "etiqueta": "SOCIOS EN CASA · PARTE 5 DE 5",
+    "titulo": "Firmarle de aval a tu pareja no es amor: es deuda",
+    "voz": "Firmarle de aval a tu pareja no es amor, es deuda. Esto dice la ley.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/capital-tarjeta.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Quien debe, responde",
+     "texto": "El deudor responde de sus obligaciones con todos sus bienes, salvo los que la ley declara inalienables o inembargables.\n\nCódigo Civil Federal, art. 2964",
+     "voz": "La regla base: quien debe, responde con todos sus bienes."
+    },
+    {
+     "titulo": "No se presume",
+     "texto": "Para que dos personas deban cada una la deuda completa, lo tiene que decir la ley o lo que firmaron: la solidaridad no se presume.\n\nCódigo Civil Federal, arts. 1987 y 1988",
+     "voz": "Para deber lo mismo que tu pareja, lo tiene que decir la ley o un papel que firmaste."
+    },
+    {
+     "titulo": "Aval o fiador",
+     "texto": "Como fiador, te comprometes a pagar si el deudor no paga. Como aval de un pagaré, quedas obligado solidariamente con quien garantizas.\n\nCódigo Civil Federal, art. 2794 · LGTOC, arts. 114 y 174",
+     "voz": "Si le firmas de aval o de fiador, prometes pagar si no paga."
+    },
+    {
+     "titulo": "Si el administrador quiebra",
+     "texto": "Puedes pedir terminar la sociedad conyugal si quien la administra la pone en riesgo por negligencia, cede bienes comunes a sus acreedores sin tu permiso o quiebra.\n\nCódigo Civil Federal, art. 188",
+     "voz": "Si quien administra los bienes comunes quiebra, puedes pedir terminar la sociedad conyugal."
+    },
+    {
+     "titulo": "Nadie carga de más",
+     "texto": "Es nulo el pacto que haga a uno responsable de las pérdidas y deudas comunes en más de lo que le toca en proporción.\n\nCódigo Civil Federal, art. 190",
+     "voz": "Y es nulo el pacto que te haga cargar más deudas comunes de las que te tocan."
+    },
+    {
+     "titulo": "Primero las deudas",
+     "texto": "Al liquidar la sociedad conyugal, primero se pagan las deudas contra el fondo común; luego, cada quien recupera lo que llevó y el sobrante se divide.\n\nCódigo Civil Federal, art. 204",
+     "voz": "Al liquidarla, primero se pagan las deudas comunes."
+    },
+    {
+     "titulo": "Revísalo con un profesional",
+     "texto": "Cada estado tiene su código civil y cada caso es distinto. Antes de firmar un crédito, una fianza o tus capitulaciones, revísalo con un notario o abogado.\n\nInformación general, no asesoría legal",
+     "voz": "Cada caso es distinto: revísalo con un notario o abogado."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Le has firmado de aval a tu pareja? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien está a punto de firmarle de aval a su pareja.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Le has firmado de aval a tu pareja? Comenta sí o no, y sígueme."
+   },
+   "fuente": "Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 2964 'El deudor responde del cumplimiento de sus obligaciones con todos sus bienes, con excepción de aquellos que, conforme a la ley, son inalienables o no embargables'; art. 1987: hay 'solidaridad pasiva cuando dos o más deudores reporten la obligación de prestar, cada uno de por sí, en su totalidad, la prestación debida'; art. 1988 'La solidaridad no se presume; resulta de la ley o de la voluntad de las partes'; art. 2794 'La fianza es un contrato por el cual una persona se compromete con el acreedor a pagar por el deudor, si éste no lo hace'; art. 188: la sociedad conyugal puede terminar durante el matrimonio a petición de alguno de los cónyuges 'I. Si el socio administrador, por su notoria negligencia o torpe administración, amenaza arruinar a su consocio o disminuir considerablemente los bienes comunes; II. Cuando el socio administrador, sin el consentimiento expreso de su cónyuge, hace cesión de bienes pertenecientes a la sociedad conyugal, a sus acreedores; III. Si el socio administrador es declarado en quiebra, o concurso'; art. 190: 'Es nula la capitulación (...) que establezca que alguno de ellos sea responsable por las pérdidas y deudas comunes en una parte que exceda a la que proporcionalmente corresponda a su capital o utilidades'; art. 204 'Terminado el inventario, se pagarán los créditos que hubiere contra el fondo social, se devolverá a cada cónyuge lo que llevó al matrimonio y el sobrante, si lo hubiere, se dividirá entre los dos consortes en la forma convenida'. Ley General de Títulos y Operaciones de Crédito (última reforma DOF 26-03-2024, https://www.diputados.gob.mx/LeyesBiblio/pdf/LGTOC.pdf): art. 114 'El avalista queda obligado solidariamente con aquel cuya firma ha garantizado'; art. 174: los arts. 109 al 116 (aval) son aplicables al pagaré. En la diapositiva 4, 'quiebra' resume 'declarado en quiebra, o concurso'. Si la sociedad conyugal responde por las deudas de cada quien depende de las capitulaciones (art. 189, fr. III; ya en c28) y del código civil de cada estado. Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Deudas de tu pareja: cuándo te tocan",
+   "texto_post": "Deudas de mi pareja: firmarle de aval no es amor, es deuda. ⚖️\n1. Quien debe responde con todos sus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n2. Para que tú debas lo mismo que tu pareja, lo tiene que decir la ley o lo que firmaste: la solidaridad no se presume (arts. 1987 y 1988).\n3. Como fiador prometes pagar si no paga; como aval de un pagaré quedas obligado solidariamente (art. 2794; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174).\n4. Si quien administra la sociedad conyugal la pone en riesgo, cede bienes comunes a sus acreedores sin tu permiso o quiebra, puedes pedir terminarla (art. 188).\n5. Es nulo el pacto que te haga cargar más deudas comunes de las que te tocan (art. 190).\n6. Al liquidar la sociedad conyugal, primero se pagan las deudas comunes (art. 204).\n7. Cada estado tiene su código civil: revísalo con un notario o abogado.\n\nInformación general, no asesoría legal.\nCapital no es aval de nadie. Ni mío. Lo dice su contrato: croquetas a cambio de nada.\n📚 Código Civil Federal, arts. 188, 190, 204, 1987, 1988, 2794 y 2964; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174.\n💬 ¿Le has firmado de aval a tu pareja? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar cualquier crédito ajeno.\n📩 Mándaselo a quien está a punto de firmarle de aval a su pareja.",
+   "seo": {
+    "palabra_clave": "deudas de mi pareja",
+    "titulo": "Deudas de mi pareja y firmar de aval ⚖️",
+    "tags_concretas": [
+     "deudas de mi pareja",
+     "me afectan las deudas de mi pareja",
+     "firmar de aval",
+     "ser fiador",
+     "obligado solidario",
+     "sociedad conyugal deudas",
+     "quiebra sociedad conyugal",
+     "deudas en el matrimonio",
+     "aval de un pagare"
+    ],
+    "hashtags": [
+     "#deudas",
+     "#finanzasenpareja",
+     "#sociedadconyugal",
+     "#aval"
+    ],
+    "preguntas": [
+     "¿Me afectan las deudas de mi pareja?",
+     "¿Qué pasa si firmo de aval a mi pareja?",
+     "¿Si mi esposo quiebra, pierdo mis bienes?"
+    ]
+   },
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   }
  ]
 }
