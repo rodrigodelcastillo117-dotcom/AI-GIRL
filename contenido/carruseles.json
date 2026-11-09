@@ -4803,7 +4803,7 @@
   },
   {
    "id": "c55",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "socios_junta_mensual_presupuesto",
    "pilar": "finanzas",
    "serie": {
@@ -4816,7 +4816,7 @@
     "foto": "assets/fotos/enero-oficina-casa.jpg",
     "etiqueta": "SOCIOS EN CASA · PARTE 1 DE 5",
     "titulo": "Tu casa es una empresa de dos socios, y no hacen juntas",
-    "voz": "Tu casa es una empresa de dos socios, y casi ninguna pareja hace junta. Aquí va la orden del día, con fuentes oficiales.",
+    "voz": "Tu casa es una empresa de dos socios, y las empresas hacen junta. Aquí va la orden del día, con fuentes oficiales.",
     "gancho_tipo": "postura",
     "foto_reel": "assets/fotos/video-19-sillon.jpg"
    },
@@ -4886,12 +4886,12 @@
      "¿Cómo organizar las finanzas en pareja?"
     ]
    },
-   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   },
   {
    "id": "c56",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "socios_capitulaciones_contrato",
    "pilar": "finanzas",
    "serie": {
@@ -4904,14 +4904,14 @@
     "foto": "assets/fotos/video-38-oficina.jpg",
     "etiqueta": "SOCIOS EN CASA · PARTE 2 DE 5",
     "titulo": "Casarte sin leer tus capitulaciones es firmar una sociedad a ciegas",
-    "voz": "Casarte sin leer tus capitulaciones es firmar una sociedad a ciegas. La ley las trata casi como un contrato de socios.",
+    "voz": "Casarte sin leer tus capitulaciones es firmar una sociedad a ciegas. Y la ley trata a la sociedad conyugal casi como una sociedad entre socios.",
     "gancho_tipo": "postura",
     "foto_reel": "assets/fotos/video-02-palco.jpg"
    },
    "diapositivas": [
     {
      "titulo": "Qué son",
-     "texto": "Los pactos con los que los esposos forman la sociedad conyugal o la separación de bienes, y dicen cómo se administran. Regla federal: cada estado tiene su código civil.\n\nCódigo Civil Federal, art. 179",
+     "texto": "Los pactos con los que los esposos forman la sociedad conyugal o la separación de bienes, y dicen cómo se administran. Es la regla federal: revisa el código civil de tu estado.\n\nCódigo Civil Federal, art. 179",
      "voz": "Las capitulaciones son los pactos que dicen qué es de quién y cómo se administra."
     },
     {
@@ -4975,12 +4975,12 @@
      "¿Las capitulaciones matrimoniales van ante notario?"
     ]
    },
-   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   },
   {
    "id": "c57",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "socios_credito_vivienda_pareja",
    "pilar": "finanzas",
    "serie": {
@@ -5005,8 +5005,8 @@
     },
     {
      "titulo": "Si alguien pierde el empleo",
-     "texto": "Si dejas de recibir salario, el Infonavit te da prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 meses en total.\n\nLey del Infonavit, art. 41",
-     "voz": "Si uno pierde el empleo, hay prórrogas sin intereses de hasta dos años en total."
+     "texto": "Si dejas de recibir salario, el Infonavit te da prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 meses en total. Terminan cuando consigues nuevo empleo.\n\nLey del Infonavit, art. 41",
+     "voz": "Si uno pierde el empleo, hay prórrogas de hasta dos años en total, sin intereses ordinarios."
     },
     {
      "titulo": "Seguro incluido",
@@ -5036,7 +5036,7 @@
    },
    "fuente": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (última reforma DOF 21-02-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf): art. 47: las reglas de otorgamiento de créditos 'tomarán en cuenta (...) su salario o el ingreso conjunto si hay acuerdo de los interesados'; art. 41: 'Cuando una persona trabajadora derechohabiente hubiere recibido crédito del Instituto y éste tenga conocimiento de que ha dejado de percibir ingresos salariales, le otorgará prórrogas en los pagos (...) Durante dichas prórrogas no se generarán intereses ordinarios'; 'no podrán ser mayores de doce meses cada una, ni exceder en su conjunto más de veinticuatro meses y terminarán anticipadamente cuando la persona trabajadora inicie una nueva relación laboral'; art. 51: 'Los créditos que el Instituto otorgue a las personas trabajadoras estarán cubiertos por un seguro para los casos de incapacidad total permanente o de muerte, que libere a la persona trabajadora o a sus personas beneficiarias de las obligaciones'; 'El costo del seguro (...) quedará a cargo del Instituto'; 'En el acto de otorgamiento del crédito o de forma posterior, las personas trabajadoras acreditadas podrán manifestar expresamente su voluntad ante el Instituto para designar a las personas que, en caso de su muerte, podrán adjudicarse el inmueble objeto del crédito en calidad de beneficiarias, conforme a las formalidades, prelación y condiciones establecidas en los artículos 40 y 42'. Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (última reforma DOF 15-01-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf): art. 179: los créditos del Fondo de la Vivienda se otorgan tomando en cuenta, entre otros, 'su sueldo o el ingreso conyugal si hay acuerdo de las personas interesadas'. Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 942 'Se presumirán iguales, mientras no se prueba lo contrario, las porciones correspondientes a los partícipes en la comunidad'; art. 939 'Los que por cualquier título tienen el dominio legal de una cosa, no pueden ser obligados a conservarlo indiviso'; art. 940 'Si el dominio no es divisible, o la cosa no admite cómoda división y los partícipes no se convienen en que sea adjudicada a alguno de ellos, se procederá a su venta y a la repartición de su precio entre los interesados'. 'Si uno puso más enganche, que quede por escrito' es opinión de Victoria y lo dice la diapositiva. Si están casados en sociedad conyugal, la casa puede ser bien común (ver c56); la copropiedad aplica cuando la compran a nombre de los dos. No se usaron montos ni requisitos de 'Unamos Créditos' ni del crédito conyugal Fovissste-Infonavit: el portal del Infonavit (portalmx.infonavit.org.mx) no respondió el 9-nov-2026 y solo había notas de prensa. Información general, no asesoría legal. Consultado el 9-nov-2026.",
    "titulo_post": "Crédito Infonavit en pareja: lo que dice la ley",
-   "texto_post": "Crédito Infonavit en pareja: si la casa es de los dos, que el papel lo diga. 🏠\n1. La ley deja que el Infonavit tome en cuenta el ingreso conjunto si los dos están de acuerdo (Ley del Infonavit, art. 47); en el Fovissste, el ingreso conyugal (Ley del ISSSTE, art. 179).\n2. Si pierdes el empleo, hay prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 en total (art. 41).\n3. El crédito trae un seguro por muerte o incapacidad total permanente que libera la deuda, pagado por el Instituto (art. 51).\n4. Puedes designar beneficiarios que podrían quedarse con la vivienda (art. 51).\n5. En copropiedad, si no ponen porcentajes, la ley presume partes iguales (Código Civil Federal, art. 942). Si uno puso más enganche, anótenlo.\n6. Si se separan sin acuerdo y la casa no se puede dividir, se vende y se reparte el precio (arts. 939 y 940).\n\nInformación general, no asesoría legal.\nCapital ya pidió su parte de la copropiedad: el sillón entero.\n📚 Ley del Infonavit, arts. 41, 47 y 51; Ley del ISSSTE, art. 179; Código Civil Federal, arts. 939, 940 y 942.\n💬 ¿A nombre de quién está tu casa? Comenta MÍO, SUYO, LOS DOS o RENTO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar su crédito.\n📩 Mándaselo a tu pareja antes de firmar el crédito.",
+   "texto_post": "Crédito Infonavit en pareja: si la casa es de los dos, que el papel lo diga. 🏠\n1. La ley deja que el Infonavit tome en cuenta el ingreso conjunto si los dos están de acuerdo (Ley del Infonavit, art. 47); en el Fovissste, el ingreso conyugal (Ley del ISSSTE, art. 179).\n2. Si pierdes el empleo, hay prórrogas sin intereses ordinarios: hasta 12 meses cada una y 24 en total; terminan al conseguir nuevo empleo (art. 41).\n3. El crédito trae un seguro por muerte o incapacidad total permanente que libera la deuda, pagado por el Instituto (art. 51).\n4. Puedes designar beneficiarios que podrían quedarse con la vivienda (art. 51).\n5. En copropiedad, si no ponen porcentajes, la ley presume partes iguales (Código Civil Federal, art. 942; revisa el código civil de tu estado). Si uno puso más enganche, anótenlo.\n6. Si se separan sin acuerdo y la casa no se puede dividir, se vende y se reparte el precio (arts. 939 y 940).\n\nInformación general, no asesoría legal.\nCapital ya pidió su parte de la copropiedad: el sillón entero.\n📚 Ley del Infonavit, arts. 41, 47 y 51; Ley del ISSSTE, art. 179; Código Civil Federal, arts. 939, 940 y 942.\n💬 ¿A nombre de quién está tu casa? Comenta MÍO, SUYO, LOS DOS o RENTO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar su crédito.\n📩 Mándaselo a tu pareja antes de firmar el crédito.",
    "seo": {
     "palabra_clave": "crédito infonavit en pareja",
     "titulo": "Crédito Infonavit en pareja y la escritura 🏠",
@@ -5064,12 +5064,12 @@
      "¿El crédito Infonavit tiene seguro de vida?"
     ]
    },
-   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   },
   {
    "id": "c58",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "socios_negocio_en_pareja",
    "pilar": "finanzas",
    "serie": {
@@ -5109,7 +5109,7 @@
     },
     {
      "titulo": "Con tope",
-     "texto": "Sus ingresos anuales no pueden pasar de $7,678,849.94 (cifra 2026). Si los rebasa, debe transformarse en otro tipo de sociedad.\n\nLGSM, art. 260 · DOF 26-12-2025",
+     "texto": "Sus ingresos anuales no pueden pasar de $7,678,849.94 (cifra 2026). Si los rebasa, debe transformarse en otro tipo de sociedad; si no, los socios responden de forma ilimitada.\n\nLGSM, art. 260 · DOF 26-12-2025",
      "voz": "Pero tiene tope: casi siete millones setecientos mil pesos al año."
     },
     {
@@ -5128,9 +5128,9 @@
     "texto": "Mándaselo a tu pareja antes de abrir el negocio.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
     "voz": "¿Emprenderías con tu pareja? Comenta sí, no o ya lo hice, y sígueme."
    },
-   "fuente": "Ley General de Sociedades Mercantiles (última reforma DOF 20-10-2023; cantidades actualizadas por acuerdo DOF 26-12-2025; https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSM.pdf): art. 1: reconoce siete especies (nombre colectivo, comandita simple, responsabilidad limitada, anónima, comandita por acciones, cooperativa y 'VII. Sociedad por acciones simplificada', fracción adicionada DOF 14-03-2016); art. 2 'Las sociedades mercantiles inscritas en el Registro Público de Comercio, tienen personalidad jurídica distinta de la de los socios'; art. 6: la escritura constitutiva contiene 'La expresión de lo que cada socio aporte en dinero o en otros bienes' (fr. VI), 'La manera conforme a la cual haya de administrarse la sociedad y las facultades de los administradores' (fr. VIII) y 'La manera de hacer la distribución de las utilidades y pérdidas entre los miembros de la sociedad' (fr. X); art. 16: 'salvo pacto en contrario (...) La distribución de las ganancias o pérdidas entre los socios capitalistas se hará proporcionalmente a sus aportaciones'; art. 58: socios de la S. de R.L. 'solamente están obligados al pago de sus aportaciones'; art. 87: socios de la S.A. 'cuya obligación se limita al pago de sus acciones'; art. 260: la SAS 'se constituye con una o más personas físicas que solamente están obligadas al pago de sus aportaciones representadas en acciones'; 'Los ingresos totales anuales de una sociedad por acciones simplificada no podrá rebasar de $7,678,849.94. En caso de rebasar el monto respectivo, la sociedad por acciones simplificada deberá transformarse en otro régimen societario' (cantidad actualizada por acuerdo DOF 26-12-2025, vigente en 2026); art. 262: requisitos: uno o más accionistas, estatutos del sistema electrónico de constitución de la Secretaría de Economía, autorización de uso de denominación y 'que todos los accionistas cuenten con certificado de firma electrónica avanzada vigente'; 'En ningún caso se exigirá el requisito de escritura pública, póliza o cualquier otra formalidad adicional'; art. 263, fr. VI: 'La utilización de fedatarios públicos es optativa'. Secretaría de Economía, 'Constituye tu empresa en 24 horas' (gob.mx/tuempresa, 24-feb-2018, https://www.gob.mx/tuempresa/articulos/crea-tu-sociedad-por-acciones): se crea 'de manera gratuita'; 'No genera gastos en la constitución de la sociedad'; requisitos 'Firma electrónica (e.firma) de todos los accionistas' (su cifra de 5 millones de pesos está desactualizada: manda la ley). Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 2964 'El deudor responde del cumplimiento de sus obligaciones con todos sus bienes, con excepción de aquellos que, conforme a la ley, son inalienables o no embargables'. 'Sin sociedad, el negocio y sus deudas son tuyos' aplica cuando el negocio opera a nombre de una persona física. No se dice que el alta en el RFC de la SAS sea en línea: desde 2026 sigue la Resolución Miscelánea Fiscal y no se comprobó en el SAT. Información general, no asesoría legal ni fiscal. Consultado el 9-nov-2026.",
+   "fuente": "Ley General de Sociedades Mercantiles (última reforma DOF 20-10-2023; cantidades actualizadas por acuerdo DOF 26-12-2025; https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSM.pdf): art. 1: reconoce siete especies (nombre colectivo, comandita simple, responsabilidad limitada, anónima, comandita por acciones, cooperativa y 'VII. Sociedad por acciones simplificada', fracción adicionada DOF 14-03-2016); art. 2 'Las sociedades mercantiles inscritas en el Registro Público de Comercio, tienen personalidad jurídica distinta de la de los socios'; art. 6: la escritura constitutiva contiene 'La expresión de lo que cada socio aporte en dinero o en otros bienes' (fr. VI), 'La manera conforme a la cual haya de administrarse la sociedad y las facultades de los administradores' (fr. VIII) y 'La manera de hacer la distribución de las utilidades y pérdidas entre los miembros de la sociedad' (fr. X); art. 16: 'salvo pacto en contrario (...) La distribución de las ganancias o pérdidas entre los socios capitalistas se hará proporcionalmente a sus aportaciones'; art. 58: socios de la S. de R.L. 'solamente están obligados al pago de sus aportaciones'; art. 87: socios de la S.A. 'cuya obligación se limita al pago de sus acciones'; art. 260: la SAS 'se constituye con una o más personas físicas que solamente están obligadas al pago de sus aportaciones representadas en acciones'; 'Los ingresos totales anuales de una sociedad por acciones simplificada no podrá rebasar de $7,678,849.94. En caso de rebasar el monto respectivo, la sociedad por acciones simplificada deberá transformarse en otro régimen societario' (cantidad actualizada por acuerdo DOF 26-12-2025, vigente en 2026); mismo art. 260: 'En caso que los accionistas no lleven a cabo la transformación de la sociedad (...) responderán frente a terceros, subsidiaria, solidaria e ilimitadamente'; art. 262: requisitos: uno o más accionistas, estatutos del sistema electrónico de constitución de la Secretaría de Economía, autorización de uso de denominación y 'que todos los accionistas cuenten con certificado de firma electrónica avanzada vigente'; 'En ningún caso se exigirá el requisito de escritura pública, póliza o cualquier otra formalidad adicional'; art. 263, fr. VI: 'La utilización de fedatarios públicos es optativa'. Secretaría de Economía, 'Constituye tu empresa en 24 horas' (gob.mx/tuempresa, 24-feb-2018, https://www.gob.mx/tuempresa/articulos/crea-tu-sociedad-por-acciones): se crea 'de manera gratuita'; 'No genera gastos en la constitución de la sociedad'; requisitos 'Firma electrónica (e.firma) de todos los accionistas' (su cifra de 5 millones de pesos está desactualizada: manda la ley). Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 2964 'El deudor responde del cumplimiento de sus obligaciones con todos sus bienes, con excepción de aquellos que, conforme a la ley, son inalienables o no embargables'. 'Sin sociedad, el negocio y sus deudas son tuyos' aplica cuando el negocio opera a nombre de una persona física. No se dice que el alta en el RFC de la SAS sea en línea: desde 2026 sigue la Resolución Miscelánea Fiscal y no se comprobó en el SAT. Información general, no asesoría legal ni fiscal. Consultado el 9-nov-2026.",
    "titulo_post": "Negocio en pareja: ponlo por escrito",
-   "texto_post": "Negocio en pareja: emprender sin papeles no es confianza, es riesgo. 💼\n1. La ley reconoce siete tipos de sociedad mercantil; la más nueva es la sociedad por acciones simplificada (SAS) (Ley General de Sociedades Mercantiles, art. 1).\n2. La escritura dice qué aporta cada socio, quién administra y cómo se reparten utilidades y pérdidas (art. 6).\n3. Si no lo pactan, ganancias y pérdidas se reparten en proporción a lo que aportó cada uno (art. 16).\n4. La SAS se forma en el sistema de la Secretaría de Economía, sin escritura pública y sin costo de constitución; todos necesitan e.firma (arts. 260 y 262).\n5. Tope de ingresos de la SAS en 2026: $7,678,849.94 al año (art. 260).\n6. En la S.A., la S. de R.L. y la SAS, los socios solo están obligados a pagar sus aportaciones (arts. 58, 87 y 260).\n7. Si el negocio está a tu nombre, sin sociedad, respondes con todos tus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n\nInformación general, no asesoría legal ni fiscal.\nCapital y yo somos socios: yo pongo el capital (literal) y él, la seguridad del local.\n📚 Ley General de Sociedades Mercantiles, arts. 1, 2, 6, 16, 58, 87, 260 y 262; Secretaría de Economía; Código Civil Federal, art. 2964.\n💬 ¿Emprenderías con tu pareja? Comenta SÍ, NO o YA LO HICE. Te contesto a todos.\n🔖 Guárdalo para antes de abrir su negocio.\n📩 Mándaselo a tu pareja o a tu socio antes de abrir el negocio.",
+   "texto_post": "Negocio en pareja: emprender sin papeles no es confianza, es riesgo. 💼\n1. La ley reconoce siete tipos de sociedad mercantil; la más nueva es la sociedad por acciones simplificada (SAS) (Ley General de Sociedades Mercantiles, art. 1).\n2. La escritura dice qué aporta cada socio, quién administra y cómo se reparten utilidades y pérdidas (art. 6).\n3. Si no lo pactan, ganancias y pérdidas se reparten en proporción a lo que aportó cada uno (art. 16).\n4. La SAS se forma en el sistema de la Secretaría de Economía, sin escritura pública y sin costo de constitución; todos necesitan e.firma (arts. 260 y 262).\n5. Tope de ingresos de la SAS en 2026: $7,678,849.94 al año; si lo rebasa y no se transforma en otro tipo de sociedad, los socios responden de forma ilimitada frente a terceros (art. 260).\n6. En la S.A., la S. de R.L. y la SAS, los socios solo están obligados a pagar sus aportaciones (arts. 58, 87 y 260).\n7. Si el negocio está a tu nombre, sin sociedad, respondes con todos tus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n\nInformación general, no asesoría legal ni fiscal.\nCapital y yo somos socios: yo pongo el capital (literal) y él, la seguridad del local.\n📚 Ley General de Sociedades Mercantiles, arts. 1, 2, 6, 16, 58, 87, 260 y 262; Secretaría de Economía; Código Civil Federal, art. 2964.\n💬 ¿Emprenderías con tu pareja? Comenta SÍ, NO o YA LO HICE. Te contesto a todos.\n🔖 Guárdalo para antes de abrir su negocio.\n📩 Mándaselo a tu pareja o a tu socio antes de abrir el negocio.",
    "seo": {
     "palabra_clave": "negocio en pareja",
     "titulo": "Negocio en pareja y la SAS en 7 datos 💼",
@@ -5158,12 +5158,12 @@
      "¿Qué pasa si el negocio está a mi nombre y tiene deudas?"
     ]
    },
-   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   },
   {
    "id": "c59",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "socios_deudas_quiebra_pareja",
    "pilar": "finanzas",
    "serie": {
@@ -5188,17 +5188,17 @@
     },
     {
      "titulo": "No se presume",
-     "texto": "Para que dos personas deban cada una la deuda completa, lo tiene que decir la ley o lo que firmaron: la solidaridad no se presume.\n\nCódigo Civil Federal, arts. 1987 y 1988",
-     "voz": "Para deber lo mismo que tu pareja, lo tiene que decir la ley o un papel que firmaste."
+     "texto": "Para que dos personas deban cada una la deuda completa, lo tiene que decir la ley o lo que pactaron: la solidaridad no se presume.\n\nCódigo Civil Federal, arts. 1987 y 1988",
+     "voz": "Para deber lo mismo que tu pareja, lo tiene que decir la ley o lo que pactaste."
     },
     {
      "titulo": "Aval o fiador",
      "texto": "Como fiador, te comprometes a pagar si el deudor no paga. Como aval de un pagaré, quedas obligado solidariamente con quien garantizas.\n\nCódigo Civil Federal, art. 2794 · LGTOC, arts. 114 y 174",
-     "voz": "Si le firmas de aval o de fiador, prometes pagar si no paga."
+     "voz": "Como fiador, pagas si tu pareja no paga. Como aval de un pagaré, te pueden cobrar a ti igual que a tu pareja."
     },
     {
      "titulo": "Si el administrador quiebra",
-     "texto": "Puedes pedir terminar la sociedad conyugal si quien la administra la pone en riesgo por negligencia, cede bienes comunes a sus acreedores sin tu permiso o quiebra.\n\nCódigo Civil Federal, art. 188",
+     "texto": "Puedes pedir terminar la sociedad conyugal si quien la administra, por notoria negligencia, amenaza arruinarte o reducir mucho los bienes comunes; si cede bienes comunes a sus acreedores sin tu permiso, o si quiebra.\n\nCódigo Civil Federal, art. 188",
      "voz": "Si quien administra los bienes comunes quiebra, puedes pedir terminar la sociedad conyugal."
     },
     {
@@ -5224,7 +5224,7 @@
    },
    "fuente": "Código Civil Federal (texto vigente, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 2964 'El deudor responde del cumplimiento de sus obligaciones con todos sus bienes, con excepción de aquellos que, conforme a la ley, son inalienables o no embargables'; art. 1987: hay 'solidaridad pasiva cuando dos o más deudores reporten la obligación de prestar, cada uno de por sí, en su totalidad, la prestación debida'; art. 1988 'La solidaridad no se presume; resulta de la ley o de la voluntad de las partes'; art. 2794 'La fianza es un contrato por el cual una persona se compromete con el acreedor a pagar por el deudor, si éste no lo hace'; art. 188: la sociedad conyugal puede terminar durante el matrimonio a petición de alguno de los cónyuges 'I. Si el socio administrador, por su notoria negligencia o torpe administración, amenaza arruinar a su consocio o disminuir considerablemente los bienes comunes; II. Cuando el socio administrador, sin el consentimiento expreso de su cónyuge, hace cesión de bienes pertenecientes a la sociedad conyugal, a sus acreedores; III. Si el socio administrador es declarado en quiebra, o concurso'; art. 190: 'Es nula la capitulación (...) que establezca que alguno de ellos sea responsable por las pérdidas y deudas comunes en una parte que exceda a la que proporcionalmente corresponda a su capital o utilidades'; art. 204 'Terminado el inventario, se pagarán los créditos que hubiere contra el fondo social, se devolverá a cada cónyuge lo que llevó al matrimonio y el sobrante, si lo hubiere, se dividirá entre los dos consortes en la forma convenida'. Ley General de Títulos y Operaciones de Crédito (última reforma DOF 26-03-2024, https://www.diputados.gob.mx/LeyesBiblio/pdf/LGTOC.pdf): art. 114 'El avalista queda obligado solidariamente con aquel cuya firma ha garantizado'; art. 174: los arts. 109 al 116 (aval) son aplicables al pagaré. En la diapositiva 4, 'quiebra' resume 'declarado en quiebra, o concurso'. Si la sociedad conyugal responde por las deudas de cada quien depende de las capitulaciones (art. 189, fr. III; ya en c28) y del código civil de cada estado. Información general, no asesoría legal. Consultado el 9-nov-2026.",
    "titulo_post": "Deudas de tu pareja: cuándo te tocan",
-   "texto_post": "Deudas de mi pareja: firmarle de aval no es amor, es deuda. ⚖️\n1. Quien debe responde con todos sus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n2. Para que tú debas lo mismo que tu pareja, lo tiene que decir la ley o lo que firmaste: la solidaridad no se presume (arts. 1987 y 1988).\n3. Como fiador prometes pagar si no paga; como aval de un pagaré quedas obligado solidariamente (art. 2794; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174).\n4. Si quien administra la sociedad conyugal la pone en riesgo, cede bienes comunes a sus acreedores sin tu permiso o quiebra, puedes pedir terminarla (art. 188).\n5. Es nulo el pacto que te haga cargar más deudas comunes de las que te tocan (art. 190).\n6. Al liquidar la sociedad conyugal, primero se pagan las deudas comunes (art. 204).\n7. Cada estado tiene su código civil: revísalo con un notario o abogado.\n\nInformación general, no asesoría legal.\nCapital no es aval de nadie. Ni mío. Lo dice su contrato: croquetas a cambio de nada.\n📚 Código Civil Federal, arts. 188, 190, 204, 1987, 1988, 2794 y 2964; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174.\n💬 ¿Le has firmado de aval a tu pareja? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar cualquier crédito ajeno.\n📩 Mándaselo a quien está a punto de firmarle de aval a su pareja.",
+   "texto_post": "Deudas de mi pareja: firmarle de aval no es amor, es deuda. ⚖️\n1. Quien debe responde con todos sus bienes, salvo los inembargables (Código Civil Federal, art. 2964).\n2. Para que tú debas lo mismo que tu pareja, lo tiene que decir la ley o lo que pactaste: la solidaridad no se presume (arts. 1987 y 1988).\n3. Como fiador prometes pagar si no paga; como aval de un pagaré quedas obligado solidariamente (art. 2794; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174).\n4. Si quien administra la sociedad conyugal, por notoria negligencia, amenaza arruinarte o reducir mucho los bienes comunes, cede bienes comunes a sus acreedores sin tu permiso o quiebra, puedes pedir terminarla (art. 188).\n5. Es nulo el pacto que te haga cargar más deudas comunes de las que te tocan (art. 190).\n6. Al liquidar la sociedad conyugal, primero se pagan las deudas comunes (art. 204).\n7. Cada estado tiene su código civil: revísalo con un notario o abogado.\n\nInformación general, no asesoría legal.\nCapital no es aval de nadie. Ni mío. Lo dice su contrato: croquetas a cambio de nada.\n📚 Código Civil Federal, arts. 188, 190, 204, 1987, 1988, 2794 y 2964; Ley General de Títulos y Operaciones de Crédito, arts. 114 y 174.\n💬 ¿Le has firmado de aval a tu pareja? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de firmar cualquier crédito ajeno.\n📩 Mándaselo a quien está a punto de firmarle de aval a su pareja.",
    "seo": {
     "palabra_clave": "deudas de mi pareja",
     "titulo": "Deudas de mi pareja y firmar de aval ⚖️",
@@ -5251,7 +5251,7 @@
      "¿Si mi esposo quiebra, pierdo mis bienes?"
     ]
    },
-   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo.",
+   "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
   }
  ]

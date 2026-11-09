@@ -460,7 +460,13 @@
   "c27",
   "c41",
   "c28",
-  "c29"
+  "c29",
+  "c55",
+  "c59",
+  "c56",
+  "c58",
+  "c57"
  ],
- "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Estos salen primero en TikTok (y de ahí a las demás redes); se quitan solos de la cola cuando ya salieron."
+ "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Parejas (c27, c41, c28, c29) y la serie Socios en casa (c55-c59, revisada el 9-nov) van primero en TikTok, prioridad_por_dia al día (2) para no tapar la temporada de aguinaldo; se quitan solos cuando ya salieron.",
+ "prioridad_por_dia": 2
 }
