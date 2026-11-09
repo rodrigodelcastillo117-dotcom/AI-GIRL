@@ -18,6 +18,7 @@ filtro_cuentas, para no publicar nunca en las cuentas de otras marcas del mismo 
 import datetime
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -74,6 +75,19 @@ def workspace_id():
     if not ws:
         sys.exit('ERROR: la clave no tiene workspaces')
     return ws[0]['id']
+
+
+def texto_facebook(texto, enlace=None, etiqueta=None):
+    """Pie de Facebook: el de Instagram, pero ahí los enlaces sí se pueden tocar (9-nov-2026). "enlace en mi perfil"
+    se cambia por el enlace directo con ?ref=fb; si no lo trae, se agrega el del carrusel o el de la página."""
+    from seo import con_ref  # aquí y no arriba: seo importa de varios lados
+    url = con_ref(enlace or CONFIG.get('enlace_venta') or 'https://victoriatheceo.vercel.app', 'fb')
+    nuevo, n = re.subn(r'enlace en mi perfil\s*👆?', url, texto)
+    if n:
+        return nuevo
+    lineas = texto.rstrip().split('\n')
+    corte = next((i for i in range(len(lineas) - 1, -1, -1) if lineas[i].strip() and not lineas[i].startswith('#')), len(lineas) - 1) + 1
+    return '\n'.join(lineas[:corte] + [f"{etiqueta or '👉 Más de Victoria'}: {url}"] + lineas[corte:])
 
 
 def facebook_victoria(todas):
@@ -229,8 +243,7 @@ def main():
     carpeta = os.path.dirname(os.path.abspath(archivo_texto))
     por_red = {r: open(os.path.join(carpeta, f'texto_{r}.txt')).read().strip()
                for r in ('instagram', 'tiktok') if os.path.exists(os.path.join(carpeta, f'texto_{r}.txt'))}
-    if 'instagram' in por_red:
-        por_red['facebook'] = por_red['instagram']  # Facebook lleva el pie de Instagram
+    por_red['facebook'] = texto_facebook(por_red.get('instagram', texto))  # el de Instagram, con el enlace que se toca
     if len(titulo.strip()) < 5:  # Instagram pide título y TikTok mínimo 5 caracteres (regla 6)
         titulo = 'Victoria The CEO'
 

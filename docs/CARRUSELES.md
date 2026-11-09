@@ -99,3 +99,7 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
 TikTok le pone música automática al carrusel (`auto_add_music`). Los sonidos en tendencia de
 Instagram y TikTok solo se pueden poner a mano desde la app: ninguna API los da. Si Rodrigo quiere
 un sonido en tendencia, lo pone él al publicar desde Publer o la app.
+
+9-nov-2026: Rodrigo quiere música viral y no pistas generadas (se probó Suno y se quitó). Canciones en tendencia
+metidas al archivo = video silenciado o reclamado: no se hace. Si hay pistas con licencia, van en assets/musica/ y
+`carrusel_video.py` las mezcla sola (ver assets/musica/LEEME.md).

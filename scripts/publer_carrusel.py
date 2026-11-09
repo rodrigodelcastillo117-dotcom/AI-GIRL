@@ -29,7 +29,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import (facebook_victoria, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
+from publer import (facebook_victoria, texto_facebook, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
                     esperar_job, mandar, red, workspace_id, ya_programadas)
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
 
@@ -165,8 +165,10 @@ def reel(c, cuando, config):
     if not cuentas and not ya_ig:
         sys.exit('ERROR: no encontré el Instagram de Victoria en Publer. No publico nada.')
     fb = facebook_victoria(todas)
-    if fb:
+    if fb and not yo.get('facebook'):
         cuentas.append(fb)  # 9-nov-2026: el Reel de Instagram sale también en la página de Facebook, a la misma hora
+    enlace = c.get('enlace') or {}
+    texto_fb = texto_facebook(texto, enlace.get('url'), enlace.get('etiqueta'))
     ya = ya_programadas(ws, cuentas, texto)
     cuentas = [x for x in cuentas if str(x['id']) not in ya]
     if not cuentas:
@@ -180,10 +182,11 @@ def reel(c, cuando, config):
         sys.exit(f'ERROR: la subida del video no regresó id: {json.dumps(subida)[:500]}')
     fallas, salieron = [], []
     for cuenta in cuentas:  # una petición por red (regla 5): si Facebook falla, Instagram no se pierde
-        motivo = mandar(ws, armar_post([cuenta], media_id, texto, c['titulo_post'], cuando, comentario_ig(c, config)))
+        t = texto_fb if red(cuenta) == 'facebook' else texto
+        motivo = mandar(ws, armar_post([cuenta], media_id, t, c['titulo_post'], cuando, comentario_ig(c, config)))
         if motivo:  # si Publer no acepta el primer comentario, sale sin él
             print(f'AVISO: Publer rechazó el {red(cuenta)} con primer comentario ({motivo[:200]}); lo mando sin comentario.')
-            motivo = mandar(ws, armar_post([cuenta], media_id, texto, c['titulo_post'], cuando))
+            motivo = mandar(ws, armar_post([cuenta], media_id, t, c['titulo_post'], cuando))
         if motivo:
             fallas.append(f'{red(cuenta)}: {motivo}')
         else:

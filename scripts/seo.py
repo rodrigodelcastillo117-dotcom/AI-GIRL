@@ -127,7 +127,7 @@ def textos(video, plan, config):
         parrafo,
         post,
         ('Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in preguntas)) if preguntas else '',
-        f"Soy Victoria: un consejo de negocios, dinero y mente fuerte {cada(config)}. Suscríbete para no perderte el siguiente.",
+        f"Soy Victoria: tu dinero en México, sin rodeos, {cada(config)}. Suscríbete para no perderte el siguiente.",
         ' '.join(hashtags_para('youtube', seo, config)),
         cierre,
     ] if x)[:4900]

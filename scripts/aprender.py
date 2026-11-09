@@ -896,6 +896,10 @@ def decidir_carruseles(plan, carruseles, historial, config, hoy, ahora, d):
         comandos.append(f"python scripts/publer_carrusel.py {ig['id']} --reel {ig['cuando_ig']}")
     for yt in salida['youtubes']:
         comandos.append(f"youtube.py subir carruseles/{yt['id']}/short.mp4 ... {yt['cuando_yt']} (CARRUSELES.md)")
+        if config.get('facebook_victoria') and yt['id'] not in ids_ig:
+            # 9-nov-2026 (Rodrigo: "sube mucho a Facebook"): los shorts de YouTube también van a la página de Facebook;
+            # los de Instagram ya van solos con su Reel.
+            comandos.append(f"python scripts/publer_carrusel.py {yt['id']} --reel {yt['cuando_yt']} --solo-facebook")
     salida['comandos'] = comandos
     return salida
 

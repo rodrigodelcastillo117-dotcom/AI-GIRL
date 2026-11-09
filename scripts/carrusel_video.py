@@ -1,5 +1,7 @@
 """Convierte carruseles ya dibujados en video (gratis: Edge TTS + ffmpeg) y arma sus textos de YouTube.
 
+musica <video.mp4> [pista.mp3]: le pone música de fondo bajita (assets/musica/) a un video ya terminado.
+
 Uso: python carrusel_video.py short <id>
          carruseles/<id>/short.mp4 (vertical, máximo 57 s) + titulo.txt, descripcion_youtube.txt,
          tags_youtube.txt para youtube.py subir.
@@ -105,12 +107,34 @@ def tramos(c, horizontal=False, portada=None):
     return rutas, total
 
 
-def unir(rutas, salida):
+def unir(rutas, salida, musica=None):
     lista = salida + '.txt'
     open(lista, 'w').write(''.join(f"file '{os.path.abspath(r)}'\n" for r in rutas))
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', salida], check=True)
     for r in rutas + [lista]:
         os.remove(r)
+    if musica:
+        con_musica(salida, musica)
+
+
+def pista_para(cid):
+    """Música de fondo del carrusel: una de assets/musica/*.mp3 (la misma para el mismo carrusel). Hoy la carpeta está
+    vacía a propósito (Rodrigo, 9-nov-2026: nada de Suno; la música viral solo se pone desde la app): sin pistas, sin música."""
+    pistas = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'musica', '*.mp3')))
+    if not pistas or '--sin-musica' in sys.argv:
+        return None
+    return pistas[sum(map(ord, cid)) % len(pistas)]
+
+
+def con_musica(video, pista, volumen=0.11):
+    """Mete la pista bajita debajo de la voz (que manda), en bucle, con entrada y salida suaves."""
+    dur = duracion(video)
+    tmp = video + '.musica.mp4'
+    filtro = (f'[1:a]volume={volumen},afade=t=in:d=0.6,afade=t=out:st={max(0, dur - 1.2):.2f}:d=1.2[m];'
+              '[0:a][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', video, '-stream_loop', '-1', '-i', pista, '-filter_complex', filtro,
+                    '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k', '-t', f'{dur:.2f}', tmp], check=True)
+    os.replace(tmp, video)
 
 
 def textos_youtube(c, config):
@@ -130,7 +154,7 @@ def textos_youtube(c, config):
     descripcion = '\n\n'.join(x for x in [
         post, '\n'.join(enlaces), f"📚 Fuentes: {c['fuente']}",
         'Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in s['preguntas']),
-        f"Soy Victoria: un consejo de negocios, dinero y mente fuerte {cada(config)}. Suscríbete para no perderte el siguiente.",
+        f"Soy Victoria: tu dinero en México, sin rodeos, {cada(config)}. Suscríbete para no perderte el siguiente.",
         ' '.join(hashtags_para('youtube', s, config)),
         'Victoria es un personaje creado con IA.'] if x)[:4900]
     return s['titulo'], descripcion, ','.join(etiquetas(s, c.get('pilar', 'finanzas'), config))
@@ -144,16 +168,25 @@ def main():
         if total > MAXIMO_SHORT:
             sys.exit(f'ERROR: el short dura {total:.1f} s; máximo {MAXIMO_SHORT}. Acorta las voces del carrusel {c["id"]}.')
         carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
-        unir(rutas, os.path.join(carpeta, 'short.mp4'))
+        pista = pista_para(c['id'])
+        unir(rutas, os.path.join(carpeta, 'short.mp4'), pista)
         portada_reel = os.path.join(carpeta, '00r.png')
         if os.path.exists(portada_reel):  # el Reel de Instagram abre con su propia portada (otra foto y otro título)
             r, _ = tramos(c, portada=portada_reel)
-            unir(r, os.path.join(carpeta, 'reel.mp4'))
+            unir(r, os.path.join(carpeta, 'reel.mp4'), pista)
             print(f'ok {carpeta}/reel.mp4 (abre con 00r.png)')
         config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
         for nombre, texto in zip(('titulo', 'descripcion_youtube', 'tags_youtube'), textos_youtube(c, config)):
             open(os.path.join(carpeta, f'{nombre}.txt'), 'w').write(texto)
         print(f'ok {carpeta}/short.mp4 ({total:.1f} s) y sus textos de YouTube')
+    elif len(args) >= 2 and args[0] == 'musica':
+        # Videos de Victoria (PIPELINE, después de cierre_pantalla.py): la música va debajo de la voz; el video no
+        # se toca, así que la sincronía de labios no cambia.
+        pista = args[2] if len(args) >= 3 else pista_para(os.path.basename(args[1]))
+        if not pista:
+            sys.exit('ERROR: no hay pistas en assets/musica/')
+        con_musica(args[1], pista)
+        print(f'ok {args[1]} con música de fondo ({os.path.basename(pista)})')
     elif len(args) >= 3 and args[0] == 'largo':
         horizontal = '--horizontal' in sys.argv
         rutas, total = [], 0.0
