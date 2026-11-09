@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Victoria The CEO · Las 30 reglas de la CEO gratis</title>
-  <meta name="description" content="Descarga gratis Las 30 reglas de la CEO: dinero, negocio y mente fuerte, cada una con su fuente y una acción para hoy.">
-  <meta property="og:title" content="Las 30 reglas de la CEO · gratis">
-  <meta property="og:description" content="Dinero, negocio y mente fuerte. Una regla por página, con fuente real y una acción para hoy.">
+  <title>Victoria The CEO · Tu dinero en México, sin rodeos</title>
+  <meta name="description" content="Calcula gratis tu aguinaldo 2026, descarga Las 30 reglas de la CEO y aprende lo que nadie te dice de la tarjeta, las deudas y tus derechos en México. Con fuente oficial.">
+  <meta property="og:title" content="Victoria The CEO · Tu dinero en México, sin rodeos">
+  <meta property="og:description" content="Calculadoras gratis, la guía de 30 reglas y lo que nadie te dice de tu dinero. Con fuente oficial.">
   <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
   <link rel="canonical" href="https://victoriatheceo.vercel.app/">
   <meta name="google-site-verification" content="teEtZmLcEFlWH9wf3UFiquLZQfHR3iNdBtRAtjq1jqE">
@@ -20,15 +20,17 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; background: var(--negro); color: var(--crema); font-family: Inter, system-ui, sans-serif; }
     a { color: inherit; }
-    .heroe { position: relative; min-height: 92vh; display: grid; align-items: end; overflow: hidden; }
-    .heroe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
-    .heroe::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 11, 13, .1) 25%, rgba(11, 11, 13, .96) 78%); }
+    .heroe { position: relative; min-height: 100vh; display: grid; align-items: end; overflow: hidden; }
+    .heroe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+    .heroe::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 11, 13, 0) 35%, rgba(11, 11, 13, .97) 70%); }
     .caja { position: relative; z-index: 1; width: min(560px, 100%); margin: 0 auto; padding: 0 20px 40px; }
     .marca { font-size: .78rem; letter-spacing: .32em; font-weight: 600; }
     .marca b { color: var(--oro); }
     h1 { font-weight: 900; font-size: clamp(2.3rem, 9vw, 3.4rem); line-height: 1.02; margin: 12px 0; }
     h1 span { color: var(--oro); }
     .lema { color: #d9d2c5; font-size: 1.05rem; line-height: 1.5; margin: 0 0 22px; }
+    .caja > .boton { margin-bottom: 14px; }
+    #captura .boton { background: transparent; color: var(--oro); border: 2px solid var(--oro); }
     form, .descarga { display: grid; gap: 10px; }
     input[type=email] { width: 100%; padding: 16px; border-radius: 12px; border: 1px solid var(--linea); background: rgba(255, 255, 255, .06); color: var(--crema); font: inherit; font-size: 1rem; }
     .boton { display: block; width: 100%; padding: 16px; border: 0; border-radius: 12px; background: var(--oro); color: var(--negro); font: inherit; font-weight: 900; font-size: 1.05rem; text-align: center; text-decoration: none; cursor: pointer; }
@@ -64,11 +66,12 @@
 </head>
 <body>
   <header class="heroe">
-    <img src="/img/victoria.jpg" alt="Victoria, con su Rottweiler Capital, en un jet privado">
+    <img src="/img/victoria-navidad.jpg" alt="Victoria envolviendo regalos junto al árbol, con su Rottweiler Capital de gorro de Santa">
     <div class="caja">
       <div class="marca">VICTORIA <b>THE CEO</b></div>
-      <h1>Las 30 reglas de la CEO, <span>gratis</span>.</h1>
-      <p class="lema">Dinero, negocio y mente fuerte. Una regla por página, con su fuente real y una acción para hoy.</p>
+      <h1>Tu dinero en México, <span>sin rodeos</span>.</h1>
+      <p class="lema">Soy Victoria (una CEO creada con IA) y él es Capital: no presta dinero, ni a la familia. Calculadoras gratis y lo que nadie te dice de tu dinero, con fuente oficial.</p>
+      <a class="boton" href="/aguinaldo">Calcula tu aguinaldo 2026</a>
       <div id="captura"></div>
     </div>
   </header>
@@ -78,6 +81,18 @@
     <h2>Calculadoras de Victoria</h2>
     <a class="destacada" href="/aguinaldo">Calcula tu aguinaldo 2026 →<small>Cuánto te toca, cuánto paga ISR y cómo repartirlo</small></a>
     <div class="herramientas"><!--herramientas--><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a><!--/herramientas--></div>
+  </section>
+
+  <section class="bloque">
+    <div class="etiqueta">Lo que pienso (y no me da pena decirlo)</div>
+    <h2>Mis reglas, sin rodeos.</h2>
+    <ol>
+      <li><span><b>Tu aguinaldo no es para regalos.</b> Primero deudas caras, luego colchón, luego lo demás.</span></li>
+      <li><span><b>Pagar el mínimo es rentarle tu sueldo al banco.</b> Con $10,000 al 55% pagando el mínimo: unos 19 años (Condusef).</span></li>
+      <li><span><b>Ahorrar sin fondo de emergencia es apostar.</b> De 3 a 6 meses de tus gastos (Condusef).</span></li>
+      <li><span><b>Lo que la ley te da no es un favor.</b> Aguinaldo antes del 20 de diciembre, mínimo 15 días (LFT, art. 87).</span></li>
+      <li><span><b>Si te cobran antes de prestarte, es fraude.</b> Y quien cobra por "borrarte del Buró", también.</span></li>
+    </ol>
   </section>
 
   <section class="bloque">
@@ -117,7 +132,7 @@
   </section>
 
   <section class="bloque">
-    <div class="etiqueta">Una regla nueva cada dos días</div>
+    <div class="etiqueta">Algo nuevo cada día</div>
     <h2>Sígueme</h2>
     <div class="redes">
       <a href="https://www.youtube.com/@victoriatheceo">YouTube</a>
