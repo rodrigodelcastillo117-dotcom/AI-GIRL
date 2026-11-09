@@ -245,17 +245,17 @@ tr.hoy td { background: rgba(245, 197, 66, .08); }
 /* ---------- Centro de operaciones ---------- */
 .ops { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: 18px; }
 .hud { overflow: hidden; }
-.metas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.metas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; align-items: start; }  /* las 4 redes en un renglón, también en el celular */
 .meta { position: relative; display: grid; justify-items: center; text-align: center; gap: 4px; }
-.meta svg { width: 100%; max-width: 140px; overflow: visible; }
+.meta svg { width: 100%; max-width: 104px; overflow: visible; }
 .meta .pista { fill: none; stroke: var(--apagado); stroke-width: 7; }
 .meta .avance { fill: none; stroke-width: 7; stroke-linecap: round; filter: drop-shadow(0 0 6px currentColor); transition: stroke-dasharray 1.2s ease; }
 .meta .marcas { fill: none; stroke: var(--linea-fuerte); stroke-width: 1; stroke-dasharray: 2 6; animation: girar 30s linear infinite; transform-origin: 60px 60px; }
-.meta .nucleo { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 140px; aspect-ratio: 1; display: grid; place-content: center; }
-.meta .nucleo b { font-family: var(--titulo); font-size: 1.5rem; color: var(--texto); text-shadow: 0 0 12px rgba(73, 214, 236, .6); }
+.meta .nucleo { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 104px; aspect-ratio: 1; display: grid; place-content: center; }
+.meta .nucleo b { font-family: var(--titulo); font-size: 1.2rem; color: var(--texto); text-shadow: 0 0 12px rgba(73, 214, 236, .6); }
 .meta .nucleo small { font-family: var(--mono); font-size: .6rem; letter-spacing: .14em; color: var(--tenue); text-transform: uppercase; }
-.meta .rotulo { font-family: var(--etiqueta); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
-.meta .detalle { font-size: .72rem; color: var(--tenue); }
+.meta .rotulo { font-family: var(--etiqueta); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
+.meta .detalle { font-size: .66rem; line-height: 1.25; color: var(--tenue); }
 .radar svg { width: 100%; max-width: 340px; display: block; margin: 0 auto; overflow: visible; }
 .radar .anillo { fill: none; stroke: var(--linea-fuerte); stroke-width: 1; }
 .radar .eje { stroke: var(--linea); stroke-width: 1; }
@@ -349,8 +349,10 @@ tr.hoy td { box-shadow: inset 0 1px 0 rgba(245, 197, 66, .25), inset 0 -1px 0 rg
   .seccion { letter-spacing: .26em; font-size: .72rem; }
   .seccion small { display: none; }
   .metas { gap: 4px; }
-  .meta .nucleo b { font-size: 1.15rem; }
-  .meta .detalle { font-size: .64rem; }
+  .meta .nucleo b { font-size: .95rem; }
+  .meta .nucleo small { font-size: .5rem; }
+  .meta .detalle { font-size: .58rem; }
+  .meta .rotulo { font-size: .55rem; letter-spacing: .08em; }
   .despegue { grid-template-columns: 1fr; }
   .despegue .cuenta-red { font-size: 1.6rem; }
   .horarios-red { grid-template-columns: minmax(0, 1fr); }

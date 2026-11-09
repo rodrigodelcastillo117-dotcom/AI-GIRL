@@ -486,7 +486,7 @@ function avatar3d() {
 
 // ---------- centro de operaciones (todo con datos reales) ----------
 const METAS = [1000, 10000, 100000, 1000000];
-const NOTA_META = {tt: {1000: 'enlace en la bio', 10000: 'TikTok empieza a pagar'}, ig: {10000: 'marcas y colaboraciones'}, yt: {1000: 'YouTube empieza a pagar (con las vistas o horas que pide)'}};
+const NOTA_META = {tt: {1000: 'enlace en la bio', 10000: 'empieza a pagar'}, ig: {10000: 'marcas'}, yt: {1000: 'empieza a pagar'}};
 const SVG = 'http://www.w3.org/2000/svg';
 const svgEl = (etiqueta, attrs = {}, ...hijos) => { const el = document.createElementNS(SVG, etiqueta); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...hijos); return el; };
 
