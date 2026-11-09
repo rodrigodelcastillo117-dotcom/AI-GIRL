@@ -34,6 +34,54 @@ CAMPOS = {'v': 'video_views', 'l': 'likes', 'c': 'comments', 's': 'shares', 'g':
 CDMX = datetime.timezone(datetime.timedelta(hours=-6))  # México no tiene horario de verano desde 2022
 
 
+def comentarios_ig_reales():
+    """{primera línea del pie: comentarios de OTRAS personas} en Instagram, leídos de Meta (mismo permiso que
+    comentarios_ig.py; el token lo pone el proxy de la sesión). Publer cuenta también el primer comentario de Victoria
+    y sus respuestas, y eso inflaba "Coment." en el centro (9-nov-2026). Sin acceso, {} y el centro usa Publer."""
+    import urllib.parse, urllib.request
+    url = ('https://graph.facebook.com/v21.0/17841478105608541/media?limit=100&fields='
+           + urllib.parse.quote('caption,comments.limit(100){username,replies.limit(50){username}}'))
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            datos = json.loads(r.read().decode())
+    except Exception as e:  # noqa: BLE001 - sin token (fuera de la sesión) o Meta caído: no rompe el tablero
+        print(f'AVISO: no leí los comentarios de Instagram de Meta ({str(e)[:120]}); el centro usa los de Publer.')
+        return {}
+    salida = {}
+    for m in datos.get('data', []):
+        otros = 0
+        for c in (m.get('comments') or {}).get('data', []):
+            otros += c.get('username') != 'victoriatheceo'
+            otros += sum(1 for x in (c.get('replies') or {}).get('data', []) if x.get('username') != 'victoriatheceo')
+        salida[primera_linea(m.get('caption'))] = salida.get(primera_linea(m.get('caption')), 0) + otros
+    return salida
+
+
+def comentarios_yt_reales():
+    """{id de YouTube: comentarios de OTRAS personas}. El conteo público de YouTube incluye las respuestas del canal
+    (las que deja Claude cada día) y el comentario con enlace: eso inflaba "Coment." (9-nov-2026)."""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from youtube import API, CONFIG as CFG_YT, _http, token
+        acceso, canal = token(), CFG_YT['canal_youtube']
+        salida, pagina = {}, ''
+        for _ in range(10):
+            _, r = _http('GET', f'{API}/commentThreads?part=snippet,replies&allThreadsRelatedToChannelId={canal}&maxResults=100'
+                                + (f'&pageToken={pagina}' if pagina else ''), headers={'Authorization': f'Bearer {acceso}'})
+            r = json.loads(r)
+            for hilo in r.get('items', []):
+                vid = hilo['snippet'].get('videoId')
+                autores = [hilo['snippet']['topLevelComment']['snippet']] + [x['snippet'] for x in (hilo.get('replies') or {}).get('comments', [])]
+                salida[vid] = salida.get(vid, 0) + sum(1 for a in autores if (a.get('authorChannelId') or {}).get('value') != canal)
+            pagina = r.get('nextPageToken')
+            if not pagina:
+                break
+        return salida
+    except Exception as e:  # noqa: BLE001 - sin credenciales de YouTube: el centro usa el conteo público
+        print(f'AVISO: no leí los comentarios de YouTube ({str(e)[:120]}); el centro usa el conteo público.')
+        return {}
+
+
 def guardar(nombre, filas):
     os.makedirs(SALIDA, exist_ok=True)
     json.dump(filas, open(os.path.join(SALIDA, nombre), 'w'), ensure_ascii=False, indent=1)
@@ -300,7 +348,7 @@ def main():
             'qa_similitud': qa.get('similitud') if isinstance(qa, dict) else None,
             'creditos': v.get('creditos') if isinstance(v.get('creditos'), int) else None,
             'publica_utc': v.get('publica_utc', ''),
-            'publica_utc_por_red': v.get('publica_utc_por_red') or {},
+            'publica_utc_por_red': {r: h.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') for r, h in horas_por_red(v).items()},
             'miniatura': miniatura(os.path.join(RAIZ, v['archivo'])) if v.get('archivo') else '',
             'youtube_id': youtube_id((v.get('publicacion') or {}).get('youtube')),
             'linea': primera_linea(v.get('texto_post')),
@@ -312,8 +360,14 @@ def main():
         filas.append(fila)
 
     por_video = metricas_historial()
+    reales_ig = comentarios_ig_reales()
+    reales_yt = comentarios_yt_reales()
     for f in filas:
         f.update(por_video.get(f['id'], {}))
+        if f.get('linea') in reales_ig:
+            f['c_ig_reales'] = reales_ig[f['linea']]
+        if reales_yt and f.get('youtube_id'):
+            f['c_yt_reales'] = reales_yt.get(f['youtube_id'], 0)
     puntajes = {}
     if os.environ.get('PUBLER_API_KEY'):
         try:
@@ -328,13 +382,18 @@ def main():
         'gancho': c['portada']['titulo'], 'titulo': (c.get('seo') or {}).get('titulo', c.get('titulo_post', '')),
         'diapositivas': len(c.get('diapositivas', [])) + 2, 'fondo': os.path.basename(c.get('fondo', '') or ''),
         'portada': os.path.basename(c['portada'].get('foto', '')),
-        'horas': {r: h.strftime('%Y-%m-%d %H:%M') for r, h in horas_por_red(c).items()},
+        'horas': {**{r: h.strftime('%Y-%m-%d %H:%M') for r, h in horas_por_red(c).items()},
+                  **({'fb': a_mexico(c['facebook']['publica_utc']).strftime('%Y-%m-%d %H:%M')} if (c.get('facebook') or {}).get('publica_utc') else {})},
         'youtube_id': youtube_id(c.get('youtube')), 'publica_utc': c.get('publica_utc', ''),
         'linea': primera_linea(c.get('texto_post')), 'tipo': 'carrusel',
         'linea_reel': primera_linea((c.get('reel_ig') or {}).get('texto')),
         'reel_ig': a_mexico(c['reel_ig']['publica_utc']).strftime('%Y-%m-%d %H:%M') if (c.get('reel_ig') or {}).get('publica_utc') else '',
-        'publica_utc_por_red': c.get('publica_utc_por_red') or {},
+        'publica_utc_por_red': {**(c.get('publica_utc_por_red') or {}),
+                                **({'fb': c['facebook']['publica_utc']} if (c.get('facebook') or {}).get('publica_utc') else {})},
         **por_video.get(c['id'], {}),
+        **({'c_yt_reales': reales_yt.get(youtube_id(c.get('youtube')), 0)} if reales_yt and youtube_id(c.get('youtube')) else {}),
+        **({'c_ig_reales': sum(reales_ig.get(l, 0) for l in {primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto'))} if l)}
+           if any(l in reales_ig for l in (primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto')))) else {}),
     } for c in carruseles])
     guardar('calendario.json', calendario(plan, carruseles, config, auditoria, datetime.datetime.now(datetime.timezone.utc)))
     guardar('ejecuciones.json', json.load(open(os.path.join(RAIZ, 'contenido', 'ejecuciones.json'))))

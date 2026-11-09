@@ -138,11 +138,15 @@ function medidas(v) {
     if (vivo[clave]) m[clave] = vivo[clave];
     else if (v[`v_${clave}`] != null) m[clave] = {v: v[`v_${clave}`], l: v[`l_${clave}`], c: v[`c_${clave}`], s: v[`s_${clave}`], g: v[`g_${clave}`], ret: v[`r_${clave}`]};
   }
+  // Comentarios de Instagram: solo los de otras personas (Publer cuenta también los de Victoria). Los lee la rutina de Meta.
+  if (m.ig && v.c_ig_reales != null) m.ig = {...m.ig, c: v.c_ig_reales};
+  if (m.yt && v.c_yt_reales != null) m.yt = {...m.yt, c: v.c_yt_reales};  // igual en YouTube: sin las respuestas del canal
   return m;
 }
 const vistasDe = (v) => Object.values(medidas(v)).reduce((s, x) => s + (Number(x.v) || 0), 0);
 // Un video cuenta como medido cuando ya salió (antes, YouTube reporta 0 del video programado).
-const salio = (v) => Boolean(v.publica_utc) && new Date(v.publica_utc).getTime() <= Date.now();
+// Ya salió en al menos una red (antes esperaba a la última: un carrusel en TikTok no contaba hasta su short de la noche).
+const salio = (v) => [v.publica_utc, ...Object.values(v.publica_utc_por_red || {})].some((t) => t && new Date(t).getTime() <= Date.now());
 const medido = (v) => salio(v) && Object.keys(medidas(v)).length > 0;
 
 function resumen() {
@@ -721,6 +725,8 @@ function promedioPorRed(campo) {
     for (const {clave} of REDES) {
       const v = Number(m[clave]?.v);
       if (!m[clave] || m[clave].pendiente || !Number.isFinite(v)) continue;
+      const hora = x.publica_utc_por_red?.[clave];
+      if (hora && new Date(hora).getTime() > Date.now()) continue;  // programado en esa red: su 0 no cuenta
       const grupo = campo === 'dia' ? diaEnRed(x, clave) : (x[campo] || 'finanzas');
       if (!grupo) continue;
       const fila = g.get(grupo) || {grupo, suma: {}, n: {}};
