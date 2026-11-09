@@ -9,7 +9,7 @@ const ESTADOS = {pendiente: ['En cola', ''], reserva: ['En reserva', ''], listo_
 const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube', fb: 'Facebook'};
 // Todo lo que sale: videos y carruseles (los dos se miden en vivo).
 const todo = () => [...FOTO.videos, ...(FOTO.carruseles || [])];
-const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación $'};
+const PILARES = {negocio: 'Negocio', finanzas: 'Finanzas', mentalidad: 'Mentalidad', vida: 'Vida', motivacion_economica: 'Motivación $', empresas: 'Empresas'};
 const DIAS = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
 const ORO = '#f5c542', CIAN = '#49d6ec', ROJO = '#ff3b55', FONDO = '#07111a';
 const MINUTO = 60_000;
@@ -692,13 +692,72 @@ function dibujarGraficas() {
   $('vacio-vistas').hidden = medidos.length > 0;
   apiladas($('g-vistas'), medidos);
   calor($('g-calor'), FOTO.mejores_horas);
-  for (const [campo, id, vacio, color, nombres] of [['pilar', 'g-pilar', 'vacio-pilar', ORO, PILARES], ['dia', 'g-dia', 'vacio-dia', CIAN, {}]]) {
-    let filas = promedioPor(campo);
-    if (campo === 'dia') filas.sort((a, b) => DIAS.indexOf(a.grupo) - DIAS.indexOf(b.grupo));
-    if (campo === 'hora_plan' && filas.length < 2) filas = [];
-    $(vacio).hidden = filas.length > 0;
-    barras($(id), filas.map((x) => ({k: nombres[x.grupo] || x.grupo, v: x.promedio})), {color, formato: compacto, alto: 190});
+  // Tema y día: promedio de vistas POR RED (una barra por red, lado a lado), con videos y carruseles (Rodrigo, 9-nov-2026:
+  // "¿no debería ser en la misma gráfica por red social?"). Antes sumaba las redes y solo contaba los videos de Victoria.
+  for (const [campo, id, vacio, nombres, orden] of [['pilar', 'g-pilar', 'vacio-pilar', PILARES, null], ['dia', 'g-dia', 'vacio-dia', {}, DIAS]]) {
+    const grupos = promedioPorRed(campo);
+    if (orden) grupos.sort((a, b) => orden.indexOf(a.grupo) - orden.indexOf(b.grupo));
+    $(vacio).hidden = grupos.length > 0;
+    agrupadas($(id), grupos.map((g) => ({...g, k: nombres[g.grupo] || g.grupo})));
   }
+  for (const caja of document.querySelectorAll('.leyenda-redes')) {
+    caja.replaceChildren(...REDES.map((r) => crear('span', {}, Object.assign(crear('i'), {style: `background:${r.color}`}), r.nombre)));
+  }
+}
+
+const DIA_EN = {Mon: 'lun', Tue: 'mar', Wed: 'mié', Thu: 'jue', Fri: 'vie', Sat: 'sáb', Sun: 'dom'};
+function diaEnRed(x, clave) {
+  // El día (México) en que salió en esa red: su hora propia por red, el Reel de Instagram del carrusel, o la general.
+  let t = x.publica_utc_por_red?.[clave] || x.publica_utc;
+  if (clave === 'ig' && x.reel_ig) t = `${x.reel_ig.replace(' ', 'T')}:00-06:00`;
+  if (!t) return null;
+  return DIA_EN[new Date(t).toLocaleString('en-US', {timeZone: 'America/Mexico_City', weekday: 'short'})] || null;
+}
+
+function promedioPorRed(campo) {
+  const g = new Map();
+  for (const x of todo().filter(salio)) {
+    const m = medidas(x);
+    for (const {clave} of REDES) {
+      const v = Number(m[clave]?.v);
+      if (!m[clave] || m[clave].pendiente || !Number.isFinite(v)) continue;
+      const grupo = campo === 'dia' ? diaEnRed(x, clave) : (x[campo] || 'finanzas');
+      if (!grupo) continue;
+      const fila = g.get(grupo) || {grupo, suma: {}, n: {}};
+      fila.suma[clave] = (fila.suma[clave] || 0) + v;
+      fila.n[clave] = (fila.n[clave] || 0) + 1;
+      g.set(grupo, fila);
+    }
+  }
+  return [...g.values()].map((f) => ({grupo: f.grupo, n: f.n,
+    valores: Object.fromEntries(Object.keys(f.suma).map((c) => [c, f.suma[c] / f.n[c]]))}));
+}
+
+function agrupadas(caja, grupos, alto = 190) {
+  if (!grupos.length) { caja.replaceChildren(); return; }
+  const {ancho, svg} = lienzo(caja, alto);
+  const tip = globo(caja);
+  const m = {t: 18, r: 6, b: 28, l: 6};
+  const claves = REDES.map((r) => r.clave);
+  const x0 = d3.scaleBand(grupos.map((d, i) => i), [m.l, ancho - m.r]).padding(0.22);
+  const x1 = d3.scaleBand(claves, [0, x0.bandwidth()]).padding(0.12);
+  const maximo = d3.max(grupos, (d) => d3.max(claves, (c) => d.valores[c] || 0)) || 1;
+  const y = d3.scaleLinear([0, maximo], [alto - m.b, m.t]).nice();
+  svg.append('g').attr('class', 'guia').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', ancho - m.r).attr('y1', y).attr('y2', y);
+  grupos.forEach((d, i) => {
+    const g = svg.append('g').attr('transform', `translate(${x0(i)},0)`);
+    for (const red of REDES) {
+      const v = d.valores[red.clave];
+      if (v == null) continue;
+      g.append('rect').attr('x', x1(red.clave)).attr('width', x1.bandwidth()).attr('y', y(v)).attr('height', y(0) - y(v))
+        .attr('fill', red.color).attr('fill-opacity', 0.85)
+        .on('pointermove', (e) => tip.ver(e, `${d.k} · ${red.nombre}`, `${compacto(v)} vistas promedio (${d.n[red.clave]} publicaciones)`))
+        .on('pointerleave', () => tip.ocultar());
+      if (x1.bandwidth() >= 16) g.append('text').attr('text-anchor', 'middle').attr('x', x1(red.clave) + x1.bandwidth() / 2).attr('y', y(v) - 4)
+        .style('fill', '#e9f6fb').style('font-size', '9px').text(compacto(v));
+    }
+  });
+  eje(svg, x0, alto, m, grupos.map((d) => d.k));
 }
 
 function lienzo(caja, alto) {

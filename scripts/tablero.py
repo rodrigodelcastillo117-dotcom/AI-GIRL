@@ -156,7 +156,7 @@ def que_sale(item):
 
 def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     """Lo que sale cada día: lo ya programado con su hora en cada red y, los días sin programar, lo que
-    toca (video y carrusel en días alternos, y el carrusel de TikTok también los días con video)."""
+    toca con el ritmo de config → publicaciones_por_dia."""
     local = ahora.astimezone(CDMX).date()
     programado = {}  # {día: {id: (item, {red: hora})}}: cada red en el día en que sale (un carrusel puede salir
     for x in plan['videos'] + carruseles:  # en TikTok un día y en Instagram y YouTube otro, regla del 2-nov)
@@ -324,7 +324,7 @@ def main():
     guardar('videos.json', filas)
     carruseles = cargar_carruseles()
     guardar('carruseles.json', [{
-        'id': c['id'], 'estado': c['estado'], 'tema': c.get('tema', '').replace('_', ' '),
+        'id': c['id'], 'estado': c['estado'], 'tema': c.get('tema', '').replace('_', ' '), 'pilar': c.get('pilar', 'finanzas'),
         'gancho': c['portada']['titulo'], 'titulo': (c.get('seo') or {}).get('titulo', c.get('titulo_post', '')),
         'diapositivas': len(c.get('diapositivas', [])) + 2, 'fondo': os.path.basename(c.get('fondo', '') or ''),
         'portada': os.path.basename(c['portada'].get('foto', '')),

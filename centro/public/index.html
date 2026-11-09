@@ -180,7 +180,7 @@
           <div class="codigo">EVO-02</div>
           <h2>Vistas por publicación</h2>
           <p class="nota">Vistas de cada video por red, en vivo.</p>
-          <div class="leyenda"><span><i style="background:#ff3b55"></i>YouTube</span><span><i style="background:#49d6ec"></i>TikTok</span><span><i style="background:#f5c542"></i>Instagram</span></div>
+          <div class="leyenda leyenda-redes"></div>
           <p class="vacio" id="vacio-vistas" hidden>Todavía sin vistas medidas. Aparecen en cuanto salga el primer video.</p>
           <div class="grafica" id="g-vistas"></div>
         </article>
@@ -198,14 +198,16 @@
         <article class="panel">
           <div class="codigo">RDR-03</div>
           <h2>Qué tema pega</h2>
-          <p class="nota">Vistas promedio por video en cada pilar.</p>
+          <p class="nota">Vistas promedio por publicación en cada tema, red por red (videos y carruseles).</p>
+          <div class="leyenda leyenda-redes"></div>
           <p class="vacio" id="vacio-pilar" hidden>Aparece cuando haya videos medidos.</p>
           <div class="grafica" id="g-pilar"></div>
         </article>
         <article class="panel">
           <div class="codigo">RDR-04</div>
           <h2>Mejor día</h2>
-          <p class="nota">Vistas promedio por video según el día en que salió.</p>
+          <p class="nota">Vistas promedio por publicación según el día en que salió en cada red.</p>
+          <div class="leyenda leyenda-redes"></div>
           <p class="vacio" id="vacio-dia" hidden>Aparece cuando haya videos medidos.</p>
           <div class="grafica" id="g-dia"></div>
         </article>
@@ -217,7 +219,7 @@
         </article>
       </section>
 
-      <div class="seccion">Calendario <small>video y carrusel en días alternos · cada red a su hora</small></div>
+      <div class="seccion">Calendario <small>TikTok 3 · Instagram 2 · YouTube 3 · Facebook lo de Instagram y YouTube · al día</small></div>
       <section class="rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">CAL-01</div>
@@ -237,7 +239,7 @@
         <article class="panel ancho">
           <div class="codigo">CAR-01</div>
           <h2>Carruseles</h2>
-          <p class="nota">Instagram y TikTok como fotos; YouTube como short con voz. Vistas en vivo por red.</p>
+          <p class="nota">TikTok en fotos con su música; Instagram, Facebook y YouTube como video con voz. Vistas en vivo por red.</p>
           <div class="caja-tabla"><table>
             <thead><tr><th>#</th><th>Estado</th><th>Tema</th><th>Portada</th><th>Sale (México)</th><th class="n">IG</th><th class="n">TT</th><th class="n">YT</th><th class="n">FB</th><th class="n">Total</th></tr></thead>
             <tbody id="t-carruseles"></tbody>
@@ -250,7 +252,7 @@
         <article class="panel ancho">
           <div class="codigo">LAB-01</div>
           <h2>Decisión de hoy</h2>
-          <p class="nota">Cada video se califica por sus vistas a 36 horas contra lo normal del canal (índice 1.0). Algo gana con 1.2 o más y pierde con 0.8 o menos, con al menos 3 videos (los días de la semana, con 15). De cada 10 videos, 7 aprovechan lo que gana y 3 prueban cosas nuevas. Video y carrusel en días alternos; cada red busca su mejor hora por separado.</p>
+          <p class="nota">Cada video se califica por sus vistas a 36 horas contra lo normal del canal (índice 1.0). Algo gana con 1.2 o más y pierde con 0.8 o menos, con al menos 3 videos (los días de la semana, con 15). De cada 10 videos, 7 aprovechan lo que gana y 3 prueban cosas nuevas. Cada red busca su mejor hora por separado.</p>
           <div class="decision" id="decision"></div>
         </article>
       </section>
