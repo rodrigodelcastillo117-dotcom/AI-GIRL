@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-09T05:38:21Z",
+ "fecha_utc": "2026-11-09T06:07:03Z",
  "videos_calificados": 5,
  "base_vistas_36h": 507,
  "notas": {
@@ -339,17 +339,17 @@
  },
  "decision": {
   "toca_publicar": false,
-  "motivo": "el último sale el 2026-11-08; toca publicar en 3 día(s)",
-  "hora_siguiente": "20:00",
+  "motivo": "el último sale el 2026-11-08; toca publicar en 2 día(s)",
+  "hora_siguiente": "15:00",
   "horarios": {
-   "ig": "20:00",
-   "tt": "20:00",
+   "ig": "15:00",
+   "tt": "13:00",
    "yt": "20:00"
   },
   "cuando": {
-   "ig": "2026-11-09T02:00:00Z",
-   "tt": "2026-11-09T02:00:00Z",
-   "yt": "2026-11-09T02:00:00Z"
+   "ig": "2026-11-09T21:00:00Z",
+   "tt": "2026-11-09T19:00:00Z",
+   "yt": "2026-11-10T02:00:00Z"
   },
   "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 2/4, 15:00 1/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 2/4, 11:00 2/4, 13:00 2/4, 15:00 3/4, 17:00 3/4, 20:00 2/4) · yt: en prueba (10:00 3/4, 12:00 3/4, 14:00 3/4, 17:00 3/4, 20:00 2/4)",
   "conteo_horas": {
@@ -384,17 +384,40 @@
   "cambios_sugeridos": [],
   "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
   "carruseles": {
-   "tiktok": null,
-   "instagram": null,
-   "youtube": null,
-   "notas": [
-    "TikTok: ya no queda hora libre hoy a 3 h de lo demás; sigue mañana.",
-    "YouTube ya tiene su short de carrusel de hoy.",
-    "Hoy hay video: Instagram sube el video, no carrusel."
+   "tiktok": {
+    "id": "c11",
+    "cuando": "2026-11-09T19:00:00Z"
+   },
+   "instagram": {
+    "id": "c04",
+    "cuando_ig": "2026-11-09T21:00:00Z",
+    "por_que": "el que mejor le fue en TikTok entre los que faltan (170 vistas)",
+    "cuando_yt": null
+   },
+   "youtube": {
+    "id": "c11",
+    "cuando_yt": "2026-11-10T02:00:00Z"
+   },
+   "notas": [],
+   "tiktoks": [
+    {
+     "id": "c11",
+     "cuando": "2026-11-09T19:00:00Z"
+    },
+    {
+     "id": "c12",
+     "cuando": "2026-11-09T15:00:00Z"
+    }
    ],
-   "tiktoks": [],
-   "quedan_tiktok": 14,
-   "comandos": []
+   "quedan_tiktok": 20,
+   "comandos": [
+    "python scripts/publer_carrusel.py c11 \"tt=2026-11-09T19:00:00Z\"",
+    "python scripts/publer_carrusel.py c12 \"tt=2026-11-09T15:00:00Z\"",
+    "python scripts/carrusel_video.py short c04",
+    "python scripts/publer_carrusel.py c04 --reel 2026-11-09T21:00:00Z",
+    "python scripts/carrusel_video.py short c11",
+    "youtube.py subir carruseles/c11/short.mp4 ... 2026-11-10T02:00:00Z (CARRUSELES.md; prueba de carrusel diario en YouTube)"
+   ]
   },
   "segundos": 19,
   "creditos": 790
@@ -591,7 +614,8 @@
   "5 videos calificados. Con 6 o más ya se ven tendencias; antes de eso todo está \"en prueba\".",
   "El tema \"finanzas\" pierde: índice 0.73 en 3 videos.",
   "Créditos para 4 videos (unos 12 días al ritmo actual). Recargar OpenArt.",
-  "Prueba de voz íntima: 0 de 3 videos publicados."
+  "Prueba de voz íntima: 0 de 3 videos publicados.",
+  "Es lunes: pedir a Rodrigo capturas de las estadísticas de Instagram y TikTok de la semana (sus números por API no son fiables, regla 33)."
  ],
  "ganchos_carrusel": {
   "tipos": [

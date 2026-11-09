@@ -3028,6 +3028,850 @@
    },
    "revision": "9-nov-2026: los tres datos ya pasaron revisión en c08, c24 y c31; lo demás son opiniones marcadas.",
    "personaje": "2026-11-09: serie Capital juzga (fotos de Capital con cara de juicio)"
+  },
+  {
+   "id": "c34",
+   "estado": "listo",
+   "tema": "memes_quincena",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "QUINCENA EN 5 MEMES",
+    "titulo": "La quincena en 5 memes (y por qué dura 3 días)",
+    "voz": "La quincena en cinco memes, y por qué se te acaba en tres días.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "Yo el día de pago vs. yo tres días después",
+     "texto": "La quincena no se acaba sola: se acaba sin plan. Págate primero: aparta tu ahorro antes de gastar.\n\nOpinión de Victoria · Condusef (dic-2025)",
+     "voz": "Yo el día de pago contra yo tres días después. La quincena no se acaba sola: se acaba sin plan."
+    },
+    {
+     "meme": "assets/fotos/video-38-oficina.jpg",
+     "titulo": "Cuando te dicen que la quincena se paga “la otra semana”",
+     "texto": "Por ley, el plazo para pagarte nunca pasa de una semana en trabajo material ni de quince días en los demás.\n\nLey Federal del Trabajo, art. 88",
+     "voz": "Cuando te dicen que la quincena se paga la otra semana. Por ley, máximo cada quince días."
+    },
+    {
+     "meme": "assets/fotos/navidad-lista-cocina.jpg",
+     "titulo": "Yo tratando de adivinar a dónde se fue mi quincena",
+     "texto": "Lo más común entre quienes controlan sus gastos: separar el dinero de pagos y deudas del gasto diario.\n\nINEGI, ENIF 2024",
+     "voz": "Yo adivinando a dónde se fue mi quincena. Separa primero lo de pagos y deudas."
+    },
+    {
+     "meme": "assets/fotos/video-17-sala-roja.jpg",
+     "titulo": "Cuando pides adelanto de nómina y crees que es dinero extra",
+     "texto": "El anticipo de nómina no cobra intereses, pero suele cobrar comisión: es tu mismo sueldo, antes de tiempo.\n\nCondusef, Proteja su Dinero (jul-2021)",
+     "voz": "Cuando pides adelanto de nómina y crees que es extra. Es tu mismo sueldo, antes."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Capital cuando le pido prestado para llegar a la quincena",
+     "texto": "Capital no presta. Y pedirle a familia o amigos no siempre es la mejor salida: mejor un colchón propio.\n\nCondusef (jul-2021) · Opinión de Victoria",
+     "voz": "Capital cuando le pido prestado para la quincena. No presta, ni a mí."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu quincena? Comenta 1, 2, 3, 4 o 5.",
+    "texto": "Mándaselo a tu compañero de trabajo que pregunta “¿ya es quincena?” desde el día 3.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu quincena? Comenta el número y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo, art. 88 (texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): 'Los plazos para el pago del salario nunca podrán ser mayores de una semana para las personas que desempeñan un trabajo material y de quince días para los demás trabajadores'. INEGI, Encuesta Nacional de Inclusión Financiera (ENIF) 2024, Reporte de resultados (13-mar-2025, https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2025/enif/ENIF2024_RR.pdf, p. 28): 65.3 % de la población de 18 a 70 años llevó un registro de sus gastos; dentro de ese grupo, la forma más común (51.8 %) fue separar el dinero destinado a pagos o deudas del gasto diario (gráfica 23). Condusef, revista Proteja su Dinero, '¿Se te acabó la quincena?' (1-jul-2021, https://revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2021/07/se-te-acabo-la-quincena/): causas: 'Una mala administración, la falta de un presupuesto, la misma inflación'; pedir a familiares o amigos es una solución 'aunque no siempre es la mejor'; en voz de la revista, las plataformas de anticipo de nómina 'no genera[n] intereses por su uso, solo cobran una pequeña comisión', 'una comisión proporcional al monto solicitado', y requieren convenio de tu empresa con la plataforma (la frase 'El anticipo de nómina no es un crédito' es de una empresa citada por la revista, no de Condusef, y no se usa). Condusef, Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, https://revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'aplica la estrategia de pagarte primero, es decir, ahorra antes de gastar'. Que la quincena 'se acaba sin plan', 'mejor un colchón propio' y el chiste de Capital son opinión de Victoria y lo dice la diapositiva. Consultado el 9-nov-2026.",
+   "titulo_post": "La quincena que dura 3 días, en 5 memes",
+   "texto_post": "Quincena que dura 3 días: 5 memes y lo que sí dice la ley. 😅\n1. La quincena no se acaba sola: se acaba sin plan. Págate primero (opinión mía; Condusef lo recomienda).\n2. Por ley, el sueldo se paga máximo cada semana en trabajo material y cada 15 días en los demás (LFT, art. 88).\n3. Lo más común entre quienes controlan sus gastos: separar el dinero de pagos y deudas del gasto diario (INEGI, ENIF 2024).\n4. El anticipo de nómina no cobra intereses, pero suele cobrar comisión: es tu mismo sueldo, antes de tiempo.\n5. Pedir a familia o amigos no siempre es la mejor salida. Mejor un colchón propio.\nCapital cobra en croquetas y le duran exacto 15 días. Le estoy pidiendo clases.\n\n📚 Ley Federal del Trabajo, art. 88 · INEGI, ENIF 2024 · Condusef, Proteja su Dinero (jul-2021 y dic-2025)\n💬 ¿Cuál es tu quincena? Comenta 1, 2, 3, 4 o 5. Te contesto a todos.\n🔖 Guárdalo para el próximo día de pago.\n📩 Mándaselo a tu compañero de trabajo que pregunta “¿ya es quincena?” desde el día 3.",
+   "seo": {
+    "palabra_clave": "quincena",
+    "titulo": "Quincena que dura 3 días en 5 memes 😅",
+    "tags_concretas": [
+     "quincena",
+     "memes de quincena",
+     "cada cuanto me deben pagar el sueldo",
+     "articulo 88 ley federal del trabajo",
+     "adelanto de nomina",
+     "anticipo de nomina",
+     "no me alcanza la quincena",
+     "como hacer que rinda la quincena",
+     "memes de dinero"
+    ],
+    "hashtags": [
+     "#quincena",
+     "#memes",
+     "#nomina",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cada cuánto me deben pagar el sueldo por ley?",
+     "¿El adelanto de nómina cobra intereses?",
+     "¿Por qué no me alcanza la quincena?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c35",
+   "estado": "listo",
+   "tema": "memes_tarjeta_departamental_msi",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/yate.jpg",
+   "portada": {
+    "foto": "assets/fotos/navidad-compras-calle.jpg",
+    "etiqueta": "TARJETA DE TIENDA EN 5 MEMES",
+    "titulo": "La tarjeta de la tienda en 5 memes (y su letra chica)",
+    "voz": "La tarjeta de la tienda en cinco memes, y la letra chica que nadie lee.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/yate-blazer-blanco.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/navidad-lista-cocina.jpg",
+     "titulo": "Cuando en la caja te ofrecen tarjeta “con regalo”",
+     "texto": "Su tasa de interés suele ser más alta que la de un banco. Y el regalo no te paga los intereses.\n\nCondusef, Proteja su Dinero (oct-2022) · Opinión de Victoria",
+     "voz": "Cuando en la caja te ofrecen tarjeta con regalo. Su tasa suele ser más alta."
+    },
+    {
+     "meme": "assets/fotos/video-02-palco.jpg",
+     "titulo": "Cuando descubres que más gente tiene crédito de tienda que de banco",
+     "texto": "En 2024, 22.6% de las personas de 18 a 70 años tenía tarjeta de crédito departamental y 15.7%, de crédito bancaria.\n\nINEGI, ENIF 2024",
+     "voz": "Más gente tiene tarjeta de crédito de tienda que de banco: más de una de cada cinco."
+    },
+    {
+     "meme": "assets/fotos/video-19-sillon.jpg",
+     "titulo": "Yo con cinco compras a meses “porque son poquito”",
+     "texto": "Lo recomendable: máximo dos artículos a meses sin intereses a la vez, sin pasarte de tu capacidad de pago.\n\nCondusef, Proteja su Dinero (act. feb-2021)",
+     "voz": "Yo con cinco compras a meses porque son poquito. Lo recomendable: máximo dos a la vez."
+    },
+    {
+     "meme": "assets/fotos/video-18-oficina.jpg",
+     "titulo": "Cuando pagas el mínimo y crees que los meses no cuentan",
+     "texto": "Si no pagas el total, las mensualidades de meses sin intereses van encima de tu pago mínimo.\n\nCondusef (12-nov-2019)",
+     "voz": "Cuando pagas el mínimo y crees que los meses no cuentan. Van encima del mínimo."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Capital cuando se me pasa una mensualidad “sin intereses”",
+     "texto": "Si no pagas una mensualidad a tiempo, el banco o la tienda te cobra intereses.\n\nCondusef, Proteja su Dinero (act. feb-2021)",
+     "voz": "Capital cuando se me pasa una mensualidad. Si fallas una, te cobran intereses."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas compras a meses traes hoy? Comenta el número.",
+    "texto": "Mándaselo a tu tía que dice que sí a todas las tarjetas de tienda.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas compras a meses traes? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Bancaria o departamental…' (1-oct-2022, act. 3-oct-2022, https://revista.condusef.gob.mx/usuario-inteligente/ponlo-en-la-balanza/2022/10/bancaria-o-departamental/): en la tarjeta departamental 'La tasa de interés suele ser más elevada que la otorgada por las instituciones financieras'; 'los requisitos solicitados para su apertura son mínimos'; 'No abuses de las promociones a meses sin intereses, ya que comprometes tus ingresos a largo plazo'; 'Una tarjeta, ya sea de crédito o departamental, no es una extensión de tu salario'. INEGI, ENIF 2024, Reporte de resultados (13-mar-2025, https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2025/enif/ENIF2024_RR.pdf, p. 11, gráfica 9): 'Por tipo de producto crediticio, 22.6 % de la población tenía tarjeta de crédito departamental; 15.7 %, tarjeta de crédito bancaria' (población de 18 a 70 años). Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (24-may-2012, act. 12-feb-2021, https://revista.condusef.gob.mx/credito/tarjeta/2012/05/meses-sin-intereses/): 'lo recomendable es tener máximo dos artículos bajo este esquema cuyo monto total no exceda tu capacidad de pago'; 'Si no cumples con una de las mensualidades, el banco o la tienda comercial te cobrará intereses'. Condusef, comunicado '¿Vas a comprar en el Buen Fin?' (12-nov-2019, https://www.gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin): 'las promociones a meses sin intereses son adicionales al pago mínimo' (para quienes no pagan el total); 'No es recomendable comprometer más del 30% de tu ingreso'. 'El regalo no te paga los intereses' y el chiste de Capital son opinión de Victoria y lo dice la diapositiva. Consultado el 9-nov-2026.",
+   "titulo_post": "La tarjeta de la tienda en 5 memes",
+   "texto_post": "Tarjeta departamental y meses sin intereses en 5 memes (con su letra chica). 💳\n1. Su tasa de interés suele ser más alta que la de un banco (Condusef). El regalo de bienvenida no te paga los intereses (eso lo digo yo).\n2. En 2024, 22.6% de las personas de 18 a 70 años tenía tarjeta de crédito departamental y 15.7%, de crédito bancaria (INEGI).\n3. Lo recomendable: máximo dos compras a meses sin intereses a la vez.\n4. Si no pagas el total, las mensualidades van encima de tu pago mínimo.\n5. Si se te pasa una mensualidad, te cobran intereses.\nCapital ya tiene su tarjeta de la tienda de mascotas: la usa para morderla.\n\n📚 Condusef, Proteja su Dinero (oct-2022 y act. feb-2021) · Condusef (nov-2019) · INEGI, ENIF 2024\n💬 ¿Cuántas compras a meses traes hoy? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para la próxima vez que te ofrezcan la tarjeta en la caja.\n📩 Mándaselo a tu tía que dice que sí a todas las tarjetas de tienda.",
+   "seo": {
+    "palabra_clave": "tarjeta departamental",
+    "titulo": "Tarjeta departamental y meses sin intereses",
+    "tags_concretas": [
+     "tarjeta departamental",
+     "tarjeta de tienda",
+     "tarjeta departamental o bancaria",
+     "meses sin intereses",
+     "que pasa si no pago una mensualidad de meses sin intereses",
+     "meses sin intereses y pago minimo",
+     "cuantas compras a meses sin intereses",
+     "tasa de interes tarjeta departamental",
+     "memes de tarjeta de credito"
+    ],
+    "hashtags": [
+     "#tarjetadecredito",
+     "#mesessinintereses",
+     "#memes",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Qué conviene más, tarjeta departamental o bancaria?",
+     "¿Qué pasa si no pago una mensualidad de meses sin intereses?",
+     "¿Los meses sin intereses se suman al pago mínimo?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c36",
+   "estado": "listo",
+   "tema": "memes_prestar_familia_tandas",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "PRESTAR A LA FAMILIA",
+    "titulo": "Capital no presta dinero, ni a la familia (5 memes)",
+    "voz": "Capital no presta dinero, ni a la familia. Cinco memes de préstamos y tandas.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/video-37-sala.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/video-37-sala.jpg",
+     "titulo": "Cuando tu primo te pide prestado “nomás hasta la quincena”",
+     "texto": "Nunca prestes más dinero del que estés dispuesto a perder.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Cuando tu primo te pide prestado hasta la quincena. Presta solo lo que puedas perder."
+    },
+    {
+     "meme": "assets/fotos/pareja-cuenta-restaurante.jpg",
+     "titulo": "Cuando ya prestaste y te dicen “luego te pago”",
+     "texto": "Pongan por escrito el monto, las condiciones y los plazos de pago. Hasta se puede firmar un pagaré.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Cuando ya prestaste y te dicen luego te pago. Pónganlo por escrito, con fecha."
+    },
+    {
+     "meme": "assets/fotos/enero-oficina-casa.jpg",
+     "titulo": "Cuando te toca el último número de la tanda",
+     "texto": "Si alguien deja de pagar, no hay a quién reclamar. Y tu dinero no genera rendimientos.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Cuando te toca el último número de la tanda. Si alguien no paga, no hay a quién reclamar."
+    },
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "Cuando te piden ser aval porque “nomás es una firma”",
+     "texto": "Si firmas como obligado solidario, te pueden cobrar a ti la deuda completa.\n\nCódigo Civil Federal, arts. 1987 y 1989 · Condusef (oct-2019)",
+     "voz": "Cuando te piden ser aval porque nomás es una firma. Te pueden cobrar toda la deuda."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Capital cuando la familia le pide prestado",
+     "texto": "Decir que no está bien: negar un préstamo no significa negar apoyo.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Capital cuando la familia le pide prestado. Decir que no también está bien."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Le prestarías a tu primo? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien organiza la tanda de la familia.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Le prestarías a tu primo? Comenta sí o no, y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Límites financieros' (1-feb-2026, act. 3-feb-2026, https://revista.condusef.gob.mx/usuario-inteligente/economia-joven/2026/02/limitesfinancieros/): 'Nunca prestes más dinero del que estés dispuesto a perder'; 'lo mejor es contar con un contrato por escrito, ya que ayuda a evitar malos entendidos y protege a ambas partes. En este documento deben establecerse con claridad los montos, las condiciones y los plazos de pago. Incluso, puede complementarse con pagarés'; 'Está bien decir “no”'; 'Recuerda que negar un préstamo no significa negar apoyo'. Condusef, Proteja su Dinero, 'Amor, amistad y dinero' (1-feb-2026, act. 3-feb-2026, https://revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2026/02/amor-amistad-y-dinero/): desventajas de la tanda: 'Si alguien deja de pagar, no hay a quién reclamar'; 'No hay contrato ni respaldo legal que te proteja'; 'Tu dinero no genera rendimientos'. Código Civil Federal (última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf): art. 1987, hay solidaridad pasiva 'cuando dos o más deudores reporten la obligación de prestar, cada uno de por sí, en su totalidad, la prestación debida'; art. 1989, los acreedores 'pueden exigir de todos los deudores solidarios o de cualquiera de ellos, el pago total o parcial de la deuda' (regla federal; revisa tu contrato y el código de tu estado). Condusef, Proteja su Dinero, 'Hay deudas que no fallecen' (29-oct-2019, https://revista.condusef.gob.mx/credito/deudas/2019/10/hay-deudas-que-no-fallecen/): quien es 'obligado solidario, es decir, firmaste como aval o fiador' sí puede quedar obligado a pagar una deuda ajena. 'Capital no presta dinero, ni a la familia' es el chiste recurrente de Victoria (docs/PERSONAJE.md). Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Prestar a la familia en 5 memes",
+   "texto_post": "Prestar dinero a familiares, tandas y avales en 5 memes. 🐕\n1. Nunca prestes más dinero del que estés dispuesto a perder.\n2. Pongan por escrito el monto, las condiciones y los plazos de pago. Hasta se puede firmar un pagaré.\n3. En la tanda, si alguien deja de pagar, no hay a quién reclamar. Y tu dinero no genera rendimientos.\n4. Si firmas como obligado solidario, te pueden cobrar a ti la deuda completa.\n5. Decir que no está bien: negar un préstamo no significa negar apoyo.\nCapital no presta dinero, ni a la familia. Su primo el chihuahua sigue esperando.\n\n📚 Condusef, Proteja su Dinero (feb-2026 y oct-2019) · Código Civil Federal, arts. 1987 y 1989\n💬 ¿Le prestarías a tu primo? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para la próxima vez que te pidan prestado.\n📩 Mándaselo a quien organiza la tanda de la familia.",
+   "seo": {
+    "palabra_clave": "prestar dinero a familiares",
+    "titulo": "Prestar dinero a familiares en 5 memes 🐕",
+    "tags_concretas": [
+     "prestar dinero a familiares",
+     "prestar dinero a amigos",
+     "como decir que no a un prestamo",
+     "contrato de prestamo entre particulares",
+     "pagare prestamo personal",
+     "tandas riesgos",
+     "que pasa si alguien no paga la tanda",
+     "ser aval riesgos",
+     "obligado solidario"
+    ],
+    "hashtags": [
+     "#prestamos",
+     "#tandas",
+     "#memes",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Es bueno prestar dinero a familiares?",
+     "¿Qué pasa si soy aval y no pagan?",
+     "¿Qué pasa si alguien no paga la tanda?",
+     "¿Cómo decir que no a un préstamo?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c37",
+   "estado": "listo",
+   "tema": "memes_posada_intercambio_aguinaldo",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-lista-cocina.jpg",
+    "etiqueta": "POSADA Y AGUINALDO EN 5 MEMES",
+    "titulo": "La posada, el intercambio y el aguinaldo en 5 memes",
+    "voz": "La posada, el intercambio y el aguinaldo en cinco memes. Dime cuál eres tú.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/navidad-regalos.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Cuando el intercambio era de $300 y llevaste uno de $800",
+     "texto": "Acuerden un límite de costo antes de sacar los papelitos. Y no es obligatorio entrar a todos.\n\nCondusef, Proteja su Dinero (nov-2019)",
+     "voz": "Cuando el intercambio era de trescientos y llevaste uno de ochocientos. Acuerden un límite antes."
+    },
+    {
+     "meme": "assets/fotos/pareja-cuenta-restaurante.jpg",
+     "titulo": "La posada de “cada quien trae algo” y tú pagas todo",
+     "texto": "Hagan la posada en casa de alguien y que cada quien coopere con un platillo, bebida o postre.\n\nCondusef, Proteja su Dinero (nov-2019)",
+     "voz": "La posada de cada quien trae algo, y tú pagas todo. Que cada quien coopere."
+    },
+    {
+     "meme": "assets/fotos/video-19-sillon.jpg",
+     "titulo": "Cuando tu aguinaldo llega con menos de lo que calculaste",
+     "texto": "Exento de ISR hasta 30 UMA ($3,519.30 en 2026); el resto paga. Con salario mínimo, tus 15 días no pagan.\n\nLey del ISR, art. 93, fr. I y XIV · SAT · INEGI",
+     "voz": "Cuando tu aguinaldo llega con menos. Arriba de unos tres mil quinientos pesos, paga impuesto."
+    },
+    {
+     "meme": "assets/fotos/enero-oficina-casa.jpg",
+     "titulo": "Cuando te cae el aguinaldo y ya lo debías completo",
+     "texto": "Primero las deudas más caras, como tarjeta o préstamos personales. Luego, el colchón. Luego, lo demás.\n\nCondusef (dic-2025) · Opinión de Victoria",
+     "voz": "Cuando te cae el aguinaldo y ya lo debías. Primero la deuda más cara."
+    },
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "Capital cuando le digo que este año sí aparto para enero",
+     "texto": "Guarda al menos 10% de tu aguinaldo para la cuesta de enero. Si te dan $7,500, aparta $750.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Capital cuando le digo que este año sí aparto para enero. Mínimo el diez por ciento."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál eres tú? Comenta 1, 2, 3, 4 o 5.",
+    "texto": "Mándaselo a quien organiza el intercambio de la oficina.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál eres tú? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'En esta navidad rompe la piñata, no tus finanzas' (27-nov-2019, https://revista.condusef.gob.mx/presupuesto/plan-de-vida-financiero/2019/11/en-esta-navidad-rompe-la-pinata-no-tus-finanzas/): 'No es obligatorio entrar a todos los intercambios o, en su defecto, acuerda un límite de costos'; organizar la posada o la cena en casa de un amigo, siempre y cuando 'los demás cooperen con algún platillo, bebida o postre'. Ley del ISR (última reforma DOF 01-04-2024, https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf): art. 93, fr. XIV, no pagan ISR las gratificaciones anuales 'hasta el equivalente del salario mínimo general del área geográfica del trabajador elevado a 30 días'; art. 93, fr. I, no pagan las prestaciones de quienes ganan el salario mínimo 'cuando no excedan de los mínimos señalados por la legislación laboral' (el aguinaldo de ley es de 15 días, LFT art. 87). Por la desindexación (DOF 27-01-2016) la referencia es la UMA: SAT, 'Segunda Reunión 2026 con las Coordinaciones Nacionales de Síndicos del Contribuyente' (minuta, 10-jun-2026, https://www.gob.mx/cms/uploads/attachment/file/1085884/Minuta_segunda_reunion_2026_VF_24.06.2026.pdf): '30 veces el valor diario de la UMA equivalente a $117.31 X 30 = $3,519), por el excedente se pagará el ISR'. INEGI, comunicado 1/26 (8-ene-2026, https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf): UMA diaria 2026 de 117.31 pesos, vigente desde el 1-feb-2026; 30 x 117.31 = 3,519.30 (cálculo propio). Condusef, Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, act. 6-ene-2026, https://revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'Paga las deudas más caras (como tarjeta de crédito o préstamos personales)'; 'Guardar al menos un 10% de tu aguinaldo será una decisión muy inteligente' para afrontar la cuesta de enero. De $7,500 (aguinaldo mínimo con $15,000 al mes, LFT art. 87), 10% = $750 (cálculo propio). El orden 'deudas caras, colchón, lo demás' es opinión de Victoria (docs/PERSONAJE.md, opinión 1) y lo dice la diapositiva. Consultado el 9-nov-2026.",
+   "titulo_post": "Posada, intercambio y aguinaldo en 5 memes",
+   "texto_post": "Memes de aguinaldo, posada e intercambio (y lo que sí dicen Condusef y la ley). 🎄😅\n1. Acuerden un límite de costo para el intercambio. Y no es obligatorio entrar a todos.\n2. La posada sale mejor si cada quien coopera con un platillo, bebida o postre.\n3. El aguinaldo está exento de ISR hasta 30 UMA ($3,519.30 en 2026); el resto paga. Con salario mínimo, tus 15 días de ley no pagan.\n4. Primero las deudas más caras, luego el colchón, luego lo demás.\n5. Guarda al menos 10% de tu aguinaldo para enero. Si te dan $7,500, aparta $750.\nCapital ya se apuntó al intercambio: pidió una pelota y va a regalar otra pelota.\n\n📚 Condusef, Proteja su Dinero (nov-2019 y dic-2025) · Ley del ISR, art. 93 · SAT (jun-2026) · INEGI, UMA 2026\n💬 ¿Cuál eres tú? Comenta 1, 2, 3, 4 o 5. Te contesto a todos.\n🔖 Guárdalo para antes de la posada.\n📩 Mándaselo a quien organiza el intercambio de la oficina.",
+   "seo": {
+    "palabra_clave": "memes de aguinaldo",
+    "titulo": "Memes de aguinaldo, posada e intercambio 🎄",
+    "tags_concretas": [
+     "memes de aguinaldo",
+     "memes de posada",
+     "memes de intercambio navideño",
+     "limite intercambio navideño",
+     "aguinaldo exento isr 2026",
+     "aguinaldo 30 uma",
+     "por que mi aguinaldo llego incompleto",
+     "cuanto ahorrar del aguinaldo para enero",
+     "posada de cooperacion"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#posada",
+     "#memes",
+     "#navidad"
+    ],
+    "preguntas": [
+     "¿Cuánto de mi aguinaldo paga ISR?",
+     "¿Cuánto debe costar el regalo del intercambio?",
+     "¿Cuánto del aguinaldo guardo para enero?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c38",
+   "estado": "listo",
+   "tema": "memes_cuesta_de_enero",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "ventana": {
+    "desde": "2027-01-02",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/enero-oficina-casa.jpg",
+    "etiqueta": "ENERO EN 5 MEMES",
+    "titulo": "La cuesta de enero en 5 memes (dime cuál eres)",
+    "voz": "La cuesta de enero en cinco memes. Dime cuál eres tú, sin pena.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/video-18-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/enero-oficina-casa.jpg",
+     "titulo": "Yo el 2 de enero abriendo la app del banco",
+     "texto": "Haz tu lista del 1 al 15: renta, servicios, transporte, comida y pagos mínimos. Solo eso, nada extra.\n\nCondusef, Proteja su Dinero (ene-2026)",
+     "voz": "Yo el dos de enero abriendo la app del banco. Primero, la lista del uno al quince."
+    },
+    {
+     "meme": "assets/fotos/navidad-lista-cocina.jpg",
+     "titulo": "Cuando llega el estado de cuenta con todo diciembre",
+     "texto": "Ejemplo de Condusef: $12,000 al 30% anual, pagando solo el mínimo de $350, son 5 años 11 meses y unos $27,254.\n\nCondusef, Calculadora de pagos mínimos (mar-2013)",
+     "voz": "Cuando llega el estado de cuenta de diciembre. En un ejemplo de Condusef, el puro mínimo tomó casi seis años."
+    },
+    {
+     "meme": "assets/fotos/video-02-palco.jpg",
+     "titulo": "Yo prometiendo que este año sí voy a ahorrar",
+     "texto": "Págate primero: aparta tu ahorro antes de gastar. Aunque sean de $20 a $50 diarios.\n\nCondusef, Proteja su Dinero (dic-2025 y ene-2026)",
+     "voz": "Yo prometiendo que este año sí ahorro. Págate primero, aunque sean veinte pesos al día."
+    },
+    {
+     "meme": "assets/fotos/video-37-sala.jpg",
+     "titulo": "Cuando descubres cuántas suscripciones pagas sin usar",
+     "texto": "Depura lo que no necesitas: suscripciones, membresías, apps o servicios duplicados.\n\nCondusef, Proteja su Dinero (ene-2026)",
+     "voz": "Cuando descubres cuántas suscripciones pagas sin usar. Depura las que no necesitas."
+    },
+    {
+     "meme": "assets/fotos/navidad-regalos.jpg",
+     "titulo": "Capital viéndome pagar lo que compré en diciembre",
+     "texto": "No te exijas resolver enero de golpe. Pero sí revisa qué compra de diciembre se salió de control.\n\nCondusef, Proteja su Dinero (ene-2026)",
+     "voz": "Capital viéndome pagar diciembre. No te exijas resolverlo de golpe, pero revisa qué se salió de control."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cómo vas con enero? Comenta BIEN, MAL o SOBREVIVIENDO.",
+    "texto": "Mándaselo a tu amigo que jura que enero tiene 90 días.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cómo vas con enero? Comenta bien, mal o sobreviviendo, y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Tu suero financiero' (1-ene-2026, act. 3-feb-2026, https://revista.condusef.gob.mx/destacados/2026/01/tu-suero-financiero/): 'Enlista todo lo que necesitas cubrir del 1 al 15: renta, servicios, transporte, comida y pagos mínimos de deudas'; 'Solo eso. Nada extra'; 'Guarda de $20 a $50 pesos diarios o cada dos días'; 'Depura gastos que no necesitas: suscripciones, membresías, apps o servicios duplicados'; '¿Qué compra se salió de control?'; 'Ten presente que la cuesta baja cuando tú bajas el ritmo, no te exijas pagar todo de golpe' (sección de bienestar emocional: no es un consejo de dejar saldo pendiente; la diapositiva dice 'resolver enero de golpe'). Condusef, comunicado 'Calculadora de pagos mínimos… Calcula el tuyo' (5-mar-2013, https://www.gob.mx/condusef/prensa/calculadora-de-pagos-minimos-calcula-el-tuyo): con 'un saldo al corte de 12 mil pesos' y 'una tasa de interés del 30% anual' resulta 'un pago mínimo de $350.00' y '5 años 11 meses como el tiempo que le llevaría a este usuario' liquidar, con una deuda total 'del orden de los $27,254.14' (sin nuevas compras). Es un ejemplo de 2013: tu caso depende de tu tasa y tu saldo. Condusef, Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, https://revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'aplica la estrategia de pagarte primero, es decir, ahorra antes de gastar'. El chiste de Capital es de Victoria. Consultado el 9-nov-2026.",
+   "titulo_post": "La cuesta de enero en 5 memes",
+   "texto_post": "Cuesta de enero en 5 memes (y qué hacer con cada uno). 😅\n1. Haz tu lista del 1 al 15: renta, servicios, transporte, comida y pagos mínimos. Nada extra.\n2. Ejemplo de Condusef: $12,000 al 30% anual pagando solo el mínimo de $350 son 5 años 11 meses y unos $27,254 en total.\n3. Págate primero: aunque sean de $20 a $50 diarios.\n4. Depura suscripciones, membresías, apps o servicios duplicados.\n5. No te exijas resolver enero de golpe, pero revisa qué compra de diciembre se salió de control.\nCapital no tiene cuesta de enero: su aguinaldo fue en croquetas y ya lo guardó.\n\n📚 Condusef, Proteja su Dinero (dic-2025 y ene-2026) · Condusef, Calculadora de pagos mínimos (mar-2013)\n💬 ¿Cómo vas con enero? Comenta BIEN, MAL o SOBREVIVIENDO. Te contesto a todos.\n🔖 Guárdalo para tu próxima quincena de enero.\n📩 Mándaselo a tu amigo que jura que enero tiene 90 días.",
+   "seo": {
+    "palabra_clave": "cuesta de enero",
+    "titulo": "Cuesta de enero en 5 memes 😅",
+    "tags_concretas": [
+     "cuesta de enero",
+     "memes cuesta de enero",
+     "cuesta de enero 2027",
+     "como sobrevivir la cuesta de enero",
+     "pago minimo tarjeta cuanto tardo",
+     "calculadora de pagos minimos condusef",
+     "pagarte primero",
+     "cancelar suscripciones ahorro",
+     "memes de dinero"
+    ],
+    "hashtags": [
+     "#cuestadeenero",
+     "#memes",
+     "#ahorro",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cómo sobrevivir la cuesta de enero?",
+     "¿Cuánto tardo en pagar mi tarjeta si pago el mínimo?",
+     "¿Qué pagar primero en enero?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c39",
+   "estado": "listo",
+   "tema": "memes_primer_trabajo_derechos",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-38-oficina.jpg",
+    "etiqueta": "PRIMER TRABAJO",
+    "titulo": "Lo que nadie te dijo de tu primer trabajo (5 memes)",
+    "voz": "Lo que nadie te dijo de tu primer trabajo, en cinco memes que sí son ley.",
+    "gancho_tipo": "meme",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
+   },
+   "diapositivas": [
+    {
+     "meme": "assets/fotos/video-18-oficina.jpg",
+     "titulo": "Cuando te dicen que el Seguro Social “llega después”",
+     "texto": "Tu patrón debe inscribirte al IMSS en un plazo no mayor de cinco días hábiles.\n\nLey del Seguro Social, art. 15, fr. I",
+     "voz": "Cuando te dicen que el Seguro Social llega después. Te deben inscribir en cinco días hábiles."
+    },
+    {
+     "meme": "assets/fotos/navidad-compras-calle.jpg",
+     "titulo": "Cuando dicen “estás a prueba, por eso no tienes prestaciones”",
+     "texto": "La prueba dura máximo 30 días (180 en dirección o puestos especializados) y en ella tienes salario, seguridad social y prestaciones.\n\nLey Federal del Trabajo, art. 39-A",
+     "voz": "Cuando te dicen que estás a prueba y sin prestaciones. Aun a prueba, tienes seguridad social y prestaciones."
+    },
+    {
+     "meme": "assets/fotos/navidad-lista-cocina.jpg",
+     "titulo": "Yo con cuatro meses trabajados pensando que no me toca aguinaldo",
+     "texto": "Sí te toca: la parte proporcional al tiempo que trabajaste, aunque ya no estés en la empresa.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "Yo con cuatro meses pensando que no me toca aguinaldo. Sí te toca la parte proporcional."
+    },
+    {
+     "meme": "assets/fotos/yate-blazer-blanco.jpg",
+     "titulo": "Cuando te dicen que las vacaciones son “cuando haya chance”",
+     "texto": "Al cumplir un año te tocan mínimo 12 días de vacaciones pagadas, más una prima de al menos 25%.\n\nLey Federal del Trabajo, arts. 76 y 80",
+     "voz": "Cuando te dicen que las vacaciones son cuando haya chance. Al año, mínimo doce días pagados."
+    },
+    {
+     "meme": "assets/fotos/video-17-sala-roja.jpg",
+     "titulo": "Yo tirando el recibo de nómina sin leerlo",
+     "texto": "Tu patrón debe darte un comprobante fiscal de cada pago, y vale como tu recibo. Guárdalo y revísalo.\n\nLey del ISR, art. 99, fr. III · Opinión de Victoria",
+     "voz": "Yo tirando el recibo de nómina sin leerlo. Te lo deben dar en cada pago."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos días de vacaciones te dan? Comenta el número.",
+    "texto": "Mándaselo a tu primo que acaba de entrar a su primer trabajo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántos días de vacaciones te dan? Comenta el número y sígueme."
+   },
+   "fuente": "Ley del Seguro Social, art. 15, fr. I (última reforma DOF 15-01-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf): las personas empleadoras están obligadas a 'Registrarse e inscribir a sus trabajadores en el Instituto, comunicar sus altas y bajas, las modificaciones de su salario y los demás datos, dentro de plazos no mayores de cinco días hábiles'. Ley Federal del Trabajo (última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 39-A, en relaciones por tiempo indeterminado o de más de 180 días puede haber 'un periodo a prueba, el cual no podrá exceder de treinta días'; 'podrá extenderse hasta ciento ochenta días' en puestos de dirección, gerenciales, de administración general o 'labores técnicas o profesionales especializadas'; 'Durante el período de prueba el trabajador disfrutará del salario, la garantía de la seguridad social y de las prestaciones de la categoría o puesto que desempeñe'. Art. 87: aguinaldo de 'quince días de salario, por lo menos', y quienes no cumplieron el año, 'independientemente de que se encuentren laborando o no', reciben 'la parte proporcional'. Art. 76 (reformado DOF 27-12-2022): con más de un año de servicios, vacaciones pagadas que 'en ningún caso podrá ser inferior a doce días laborables'. Art. 80: 'prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones'. Ley del ISR, art. 99, fr. III (última reforma DOF 01-04-2024, https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf): quien paga salarios debe 'Expedir y entregar comprobantes fiscales' en la fecha del pago, 'los cuales podrán utilizarse como constancia o recibo de pago para efectos de la legislación laboral'. 'Guárdalo y revísalo' es opinión de Victoria (docs/PERSONAJE.md, opinión 4). Información general, no asesoría legal. Consultado el 9-nov-2026.",
+   "titulo_post": "Tu primer trabajo en 5 memes",
+   "texto_post": "Primer trabajo: 5 cosas que nadie te dijo (y que sí son ley). 💼\n1. Tu patrón debe inscribirte al IMSS en máximo 5 días hábiles (LSS, art. 15).\n2. El periodo de prueba dura máximo 30 días (180 en dirección o puestos especializados) y en él tienes salario, seguridad social y prestaciones (LFT, art. 39-A).\n3. Aunque no cumplas el año, te toca aguinaldo proporcional (LFT, art. 87).\n4. Al cumplir un año: mínimo 12 días de vacaciones pagadas y prima de al menos 25% (LFT, arts. 76 y 80).\n5. Te deben dar un comprobante fiscal de cada pago, que vale como recibo (LISR, art. 99). Guárdalo y revísalo.\nEl primer trabajo de Capital fue cuidar la puerta. Pidió su aguinaldo en croquetas, antes del 20 de diciembre.\n\n📚 Ley Federal del Trabajo, arts. 39-A, 76, 80 y 87 · Ley del Seguro Social, art. 15 · Ley del ISR, art. 99\n💬 ¿Cuántos días de vacaciones te dan? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para tu primer día.\n📩 Mándaselo a tu primo que acaba de entrar a su primer trabajo.",
+   "seo": {
+    "palabra_clave": "primer trabajo",
+    "titulo": "Primer trabajo y tus derechos en 5 memes 💼",
+    "tags_concretas": [
+     "primer trabajo",
+     "derechos primer trabajo",
+     "periodo de prueba ley federal del trabajo",
+     "periodo de prueba 30 dias",
+     "alta en el imss cuantos dias",
+     "aguinaldo proporcional",
+     "vacaciones primer año 12 dias",
+     "recibo de nomina cfdi",
+     "prima vacacional 25"
+    ],
+    "hashtags": [
+     "#primertrabajo",
+     "#derechoslaborales",
+     "#memes",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿En cuántos días me deben dar de alta en el IMSS?",
+     "¿Cuánto dura el periodo de prueba en un trabajo?",
+     "¿Me toca aguinaldo si no cumplo un año?",
+     "¿Cuántos días de vacaciones me tocan el primer año?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c40",
+   "estado": "listo",
+   "tema": "opinion_gastos_hormiga_apps",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-19-sillon.jpg",
+    "etiqueta": "GASTOS HORMIGA",
+    "titulo": "Tu café no es el problema: no anotarlo, sí",
+    "voz": "Tu café no es el problema. El problema es no anotarlo. Te explico por qué.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-37-sala.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Mi postura",
+     "texto": "No te voy a pedir que dejes el café ni la comida por app. Te voy a pedir que los anotes una semana.\n\nOpinión de Victoria",
+     "voz": "No te pido que dejes el café. Te pido que lo anotes una semana."
+    },
+    {
+     "titulo": "Hasta 12% de tu ingreso",
+     "texto": "Los gastos hormiga pueden llegar a representar el 12% de tus ingresos. Con $10,000 al mes, serían $1,200.\n\nCondusef, Proteja su Dinero (jun-2024) · cálculo propio",
+     "voz": "Los gastos hormiga pueden comerse hasta el doce por ciento de lo que ganas."
+    },
+    {
+     "titulo": "Las apps también son hormiga",
+     "texto": "Depura lo que no necesitas: suscripciones, membresías, apps o servicios duplicados.\n\nCondusef, Proteja su Dinero (ene-2026)",
+     "voz": "Y las suscripciones y apps que no usas también son gasto hormiga."
+    },
+    {
+     "titulo": "Mi regla de las tres veces",
+     "texto": "Si un gasto chico se repite tres veces por semana, ya no es chico: va en tu presupuesto, con monto fijo.\n\nOpinión de Victoria",
+     "voz": "Mi regla: si se repite tres veces por semana, ya no es gasto chico."
+    },
+    {
+     "titulo": "El pedido completo",
+     "texto": "La comida por app no es el enemigo. Pedir sin ver el total, con envío y propina, sí.\n\nOpinión de Victoria",
+     "voz": "Pedir comida por app no es el enemigo. Pedir sin ver el total, sí."
+    },
+    {
+     "titulo": "Tu lunch, de casa",
+     "texto": "Si llevas tu café o comida desde casa, tu cartera lo nota. Puedes preparar la de toda la semana.\n\nCondusef, Proteja su Dinero (jun-2024)",
+     "voz": "Y si puedes, prepara tu comida de la semana en casa."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál es tu gasto hormiga? Comenta CAFÉ, APP, ANTOJOS o SUSCRIPCIONES.",
+    "texto": "Mándaselo a tu compañera del café de todos los días.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuál es tu gasto hormiga? Comenta café, app, antojos o suscripciones, y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Gastos hormiga en tu rutina de trabajo' (1-jun-2024, act. 2-jul-2024, https://revista.condusef.gob.mx/presupuesto/gastos/2024/06/gastos-hormiga-en-tu-rutina-de-trabajo/): 'De acuerdo con cifras del Instituto Nacional de Estadística y Geografía (INEGI), en México el 50% de la gente gasta en cosas que no tenían planeadas y los gastos hormiga pueden llegar a representar el 12% de sus ingresos'; 'Si llevas tu café o comida desde casa, tu cartera sentirá la diferencia'; 'Puedes hacer una preparación semanal'. Con $10,000 al mes, 12% = $1,200 (cálculo propio). Condusef, Proteja su Dinero, 'Tu suero financiero' (1-ene-2026, https://revista.condusef.gob.mx/destacados/2026/01/tu-suero-financiero/): 'Depura gastos que no necesitas: suscripciones, membresías, apps o servicios duplicados'; 'Reduce antojos y gastos hormiga'. No se encontró una cifra oficial sobre cuánto se gasta en café o en apps de comida a domicilio, así que esas diapositivas son opinión de Victoria y lo dicen: 'anótalo una semana', 'la regla de las tres veces' y 'pedir sin ver el total con envío y propina'. Consultado el 9-nov-2026.",
+   "titulo_post": "Tu café no es el problema",
+   "texto_post": "Gastos hormiga: tu café no es el problema, no anotarlo sí. ☕\n1. No te pido que dejes el café ni la comida por app. Te pido que los anotes una semana (opinión mía).\n2. Los gastos hormiga pueden llegar a 12% de tus ingresos (Condusef). Con $10,000 al mes, $1,200.\n3. Depura suscripciones, membresías, apps o servicios duplicados.\n4. Mi regla: si un gasto chico se repite tres veces por semana, ya no es chico. Va en tu presupuesto.\n5. Pedir comida por app no es el enemigo. Pedir sin ver el total con envío y propina, sí.\n6. Si llevas tu café o tu comida de casa, tu cartera lo nota.\nCapital no tiene gastos hormiga: tiene gastos croqueta, y todos van en el presupuesto.\n\n📚 Condusef, Proteja su Dinero (jun-2024 y ene-2026) · lo demás es opinión mía\n💬 ¿Cuál es tu gasto hormiga? Comenta CAFÉ, APP, ANTOJOS o SUSCRIPCIONES. Te contesto a todos.\n🔖 Guárdalo para tu semana de anotar todo.\n📩 Mándaselo a tu compañera del café de todos los días.",
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "Gastos hormiga del café y las apps ☕",
+    "tags_concretas": [
+     "gastos hormiga",
+     "gastos hormiga ejemplos",
+     "cuanto gasto en cafe al mes",
+     "gastos hormiga porcentaje del ingreso",
+     "comida a domicilio gasto",
+     "cancelar suscripciones",
+     "como anotar mis gastos",
+     "ahorrar en el trabajo",
+     "presupuesto personal"
+    ],
+    "hashtags": [
+     "#gastoshormiga",
+     "#ahorro",
+     "#presupuesto",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto de mi sueldo se va en gastos hormiga?",
+     "¿Qué son los gastos hormiga?",
+     "¿Cómo dejar de gastar en comida por app?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c41",
+   "estado": "listo",
+   "tema": "opinion_pareja_quien_paga",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "portada": {
+    "foto": "assets/fotos/pareja-cuenta-restaurante.jpg",
+    "etiqueta": "DINERO EN PAREJA",
+    "titulo": "Hablar de dinero en pareja no mata el romance",
+    "voz": "Hablar de dinero en pareja no mata el romance. Lo que lo mata es esconderlo.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-38-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Quién paga la cita?",
+     "texto": "Mi regla: en las primeras citas paga quien invita. Después se platica y se acuerda: nadie adivina.\n\nOpinión de Victoria",
+     "voz": "Mi regla: en las primeras citas paga quien invita. Después, se platica."
+    },
+    {
+     "titulo": "Desde el inicio",
+     "texto": "Hablen con claridad de cuánto gana cada quien, sus deudas y sus hábitos de gasto: así se evitan sorpresas y desconfianza.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Desde el inicio, hablen de cuánto gana cada quien y qué deudas traen."
+    },
+    {
+     "titulo": "Esconder también es infidelidad",
+     "texto": "Ocultar deudas, comprar sin avisar, mentir sobre lo que ganas o pedir préstamos a escondidas tiene nombre: infidelidad financiera.\n\nCondusef, Proteja su Dinero (feb-2025)",
+     "voz": "Ocultar deudas o pedir préstamos a escondidas tiene nombre: infidelidad financiera."
+    },
+    {
+     "titulo": "La cartera que siempre se olvida",
+     "texto": "Si alguien siempre “olvida” pagar su parte, deja de ser un accidente: es un hábito que afecta a los demás.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Si siempre se le olvida la cartera, ya no es accidente: es hábito."
+    },
+    {
+     "titulo": "Cada quien su fondo",
+     "texto": "Aunque compartan gastos, que cada quien tenga un fondo personal propio. Eso no es egoísmo: es autonomía.\n\nCondusef (feb-2026) · Opinión de Victoria",
+     "voz": "Aunque compartan gastos, que cada quien tenga su propio fondo personal."
+    },
+    {
+     "titulo": "Una cita al mes con sus números",
+     "texto": "Lo ideal es conversar sobre sus finanzas al menos una vez al mes. Mi consejo: con cena incluida.\n\nCondusef (feb-2025) · Opinión de Victoria",
+     "voz": "Y platiquen de sus finanzas al menos una vez al mes, con cena incluida."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Quién paga la primera cita? Comenta INVITA o MITAD.",
+    "texto": "Mándaselo a tu pareja antes de la próxima cena.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Quién paga la primera cita? Comenta invita o mitad, y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Amor que sí cuenta' (1-feb-2026, act. 11-mar-2026, https://revista.condusef.gob.mx/presupuesto/2026/02/amor-que-si-cuenta/): 'Desde el inicio, ambos deben hablar con claridad sobre cuánto gana cada uno', además de deudas y hábitos de gasto, para evitar sorpresas y desconfianza; 'Deudas, si las hay. Es necesario acordar quién paga qué'; 'es recomendable que cada quien cuente con un “fondo personal” o un presupuesto discrecional propio' para conservar su autonomía. Condusef, Proteja su Dinero, '¿Infidelidad financiera?' (1-feb-2025, act. 5-feb-2025, https://revista.condusef.gob.mx/usuario-inteligente/sabias-que/2025/02/infidelidad/): 'ocurre cuando una persona oculta, miente o es deshonesta respecto a su situación económica'; ejemplos: 'Ocultar deudas', 'Realizar gastos o compras sin informar', 'Mentir sobre los ingresos', 'Solicitar préstamos sin avisar a la pareja'; 'Lo ideal es conversar sobre sus finanzas al menos una vez al mes'. Condusef, Proteja su Dinero, 'Red Flags (alertas financieras)' (1-feb-2026, act. 11-mar-2026, https://revista.condusef.gob.mx/usuario-inteligente/primer-plano/2026/02/red-flags-alertas-financieras/): 'Salir a comer y que una persona nunca traiga dinero o siempre “olvide” pagar su parte'; 'Cuando esto se repite, deja de ser un accidente y se convierte en un hábito que finalmente afecta a los demás'. 'En las primeras citas paga quien invita', 'no es egoísmo: es autonomía' y 'con cena incluida' son opinión de Victoria y lo dice la diapositiva; aplica igual a cualquier pareja. Consultado el 9-nov-2026.",
+   "titulo_post": "Hablar de dinero en pareja",
+   "texto_post": "Finanzas en pareja: hablar de dinero no mata el romance, esconderlo sí. 💑\n1. Mi regla: en las primeras citas paga quien invita. Después se platica y se acuerda.\n2. Desde el inicio, hablen de cuánto gana cada quien, sus deudas y sus hábitos de gasto (Condusef).\n3. Ocultar deudas, comprar sin avisar o pedir préstamos a escondidas es infidelidad financiera.\n4. Si alguien siempre “olvida” la cartera, ya no es accidente: es hábito.\n5. Aunque compartan gastos, que cada quien tenga su fondo personal.\n6. Platiquen de sus finanzas al menos una vez al mes. Con cena, mejor.\nCapital y yo ya tuvimos la plática: él pone la compañía y yo las croquetas. Funciona.\n\n📚 Condusef, Proteja su Dinero (feb-2025 y feb-2026) · lo de quién paga es opinión mía\n💬 ¿Quién paga la primera cita? Comenta INVITA o MITAD. Te contesto a todos.\n🔖 Guárdalo para su próxima plática de dinero.\n📩 Mándaselo a tu pareja antes de la próxima cena.",
+   "seo": {
+    "palabra_clave": "finanzas en pareja",
+    "titulo": "Finanzas en pareja y quién paga la cita 💑",
+    "tags_concretas": [
+     "finanzas en pareja",
+     "quien paga la primera cita",
+     "hablar de dinero con tu pareja",
+     "infidelidad financiera",
+     "dinero en pareja",
+     "fondo personal en pareja",
+     "red flags financieras en pareja",
+     "como dividir gastos en pareja"
+    ],
+    "hashtags": [
+     "#finanzasenpareja",
+     "#pareja",
+     "#dinero",
+     "#ahorro"
+    ],
+    "preguntas": [
+     "¿Quién debe pagar en la primera cita?",
+     "¿Qué es la infidelidad financiera?",
+     "¿Cómo hablar de dinero con mi pareja?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c42",
+   "estado": "listo",
+   "tema": "opinion_red_flags_financieras",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-37-sala.jpg",
+    "etiqueta": "RED FLAGS",
+    "titulo": "Red flags de dinero que no debes normalizar",
+    "voz": "Hay señales de dinero que normalizamos y son focos rojos. Aquí van seis.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-17-sala-roja.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Te cobran antes de prestarte",
+     "texto": "Si una app te pide dinero para “liberar” tu préstamo, es señal de alerta. Y revisa que esté en el SIPRES. Para mí, cobrar antes es fraude.\n\nCondusef (jul-2026) · Opinión de Victoria",
+     "voz": "Si te cobran antes de prestarte, no es trámite. Para mí, es fraude."
+    },
+    {
+     "titulo": "Pagar solo el mínimo",
+     "texto": "Ejemplo de Condusef: $12,000 al 30% anual, pagando solo el mínimo de $350, son 5 años 11 meses y unos $27,254 en total.\n\nCondusef (mar-2013)",
+     "voz": "En un ejemplo de Condusef, doce mil pesos pagando solo el mínimo tomaron casi seis años."
+    },
+    {
+     "titulo": "Prestar tu tarjeta",
+     "texto": "Con una tarjeta adicional, el titular es el único responsable legal del pago. Y tu NIP no se comparte con nadie.\n\nCondusef (ago-2017 y nov-2016)",
+     "voz": "Si das tu tarjeta, la deuda sigue siendo tuya. Y tu clave, con nadie."
+    },
+    {
+     "titulo": "Te cobran por borrarte del Buró",
+     "texto": "Nadie puede borrarte del Buró de Crédito a cambio de dinero. Y pagar con descuento tampoco borra tu registro.\n\nCondusef (oct-2016)",
+     "voz": "Quien te cobra por borrarte del Buró te está engañando: eso no se puede."
+    },
+    {
+     "titulo": "Para ganar, invita a más",
+     "texto": "Si te prometen ganancias rápidas y para ganar debes invitar a más gente, no es ahorro: es un riesgo.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Si para ganar tienes que invitar a más gente, no es ahorro: es riesgo."
+    },
+    {
+     "titulo": "Una urgencia cada mes",
+     "texto": "Si cada mes surge una emergencia distinta y nunca hay un plan para evitar la siguiente, es señal de falta de estabilidad.\n\nCondusef, Proteja su Dinero (feb-2026)",
+     "voz": "Y si cada mes hay una urgencia nueva y ningún plan, es foco rojo."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántas has visto de cerca? Comenta el número.",
+    "texto": "Mándaselo a tu primo que está por bajar una app de préstamos.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántas has visto de cerca? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Créditos desde el celular' (1-jul-2026, https://revista.condusef.gob.mx/destacados-del-mes/2026/07/creditos-desde-el-celular/): señales de alerta: 'Pide dinero por adelantado para liberar el préstamo'; 'No aparece registrada en el SIPRES'; recomienda 'revisar que cuente con registro en el SIPRES de la CONDUSEF'. Que cobrar antes de prestar 'es fraude' es la opinión 6 de Victoria (no se aplica a no estar en el SIPRES, que Condusef solo marca como señal para desconfiar) (docs/PERSONAJE.md) y lo dice la diapositiva. Condusef, comunicado 'Calculadora de pagos mínimos… Calcula el tuyo' (5-mar-2013, https://www.gob.mx/condusef/prensa/calculadora-de-pagos-minimos-calcula-el-tuyo): 'un saldo al corte de 12 mil pesos', 'una tasa de interés del 30% anual', 'un pago mínimo de $350.00', '5 años 11 meses' para liquidar y una deuda total 'del orden de los $27,254.14' (ejemplo de 2013; depende de tu tasa y saldo). Condusef, 'Tarjetas de crédito adicionales' (4-ago-2017, https://www.gob.mx/condusef/articulos/tarjetas-de-credito-adicionales): las adicionales comparten la línea de crédito del titular, 'éste el único responsable legal del pago del saldo e intereses aplicables'. Condusef, 'Recomendaciones para prevenir el robo de identidad' (7-nov-2016, https://www.gob.mx/condusef/articulos/recomendaciones-para-prevenir-el-robo-de-identidad): 'Nunca envíes tus claves y NIP por correo electrónico y jamás las compartas con nadie'. Condusef, '¿En cuánto tiempo me borran del Buró de Crédito?' (12-oct-2016, https://www.gob.mx/condusef/articulos/no-es-una-lista-negra): 'Ofrecen borrarte del Buró de Crédito a cambio de dinero; eso no se puede hacer'; 'Cuando pagas una deuda con descuento, tu información aún permanece en el Buró de Crédito'. Condusef, Proteja su Dinero, 'Amor, amistad y dinero' (1-feb-2026, https://revista.condusef.gob.mx/usuario-inteligente/tu-bolsillo/2026/02/amor-amistad-y-dinero/): señales de esquema piramidal: 'Te prometen ganancias rápidas', 'Para ganar, necesitas invitar a más personas', 'El dinero de los nuevos paga a los primeros'; 'si depende de traer más gente, no es ahorro, es un riesgo'. Condusef, Proteja su Dinero, 'Red Flags (alertas financieras)' (1-feb-2026, act. 11-mar-2026, https://revista.condusef.gob.mx/usuario-inteligente/primer-plano/2026/02/red-flags-alertas-financieras/): 'Si cada mes surge una emergencia distinta que requiere apoyo, pero nunca hay un plan para evitar la siguiente', 'es una señal de falta de estabilidad'. Consultado el 9-nov-2026.",
+   "titulo_post": "Red flags de dinero que no debes normalizar",
+   "texto_post": "Red flags financieras que normalizamos (y no deberíamos). 🚩\n1. Una app que te cobra para “liberar” tu préstamo: señal de alerta (Condusef). Para mí, fraude. Y revisa que esté en el SIPRES.\n2. Pagar solo el mínimo: en un ejemplo de Condusef, $12,000 al 30% anual con mínimo de $350 son 5 años 11 meses y unos $27,254.\n3. Prestar tu tarjeta: con una adicional, el titular es el único responsable legal del pago. Tu NIP, con nadie.\n4. Quien te cobra por borrarte del Buró: eso no se puede hacer.\n5. “Para ganar, invita a más gente”: no es ahorro, es riesgo.\n6. Una urgencia nueva cada mes y ningún plan: falta de estabilidad.\nCapital desconfía de cualquier app que cobra antes de prestar. Y de la aspiradora.\n\n📚 Condusef: Proteja su Dinero (feb-2026 y jul-2026), pagos mínimos (mar-2013), tarjetas adicionales (ago-2017), robo de identidad (nov-2016), Buró (oct-2016)\n💬 ¿Cuántas has visto de cerca? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para antes de pedir un préstamo.\n📩 Mándaselo a tu primo que está por bajar una app de préstamos.",
+   "seo": {
+    "palabra_clave": "red flags financieras",
+    "titulo": "Red flags financieras que no son normales 🚩",
+    "tags_concretas": [
+     "red flags financieras",
+     "señales de fraude financiero",
+     "app de prestamo que cobra por adelantado",
+     "sipres condusef",
+     "pagar el minimo de la tarjeta",
+     "prestar mi tarjeta de credito",
+     "borrar buro de credito fraude",
+     "esquema piramidal senales",
+     "tarjeta adicional responsable"
+    ],
+    "hashtags": [
+     "#redflags",
+     "#fraude",
+     "#tarjetadecredito",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Es fraude si una app me cobra antes de prestarme?",
+     "¿Pueden borrarme del Buró de Crédito si pago?",
+     "¿Quién paga lo que gasta una tarjeta adicional?",
+     "¿Cómo saber si es una pirámide?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c43",
+   "estado": "listo",
+   "tema": "opinion_aguinaldo_10_mil",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/yate.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-20"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-regalos.jpg",
+    "etiqueta": "MI REGLA DEL AGUINALDO",
+    "titulo": "Si ganara $10,000 al mes, así repartiría mi aguinaldo",
+    "voz": "Si ganara diez mil pesos al mes, así repartiría mi aguinaldo. Sin culpa y sin deudas.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/navidad-lista-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Cuánto llega",
+     "texto": "Con $10,000 al mes y el año completo: mínimo 15 días de salario, $5,000, antes del 20 de diciembre.\n\nLey Federal del Trabajo, art. 87 · cálculo propio",
+     "voz": "Con diez mil al mes y el año completo, tu aguinaldo mínimo es de cinco mil pesos."
+    },
+    {
+     "titulo": "La parte que paga impuesto",
+     "texto": "Está exento de ISR hasta 30 UMA: $3,519.30 en 2026. Los $1,480.70 restantes sí pagan, así que te puede llegar un poco menos.\n\nLey del ISR, art. 93, fr. XIV · SAT · INEGI",
+     "voz": "Una parte paga impuesto, así que te puede llegar un poco menos."
+    },
+    {
+     "titulo": "Mi regla: 50/30/20",
+     "texto": "50% a deudas y ahorro, 30% a diciembre y 20% a un gusto. De $5,000 brutos: $2,500, $1,500 y $1,000. Condusef sugiere la misma división.\n\nOpinión de Victoria · Condusef (dic-2025)",
+     "voz": "Mi regla: cincuenta a deudas y ahorro, treinta a diciembre y veinte a un gusto."
+    },
+    {
+     "titulo": "El 50%: primero la deuda cara",
+     "texto": "Primero la deuda más cara, como tarjeta o préstamo personal. Si no debes, a tu fondo de emergencia: de 3 a 6 meses de gastos básicos.\n\nCondusef, Proteja su Dinero (dic-2025)",
+     "voz": "Primero la deuda más cara. Si no debes nada, a tu fondo de emergencia."
+    },
+    {
+     "titulo": "Enero sale del 50%",
+     "texto": "Guarda al menos 10% para la cuesta de enero: $500. Mi opinión: sale de la parte de ahorro, no del gusto.\n\nCondusef (dic-2025) · Opinión de Victoria",
+     "voz": "Aparta al menos el diez por ciento para enero: quinientos pesos."
+    },
+    {
+     "titulo": "El 20%, sin culpa",
+     "texto": "El gusto sí va. Un plan que no te deja disfrutar nada no llega ni a febrero.\n\nOpinión de Victoria",
+     "voz": "Y el gusto sí va. Un plan sin nada para ti no dura."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Tu aguinaldo ya tiene dueño? Comenta TODO, MITAD o NADA.",
+    "texto": "Mándaselo a tu amigo que ya gastó su aguinaldo antes de que llegue.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Tu aguinaldo ya tiene dueño? Comenta todo, mitad o nada, y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo, art. 87 (última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): aguinaldo anual 'que deberá pagarse antes del día veinte de diciembre, equivalente a quince días de salario, por lo menos'. Con $10,000 al mes: $10,000 / 30 = $333.33 diarios x 15 = $5,000 (cálculo propio, año completo trabajado). Ley del ISR, art. 93, fr. XIV (última reforma DOF 01-04-2024, https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf): exentas las gratificaciones anuales 'hasta el equivalente del salario mínimo general del área geográfica del trabajador elevado a 30 días', referencia que por la desindexación (DOF 27-01-2016) es la UMA; SAT, minuta de la 'Segunda Reunión 2026 con las Coordinaciones Nacionales de Síndicos del Contribuyente' (10-jun-2026, https://www.gob.mx/cms/uploads/attachment/file/1085884/Minuta_segunda_reunion_2026_VF_24.06.2026.pdf): '30 veces el valor diario de la UMA equivalente a $117.31 X 30 = $3,519), por el excedente se pagará el ISR'. INEGI, comunicado 1/26 (8-ene-2026, https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf): UMA diaria 2026 = 117.31 pesos. 30 x 117.31 = 3,519.30; 5,000 - 3,519.30 = 1,480.70 gravados (cálculo propio; la retención exacta depende de tu sueldo y la tarifa del art. 96). Condusef, revista Proteja su Dinero, '¡Alto! Esta vez no lo quemes' (1-dic-2025, act. 6-ene-2026, https://revista.condusef.gob.mx/presupuesto/2025/12/alto-esta-vez-no-lo-quemes/): 'divide tu bono en partes 50% para metas financieras, 30% para gastos navideños y 20% para gustos personales'; 'Paga las deudas más caras (como tarjeta de crédito o préstamos personales)'; 'Lo ideal es reunir entre 3 y 6 meses de gastos básicos' de fondo de emergencia; 'Guardar al menos un 10% de tu aguinaldo será una decisión muy inteligente' para la cuesta de enero. De $5,000: 50% = $2,500, 30% = $1,500, 20% = $1,000, 10% = $500 (cálculo propio). Que la regla 50/30/20 sea 'la regla de Victoria', que el 50% vaya a 'deudas y ahorro', que lo de enero salga de esa parte y que 'el gusto sí va' son opinión de Victoria y lo dice la diapositiva. Ejemplo hipotético ('si ganara'): Victoria es un personaje creado con IA. Consultado el 9-nov-2026.",
+   "titulo_post": "Así repartiría un aguinaldo de $5,000",
+   "texto_post": "Repartir el aguinaldo si ganas $10,000 al mes: así lo haría yo. 💰\n1. Con $10,000 al mes y el año completo, tu aguinaldo mínimo es de $5,000, antes del 20 de diciembre (LFT, art. 87).\n2. Exento de ISR hasta 30 UMA ($3,519.30 en 2026). Lo demás paga, así que te puede llegar un poco menos.\n3. Mi regla 50/30/20: $2,500 a deudas y ahorro, $1,500 a diciembre y $1,000 a un gusto. Condusef sugiere la misma división. Haz la cuenta con lo que te llegue.\n4. Primero la deuda más cara. Si no debes, a tu fondo de emergencia.\n5. Al menos 10% para enero: $500.\n6. El gusto sí va. Sin nada para ti, el plan no llega a febrero.\nCapital ya repartió el suyo: 50% croquetas, 30% croquetas y 20% pelota.\n\n📚 Ley Federal del Trabajo, art. 87 · Ley del ISR, art. 93 · SAT (jun-2026) · INEGI, UMA 2026 · Condusef, Proteja su Dinero (dic-2025)\n💬 ¿Tu aguinaldo ya tiene dueño? Comenta TODO, MITAD o NADA. Te contesto a todos.\n🔖 Guárdalo para el día que te caiga el aguinaldo.\n📩 Mándaselo a tu amigo que ya gastó su aguinaldo antes de que llegue.",
+   "seo": {
+    "palabra_clave": "repartir el aguinaldo",
+    "titulo": "Repartir el aguinaldo si ganas $10,000 💰",
+    "tags_concretas": [
+     "repartir el aguinaldo",
+     "que hacer con mi aguinaldo",
+     "aguinaldo de 10 mil pesos",
+     "regla 50 30 20 aguinaldo",
+     "cuanto aguinaldo me toca si gano 10000",
+     "aguinaldo exento isr 2026",
+     "aguinaldo 2026",
+     "ahorrar el aguinaldo para enero",
+     "pagar deudas con el aguinaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#ahorro",
+     "#presupuesto",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto aguinaldo me toca si gano 10 mil al mes?",
+     "¿Cómo repartir mi aguinaldo?",
+     "¿Cuánto de mi aguinaldo paga ISR?"
+    ]
+   },
+   "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
   }
  ]
 }
