@@ -112,5 +112,11 @@
   "cambio": "\"Comenta hoy\" en el panel: 3-5 videos frescos de TikTok con el comentario de Victoria listo para que Rodrigo lo pegue",
   "por_que": "Comentar en cuentas grandes es lo que más trae gente a una cuenta nueva; TikTok no deja hacerlo por API",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Plan congelado 14 días: aguinaldo diario + pareja primero, noticia de dinero en 24 h, reto 'un mes con el salario mínimo', 'dime tu sueldo'; se dejan las listas genéricas",
+  "por_que": "Aguinaldo es lo único que funcionó (c16, c01); 19 cambios en 8 días no dejan medir nada",
+  "vigilar": "tt"
  }
 ]

@@ -456,9 +456,13 @@
   "nota": "Reemplazado el 9-nov-2026: TODOS los Reels de Instagram salen con música en tendencia de la biblioteca de Instagram, directo con la API de Meta (scripts/ig_reel_musica.py). Rodrigo ya no sube nada a mano."
  },
  "prioridad_carruseles": [
+  "c43",
   "c27",
+  "c05",
   "c41",
+  "c15",
   "c28",
+  "c30",
   "c29",
   "c55",
   "c59",
@@ -467,7 +471,7 @@
   "c57"
  ],
  "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Parejas (c27, c41, c28, c29) y la serie Socios en casa (c55-c59, revisada el 9-nov) van primero en TikTok, prioridad_por_dia al día (2) para no tapar la temporada de aguinaldo; se quitan solos cuando ya salieron.",
- "prioridad_por_dia": 2,
+ "prioridad_por_dia": 3,
  "voz_victoria": {
   "motor": "minimax",
   "modelo": "minimax/speech-02-hd",
@@ -488,5 +492,6 @@
  },
  "nota_bio_con_enlace": "10-nov-2026: los posts decían \"el enlace está en mi perfil\" y la bio no tenía enlace. Mientras aquí diga false, publer.sin_perfil cambia esa frase por la dirección escrita (victoriatheceo.vercel.app) en Instagram y TikTok. Cuando Rodrigo ponga el enlace en la bio de esa red, se cambia a true.",
  "guia_por_mensaje_ig": true,
- "_guia_por_mensaje_ig": "Rodrigo lo aprobó el 10-nov-2026 ('siii'). En Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace; si Meta no deja, respuesta pública con el enlace)."
+ "_guia_por_mensaje_ig": "Rodrigo lo aprobó el 10-nov-2026 ('siii'). En Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace; si Meta no deja, respuesta pública con el enlace).",
+ "_prioridad_10nov": "Plan 10-nov: aguinaldo (lo único que ha funcionado: c16 3,361 y c01 624 en TikTok) intercalado con pareja (debate). Las listas genéricas (Buffett, negocio, reglas) se dejan."
 }

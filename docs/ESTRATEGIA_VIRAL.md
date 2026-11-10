@@ -122,3 +122,27 @@ de las 6:37 arma contenido/comentar_hoy.json y Rodrigo comenta a mano desde el p
   mexicano comprobado (con fuente oficial verificada con WebSearch), una opinión o una pregunta que invite a contestar.
   Nunca enlaces, "sígueme", autopromoción, consejos de inversión ni el mismo texto en dos videos.
 - Formato: {"fecha", "videos": [{"url", "autor", "vistas", "comentarios", "publicado", "tema", "comentario", "por_que"}]}.
+
+## PLAN VIGENTE 10-nov → 24-nov-2026 (congelado: no se cambia el formato hasta medirlo el 24-nov)
+
+Diagnóstico con datos (9-nov): TikTok 15 piezas, 471 vistas promedio, 4 comentarios en total; los 2 mejores son de
+AGUINALDO (c16 3,361; c01 624). Las listas genéricas ("5 reglas de Buffett", "5 lecciones de negocio") no pasan de 525.
+Los videos de Victoria hablando son lo mejor en YouTube (674-701 vistas) y lo peor en TikTok. En 8 días hubo 19 cambios
+de estrategia: así no se aprende nada. Desde hoy, 14 días con estas reglas, y se mide el 24-nov.
+
+1. AGUINALDO TODOS LOS DÍAS hasta el 20-dic (fecha límite de pago): es la ola de búsqueda más grande del año en el
+   nicho y la única que nos ha funcionado. Cola: config.json → prioridad_carruseles.
+2. NOTICIA DE DINERO EN 24 H: cuando haya una noticia de dinero que esté en tendencia (un banco que quiebra, el salario
+   mínimo 2027, la UMA, el Buen Fin, cambios del SAT), la rutina escribe ese mismo día un carrusel "¿Qué significa para
+   tu bolsillo en México?", con datos de fuente oficial y segunda revisión, y lo pone primero en la cola. La primera:
+   el banco que quebró en Paraguay (2-nov) → "¿Tu dinero está seguro en México?" (IPAB 400 mil UDIS por persona y banco;
+   SOFIPO 25 mil UDIS; qué NO cubre el IPAB; el caso CIBanco de 2025). Verificar todo antes de publicar.
+3. EL RETO (motor de seguidores): serie "Victoria vive un mes con el salario mínimo" (parte 1, 2, 3...). Una serie con
+   capítulos es lo que hace que la gente SIGA la cuenta para ver la siguiente parte. El salario mínimo 2026 se verifica en
+   fuente oficial (CONASAMI/DOF) antes de escribir. Un capítulo cada 2 días, el cierre de cada uno dice "parte X mañana".
+4. EL MOTOR DE COMENTARIOS: "Dime tu sueldo y te reparto tu aguinaldo". Cada sueldo que comenten se contesta y, si da para
+   contenido, se vuelve un carrusel "Reparto el aguinaldo de @usuario" (sin datos personales más allá de su usuario y su
+   sueldo, que ya hizo públicos). Requiere los primeros comentarios: amigos de Rodrigo + "Comenta GUÍA" + "Comenta hoy".
+5. DEBATE DE PAREJA (c27, c41, c28, c29 y la serie Socios en casa): Victoria toma postura; esos generan opiniones.
+6. SE DEJA: listas genéricas sin México ni fecha (Buffett, "5 lecciones de negocio", "5 cambios"). No se escriben más.
+7. YOUTUBE: los videos de Victoria hablando siguen (2-3 por semana); es donde mejor retienen.
