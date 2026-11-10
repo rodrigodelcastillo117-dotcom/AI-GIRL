@@ -165,3 +165,7 @@ para que Rodrigo lo pegue desde el canal de Victoria, y se dice en el resumen.
 `comentar_youtube.py comentar` se pausa solo mientras el último siga retenido (`comentar_youtube.py estado` lo muestra).
 Si dice EN PAUSA: no comentes en YouTube ese día, ni lo mandes al panel (pegarlo a mano desde el mismo canal también
 queda retenido). Se reintenta solo el día que el último salga publicado.
+
+**Pauta (Rodrigo, 10-nov-2026): "ahorita no, pero en un futuro sí; es bueno crecer orgánicamente".** No se propone gastar
+cada día; solo los viernes, como ya dice la rutina, la pieza de la semana que más convendría empujar y cuánto, para cuando
+él decida. Primera prueba sugerida cuando quiera: $200 MXN, objetivo seguidores, 2 días, en el mejor "Guarda esto".
