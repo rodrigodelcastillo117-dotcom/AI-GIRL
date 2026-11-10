@@ -61,10 +61,14 @@ def parecido_texto(esperado, oido):
     for op, i1, i2, j1, j2 in comparar.get_opcodes():
         if op in ('delete', 'replace') and i2 - i1 >= 2 and i2 - i1 > (j2 - j1) + 1:
             return 0.0
+    # Como suena (10-nov-2026): el oído junta o separa palabras ("a Guinaldo" por "aguinaldo") y oye b por v y m por n
+    # antes de b/p ("embales" por "en vales"). Eso no es un error de la voz: se compara también sin espacios.
+    sonido = lambda t: re.sub(r'm(?=[bp])', 'n', t.replace('v', 'b'))
+    corrido = sonido(''.join(o))
     for palabra in {x for x in e if len(x) >= 4} - set(o):
-        if not (palabra.endswith('s') and palabra[:-1] in o):
+        if not (palabra.endswith('s') and palabra[:-1] in o) and sonido(palabra) not in corrido:
             return min(comparar.ratio(), PARECIDO_TEXTO - 0.01)
-    return comparar.ratio()
+    return max(comparar.ratio(), difflib.SequenceMatcher(None, corrido, sonido(''.join(e))).ratio())
 
 
 def _replicate(modelo, entrada):
@@ -74,10 +78,21 @@ def _replicate(modelo, entrada):
     cab = {'Authorization': f"Bearer {os.environ['REPLICATE_API_TOKEN']}", 'Content-Type': 'application/json', 'Prefer': 'wait=60'}
     req = urllib.request.Request(f'https://api.replicate.com/v1/models/{modelo}/predictions',
                                  data=json.dumps({'input': entrada}).encode(), headers=cab, method='POST')
-    try:
-        r = json.loads(urllib.request.urlopen(req, timeout=120).read())
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f'Replicate {e.code}: {e.read().decode()[:300]}')
+    for espera in (5, 10, 15, 20, 30, 45, 60, 60):  # 429: Replicate limita a 6 por minuto con menos de $5 de saldo
+        try:
+            r = json.loads(urllib.request.urlopen(urllib.request.Request(req.full_url, data=req.data, headers=cab, method='POST'),
+                                                  timeout=120).read())
+            break
+        except urllib.error.HTTPError as e:
+            cuerpo = e.read().decode()[:300]
+            if e.code == 429 or 500 <= e.code < 600:  # límite o falla pasajera de Replicate: se espera y se reintenta
+                time.sleep(espera)
+                continue
+            if e.code == 402:
+                raise RuntimeError('Replicate 402: sin saldo. Rodrigo tiene que recargar en replicate.com → Billing.')
+            raise RuntimeError(f'Replicate {e.code}: {cuerpo}')
+    else:
+        raise RuntimeError('Replicate siguió limitando (429) varios minutos: probablemente sin saldo suficiente.')
     while r.get('status') in ('starting', 'processing'):
         time.sleep(2)
         r = json.loads(urllib.request.urlopen(urllib.request.Request(r['urls']['get'], headers=cab), timeout=60).read())

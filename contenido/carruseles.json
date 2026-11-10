@@ -393,7 +393,7 @@
    "estado": "listo",
    "tema": "que_hacer_aguinaldo",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/yate.jpg",
    "ventana": {
     "desde": "2026-11-15",
     "hasta": "2026-12-31"
@@ -403,7 +403,7 @@
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/enero-oficina-casa.jpg",
     "etiqueta": "AGUINALDO",
     "titulo": "Tu aguinaldo no es para regalos",
     "voz": "Tu aguinaldo no es para regalos. Primero haz esto y enero no te va a doler.",
@@ -411,7 +411,8 @@
      "titulo": "Si no haces esto, tu aguinaldo se acaba en enero",
      "voz": "Si no haces esto, tu aguinaldo se acaba en enero."
     },
-    "gancho_tipo": "postura"
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
    },
    "diapositivas": [
     {
@@ -5263,6 +5264,421 @@
    },
    "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
    "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+  },
+  {
+   "id": "c60",
+   "estado": "borrador",
+   "tema": "fechas_dinero_diciembre_enero_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "ventana": {
+    "desde": "2026-11-15",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-lista-cocina.jpg",
+    "etiqueta": "DICIEMBRE Y ENERO",
+    "titulo": "Guarda esto: las fechas de dinero de diciembre y enero",
+    "voz": "Guarda esto: las fechas de dinero de diciembre y enero, antes de que se te pasen.",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Sábado 19: tu aguinaldo",
+     "texto": "Te lo deben pagar antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT, art. 87",
+     "voz": "Primero: tu aguinaldo llega a más tardar el sábado diecinueve de diciembre."
+    },
+    {
+     "titulo": "Viernes 25: bancos cerrados",
+     "texto": "El 25 de diciembre los bancos cierran por disposición de la CNBV. El 12 de diciembre también es día de cierre, pero en 2026 cae en sábado.\n\nCNBV, DOF 10-12-2025",
+     "voz": "Segundo: el viernes veinticinco los bancos cierran. El doce de diciembre cae en sábado."
+    },
+    {
+     "titulo": "25 de diciembre y 1 de enero",
+     "texto": "Son días de descanso obligatorio. Si te toca trabajarlos, te pagan tu salario del día más un salario doble por trabajarlo.\n\nLFT, arts. 74 y 75",
+     "voz": "Tercero: el veinticinco de diciembre y el primero de enero son descanso obligatorio. Si trabajas, te pagan salario doble, además de tu día."
+    },
+    {
+     "titulo": "¿Tu pago vence en día inhábil?",
+     "texto": "Si la fecha límite de pago de tu tarjeta o tu crédito cae en día inhábil, puedes pagar el día hábil siguiente.\n\nLTOSF, art. 18 Bis 4",
+     "voz": "Cuarto: si el pago de tu tarjeta vence en día inhábil, lo puedes hacer el siguiente día hábil."
+    },
+    {
+     "titulo": "Las transferencias no cierran",
+     "texto": "Aunque la sucursal cierre, el sistema de transferencias SPEI de Banxico opera las 24 horas, los 7 días de la semana.\n\nBanxico",
+     "voz": "Y el último: aunque el banco cierre, el sistema de transferencias del Banco de México opera todo el día, todos los días."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Te toca trabajar el 25 de diciembre? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien trabaja en Navidad.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Te toca trabajar el veinticinco de diciembre? Comenta sí o no, y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 87 (aguinaldo 'que deberá pagarse antes del día veinte de diciembre'); art. 74 ('Son días de descanso obligatorio: I. El 1o. de enero; ... VIII. El 25 de diciembre'); art. 75 (los trabajadores que presten servicio en día de descanso obligatorio 'tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado'). El 20 de diciembre de 2026 cae en domingo y el 19 en sábado; el 25 de diciembre de 2026 cae en viernes y el 12 en sábado (calendario). CNBV, 'Disposiciones de carácter general que señalan los días del año 2026 en que las entidades financieras sujetas a la supervisión de la Comisión Nacional Bancaria y de Valores deberán cerrar sus puertas y suspender sus operaciones' (DOF 10-12-2025, https://dof.gob.mx/nota_detalle.php?codigo=5775684&fecha=10/12/2025), art. 1: las instituciones de crédito y demás entidades 'deberán cerrar sus puertas y suspender sus operaciones' el '1o. de enero', ... 'VIII. El 12 y 25 de diciembre. IX. Los sábados y domingos'; art. 3: pueden abrir esos días con aviso a la CNBV. Ley para la Transparencia y Ordenamiento de los Servicios Financieros (diputados.gob.mx, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf), art. 18 Bis 4: los estados de cuenta de créditos al consumo deben informar la fecha límite de pago 'así como la mención de que en caso de que dicha fecha límite corresponda a un día inhábil, el pago podrá efectuarse el día hábil siguiente'. Banxico, 'SPEI, información' (https://www.banxico.org.mx/servicios/spei_-informacion-banco-mex.html): 'Horario de operación: Esquema 24/7'; 'Operación 24/7'. No se incluyó: el cierre bancario del 1 de enero de 2027 (la CNBV aún no publica las disposiciones de 2027; el 1 de enero sí es descanso obligatorio por la LFT) ni el descuento del predial en enero (lo fija cada municipio o estado; no hay una fuente oficial general). Consultado el 10-nov-2026.",
+   "titulo_post": "Las fechas de dinero de diciembre y enero",
+   "texto_post": "Diciembre y enero: las fechas no son detalle, son dinero. Apúntalas antes de que te agarren las fiestas. 🗓️\n1. Sábado 19 de diciembre: a más tardar ese día te pagan el aguinaldo (el 20 cae en domingo).\n2. Viernes 25 de diciembre: los bancos cierran por disposición de la CNBV; el 12 de diciembre también, pero cae en sábado.\n3. 25 de diciembre y 1 de enero: descanso obligatorio. Si trabajas, te pagan tu día más un salario doble.\n4. Si la fecha límite de pago de tu tarjeta cae en día inhábil, puedes pagar el día hábil siguiente.\n5. Aunque la sucursal cierre, el SPEI de Banxico opera 24/7.\nCapital ya marcó el 25 en el calendario: descanso obligatorio y croquetas dobles.\n\n📚 LFT, arts. 74, 75 y 87; CNBV (DOF 10-12-2025); LTOSF, art. 18 Bis 4; Banxico.\n💬 ¿Te toca trabajar el 25 de diciembre? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando planees tus pagos de diciembre.\n📩 Mándaselo a quien trabaja en Navidad.",
+   "seo": {
+    "palabra_clave": "días inhábiles bancarios",
+    "titulo": "Días inhábiles bancarios de diciembre 2026 🗓️",
+    "tags_concretas": [
+     "días inhábiles bancarios 2026",
+     "abren los bancos el 25 de diciembre",
+     "abren los bancos el 12 de diciembre",
+     "calendario cnbv 2026",
+     "fecha limite aguinaldo 2026",
+     "pago doble 25 de diciembre",
+     "descanso obligatorio 1 de enero",
+     "pago de tarjeta en dia inhabil",
+     "spei 24 horas",
+     "articulo 74 ley federal del trabajo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#bancos",
+     "#diciembre",
+     "#derechoslaborales"
+    ],
+    "preguntas": [
+     "¿Abren los bancos el 25 de diciembre de 2026?",
+     "¿Cuánto me pagan si trabajo el 25 de diciembre?",
+     "¿Qué pasa si mi fecha límite de pago cae en día inhábil?",
+     "¿Funciona el SPEI en días festivos?"
+    ]
+   },
+   "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c61",
+   "estado": "borrador",
+   "tema": "vacaciones_prima_vacacional_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "ventana": {
+    "desde": "2026-11-15",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/yate-blazer-blanco.jpg",
+    "etiqueta": "VACACIONES Y PRIMA VACACIONAL",
+    "titulo": "Guarda esto: tus vacaciones y tu prima vacacional en 5 datos",
+    "voz": "Guarda esto: tus vacaciones y tu prima vacacional en cinco datos. No son un favor de tu patrón.",
+    "foto_reel": "assets/fotos/video-37-sala.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Cuántos días te tocan",
+     "texto": "Año 1: 12 días. Año 2: 14. Año 3: 16. Año 4: 18. Año 5: 20. De 6 a 10 años: 22. De 11 a 15: 24.\n\nLFT, art. 76 · PROFEDET",
+     "voz": "Primero: al cumplir un año te tocan doce días, y suben dos por año hasta llegar a veinte."
+    },
+    {
+     "titulo": "Prima: mínimo 25%",
+     "texto": "Va sobre el salario de tus días de vacaciones. Con $400 diarios y 12 días: $4,800 de vacaciones y, como mínimo, $1,200 de prima.\n\nLFT, art. 80",
+     "voz": "Segundo: la prima vacacional es de al menos veinticinco por ciento. Con cuatrocientos pesos diarios y doce días, son mil doscientos pesos más."
+    },
+    {
+     "titulo": "No se cambian por dinero",
+     "texto": "No te las pueden pagar en lugar de que descanses: las vacaciones se toman. El pago en dinero solo aplica si termina tu trabajo.\n\nLFT, art. 79 · PROFEDET",
+     "voz": "Tercero: no te las pueden pagar para que no descanses. Las vacaciones se toman."
+    },
+    {
+     "titulo": "Seis meses y una constancia",
+     "texto": "Te las deben dar dentro de los 6 meses después de tu aniversario. Y cada año, una constancia con tu antigüedad, tus días y la fecha para tomarlos.\n\nLFT, art. 81",
+     "voz": "Cuarto: te las deben dar en los seis meses después de tu aniversario, y cada año una constancia con tus días."
+    },
+    {
+     "titulo": "Si renuncias, también",
+     "texto": "Al renunciar, en tu finiquito van las partes proporcionales de tus vacaciones y de tu prima vacacional.\n\nPROFEDET (sep-2026) · LFT, art. 79",
+     "voz": "Y el último: si renuncias, en tu finiquito van tus vacaciones y tu prima, en proporción."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos días de vacaciones te dan? Comenta el número.",
+    "texto": "Mándaselo a quien lleva un año sin tomar vacaciones.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Cuántos días de vacaciones te dan? Comenta el número y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 76 (con más de un año de servicios, vacaciones pagadas que 'en ningún caso podrá ser inferior a doce días laborables, y que aumentará en dos días laborables, hasta llegar a veinte, por cada año subsecuente de servicios. A partir del sexto año, el periodo de vacaciones aumentará en dos días por cada cinco de servicios'; reformado DOF 27-12-2022); art. 79 ('Las vacaciones no podrán compensarse con una remuneración. Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcionada al tiempo de servicios prestados'); art. 80 ('prima no menor de veinticinco por ciento sobre los salarios que les correspondan durante el período de vacaciones'); art. 81 ('Las vacaciones deberán concederse a los trabajadores dentro de los seis meses siguientes al cumplimiento del año de servicios. Los patrones entregarán anualmente a sus trabajadores una constancia que contenga su antigüedad y de acuerdo con ella el período de vacaciones que les corresponda y la fecha en que deberán disfrutarlo'). PROFEDET, 'Persona trabajadora, las vacaciones son tu derecho' (23-jul-2025, https://www.gob.mx/profedet/es/articulos/persona-trabajadora-las-vacaciones-son-tu-derecho?idiom=es): tabla 'Año 1: 12 días', 'Año 2: 14 días', 'Año 3: 16 días', 'Año 4: 18 días', 'Año 5: 20 días', 'De 6 a 10 años: 22 días', 'De 11 a 15 años: 24 días'; prima 'no menor al 25 por ciento'; 'las vacaciones jamás se deberán de compensar con remuneración alguna'; constancia anual. PROFEDET, '¿Sabes cuáles son tus derechos en caso de renuncia o despido injustificado?' (7-sep-2026, https://www.gob.mx/profedet/es/articulos/sabes-cuales-son-tus-derechos-en-caso-de-renuncia-o-despido-injustificado?idiom=es): en la renuncia voluntaria el finiquito incluye las partes proporcionales de aguinaldo, 'vacaciones y prima vacacional'. Cálculo propio: $400 x 12 días = $4,800; 25% de $4,800 = $1,200. Relacionado: c12 (vacaciones dignas), c53 (vacaciones en el finiquito por despido). Consultado el 10-nov-2026.",
+   "titulo_post": "Tus vacaciones y tu prima vacacional en 5 datos",
+   "texto_post": "Vacaciones y prima vacacional: lo que la ley te da no es un favor de tu patrón. Se pide, se toma y se cobra. 🏖️\n1. Año 1: 12 días; año 2: 14; año 3: 16; año 4: 18; año 5: 20; de 6 a 10 años: 22; de 11 a 15: 24.\n2. Prima vacacional de al menos 25%: con $400 diarios y 12 días, $1,200 más.\n3. No te las pueden pagar en lugar de que descanses: se toman.\n4. Te las deben dar en los 6 meses después de tu aniversario, con una constancia anual de tu antigüedad y tus días.\n5. Si renuncias, en tu finiquito van tus vacaciones y tu prima vacacional proporcionales.\nCapital pidió sus 12 días. Se los di. No se movió del sillón.\n\n📚 LFT, arts. 76, 79, 80 y 81; PROFEDET (2025 y 2026).\n💬 ¿Cuántos días de vacaciones te dan? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para cuando pidas tus vacaciones.\n📩 Mándaselo a quien lleva un año sin tomar vacaciones.",
+   "seo": {
+    "palabra_clave": "prima vacacional",
+    "titulo": "Prima vacacional y vacaciones en 5 datos 🏖️",
+    "tags_concretas": [
+     "prima vacacional",
+     "vacaciones dignas",
+     "cuantos dias de vacaciones me tocan",
+     "tabla de vacaciones 2026",
+     "como calcular la prima vacacional",
+     "vacaciones no se pagan en dinero",
+     "plazo para tomar vacaciones",
+     "vacaciones al renunciar",
+     "articulo 76 ley federal del trabajo",
+     "profedet vacaciones"
+    ],
+    "hashtags": [
+     "#vacaciones",
+     "#primavacacional",
+     "#derechoslaborales",
+     "#profedet"
+    ],
+    "preguntas": [
+     "¿Cuántos días de vacaciones me tocan por ley?",
+     "¿Cómo se calcula la prima vacacional?",
+     "¿Me pueden pagar las vacaciones en lugar de tomarlas?",
+     "¿Me pagan las vacaciones si renuncio?"
+    ]
+   },
+   "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c62",
+   "estado": "borrador",
+   "tema": "derechos_consumidor_diciembre_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "ventana": {
+    "desde": "2026-11-15",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/capital-tarjeta.jpg",
+    "etiqueta": "COMPRAS DE DICIEMBRE",
+    "titulo": "Guarda esto: tus derechos al comprar en diciembre",
+    "voz": "Guarda esto: tus derechos al comprar en diciembre. La tienda no te hace un favor.",
+    "foto_reel": "assets/fotos/navidad-compras-calle.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "El precio es el total",
+     "texto": "El precio que te muestran debe ser el monto total a pagar: con impuestos, comisiones y cualquier otro cargo, de contado o a crédito.\n\nLFPC, art. 7 Bis",
+     "voz": "Primero: el precio que te muestran debe ser el total, con impuestos y comisiones incluidos."
+    },
+    {
+     "titulo": "Lo anunciado se respeta",
+     "texto": "Precios, promociones y condiciones ofrecidas se respetan. Si no te cumplen una oferta: exige que la cumplan, acepta otro equivalente o cancela, más la diferencia.\n\nLFPC, arts. 7 y 50",
+     "voz": "Segundo: lo anunciado se respeta. Si no te cumplen una oferta, puedes exigirla o cancelar la compra."
+    },
+    {
+     "titulo": "Garantía: mínimo 90 días",
+     "texto": "Si lo venden con garantía, no puede ser menor a 90 días desde la entrega. La póliza va por escrito y te la dan al recibir el producto.\n\nLFPC, arts. 77 y 78",
+     "voz": "Tercero: si tiene garantía, es de al menos noventa días, y la póliza te la dan por escrito."
+    },
+    {
+     "titulo": "Si no es lo que te ofrecieron",
+     "texto": "Tú eliges: que te lo repongan o que te devuelvan tu dinero, por el mismo medio con que pagaste. Y además, una bonificación de al menos 20%.\n\nLFPC, arts. 92 y 92 Ter",
+     "voz": "Cuarto: si no es lo que te ofrecieron, te lo reponen o te devuelven tu dinero, más al menos veinte por ciento."
+    },
+    {
+     "titulo": "A dónde quejarte",
+     "texto": "Teléfono del Consumidor de Profeco: 55 5568 8722 (CDMX) y 800 468 8722, los 365 días. En línea, por Concilianet, si la tienda está inscrita.\n\nProfeco (jun-2026)",
+     "voz": "Y el último: si no te respetan, llama al Teléfono del Consumidor de Profeco. Atiende todos los días del año."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Te han negado un precio anunciado? Comenta SÍ o NO.",
+    "texto": "Mándaselo a quien hace las compras de Navidad.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Te han negado un precio anunciado? Comenta sí o no, y sígueme."
+   },
+   "fuente": "Ley Federal de Protección al Consumidor (diputados.gob.mx, texto vigente, última reforma DOF 12-12-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf): art. 7 ('Todo proveedor está obligado a informar y a respetar los precios, tarifas, garantías, cantidades, calidades, medidas, intereses, cargos, términos, restricciones, plazos, fechas, modalidades, reservaciones y demás condiciones'); art. 7 Bis ('informar de forma notoria y visible el monto total a pagar'; 'Dicho monto deberá incluir impuestos, comisiones, intereses, seguros y cualquier otro costo, cargo, gasto o erogación adicional ... sea ésta al contado o a crédito'); art. 50 ('Si el autor de la promoción u oferta no cumple su ofrecimiento, el consumidor podrá optar por exigir el cumplimiento, aceptar otro bien o servicio equivalente o la rescisión del contrato y, en todo caso, tendrá derecho al pago de la diferencia económica entre el precio al que se ofrezca el bien o servicio objeto de la promoción u oferta y su precio normal'); art. 77 ('la garantía no podrá ser inferior a noventa días contados a partir de la entrega del bien'); art. 78 ('La póliza de garantía deberá expedirse por el proveedor por escrito ... La póliza debe ser entregada al consumidor al momento de recibir éste el bien'); art. 92 (derecho, 'a su elección, a la reposición del producto o a la devolución de la cantidad pagada, contra la entrega del producto adquirido, y en todo caso, a una bonificación', entre otros casos 'Si el bien no corresponde a la calidad, marca, o especificaciones y demás elementos sustanciales bajo los cuales se haya ofrecido'; 'la devolución ... se efectuará utilizando la misma forma de pago con la que se realizó la compra, pudiendo hacerse por una forma de pago distinta si el consumidor lo acepta'); art. 92 Ter ('La bonificación ... no podrá ser menor al veinte por ciento del precio pagado'); art. 93 (la reclamación del art. 92 se presenta 'dentro de los dos meses siguientes a la fecha en que se haya recibido el producto'; el proveedor responde en máximo 15 días); art. 99 (Profeco recibe quejas 'en forma escrita, oral, telefónica, electrónica'). Profeco, 'Profeco recuerda a las y los asistentes al Mundial sus medios de contacto' (9-jun-2026, https://www.gob.mx/profeco/prensa/profeco-recuerda-a-las-y-los-asistentes-al-mundial-sus-medios-de-contacto?idiom=es): Teléfono del Consumidor '55 5568 8722' (Ciudad de México) y '800 468 8722' (resto del país), 'los 365 días del año', lunes a viernes de 9:00 a 19:00 h y fines de semana y festivos de 10:00 a 18:00 h; Concilianet, conciliación en línea con los proveedores inscritos (lista: https://concilianet.profeco.gob.mx/Concilianet/proveedores_que_concilian.jsp). Profeco, 'Teléfono del Consumidor' (18-feb-2021, https://www.gob.mx/profeco/articulos/telefono-del-consumidor?idiom=es): mismos números. No se incluyó un derecho general a cambiar o devolver un regalo 'porque no gustó': la LFPC no lo da; solo aplica a los casos del art. 92 o a la política que la tienda ofrezca. Consultado el 10-nov-2026.",
+   "titulo_post": "Tus derechos al comprar en diciembre en 5 datos",
+   "texto_post": "Compras de diciembre: la tienda no te hace un favor al respetar el precio. Es ley. 🛍️\n1. El precio que te muestran debe ser el total: con impuestos, comisiones y cualquier cargo.\n2. Lo anunciado se respeta. Si no te cumplen una oferta: exige que la cumplan, acepta otro equivalente o cancela, y te pagan la diferencia.\n3. Si lo venden con garantía, es de al menos 90 días, y la póliza te la dan por escrito.\n4. Si no es lo que te ofrecieron: reposición o devolución por el mismo medio de pago, más una bonificación de al menos 20%. Reclama dentro de los 2 meses de recibirlo.\n5. Quéjate al Teléfono del Consumidor de Profeco: 55 5568 8722 (CDMX) y 800 468 8722, o por Concilianet.\nCapital guarda el ticket de su pelota: garantía de 90 días, mínimo.\n\n📚 LFPC, arts. 7, 7 Bis, 50, 77, 78, 92, 92 Ter y 93; Profeco (2026).\n💬 ¿Te han negado un precio anunciado? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para antes de pagar en caja.\n📩 Mándaselo a quien hace las compras de Navidad.",
+   "seo": {
+    "palabra_clave": "derechos del consumidor",
+    "titulo": "Derechos del consumidor en diciembre 🛍️",
+    "tags_concretas": [
+     "derechos del consumidor",
+     "ley federal de proteccion al consumidor",
+     "profeco garantia minima",
+     "garantia 90 dias profeco",
+     "no respetan el precio anunciado",
+     "devolucion de dinero profeco",
+     "bonificacion 20 por ciento",
+     "telefono del consumidor profeco",
+     "concilianet",
+     "compras de navidad"
+    ],
+    "hashtags": [
+     "#profeco",
+     "#derechosdelconsumidor",
+     "#compras",
+     "#navidad"
+    ],
+    "preguntas": [
+     "¿La tienda está obligada a respetar el precio anunciado?",
+     "¿Cuánto dura la garantía mínima según Profeco?",
+     "¿Me pueden devolver mi dinero si el producto sale mal?",
+     "¿Cómo pongo una queja en Profeco?"
+    ]
+   },
+   "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c63",
+   "estado": "borrador",
+   "tema": "tarjeta_credito_diciembre_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "ventana": {
+    "desde": "2026-11-20",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-38-oficina.jpg",
+    "etiqueta": "TARJETA DE CRÉDITO",
+    "titulo": "Guarda esto: tu tarjeta de crédito en diciembre en 5 datos",
+    "voz": "Guarda esto: tu tarjeta de crédito en diciembre, en cinco datos.",
+    "foto_reel": "assets/fotos/capital-cafe.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Fecha de corte",
+     "texto": "Es el día en que el banco suma tus compras de los últimos 30 días y calcula tu pago mínimo y tus intereses.\n\nCondusef (feb-2022)",
+     "voz": "Primero: la fecha de corte es el día en que el banco suma lo que compraste en el mes."
+    },
+    {
+     "titulo": "Fecha límite de pago",
+     "texto": "Normalmente, 20 días naturales después del corte. Si para ese día pagas completo tu \"pago para no generar intereses\", no pagas intereses.\n\nCondusef (feb-2022)",
+     "voz": "Segundo: la fecha límite suele ser veinte días después del corte. Si pagas el total a tiempo, no pagas intereses."
+    },
+    {
+     "titulo": "Compra después del corte",
+     "texto": "Si compras justo después de tu fecha de corte y pagas el total a tiempo, te financias hasta 50 días sin intereses.\n\nCondusef (feb-2022)",
+     "voz": "Tercero: si compras justo después del corte y pagas el total, tienes hasta cincuenta días sin intereses."
+    },
+    {
+     "titulo": "Así se calcula el mínimo",
+     "texto": "Es lo que resulte mayor: 1.5% de tu saldo más intereses e IVA, o 1.25% de tu límite de crédito. El banco puede pedirte más, nunca menos.\n\nBanxico, Circular 34/2010",
+     "voz": "Cuarto: el pago mínimo sale de una regla del Banco de México, y el banco te puede pedir más, nunca menos."
+    },
+    {
+     "titulo": "El CAT es para comparar",
+     "texto": "El Costo Anual Total junta en un porcentaje anual todos los costos y gastos de tu crédito. La ley dice para qué sirve: informarte y comparar.\n\nLTOSF, art. 3",
+     "voz": "Y el último: el costo anual total junta todos los costos de tu tarjeta en un solo número. Sirve para comparar."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué día es tu fecha de corte? Comenta el número.",
+    "texto": "Mándaselo a quien va a pagar la Navidad con tarjeta.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Qué día es tu fecha de corte? Comenta el número y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Utiliza la TDC a tu favor' (1-feb-2022, https://revista.condusef.gob.mx/credito/2022/02/utiliza-la-tdc-a-tu-favor/): fecha de corte 'es cuando tu institución hace un corte para calcular la deuda de tus compras de los últimos 30 días' (con ella se define el pago mínimo y los intereses); fecha límite de pago: 'Normalmente es de 20 días naturales a partir de la fecha de corte'; pago para no generar intereses: 'es la cantidad de los consumos que realizaste durante el periodo y que debes liquidar en su totalidad' para no pagar intereses; '¿Sabías que con tu TDC puedes financiarte hasta por 50 días sin pagar intereses?'; ejemplo: 'si tú compras lo que necesitas el 8 de enero [día siguiente al corte], contarás con 50 días de financiamiento'; CAT: 'Es la abreviación del Costo Anual Total'. Banxico, Circular 34/2010 'Reglas de tarjetas de crédito' (texto compilado con modificaciones hasta la Circular 13/2018, https://www.banxico.org.mx/marco-normativo/normativa-emitida-por-el-banco-de-mexico/circular-34-2010/%7B0C55B906-6DB4-6B88-FED0-67987E9FB3CC%7D.pdf; aplica a bancos y sofomes reguladas ligadas a bancos; la Circular 13/2011 pone la misma regla a las demás emisoras), numeral 4.1: 'El Pago Mínimo será el monto que resulte mayor conforme a los incisos siguientes: a) La suma de: i) 1.5 por ciento del saldo insoluto de la parte revolvente de la línea de crédito al corte del periodo, sin tomar en cuenta los intereses del periodo ni el impuesto al valor agregado (I.V.A.), mas ii) los referidos intereses y el I.V.A., y b) El 1.25 por ciento del límite de la línea de crédito'; si el mínimo es mayor que el saldo, se cobra el saldo; numeral 4.2: la emisora puede fijar un pago mínimo 'siempre y cuando dicho importe sea mayor' al del 4.1. Ley para la Transparencia y Ordenamiento de los Servicios Financieros (diputados.gob.mx, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf), art. 3, fracc. VI: 'CAT: al costo anual total de financiamiento expresado en términos porcentuales anuales que, para fines informativos y de comparación, incorpora la totalidad de los costos y gastos inherentes a los créditos'. No se repitió que los meses sin intereses se suman al pago mínimo (ya está en c24 y c54). Relacionado: c07, c31. Consultado el 10-nov-2026.",
+   "titulo_post": "Tu tarjeta de crédito en diciembre en 5 datos",
+   "texto_post": "Tarjeta de crédito en diciembre: pagar solo el mínimo es rentarle tu sueldo al banco. Primero entiende tus fechas. 💳\n1. Fecha de corte: el día en que el banco suma tus compras de los últimos 30 días y calcula tu mínimo y tus intereses.\n2. Fecha límite de pago: normalmente 20 días naturales después del corte. Si pagas completo tu \"pago para no generar intereses\", no pagas intereses.\n3. Si compras justo después del corte y pagas el total, te financias hasta 50 días sin intereses (Condusef).\n4. El pago mínimo es lo mayor entre 1.5% de tu saldo más intereses e IVA, o 1.25% de tu límite (Banxico). El banco puede pedir más, nunca menos.\n5. El CAT junta todos los costos del crédito en un porcentaje anual: sirve para comparar.\nCapital no tiene tarjeta: dice que su fecha de corte es cuando se acaban las croquetas.\n\n📚 Condusef (2022); Banxico, Circular 34/2010; LTOSF, art. 3.\n💬 ¿Qué día es tu fecha de corte? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para antes de usar tu tarjeta en diciembre.\n📩 Mándaselo a quien va a pagar la Navidad con tarjeta.",
+   "seo": {
+    "palabra_clave": "fecha de corte",
+    "titulo": "Fecha de corte de tu tarjeta en 5 datos 💳",
+    "tags_concretas": [
+     "fecha de corte tarjeta de credito",
+     "fecha limite de pago",
+     "pago para no generar intereses",
+     "como se calcula el pago minimo",
+     "pago minimo banxico",
+     "que es el cat",
+     "50 dias sin intereses tarjeta",
+     "tarjeta de credito diciembre",
+     "condusef tarjeta de credito",
+     "cuando comprar con tarjeta de credito"
+    ],
+    "hashtags": [
+     "#tarjetadecredito",
+     "#pagominimo",
+     "#condusef",
+     "#deudas"
+    ],
+    "preguntas": [
+     "¿Qué es la fecha de corte de la tarjeta de crédito?",
+     "¿Cuándo conviene comprar con tarjeta de crédito?",
+     "¿Cómo se calcula el pago mínimo de la tarjeta?",
+     "¿Para qué sirve el CAT?"
+    ]
+   },
+   "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c64",
+   "estado": "borrador",
+   "tema": "gastos_de_enero_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "ventana": {
+    "desde": "2026-12-15",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/enero-oficina-casa.jpg",
+    "etiqueta": "CUESTA DE ENERO",
+    "titulo": "Guarda esto: los gastos que llegan en enero, 5 datos",
+    "voz": "Guarda esto: los gastos que llegan en enero, en cinco datos. Enero no sorprende si lo ves venir.",
+    "foto_reel": "assets/fotos/video-17-sala-roja.jpg",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Lo que llega al empezar el año",
+     "texto": "Predial, tenencia, colegiatura y la prima de tus seguros: Condusef los pone en la lista de gastos a cubrir en estas fechas.\n\nCondusef (ene-2024)",
+     "voz": "Primero: predial, tenencia, colegiatura y seguros. Todos llegan al empezar el año."
+    },
+    {
+     "titulo": "Enero 2026: refresco +5.53%",
+     "texto": "En enero de 2026, en un solo mes, el refresco envasado subió 5.53% y los cigarros 14.51%. La inflación general del mes fue de 0.38%.\n\nINEGI, boletín 74/26",
+     "voz": "Segundo: el enero pasado, en un solo mes, el refresco subió más de cinco por ciento y los cigarros más de catorce."
+    },
+    {
+     "titulo": "Colegiaturas: +6.02% en un año",
+     "texto": "A enero de 2026, las colegiaturas costaban 6.02% más que un año antes. La inflación general anual fue de 3.79%.\n\nINEGI, boletín 74/26",
+     "voz": "Tercero: las colegiaturas subieron seis por ciento en un año, más que la inflación."
+    },
+    {
+     "titulo": "Préstamo exprés: alerta",
+     "texto": "Si no revisan tu historial, te cobran antes un seguro o un estudio, o el contrato dice que no garantiza el crédito: alerta. Revisa la institución en el SIPRES.\n\nCondusef (feb-2023)",
+     "voz": "Cuarto: si te prestan sin revisar tu historial y te cobran antes de darte el dinero, es alerta."
+    },
+    {
+     "titulo": "¿Vas a empeñar?",
+     "texto": "La casa de empeño debe estar inscrita en el registro de Profeco y tener a la vista su costo mensual totalizado, para que compares.\n\nLFPC, arts. 65 Bis y 65 Bis 4",
+     "voz": "Y el último: si vas a empeñar, que la casa esté registrada en Profeco y te muestre su costo mensual."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué te pega más en enero? Comenta PREDIAL, COLEGIATURA o TARJETA.",
+    "texto": "Mándaselo a quien ya está pensando en pedir prestado para enero.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Qué te pega más en enero? Comenta predial, colegiatura o tarjeta, y sígueme."
+   },
+   "fuente": "Condusef, revista Proteja su Dinero, 'Haz tu calendario de gastos y evita la cuesta' (1-ene-2024, https://revista.condusef.gob.mx/presupuesto/2024/01/haz-tu-calendario-de-gastos-y-evita-la-cuesta/): al hacer el presupuesto, identificar gastos básicos y extras para cubrir en estas fechas '(predial, tenencia, colegiatura, prima de seguros, etc.)'; la cuesta de enero se debe a 'el ajuste de precios en productos y servicios' y 'los gastos excesivos durante los festejos decembrinos'. INEGI, Boletín de indicador 74/26, 'Índice Nacional de Precios al Consumidor', enero de 2026 (9-feb-2026, https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/inpc/inpc_2q2026_02.pdf): INPC +0.38% mensual y 3.79% anual; cuadro 1: 'Educación (colegiaturas)' 6.02% anual (0.53% mensual); cuadro 2: 'Cigarrillos' +14.51% mensual, 'Refrescos envasados' +5.53% mensual. Condusef, revista Proteja su Dinero, '¿Aún tienes gastos de la cuesta de enero por pagar?' (1-feb-2023, https://revista.condusef.gob.mx/destacados-del-mes/2023/02/aun-tienes-gastos-de-la-cuesta-de-enero-por-pagar/): señales de préstamos exprés: 'un crédito sin la necesidad de consultar su historial crediticio'; piden contratar un seguro o fianza o pagar un estudio socioeconómico con cargo inmediato; el contrato dice que es 'un servicio de gestoría' que 'no garantiza el otorgamiento' del crédito; recomienda verificar la institución en el 'Sistema de Registro de Prestadores de Servicios Financieros (SIPRES) de la CONDUSEF'. Ley Federal de Protección al Consumidor (diputados.gob.mx, última reforma DOF 12-12-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf): art. 65 Bis ('Para organizarse y operar se requiere la inscripción en el Registro de Casas de Empeño, que compete otorgar a la Procuraduría'; operar sin inscripción es 'infracción particularmente grave'); art. 65 Bis 4 (deben colocar 'de manera permanente y visible' información de sus contratos e 'informar el costo diario totalizado, así como el costo mensual totalizado ... para fines informativos y de comparación'). No se incluyó: descuentos por pronto pago del predial (los fija cada municipio; no hay una fuente oficial general) ni el salario mínimo 2027 (aún no lo publica la Conasami). Relacionado: c10, c26, c38 (cuesta de enero), c19 (apps que cobran antes de prestar). Consultado el 10-nov-2026.",
+   "titulo_post": "Los gastos que llegan en enero en 5 datos",
+   "texto_post": "Cuesta de enero: enero no duele por la cuesta, duele porque nadie la apuntó en diciembre. 🧾\n1. Predial, tenencia, colegiatura y la prima de tus seguros: Condusef los pone en la lista de gastos de inicio de año.\n2. En enero de 2026, en un solo mes, el refresco subió 5.53% y los cigarros 14.51% (INEGI).\n3. A enero de 2026, las colegiaturas costaban 6.02% más que un año antes; la inflación general fue de 3.79% (INEGI).\n4. Préstamo exprés: si no revisan tu historial, te cobran antes un seguro o un estudio, o el contrato no garantiza el crédito, es alerta. Revisa la institución en el SIPRES de Condusef.\n5. ¿Vas a empeñar? La casa debe estar inscrita en el registro de Profeco y tener a la vista su costo mensual totalizado.\nCapital ya vivió su cuesta de enero: le subieron las croquetas y nadie le subió el sueldo.\n\n📚 Condusef (2023 y 2024); INEGI, INPC enero 2026; LFPC, arts. 65 Bis y 65 Bis 4.\n💬 ¿Qué te pega más en enero? Comenta PREDIAL, COLEGIATURA o TARJETA. Te contesto a todos.\n🔖 Guárdalo para cuando hagas tu presupuesto de enero.\n📩 Mándaselo a quien ya está pensando en pedir prestado para enero.",
+   "seo": {
+    "palabra_clave": "cuesta de enero",
+    "titulo": "Cuesta de enero y los gastos que llegan 🧾",
+    "tags_concretas": [
+     "cuesta de enero",
+     "cuesta de enero 2027",
+     "gastos de enero",
+     "predial tenencia colegiatura",
+     "inflacion enero 2026",
+     "aumento colegiaturas",
+     "prestamos expres fraude",
+     "sipres condusef",
+     "casas de empeño profeco",
+     "como sobrevivir la cuesta de enero"
+    ],
+    "hashtags": [
+     "#cuestadeenero",
+     "#enero",
+     "#ahorro",
+     "#condusef"
+    ],
+    "preguntas": [
+     "¿Qué gastos llegan en enero?",
+     "¿Cuánto subieron las colegiaturas?",
+     "¿Cómo saber si un préstamo exprés es fraude?",
+     "¿Cómo saber si una casa de empeño está registrada?"
+    ]
+   },
+   "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
   }
  ]
 }
