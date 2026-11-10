@@ -118,5 +118,11 @@
   "cambio": "Plan congelado 14 días: aguinaldo diario + pareja primero, noticia de dinero en 24 h, reto 'un mes con el salario mínimo', 'dime tu sueldo'; se dejan las listas genéricas",
   "por_que": "Aguinaldo es lo único que funcionó (c16, c01); 19 cambios en 8 días no dejan medir nada",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Comentarios de Victoria en YouTube ajeno en pausa: YouTube los retiene (heldForReview)",
+  "por_que": "Un comentario que nadie ve no trae a nadie; se reintenta cuando uno salga publicado",
+  "vigilar": "yt"
  }
 ]

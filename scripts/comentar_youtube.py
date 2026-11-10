@@ -7,6 +7,7 @@ hoy" de TikTok, pero lo hace la rutina sola.
 Uso: python comentar_youtube.py buscar                      videos de finanzas en México de los últimos 3 días
      python comentar_youtube.py comentar <video_id> "texto"  comenta como el canal de Victoria (máximo 3 al día)
      python comentar_youtube.py hoy                          lo que ya se comentó hoy
+     python comentar_youtube.py estado                       si los comentarios ya publicados se ven o están retenidos
 
 Reglas (para no caer en el filtro de spam de YouTube ni quemar el canal):
 - Máximo 3 comentarios al día, nunca dos en el mismo canal el mismo día, nunca dos veces en el mismo video.
@@ -88,12 +89,24 @@ def main():
     acceso = token()
     if sys.argv[1] == 'buscar':
         print(json.dumps(buscar(acceso), ensure_ascii=False, indent=1))
+    elif sys.argv[1] == 'estado':
+        for r in registro():
+            it = _get(acceso, f'comments?part=snippet&id={r["comentario_id"]}').get('items', [])
+            print(r['fecha'], r['canal'], '→', it[0]['snippet'].get('moderationStatus', 'publicado') if it else 'borrado')
     elif sys.argv[1] == 'hoy':
         print(json.dumps([r for r in registro() if r['fecha'] == hoy_mx()], ensure_ascii=False, indent=1))
     elif sys.argv[1] == 'comentar' and len(sys.argv) == 4:
         video_id, texto = sys.argv[2], sys.argv[3].strip()
         hechos = registro()
         de_hoy = [r for r in hechos if r['fecha'] == hoy_mx()]
+        # 10-nov-2026: YouTube dejó el primer comentario de Victoria "heldForReview" (nadie lo ve hasta que el dueño del
+        # canal lo aprueba). Mientras el último siga retenido, comentar es tirar el esfuerzo: se pausa solo.
+        if hechos and hechos[-1].get('comentario_id'):
+            ult = _get(acceso, f'comments?part=snippet&id={hechos[-1]["comentario_id"]}').get('items', [])
+            estado = ult[0]['snippet'].get('moderationStatus') if ult else 'borrado'
+            if estado in ('heldForReview', 'likelySpam', 'rejected', 'borrado'):
+                sys.exit(f'EN PAUSA: el último comentario de Victoria ({hechos[-1]["canal"]}) sigue "{estado}" en YouTube; '
+                         'nadie lo ve. No se comenta más hasta que alguno salga publicado.')
         if len(de_hoy) >= MAXIMO_DIA:
             sys.exit(f'NO: ya van {MAXIMO_DIA} comentarios hoy (máximo diario).')
         if any(r['video_id'] == video_id for r in hechos):

@@ -159,3 +159,9 @@ opinión marcada, sin enlaces ni "sígueme", sin repetir texto) y lo publica con
 El script pone los candados (3 al día, un canal por día, nunca dos veces en un video). Si el sistema de permisos de la
 sesión frena la publicación, NO se fuerza: ese comentario va a contenido/comentar_hoy.json (con "YouTube ·" en el tema)
 para que Rodrigo lo pegue desde el canal de Victoria, y se dice en el resumen.
+
+**10-nov-2026, por la tarde: YouTube RETIENE los comentarios de Victoria en canales ajenos** (moderationStatus
+"heldForReview": nadie los ve hasta que el dueño del canal los aprueba; típico de canales nuevos). Por eso
+`comentar_youtube.py comentar` se pausa solo mientras el último siga retenido (`comentar_youtube.py estado` lo muestra).
+Si dice EN PAUSA: no comentes en YouTube ese día, ni lo mandes al panel (pegarlo a mano desde el mismo canal también
+queda retenido). Se reintenta solo el día que el último salga publicado.
