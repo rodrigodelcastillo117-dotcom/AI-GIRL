@@ -5682,6 +5682,182 @@
     ]
    },
    "personaje": "2026-11-10: formato Guarda esto (el del hit c16)"
+  },
+  {
+   "id": "c65",
+   "estado": "borrador",
+   "tema": "noticia_banco_quebro_tu_dinero_mexico",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-11-24"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "NOTICIA · TU DINERO",
+    "titulo": "Un banco quebró y 3 millones no podían sacar su dinero. ¿Y en México?",
+    "voz": "Un banco quebró y casi tres millones de personas no podían sacar su dinero. ¿Te puede pasar en México?",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/yate-blazer-blanco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Lo que pasó",
+     "texto": "El 3 de noviembre, Paraguay intervino Ueno, un banco digital con casi 3 millones de clientes. Por días no hubo app, tarjetas ni cajeros.\n\nBanco Central del Paraguay · AP · Forbes",
+     "voz": "Este mes, en Paraguay, intervinieron un banco digital con casi tres millones de clientes. Por días no hubo app, ni tarjetas, ni cajeros."
+    },
+    {
+     "titulo": "En México: el IPAB",
+     "texto": "Si tu banco quiebra, el IPAB te paga hasta 400 mil UDIS por persona y por banco: más de 3.4 millones de pesos.\n\nLey de Protección al Ahorro Bancario · IPAB",
+     "voz": "En México, si tu banco quiebra, el seguro de depósitos te paga hasta más de tres punto cuatro millones de pesos por persona y por banco."
+    },
+    {
+     "titulo": "Ya pasó aquí",
+     "texto": "En octubre de 2025 liquidaron CIBanco. El IPAB empezó a pagar 3 días después y el 99.4% de los ahorradores quedó cubierto completo.\n\nIPAB (oct-2025)",
+     "voz": "Y ya pasó aquí: en 2025 liquidaron CIBanco, y el seguro empezó a pagar tres días después."
+    },
+    {
+     "titulo": "Por persona, por banco",
+     "texto": "Tres cuentas en el mismo banco no triplican la protección. Dinero en dos bancos distintos sí queda protegido en cada uno.\n\nIPAB",
+     "voz": "Ojo: tres cuentas en el mismo banco no triplican la protección. En dos bancos distintos, sí cuenta en cada uno."
+    },
+    {
+     "titulo": "SOFIPO: tope más bajo",
+     "texto": "En una SOFIPO el seguro (Prosofipo) cubre hasta 25 mil UDIS: más de 210 mil pesos. Mucho menos que en un banco.\n\nLey de Ahorro y Crédito Popular · CNBV",
+     "voz": "En una sofipo el seguro cubre mucho menos: algo más de doscientos diez mil pesos."
+    },
+    {
+     "titulo": "Saldo en app: no es depósito",
+     "texto": "El saldo de una billetera de pago electrónico no es un depósito bancario: el IPAB no lo cubre. Revisa si tu app es banco, SOFIPO o billetera.\n\nLey Fintech",
+     "voz": "Y el saldo de una billetera de pago en una app no es un depósito: ese no lo cubre el seguro. Revisa qué es tu app."
+    },
+    {
+     "titulo": "Mi regla",
+     "texto": "Nunca más dinero en un solo lugar de lo que cubre su seguro. Si te pasas, repártelo.\n\nOpinión de Victoria",
+     "voz": "Mi regla: nunca más dinero en un solo lugar de lo que cubre su seguro."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Dónde guardas tu dinero? Comenta BANCO, SOFIPO o APP.",
+    "texto": "Mándaselo a quien tiene todo su dinero en una sola app.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "¿Dónde guardas tu dinero? Comenta banco, sofipo o app, y sígueme."
+   },
+   "fuente": "PARAGUAY: Banco Central del Paraguay inició el procedimiento de resolución de Ueno Bank (Ley 2334/03) por solvencia debajo del 50% del mínimo; casi 3 millones de clientes sin app, tarjetas ni cajeros; devolución por etapas desde el 5-nov-2026. Fuentes: AP vía Telemundo (https://www.telemundo.com/noticias/noticias-telemundo/internacional/renuncia-el-presidente-de-paraguay-santiago-pena-en-medio-de-la-crisis-rcna607672), Forbes Argentina (https://www.forbesargentina.com/negocios/de-financiera-banco-tres-millones-clientes-ueno-entidad-intervenida-paraguay-n101669), Primicias (https://www.primicias.ec/internacional/paraguay-intervencion-ueno-bank-santiago-pena-banco-central-ahorros-136379/). Algunas notas dicen 2-nov y otras 3-nov (fecha del anuncio): se usa 3 de noviembre. MÉXICO IPAB: Ley de Protección al Ahorro Bancario, art. 11: obligaciones garantizadas hasta 400 mil UDIS por persona física o moral y por institución, sin importar el número de cuentas; El Financiero (10-oct-2025, https://www.elfinanciero.com.mx/economia/2025/10/10/cierre-de-cibanco-cual-es-la-cantidad-tope-de-dinero-en-depositos-protegida-por-el-ipab/): 400 mil UDIS = $3,424,262.40 al 10-oct-2025; con la UDI de 2026 (8.79 al 25-jul-2026, Banxico vía senhub) es más: 'más de 3.4 millones'. CIBANCO: IPAB, 10-oct-2025, revocación y liquidación; pago desde el 13-oct-2025; 99.4% de los ahorradores completamente protegidos (Bloomberg Línea https://www.bloomberglinea.com/latinoamerica/mexico/ahorradores-de-cibanco-comienzan-a-recibir-pago-de-depositos-de-fondo-bancario/, UnoTV https://www.unotv.com/negocios/ipab-comienza-pago-a-clientes-de-cibanco-en-liquidacion/). SOFIPO: Prosofipo, hasta 25 mil UDIS por ahorrador (Ley de Ahorro y Crédito Popular; El Imparcial jun-2026); 25,000 x 8.56 (oct-2025) = $214,000, por eso 'más de 210 mil'. FINTECH: Ley para Regular las Instituciones de Tecnología Financiera: los fondos de pago electrónico no son depósitos bancarios y no están garantizados por el IPAB (Expansión, 18-dic-2024, https://expansion.mx/economia/2024/12/18/bancos-vs-fintechs-que-pasa-con-mis-ahorros-si-quiebran). 'Nunca más dinero en un solo lugar de lo que cubre su seguro' es opinión de Victoria y lo dice la diapositiva. Consultado el 10-nov-2026.",
+   "titulo_post": "¿Tu dinero está seguro si tu banco quiebra?",
+   "texto_post": "Un banco quebró en Paraguay y casi 3 millones no podían sacar su dinero. ¿Te puede pasar en México? 🏦\n1. El 3 de noviembre intervinieron Ueno: sin app, tarjetas ni cajeros por días.\n2. En México, si tu banco quiebra, el IPAB te paga hasta 400 mil UDIS por persona y por banco (más de 3.4 millones de pesos).\n3. Ya pasó: en octubre de 2025 liquidaron CIBanco y el IPAB empezó a pagar 3 días después.\n4. Tres cuentas en el mismo banco no triplican la protección; dos bancos distintos, sí.\n5. En una SOFIPO el seguro cubre hasta 25 mil UDIS (más de 210 mil pesos).\n6. El saldo de una billetera de pago en una app no es depósito: el IPAB no lo cubre.\nMi regla: nunca más dinero en un solo lugar de lo que cubre su seguro.\nCapital guarda sus croquetas en tres escondites distintos. Diversificado desde cachorro.\n\n📚 Banco Central del Paraguay · Ley de Protección al Ahorro Bancario · IPAB · Ley de Ahorro y Crédito Popular · Ley Fintech\n💬 ¿Dónde guardas tu dinero? Comenta BANCO, SOFIPO o APP. Te contesto a todos.\n🔖 Guárdalo para cuando abras una cuenta nueva.\n📩 Mándaselo a quien tiene todo su dinero en una sola app.",
+   "seo": {
+    "palabra_clave": "ipab cuanto protege",
+    "titulo": "¿Tu dinero está seguro si tu banco quiebra? 🏦",
+    "tags_concretas": [
+     "ipab cuanto protege",
+     "que pasa si mi banco quiebra",
+     "seguro de depositos mexico",
+     "ipab 400 mil udis",
+     "sofipo prosofipo 25 mil udis",
+     "cibanco ipab pago",
+     "ueno bank paraguay",
+     "mi dinero esta seguro en el banco",
+     "fintech ipab"
+    ],
+    "hashtags": [
+     "#ipab",
+     "#bancos",
+     "#ahorro",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto protege el IPAB?",
+     "¿Qué pasa con mi dinero si mi banco quiebra?",
+     "¿Las SOFIPO están protegidas por el IPAB?"
+    ]
+   },
+   "revision": "Escrito el 10-nov-2026 con fuentes; pendiente segunda revisión de otro agente.",
+   "personaje": "2026-11-10: noticia de dinero en 24-48 h (plan del 10-nov), postura de Victoria marcada como opinión, humor con Capital y pregunta para comentar"
+  },
+  {
+   "id": "c66",
+   "estado": "borrador",
+   "tema": "serie_alcanza_salario_minimo_1",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "serie": "alcanza_salario_minimo",
+   "parte": 1,
+   "ventana": {
+    "desde": "2026-11-10",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/navidad-lista-cocina.jpg",
+    "etiqueta": "SERIE · PARTE 1 DE 5",
+    "titulo": "¿Alcanza el salario mínimo para vivir un mes en México? Hago las cuentas",
+    "voz": "¿Alcanza el salario mínimo para vivir un mes en México? Voy a hacer las cuentas, en cinco partes.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Cuánto es",
+     "texto": "$315.04 al día desde el 1 de enero de 2026: $9,582.47 al mes. Subió 13% contra 2025.\n\nCONASAMI · DOF (dic-2025)",
+     "voz": "El salario mínimo es de trescientos quince pesos al día: nueve mil quinientos ochenta y dos al mes."
+    },
+    {
+     "titulo": "En la frontera norte",
+     "texto": "En la Zona Libre de la Frontera Norte es de $440.87 al día: $13,409.80 al mes.\n\nCONASAMI · DOF (dic-2025)",
+     "voz": "En la frontera norte es más: trece mil cuatrocientos pesos al mes."
+    },
+    {
+     "titulo": "Te llega completo",
+     "texto": "Al salario mínimo no se le retiene ISR y la cuota del IMSS la paga tu patrón. Te llegan los $9,582.\n\nLey del ISR, art. 96 · Ley del Seguro Social, art. 36",
+     "voz": "Y te llega completo: no le retienen impuesto y la cuota del seguro social la paga tu patrón."
+    },
+    {
+     "titulo": "Por quincena",
+     "texto": "Son $4,791 cada quincena. Con eso van la renta, la comida, el transporte y todo lo demás.\n\nCálculo propio",
+     "voz": "Son cuatro mil setecientos noventa y un pesos por quincena. Con eso va todo."
+    },
+    {
+     "titulo": "Lo que sigue",
+     "texto": "Parte 2: la renta. Parte 3: la comida. Parte 4: el transporte. Parte 5: mi veredicto, ¿alcanza o no?\n\nSerie de Victoria",
+     "voz": "En la parte dos, la renta. Luego la comida, el transporte y mi veredicto."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuánto pagas de renta y en qué ciudad? Comenta y lo uso en la parte 2.",
+    "texto": "Sígueme para no perderte la parte 2.\nMándaselo a quien dice que con el mínimo sí se vive bien.",
+    "voz": "¿Cuánto pagas de renta y en qué ciudad? Comenta, lo uso en la parte dos. Sígueme para no perdértela."
+   },
+   "fuente": "CONASAMI, Resolución del H. Consejo de Representantes que fija los salarios mínimos generales y profesionales vigentes a partir del 1 de enero de 2026 (DOF, dic-2025): salario mínimo general $315.04 diarios (de $278.80 en 2025, +13%); Zona Libre de la Frontera Norte $440.87 diarios. Mensual = diario x 365/12: $9,582.47 y $13,409.80 (EY Law Flash 'Incremento salarios mínimos 2026' https://www.ey.com/es_mx/technical/tax/boletines-fiscales/incremento-salarios-minimos-2026 ; México ¿cómo vamos? https://mexicocomovamos.mx/wp-content/uploads/2025/12/InfografiaMCV_SalarioMinimo_2026.pdf ; Bloomberg Línea https://www.bloomberglinea.com/latinoamerica/mexico/cuanto-y-cuando-entra-en-vigor-el-aumento-del-salario-minimo-2026-en-mexico/). Ley del ISR, art. 96: 'No se efectuará retención a las personas que en el mes únicamente perciban un salario mínimo general' (https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf). Ley del Seguro Social, art. 36: 'Corresponde al patrón pagar íntegramente la cuota señalada para los trabajadores, en los casos en que éstos perciban como cuota diaria el salario mínimo' (https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf). Quincena: 9,582.47 / 2 = 4,791.24 (cálculo propio). Serie de cuentas (no es una experiencia vivida: Victoria es un personaje creado con IA). Consultado el 10-nov-2026.",
+   "titulo_post": "¿Alcanza el salario mínimo? Parte 1",
+   "texto_post": "¿Alcanza el salario mínimo para vivir un mes en México? Hago las cuentas en 5 partes. Parte 1: cuánto te llega. 💵\n1. $315.04 al día desde el 1 de enero de 2026: $9,582.47 al mes (+13% contra 2025).\n2. En la frontera norte: $440.87 al día, $13,409.80 al mes.\n3. No se le retiene ISR y la cuota del IMSS la paga tu patrón: te llega completo.\n4. Son $4,791 por quincena para renta, comida, transporte y todo lo demás.\n5. Parte 2: la renta. Parte 3: la comida. Parte 4: el transporte. Parte 5: mi veredicto.\nCapital ya hizo su presupuesto: 100% croquetas. A él sí le alcanza.\n\n📚 CONASAMI · DOF (dic-2025) · Ley del ISR, art. 96 · Ley del Seguro Social, art. 36\n💬 ¿Cuánto pagas de renta y en qué ciudad? Comenta y lo uso en la parte 2. Te contesto a todos.\n🔖 Guárdalo y sígueme para no perderte la parte 2.\n📩 Mándaselo a quien dice que con el mínimo sí se vive bien.",
+   "seo": {
+    "palabra_clave": "salario minimo 2026",
+    "titulo": "¿Alcanza el salario mínimo 2026? Parte 1 💵",
+    "tags_concretas": [
+     "salario minimo 2026",
+     "salario minimo 2026 mensual",
+     "cuanto es el salario minimo 2026",
+     "salario minimo frontera norte 2026",
+     "alcanza el salario minimo",
+     "salario minimo isr",
+     "salario minimo quincena 2026",
+     "vivir con el salario minimo mexico",
+     "conasami 2026"
+    ],
+    "hashtags": [
+     "#salariominimo",
+     "#dinero",
+     "#mexico",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿Cuánto es el salario mínimo 2026 al mes?",
+     "¿Al salario mínimo le quitan ISR?",
+     "¿Alcanza el salario mínimo para vivir en México?"
+    ]
+   },
+   "revision": "Escrito el 10-nov-2026 con fuentes; pendiente segunda revisión de otro agente.",
+   "personaje": "2026-11-10: serie por capítulos (plan del 10-nov) para que sigan la cuenta; cuentas, no experiencia inventada; la parte 2 usa las rentas que comenten"
   }
  ]
 }

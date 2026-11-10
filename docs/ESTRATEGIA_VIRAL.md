@@ -137,9 +137,12 @@ de estrategia: así no se aprende nada. Desde hoy, 14 días con estas reglas, y 
    tu bolsillo en México?", con datos de fuente oficial y segunda revisión, y lo pone primero en la cola. La primera:
    el banco que quebró en Paraguay (2-nov) → "¿Tu dinero está seguro en México?" (IPAB 400 mil UDIS por persona y banco;
    SOFIPO 25 mil UDIS; qué NO cubre el IPAB; el caso CIBanco de 2025). Verificar todo antes de publicar.
-3. EL RETO (motor de seguidores): serie "Victoria vive un mes con el salario mínimo" (parte 1, 2, 3...). Una serie con
-   capítulos es lo que hace que la gente SIGA la cuenta para ver la siguiente parte. El salario mínimo 2026 se verifica en
-   fuente oficial (CONASAMI/DOF) antes de escribir. Un capítulo cada 2 días, el cierre de cada uno dice "parte X mañana".
+3. LA SERIE (motor de seguidores): "¿Alcanza el salario mínimo? Hago las cuentas", 5 partes (c66 es la parte 1: cuánto
+   llega). Victoria es un personaje de IA: son CUENTAS con datos oficiales, nunca "lo viví" (regla de GANCHOS: nada de
+   primera persona inventada). Parte 2: la renta (con las rentas y ciudades que la gente comente en la parte 1 + un dato
+   oficial de INEGI); parte 3: la comida (CONEVAL, canasta alimentaria); parte 4: el transporte; parte 5: el veredicto.
+   Una parte cada 2 días después de que salga la anterior en TikTok; cada portada dice "PARTE X DE 5" y cada cierre
+   "sígueme para no perderte la parte X+1". Una serie con capítulos es lo que hace que la gente SIGA la cuenta.
 4. EL MOTOR DE COMENTARIOS: "Dime tu sueldo y te reparto tu aguinaldo". Cada sueldo que comenten se contesta y, si da para
    contenido, se vuelve un carrusel "Reparto el aguinaldo de @usuario" (sin datos personales más allá de su usuario y su
    sueldo, que ya hizo públicos). Requiere los primeros comentarios: amigos de Rodrigo + "Comenta GUÍA" + "Comenta hoy".
