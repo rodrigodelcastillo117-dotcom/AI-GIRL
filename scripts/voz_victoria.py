@@ -31,7 +31,6 @@ import librosa
 import numpy as np
 import torch
 import torchaudio
-from chatterbox.mtl_tts import ChatterboxMultilingualTTS
 from faster_whisper import WhisperModel
 from num2words import num2words
 
@@ -174,6 +173,7 @@ def main():
         if not os.environ.get('REPLICATE_API_TOKEN'):
             sys.exit('ERROR: falta REPLICATE_API_TOKEN: sin él no se puede hacer la voz de Victoria (no se usa otra voz).')
         return con_minimax(frases, voz)
+    from chatterbox.mtl_tts import ChatterboxMultilingualTTS  # solo si voz_victoria.motor deja de ser minimax (10-nov-2026)
     torch.set_num_threads(os.cpu_count() or 4)
     modelo = ChatterboxMultilingualTTS.from_pretrained(device='cpu')
     oido = WhisperModel('small', device='cpu', compute_type='int8')
