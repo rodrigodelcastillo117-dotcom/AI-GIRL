@@ -5721,7 +5721,7 @@
     "foto": "assets/fotos/video-18-oficina.jpg",
     "etiqueta": "NOTICIA · TU DINERO",
     "titulo": "Intervinieron un banco y casi 3 millones no podían sacar su dinero. ¿Y en México?",
-    "voz": "Intervinieron un banco y casi tres millones de personas no podían sacar su dinero. ¿Te puede pasar en México?",
+    "voz": "Intervinieron un banco y casi tres millones no podían sacar su dinero. ¿Y en México?",
     "gancho_tipo": "dato",
     "foto_reel": "assets/fotos/yate-blazer-blanco.jpg"
    },
@@ -5729,37 +5729,37 @@
     {
      "titulo": "Lo que pasó",
      "texto": "El 3 de noviembre, el Banco Central del Paraguay intervino Ueno, banco digital con casi 3 millones de clientes. Su app, tarjetas y transferencias dejaron de funcionar.\n\nBanco Central del Paraguay · AP · Bloomberg Línea",
-     "voz": "Este mes, en Paraguay, intervinieron un banco digital con casi tres millones de clientes. Dejaron de funcionar la app, las tarjetas y las transferencias."
+     "voz": "En Paraguay, la app, las tarjetas y las transferencias de ese banco dejaron de funcionar."
     },
     {
      "titulo": "En México: el IPAB",
      "texto": "Si tu banco quiebra, el IPAB te paga tus depósitos hasta 400 mil UDIS por persona y por banco: más de 3.5 millones de pesos.\n\nLey de Protección al Ahorro Bancario, art. 11 · IPAB",
-     "voz": "En México, si tu banco quiebra, el seguro de depósitos te paga hasta unos tres punto cinco millones de pesos por persona y por banco."
+     "voz": "En México, si tu banco quiebra, el seguro te paga hasta unos tres millones y medio de pesos."
     },
     {
      "titulo": "Ya pasó aquí",
      "texto": "En octubre de 2025 liquidaron CIBanco. El IPAB empezó a pagar 3 días después y el 99.4% de los ahorradores quedó cubierto completo.\n\nCNBV · IPAB (oct-2025)",
-     "voz": "Y ya pasó aquí: en 2025 liquidaron CIBanco, y el seguro empezó a pagar tres días después."
+     "voz": "Ya pasó aquí: en 2025 liquidaron CIBanco y el seguro empezó a pagar tres días después."
     },
     {
      "titulo": "Por persona, por banco",
      "texto": "Tres cuentas en el mismo banco no triplican la protección. Dinero en dos bancos distintos sí queda protegido en cada uno.\n\nIPAB",
-     "voz": "Ojo: tres cuentas en el mismo banco no triplican la protección. En dos bancos distintos, sí cuenta en cada uno."
+     "voz": "Tres cuentas en el mismo banco no triplican la protección."
     },
     {
      "titulo": "SOFIPO: tope más bajo",
      "texto": "En una SOFIPO autorizada por la CNBV, el seguro (Prosofipo) cubre hasta 25 mil UDIS: unos 220 mil pesos. Mucho menos que en un banco.\n\nLey de Ahorro y Crédito Popular, art. 105 · CNBV",
-     "voz": "En una sofipo autorizada el seguro cubre mucho menos: unos doscientos veinte mil pesos."
+     "voz": "En una sofipo el seguro cubre mucho menos: unos doscientos veinte mil pesos."
     },
     {
      "titulo": "Saldo en app: no es depósito",
      "texto": "El saldo de una billetera de pago electrónico no es un depósito bancario: el IPAB no lo cubre. Revisa si tu app es banco, SOFIPO o billetera.\n\nLey Fintech",
-     "voz": "Y el saldo de una billetera de pago en una app no es un depósito: ese no lo cubre el seguro. Revisa qué es tu app."
+     "voz": "El saldo de una billetera en una app no lo cubre el seguro."
     },
     {
      "titulo": "Mi regla",
      "texto": "Nunca más dinero en un solo lugar de lo que cubre su seguro, y deja margen para los intereses. Si te pasas, repártelo.\n\nOpinión de Victoria",
-     "voz": "Mi regla: nunca más dinero en un solo lugar de lo que cubre su seguro."
+     "voz": "Mi regla: nunca más dinero en un lugar de lo que cubre su seguro."
     }
    ],
    "cierre": {
@@ -5771,8 +5771,8 @@
    "titulo_post": "¿Tu dinero está seguro si tu banco quiebra?",
    "texto_post": "Intervinieron un banco en Paraguay y casi 3 millones no podían sacar su dinero. ¿Te puede pasar en México? 🏦\n1. El 3 de noviembre, el Banco Central del Paraguay intervino Ueno: dejaron de funcionar su app, tarjetas y transferencias.\n2. En México, si tu banco quiebra, el IPAB te paga tus depósitos hasta 400 mil UDIS por persona y por banco (más de 3.5 millones de pesos).\n3. Ya pasó: en octubre de 2025 liquidaron CIBanco y el IPAB empezó a pagar 3 días después.\n4. Tres cuentas en el mismo banco no triplican la protección; dos bancos distintos, sí.\n5. En una SOFIPO autorizada, el seguro cubre hasta 25 mil UDIS (unos 220 mil pesos).\n6. El saldo de una billetera de pago en una app no es depósito: el IPAB no lo cubre.\nMi regla: nunca más dinero en un solo lugar de lo que cubre su seguro, con margen para los intereses.\nCapital guarda sus croquetas en tres escondites distintos. Diversificado desde cachorro.\n\n📚 Banco Central del Paraguay · Ley de Protección al Ahorro Bancario · IPAB · Ley de Ahorro y Crédito Popular · Ley Fintech\n💬 ¿Dónde guardas tu dinero? Comenta BANCO, SOFIPO o APP. Te contesto a todos.\n🔖 Guárdalo para cuando abras una cuenta nueva.\n📩 Mándaselo a quien tiene todo su dinero en una sola app.",
    "seo": {
-    "palabra_clave": "ipab cuanto protege",
-    "titulo": "¿Tu dinero está seguro si tu banco quiebra? 🏦",
+    "palabra_clave": "ipab cuánto protege",
+    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
     "tags_concretas": [
      "ipab cuanto protege",
      "que pasa si mi banco quiebra",
@@ -5799,9 +5799,14 @@
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (intervención en vez de quiebra, sin cajeros, 3.5 millones, 220 mil, SOFIPO autorizada, margen por intereses).",
    "personaje": "2026-11-10: noticia de dinero en 24-48 h (plan del 10-nov), postura de Victoria marcada como opinión, humor con Capital y pregunta para comentar",
    "publica_utc_por_red": {
-    "tt": "2026-11-10T17:00:00Z"
+    "tt": "2026-11-10T17:00:00Z",
+    "yt": "2026-11-11T02:00:00Z"
    },
-   "publica_utc": "2026-11-10T17:00:00Z"
+   "publica_utc": "2026-11-10T17:00:00Z",
+   "youtube": "https://youtube.com/shorts/0WFSr4BHo-o",
+   "facebook": {
+    "publica_utc": "2026-11-11T02:00:00Z"
+   }
   },
   {
    "id": "c66",
@@ -5809,7 +5814,6 @@
    "tema": "serie_alcanza_salario_minimo_1",
    "pilar": "finanzas",
    "fondo": "assets/fondos/gimnasio-ciudad.jpg",
-   "serie": "alcanza_salario_minimo",
    "parte": 1,
    "ventana": {
     "desde": "2026-11-10",
@@ -5859,8 +5863,8 @@
    "titulo_post": "¿Alcanza el salario mínimo? Parte 1",
    "texto_post": "¿Alcanza el salario mínimo para vivir un mes en México? Hago las cuentas en 5 partes. Parte 1: cuánto te llega. 💵\n1. $315.04 al día desde el 1 de enero de 2026: $9,582.47 al mes (+13% contra 2025).\n2. En la frontera norte: $440.87 al día, $13,409.80 al mes.\n3. No se le retiene ISR y la cuota del IMSS la paga tu patrón: te llega completo, salvo descuentos de Infonavit, Fonacot o pensión alimenticia.\n4. Son unos $4,791 por quincena (promedio) para renta, comida, transporte y todo lo demás.\n5. Parte 2: la renta. Parte 3: la comida. Parte 4: el transporte. Parte 5: mi veredicto.\nCapital ya hizo su presupuesto: 100% croquetas. A él sí le alcanza.\n\n📚 CONASAMI · DOF (dic-2025) · Ley del ISR, art. 96 · Ley del Seguro Social, art. 36 · LFT, art. 97\n💬 ¿Cuánto pagas de renta y en qué ciudad? Comenta y lo uso en la parte 2. Te contesto a todos.\n🔖 Guárdalo y sígueme para no perderte la parte 2.\n📩 Mándaselo a quien dice que con el mínimo sí se vive bien.",
    "seo": {
-    "palabra_clave": "salario minimo 2026",
-    "titulo": "¿Alcanza el salario mínimo 2026? Parte 1 💵",
+    "palabra_clave": "salario mínimo 2026",
+    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
     "tags_concretas": [
      "salario minimo 2026",
      "salario minimo 2026 mensual",
@@ -5887,9 +5891,15 @@
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (descuentos del art. 97 LFT, quincena en promedio, fuentes oficiales primero).",
    "personaje": "2026-11-10: serie por capítulos (plan del 10-nov) para que sigan la cuenta; cuentas, no experiencia inventada; la parte 2 usa las rentas que comenten",
    "publica_utc_por_red": {
-    "tt": "2026-11-11T02:00:00Z"
+    "tt": "2026-11-11T02:00:00Z",
+    "yt": "2026-11-10T23:00:00Z"
    },
-   "publica_utc": "2026-11-11T02:00:00Z"
+   "publica_utc": "2026-11-11T02:00:00Z",
+   "serie_carruseles": "alcanza_salario_minimo",
+   "youtube": "https://youtube.com/shorts/sWemM2dSuAw",
+   "facebook": {
+    "publica_utc": "2026-11-10T23:00:00Z"
+   }
   }
  ]
 }

@@ -187,5 +187,14 @@
   "creditos_usados": 60,
   "creditos_restantes": 4209,
   "detalle": "Rutina 9-nov (lunes, primer día como manager): TikTok c12 9:00 y c11 13:00 (primer día con 2 carruseles); Reel de Instagram c16 15:00 (cambiado de c09 por el hit de c16: 3,361 vistas en TikTok en 15 h, 14 compartidos); short de c11 en YouTube 20:00. c04 marcado fuera de tema. Escritos c52-c54 'Guarda esto' (en revisión). 60 créditos en 3 fotos de Capital (9-nov madrugada)."
+ },
+ {
+  "fecha_utc": "2026-11-10T13:20:00Z",
+  "tipo": "carrusel",
+  "video_id": null,
+  "resultado": "programado",
+  "creditos_usados": 0,
+  "creditos_restantes": 4209,
+  "detalle": "Rutina 10-nov (plan congelado 10→24-nov): TikTok c65 11:00 (noticia: tu dinero si tu banco quiebra), c43 17:00 (aguinaldo), c66 20:00 (serie salario mínimo parte 1). Reels de Instagram con música (Meta, recordatorios): c12 11:00 y c43 15:00. Shorts de YouTube: c43 12:00, c66 17:00, c65 20:00. Facebook: c12 11:00, c43 15:00, c66 17:00, c65 20:00. Arreglos: el entorno de voz perdió faster-whisper/num2words (reinstalados) y voz_victoria cargaba Chatterbox aunque no se usa; el revisor de voz ahora acepta z/s/c y México/Méjico. Videos de Victoria listos: 18 y C1 (no se generó otro). Sin comentarios pendientes en YouTube ni Instagram."
  }
 ]
