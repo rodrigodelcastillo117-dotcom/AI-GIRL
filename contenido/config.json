@@ -435,8 +435,10 @@
    "20",
    "21"
   ],
-  "hecho": false,
-  "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20."
+  "hecho": true,
+  "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20. 10-nov-2026: se armó con 6 carruseles de aguinaldo (c16, c52, c30, c05, c43, c15) con la voz real de Victoria, 3:57, horizontal, con capítulos y miniatura; sale el 12-nov 19:00 (búsquedas de aguinaldo en subida). 0 créditos.",
+  "youtube": "https://youtube.com/watch?v=Tg6QnFhSsek",
+  "publica_utc": "2026-11-13T01:00:00Z"
  },
  "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov.",
  "publicaciones_por_dia": {
