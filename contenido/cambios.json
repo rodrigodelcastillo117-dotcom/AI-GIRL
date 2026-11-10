@@ -88,5 +88,11 @@
   "cambio": "La pregunta para comentar va en la 2a línea del texto (TikTok e Instagram)",
   "por_que": "TikTok no acepta el primer comentario de Publer y la pregunta quedaba escondida: c16 tuvo 3,361 vistas y 0 comentarios",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "\"Mándaselo a…\" se publica como \"👥 Etiqueta a…\" en la 3a línea, debajo de la pregunta",
+  "por_que": "Etiquetar cuenta como comentario y le avisa al amigo; mandar por privado no deja comentario",
+  "vigilar": "tt"
  }
 ]

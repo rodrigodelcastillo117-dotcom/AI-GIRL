@@ -53,6 +53,9 @@ y cada video cierra con **una sola** de estas, y el texto del post la repite con
 - **Sí o no:** "¿Ya te pagaron? Comenta SÍ o NO."
 - **A cambio de algo:** "Comenta tu sueldo y te digo cuánto aguinaldo te toca."
 
+Al publicar (10-nov-2026), la pregunta va en la 2a línea del texto y "📩 Mándaselo a…" sale como "👥 Etiqueta a…" en la 3a
+(publer.pregunta_arriba): etiquetar a alguien cuenta como comentario y le avisa al etiquetado. Se escribe igual que siempre.
+
 Prohibido: "¿Qué opinas?", "Te leo", "¿Ya lo sabías?" (se contestan en la cabeza y nadie escribe). Nunca pedir
 que nombren una empresa o una app (riesgo de difamación).
 

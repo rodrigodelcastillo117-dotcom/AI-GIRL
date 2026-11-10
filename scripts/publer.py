@@ -92,11 +92,13 @@ def pregunta_arriba(texto):
     if not texto:
         return texto
     lineas = texto.split('\n')
-    i = next((k for k, l in enumerate(lineas) if l.strip().startswith('💬')), None)
-    if i is None or i <= 1:
-        return texto
-    pregunta = lineas.pop(i)
-    return '\n'.join([lineas[0], pregunta] + lineas[1:])
+    # "Mándaselo a…" se vuelve "Etiqueta a…" (10-nov-2026): etiquetar cuenta como comentario y le avisa al etiquetado.
+    lineas = [re.sub(r'^(\s*)📩\s*M[áa]ndaselo a\b', r'\1👥 Etiqueta a', l) for l in lineas]
+    arriba = [l for l in lineas[1:] if l.strip().startswith(('💬', '👥'))]
+    arriba.sort(key=lambda l: 0 if l.strip().startswith('💬') else 1)
+    if not arriba:
+        return '\n'.join(lineas)
+    return '\n'.join([lineas[0]] + arriba + [l for l in lineas[1:] if l not in arriba])
 
 
 def texto_facebook(texto, enlace=None, etiqueta=None):
