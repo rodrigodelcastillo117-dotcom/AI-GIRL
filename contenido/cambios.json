@@ -82,5 +82,11 @@
   "cambio": "\"El enlace está en mi perfil\" cambia por la dirección escrita (victoriatheceo.vercel.app) mientras la bio no tenga enlace",
   "por_que": "Los posts mandaban a una bio sin enlace",
   "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "La pregunta para comentar va en la 2a línea del texto (TikTok e Instagram)",
+  "por_que": "TikTok no acepta el primer comentario de Publer y la pregunta quedaba escondida: c16 tuvo 3,361 vistas y 0 comentarios",
+  "vigilar": "tt"
  }
 ]

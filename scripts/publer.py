@@ -86,6 +86,19 @@ def sin_perfil(texto, proveedor):
     return re.sub(r'(el )?enlace (est[áa] )?en mi perfil\s*👆?', 'victoriatheceo.vercel.app', texto)
 
 
+def pregunta_arriba(texto):
+    """La pregunta para comentar ("💬 …") va en la segunda línea: TikTok e Instagram solo enseñan las primeras líneas
+    sin tocar "más", y TikTok no acepta el primer comentario de Publer (10-nov-2026: 3,361 vistas y 0 comentarios en c16)."""
+    if not texto:
+        return texto
+    lineas = texto.split('\n')
+    i = next((k for k, l in enumerate(lineas) if l.strip().startswith('💬')), None)
+    if i is None or i <= 1:
+        return texto
+    pregunta = lineas.pop(i)
+    return '\n'.join([lineas[0], pregunta] + lineas[1:])
+
+
 def texto_facebook(texto, enlace=None, etiqueta=None):
     """Pie de Facebook: el de Instagram, pero ahí los enlaces sí se pueden tocar (9-nov-2026). "enlace en mi perfil"
     se cambia por el enlace directo con ?ref=fb; si no lo trae, se agrega el del carrusel o el de la página."""
@@ -213,7 +226,7 @@ def armar_post(cuentas, media_id, texto, titulo, cuando, comentario=None):
     puede poner al crear el post: el PUT de Publer solo cambia texto y título."""
     redes = {}
     if len({red(c) for c in cuentas}) == 1:  # una red por petición (lo normal): texto y comentario sin "enlace en mi perfil"
-        texto, comentario = sin_perfil(texto, red(cuentas[0])), sin_perfil(comentario, red(cuentas[0]))
+        texto, comentario = pregunta_arriba(sin_perfil(texto, red(cuentas[0]))), sin_perfil(comentario, red(cuentas[0]))
     for proveedor in {red(c) for c in cuentas}:
         media = [{'id': media_id, 'type': 'video'}]
         if proveedor == 'instagram':
