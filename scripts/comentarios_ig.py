@@ -3,6 +3,8 @@
 Uso: python comentarios_ig.py pendientes                 comentarios de otros sin respuesta de @victoriatheceo
      python comentarios_ig.py responder <id> "texto"     responde como @victoriatheceo
      python comentarios_ig.py privado <id> "texto"       le manda un mensaje privado a quien comentó
+     python comentarios_ig.py mensajes                   mensajes privados sin respuesta (últimas 23 h)
+     python comentarios_ig.py contestar <para> "texto"   contesta ese mensaje privado como Victoria
      python comentarios_ig.py guias                      a quien comentó GUÍA le manda el enlace por mensaje
 
 El token (app "Victoria Comentarios" de Meta, usuario del sistema, no caduca) NO está en el repo ni en una variable:
@@ -112,6 +114,42 @@ def guias():
     print(f'{len(hechos)} guía(s) entregadas en total.')
 
 
+def mensajes_pendientes():
+    """Mensajes privados de otras personas cuyo último mensaje no tiene respuesta de Victoria, dentro de las 24 h en que
+    Meta deja contestar (10-nov-2026). Victoria solo contesta a quien le escribió primero."""
+    import datetime
+    campos = 'id,updated_time,participants,messages.limit(10){id,from,message,created_time}'
+    datos = _http('GET', f'{IG_USUARIO}/conversations?platform=instagram&fields={urllib.parse.quote(campos)}&limit=50')
+    ahora = datetime.datetime.now(datetime.timezone.utc)
+    salida = []
+    for c in datos.get('data', []):
+        ms = (c.get('messages') or {}).get('data', [])
+        if not ms or (ms[0].get('from') or {}).get('username') == YO:
+            continue
+        cuando = datetime.datetime.strptime(ms[0]['created_time'][:19], '%Y-%m-%dT%H:%M:%S').replace(tzinfo=datetime.timezone.utc)
+        if (ahora - cuando).total_seconds() > 23 * 3600:
+            continue
+        sin_contestar = []
+        for m in ms:
+            if (m.get('from') or {}).get('username') == YO:
+                break
+            sin_contestar.append(m.get('message') or '[foto, audio o publicación compartida]')
+        salida.append({'para': ms[0]['from']['id'], 'autor': ms[0]['from'].get('username'), 'fecha': ms[0]['created_time'],
+                       'mensajes': list(reversed(sin_contestar))})
+    return salida
+
+
+def contestar_mensaje(para, texto):
+    cuerpo = json.dumps({'recipient': {'id': para}, 'message': {'text': texto}}).encode()
+    req = urllib.request.Request(f'{GRAPH}/{IG_USUARIO}/messages', data=cuerpo, method='POST',
+                                 headers={'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode()).get('message_id')
+    except urllib.error.HTTPError as e:
+        sys.exit(f'ERROR {e.code} al contestar el mensaje: {e.read().decode()[:300]}')
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
@@ -123,6 +161,10 @@ def main():
         print('ok', privado(sys.argv[2], sys.argv[3]))
     elif sys.argv[1] == 'guias':
         guias()
+    elif sys.argv[1] == 'mensajes':
+        print(json.dumps(mensajes_pendientes(), ensure_ascii=False, indent=1))
+    elif sys.argv[1] == 'contestar' and len(sys.argv) == 4:
+        print('ok', contestar_mensaje(sys.argv[2], sys.argv[3]))
     else:
         sys.exit(__doc__)
 

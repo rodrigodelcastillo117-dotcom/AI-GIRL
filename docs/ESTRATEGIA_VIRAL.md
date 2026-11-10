@@ -99,3 +99,12 @@ comentarios corre primero `python3 scripts/comentarios_ig.py guias`: a cada come
 privado el enlace que va con el post (aguinaldo, fondo de emergencia, deudas, 50/30/20 o el sitio, con ?ref=ig-dm) y le
 contesta en público "te lo mandé por mensaje". Si Meta no deja mandar el privado, la respuesta pública lleva el enlace.
 Queda anotado en contenido/guias_ig.json. Solo a quien lo pidió comentando; nunca mensajes a nadie más.
+
+## Mensajes privados de Instagram (10-nov-2026)
+
+Rodrigo prendió el acceso a mensajes. La rutina de comentarios corre `python3 scripts/comentarios_ig.py mensajes` y
+contesta cada uno con `contestar <para> "texto"`, en la voz de Victoria y con las mismas reglas de los comentarios. Si
+piden la guía o una calculadora, va el enlace con ?ref=ig-dm. Solo a quien escribió primero y dentro de las 24 h que
+deja Meta. Nunca mensajes de prospección ni a quien no escribió. Si alguien pide hablar con una persona, o algo que no es
+de dinero (colaboraciones, prensa, quejas), se le contesta que su mensaje pasa al equipo y se le avisa a Rodrigo en la
+línea final.

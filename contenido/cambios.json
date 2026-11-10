@@ -100,5 +100,11 @@
   "cambio": "Instagram: \"Comenta GUÍA y te lo mando por mensaje\" en vez de la dirección escrita; quien comenta GUÍA recibe el enlace por mensaje privado y una respuesta pública",
   "por_que": "Suma comentarios reales (hoy casi 0) y entrega el enlace correcto (aguinaldo, deudas, 50/30/20...)",
   "vigilar": "ig"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Victoria contesta los mensajes privados de Instagram cada 2 h (solo a quien le escribió)",
+  "por_que": "Un mensaje contestado convierte a un curioso en seguidor; Instagram premia las cuentas que conversan",
+  "vigilar": "ig"
  }
 ]
