@@ -2,6 +2,8 @@
 
 Uso: python comentarios_ig.py pendientes                 comentarios de otros sin respuesta de @victoriatheceo
      python comentarios_ig.py responder <id> "texto"     responde como @victoriatheceo
+     python comentarios_ig.py privado <id> "texto"       le manda un mensaje privado a quien comentó
+     python comentarios_ig.py guias                      a quien comentó GUÍA le manda el enlace por mensaje
 
 El token (app "Victoria Comentarios" de Meta, usuario del sistema, no caduca) NO está en el repo ni en una variable:
 lo pone el proxy de la sesión en cada petición a graph.facebook.com (secreto de red del entorno). Por eso aquí no se
@@ -17,6 +19,7 @@ Las reglas de la respuesta son las mismas de comentarios.py (YouTube) y docs/PER
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -56,6 +59,59 @@ def responder(comentario, texto):
     return _http('POST', f'{comentario}/replies', {'message': texto}).get('id')
 
 
+def privado(comentario, texto):
+    """Mensaje privado a quien dejó el comentario (respuesta privada de Instagram; solo una por comentario y dentro de
+    7 días). Para "Comenta GUÍA y te la mando por mensaje" (10-nov-2026)."""
+    cuerpo = json.dumps({'recipient': {'comment_id': comentario}, 'message': {'text': texto}}).encode()
+    req = urllib.request.Request(f'{GRAPH}/{IG_USUARIO}/messages', data=cuerpo, method='POST',
+                                 headers={'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode()).get('message_id')
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'ERROR {e.code} al mandar el mensaje privado: {e.read().decode()[:300]}')
+
+
+SITIO = 'https://victoriatheceo.vercel.app'
+ENLACES = [('aguinaldo', '/aguinaldo'), ('fondo de emergencia', '/fondo-de-emergencia'), ('deuda', '/pagar-deudas'),
+           ('50/30/20', '/regla-50-30-20'), ('presupuesto', '/regla-50-30-20')]
+REGISTRO = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'contenido', 'guias_ig.json')
+
+
+def enlace_para(texto_post):
+    t = (texto_post or '').lower()
+    ruta = next((r for clave, r in ENLACES if clave in t), '')
+    return f'{SITIO}{ruta}?ref=ig-dm'
+
+
+def guias():
+    """Quien comentó GUÍA recibe el enlace por mensaje privado y una respuesta pública corta (suma otro comentario y le
+    avisa que revise sus mensajes). Si Meta no deja mandar el privado, la respuesta pública lleva el enlace."""
+    hechos = json.load(open(REGISTRO)) if os.path.exists(REGISTRO) else []
+    ya = {h['comentario'] for h in hechos}
+    campos = 'id,caption,comments.limit(50){id,text,username,timestamp}'
+    media = _http('GET', f'{IG_USUARIO}/media?fields={urllib.parse.quote(campos)}&limit=25')
+    for m in media.get('data', []):
+        for c in (m.get('comments') or {}).get('data', []):
+            texto = (c.get('text') or '').lower().replace('í', 'i')
+            if c.get('username') == YO or c['id'] in ya or 'guia' not in texto:
+                continue
+            enlace, nombre = enlace_para(m.get('caption')), c.get('username') or ''
+            try:
+                mid = privado(c['id'], f'¡Hola{" @" + nombre if nombre else ""}! Aquí está lo que te prometí 👇\n{enlace}\n\n'
+                                       'Si te sirve, cuéntame en el post qué te pareció. — Victoria')
+                publica, via = responder(c['id'], '¡Listo! Te lo mandé por mensaje 📩 Revisa tus solicitudes si no lo ves.'), 'privado'
+            except RuntimeError as e:
+                print(e)
+                mid, via = None, 'publico'
+                publica = responder(c['id'], f'¡Aquí lo tienes! 👉 {enlace.replace("https://", "")}')
+            hechos.append({'comentario': c['id'], 'autor': nombre, 'enlace': enlace, 'via': via, 'mensaje': mid,
+                           'respuesta': publica, 'fecha': c.get('timestamp')})
+            print(f'ok {via}: @{nombre} → {enlace}')
+    json.dump(hechos, open(REGISTRO, 'w'), ensure_ascii=False, indent=1)
+    print(f'{len(hechos)} guía(s) entregadas en total.')
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
@@ -63,6 +119,10 @@ def main():
         print(json.dumps(pendientes(), ensure_ascii=False, indent=1))
     elif sys.argv[1] == 'responder' and len(sys.argv) == 4:
         print('ok', responder(sys.argv[2], sys.argv[3]))
+    elif sys.argv[1] == 'privado' and len(sys.argv) == 4:
+        print('ok', privado(sys.argv[2], sys.argv[3]))
+    elif sys.argv[1] == 'guias':
+        guias()
     else:
         sys.exit(__doc__)
 

@@ -83,6 +83,8 @@ def sin_perfil(texto, proveedor):
     corta = {'instagram': 'ig', 'tiktok': 'tt'}.get(proveedor)
     if not texto or not corta or (CONFIG.get('bio_con_enlace') or {}).get(corta):
         return texto
+    if corta == 'ig' and CONFIG.get('guia_por_mensaje_ig'):  # Instagram: comentar GUÍA trae el enlace por mensaje (comentarios_ig.py privado), y suma comentarios
+        return re.sub(r'(el )?enlace (est[áa] )?en mi perfil\s*👆?', 'comenta GUÍA y te lo mando por mensaje 📩', texto)
     return re.sub(r'(el )?enlace (est[áa] )?en mi perfil\s*👆?', 'victoriatheceo.vercel.app', texto)
 
 
