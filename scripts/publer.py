@@ -77,6 +77,15 @@ def workspace_id():
     return ws[0]['id']
 
 
+def sin_perfil(texto, proveedor):
+    """Mientras la bio de esa red no tenga el enlace (config.json → bio_con_enlace), "el enlace está en mi perfil" apunta a
+    nada: se cambia por la dirección escrita, que se puede copiar o teclear (10-nov-2026)."""
+    corta = {'instagram': 'ig', 'tiktok': 'tt'}.get(proveedor)
+    if not texto or not corta or (CONFIG.get('bio_con_enlace') or {}).get(corta):
+        return texto
+    return re.sub(r'(el )?enlace (est[áa] )?en mi perfil\s*👆?', 'victoriatheceo.vercel.app', texto)
+
+
 def texto_facebook(texto, enlace=None, etiqueta=None):
     """Pie de Facebook: el de Instagram, pero ahí los enlaces sí se pueden tocar (9-nov-2026). "enlace en mi perfil"
     se cambia por el enlace directo con ?ref=fb; si no lo trae, se agrega el del carrusel o el de la página."""
@@ -203,6 +212,8 @@ def armar_post(cuentas, media_id, texto, titulo, cuando, comentario=None):
     Publer). networks.instagram.firstComment lo aceptaba pero lo ignoraba (video 02, 31-oct: comments vacío). Solo se
     puede poner al crear el post: el PUT de Publer solo cambia texto y título."""
     redes = {}
+    if len({red(c) for c in cuentas}) == 1:  # una red por petición (lo normal): texto y comentario sin "enlace en mi perfil"
+        texto, comentario = sin_perfil(texto, red(cuentas[0])), sin_perfil(comentario, red(cuentas[0]))
     for proveedor in {red(c) for c in cuentas}:
         media = [{'id': media_id, 'type': 'video'}]
         if proveedor == 'instagram':

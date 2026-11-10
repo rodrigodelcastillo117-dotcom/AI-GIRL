@@ -28,6 +28,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from publer_carrusel import RUTA, comentario_ig, texto_reel  # noqa: E402
+from publer import sin_perfil  # noqa: E402
 
 GRAPH = 'https://graph.facebook.com/v22.0'
 IG = '17841478105608541'  # @victoriatheceo
@@ -101,7 +102,7 @@ def preparar(c, config, todos):
         sys.exit(f'ERROR: falta el video de {c["id"]}: corre primero carrusel_video.py short {c["id"]}')
     audio = elegir_audio(todos)
     url = subir_medio(video, f'{c["id"]}-reel-{int(time.time())}.mp4')  # nombre único: el CDN de GitHub guarda copias viejas
-    texto = texto_reel(c, config)
+    texto = sin_perfil(texto_reel(c, config), 'instagram')
     contenedor = graph('POST', f'{IG}/media', {
         'media_type': 'REELS', 'video_url': url, 'caption': texto, 'share_to_feed': 'true',
         'audio_configuration': json.dumps({'audio_id': audio['audio_id'], 'audio_volume': VOLUMEN_MUSICA,
@@ -157,7 +158,7 @@ def main():
               f"{audio.get('display_artist')}; NO se publicó.")
         return
     media = graph('POST', f'{IG}/media_publish', {'creation_id': contenedor})['id']
-    comentario = comentario_ig(c, config)
+    comentario = sin_perfil(comentario_ig(c, config), 'instagram')
     if comentario:
         graph('POST', f'{media}/comments', {'message': comentario})
     ahora = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')

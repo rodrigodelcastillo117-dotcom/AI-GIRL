@@ -481,5 +481,10 @@
  "fotos_con_texto": [
   "assets/fotos/enero-oficina-casa.jpg"
  ],
- "nota_fotos_con_texto": "10-nov-2026, Rodrigo: un calendario de fondo decía \"January\" en la portada de c64: \"que no vuelva a pasar, déjalo así\". Estas fotos ya no se eligen solas para portada ni Reel (carrusel.py); las que ya las usan se quedan. Toda foto nueva pasa por scripts/revisar_texto_foto.py antes de guardarse en assets/fotos/."
+ "nota_fotos_con_texto": "10-nov-2026, Rodrigo: un calendario de fondo decía \"January\" en la portada de c64: \"que no vuelva a pasar, déjalo así\". Estas fotos ya no se eligen solas para portada ni Reel (carrusel.py); las que ya las usan se quedan. Toda foto nueva pasa por scripts/revisar_texto_foto.py antes de guardarse en assets/fotos/.",
+ "bio_con_enlace": {
+  "ig": false,
+  "tt": false
+ },
+ "nota_bio_con_enlace": "10-nov-2026: los posts decían \"el enlace está en mi perfil\" y la bio no tenía enlace. Mientras aquí diga false, publer.sin_perfil cambia esa frase por la dirección escrita (victoriatheceo.vercel.app) en Instagram y TikTok. Cuando Rodrigo ponga el enlace en la bio de esa red, se cambia a true."
 }

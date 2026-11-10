@@ -76,5 +76,11 @@
   "cambio": "Subtítulos palabra por palabra en shorts y Reels de carrusel (franja de abajo, palabra en dorado)",
   "por_que": "Los shorts de carrusel retenían 20-62% en YouTube; los videos de Victoria con subtítulos, 70-108%",
   "vigilar": "yt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "\"El enlace está en mi perfil\" cambia por la dirección escrita (victoriatheceo.vercel.app) mientras la bio no tenga enlace",
+  "por_que": "Los posts mandaban a una bio sin enlace",
+  "vigilar": "todas"
  }
 ]
