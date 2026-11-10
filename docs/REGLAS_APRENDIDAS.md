@@ -82,3 +82,5 @@ dice "Aquí". Cuando los datos propios contradigan una regla, mandan los datos p
     propios y aplicarlas a quien escribe el título.
 33. Instagram y TikTok no dan métricas fiables por API: pedir capturas a Rodrigo cuando hagan falta.
 34. Nunca una alarma falsa ni decir "publicado" sin comprobarlo en la red.
+35. Las fotos no llevan letras legibles, y nunca en otro idioma: un calendario que decía "January" se coló en la portada
+    de c64 (10-nov-2026). Toda foto nueva pasa por scripts/revisar_texto_foto.py; las que fallan van a config.json → fotos_con_texto.

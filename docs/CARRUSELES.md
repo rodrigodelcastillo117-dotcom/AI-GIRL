@@ -93,6 +93,8 @@ lugar de lujo vacío, sin gente ni logotipos (30 créditos).
    portada sin Victoria, foto repetida). Si algo falla, se corrige; nunca se publica sin verlo.
 7. **Revisión antes de `listo`**: un segundo agente compara cada dato con su fuente y lee las
    diapositivas dibujadas (texto cortado, faltas, números que no cuadran). Solo entonces `listo`.
+   También corre `scripts/revisar_texto_foto.py` sobre las fotos del carrusel (portada, foto_reel y memes): ninguna
+   foto puede tener letras legibles (calendarios, letreros, pantallas), y menos en inglés (10-nov-2026).
 
 ## Música
 

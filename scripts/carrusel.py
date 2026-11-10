@@ -120,8 +120,13 @@ def lienzo_oscuro(c):
     return Image.blend(foto, Image.new('RGB', (ANCHO, ALTO), NEGRO), 0.8)
 
 
+def con_texto():
+    """Fotos con letras legibles (config.json → fotos_con_texto, revisar_texto_foto.py): no se eligen a pantalla completa."""
+    return set(json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('fotos_con_texto', []))
+
+
 def elegir_foto(c, todos):
-    usadas = {x['portada']['foto'] for x in todos if x['id'] != c['id']}
+    usadas = {x['portada']['foto'] for x in todos if x['id'] != c['id']} | con_texto()
     fotos = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'fotos', '*.jpg')), key=os.path.getmtime, reverse=True)
     libre = next((f for f in fotos if os.path.relpath(f, RAIZ) not in usadas), None)
     if libre:
@@ -337,6 +342,7 @@ def cierre(c, n, total):
 def foto_reel(c, todos):
     """Otra foto de Victoria para la portada del Reel: la que lleva más tiempo sin salir, nunca la del carrusel."""
     fotos = sorted(os.path.relpath(f, RAIZ) for f in glob.glob(os.path.join(RAIZ, 'assets', 'fotos', '*.jpg')))
+    fotos = [f for f in fotos if f not in con_texto()] or fotos
     otras = [f for f in fotos if f != c['portada']['foto']] or fotos
     ultima = {}
     for x in todos:

@@ -17,7 +17,8 @@ todas; cuando los datos propios digan otra cosa, mandan los propios.
    no existe en la sesión, clónalo por HTTPS público y sigue: publicar no depende del push.
 2. Entorno de Python para subtítulos:
    `python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q faster-whisper num2words mediapipe opencv-python-headless edge-tts pillow`
-   y `apt-get install -y -q libegl1 libgles2` (MediaPipe los necesita para `qa_sync.py`).
+   y `apt-get install -y -q libegl1 libgles2 tesseract-ocr tesseract-ocr-spa` (MediaPipe los necesita para `qa_sync.py`;
+   tesseract, para `revisar_texto_foto.py`).
    Con faster-whisper, decodificar el audio con ffmpeg (ver `scripts/transcribir.py`); la versión
    de PyAV del paquete no acepta rutas de archivo directo.
    Entorno de voz (la voz clonada de Victoria para los videos de carrusel, `scripts/voz_victoria.py`):
@@ -186,7 +187,8 @@ not styled. She wears <vestuario en inglés>. <accion en inglés>, mid-sentence,
 Framed from the chest up, slightly off-center, camera at eye level and close, like a real creator
 filming herself. (NUNCA de cuerpo entero: el 6-nov Wan hizo zoom, Capital salió del cuadro y la boca no se pudo medir.) The Rottweiler of Image 2 (same dog, black leather collar with gold plate) relaxed
 next to her (lying down, looking away, partly visible). Not a studio, not glamorous, not symmetrical,
-no posed look, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark.
+no posed look, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark, no readable words
+anywhere (no calendars, posters, signs, book covers or screens with writing).
 ```
 
 Revisar la imagen (descargarla y verla): cara de Victoria (pelirroja, pecas, ojos verdes), Capital
@@ -293,6 +295,10 @@ SÍGUEME"). Solo texto, el audio se copia: la sincronía no cambia. Se publica e
 ```
 python scripts/cierre_pantalla.py videos/video-<id>-SUBTITULADO.mp4 <id> videos/video-<id>-FINAL.mp4
 ```
+**Fotos sin letras** (10-nov-2026, un calendario decía "January" en la portada de c64): antes de guardar una foto nueva en
+assets/fotos/, `python scripts/revisar_texto_foto.py <foto>` tiene que salir sin error. Si encuentra palabras, se rehace la
+foto (o se recorta) y nunca se usa así. Si algo se escapó a una foto ya usada, va a config.json → fotos_con_texto.
+
 Revisar el último cuadro: el cierre no tapa la cara y se lee. En el plan, `archivo` apunta al `-FINAL.mp4`.
 
 Videos de Victoria SIN música de fondo (9-nov-2026): se probó en el 18 y Rodrigo vio la boca fuera de tiempo. La música
