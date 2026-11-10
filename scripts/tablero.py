@@ -404,6 +404,10 @@ def main():
         guardar('cambios.json', json.load(open(os.path.join(RAIZ, 'contenido', 'cambios.json'))))
     except (OSError, ValueError):
         guardar('cambios.json', [])
+    try:  # Comenta hoy (10-nov-2026): videos ajenos para que Rodrigo comente como Victoria en TikTok
+        guardar('comentar_hoy.json', json.load(open(os.path.join(RAIZ, 'contenido', 'comentar_hoy.json'))))
+    except (OSError, ValueError):
+        guardar('comentar_hoy.json', {})
     guardar('aprendizajes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'aprendizajes.json'))))
     json.dump(auditoria, open(os.path.join(SALIDA, 'auditoria.json'), 'w'), ensure_ascii=False, indent=1)
     guardar('mejores_horas.json', [

@@ -21,5 +21,6 @@ export default function handler(req, res) {
     carruseles: leerSiHay('carruseles.json'),
     calendario: leerSiHay('calendario.json'),
     cambios: leerSiHay('cambios.json'),
+    comentar_hoy: leerSiHay('comentar_hoy.json'),
   });
 }

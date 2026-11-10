@@ -502,3 +502,13 @@ h3.sub { font-family: var(--etiqueta); font-size: .72rem; letter-spacing: .16em;
 .vista-muse { margin-top: 6px; }
 .vista-muse summary { cursor: pointer; font-size: .7rem; color: var(--tenue); }
 .vista-muse pre { white-space: pre-wrap; font-size: .68rem; line-height: 1.35; color: var(--texto); max-height: 260px; overflow: auto; border: 1px solid var(--linea); padding: 8px; }
+
+/* Comenta hoy (10-nov-2026) */
+.comentar-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 8px; padding-bottom: 12px; }
+.comentar { border: 1px solid var(--linea); padding: 10px; display: flex; flex-direction: column; gap: 6px; }
+.comentar.hecho { opacity: .45; }
+.comentar .cab small { color: var(--tenue); }
+.comentar .texto { margin: 0; font-size: .9rem; line-height: 1.35; }
+.comentar .nota { margin: 0; font-size: .72rem; }
+.comentar .acciones { display: flex; flex-wrap: wrap; gap: 6px; }
+.comentar .boton { font-size: .72rem; padding: 6px 8px; text-decoration: none; }

@@ -262,6 +262,7 @@ function dibujarTodo() {
   dibujarHorarios(FOTO.auditoria || {}, estado);
   dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
+  dibujarComentarHoy();
   relojes();
 }
 
@@ -1080,3 +1081,49 @@ addEventListener('load', () => {
     $('clave').focus();
   });
 });
+
+// "Comenta hoy" (Rodrigo, 10-nov-2026): TikTok no deja comentar en videos ajenos por API y automatizarlo con un navegador
+// arriesga la cuenta; la rutina de la mañana deja aquí 3-5 videos frescos de cuentas grandes con el comentario ya escrito
+// en la voz de Victoria. Rodrigo copia, abre, pega y marca. Lo marcado se recuerda solo en este celular.
+async function copiarTexto(texto) {
+  try { await navigator.clipboard.writeText(texto); return true; } catch (e) {
+    const t = document.createElement('textarea'); t.value = texto; document.body.appendChild(t); t.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (e2) { /* sin portapapeles */ } t.remove(); return ok;
+  }
+}
+
+function dibujarComentarHoy() {
+  const caja = $('comentar-hoy');
+  if (!caja) return;
+  const datos = FOTO.comentar_hoy || {};
+  const lista = datos.videos || [];
+  const clave = `comentados-${datos.fecha || ''}`;
+  let hechos = [];
+  try { hechos = JSON.parse(localStorage.getItem(clave) || '[]'); } catch (e) { hechos = []; }
+  const guardar = () => { try { localStorage.setItem(clave, JSON.stringify(hechos)); } catch (e) { /* sin memoria local */ } };
+  const resumen = $('comentar-resumen');
+  const pintarResumen = () => {
+    if (resumen) resumen.textContent = lista.length ? `${hechos.length} de ${lista.length} hechos · lista del ${datos.fecha}` : 'la rutina de la mañana deja la lista';
+  };
+  pintarResumen();
+  if (!lista.length) { caja.replaceChildren(crear('p', {className: 'nota', textContent: 'Todavía no hay lista de hoy.'})); return; }
+  caja.replaceChildren(...lista.map((v) => {
+    const tarjeta = crear('div', {className: `comentar${hechos.includes(v.url) ? ' hecho' : ''}`});
+    const copiar = crear('button', {type: 'button', className: 'boton', textContent: '1 · Copiar'});
+    const abrir = crear('a', {className: 'boton', href: v.url, target: '_blank', rel: 'noopener', textContent: '2 · Abrir y pegar'});
+    const marcar = crear('button', {type: 'button', className: 'boton tenue'});
+    const pintarMarca = () => { marcar.textContent = tarjeta.classList.contains('hecho') ? '✓ Hecho' : '3 · Ya lo comenté'; };
+    pintarMarca();
+    copiar.addEventListener('click', async () => { copiar.textContent = (await copiarTexto(v.comentario)) ? 'Copiado ✓' : 'Mantén presionado el texto'; });
+    marcar.addEventListener('click', () => {
+      hechos = hechos.includes(v.url) ? hechos.filter((u) => u !== v.url) : [...hechos, v.url];
+      guardar(); tarjeta.classList.toggle('hecho'); pintarMarca(); pintarResumen();
+    });
+    tarjeta.append(
+      crear('div', {className: 'cab'}, crear('strong', {textContent: `@${v.autor}`}), crear('small', {textContent: ` · ${fmt(v.vistas)} vistas · ${v.tema}`})),
+      crear('p', {className: 'texto', textContent: v.comentario}),
+      crear('p', {className: 'nota', textContent: v.por_que || ''}),
+      crear('div', {className: 'acciones'}, copiar, abrir, marcar));
+    return tarjeta;
+  }));
+}

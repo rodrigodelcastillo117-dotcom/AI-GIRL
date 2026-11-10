@@ -106,5 +106,11 @@
   "cambio": "Victoria contesta los mensajes privados de Instagram cada 2 h (solo a quien le escribió)",
   "por_que": "Un mensaje contestado convierte a un curioso en seguidor; Instagram premia las cuentas que conversan",
   "vigilar": "ig"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "\"Comenta hoy\" en el panel: 3-5 videos frescos de TikTok con el comentario de Victoria listo para que Rodrigo lo pegue",
+  "por_que": "Comentar en cuentas grandes es lo que más trae gente a una cuenta nueva; TikTok no deja hacerlo por API",
+  "vigilar": "tt"
  }
 ]

@@ -108,3 +108,17 @@ piden la guía o una calculadora, va el enlace con ?ref=ig-dm. Solo a quien escr
 deja Meta. Nunca mensajes de prospección ni a quien no escribió. Si alguien pide hablar con una persona, o algo que no es
 de dinero (colaboraciones, prensa, quejas), se le contesta que su mensaje pasa al equipo y se le avisa a Rodrigo en la
 línea final.
+
+## Comenta hoy (TikTok, 10-nov-2026)
+
+TikTok no deja comentar en videos ajenos por API, y automatizarlo con un navegador arriesga la cuenta. Por eso la rutina
+de las 6:37 arma contenido/comentar_hoy.json y Rodrigo comenta a mano desde el panel (sección "Comenta hoy"):
+- Busca con search_viral_videos (revid) videos de TikTok en español de los últimos 3 días: finanzas personales, dinero en
+  pareja, aguinaldo, tarjetas, Buen Fin, bancos, SAT. Varias búsquedas, porque el buscador trae ruido (recetas, deportes).
+- Elige de 3 a 5: 2-3 grandes (100 mil vistas o más, para que mucha gente vea el comentario) y 1-2 chicos de finanzas en
+  México (contestan y devuelven la visita). Nunca de menores de edad, política partidista, tragedias ni videos de odio.
+  Si no hay 3 que valgan la pena, pon los que haya y dilo; no rellenes.
+- Comentario de máximo 150 caracteres (límite de TikTok), en la voz de Victoria, específico al video: suma un dato
+  mexicano comprobado (con fuente oficial verificada con WebSearch), una opinión o una pregunta que invite a contestar.
+  Nunca enlaces, "sígueme", autopromoción, consejos de inversión ni el mismo texto en dos videos.
+- Formato: {"fecha", "videos": [{"url", "autor", "vistas", "comentarios", "publicado", "tema", "comentario", "por_que"}]}.
