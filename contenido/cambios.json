@@ -70,5 +70,11 @@
   "cambio": "5 Guarda esto de diciembre (c60-c64): fechas, vacaciones, compras, tarjeta, enero",
   "por_que": "Repetir el único formato que pegó (c16)",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Subtítulos palabra por palabra en shorts y Reels de carrusel (franja de abajo, palabra en dorado)",
+  "por_que": "Los shorts de carrusel retenían 20-62% en YouTube; los videos de Victoria con subtítulos, 70-108%",
+  "vigilar": "yt"
  }
 ]

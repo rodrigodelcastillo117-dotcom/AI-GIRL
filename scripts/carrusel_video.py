@@ -117,6 +117,54 @@ def unir(rutas, salida, musica=None):
         con_musica(salida, musica)
 
 
+def subtitular(video, c):
+    """Subtítulos palabra por palabra en la franja negra de abajo (10-nov-2026: los shorts de carrusel retenían 20-62% en
+    YouTube y los videos de Victoria, que ya llevan subtítulos, 70-108%). De 3 en 3 palabras, la que suena en dorado. El
+    texto es el escrito de la voz (sin faltas aunque el oído oiga otra cosa); el tiempo de cada palabra se reparte por su
+    largo dentro de la duración de su frase."""
+    carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
+    voces = [c['portada']['voz']] + [d['voz'] for d in c['diapositivas']] + [c['cierre']['voz']]
+    ts = lambda t: f'{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}'
+    eventos, inicio = [], 0.0
+    for i, texto in enumerate(voces):
+        audio = os.path.join(carpeta, f'vozc-{i:02d}.mp3')
+        largo = duracion(audio)
+        palabras = texto.split()
+        pesos = [len(p) + 2 for p in palabras]
+        habla_ini, habla = inicio + 0.08, max(0.3, largo - 0.18)
+        t = habla_ini
+        tiempos = []
+        for p, w in zip(palabras, pesos):
+            d = habla * w / sum(pesos)
+            tiempos.append((p, t, t + d))
+            t += d
+        for j in range(0, len(tiempos), 3):
+            grupo = tiempos[j:j + 3]
+            fin = tiempos[j + 3][1] if j + 3 < len(tiempos) else grupo[-1][2] + 0.15
+            karaoke = ' '.join(r'{\k' + str(max(1, round((b - a) * 100))) + '}' + p for p, a, b in grupo)
+            eventos.append(f'Dialogue: 0,{ts(grupo[0][1])},{ts(fin)},Sub,,0,0,0,,{karaoke}')
+        inicio += largo + AIRE_SHORT
+    ass = video + '.ass'
+    open(ass, 'w').write('''[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,84,&H0042C5F5,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,4,2,2,50,50,95,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+''' + '\n'.join(eventos) + '\n')
+    tmp = video + '.sub.mp4'
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', video, '-vf', f'ass={ass}', '-c:v', 'libx264', '-preset', 'medium',
+                    '-crf', '20', '-c:a', 'copy', tmp], check=True)
+    os.replace(tmp, video)
+    os.remove(ass)
+
+
 def pista_para(cid):
     """Música de fondo del carrusel (Rodrigo, 9-nov-2026: "el chiste es usar sonidos"): una de assets/musica/*.mp3, la
     misma para el mismo carrusel y rotando entre carruseles. Sin pistas en la carpeta, sin música."""
@@ -169,12 +217,19 @@ def main():
             sys.exit(f'ERROR: el short dura {total:.1f} s; máximo {MAXIMO_SHORT}. Acorta las voces del carrusel {c["id"]}.')
         carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
         pista = pista_para(c['id'])
-        unir(rutas, os.path.join(carpeta, 'short.mp4'), pista)
+        short = os.path.join(carpeta, 'short.mp4')
+        unir(rutas, short)
+        if '--sin-subtitulos' not in sys.argv:
+            subtitular(short, c)
+        if pista:
+            con_musica(short, pista)
         portada_reel = os.path.join(carpeta, '00r.png')
         if os.path.exists(portada_reel):  # el Reel de Instagram abre con su propia portada (otra foto y otro título)
             r, _ = tramos(c, portada=portada_reel)
             reel = os.path.join(carpeta, 'reel.mp4')
             unir(r, reel)
+            if '--sin-subtitulos' not in sys.argv:
+                subtitular(reel, c)
             # Sin música, para los días en que Rodrigo lo sube con un sonido de la biblioteca de Instagram
             subprocess.run(['cp', reel, os.path.join(carpeta, 'reel-limpio.mp4')], check=True)
             if pista:

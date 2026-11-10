@@ -37,6 +37,9 @@ fotos a 5-9. Por eso:
 - `scripts/publer_carrusel.py <id> --reel auto`: el `short.mp4` del carrusel como Reel de Instagram, el día de su
   carrusel en fotos, en la franja más fuerte de ese día a 3 h o más de lo demás (guarda `reel_ig`; se mide como `igr`
   y no cuenta en la prueba de horarios). Lleva el mismo primer comentario que el carrusel.
+- Subtítulos (10-nov-2026): `carrusel_video.py short` quema en short.mp4 y reel.mp4 subtítulos de 3 en 3 palabras con la
+  que suena en dorado, en la franja negra de abajo (no tapan la diapositiva). Retención de shorts de carrusel en YouTube:
+  20-62%, contra 70-108% de los videos de Victoria con subtítulos. `--sin-subtitulos` los quita.
 - `scripts/carrusel_video.py short <id>`: short de máximo 57 s para YouTube, con la voz clonada de Victoria (`voz_victoria.py`: cada frase se
   transcribe y se repite si no dice lo que debe; nombres en inglés en `voz` como suenan, "Uórren Bófet") + título, descripción y
   etiquetas; después `youtube.py subir carruseles/<id>/short.mp4 "$(cat titulo.txt)" descripcion_youtube.txt <cuando> --tags tags_youtube.txt` y `youtube.py playlist <video_id> <clave>` (PIPELINE 7b).
