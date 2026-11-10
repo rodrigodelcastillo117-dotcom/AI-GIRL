@@ -91,3 +91,11 @@ se aplica, lo programa y lo apunta en contenido/cambios.json para medir si funci
    haga Claude.
 3. Crear la página de Facebook (kit en perfil/facebook/).
 4. $300–500 MXN para empujar la pieza que mejor rinda cada semana (Claude dice cuál el viernes).
+
+## Comenta GUÍA (Instagram, 10-nov-2026)
+
+En Instagram el texto dice "comenta GUÍA y te lo mando por mensaje" (config.json → guia_por_mensaje_ig). La rutina de
+comentarios corre primero `python3 scripts/comentarios_ig.py guias`: a cada comentario con "guía" le manda por mensaje
+privado el enlace que va con el post (aguinaldo, fondo de emergencia, deudas, 50/30/20 o el sitio, con ?ref=ig-dm) y le
+contesta en público "te lo mandé por mensaje". Si Meta no deja mandar el privado, la respuesta pública lleva el enlace.
+Queda anotado en contenido/guias_ig.json. Solo a quien lo pidió comentando; nunca mensajes a nadie más.

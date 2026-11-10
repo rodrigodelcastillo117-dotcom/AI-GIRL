@@ -487,6 +487,6 @@
   "tt": false
  },
  "nota_bio_con_enlace": "10-nov-2026: los posts decían \"el enlace está en mi perfil\" y la bio no tenía enlace. Mientras aquí diga false, publer.sin_perfil cambia esa frase por la dirección escrita (victoriatheceo.vercel.app) en Instagram y TikTok. Cuando Rodrigo ponga el enlace en la bio de esa red, se cambia a true.",
- "guia_por_mensaje_ig": false,
- "_guia_por_mensaje_ig": "Si es true, en Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace). Apagado hasta que Rodrigo apruebe los mensajes automáticos."
+ "guia_por_mensaje_ig": true,
+ "_guia_por_mensaje_ig": "Rodrigo lo aprobó el 10-nov-2026 ('siii'). En Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace; si Meta no deja, respuesta pública con el enlace)."
 }

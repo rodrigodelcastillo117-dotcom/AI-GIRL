@@ -94,5 +94,11 @@
   "cambio": "\"Mándaselo a…\" se publica como \"👥 Etiqueta a…\" en la 3a línea, debajo de la pregunta",
   "por_que": "Etiquetar cuenta como comentario y le avisa al amigo; mandar por privado no deja comentario",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Instagram: \"Comenta GUÍA y te lo mando por mensaje\" en vez de la dirección escrita; quien comenta GUÍA recibe el enlace por mensaje privado y una respuesta pública",
+  "por_que": "Suma comentarios reales (hoy casi 0) y entrega el enlace correcto (aguinaldo, deudas, 50/30/20...)",
+  "vigilar": "ig"
  }
 ]
