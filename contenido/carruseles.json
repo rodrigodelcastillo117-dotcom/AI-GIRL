@@ -5267,7 +5267,7 @@
   },
   {
    "id": "c60",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "fechas_dinero_diciembre_enero_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/palco-vip.jpg",
@@ -5286,7 +5286,7 @@
    "diapositivas": [
     {
      "titulo": "Sábado 19: tu aguinaldo",
-     "texto": "Te lo deben pagar antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT, art. 87",
+     "texto": "Te lo deben pagar antes del 20 de diciembre: a más tardar el 19, que en 2026 cae en sábado.\n\nLFT, art. 87",
      "voz": "Primero: tu aguinaldo llega a más tardar el sábado diecinueve de diciembre."
     },
     {
@@ -5301,7 +5301,7 @@
     },
     {
      "titulo": "¿Tu pago vence en día inhábil?",
-     "texto": "Si la fecha límite de pago de tu tarjeta o tu crédito cae en día inhábil, puedes pagar el día hábil siguiente.\n\nLTOSF, art. 18 Bis 4",
+     "texto": "Si la fecha límite de pago de tu tarjeta o de otro crédito al consumo cae en día inhábil, puedes pagar el día hábil siguiente.\n\nLTOSF, art. 18 Bis 4",
      "voz": "Cuarto: si el pago de tu tarjeta vence en día inhábil, lo puedes hacer el siguiente día hábil."
     },
     {
@@ -5317,7 +5317,7 @@
    },
    "fuente": "Ley Federal del Trabajo (diputados.gob.mx, texto vigente, última reforma DOF 14-05-2026, https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 87 (aguinaldo 'que deberá pagarse antes del día veinte de diciembre'); art. 74 ('Son días de descanso obligatorio: I. El 1o. de enero; ... VIII. El 25 de diciembre'); art. 75 (los trabajadores que presten servicio en día de descanso obligatorio 'tendrán derecho a que se les pague, independientemente del salario que les corresponda por el descanso obligatorio, un salario doble por el servicio prestado'). El 20 de diciembre de 2026 cae en domingo y el 19 en sábado; el 25 de diciembre de 2026 cae en viernes y el 12 en sábado (calendario). CNBV, 'Disposiciones de carácter general que señalan los días del año 2026 en que las entidades financieras sujetas a la supervisión de la Comisión Nacional Bancaria y de Valores deberán cerrar sus puertas y suspender sus operaciones' (DOF 10-12-2025, https://dof.gob.mx/nota_detalle.php?codigo=5775684&fecha=10/12/2025), art. 1: las instituciones de crédito y demás entidades 'deberán cerrar sus puertas y suspender sus operaciones' el '1o. de enero', ... 'VIII. El 12 y 25 de diciembre. IX. Los sábados y domingos'; art. 3: pueden abrir esos días con aviso a la CNBV. Ley para la Transparencia y Ordenamiento de los Servicios Financieros (diputados.gob.mx, última reforma DOF 14-11-2025, https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf), art. 18 Bis 4: los estados de cuenta de créditos al consumo deben informar la fecha límite de pago 'así como la mención de que en caso de que dicha fecha límite corresponda a un día inhábil, el pago podrá efectuarse el día hábil siguiente'. Banxico, 'SPEI, información' (https://www.banxico.org.mx/servicios/spei_-informacion-banco-mex.html): 'Horario de operación: Esquema 24/7'; 'Operación 24/7'. No se incluyó: el cierre bancario del 1 de enero de 2027 (la CNBV aún no publica las disposiciones de 2027; el 1 de enero sí es descanso obligatorio por la LFT) ni el descuento del predial en enero (lo fija cada municipio o estado; no hay una fuente oficial general). Consultado el 10-nov-2026.",
    "titulo_post": "Las fechas de dinero de diciembre y enero",
-   "texto_post": "Diciembre y enero: las fechas no son detalle, son dinero. Apúntalas antes de que te agarren las fiestas. 🗓️\n1. Sábado 19 de diciembre: a más tardar ese día te pagan el aguinaldo (el 20 cae en domingo).\n2. Viernes 25 de diciembre: los bancos cierran por disposición de la CNBV; el 12 de diciembre también, pero cae en sábado.\n3. 25 de diciembre y 1 de enero: descanso obligatorio. Si trabajas, te pagan tu día más un salario doble.\n4. Si la fecha límite de pago de tu tarjeta cae en día inhábil, puedes pagar el día hábil siguiente.\n5. Aunque la sucursal cierre, el SPEI de Banxico opera 24/7.\nCapital ya marcó el 25 en el calendario: descanso obligatorio y croquetas dobles.\n\n📚 LFT, arts. 74, 75 y 87; CNBV (DOF 10-12-2025); LTOSF, art. 18 Bis 4; Banxico.\n💬 ¿Te toca trabajar el 25 de diciembre? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando planees tus pagos de diciembre.\n📩 Mándaselo a quien trabaja en Navidad.",
+   "texto_post": "Diciembre y enero: las fechas no son detalle, son dinero. Apúntalas antes de que te agarren las fiestas. 🗓️\n1. Sábado 19 de diciembre: a más tardar ese día te pagan el aguinaldo (la ley dice antes del 20).\n2. Viernes 25 de diciembre: los bancos cierran por disposición de la CNBV; el 12 de diciembre también, pero cae en sábado.\n3. 25 de diciembre y 1 de enero: descanso obligatorio. Si trabajas, te pagan tu día más un salario doble.\n4. Si la fecha límite de pago de tu tarjeta cae en día inhábil, puedes pagar el día hábil siguiente.\n5. Aunque la sucursal cierre, el SPEI de Banxico opera 24/7.\nCapital ya marcó el 25 en el calendario: descanso obligatorio y croquetas dobles.\n\n📚 LFT, arts. 74, 75 y 87; CNBV (DOF 10-12-2025); LTOSF, art. 18 Bis 4; Banxico.\n💬 ¿Te toca trabajar el 25 de diciembre? Comenta SÍ o NO. Te contesto a todos.\n🔖 Guárdalo para cuando planees tus pagos de diciembre.\n📩 Mándaselo a quien trabaja en Navidad.",
    "seo": {
     "palabra_clave": "días inhábiles bancarios",
     "titulo": "Días inhábiles bancarios de diciembre 2026 🗓️",
@@ -5350,7 +5350,7 @@
   },
   {
    "id": "c61",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "vacaciones_prima_vacacional_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/jet.jpg",
@@ -5433,7 +5433,7 @@
   },
   {
    "id": "c62",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "derechos_consumidor_diciembre_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/restaurante.jpg",
@@ -5516,7 +5516,7 @@
   },
   {
    "id": "c63",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "tarjeta_credito_diciembre_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/recamara.jpg",
@@ -5599,7 +5599,7 @@
   },
   {
    "id": "c64",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "gastos_de_enero_datos_para_guardar",
    "pilar": "finanzas",
    "fondo": "assets/fondos/rincon-lectura.jpg",
@@ -5624,12 +5624,12 @@
     {
      "titulo": "Enero 2026: refresco +5.53%",
      "texto": "En enero de 2026, en un solo mes, el refresco envasado subió 5.53% y los cigarros 14.51%. La inflación general del mes fue de 0.38%.\n\nINEGI, boletín 74/26",
-     "voz": "Segundo: el enero pasado, en un solo mes, el refresco subió más de cinco por ciento y los cigarros más de catorce."
+     "voz": "Segundo: en enero de dos mil veintiséis, en un solo mes, el refresco subió más de cinco por ciento y los cigarros más de catorce."
     },
     {
      "titulo": "Colegiaturas: +6.02% en un año",
      "texto": "A enero de 2026, las colegiaturas costaban 6.02% más que un año antes. La inflación general anual fue de 3.79%.\n\nINEGI, boletín 74/26",
-     "voz": "Tercero: las colegiaturas subieron seis por ciento en un año, más que la inflación."
+     "voz": "Tercero: a enero de dos mil veintiséis, las colegiaturas subieron seis por ciento en un año, más que la inflación."
     },
     {
      "titulo": "Préstamo exprés: alerta",
