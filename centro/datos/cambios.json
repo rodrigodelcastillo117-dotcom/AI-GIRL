@@ -43,7 +43,7 @@
  },
  {
   "fecha": "2026-11-10",
-  "cambio": "Música de fondo en Reels y shorts; martes y viernes un Reel con sonido de la biblioteca",
+  "cambio": "Todos los Reels de Instagram con música en tendencia de su biblioteca (API de Meta); fondo propio en YouTube y Facebook",
   "por_que": "Instagram empuja los Reels con audio",
   "vigilar": "ig"
  },
@@ -52,5 +52,47 @@
   "cambio": "Parejas y serie \"Socios en casa\" (c27, c41, c28, c29, c55-c59): 2 al día en TikTok",
   "por_que": "Lo de pareja se comparte y se etiqueta",
   "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Voz REAL de Victoria (clonada de sus videos con MiniMax) en carruseles, Reels y shorts",
+  "por_que": "Rodrigo: la otra sonaba muy IA; la misma voz siempre, que vaya con su cara",
+  "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Primer video largo en YouTube: Aguinaldo 2026, todo en 4 minutos (con capítulos)",
+  "por_que": "YouTube paga por horas vistas y los largos salen en búsquedas por meses",
+  "vigilar": "yt"
+ },
+ {
+  "fecha": "2026-11-15",
+  "cambio": "5 Guarda esto de diciembre (c60-c64): fechas, vacaciones, compras, tarjeta, enero",
+  "por_que": "Repetir el único formato que pegó (c16)",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "Subtítulos palabra por palabra en shorts y Reels de carrusel (franja de abajo, palabra en dorado)",
+  "por_que": "Los shorts de carrusel retenían 20-62% en YouTube; los videos de Victoria con subtítulos, 70-108%",
+  "vigilar": "yt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "\"El enlace está en mi perfil\" cambia por la dirección escrita (victoriatheceo.vercel.app) mientras la bio no tenga enlace",
+  "por_que": "Los posts mandaban a una bio sin enlace",
+  "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "La pregunta para comentar va en la 2a línea del texto (TikTok e Instagram)",
+  "por_que": "TikTok no acepta el primer comentario de Publer y la pregunta quedaba escondida: c16 tuvo 3,361 vistas y 0 comentarios",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-10",
+  "cambio": "\"Mándaselo a…\" se publica como \"👥 Etiqueta a…\" en la 3a línea, debajo de la pregunta",
+  "por_que": "Etiquetar cuenta como comentario y le avisa al amigo; mandar por privado no deja comentario",
+  "vigilar": "tt"
  }
 ]

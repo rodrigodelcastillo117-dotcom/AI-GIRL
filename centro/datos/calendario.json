@@ -16,7 +16,7 @@
   "estado": "programado",
   "que": "Reel del carrusel c09 (el mismo video del Short)",
   "horas": {
-   "ig": "11:00"
+   "ig": "11:05"
   }
  },
  {
@@ -36,7 +36,7 @@
   "estado": "programado",
   "que": "Reel del carrusel c16 (el mismo video del Short)",
   "horas": {
-   "ig": "15:00",
+   "ig": "15:02",
    "fb": "15:00"
   }
  },
@@ -57,7 +57,7 @@
   "que": "Sale el carrusel c11 · finiquito liquidacion",
   "estado": "programado",
   "horas": {
-   "tt": "13:00",
+   "tt": "13:06",
    "yt": "20:00"
   }
  },
@@ -68,7 +68,7 @@
   "que": "Sale el carrusel c12 · vacaciones dignas",
   "estado": "programado",
   "horas": {
-   "tt": "09:00",
+   "tt": "09:07",
    "yt": "14:00"
   }
  },
@@ -79,7 +79,7 @@
   "que": "Sale el carrusel c13 · recibo nomina",
   "estado": "programado",
   "horas": {
-   "tt": "20:00",
+   "tt": "20:05",
    "yt": "17:00"
   }
  },
@@ -304,18 +304,18 @@
  {
   "fecha": "2026-11-15",
   "tipo": "carrusel",
-  "id": "c18",
+  "id": "c60",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c18 · buro de credito · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c60 · fechas dinero diciembre enero datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
   "tipo": "carrusel",
-  "id": "c19",
+  "id": "c61",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c19 · apps prestamo cat · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c61 · vacaciones prima vacacional datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
@@ -328,18 +328,18 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c20",
+  "id": "c62",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c20 · incapacidad imss · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c62 · derechos consumidor diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c21",
+  "id": "c18",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c21 · cetes que son · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c18 · buro de credito · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -352,41 +352,41 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c19",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c19 · apps prestamo cat · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
+  "id": "c20",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c20 · incapacidad imss · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "carrusel",
+  "id": "c21",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c21 · cetes que son · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "carrusel",
   "id": "c27",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c27 · parejas quien paga · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-17",
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c28",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c28 · parejas deudas regimen · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-18",
-  "tipo": "carrusel",
-  "id": "c29",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c29 · parejas cuenta conjunta · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-18",
-  "tipo": "carrusel",
-  "id": "c31",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c31 · mitos tarjeta buro · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-18",
-  "tipo": "carrusel",
-  "id": "c32",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c32 · mitos ahorro inversion · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  }
 ]
