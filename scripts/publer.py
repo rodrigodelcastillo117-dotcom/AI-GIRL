@@ -88,6 +88,21 @@ def sin_perfil(texto, proveedor):
     return re.sub(r'(el )?enlace (est[áa] )?en mi perfil\s*👆?', 'victoriatheceo.vercel.app', texto)
 
 
+def guia_arriba(texto, comentario, proveedor):
+    """Instagram con "Comenta GUÍA": la línea de la guía va también en el texto, debajo de la pregunta (la gente lee el
+    texto, casi nadie el primer comentario). Rodrigo lo aprobó el 10-nov-2026."""
+    if proveedor != 'instagram' or not CONFIG.get('guia_por_mensaje_ig') or not texto or 'GUÍA' in texto:
+        return texto
+    linea = next((l for l in (comentario or '').splitlines() if 'GUÍA' in l), None)
+    if not linea:
+        return texto
+    lineas = texto.split('\n')
+    i = 1
+    while i < len(lineas) and lineas[i].strip().startswith(('💬', '👥')):
+        i += 1
+    return '\n'.join(lineas[:i] + [linea] + lineas[i:])
+
+
 def pregunta_arriba(texto):
     """La pregunta para comentar ("💬 …") va en la segunda línea: TikTok e Instagram solo enseñan las primeras líneas
     sin tocar "más", y TikTok no acepta el primer comentario de Publer (10-nov-2026: 3,361 vistas y 0 comentarios en c16)."""

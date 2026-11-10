@@ -29,7 +29,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
-from publer import (facebook_victoria, pregunta_arriba, sin_perfil, texto_facebook, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
+from publer import (facebook_victoria, guia_arriba, pregunta_arriba, sin_perfil, texto_facebook, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
                     esperar_job, mandar, red, workspace_id, ya_programadas)
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
 
@@ -88,7 +88,8 @@ def red_post(proveedor, tipo_ig, media, texto, titulo):
 
 
 def cuerpo(cuenta, tipo_ig, media, texto, titulo, cuando, estado, comentario=None):
-    texto, comentario = pregunta_arriba(sin_perfil(texto, red(cuenta))), sin_perfil(comentario, red(cuenta))
+    comentario = sin_perfil(comentario, red(cuenta))
+    texto = guia_arriba(pregunta_arriba(sin_perfil(texto, red(cuenta))), comentario, red(cuenta))
     return {'bulk': {'state': estado, 'posts': [{
         'networks': {red(cuenta): red_post(red(cuenta), tipo_ig, media, texto, titulo)},
         'accounts': [{'id': cuenta['id'], 'scheduled_at': cuando, **comentarios(comentario)}]}]}}
