@@ -149,3 +149,13 @@ de estrategia: así no se aprende nada. Desde hoy, 14 días con estas reglas, y 
 5. DEBATE DE PAREJA (c27, c41, c28, c29 y la serie Socios en casa): Victoria toma postura; esos generan opiniones.
 6. SE DEJA: listas genéricas sin México ni fecha (Buffett, "5 lecciones de negocio", "5 cambios"). No se escriben más.
 7. YOUTUBE: los videos de Victoria hablando siguen (2-3 por semana); es donde mejor retienen.
+
+## Comentar en YouTube (Rodrigo lo autorizó el 10-nov-2026)
+
+YouTube sí deja comentar en videos ajenos por API (permiso youtube.force-ssl del canal). Cada día la rutina corre
+`python3 scripts/comentar_youtube.py buscar`, elige hasta 3 videos de finanzas en México de los últimos 3 días (canales
+distintos), lee su descripción y escribe un comentario específico de Victoria (máximo 300 caracteres, dato comprobado u
+opinión marcada, sin enlaces ni "sígueme", sin repetir texto) y lo publica con `comentar_youtube.py comentar <id> "texto"`.
+El script pone los candados (3 al día, un canal por día, nunca dos veces en un video). Si el sistema de permisos de la
+sesión frena la publicación, NO se fuerza: ese comentario va a contenido/comentar_hoy.json (con "YouTube ·" en el tema)
+para que Rodrigo lo pegue desde el canal de Victoria, y se dice en el resumen.
