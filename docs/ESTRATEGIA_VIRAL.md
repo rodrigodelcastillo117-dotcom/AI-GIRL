@@ -24,10 +24,21 @@ Tu dinero en México. Nada de salud mental, productividad ni historias de empres
 |---|---|---|
 | ¿Cuánto gana un ___ en México? | Carrusel con dato oficial (Data México / INEGI) + "así lo repartiría yo" | Sueldos = lo más comentado y etiquetado. Pide "comenta tu profesión" |
 | Victoria reparte tu sueldo | Respuesta a un comentario real (sueldo + ciudad) | Premia al que comenta; contenido infinito |
+| Victoria responde | Carrusel que contesta un comentario real, con el usuario en la portada ("@usuario preguntó…") | Premia al que comenta y enseña que aquí sí te contestan: más gente comenta |
 | Capital juzga tus gastos | Memes con fotos de Capital con cara de juicio | Perros con cara de juicio = compartibles |
 | Victoria vs. los consejos de tu tío | Mito/verdad con memes | Se manda al grupo de la familia |
 | Mito o verdad | Quiz de 5 | Retención hasta el final y "comenta cuántas te sabías" |
 | Diciembre / aguinaldo / enero | Memes + calculadoras | Temporada: lo que se busca ahora |
+
+## Victoria responde (10-nov-2026)
+
+- La tarea de comentarios (cada 2 h) guarda en contenido/preguntas.json los comentarios que dan para un carrusel: una
+  pregunta de dinero, un sueldo, una profesión o una duda de la ley ({red, autor, texto, fecha, enlace, tipo, usado}).
+- La rutina diaria toma la mejor pregunta sin usar y escribe un carrusel "Victoria responde" (datos oficiales y segunda
+  revisión, como todos), que sale primero en TikTok al día siguiente (config → prioridad_carruseles).
+- Privacidad: el @usuario va en la portada solo con su pregunta. Si comentó su sueldo, deudas u otro dato personal, NO se
+  pone su usuario junto al dato: "Me escribieron: gano $12,000…". Nunca nombres reales, empresas ni datos de terceros.
+- Cuando sale, se le contesta el comentario original: "Te contesté en un video 👉" (si la red deja).
 
 ## Ritmo
 
