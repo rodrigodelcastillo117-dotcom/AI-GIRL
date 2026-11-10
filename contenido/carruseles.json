@@ -3853,7 +3853,7 @@
   },
   {
    "id": "c43",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "opinion_aguinaldo_10_mil",
    "pilar": "finanzas",
    "fondo": "assets/fondos/yate.jpg",
@@ -3936,7 +3936,11 @@
     ]
    },
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
-   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)",
+   "publica_utc_por_red": {
+    "tt": "2026-11-10T23:00:00Z"
+   },
+   "publica_utc": "2026-11-10T23:00:00Z"
   },
   {
    "id": "c44",
@@ -5685,7 +5689,7 @@
   },
   {
    "id": "c65",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "noticia_banco_quebro_tu_dinero_mexico",
    "pilar": "finanzas",
    "fondo": "assets/fondos/cocina.jpg",
@@ -5773,11 +5777,15 @@
     ]
    },
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (intervención en vez de quiebra, sin cajeros, 3.5 millones, 220 mil, SOFIPO autorizada, margen por intereses).",
-   "personaje": "2026-11-10: noticia de dinero en 24-48 h (plan del 10-nov), postura de Victoria marcada como opinión, humor con Capital y pregunta para comentar"
+   "personaje": "2026-11-10: noticia de dinero en 24-48 h (plan del 10-nov), postura de Victoria marcada como opinión, humor con Capital y pregunta para comentar",
+   "publica_utc_por_red": {
+    "tt": "2026-11-10T17:00:00Z"
+   },
+   "publica_utc": "2026-11-10T17:00:00Z"
   },
   {
    "id": "c66",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "serie_alcanza_salario_minimo_1",
    "pilar": "finanzas",
    "fondo": "assets/fondos/gimnasio-ciudad.jpg",
@@ -5857,7 +5865,11 @@
     ]
    },
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (descuentos del art. 97 LFT, quincena en promedio, fuentes oficiales primero).",
-   "personaje": "2026-11-10: serie por capítulos (plan del 10-nov) para que sigan la cuenta; cuentas, no experiencia inventada; la parte 2 usa las rentas que comenten"
+   "personaje": "2026-11-10: serie por capítulos (plan del 10-nov) para que sigan la cuenta; cuentas, no experiencia inventada; la parte 2 usa las rentas que comenten",
+   "publica_utc_por_red": {
+    "tt": "2026-11-11T02:00:00Z"
+   },
+   "publica_utc": "2026-11-11T02:00:00Z"
   }
  ]
 }
