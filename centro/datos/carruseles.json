@@ -1450,5 +1450,43 @@
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {}
+ },
+ {
+  "id": "c65",
+  "estado": "listo",
+  "tema": "noticia banco quebro tu dinero mexico",
+  "pilar": "finanzas",
+  "gancho": "Intervinieron un banco y casi 3 millones no podían sacar su dinero. ¿Y en México?",
+  "titulo": "¿Tu dinero está seguro si tu banco quiebra? 🏦",
+  "diapositivas": 9,
+  "fondo": "cocina.jpg",
+  "portada": "video-18-oficina.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "intervinieron un banco en paraguay y casi 3 millones no podían sacar su dinero. ¿te puede pasar en méxico? 🏦",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c66",
+  "estado": "listo",
+  "tema": "serie alcanza salario minimo 1",
+  "pilar": "finanzas",
+  "gancho": "¿Alcanza el salario mínimo para vivir un mes en México? Hago las cuentas",
+  "titulo": "¿Alcanza el salario mínimo 2026? Parte 1 💵",
+  "diapositivas": 7,
+  "fondo": "gimnasio-ciudad.jpg",
+  "portada": "navidad-lista-cocina.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "¿alcanza el salario mínimo para vivir un mes en méxico? hago las cuentas en 5 partes. parte 1: cuánto te llega. 💵",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
  }
 ]

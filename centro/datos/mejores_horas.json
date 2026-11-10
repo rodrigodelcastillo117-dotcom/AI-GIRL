@@ -52,7 +52,7 @@
  {
   "dia": "lun",
   "hora": 10,
-  "puntaje": 0.0
+  "puntaje": 46.0
  },
  {
   "dia": "lun",
@@ -62,7 +62,7 @@
  {
   "dia": "lun",
   "hora": 12,
-  "puntaje": 0.0
+  "puntaje": 8.0
  },
  {
   "dia": "lun",
@@ -72,7 +72,7 @@
  {
   "dia": "lun",
   "hora": 14,
-  "puntaje": 84.0
+  "puntaje": 170.5
  },
  {
   "dia": "lun",
@@ -82,7 +82,7 @@
  {
   "dia": "lun",
   "hora": 16,
-  "puntaje": 0.0
+  "puntaje": 6.0
  },
  {
   "dia": "lun",
@@ -107,7 +107,7 @@
  {
   "dia": "lun",
   "hora": 21,
-  "puntaje": 15.0
+  "puntaje": 76.0
  },
  {
   "dia": "lun",
@@ -202,7 +202,7 @@
  {
   "dia": "mar",
   "hora": 16,
-  "puntaje": 201.5
+  "puntaje": 206.5
  },
  {
   "dia": "mar",
@@ -217,7 +217,7 @@
  {
   "dia": "mar",
   "hora": 19,
-  "puntaje": 8.5
+  "puntaje": 9.0
  },
  {
   "dia": "mar",
@@ -287,7 +287,7 @@
  {
   "dia": "mié",
   "hora": 9,
-  "puntaje": 13.5
+  "puntaje": 14.0
  },
  {
   "dia": "mié",
@@ -332,12 +332,12 @@
  {
   "dia": "mié",
   "hora": 18,
-  "puntaje": 86.5
+  "puntaje": 87.5
  },
  {
   "dia": "mié",
   "hora": 19,
-  "puntaje": 156.0
+  "puntaje": 158.0
  },
  {
   "dia": "mié",
@@ -347,7 +347,7 @@
  {
   "dia": "mié",
   "hora": 21,
-  "puntaje": 91.0
+  "puntaje": 92.0
  },
  {
   "dia": "mié",
@@ -407,7 +407,7 @@
  {
   "dia": "jue",
   "hora": 9,
-  "puntaje": 9.0
+  "puntaje": 10.0
  },
  {
   "dia": "jue",
@@ -432,7 +432,7 @@
  {
   "dia": "jue",
   "hora": 14,
-  "puntaje": 136.0
+  "puntaje": 138.0
  },
  {
   "dia": "jue",
@@ -457,7 +457,7 @@
  {
   "dia": "jue",
   "hora": 19,
-  "puntaje": 7.0
+  "puntaje": 8.0
  },
  {
   "dia": "jue",
@@ -532,7 +532,7 @@
  {
   "dia": "vie",
   "hora": 10,
-  "puntaje": 93.0
+  "puntaje": 95.5
  },
  {
   "dia": "vie",
@@ -562,7 +562,7 @@
  {
   "dia": "vie",
   "hora": 16,
-  "puntaje": 99.0
+  "puntaje": 101.0
  },
  {
   "dia": "vie",
@@ -572,12 +572,12 @@
  {
   "dia": "vie",
   "hora": 18,
-  "puntaje": 271.5
+  "puntaje": 272.0
  },
  {
   "dia": "vie",
   "hora": 19,
-  "puntaje": 10.5
+  "puntaje": 13.0
  },
  {
   "dia": "vie",
@@ -587,7 +587,7 @@
  {
   "dia": "vie",
   "hora": 21,
-  "puntaje": 267.0
+  "puntaje": 270.5
  },
  {
   "dia": "vie",
@@ -682,7 +682,7 @@
  {
   "dia": "sáb",
   "hora": 16,
-  "puntaje": 9.0
+  "puntaje": 10.5
  },
  {
   "dia": "sáb",
@@ -692,7 +692,7 @@
  {
   "dia": "sáb",
   "hora": 18,
-  "puntaje": 57.5
+  "puntaje": 60.5
  },
  {
   "dia": "sáb",
@@ -702,7 +702,7 @@
  {
   "dia": "sáb",
   "hora": 20,
-  "puntaje": 3232.5
+  "puntaje": 2964.0
  },
  {
   "dia": "sáb",
@@ -772,7 +772,7 @@
  {
   "dia": "dom",
   "hora": 10,
-  "puntaje": 316.0
+  "puntaje": 323.0
  },
  {
   "dia": "dom",
@@ -782,12 +782,12 @@
  {
   "dia": "dom",
   "hora": 12,
-  "puntaje": 43.0
+  "puntaje": 48.0
  },
  {
   "dia": "dom",
   "hora": 13,
-  "puntaje": 19.5
+  "puntaje": 22.5
  },
  {
   "dia": "dom",
@@ -802,7 +802,7 @@
  {
   "dia": "dom",
   "hora": 16,
-  "puntaje": 1717.0
+  "puntaje": 1932.0
  },
  {
   "dia": "dom",
