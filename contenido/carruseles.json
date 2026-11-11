@@ -5920,7 +5920,7 @@
   },
   {
    "id": "c67",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "serie_alcanza_salario_minimo_2",
    "pilar": "finanzas",
    "fondo": "assets/fondos/yate.jpg",
@@ -5941,7 +5941,7 @@
     {
      "titulo": "La referencia del 30%",
      "texto": "Parámetro común que cita la ONU: la vivienda deja de ser asequible si cuesta más del 30% de los ingresos del hogar. Con un salario mínimo: $2,875 al mes.\n\nONU, Informe del Secretario General E/CN.5/2020/3 · cálculo propio",
-     "voz": "La ONU cita una referencia: la vivienda no debería pasar del treinta por ciento de tus ingresos."
+     "voz": "La ONU cita una referencia: la vivienda deja de ser asequible si pasa del treinta por ciento de los ingresos del hogar."
     },
     {
      "titulo": "La renta promedio",
@@ -5970,7 +5970,7 @@
     },
     {
      "titulo": "Mi regla",
-     "texto": "Con el mínimo, tu tope de renta es $2,875. Si pasa de ahí, compartir depa no es fracaso: es la decisión más rentable de tu presupuesto.\n\nOpinión de Victoria",
+     "texto": "Con el mínimo, tu tope de renta es $2,875. Si pasa de ahí, compartir depa no es fracaso: puede ser lo que más alivia tu presupuesto.\n\nOpinión de Victoria",
      "voz": "Mi regla: si la renta pasa de tu treinta por ciento, compartir depa no es fracaso."
     }
    ],
@@ -5981,7 +5981,7 @@
    },
    "fuente": "30%: ONU, Consejo Económico y Social, 'Viviendas asequibles y sistemas de protección social para todas las personas a fin de afrontar la falta de hogar', Informe del Secretario General E/CN.5/2020/3 (27-nov-2019), https://digitallibrary.un.org/record/3840349/files/E_CN-5_2020_3-ES.pdf : 'Aunque definir la asequibilidad de la vivienda no es tarea fácil, un parámetro comúnmente aceptado para determinarla en la práctica es si los gastos de vivienda de un hogar superan el 30 % de sus ingresos.' Es una referencia, no una ley ni una regla oficial de ONU-Hábitat; se refiere a gastos de vivienda del hogar (no solo renta) e ingresos del hogar. 30% de $9,582.47 = $2,874.74 (cálculo propio). RENTA: INEGI, Encuesta Nacional de Ingresos y Gastos de los Hogares (ENIGH) 2024, nueva serie, microdatos, tabla viviendas (https://www.inegi.org.mx/contenidos/programas/enigh/nc/2024/microdatos/enigh2024_ns_viviendas_csv.zip); descriptor de la base de datos (https://www.inegi.org.mx/contenidos/programas/enigh/nc/2024/microdatos/889463924494.pdf): tenencia = 1 'Es rentada'; renta = 'Monto de la renta mensual' (pregunta 26.1 '¿Cuál es el monto de la renta mensual?'); factor = factor de expansión; tam_loc = 1 'Localidades con 100 000 y más habitantes'. Cálculo propio ponderado con el factor de expansión (11,566 viviendas rentadas en la muestra, 6,027,881 expandidas): promedio $3,724.08; mediana $2,500; mediana en localidades de 100 mil y más habitantes $3,000 (promedio ahí $4,455); 20.98% paga más de $4,791.24 (quincena promedio del mínimo 2026); 55.9% paga $2,875 o menos. INEGI no publica en su boletín una cifra de renta promedio: es cálculo propio con sus microdatos. Las rentas son pesos de 2024 (levantamiento de 2024) y el salario es de 2026: la comparación subestima el peso de la renta hoy, y así lo dice la diapositiva. Contraste: INEGI ENVI 2020 (https://en.www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/envi/ENVI2020.pdf): '5.8 millones de viviendas son rentadas' (en 2020), consistente con los ~6 millones de la ENIGH 2024. SALARIO MÍNIMO: $9,582.47 al mes y quincena promedio $4,791.24, de c66 (CONASAMI, DOF 9-dic-2025). Lo que queda: $9,582.47 − $3,724.08 = $5,858.39 (cálculo propio). 39% = 3,724.08 / 9,582.47 = 38.9%; 26% = 2,500 / 9,582.47 = 26.1%. 'Compartir depa no es fracaso' y el tope de $2,875 son opinión de Victoria y lo dice la diapositiva. Serie de cuentas (no es una experiencia vivida: Victoria es un personaje creado con IA). Consultado el 11-nov-2026.",
    "titulo_post": "¿Alcanza el salario mínimo? Parte 2: la renta",
-   "texto_post": "La renta promedio en México se come el 39% del salario mínimo. Parte 2 de 5: la renta. 🏠\n1. Referencia común que cita la ONU: la vivienda deja de ser asequible si cuesta más del 30% de los ingresos del hogar. Con un salario mínimo, eso es $2,875 al mes.\n2. En 2024, los hogares que rentan pagaban en promedio $3,724 al mes (INEGI, ENIGH 2024; cálculo propio con sus microdatos).\n3. Eso es el 39% de $9,582: ya te pasaste del 30%, y con rentas de 2024.\n4. La mitad pagaba $2,500 o menos; en ciudades de 100 mil habitantes o más, $3,000 o menos.\n5. El 21% pagaba más de $4,791: una quincena entera del salario mínimo, solo de renta.\n6. Con la renta promedio te quedan unos $5,858 para comida, transporte, luz y todo lo demás.\nMi regla: con el mínimo, tu tope de renta es $2,875. Si pasa de ahí, compartir depa no es fracaso: es la decisión más rentable de tu presupuesto.\nCapital no paga renta: dice que su casita es propia pagada.\n\n📚 ONU, Informe del Secretario General E/CN.5/2020/3 · INEGI, ENIGH 2024 (microdatos, cálculo propio) · CONASAMI\n💬 ¿Cuánto pagas de renta y en qué ciudad? Comenta el número y tu ciudad. Te contesto a todos.\n🔖 Guárdalo y sígueme para la parte 3: la comida.\n📩 Mándaselo a tu roomie o a quien busca depa con el mínimo.",
+   "texto_post": "La renta promedio en México se come el 39% del salario mínimo. Parte 2 de 5: la renta. 🏠\n1. Referencia común que cita la ONU: la vivienda deja de ser asequible si cuesta más del 30% de los ingresos del hogar. Con un salario mínimo, eso es $2,875 al mes.\n2. En 2024, los hogares que rentan pagaban en promedio $3,724 al mes (INEGI, ENIGH 2024; cálculo propio con sus microdatos).\n3. Eso es el 39% de $9,582: ya te pasaste del 30%, y con rentas de 2024.\n4. La mitad pagaba $2,500 o menos; en ciudades de 100 mil habitantes o más, $3,000 o menos.\n5. El 21% pagaba más de $4,791: una quincena entera del salario mínimo, solo de renta.\n6. Con la renta promedio te quedan unos $5,858 para comida, transporte, luz y todo lo demás.\nMi regla: con el mínimo, tu tope de renta es $2,875. Si pasa de ahí, compartir depa no es fracaso: puede ser lo que más alivia tu presupuesto.\nCapital no paga renta: dice que su casita es propia pagada.\n\n📚 ONU, Informe del Secretario General E/CN.5/2020/3 · INEGI, ENIGH 2024 (microdatos, cálculo propio) · CONASAMI\n💬 ¿Cuánto pagas de renta y en qué ciudad? Comenta el número y tu ciudad. Te contesto a todos.\n🔖 Guárdalo y sígueme para la parte 3: la comida.\n📩 Mándaselo a tu roomie o a quien busca depa con el mínimo.",
    "seo": {
     "palabra_clave": "renta promedio en México",
     "titulo": "Renta promedio en México vs salario mínimo 🏠",
@@ -6008,7 +6008,7 @@
      "¿Qué porcentaje del sueldo debe ir a la renta?"
     ]
    },
-   "revision": "Escrito el 11-nov-2026 con fuentes primarias (ONU E/CN.5/2020/3; INEGI ENIGH 2024 microdatos, cálculo propio verificado contra el descriptor de la base de datos). Falta la segunda revisión de otro agente antes de 'listo'.",
+   "revision": "Escrito el 11-nov-2026 con microdatos de la ENIGH 2024; revisado por otro agente que recalculó todo (cifras idénticas); corregida la voz de la diapositiva 1 y suavizada la opinión.",
    "personaje": "2026-11-11: serie por capítulos, parte 2 (plan del 10-nov); cuentas con datos oficiales, no experiencia inventada; postura marcada como opinión de Victoria; humor con Capital en el post; pide renta y ciudad para usarlas en las siguientes partes",
    "serie_carruseles": "alcanza_salario_minimo"
   }
