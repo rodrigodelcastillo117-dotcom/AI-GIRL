@@ -16,7 +16,7 @@
   "estado": "programado",
   "que": "Reel del carrusel «Recibo de nómina y el subsidio 2026 🧾» (el mismo video del Short)",
   "horas": {
-   "ig": "11:00"
+   "ig": "11:02"
   }
  },
  {
@@ -60,6 +60,16 @@
    "ig": "15:00",
    "tt": "15:00",
    "fb": "15:00"
+  }
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "carrusel",
+  "id": "c16",
+  "que": "Sale el carrusel «Aguinaldo 2026 en 5 datos para guardar 🔖»",
+  "estado": "programado",
+  "horas": {
+   "ig": "18:30"
   }
  },
  {
