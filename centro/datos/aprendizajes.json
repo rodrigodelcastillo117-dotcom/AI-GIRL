@@ -320,5 +320,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Wan 3.0 a 15 s entregó la voz 250-300 ms atrasada en TODO el video (qa_sync: boca 333-400 ms adelante). Es un desfase constante: retrasar la imagen con tpad=start_duration=<desfase-0.08>:start_mode=clone lo arregla sin tocar la voz (O1 pasó con -67 ms).",
   "regla": "Si qa_sync solo falla por desfase (boca adelante > 200 ms) y la correlación tras corregirlo es >= 0.10, corrige con tpad y vuelve a medir; si la correlación queda < 0.10, cuenta como falla (no se ajusta el desfase para que pase)."
+ },
+ {
+  "fecha_utc": "2026-11-11T13:00:09Z",
+  "origen": "video 40",
+  "tipo": "tecnico",
+  "aprendizaje": "Whisper escribió \"Conduceff\" donde Victoria dijo bien \"Condusef\": qa_audio lo marcaba como palabra no entendida. Tercera vez seguida que Wan entrega la voz 333 ms atrasada (O1, O2, 40); tpad la corrigió a -67 ms.",
+  "regla": "qa_audio compara las palabras clave por sonido (ce/ci=se/si, z=s, v=b, h muda, letras dobles); la x/j sigue contando como falla. El desfase constante de Wan se corrige con tpad solo si la correlación tras corregir es >= 0.10."
  }
 ]

@@ -204,5 +204,15 @@
   "creditos_restantes": 4209,
   "detalle": "Rutina 10-nov (plan congelado 10→24-nov): TikTok c65 11:00 (noticia: tu dinero si tu banco quiebra), c43 17:00 (aguinaldo), c66 20:00 (serie salario mínimo parte 1). Reels de Instagram con música (Meta, recordatorios): c12 11:00 y c43 15:00. Shorts de YouTube: c43 12:00, c66 17:00, c65 20:00. Facebook: c12 11:00, c43 15:00, c66 17:00, c65 20:00. Arreglos: el entorno de voz perdió faster-whisper/num2words (reinstalados) y voz_victoria cargaba Chatterbox aunque no se usa; el revisor de voz ahora acepta z/s/c y México/Méjico. Videos de Victoria listos: 18 y C1 (no se generó otro). Sin comentarios pendientes en YouTube ni Instagram.",
   "resumen": "Noticia del banco, aguinaldo y parte 1 de la serie del salario mínimo"
+ },
+ {
+  "fecha_utc": "2026-11-11T13:00:09Z",
+  "tipo": "publicar",
+  "video_id": "O1",
+  "resultado": "programado",
+  "detalle": "O1 programado: YouTube 10:00, TikTok/Instagram/Facebook 15:00. Carruseles TikTok c52 (9:00) y c27 (20:00); shorts YouTube c52 (14:00) y c27 (20:00) con su copia en Facebook; Reel de Instagram c13 a las 11:00 con recordatorio. Video 40 generado, pasó QA (audio 0.98, sincronía -67 ms tras tpad) y queda listo.",
+  "resumen": "Video de gastos en pareja en las 4 redes, 2 carruseles y video de pago mínimo listo",
+  "creditos_usados": 790,
+  "creditos_restantes": 1619
  }
 ]

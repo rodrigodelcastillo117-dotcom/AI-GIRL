@@ -557,7 +557,7 @@
    "pregunta_comentarios_anterior": "¿Sabías que el banco le avisa al SAT?"
   },
   {
-   "estado": "pendiente",
+   "estado": "listo_para_publicar",
    "hora_publicacion": "rotacion",
    "formato": "a_camara",
    "id": "40",
@@ -623,7 +623,151 @@
    },
    "pregunta_comentarios_anterior": "¿Sabías cuánto tardas pagando el mínimo?",
    "guion_anterior_personaje": "¿Pagas solo el mínimo de tu tarjeta? Con diez mil pesos de deuda puedes tardar diecinueve años en liquidarla. Es el ejemplo de Condusef, con una tasa de cincuenta y cinco por ciento. Paga más que el mínimo, aunque sea poco.",
-   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)"
+   "personaje": "2026-11-09: postura, acción concreta y momento de Capital (docs/PERSONAJE.md)",
+   "archivo": "videos/video-40-FINAL.mp4",
+   "duracion": 19,
+   "voz": "intima",
+   "openart": {
+    "foto": "nFEyEyhHjN6ghNJQQkF2",
+    "video": "4cdTqadzwM3ytfa4m8hs"
+   },
+   "creditos": 790,
+   "foto_base": "assets/fotos/video-40-cocina.jpg",
+   "qa": {
+    "audio": 0.98,
+    "sync": {
+     "cuadros": 569,
+     "fps": 30.0,
+     "cara_en_cuadros": 1.0,
+     "desfase_ms": -67,
+     "correlacion": 0.18,
+     "correlacion_sin_desfase": 0.122,
+     "voz_con_boca_quieta_s": 0.3,
+     "boca_hablando_sin_voz_s": 0.57,
+     "fallas": []
+    },
+    "nota": "Wan entregó la voz 333 ms atrasada (constante); tpad 0.25 s con correlación 0.18 (regla del 10-nov): queda en -67 ms. Whisper escribió \"Conduceff\": se oye igual que Condusef (qa_audio ahora compara por sonido).",
+    "capital_en_todos": true
+   },
+   "decision": {
+    "toca_publicar": true,
+    "motivo": "el último salió el 2026-11-08",
+    "hora_siguiente": "15:00",
+    "horarios": {
+     "ig": "15:00",
+     "tt": "15:00",
+     "yt": "10:00"
+    },
+    "cuando": {
+     "ig": "2026-11-11T21:00:00Z",
+     "tt": "2026-11-11T21:00:00Z",
+     "yt": "2026-11-11T16:00:00Z"
+    },
+    "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 2/4, 15:00 1/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 3/4, 11:00 3/4, 13:00 3/4, 15:00 3/4, 17:00 4/4, 20:00 4/4) · yt: en prueba (10:00 3/4, 12:00 4/4, 14:00 4/4, 17:00 5/4, 20:00 4/4)",
+    "conteo_horas": {
+     "ig": {
+      "08:00": 2,
+      "11:00": 1,
+      "12:00": 2,
+      "15:00": 1,
+      "18:00": 2,
+      "20:00": 2
+     },
+     "tt": {
+      "09:00": 3,
+      "11:00": 3,
+      "13:00": 3,
+      "15:00": 3,
+      "17:00": 4,
+      "20:00": 4
+     },
+     "yt": {
+      "10:00": 3,
+      "12:00": 4,
+      "14:00": 4,
+      "17:00": 5,
+      "20:00": 4
+     }
+    },
+    "publicar_hoy": "O1",
+    "video_id": "40",
+    "modo": "prioridad",
+    "esperado": null,
+    "cambios_sugeridos": [],
+    "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
+    "carruseles": {
+     "tiktok": {
+      "id": "c52",
+      "cuando": "2026-11-11T15:00:00Z"
+     },
+     "instagram": {
+      "id": "c13",
+      "cuando_ig": "2026-11-11T17:00:00Z",
+      "turno": "mañana",
+      "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
+     },
+     "youtube": {
+      "id": "c52",
+      "cuando_yt": "2026-11-11T20:00:00Z",
+      "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+     },
+     "tiktoks": [
+      {
+       "id": "c52",
+       "cuando": "2026-11-11T15:00:00Z"
+      },
+      {
+       "id": "c27",
+       "cuando": "2026-11-12T02:00:00Z"
+      }
+     ],
+     "instagrams": [
+      {
+       "id": "c13",
+       "cuando_ig": "2026-11-11T17:00:00Z",
+       "turno": "mañana",
+       "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
+      }
+     ],
+     "youtubes": [
+      {
+       "id": "c52",
+       "cuando_yt": "2026-11-11T20:00:00Z",
+       "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+      },
+      {
+       "id": "c27",
+       "cuando_yt": "2026-11-12T02:00:00Z",
+       "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+      }
+     ],
+     "notas": [],
+     "quedan_tiktok": 38,
+     "quedan_instagram": 5,
+     "quedan_youtube": 0,
+     "comandos": [
+      "python scripts/publer_carrusel.py c52 \"tt=2026-11-11T15:00:00Z\"",
+      "python scripts/publer_carrusel.py c27 \"tt=2026-11-12T02:00:00Z\"",
+      "python scripts/carrusel_video.py short c13",
+      "python scripts/carrusel_video.py short c52",
+      "python scripts/carrusel_video.py short c27",
+      "python scripts/ig_reel_musica.py c13 --programar 2026-11-11T17:00:00Z",
+      "python scripts/publer_carrusel.py c13 --reel 2026-11-11T17:00:00Z --solo-facebook",
+      "RECORDATORIO (send_later a las 11:00): python scripts/ig_reel_musica.py c13 --publicar",
+      "youtube.py subir carruseles/c52/short.mp4 ... 2026-11-11T20:00:00Z (CARRUSELES.md)",
+      "python scripts/publer_carrusel.py c52 --reel 2026-11-11T20:00:00Z --solo-facebook",
+      "youtube.py subir carruseles/c27/short.mp4 ... 2026-11-12T02:00:00Z (CARRUSELES.md)",
+      "python scripts/publer_carrusel.py c27 --reel 2026-11-12T02:00:00Z --solo-facebook"
+     ]
+    },
+    "segundos": 19,
+    "creditos": 790
+   },
+   "mejoras_aplicadas": [
+    "foto de pecho/cintura para arriba con Capital sentado junto a ella",
+    "nochebuena en la foto (temporada)",
+    "voz íntima (config.tono_voz_wan)"
+   ]
   },
   {
    "estado": "pendiente",
@@ -3341,7 +3485,7 @@
     "tipo_gancho": "postura"
    },
    "id": "O1",
-   "estado": "listo_para_publicar",
+   "estado": "programado",
    "locacion": "restaurante",
    "guion": "Si tu pareja gana el doble que tú, mitad y mitad no es justo. Cada quien pone según lo que gana. Eso no es mantener a nadie: es ser equipo. ¿Estoy mal? Te leo.",
    "subtitulos": [
@@ -3411,6 +3555,130 @@
      "fallas": []
     },
     "nota": "Wan entregó la voz 250 ms atrasada en todo el video (boca 333 ms adelante); se retrasó la imagen 0.25 s congelando el primer cuadro (tpad) y la sincronía pasó (-67 ms, natural). Capital visible en los 6 cuadros."
+   },
+   "publica_utc_por_red": {
+    "yt": "2026-11-11T16:00:00Z",
+    "ig": "2026-11-11T21:00:00Z",
+    "tt": "2026-11-11T21:00:00Z",
+    "fb": "2026-11-11T21:00:00Z"
+   },
+   "publica_utc": "2026-11-11T21:00:00Z",
+   "publicacion": {
+    "youtube": "https://youtube.com/shorts/qM_e2ImPA1s"
+   },
+   "decision": {
+    "toca_publicar": true,
+    "motivo": "el último salió el 2026-11-08",
+    "hora_siguiente": "15:00",
+    "horarios": {
+     "ig": "15:00",
+     "tt": "15:00",
+     "yt": "10:00"
+    },
+    "cuando": {
+     "ig": "2026-11-11T21:00:00Z",
+     "tt": "2026-11-11T21:00:00Z",
+     "yt": "2026-11-11T16:00:00Z"
+    },
+    "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 2/4, 15:00 1/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 3/4, 11:00 3/4, 13:00 3/4, 15:00 3/4, 17:00 4/4, 20:00 4/4) · yt: en prueba (10:00 3/4, 12:00 4/4, 14:00 4/4, 17:00 5/4, 20:00 4/4)",
+    "conteo_horas": {
+     "ig": {
+      "08:00": 2,
+      "11:00": 1,
+      "12:00": 2,
+      "15:00": 1,
+      "18:00": 2,
+      "20:00": 2
+     },
+     "tt": {
+      "09:00": 3,
+      "11:00": 3,
+      "13:00": 3,
+      "15:00": 3,
+      "17:00": 4,
+      "20:00": 4
+     },
+     "yt": {
+      "10:00": 3,
+      "12:00": 4,
+      "14:00": 4,
+      "17:00": 5,
+      "20:00": 4
+     }
+    },
+    "publicar_hoy": "O1",
+    "video_id": "40",
+    "modo": "prioridad",
+    "esperado": null,
+    "cambios_sugeridos": [],
+    "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
+    "carruseles": {
+     "tiktok": {
+      "id": "c52",
+      "cuando": "2026-11-11T15:00:00Z"
+     },
+     "instagram": {
+      "id": "c13",
+      "cuando_ig": "2026-11-11T17:00:00Z",
+      "turno": "mañana",
+      "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
+     },
+     "youtube": {
+      "id": "c52",
+      "cuando_yt": "2026-11-11T20:00:00Z",
+      "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+     },
+     "tiktoks": [
+      {
+       "id": "c52",
+       "cuando": "2026-11-11T15:00:00Z"
+      },
+      {
+       "id": "c27",
+       "cuando": "2026-11-12T02:00:00Z"
+      }
+     ],
+     "instagrams": [
+      {
+       "id": "c13",
+       "cuando_ig": "2026-11-11T17:00:00Z",
+       "turno": "mañana",
+       "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
+      }
+     ],
+     "youtubes": [
+      {
+       "id": "c52",
+       "cuando_yt": "2026-11-11T20:00:00Z",
+       "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+      },
+      {
+       "id": "c27",
+       "cuando_yt": "2026-11-12T02:00:00Z",
+       "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+      }
+     ],
+     "notas": [],
+     "quedan_tiktok": 38,
+     "quedan_instagram": 5,
+     "quedan_youtube": 0,
+     "comandos": [
+      "python scripts/publer_carrusel.py c52 \"tt=2026-11-11T15:00:00Z\"",
+      "python scripts/publer_carrusel.py c27 \"tt=2026-11-12T02:00:00Z\"",
+      "python scripts/carrusel_video.py short c13",
+      "python scripts/carrusel_video.py short c52",
+      "python scripts/carrusel_video.py short c27",
+      "python scripts/ig_reel_musica.py c13 --programar 2026-11-11T17:00:00Z",
+      "python scripts/publer_carrusel.py c13 --reel 2026-11-11T17:00:00Z --solo-facebook",
+      "RECORDATORIO (send_later a las 11:00): python scripts/ig_reel_musica.py c13 --publicar",
+      "youtube.py subir carruseles/c52/short.mp4 ... 2026-11-11T20:00:00Z (CARRUSELES.md)",
+      "python scripts/publer_carrusel.py c52 --reel 2026-11-11T20:00:00Z --solo-facebook",
+      "youtube.py subir carruseles/c27/short.mp4 ... 2026-11-12T02:00:00Z (CARRUSELES.md)",
+      "python scripts/publer_carrusel.py c27 --reel 2026-11-12T02:00:00Z --solo-facebook"
+     ]
+    },
+    "segundos": 19,
+    "creditos": 790
    }
   },
   {

@@ -174,7 +174,7 @@ def workspace_publer():
         return ''
 
 
-NOMBRES_RED = {'ig': 'Instagram', 'tt': 'TikTok', 'yt': 'YouTube'}
+NOMBRES_RED = {'ig': 'Instagram', 'tt': 'TikTok', 'yt': 'YouTube', 'fb': 'Facebook'}
 INICIO_FB = '2026-11-09'  # desde aquí lo que sale en Instagram sale también en Facebook, a la misma hora
 
 

@@ -11,6 +11,36 @@
  },
  {
   "fecha": "2026-11-11",
+  "tipo": "reel",
+  "id": "c13",
+  "estado": "programado",
+  "que": "Reel del carrusel «Recibo de nómina y el subsidio 2026 🧾» (el mismo video del Short)",
+  "horas": {
+   "ig": "11:00"
+  }
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "facebook",
+  "id": "c27",
+  "estado": "programado",
+  "que": "Video del carrusel «Gastos en pareja proporcionales al sueldo 💑» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "20:00"
+  }
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "facebook",
+  "id": "c52",
+  "estado": "programado",
+  "que": "Video del carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "14:00"
+  }
+ },
+ {
+  "fecha": "2026-11-11",
   "tipo": "facebook",
   "id": "17",
   "que": "Sale el video «Aguinaldo 2026 si ganas 15 mil al mes 💰» en Facebook (ya salió en las otras redes)",
@@ -23,25 +53,36 @@
   "fecha": "2026-11-11",
   "tipo": "video",
   "id": "O1",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video «Gastos en pareja mitad y mitad no es justo 💸» (ya generado) · TikTok, Instagram, Facebook y YouTube"
- },
- {
-  "fecha": "2026-11-11",
-  "tipo": "carrusel",
-  "id": "c52",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Sale el video «Gastos en pareja mitad y mitad no es justo 💸»",
+  "estado": "programado",
+  "horas": {
+   "yt": "10:00",
+   "ig": "15:00",
+   "tt": "15:00",
+   "fb": "15:00"
+  }
  },
  {
   "fecha": "2026-11-11",
   "tipo": "carrusel",
   "id": "c27",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Gastos en pareja proporcionales al sueldo 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Sale el carrusel «Gastos en pareja proporcionales al sueldo 💑»",
+  "estado": "programado",
+  "horas": {
+   "tt": "20:00",
+   "yt": "20:00"
+  }
+ },
+ {
+  "fecha": "2026-11-11",
+  "tipo": "carrusel",
+  "id": "c52",
+  "que": "Sale el carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮»",
+  "estado": "programado",
+  "horas": {
+   "tt": "09:00",
+   "yt": "14:00"
+  }
  },
  {
   "fecha": "2026-11-12",
@@ -216,10 +257,10 @@
  {
   "fecha": "2026-11-17",
   "tipo": "video",
-  "id": "18",
+  "id": "40",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video «Aguinaldo si renunciaste este año 📌» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+  "que": "Video «Pago mínimo de tarjeta y 6 años de deuda 💳» (ya generado) · TikTok, Instagram, Facebook y YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -288,10 +329,10 @@
  {
   "fecha": "2026-11-20",
   "tipo": "video",
-  "id": "C1",
+  "id": "18",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video «Calcular aguinaldo 2026 en 10 segundos 🧮» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+  "que": "Video «Aguinaldo si renunciaste este año 📌» (ya generado) · TikTok, Instagram, Facebook y YouTube"
  },
  {
   "fecha": "2026-11-20",

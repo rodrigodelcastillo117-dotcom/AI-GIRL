@@ -98,8 +98,10 @@ def comentar(acceso, video_id, texto):
 
 def clave_playlist(item):
     """Lista de reproducción de un video o carrusel del plan (config.json → playlists_youtube)."""
-    if item.get('serie'):
-        return item['serie']['nombre']
+    serie = item.get('serie')
+    nombre = serie.get('nombre') if isinstance(serie, dict) else serie
+    if nombre and nombre in CONFIG.get('playlists_youtube', {}):
+        return nombre  # solo si la serie tiene lista propia (11-nov-2026: "Aguinaldo 2026" no la tiene y tronaba)
     if 'aguinaldo' in (item.get('llamado') or '') + (item.get('tema') or '') + json.dumps(item.get('seo', {})).lower():
         return 'aguinaldo'
     pilar = item.get('pilar', '')
