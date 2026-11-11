@@ -19,6 +19,7 @@ Las reglas de la respuesta son las mismas de comentarios.py (YouTube) y docs/PER
 - Spam, insultos o ventas: no se contestan.
 """
 import json
+import re
 import os
 import sys
 import urllib.error
@@ -101,6 +102,58 @@ def pide_enlace(texto):
     return 0 < len(limpio) <= 4 and any(p in ' '.join(limpio) for p in PALABRAS_CORTAS)
 
 
+# 11-nov-2026, Rodrigo: "cuando comenten de su sueldo y rentas y así, manda ese link". Quien comenta sus números recibe
+# en público su cuenta rápida (solo si los números se entienden sin duda) y por mensaje la calculadora ¿Te alcanza tu
+# sueldo?. Si no se entiende cuál es el sueldo y cuál la renta, no se adivina: solo va el enlace.
+CALCULADORA = f'{SITIO}/te-alcanza-tu-sueldo'
+
+
+def _montos(t):
+    """[(posición, monto)] de "12000", "12,000", "$4,500", "12 mil", "4.5k"; solo montos de 500 a 500,000."""
+    salida = []
+    for m in re.finditer(r'\$?\s*(\d{1,3}(?:[,.]\d{3})+|\d+(?:\.\d+)?)\s*(mil\b|k\b)?', t):
+        crudo = m.group(1)
+        valor = float(crudo.replace(',', '').replace('.', '')) if re.fullmatch(r'\d{1,3}(?:[,.]\d{3})+', crudo) else float(crudo)
+        if m.group(2):
+            valor *= 1000
+        if 500 <= valor <= 500000:
+            salida.append((m.start(), valor))
+    return salida
+
+
+def cuentas_de(texto, caption=''):
+    """{'sueldo': x, 'renta': y} con lo que se entienda sin duda; None si el comentario no trae sus números."""
+    t = (texto or '').lower()
+    nums = _montos(t)
+    if not nums:
+        return None
+    claves = {'sueldo': r'gano|sueldo|ingreso|cobro|salario|me pagan|quincena',
+              'renta': r'renta|rento|alquiler' + ('|pago' if 'renta' in (caption or '').lower() else '')}
+    hallado = {}
+    for nombre, patron in claves.items():
+        k = re.search(patron, t)
+        if k:  # el monto más cercano a la palabra
+            pos, valor = min(nums, key=lambda n: abs(n[0] - k.start()))
+            hallado[nombre] = (pos, valor)
+    if not hallado:
+        return None
+    if len(hallado) == 2 and hallado['sueldo'][0] == hallado['renta'][0]:
+        return {}  # un solo número para dos cosas: no se adivina
+    if 'quincena' in t and 'sueldo' in hallado and not re.search(r'al mes|mensual', t):
+        hallado['sueldo'] = (hallado['sueldo'][0], hallado['sueldo'][1] * 2)
+    return {k: v for k, (_, v) in hallado.items()}
+
+
+def respuesta_cuentas(c):
+    pesos = lambda n: f'${n:,.0f}'
+    if 'sueldo' in c and 'renta' in c and c['renta'] < c['sueldo']:
+        pct = round(100 * c['renta'] / c['sueldo'])
+        estado = 'estás en zona sana 👌' if pct <= 30 else f'lo sano es 30% ({pesos(0.3 * c["sueldo"])})'
+        return (f'Con {pesos(c["sueldo"])} de sueldo y {pesos(c["renta"])} de renta, la renta se lleva el {pct}%: {estado}. '
+                'Te mandé por mensaje la calculadora para ver cuánto te queda para comer y lo demás 📩')
+    return '¡Gracias por compartir tus números! Te mandé por mensaje la calculadora para que hagas tus cuentas completas 📩'
+
+
 def guias():
     """Quien comentó GUÍA recibe el enlace por mensaje privado y una respuesta pública corta (suma otro comentario y le
     avisa que revise sus mensajes). Si Meta no deja mandar el privado, la respuesta pública lleva el enlace."""
@@ -111,11 +164,30 @@ def guias():
     for m in media.get('data', []):
         for c in (m.get('comments') or {}).get('data', []):
             texto = (c.get('text') or '').lower().replace('í', 'i')
-            if c.get('username') == YO or c['id'] in ya or not pide_enlace(texto):
+            if c.get('username') == YO or c['id'] in ya:
+                continue
+            numeros = None if pide_enlace(texto) else cuentas_de(c.get('text'), m.get('caption'))
+            if numeros is None and not pide_enlace(texto):
                 continue
             if any(r.get('username') == YO for r in (c.get('replies') or {}).get('data', [])):
                 continue  # ya lo contestó el aviso instantáneo (centro/api/meta.js)
-            enlace, nombre = enlace_para(m.get('caption')), c.get('username') or ''
+            nombre = c.get('username') or ''
+            if numeros is not None:  # comentó su sueldo o su renta: su cuenta en público y la calculadora por mensaje
+                enlace = f'{CALCULADORA}?ref=ig-cuentas'
+                try:
+                    mid = privado(c['id'], f'¡Hola{" @" + nombre if nombre else ""}! Aquí haces tus cuentas completas en segundos 👇\n{enlace}\n\n'
+                                           'Y tu caso puede salir en la parte 3 de la serie (sin tu nombre). — Victoria')
+                    publica, via = responder(c['id'], respuesta_cuentas(numeros)), 'privado'
+                except RuntimeError as e:
+                    print(e)
+                    mid, via = None, 'publico'
+                    publica = responder(c['id'], respuesta_cuentas(numeros).replace('Te mandé por mensaje la calculadora', 'Aquí la calculadora: '
+                                        + enlace.replace('https://', '') + ',').replace(' 📩', ''))
+                hechos.append({'comentario': c['id'], 'autor': nombre, 'enlace': enlace, 'via': via, 'mensaje': mid, 'respuesta': publica,
+                               'fecha': c.get('timestamp'), 'tipo': 'cuentas', 'numeros': numeros, 'texto': c.get('text')})
+                print(f'ok cuentas {via}: @{nombre} {numeros}')
+                continue
+            enlace = enlace_para(m.get('caption'))
             try:
                 mid = privado(c['id'], f'¡Hola{" @" + nombre if nombre else ""}! Aquí está lo que te prometí 👇\n{enlace}\n\n'
                                        'Si te sirve, cuéntame en el post qué te pareció. — Victoria')

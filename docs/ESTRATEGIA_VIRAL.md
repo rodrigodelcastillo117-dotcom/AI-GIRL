@@ -102,6 +102,11 @@ contesta en público "te lo mandé por mensaje". Si Meta no deja mandar el priva
 quien escribe un comentario corto (4 palabras o menos) que lo pide: "quiero", "pásamelo", "info", "link", "me interesa",
 "aguinaldo", "calcula". Los votos (MITAD, SÍ, NUNCA) y las opiniones largas no reciben nada. Fuera de eso sigue la regla:
 nunca se manda mensaje privado a quien no lo pidió en un comentario o no escribió primero.
+**Comentarios con sueldo o renta (11-nov-2026, Rodrigo: "cuando comenten de su sueldo y rentas y así, manda ese link"):**
+`comentarios_ig.py guias` también detecta los comentarios con sus números ("gano 12 mil y pago 4,500 de renta"): Victoria
+le contesta en público su cuenta rápida (qué % se va en renta contra el 30%) solo si los números se entienden sin duda, y
+por mensaje privado le manda la calculadora https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo?ref=ig-cuentas. Se
+registran en contenido/guias_ig.json con tipo "cuentas": de ahí salen los casos de la parte 3 (sin nombre de nadie).
 Queda anotado en contenido/guias_ig.json. Solo a quien lo pidió comentando; nunca mensajes a nadie más.
 
 ## Mensajes privados de Instagram (10-nov-2026)
