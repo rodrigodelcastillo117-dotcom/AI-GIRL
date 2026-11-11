@@ -405,13 +405,13 @@
    "portada": {
     "foto": "assets/fotos/enero-oficina-casa.jpg",
     "etiqueta": "AGUINALDO",
-    "titulo": "Tu aguinaldo no es para regalos",
+    "titulo": "Antes de gastar tu aguinaldo: 5 cosas que hacer primero",
     "voz": "Tu aguinaldo no es para regalos. Primero haz esto y enero no te va a doler.",
     "anterior": {
      "titulo": "Si no haces esto, tu aguinaldo se acaba en enero",
      "voz": "Si no haces esto, tu aguinaldo se acaba en enero."
     },
-    "gancho_tipo": "postura",
+    "gancho_tipo": "numero",
     "foto_reel": "assets/fotos/capital-cafe.jpg"
    },
    "diapositivas": [
@@ -443,7 +443,7 @@
    ],
    "cierre": {
     "titulo": "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS.",
-    "texto": "Calcula tu aguinaldo gratis: enlace en mi perfil.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "texto": "Mándaselo a quien ya tiene su aguinaldo gastado antes de cobrarlo.",
     "voz": "¿En qué se va primero tu aguinaldo? Comenta deuda, ahorro o regalos, y sígueme.",
     "anterior": {
      "titulo": "Guárdalo para cuando te paguen.",
@@ -6230,6 +6230,87 @@
     "tt": "2026-11-13T19:00:00Z"
    },
    "publica_utc": "2026-11-14T01:00:00Z"
+  },
+  {
+   "id": "c70",
+   "estado": "borrador",
+   "tema": "victoria_verifica_rumores_aguinaldo",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "calculadora": [
+    "/aguinaldo",
+    "Calcula tu aguinaldo real"
+   ],
+   "portada": {
+    "foto": "assets/fotos/video-17-sala-roja.jpg",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "5 rumores del aguinaldo 2026 que te van a mandar por WhatsApp",
+    "voz": "Cinco rumores del aguinaldo que te van a llegar por WhatsApp. Los verifiqué.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/video-40-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "\"Este año son 30 días\"",
+     "texto": "FALSO, por ahora. Hay una iniciativa para subirlo según tu antigüedad, pero no se ha aprobado. Hoy la ley dice: mínimo 15 días de salario.\n\nLFT, art. 87 · iniciativas pendientes en el Congreso",
+     "voz": "Falso, por ahora: los treinta días son una iniciativa que no se ha aprobado. Hoy son mínimo quince."
+    },
+    {
+     "titulo": "\"La Pensión Bienestar da aguinaldo\"",
+     "texto": "FALSO. Bienestar aclaró que no hay aguinaldo ni depósitos extra en diciembre. Si te piden datos para \"liberarlo\", es fraude.\n\nSecretaría de Bienestar",
+     "voz": "Falso: la Pensión Bienestar no da aguinaldo. Si te piden datos, es fraude."
+    },
+    {
+     "titulo": "\"El aguinaldo ya no paga ISR\"",
+     "texto": "FALSO. Hay una propuesta, pero hoy solo están libres de ISR los primeros $3,519.30 (30 UMA). Lo demás sí paga.\n\nLISR, art. 93, fr. XIV · UMA 2026, INEGI",
+     "voz": "Falso: solo los primeros tres mil quinientos diecinueve pesos están libres de impuestos."
+    },
+    {
+     "titulo": "\"Si te corren, lo pierdes\"",
+     "texto": "FALSO. Te toca la parte proporcional a lo que trabajaste en el año, aunque ya no estés en diciembre.\n\nLFT, art. 87",
+     "voz": "Falso: si te corren, te toca la parte proporcional."
+    },
+    {
+     "titulo": "\"Te lo pueden dar en vales\"",
+     "texto": "FALSO. El salario se paga en efectivo o, si tú aceptas, por depósito o transferencia. Nunca en vales.\n\nLFT, art. 101",
+     "voz": "Falso: se paga en efectivo o por depósito, nunca en vales."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué rumor de dinero te llegó? Coméntalo y lo verifico.",
+    "texto": "Mándaselo al grupo de la familia antes de que alguien se crea el de los 30 días.",
+    "voz": "¿Qué rumor de dinero te llegó? Coméntalo y lo verifico."
+   },
+   "fuente": "PENDIENTE de segunda revisión: LFT arts. 87 y 101; LISR art. 93 fr. XIV; UMA 2026 $117.31 (INEGI); estado de la iniciativa de aguinaldo de 30 días; aclaración de la Secretaría de Bienestar.",
+   "titulo_post": "Victoria verifica: 5 rumores del aguinaldo 2026",
+   "texto_post": "5 rumores del aguinaldo 2026 que te van a llegar por WhatsApp. Los verifiqué. 🔍\n1. \"Este año son 30 días\": FALSO, por ahora. Es una iniciativa que no se ha aprobado; hoy son mínimo 15 días (LFT art. 87).\n2. \"La Pensión Bienestar da aguinaldo\": FALSO. Bienestar aclaró que no hay aguinaldo ni depósitos extra; si te piden datos, es fraude.\n3. \"El aguinaldo ya no paga ISR\": FALSO. Solo los primeros $3,519.30 están libres (30 UMA, LISR art. 93).\n4. \"Si te corren, lo pierdes\": FALSO. Te toca la parte proporcional.\n5. \"Te lo pueden dar en vales\": FALSO. Se paga en efectivo o depósito (LFT art. 101).\n\n💬 ¿Qué rumor de dinero te llegó? Coméntalo y lo verifico.\n📩 Mándaselo al grupo de la familia antes de que alguien se crea el de los 30 días.",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 de 30 días, rumor o realidad 🔍",
+    "tags_concretas": [
+     "aguinaldo 30 dias 2026",
+     "aguinaldo 2026 mexico",
+     "aguinaldo pension bienestar",
+     "aguinaldo isr 2026",
+     "aguinaldo si me corren",
+     "aguinaldo en vales",
+     "rumores aguinaldo",
+     "aguinaldo doble"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#derechoslaborales",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿El aguinaldo 2026 será de 30 días?",
+     "¿La Pensión Bienestar da aguinaldo?",
+     "¿Cuánto del aguinaldo está libre de ISR?"
+    ]
+   },
+   "personaje": "2026-11-11: estreno del formato 'Victoria verifica' (investigación: los videos de 'mucho ojo con este aviso' y de rumores de dinero tienen alcance y se comparten)",
+   "revision": "pendiente de segunda revisión"
   }
  ]
 }

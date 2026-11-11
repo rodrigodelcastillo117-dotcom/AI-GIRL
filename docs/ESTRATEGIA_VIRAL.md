@@ -226,3 +226,26 @@ texto) y `carrusel.py` la pone en una franja negra en la diapositiva final; `pub
 "🧮 <calculadora>, gratis: victoriatheceo.vercel.app/<ruta>" al texto (reemplaza la vieja "en mi perfil"). Se puede fijar
 a mano en el carrusel: "calculadora": ["/ruta", "Frase"] o false. Además, c69 ("Guarda esto: 7 calculadoras gratis") es el
 menú para fijar en el perfil de Instagram y TikTok (lo fija Rodrigo: la API no deja).
+
+## Lo que hace viral a las finanzas en español (investigación del 11-nov-2026)
+
+Fuente: búsqueda de lo viral en TikTok en español, sep-nov 2026 (revid), + TikTok Newsroom y Mosseri (Instagram).
+Los que pegaron: @pepsgranadosv 4.5M ("¿cuánto tiempo te tomaría comprar… con el salario mínimo de cada país?"),
+@estudioribeiro 4.2M ("hay 3 reglas que todo empleador debe conocer"), @samaniego2113 2.3M y 60.5K compartidos ("ojalá
+hubieras sabido esto antes… guarda este video y compártelo con tu familia"), @futuroenpareja 2M (contraste de dos parejas),
+@soycharlygalleta 1.6M (noticia de banco), @samaniego2113 717K ("mucho ojo con este aviso"). Lo que fracasa: venta
+disfrazada de consejo ("comenta PPR"). Nuestro único éxito (c16, 3,903 vistas y 14 compartidos) cumple el patrón.
+
+Reglas desde hoy (todas las piezas nuevas):
+1. **Gancho = público + número** en la portada o los primeros 2 s: "Si cobras por quincena: 3 reglas…", "5 rumores del
+   aguinaldo que te van a mandar por WhatsApp". Nada de títulos genéricos.
+2. **Pensado para mandárselo a alguien**: el cierre nombra a la persona exacta ("al grupo de la familia", "a tu roomie").
+   Los compartidos/envíos son la señal que más reparte a gente que no te sigue (Mosseri; patrón de samaniego).
+3. **Del momento**: fecha o noticia de esta semana (aguinaldo hasta el 20-dic, Buen Fin, salario mínimo 2027 en diciembre).
+4. **Pregunta abierta al final** que cualquiera puede contestar ("¿qué rumor te llegó?").
+5. **Series nuevas**: "Victoria verifica" (rumores de dinero con veredicto y artículo de la ley; 1-2 por semana cuando
+   haya rumor real; c70 la estrena) y "¿Cuántos días de salario mínimo cuesta…?" (comparaciones con CONASAMI/INEGI).
+6. En Instagram, con menos de 50K seguidores, el Reel (video) alcanza más que el carrusel en fotos: las fotos del feed son
+   extra, nunca en lugar del Reel.
+No se sabe por qué los carruseles de TikTok bajaron de 350-650 vistas (octubre) a ~90 (noviembre); TikTok dice que los
+seguidores y los éxitos previos no cuentan directo. Hipótesis: los de noviembre son menos útiles para mandar. Se mide.
