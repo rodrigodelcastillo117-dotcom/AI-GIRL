@@ -1152,7 +1152,7 @@
    "youtube": "https://youtube.com/shorts/gj-wm-D7qZE",
    "comentario_youtube": "UgyWxzH5G2oV5spUhHx4AaABAg",
    "reel_ig": {
-    "publica_utc": "2026-11-10T17:03:37Z",
+    "publica_utc": "2026-11-10T17:03:29Z",
     "texto": "Con un año trabajado, menos de 12 días de vacaciones es ilegal\n💬 ¿Cuántos días de vacaciones te dan? Comenta el número. Te contesto a todos.\n👥 Etiqueta a quien no ha tomado vacaciones este año.\n📥 Mis 30 reglas de la CEO, cada una con su fuente, gratis: comenta GUÍA y te lo mando por mensaje 📩\nDías de vacaciones por ley: cuántos te tocan en 2026. 🌴\nDesde 2023, al cumplir un año te tocan mínimo 12 días pagados, y suben dos por año hasta 20 en el quinto año. Encima, una prima vacacional de al menos 25%, y no te las pueden cambiar por dinero.\n\n🔖 Guárdalo para cuando pidas tus vacaciones.\n\n#vacacionesdignas #vacaciones #primavacacional #finanzaspersonales #victoriatheceo",
     "via": "meta",
     "estado": "publicado",
@@ -3954,10 +3954,10 @@
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
    "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)",
    "publica_utc_por_red": {
-    "tt": "2026-11-10T23:00:00Z",
+    "tt": "2026-11-10T23:06:07Z",
     "yt": "2026-11-10T18:00:00Z"
    },
-   "publica_utc": "2026-11-10T23:00:00Z",
+   "publica_utc": "2026-11-10T23:06:07Z",
    "youtube": "https://youtube.com/shorts/8N7NHtj0E3o",
    "reel_ig": {
     "publica_utc": "2026-11-10T21:01:38Z",
@@ -3974,7 +3974,8 @@
    },
    "facebook": {
     "publica_utc": "2026-11-10T21:00:00Z"
-   }
+   },
+   "comentario_youtube": "Ugw4EWprnxMtTOwDbtd4AaABAg"
   },
   {
    "id": "c44",
@@ -5813,14 +5814,15 @@
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (intervención en vez de quiebra, sin cajeros, 3.5 millones, 220 mil, SOFIPO autorizada, margen por intereses).",
    "personaje": "2026-11-10: noticia de dinero en 24-48 h (plan del 10-nov), postura de Victoria marcada como opinión, humor con Capital y pregunta para comentar",
    "publica_utc_por_red": {
-    "tt": "2026-11-10T17:00:00Z",
+    "tt": "2026-11-10T17:07:00Z",
     "yt": "2026-11-11T02:00:00Z"
    },
-   "publica_utc": "2026-11-10T17:00:00Z",
+   "publica_utc": "2026-11-11T02:00:00Z",
    "youtube": "https://youtube.com/shorts/0WFSr4BHo-o",
    "facebook": {
     "publica_utc": "2026-11-11T02:00:00Z"
-   }
+   },
+   "comentario_youtube": "Ugwli_G6NURKemrKUqB4AaABAg"
   },
   {
    "id": "c66",
@@ -5905,15 +5907,16 @@
    "revision": "Escrito el 10-nov-2026 y revisado contra fuentes oficiales por otro agente el mismo día; correcciones aplicadas (descuentos del art. 97 LFT, quincena en promedio, fuentes oficiales primero).",
    "personaje": "2026-11-10: serie por capítulos (plan del 10-nov) para que sigan la cuenta; cuentas, no experiencia inventada; la parte 2 usa las rentas que comenten",
    "publica_utc_por_red": {
-    "tt": "2026-11-11T02:00:00Z",
+    "tt": "2026-11-11T02:06:00Z",
     "yt": "2026-11-10T23:00:00Z"
    },
-   "publica_utc": "2026-11-11T02:00:00Z",
+   "publica_utc": "2026-11-11T02:06:00Z",
    "serie_carruseles": "alcanza_salario_minimo",
    "youtube": "https://youtube.com/shorts/sWemM2dSuAw",
    "facebook": {
     "publica_utc": "2026-11-10T23:00:00Z"
-   }
+   },
+   "comentario_youtube": "Ugz5trcfYmAmBzYmdh94AaABAg"
   }
  ]
 }

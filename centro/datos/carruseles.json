@@ -39,7 +39,7 @@
   "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 49.4,
+  "r_yt": 49.2,
   "c_yt_reales": 0,
   "c_ig_reales": 1
  },
@@ -213,7 +213,7 @@
    "yt": "2026-11-03T20:00:00Z",
    "fb": "2026-11-10T02:30:00Z"
   },
-  "v_yt": 139,
+  "v_yt": 140,
   "l_yt": 3,
   "c_yt": 2,
   "s_yt": 0,
@@ -259,7 +259,7 @@
    "tt": "2026-11-05T19:05:48Z",
    "yt": "2026-11-05T16:00:00Z"
   },
-  "v_yt": 60,
+  "v_yt": 61,
   "l_yt": 0,
   "c_yt": 2,
   "s_yt": 0,
@@ -313,7 +313,7 @@
   "l_ig": 5,
   "c_ig": 6,
   "s_ig": 0,
-  "r_yt": 43.0,
+  "r_yt": 41.7,
   "c_yt_reales": 0,
   "c_ig_reales": 2
  },
@@ -343,7 +343,7 @@
    "yt": "2026-11-07T16:00:00Z",
    "fb": "2026-11-13T03:30:00Z"
   },
-  "v_yt": 92,
+  "v_yt": 99,
   "l_yt": 4,
   "c_yt": 2,
   "s_yt": 0,
@@ -355,7 +355,7 @@
   "l_ig": 5,
   "c_ig": 3,
   "s_ig": 0,
-  "r_yt": 38.7,
+  "r_yt": 46.4,
   "c_yt_reales": 0,
   "c_ig_reales": 2
  },
@@ -404,8 +404,8 @@
    "yt": "2026-11-10T02:00:00Z",
    "fb": "2026-11-10T04:30:00Z"
   },
-  "v_yt": 20,
-  "l_yt": 0,
+  "v_yt": 67,
+  "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
   "v_tt": 164,
@@ -440,7 +440,7 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 34,
+  "v_yt": 57,
   "l_yt": 0,
   "c_yt": 2,
   "s_yt": 0,
@@ -477,8 +477,8 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 31,
-  "l_yt": 0,
+  "v_yt": 54,
+  "l_yt": 2,
   "c_yt": 2,
   "s_yt": 0,
   "v_tt": 119,
@@ -551,7 +551,7 @@
    "yt": "2026-11-08T23:00:00Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 115,
+  "v_yt": 143,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
@@ -567,6 +567,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
+  "r_yt": 47.4,
   "c_yt_reales": 0,
   "c_ig_reales": 1
  },
@@ -1094,21 +1095,25 @@
   "fondo": "yate.jpg",
   "portada": "navidad-regalos.jpg",
   "horas": {
-   "tt": "2026-11-10 17:00",
+   "tt": "2026-11-10 17:06",
    "yt": "2026-11-10 12:00",
    "fb": "2026-11-10 15:00"
   },
   "youtube_id": "8N7NHtj0E3o",
-  "publica_utc": "2026-11-10T23:00:00Z",
+  "publica_utc": "2026-11-10T23:06:07Z",
   "linea": "repartir el aguinaldo si ganas $10,000 al mes: así lo haría yo. 💰",
   "tipo": "carrusel",
   "linea_reel": "si ganara $10,000 al mes, así repartiría mi aguinaldo",
   "reel_ig": "2026-11-10 15:01",
   "publica_utc_por_red": {
-   "tt": "2026-11-10T23:00:00Z",
+   "tt": "2026-11-10T23:06:07Z",
    "yt": "2026-11-10T18:00:00Z",
    "fb": "2026-11-10T21:00:00Z"
   },
+  "v_yt": 1,
+  "l_yt": 0,
+  "c_yt": 1,
+  "s_yt": 0,
   "c_yt_reales": 0,
   "c_ig_reales": 0
  },
@@ -1503,21 +1508,25 @@
   "fondo": "cocina.jpg",
   "portada": "video-18-oficina.jpg",
   "horas": {
-   "tt": "2026-11-10 11:00",
+   "tt": "2026-11-10 11:07",
    "yt": "2026-11-10 20:00",
    "fb": "2026-11-10 20:00"
   },
   "youtube_id": "0WFSr4BHo-o",
-  "publica_utc": "2026-11-10T17:00:00Z",
+  "publica_utc": "2026-11-11T02:00:00Z",
   "linea": "intervinieron un banco en paraguay y casi 3 millones no podían sacar su dinero. ¿te puede pasar en méxico? 🏦",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-10T17:00:00Z",
+   "tt": "2026-11-10T17:07:00Z",
    "yt": "2026-11-11T02:00:00Z",
    "fb": "2026-11-11T02:00:00Z"
   },
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 1,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -1531,21 +1540,25 @@
   "fondo": "gimnasio-ciudad.jpg",
   "portada": "navidad-lista-cocina.jpg",
   "horas": {
-   "tt": "2026-11-10 20:00",
+   "tt": "2026-11-10 20:06",
    "yt": "2026-11-10 17:00",
    "fb": "2026-11-10 17:00"
   },
   "youtube_id": "sWemM2dSuAw",
-  "publica_utc": "2026-11-11T02:00:00Z",
+  "publica_utc": "2026-11-11T02:06:00Z",
   "linea": "¿alcanza el salario mínimo para vivir un mes en méxico? hago las cuentas en 5 partes. parte 1: cuánto te llega. 💵",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-11T02:00:00Z",
+   "tt": "2026-11-11T02:06:00Z",
    "yt": "2026-11-10T23:00:00Z",
    "fb": "2026-11-10T23:00:00Z"
   },
+  "v_yt": 16,
+  "l_yt": 1,
+  "c_yt": 1,
+  "s_yt": 0,
   "c_yt_reales": 0
  }
 ]
