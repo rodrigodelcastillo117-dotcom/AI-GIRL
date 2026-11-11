@@ -136,5 +136,11 @@
   "cambio": "Prueba de formato: 2 videos de Victoria opinando a cámara (O1 pareja mitad y mitad, O2 aguinaldo no es para regalos), 15 s, cierre '¿Estoy mal? Te leo'",
   "por_que": "Los carruseles de datos se guardan pero no se comentan; una opinión que divide es lo que genera conversación en el nicho",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-11",
+  "cambio": "Reglas de lo viral (investigación): gancho público + número, cierre para mandárselo a una persona concreta, del momento, pregunta abierta; series nuevas \"Victoria verifica\" (c70) y \"¿Cuántos días de salario mínimo cuesta…?\"; cada carrusel termina en su calculadora",
+  "por_que": "Los virales de finanzas en español (2-4.5M vistas) y nuestro único éxito (c16) comparten el patrón; los compartidos son la señal que más reparte",
+  "vigilar": "todas"
  }
 ]

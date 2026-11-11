@@ -171,7 +171,7 @@
   "estado": "listo",
   "tema": "que hacer aguinaldo",
   "pilar": "finanzas",
-  "gancho": "Tu aguinaldo no es para regalos",
+  "gancho": "Antes de gastar tu aguinaldo: 5 cosas que hacer primero",
   "titulo": "Qué hacer con el aguinaldo antes de enero 💸",
   "diapositivas": 7,
   "fondo": "yate.jpg",
@@ -1677,6 +1677,57 @@
   "publica_utc_por_red": {
    "ig": "2026-11-14T01:00:00Z",
    "tt": "2026-11-13T19:00:00Z"
+  }
+ },
+ {
+  "id": "c70",
+  "estado": "programado",
+  "tema": "victoria verifica rumores aguinaldo",
+  "pilar": "finanzas",
+  "gancho": "5 rumores del aguinaldo 2026 que te van a mandar por WhatsApp",
+  "titulo": "Aguinaldo 2026 de 30 días, rumor o realidad 🔍",
+  "diapositivas": 7,
+  "fondo": "rincon-lectura.jpg",
+  "portada": "video-17-sala-roja.jpg",
+  "horas": {
+   "tt": "2026-11-12 09:00",
+   "yt": "2026-11-12 12:00",
+   "fb": "2026-11-12 11:00"
+  },
+  "youtube_id": "_ZdghO90lbY",
+  "publica_utc": "2026-11-12T15:00:00Z",
+  "linea": "5 rumores del aguinaldo 2026 que te van a llegar por whatsapp. los verifiqué. 🔍",
+  "tipo": "carrusel",
+  "linea_reel": "5 rumores del aguinaldo 2026 que te van a mandar por whatsapp",
+  "reel_ig": "2026-11-12 11:00",
+  "publica_utc_por_red": {
+   "tt": "2026-11-12T15:00:00Z",
+   "yt": "2026-11-12T18:00:00Z",
+   "fb": "2026-11-12T17:00:00Z"
+  },
+  "c_yt_reales": 0
+ },
+ {
+  "id": "c71",
+  "estado": "programado",
+  "tema": "cuantos dias salario minimo cuesta",
+  "pilar": "finanzas",
+  "gancho": "Con el salario mínimo, ¿cuántos días trabajas para pagar esto?",
+  "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
+  "diapositivas": 8,
+  "fondo": "palco-vip.jpg",
+  "portada": "video-40-cocina.jpg",
+  "horas": {
+   "tt": "2026-11-13 09:00"
+  },
+  "youtube_id": "",
+  "publica_utc": "2026-11-13T15:00:00Z",
+  "linea": "con el salario mínimo de 2026 ($315.04 al día), ¿cuántos días trabajas para pagar esto? 🧾",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "tt": "2026-11-13T15:00:00Z"
   }
  }
 ]

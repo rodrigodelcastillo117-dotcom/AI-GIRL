@@ -116,6 +116,17 @@
  },
  {
   "fecha": "2026-11-12",
+  "tipo": "reel",
+  "id": "c70",
+  "estado": "programado",
+  "que": "Reel del carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (el mismo video del Short)",
+  "horas": {
+   "ig": "11:00",
+   "fb": "11:00"
+  }
+ },
+ {
+  "fecha": "2026-11-12",
   "tipo": "carrusel",
   "id": "c68",
   "que": "Sale el carrusel «Sueldo y renta en México, haz tus cuentas 🧮»",
@@ -128,18 +139,21 @@
  {
   "fecha": "2026-11-12",
   "tipo": "carrusel",
-  "id": "c67",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Renta promedio en México vs salario mínimo 🏠» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "id": "c70",
+  "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍»",
+  "estado": "programado",
+  "horas": {
+   "tt": "09:00",
+   "yt": "12:00"
+  }
  },
  {
   "fecha": "2026-11-12",
   "tipo": "carrusel",
-  "id": "c41",
+  "id": "c67",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Finanzas en pareja y quién paga la cita 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Renta promedio en México vs salario mínimo 🏠» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-13",
@@ -175,18 +189,20 @@
  {
   "fecha": "2026-11-13",
   "tipo": "carrusel",
-  "id": "c53",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Finiquito si te corren en diciembre 📄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "id": "c71",
+  "que": "Sale el carrusel «Salario mínimo 2026 en días de trabajo 🧾»",
+  "estado": "programado",
+  "horas": {
+   "tt": "09:00"
+  }
  },
  {
   "fecha": "2026-11-13",
   "tipo": "carrusel",
-  "id": "c28",
+  "id": "c53",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Separación de bienes o sociedad conyugal ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Finiquito si te corren en diciembre 📄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
@@ -209,18 +225,18 @@
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c30",
+  "id": "c41",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Mitos del aguinaldo y lo que dice la ley 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Finanzas en pareja y quién paga la cita 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c29",
+  "id": "c28",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Cuenta mancomunada o separada en pareja 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Separación de bienes o sociedad conyugal ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
@@ -265,10 +281,10 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c55",
+  "id": "c30",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Presupuesto en pareja con junta de socios 💼» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Mitos del aguinaldo y lo que dice la ley 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -281,13 +297,29 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c29",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Cuenta mancomunada o separada en pareja 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
+  "id": "c55",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Presupuesto en pareja con junta de socios 💼» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "carrusel",
   "id": "c59",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Deudas de mi pareja y firmar de aval ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-17",
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c56",
   "estado": "por_programar",
@@ -303,7 +335,7 @@
   "que": "Carrusel «Negocio en pareja y la SAS en 7 datos 💼» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c57",
   "estado": "por_programar",
@@ -311,7 +343,7 @@
   "que": "Carrusel «Crédito Infonavit en pareja y la escritura 🏠» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c22",
   "estado": "por_programar",
@@ -325,22 +357,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Intercambio navideño de un día de sueldo 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c24",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Meses sin intereses no son gratis 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c25",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Tandas de ahorro sin contrato ni seguro ⚠️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-20",
@@ -361,9 +377,9 @@
  {
   "fecha": "2026-11-20",
   "tipo": "carrusel",
-  "id": "c26",
+  "id": "c24",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Cuesta de enero se evita en diciembre 📅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Meses sin intereses no son gratis 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  }
 ]
