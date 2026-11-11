@@ -91,13 +91,15 @@ def guias():
     avisa que revise sus mensajes). Si Meta no deja mandar el privado, la respuesta pública lleva el enlace."""
     hechos = json.load(open(REGISTRO)) if os.path.exists(REGISTRO) else []
     ya = {h['comentario'] for h in hechos}
-    campos = 'id,caption,comments.limit(50){id,text,username,timestamp}'
+    campos = 'id,caption,comments.limit(50){id,text,username,timestamp,replies.limit(20){username}}'
     media = _http('GET', f'{IG_USUARIO}/media?fields={urllib.parse.quote(campos)}&limit=25')
     for m in media.get('data', []):
         for c in (m.get('comments') or {}).get('data', []):
             texto = (c.get('text') or '').lower().replace('í', 'i')
             if c.get('username') == YO or c['id'] in ya or 'guia' not in texto:
                 continue
+            if any(r.get('username') == YO for r in (c.get('replies') or {}).get('data', [])):
+                continue  # ya lo contestó el aviso instantáneo (centro/api/meta.js)
             enlace, nombre = enlace_para(m.get('caption')), c.get('username') or ''
             try:
                 mid = privado(c['id'], f'¡Hola{" @" + nombre if nombre else ""}! Aquí está lo que te prometí 👇\n{enlace}\n\n'

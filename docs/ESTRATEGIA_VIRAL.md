@@ -169,3 +169,10 @@ queda retenido). Se reintenta solo el día que el último salga publicado.
 **Pauta (Rodrigo, 10-nov-2026): "ahorita no, pero en un futuro sí; es bueno crecer orgánicamente".** No se propone gastar
 cada día; solo los viernes, como ya dice la rutina, la pieza de la semana que más convendría empujar y cuánto, para cuando
 él decida. Primera prueba sugerida cuando quiera: $200 MXN, objetivo seguidores, 2 días, en el mejor "Guarda esto".
+
+**GUÍA instantánea (11-nov-2026, código listo, falta configurar):** `centro/api/meta.js` recibe el aviso de Meta al momento
+(webhook) y entrega la guía en segundos. Se activa cuando Rodrigo: (1) genera en Meta Business un token del usuario del
+sistema con instagram_manage_messages e instagram_manage_comments y le asigna la página "Victoria the CEO"; (2) pone en
+Vercel (proyecto victoria-centro) META_TOKEN, META_APP_SECRET y META_VERIFY_TOKEN; (3) en Meta for Developers → la app →
+Webhooks → Instagram, pone la URL https://victoria-centro.vercel.app/api/meta y la misma META_VERIFY_TOKEN, y marca
+"comments". La revisión de cada hora sigue de respaldo y se salta lo que ya contestó el aviso.
