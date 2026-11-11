@@ -612,7 +612,7 @@ function dibujarConexiones() {
   if (caja.hidden) return;
   caja.replaceChildren(crear('div', {className: 'codigo', textContent: 'CNX-01 · TE TOCA A TI'}), crear('h2', {textContent: 'GUÍA al instante'}),
     pendiente('Hoy Victoria contesta "GUÍA" en Instagram cada hora. Conectando Meta lo contesta en segundos, cuando la persona todavía está viendo el post.',
-      ['META_TOKEN', 'META_APP_SECRET', 'META_VERIFY_TOKEN'], 'Si no sabes de dónde sacarlas en Meta, pídele los pasos a Claude (botón de arriba).'));
+      ['META_TOKEN', 'META_APP_SECRET', 'META_VERIFY_TOKEN'].filter((n) => !c.faltan || c.faltan.includes(n)), 'Si no sabes de dónde sacarlas en Meta, pídele los pasos a Claude (botón de arriba).'));
 }
 
 function dibujarVentas() {

@@ -377,7 +377,8 @@ export default async function handler(req, res) {
     ventas: ven.status === 'fulfilled' ? ven.value : {conectado: true, error: ven.reason?.message},
     // Solo si las variables existen (nunca su valor): el panel avisa qué conexión le falta a Rodrigo.
     conexiones: {meta: ['META_TOKEN', 'META_APP_SECRET', 'META_VERIFY_TOKEN'].every((n) => Boolean(variable(n))),
-      hotmart: ['HOTMART_CLIENT_ID', 'HOTMART_CLIENT_SECRET'].every((n) => Boolean(variable(n)))},
+      hotmart: ['HOTMART_CLIENT_ID', 'HOTMART_CLIENT_SECRET'].every((n) => Boolean(variable(n))),
+      faltan: ['META_TOKEN', 'META_APP_SECRET', 'META_VERIFY_TOKEN', 'HOTMART_CLIENT_ID', 'HOTMART_CLIENT_SECRET'].filter((n) => !variable(n))},
     errores: [
       ...(yt.status === 'rejected' ? [`YouTube: ${yt.reason.message}`] : []),
       ...(pb.status === 'rejected' ? [`Publer: ${pb.reason.message}`] : []),
