@@ -622,6 +622,13 @@ TE_ALCANZA = {
       <p class="nota" id="consejo"></p>
       <div class="etiqueta" style="margin-top: 18px">Tu plan en 3 pasos</div>
       <ol class="plan" id="plan" style="margin: 8px 0 0; padding-left: 1.2rem; line-height: 1.5"></ol>
+      <div id="ia" hidden style="margin-top: 18px">
+        <div class="etiqueta">Victoria analiza tu caso</div>
+        <label>¿Qué te preocupa? <small>(opcional: deudas, un gasto que viene, ahorrar para algo)</small>
+          <textarea id="preocupacion" maxlength="300" rows="2" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--linea); background:rgba(255,255,255,.06); color:var(--crema); font:inherit"></textarea></label>
+        <button type="button" class="boton" id="analizar">Victoria, analiza mi caso</button>
+        <p class="nota" id="analisis" style="white-space: pre-line"></p>
+      </div>
       <p class="nota">¿Quieres que Victoria te haga las cuentas en un video? Comenta tu sueldo, tu renta y tu ciudad en su post más reciente.</p>''',
     'script': '''
 const LINEAS = {"mes": "octubre de 2026", "extrema_urbana": 2594.39, "extrema_rural": 1946.57, "pobreza_urbana": 4985.47, "pobreza_rural": 3576.1};
@@ -684,7 +691,21 @@ function calcular() {
     return li;
   }));
 }
-alCambiar('calculadora', calcular);''',
+alCambiar('calculadora', calcular);
+// "Victoria, analiza mi caso" (sitio/api/analiza.js): el botón solo sale si la función está activa (clave en Vercel).
+fetch('/api/analiza').then((r) => { if (r.ok) document.getElementById('ia').hidden = false; }).catch(() => {});
+document.getElementById('analizar').addEventListener('click', async (ev) => {
+  const boton = ev.target, salida = document.getElementById('analisis');
+  boton.disabled = true; salida.textContent = 'Victoria está revisando tus números… 🐾';
+  try {
+    const r = await fetch('/api/analiza', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({
+      sueldo: numero('sueldo'), renta: numero('renta'), personas: numero('personas'),
+      zona: document.getElementById('zona').value, preocupacion: document.getElementById('preocupacion').value})});
+    const d = await r.json();
+    salida.textContent = d.plan || d.error || 'No pude analizar tu caso ahorita.';
+  } catch (e) { salida.textContent = 'No pude analizar tu caso ahorita. Intenta en un momento.'; }
+  boton.disabled = false;
+});''',
     'venta_titulo': 'Haz tus cuentas completas, mes a mes.',
     'venta_texto': ('El tablero de la CEO acomoda tu sueldo en renta, comida, transporte, deudas y ahorro, te dice cuánto te sobra '
                     'o te falta y lo conecta con tu fondo de emergencia y tus metas.'),
