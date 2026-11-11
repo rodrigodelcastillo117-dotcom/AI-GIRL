@@ -104,12 +104,13 @@ export default async function handler(req, res) {
   const c = cuentas(entrada.datos);
   const client = new Anthropic();
   try {
-    const respuesta = await client.beta.messages.create({
-      model: 'claude-opus-5-5',
+    // Claude Haiku 5.5 (Rodrigo, 11-nov-2026: "usa el modelo barato pero bueno, precio calidad"): el plan es corto y las
+    // cuentas ya vienen hechas. Si la calidad no alcanza, subir a 'claude-sonnet-5-5'. Haiku 5.5 no tiene respaldo
+    // automático si se niega: se maneja abajo con stop_reason 'refusal'.
+    const respuesta = await client.messages.create({
+      model: 'claude-haiku-5-5',
       max_tokens: 2000,
       output_config: {effort: 'low'}, // plan corto: poco razonamiento basta
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default', // si el modelo se niega por un falso positivo, otro modelo lo intenta en la misma llamada
       system: SISTEMA,
       messages: [{role: 'user', content: datosParaVictoria(c, entrada.preocupacion)}],
     });
