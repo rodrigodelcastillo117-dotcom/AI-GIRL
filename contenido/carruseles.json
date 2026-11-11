@@ -6233,7 +6233,7 @@
   },
   {
    "id": "c70",
-   "estado": "borrador",
+   "estado": "programado",
    "tema": "victoria_verifica_rumores_aguinaldo",
    "pilar": "finanzas",
    "fondo": "assets/fondos/rincon-lectura.jpg",
@@ -6252,17 +6252,17 @@
    "diapositivas": [
     {
      "titulo": "\"Este año son 30 días\"",
-     "texto": "FALSO, por ahora. Hay una iniciativa para subirlo según tu antigüedad, pero no se ha aprobado. Hoy la ley dice: mínimo 15 días de salario.\n\nLFT, art. 87 · iniciativas pendientes en el Congreso",
-     "voz": "Falso, por ahora: los treinta días son una iniciativa que no se ha aprobado. Hoy son mínimo quince."
+     "texto": "FALSO, por ahora. Hay iniciativas para subirlo según tu antigüedad, pero ninguna está aprobada. Hoy la ley dice: mínimo 15 días de salario.\n\nLFT, art. 87 (vigente) · iniciativas en comisión, oct-2026",
+     "voz": "Falso, por ahora: hay iniciativas, pero ninguna está aprobada. Hoy son mínimo quince días."
     },
     {
      "titulo": "\"La Pensión Bienestar da aguinaldo\"",
-     "texto": "FALSO. Bienestar aclaró que no hay aguinaldo ni depósitos extra en diciembre. Si te piden datos para \"liberarlo\", es fraude.\n\nSecretaría de Bienestar",
+     "texto": "FALSO. Las reglas 2026 de la Pensión Bienestar no contemplan aguinaldo. Si te piden datos para \"liberarlo\", es fraude: Bienestar ya lo advirtió.\n\nReglas de Operación 2026 (DOF 12-feb-2026) · Bienestar, dic-2025",
      "voz": "Falso: la Pensión Bienestar no da aguinaldo. Si te piden datos, es fraude."
     },
     {
      "titulo": "\"El aguinaldo ya no paga ISR\"",
-     "texto": "FALSO. Hay una propuesta, pero hoy solo están libres de ISR los primeros $3,519.30 (30 UMA). Lo demás sí paga.\n\nLISR, art. 93, fr. XIV · UMA 2026, INEGI",
+     "texto": "FALSO. Hay una propuesta, pero hoy solo están exentos los primeros $3,519.30 (30 UMA). Lo que exceda paga ISR.\n\nLISR, art. 93, fr. XIV · UMA 2026, INEGI",
      "voz": "Falso: solo los primeros tres mil quinientos diecinueve pesos están libres de impuestos."
     },
     {
@@ -6272,8 +6272,8 @@
     },
     {
      "titulo": "\"Te lo pueden dar en vales\"",
-     "texto": "FALSO. El salario se paga en efectivo o, si tú aceptas, por depósito o transferencia. Nunca en vales.\n\nLFT, art. 101",
-     "voz": "Falso: se paga en efectivo o por depósito, nunca en vales."
+     "texto": "FALSO. El aguinaldo se paga en dinero: en efectivo o, si tú aceptas, por depósito o transferencia. Los vales no pueden sustituirlo.\n\nLFT, art. 101",
+     "voz": "Falso: el aguinaldo se paga en dinero. Los vales no pueden sustituirlo."
     }
    ],
    "cierre": {
@@ -6281,9 +6281,9 @@
     "texto": "Mándaselo al grupo de la familia antes de que alguien se crea el de los 30 días.",
     "voz": "¿Qué rumor de dinero te llegó? Coméntalo y lo verifico."
    },
-   "fuente": "PENDIENTE de segunda revisión: LFT arts. 87 y 101; LISR art. 93 fr. XIV; UMA 2026 $117.31 (INEGI); estado de la iniciativa de aguinaldo de 30 días; aclaración de la Secretaría de Bienestar.",
+   "fuente": "LFT art. 87 (vigente, última reforma DOF 14-05-2026): 15 días mínimo, antes del 20 de diciembre, proporcional; LFT art. 101; iniciativas de 30 días turnadas a comisión (Expansión, 5-oct-2026), ninguna aprobada; LISR art. 93 fr. XIV + UMA 2026 $117.31 (INEGI) = $3,519.30; Reglas de Operación Pensión para el Bienestar 2026 (DOF 12-feb-2026) sin aguinaldo; aviso de fraude de Bienestar/Infodemia (20-dic-2025).",
    "titulo_post": "Victoria verifica: 5 rumores del aguinaldo 2026",
-   "texto_post": "5 rumores del aguinaldo 2026 que te van a llegar por WhatsApp. Los verifiqué. 🔍\n1. \"Este año son 30 días\": FALSO, por ahora. Es una iniciativa que no se ha aprobado; hoy son mínimo 15 días (LFT art. 87).\n2. \"La Pensión Bienestar da aguinaldo\": FALSO. Bienestar aclaró que no hay aguinaldo ni depósitos extra; si te piden datos, es fraude.\n3. \"El aguinaldo ya no paga ISR\": FALSO. Solo los primeros $3,519.30 están libres (30 UMA, LISR art. 93).\n4. \"Si te corren, lo pierdes\": FALSO. Te toca la parte proporcional.\n5. \"Te lo pueden dar en vales\": FALSO. Se paga en efectivo o depósito (LFT art. 101).\n\n💬 ¿Qué rumor de dinero te llegó? Coméntalo y lo verifico.\n📩 Mándaselo al grupo de la familia antes de que alguien se crea el de los 30 días.",
+   "texto_post": "5 rumores del aguinaldo 2026 que te van a llegar por WhatsApp. Los verifiqué. 🔍\n1. \"Este año son 30 días\": FALSO, por ahora. Hay iniciativas, pero ninguna está aprobada; hoy son mínimo 15 días (LFT art. 87).\n2. \"La Pensión Bienestar da aguinaldo\": FALSO. Sus reglas 2026 no lo contemplan; si te piden datos para \"liberarlo\", es fraude.\n3. \"El aguinaldo ya no paga ISR\": FALSO. Solo los primeros $3,519.30 están exentos (30 UMA, LISR art. 93); lo que exceda paga.\n4. \"Si te corren, lo pierdes\": FALSO. Te toca la parte proporcional (LFT art. 87).\n5. \"Te lo pueden dar en vales\": FALSO. Se paga en dinero; los vales no pueden sustituirlo (LFT art. 101).\n\n📚 LFT arts. 87 y 101 (texto vigente) · LISR art. 93 · UMA 2026 (INEGI) · Reglas de Operación Pensión Bienestar 2026 (DOF 12-feb-2026)\n💬 ¿Qué rumor de dinero te llegó? Coméntalo y lo verifico.\n📩 Mándaselo al grupo de la familia antes de que alguien se crea el de los 30 días.",
    "seo": {
     "palabra_clave": "aguinaldo 2026",
     "titulo": "Aguinaldo 2026 de 30 días, rumor o realidad 🔍",
@@ -6310,6 +6310,92 @@
     ]
    },
    "personaje": "2026-11-11: estreno del formato 'Victoria verifica' (investigación: los videos de 'mucho ojo con este aviso' y de rumores de dinero tienen alcance y se comparten)",
+   "revision": "11-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, LISR, INEGI, ROP Bienestar 2026): los 5 rumores son falsos; se aplicaron sus redacciones (iniciativas en plural, ROP 2026 en vez del desmentido de 2025, \"lo que exceda paga\", vales no sustituyen).",
+   "publica_utc_por_red": {
+    "tt": "2026-11-12T15:00:00Z"
+   },
+   "publica_utc": "2026-11-12T15:00:00Z"
+  },
+  {
+   "id": "c71",
+   "estado": "borrador",
+   "tema": "cuantos_dias_salario_minimo_cuesta",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-40-cocina.jpg",
+    "etiqueta": "SALARIO MÍNIMO 2026",
+    "titulo": "Con el salario mínimo, ¿cuántos días trabajas para pagar esto?",
+    "voz": "Con el salario mínimo, ¿cuántos días tienes que trabajar para pagar esto? Hice las cuentas.",
+    "gancho_tipo": "pregunta",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tu día vale $315.04",
+     "texto": "El salario mínimo general 2026 es de $315.04 al día ($9,582 al mes). Así se ve cuando lo conviertes en cosas.\n\nCONASAMI, salarios mínimos 2026 (DOF 9-dic-2025)",
+     "voz": "El salario mínimo de 2026 es de trescientos quince pesos al día."
+    },
+    {
+     "titulo": "Comer un mes: 8 días",
+     "texto": "La comida mínima de una persona en la ciudad cuesta $2,594 al mes: 8 días de salario mínimo, solo para comer.\n\nINEGI, línea de pobreza extrema por ingresos, octubre 2026 · cálculo propio",
+     "voz": "Comer un mes, lo mínimo: ocho días de trabajo."
+    },
+    {
+     "titulo": "La renta promedio: casi 12 días",
+     "texto": "Los hogares que rentan pagaban en promedio $3,724 al mes: casi 12 días de salario mínimo.\n\nINEGI, ENIGH 2024 (microdatos) · cálculo propio",
+     "voz": "La renta promedio: casi doce días."
+    },
+    {
+     "titulo": "Vivir lo básico: casi 16 días",
+     "texto": "Comida y lo básico (transporte, salud, ropa, vivienda) para una persona en la ciudad: $4,985 al mes, casi 16 días.\n\nINEGI, línea de pobreza por ingresos, octubre 2026 · cálculo propio",
+     "voz": "Vivir lo básico: casi dieciséis días."
+    },
+    {
+     "titulo": "Un iPhone 17: casi 70 días",
+     "texto": "Desde $21,999 de contado: casi 70 días de salario mínimo. Más de dos meses trabajando sin gastar en nada más.\n\nApple México, precio de contado 256 GB (11-nov-2026) · cálculo propio",
+     "voz": "Un iPhone diecisiete: casi setenta días de trabajo."
+    },
+    {
+     "titulo": "Tu aguinaldo mínimo: 15 días",
+     "texto": "Por ley son mínimo 15 días de salario: con el mínimo, $4,725.60. No alcanza ni para la cuarta parte de ese celular.\n\nLFT, art. 87 · cálculo propio",
+     "voz": "Tu aguinaldo mínimo son quince días: no alcanza ni para la cuarta parte de ese celular."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuántos días de tu sueldo cuesta tu celular? Comenta el número.",
+    "texto": "Mándaselo a quien está a punto de sacar un celular a meses.",
+    "voz": "¿Cuántos días de tu sueldo cuesta tu celular? Comenta el número."
+   },
+   "fuente": "CONASAMI 2026: $315.04 diarios (DOF 9-dic-2025). INEGI líneas de pobreza oct-2026: extrema urbana $2,594.39, por ingresos urbana $4,985.47 (boletín 689/26). INEGI ENIGH 2024 microdatos: renta promedio $3,724 (cálculo propio). Apple México, iPhone 17 256 GB desde $21,999 de contado (apple.com/mx, leído 11-nov-2026). LFT art. 87: 15 días mínimo. Divisiones: 8.24, 11.82, 15.82, 69.83 días; 15 × 315.04 = $4,725.60 = 21.5% del iPhone.",
+   "titulo_post": "¿Cuántos días de salario mínimo cuesta…? Hice las cuentas",
+   "texto_post": "Con el salario mínimo de 2026 ($315.04 al día), ¿cuántos días trabajas para pagar esto? 🧾\n1. Comer un mes (lo mínimo, INEGI): 8 días.\n2. La renta promedio: casi 12 días.\n3. Vivir lo básico (comida, transporte, salud, ropa, vivienda): casi 16 días.\n4. Un iPhone 17 de contado ($21,999): casi 70 días.\n5. Tu aguinaldo mínimo son 15 días: $4,725.60. Ni la cuarta parte del celular.\nNo es para que no te compres nada: es para que sepas cuántos días de tu vida cuesta cada cosa antes de pagarla.\n\n📚 CONASAMI 2026 · INEGI, líneas de pobreza oct-2026 y ENIGH 2024 (cálculo propio) · Apple México (precio de contado, 11-nov-2026) · LFT art. 87\n💬 ¿Cuántos días de tu sueldo cuesta tu celular? Comenta el número.\n📩 Mándaselo a quien está a punto de sacar un celular a meses.",
+   "seo": {
+    "palabra_clave": "salario mínimo 2026",
+    "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
+    "tags_concretas": [
+     "salario minimo 2026",
+     "cuanto es el salario minimo 2026",
+     "dias de trabajo iphone 17",
+     "precio iphone 17 mexico",
+     "canasta basica 2026",
+     "renta promedio mexico",
+     "aguinaldo minimo 2026",
+     "cuanto gana el salario minimo al mes"
+    ],
+    "hashtags": [
+     "#salariominimo",
+     "#finanzaspersonales",
+     "#dinero",
+     "#mexico"
+    ],
+    "preguntas": [
+     "¿Cuánto es el salario mínimo 2026 al día?",
+     "¿Cuántos días de salario mínimo cuesta un iPhone?",
+     "¿Cuánto es el aguinaldo con el salario mínimo?"
+    ]
+   },
+   "personaje": "2026-11-11: estreno de la serie de comparaciones (formato del video de @pepsgranadosv, 4.5M vistas)",
    "revision": "pendiente de segunda revisión"
   }
  ]
