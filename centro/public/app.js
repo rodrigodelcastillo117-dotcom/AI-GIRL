@@ -24,6 +24,17 @@ const compacto = (n) => (n == null ? '—' : Math.abs(n) >= 10000 ? new Intl.Num
 const pct = (x) => (x == null ? '—' : `${Math.round(x * 100)}%`);
 const mx = (iso, op = {day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'}) => (iso ? new Date(iso).toLocaleString('es-MX', {timeZone: 'America/Mexico_City', ...op}) : '');
 const porFecha = (a, b) => (a.fecha_utc < b.fecha_utc ? -1 : 1);
+// Texto para Rodrigo, no para máquinas (11-nov-2026): "2026-11-08" → "8 nov", "1 video" / "2 videos", títulos en vez de números.
+const fechaCorta = (iso) => new Date(`${String(iso).slice(0, 10)}T12:00:00`).toLocaleDateString('es-MX', {day: 'numeric', month: 'short'}).replace('.', '');
+const sinIso = (t) => String(t || '').replace(/\b(\d{4}-\d{2}-\d{2})(?:[T ][\d:.]+Z?)?\b/g, (_, d) => fechaCorta(d));
+const plural = (n, uno, varios) => `${fmt(n)} ${n === 1 ? uno : varios}`;
+const recortar = (t, n) => { t = String(t || '').trim(); return t.length <= n ? t : `${t.slice(0, n).replace(/[\s,;:.(¿¡—-]+\S*$/, '')}…`; };
+const hoyMx = () => new Date().toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
+function titulo(id, n = 42) {
+  const p = todo().find((x) => String(x.id) === String(id));
+  const t = p && (p.titulo || p.titulo_post || p.gancho || String(p.tema || '').replace(/_/g, ' '));
+  return t ? `«${recortar(t, n)}»` : `${String(id).startsWith('c') ? 'carrusel' : 'video'} ${id}`;
+}
 
 // ---------- acceso ----------
 async function pedir(ruta, opciones) {
@@ -205,7 +216,7 @@ function mejoras() {
     lista.push(['idea', `${String(mejor.id).startsWith('c') ? 'El carrusel' : 'El video'} ${mejor.id} es el récord con ${fmt(vistasDe(mejor))} vistas: "${mejor.gancho || mejor.titulo || ''}".`]);
   }
   const r = resumen();
-  if (r.listos) lista.push(['dato', `${r.listos} video(s) ya generados esperan salir: se publican sin gastar créditos.`]);
+  if (r.listos) lista.push(['dato', `${r.listos === 1 ? '1 video ya generado espera' : `${r.listos} videos ya generados esperan`} salir: se publican sin gastar créditos.`]);
   // Solo las fallas de los últimos 7 días (11-nov-2026: seguía saliendo una del 31-oct ya resuelta).
   const hace7 = Date.now() - 7 * 86400000;
   const fallos = ejecuciones.filter((e) => e.resultado === 'fallido' && new Date(e.fecha_utc).getTime() > hace7).sort(porFecha);
@@ -239,6 +250,7 @@ function dibujarTodo() {
   $('m-calidad').textContent = pct(r.calidad);
   $('m-cola').textContent = fmt(r.cola);
   $('m-fallos').textContent = fmt(r.fallos);
+  if ($('m-fallos-sub')) $('m-fallos-sub').textContent = r.fallos === 1 ? 'vez que no se publicó' : 'veces que no se publicó';
   $('m-lecciones').textContent = fmt(r.lecciones);
   $('a-usados').textContent = fmt(r.usados);
   $('a-costo').textContent = fmt(r.costo);
@@ -358,10 +370,9 @@ function dibujarRedes() {
 function dibujarCinta(ejecuciones, aprendizajes) {
   // Resumen corto y sin jerga (11-nov-2026: la cinta mostraba "voz_victoria cargaba Chatterbox"); el detalle completo
   // sigue en la tabla de ejecuciones. Si una ejecución vieja no trae resumen, se corta la primera frase del detalle.
-  const recorta = (t, n) => (t.length <= n ? t : t.slice(0, n).replace(/[\s,;:.(]+\S*$/, '') + '…');
   const corto = (e) => e.resumen || String(e.detalle || e.nota || '').split(/[.:;(]/)[0].slice(0, 90);
   const eventos = [...ejecuciones].sort(porFecha).reverse().slice(0, 6).map((e) => `${mx(e.fecha_utc)} · ${(ESTADOS[e.resultado] || [e.resultado])[0]} · ${corto(e)}`);
-  eventos.push(...aprendizajes.slice(-3).filter((a) => a.tipo !== 'tecnico').map((a) => recorta(`Lección: ${a.aprendizaje || a.regla}`, 160)));
+  eventos.push(...aprendizajes.slice(-3).filter((a) => a.tipo !== 'tecnico').map((a) => recortar(`Lección: ${a.aprendizaje || a.regla}`, 160)));
   const cinta = $('cinta');
   // Dos copias para que el desplazamiento sea continuo.
   cinta.replaceChildren(...[...eventos, ...eventos].map((t) => crear('span', {textContent: t})));
@@ -370,7 +381,13 @@ function dibujarCinta(ejecuciones, aprendizajes) {
 function dibujarHangar(videos) {
   const caja = $('hangar');
   caja.replaceChildren();
-  for (const v of videos) {
+  // Primero lo que viene (listo o programado sin salir), luego lo más reciente; lo que falta generar al final (11-nov-2026:
+  // abría con los videos 01 y 02 de octubre).
+  const rango = (v) => (!salio(v) && ['programado', 'listo_para_publicar', 'en_proceso'].includes(v.estado) ? 0 : salio(v) ? 1 : 2);
+  const turno = [FOTO.auditoria?.decision?.publicar_hoy, ...(FOTO.estado.prioridad_publicar || [])].filter(Boolean);
+  const lugar = (v) => (turno.includes(v.id) ? turno.indexOf(v.id) : turno.length);
+  const orden = [...videos].sort((a, b) => rango(a) - rango(b) || (rango(a) === 0 ? lugar(a) - lugar(b) : 0) || (rango(a) === 1 ? String(b.publica_utc || '').localeCompare(String(a.publica_utc || '')) : 0));
+  for (const v of orden) {
     const poster = crear('div', {className: 'poster'});
     poster.append(v.miniatura ? crear('img', {src: v.miniatura, alt: `Video ${v.id}`, loading: 'lazy'}) : crear('em', {textContent: `${(v.locacion || '').replace('_', ' ')} · por generar`}));
     poster.append(crear('span', {className: 'num', textContent: v.id}));
@@ -382,8 +399,8 @@ function dibujarHangar(videos) {
     const extra = [PILARES[v.pilar] || v.pilar];
     if (Number(v.qa_similitud) > 0) extra.push(`calidad ${pct(Number(v.qa_similitud))}`);
     caja.append(crear('div', {className: 'tarjeta'}, poster, crear('div', {className: 'info'},
-      crear('span', {className: `chip ${clase}`, textContent: v.publica_mx && ['programado', 'publicado'].includes(v.estado) ? `${texto} · ${v.publica_mx.slice(5)}` : texto}),
-      crear('p', {textContent: v.gancho}),
+      crear('span', {className: `chip ${clase}`, textContent: v.publica_mx && ['programado', 'publicado'].includes(v.estado) ? `${texto} · ${fechaCorta(v.publica_mx)}` : texto}),
+      crear('p', {textContent: v.titulo || v.gancho}),
       crear('p', {className: 'met', textContent: extra.join(' · ')}),
       ...(linea ? [crear('p', {className: 'met', textContent: linea})] : []))));
   }
@@ -392,7 +409,8 @@ function dibujarHangar(videos) {
 const ATRIBUTOS = {pilar: 'Tema', tipo_fondo: 'Tipo de fondo', locacion: 'Fondo', estilo_vestuario: 'Vestimenta',
   color_vestuario: 'Color de ropa', tipo_gancho: 'Tipo de gancho', titulo_emoji: 'Emoji en el título',
   titulo_largo: 'Largo del título', titulo_tipo: 'Título: afirma o pregunta', dia: 'Día', hora: 'Hora'};
-const MODOS = {aprovechar: 'Aprovechar', explorar: 'Explorar', 'sin guiones': 'Sin guiones'};
+const MODOS = {aprovechar: 'Aprovechar', explorar: 'Explorar', prioridad: 'Prioridad', 'sin guiones': 'Sin guiones'};
+const VALORES = {numero: 'Número', dato: 'Dato', pregunta: 'Pregunta', contradiccion: 'Contradicción', historia: 'Historia', afirma: 'Afirma'};
 
 function dibujarLaboratorio(a) {
   const caja = $('decision');
@@ -403,7 +421,13 @@ function dibujarLaboratorio(a) {
   } else {
     // Sin nombres de archivos ni claves internas en el texto para Rodrigo (11-nov-2026: salía "(config.json → prioridad_videos)").
     const llano = (t) => String(t || '').replace(/\s*\((?:config\.json|contenido\/)[^)]*\)/g, '').replace(/config\.json\s*→\s*\w+/g, 'la configuración');
-    texto.append(crear('p', {textContent: `${d.toca_publicar ? `Hoy toca publicar${d.publicar_hoy ? ` el video ${d.publicar_hoy}` : ''}` : 'Hoy no toca publicar'} (${llano(d.motivo)}). Siguiente a generar: ${llano(d.por_que)}`}));
+    const motivo = sinIso(llano(d.motivo)).replace(/^el último/, 'el último video');
+    texto.append(crear('p', {textContent: d.toca_publicar && d.publicar_hoy ? `Hoy sale el video ${titulo(d.publicar_hoy, 60)} (${motivo}).`
+      : d.toca_publicar ? `Hoy toca video (${motivo}), pero no hay uno listo.` : `Hoy no sale video: ${motivo}.`}));
+    const cs = d.carruseles || {};
+    const tts = (cs.tiktoks || (cs.tiktok ? [cs.tiktok] : [])).map((x) => titulo(x.id, 70));
+    if (tts.length) texto.append(crear('p', {className: 'nota', textContent: `Carruseles de hoy en TikTok: ${tts.join(', ')}.`}));
+    if (d.video_id) texto.append(crear('p', {className: 'nota', textContent: `Lo siguiente que se genera: el video ${titulo(d.video_id, 50)}${d.modo === 'prioridad' ? ', que tiene prioridad' : ` (${llano(d.por_que).replace(/\.$/, '')})`}.`}));
     if (d.horarios) texto.append(crear('p', {className: 'nota', textContent: `Hoy cada red a su hora: ${Object.entries(d.horarios).map(([r, h]) => `${NOMBRE_RED[r]} ${h}`).join(' · ')}.`}));
     if (a.reglas_vigentes?.length) texto.append(crear('ul', {}, ...a.reglas_vigentes.map((r) => crear('li', {textContent: r}))));
     if (d.cambios_sugeridos?.length) {
@@ -412,7 +436,10 @@ function dibujarLaboratorio(a) {
   }
   texto.append(crear('p', {className: 'nota', textContent: `${a.videos_calificados || 0} videos calificados${a.base_vistas_36h ? ` · lo normal: ${fmt(a.base_vistas_36h)} vistas a 36 h` : ''}${a.fecha_utc ? ` · auditoría del ${mx(a.fecha_utc)}` : ''}`}));
   const modo = d?.modo || 'aprovechar';
-  caja.replaceChildren(crear('div', {className: `modo ${modo}`}, MODOS[modo] || modo, crear('small', {textContent: d?.video_id ? `video ${d.video_id}` : 'sin video'})), texto);
+  // El recuadro grande dice lo de HOY (11-nov-2026: decía "Prioridad · video 40" el día que salía O1).
+  const sale = d?.toca_publicar && d?.publicar_hoy;
+  caja.replaceChildren(crear('div', {className: `modo ${sale ? 'aprovechar' : modo}`}, sale ? 'Hoy sale' : (MODOS[modo] || modo),
+    crear('small', {textContent: sale ? `video ${d.publicar_hoy}` : d?.video_id ? `siguiente: video ${d.video_id}` : 'sin video'})), texto);
 
   const lab = $('laboratorio');
   lab.replaceChildren();
@@ -432,9 +459,9 @@ function dibujarLaboratorio(a) {
       uno.style.left = `${(1 / tope) * 100}%`;
       barra.append(relleno, uno);
       barra.title = `${f.estado} · ${f.n} videos · interacción ${pct(f.engagement)}`;
-      lista.append(crear('div', {className: 'fila'}, crear('span', {textContent: PILARES[f.valor] || f.valor.replace('_', ' ')}), barra, crear('em', {textContent: `${f.indice.toFixed(2)} · ${f.n} v`})));
+      lista.append(crear('div', {className: 'fila'}, crear('span', {textContent: PILARES[f.valor] || VALORES[f.valor] || f.valor.replace(/_/g, ' ')}), barra, crear('em', {textContent: `${f.indice.toFixed(2)} · ${f.n} vid.`})));
     }
-    const tarjeta = crear('article', {className: 'panel'}, crear('div', {className: 'codigo', textContent: `LAB · ${atributo}`}), crear('h2', {textContent: ATRIBUTOS[atributo] || atributo}), lista);
+    const tarjeta = crear('article', {className: 'panel'}, crear('div', {className: 'codigo', textContent: `LAB · ${atributo.replace(/_/g, ' ')}`}), crear('h2', {textContent: ATRIBUTOS[atributo] || atributo}), lista);
     // A la vista solo lo que más decide (11-nov-2026: eran 14 tarjetas, casi todas con 1 video); el resto en "Ver las demás".
     if (['pilar', 'tipo_gancho', 'hora'].includes(atributo)) lab.append(tarjeta);
     else (lab.querySelector('.lab-mas .lab-rejilla') || lab.appendChild(crear('details', {className: 'lab-mas panel ancho'},
@@ -612,10 +639,10 @@ function dibujarDespegues() {
     const cuenta = crear('b', {className: 'cuenta-red', textContent: '—'});
     if (sig) cuenta.dataset.t = String(sig.t);
     const fila = crear('div', {className: 'despegue'}, crear('span', {className: 'red-nombre', textContent: red.nombre}), cuenta,
-      crear('small', {textContent: sig ? `${sig.p.id ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id}` : sig.p.texto} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : (() => {
+      crear('small', {textContent: sig ? `${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})} · ${sig.p.id ? titulo(sig.p.id, 40) : `«${recortar(sig.p.texto, 40)}»`}` : (() => {
         // La rutina programa a las 6:37 (hora de México): antes de esa hora es "hoy a las 6:37"; después, "mañana" (11-nov-2026).
         const [h, m] = new Date().toLocaleTimeString('en-GB', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit'}).split(':').map(Number);
-        return `Nada programado todavía: la rutina lo programa ${h * 60 + m < 6 * 60 + 37 ? 'hoy' : 'mañana'} a las 6:37`;
+        return `La rutina lo programa ${h * 60 + m < 6 * 60 + 37 ? 'hoy' : 'mañana'} a las 6:37`;
       })()}));
     fila.style.setProperty('--acento', red.color);
     return fila;
@@ -678,11 +705,20 @@ function dibujarHorarios(a, estado) {
 }
 
 function dibujarCarruseles(lista = []) {
-  $('t-carruseles').replaceChildren(...lista.map((c) => {
-    const horas = Object.entries(c.horas || {}).map(([r, h]) => `${NOMBRE_RED[r]} ${h.slice(5)}`).join(' · ');
+  // Lo que viene primero (en el orden de la rutina), luego lo más reciente (11-nov-2026: abría con c01 de octubre, el tema
+  // salía sin acentos y el gancho largo hacía filas altísimas en el celular).
+  const prio = FOTO.estado.prioridad_carruseles || [];
+  const rango = (c) => (!salio(c) && ['listo', 'programado'].includes(c.estado) ? 0 : salio(c) ? 1 : 2);
+  const lugar = (c) => (prio.includes(c.id) ? prio.indexOf(c.id) : prio.length);
+  const ultimo = (c) => Object.values(c.horas || {}).sort().pop() || '';
+  const orden = [...lista].sort((a, b) => rango(a) - rango(b) || (rango(a) === 0 ? lugar(a) - lugar(b) : ultimo(b).localeCompare(ultimo(a))));
+  const nombres = {tt: 'TT', ig: 'IG', yt: 'YT', fb: 'FB'};
+  $('t-carruseles').replaceChildren(...orden.map((c) => {
+    const horas = Object.entries(c.horas || {}).sort((p, q) => p[1].localeCompare(q[1]))
+      .map(([r, h]) => `${nombres[r] || r} ${fechaCorta(h)} ${h.slice(11, 16)}`).join(' · ');
     const m = medidas(c);
     const red = (clave) => celda(salio(c) && m[clave] ? fmt(m[clave].v) : '', 'n');
-    return crear('tr', {}, celda(c.id), chip(c.estado), celda(c.tema), celda(c.gancho), celda(horas || '—'),
+    return crear('tr', {}, celda(c.id), chip(c.estado), celda(c.titulo || String(c.tema || '').replace(/_/g, ' ')), celda(horas || '—'),
       red('ig'), red('tt'), red('yt'), red('fb'), celda(salio(c) && medido(c) ? fmt(vistasDe(c)) : '', 'n'));
   }));
 }
@@ -841,7 +877,7 @@ function dibujarMejora() {
     const antes = promedio(diasAntes(c.fecha, 4), diasAntes(c.fecha, 1));
     const despues = promedio(diasAntes(c.fecha, 0), diasAntes(c.fecha, -3));
     const dias = diario.filter((d) => d.fecha >= c.fecha).length;
-    let resultado = c.fecha > hoyMx ? 'programado: aún no empieza' : `midiendo · faltan ${Math.max(1, 3 - dias)} día(s)`, clase = '';
+    let resultado = c.fecha > hoyMx ? 'programado: aún no empieza' : `midiendo · ${Math.max(1, 3 - dias) === 1 ? 'falta 1 día' : `faltan ${Math.max(1, 3 - dias)} días`}`, clase = '';
     if (dias >= 3 && antes != null && despues != null && antes > 0) {
       const x = (despues - antes) / antes;
       resultado = `${fmt(antes)} → ${fmt(despues)} vistas/día (${x >= 0 ? '▲' : '▼'} ${Math.abs(Math.round(x * 100))}%)`;
@@ -1130,7 +1166,7 @@ function dibujarComentarHoy() {
   const guardar = () => { try { localStorage.setItem(clave, JSON.stringify(hechos)); } catch (e) { /* sin memoria local */ } };
   const resumen = $('comentar-resumen');
   const pintarResumen = () => {
-    if (resumen) resumen.textContent = lista.length ? `${hechos.length} de ${lista.length} hechos · lista del ${datos.fecha}` : 'la rutina de la mañana deja la lista';
+    if (resumen) resumen.textContent = lista.length ? `${hechos.length} de ${lista.length} hechos · ${datos.fecha === hoyMx() ? 'lista de hoy' : `lista del ${fechaCorta(datos.fecha)}; la nueva llega a las 6:37`}` : 'la rutina de la mañana deja la lista';
   };
   pintarResumen();
   if (!lista.length) { caja.replaceChildren(crear('p', {className: 'nota', textContent: 'Todavía no hay lista de hoy.'})); return; }

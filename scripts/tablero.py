@@ -196,10 +196,21 @@ def horas_por_red(item):
     return {r: a_mexico(t) for r, t in por_red.items()}
 
 
+def corto(t, n=48):
+    t = ' '.join(str(t or '').split())
+    return t if len(t) <= n else t[:n].rsplit(' ', 1)[0].rstrip(',.;:¿¡') + '…'
+
+
+def nombre(item):
+    """Cómo lo lee Rodrigo: su título, no su número (11-nov-2026: "Sale el video 17" no decía nada)."""
+    tipo = 'carrusel' if str(item.get('id', '')).startswith('c') else 'video'
+    texto = ((item.get('seo') or {}).get('titulo') or item.get('titulo_post') or item.get('texto_pantalla')
+             or str(item.get('tema', '')).replace('_', ' '))
+    return f"{tipo} «{corto(texto)}»" if texto else f"{tipo} {item.get('id', '')}".strip()
+
+
 def que_sale(item):
-    if str(item['id']).startswith('c'):
-        return f"Sale el carrusel {item['id']} · {item.get('tema', '').replace('_', ' ')}"
-    return f"Sale el video {item['id']}"
+    return f"Sale el {nombre(item)}"
 
 
 def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
@@ -217,7 +228,12 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     cada = config.get('dias_entre_videos', 2)
     ultimo = fechas_video[-1] if fechas_video else local
     listos = [c for c in carruseles if c.get('estado') == 'listo']
-    video_listo = siguiente_listo(plan, config)
+    # Todos los listos en orden (11-nov-2026: tras O1 el 14-nov decía "lo elige el laboratorio" con O2 ya listo).
+    orden_pub = config.get('prioridad_publicar', [])
+    videos_listos = sorted((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar'),
+                           key=lambda i: orden_pub.index(i) if i in orden_pub else len(orden_pub))
+    por_id = {v['id']: v for v in plan['videos']}
+    prioridad = config.get('prioridad_carruseles', [])
     filas = []
     for i in range(dias):
         dia = local + datetime.timedelta(days=i)
@@ -232,38 +248,46 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
             if fb and a_mexico(fb).date() == dia:
                 horas['fb'] = a_mexico(fb).strftime('%H:%M')
             if horas:
-                que = (f"Reel del carrusel {c['id']} (el mismo video del Short)" if 'ig' in horas
-                       else f"Video del carrusel {c['id']} en Facebook (ya salió en las otras redes)")
+                que = (f"Reel del {nombre(c)} (el mismo video del Short)" if 'ig' in horas
+                       else f"Video del {nombre(c)} en Facebook (ya salió en las otras redes)")
                 filas.append({'fecha': dia.isoformat(), 'tipo': 'reel' if 'ig' in horas else 'facebook', 'id': c['id'], 'estado': 'programado',
                               'que': que, 'horas': horas})
         if hechos:
             for x, horas in hechos:
                 que = que_sale(x) + (' en Facebook (ya salió en las otras redes)' if set(horas) == {'fb'} else '')
-                filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel' if str(x['id']).startswith('c') else 'video',
+                solo_fb = set(horas) == {'fb'}  # un video que ese día solo sale en Facebook va como fila de Facebook
+                filas.append({'fecha': dia.isoformat(), 'tipo': 'facebook' if solo_fb else 'carrusel' if str(x['id']).startswith('c') else 'video',
                               'id': x['id'], 'que': que, 'estado': x['estado'],
                               'horas': {r: h.strftime('%H:%M') for r, h in horas.items()}})
-        if dia <= local:
-            continue  # hoy y antes: solo lo que de verdad está programado
+        # Hoy cuenta como pronóstico solo mientras la rutina de la mañana no ha programado nada en TikTok
+        # (11-nov-2026: a las 4 a.m. el calendario de hoy salía vacío aunque hoy salen O1 y dos carruseles).
+        if dia < local or (dia == local and any('tt' in h for _, h in hechos)):
+            continue  # antes de hoy, u hoy ya programado: solo lo que de verdad está programado
         # Días por venir: lo que toca con el ritmo de config → publicaciones_por_dia (TikTok 3 al día, el video cuenta).
         en_tt = sum(1 for x, h in hechos if 'tt' in h)
         video_ya = any(not str(x['id']).startswith('c') and 'tt' in h for x, h in hechos)
         es_video = video_ya or ((dia - ultimo).days % cada == 0 and dia > ultimo)
         if es_video and not video_ya:
-            vid, video_listo = video_listo, None
+            vid = videos_listos.pop(0) if videos_listos else None
             filas.append({'fecha': dia.isoformat(), 'tipo': 'video', 'id': vid or '', 'estado': 'por_programar', 'horas': {},
-                          'que': f'Video {vid} (ya generado) · TikTok, Instagram, Facebook y YouTube' if vid
+                          'que': f'{"V" + nombre(por_id.get(vid, {"id": vid}))[1:]} (ya generado) · TikTok, Instagram, Facebook y YouTube' if vid
                           else 'Video (lo elige el laboratorio el día anterior)'})
             en_tt += 1
         cupo = (config.get('publicaciones_por_dia') or {}).get('tt', 1)
         for _ in range(max(0, cupo - en_tt)):
             # los de temporada solo dentro de su ventana; los de temporada en ventana van primero
             validos = [c for c in listos if not c.get('ventana') or c['ventana']['desde'] <= dia.isoformat() <= c['ventana']['hasta']]
-            c = next((x for x in validos if x.get('ventana')), validos[0] if validos else None)
+            # Igual que la rutina (aprender.py): config → prioridad_carruseles primero, hasta prioridad_por_dia al día;
+            # luego la temporada (11-nov-2026: el calendario anunciaba c22 el 12-nov y la rutina iba a sacar c27 y c67).
+            ya_prio = sum(1 for f in filas if f['fecha'] == dia.isoformat() and f['id'] in prioridad)
+            con_prio = sorted((x for x in validos if x['id'] in prioridad), key=lambda x: prioridad.index(x['id']))
+            c = (con_prio[0] if con_prio and ya_prio < config.get('prioridad_por_dia', len(prioridad))
+                 else next((x for x in validos if x.get('ventana')), validos[0] if validos else None))
             if c:
                 listos.remove(c)
-            nombre = f"Carrusel {c['id']} · {c.get('tema', '').replace('_', ' ')}" if c else 'Carrusel nuevo (se escribe)'
+            titulo = 'C' + nombre(c)[1:] if c else 'Carrusel nuevo (se escribe)'
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
-                          'horas': {}, 'que': nombre + ' · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube'})
+                          'horas': {}, 'que': titulo + ' · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube'})
     return filas
 
 
@@ -306,7 +330,8 @@ def siguiente_video(plan, config, auditoria, ahora):
         cuando += datetime.timedelta(days=1)
     listo = siguiente_listo(plan, config)
     vid = listo or decision.get('video_id') or 'siguiente'
-    estimado = (cuando, f'Sale el video {vid} · la hora de cada red la fija la auditoría de ese día')
+    item = next((v for v in plan['videos'] if v['id'] == vid), None)
+    estimado = (cuando, f"Sale el {nombre(item) if item else 'siguiente video'} · cada red a su mejor hora")
     return min([estimado] + ([programado] if programado else []), key=lambda e: e[0])
 
 
@@ -433,7 +458,7 @@ def main():
         plan_despues = copy.deepcopy(plan)
         lid = siguiente_listo(plan, config)
         for v in plan_despues['videos']:
-            if lid and v['id'] == lid and f'video {lid} ' in proxima_que:
+            if lid and v['id'] == lid and nombre(v) in proxima_que:
                 iso = proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
                 v.update({'estado': 'publicado', 'publica_utc': iso, 'publica_utc_por_red': {'tt': iso}})
         proximas.append(siguiente_video(plan_despues, config, auditoria, proxima + datetime.timedelta(minutes=1)))
@@ -451,6 +476,8 @@ def main():
         'dias_entre_videos': config.get('dias_entre_videos', 2),
         'proxima_ejecucion_utc': proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ') if proxima else '',
         'proxima_que': proxima_que if proxima else '',
+        'prioridad_publicar': config.get('prioridad_publicar', []),
+        'prioridad_carruseles': config.get('prioridad_carruseles', []),
         'proximas': [{'utc': c.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'que': q} for c, q in proximas if c],
         'generado_utc': ahora.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'creditos_plan_mes': 12000,

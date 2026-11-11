@@ -4,18 +4,45 @@
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
   "proxima_ejecucion_utc": "2026-11-11T16:00:00Z",
-  "proxima_que": "Sale el video O1 · la hora de cada red la fija la auditoría de ese día",
+  "proxima_que": "Sale el video «Gastos en pareja mitad y mitad no es justo 💸» · cada red a su mejor hora",
+  "prioridad_publicar": [
+   "O1",
+   "O2"
+  ],
+  "prioridad_carruseles": [
+   "c52",
+   "c53",
+   "c27",
+   "c67",
+   "c60",
+   "c54",
+   "c41",
+   "c63",
+   "c05",
+   "c62",
+   "c28",
+   "c64",
+   "c15",
+   "c61",
+   "c30",
+   "c29",
+   "c55",
+   "c59",
+   "c56",
+   "c58",
+   "c57"
+  ],
   "proximas": [
    {
     "utc": "2026-11-11T16:00:00Z",
-    "que": "Sale el video O1 · la hora de cada red la fija la auditoría de ese día"
+    "que": "Sale el video «Gastos en pareja mitad y mitad no es justo 💸» · cada red a su mejor hora"
    },
    {
     "utc": "2026-11-14T16:00:00Z",
-    "que": "Sale el video O2 · la hora de cada red la fija la auditoría de ese día"
+    "que": "Sale el video «Aguinaldo primero a la deuda, luego regalos 🎁» · cada red a su mejor hora"
    }
   ],
-  "generado_utc": "2026-11-11T10:28:05Z",
+  "generado_utc": "2026-11-11T10:49:55Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {

@@ -181,7 +181,7 @@ main > * { min-width: 0; }
 
 /* ===== Hangar ===== */
 .hangar { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(10rem, 11.5rem); gap: 14px; overflow-x: auto; padding-bottom: 8px; scrollbar-color: var(--apagado) transparent; scroll-snap-type: x proximity; }
-.tarjeta { scroll-snap-align: start; border: 1px solid var(--linea); background: var(--panel-solido); display: grid; grid-template-rows: auto 1fr; overflow: hidden; transition: border-color .2s, transform .2s; }
+.tarjeta { scroll-snap-align: start; border: 1px solid var(--linea); background: var(--panel-solido); display: grid; grid-template-rows: auto 1fr; grid-template-columns: minmax(0, 1fr); overflow: hidden; transition: border-color .2s, transform .2s; }
 .tarjeta:hover { border-color: var(--linea-fuerte); transform: translateY(-3px); }
 .tarjeta .poster { position: relative; aspect-ratio: 9 / 16; background: repeating-linear-gradient(45deg, #07121b 0 8px, #0a1823 8px 16px); display: grid; place-items: center; }
 .tarjeta .poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -191,7 +191,7 @@ main > * { min-width: 0; }
 .tarjeta .info { padding: 10px 10px 12px; display: grid; gap: 6px; align-content: start; }
 .tarjeta .info p { margin: 0; font-size: .74rem; color: var(--tenue); line-height: 1.4; }
 .tarjeta .met { font-family: var(--mono); font-size: .64rem; color: var(--texto); letter-spacing: .03em; }
-.chip { display: inline-block; width: fit-content; padding: 2px 7px; font-family: var(--mono); font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; border: 1px solid var(--apagado); color: var(--tenue); white-space: nowrap; }
+.chip { display: inline-block; width: fit-content; max-width: 100%; overflow: hidden; text-overflow: ellipsis; padding: 2px 7px; font-family: var(--mono); font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; border: 1px solid var(--apagado); color: var(--tenue); white-space: nowrap; }
 .chip.ok { color: var(--verde); border-color: rgba(57, 227, 160, .45); }
 .chip.listo { color: var(--oro); border-color: rgba(245, 197, 66, .5); }
 .chip.vivo { color: var(--cian); border-color: rgba(73, 214, 236, .5); }
