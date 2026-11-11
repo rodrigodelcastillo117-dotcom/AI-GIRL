@@ -373,7 +373,7 @@ function dibujarCinta(ejecuciones, aprendizajes) {
   // sigue en la tabla de ejecuciones. Si una ejecución vieja no trae resumen, se corta la primera frase del detalle.
   const corto = (e) => e.resumen || String(e.detalle || e.nota || '').split(/[.:;(]/)[0].slice(0, 90);
   const eventos = [...ejecuciones].sort(porFecha).reverse().slice(0, 6).map((e) => `${mx(e.fecha_utc)} · ${(ESTADOS[e.resultado] || [e.resultado])[0]} · ${corto(e)}`);
-  eventos.push(...aprendizajes.slice(-3).filter((a) => a.tipo !== 'tecnico').map((a) => recortar(`Lección: ${a.aprendizaje || a.regla}`, 160)));
+  eventos.push(...aprendizajes.slice(-3).filter((a) => a.tipo !== 'tecnico').map((a) => recortar(`Lección: ${a.aprendizaje || a.regla}`.replace(/\b[cC]\d{2}\s+(?=["'«“])/g, ''), 160)));  // sin "c16" delante de un título
   const cinta = $('cinta');
   // Dos copias para que el desplazamiento sea continuo.
   cinta.replaceChildren(...[...eventos, ...eventos].map((t) => crear('span', {textContent: t})));
