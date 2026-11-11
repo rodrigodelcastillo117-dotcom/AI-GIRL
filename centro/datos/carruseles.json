@@ -1628,5 +1628,30 @@
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {}
+ },
+ {
+  "id": "c68",
+  "estado": "programado",
+  "tema": "te alcanza tu sueldo calculadora",
+  "pilar": "finanzas",
+  "gancho": "¿Te alcanza tu sueldo? Hice las cuentas de 3 sueldos",
+  "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
+  "diapositivas": 8,
+  "fondo": "cocina.jpg",
+  "portada": "video-40-cocina.jpg",
+  "horas": {
+   "ig": "2026-11-12 19:00",
+   "tt": "2026-11-12 13:00"
+  },
+  "youtube_id": "",
+  "publica_utc": "2026-11-13T01:00:00Z",
+  "linea": "¿te alcanza tu sueldo? hice las cuentas de 3 sueldos con datos oficiales. 🧮",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "ig": "2026-11-13T01:00:00Z",
+   "tt": "2026-11-12T19:00:00Z"
+  }
  }
 ]

@@ -6043,6 +6043,93 @@
    "revision": "Escrito el 11-nov-2026 con microdatos de la ENIGH 2024; revisado por otro agente que recalculó todo (cifras idénticas); corregida la voz de la diapositiva 1 y suavizada la opinión.",
    "personaje": "2026-11-11: serie por capítulos, parte 2 (plan del 10-nov); cuentas con datos oficiales, no experiencia inventada; postura marcada como opinión de Victoria; humor con Capital en el post; pide renta y ciudad para usarlas en las siguientes partes",
    "serie_carruseles": "alcanza_salario_minimo"
+  },
+  {
+   "id": "c68",
+   "estado": "programado",
+   "tema": "te_alcanza_tu_sueldo_calculadora",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "portada": {
+    "foto": "assets/fotos/video-40-cocina.jpg",
+    "etiqueta": "CALCULADORA GRATIS",
+    "titulo": "¿Te alcanza tu sueldo? Hice las cuentas de 3 sueldos",
+    "voz": "¿Te alcanza tu sueldo? Hice las cuentas de tres sueldos con datos oficiales.",
+    "gancho_tipo": "pregunta",
+    "foto_reel": "assets/fotos/video-40-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Las 3 cuentas que importan",
+     "texto": "Qué parte de tu sueldo se va en renta (lo recomendable: 30% o menos), cuánto te queda después de la comida mínima (canasta alimentaria de INEGI) y si pasas la línea de pobreza.\n\nONU (30%) · INEGI, líneas de pobreza, octubre 2026",
+     "voz": "Tres cuentas: cuánto se va en renta, cuánto te queda después de comer y si pasas la línea de pobreza."
+    },
+    {
+     "titulo": "Ejemplo 1: el salario mínimo",
+     "texto": "$9,582 al mes y $3,724 de renta (el promedio nacional de quien renta), 1 persona en ciudad: la renta se lleva el 39%. Después de la comida mínima ($2,594) te quedan $3,264.\n\nCONASAMI 2026 · INEGI, ENIGH 2024 y líneas de pobreza oct-2026 · cálculo propio",
+     "voz": "Con el salario mínimo y la renta promedio, la renta se lleva el treinta y nueve por ciento."
+    },
+    {
+     "titulo": "Ejemplo 2: familia de 3 en ciudad",
+     "texto": "$15,000 netos y $6,500 de renta: el 43% se va en renta. La comida mínima de 3 es $7,783: quedan $717 para transporte, luz, ropa y todo lo demás. No alcanza.\n\nINEGI, líneas de pobreza, octubre 2026 · cálculo propio",
+     "voz": "Una familia de tres con quince mil pesos y seis mil quinientos de renta: le quedan setecientos diecisiete pesos para todo lo demás."
+    },
+    {
+     "titulo": "Ejemplo 3: sin renta",
+     "texto": "$8,000 en un pueblo, 2 personas, casa propia: la comida mínima es $3,893 y te quedan $4,107 (sin contar predial ni servicios). No pagar renta cambia el mes.\n\nINEGI, líneas de pobreza, octubre 2026 (rural) · cálculo propio",
+     "voz": "Sin renta, con ocho mil pesos en un pueblo, después de comer te quedan más de cuatro mil."
+    },
+    {
+     "titulo": "Mi regla",
+     "texto": "Si tu renta pasa del 30% de tu sueldo, es lo primero que hay que mover: bajarla te libera más dinero que cualquier recorte de café.\n\nOpinión de Victoria",
+     "voz": "Mi regla: si tu renta pasa del treinta por ciento, eso es lo primero que hay que mover."
+    },
+    {
+     "titulo": "Hazla tú en 10 segundos",
+     "texto": "Calculadora gratis: pones tu sueldo, tu renta y cuántos viven de él. Te da tu tope de renta, lo que te queda y un plan de 3 pasos.\n\nvictoriatheceo.vercel.app",
+     "voz": "Hice una calculadora gratis: pones tu sueldo y tu renta, y te da tu plan en tres pasos."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué porcentaje de tu sueldo se va en renta? Comenta el número.",
+    "texto": "Calculadora gratis: victoriatheceo.vercel.app\nEn Instagram, comenta CALCULA y te la mando por mensaje.",
+    "voz": "¿Qué porcentaje de tu sueldo se va en renta? Comenta el número."
+   },
+   "fuente": "CONASAMI, salarios mínimos 2026 (DOF 9-dic-2025): $315.04 diarios, $9,582.47 al mes. INEGI, Líneas de Pobreza por Ingresos, octubre de 2026 (boletín 689/26): extrema urbana $2,594.39, rural $1,946.57; por ingresos urbana $4,985.47, rural $3,576.10. INEGI, ENIGH 2024 (microdatos, cálculo propio): renta promedio de hogares que rentan $3,724. ONU, E/CN.5/2020/3, párr. 6: umbral de 30%.",
+   "titulo_post": "¿Te alcanza tu sueldo? 3 ejemplos con datos de INEGI",
+   "texto_post": "¿Te alcanza tu sueldo? Hice las cuentas de 3 sueldos con datos oficiales. 🧮\n1. Salario mínimo con la renta promedio nacional: la renta se lleva el 39% y después de la comida mínima quedan $3,264.\n2. Familia de 3 en ciudad con $15,000 netos y $6,500 de renta: 43% en renta y quedan $717 para transporte, luz, ropa y todo lo demás. No alcanza.\n3. $8,000 en un pueblo, 2 personas, casa propia: después de la comida mínima quedan $4,107 (sin predial ni servicios).\nMi regla: si tu renta pasa del 30%, es lo primero que hay que mover.\nHice una calculadora gratis para que hagas las tuyas en 10 segundos: victoriatheceo.vercel.app/te-alcanza-tu-sueldo\n\n📚 CONASAMI 2026 · INEGI, líneas de pobreza octubre 2026 y ENIGH 2024 (cálculo propio) · ONU E/CN.5/2020/3\n💬 ¿Qué porcentaje de tu sueldo se va en renta? Comenta el número. Te contesto a todos.\n📩 Mándaselo a quien siempre dice que no le alcanza.",
+   "seo": {
+    "palabra_clave": "sueldo y renta",
+    "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
+    "tags_concretas": [
+     "me alcanza mi sueldo",
+     "cuanto debo pagar de renta",
+     "porcentaje de renta sueldo",
+     "calculadora de presupuesto",
+     "linea de pobreza inegi 2026",
+     "salario minimo 2026",
+     "renta 30 por ciento",
+     "cuanto cuesta la canasta basica"
+    ],
+    "hashtags": [
+     "#finanzaspersonales",
+     "#renta",
+     "#sueldo",
+     "#presupuesto"
+    ],
+    "preguntas": [
+     "¿Cuánto de mi sueldo debe ir a la renta?",
+     "¿Cuánto cuesta la comida mínima al mes en México?",
+     "¿Me alcanza mi sueldo?"
+    ]
+   },
+   "personaje": "2026-11-11: promoción de la calculadora ¿Te alcanza tu sueldo? (Rodrigo: 'súbelo a las redes')",
+   "revision": "11-nov-2026: aritmética y fuentes revisadas por un segundo agente (todo correcto); se aplicaron sus 5 precisiones (neto, promedio nacional, lo recomendable, $717 no alcanza, sin predial).",
+   "publica_utc_por_red": {
+    "ig": "2026-11-13T01:00:00Z",
+    "tt": "2026-11-12T19:00:00Z"
+   },
+   "publica_utc": "2026-11-13T01:00:00Z"
   }
  ]
 }
