@@ -67,6 +67,8 @@
     .galeria img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--linea); background: #fff; }
     .galeria figcaption { font-size: .78rem; color: var(--tenue); margin-top: 6px; }
   </style>
+  <script>// ?ref=X -> utm_source=X para que Vercel Web Analytics separe el origen (ig-dm, ig-cuentas, fb, yt...). 12-nov-2026
+  try { const u = new URL(location.href); const r = u.searchParams.get('ref'); if (r && !u.searchParams.has('utm_source')) { u.searchParams.set('utm_source', r); history.replaceState(null, '', u); } } catch {}</script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>

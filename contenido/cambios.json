@@ -1,146 +1,152 @@
 [
- {
-  "fecha": "2026-11-02",
-  "cambio": "TikTok: carrusel en fotos todos los días",
-  "por_que": "En TikTok los carruseles llegaban más lejos que los videos",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-07",
-  "cambio": "Instagram: solo el Reel del carrusel, sin las fotos",
-  "por_que": "Muse (IA de Meta): los Reels llegan a no seguidores",
-  "vigilar": "ig"
- },
- {
-  "fecha": "2026-11-08",
-  "cambio": "Victoria con postura y pregunta de una palabra en cada pieza",
-  "por_que": "Nadie sigue a un folleto: se sigue a alguien con opinión",
-  "vigilar": "todas"
- },
- {
-  "fecha": "2026-11-09",
-  "cambio": "Formato \"Guarda esto: 5 datos\" (c16, primer hit)",
-  "por_que": "3,361 vistas y 14 compartidos en TikTok en 15 h",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-09",
-  "cambio": "Ritmo: TikTok 3, Instagram 2, YouTube 3 al día",
-  "por_que": "Más intentos, más probabilidad de pegar",
-  "vigilar": "todas"
- },
- {
-  "fecha": "2026-11-09",
-  "cambio": "Facebook conectado: todo lo de Instagram y los shorts de YouTube",
-  "por_que": "Una red más con el mismo contenido, gratis",
-  "vigilar": "fb"
- },
- {
-  "fecha": "2026-11-09",
-  "cambio": "Comentarios de Instagram contestados solos cada 2 h",
-  "por_que": "Contestar rápido da alcance",
-  "vigilar": "ig"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Todos los Reels de Instagram con música en tendencia de su biblioteca (API de Meta); fondo propio en YouTube y Facebook",
-  "por_que": "Instagram empuja los Reels con audio",
-  "vigilar": "ig"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Parejas y serie \"Socios en casa\" (c27, c41, c28, c29, c55-c59): 2 al día en TikTok",
-  "por_que": "Lo de pareja se comparte y se etiqueta",
-  "vigilar": "todas"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Voz REAL de Victoria (clonada de sus videos con MiniMax) en carruseles, Reels y shorts",
-  "por_que": "Rodrigo: la otra sonaba muy IA; la misma voz siempre, que vaya con su cara",
-  "vigilar": "todas"
- },
- {
-  "fecha": "2026-11-12",
-  "cambio": "Primer video largo en YouTube: Aguinaldo 2026, todo en 4 minutos (con capítulos)",
-  "por_que": "YouTube paga por horas vistas y los largos salen en búsquedas por meses",
-  "vigilar": "yt"
- },
- {
-  "fecha": "2026-11-15",
-  "cambio": "5 Guarda esto de diciembre (c60-c64): fechas, vacaciones, compras, tarjeta, enero",
-  "por_que": "Repetir el único formato que pegó (c16)",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Subtítulos palabra por palabra en shorts y Reels de carrusel (franja de abajo, palabra en dorado)",
-  "por_que": "Los shorts de carrusel retenían 20-62% en YouTube; los videos de Victoria con subtítulos, 70-108%",
-  "vigilar": "yt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "\"El enlace está en mi perfil\" cambia por la dirección escrita (victoriatheceo.vercel.app) mientras la bio no tenga enlace",
-  "por_que": "Los posts mandaban a una bio sin enlace",
-  "vigilar": "todas"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "La pregunta para comentar va en la 2a línea del texto (TikTok e Instagram)",
-  "por_que": "TikTok no acepta el primer comentario de Publer y la pregunta quedaba escondida: c16 tuvo 3,361 vistas y 0 comentarios",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "\"Mándaselo a…\" se publica como \"👥 Etiqueta a…\" en la 3a línea, debajo de la pregunta",
-  "por_que": "Etiquetar cuenta como comentario y le avisa al amigo; mandar por privado no deja comentario",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Instagram: \"Comenta GUÍA y te lo mando por mensaje\" en vez de la dirección escrita; quien comenta GUÍA recibe el enlace por mensaje privado y una respuesta pública",
-  "por_que": "Suma comentarios reales (hoy casi 0) y entrega el enlace correcto (aguinaldo, deudas, 50/30/20...)",
-  "vigilar": "ig"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Victoria contesta los mensajes privados de Instagram cada 2 h (solo a quien le escribió)",
-  "por_que": "Un mensaje contestado convierte a un curioso en seguidor; Instagram premia las cuentas que conversan",
-  "vigilar": "ig"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "\"Comenta hoy\" en el panel: 3-5 videos frescos de TikTok con el comentario de Victoria listo para que Rodrigo lo pegue",
-  "por_que": "Comentar en cuentas grandes es lo que más trae gente a una cuenta nueva; TikTok no deja hacerlo por API",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Plan congelado 14 días: aguinaldo diario + pareja primero, noticia de dinero en 24 h, reto 'un mes con el salario mínimo', 'dime tu sueldo'; se dejan las listas genéricas",
-  "por_que": "Aguinaldo es lo único que funcionó (c16, c01); 19 cambios en 8 días no dejan medir nada",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Comentarios de Victoria en YouTube ajeno en pausa: YouTube los retiene (heldForReview)",
-  "por_que": "Un comentario que nadie ve no trae a nadie; se reintenta cuando uno salga publicado",
-  "vigilar": "yt"
- },
- {
-  "fecha": "2026-11-10",
-  "cambio": "Cola de TikTok: los 'Guarda esto' primero (c52 = parte 2 del hit c16), intercalados con pareja",
-  "por_que": "El gancho 'Guarda esto' promedia 3,782 vistas contra 261 del gancho de dato; es lo único que ha pegado",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-11",
-  "cambio": "Prueba de formato: 2 videos de Victoria opinando a cámara (O1 pareja mitad y mitad, O2 aguinaldo no es para regalos), 15 s, cierre '¿Estoy mal? Te leo'",
-  "por_que": "Los carruseles de datos se guardan pero no se comentan; una opinión que divide es lo que genera conversación en el nicho",
-  "vigilar": "tt"
- },
- {
-  "fecha": "2026-11-11",
-  "cambio": "Reglas de lo viral (investigación): gancho público + número, cierre para mandárselo a una persona concreta, del momento, pregunta abierta; series nuevas \"Victoria verifica\" (c70) y \"¿Cuántos días de salario mínimo cuesta…?\"; cada carrusel termina en su calculadora",
-  "por_que": "Los virales de finanzas en español (2-4.5M vistas) y nuestro único éxito (c16) comparten el patrón; los compartidos son la señal que más reparte",
-  "vigilar": "todas"
- }
+  {
+    "fecha": "2026-11-02",
+    "cambio": "TikTok: carrusel en fotos todos los días",
+    "por_que": "En TikTok los carruseles llegaban más lejos que los videos",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-07",
+    "cambio": "Instagram: solo el Reel del carrusel, sin las fotos",
+    "por_que": "Muse (IA de Meta): los Reels llegan a no seguidores",
+    "vigilar": "ig"
+  },
+  {
+    "fecha": "2026-11-08",
+    "cambio": "Victoria con postura y pregunta de una palabra en cada pieza",
+    "por_que": "Nadie sigue a un folleto: se sigue a alguien con opinión",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-09",
+    "cambio": "Formato \"Guarda esto: 5 datos\" (c16, primer hit)",
+    "por_que": "3,361 vistas y 14 compartidos en TikTok en 15 h",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-09",
+    "cambio": "Ritmo: TikTok 3, Instagram 2, YouTube 3 al día",
+    "por_que": "Más intentos, más probabilidad de pegar",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-09",
+    "cambio": "Facebook conectado: todo lo de Instagram y los shorts de YouTube",
+    "por_que": "Una red más con el mismo contenido, gratis",
+    "vigilar": "fb"
+  },
+  {
+    "fecha": "2026-11-09",
+    "cambio": "Comentarios de Instagram contestados solos cada 2 h",
+    "por_que": "Contestar rápido da alcance",
+    "vigilar": "ig"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Todos los Reels de Instagram con música en tendencia de su biblioteca (API de Meta); fondo propio en YouTube y Facebook",
+    "por_que": "Instagram empuja los Reels con audio",
+    "vigilar": "ig"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Parejas y serie \"Socios en casa\" (c27, c41, c28, c29, c55-c59): 2 al día en TikTok",
+    "por_que": "Lo de pareja se comparte y se etiqueta",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Voz REAL de Victoria (clonada de sus videos con MiniMax) en carruseles, Reels y shorts",
+    "por_que": "Rodrigo: la otra sonaba muy IA; la misma voz siempre, que vaya con su cara",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-12",
+    "cambio": "Primer video largo en YouTube: Aguinaldo 2026, todo en 4 minutos (con capítulos)",
+    "por_que": "YouTube paga por horas vistas y los largos salen en búsquedas por meses",
+    "vigilar": "yt"
+  },
+  {
+    "fecha": "2026-11-15",
+    "cambio": "5 Guarda esto de diciembre (c60-c64): fechas, vacaciones, compras, tarjeta, enero",
+    "por_que": "Repetir el único formato que pegó (c16)",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Subtítulos palabra por palabra en shorts y Reels de carrusel (franja de abajo, palabra en dorado)",
+    "por_que": "Los shorts de carrusel retenían 20-62% en YouTube; los videos de Victoria con subtítulos, 70-108%",
+    "vigilar": "yt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "\"El enlace está en mi perfil\" cambia por la dirección escrita (victoriatheceo.vercel.app) mientras la bio no tenga enlace",
+    "por_que": "Los posts mandaban a una bio sin enlace",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "La pregunta para comentar va en la 2a línea del texto (TikTok e Instagram)",
+    "por_que": "TikTok no acepta el primer comentario de Publer y la pregunta quedaba escondida: c16 tuvo 3,361 vistas y 0 comentarios",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "\"Mándaselo a…\" se publica como \"👥 Etiqueta a…\" en la 3a línea, debajo de la pregunta",
+    "por_que": "Etiquetar cuenta como comentario y le avisa al amigo; mandar por privado no deja comentario",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Instagram: \"Comenta GUÍA y te lo mando por mensaje\" en vez de la dirección escrita; quien comenta GUÍA recibe el enlace por mensaje privado y una respuesta pública",
+    "por_que": "Suma comentarios reales (hoy casi 0) y entrega el enlace correcto (aguinaldo, deudas, 50/30/20...)",
+    "vigilar": "ig"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Victoria contesta los mensajes privados de Instagram cada 2 h (solo a quien le escribió)",
+    "por_que": "Un mensaje contestado convierte a un curioso en seguidor; Instagram premia las cuentas que conversan",
+    "vigilar": "ig"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "\"Comenta hoy\" en el panel: 3-5 videos frescos de TikTok con el comentario de Victoria listo para que Rodrigo lo pegue",
+    "por_que": "Comentar en cuentas grandes es lo que más trae gente a una cuenta nueva; TikTok no deja hacerlo por API",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Plan congelado 14 días: aguinaldo diario + pareja primero, noticia de dinero en 24 h, reto 'un mes con el salario mínimo', 'dime tu sueldo'; se dejan las listas genéricas",
+    "por_que": "Aguinaldo es lo único que funcionó (c16, c01); 19 cambios en 8 días no dejan medir nada",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Comentarios de Victoria en YouTube ajeno en pausa: YouTube los retiene (heldForReview)",
+    "por_que": "Un comentario que nadie ve no trae a nadie; se reintenta cuando uno salga publicado",
+    "vigilar": "yt"
+  },
+  {
+    "fecha": "2026-11-10",
+    "cambio": "Cola de TikTok: los 'Guarda esto' primero (c52 = parte 2 del hit c16), intercalados con pareja",
+    "por_que": "El gancho 'Guarda esto' promedia 3,782 vistas contra 261 del gancho de dato; es lo único que ha pegado",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-11",
+    "cambio": "Prueba de formato: 2 videos de Victoria opinando a cámara (O1 pareja mitad y mitad, O2 aguinaldo no es para regalos), 15 s, cierre '¿Estoy mal? Te leo'",
+    "por_que": "Los carruseles de datos se guardan pero no se comentan; una opinión que divide es lo que genera conversación en el nicho",
+    "vigilar": "tt"
+  },
+  {
+    "fecha": "2026-11-11",
+    "cambio": "Reglas de lo viral (investigación): gancho público + número, cierre para mandárselo a una persona concreta, del momento, pregunta abierta; series nuevas \"Victoria verifica\" (c70) y \"¿Cuántos días de salario mínimo cuesta…?\"; cada carrusel termina en su calculadora",
+    "por_que": "Los virales de finanzas en español (2-4.5M vistas) y nuestro único éxito (c16) comparten el patrón; los compartidos son la señal que más reparte",
+    "vigilar": "todas"
+  },
+  {
+    "fecha": "2026-11-11",
+    "cambio": "Embudo medible: las páginas copian ?ref= a utm_source para Vercel Web Analytics; la planeación del domingo mide enlaces entregados → visitas por origen → planes de IA",
+    "por_que": "Montamos comentario → mensaje → calculadora → IA y nadie medía si funciona; Web Analytics estaba apagado en el proyecto del sitio",
+    "vigilar": "ig"
+  }
 ]

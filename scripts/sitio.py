@@ -902,6 +902,8 @@ PLANTILLA = '''<!doctype html>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/herramientas.css">
   <script type="application/ld+json">{datos_estructurados}</script>
+  <script>// ?ref=X -> utm_source=X para que Vercel Web Analytics separe el origen (ig-dm, ig-cuentas, fb, yt...). 12-nov-2026
+  try {{ const u = new URL(location.href); const r = u.searchParams.get('ref'); if (r && !u.searchParams.has('utm_source')) {{ u.searchParams.set('utm_source', r); history.replaceState(null, '', u); }} }} catch {{}}</script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
