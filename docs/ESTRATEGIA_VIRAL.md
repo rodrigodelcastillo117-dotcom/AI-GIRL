@@ -208,3 +208,12 @@ VIGENTE (formato de TikTok) porque va en espacios aparte.
 4. **Semana del 23-nov: "¿Cuántas quincenas te cuesta…?"** con calculadora en el sitio.
 5. **Semana del 30-nov: "Reacciono a consejos de dinero de internet: ¿sirven en México?"** (Victoria califica del 1 al 10).
 Fuera: historias personales inventadas de Victoria, otra mujer en cuadro, política.
+
+## "Victoria, analiza mi caso" (calculadora ¿Te alcanza tu sueldo?, 11-nov-2026)
+
+Botón con IA en https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo (`sitio/api/analiza.js`): Claude Haiku 5.5
+(Rodrigo: "el modelo barato pero bueno, precio calidad") recibe las cuentas ya hechas con datos oficiales y lo que le
+preocupa a la persona, y escribe un plan de 3 pasos de máximo 170 palabras. Solo presupuesto, renta, comida, deudas y ahorro;
+nunca inversiones, créditos ni productos; 3 consultas por persona por hora. Variables en Vercel (proyecto victoriatheceo):
+ANTHROPIC_API_KEY (la puso Rodrigo) y ANTHROPIC_WORKSPACE_ID (su clave no está asignada a un workspace). Si la calidad no
+alcanza, subir a claude-sonnet-5-5. Cada análisis queda en los registros de Vercel con sus tokens para medir el costo.
