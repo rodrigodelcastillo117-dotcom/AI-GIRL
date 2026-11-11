@@ -463,6 +463,11 @@ html { scroll-behavior: smooth; }
 @media (max-width: 720px) { .salir.claude .largo { display: none; } }
 /* Respuestas rápidas (8-nov-2026) */
 /* Respuestas rápidas (solo TikTok): plegadas en una línea; abiertas, tarjetas chicas (Rodrigo, 9-nov-2026: "hazlo mucho más chico") */
+.pendiente .pasos { margin: 10px 0 12px; padding-left: 1.3rem; font-size: .8rem; color: var(--tenue); line-height: 1.5; }
+.pendiente code { font-family: var(--mono); font-size: .72rem; color: var(--oro); overflow-wrap: anywhere; }
+.pendiente .boton { display: inline-block; font-size: .72rem; letter-spacing: .2em; padding: 9px 12px; text-decoration: none; }
+.conexiones { margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--linea); }
+.conexiones h2 { margin: 4px 0 8px; }
 .resp-plegable { border: 1px solid var(--linea); margin: 18px 0; padding: 0 12px; }
 .resp-plegable > summary { cursor: pointer; padding: 10px 0; font-family: var(--etiqueta); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--oro); }
 .resp-plegable > summary small { margin-left: 8px; color: var(--tenue); letter-spacing: .08em; text-transform: none; font-size: .72rem; }

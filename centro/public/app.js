@@ -273,6 +273,7 @@ function dibujarTodo() {
   dibujarDespegues();
   dibujarAudiencia();
   dibujarVentas();
+  dibujarConexiones();
   dibujarHorarios(FOTO.auditoria || {}, estado);
   dibujarCarruseles(FOTO.carruseles);
   dibujarGraficas();
@@ -590,13 +591,38 @@ function dibujarAudiencia() {
 const NOMBRE_ORIGEN = {yt: 'YouTube', tt: 'TikTok', ig: 'Instagram', guia: 'Guía gratis', directo: 'Directo a la página', otro: 'Otro enlace', sin_origen: 'Sin origen'};
 const COLOR_ORIGEN = {yt: '#ff3b55', tt: '#facc15', ig: '#a855f7', guia: '#49d6ec', directo: '#7f97a8', otro: '#7f97a8', sin_origen: '#34495a'};
 
+// Una conexión que solo Rodrigo puede hacer (las claves viven en Vercel, nunca en el chat ni en el repo): qué falta y
+// un botón directo a la página donde se agregan (11-nov-2026: antes era una frase sin camino).
+const VARIABLES_VERCEL = 'https://vercel.com/rodrigos-eurotrip/victoria-centro/settings/environment-variables';
+function pendiente(texto, nombres, deDonde) {
+  return crear('div', {className: 'pendiente'},
+    crear('p', {className: 'vacio', textContent: texto}),
+    crear('ol', {className: 'pasos'},
+      crear('li', {textContent: 'Toca el botón: abre las variables del proyecto victoria-centro en Vercel.'}),
+      crear('li', {}, 'Agrega ', ...nombres.flatMap((n, i) => [i ? (i === nombres.length - 1 ? ' y ' : ', ') : '', crear('code', {textContent: n})]), `. ${deDonde}`),
+      crear('li', {textContent: 'En Deployments, el último → Redeploy. Listo: se conecta solo.'})),
+    crear('a', {className: 'boton', href: VARIABLES_VERCEL, target: '_blank', rel: 'noopener', textContent: 'Abrir variables en Vercel'}));
+}
+
+function dibujarConexiones() {
+  const caja = $('conexiones');
+  if (!caja) return;
+  const c = VIVO?.conexiones;
+  caja.hidden = !c || c.meta;
+  if (caja.hidden) return;
+  caja.replaceChildren(crear('div', {className: 'codigo', textContent: 'CNX-01 · TE TOCA A TI'}), crear('h2', {textContent: 'GUÍA al instante'}),
+    pendiente('Hoy Victoria contesta "GUÍA" en Instagram cada hora. Conectando Meta lo contesta en segundos, cuando la persona todavía está viendo el post.',
+      ['META_TOKEN', 'META_APP_SECRET', 'META_VERIFY_TOKEN'], 'Si no sabes de dónde sacarlas en Meta, pídele los pasos a Claude (botón de arriba).'));
+}
+
 function dibujarVentas() {
   // Solo ventas reales de Hotmart. Si no está conectado o falla, se dice tal cual.
   const v = VIVO?.ventas;
   const caja = $('ventas');
   if (!VIVO) { caja.replaceChildren(crear('p', {className: 'vacio', textContent: 'Conectando con Hotmart…'})); return; }
   if (!v || v.conectado === false) {
-    caja.replaceChildren(crear('p', {className: 'vacio', textContent: 'Falta conectar Hotmart: en Vercel, proyecto victoria-centro, agrega HOTMART_CLIENT_ID y HOTMART_CLIENT_SECRET.'}));
+    caja.replaceChildren(pendiente('Hotmart sin conectar: aquí salen las ventas de El Tablero de la CEO, por red, en cuanto lo conectes.',
+      ['HOTMART_CLIENT_ID', 'HOTMART_CLIENT_SECRET'], 'Las dos salen de Hotmart → Herramientas → Credenciales.'));
     return;
   }
   if (v.error) { caja.replaceChildren(crear('p', {className: 'vacio', textContent: `Hotmart no respondió: ${v.error}`})); return; }
@@ -619,12 +645,37 @@ function dibujarVentas() {
     ...(v.ultimas?.length ? [crear('ol', {className: 'lista'}, ...v.ultimas.map((u) => elemento('dato', NOMBRE_ORIGEN[u.red] || u.red, dinero(u.valor), u.fecha ? mx(new Date(u.fecha).toISOString()) : '')))] : []));
 }
 
+// Lo que la rutina de las 6:37 va a programar hoy, según la auditoría de la madrugada (11-nov-2026: antes de la rutina
+// TikTok e Instagram decían "—" y YouTube enseñaba el video largo de mañana aunque O1 salía hoy a las 10:00).
+// Solo cuenta si la auditoría es de hoy y la rutina de hoy todavía no corre; ya programado, manda lo real.
+function planDeHoy(clave) {
+  const a = FOTO.auditoria || {}, d = a.decision || {};
+  const dia = (iso) => (iso ? new Date(iso).toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'}) : '');
+  if (dia(a.fecha_utc) !== hoyMx() || (FOTO.ejecuciones || []).some((e) => dia(e.fecha_utc) === hoyMx())) return [];
+  const c = d.carruseles || {}, xs = [];
+  if (d.toca_publicar && d.publicar_hoy && d.cuando?.[clave]) xs.push({t: Date.parse(d.cuando[clave]), id: d.publicar_hoy});
+  if (clave === 'tt') for (const x of c.tiktoks || (c.tiktok ? [c.tiktok] : [])) xs.push({t: Date.parse(x.cuando), id: x.id});
+  if (clave === 'ig' && c.instagram?.cuando_ig) xs.push({t: Date.parse(c.instagram.cuando_ig), id: c.instagram.id});
+  if (clave === 'yt' && c.youtube?.cuando_yt) xs.push({t: Date.parse(c.youtube.cuando_yt), id: c.youtube.id});
+  return xs.filter((x) => x.t > Date.now()).map((x) => ({t: x.t, plan: true, p: {id: x.id}}));
+}
+
+// "hoy 10:00 a.m.", "mañana 9:00 a.m." o "vie 13 nov, 9:00 a.m.": corto para que el título quepa en la tarjeta.
+function cuandoCorto(t) {
+  const iso = new Date(t).toISOString();
+  const dia = new Date(t).toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
+  const manana = new Date(Date.parse(`${hoyMx()}T12:00:00`) + 86400000).toISOString().slice(0, 10);
+  const hora = mx(iso, {hour: 'numeric', minute: '2-digit'});
+  return dia === hoyMx() ? `hoy ${hora}` : dia === manana ? `mañana ${hora}` : mx(iso, {weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit'});
+}
+
 function siguientePorRed(clave) {
+  const temprano = (lista) => lista.filter(Boolean).sort((a, b) => a.t - b.t)[0] || null;
   if (AGENDA) {  // en vivo de Publer y YouTube
     const prox = AGENDA.find((x) => x.red === clave && !x.publicado && x.t > Date.now());
-    return prox ? {t: prox.t, p: {id: prox.id, texto: prox.texto}} : null;
+    return temprano([prox && {t: prox.t, p: {id: prox.id, texto: prox.texto}}, ...planDeHoy(clave)]);
   }
-  let mejor = null;
+  let mejor = temprano(planDeHoy(clave));
   for (const p of todo()) {
     if (p.estado !== 'programado') continue;
     const t = new Date((p.publica_utc_por_red || {})[clave] || p.publica_utc || 0).getTime();
@@ -639,7 +690,7 @@ function dibujarDespegues() {
     const cuenta = crear('b', {className: 'cuenta-red', textContent: '—'});
     if (sig) cuenta.dataset.t = String(sig.t);
     const fila = crear('div', {className: 'despegue'}, crear('span', {className: 'red-nombre', textContent: red.nombre}), cuenta,
-      crear('small', {textContent: sig ? `${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})} · ${sig.p.id ? titulo(sig.p.id, 40) : `«${recortar(sig.p.texto, 40)}»`}` : (() => {
+      crear('small', {textContent: sig ? `${cuandoCorto(sig.t)}${sig.plan ? ' (plan)' : ''} · ${sig.p.id ? titulo(sig.p.id, 48) : `«${recortar(sig.p.texto, 48)}»`}` : (() => {
         // La rutina programa a las 6:37 (hora de México): antes de esa hora es "hoy a las 6:37"; después, "mañana" (11-nov-2026).
         const [h, m] = new Date().toLocaleTimeString('en-GB', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit'}).split(':').map(Number);
         return `La rutina lo programa ${h * 60 + m < 6 * 60 + 37 ? 'hoy' : 'mañana'} a las 6:37`;
