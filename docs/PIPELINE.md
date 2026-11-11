@@ -319,6 +319,11 @@ de fondo va solo en los videos de carrusel (diapositivas, sin labios). `carrusel
    nombre viejo "Nadie Te lo Explicó" en Publer). Si la API responde algo inesperado, consulta
    https://publer.com/docs, corrige `scripts/publer.py`, reintenta una vez y deja la corrección en
    el commit.
+   **GUÍA en la primera hora (11-nov-2026):** igual que con los Reels, crea con send_later dos revisiones a los 15 y a
+   los 40 minutos de la hora de Instagram del video (zona America/Mexico_City), con el mensaje "Revisión rápida de GUÍA
+   tras el video <id> en Instagram: cd /home/user/ai-girl && git pull -q && python3 scripts/comentarios_ig.py guias; si
+   entregó alguna, commit y push de contenido/guias_ig.json. No hagas nada más." Mientras Meta no esté conectado al panel
+   (META_TOKEN en Vercel), es lo más cerca de "al instante" que se puede.
 4. YouTube Shorts (sin Publer): `python scripts/youtube.py subir <video>
    "$(cat /tmp/seo-<id>/titulo.txt)" /tmp/seo-<id>/descripcion_youtube.txt <hora_utc> --tags
    /tmp/seo-<id>/tags_youtube.txt`. Comprueba que el canal sea `UCGyza9C58eMH3VnGgkMPr1A`
