@@ -49,6 +49,8 @@
       <div class="cifra" id="titular" style="font-size: clamp(1.4rem, 6vw, 1.9rem)"></div>
       <ul class="desglose" id="cuentas"></ul>
       <p class="nota" id="consejo"></p>
+      <div class="etiqueta" style="margin-top: 18px">Tu plan en 3 pasos</div>
+      <ol class="plan" id="plan" style="margin: 8px 0 0; padding-left: 1.2rem; line-height: 1.5"></ol>
       <p class="nota">¿Quieres que Victoria te haga las cuentas en un video? Comenta tu sueldo, tu renta y tu ciudad en su post más reciente.</p>
       </div>
       <button type="button" class="boton secundario" id="compartir">Compártelo con alguien</button>
@@ -122,6 +124,36 @@ function calcular() {
   else consejo = 'Tu renta está en zona sana. Lo que te queda después de lo básico es tu margen: si no lo cuidas, se va solo. Aparta algo fijo el día que cobras.';
   if (porPersona < LINEAS['pobreza_' + zona]) consejo += ' Tu ingreso por persona está debajo de la línea de pobreza de INEGI: no estás solo; según INEGI, a millones de personas en México les pasa lo mismo.';
   document.getElementById('consejo').textContent = consejo;
+  // Plan en 3 pasos según el caso (11-nov-2026, Rodrigo: "que lo evalúe y te dé algo real y bien pensado"). Reglas fijas,
+  // no IA: solo presupuesto, renta, comida, deudas y ahorro; nunca inversiones, créditos ni bancos.
+  const anual = (n) => pesos(n * 12);
+  const basicos = renta + comida;               // renta + comida mínima al mes
+  const metaFondo = basicos;                    // primer escalón: 1 mes de lo básico (3 meses es la siguiente meta)
+  const aparta = Math.max(100, Math.round(sueldo * (despuesComida < 0 ? 0 : pctRenta > 0.3 ? 0.05 : 0.10) / 50) * 50);
+  const meses = Math.ceil(metaFondo / aparta);
+  const pasos = [];
+  if (despuesComida < 0) {
+    pasos.push([`Primero la comida: el día que cobras aparta ${pesos(comida)} para comer, antes de cualquier otro gasto. Es lo único que no se negocia.`]);
+    pasos.push([renta > 0 ? `La renta es lo que más mueve tu número: bajarla a ${pesos(tope)} (compartiendo vivienda o mudándote) te liberaría ${pesos(renta - tope)} al mes.` : 'Tu problema no es un gasto: es el ingreso. Cualquier ingreso extra, aunque sea poco, pesa más que recortar.']);
+    pasos.push(['Cobra todo lo que te toca por ley: aguinaldo de al menos 15 días de salario, antes del 20 de diciembre. Calcula el tuyo:', '/aguinaldo']);
+  } else if (pctRenta > 0.40) {
+    pasos.push([`Tu meta número uno: bajar la renta a ${pesos(tope)}. La diferencia, ${pesos(renta - tope)} al mes, son ${anual(renta - tope)} al año. Empieza a buscar o a negociar antes de renovar contrato.`]);
+    pasos.push([`El día que cobras, aparta primero renta y comida mínima (${pesos(basicos)}). Lo demás se reparte con lo que sobre, no al revés.`]);
+    pasos.push([`Arranca un colchón aunque sea chico: ${pesos(aparta)} al mes. Primera meta: 1 mes de renta y comida (${pesos(metaFondo)}); llegas en ${meses} meses. Luego vas por 3.`, '/fondo-de-emergencia']);
+  } else if (pctRenta > 0.30) {
+    pasos.push([`Cuando venza tu contrato, compara o negocia: bajar a ${pesos(tope)} te deja ${pesos(renta - tope)} al mes, ${anual(renta - tope)} al año.`]);
+    pasos.push([`Con lo que te queda después de la renta (${pesos(queda)}), haz tu reparto: necesidades, gustos y ahorro.`, '/regla-50-30-20']);
+    pasos.push([`Aparta ${pesos(aparta)} al mes para emergencias. Primera meta: 1 mes de renta y comida (${pesos(metaFondo)}); llegas en ${meses} meses. Luego vas por 3.`, '/fondo-de-emergencia']);
+  } else {
+    pasos.push([`Págate primero: el día que cobras aparta ${pesos(aparta)} (10% de tu sueldo) antes de gastar en otra cosa.`]);
+    pasos.push([`Con eso juntas 3 meses de ${renta > 0 ? 'renta y ' : ''}comida mínima (${pesos(3 * metaFondo)}) en ${Math.ceil(3 * metaFondo / aparta)} meses: tu fondo de emergencia.`, '/fondo-de-emergencia']);
+    pasos.push(['Si tienes deudas con tarjeta, liquidarlas va antes que ahorrar más: ningún ahorro te paga lo que te cobra una tarjeta. Haz tu plan:', '/pagar-deudas']);
+  }
+  document.getElementById('plan').replaceChildren(...pasos.map(([texto, enlace]) => {
+    const li = crear('li', {textContent: texto + ' '});
+    if (enlace) li.append(crear('a', {href: enlace + '?ref=te-alcanza', textContent: 'Abrir calculadora →'}));
+    return li;
+  }));
 }
 alCambiar('calculadora', calcular);
 bloqueVenta(document.getElementById('venta'), 'te-alcanza-tu-sueldo');
