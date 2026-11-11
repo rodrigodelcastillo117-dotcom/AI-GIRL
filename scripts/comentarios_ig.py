@@ -86,6 +86,21 @@ def enlace_para(texto_post):
     return f'{SITIO}{ruta}?ref=ig-dm'
 
 
+# 11-nov-2026, Rodrigo autorizó ("si hazlo asi"): además de GUÍA, cuentan los comentarios cortos que piden el enlace
+# ("quiero", "pásamelo", "info" o la palabra del tema). GUÍA cuenta en cualquier parte; las demás solo si el comentario
+# tiene 4 palabras o menos, para no mandarle nada a quien está opinando ("el aguinaldo no me alcanza para nada...").
+PALABRAS_CORTAS = ('quiero', 'pasamelo', 'pasame', 'mandamelo', 'link', 'info', 'aguinaldo', 'calcula', 'calculadora',
+                   'lista', 'porfa', 'por favor', 'me interesa')
+
+
+def pide_enlace(texto):
+    t = texto.lower().replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u')
+    if 'guia' in t:
+        return True
+    limpio = ''.join(ch if ch.isalnum() or ch == ' ' else ' ' for ch in t).split()
+    return 0 < len(limpio) <= 4 and any(p in ' '.join(limpio) for p in PALABRAS_CORTAS)
+
+
 def guias():
     """Quien comentó GUÍA recibe el enlace por mensaje privado y una respuesta pública corta (suma otro comentario y le
     avisa que revise sus mensajes). Si Meta no deja mandar el privado, la respuesta pública lleva el enlace."""
@@ -96,7 +111,7 @@ def guias():
     for m in media.get('data', []):
         for c in (m.get('comments') or {}).get('data', []):
             texto = (c.get('text') or '').lower().replace('í', 'i')
-            if c.get('username') == YO or c['id'] in ya or 'guia' not in texto:
+            if c.get('username') == YO or c['id'] in ya or not pide_enlace(texto):
                 continue
             if any(r.get('username') == YO for r in (c.get('replies') or {}).get('data', [])):
                 continue  # ya lo contestó el aviso instantáneo (centro/api/meta.js)

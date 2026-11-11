@@ -20,8 +20,16 @@ const ENLACES = [['aguinaldo', '/aguinaldo'], ['fondo de emergencia', '/fondo-de
 
 const normal = (t) => (t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
+// Igual que scripts/comentarios_ig.py → pide_enlace (Rodrigo lo autorizó el 11-nov-2026): GUÍA en cualquier parte, o un
+// comentario corto (4 palabras o menos) que pide el enlace. Las opiniones largas y los votos (MITAD, SÍ...) no reciben nada.
+const PALABRAS_CORTAS = ['quiero', 'pasamelo', 'pasame', 'mandamelo', 'link', 'info', 'aguinaldo', 'calcula', 'calculadora',
+  'lista', 'porfa', 'por favor', 'me interesa'];
+
 export function pideGuia(texto) {
-  return /\bguia\b/.test(normal(texto));
+  const t = normal(texto);
+  if (/guia/.test(t)) return true;
+  const limpio = t.replace(/[^a-z0-9ñ ]/g, ' ').split(/\s+/).filter(Boolean);
+  return limpio.length > 0 && limpio.length <= 4 && PALABRAS_CORTAS.some((p) => limpio.join(' ').includes(p));
 }
 
 export function enlacePara(caption) {

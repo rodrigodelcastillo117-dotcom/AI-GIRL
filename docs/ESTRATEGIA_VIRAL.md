@@ -98,6 +98,10 @@ En Instagram el texto dice "comenta GUÍA y te lo mando por mensaje" (config.jso
 comentarios corre primero `python3 scripts/comentarios_ig.py guias`: a cada comentario con "guía" le manda por mensaje
 privado el enlace que va con el post (aguinaldo, fondo de emergencia, deudas, 50/30/20 o el sitio, con ?ref=ig-dm) y le
 contesta en público "te lo mandé por mensaje". Si Meta no deja mandar el privado, la respuesta pública lleva el enlace.
+**Ampliado el 11-nov-2026 (Rodrigo: "SOLO QUIERO TENER ENGAGEMENT"; autorizó "si hazlo asi"):** también recibe el enlace
+quien escribe un comentario corto (4 palabras o menos) que lo pide: "quiero", "pásamelo", "info", "link", "me interesa",
+"aguinaldo", "calcula". Los votos (MITAD, SÍ, NUNCA) y las opiniones largas no reciben nada. Fuera de eso sigue la regla:
+nunca se manda mensaje privado a quien no lo pidió en un comentario o no escribió primero.
 Queda anotado en contenido/guias_ig.json. Solo a quien lo pidió comentando; nunca mensajes a nadie más.
 
 ## Mensajes privados de Instagram (10-nov-2026)
