@@ -164,6 +164,17 @@
  {
   "fecha": "2026-11-13",
   "tipo": "carrusel",
+  "id": "c69",
+  "que": "Sale el carrusel «Calculadoras de finanzas personales gratis 🧮»",
+  "estado": "programado",
+  "horas": {
+   "ig": "19:00",
+   "tt": "13:00"
+  }
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "carrusel",
   "id": "c53",
   "estado": "por_programar",
   "horas": {},
@@ -176,14 +187,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Separación de bienes o sociedad conyugal ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-13",
-  "tipo": "carrusel",
-  "id": "c30",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Mitos del aguinaldo y lo que dice la ley 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
@@ -206,18 +209,18 @@
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c29",
+  "id": "c30",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Cuenta mancomunada o separada en pareja 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Mitos del aguinaldo y lo que dice la ley 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c55",
+  "id": "c29",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Presupuesto en pareja con junta de socios 💼» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Cuenta mancomunada o separada en pareja 💑» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
@@ -262,10 +265,10 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c59",
+  "id": "c55",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Deudas de mi pareja y firmar de aval ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Presupuesto en pareja con junta de socios 💼» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -278,13 +281,21 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c59",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Deudas de mi pareja y firmar de aval ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
   "id": "c56",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Capitulaciones matrimoniales en 6 datos ⚖️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-17",
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c58",
   "estado": "por_programar",
@@ -308,7 +319,7 @@
   "que": "Carrusel «Presupuesto de Navidad con tu aguinaldo 🎁» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c23",
   "estado": "por_programar",
@@ -332,14 +343,6 @@
   "que": "Carrusel «Tandas de ahorro sin contrato ni seguro ⚠️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c26",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Cuesta de enero se evita en diciembre 📅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-20",
   "tipo": "video",
   "id": "18",
@@ -358,9 +361,9 @@
  {
   "fecha": "2026-11-20",
   "tipo": "carrusel",
-  "id": "c33",
+  "id": "c26",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Memes de dinero de diciembre 😅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Cuesta de enero se evita en diciembre 📅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  }
 ]

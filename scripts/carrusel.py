@@ -27,6 +27,9 @@ import urllib.request
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from calculadoras import SITIO_CORTO, calculadora_para  # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANCHO, ALTO, MARGEN = 1080, 1350, 80
 NEGRO, ORO, CREMA, TENUE = (11, 11, 13), (245, 197, 66), (243, 237, 226), (163, 155, 141)  # como el sitio
@@ -330,11 +333,22 @@ def cierre(c, n, total):
         d.text((MARGEN + im.width + 28, 110 + im.height // 2 - 50), 'Victoria', font=letra('Black', 52), fill=NEGRO)
         d.text((MARGEN + im.width + 28, 110 + im.height // 2 + 12), 'y Capital', font=letra('Medium', 36), fill=NEGRO)
         arriba = 110 + im.height + 40
-    ft, lt, st = acomodar(c['cierre']['titulo'], 'Black', 96, 56, ancho, 560 - (arriba and 120), d, 1.08)
-    fc, lc, sc = acomodar(c['cierre']['texto'], 'Medium', 50, 32, ancho, 360 - (arriba and 60), d, 1.35)
-    y = max(arriba, (ALTO - (len(lt) * st + 60 + len(lc) * sc)) // 2 + arriba // 3)
+    # La calculadora del tema abajo, en una franja negra (11-nov-2026, Rodrigo: "haz lo necesario"): quien ya se interesó
+    # por el tema llega a hacer sus cuentas. Si el cierre ya trae el sitio, no se repite.
+    calc = calculadora_para(c)
+    calc = None if (not calc or SITIO_CORTO in c['cierre']['texto']) else calc
+    menos = 70 if calc else 0
+    ft, lt, st = acomodar(c['cierre']['titulo'], 'Black', 96, 56, ancho, 560 - (arriba and 120) - menos, d, 1.08)
+    fc, lc, sc = acomodar(c['cierre']['texto'], 'Medium', 50, 32, ancho, 360 - (arriba and 60) - menos, d, 1.35)
+    y = max(arriba, (ALTO - (len(lt) * st + 60 + len(lc) * sc)) // 2 + arriba // 3 - (menos and 60))
     y = escribir(d, (MARGEN, y), lt, ft, st, NEGRO) + 60
     escribir(d, (MARGEN, y), lc, fc, sc, NEGRO)
+    if calc:
+        f1, f2 = letra('Black', 36), letra('Medium', 32)
+        alto_franja, y0 = 128, ALTO - 128 - 110
+        d.rounded_rectangle((MARGEN, y0, ANCHO - MARGEN, y0 + alto_franja), radius=22, fill=NEGRO)
+        d.text((MARGEN + 32, y0 + 22), calc[1] + ', gratis:', font=f1, fill=ORO)
+        d.text((MARGEN + 32, y0 + 72), SITIO_CORTO + calc[0], font=f2, fill=(245, 240, 230))
     pie(d, n, total, NEGRO)
     return lienzo
 

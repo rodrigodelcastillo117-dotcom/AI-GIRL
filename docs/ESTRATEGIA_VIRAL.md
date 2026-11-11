@@ -217,3 +217,12 @@ preocupa a la persona, y escribe un plan de 3 pasos de máximo 170 palabras. Sol
 nunca inversiones, créditos ni productos; 3 consultas por persona por hora. Variables en Vercel (proyecto victoriatheceo):
 ANTHROPIC_API_KEY (la puso Rodrigo) y ANTHROPIC_WORKSPACE_ID (su clave no está asignada a un workspace). Si la calidad no
 alcanza, subir a claude-sonnet-5-5. Cada análisis queda en los registros de Vercel con sus tokens para medir el costo.
+
+## Cada carrusel termina en su calculadora (11-nov-2026, Rodrigo: "haz lo necesario... vamos a hacernos virales")
+
+No se hacen posts de "mira mi página" (el algoritmo los trata como anuncio y bajan el promedio de la cuenta). En su lugar,
+`scripts/calculadoras.py` elige la calculadora del tema de cada carrusel (por el título primero, luego el tema y el
+texto) y `carrusel.py` la pone en una franja negra en la diapositiva final; `publer_carrusel.py` agrega la línea
+"🧮 <calculadora>, gratis: victoriatheceo.vercel.app/<ruta>" al texto (reemplaza la vieja "en mi perfil"). Se puede fijar
+a mano en el carrusel: "calculadora": ["/ruta", "Frase"] o false. Además, c69 ("Guarda esto: 7 calculadoras gratis") es el
+menú para fijar en el perfil de Instagram y TikTok (lo fija Rodrigo: la API no deja).

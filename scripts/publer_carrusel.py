@@ -29,6 +29,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from carrusel import RAIZ, cargar  # noqa: E402
 from seo import hashtags_para  # noqa: E402
+from calculadoras import texto_con_calculadora  # noqa: E402
 from publer import (facebook_victoria, guia_arriba, pregunta_arriba, sin_perfil, texto_facebook, _buscar_id, _pedir, _primera_linea, armar_post, comentarios, cuando_de, cuentas_victoria,  # noqa: E402
                     esperar_job, mandar, red, workspace_id, ya_programadas)
 from aprender import CDMX, a_utc, publicaciones  # noqa: E402
@@ -117,7 +118,8 @@ def texto_reel(c, config):
     primera = c['portada']['titulo'].strip()
     if _primera_linea(primera) == _primera_linea(c['texto_post']):
         sys.exit(f'ERROR: el Reel de {c["id"]} empezaría igual que su carrusel; cambia portada.titulo o texto_post.')
-    return primera + '\n' + c['texto_post'].strip() + '\n\n' + ' '.join(hashtags_para('instagram', c['seo'], config))
+    texto_post = texto_con_calculadora(c)
+    return primera + '\n' + texto_post + '\n\n' + ' '.join(hashtags_para('instagram', c['seo'], config))
 
 
 def hora_reel(c, todos, plan, config, ahora):
@@ -259,8 +261,9 @@ def main():
     if len(fotos) != len(c['diapositivas']) + 2:
         sys.exit(f'ERROR: faltan fotos en carruseles/{c["id"]}: corre primero carrusel.py {c["id"]}')
     # Instagram busca por las palabras del pie y corta en 5 hashtags; TikTok, además, por las preguntas (docs/SEO.md).
-    por_red = {'instagram': c['texto_post'].strip() + '\n\n' + ' '.join(hashtags_para('instagram', c['seo'], config)),
-               'tiktok': '\n\n'.join([c['texto_post'].strip(), '🔎 ' + ' '.join(c['seo']['preguntas']),
+    texto_post = texto_con_calculadora(c)  # su calculadora (11-nov-2026)
+    por_red = {'instagram': texto_post + '\n\n' + ' '.join(hashtags_para('instagram', c['seo'], config)),
+               'tiktok': '\n\n'.join([texto_post, '🔎 ' + ' '.join(c['seo']['preguntas']),
                                        ' '.join(hashtags_para('tiktok', c['seo'], config))])}
     if '--prueba' in sys.argv:
         media = [{'id': f'MEDIA_{i}', 'type': 'image'} for i in range(len(fotos))]

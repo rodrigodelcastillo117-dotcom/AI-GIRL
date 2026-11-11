@@ -1369,7 +1369,8 @@
     ]
    },
    "revision": "Revisado por un segundo agente el 3-nov-2026 contra sus fuentes; correcciones aplicadas.",
-   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)",
+   "calculadora": false
   },
   {
    "id": "c15",
@@ -1929,7 +1930,8 @@
     ]
    },
    "revision": "Revisado contra fuentes oficiales el 7-nov-2026",
-   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)"
+   "personaje": "2026-11-08: postura y comentar a cambio de algo (docs/PERSONAJE.md)",
+   "calculadora": false
   },
   {
    "id": "c21",
@@ -3804,7 +3806,11 @@
     ]
    },
    "revision": "Escrito y revisado contra fuentes oficiales por dos agentes distintos el 9-nov-2026 (revision_c34_c43.md); correcciones aplicadas.",
-   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)"
+   "personaje": "2026-11-09: formato viral (memes u opinión fuerte), humor con Capital, opiniones marcadas como de Victoria y pregunta para comentar (docs/PERSONAJE.md)",
+   "calculadora": [
+    "/regla-50-30-20",
+    "Divide tu sueldo con la 50/30/20"
+   ]
   },
   {
    "id": "c42",
@@ -5150,7 +5156,8 @@
     ]
    },
    "revision": "Escrito el 9-nov-2026 con datos comprobados ese día en fuentes oficiales (diputados.gob.mx, gob.mx, revista.condusef.gob.mx). Falta la segunda revisión de datos por otro agente y ver las diapositivas dibujadas antes de pasarlo a listo. Segunda revisión de datos (9-nov-2026, agente revisor): artículos y fuentes comprobados en diputados.gob.mx, dof.gob.mx, gob.mx y revista.condusef.gob.mx; correcciones aplicadas y redibujado.",
-   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)"
+   "personaje": "2026-11-09: serie 'Socios en casa' (la pareja como empresa de dos socios), postura en portada, humor con Capital en el texto del post y pregunta para comentar (docs/PERSONAJE.md)",
+   "calculadora": false
   },
   {
    "id": "c58",
@@ -6130,6 +6137,99 @@
     "tt": "2026-11-12T19:00:00Z"
    },
    "publica_utc": "2026-11-13T01:00:00Z"
+  },
+  {
+   "id": "c69",
+   "estado": "programado",
+   "tema": "menu_calculadoras_gratis",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "calculadora": false,
+   "portada": {
+    "etiqueta": "GUARDA ESTO",
+    "titulo": "Guarda esto: 7 calculadoras gratis para tu dinero",
+    "voz": "Guarda esto: siete calculadoras gratis para tu dinero.",
+    "gancho_tipo": "guarda_esto",
+    "foto": "assets/fotos/pareja-cuenta-restaurante.jpg",
+    "foto_reel": "assets/fotos/video-40-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tu aguinaldo 2026",
+     "texto": "Pones tu sueldo y desde cuándo trabajas: te dice cuánto te toca, cuánto está libre de impuestos y cómo repartirlo. Por ley, antes del 20 de diciembre.\n\nvictoriatheceo.vercel.app/aguinaldo · LFT, art. 87",
+     "voz": "Uno: tu aguinaldo, cuánto te toca y cuánto está libre de impuestos."
+    },
+    {
+     "titulo": "¿Te alcanza tu sueldo?",
+     "texto": "Sueldo, renta y cuántos viven de él: tu tope de renta sano, lo que te queda después de comer y un plan de 3 pasos. Y Victoria analiza tu caso.\n\nvictoriatheceo.vercel.app/te-alcanza-tu-sueldo",
+     "voz": "Dos: si te alcanza tu sueldo, con tu plan en tres pasos."
+    },
+    {
+     "titulo": "Tu finiquito",
+     "texto": "Renuncies o te corran: cuánto te toca, concepto por concepto y con el artículo de la ley para que lo pidas.\n\nvictoriatheceo.vercel.app/finiquito · Ley Federal del Trabajo",
+     "voz": "Tres: tu finiquito, concepto por concepto."
+    },
+    {
+     "titulo": "Salir de deudas",
+     "texto": "Pones tus deudas y lo que puedes abonar de más: te dice en qué orden pagarlas (bola de nieve o avalancha), cuándo terminas y cuánto te ahorras.\n\nvictoriatheceo.vercel.app/pagar-deudas",
+     "voz": "Cuatro: en qué orden pagar tus deudas y cuándo terminas."
+    },
+    {
+     "titulo": "Fondo de emergencia",
+     "texto": "De 3 a 6 meses de tus gastos fijos para cuando algo se rompe: cuánto necesitas y en cuántos meses llegas.\n\nvictoriatheceo.vercel.app/fondo-de-emergencia",
+     "voz": "Cinco: tu fondo de emergencia, cuánto necesitas y cuándo llegas."
+    },
+    {
+     "titulo": "Regla 50/30/20",
+     "texto": "Tu sueldo en tres partes: necesidades, gustos y ahorro. Y lo compara con lo que gastas hoy.\n\nvictoriatheceo.vercel.app/regla-50-30-20",
+     "voz": "Seis: tu sueldo en tres partes."
+    },
+    {
+     "titulo": "Interés compuesto",
+     "texto": "Cuánto crece lo que ahorras cada mes con el tiempo: por qué empezar hoy, aunque sea poco, cambia todo.\n\nvictoriatheceo.vercel.app/interes-compuesto",
+     "voz": "Siete: cuánto crece tu ahorro con el tiempo."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Cuál vas a usar primero? Comenta el número.",
+    "texto": "Todas gratis en victoriatheceo.vercel.app\nGuárdalo y mándaselo a quien siempre pregunta \"¿y eso cómo se calcula?\".",
+    "voz": "¿Cuál vas a usar primero? Comenta el número."
+   },
+   "fuente": "Descripción de las calculadoras de victoriatheceo.vercel.app (11-nov-2026). Aguinaldo antes del 20 de diciembre: Ley Federal del Trabajo, art. 87.",
+   "titulo_post": "Guarda esto: 7 calculadoras gratis para tu dinero",
+   "texto_post": "Guarda esto: hice 7 calculadoras gratis para tu dinero, todas en un solo lugar. 🧮\n1. Aguinaldo 2026: cuánto te toca y cuánto está libre de impuestos.\n2. ¿Te alcanza tu sueldo?: tu tope de renta, lo que te queda y un plan de 3 pasos.\n3. Finiquito: cuánto te toca si renuncias o te corren, concepto por concepto.\n4. Salir de deudas: en qué orden pagar y cuándo terminas.\n5. Fondo de emergencia: cuánto necesitas y cuándo llegas.\n6. Regla 50/30/20: tu sueldo en tres partes.\n7. Interés compuesto: cuánto crece tu ahorro con el tiempo.\nTodas en victoriatheceo.vercel.app, sin registro.\n\n💬 ¿Cuál vas a usar primero? Comenta el número.\n🔖 Guárdalo para cuando la necesites.\n📩 Mándaselo a quien siempre pregunta \"¿y eso cómo se calcula?\".",
+   "seo": {
+    "palabra_clave": "calculadoras de finanzas personales",
+    "titulo": "Calculadoras de finanzas personales gratis 🧮",
+    "tags_concretas": [
+     "calculadora aguinaldo 2026",
+     "calculadora finiquito",
+     "calculadora de deudas",
+     "fondo de emergencia calculadora",
+     "regla 50 30 20",
+     "interes compuesto calculadora",
+     "me alcanza mi sueldo",
+     "finanzas personales mexico"
+    ],
+    "hashtags": [
+     "#finanzaspersonales",
+     "#aguinaldo",
+     "#ahorro",
+     "#deudas"
+    ],
+    "preguntas": [
+     "¿Cómo calculo mi aguinaldo 2026?",
+     "¿Cuánto me toca de finiquito?",
+     "¿En qué orden pago mis deudas?"
+    ]
+   },
+   "personaje": "2026-11-11: carrusel menú de las calculadoras, para fijar en el perfil (Rodrigo: 'haz lo necesario')",
+   "revision": "11-nov-2026: solo describe lo que hace cada calculadora (comprobado leyendo cada página); dato legal: aguinaldo antes del 20 de diciembre (LFT art. 87, ya revisado en c16).",
+   "publica_utc_por_red": {
+    "ig": "2026-11-14T01:00:00Z",
+    "tt": "2026-11-13T19:00:00Z"
+   },
+   "publica_utc": "2026-11-14T01:00:00Z"
   }
  ]
 }

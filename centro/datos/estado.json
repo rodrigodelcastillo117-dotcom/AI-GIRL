@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-11T20:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» (TikTok 09:00 · YouTube 14:00)",
+  "proxima_ejecucion_utc": "2026-11-11T21:00:00Z",
+  "proxima_que": "Sale el video «Gastos en pareja mitad y mitad no es justo 💸» (Facebook 15:00 · Instagram 15:00 · TikTok 15:00 · YouTube 10:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -34,15 +34,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-11T20:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» (TikTok 09:00 · YouTube 14:00)"
-   },
-   {
     "utc": "2026-11-11T21:00:00Z",
     "que": "Sale el video «Gastos en pareja mitad y mitad no es justo 💸» (Facebook 15:00 · Instagram 15:00 · TikTok 15:00 · YouTube 10:00)"
+   },
+   {
+    "utc": "2026-11-12T00:30:00Z",
+    "que": "Sale el carrusel «Aguinaldo 2026 en 5 datos para guardar 🔖» (Instagram 18:30 · TikTok 15:06 · YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-11-11T19:33:26Z",
+  "generado_utc": "2026-11-11T20:17:19Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
