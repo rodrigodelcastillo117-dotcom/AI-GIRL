@@ -104,10 +104,14 @@ def preparar(c, config, todos):
     url = subir_medio(video, f'{c["id"]}-reel-{int(time.time())}.mp4')  # nombre único: el CDN de GitHub guarda copias viejas
     texto = guia_arriba(pregunta_arriba(sin_perfil(texto_reel(c, config), 'instagram')),
                         sin_perfil(comentario_ig(c, config), 'instagram'), 'instagram')
-    contenedor = graph('POST', f'{IG}/media', {
-        'media_type': 'REELS', 'video_url': url, 'caption': texto, 'share_to_feed': 'true',
-        'audio_configuration': json.dumps({'audio_id': audio['audio_id'], 'audio_volume': VOLUMEN_MUSICA,
-                                           'video_volume': VOLUMEN_VOZ})})['id']
+    datos = {'media_type': 'REELS', 'video_url': url, 'caption': texto, 'share_to_feed': 'true',
+             'audio_configuration': json.dumps({'audio_id': audio['audio_id'], 'audio_volume': VOLUMEN_MUSICA,
+                                                'video_volume': VOLUMEN_VOZ})}
+    if config.get('ig_reels_de_prueba'):
+        # Reel de prueba (Rodrigo, 10-nov: "¿por qué Instagram no nos muestra?"): Instagram lo enseña primero solo a gente que
+        # NO sigue la cuenta y, si le va bien, lo pasa solo al perfil y a los seguidores (SS_PERFORMANCE).
+        datos['trial_params'] = json.dumps({'graduation_strategy': 'SS_PERFORMANCE'})
+    contenedor = graph('POST', f'{IG}/media', datos)['id']
     for _ in range(60):
         estado = graph('GET', f'{contenedor}?fields=status_code,status')
         if estado.get('status_code') == 'FINISHED':
