@@ -132,7 +132,8 @@
   "resultado": "ok",
   "creditos_usados": 0,
   "creditos_restantes": 7719,
-  "nota": "Medición y auditoría. c06 (Buen Fin) en TikTok e Instagram 15:00, Reel de Instagram 18:00 y short de YouTube 14:00 (4-XMOqZF8qA, lista finanzas); voz de la diapositiva 3 corregida (solo electrónicos). 5 carruseles nuevos c11-c15 escritos y revisados por un segundo agente (correcciones en c11-c14). Portadas: se repite la foto con más tiempo sin salir cuando no hay nueva. YouTube: otra app volvió a meter enlaces de gumroad y audio en-US en los 6 videos; restaurados."
+  "nota": "Medición y auditoría. c06 (Buen Fin) en TikTok e Instagram 15:00, Reel de Instagram 18:00 y short de YouTube 14:00 (4-XMOqZF8qA, lista finanzas); voz de la diapositiva 3 corregida (solo electrónicos). 5 carruseles nuevos c11-c15 escritos y revisados por un segundo agente (correcciones en c11-c14). Portadas: se repite la foto con más tiempo sin salir cuando no hay nueva. YouTube: otra app volvió a meter enlaces de gumroad y audio en-US en los 6 videos; restaurados.",
+  "resumen": "Medición y auditoría del día; short de c06"
  },
  {
   "fecha_utc": "2026-11-04T13:55:00Z",
@@ -141,7 +142,8 @@
   "resultado": "listo_para_publicar",
   "creditos_usados": 800,
   "creditos_restantes": 6779,
-  "detalle": "Rutina 4-nov: video 37 programado (Instagram 8:00, YouTube 12:00, TikTok 20:00) con cierre en pantalla; c04 en TikTok 17:00 y su short en YouTube 17:00 (prueba). Video 38 (meses sin intereses): 2 fotos (la 1a con logo de Apple borrado a mano, la 2a descartada), video Wan 19 s con frase inventada recortada y sincronía corregida. Créditos: 7,599 al empezar, 6,779 al terminar (la bitácora decía 7,719: 120 de diferencia que no salen de aquí)."
+  "detalle": "Rutina 4-nov: video 37 programado (Instagram 8:00, YouTube 12:00, TikTok 20:00) con cierre en pantalla; c04 en TikTok 17:00 y su short en YouTube 17:00 (prueba). Video 38 (meses sin intereses): 2 fotos (la 1a con logo de Apple borrado a mano, la 2a descartada), video Wan 19 s con frase inventada recortada y sincronía corregida. Créditos: 7,599 al empezar, 6,779 al terminar (la bitácora decía 7,719: 120 de diferencia que no salen de aquí).",
+  "resumen": "Video 37 programado en las 4 redes y carrusel de tarjetas en TikTok"
  },
  {
   "fecha_utc": "2026-11-05T13:35:00Z",
@@ -150,7 +152,8 @@
   "resultado": "ok",
   "creditos_usados": 0,
   "creditos_restantes": 6779,
-  "detalle": "Rutina 5-nov: c07 (tarjeta) en Instagram 8:00 y TikTok 13:00 en fotos, short en YouTube 10:00 (I0FGv7MROTI, lista finanzas) y Reel 18:00, primero con la voz mexicana convertida. La revisión de voz se endureció (dejó pasar 'Un deat' de más y 'Soma' por 'Suma'); voz de portada reescrita ('Cinco reglas' sonaba 'sin correglas'). Tu automatización de Errores invisibles cambió 9 videos; restaurados."
+  "detalle": "Rutina 5-nov: c07 (tarjeta) en Instagram 8:00 y TikTok 13:00 en fotos, short en YouTube 10:00 (I0FGv7MROTI, lista finanzas) y Reel 18:00, primero con la voz mexicana convertida. La revisión de voz se endureció (dejó pasar 'Un deat' de más y 'Soma' por 'Suma'); voz de portada reescrita ('Cinco reglas' sonaba 'sin correglas'). Tu automatización de Errores invisibles cambió 9 videos; restaurados.",
+  "resumen": "Carrusel de tarjeta de crédito en TikTok, Instagram y YouTube"
  },
  {
   "fecha_utc": "2026-11-06T18:50:00Z",
@@ -159,7 +162,8 @@
   "resultado": "listo_para_publicar",
   "creditos_usados": 1340,
   "creditos_restantes": 5439,
-  "detalle": "Rutina 6-nov: video 38 programado (TikTok 15:00, Instagram y YouTube 20:00); c08 en TikTok 9:00 y su short en YouTube 14:00. Video 17 (aguinaldo 2/4): 1er intento descartado (cuerpo entero, Capital fuera, zoom), 2do con foto de pecho para arriba y 'aghinaldo' en el texto de Wan. Carruseles de vuelta a la voz clonada (Rodrigo no quiere voz nueva). Pies con 'Guárdalo para...' por los datos de Instagram (Muse de Meta)."
+  "detalle": "Rutina 6-nov: video 38 programado (TikTok 15:00, Instagram y YouTube 20:00); c08 en TikTok 9:00 y su short en YouTube 14:00. Video 17 (aguinaldo 2/4): 1er intento descartado (cuerpo entero, Capital fuera, zoom), 2do con foto de pecho para arriba y 'aghinaldo' en el texto de Wan. Carruseles de vuelta a la voz clonada (Rodrigo no quiere voz nueva). Pies con 'Guárdalo para...' por los datos de Instagram (Muse de Meta).",
+  "resumen": "Video 38 programado; carrusel de gastos hormiga en TikTok"
  },
  {
   "fecha_utc": "2026-11-07T13:45:00Z",
@@ -168,7 +172,8 @@
   "resultado": "listo_para_publicar",
   "creditos_usados": 990,
   "creditos_restantes": 4449,
-  "detalle": "Rutina 7-nov (día de carrusel): c09 en TikTok 17:00 y short en YouTube 10:00 (playlist finanzas); Reel de c08 en Instagram 15:00 con portada propia. Video 18 (aguinaldo 3/4, renuncia) aprobado al primer intento: aguinaldo bien dicho (fonemas a ɣ i n a l d o), voz atrasada 367 ms corregida con tpad, Capital en todos los cuadros. Queda listo, sin programar."
+  "detalle": "Rutina 7-nov (día de carrusel): c09 en TikTok 17:00 y short en YouTube 10:00 (playlist finanzas); Reel de c08 en Instagram 15:00 con portada propia. Video 18 (aguinaldo 3/4, renuncia) aprobado al primer intento: aguinaldo bien dicho (fonemas a ɣ i n a l d o), voz atrasada 367 ms corregida con tpad, Capital en todos los cuadros. Queda listo, sin programar.",
+  "resumen": "Día de carrusel: TikTok, Reel de Instagram y short de YouTube"
  },
  {
   "fecha_utc": "2026-11-08T14:35:00Z",
@@ -177,7 +182,8 @@
   "resultado": "programado",
   "creditos_usados": 0,
   "creditos_restantes": 4449,
-  "detalle": "Rutina 8-nov (día de video 17, ya programado desde el 6-nov: TikTok 11:00, Instagram y YouTube 12:00). c16 en TikTok 15:00 y su short en YouTube 17:00 (prueba, playlist aguinaldo). No se generó video: el 18 está listo_para_publicar (estaba mal marcado como 'listo'). Arreglado: la auditoría contaba el video del día como short de carrusel. Voz de c16: PROFEDET -> nombre completo. 12 videos de YouTube restaurados de la automatización de Errores invisibles."
+  "detalle": "Rutina 8-nov (día de video 17, ya programado desde el 6-nov: TikTok 11:00, Instagram y YouTube 12:00). c16 en TikTok 15:00 y su short en YouTube 17:00 (prueba, playlist aguinaldo). No se generó video: el 18 está listo_para_publicar (estaba mal marcado como 'listo'). Arreglado: la auditoría contaba el video del día como short de carrusel. Voz de c16: PROFEDET -> nombre completo. 12 videos de YouTube restaurados de la automatización de Errores invisibles.",
+  "resumen": "Video 17 en las redes; nace el hit \"Guarda esto\" (c16)"
  },
  {
   "fecha_utc": "2026-11-09T13:40:00Z",
@@ -186,7 +192,8 @@
   "resultado": "programado",
   "creditos_usados": 60,
   "creditos_restantes": 4209,
-  "detalle": "Rutina 9-nov (lunes, primer día como manager): TikTok c12 9:00 y c11 13:00 (primer día con 2 carruseles); Reel de Instagram c16 15:00 (cambiado de c09 por el hit de c16: 3,361 vistas en TikTok en 15 h, 14 compartidos); short de c11 en YouTube 20:00. c04 marcado fuera de tema. Escritos c52-c54 'Guarda esto' (en revisión). 60 créditos en 3 fotos de Capital (9-nov madrugada)."
+  "detalle": "Rutina 9-nov (lunes, primer día como manager): TikTok c12 9:00 y c11 13:00 (primer día con 2 carruseles); Reel de Instagram c16 15:00 (cambiado de c09 por el hit de c16: 3,361 vistas en TikTok en 15 h, 14 compartidos); short de c11 en YouTube 20:00. c04 marcado fuera de tema. Escritos c52-c54 'Guarda esto' (en revisión). 60 créditos en 3 fotos de Capital (9-nov madrugada).",
+  "resumen": "Primer día como manager: 2 carruseles en TikTok y Reel del hit c16"
  },
  {
   "fecha_utc": "2026-11-10T13:20:00Z",
@@ -195,6 +202,7 @@
   "resultado": "programado",
   "creditos_usados": 0,
   "creditos_restantes": 4209,
-  "detalle": "Rutina 10-nov (plan congelado 10→24-nov): TikTok c65 11:00 (noticia: tu dinero si tu banco quiebra), c43 17:00 (aguinaldo), c66 20:00 (serie salario mínimo parte 1). Reels de Instagram con música (Meta, recordatorios): c12 11:00 y c43 15:00. Shorts de YouTube: c43 12:00, c66 17:00, c65 20:00. Facebook: c12 11:00, c43 15:00, c66 17:00, c65 20:00. Arreglos: el entorno de voz perdió faster-whisper/num2words (reinstalados) y voz_victoria cargaba Chatterbox aunque no se usa; el revisor de voz ahora acepta z/s/c y México/Méjico. Videos de Victoria listos: 18 y C1 (no se generó otro). Sin comentarios pendientes en YouTube ni Instagram."
+  "detalle": "Rutina 10-nov (plan congelado 10→24-nov): TikTok c65 11:00 (noticia: tu dinero si tu banco quiebra), c43 17:00 (aguinaldo), c66 20:00 (serie salario mínimo parte 1). Reels de Instagram con música (Meta, recordatorios): c12 11:00 y c43 15:00. Shorts de YouTube: c43 12:00, c66 17:00, c65 20:00. Facebook: c12 11:00, c43 15:00, c66 17:00, c65 20:00. Arreglos: el entorno de voz perdió faster-whisper/num2words (reinstalados) y voz_victoria cargaba Chatterbox aunque no se usa; el revisor de voz ahora acepta z/s/c y México/Méjico. Videos de Victoria listos: 18 y C1 (no se generó otro). Sin comentarios pendientes en YouTube ni Instagram.",
+  "resumen": "Noticia del banco, aguinaldo y parte 1 de la serie del salario mínimo"
  }
 ]

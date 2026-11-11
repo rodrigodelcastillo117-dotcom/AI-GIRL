@@ -51,17 +51,46 @@ def voces_victoria(carpeta, voces):
     convertida al timbre de Victoria (4-nov) y se quitó; se queda su voz y se corrige la pronunciación."""
     from guion_para_voz import para_voz
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
-    faltan = [{'texto': para_voz(t, config), 'salida': os.path.join(carpeta, f'vozc-{i:02d}.mp3')}
-              for i, t in enumerate(voces) if not os.path.exists(os.path.join(carpeta, f'vozc-{i:02d}.mp3'))]
-    if not faltan:
-        return
+    # Qué texto dijo cada audio (11-nov-2026: c65 reusó audios viejos después de cambiar la voz y el short duraba 65 s).
+    hechas_ruta = os.path.join(carpeta, 'voces-hechas.json')
+    hechas = json.load(open(hechas_ruta)) if os.path.exists(hechas_ruta) else None
+    faltan = []
+    for i, t in enumerate(voces):
+        salida, texto = os.path.join(carpeta, f'vozc-{i:02d}.mp3'), para_voz(t, config)
+        viejo = os.path.exists(salida) and hechas is not None and hechas.get(os.path.basename(salida)) not in (None, texto)
+        if viejo:
+            os.remove(salida)
+        if not os.path.exists(salida):
+            faltan.append({'texto': texto, 'salida': salida})
+    if faltan:
+        python = preparar_entorno_voz()
+        lista = os.path.join(carpeta, 'voces.json')
+        json.dump(faltan, open(lista, 'w'), ensure_ascii=False)
+        subprocess.run([python, os.path.join(RAIZ, 'scripts', 'voz_victoria.py'), lista], check=True)
+        os.remove(lista)
+    json.dump({f'vozc-{i:02d}.mp3': para_voz(t, config) for i, t in enumerate(voces)}, open(hechas_ruta, 'w'), ensure_ascii=False)
+
+
+LIBRERIAS_VOZ = {'faster_whisper': 'faster-whisper', 'num2words': 'num2words', 'librosa': 'librosa', 'numpy': 'numpy'}
+
+
+def preparar_entorno_voz():
+    """El entorno de voz se repara solo (11-nov-2026: el 10-nov perdió faster-whisper y num2words y fallaron 3 shorts).
+    Si no existe, lo crea; si le falta una librería, la instala; y comprueba que importe antes de seguir."""
     python = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
     if not os.path.exists(python):
-        sys.exit(f'ERROR: no está el entorno de voz ({python}); prepáralo con el paso 0 de docs/PIPELINE.md.')
-    lista = os.path.join(carpeta, 'voces.json')
-    json.dump(faltan, open(lista, 'w'), ensure_ascii=False)
-    subprocess.run([python, os.path.join(RAIZ, 'scripts', 'voz_victoria.py'), lista], check=True)
-    os.remove(lista)
+        base = os.path.dirname(os.path.dirname(python))
+        print(f'Entorno de voz no existe: lo creo en {base}')
+        subprocess.run([sys.executable, '-m', 'venv', base], check=True)
+    prueba = lambda m: subprocess.run([python, '-c', f'import {m}'], capture_output=True).returncode == 0
+    faltan = [paquete for modulo, paquete in LIBRERIAS_VOZ.items() if not prueba(modulo)]
+    if faltan:
+        print('Entorno de voz incompleto, instalo:', ', '.join(faltan))
+        subprocess.run([python, '-m', 'pip', 'install', '-q', *faltan], check=True)
+        malos = [m for m in LIBRERIAS_VOZ if not prueba(m)]
+        if malos:
+            sys.exit(f'ERROR: el entorno de voz sigue sin {", ".join(malos)} después de instalar; revisa la red o pip.')
+    return python
 
 
 def movimiento(segundos):

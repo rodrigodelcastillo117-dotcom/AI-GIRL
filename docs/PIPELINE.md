@@ -358,6 +358,8 @@ Copiar el MP4 final a `videos/`.
 Agrega un renglón a `contenido/ejecuciones.json`: `fecha_utc`, `tipo` (generar o publicar),
 `video_id`, `resultado` (programado, fallido u omitido), `detalle` en una frase,
 `creditos_usados` y `creditos_restantes` (de `openart_account_get` al terminar).
+Agrega también `resumen`: una frase corta (máximo ~90 caracteres) en español llano, sin nombres de archivo,
+de script ni de configuración; es lo que Rodrigo lee en la cinta del panel (ej. "Publicado el carrusel de la renta en las 4 redes").
 
 Incluye `contenido/metricas.json`, `contenido/verificacion.json`, `contenido/auditoria.json` y
 `contenido/config.json` (la prueba de horarios guarda ahí la franja ganadora) en el commit.

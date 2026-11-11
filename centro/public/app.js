@@ -356,8 +356,11 @@ function dibujarRedes() {
 }
 
 function dibujarCinta(ejecuciones, aprendizajes) {
-  const eventos = [...ejecuciones].sort(porFecha).reverse().slice(0, 6).map((e) => `${mx(e.fecha_utc)} · ${(ESTADOS[e.resultado] || [e.resultado])[0]} · ${e.detalle}`);
-  eventos.push(...aprendizajes.slice(-3).map((a) => `Lección: ${a.regla}`));
+  // Resumen corto y sin jerga (11-nov-2026: la cinta mostraba "voz_victoria cargaba Chatterbox"); el detalle completo
+  // sigue en la tabla de ejecuciones. Si una ejecución vieja no trae resumen, se corta la primera frase del detalle.
+  const corto = (e) => e.resumen || String(e.detalle || e.nota || '').split(/[.:;(]/)[0].slice(0, 90);
+  const eventos = [...ejecuciones].sort(porFecha).reverse().slice(0, 6).map((e) => `${mx(e.fecha_utc)} · ${(ESTADOS[e.resultado] || [e.resultado])[0]} · ${corto(e)}`);
+  eventos.push(...aprendizajes.slice(-3).filter((a) => a.tipo !== 'tecnico').map((a) => `Lección: ${a.aprendizaje || a.regla}`.slice(0, 160)));
   const cinta = $('cinta');
   // Dos copias para que el desplazamiento sea continuo.
   cinta.replaceChildren(...[...eventos, ...eventos].map((t) => crear('span', {textContent: t})));
