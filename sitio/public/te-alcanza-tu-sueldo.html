@@ -51,7 +51,7 @@
       <p class="nota" id="consejo"></p>
       <p class="nota">¿Quieres que Victoria te haga las cuentas en un video? Comenta tu sueldo, tu renta y tu ciudad en su post más reciente.</p>
       </div>
-      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+      <button type="button" class="boton secundario" id="compartir">Compártelo con alguien</button>
     </div>
 
     <section>
@@ -125,7 +125,15 @@ function calcular() {
 }
 alCambiar('calculadora', calcular);
 bloqueVenta(document.getElementById('venta'), 'te-alcanza-tu-sueldo');
-document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('¿Te alcanza tu sueldo? Haz tus cuentas en segundos: https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo?ref=wa');
+// Compartir (11-nov-2026, Rodrigo: "WhatsApp no me late"): en celular abre el menú del teléfono; en computadora copia el enlace.
+document.getElementById('compartir').addEventListener('click', async (ev) => {
+  const datos = {title: document.title, text: '¿Te alcanza tu sueldo? Haz tus cuentas en segundos:', url: 'https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo?ref=compartir'};
+  try {
+    if (navigator.share) { await navigator.share(datos); return; }
+    await navigator.clipboard.writeText(datos.text + ' ' + datos.url);
+    ev.target.textContent = '¡Enlace copiado! Pégalo donde quieras';
+  } catch (e) { /* la persona cerró el menú */ }
+});
   </script>
 </body>
 </html>

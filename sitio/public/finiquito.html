@@ -80,7 +80,7 @@
         prestaciones (arts. 84 y 89), así que lo real puede ser más. Revisa tu caso gratis en la PROFEDET (079 o 800 911 7877)
         o con un abogado laboral antes de firmar.</p>
       </div>
-      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+      <button type="button" class="boton secundario" id="compartir">Compártelo con alguien</button>
     </div>
 
     <section class="ejemplos">
@@ -256,7 +256,15 @@ function calcular() {
 }
 alCambiar('calculadora', calcular);
 bloqueVenta(document.getElementById('venta'), 'finiquito');
-document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Calcula tu finiquito o liquidación, gratis y con el artículo de cada concepto: https://victoriatheceo.vercel.app/finiquito?ref=wa');
+// Compartir (11-nov-2026, Rodrigo: "WhatsApp no me late"): en celular abre el menú del teléfono; en computadora copia el enlace.
+document.getElementById('compartir').addEventListener('click', async (ev) => {
+  const datos = {title: document.title, text: 'Calcula tu finiquito o liquidación, gratis y con el artículo de cada concepto:', url: 'https://victoriatheceo.vercel.app/finiquito?ref=compartir'};
+  try {
+    if (navigator.share) { await navigator.share(datos); return; }
+    await navigator.clipboard.writeText(datos.text + ' ' + datos.url);
+    ev.target.textContent = '¡Enlace copiado! Pégalo donde quieras';
+  } catch (e) { /* la persona cerró el menú */ }
+});
   </script>
 </body>
 </html>

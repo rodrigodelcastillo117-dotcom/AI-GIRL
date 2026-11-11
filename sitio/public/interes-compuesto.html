@@ -54,7 +54,7 @@
       <p class="nota">Ejemplo con tasa fija y capitalización mensual, sin inflación, comisiones ni impuestos. Es educativo:
         no es una recomendación de inversión y ninguna tasa está garantizada.</p>
       </div>
-      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+      <button type="button" class="boton secundario" id="compartir">Compártelo con alguien</button>
     </div>
 
     <section>
@@ -114,7 +114,15 @@ function calcular() {
 }
 alCambiar('calculadora', calcular);
 bloqueVenta(document.getElementById('venta'), 'interes-compuesto');
-document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('Mira cuánto crece tu ahorro con interés compuesto: https://victoriatheceo.vercel.app/interes-compuesto?ref=wa');
+// Compartir (11-nov-2026, Rodrigo: "WhatsApp no me late"): en celular abre el menú del teléfono; en computadora copia el enlace.
+document.getElementById('compartir').addEventListener('click', async (ev) => {
+  const datos = {title: document.title, text: 'Mira cuánto crece tu ahorro con interés compuesto:', url: 'https://victoriatheceo.vercel.app/interes-compuesto?ref=compartir'};
+  try {
+    if (navigator.share) { await navigator.share(datos); return; }
+    await navigator.clipboard.writeText(datos.text + ' ' + datos.url);
+    ev.target.textContent = '¡Enlace copiado! Pégalo donde quieras';
+  } catch (e) { /* la persona cerró el menú */ }
+});
   </script>
 </body>
 </html>

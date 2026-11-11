@@ -4,7 +4,7 @@ Uso: python scripts/sitio.py
 
 Cada calculadora es una entrada desde Google y desde los videos ("calcula tu aguinaldo gratis:
 enlace en mi perfil"), y termina en la plantilla de paga. Lo común (cabecera, menú de herramientas,
-bloque de venta, compartir por WhatsApp, pie) sale de aquí; lo propio de cada una está en HERRAMIENTAS.
+bloque de venta, botón de compartir, pie) sale de aquí; lo propio de cada una está en HERRAMIENTAS.
 Toda cifra legal o fiscal lleva su fuente en la página (regla 7) y se revisa cada año (UMA, LFT).
 """
 import calendar
@@ -864,7 +864,7 @@ PLANTILLA = '''<!doctype html>
       </form>
       <div class="resultado" aria-live="polite">{resultado}
       </div>
-      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+      <button type="button" class="boton secundario" id="compartir">Compártelo con alguien</button>
     </div>
 {extra}
     <section>
@@ -897,7 +897,15 @@ PLANTILLA = '''<!doctype html>
   <script>
 {script}
 bloqueVenta(document.getElementById('venta'), '{slug}');
-document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('{compartir} {url}?ref=wa');
+// Compartir (11-nov-2026, Rodrigo: "WhatsApp no me late"): en celular abre el menú del teléfono; en computadora copia el enlace.
+document.getElementById('compartir').addEventListener('click', async (ev) => {{
+  const datos = {{title: document.title, text: '{compartir}', url: '{url}?ref=compartir'}};
+  try {{
+    if (navigator.share) {{ await navigator.share(datos); return; }}
+    await navigator.clipboard.writeText(datos.text + ' ' + datos.url);
+    ev.target.textContent = '¡Enlace copiado! Pégalo donde quieras';
+  }} catch (e) {{ /* la persona cerró el menú */ }}
+}});
   </script>
 </body>
 </html>
