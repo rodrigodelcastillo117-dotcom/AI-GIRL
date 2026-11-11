@@ -3329,6 +3329,137 @@
    "pregunta_comentarios": "¿Qué empresa cuento después? Comenta el nombre.",
    "pregunta_comentarios_anterior": "¿Qué empresa quieres que cuente después?",
    "motivo_reserva": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México (40, 39, 41, aguinaldo). Regresar a pendiente cuando renueven créditos."
+  },
+  {
+   "hora_publicacion": "rotacion",
+   "formato": "a_camara",
+   "pilar": "finanzas",
+   "voz": "intima",
+   "duracion": 15,
+   "prueba": "opinion_10nov",
+   "adn": {
+    "tipo_gancho": "postura"
+   },
+   "id": "O1",
+   "estado": "generando",
+   "locacion": "restaurante",
+   "guion": "Si tu pareja gana el doble que tú, mitad y mitad no es justo. Cada quien pone según lo que gana. Eso no es mantener a nadie: es ser equipo. ¿Estoy mal? Te leo.",
+   "subtitulos": [
+    "Si tu pareja gana el doble que tú,",
+    "mitad y mitad no es justo.",
+    "Cada quien pone según lo que gana.",
+    "Eso no es mantener a nadie:",
+    "es ser equipo.",
+    "¿Estoy mal? Te leo."
+   ],
+   "palabras_clave": [
+    "mitad y mitad",
+    "según lo que gana",
+    "equipo"
+   ],
+   "fuente": "Opinión de Victoria (prueba de formato de opinión, 10-nov-2026). No cita datos.",
+   "vestuario": "Blusa de satín verde esmeralda",
+   "accion": "Sentada a la mesa de un restaurante, con la carpeta de la cuenta en la mano; Capital a su lado mirándola.",
+   "foto_base_lista": {
+    "archivo": "assets/fotos/pareja-cuenta-restaurante.jpg",
+    "openart_id": "6d1ASNhGxjpoXeUewDId",
+    "url": "https://cdn.openart.ai/openart-uploads/production/2026-11/create-video/Gtp6MKXwyYH0MQuQMrcG/pareja-cuenta-restaurante_1794379397881_3e9d5c95.jpg"
+   },
+   "texto_pantalla": "Mitad y mitad en pareja no es justo",
+   "texto_post": "Si tu pareja gana el doble que tú, mitad y mitad no es justo. Cada quien pone según lo que gana. Eso no es mantener a nadie: es ser equipo. 💸\n¿Estoy mal? Te leo.",
+   "pregunta_comentarios": "¿Mitad y mitad o según lo que gana cada quien? Comenta MITAD o PROPORCIONAL.",
+   "mandar_a": "tu pareja (a ver qué opina)",
+   "seo": {
+    "palabra_clave": "gastos en pareja",
+    "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
+    "descripcion_inicio": "Gastos en pareja: si uno gana el doble, ¿mitad y mitad o según lo que gana cada quien? La opinión de Victoria.",
+    "tags_concretas": [
+     "gastos en pareja",
+     "como dividir gastos en pareja",
+     "mitad y mitad en pareja",
+     "pagar en proporcion al sueldo",
+     "dinero en pareja",
+     "finanzas en pareja",
+     "quien paga en la pareja"
+    ],
+    "hashtags": [
+     "#parejas",
+     "#dinero",
+     "#finanzaspersonales",
+     "#opinion"
+    ],
+    "parrafo": "Dividir los gastos de la casa mitad y mitad parece justo, pero si uno gana el doble, al otro le pesa el doble. La opinión de Victoria: cada quien pone en proporción a lo que gana. Es una opinión, no una regla: cada pareja decide.",
+    "preguntas": [
+     "¿Cómo dividir los gastos en pareja?",
+     "¿Es justo pagar mitad y mitad?"
+    ]
+   },
+   "openart_history": "5fm750efvp5DKBqmafUm"
+  },
+  {
+   "hora_publicacion": "rotacion",
+   "formato": "a_camara",
+   "pilar": "finanzas",
+   "voz": "intima",
+   "duracion": 15,
+   "prueba": "opinion_10nov",
+   "adn": {
+    "tipo_gancho": "postura"
+   },
+   "id": "O2",
+   "estado": "generando",
+   "locacion": "sala_navidad",
+   "guion": "Tu aguinaldo no es para regalos. Ya sé, suena feo en diciembre. Pero si debes en la tarjeta, primero la deuda y luego el gusto. Lo demás lo pagas con intereses. ¿Estoy mal? Te leo.",
+   "subtitulos": [
+    "Tu aguinaldo no es para regalos.",
+    "Ya sé, suena feo en diciembre.",
+    "Pero si debes en la tarjeta,",
+    "primero la deuda y luego el gusto.",
+    "Lo demás lo pagas con intereses.",
+    "¿Estoy mal? Te leo."
+   ],
+   "palabras_clave": [
+    "aguinaldo",
+    "deuda",
+    "intereses"
+   ],
+   "fuente": "Opinión de Victoria (prueba de formato de opinión, 10-nov-2026). 'Lo pagas con intereses': lo que queda en la tarjeta sin pagar genera intereses (Condusef). No cita cifras.",
+   "vestuario": "Suéter tejido color crema",
+   "accion": "Sentada en el piso junto al árbol de Navidad envolviendo un regalo; Capital a su lado con gorro de Santa.",
+   "foto_base_lista": {
+    "archivo": "assets/fotos/navidad-regalos.jpg",
+    "openart_id": "4LssQb7ux0u3J68YT1HK",
+    "url": "https://cdn.openart.ai/openart-uploads/production/2026-11/create-video/Gtp6MKXwyYH0MQuQMrcG/navidad-regalos_1794379398579_51dbdf97.jpg"
+   },
+   "texto_pantalla": "Tu aguinaldo no es para regalos",
+   "texto_post": "Tu aguinaldo no es para regalos. Ya sé, suena feo en diciembre. Pero si debes en la tarjeta, primero la deuda y luego el gusto. Lo demás lo pagas con intereses. 🎁\n¿Estoy mal? Te leo.",
+   "pregunta_comentarios": "¿Tu aguinaldo va a regalos o a deudas? Comenta REGALOS o DEUDAS.",
+   "mandar_a": "quien ya tiene la lista de regalos y la tarjeta llena",
+   "seo": {
+    "palabra_clave": "aguinaldo",
+    "titulo": "Aguinaldo primero a la deuda, luego regalos 🎁",
+    "descripcion_inicio": "Aguinaldo 2026: ¿regalos o deudas? La opinión de Victoria: si debes en la tarjeta, primero la deuda y luego el gusto.",
+    "tags_concretas": [
+     "aguinaldo",
+     "aguinaldo 2026",
+     "que hacer con mi aguinaldo",
+     "aguinaldo para pagar deudas",
+     "aguinaldo y tarjeta de credito",
+     "regalos de navidad sin deudas"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#deudas",
+     "#navidad",
+     "#finanzaspersonales"
+    ],
+    "parrafo": "Si cargas deuda en la tarjeta, lo que no pagues sigue generando intereses mes con mes. La opinión de Victoria: con el aguinaldo, primero la deuda y luego los regalos. Es una opinión, no una regla.",
+    "preguntas": [
+     "¿Qué hacer con mi aguinaldo?",
+     "¿Conviene pagar deudas con el aguinaldo?"
+    ]
+   },
+   "openart_history": "a0W2eN6UN5ZnO9mSeVmF"
   }
  ]
 }
