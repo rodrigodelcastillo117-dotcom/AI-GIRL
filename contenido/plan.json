@@ -3341,7 +3341,7 @@
     "tipo_gancho": "postura"
    },
    "id": "O1",
-   "estado": "generando",
+   "estado": "listo_para_publicar",
    "locacion": "restaurante",
    "guion": "Si tu pareja gana el doble que tú, mitad y mitad no es justo. Cada quien pone según lo que gana. Eso no es mantener a nadie: es ser equipo. ¿Estoy mal? Te leo.",
    "subtitulos": [
@@ -3350,7 +3350,8 @@
     "Cada quien pone según lo que gana.",
     "Eso no es mantener a nadie:",
     "es ser equipo.",
-    "¿Estoy mal? Te leo."
+    "¿Estoy mal?",
+    "Te leo."
    ],
    "palabras_clave": [
     "mitad y mitad",
@@ -3394,7 +3395,23 @@
      "¿Es justo pagar mitad y mitad?"
     ]
    },
-   "openart_history": "5fm750efvp5DKBqmafUm"
+   "openart_history": "5fm750efvp5DKBqmafUm",
+   "archivo": "videos/video-O1-FINAL.mp4",
+   "qa": {
+    "audio": 1.0,
+    "sync": {
+     "cuadros": 449,
+     "fps": 30.0,
+     "cara_en_cuadros": 1.0,
+     "desfase_ms": -100,
+     "correlacion": 0.297,
+     "correlacion_sin_desfase": 0.27,
+     "voz_con_boca_quieta_s": 0.3,
+     "boca_hablando_sin_voz_s": 0.93,
+     "fallas": []
+    },
+    "nota": "Wan entregó la voz 250 ms atrasada en todo el video (boca 333 ms adelante); se retrasó la imagen 0.25 s congelando el primer cuadro (tpad) y la sincronía pasó (-67 ms, natural). Capital visible en los 6 cuadros."
+   }
   },
   {
    "hora_publicacion": "rotacion",
@@ -3416,7 +3433,8 @@
     "Pero si debes en la tarjeta,",
     "primero la deuda y luego el gusto.",
     "Lo demás lo pagas con intereses.",
-    "¿Estoy mal? Te leo."
+    "¿Estoy mal?",
+    "Te leo."
    ],
    "palabras_clave": [
     "aguinaldo",
@@ -3459,7 +3477,10 @@
      "¿Conviene pagar deudas con el aguinaldo?"
     ]
    },
-   "openart_history": "a0W2eN6UN5ZnO9mSeVmF"
+   "openart_history": "NusC6BETWxQaohacmizu",
+   "qa": {
+    "intento_1": "a0W2eN6UN5ZnO9mSeVmF: audio 1.00; boca 400 ms adelante; tras corregir el desfase la correlación quedó en 0.09 (mínimo 0.10): falla. Reintento con manos quietas desde el primer cuadro."
+   }
   }
  ]
 }

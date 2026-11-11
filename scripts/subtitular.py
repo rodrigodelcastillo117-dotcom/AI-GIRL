@@ -20,7 +20,9 @@ for w in words:
 if actual:
     grupos.append(actual)
 
-def limpia(t):
+def limpia(t, pregunta=False):
+    if pregunta:  # en una línea que abre con ¿ se deja el ? que la cierra (11-nov-2026: salía "¿Estoy mal")
+        return re.sub(r'[.,:;!]+$', '', t)
     return re.sub(r'[.,:;!?]+$', '', t)
 
 lineas = []
@@ -28,9 +30,10 @@ for i, g in enumerate(grupos):
     ini = g[0]['start']
     fin = grupos[i + 1][0]['start'] if i + 1 < len(grupos) else g[-1]['end'] + 0.3
     partes = []
+    pregunta = '¿' in ' '.join(w['w'] for w in g)
     # Cada elemento puede ser una palabra o una frase completa (de frases_a_tiempos.py)
     for token in (tok for w in g for tok in w['w'].split()):
-        t = limpia(token)
+        t = limpia(token, pregunta)
         llave = re.sub(r'[¿¡?!:;.,"]', '', t).lower()
         partes.append(r'{\c&H3CB4E6&}' + t + r'{\c&HFFFFFF&}' if llave in clave else t)
     lineas.append(f"Dialogue: 0,{ts(ini)},{ts(fin)},Sub,,0,0,0,,{' '.join(partes)}")

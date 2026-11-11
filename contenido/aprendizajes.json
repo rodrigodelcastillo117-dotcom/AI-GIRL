@@ -313,5 +313,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Instagram conectado para comentarios: app de Meta \"Victoria Comentarios\" con token de usuario del sistema (no caduca), guardado como secreto de red del entorno para graph.facebook.com (no está en el repo). La cuenta es @victoriatheceo (id 17841478105608541; en Publer sigue con el nombre viejo \"Nadie Te lo Explicó\"). Leer y contestar probado el 9-nov.",
   "regla": "Comentarios de Instagram: python3 scripts/comentarios_ig.py pendientes / responder <id> \"texto\" (mismas reglas que YouTube). Corre cada 2 h en la tarea de comentarios. Si da 401/403, el token se revocó: pedirle a Rodrigo uno nuevo con request_credential, nunca por chat."
+ },
+ {
+  "fecha_utc": "2026-11-11T07:07:33Z",
+  "origen": "videos O1/O2",
+  "tipo": "tecnico",
+  "aprendizaje": "Wan 3.0 a 15 s entregó la voz 250-300 ms atrasada en TODO el video (qa_sync: boca 333-400 ms adelante). Es un desfase constante: retrasar la imagen con tpad=start_duration=<desfase-0.08>:start_mode=clone lo arregla sin tocar la voz (O1 pasó con -67 ms).",
+  "regla": "Si qa_sync solo falla por desfase (boca adelante > 200 ms) y la correlación tras corregirlo es >= 0.10, corrige con tpad y vuelve a medir; si la correlación queda < 0.10, cuenta como falla (no se ajusta el desfase para que pase)."
  }
 ]
