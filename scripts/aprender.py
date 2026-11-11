@@ -674,7 +674,11 @@ def decidir(plan, ranking, hoy, config):
     carruseles = cargar('carruseles.json', {'carruseles': []})['carruseles']
     ahora = datetime.datetime.now(datetime.timezone.utc)
     elegidas, cuando, conteo, estado = horarios(plan, carruseles, config, hoy, ahora)
-    listo = next((v for v in plan['videos'] if v['estado'] == 'listo_para_publicar'), None)
+    listos = [v for v in plan['videos'] if v['estado'] == 'listo_para_publicar']
+    # 11-nov-2026: config.json → prioridad_publicar (ids) sale antes que el orden del plan (la prueba de opinión O1/O2).
+    orden = config.get('prioridad_publicar', [])
+    listos.sort(key=lambda v: orden.index(v['id']) if v['id'] in orden else len(orden))
+    listo = listos[0] if listos else None
     base = {'toca_publicar': toca, 'motivo': motivo, 'hora_siguiente': elegidas['ig'], 'horarios': elegidas,
             'cuando': cuando, 'prueba_horas': estado, 'conteo_horas': conteo,
             'publicar_hoy': listo['id'] if toca and listo else None}
