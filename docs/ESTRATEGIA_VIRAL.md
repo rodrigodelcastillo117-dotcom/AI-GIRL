@@ -180,3 +180,26 @@ sistema con instagram_manage_messages e instagram_manage_comments y le asigna la
 Vercel (proyecto victoria-centro) META_TOKEN, META_APP_SECRET y META_VERIFY_TOKEN; (3) en Meta for Developers → la app →
 Webhooks → Instagram, pone la URL https://victoria-centro.vercel.app/api/meta y la misma META_VERIFY_TOKEN, y marca
 "comments". La revisión de cada hora sigue de respaldo y se salta lo que ya contestó el aviso.
+
+## Experimentos creativos (Rodrigo, 11-nov-2026: "vuélate la barda"; "si hazlo, venga")
+
+Uno nuevo por semana, medido contra el promedio de su red; el que gane se queda. No toca la prueba congelada del PLAN
+VIGENTE (formato de TikTok) porque va en espacios aparte.
+
+1. **"Comenta y te hago las cuentas" (desde el 12-nov, serie del salario mínimo).** c67 (parte 2, la renta) cierra con
+   "¿Cuánto ganas, cuánto pagas de renta y en qué ciudad? Comenta y te hago las cuentas". La **parte 3** se arma con esos
+   comentarios: la rutina lee los de Instagram y YouTube (`comentarios_ig.py`, `comentarios.py pendientes`; los de TikTok
+   solo si Rodrigo los pega en el panel) y elige 3 a 5 casos distintos (ciudades y sueldos variados). Cada diapositiva:
+   "Me escribieron de <ciudad>: gana $X y paga $Y de renta" → lo que le queda, contra la canasta alimentaria de CONEVAL y
+   el 30% de referencia de la ONU (datos oficiales con fuente y segunda revisión). **Nunca** nombre de usuario ni datos
+   que identifiquen a la persona: solo ciudad y montos que ella misma escribió. **Nunca** un caso inventado: si hay menos de
+   2 comentarios reales con números, la parte 3 sale como estaba planeada (la comida) y se vuelve a pedir en su cierre.
+   Cierre de la parte 3: "¿Te hago las tuyas? Comenta sueldo, renta y ciudad".
+2. **Fotos en el feed de Instagram (desde el 11-nov).** Además de los Reels, un carrusel en fotos al día
+   (config.json → ig_fotos_feed_por_dia = 1): el carrusel de TikTok con más vistas que no haya salido en fotos en Instagram
+   (`publer_carrusel.py <id> "ig=<hora>"`, a 3 h o más de lo demás, entre 18:00 y 20:00). Primero salió c16 ("Guarda
+   esto", el récord) el 11-nov a las 18:30. Con sus revisiones de GUÍA a los 15 y 40 minutos, igual que los Reels.
+3. **Semana del 16-nov: "Capital audita tus gastos"** (fotos; video solo si hay créditos de OpenArt).
+4. **Semana del 23-nov: "¿Cuántas quincenas te cuesta…?"** con calculadora en el sitio.
+5. **Semana del 30-nov: "Reacciono a consejos de dinero de internet: ¿sirven en México?"** (Victoria califica del 1 al 10).
+Fuera: historias personales inventadas de Victoria, otra mujer en cuadro, política.

@@ -52,11 +52,15 @@ def redes_de(cuando):
     return [p for p, r in CORTA.items() if r in claves]
 
 
-def ya_sale_ese_dia(c, cuando, todos, plan, proveedores):
+def ya_sale_ese_dia(c, cuando, todos, plan, proveedores, fotos=False):
     """Choques del mismo día (México). Rodrigo, 9-nov-2026: config.json → publicaciones_por_dia (TikTok 3, Instagram 2,
     YouTube 2), contando el video del día, y a 3 h o más de otra publicación de la misma red (a 2 h de un video en
     TikTok). El 30-oct salieron c02 y c03 casi juntos por no revisarlo."""
-    por_dia = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('publicaciones_por_dia') or {}
+    config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
+    por_dia = config.get('publicaciones_por_dia') or {}
+    # 11-nov-2026 (Rodrigo: "¿podríamos subir fotos también?" → "si hazlo"): el carrusel en fotos del feed de Instagram
+    # es un espacio extra encima del máximo de Reels y videos (config → ig_fotos_feed_por_dia), con los mismos 3 h de aire.
+    extra = config.get('ig_fotos_feed_por_dia', 0) if fotos else 0
     choques = []
     for proveedor in proveedores:
         r = CORTA[proveedor]
@@ -75,8 +79,9 @@ def ya_sale_ese_dia(c, cuando, todos, plan, proveedores):
             cerca = datetime.timedelta(hours=3 if x['id'].startswith('c') else 2)
             if abs(h[r] - t) < cerca:
                 choques.append(f"{r}: {x['id']} a las {h[r].strftime('%H:%M')} (menos de {cerca.seconds // 3600} h)")
-        if len(mismos) >= por_dia.get(r, 1):
-            choques.append(f"{r}: ya hay {len(mismos)} publicación(es) ese día ({', '.join(mismos)}); máximo {por_dia.get(r, 1)}")
+        tope = por_dia.get(r, 1) + (extra if r == 'ig' else 0)
+        if len(mismos) >= tope:
+            choques.append(f"{r}: ya hay {len(mismos)} publicación(es) ese día ({', '.join(mismos)}); máximo {tope}")
     return choques
 
 
@@ -247,7 +252,7 @@ def main():
     estado = 'draft' if '--borrador' in sys.argv else 'scheduled'
     if estado == 'scheduled' and '--forzar' not in sys.argv:
         todos = json.load(open(RUTA))['carruseles']
-        choques = ya_sale_ese_dia(c, cuando, todos, json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json'))), proveedores)
+        choques = ya_sale_ese_dia(c, cuando, todos, json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json'))), proveedores, fotos=True)
         if choques:
             sys.exit(f'ERROR: choca con otra publicación de ese día ({"; ".join(choques)}). Elige otra hora u otro día, o usa --forzar.')
     fotos = sorted(glob.glob(os.path.join(RAIZ, 'carruseles', c['id'], '[0-9][0-9].png')))
