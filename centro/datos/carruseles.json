@@ -449,7 +449,7 @@
   "c_tt": 1,
   "s_tt": 0,
   "c_yt_reales": 0,
-  "c_ig_reales": 2
+  "c_ig_reales": 3
  },
  {
   "id": "c13",
@@ -1115,7 +1115,7 @@
   "c_yt": 1,
   "s_yt": 0,
   "c_yt_reales": 0,
-  "c_ig_reales": 0
+  "c_ig_reales": 2
  },
  {
   "id": "c44",
@@ -1560,5 +1560,24 @@
   "c_yt": 1,
   "s_yt": 0,
   "c_yt_reales": 0
+ },
+ {
+  "id": "c67",
+  "estado": "listo",
+  "tema": "serie alcanza salario minimo 2",
+  "pilar": "finanzas",
+  "gancho": "La renta promedio en México se come el 39% del salario mínimo",
+  "titulo": "Renta promedio en México vs salario mínimo 🏠",
+  "diapositivas": 9,
+  "fondo": "yate.jpg",
+  "portada": "video-37-sala.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "la renta promedio en méxico se come el 39% del salario mínimo. parte 2 de 5: la renta. 🏠",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
  }
 ]

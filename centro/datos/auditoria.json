@@ -1,12 +1,12 @@
 {
- "fecha_utc": "2026-11-10T23:33:26Z",
+ "fecha_utc": "2026-11-11T07:17:43Z",
  "videos_calificados": 6,
  "base_vistas_36h": 473.5,
  "notas": {
   "01": {
    "vistas_36h": 714,
    "engagement": 0.035,
-   "retencion": 91.2,
+   "retencion": 91.3,
    "horas": 36.9,
    "indice": 1.51
   },
@@ -20,28 +20,28 @@
   "17": {
    "vistas_36h": 440,
    "engagement": 0.0409,
-   "retencion": null,
+   "retencion": 77.3,
    "horas": 32.3,
    "indice": 0.93
   },
   "19": {
    "vistas_36h": 386,
    "engagement": 0.0259,
-   "retencion": 103.2,
+   "retencion": 102.8,
    "horas": 34.6,
    "indice": 0.82
   },
   "37": {
    "vistas_36h": 507,
    "engagement": 0.0316,
-   "retencion": 76.1,
+   "retencion": 76.0,
    "horas": 34.7,
    "indice": 1.07
   },
   "38": {
    "vistas_36h": 214,
    "engagement": 0.0701,
-   "retencion": 158.9,
+   "retencion": 137.8,
    "horas": 34.7,
    "indice": 0.45
   }
@@ -62,7 +62,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "finanzas",
@@ -70,7 +70,7 @@
     "indice": 0.82,
     "estado": "normal",
     "engagement": 0.0421,
-    "retencion": 112.7
+    "retencion": 98.5
    }
   ],
   "formato": [
@@ -80,7 +80,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 99.9
+    "retencion": 92.5
    }
   ],
   "locacion": [
@@ -98,7 +98,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "sala",
@@ -106,7 +106,7 @@
     "indice": 1.0,
     "estado": "en prueba",
     "engagement": 0.0363,
-    "retencion": 76.1
+    "retencion": 76.7
    },
    {
     "valor": "sillon",
@@ -114,7 +114,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 103.2
+    "retencion": 102.8
    },
    {
     "valor": "oficina",
@@ -122,7 +122,7 @@
     "indice": 0.45,
     "estado": "en prueba",
     "engagement": 0.0701,
-    "retencion": 158.9
+    "retencion": 137.8
    }
   ],
   "tipo_fondo": [
@@ -132,7 +132,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "negocios",
@@ -140,7 +140,7 @@
     "indice": 1.01,
     "estado": "en prueba",
     "engagement": 0.05,
-    "retencion": 114.5
+    "retencion": 104.0
    },
    {
     "valor": "casa",
@@ -148,7 +148,7 @@
     "indice": 0.94,
     "estado": "normal",
     "engagement": 0.0328,
-    "retencion": 89.7
+    "retencion": 85.4
    }
   ],
   "estilo_vestuario": [
@@ -158,7 +158,7 @@
     "indice": 1.17,
     "estado": "normal",
     "engagement": 0.045,
-    "retencion": 106.7
+    "retencion": 99.7
    },
    {
     "valor": "noche",
@@ -166,7 +166,7 @@
     "indice": 0.95,
     "estado": "en prueba",
     "engagement": 0.0288,
-    "retencion": 89.7
+    "retencion": 89.4
    },
    {
     "valor": "casual",
@@ -174,7 +174,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": null
+    "retencion": 77.3
    }
   ],
   "color_vestuario": [
@@ -192,7 +192,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "café",
@@ -200,7 +200,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.1
+    "retencion": 76.0
    },
    {
     "valor": "negro",
@@ -208,7 +208,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 103.2
+    "retencion": 102.8
    },
    {
     "valor": "rojo",
@@ -216,7 +216,7 @@
     "indice": 0.69,
     "estado": "en prueba",
     "engagement": 0.0555,
-    "retencion": 158.9
+    "retencion": 107.6
    }
   ],
   "tipo_gancho": [
@@ -234,7 +234,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.1
+    "retencion": 76.0
    },
    {
     "valor": "pregunta",
@@ -242,7 +242,7 @@
     "indice": 0.88,
     "estado": "en prueba",
     "engagement": 0.0334,
-    "retencion": 103.2
+    "retencion": 90.0
    },
    {
     "valor": "contradiccion",
@@ -250,7 +250,7 @@
     "indice": 0.45,
     "estado": "en prueba",
     "engagement": 0.0701,
-    "retencion": 158.9
+    "retencion": 137.8
    }
   ],
   "titulo_emoji": [
@@ -260,7 +260,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 99.9
+    "retencion": 92.5
    }
   ],
   "titulo_largo": [
@@ -270,7 +270,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 99.9
+    "retencion": 92.5
    }
   ],
   "titulo_tipo": [
@@ -280,7 +280,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 99.9
+    "retencion": 92.5
    }
   ],
   "dia": [
@@ -298,7 +298,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "mié",
@@ -306,7 +306,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.1
+    "retencion": 76.0
    },
    {
     "valor": "dom",
@@ -314,7 +314,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": null
+    "retencion": 77.3
    },
    {
     "valor": "lun",
@@ -322,7 +322,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 103.2
+    "retencion": 102.8
    },
    {
     "valor": "vie",
@@ -330,7 +330,7 @@
     "indice": 0.45,
     "estado": "en prueba",
     "engagement": 0.0701,
-    "retencion": 158.9
+    "retencion": 137.8
    }
   ],
   "hora": [
@@ -348,7 +348,7 @@
     "indice": 1.51,
     "estado": "en prueba",
     "engagement": 0.035,
-    "retencion": 91.2
+    "retencion": 91.3
    },
    {
     "valor": "12:00",
@@ -356,7 +356,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": null
+    "retencion": 77.3
    },
    {
     "valor": "20:00",
@@ -364,23 +364,23 @@
     "indice": 0.78,
     "estado": "en prueba",
     "engagement": 0.0425,
-    "retencion": 112.7
+    "retencion": 105.5
    }
   ]
  },
  "decision": {
-  "toca_publicar": false,
-  "motivo": "el último sale el 2026-11-08; toca publicar en 1 día(s)",
-  "hora_siguiente": "18:00",
+  "toca_publicar": true,
+  "motivo": "el último salió el 2026-11-08",
+  "hora_siguiente": "15:00",
   "horarios": {
-   "ig": "18:00",
-   "tt": "20:00",
-   "yt": "20:00"
+   "ig": "15:00",
+   "tt": "15:00",
+   "yt": "10:00"
   },
   "cuando": {
-   "ig": "2026-11-11T00:00:00Z",
-   "tt": "2026-11-11T02:00:00Z",
-   "yt": "2026-11-11T02:00:00Z"
+   "ig": "2026-11-11T21:00:00Z",
+   "tt": "2026-11-11T21:00:00Z",
+   "yt": "2026-11-11T16:00:00Z"
   },
   "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 2/4, 15:00 1/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 3/4, 11:00 3/4, 13:00 3/4, 15:00 3/4, 17:00 4/4, 20:00 4/4) · yt: en prueba (10:00 3/4, 12:00 4/4, 14:00 4/4, 17:00 5/4, 20:00 4/4)",
   "conteo_horas": {
@@ -408,28 +408,76 @@
     "20:00": 4
    }
   },
-  "publicar_hoy": null,
+  "publicar_hoy": "O1",
   "video_id": "40",
   "modo": "prioridad",
   "esperado": null,
   "cambios_sugeridos": [],
   "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
   "carruseles": {
-   "tiktok": null,
-   "instagram": null,
-   "youtube": null,
-   "tiktoks": [],
-   "instagrams": [],
-   "youtubes": [],
-   "notas": [
-    "TikTok ya tiene sus 3 publicaciones de hoy.",
-    "Instagram ya tiene sus 2 publicaciones de hoy.",
-    "YouTube ya tiene sus 3 publicaciones de hoy."
+   "tiktok": {
+    "id": "c52",
+    "cuando": "2026-11-11T15:00:00Z"
+   },
+   "instagram": {
+    "id": "c11",
+    "cuando_ig": "2026-11-11T17:00:00Z",
+    "turno": "mañana",
+    "por_que": "164 vistas en TikTok; lleva 1 día(s) esperando"
+   },
+   "youtube": {
+    "id": "c52",
+    "cuando_yt": "2026-11-11T20:00:00Z",
+    "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+   },
+   "tiktoks": [
+    {
+     "id": "c52",
+     "cuando": "2026-11-11T15:00:00Z"
+    },
+    {
+     "id": "c27",
+     "cuando": "2026-11-12T02:00:00Z"
+    }
    ],
-   "quedan_tiktok": 40,
-   "quedan_instagram": 4,
+   "instagrams": [
+    {
+     "id": "c11",
+     "cuando_ig": "2026-11-11T17:00:00Z",
+     "turno": "mañana",
+     "por_que": "164 vistas en TikTok; lleva 1 día(s) esperando"
+    }
+   ],
+   "youtubes": [
+    {
+     "id": "c52",
+     "cuando_yt": "2026-11-11T20:00:00Z",
+     "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+    },
+    {
+     "id": "c27",
+     "cuando_yt": "2026-11-12T02:00:00Z",
+     "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+    }
+   ],
+   "notas": [],
+   "quedan_tiktok": 38,
+   "quedan_instagram": 5,
    "quedan_youtube": 0,
-   "comandos": []
+   "comandos": [
+    "python scripts/publer_carrusel.py c52 \"tt=2026-11-11T15:00:00Z\"",
+    "python scripts/publer_carrusel.py c27 \"tt=2026-11-12T02:00:00Z\"",
+    "python scripts/carrusel_video.py short c11",
+    "python scripts/carrusel_video.py short c52",
+    "python scripts/carrusel_video.py short c27",
+    "python scripts/ig_reel_musica.py c11 --programar 2026-11-11T17:00:00Z",
+    "python scripts/publer_carrusel.py c11 --reel 2026-11-11T17:00:00Z --solo-facebook",
+    "RECORDATORIO (send_later a las 11:00): python scripts/ig_reel_musica.py c11 --publicar",
+    "youtube.py subir carruseles/c52/short.mp4 ... 2026-11-11T20:00:00Z (CARRUSELES.md)",
+    "python scripts/publer_carrusel.py c52 --reel 2026-11-11T20:00:00Z --solo-facebook",
+    "youtube.py subir carruseles/c27/short.mp4 ... 2026-11-12T02:00:00Z (CARRUSELES.md)",
+    "python scripts/publer_carrusel.py c27 --reel 2026-11-12T02:00:00Z --solo-facebook"
+   ]
   },
   "segundos": 19,
   "creditos": 790
@@ -509,54 +557,54 @@
      "indice": 0.7
     },
     "20:00": {
-     "n": 2,
-     "indice": 1.43
+     "n": 3,
+     "indice": 1.29
     },
     "15:00": {
      "n": 3,
-     "indice": 5.02
+     "indice": 6.4
     },
     "13:00": {
-     "n": 2,
-     "indice": 1.05
+     "n": 3,
+     "indice": 1.04
     },
     "09:00": {
      "n": 3,
-     "indice": 0.94
+     "indice": 1.21
     },
     "17:00": {
      "n": 3,
-     "indice": 0.94
+     "indice": 1.21
     }
    },
    "dias": {
     "jueves": {
      "n": 2,
-     "indice": 1.36
+     "indice": 1.5
     },
     "sábado": {
      "n": 2,
-     "indice": 0.59
+     "indice": 0.65
     },
     "miércoles": {
      "n": 2,
-     "indice": 0.91
+     "indice": 1.0
     },
     "viernes": {
      "n": 4,
-     "indice": 1.22
+     "indice": 1.52
     },
     "domingo": {
      "n": 3,
-     "indice": 5.22
+     "indice": 6.69
     },
     "lunes": {
-     "n": 2,
-     "indice": 0.74
+     "n": 4,
+     "indice": 0.71
     },
     "martes": {
      "n": 1,
-     "indice": 1.08
+     "indice": 1.4
     }
    },
    "ganadora": null
@@ -569,53 +617,53 @@
     },
     "10:00": {
      "n": 3,
-     "indice": 1.24
+     "indice": 1.3
     },
     "12:00": {
      "n": 3,
-     "indice": 0.85
+     "indice": 0.87
     },
     "20:00": {
-     "n": 2,
-     "indice": 0.45
+     "n": 3,
+     "indice": 0.65
     },
     "17:00": {
-     "n": 3,
-     "indice": 2.23
+     "n": 4,
+     "indice": 2.06
     },
     "14:00": {
-     "n": 3,
-     "indice": 2.58
+     "n": 4,
+     "indice": 2.35
     }
    },
    "dias": {
     "jueves": {
      "n": 2,
-     "indice": 1.13
+     "indice": 1.18
     },
     "sábado": {
      "n": 2,
-     "indice": 1.43
+     "indice": 1.49
     },
     "miércoles": {
      "n": 2,
-     "indice": 0.91
+     "indice": 0.96
     },
     "viernes": {
      "n": 4,
-     "indice": 1.67
+     "indice": 1.84
     },
     "domingo": {
      "n": 3,
-     "indice": 2.29
+     "indice": 2.49
     },
     "lunes": {
-     "n": 1,
-     "indice": 0.63
+     "n": 4,
+     "indice": 0.86
     },
     "martes": {
      "n": 1,
-     "indice": 1.86
+     "indice": 2.05
     }
    },
    "ganadora": null
@@ -642,8 +690,13 @@
     "tipo": "dato",
     "n": 6,
     "vistas_48h": 261
+   },
+   {
+    "tipo": "postura",
+    "n": 3,
+    "vistas_48h": 123
    }
   ],
-  "gana": null
+  "gana": "dato"
  }
 }

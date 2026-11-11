@@ -3,19 +3,19 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-12T00:00:00Z",
-  "proxima_que": "Sale el video 18 · la hora de cada red la fija la auditoría de ese día",
+  "proxima_ejecucion_utc": "2026-11-11T16:00:00Z",
+  "proxima_que": "Sale el video O1 · la hora de cada red la fija la auditoría de ese día",
   "proximas": [
    {
-    "utc": "2026-11-12T00:00:00Z",
-    "que": "Sale el video 18 · la hora de cada red la fija la auditoría de ese día"
+    "utc": "2026-11-11T16:00:00Z",
+    "que": "Sale el video O1 · la hora de cada red la fija la auditoría de ese día"
    },
    {
-    "utc": "2026-11-13T00:00:00Z",
-    "que": "Sale el video 18 · la hora de cada red la fija la auditoría de ese día"
+    "utc": "2026-11-14T16:00:00Z",
+    "que": "Sale el video O2 · la hora de cada red la fija la auditoría de ese día"
    }
   ],
-  "generado_utc": "2026-11-11T02:14:51Z",
+  "generado_utc": "2026-11-11T07:37:38Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {

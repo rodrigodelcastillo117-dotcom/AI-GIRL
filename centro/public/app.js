@@ -189,10 +189,10 @@ function promedioPor(campo) {
 
 function mejoras() {
   const lista = [];
-  const {videos, ejecuciones} = FOTO;
-  const medidos = videos.filter(medido);
+  const {ejecuciones} = FOTO;
+  const medidos = todo().filter(medido);  // videos y carruseles (11-nov-2026: contaba solo los videos y decía "6 de 8")
   if (medidos.length < 8) {
-    lista.push(['dato', `${medidos.length} de 8 videos medidos. Con 8 ya se decide la mejor hora y el mejor tema con datos, no a ojo.`]);
+    lista.push(['dato', `${medidos.length} de 8 publicaciones medidas. Con 8 ya se decide la mejor hora y el mejor tema con datos, no a ojo.`]);
   } else {
     for (const [campo, nombre] of [['pilar', 'tema'], ['hora_plan', 'hora']]) {
       const g = promedioPor(campo).filter((x) => x.videos >= 2).sort((a, b) => b.promedio - a.promedio);
@@ -202,12 +202,14 @@ function mejoras() {
       }
     }
     const mejor = [...medidos].sort((a, b) => vistasDe(b) - vistasDe(a))[0];
-    lista.push(['idea', `El video ${mejor.id} es el récord con ${fmt(vistasDe(mejor))} vistas: "${mejor.gancho}".`]);
+    lista.push(['idea', `${String(mejor.id).startsWith('c') ? 'El carrusel' : 'El video'} ${mejor.id} es el récord con ${fmt(vistasDe(mejor))} vistas: "${mejor.gancho || mejor.titulo || ''}".`]);
   }
   const r = resumen();
   if (r.listos) lista.push(['dato', `${r.listos} video(s) ya generados esperan salir: se publican sin gastar créditos.`]);
-  const fallos = ejecuciones.filter((e) => e.resultado === 'fallido').sort(porFecha);
-  if (fallos.length) lista.push(['alerta', `${fallos.length} ejecución(es) no publicaron. Última: ${fallos.at(-1).detalle}`]);
+  // Solo las fallas de los últimos 7 días (11-nov-2026: seguía saliendo una del 31-oct ya resuelta).
+  const hace7 = Date.now() - 7 * 86400000;
+  const fallos = ejecuciones.filter((e) => e.resultado === 'fallido' && new Date(e.fecha_utc).getTime() > hace7).sort(porFecha);
+  if (fallos.length) lista.push(['alerta', `${fallos.length} ejecución(es) no publicaron esta semana. Última: ${fallos.at(-1).detalle}`]);
   if (r.alcanzan != null) {
     lista.push(r.alcanzan < 6
       ? ['alerta', `Energía para solo ${r.alcanzan} videos. Recarga OpenArt o baja la frecuencia.`]
@@ -215,7 +217,7 @@ function mejoras() {
   }
   if (r.cola <= 3) lista.push(['alerta', `Quedan ${r.cola} guiones en cola. Pide a Claude el siguiente plan de videos.`]);
   for (const e of VIVO?.errores || []) lista.push(['alerta', `Sin conexión en vivo con ${e}`]);
-  for (const a of FOTO.auditoria?.alertas || []) lista.push([/pierde|revisar|fallaron|Recargar/.test(a) ? 'alerta' : /gana/.test(a) ? 'idea' : 'dato', a]);
+  for (const a of (FOTO.auditoria?.alertas || []).filter((x) => !(r.alcanzan != null && /^Créditos para/.test(x)))) lista.push([/pierde|revisar|fallaron|Recargar/.test(a) ? 'alerta' : /gana/.test(a) ? 'idea' : 'dato', a]);
   return lista;
 }
 
@@ -395,7 +397,9 @@ function dibujarLaboratorio(a) {
   if (!d) {
     texto.append(crear('p', {textContent: 'No hay guiones pendientes: el sistema escribe 10 nuevos en la siguiente ejecución.'}));
   } else {
-    texto.append(crear('p', {textContent: `${d.toca_publicar ? 'Hoy toca publicar' : 'Hoy no toca publicar'} (${d.motivo}). Siguiente a generar: ${d.por_que}`}));
+    // Sin nombres de archivos ni claves internas en el texto para Rodrigo (11-nov-2026: salía "(config.json → prioridad_videos)").
+    const llano = (t) => String(t || '').replace(/\s*\((?:config\.json|contenido\/)[^)]*\)/g, '').replace(/config\.json\s*→\s*\w+/g, 'la configuración');
+    texto.append(crear('p', {textContent: `${d.toca_publicar ? `Hoy toca publicar${d.publicar_hoy ? ` el video ${d.publicar_hoy}` : ''}` : 'Hoy no toca publicar'} (${llano(d.motivo)}). Siguiente a generar: ${llano(d.por_que)}`}));
     if (d.horarios) texto.append(crear('p', {className: 'nota', textContent: `Hoy cada red a su hora: ${Object.entries(d.horarios).map(([r, h]) => `${NOMBRE_RED[r]} ${h}`).join(' · ')}.`}));
     if (a.reglas_vigentes?.length) texto.append(crear('ul', {}, ...a.reglas_vigentes.map((r) => crear('li', {textContent: r}))));
     if (d.cambios_sugeridos?.length) {
@@ -426,8 +430,14 @@ function dibujarLaboratorio(a) {
       barra.title = `${f.estado} · ${f.n} videos · interacción ${pct(f.engagement)}`;
       lista.append(crear('div', {className: 'fila'}, crear('span', {textContent: PILARES[f.valor] || f.valor.replace('_', ' ')}), barra, crear('em', {textContent: `${f.indice.toFixed(2)} · ${f.n} v`})));
     }
-    lab.append(crear('article', {className: 'panel'}, crear('div', {className: 'codigo', textContent: `LAB · ${atributo}`}), crear('h2', {textContent: ATRIBUTOS[atributo] || atributo}), lista));
+    const tarjeta = crear('article', {className: 'panel'}, crear('div', {className: 'codigo', textContent: `LAB · ${atributo}`}), crear('h2', {textContent: ATRIBUTOS[atributo] || atributo}), lista);
+    // A la vista solo lo que más decide (11-nov-2026: eran 14 tarjetas, casi todas con 1 video); el resto en "Ver las demás".
+    if (['pilar', 'tipo_gancho', 'hora'].includes(atributo)) lab.append(tarjeta);
+    else (lab.querySelector('.lab-mas .lab-rejilla') || lab.appendChild(crear('details', {className: 'lab-mas panel ancho'},
+      crear('summary', {textContent: 'Ver las demás variables (fondo, ropa, color, título, día)'}), crear('div', {className: 'lab-rejilla'}))).querySelector('.lab-rejilla')).append(tarjeta);
   }
+  const mas = lab.querySelector('.lab-mas');
+  if (mas) lab.append(mas);  // siempre al final
 }
 
 function elemento(clase, etiqueta, texto, detalle) {
@@ -634,7 +644,7 @@ function dibujarCalendario(filas = []) {
     const vistas = vivo && salio(vivo) && medido(vivo) ? fmt(vistasDe(vivo)) : '';
     return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
       celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
-      celda({carrusel: 'Carrusel', reel: 'Reel IG'}[f.tipo] || 'Video'), celda(f.que),
+      celda({carrusel: 'Carrusel', reel: 'Reel IG', facebook: 'Facebook'}[f.tipo] || 'Video'), celda(f.que),
       celda(horas.ig || '—', 'n'), celda(horas.tt || '—', 'n'), celda(horas.yt || '—', 'n'), celda(horas.fb || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
   }));
 }
@@ -813,7 +823,8 @@ function dibujarMejora() {
   prepararMuse();
   if ($('texto-muse')) $('texto-muse').textContent = reporteMuse();
   const cambios = [...(FOTO.cambios || [])].sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
-  $('bitacora').replaceChildren(...cambios.map((c) => {
+  const hoyMx = new Date().toLocaleDateString('en-CA', {timeZone: 'America/Mexico_City'});
+  const filasBitacora = cambios.map((c) => {
     const redes = c.vigilar === 'todas' ? REDES.map((r) => r.clave) : [c.vigilar];
     const promedio = (desde, hasta) => {
       const partes = redes.map((r) => sumaDias(diario, r, desde, hasta)).filter(Boolean);
@@ -822,7 +833,7 @@ function dibujarMejora() {
     const antes = promedio(diasAntes(c.fecha, 4), diasAntes(c.fecha, 1));
     const despues = promedio(diasAntes(c.fecha, 0), diasAntes(c.fecha, -3));
     const dias = diario.filter((d) => d.fecha >= c.fecha).length;
-    let resultado = `midiendo · faltan ${Math.max(1, 3 - dias)} día(s)`, clase = '';
+    let resultado = c.fecha > hoyMx ? 'programado: aún no empieza' : `midiendo · faltan ${Math.max(1, 3 - dias)} día(s)`, clase = '';
     if (dias >= 3 && antes != null && despues != null && antes > 0) {
       const x = (despues - antes) / antes;
       resultado = `${fmt(antes)} → ${fmt(despues)} vistas/día (${x >= 0 ? '▲' : '▼'} ${Math.abs(Math.round(x * 100))}%)`;
@@ -833,7 +844,11 @@ function dibujarMejora() {
       crear('span', {className: 'cambio-fecha', textContent: new Date(`${c.fecha}T12:00:00`).toLocaleDateString('es-MX', {day: 'numeric', month: 'short'})}),
       crear('div', {}, crear('b', {textContent: c.cambio}), crear('small', {textContent: `${c.por_que} · se mide en ${red}`})),
       crear('span', {className: `cambio-resultado ${clase}`, textContent: resultado}));
-  }));
+  });
+  // Solo los 6 más recientes a la vista; el resto en "Ver los anteriores" (11-nov-2026: eran 30 renglones seguidos).
+  const resto = filasBitacora.slice(6);
+  $('bitacora').replaceChildren(...filasBitacora.slice(0, 6), ...(resto.length
+    ? [crear('details', {className: 'bitacora-mas'}, crear('summary', {textContent: `Ver los ${resto.length} cambios anteriores`}), ...resto)] : []));
 }
 
 // ---------- reporte para Muse (Rodrigo, 9-nov-2026: Muse ve lo de Instagram y Facebook que Claude no; Claude ejecuta y mide) ----------
@@ -918,10 +933,14 @@ function lineasDiarias(caja, diario, alto = 200) {
     .text((d) => new Date(`${d.fecha}T12:00:00`).toLocaleDateString('es-MX', {day: 'numeric', month: 'short'}));
 }
 
-function lienzo(caja, alto) {
+function lienzo(caja, alto, minimo = 0) {
   caja.replaceChildren();
-  const ancho = Math.max(caja.clientWidth, 260);
-  return {ancho, svg: d3.select(caja).append('svg').attr('viewBox', `0 0 ${ancho} ${alto}`)};
+  const ancho = Math.max(caja.clientWidth, 260, minimo);
+  const svg = d3.select(caja).append('svg').attr('viewBox', `0 0 ${ancho} ${alto}`);
+  // Si no cabe (muchas barras en el celular), la gráfica se desliza de lado en vez de encimar etiquetas (11-nov-2026).
+  caja.classList.toggle('desliza-x', ancho > caja.clientWidth);
+  if (ancho > caja.clientWidth) svg.style('width', `${ancho}px`).style('max-width', 'none');
+  return {ancho, svg};
 }
 
 function reactor(caja, r) {
@@ -981,10 +1000,10 @@ function barras(caja, filas, {color, formato = fmt, alto = 200, linea = null}) {
 function apiladas(caja, videos) {
   if (!videos.length) { caja.replaceChildren(); return; }
   const alto = 220;
-  const {ancho, svg} = lienzo(caja, alto);
+  const {ancho, svg} = lienzo(caja, alto, videos.length * 36 + 20);
   const tip = globo(caja);
   const m = {t: 22, r: 10, b: 28, l: 10};
-  const filas = videos.map((v) => { const md = medidas(v); return {k: `v${v.id}`, ...Object.fromEntries(REDES.map((r) => [r.clave, Number(md[r.clave]?.v) || 0]))}; });
+  const filas = videos.map((v) => { const md = medidas(v); return {k: String(v.id).startsWith('c') ? String(v.id) : `v${v.id}`, ...Object.fromEntries(REDES.map((r) => [r.clave, Number(md[r.clave]?.v) || 0]))}; });
   const pilas = d3.stack().keys(REDES.map((r) => r.clave))(filas);
   const x = d3.scaleBand(filas.map((d) => d.k), [m.l, ancho - m.r]).padding(0.38);
   const y = d3.scaleLinear([0, d3.max(filas, (d) => REDES.reduce((s, r) => s + d[r.clave], 0)) || 1], [alto - m.b, m.t]).nice();

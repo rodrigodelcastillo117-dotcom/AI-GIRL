@@ -1,102 +1,7 @@
 [
  {
-  "fecha": "2026-11-10",
-  "tipo": "reel",
-  "id": "c12",
-  "estado": "programado",
-  "que": "Reel del carrusel c12 (el mismo video del Short)",
-  "horas": {
-   "ig": "11:03",
-   "fb": "11:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "reel",
-  "id": "c43",
-  "estado": "programado",
-  "que": "Reel del carrusel c43 (el mismo video del Short)",
-  "horas": {
-   "ig": "15:01",
-   "fb": "15:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "reel",
-  "id": "c65",
-  "estado": "programado",
-  "que": "Video del carrusel c65 en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "20:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "reel",
-  "id": "c66",
-  "estado": "programado",
-  "que": "Video del carrusel c66 en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "17:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "video",
-  "id": "38",
-  "que": "Sale el video 38 en Facebook (ya salió en las otras redes)",
-  "estado": "publicado",
-  "horas": {
-   "fb": "09:30"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "video",
-  "id": "19",
-  "que": "Sale el video 19 en Facebook (ya salió en las otras redes)",
-  "estado": "publicado",
-  "horas": {
-   "fb": "21:30"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "carrusel",
-  "id": "c43",
-  "que": "Sale el carrusel c43 · opinion aguinaldo 10 mil",
-  "estado": "programado",
-  "horas": {
-   "tt": "17:06",
-   "yt": "12:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "carrusel",
-  "id": "c65",
-  "que": "Sale el carrusel c65 · noticia banco quebro tu dinero mexico",
-  "estado": "programado",
-  "horas": {
-   "tt": "11:07",
-   "yt": "20:00"
-  }
- },
- {
-  "fecha": "2026-11-10",
-  "tipo": "carrusel",
-  "id": "c66",
-  "que": "Sale el carrusel c66 · serie alcanza salario minimo 1",
-  "estado": "programado",
-  "horas": {
-   "tt": "20:06",
-   "yt": "17:00"
-  }
- },
- {
   "fecha": "2026-11-11",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c01",
   "estado": "programado",
   "que": "Video del carrusel c01 en Facebook (ya salió en las otras redes)",
@@ -115,32 +20,8 @@
   }
  },
  {
-  "fecha": "2026-11-11",
-  "tipo": "video",
-  "id": "18",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Video 18 (ya generado) · TikTok, Instagram, Facebook y YouTube"
- },
- {
-  "fecha": "2026-11-11",
-  "tipo": "carrusel",
-  "id": "c22",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c22 · presupuesto regalos navidad · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-11",
-  "tipo": "carrusel",
-  "id": "c23",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c23 · intercambio posada · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-12",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c08",
   "estado": "programado",
   "que": "Video del carrusel c08 en Facebook (ya salió en las otras redes)",
@@ -150,7 +31,7 @@
  },
  {
   "fecha": "2026-11-12",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c09",
   "estado": "programado",
   "que": "Video del carrusel c09 en Facebook (ya salió en las otras redes)",
@@ -161,30 +42,30 @@
  {
   "fecha": "2026-11-12",
   "tipo": "carrusel",
+  "id": "c22",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c22 · presupuesto regalos navidad · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "carrusel",
+  "id": "c23",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c23 · intercambio posada · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-12",
+  "tipo": "carrusel",
   "id": "c24",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c24 · meses sin intereses diciembre · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-12",
-  "tipo": "carrusel",
-  "id": "c25",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c25 · tandas diciembre · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "carrusel",
-  "id": "c26",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c26 · diciembre sin cuesta de enero · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-13",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c02",
   "estado": "programado",
   "que": "Video del carrusel c02 en Facebook (ya salió en las otras redes)",
@@ -194,7 +75,7 @@
  },
  {
   "fecha": "2026-11-13",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c13",
   "estado": "programado",
   "que": "Video del carrusel c13 en Facebook (ya salió en las otras redes)",
@@ -205,30 +86,30 @@
  {
   "fecha": "2026-11-13",
   "tipo": "carrusel",
+  "id": "c25",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c25 · tandas diciembre · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "carrusel",
+  "id": "c26",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c26 · diciembre sin cuesta de enero · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-13",
+  "tipo": "carrusel",
   "id": "c33",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c33 · memes diciembre · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-13",
-  "tipo": "carrusel",
-  "id": "c30",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c30 · mitos aguinaldo nomina · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-13",
-  "tipo": "carrusel",
-  "id": "c37",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c37 · memes posada intercambio aguinaldo · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-14",
-  "tipo": "reel",
+  "tipo": "facebook",
   "id": "c03",
   "estado": "programado",
   "que": "Video del carrusel c03 en Facebook (ya salió en las otras redes)",
@@ -239,26 +120,26 @@
  {
   "fecha": "2026-11-14",
   "tipo": "video",
-  "id": "",
+  "id": "O1",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video (lo elige el laboratorio el día anterior)"
+  "que": "Video O1 (ya generado) · TikTok, Instagram, Facebook y YouTube"
  },
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c52",
+  "id": "c30",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c52 · aguinaldo datos para guardar parte 2 · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c30 · mitos aguinaldo nomina · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
   "tipo": "carrusel",
-  "id": "c53",
+  "id": "c37",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c53 · despido diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c37 · memes posada intercambio aguinaldo · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
@@ -271,18 +152,18 @@
  {
   "fecha": "2026-11-15",
   "tipo": "carrusel",
-  "id": "c60",
+  "id": "c52",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c60 · fechas dinero diciembre enero datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c52 · aguinaldo datos para guardar parte 2 · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
   "tipo": "carrusel",
-  "id": "c61",
+  "id": "c53",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c61 · vacaciones prima vacacional datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c53 · despido diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
@@ -295,18 +176,18 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c62",
+  "id": "c60",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c62 · derechos consumidor diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c60 · fechas dinero diciembre enero datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c14",
+  "id": "c61",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel c14 · subcuenta vivienda infonavit · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel c61 · vacaciones prima vacacional datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -319,13 +200,37 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c62",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c62 · derechos consumidor diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
+  "id": "c67",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c67 · serie alcanza salario minimo 2 · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "carrusel",
+  "id": "c14",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c14 · subcuenta vivienda infonavit · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "carrusel",
   "id": "c17",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c17 · fondo emergencia ipab · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-17",
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c18",
   "estado": "por_programar",
@@ -333,7 +238,7 @@
   "que": "Carrusel c18 · buro de credito · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c19",
   "estado": "por_programar",
@@ -341,7 +246,7 @@
   "que": "Carrusel c19 · apps prestamo cat · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c20",
   "estado": "por_programar",
@@ -349,7 +254,7 @@
   "que": "Carrusel c20 · incapacidad imss · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c21",
   "estado": "por_programar",
@@ -357,27 +262,27 @@
   "que": "Carrusel c21 · cetes que son · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-19",
+  "fecha": "2026-11-20",
+  "tipo": "video",
+  "id": "",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Video (lo elige el laboratorio el día anterior)"
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "carrusel",
+  "id": "c63",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel c63 · tarjeta credito diciembre datos para guardar · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-20",
   "tipo": "carrusel",
   "id": "c27",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel c27 · parejas quien paga · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c28",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c28 · parejas deudas regimen · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c29",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel c29 · parejas cuenta conjunta · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  }
 ]

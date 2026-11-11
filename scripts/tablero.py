@@ -217,7 +217,7 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     cada = config.get('dias_entre_videos', 2)
     ultimo = fechas_video[-1] if fechas_video else local
     listos = [c for c in carruseles if c.get('estado') == 'listo']
-    video_listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar'), None)
+    video_listo = siguiente_listo(plan, config)
     filas = []
     for i in range(dias):
         dia = local + datetime.timedelta(days=i)
@@ -234,7 +234,7 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
             if horas:
                 que = (f"Reel del carrusel {c['id']} (el mismo video del Short)" if 'ig' in horas
                        else f"Video del carrusel {c['id']} en Facebook (ya salió en las otras redes)")
-                filas.append({'fecha': dia.isoformat(), 'tipo': 'reel', 'id': c['id'], 'estado': 'programado',
+                filas.append({'fecha': dia.isoformat(), 'tipo': 'reel' if 'ig' in horas else 'facebook', 'id': c['id'], 'estado': 'programado',
                               'que': que, 'horas': horas})
         if hechos:
             for x, horas in hechos:
@@ -267,6 +267,14 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
     return filas
 
 
+def siguiente_listo(plan, config):
+    """El siguiente video listo, en el mismo orden que la rutina: config.json → prioridad_publicar primero (11-nov-2026)."""
+    listos = [v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar']
+    orden = config.get('prioridad_publicar', [])
+    listos.sort(key=lambda i: orden.index(i) if i in orden else len(orden))
+    return listos[0] if listos else None
+
+
 def siguiente_video(plan, config, auditoria, ahora):
     """Cuándo sale el siguiente video y cuál: lo ya programado o, si no hay, el que toca según la
     frecuencia (config.json → dias_entre_videos) y la franja de la prueba de horarios."""
@@ -296,7 +304,7 @@ def siguiente_video(plan, config, auditoria, ahora):
     cuando = datetime.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=CDMX)
     if cuando <= local:
         cuando += datetime.timedelta(days=1)
-    listo = next((v['id'] for v in plan['videos'] if v['estado'] == 'listo_para_publicar'), None)
+    listo = siguiente_listo(plan, config)
     vid = listo or decision.get('video_id') or 'siguiente'
     estimado = (cuando, f'Sale el video {vid} · la hora de cada red la fija la auditoría de ese día')
     return min([estimado] + ([programado] if programado else []), key=lambda e: e[0])
@@ -420,7 +428,15 @@ def main():
     # (la foto se regenera en la ejecución diaria; sin esto el contador se quedaba en 00:00:00).
     proximas = [(proxima, proxima_que)]
     if proxima:
-        proximas.append(siguiente_video(plan, config, auditoria, proxima + datetime.timedelta(minutes=1)))
+        # Para el que sigue, se cuenta el primero como ya salido (11-nov-2026: repetía "Sale el video O1" dos veces).
+        import copy
+        plan_despues = copy.deepcopy(plan)
+        lid = siguiente_listo(plan, config)
+        for v in plan_despues['videos']:
+            if lid and v['id'] == lid and f'video {lid} ' in proxima_que:
+                iso = proxima.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+                v.update({'estado': 'publicado', 'publica_utc': iso, 'publica_utc_por_red': {'tt': iso}})
+        proximas.append(siguiente_video(plan_despues, config, auditoria, proxima + datetime.timedelta(minutes=1)))
     perfil = os.path.join(RAIZ, 'perfil', 'foto-perfil-1080.jpg')
     foto = ''
     if os.path.exists(perfil):

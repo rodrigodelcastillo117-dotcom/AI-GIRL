@@ -254,7 +254,8 @@ async function seguidores(estado) {
   const clave = variable('PUBLER_API_KEY');
   if (!clave) return null;
   const cabeceras = {Authorization: `Bearer-API ${clave}`, Accept: 'application/json', 'User-Agent': AGENTE,
-                     'Publer-Workspace-Id': variable('PUBLER_WORKSPACE_ID')};
+                     // Mismo respaldo que las publicaciones (11-nov-2026: sin PUBLER_WORKSPACE_ID daba 401 y salía "Seguidores: —")
+                     'Publer-Workspace-Id': variable('PUBLER_WORKSPACE_ID') || leer('estado.json')[0].publer_workspace};
   const hoy = new Date();
   const desde = new Date(hoy.getTime() - 21 * 864e5);
   const datos = {};
