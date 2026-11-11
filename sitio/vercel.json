@@ -17,6 +17,10 @@
       "destination": "/aguinaldo.html"
     },
     {
+      "source": "/te-alcanza-tu-sueldo",
+      "destination": "/te-alcanza-tu-sueldo.html"
+    },
+    {
       "source": "/finiquito",
       "destination": "/finiquito.html"
     },

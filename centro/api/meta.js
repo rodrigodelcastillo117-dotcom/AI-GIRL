@@ -15,7 +15,7 @@ const GRAPH = 'https://graph.facebook.com/v22.0';
 const IG = '17841478105608541'; // @victoriatheceo
 const YO = 'victoriatheceo';
 const SITIO = 'https://victoriatheceo.vercel.app';
-const ENLACES = [['aguinaldo', '/aguinaldo'], ['fondo de emergencia', '/fondo-de-emergencia'], ['deuda', '/pagar-deudas'],
+const ENLACES = [['renta', '/te-alcanza-tu-sueldo'], ['salario mínimo', '/te-alcanza-tu-sueldo'], ['aguinaldo', '/aguinaldo'], ['fondo de emergencia', '/fondo-de-emergencia'], ['deuda', '/pagar-deudas'],
   ['50/30/20', '/regla-50-30-20'], ['presupuesto', '/regla-50-30-20']];
 
 const normal = (t) => (t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');

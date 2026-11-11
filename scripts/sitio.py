@@ -583,12 +583,98 @@ alCambiar('calculadora', calcular);''',
     },
 ]
 
+# ¿Te alcanza tu sueldo? (Rodrigo, 11-nov-2026: "siii haz esoo tambien!"). La gente pone sueldo, renta, ciudad y cuántos
+# viven de ese sueldo, y ve en segundos qué tan pesada es su renta, cuánto le queda y cómo está contra las líneas de
+# pobreza de INEGI. Es la versión "hazlo tú" del "comenta y te hago las cuentas" de la serie del salario mínimo.
+# Datos (revisados por un segundo agente contra la fuente oficial, 11-nov-2026):
+LINEAS_POBREZA = {  # por persona al mes; INEGI, Líneas de Pobreza por Ingresos (antes CONEVAL)
+    'mes': 'octubre de 2026',
+    'extrema_urbana': 2594.39, 'extrema_rural': 1946.57,   # canasta alimentaria
+    'pobreza_urbana': 4985.47, 'pobreza_rural': 3576.10,     # canasta alimentaria + no alimentaria
+}
+FUENTE_LINEAS = ('INEGI, Líneas de Pobreza por Ingresos, octubre de 2026 (boletín 689/26, 11-nov-2026)', 'https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/lp/lp2026_11.pdf')
+FUENTE_ONU_30 = ('ONU, Informe del Secretario General E/CN.5/2020/3, párrafo 6: la vivienda deja de ser asequible si cuesta más del 30% del ingreso', 'https://digitallibrary.un.org/record/3840349/files/E_CN-5_2020_3-ES.pdf')
+SALARIO_MINIMO_MENSUAL_2026 = 9582.47
+
+TE_ALCANZA = {
+    'slug': 'te-alcanza-tu-sueldo',
+    'menu': '¿Te alcanza tu sueldo?', 'menu_nota': 'Renta, comida y lo que te queda',
+    'titulo': '¿Te alcanza tu sueldo? Calculadora de renta y gastos básicos en México 2026',
+    'descripcion': ('Pon tu sueldo, tu renta y cuántos viven de él: te dice qué parte se va en renta, tu tope de renta sano '
+                    'y cómo estás contra las líneas de pobreza de INEGI. Gratis.'),
+    'h1': '¿Te <span>alcanza</span> tu sueldo?',
+    'lema': 'Tu sueldo, tu renta y cuántos viven de él. En segundos ves qué tan pesada es tu renta, cuánto te queda y cuál sería tu tope sano.',
+    'formulario': '''
+      <label>Sueldo mensual neto <small>(lo que te llega; si son dos sueldos en casa, súmalos)</small>
+        <input id="sueldo" inputmode="decimal" value="12000"></label>
+      <div class="fila">
+        <label>Renta al mes <small>(0 si es casa propia)</small>
+          <input id="renta" inputmode="decimal" value="3500"></label>
+        <label>Personas que viven de ese sueldo
+          <input id="personas" inputmode="numeric" value="1"></label>
+      </div>
+      <label>¿Dónde vives? <small>(pueblo: menos de 2,500 habitantes)</small>
+        <select id="zona"><option value="urbana">En una ciudad</option><option value="rural">En un pueblo o rancho</option></select></label>''',
+    'resultado': '''
+      <div class="etiqueta">Tus cuentas</div>
+      <div class="cifra" id="titular" style="font-size: clamp(1.4rem, 6vw, 1.9rem)"></div>
+      <ul class="desglose" id="cuentas"></ul>
+      <p class="nota" id="consejo"></p>
+      <p class="nota">¿Quieres que Victoria te haga las cuentas en un video? Comenta tu sueldo, tu renta y tu ciudad en su post más reciente.</p>''',
+    'script': '''
+const LINEAS = {"mes": "octubre de 2026", "extrema_urbana": 2594.39, "extrema_rural": 1946.57, "pobreza_urbana": 4985.47, "pobreza_rural": 3576.1};
+const SM_MENSUAL = 9582.47;
+function calcular() {
+  const sueldo = numero('sueldo'), renta = numero('renta');
+  const personas = Math.max(1, Math.round(numero('personas')) || 1);
+  const zona = document.getElementById('zona').value;
+  const titular = document.getElementById('titular');
+  if (sueldo <= 0) { titular.textContent = 'Pon tu sueldo para ver tus cuentas.'; document.getElementById('cuentas').replaceChildren(); document.getElementById('consejo').textContent = ''; return; }
+  const pctRenta = renta / sueldo, tope = sueldo * 0.30, queda = sueldo - renta;
+  const comida = LINEAS['extrema_' + zona] * personas, basico = LINEAS['pobreza_' + zona] * personas;
+  const porPersona = sueldo / personas, despuesComida = queda - comida;
+  titular.textContent = renta > 0 ? `La renta se lleva el ${Math.round(pctRenta * 100)}% de tu sueldo` : 'Sin renta: tu sueldo completo es para lo demás';
+  const fila = (nombre, valor, clase) => crear('li', {}, crear('span', {textContent: nombre}), crear('b', {className: clase || '', textContent: valor}));
+  document.getElementById('cuentas').replaceChildren(
+    fila('Tope de renta sano (30% de tu sueldo)', pesos(tope), renta > tope ? 'aviso' : 'bien'),
+    fila('Te queda después de la renta', pesos(queda), queda < comida ? 'aviso' : ''),
+    fila(`Lo mínimo para comer al mes (${personas === 1 ? '1 persona' : personas + ' personas'})`, pesos(comida)),
+    fila('Te queda después de renta y comida mínima', despuesComida >= 0 ? pesos(despuesComida) : '−' + pesos(-despuesComida), despuesComida < 0 ? 'aviso' : 'bien'),
+    fila('Tu ingreso por persona', pesos(porPersona), porPersona < LINEAS['pobreza_' + zona] ? 'aviso' : 'bien'),
+    fila('Línea de pobreza por ingresos (por persona)', pesos(LINEAS['pobreza_' + zona])),
+    fila('Tu sueldo en salarios mínimos', (sueldo / SM_MENSUAL).toFixed(1)));
+  let consejo;
+  if (despuesComida < 0) consejo = 'Después de la renta no alcanza ni para la comida mínima. No es tu culpa: es un problema de ingreso. Lo que más mueve la aguja aquí es compartir gastos de vivienda o sumar un ingreso, no recortar el café.';
+  else if (pctRenta > 0.40) consejo = `Tu renta pasa del 40%: es lo que más te aprieta. Tu tope sano sería ${pesos(tope)}. ${personas === 1 ? 'Compartir depa o mudarte a algo más barato' : 'Buscar algo más barato o sumar un ingreso en casa'} puede liberarte más dinero que cualquier recorte.`;
+  else if (pctRenta > 0.30) consejo = `Te pasas del 30%: cada peso de renta arriba de ${pesos(tope)} sale de tu comida, tu transporte o tu ahorro. Si puedes negociar o cambiarte cuando venza el contrato, ahí está tu mayor ahorro.`;
+  else if (renta === 0) consejo = 'Sin renta tienes una ventaja enorme: lo que te queda después de lo básico es tu margen. Aparta algo fijo el día que cobras, antes de que se vaya solo.';
+  else consejo = 'Tu renta está en zona sana. Lo que te queda después de lo básico es tu margen: si no lo cuidas, se va solo. Aparta algo fijo el día que cobras.';
+  if (porPersona < LINEAS['pobreza_' + zona]) consejo += ' Tu ingreso por persona está debajo de la línea de pobreza de INEGI: no estás solo; según INEGI, a millones de personas en México les pasa lo mismo.';
+  document.getElementById('consejo').textContent = consejo;
+}
+alCambiar('calculadora', calcular);''',
+    'venta_titulo': 'Haz tus cuentas completas, mes a mes.',
+    'venta_texto': ('El tablero de la CEO acomoda tu sueldo en renta, comida, transporte, deudas y ahorro, te dice cuánto te sobra '
+                    'o te falta y lo conecta con tu fondo de emergencia y tus metas.'),
+    'faq': [
+        ('¿Por qué el tope de renta es el 30%?', 'Es la referencia más usada en el mundo: si la vivienda cuesta más del 30% de tu ingreso, deja de ser asequible y empieza a quitarle dinero a lo básico.'),
+        ('¿Qué es "lo mínimo para comer"?', 'Es la línea de pobreza extrema por ingresos de INEGI: lo que cuesta al mes la canasta alimentaria básica de una persona, distinta en ciudades y en zonas rurales.'),
+        ('¿Y la línea de pobreza por ingresos?', 'Es lo que necesita al mes una persona para la comida y lo básico (transporte, salud, educación, vivienda, ropa). Si tu ingreso por persona está debajo, INEGI lo cuenta como ingreso insuficiente.'),
+        ('¿Guardan mis números?', 'No. Las cuentas se hacen en tu celular y no se mandan a ningún lado.'),
+    ],
+    'fuentes': [FUENTE_LINEAS, FUENTE_ONU_30, FUENTE_CONASAMI],
+    'compartir': '¿Te alcanza tu sueldo? Haz tus cuentas en segundos:',
+}
+HERRAMIENTAS.insert(1, TE_ALCANZA)
+
+
 # Tarjeta que sale al compartir el enlace (WhatsApp, Facebook, X): título grande + Victoria.
 VISTA_PREVIA = {
     'aguinaldo': ('Calcula tu aguinaldo 2026', 'Cuánto te toca y cuánto paga ISR'),
     'finiquito': ('Calcula tu finiquito 2026', 'Renuncia o despido: cuánto te toca'),
     'interes-compuesto': ('Cuánto crece tu ahorro', 'Calculadora de interés compuesto'),
     'regla-50-30-20': ('Tu sueldo en 50/30/20', 'Necesidades, deseos y ahorro'),
+    'te-alcanza-tu-sueldo': ('¿Te alcanza tu sueldo?', 'Renta, comida y lo que te queda'),
     'fondo-de-emergencia': ('Tu fondo de emergencia', 'Cuánto necesitas y cuándo llegas'),
     'pagar-deudas': ('Sal de tus deudas', 'Bola de nieve o avalancha'),
 }

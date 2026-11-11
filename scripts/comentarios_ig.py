@@ -75,7 +75,7 @@ def privado(comentario, texto):
 
 
 SITIO = 'https://victoriatheceo.vercel.app'
-ENLACES = [('aguinaldo', '/aguinaldo'), ('fondo de emergencia', '/fondo-de-emergencia'), ('deuda', '/pagar-deudas'),
+ENLACES = [('renta', '/te-alcanza-tu-sueldo'), ('salario mínimo', '/te-alcanza-tu-sueldo'), ('aguinaldo', '/aguinaldo'), ('fondo de emergencia', '/fondo-de-emergencia'), ('deuda', '/pagar-deudas'),
            ('50/30/20', '/regla-50-30-20'), ('presupuesto', '/regla-50-30-20')]
 REGISTRO = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'contenido', 'guias_ig.json')
 

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Te alcanza tu sueldo? Calculadora de renta y gastos básicos en México 2026</title>
+  <meta name="description" content="Pon tu sueldo, tu renta y cuántos viven de él: te dice qué parte se va en renta, tu tope de renta sano y cómo estás contra las líneas de pobreza de INEGI. Gratis.">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="¿Te alcanza tu sueldo? Calculadora de renta y gastos básicos en México 2026">
+  <meta property="og:description" content="Pon tu sueldo, tu renta y cuántos viven de él: te dice qué parte se va en renta, tu tope de renta sano y cómo estás contra las líneas de pobreza de INEGI. Gratis.">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/og-te-alcanza-tu-sueldo.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b0b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/herramientas.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "¿Te alcanza tu sueldo? Calculadora de renta y gastos básicos en México 2026", "url": "https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "inLanguage": "es-MX", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "MXN"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué el tope de renta es el 30%?", "acceptedAnswer": {"@type": "Answer", "text": "Es la referencia más usada en el mundo: si la vivienda cuesta más del 30% de tu ingreso, deja de ser asequible y empieza a quitarle dinero a lo básico."}}, {"@type": "Question", "name": "¿Qué es \"lo mínimo para comer\"?", "acceptedAnswer": {"@type": "Answer", "text": "Es la línea de pobreza extrema por ingresos de INEGI: lo que cuesta al mes la canasta alimentaria básica de una persona, distinta en ciudades y en zonas rurales."}}, {"@type": "Question", "name": "¿Y la línea de pobreza por ingresos?", "acceptedAnswer": {"@type": "Answer", "text": "Es lo que necesita al mes una persona para la comida y lo básico (transporte, salud, educación, vivienda, ropa). Si tu ingreso por persona está debajo, INEGI lo cuenta como ingreso insuficiente."}}, {"@type": "Question", "name": "¿Guardan mis números?", "acceptedAnswer": {"@type": "Answer", "text": "No. Las cuentas se hacen en tu celular y no se mandan a ningún lado."}}]}]</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="envoltura">
+    <nav class="barra"><a class="marca" href="/">VICTORIA <b>THE CEO</b></a><a class="otra" href="#herramientas">Más calculadoras</a></nav>
+    <header>
+      <div class="etiqueta">Calculadora gratis</div>
+      <h1>¿Te <span>alcanza</span> tu sueldo?</h1>
+      <p class="lema">Tu sueldo, tu renta y cuántos viven de él. En segundos ves qué tan pesada es tu renta, cuánto te queda y cuál sería tu tope sano.</p>
+    </header>
+    <div class="tarjeta">
+      <form id="calculadora" novalidate>
+      <label>Sueldo mensual neto <small>(lo que te llega; si son dos sueldos en casa, súmalos)</small>
+        <input id="sueldo" inputmode="decimal" value="12000"></label>
+      <div class="fila">
+        <label>Renta al mes <small>(0 si es casa propia)</small>
+          <input id="renta" inputmode="decimal" value="3500"></label>
+        <label>Personas que viven de ese sueldo
+          <input id="personas" inputmode="numeric" value="1"></label>
+      </div>
+      <label>¿Dónde vives? <small>(pueblo: menos de 2,500 habitantes)</small>
+        <select id="zona"><option value="urbana">En una ciudad</option><option value="rural">En un pueblo o rancho</option></select></label>
+      </form>
+      <div class="resultado" aria-live="polite">
+      <div class="etiqueta">Tus cuentas</div>
+      <div class="cifra" id="titular" style="font-size: clamp(1.4rem, 6vw, 1.9rem)"></div>
+      <ul class="desglose" id="cuentas"></ul>
+      <p class="nota" id="consejo"></p>
+      <p class="nota">¿Quieres que Victoria te haga las cuentas en un video? Comenta tu sueldo, tu renta y tu ciudad en su post más reciente.</p>
+      </div>
+      <a class="boton secundario" id="whatsapp" target="_blank" rel="noopener">Mándaselo a alguien por WhatsApp</a>
+    </div>
+
+    <section>
+      <div class="venta">
+        <img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" loading="lazy" width="900" height="900">
+        <div class="etiqueta">Para hacerlo completo</div>
+        <h2>Haz tus cuentas completas, mes a mes.</h2>
+        <p class="lema" style="margin:0">El tablero de la CEO acomoda tu sueldo en renta, comida, transporte, deudas y ahorro, te dice cuánto te sobra o te falta y lo conecta con tu fondo de emergencia y tus metas.</p>
+        <ul><li>Presupuesto 50/30/20</li><li>Fondo de emergencia con meta y avance</li><li>Deudas: bola de nieve y avalancha</li><li>Interés compuesto y metas</li></ul>
+        <div id="venta"></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <h3>¿Por qué el tope de renta es el 30%?</h3>
+      <p>Es la referencia más usada en el mundo: si la vivienda cuesta más del 30% de tu ingreso, deja de ser asequible y empieza a quitarle dinero a lo básico.</p>
+      <h3>¿Qué es &quot;lo mínimo para comer&quot;?</h3>
+      <p>Es la línea de pobreza extrema por ingresos de INEGI: lo que cuesta al mes la canasta alimentaria básica de una persona, distinta en ciudades y en zonas rurales.</p>
+      <h3>¿Y la línea de pobreza por ingresos?</h3>
+      <p>Es lo que necesita al mes una persona para la comida y lo básico (transporte, salud, educación, vivienda, ropa). Si tu ingreso por persona está debajo, INEGI lo cuenta como ingreso insuficiente.</p>
+      <h3>¿Guardan mis números?</h3>
+      <p>No. Las cuentas se hacen en tu celular y no se mandan a ningún lado.</p>
+    </section>
+
+    <section id="herramientas">
+      <div class="etiqueta">Más calculadoras gratis</div>
+      <h2>Herramientas de Victoria</h2>
+      <div class="herramientas"><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/te-alcanza-tu-sueldo" class="actual">¿Te alcanza tu sueldo?<small>Renta, comida y lo que te queda</small></a><a href="/finiquito">Finiquito y liquidación<small>Cuánto te toca si renuncias o te corren</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a></div>
+    </section>
+
+    <section><div class="etiqueta">Fuentes</div><ul class="fuentes"><li><a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/lp/lp2026_11.pdf" rel="noopener" target="_blank">INEGI, Líneas de Pobreza por Ingresos, octubre de 2026 (boletín 689/26, 11-nov-2026)</a></li><li><a href="https://digitallibrary.un.org/record/3840349/files/E_CN-5_2020_3-ES.pdf" rel="noopener" target="_blank">ONU, Informe del Secretario General E/CN.5/2020/3, párrafo 6: la vivienda deja de ser asequible si cuesta más del 30% del ingreso</a></li><li><a href="https://www.gob.mx/conasami" rel="noopener" target="_blank">Conasami, salarios mínimos 2026 (DOF 9-dic-2025)</a></li></ul></section>
+
+    <footer>
+      Hecho por Victoria The CEO (<a href="/">victoriatheceo</a>). Victoria es un personaje creado con inteligencia artificial.
+      Herramienta educativa: no es asesoría financiera, fiscal, legal ni de inversión. Revisa tu caso con un profesional.
+    </footer>
+  </div>
+  <script src="/comun.js"></script>
+  <script>
+
+const LINEAS = {"mes": "octubre de 2026", "extrema_urbana": 2594.39, "extrema_rural": 1946.57, "pobreza_urbana": 4985.47, "pobreza_rural": 3576.1};
+const SM_MENSUAL = 9582.47;
+function calcular() {
+  const sueldo = numero('sueldo'), renta = numero('renta');
+  const personas = Math.max(1, Math.round(numero('personas')) || 1);
+  const zona = document.getElementById('zona').value;
+  const titular = document.getElementById('titular');
+  if (sueldo <= 0) { titular.textContent = 'Pon tu sueldo para ver tus cuentas.'; document.getElementById('cuentas').replaceChildren(); document.getElementById('consejo').textContent = ''; return; }
+  const pctRenta = renta / sueldo, tope = sueldo * 0.30, queda = sueldo - renta;
+  const comida = LINEAS['extrema_' + zona] * personas, basico = LINEAS['pobreza_' + zona] * personas;
+  const porPersona = sueldo / personas, despuesComida = queda - comida;
+  titular.textContent = renta > 0 ? `La renta se lleva el ${Math.round(pctRenta * 100)}% de tu sueldo` : 'Sin renta: tu sueldo completo es para lo demás';
+  const fila = (nombre, valor, clase) => crear('li', {}, crear('span', {textContent: nombre}), crear('b', {className: clase || '', textContent: valor}));
+  document.getElementById('cuentas').replaceChildren(
+    fila('Tope de renta sano (30% de tu sueldo)', pesos(tope), renta > tope ? 'aviso' : 'bien'),
+    fila('Te queda después de la renta', pesos(queda), queda < comida ? 'aviso' : ''),
+    fila(`Lo mínimo para comer al mes (${personas === 1 ? '1 persona' : personas + ' personas'})`, pesos(comida)),
+    fila('Te queda después de renta y comida mínima', despuesComida >= 0 ? pesos(despuesComida) : '−' + pesos(-despuesComida), despuesComida < 0 ? 'aviso' : 'bien'),
+    fila('Tu ingreso por persona', pesos(porPersona), porPersona < LINEAS['pobreza_' + zona] ? 'aviso' : 'bien'),
+    fila('Línea de pobreza por ingresos (por persona)', pesos(LINEAS['pobreza_' + zona])),
+    fila('Tu sueldo en salarios mínimos', (sueldo / SM_MENSUAL).toFixed(1)));
+  let consejo;
+  if (despuesComida < 0) consejo = 'Después de la renta no alcanza ni para la comida mínima. No es tu culpa: es un problema de ingreso. Lo que más mueve la aguja aquí es compartir gastos de vivienda o sumar un ingreso, no recortar el café.';
+  else if (pctRenta > 0.40) consejo = `Tu renta pasa del 40%: es lo que más te aprieta. Tu tope sano sería ${pesos(tope)}. ${personas === 1 ? 'Compartir depa o mudarte a algo más barato' : 'Buscar algo más barato o sumar un ingreso en casa'} puede liberarte más dinero que cualquier recorte.`;
+  else if (pctRenta > 0.30) consejo = `Te pasas del 30%: cada peso de renta arriba de ${pesos(tope)} sale de tu comida, tu transporte o tu ahorro. Si puedes negociar o cambiarte cuando venza el contrato, ahí está tu mayor ahorro.`;
+  else if (renta === 0) consejo = 'Sin renta tienes una ventaja enorme: lo que te queda después de lo básico es tu margen. Aparta algo fijo el día que cobras, antes de que se vaya solo.';
+  else consejo = 'Tu renta está en zona sana. Lo que te queda después de lo básico es tu margen: si no lo cuidas, se va solo. Aparta algo fijo el día que cobras.';
+  if (porPersona < LINEAS['pobreza_' + zona]) consejo += ' Tu ingreso por persona está debajo de la línea de pobreza de INEGI: no estás solo; según INEGI, a millones de personas en México les pasa lo mismo.';
+  document.getElementById('consejo').textContent = consejo;
+}
+alCambiar('calculadora', calcular);
+bloqueVenta(document.getElementById('venta'), 'te-alcanza-tu-sueldo');
+document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent('¿Te alcanza tu sueldo? Haz tus cuentas en segundos: https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo?ref=wa');
+  </script>
+</body>
+</html>
