@@ -146,7 +146,7 @@
   {
     "fecha": "2026-11-11",
     "cambio": "Embudo medible: las páginas copian ?ref= a utm_source para Vercel Web Analytics; la planeación del domingo mide enlaces entregados → visitas por origen → planes de IA",
-    "por_que": "Montamos comentario → mensaje → calculadora → IA y nadie medía si funciona; Web Analytics estaba apagado en el proyecto del sitio",
+    "por_que": "Montamos comentario → mensaje → calculadora → IA y nadie medía si funciona. Web Analytics sí está prendido en el sitio (el script responde 200), pero la API de consulta responde 'Web Analytics not found' desde aquí: los números se leen en el panel de Vercel",
     "vigilar": "ig"
   }
 ]
