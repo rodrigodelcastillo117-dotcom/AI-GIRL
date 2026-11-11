@@ -608,7 +608,11 @@ function dibujarDespegues() {
     const cuenta = crear('b', {className: 'cuenta-red', textContent: '—'});
     if (sig) cuenta.dataset.t = String(sig.t);
     const fila = crear('div', {className: 'despegue'}, crear('span', {className: 'red-nombre', textContent: red.nombre}), cuenta,
-      crear('small', {textContent: sig ? `${sig.p.id ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id}` : sig.p.texto} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : 'Nada programado todavía: la auditoría de mañana lo programa'}));
+      crear('small', {textContent: sig ? `${sig.p.id ? `${String(sig.p.id).startsWith('c') ? 'Carrusel' : 'Video'} ${sig.p.id}` : sig.p.texto} · ${mx(new Date(sig.t).toISOString(), {weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'})}` : (() => {
+        // La rutina programa a las 6:37 (hora de México): antes de esa hora es "hoy a las 6:37"; después, "mañana" (11-nov-2026).
+        const [h, m] = new Date().toLocaleTimeString('en-GB', {timeZone: 'America/Mexico_City', hour: '2-digit', minute: '2-digit'}).split(':').map(Number);
+        return `Nada programado todavía: la rutina lo programa ${h * 60 + m < 6 * 60 + 37 ? 'hoy' : 'mañana'} a las 6:37`;
+      })()}));
     fila.style.setProperty('--acento', red.color);
     return fila;
   }));
