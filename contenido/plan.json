@@ -3424,7 +3424,7 @@
     "tipo_gancho": "postura"
    },
    "id": "O2",
-   "estado": "generando",
+   "estado": "listo_para_publicar",
    "locacion": "sala_navidad",
    "guion": "Tu aguinaldo no es para regalos. Ya sé, suena feo en diciembre. Pero si debes en la tarjeta, primero la deuda y luego el gusto. Lo demás lo pagas con intereses. ¿Estoy mal? Te leo.",
    "subtitulos": [
@@ -3479,8 +3479,21 @@
    },
    "openart_history": "NusC6BETWxQaohacmizu",
    "qa": {
-    "intento_1": "a0W2eN6UN5ZnO9mSeVmF: audio 1.00; boca 400 ms adelante; tras corregir el desfase la correlación quedó en 0.09 (mínimo 0.10): falla. Reintento con manos quietas desde el primer cuadro."
-   }
+    "intento_1": "a0W2eN6UN5ZnO9mSeVmF: audio 1.00; boca 400 ms adelante; tras corregir el desfase la correlación quedó en 0.09 (mínimo 0.10): falla. Reintento con manos quietas desde el primer cuadro.",
+    "intento_2": "NusC6BETWxQaohacmizu: audio 1.00; boca 400 ms adelante con correlación 0.21; corregido con tpad 0.317 s → -100 ms, correlación 0.16: OK. aguinaldo = a ɡ i n a l d o. Capital visible en los 6 cuadros.",
+    "sync": {
+     "cuadros": 449,
+     "fps": 30.0,
+     "cara_en_cuadros": 1.0,
+     "desfase_ms": -100,
+     "correlacion": 0.178,
+     "correlacion_sin_desfase": 0.096,
+     "voz_con_boca_quieta_s": 0.3,
+     "boca_hablando_sin_voz_s": 0.67,
+     "fallas": []
+    }
+   },
+   "archivo": "videos/video-O2-FINAL.mp4"
   }
  ]
 }
