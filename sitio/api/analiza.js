@@ -4,6 +4,7 @@
 //
 // Variables en Vercel (proyecto victoriatheceo; nunca en el repo ni en el chat):
 //   ANTHROPIC_API_KEY  clave de la API de Anthropic (console.anthropic.com; se paga aparte de la suscripción de Claude)
+//   ANTHROPIC_WORKSPACE_ID  solo si la clave no está asignada a un workspace (wrkspc_...)
 // Sin esa variable la función responde 503 y la página no muestra el botón.
 //
 // Límites: solo presupuesto, renta, comida, deudas, ahorro y derechos laborales básicos. Nunca inversiones, créditos,
@@ -102,7 +103,10 @@ export default async function handler(req, res) {
   if (limitado(ip)) return res.status(429).json({error: 'Ya analicé tu caso varias veces esta hora. Vuelve en un rato. 🐾'});
 
   const c = cuentas(entrada.datos);
-  const client = new Anthropic();
+  // Las claves que no están asignadas a un workspace piden el encabezado anthropic-workspace-id (11-nov-2026, error 400 al
+  // activar). ANTHROPIC_WORKSPACE_ID no es secreto: es el ID del workspace (wrkspc_...) de console.anthropic.com.
+  const workspace = (process.env.ANTHROPIC_WORKSPACE_ID || '').trim();
+  const client = new Anthropic(workspace ? {defaultHeaders: {'anthropic-workspace-id': workspace}} : {});
   try {
     // Claude Haiku 5.5 (Rodrigo, 11-nov-2026: "usa el modelo barato pero bueno, precio calidad"): el plan es corto y las
     // cuentas ya vienen hechas. Si la calidad no alcanza, subir a 'claude-sonnet-5-5'. Haiku 5.5 no tiene respaldo
