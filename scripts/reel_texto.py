@@ -144,8 +144,12 @@ def tramo(fuente, seg, salida, k):
     if fuente.endswith('.mp4'):
         largo = duracion(fuente)
         ini = max(0.0, min(largo - seg, 0.6))
+        lento = ''
+        if largo < seg:  # clip corto (p. ej. yate, 2.4 s): cámara lenta hasta 1.6x y, si aún falta, se sostiene el último cuadro
+            factor = min(seg / largo, 1.6)
+            lento = f'setpts={factor:.3f}*PTS,tpad=stop_mode=clone:stop_duration={max(0.0, seg - largo * factor) + 0.1:.2f},'
         ff('-ss', f'{ini:.2f}', '-i', fuente, '-t', f'{seg:.2f}', '-vf',
-           'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30', '-an', '-c:v', 'libx264',
+           lento + 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30', '-an', '-c:v', 'libx264',
            '-crf', '18', '-pix_fmt', 'yuv420p', salida)
     else:
         mov = MOVS[k % len(MOVS)].replace('{n}', str(n))

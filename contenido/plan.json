@@ -3781,6 +3781,72 @@
    },
    "archivo": "videos/video-O2-FINAL.mp4",
    "foto_base": "assets/fotos/navidad-regalos.jpg"
+  },
+  {
+   "id": "E1",
+   "hora_publicacion": "rotacion",
+   "formato": "escena",
+   "pilar": "finanzas",
+   "voz": "intima",
+   "duracion": 18,
+   "estado": "produciendo",
+   "locacion": "cafe_terraza",
+   "escena": "cafe",
+   "guion": "¿Quieres saber en qué se te va el dinero? No es en lo grande. Es en lo pequeño de todos los días: el cafecito, el antojo, la app de comida. Haz esta prueba: una semana, anota todo lo que gastas, hasta lo más mínimo. Te vas a sorprender. ¿Tú cuánto crees que se te va en antojos? Te leo.",
+   "subtitulos": [
+    "¿Quieres saber en qué se te va el dinero?",
+    "No es en lo grande.",
+    "Es en lo pequeño de todos los días:",
+    "el cafecito, el antojo, la app de comida.",
+    "Haz esta prueba:",
+    "una semana, anota todo lo que gastas,",
+    "hasta lo más mínimo.",
+    "Te vas a sorprender.",
+    "¿Tú cuánto crees que se te va en antojos?",
+    "Te leo."
+   ],
+   "insertos": [
+    {
+     "frases": "2-3",
+     "broll": "assets/broll/cafe-mov-1.mp4",
+     "que": "toma el café mientras dice 'el cafecito'"
+    }
+   ],
+   "palabras_clave": [
+    "dinero",
+    "gastos hormiga",
+    "antojos"
+   ],
+   "fuente": "Consejo de Victoria sin cifras: anotar una semana de gastos para ver los gastos hormiga (práctica común de presupuesto; Condusef recomienda registrar ingresos y gastos). No cita cantidades.",
+   "vestuario": "Blazer camel, blusa de seda beige y jeans",
+   "accion": "Sentada en una terraza de café; a media frase toma su café (inserto con movimiento real).",
+   "foto_base_lista": {
+    "archivo": "assets/fotos/habla-cafe.jpg"
+   },
+   "texto_pantalla": "¿En qué se te va el dinero?",
+   "texto_post": "No es en lo grande, es en lo pequeño de todos los días ☕\nHaz la prueba: una semana anotando todo. ¿Cuánto crees que se te va en antojos? Te leo.",
+   "pregunta_comentarios": "¿Cuánto crees que se te va al mes en antojos? Comenta tu número.",
+   "mandar_a": "quien dice que no sabe en qué se le va la quincena",
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "¿En qué se te va el dinero? La prueba de 1 semana ☕",
+    "descripcion_inicio": "Gastos hormiga: no es en lo grande, es en lo pequeño de todos los días. La prueba de una semana de Victoria para ver en qué se te va el dinero.",
+    "tags_concretas": [
+     "gastos hormiga",
+     "en que se me va el dinero",
+     "como ahorrar dinero",
+     "finanzas personales mexico",
+     "presupuesto personal",
+     "ahorrar en antojos"
+    ],
+    "hashtags": [
+     "#gastoshormiga",
+     "#ahorro",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "parrafo": "Los gastos hormiga son los pequeños gastos diarios que casi no se notan: el café, el antojo, la app de comida. Anotar todo durante una semana es la forma más simple de verlos."
+   }
   }
  ]
 }

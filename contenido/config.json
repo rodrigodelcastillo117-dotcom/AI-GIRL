@@ -529,8 +529,8 @@
  "_prioridad_publicar": "11-nov-2026: prueba de formato de opinión (Victoria a cámara, 15 s). O1 sale en el siguiente día de video y O2 en el que sigue; luego el orden normal (18, C1).",
  "ig_fotos_feed_por_dia": 1,
  "replicate": {
-  "saldo_base_usd": 30.68,
-  "fecha_base_utc": "2026-11-12T03:12:10Z",
+  "saldo_base_usd": 27.16,
+  "fecha_base_utc": "2026-11-12T06:22:02Z",
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)",
@@ -553,7 +553,7 @@
     "tope_usd": 12,
     "texto": "Rodrigo, 12-nov-2026: \"haz más escenas con movimiento real, no importa el gasto de Replicate\"",
     "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)",
-    "gastado_usd": 6.75
+    "gastado_usd": 7.5
    },
    "shorts-escena": {
     "fecha": "2026-11-12",
@@ -572,5 +572,12 @@
    "monto_usd": 35,
    "texto": "Rodrigo, 12-nov-2026: \"bajó de 5 USD y se metieron otros 35 USD\""
   }
+ },
+ "higgsfield": {
+  "uso": "solo plan GRATIS: música comercial en tendencia de TikTok y publicar bailes con la canción puesta",
+  "nunca_pagar": true,
+  "texto": "Rodrigo, 12-nov-2026: \"higgsfield no lo pago, es el free\" / \"se va a quedar en sí, solo si no pago y tú haces todo\"",
+  "tiktok_connector_id": "6ffc2f84-fb76-41a7-b8db-adfb8569a6e2",
+  "respaldo": "si Higgsfield falla o pide pago: Publer en modo recordatorio (Rodrigo pone el sonido en la app)"
  }
 }

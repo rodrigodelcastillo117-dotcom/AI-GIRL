@@ -112,6 +112,36 @@
    "accion": "She drives calmly, hands on the steering wheel, glances at the mirror, then a quick look at the camera with a smile. Light and shadows pass across her face. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "anm93cjm2drmr0d1ssms7z37nr",
    "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "helipuerto-mov-1.mp4",
+   "foto": "dinamica-helipuerto.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She walks from the helicopter toward the camera holding her sunglasses, hair blown by wind, confident stride. Slow tracking shot. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "sx88m4dmw5rmw0d1ssnbwsrd6m",
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "cuarto-maquillaje-mov-1.mp4",
+   "foto": "dinamica-cuarto-maquillaje.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She applies lipstick in the vanity mirror, presses her lips, then checks her reflection and smiles. Slow push-in over her shoulder. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "hxmjksxjanrmy0d1ssnba5hh9c",
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "alberca-mov-1.mp4",
+   "foto": "dinamica-alberca.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She sits at the edge of the infinity pool with her feet in the water, turns a page of her book, then looks at the sunset with a calm smile. Gentle water ripples, slow push-in. She is completely alone: no animals, no dogs, no other people anywhere in the frame.",
+   "prediccion": "mexnfxfgddrmt0d1sspszwmj4m",
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   }
  ],
  "rechazados": [
@@ -389,6 +419,11 @@
    "movimiento": "Push-in lento con brisa y sonrisa; aliento de Capital",
    "nota_calidad": "Bien: push-in cerrado al rostro, identidad estable; Capital queda cortado a la derecha al final. Fuente 768P reescalada.",
    "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "alberca-mov-1.mp4",
+   "motivo": "desde 1.7 s aparece detrás de ella un perro que no es Capital; se rehizo sin animales",
+   "fecha": "2026-11-12"
   }
  ],
  "_nota": "Biblioteca de Victoria sin voz. Fotos en assets/fotos/dinamica-*.{png,jpg} y clips aquí. reel_texto.py elige lo menos usado (uso.json). Reglas: docs/DIRECCION_CREATIVA.md → \"Victoria dinámica\" y \"Capital con criterio\"."
