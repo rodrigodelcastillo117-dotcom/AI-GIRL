@@ -296,3 +296,17 @@ seguidores y los éxitos previos no cuentan directo. Hipótesis: los de noviembr
 - **Primer caso**: c16 "Aguinaldo 2026 en 5 datos para guardar" (3,903 vistas en TikTok contra una mediana de 197) → clones de Buen Fin, finiquito e ISR del aguinaldo, "en 5 datos para guardar".
 - **Si un clon también gana**, se clona el clon: la estructura que funciona se vuelve serie.
 - **Volumen**: se sigue subiendo todo (largos, recortes, carruseles). El volumen da más boletos; clonar al ganador hace que cada boleto tenga mejores probabilidades. El algoritmo decide post por post por la reacción de las primeras personas, no por insistencia.
+
+## Fuera de la caja: series para hacernos virales (Rodrigo, 12-nov-2026: "piensa fuera de la caja… vamos por todo… que los temas sean TOP")
+
+Todo con datos comprobados en fuente oficial y segunda revisión, como siempre. Cada serie se mide; la que gane se clona (regla del ganador).
+
+1. **"¿Cuánto cuesta REALMENTE…?"** (9/10). Lo que la gente sueña o presume, con la cuenta completa: una boda, unos XV años, un depa en la CDMX, mantener un Rottweiler al año (con Capital), un iPhone a meses con CAT, una casa con Infonavit, vivir solo con un sueldo. Curiosidad + se comparte + da para pelear en comentarios. Formato: carrusel "5 datos" (el que ganó) + Reel de texto con Victoria haciendo algo relacionado.
+2. **"Hago tus cuentas"** (9/10). Victoria toma un comentario real (solo ciudad, sueldo y renta; nunca el nombre ni la cuenta de la persona) y hace sus números en pantalla: "Ganas 14 mil en Guadalajara y pagas 6 mil de renta: así quedan tus números". Premia comentar y cada video pide el siguiente. Son CUENTAS, nunca historias inventadas.
+3. **Cuenta regresiva con fecha legal** (8/10). "Faltan N días para que te paguen el aguinaldo" (20-dic), luego cuesta de enero, PTU (mayo), declaración anual (abril). Una pieza al día con un dato distinto; la fecha crea urgencia y regreso diario.
+4. **Ciudad contra ciudad** (8/10). "¿Te alcanza en CDMX, Monterrey o Guadalajara?" con rentas oficiales (ENIGH/INEGI). El orgullo de ciudad dispara comentarios.
+5. **Mito o verdad con postura** (7/10). Desmentir frases virales de dinero ("con el aguinaldo pagas tus deudas", "el Buen Fin siempre es más barato") con el dato oficial. Postura clara, nunca contra una persona.
+6. **Victoria es IA y lo usa** (7/10). "Soy IA: no me da pena decirte cuánto ganas" / "No tengo jefe, pero tú sí: esto te debe". La etiqueta de IA como gancho, no como disculpa.
+7. **Capital, el que cuida el dinero** (6/10). Remates cortos de Capital en los cierres ("Capital ya revisó su recibo: puras croquetas exentas"). Mascota = marca.
+
+Ritmo: cada día al menos una pieza de 1, 2 o 3. Formato Reel de texto (`reel_texto.py`, sin Replicate) para todo lo que no necesite que Victoria hable; los videos donde habla, solo para lo que más rinde, dentro del tope de Replicate.

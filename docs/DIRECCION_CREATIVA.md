@@ -51,7 +51,7 @@ Reglas:
 - Nunca logos de marcas ni de equipos (estadios, golf, tenis, coches, jet): genéricos y sin texto.
 - "Caminando hacia la cámara" (bar) se usa en FOTOS (portadas de carrusel). En los videos hablando no: el modelo anima
   la cara desde una foto fija y caminar es lo que más falla en los labios.
-- En videos hablando, el encuadre sigue siendo de pecho para arriba con Capital pegado a ella (PIPELINE paso 3).
+- En videos hablando, el encuadre sigue siendo de pecho para arriba; Capital solo si el lugar lo pide (su casa, oficina o estudio) y no siempre (Rodrigo, 12-nov-2026: "no siempre tiene que salir Capital").
 
 Cada locación se genera una vez como imagen maestra y se reutiliza (su yate, su jet), para que el
 mundo del personaje sea consistente.

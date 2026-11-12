@@ -261,7 +261,7 @@ config.json → tono_voz_wan (y instruccion_pronunciacion_wan si dice "aguinaldo
    **NUNCA se corrige un video con tpad ni moviendo el audio** (12-nov-2026: el desfase de qa_sync era falso y
    "corregirlo" dejó los labios 225-291 ms tarde en 40, O1 y O2; Rodrigo lo vio). Si los labios fallan, se genera otra vez.
 4. Hoja de 6 cuadros (`ffmpeg ... fps=1/2,scale=240:-1,tile=6x1`) y verla: misma cara en todos
-   los cuadros, **Capital visible en todos**, sin deformaciones, sin texto raro en pantalla.
+   los cuadros, Capital solo si la escena lo pide (DIRECCION_CREATIVA → "Capital con criterio"; no es obligatorio), sin deformaciones, sin texto raro en pantalla.
 5. Gancho en el segundo 0 (regla 23): en `palabras.json` la primera palabra debe empezar antes de
    0.4 s. Si empieza después, recorta el inicio (`ffmpeg -ss <inicio-0.05> -i video.mp4 -c:v libx264
    -c:a aac recortado.mp4`) y vuelve a transcribir.
