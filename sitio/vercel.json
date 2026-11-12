@@ -43,6 +43,14 @@
     {
       "source": "/reglas",
       "destination": "/reglas.html"
+    },
+    {
+      "source": "/hoy",
+      "destination": "/hoy.html"
+    },
+    {
+      "source": "/noticias/:fecha",
+      "destination": "/noticias/:fecha.html"
     }
   ],
   "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . 2>/dev/null; test $? -eq 0"

@@ -3,6 +3,19 @@
 La tarea programada diaria solo dice "sigue docs/RUTINA_DIARIA.md". Todo lo que hace está aquí, en el repo, para que se
 pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
 
+## 000. VICTORIA HOY — TODOS LOS DÍAS, sin excepción (Rodrigo, 12-nov-2026: "cada día noticias relevantes de México y el
+mundo… la subes a las historias de Victoria, que te mande a una página… cómo afecta al cliente. Hazlo digerible. TODOS LOS DÍAS")
+1. Busca (WebSearch) lo que movió el dinero de la gente en México y el mundo en las últimas 24-48 h: inflación, tasas
+   (Banxico, Fed), peso/dólar, gasolina, salarios, SAT, Profeco, bancos, fechas que importan (aguinaldo, Buen Fin...).
+2. Escoge 3 a 5. Cada una con DOS fuentes que digan lo mismo (si no hay dos, no va). Cifras tal cual las da la fuente;
+   haz tú las cuentas de "cómo te afecta" y compruébalas con python.
+3. Escribe contenido/noticias/<AAAA-MM-DD>.json (formato en scripts/noticias.py): qué pasó / cómo te afecta / qué hacer,
+   frases cortas, de tú, lenguaje neutro. "Qué hacer" = hábito (comparar, revisar, esperar), nunca un producto, banco
+   o inversión. Un "dato del día" con su cuenta y un cierre de Victoria.
+4. `python3 scripts/noticias.py pagina` y `python3 scripts/noticias.py historia`, commit y push; cuando
+   victoriatheceo.vercel.app/historias/<fecha>.jpg responda 200: `python3 scripts/noticias.py publicar`.
+5. Si algo falla, la página va igual y se lo dices a Rodrigo en el resumen. Nunca inventes una noticia para llenar.
+
 ## 00. 13-NOV (Rodrigo)
 - LC1 (22-nov) y LC2 (26-nov): autorizados ≈$8 (config.json → replicate.autorizaciones.largos-lc). Correr voces y
   tomas con REPLICATE_AUTORIZACION=largos-lc. Fotos de las tomas con luz de día y manos vacías.

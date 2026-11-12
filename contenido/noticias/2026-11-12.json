@@ -1,0 +1,29 @@
+{
+ "fecha": "2026-11-12",
+ "titulo": "Sube la inflación, baja la tasa y mañana empieza el Buen Fin",
+ "intro": "Tres cosas movieron tu dinero esta semana. Te las cuento en dos minutos, con lo que sí te toca hacer.",
+ "noticias": [
+  {"tema": "México", "titulo": "La inflación subió a 3.75% en octubre",
+   "que_paso": "El INEGI reportó que los precios subieron 3.75% en un año, más de lo que esperaban los analistas. En septiembre iba en 3.45%.",
+   "te_afecta": "Lo que pagabas a $100 hace un año, hoy te cuesta en promedio $103.75. Si tu sueldo no subió al menos eso, te alcanza para menos.",
+   "que_hacer": "Antes de gastar el aguinaldo, revisa tus gastos fijos de este mes contra los de hace un año: ahí ves tu inflación real.",
+   "fuentes": [{"nombre": "El Financiero", "url": "https://www.elfinanciero.com.mx/economia/2026/11/09/inflacion-en-mexico-se-acelera-a-375-mas-de-lo-esperado-en-octubre/"}, {"nombre": "Bloomberg Línea", "url": "https://www.bloomberglinea.com/latinoamerica/mexico/inflacion-de-mexico-sube-a-375-mas-de-lo-esperado-y-pone-bajo-presion-el-reciente-recorte-de-tasas/"}]},
+  {"tema": "México", "titulo": "Banxico bajó su tasa a 6.25% y dice que ahí se queda un buen rato",
+   "que_paso": "El 5 de noviembre el Banco de México bajó su tasa de referencia de 6.50% a 6.25% (votación 3 a 2) y avisó que prevé mantenerla por un tiempo prolongado. Su siguiente decisión es el 17 de diciembre.",
+   "te_afecta": "Los rendimientos de ahorro e inversión de bajo riesgo tienden a bajar un poco cuando baja la tasa. Las tarjetas de crédito casi no lo notan: sus tasas son mucho más altas y las pone cada banco.",
+   "que_hacer": "Si tienes ahorro, compara cuánto te paga hoy contra hace unos meses. Si tienes deuda de tarjeta, no esperes a que baje: pagarla sigue siendo tu mejor rendimiento.",
+   "fuentes": [{"nombre": "Banxico (comunicado)", "url": "https://www.banxico.org.mx/publicaciones-y-prensa/anuncios-de-las-decisiones-de-politica-monetaria/%7B43236252-D06E-5231-27E8-058810A86A52%7D.pdf"}, {"nombre": "Bloomberg Línea", "url": "https://www.bloomberglinea.com/latinoamerica/mexico/banxico-recorta-en-25-puntos-base-la-tasa-de-interes-y-valorara-el-momento-para-un-nuevo-ajuste/"}]},
+  {"tema": "Tu bolsillo", "titulo": "El Buen Fin va del 13 al 17 de noviembre y Profeco vigila 490 productos",
+   "que_paso": "Profeco compara desde septiembre los precios de 490 productos para detectar descuentos inflados, y tiene un micrositio para que tú también compares.",
+   "te_afecta": "Un descuento sobre un precio que subieron antes no es descuento. Y si una tienda no respeta el precio anunciado, tienes derecho a reclamarlo.",
+   "que_hacer": "Hoy, antes de que empiece: toma captura del precio de lo que piensas comprar. Si no respetan una promoción, pide al gerente y, si no se arregla, pon tu queja en Profeco.",
+   "fuentes": [{"nombre": "Publimetro", "url": "https://www.publimetro.com.mx/noticias/2026/10/27/profeco-lanza-micrositio-para-comparar-precios-en-el-buen-fin-2026/"}, {"nombre": "Expansión", "url": "https://expansion.mx/finanzas-personales/2026/11/09/buen-fin-2026-tienda-no-respeta-precio-promocion-anunciada"}]},
+  {"tema": "Mundo", "titulo": "En Estados Unidos la Fed no bajó y algunos ya piden subir",
+   "que_paso": "La Reserva Federal dejó su tasa en 3.75%–4% el 28 de octubre, pero dos de sus miembros votaron por subirla. La inflación allá sigue arriba de su meta.",
+   "te_afecta": "Cuando en Estados Unidos las tasas suben o se espera que suban, el peso suele presionarse. Esta semana el dólar se movió entre $18.50 y $18.70.",
+   "que_hacer": "Si vas a comprar algo en dólares (viaje, curso, compra en línea), no apuestes a adivinar el tipo de cambio: compra cuando tengas el dinero, no a meses.",
+   "fuentes": [{"nombre": "La República", "url": "https://www.larepublica.co/globoeconomia/reserva-federal-deja-tasas-quietas-en-3-75-4-ante-temores-inflacionarios-4513300"}, {"nombre": "Excélsior", "url": "https://www.excelsior.com.mx/finanzas/precio-dolar-hoy-tipo-cambio-bancos-mexico-9-noviembre-2026"}]}
+ ],
+ "dato": "Con 3.75% de inflación, un ahorro guardado debajo del colchón pierde unos $360 de poder de compra por cada $10,000 en un año (10,000 ÷ 1.0375).",
+ "cierre": "Mañana empieza el Buen Fin: compra con lista y con captura. Capital ya hizo la suya: croquetas y nada más."
+}
