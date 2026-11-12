@@ -55,7 +55,8 @@ def duracion(ruta):
                                 capture_output=True, text=True, check=True).stdout.strip())
 
 
-def generar(foto, audio, salida, movimiento=MOVIMIENTO):
+def generar(foto, audio, salida, movimiento=MOVIMIENTO, tamano='1080:1920'):
+    """tamano: '1080:1920' (vertical, Shorts/Reels) o '1920:1080' (horizontal, videos largos de YouTube)."""
     p = _pedir('POST', f'/models/{MODELO}/predictions', {'input': {
         'image': _data_uri(foto), 'audio': _data_uri(audio), 'resolution': '1080p',
         'video_prompt': movimiento, 'negative_prompt': NEGATIVO}})
@@ -74,7 +75,7 @@ def generar(foto, audio, salida, movimiento=MOVIMIENTO):
     segundos = duracion(audio)
     # Al largo del audio, 1080x1920, 30 fps; el audio se toma del archivo original (es la voz exacta).
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-i', audio, '-map', '0:v', '-map', '1:a',
-                    '-vf', 'scale=1080:1920:flags=lanczos,fps=30', '-t', f'{segundos:.3f}',
+                    '-vf', f'scale={tamano}:flags=lanczos,fps=30', '-t', f'{segundos:.3f}',
                     '-c:v', 'libx264', '-crf', '16', '-preset', 'medium', '-pix_fmt', 'yuv420p',
                     '-c:a', 'aac', '-b:a', '192k', salida], check=True)
     costo = round(0.045 * (p.get('metrics') or {}).get('video_output_duration_seconds', segundos), 2)
