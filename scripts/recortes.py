@@ -92,7 +92,19 @@ def capitulos(largo):
                 limpio[a:b + 1] = [((nombres[0] if nombres else limpio[b][0]), limpio[a][1] + limpio[b][1])]
                 cambio = True
                 break
-    return limpio
+    # 12-nov-2026: un capítulo partido en dos daba dos shorts con el MISMO título, y youtube.py (que no sube dos veces
+    # el mismo título) le pegó al segundo el enlace del primero (LB1-c03). Cada parte lleva su número.
+    cuenta = {}
+    for nombre, _ in limpio:
+        cuenta[nombre] = cuenta.get(nombre, 0) + 1
+    vistos, final = {}, []
+    for nombre, segs in limpio:
+        if cuenta[nombre] > 1 and nombre:
+            vistos[nombre] = vistos.get(nombre, 0) + 1
+            final.append((f'{nombre} (parte {vistos[nombre]})', segs))
+        else:
+            final.append((nombre, segs))
+    return final
 
 
 def tramo_vertical(origen, s, salida, cara_x, capitulo=None):
@@ -207,7 +219,8 @@ def recortar(vid):
 # YouTube Shorts (youtube.py), Instagram Reel + TikTok + Facebook (publer.py: Facebook sale a la hora de Instagram).
 # 2 al día, desde el día siguiente a que sale su video largo (cada short dice "Video completo en mi canal"), en horas que
 # no chocan con los carruseles de la rutina (TikTok 9/13/19 h, Reels 11 y ~19 h): hora de México.
-TURNOS = [{'yt': '14:00', 'ig': '15:00', 'tt': '16:00'}, {'yt': '20:30', 'ig': '21:30', 'tt': '22:15'}]
+# minutos impares: Publer exige 1 minuto entre posts de la misma cuenta y los carruseles caen en :00 y :30 (12-nov-2026)
+TURNOS = [{'yt': '14:00', 'ig': '15:07', 'tt': '16:04'}, {'yt': '20:30', 'ig': '21:37', 'tt': '22:19'}]
 
 
 def _utc(dia, hora):

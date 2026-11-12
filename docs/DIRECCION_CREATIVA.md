@@ -137,3 +137,11 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - **Lugar, ropa y acción van juntos** (tabla de locaciones): vino en el rooftop al atardecer con vestido, café en la terraza con blazer, cocina con ropa casual elegante.
 - **Capital siempre visible** y tranquilo; manos naturales, sin texto ni logos, nunca provocativa.
 - Las fotos nuevas van en `assets/fotos/dinamica-<escena>.jpg` y los clips en `assets/broll/` (catalogo.json dice la acción). `reel_texto.py` mezcla acciones distintas en cada Reel.
+
+## Capital con criterio y todo realista (Rodrigo, 12-nov-2026: "¿por qué tu perro estaría en un yate? ¿en la montaña? ¿en el estadio?… siempre lo acaricia de la misma forma… siempre realista los fondos, ropa, todo… ten criterio")
+
+- **Capital sale solo donde un perro de verdad estaría**: su depa (sala, cocina, terraza), su oficina, su estudio de podcast, el coche (asiento de atrás), paseando en la calle o el parque, el lobby de su edificio y terrazas de café que aceptan perros.
+- **Sin Capital**: bar, restaurante, antro, estadio, palco, nieve/esquí, yate, jet, golf, tenis, jacuzzi, tiendas de lujo.
+- **Capital hace cosas distintas**: camina con correa, está echado, duerme, mira por la ventana, se asoma al coche. Nunca la misma caricia ni siempre sentado posando. A veces no sale aunque esté en casa.
+- **Realismo**: el lugar existe y se ve como en la vida real (nada de fondos de catálogo); la ropa va con el lugar y la hora; la acción tiene sentido (cocina con ropa cómoda, vino al atardecer, café en la mañana); manos y objetos naturales; sin logos ni marcas legibles (si salen, se difuminan con borde suave).
+- **Repertorio grande, pocas repeticiones**: cada mes se suman escenas nuevas (la tarea del día 23 con Everygen); `reel_texto.py` usa lo menos usado (`assets/broll/uso.json`). Escenas ya hechas: lobby, café, cocina, terraza del depa, lectura, calle, estudio, restaurante, bar, coche. Faltan: gimnasio/pilates, súper (comparando precios), banco/cajero, junta de negocios, mercado mexicano, aeropuerto, playa, golf, tenis, palco, departamento con vista de noche, home office en pijama elegante, firma de contrato, revisando estados de cuenta en la mesa.

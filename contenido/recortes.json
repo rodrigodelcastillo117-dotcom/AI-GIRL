@@ -222,7 +222,7 @@
   "capitulo": "5 creencias, verificadas",
   "archivo": "videos/largos/LB1/shorts/LB1-c02.mp4",
   "segundos": 73.7,
-  "titulo": "5 creencias, verificadas · Buen Fin 2026",
+  "titulo": "5 creencias, verificadas (parte 1) · Buen Fin 2026",
   "texto": "Cinco días, sin prisa. Ahora, cinco cosas que todos creen del Buen Fin. Las verifiqué una por una.\n\nVideo completo en mi canal: Buen Fin 2026: ¿cómo saber si una oferta es real?\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#buenfin2026 #buenfin #finanzaspersonales #profeco",
   "tags": [
    "buen fin 2026",
@@ -236,14 +236,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-14T02:30:00Z",
    "ig": "2026-11-14T03:30:00Z",
    "tt": "2026-11-14T04:15:00Z"
   },
   "publicado_en": {
-   "yt": "https://youtube.com/shorts/x6bexn7B4sQ"
+   "yt": "https://youtube.com/shorts/x6bexn7B4sQ",
+   "ig_tt_fb": "2026-11-14T03:30:00Z",
+   "fb": "2026-11-14T03:32:00Z (1 min de separación que pide Publer)"
   }
  },
  {
@@ -252,7 +254,7 @@
   "capitulo": "5 creencias, verificadas",
   "archivo": "videos/largos/LB1/shorts/LB1-c03.mp4",
   "segundos": 39.9,
-  "titulo": "5 creencias, verificadas · Buen Fin 2026",
+  "titulo": "5 creencias, verificadas (parte 2) · Buen Fin 2026",
   "texto": "Ahora, ¿qué pasa si llegas a la caja y te cobran otra cosa?\n\nVideo completo en mi canal: Buen Fin 2026: ¿cómo saber si una oferta es real?\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#buenfin2026 #buenfin #finanzaspersonales #profeco",
   "tags": [
    "buen fin 2026",
@@ -273,8 +275,8 @@
    "tt": "2026-11-14T22:00:00Z"
   },
   "publicado_en": {
-   "yt": "https://youtube.com/shorts/x6bexn7B4sQ",
-   "ig_tt_fb": "2026-11-14T21:00:00Z"
+   "ig_tt_fb": "2026-11-14T21:00:00Z",
+   "yt": "https://youtube.com/shorts/QvNGQd0NxYo"
   }
  },
  {
