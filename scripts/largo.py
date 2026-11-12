@@ -15,6 +15,9 @@ El guion vive en contenido/largos.json → [{"id", "seo", "miniatura", "foto_hor
   {"tipo": "lamina", "capitulo": ..., "titulo", "dato_grande", "puntos": [], "fuente", "voz"}   lámina narrada con su voz
   {"tipo": "grafica", ..., "barras": [{"etiqueta", "valor", "texto_valor"}], "nota", "fuente", "voz"}   barras horizontales
   {"tipo": "pasos", ..., "pasos": [{"texto", "resultado"}], "fuente", "voz"}                    la cuenta paso a paso
+  {"tipo": "accion", "broll": "assets/broll/<escena>-mov-1.mp4", "segundos": 3}   Victoria haciendo algo, SIN voz, con
+      el sonido real de la escena (assets/broll/sonido/): respiro entre láminas (Rodrigo, 12-nov: "que se muevan,
+      animados, movimiento, videos largos"). El clip vertical va al centro sobre su propia imagen desenfocada. 0 costo.
 Rodrigo (12-nov-2026): "que sea mix de ella hablando con láminas, gráficas, fácil de entender".
 Por qué la mezcla: Victoria a cámara todo el video en Replicate cuesta ~$0.045 USD por segundo (8 min ≈ $22); con ~1 min a
 cámara y el resto en láminas narradas, cada largo cuesta ~$3-4 USD. Archivos en videos/largos/<id>/ (no van al repo,
@@ -160,6 +163,8 @@ def voces(vid):
     largo, carpeta = cargar(vid)
     vistos, lista = set(), []
     for s in largo['segmentos']:
+        if s['tipo'] == 'accion':
+            continue
         if not os.path.exists(ruta_voz(carpeta, s)) and ruta_voz(carpeta, s) not in vistos:
             vistos.add(ruta_voz(carpeta, s))
             lista.append({'texto': s['voz'], 'salida': ruta_voz(carpeta, s)})
@@ -167,7 +172,7 @@ def voces(vid):
         ruta = os.path.join(carpeta, 'voces.json')
         json.dump(lista, open(ruta, 'w'), ensure_ascii=False)
         subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'voz_victoria.py'), ruta], check=True)
-    total = sum(duracion(ruta_voz(carpeta, s)) for s in largo['segmentos'])
+    total = sum(duracion(ruta_voz(carpeta, s)) for s in largo['segmentos'] if s['tipo'] != 'accion')
     print(f'ok voces {vid}: {len(largo["segmentos"])} segmentos, {total / 60:.1f} min')
 
 
@@ -480,6 +485,25 @@ def lamina_vertical(s, capitulo, ruta):
 DIBUJOS = {'lamina': None, 'grafica': grafica, 'pasos': pasos}
 
 
+def accion(s, salida):
+    """Segmento de acción (sin voz): el clip vertical de la escena centrado sobre sí mismo desenfocado, con su sonido."""
+    clip = os.path.join(RAIZ, s['broll'])
+    seg = min(float(s.get('segundos', 3)), duracion(clip) - 0.3)
+    sonido = os.path.join(os.path.dirname(clip), 'sonido', os.path.splitext(os.path.basename(clip))[0] + '.m4a')
+    entradas = ['-ss', '0.2', '-t', f'{seg:.3f}', '-i', clip]
+    if os.path.exists(sonido):
+        entradas += ['-ss', '0.2', '-t', f'{seg:.3f}', '-i', sonido]
+    else:
+        entradas += ['-f', 'lavfi', '-t', f'{seg:.3f}', '-i', 'anullsrc=r=44100:cl=stereo']
+    ffmpeg(*entradas, '-filter_complex',
+           f'[0:v]split[a][b];[a]scale={ANCHO}:{ALTO}:force_original_aspect_ratio=increase,crop={ANCHO}:{ALTO},boxblur=30:2,'
+           f'eq=brightness=-0.08[fondo];[b]scale=-2:{ALTO}[frente];[fondo][frente]overlay=(W-w)/2:0,fps=30,'
+           f'fade=t=in:st=0:d=0.2,fade=t=out:st={seg - 0.2:.2f}:d=0.2,format=yuv420p[v];'
+           f'[1:a]aresample=44100,afade=t=in:d=0.15,afade=t=out:st={seg - 0.25:.2f}:d=0.25[s]',
+           '-map', '[v]', '-map', '[s]', '-t', f'{seg:.3f}', '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
+           '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
+
+
 def laminas(vid):
     largo, carpeta = cargar(vid)
     cara = _foto_circular(os.path.join(RAIZ, largo['foto_horizontal']), 260, *largo.get('cara', []))
@@ -487,6 +511,11 @@ def laminas(vid):
     hechas = 0
     for i, s in enumerate(largo['segmentos']):
         capitulo = s.get('capitulo') or capitulo
+        if s['tipo'] == 'accion':
+            if not os.path.exists(ruta_seg(carpeta, s)) or os.environ.get('REHACER_LAMINAS') == '1':
+                accion(s, ruta_seg(carpeta, s))
+                hechas += 1
+            continue
         if s['tipo'] not in DIBUJOS:
             continue
         if os.path.exists(ruta_seg(carpeta, s)) and os.environ.get('REHACER_LAMINAS') != '1':

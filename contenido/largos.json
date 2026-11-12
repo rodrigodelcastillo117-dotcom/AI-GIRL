@@ -1854,6 +1854,11 @@
     "voz": "Se llama costo anual total. La Ley para la Transparencia y Ordenamiento de los Servicios Financieros dice que junta en un porcentaje anual todos los costos y gastos de tu crédito, y que es para informarte y comparar. Si dudas entre dos tarjetas, compara ese número."
    },
    {
+    "tipo": "accion",
+    "broll": "assets/broll/calle-mov-1.mp4",
+    "segundos": 3
+   },
+   {
     "tipo": "victoria",
     "capitulo": "Las reglas que nadie te explica",
     "voz": "Con las fechas claras, vamos a las reglas que nadie te explica. La primera te ahorra todos los intereses de tus compras."
@@ -1916,6 +1921,11 @@
     "voz": "La Procuraduría Federal del Consumidor y la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros coinciden. No es recomendable que tus pagos de créditos al mes pasen del treinta por ciento de lo que ganas. Si ganas quince mil pesos al mes, la suma de todos tus pagos de deudas debería quedarse en cuatro mil quinientos, como máximo."
    },
    {
+    "tipo": "accion",
+    "broll": "assets/broll/restaurante-mov-1.mp4",
+    "segundos": 3
+   },
+   {
     "tipo": "victoria",
     "capitulo": "Meses sin intereses en diciembre",
     "voz": "Ahora, los meses sin intereses. En diciembre todo te lo ofrecen a meses, y no son gratis si hoy no tienes el dinero."
@@ -1950,6 +1960,11 @@
     ],
     "fuente": "Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025); Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021)",
     "voz": "Primero, a meses solo bienes duraderos, no consumos pasajeros. La cena de Navidad se acaba en una noche, y la mensualidad sigue. Segundo, máximo dos compras a meses sin intereses al mismo tiempo, para que no pierdas la cuenta. Las dos son recomendaciones oficiales, no mías."
+   },
+   {
+    "tipo": "accion",
+    "broll": "assets/broll/bar-mov-1.mp4",
+    "segundos": 3
    },
    {
     "tipo": "victoria",
@@ -2062,7 +2077,8 @@
     "capitulo": null,
     "voz": "En mi opinión, tu tarjeta es dinero prestado, no sueldo extra. ¿Qué día es tu fecha de corte? Comenta el número y suscríbete. Capital ya anotó la suya."
    }
-  ]
+  ],
+  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")"
  },
  {
   "id": "LC2",
@@ -2237,6 +2253,11 @@
     "voz": "Divide entre dos y te queda un promedio de cuatro mil setecientos noventa y un pesos por quincena. Una quincena de quince días son cuatro mil setecientos veinticinco pesos con sesenta centavos, y una de dieciséis, cinco mil cuarenta. Con eso van la renta, la comida, el transporte y todo lo demás."
    },
    {
+    "tipo": "accion",
+    "broll": "assets/broll/cocina-mov-1.mp4",
+    "segundos": 3
+   },
+   {
     "tipo": "victoria",
     "capitulo": "La renta se come el 39%",
     "voz": "Y lo primero que sale de esa quincena es la renta. Aquí es donde la cuenta empieza a doler."
@@ -2308,6 +2329,11 @@
     "voz": "El veintiuno por ciento de los hogares que rentan pagaba más de cuatro mil setecientos noventa y un pesos al mes. Es una quincena entera del salario mínimo, solo de renta. Y con la renta promedio te quedan unos cinco mil ochocientos cincuenta y ocho pesos para comida, transporte, luz y todo lo demás."
    },
    {
+    "tipo": "accion",
+    "broll": "assets/broll/coche-mov-1.mp4",
+    "segundos": 3
+   },
+   {
     "tipo": "victoria",
     "capitulo": "Cuántos días trabajas para pagarlo",
     "voz": "Ahora te lo traduzco a algo que se siente más. Cuántos días tienes que trabajar para pagar cada cosa."
@@ -2361,6 +2387,11 @@
     "nota": "El celular son casi 70 días de salario mínimo; el aguinaldo mínimo no llega ni a la cuarta parte",
     "fuente": "Apple México, precio de contado (11-nov-2026); LFT, art. 87; cálculo propio",
     "voz": "Un iPhone diecisiete cuesta desde veintiún mil novecientos noventa y nueve pesos de contado. Son casi setenta días de salario mínimo, más de dos meses sin gastar en nada más. Y tu aguinaldo mínimo, quince días, son cuatro mil setecientos veinticinco pesos con sesenta centavos. Ni la cuarta parte."
+   },
+   {
+    "tipo": "accion",
+    "broll": "assets/broll/terraza-depa-mov-1.mp4",
+    "segundos": 3
    },
    {
     "tipo": "victoria",
@@ -2502,6 +2533,7 @@
     "capitulo": null,
     "voz": "¿Qué porcentaje de tu sueldo se va en renta? Comenta el número y suscríbete. Capital ya hizo su presupuesto, cien por ciento croquetas."
    }
-  ]
+  ],
+  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")"
  }
 ]
