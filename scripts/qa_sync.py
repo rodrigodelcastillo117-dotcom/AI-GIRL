@@ -13,6 +13,11 @@ que más se parecen las dos curvas. Pasa si:
 - la boca sigue a la voz al menos un poco (correlación >= CORR_MINIMA; en videos buenos 0.12-0.28),
 - no hay más de 1 segundo seguido de voz con la boca quieta, ni de boca hablando sin voz.
 Si una pieza no corre (modelo, ffmpeg), sale con error: eso es un fallo, no un aprobado (regla 8).
+
+12-nov-2026: EL DESFASE DE AQUÍ YA NO DECIDE NADA. Comparar la apertura de la boca con el volumen marca "boca 300-400 ms
+adelante" en videos que están bien (la boca se abre antes del sonido), y corregirlo con tpad dejó los labios 225-291 ms
+tarde en los videos 40, O1 y O2 (Rodrigo lo vio). El desfase se mide con qa_labios.py (cierres de labios en p/b/m/v);
+aquí solo se reporta. Nunca se corrige un video con tpad: si los labios fallan, se genera otra vez.
 """
 import json
 import os
@@ -90,7 +95,7 @@ def revisar(video):
     con_cara = sum(a is not None for a in apertura) / max(n, 1)
     boca = np.array([a if a is not None else np.nan for a in apertura])
     boca = np.where(np.isnan(boca), np.nanmedian(boca), boca)
-    voz = voz_por_cuadro(video, n, fps)
+    voz = np.nan_to_num(np.asarray(voz_por_cuadro(video, n, fps), float))  # cuadros después del audio = 0
     # La voz suena con la boca abierta: se comparan las dos curvas normalizadas.
     zb = (boca - boca.mean()) / (boca.std() or 1)
     zv = (voz - voz.mean()) / (voz.std() or 1)
@@ -112,8 +117,6 @@ def revisar(video):
     fallas = []
     if con_cara < 0.8:
         fallas.append(f'la cara solo se encontró en {con_cara:.0%} de los cuadros')
-    if not -BOCA_ADELANTE_MAX_MS <= desfase_ms <= BOCA_ATRAS_MAX_MS:
-        fallas.append(f'la boca va {abs(desfase_ms)} ms {"atrás" if desfase_ms > 0 else "adelante"} de la voz')
     if corr[mejor] < CORR_MINIMA:
         fallas.append(f'la boca casi no sigue a la voz (correlación {corr[mejor]:.2f}, mínimo {CORR_MINIMA})')
     if reporte['voz_con_boca_quieta_s'] > HUECO_MAX_S:

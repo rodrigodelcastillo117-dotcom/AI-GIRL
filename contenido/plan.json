@@ -647,7 +647,8 @@
      "fallas": []
     },
     "nota": "Wan entregó la voz 333 ms atrasada (constante); tpad 0.25 s con correlación 0.18 (regla del 10-nov): queda en -67 ms. Whisper escribió \"Conduceff\": se oye igual que Condusef (qa_audio ahora compara por sonido).",
-    "capital_en_todos": true
+    "capital_en_todos": true,
+    "replicate_12nov": "Rehecho en Replicate p-video-avatar 1080p (misma foto video-40-cocina.jpg, mismo audio, actitud \"sexy entrepreneur\" con elegancia; ~$0.85 USD). qa_labios: -6 ms, apertura 0.19: LABIOS OK; qa_sync OK. La versión con tpad tenía los labios 225 ms tarde."
    },
    "decision": {
     "toca_publicar": true,
@@ -3759,9 +3760,11 @@
      "voz_con_boca_quieta_s": 0.3,
      "boca_hablando_sin_voz_s": 0.67,
      "fallas": []
-    }
+    },
+    "replicate_12nov": "Rehecho en Replicate p-video-avatar 1080p (foto navidad-regalos.jpg, mismo audio, actitud \"sexy entrepreneur\" con elegancia; ~$0.67 USD). qa_labios: -39 ms, apertura 0.09: LABIOS OK; qa_sync OK. La versión con tpad tenía los labios 291 ms tarde."
    },
-   "archivo": "videos/video-O2-FINAL.mp4"
+   "archivo": "videos/video-O2-FINAL.mp4",
+   "foto_base": "assets/fotos/navidad-regalos.jpg"
   }
  ]
 }

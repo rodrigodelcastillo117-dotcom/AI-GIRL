@@ -43,6 +43,21 @@ mundo del personaje sea consistente.
 Nunca se repite: cada combinación (prenda + color + tela) queda registrada como usada. El vestuario
 siempre corresponde a la locación (tabla anterior).
 
+## Actitud y estilo: "sexy entrepreneur", con elegancia (Rodrigo, 12-nov-2026)
+
+"Un poquito más coqueta, sensual. Nada sexoso, solo sexy entrepreneur... con elegancia." Cómo se traduce:
+- SÍ: segura y encantadora. Sonrisa cálida y un poco traviesa, mirada directa a cámara con complicidad, alguna ceja
+  levantada, postura erguida, gestos de manos finos. Maquillaje pulido (labios rojos o nude, delineado suave), pelo
+  rojo con volumen y bien peinado, accesorios dorados discretos (aretes, pulsera, reloj).
+- SÍ en ropa: prendas a la medida que favorecen la figura sin enseñar: blazer entallado, vestido midi ajustado, blusa
+  de seda con un botón abierto, suéter fino, pantalón de vestir de talle alto, tacones. Colores de marca: rojo, negro,
+  crema, verde esmeralda, camel.
+- NO: escotes como protagonista, ropa interior o transparencias, poses de cama o de espalda, encuadres que se centran
+  en el cuerpo, gestos o textos con doble sentido. Lo coqueto va en la mirada, la sonrisa y la actitud, no en el cuerpo.
+- La regla para decidir: ¿lo usaría una empresaria segura en una sesión de fotos para una revista de negocios? Si sí, va.
+- En los prompts (foto base y video): "confident, elegant entrepreneur, warm charming smile, playful knowing look,
+  classy and self-assured, never provocative" (scripts/video_replicate.py ya lo trae).
+
 ## Capital, el Rottweiler
 
 Un solo perro fijo, con hoja de referencia propia (`assets/rottweiler-hoja.png`): Rottweiler adulto,

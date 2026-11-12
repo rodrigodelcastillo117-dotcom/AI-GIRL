@@ -13,6 +13,9 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
   se iba en diciembre y enero se pagaba con tarjeta. Por eso se obsesionó con leer la letra chica: la ley, el
   recibo de nómina, el estado de cuenta. Ahora su trabajo es ser "la CEO de su propio dinero" y enseñarte a serlo
   del tuyo.
+- **Su actitud en cámara (12-nov-2026):** "sexy entrepreneur" con elegancia: segura, coqueta en la mirada y la
+  sonrisa, nunca provocativa. Detalle en DIRECCION_CREATIVA.md → "Actitud y estilo". En el texto sigue igual: directa y
+  cálida, sin doble sentido.
 - **Capital**, su Rottweiler, es su socio. Chiste recurrente: Capital "no presta dinero", "ya lo guardó",
   "desconfía de las apps que cobran antes de prestar". Se usa en textos y cierres, nunca en la parte del dato.
 

@@ -166,5 +166,11 @@
   "cambio": "Videos de Victoria en 1080x1920: naturalizar escala antes de subtitular; 40 y O2 rehechos en 1080 (pasaron qa_sync). O1 ya salió en 720; 18 sigue en 720",
   "por_que": "Rodrigo: en Instagram se ven en mala calidad; Wan entrega 720x1280",
   "vigilar": "ig"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Videos de Victoria hablando: de Wan (OpenArt, 720p) a Replicate p-video-avatar (1080p, voz MiniMax, ~$0.045 USD/s) con actitud 'sexy entrepreneur' con elegancia; labios con qa_labios.py y sin tpad. 40 y O2 rehechos",
+  "por_que": "Rodrigo: 'se ve mejor Replicate, cámbialo'; vio los labios desfasados (era el tpad); 'un poquito más coqueta... con elegancia'",
+  "vigilar": "todas"
  }
 ]

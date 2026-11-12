@@ -214,7 +214,7 @@
   "origen": "Video 38",
   "tipo": "tecnico",
   "aprendizaje": "Por segunda vez Wan 3.0 inventó una frase a media grabación, justo después de dos puntos (\"el precio de contado: ...\"). El video pedía 19 s y la voz real dura 15.9 s: el modelo rellenó el tiempo que sobraba. Se salvó cortando el tramo inventado (corte de salto) en vez de pagar otro video. La foto base sacó un logo de Apple en la laptop.",
-  "regla": "Duración del video = palabras del guion / 2.65 + 1 s (no 2.33): si sobra tiempo, Wan inventa palabras. En el guion del prompt, sin dos puntos ni punto y coma (solo comas y puntos). Si inventa una frase en un hueco limpio entre palabras, cortarla con ffmpeg antes de pagar otro video. Para alinear la voz atrasada sin cortar la primera palabra: congelar el primer cuadro (tpad) en vez de recortar el audio. En la foto: 'generic laptop with plain lid, no logo'."
+  "regla": "ANULADA el 12-nov-2026: el desfase de qa_sync era falso (la boca se abre antes del sonido); corregirlo con tpad dejó los labios 225-291 ms TARDE en 40, O1 y O2 y Rodrigo lo vio. Los labios se miden con qa_labios.py y nunca se corrigen con tpad. Antes decía: Duración del video = palabras del guion / 2.65 + 1 s (no 2.33): si sobra tiempo, Wan inventa palabras. En el guion del prompt, sin dos puntos ni punto y coma (solo comas y puntos). Si inventa una frase en un hueco limpio entre palabras, cortarla con ffmpeg antes de pagar otro video. Para alinear la voz atrasada sin cortar la primera palabra: congelar el primer cuadro (tpad) en vez de recortar el audio. En la foto: 'generic laptop with plain lid, no logo'."
  },
  {
   "fecha_utc": "2026-11-04T16:00:00Z",
@@ -319,14 +319,14 @@
   "origen": "videos O1/O2",
   "tipo": "tecnico",
   "aprendizaje": "Wan 3.0 a 15 s entregó la voz 250-300 ms atrasada en TODO el video (qa_sync: boca 333-400 ms adelante). Es un desfase constante: retrasar la imagen con tpad=start_duration=<desfase-0.08>:start_mode=clone lo arregla sin tocar la voz (O1 pasó con -67 ms).",
-  "regla": "Si qa_sync solo falla por desfase (boca adelante > 200 ms) y la correlación tras corregirlo es >= 0.10, corrige con tpad y vuelve a medir; si la correlación queda < 0.10, cuenta como falla (no se ajusta el desfase para que pase)."
+  "regla": "ANULADA el 12-nov-2026: el desfase de qa_sync era falso (la boca se abre antes del sonido); corregirlo con tpad dejó los labios 225-291 ms TARDE en 40, O1 y O2 y Rodrigo lo vio. Los labios se miden con qa_labios.py y nunca se corrigen con tpad. Antes decía: Si qa_sync solo falla por desfase (boca adelante > 200 ms) y la correlación tras corregirlo es >= 0.10, corrige con tpad y vuelve a medir; si la correlación queda < 0.10, cuenta como falla (no se ajusta el desfase para que pase)."
  },
  {
   "fecha_utc": "2026-11-11T13:00:09Z",
   "origen": "video 40",
   "tipo": "tecnico",
   "aprendizaje": "Whisper escribió \"Conduceff\" donde Victoria dijo bien \"Condusef\": qa_audio lo marcaba como palabra no entendida. Tercera vez seguida que Wan entrega la voz 333 ms atrasada (O1, O2, 40); tpad la corrigió a -67 ms.",
-  "regla": "qa_audio compara las palabras clave por sonido (ce/ci=se/si, z=s, v=b, h muda, letras dobles); la x/j sigue contando como falla. El desfase constante de Wan se corrige con tpad solo si la correlación tras corregir es >= 0.10."
+  "regla": "ANULADA el 12-nov-2026: el desfase de qa_sync era falso (la boca se abre antes del sonido); corregirlo con tpad dejó los labios 225-291 ms TARDE en 40, O1 y O2 y Rodrigo lo vio. Los labios se miden con qa_labios.py y nunca se corrigen con tpad. Antes decía: qa_audio compara las palabras clave por sonido (ce/ci=se/si, z=s, v=b, h muda, letras dobles); la x/j sigue contando como falla. El desfase constante de Wan se corrige con tpad solo si la correlación tras corregir es >= 0.10."
  },
  {
   "fecha_utc": "2026-11-11T14:18:27Z",
@@ -340,6 +340,13 @@
   "origen": "prueba Replicate p-video-avatar (Rodrigo: '¿es más barato en Replicate?')",
   "tipo": "tecnico",
   "aprendizaje": "prunaai/p-video-avatar en Replicate (foto + audio → video, 1080p, $0.045 USD/s; 19 s = $0.86, 1:44 min) con la foto y el audio del video 40: sale 1088x1920 a 24 fps, más nítido que Wan 720, Victoria y Capital consistentes en los 7 cuadros revisados. Trae ~1 s de video de más al final (sin voz): eso hacía que qa_sync diera correlación NaN. Recortado al largo del audio, la boca va ~290 ms adelante con correlación 0.257 (desfase constante, como Wan); con tpad 0.292 s queda desfase 0 y correlación 0.189: SINCRONÍA OK (Wan 40: 0.175). Recibe el audio tal cual: puede usar directo la voz clonada de MiniMax.",
-  "regla": "Candidato a reemplazar Wan para los videos de Victoria hablando, pendiente de que Rodrigo compare video-40-WAN contra video-40-REPLICATE. Si se usa: recortar el video al largo del audio, medir el desfase con qa_sync en ±1 s y corregir con tpad solo si es constante y la correlación ≥ 0.10. Una sola prueba: confirmar con 2 o 3 videos más."
+  "regla": "ADOPTADO el 12-nov-2026 (Rodrigo: \"se ve mejor Replicate, cámbialo\"): los videos de Victoria hablando se hacen con voz_guion.py (voz MiniMax) + video_replicate.py. Se recorta al largo del audio y se mide con qa_labios.py; nunca tpad. Ojo: el ajuste de 292 ms de esta prueba fue un error (salía de qa_sync); el video crudo ya iba a tiempo (qa_labios -6 ms)."
+ },
+ {
+  "fecha_utc": "2026-11-12T03:30:00Z",
+  "origen": "Rodrigo vio los labios desfasados",
+  "tipo": "tecnico",
+  "aprendizaje": "qa_sync.py compara la apertura de la boca con el volumen de la voz; como la boca se abre antes del sonido, marcaba 'boca 300-400 ms adelante' en videos bien hechos. Con qa_labios.py (cierre de labios en palabras con p/b/m/v, transcritas con Whisper) los originales de Wan 40, O1 y O2 medían -39 ms (a tiempo) y los 'corregidos' con tpad +225 a +291 ms (tarde). O1 se publicó así.",
+  "regla": "Los labios se aprueban con qa_labios.py (desfase máximo 100 ms, boca cerrada en p/b/m/v: apertura <= 0.35). qa_sync.py ya no reprueba por desfase. Nunca tpad ni mover el audio: si fallan los labios, se genera otra vez."
  }
 ]

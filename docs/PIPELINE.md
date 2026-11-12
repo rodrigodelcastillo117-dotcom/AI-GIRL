@@ -216,32 +216,30 @@ eyes mostly on that person with brief natural glances, relaxed conversational ha
 Victoria nunca cuenta anécdotas personales inventadas como si fueran reales: responde con una regla y
 un caso real con fuente (regla 7).
 
-## 4. Video
+## 4. Video (desde el 12-nov-2026: Replicate, 1080p)
 
-`wan3-0` `element2video`: `duration` = `decision.segundos` de `aprender.py auditar` (la `duracion`
-del video en el plan, 10 a 25 s según el tema; ver `GUIONES_VIRALES.md`), `resolution: "720p"`, `aspectRatio: "9:16"`,
-`audio: true`, `promptExtend: false`, `mode: "standard"`.
-`visualReferences`: foto base, hoja maestra, Rottweiler y la voz
-(`manifest.voz`, `type: "audio"`, `audioRole: "voice_reference"`).
+Rodrigo (12-nov-2026): "se ve mejor Replicate, cámbialo... tenemos que generar los mejores videos". Prueba del video 40:
+p-video-avatar sale en 1080 real, más nítido que Wan 720, con Victoria y Capital iguales y los labios a tiempo
+(qa_labios -6 ms). Cuesta $0.045 USD por segundo (15 s ≈ $0.68) en la cuenta de Replicate (REPLICATE_API_TOKEN).
 
-Prompt:
-```
-Talking-to-camera vertical video in the scene of the first reference image (same place, same
-outfit, same light). The woman is EXACTLY the red-haired woman of the second reference image:
-identical face, vivid green eyes, long copper-red wavy hair, red lipstick, subtle light freckles.
-The Rottweiler of the third reference image (same markings, black leather collar with gold plate)
-stays next to her, relaxed and INSIDE THE FRAME for the entire video, breathing and moving naturally
-(ear twitch, small head turns). Handheld smartphone selfie video: the camera moves very slightly like a
-phone held by hand; NO zoom in, NO push-in. She looks into the lens and talks like a real person filming
-herself: natural blinking, small head tilts, casual hand gestures, in natural Mexican Spanish, <config.json → tono_voz_wan>, with clear
-accurate lip sync and the same voice as the audio reference. She says exactly these words and nothing else: "<python scripts/guion_para_voz.py <id>>"
-(Tono de voz, 7-nov-2026: desde la prueba de voz íntima va config.json → tono_voz_wan en vez de "confident and warm"; anota "voz": "intima" en el video del plan. Si qa_audio dice que faltan palabras al final o habla más lento, mide palabras/segundo y ajusta palabras_por_segundo.)
-(Si el guion dice "aguinaldo", agrega al prompt config.json → instruccion_pronunciacion_wan: sin ella Wan dice "a-gu-i-naldo" y con "aghinaldo" dice "ajinado". Revisa la palabra con `scripts/fonemas.py` (debe salir "a ɡ i n a l d o"), 6-nov-2026.)
-Soft room ambience, no music. Photorealistic, cinematic, elegant, no text on screen, no
-subtitles, no logos.
-```
+1. Audio con la voz de Victoria (el clon de MiniMax, la misma de los carruseles):
+   `$VOZ_PYTHON scripts/voz_guion.py <id> videos/video-<id>-voz.mp3`
+   (parte el guion en frases, cada una se transcribe y se repite si no sale; si una no sale, reescríbela más simple).
+2. Video: `python scripts/video_replicate.py assets/fotos/<foto base>.jpg videos/video-<id>-voz.mp3 videos/video-<id>.mp4 ["cómo se mueve"]`.
+   Sin el 4º argumento usa la actitud de marca ("sexy entrepreneur" con elegancia, DIRECCION_CREATIVA.md → "Actitud y
+   estilo"). Si la escena pide algo (sentada junto al árbol, con una hoja en la mano), escríbelo en inglés en ese
+   argumento y termina con: "Classy and self-assured, never provocative. Her black and tan Rottweiler stays calmly
+   beside her the whole time. Realistic handheld phone video."
+   El script recorta al largo del audio y deja 1080x1920 a 30 fps. Tarda 2-5 minutos.
+3. Si Replicate falla dos veces, respaldo: Wan 3.0 en OpenArt (abajo), avisándole a Rodrigo.
 
-Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_creation_get`.
+Respaldo, Wan 3.0 (`wan3-0` `element2video`, OpenArt): `duration` = `decision.segundos`, `resolution: "720p"`,
+`aspectRatio: "9:16"`, `audio: true`, `promptExtend: false`, `mode: "standard"`; `visualReferences`: foto base, hoja
+maestra, Rottweiler y la voz (`manifest.voz`, `type: "audio"`, `audioRole: "voice_reference"`). Prompt: video vertical
+hablando a cámara en la escena de la foto base, la misma mujer pelirroja de la hoja maestra, Capital dentro del cuadro todo
+el video, cámara de celular sin zoom, "She says exactly these words and nothing else: "<python scripts/guion_para_voz.py <id>>"",
+config.json → tono_voz_wan (y instruccion_pronunciacion_wan si dice "aguinaldo"), sin música ni texto. Tarda 10-15 min
+(`openart_creation_get`).
 
 ## 5. Control de calidad (obligatorio)
 
@@ -253,11 +251,12 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
    su forma dicha ("Méjico") para el siguiente intento. Si inventa una frase en un hueco limpio, se puede cortar con
    ffmpeg antes de pagar otro video (video 38). Doblar la voz de un video con otra voz NO sirve: la boca deja de
    cuadrar (probado el 4-nov con `doblar.py`).
-3b. **Labios en sincronía:** `scripts/qa_sync.py video.mp4 sync.json` debe salir con 0. Mide la
-   apertura de la boca cuadro por cuadro contra la fuerza de la voz y rechaza el video si la voz va
-   atrasada o adelantada, si hay más de 1 s de voz con la boca quieta o de boca moviéndose sin voz.
-   Detecta desfases de toda la pista (probado: 150 ms antes y 250 ms tarde los rechaza); no juzga
-   si cada sílaba tiene la forma de boca exacta: eso se ve en la hoja de cuadros del punto 4.
+3b. **Labios en sincronía:** `scripts/qa_labios.py video.mp4 palabras.json` debe salir con 0: en las palabras que
+   empiezan con p, b, m o v los labios tienen que cerrarse a tiempo (máximo 100 ms de desfase). Además
+   `scripts/qa_sync.py video.mp4 sync.json` debe salir con 0 (cara en 80% de los cuadros, la boca sigue a la voz, sin 1 s
+   de voz con la boca quieta ni de boca sin voz). El "desfase" que imprime qa_sync es solo informativo.
+   **NUNCA se corrige un video con tpad ni moviendo el audio** (12-nov-2026: el desfase de qa_sync era falso y
+   "corregirlo" dejó los labios 225-291 ms tarde en 40, O1 y O2; Rodrigo lo vio). Si los labios fallan, se genera otra vez.
 4. Hoja de 6 cuadros (`ffmpeg ... fps=1/2,scale=240:-1,tile=6x1`) y verla: misma cara en todos
    los cuadros, **Capital visible en todos**, sin deformaciones, sin texto raro en pantalla.
 5. Gancho en el segundo 0 (regla 23): en `palabras.json` la primera palabra debe empezar antes de
