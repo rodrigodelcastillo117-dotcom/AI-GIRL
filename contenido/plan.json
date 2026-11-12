@@ -4084,9 +4084,9 @@
    "id": "M4",
    "origen": "MUSE 12-nov",
    "formato": "escena",
-   "escena": "yate",
+   "escena": "calle",
    "pilar": "finanzas",
-   "estado": "reintentar",
+   "estado": "programado",
    "publicar": "2026-11-18",
    "tema": "Tu Afore puede bajarte impuestos",
    "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, puedes deducir hasta dieciocho mil al año. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
@@ -4108,13 +4108,13 @@
    "insertos": [
     {
      "frase": 2,
-     "broll": "assets/broll/yate-mov-1.mp4",
-     "segundos": 2.2,
-     "que": "camina por la cubierta con el mar (pausa real)"
+     "broll": "assets/broll/calle-mov-1.mp4",
+     "segundos": 3,
+     "que": "camina por la calle con sus bolsas (pausa real)"
     }
    ],
    "foto_base_lista": {
-    "archivo": "assets/fotos/habla-yate-cerca.jpg"
+    "archivo": "assets/fotos/habla-calle.jpg"
    },
    "palabras_clave": [
     "Afore",
@@ -4126,13 +4126,44 @@
     "intento_1": "rechazado: en la biblioteca oscura cambió la cara y hubo cuadros borrosos",
     "audio": "OK",
     "labios": "LABIOS OK",
-    "sync": "SINCRONÍA FALLA: la boca casi no sigue a la voz (correlación 0.08, mínimo 0.1)",
+    "sync": "SINCRONÍA OK",
     "cuadros": "videos/qa/M4-cuadros.jpg (revisar a ojo)",
     "intento_2": "rechazado: en el yate con copa, bebe champaña mientras habla y en 1 cuadro cambia la cara",
-    "intento_3": "rechazado: yate sin copa, en 2 de 10 cuadros el pelo se vuelve castaño y cambia la cara"
+    "intento_3": "rechazado: yate sin copa, en 2 de 10 cuadros el pelo se vuelve castaño y cambia la cara",
+    "intento_4": "APROBADO: foto de la calle (probada en M1), 10 cuadros con la misma cara y pelo; voz, labios y sync OK"
    },
    "archivo": "videos/video-M4-FINAL.mp4",
-   "siguiente_intento": "Antes del 18-nov (sale ese día 13:07 MX): usar una foto hablando YA PROBADA estable (assets/fotos/habla-calle.jpg de M1 o habla-cafe-cerca.jpg de E1, con otra ropa no se puede: se usa tal cual) con la voz ya hecha videos/video-M4-voz.mp3 (no pagar voz otra vez); inserto: yate-mov-1 (2.2 s). Si vuelve a cambiar la identidad, M4 sale como Reel de texto (reel_texto) con las mismas cifras."
+   "siguiente_intento": "Antes del 18-nov (sale ese día 13:07 MX): usar una foto hablando YA PROBADA estable (assets/fotos/habla-calle.jpg de M1 o habla-cafe-cerca.jpg de E1, con otra ropa no se puede: se usa tal cual) con la voz ya hecha videos/video-M4-voz.mp3 (no pagar voz otra vez); inserto: yate-mov-1 (2.2 s). Si vuelve a cambiar la identidad, M4 sale como Reel de texto (reel_texto) con las mismas cifras.",
+   "seo": {
+    "palabra_clave": "afore",
+    "titulo": "Afore, así te baja los impuestos 💼",
+    "descripcion_inicio": "Tu Afore puede bajarte impuestos: las aportaciones complementarias de retiro son deducibles hasta el 10% de tu ingreso anual o 5 UMA, lo que sea menor (art. 151 de la Ley del ISR).",
+    "tags_concretas": [
+     "afore",
+     "afore deducible",
+     "aportaciones voluntarias afore",
+     "deducciones personales sat",
+     "afore impuestos",
+     "afores"
+    ],
+    "hashtags": [
+     "#afore",
+     "#impuestos",
+     "#finanzaspersonales"
+    ],
+    "parrafo": "Las aportaciones complementarias de retiro (y las voluntarias que cumplen la permanencia) son deducibles en tu declaración anual hasta el 10% de tus ingresos acumulables sin pasar de 5 UMA anuales (unos $213,973 en 2026). Si ganas $15,000 al mes ($180,000 al año), puedes deducir hasta $18,000. Si retiras antes de los 65 años, ese dinero se suma a tus ingresos. Información general, no asesoría fiscal."
+   },
+   "publicacion": {
+    "hora_utc": "2026-11-18T19:07:00Z",
+    "redes": [
+     "instagram",
+     "tiktok",
+     "facebook",
+     "youtube"
+    ],
+    "youtube": "https://youtube.com/shorts/wzoozIavqEA",
+    "pie": "un solo llamado (compártelo) + pregunta SÍ/NO, versión MUSE"
+   }
   }
  ]
 }
