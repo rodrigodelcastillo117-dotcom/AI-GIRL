@@ -284,3 +284,88 @@ function tablaPubs() {
 window.addEventListener('pageshow', () => document.querySelectorAll('details.plegable').forEach((d) => { d.open = false; }));
 // Arranca cuando panel.js ya mostró el tablero (después del acceso).
 const espera = setInterval(() => { if (!$('tablero').hidden) { clearInterval(espera); estadisticas(); } }, 300);
+
+// ---------- sistema (12-nov-2026: "conecta todo al dashboard. todo, todo, todo") ----------
+let SIS = null;
+const ok = (b) => el('span', {className: b ? 'sube' : 'baja', textContent: b ? '✓' : '✗'});
+function fila(etq, valor, detalle) {
+  return el('div', {className: 'hb'}, el('span', {className: 'hb-etq', textContent: etq}), el('span', {className: 'hb-etq', style: 'color:var(--tenue)', textContent: detalle || ''}), el('span', {className: 'hb-val'}, valor));
+}
+function kpi(n, v, d) { return el('div', {className: 'kpi'}, el('div', {className: 'kpi-n', textContent: n}), el('div', {className: 'kpi-v', textContent: v}), el('div', {className: 'kpi-d', textContent: d || ''})); }
+
+async function sistema() {
+  try { const r = await fetch('/api/sistema', {credentials: 'same-origin'}); if (r.ok) SIS = await r.json(); } catch { return; }
+  if (!SIS || !SIS.generado_utc) return;
+  for (const f of [pHoy, pComunidad, pInstagram, pSistema, pVentas]) { try { f(); } catch (e) { console.error(f.name, e); } }
+}
+
+function pHoy() {
+  const h = SIS.victoria_hoy || {};
+  if (h.error) { $('s-hoy').textContent = h.error; return; }
+  const historia = h.historia_hoy === true ? 'historia de hoy publicada ✓' : 'historia de hoy pendiente';
+  $('d-hoy').textContent = `${h.fecha || ''} · ${historia}`;
+  $('s-hoy').replaceChildren(
+    el('h3', {className: 'sub', textContent: h.titulo || '—'}),
+    el('div', {className: 'hbarras'}, ...(h.noticias || []).map((t, i) => fila(String(i + 1).padStart(2, '0'), '', t))),
+    el('p', {className: 'p-nota'}, `${h.ediciones} ediciones en el archivo · ${historia} · `, el('a', {href: h.url, target: '_blank', rel: 'noopener', textContent: 'abrir /hoy'})));
+}
+
+function pVentas() {
+  const v = (typeof VIVO !== 'undefined' && VIVO?.ventas) || null;
+  if (!v) { $('d-ventas').textContent = 'cargando…'; return; }
+  if (v.conectado === false) { $('d-ventas').textContent = 'Hotmart sin conectar'; $('n-ventas').textContent = 'Faltan las llaves de Hotmart en Vercel (HOTMART_CLIENT_ID y HOTMART_CLIENT_SECRET).'; return; }
+  if (v.error) { $('d-ventas').textContent = 'error de Hotmart'; $('n-ventas').textContent = v.error; return; }
+  $('d-ventas').textContent = `${v.ventas} ventas · ${usd(v.ingresos).replace('$', '$')} ${v.moneda || ''} (90 días)`;
+  $('s-ventas').replaceChildren(
+    medidor('Ventas (90 días)', n0(v.ventas), 'del Kit CEO', 'Solo productos de Victoria en Hotmart', null, null),
+    medidor('Ingresos (90 días)', usd(v.ingresos), v.moneda || '', 'Antes de comisiones de Hotmart', null, null));
+  const red = Object.entries(v.porRed || {});
+  hbarras($('s-ventas-red'), red.map(([k, x]) => ({etq: {yt: 'YouTube', tt: 'TikTok', ig: 'Instagram', guia: 'Guía gratis', directo: 'Directo', otro: 'Otro', sin_origen: 'Sin origen'}[k] || k, v: x.ventas, texto: `${x.ventas} · ${usd(x.ingresos)}`})));
+  $('n-ventas').textContent = 'En vivo desde Hotmart; de qué red llegó cada venta sale del enlace con ?ref.';
+}
+
+function pComunidad() {
+  const c = SIS.comunidad || {};
+  if (c.error) { $('s-comunidad').textContent = c.error; return; }
+  const num = (x) => (typeof x === 'number' ? n0(x) : '—');
+  $('d-comunidad').textContent = `${(c.guias_ig || 0) + (c.guias_youtube || 0)} guías entregadas · ${num(c.pendientes_youtube)} YT y ${num(c.pendientes_instagram)} IG sin contestar`;
+  $('s-comunidad').replaceChildren(
+    kpi('Guías · Instagram', num(c.guias_ig), 'por mensaje privado'),
+    kpi('Guías · YouTube', num(c.guias_youtube), 'por respuesta con enlace'),
+    kpi('Comentarios de Victoria', num(c.comentarios_propios), 'en sus propias publicaciones'),
+    kpi('Sin contestar · YouTube', num(c.pendientes_youtube), 'al momento de la foto'),
+    kpi('Sin contestar · Instagram', num(c.pendientes_instagram), 'al momento de la foto'),
+    kpi('Sin comentario propio', num(c.sin_comentario_propio), 'publicaciones de 7 días'));
+}
+
+function pInstagram() {
+  const g = SIS.instagram || {};
+  if (g.error) { $('s-ig').textContent = g.error; $('d-instagram').textContent = 'error'; return; }
+  const t = g.totales || {};
+  $('d-instagram').textContent = `${n0(t.views)} vistas · ${n0(t.reach)} alcance · ${n0(t.saved)} guardados (últimas ${g.publicaciones?.length || 0})`;
+  $('s-ig-tot').replaceChildren(kpi('Vistas', n0(t.views)), kpi('Alcance', n0(t.reach)), kpi('Likes', n0(t.likes)), kpi('Comentarios', n0(t.comentarios)), kpi('Guardados', n0(t.saved), 'la métrica que pide MUSE'), kpi('Compartidos', n0(t.shares)));
+  tabla($('s-ig'), ['Publicación', 'Fecha', 'Vistas', 'Alcance', 'Likes', 'Coment.', 'Guard.', 'Comp.'],
+    (g.publicaciones || []).map((p) => [el('a', {href: p.url, target: '_blank', rel: 'noopener', textContent: sinEmoji(p.titulo) || p.id}), p.fecha,
+      {t: n0(p.views), v: p.views ?? -1}, {t: n0(p.reach), v: p.reach ?? -1}, {t: n0(p.likes), v: p.likes}, {t: n0(p.comentarios), v: p.comentarios},
+      {t: n0(p.saved), v: p.saved ?? -1}, {t: n0(p.shares), v: p.shares ?? -1}]), {ordenable: true});
+}
+
+function pSistema() {
+  const a = SIS.automatizaciones || {}, w = SIS.web || {}, f = SIS.facebook || {};
+  const tareas = a.tareas || [];
+  $('s-auto').replaceChildren(el('div', {className: 'hbarras'}, ...tareas.map((t) => fila(t.nombre, t.cuando, t.hace))),
+    el('p', {className: 'p-nota', textContent: `Token de Meta vence ${a.token_meta_vence || '—'} (aviso el ${a.token_meta_aviso || '—'}) · Newsletter: ${a.newsletter || '—'} · ${a.kit_hotmart || ''}`}));
+  const pags = Object.entries(w.paginas || {});
+  $('s-web').replaceChildren(...pags.map(([ruta, x]) => fila(ruta, ok(x.ok), x.ia ? 'con IA' : '')),
+    fila('IA de las calculadoras', ok(w.ia_calculadoras)), fila('Kit CEO en la portada', ok(w.kit_en_portada)), fila('Guía PDF', ok(w.guia_pdf)));
+  const cx = (typeof VIVO !== 'undefined' && VIVO?.conexiones) || {};
+  $('s-conex').replaceChildren(el('div', {className: 'hbarras'},
+    fila('Facebook (página)', ok(!f.error), f.error ? f.error.slice(0, 60) : `${n0(f.seguidores)} seguidores`),
+    fila('Instagram (estadísticas)', ok(!(SIS.instagram || {}).error)),
+    fila('YouTube y Publer', ok(!(SIS.comunidad || {}).error)),
+    fila('Hotmart (ventas en vivo)', ok(cx.hotmart !== false && (VIVO?.ventas?.conectado !== false)))));
+  const mal = pags.filter(([, x]) => !x.ok).length + (w.ia_calculadoras ? 0 : 1) + (w.kit_en_portada ? 0 : 1);
+  $('d-sistema').textContent = mal ? `${mal} cosas por revisar` : `todo en línea · ${tareas.length} automatizaciones`;
+}
+
+const esperaSis = setInterval(() => { if (!$('tablero').hidden) { clearInterval(esperaSis); sistema(); setInterval(() => { try { pVentas(); pSistema(); } catch {} }, 60_000); } }, 300);

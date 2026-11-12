@@ -183,7 +183,7 @@
   "g_yt": null,
   "g_fb": null,
   "c_ig_reales": 3,
-  "c_yt_reales": 0,
+  "c_yt_reales": 1,
   "r_yt": 137.8
  },
  {
@@ -1766,7 +1766,7 @@
   "g_tt": null,
   "g_yt": null,
   "g_fb": null,
-  "c_yt_reales": 1,
+  "c_yt_reales": 2,
   "c_ig_reales": 2
  },
  {
@@ -1896,7 +1896,8 @@
   "g_tt": null,
   "g_yt": null,
   "g_fb": null,
-  "c_yt_reales": 0
+  "c_yt_reales": 0,
+  "c_ig_reales": 0
  },
  {
   "id": "M2",

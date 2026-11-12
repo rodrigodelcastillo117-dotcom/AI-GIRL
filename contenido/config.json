@@ -607,5 +607,33 @@
  "miniaturas": {
   "regla": "Rodrigo, 13-nov-2026: \"No importa lo de comparar las miniaturas, tú selecciona la mejor o crea la mejor en Canva Pro\". Sin Test & Compare: el agente elige una sola miniatura (la de largo.py, que salió mejor que Canva IA el 12-nov) y no se le recuerda nada a Rodrigo."
  },
- "facebook_pagina_id": "1382943384905216"
+ "facebook_pagina_id": "1382943384905216",
+ "automatizaciones": {
+  "tareas": [
+   {
+    "nombre": "Rutina diaria",
+    "cuando": "Todos los días 6:37",
+    "hace": "Victoria Hoy (página, imagen y te manda la historia), carruseles, Reels, shorts, largos y recortes, medir, panel y resumen"
+   },
+   {
+    "nombre": "Respaldo de la historia",
+    "cuando": "Todos los días 10:00",
+    "hace": "Si no subiste la historia de Victoria Hoy, la publica sin sticker"
+   },
+   {
+    "nombre": "Comentarios y guías",
+    "cuando": "Cada hora, 8:13 a 23:13",
+    "hace": "Guías por mensaje (IG) y respuesta (YouTube), comentario propio de Victoria en YouTube, Instagram y Facebook, contestar comentarios y mensajes"
+   },
+   {
+    "nombre": "Medición de MUSE",
+    "cuando": "19-nov",
+    "hace": "Instagram contra la línea base de MUSE"
+   }
+  ],
+  "token_meta_vence": "2027-01-11",
+  "token_meta_aviso": "2027-01-03",
+  "newsletter": "pendiente: Rodrigo abre su cuenta en beehiiv.com",
+  "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)"
+ }
 }

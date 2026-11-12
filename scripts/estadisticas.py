@@ -152,6 +152,14 @@ def seguidores_hoy():
         foto['yt_videos'] = int(est.get('videoCount', 0))
     except Exception as e:
         print('youtube:', e)
+    if foto.get('fb') is None:  # Publer no da los seguidores de la página: se leen directo de Facebook (token de página)
+        try:
+            import primer_comentario
+            import publer
+            pag = publer.CONFIG.get('facebook_pagina_id')
+            foto['fb'] = primer_comentario.fb('GET', f'{pag}?fields=followers_count', pag).get('followers_count')
+        except Exception as e:
+            print('facebook seguidores:', e)
     ruta = os.path.join(RAIZ, 'contenido', 'seguidores.json')
     log = leer('contenido/seguidores.json', [])
     if any(r in foto for r in REDES):

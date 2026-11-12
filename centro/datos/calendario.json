@@ -8,9 +8,7 @@
   "horas": {
    "fb": "09:30"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-12",
@@ -32,12 +30,10 @@
   "estado": "programado",
   "que": "Reel del carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (el mismo video del Short)",
   "horas": {
-   "ig": "11:00",
+   "ig": "11:06",
    "fb": "11:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-12",
@@ -51,11 +47,7 @@
    "fb": "12:51",
    "yt": "12:51"
   },
-  "confirmado": [
-   "ig",
-   "tt",
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-12",
@@ -70,7 +62,6 @@
    "fb": "20:03"
   },
   "confirmado": [
-   "tt",
    "ig",
    "fb"
   ]
@@ -110,12 +101,9 @@
   "estado": "programado",
   "que": "Video largo: Buen Fin 2026: ¿cómo saber si una oferta es real?",
   "horas": {
-   "yt": "10:00",
-   "fb": "10:00"
+   "yt": "10:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",

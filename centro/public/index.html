@@ -119,6 +119,35 @@
   </section>
 
   <div class="plegables">
+    <details class="plegable" id="p-hoy">
+      <summary><span class="p-titulo">Victoria Hoy</span><span class="p-dato" id="d-hoy"></span></summary>
+      <div class="p-cuerpo"><div id="s-hoy"></div></div>
+    </details>
+
+    <details class="plegable" id="p-ventas">
+      <summary><span class="p-titulo">Ventas · Kit CEO</span><span class="p-dato" id="d-ventas"></span></summary>
+      <div class="p-cuerpo"><div id="s-ventas" class="dinero"></div><div id="s-ventas-red" class="hbarras" style="margin-top:14px"></div><p class="p-nota" id="n-ventas"></p></div>
+    </details>
+
+    <details class="plegable" id="p-comunidad">
+      <summary><span class="p-titulo">Comunidad · guías y comentarios</span><span class="p-dato" id="d-comunidad"></span></summary>
+      <div class="p-cuerpo"><div id="s-comunidad" class="kpis"></div><p class="p-nota">Lo hace solo la revisión de cada hora (8:13 a 23:13): guías por mensaje en Instagram y por respuesta en YouTube, comentario propio de Victoria en YouTube, Instagram y Facebook, y respuestas a comentarios y mensajes. Fijar comentarios es manual (ninguna red lo deja por API).</p></div>
+    </details>
+
+    <details class="plegable" id="p-instagram">
+      <summary><span class="p-titulo">Instagram a fondo</span><span class="p-dato" id="d-instagram"></span></summary>
+      <div class="p-cuerpo"><div id="s-ig-tot" class="kpis"></div><h3 class="sub">Últimas publicaciones</h3><div id="s-ig" class="tabla-scroll"></div></div>
+    </details>
+
+    <details class="plegable" id="p-sistema">
+      <summary><span class="p-titulo">Sistema y automatizaciones</span><span class="p-dato" id="d-sistema"></span></summary>
+      <div class="p-cuerpo">
+        <h3 class="sub">Lo que corre solo</h3><div id="s-auto"></div>
+        <h3 class="sub">Página web</h3><div id="s-web" class="hbarras"></div>
+        <h3 class="sub">Conexiones</h3><div id="s-conex"></div>
+      </div>
+    </details>
+
     <details class="plegable" id="p-agenda">
       <summary><span class="p-titulo">Hoy y mañana</span><span class="p-dato" id="d-agenda"></span></summary>
       <div class="p-cuerpo"><div id="agenda" class="agenda"></div></div>

@@ -679,6 +679,12 @@ def main():
         estadisticas.main()
     except Exception as e:
         print('estadisticas:', e)
+    # Sistema (12-nov-2026, "conecta todo al dashboard"): Victoria Hoy, comunidad, Instagram a fondo, Facebook, web y automatizaciones.
+    try:
+        import sistema
+        sistema.main()
+    except Exception as e:
+        print('sistema:', e)
 
 
 def _json_o(nombre, defecto):

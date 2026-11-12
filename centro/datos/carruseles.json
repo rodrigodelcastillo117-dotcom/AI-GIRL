@@ -413,7 +413,7 @@
   "c_tt": 1,
   "s_tt": 0,
   "r_yt": 89.5,
-  "c_yt_reales": 0
+  "c_yt_reales": 1
  },
  {
   "id": "c12",
@@ -500,7 +500,7 @@
   "c_ig": 5,
   "s_ig": 0,
   "r_yt": 47.3,
-  "c_yt_reales": 0,
+  "c_yt_reales": 1,
   "c_ig_reales": 2
  },
  {
@@ -813,7 +813,7 @@
   "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0,
-  "c_yt_reales": 0
+  "c_yt_reales": 1
  },
  {
   "id": "c28",
@@ -1161,7 +1161,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "c_yt_reales": 0,
+  "c_yt_reales": 1,
   "c_ig_reales": 2
  },
  {
@@ -1331,7 +1331,7 @@
   "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0,
-  "c_yt_reales": 0
+  "c_yt_reales": 1
  },
  {
   "id": "c53",
@@ -1595,7 +1595,7 @@
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 0,
-  "c_yt_reales": 0
+  "c_yt_reales": 1
  },
  {
   "id": "c66",
@@ -1631,7 +1631,7 @@
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0,
-  "c_yt_reales": 0
+  "c_yt_reales": 1
  },
  {
   "id": "c67",
@@ -1725,13 +1725,14 @@
   "linea": "5 rumores del aguinaldo 2026 que te van a llegar por whatsapp. los verifiqué. 🔍",
   "tipo": "carrusel",
   "linea_reel": "5 rumores del aguinaldo 2026 que te van a mandar por whatsapp",
-  "reel_ig": "2026-11-12 11:00",
+  "reel_ig": "2026-11-12 11:06",
   "publica_utc_por_red": {
    "tt": "2026-11-12T15:00:00Z",
    "yt": "2026-11-12T18:00:00Z",
    "fb": "2026-11-12T17:00:00Z"
   },
-  "c_yt_reales": 0
+  "c_yt_reales": 2,
+  "c_ig_reales": 1
  },
  {
   "id": "c71",
