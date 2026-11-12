@@ -320,3 +320,14 @@ Pilares que rotan cada semana (todo con fuente oficial y segunda revisión; opin
 4. **Éxito y mentalidad con números**: hábitos de dinero, negociar sueldo, pedir aumento, emprender sin quebrar.
 5. **Parejas y dinero**: quién paga, cuentas en pareja, bodas, divorcio y bienes.
 6. **Temas virales**: lo que esté en tendencia esa semana con un ángulo de dinero.
+
+## Auditoría de MUSE (12-nov-2026) y lo que cambia
+Instagram, 28 días: 62 seguidores planos desde el 31-oct, 0 guardados y 0 compartidos en 12 piezas, salto de reels
+50–78 %. El pie ya pedía "Guárdalo" (desde 6-nov) y "Mándaselo a…" y no movió nada: el pie casi nadie lo lee.
+Rodrigo (12-nov): "sí, mantén el volumen" (MUSE proponía bajar a 4 por semana).
+1. **El llamado va DICHO por Victoria, no solo en el pie:** el guion cierra con "mándaselo a <persona concreta>" o
+   "guárdalo para <momento concreto>" en lugar de "Te leo" cuando la pieza es útil (reglas, fechas, cálculos).
+2. **Gancho en el segundo 0 con movimiento:** primer cuadro ya hablando o haciendo algo (formato escena), texto de
+   pantalla con la promesa. Medir el salto por reel en el tablero.
+3. **Cifras solo verificadas** (la de Profeco "$9,309 más caro" no se usa hasta tener el comparativo oficial).
+4. Medir el 19-nov contra la línea base de MUSE: seguidores 62, guardados 0, compartidos 0, salto 50–78 %.
