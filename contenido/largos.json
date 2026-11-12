@@ -1154,7 +1154,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Intro",
-    "voz": "Si vas a comprar en el Buen Fin, no le creas a la etiqueta. El año pasado hubo precios que subieron justo esos días."
+    "voz": "Si vas a comprar en el Buen Fin, no le creas a la etiqueta. El año pasado Profeco encontró una pantalla que subió de precio justo esos días."
    },
    {
     "tipo": "lamina",
@@ -1197,11 +1197,11 @@
     "titulo": "2. \"Los meses sin intereses son gratis\"",
     "dato_grande": "DEPENDE",
     "puntos": [
-     "Si fallas una mensualidad, te cobran intereses",
+     "Si no cubres una mensualidad, se suma a tu saldo y genera intereses",
      "La mensualidad se suma a tu pago mínimo"
     ],
     "fuente": "Condusef (12-nov-2019) · Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021)",
-    "voz": "Segunda. Los meses sin intereses son gratis. Depende. Según la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros, si fallas una mensualidad, el banco o la tienda te cobra intereses. Y esa mensualidad se suma a tu pago mínimo."
+    "voz": "Segunda. Los meses sin intereses son gratis. Depende. Según la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros, cada mensualidad se suma a tu pago mínimo. Y si no la cubres, se va a tu saldo y genera intereses."
    },
    {
     "tipo": "victoria",
@@ -1387,10 +1387,10 @@
    {
     "tipo": "grafica",
     "capitulo": null,
-    "titulo": "Buen Fin 2025: motivos de inconformidad",
+    "titulo": "Buen Fin 2025: principales motivos de inconformidad",
     "barras": [
      {
-      "etiqueta": "No respetar el precio anunciado",
+      "etiqueta": "No se respetó el precio anunciado",
       "valor": 50,
       "texto_valor": "50"
      },
@@ -1400,7 +1400,7 @@
       "texto_valor": "49"
      },
      {
-      "etiqueta": "Negativa a entregar",
+      "etiqueta": "Negativa a entregar el producto",
       "valor": 40,
       "texto_valor": "40"
      },
@@ -1509,6 +1509,7 @@
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "publica_utc": "2026-11-12T16:00:00Z",
   "estado": "produciendo",
-  "intercalado": true
+  "intercalado": true,
+  "revision": "12-nov-2026: revisión con fuentes oficiales (Profeco 19-nov-2025, 1-dic-2025, 15-oct, 22-oct, 26-oct, 29-oct, 7-nov, 8-nov y 9-nov-2026; SAT 14-oct-2026; Condusef 12-nov-2019, 13-nov-2025 y 10-nov-2026; LFPC texto vigente reforma DOF 12-12-2025; LFT art. 87); cambios: gancho 'hubo precios que subieron' -> 'Profeco encontró una pantalla que subió de precio justo esos días' (el comunicado del 1-dic-2025 documenta un solo caso de alza); creencia 2: meses sin intereses precisado según Condusef (la mensualidad se suma al pago mínimo y, si no se cubre, pasa al saldo y genera intereses); gráfica de inconformidades: título 'principales motivos' (son 4 de 5 motivos) y etiquetas exactas 'No se respetó el precio anunciado' y 'Negativa a entregar el producto'. Resto verificado sin cambios."
  }
 ]
