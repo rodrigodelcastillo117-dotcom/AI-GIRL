@@ -4,34 +4,84 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#070707">
-<title>Victoria · Panel</title>
+<meta name="theme-color" content="#020406">
+<title>Victoria · Centro de mando</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/panel.css">
+<link rel="stylesheet" href="/bat.css">
 </head>
 <body>
-<!-- Panel esencial (Rodrigo, 12-nov-2026: "limpio, cool, elegante, serio, fácil de leer, sin saturar, que funcione en el
-     cel… déjame LO MÁS IMPORTANTE, NADA MÁS"). Todo lo demás vive en /completo.html. -->
+<!-- Centro de mando de Victoria (12-nov-2026). Rodrigo: "me gustaba el otro, más futurista con batman, con la foto de
+     VICTORIA, todo, déjala bien chingona" + "lo que no es ESENCIAL, SIEMPRE CERRADO". Estética de batcueva (bat.css) con
+     todos los datos y estadísticas nuevos. Lo de antes sigue en /completo.html. -->
+<canvas id="particulas" aria-hidden="true"></canvas>
+<div class="fondo-brillo" aria-hidden="true"></div>
+<div class="fondo-rejilla" aria-hidden="true"></div>
+<div class="fondo-lineas" aria-hidden="true"></div>
+
 <section id="acceso" class="acceso" hidden>
   <form id="formulario" class="acceso-caja">
-    <h1 class="marca">Victoria <em>the CEO</em></h1>
+    <div class="sello" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <g class="anillo-c"><circle cx="100" cy="100" r="98" fill="none" stroke="#49d6ec" stroke-opacity=".25" stroke-dasharray="1 5"/></g>
+        <g class="anillo-a"><circle cx="100" cy="100" r="86" fill="none" stroke="#49d6ec" stroke-width="1.5" stroke-dasharray="3 7" opacity=".8"/></g>
+        <g class="anillo-b"><circle cx="100" cy="100" r="72" fill="none" stroke="#f5c542" stroke-width="3" stroke-dasharray="52 20" opacity=".9"/></g>
+        <polygon points="100,46 147,73 147,127 100,154 53,127 53,73" fill="rgba(245,197,66,.05)" stroke="#f5c542" stroke-opacity=".6"/>
+        <text class="letra" x="100" y="127" text-anchor="middle">V</text>
+      </svg>
+    </div>
+    <h1 class="acceso-titulo">Victoria <b>// Centro de mando</b></h1>
+    <p class="acceso-sub">Acceso restringido · solo personal autorizado</p>
     <label for="clave" class="sr">Clave</label>
-    <input id="clave" type="password" placeholder="Clave" autocomplete="current-password" required>
+    <input id="clave" type="password" placeholder="CLAVE DE ACCESO" autocomplete="current-password" required>
     <button type="submit">Entrar</button>
     <p id="error-acceso" class="error"></p>
   </form>
 </section>
 
+<div class="hud-marco" aria-hidden="true">
+  <i class="esquina abajo-izq"></i><i class="esquina abajo-der"></i>
+  <span class="telemetria izq">VICTORIA·OS // ENLACE SEGURO // DATOS EN VIVO // YOUTUBE · TIKTOK · INSTAGRAM · FACEBOOK</span>
+  <span class="telemetria der">CENTRO DE MANDO // SE ACTUALIZA SOLO // CDMX</span>
+</div>
+
 <main id="tablero" class="tablero" hidden>
   <header class="cabeza">
-    <h1 class="marca">Victoria <em>the CEO</em></h1>
+    <div class="marca">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><polygon points="16,2 29,9 29,23 16,30 3,23 3,9" fill="none" stroke="#f5c542" stroke-width="1.6"/><text x="16" y="21" font-size="13" font-family="Orbitron, Arial" font-weight="800" fill="#f5c542" text-anchor="middle">V</text></svg>
+      <span>Victoria <b>The CEO</b><em> · Centro de mando</em></span>
+    </div>
     <div class="cabeza-der">
       <span class="vivo"><i id="punto"></i><span id="actualizado">—</span></span>
+      <span class="reloj" id="reloj">—</span>
       <button id="salir" class="salir" type="button">Salir</button>
     </div>
   </header>
+  <div class="cinta" aria-label="Lo que sale hoy"><div class="cinta-movil" id="cinta"></div></div>
+
+  <section class="heroe">
+    <div class="avatar">
+      <svg viewBox="0 0 210 210" aria-hidden="true">
+        <g class="anillo-c"><circle cx="105" cy="105" r="104" fill="none" stroke="#49d6ec" stroke-opacity=".22" stroke-dasharray="1 5"/></g>
+        <g class="anillo-a"><circle cx="105" cy="105" r="94" fill="none" stroke="#49d6ec" stroke-width="1.5" stroke-dasharray="3 7" opacity=".85"/></g>
+        <g class="anillo-b"><circle cx="105" cy="105" r="80" fill="none" stroke="#f5c542" stroke-width="3" stroke-dasharray="48 18" opacity=".9"/></g>
+      </svg>
+      <div class="foto" id="foto"></div>
+    </div>
+    <div class="identidad">
+      <div class="usuario">@victoriatheceo · Personaje IA · TikTok · YouTube · Instagram · Facebook</div>
+      <h1 class="glitch" data-texto="Victoria The CEO">Victoria <b>The CEO</b></h1>
+      <p class="lema" id="lema">—</p>
+      <div class="gran-numero"><span class="valor" id="vistas-totales">—</span><span class="que">vistas totales</span></div>
+    </div>
+    <div class="mision">
+      <div class="codigo">Próxima misión</div>
+      <div class="cuenta" id="cuenta">—</div>
+      <div class="que"><b id="mision-que">—</b><br><span id="mision-cuando">—</span></div>
+    </div>
+  </section>
 
   <!-- 12-nov-2026, Rodrigo: "déjame el dashboard épico con la información que te pedí, lo que no es ESENCIAL, SIEMPRE
        CERRADO". Abierto: estado, cifras clave, redes, vistas y seguidores por día, tu tarea. Lo demás va plegado y
@@ -146,5 +196,6 @@
 <div id="tip" class="tip" hidden></div>
 <script src="/panel.js" defer></script>
 <script src="/stats.js" defer></script>
+<script src="/bat.js" defer></script>
 </body>
 </html>

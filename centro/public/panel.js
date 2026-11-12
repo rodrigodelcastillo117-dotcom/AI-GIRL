@@ -110,7 +110,9 @@ function suma(diario, k, desde, hasta) {
 function redes(diario) {
   const hoy = diario.at(-1)?.fecha || hoyMx();
   const seg = VIVO?.seguidores || {};
-  const seguidores = {yt: VIVO?.canal?.suscriptores, tt: seg.tt?.seguidores, ig: seg.ig?.seguidores, fb: seg.fb?.seguidores};
+  // Si /api/vivo aún no responde (o falla), la foto diaria de estadísticas (stats.js → ST) pone el número.
+  const foto = (typeof ST !== 'undefined' && ST?.seguidores?.actual) || {};
+  const seguidores = {yt: VIVO?.canal?.suscriptores ?? foto.yt, tt: seg.tt?.seguidores ?? foto.tt, ig: seg.ig?.seguidores ?? foto.ig, fb: seg.fb?.seguidores ?? foto.fb};
   const antes = {tt: seg.tt?.antes, ig: seg.ig?.antes, fb: seg.fb?.antes};
   $('redes').replaceChildren(...REDES.map((r) => {
     const ahora = suma(diario, r.k, sumarDias(hoy, -7), hoy);

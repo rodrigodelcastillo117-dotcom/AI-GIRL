@@ -16,6 +16,7 @@ async function estadisticas() {
     ST = await r.json();
   } catch { return; }
   if (!ST || !ST.generado_utc) return;
+  try { pintar(); } catch {}  // panel.js: las tarjetas de redes usan ST mientras llega /api/vivo
   for (const f of [kpis, seguidores, horas, temas, comparativas, youtube, dinero2, creditos, tablaPubs]) {
     try { f(); } catch (e) { console.error(f.name, e); }
   }
