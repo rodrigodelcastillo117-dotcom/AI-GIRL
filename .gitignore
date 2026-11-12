@@ -28,3 +28,4 @@ videos/qa/*.json
 videos/qa/*.mp4
 videos/rechazados/
 __pycache__/
+videos/qa/dashboard-*.png
