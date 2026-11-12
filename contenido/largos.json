@@ -1644,5 +1644,843 @@
   "estado": "produciendo",
   "intercalado": true,
   "revision": "12-nov-2026: revisión con fuentes oficiales (Profeco 19-nov-2025, 1-dic-2025, 15-oct, 22-oct, 26-oct, 29-oct, 7-nov, 8-nov y 9-nov-2026; SAT 14-oct-2026; Condusef 12-nov-2019, 13-nov-2025 y 10-nov-2026; LFPC texto vigente reforma DOF 12-12-2025; LFT art. 87); cambios: gancho 'hubo precios que subieron' -> 'Profeco encontró una pantalla que subió de precio justo esos días' (el comunicado del 1-dic-2025 documenta un solo caso de alza); creencia 2: meses sin intereses precisado según Condusef (la mensualidad se suma al pago mínimo y, si no se cubre, pasa al saldo y genera intereses); gráfica de inconformidades: título 'principales motivos' (son 4 de 5 motivos) y etiquetas exactas 'No se respetó el precio anunciado' y 'Negativa a entregar el producto'. Resto verificado sin cambios."
+ },
+ {
+  "id": "LC1",
+  "titulo_trabajo": "Tarjeta de crédito en diciembre: fechas, reglas, meses sin intereses y mitos del Buró",
+  "carruseles": [
+   {
+    "id": "c63",
+    "capitulo": "Fecha de corte y fecha límite"
+   },
+   {
+    "id": "c07",
+    "capitulo": "Las reglas que nadie te explica (y el gancho del intro)"
+   },
+   {
+    "id": "c24",
+    "capitulo": "Meses sin intereses en diciembre"
+   },
+   {
+    "id": "c31",
+    "capitulo": "Mitos de la tarjeta y el Buró"
+   }
+  ],
+  "seo": {
+   "palabra_clave": "tarjeta de crédito",
+   "titulo": "Tarjeta de crédito en diciembre: cómo usarla sin endeudarte",
+   "descripcion": "¿Vas a pagar la Navidad con tarjeta de crédito? Con $10,000 de deuda y solo el pago mínimo, tardas 19 años y medio. Fecha de corte, hasta 50 días sin intereses, meses sin intereses y el Buró, con la ley en la mano.\n🧮 Haz tu plan para salir de deudas: https://victoriatheceo.vercel.app/pagar-deudas?ref=yt-lc1\n\nTarjeta de crédito en diciembre: cómo usarla sin endeudarte.\n• Fecha de corte y fecha límite (normalmente 20 días naturales después): si compras justo después del corte y pagas el total, te financias hasta 50 días sin intereses.\n• Cómo se calcula el pago mínimo según el Banco de México (lo mayor entre 1.5% del saldo más intereses e IVA, o 1.25% del límite) y para qué sirve el CAT.\n• 3 reglas: paga para no generar intereses, no saques efectivo (comisión de 6% a 10% e intereses desde el primer día) y que tus pagos de deudas no pasen del 30% de tu ingreso ($4,500 si ganas $15,000).\n• Meses sin intereses: se suman a tu pago mínimo, si fallas una te cobran intereses, solo para bienes duraderos y máximo dos a la vez.\n• Mitos del Buró de Crédito: no es lista negra, un atraso dura de 1 a 6 años según el monto, nadie te borra por dinero y tu reporte es gratis una vez cada 12 meses.\nLo que digo como \"mi opinión\" es opinión, no asesoría financiera.\n\nFuentes oficiales:\n• Condusef, Proteja su Dinero, 'Utiliza la TDC a tu favor' (1-feb-2022): https://revista.condusef.gob.mx/credito/2022/02/utiliza-la-tdc-a-tu-favor/\n• Banco de México, Circular 34/2010, Reglas de tarjetas de crédito (numerales 4.1 y 4.2): https://www.banxico.org.mx/marco-normativo/normativa-emitida-por-el-banco-de-mexico/circular-34-2010/%7B0C55B906-6DB4-6B88-FED0-67987E9FB3CC%7D.pdf\n• Ley para la Transparencia y Ordenamiento de los Servicios Financieros, art. 3 (CAT): https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf\n• Condusef, ejemplo de pago mínimo ($10,000 a 55% anual, 234 pagos) y comisión por disposición de efectivo (El Imparcial, mar-2026); Profeco, pagos de crédito hasta 30% del ingreso\n• Condusef, '¿Cómo pagas tu tarjeta de crédito?' (2-ago-2019): https://www.gob.mx/condusef/articulos/como-pagas-tu-tarjeta-de-credito\n• Condusef, '¿Vas a comprar en el Buen Fin?' (12-nov-2019): https://www.gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin\n• Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025): https://www.gob.mx/condusef/articulos/el-buen-fin-2025-gasta-con-cabeza-no-con-prisa\n• Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021): https://revista.condusef.gob.mx/credito/tarjeta/2012/05/meses-sin-intereses/\n• Profeco, '¿Pagos mínimos en tarjetas? Solo cuando sea necesario' (17-sep-2021): https://www.gob.mx/profeco/articulos/pagos-minimos-en-tarjetas-solo-cuando-sea-necesario\n• Condusef, Proteja su Dinero, 'Desmitificando el Buró' (8-sep-2026): https://revista.condusef.gob.mx/credito/2026/09/desmitificando-el-buro/\n• Condusef, '¿En cuánto tiempo me borran del Buró de Crédito?' (12-oct-2016): https://www.gob.mx/condusef/articulos/no-es-una-lista-negra\n• Ley para Regular las Sociedades de Información Crediticia, arts. 23, 40 y 41: https://www.diputados.gob.mx/LeyesBiblio/pdf/LRSIC.pdf",
+   "tags": [
+    "tarjeta de crédito",
+    "tarjeta de crédito en diciembre",
+    "fecha de corte tarjeta de crédito",
+    "fecha límite de pago",
+    "pago mínimo tarjeta de crédito",
+    "cómo se calcula el pago mínimo",
+    "pago para no generar intereses",
+    "50 días sin intereses tarjeta",
+    "retirar efectivo con tarjeta de crédito",
+    "meses sin intereses",
+    "meses sin intereses y pago mínimo",
+    "qué es el cat",
+    "mitos del buró de crédito",
+    "cuánto tiempo dura el buró de crédito",
+    "reporte de crédito gratis"
+   ],
+   "hashtags": [
+    "#tarjetadecredito",
+    "#deudas",
+    "#burodecredito",
+    "#condusef",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "superior": "Tu tarjeta",
+   "grande": "19 años",
+   "banda": "pagando el mínimo",
+   "color_grande": "oro",
+   "color_banda": "rojo",
+   "variantes": [
+    {
+     "superior": "Diciembre",
+     "grande": "¿Solo el mínimo?",
+     "banda": "Error caro",
+     "color_grande": "blanco",
+     "color_banda": "rojo"
+    },
+    {
+     "superior": "Tu tarjeta",
+     "grande": "50 días",
+     "banda": "sin intereses",
+     "color_grande": "verde",
+     "color_banda": "oro"
+    }
+   ]
+  },
+  "playlist": "finanzas",
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "estado": "borrador",
+  "publica_utc": "2026-11-22T00:45:00Z",
+  "intercalado": true,
+  "revision": null,
+  "nota_revision": "Guion armado solo con datos y fuentes de c63, c07, c24 y c31 (c07, c24 y c31 revisados contra fuentes oficiales; c63 está 'listo' pero su campo revision está vacío: revisar sus 5 datos antes de producir). Falta la revisión del guion por otro agente.",
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si vas a pagar la Navidad con tarjeta de crédito, mira esto. Diez mil pesos de deuda, pagando solo el mínimo, son diecinueve años y medio de pagos."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "El pago mínimo",
+    "dato_grande": "19 años y medio",
+    "puntos": [
+     "Deuda de $10,000 con tasa de 55% anual",
+     "Pagando solo el mínimo: 234 pagos"
+    ],
+    "fuente": "Condusef, ejemplo de pago mínimo (vía El Imparcial, mar-2026)",
+    "voz": "Es un ejemplo de la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros. Una deuda de diez mil pesos, con una tasa de cincuenta y cinco por ciento anual, pagando solo el mínimo, son doscientos treinta y cuatro pagos. Diecinueve años y medio."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Fecha de corte y fecha límite",
+    "voz": "Hoy te explico tu tarjeta en cuatro partes, para que eso no te pase. Empiezo por las dos fechas que deciden cuánto pagas."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Las dos fechas de tu tarjeta",
+    "dato_grande": "20 días",
+    "puntos": [
+     "Fecha de corte: el banco suma tus compras de los últimos 30 días",
+     "Con el corte calcula tu pago mínimo y tus intereses",
+     "Fecha límite de pago: normalmente 20 días naturales después del corte"
+    ],
+    "fuente": "Condusef, Proteja su Dinero, 'Utiliza la TDC a tu favor' (1-feb-2022)",
+    "voz": "La fecha de corte es el día en que el banco suma lo que compraste en los últimos treinta días, y con eso calcula tu pago mínimo y tus intereses. La fecha límite de pago normalmente llega veinte días naturales después. Lo que pagues para ese día decide si te cobran intereses."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y con esas dos fechas sale un truco que sí te conviene, sobre todo si vas a hacer una compra grande en diciembre."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Hasta 50 días sin intereses",
+    "barras": [
+     {
+      "etiqueta": "Compras justo después del corte: hasta el siguiente corte",
+      "valor": 30.0,
+      "texto_valor": "30 días"
+     },
+     {
+      "etiqueta": "Del corte a la fecha límite de pago",
+      "valor": 20.0,
+      "texto_valor": "20 días"
+     },
+     {
+      "etiqueta": "Total para pagar sin intereses",
+      "valor": 50.0,
+      "texto_valor": "hasta 50 días"
+     }
+    ],
+    "nota": "Solo si pagas completo tu pago para no generar intereses antes de la fecha límite",
+    "fuente": "Condusef, Proteja su Dinero, 'Utiliza la TDC a tu favor' (1-feb-2022)",
+    "voz": "Si compras justo después de tu fecha de corte y pagas el total a tiempo, te financias hasta cincuenta días sin intereses. Son los treinta días hasta el siguiente corte, más los veinte hasta la fecha límite. Pero solo funciona si pagas todo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora, el pago mínimo. Es el número que más tienta en el estado de cuenta, y el que menos te conviene pagar solo."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Así se calcula tu pago mínimo",
+    "pasos": [
+     {
+      "texto": "Saca el 1.5% de tu saldo y súmale los intereses y el IVA",
+      "resultado": "Opción A"
+     },
+     {
+      "texto": "Saca el 1.25% de tu límite de crédito",
+      "resultado": "Opción B"
+     },
+     {
+      "texto": "Tu pago mínimo es la mayor de las dos",
+      "resultado": "El banco puede pedirte más, nunca menos"
+     }
+    ],
+    "fuente": "Banxico, Circular 34/2010, 'Reglas de tarjetas de crédito', numerales 4.1 y 4.2",
+    "voz": "El Banco de México tiene una regla. Se saca el uno punto cinco por ciento de tu saldo y se le suman los intereses y el impuesto. Luego, el uno punto veinticinco por ciento de tu límite de crédito. Tu mínimo es la cantidad mayor, y el banco te puede pedir más, pero nunca menos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y si estás pensando en sacar otra tarjeta, hay un solo número que junta todo lo que te cobran."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "El costo anual total",
+    "dato_grande": "Sirve para comparar",
+    "puntos": [
+     "Junta en un porcentaje anual todos los costos y gastos de tu crédito",
+     "La ley dice para qué sirve: informarte y comparar"
+    ],
+    "fuente": "Ley para la Transparencia y Ordenamiento de los Servicios Financieros, art. 3, fr. VI",
+    "voz": "Se llama costo anual total. La Ley para la Transparencia y Ordenamiento de los Servicios Financieros dice que junta en un porcentaje anual todos los costos y gastos de tu crédito, y que es para informarte y comparar. Si dudas entre dos tarjetas, compara ese número."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Las reglas que nadie te explica",
+    "voz": "Con las fechas claras, vamos a las reglas que nadie te explica. La primera te ahorra todos los intereses de tus compras."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Paga para no generar intereses",
+    "dato_grande": "Cero intereses",
+    "puntos": [
+     "Ese monto viene en tu estado de cuenta",
+     "Si lo pagas completo antes de la fecha límite, no te cobran intereses por tus compras",
+     "Ser totalero es la única forma de usar el crédito sin pagar intereses"
+    ],
+    "fuente": "Condusef (El Imparcial, mar-2026); Condusef, '¿Cómo pagas tu tarjeta de crédito?' (2-ago-2019)",
+    "voz": "En tu estado de cuenta viene un monto que se llama pago para no generar intereses. Si lo pagas completo antes de la fecha límite, no te cobran intereses por tus compras. Pagar tu saldo completo cada mes, ser totalero, es la única forma de usar el crédito de tu tarjeta sin pagar intereses."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "La segunda regla es para diciembre, cuando el efectivo se acaba antes que las posadas y la tarjeta parece la salida fácil."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Efectivo con la tarjeta, no",
+    "dato_grande": "De 6% a 10%",
+    "puntos": [
+     "Comisión de 6% a 10% en los grandes bancos",
+     "Intereses desde el primer día",
+     "Aunque pagues el total, ese efectivo sí te cuesta"
+    ],
+    "fuente": "Condusef (El Imparcial, mar-2026); Condusef (2-ago-2019)",
+    "voz": "Sacar efectivo con la tarjeta de crédito suele cobrar una comisión de seis a diez por ciento en los grandes bancos, y además intereses desde el primer día. Así que aunque seas totalero, ese efectivo sí te cuesta."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y la tercera regla es un tope. Si lo respetas, diciembre no se te come el año."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Tu tope de pagos de deudas al mes",
+    "pasos": [
+     {
+      "texto": "Toma lo que ganas al mes",
+      "resultado": "Ejemplo: $15,000"
+     },
+     {
+      "texto": "Saca el 30%",
+      "resultado": "$15,000 × 30% = $4,500"
+     },
+     {
+      "texto": "Suma todos tus pagos de créditos del mes",
+      "resultado": "Máximo $4,500"
+     }
+    ],
+    "fuente": "Profeco (pagos de crédito hasta 30% del ingreso); Condusef, '¿Vas a comprar en el Buen Fin?' (12-nov-2019)",
+    "voz": "Profeco y la comisión coinciden. No es recomendable que tus pagos de créditos al mes pasen del treinta por ciento de lo que ganas. Si ganas quince mil pesos al mes, la suma de todos tus pagos de deudas debería quedarse en cuatro mil quinientos, como máximo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Meses sin intereses en diciembre",
+    "voz": "Ahora, los meses sin intereses. En diciembre todo te lo ofrecen a meses, y no son gratis si hoy no tienes el dinero."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Los meses se suman",
+    "dato_grande": "Van encima del mínimo",
+    "puntos": [
+     "Si no pagas completo, las mensualidades se suman a tu pago mínimo",
+     "Si no pagas una mensualidad a tiempo, te cobran intereses",
+     "Suma todas tus mensualidades antes de la siguiente compra"
+    ],
+    "fuente": "Condusef (12-nov-2019); Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021); Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025)",
+    "voz": "Si no pagas tu tarjeta completa, las mensualidades a meses sin intereses van encima de tu pago mínimo. Si no pagas una mensualidad a tiempo, el banco o la tienda te cobra intereses. Por eso, antes de la siguiente compra, suma todas las mensualidades que ya traes."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "La comisión da otras dos reglas. Yo las pegaría en la cartera antes de salir a comprar los regalos."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Antes de comprar a meses",
+    "dato_grande": "Máximo 2 a la vez",
+    "puntos": [
+     "Solo bienes duraderos, no consumos pasajeros",
+     "La cena se acaba en una noche; la mensualidad sigue",
+     "Máximo dos compras a meses sin intereses al mismo tiempo"
+    ],
+    "fuente": "Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025); Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021)",
+    "voz": "Primero, a meses solo bienes duraderos, no consumos pasajeros. La cena de Navidad se acaba en una noche, y la mensualidad sigue. Segundo, máximo dos compras a meses sin intereses al mismo tiempo, para que no pierdas la cuenta. Las dos son recomendaciones oficiales, no mías."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Mitos de la tarjeta y el Buró",
+    "voz": "Y para cerrar, los mitos. Lo que todos creen de su tarjeta y del Buró de Crédito, verificado con la ley."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "MITO: Con el pago mínimo no pagas intereses",
+    "dato_grande": "MITO",
+    "puntos": [
+     "El mínimo te evita intereses moratorios",
+     "Pero pagas intereses ordinarios por todo el saldo que no cubriste"
+    ],
+    "fuente": "Profeco, '¿Pagos mínimos en tarjetas? Solo cuando sea necesario' (17-sep-2021)",
+    "voz": "Primer mito. Que pagando el mínimo no pagas intereses. Según Profeco, el mínimo te evita los intereses moratorios, pero sí pagas intereses ordinarios por todo el saldo que no cubriste. Por eso diez mil pesos se vuelven diecinueve años y medio de pagos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "El segundo mito es el que más miedo da. Y por ese miedo, hay gente que se deja estafar."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "El Buró no es lista negra",
+    "dato_grande": "Es tu historial",
+    "puntos": [
+     "Registra cada pago puntual, igual que tus atrasos",
+     "Pagar tu deuda no borra el registro al instante",
+     "Quien te cobra por borrarte, te estafa"
+    ],
+    "fuente": "Condusef, Proteja su Dinero, 'Desmitificando el Buró' (8-sep-2026); LRSIC, art. 23; Condusef (12-oct-2016)",
+    "voz": "El Buró de Crédito no es una lista de morosos. Es un historial que registra cada pago puntual, igual que tus atrasos. Pagar tu deuda no borra el registro al instante. Y si alguien te ofrece borrarte a cambio de dinero, eso no se puede hacer. Te está estafando."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Entonces, ¿cuánto tiempo se queda ahí un atraso? Depende de cuánto debías."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Cuánto dura un atraso en el Buró",
+    "barras": [
+     {
+      "etiqueta": "Hasta 25 UDIS",
+      "valor": 1.0,
+      "texto_valor": "1 año"
+     },
+     {
+      "etiqueta": "Más de 25 y hasta 500 UDIS",
+      "valor": 2.0,
+      "texto_valor": "2 años"
+     },
+     {
+      "etiqueta": "Más de 500 y hasta 1,000 UDIS",
+      "valor": 4.0,
+      "texto_valor": "4 años"
+     },
+     {
+      "etiqueta": "Más de 1,000 UDIS",
+      "valor": 6.0,
+      "texto_valor": "6 años"
+     }
+    ],
+    "nota": null,
+    "fuente": "Condusef (12-oct-2016): deudas menores a 400 mil UDIS, sin juicio ni fraude; pagar con descuento no te borra antes; LRSIC, art. 23",
+    "voz": "Si debías hasta veinticinco unidades de inversión, el registro dura un año. De ahí y hasta quinientas, dos años. Hasta mil, cuatro años. Y si debías más de mil, seis años. Ojo, pagar con descuento no hace que te borren antes."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y el último dato es gratis, literal. Una vez al año puedes revisar todo esto sin pagar nada."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "A MEDIAS: Ver tu reporte de crédito es gratis",
+    "dato_grande": "1 vez cada 12 meses",
+    "puntos": [
+     "Gratis por correo electrónico o recogiéndolo",
+     "Más veces, ya no es gratis por ley",
+     "Si pides que te lo manden en sobre a tu casa, tampoco"
+    ],
+    "fuente": "LRSIC, arts. 40 y 41; Condusef (12-oct-2016)",
+    "voz": "Tu reporte de crédito es gratis una vez cada doce meses, si lo pides por correo electrónico o vas a recogerlo. Si lo pides más veces, o pides que te lo manden en sobre a tu casa, la ley ya no te lo garantiza gratis. Revísalo antes de pedir otro crédito."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Antes de irte, te dejo todo en una sola lámina. Tómale captura antes de tu próxima compra con tarjeta."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Tu tarjeta en diciembre, en una lámina",
+    "dato_grande": null,
+    "puntos": [
+     "Anota tu fecha de corte y tu fecha límite",
+     "Paga completo tu pago para no generar intereses",
+     "Nada de efectivo con la tarjeta de crédito",
+     "Pagos de deudas: máximo 30% de lo que ganas",
+     "A meses: solo lo que dura, y máximo dos a la vez"
+    ],
+    "fuente": "Resumen de este video: Condusef, Profeco y Banco de México",
+    "voz": "Anota tu fecha de corte y tu fecha límite. Paga completo tu pago para no generar intereses. No saques efectivo con la tarjeta. Que tus pagos de deudas no pasen del treinta por ciento de lo que ganas. Y a meses, solo lo que dura, y máximo dos compras a la vez."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "En mi opinión, tu tarjeta es dinero prestado, no sueldo extra. ¿Qué día es tu fecha de corte? Comenta el número y suscríbete. Capital ya anotó la suya."
+   }
+  ]
+ },
+ {
+  "id": "LC2",
+  "titulo_trabajo": "¿Alcanza el salario mínimo 2026? Renta, días de trabajo y 3 sueldos de ejemplo",
+  "carruseles": [
+   {
+    "id": "c66",
+    "capitulo": "Intro y Cuánto te llega"
+   },
+   {
+    "id": "c67",
+    "capitulo": "La renta se come el 39%"
+   },
+   {
+    "id": "c71",
+    "capitulo": "Cuántos días trabajas para pagarlo"
+   },
+   {
+    "id": "c68",
+    "capitulo": "¿Te alcanza tu sueldo? 3 ejemplos"
+   }
+  ],
+  "seo": {
+   "palabra_clave": "salario mínimo 2026",
+   "titulo": "Salario mínimo 2026: ¿alcanza para vivir en México?",
+   "descripcion": "Salario mínimo 2026: $315.04 al día, $9,582.47 al mes. ¿Alcanza? La renta promedio ya se come el 39% y comer lo mínimo cuesta 8 días de trabajo. Hice las cuentas con datos de CONASAMI e INEGI.\n🧮 Haz las tuyas en 10 segundos: https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo?ref=yt-lc2\n\nSalario mínimo 2026: ¿alcanza para vivir en México?\n• Cuánto es: $315.04 diarios desde el 1 de enero de 2026 (+13%), $9,582.47 al mes; en la frontera norte $440.87 diarios, $13,409.80 al mes. No se le retiene ISR y la cuota obrera del IMSS la paga el patrón.\n• Por quincena: $4,791.24 en promedio ($4,725.60 una de 15 días y $5,040.64 una de 16).\n• La renta: referencia del 30% que cita la ONU ($2,875 con el mínimo) contra la renta promedio de $3,724 (INEGI, ENIGH 2024, cálculo propio con microdatos). Uno de cada cinco hogares que rentan paga más de una quincena del mínimo.\n• En días de trabajo: comer un mes, 8 días; la renta promedio, casi 12; lo básico, casi 16; un iPhone 17 de contado, casi 70. Tu aguinaldo mínimo (15 días, $4,725.60) no llega ni a la cuarta parte.\n• 3 sueldos de ejemplo: salario mínimo en ciudad, familia de 3 con $15,000 netos y $8,000 en un pueblo sin renta.\nLas cuentas son ejemplos con promedios oficiales, no una experiencia vivida. Lo que digo como \"mi regla\" es opinión, no asesoría financiera.\n\nFuentes oficiales:\n• CONASAMI, Resolución del Consejo de Representantes, salarios mínimos 2026 (DOF 9-dic-2025): https://dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025\n• STPS/CONASAMI, incremento de 13% al salario mínimo general en 2026: https://www.gob.mx/stps/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026-414320\n• Ley del ISR, art. 96: https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf\n• Ley del Seguro Social, art. 36: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf\n• Ley Federal del Trabajo, arts. 87 y 97: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf\n• ONU, Informe del Secretario General E/CN.5/2020/3 (referencia del 30%): https://digitallibrary.un.org/record/3840349/files/E_CN-5_2020_3-ES.pdf\n• INEGI, ENIGH 2024, microdatos de viviendas (renta; cálculo propio ponderado): https://www.inegi.org.mx/contenidos/programas/enigh/nc/2024/microdatos/enigh2024_ns_viviendas_csv.zip\n• INEGI, Líneas de Pobreza por Ingresos, octubre de 2026 (boletín 689/26)\n• Apple México, precio de contado del iPhone 17 de 256 GB (consultado el 11-nov-2026)",
+   "tags": [
+    "salario mínimo 2026",
+    "cuánto es el salario mínimo 2026",
+    "salario mínimo 2026 mensual",
+    "salario mínimo quincena 2026",
+    "salario mínimo frontera norte 2026",
+    "alcanza el salario mínimo",
+    "vivir con el salario mínimo en méxico",
+    "salario mínimo isr",
+    "renta promedio en méxico",
+    "cuánto debo pagar de renta",
+    "regla del 30 por ciento renta",
+    "línea de pobreza inegi 2026",
+    "me alcanza mi sueldo",
+    "aguinaldo con salario mínimo",
+    "conasami 2026"
+   ],
+   "hashtags": [
+    "#salariominimo",
+    "#salariominimo2026",
+    "#finanzaspersonales",
+    "#renta",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "superior": "Salario mínimo 2026",
+   "grande": "¿Alcanza?",
+   "banda": "Hice las cuentas",
+   "color_grande": "blanco",
+   "color_banda": "oro",
+   "variantes": [
+    {
+     "superior": "Con el mínimo",
+     "grande": "39% renta",
+     "banda": "Ya te pasaste",
+     "color_grande": "oro",
+     "color_banda": "rojo"
+    },
+    {
+     "superior": "Un iPhone 17",
+     "grande": "70 días",
+     "banda": "de salario mínimo",
+     "color_grande": "oro",
+     "color_banda": "turquesa"
+    }
+   ]
+  },
+  "playlist": "finanzas",
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "estado": "borrador",
+  "publica_utc": "2026-11-26T00:45:00Z",
+  "intercalado": true,
+  "revision": null,
+  "nota_revision": "Guion armado solo con datos y fuentes de c66, c67, c71 y c68 (los 4 revisados contra fuentes oficiales el 10 y 11-nov-2026). Falta la revisión del guion por otro agente. Si la CONASAMI anuncia el salario mínimo 2027 antes de publicar, decir en el gancho que son las cifras de 2026.",
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si ganas el salario mínimo en México, la renta promedio ya se come casi el cuarenta por ciento de tu sueldo. Hice todas las cuentas."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Salario mínimo 2026",
+    "dato_grande": "$315.04 al día",
+    "puntos": [
+     "$9,582.47 al mes",
+     "Subió 13% contra 2025",
+     "Vigente desde el 1 de enero de 2026"
+    ],
+    "fuente": "CONASAMI, Resolución del Consejo de Representantes (DOF 9-dic-2025); STPS/CONASAMI, boletín",
+    "voz": "Primero, cuánto es. Desde el uno de enero de dos mil veintiséis, el salario mínimo general es de trescientos quince pesos con cuatro centavos al día. Son nueve mil quinientos ochenta y dos pesos con cuarenta y siete centavos al mes, trece por ciento más que en dos mil veinticinco."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cuánto te llega",
+    "voz": "Hoy lo hago en cuatro partes. Cuánto te llega, la renta, cuántos días trabajas para cada cosa y tres sueldos de ejemplo."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Salario mínimo al mes, 2026",
+    "barras": [
+     {
+      "etiqueta": "Salario mínimo general",
+      "valor": 9582.47,
+      "texto_valor": "$9,582.47"
+     },
+     {
+      "etiqueta": "Zona Libre de la Frontera Norte",
+      "valor": 13409.8,
+      "texto_valor": "$13,409.80"
+     }
+    ],
+    "nota": "Frontera norte: $440.87 al día (+5%)",
+    "fuente": "CONASAMI, Resolución del Consejo de Representantes (DOF 9-dic-2025)",
+    "voz": "En la Zona Libre de la Frontera Norte es más alto, cuatrocientos cuarenta pesos con ochenta y siete centavos al día. Eso da trece mil cuatrocientos nueve pesos con ochenta centavos al mes. Todo lo que sigue lo calculo con el salario mínimo general."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y algo que casi nadie sabe. Al salario mínimo no le retienen impuesto, así que te llega casi completo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Te llega completo (casi siempre)",
+    "dato_grande": "Sin retención de impuesto",
+    "puntos": [
+     "No se le retiene ISR (Ley del ISR, art. 96)",
+     "La cuota obrera del IMSS la paga tu patrón (LSS, art. 36)",
+     "Descuentos solo por pensión alimenticia, vivienda del patrón, Infonavit o Fonacot"
+    ],
+    "fuente": "Ley del ISR, art. 96; Ley del Seguro Social, art. 36; LFT, art. 97",
+    "voz": "La Ley del Impuesto sobre la Renta dice que no se le retiene impuesto a quien solo gana un salario mínimo. Y la Ley del Seguro Social dice que la cuota del trabajador la paga completa el patrón. Solo te pueden descontar pensión alimenticia, la renta de una vivienda del patrón o créditos de vivienda y de consumo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora, ¿cuánto es eso por quincena? Porque así lo cobras, y así se te va, en dos partes."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Tu salario mínimo por quincena",
+    "pasos": [
+     {
+      "texto": "Salario mínimo al mes",
+      "resultado": "$9,582.47"
+     },
+     {
+      "texto": "Entre dos quincenas",
+      "resultado": "$9,582.47 ÷ 2 = $4,791.24 en promedio"
+     },
+     {
+      "texto": "Quincena de 15 días o de 16 días",
+      "resultado": "$4,725.60 o $5,040.64"
+     }
+    ],
+    "fuente": "Cálculo propio con CONASAMI 2026 ($315.04 diarios)",
+    "voz": "Divide entre dos y te queda un promedio de cuatro mil setecientos noventa y un pesos por quincena. Una quincena de quince días son cuatro mil setecientos veinticinco pesos con sesenta centavos, y una de dieciséis, cinco mil cuarenta. Con eso van la renta, la comida, el transporte y todo lo demás."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "La renta se come el 39%",
+    "voz": "Y lo primero que sale de esa quincena es la renta. Aquí es donde la cuenta empieza a doler."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "La referencia del 30%",
+    "dato_grande": "$2,875 al mes",
+    "puntos": [
+     "La vivienda deja de ser asequible si cuesta más del 30% de los ingresos del hogar",
+     "Es una referencia que cita la ONU, no una ley",
+     "30% de un salario mínimo: $2,875"
+    ],
+    "fuente": "ONU, Informe del Secretario General E/CN.5/2020/3 (27-nov-2019); cálculo propio",
+    "voz": "Un informe de la ONU cita un parámetro común. La vivienda deja de ser asequible si cuesta más del treinta por ciento de los ingresos del hogar. Es una referencia, no una ley. Con un salario mínimo, ese treinta por ciento son dos mil ochocientos setenta y cinco pesos al mes."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora compáralo con lo que de verdad se paga en las más de seis millones de viviendas rentadas del país."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Renta al mes de los hogares que rentan (2024)",
+    "barras": [
+     {
+      "etiqueta": "La mitad pagaba esto o menos",
+      "valor": 2500.0,
+      "texto_valor": "$2,500"
+     },
+     {
+      "etiqueta": "Tu tope con el 30% del mínimo",
+      "valor": 2875.0,
+      "texto_valor": "$2,875"
+     },
+     {
+      "etiqueta": "Ciudades de 100 mil o más: la mitad pagaba",
+      "valor": 3000.0,
+      "texto_valor": "$3,000"
+     },
+     {
+      "etiqueta": "Promedio nacional",
+      "valor": 3724.0,
+      "texto_valor": "$3,724"
+     }
+    ],
+    "nota": "Rentas de 2024 contra el salario mínimo de 2026: la comparación se queda corta",
+    "fuente": "INEGI, ENIGH 2024 (microdatos, cálculo propio ponderado); ONU E/CN.5/2020/3",
+    "voz": "Según la encuesta de ingresos y gastos del INEGI, en dos mil veinticuatro los hogares que rentan pagaban en promedio tres mil setecientos veinticuatro pesos al mes. Eso es el treinta y nueve por ciento del mínimo. La mitad pagaba dos mil quinientos o menos, y en ciudades de cien mil habitantes o más, tres mil."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Treinta y nueve por ciento, y eso con rentas de dos mil veinticuatro contra el salario de hoy."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Uno de cada cinco",
+    "dato_grande": "21%",
+    "puntos": [
+     "Pagaba más de $4,791 al mes de renta",
+     "Una quincena entera del salario mínimo, solo de renta",
+     "Con la renta promedio te quedan unos $5,858 para todo lo demás"
+    ],
+    "fuente": "INEGI, ENIGH 2024 (microdatos, cálculo propio)",
+    "voz": "El veintiuno por ciento de los hogares que rentan pagaba más de cuatro mil setecientos noventa y un pesos al mes. Es una quincena entera del salario mínimo, solo de renta. Y con la renta promedio te quedan unos cinco mil ochocientos cincuenta y ocho pesos para comida, transporte, luz y todo lo demás."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cuántos días trabajas para pagarlo",
+    "voz": "Ahora te lo traduzco a algo que se siente más. Cuántos días tienes que trabajar para pagar cada cosa."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Días de salario mínimo para pagar esto",
+    "barras": [
+     {
+      "etiqueta": "Comer un mes, lo mínimo",
+      "valor": 8.24,
+      "texto_valor": "8 días"
+     },
+     {
+      "etiqueta": "La renta promedio",
+      "valor": 11.82,
+      "texto_valor": "casi 12 días"
+     },
+     {
+      "etiqueta": "Vivir lo básico",
+      "valor": 15.82,
+      "texto_valor": "casi 16 días"
+     }
+    ],
+    "nota": "Con $315.04 al día; comida y lo básico, para 1 persona en ciudad",
+    "fuente": "CONASAMI 2026; INEGI, líneas de pobreza urbanas por ingresos, oct-2026; INEGI, ENIGH 2024, renta promedio por hogar (cálculo propio)",
+    "voz": "Con trescientos quince pesos al día, comer un mes, lo mínimo para una persona en la ciudad, son ocho días de trabajo. La renta promedio, casi doce días. Y comida con lo básico, como transporte, salud y ropa, casi dieciséis días. Y eso no alcanza para una renta completa."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y ahora una cuenta para quien está pensando en estrenar celular esta Navidad, o en sacarlo a meses."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Tu aguinaldo mínimo contra un celular",
+    "barras": [
+     {
+      "etiqueta": "Tu aguinaldo mínimo, 15 días",
+      "valor": 4725.6,
+      "texto_valor": "$4,725.60"
+     },
+     {
+      "etiqueta": "iPhone 17 de 256 GB, de contado",
+      "valor": 21999.0,
+      "texto_valor": "$21,999"
+     }
+    ],
+    "nota": "El celular son casi 70 días de salario mínimo; el aguinaldo mínimo no llega ni a la cuarta parte",
+    "fuente": "Apple México, precio de contado (11-nov-2026); LFT, art. 87; cálculo propio",
+    "voz": "Un iPhone diecisiete cuesta desde veintiún mil novecientos noventa y nueve pesos de contado. Son casi setenta días de salario mínimo, más de dos meses sin gastar en nada más. Y tu aguinaldo mínimo, quince días, son cuatro mil setecientos veinticinco pesos con sesenta centavos. Ni la cuarta parte."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "¿Te alcanza tu sueldo? 3 ejemplos",
+    "voz": "No es para que no te compres nada, es para que sepas cuántos días cuesta. Ahora, tres sueldos de ejemplo."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Ejemplo 1: salario mínimo, 1 persona en ciudad",
+    "pasos": [
+     {
+      "texto": "Sueldo al mes",
+      "resultado": "$9,582"
+     },
+     {
+      "texto": "Menos la renta promedio nacional",
+      "resultado": "− $3,724 (39% del sueldo)"
+     },
+     {
+      "texto": "Menos la comida mínima",
+      "resultado": "− $2,594 = te quedan $3,264"
+     }
+    ],
+    "fuente": "CONASAMI 2026; INEGI, ENIGH 2024 y líneas de pobreza oct-2026; cálculo propio",
+    "voz": "Primer ejemplo. Una persona en la ciudad, con el salario mínimo y la renta promedio nacional. La renta se lleva el treinta y nueve por ciento. Y después de la comida mínima, le quedan tres mil doscientos sesenta y cuatro pesos para todo lo demás."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora una familia de tres en la ciudad, con un sueldo que suena mucho mejor."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Ejemplo 2: familia de 3 en ciudad",
+    "barras": [
+     {
+      "etiqueta": "Sueldo neto",
+      "valor": 15000.0,
+      "texto_valor": "$15,000"
+     },
+     {
+      "etiqueta": "Renta (43%)",
+      "valor": 6500.0,
+      "texto_valor": "$6,500"
+     },
+     {
+      "etiqueta": "Comida mínima de 3 personas",
+      "valor": 7783.0,
+      "texto_valor": "$7,783"
+     },
+     {
+      "etiqueta": "Lo que queda: no alcanza",
+      "valor": 717.0,
+      "texto_valor": "$717"
+     }
+    ],
+    "nota": null,
+    "fuente": "INEGI, líneas de pobreza por ingresos, octubre 2026; cálculo propio",
+    "voz": "Quince mil pesos netos y seis mil quinientos de renta. El cuarenta y tres por ciento se va en renta. La comida mínima de tres personas cuesta siete mil setecientos ochenta y tres pesos. Quedan setecientos diecisiete para transporte, luz, ropa y todo lo demás. No alcanza."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y el tercer ejemplo gana menos, pero le va mejor. Mira por qué."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Ejemplo 3: sin renta",
+    "dato_grande": "Te quedan $4,107",
+    "puntos": [
+     "$8,000 al mes, 2 personas, en un pueblo",
+     "Casa propia: no paga renta",
+     "Comida mínima: $3,893 (sin contar predial ni servicios)"
+    ],
+    "fuente": "INEGI, líneas de pobreza por ingresos, octubre 2026 (rural); cálculo propio",
+    "voz": "Ocho mil pesos al mes, dos personas en un pueblo y casa propia. La comida mínima cuesta tres mil ochocientos noventa y tres pesos, y les quedan cuatro mil ciento siete, sin contar predial ni servicios. No pagar renta cambia el mes."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Por eso mi regla no empieza por el café. Empieza por la renta."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Mi regla",
+    "dato_grande": "Renta: 30% o menos",
+    "puntos": [
+     "Si tu renta pasa del 30% de tu sueldo, es lo primero que hay que mover",
+     "Bajarla te libera más dinero que cualquier recorte de café",
+     "Compartir depa no es fracaso"
+    ],
+    "fuente": "Opinión de Victoria",
+    "voz": "Es mi opinión, no una ley. Si tu renta pasa del treinta por ciento de tu sueldo, es lo primero que hay que mover. Bajarla te libera más dinero que cualquier recorte de café. Y compartir depa no es fracaso, puede ser lo que más alivia tu presupuesto."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Si quieres hacer tus propias cuentas, hice una calculadora gratis. Así funciona."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Hazla tú en 10 segundos",
+    "dato_grande": "Calculadora gratis",
+    "puntos": [
+     "Pones tu sueldo, tu renta y cuántos viven de él",
+     "Te da tu tope de renta y lo que te queda después de comer",
+     "Y un plan de 3 pasos"
+    ],
+    "fuente": "Calculadora de Victoria, ¿Te alcanza tu sueldo? (enlace en la descripción)",
+    "voz": "Pones tu sueldo, tu renta y cuántas personas viven de él. Te da tu tope de renta, lo que te queda después de comer y un plan de tres pasos. Es gratis, y el enlace está en la descripción."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Antes de irte, te dejo todas las cuentas en una sola lámina, para que le tomes captura."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "El salario mínimo 2026, en una lámina",
+    "dato_grande": null,
+    "puntos": [
+     "$9,582.47 al mes, casi sin descuentos",
+     "Renta promedio: 39% del sueldo",
+     "Comer un mes: 8 días de trabajo",
+     "Lo básico: casi 16 días",
+     "Tu tope de renta con el 30%: $2,875"
+    ],
+    "fuente": "Resumen de este video: CONASAMI 2026, INEGI (ENIGH 2024 y líneas de pobreza oct-2026), ONU",
+    "voz": "Nueve mil quinientos ochenta y dos pesos al mes, casi sin descuentos. La renta promedio se lleva el treinta y nueve por ciento. Comer un mes, lo mínimo, cuesta ocho días de trabajo, y lo básico, casi dieciséis. Y con la referencia del treinta por ciento, tu tope de renta son dos mil ochocientos setenta y cinco pesos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "¿Qué porcentaje de tu sueldo se va en renta? Comenta el número y suscríbete. Capital ya hizo su presupuesto, cien por ciento croquetas."
+   }
+  ]
  }
 ]
