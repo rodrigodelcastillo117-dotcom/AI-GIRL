@@ -1,11 +1,11 @@
 {
- "generado_utc": "2026-11-12T04:52:29Z",
- "estado": "aviso",
+ "generado_utc": "2026-11-12T04:58:39Z",
+ "estado": "alerta",
  "checks": [
   {
-   "area": "Replicate",
-   "estado": "aviso",
-   "detalle": "Saldo estimado $14.24: alcanza para ~1 video largo más."
+   "area": "Gasto",
+   "estado": "alerta",
+   "detalle": "Replicate de Victoria: hoy $24.79 · semana $25.02 de $25 · mes $25.58 de $80 (proyección del mes $69.75) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
   },
   {
    "area": "Calendario",
@@ -38,9 +38,9 @@
    "detalle": "LA3: sale 2026-11-20, en producción"
   },
   {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LB1: subido sin recortes: recortes.py LB1"
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LB1: YouTube y Facebook 2026-11-12, con recortes"
   },
   {
    "area": "Videos largos",
@@ -51,6 +51,11 @@
    "area": "Videos largos",
    "estado": "ok",
    "detalle": "LC2: sale 2026-11-26, en producción"
+  },
+  {
+   "area": "Recortes",
+   "estado": "aviso",
+   "detalle": "8 recortes listos sin horario: recortes.py programar"
   },
   {
    "area": "Recortes",
