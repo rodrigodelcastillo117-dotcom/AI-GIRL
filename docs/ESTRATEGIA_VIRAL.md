@@ -118,19 +118,39 @@ deja Meta. Nunca mensajes de prospección ni a quien no escribió. Si alguien pi
 de dinero (colaboraciones, prensa, quejas), se le contesta que su mensaje pasa al equipo y se le avisa a Rodrigo en la
 línea final.
 
-## Comenta hoy (TikTok, 10-nov-2026)
+## Comenta hoy (TikTok, 10-nov-2026; reglas cambiadas el 12-nov-2026)
 
 TikTok no deja comentar en videos ajenos por API, y automatizarlo con un navegador arriesga la cuenta. Por eso la rutina
-de las 6:37 arma contenido/comentar_hoy.json y Rodrigo comenta a mano desde el panel (sección "Comenta hoy"):
-- Busca con search_viral_videos (revid) videos de TikTok en español de los últimos 3 días: finanzas personales, dinero en
-  pareja, aguinaldo, tarjetas, Buen Fin, bancos, SAT. Varias búsquedas, porque el buscador trae ruido (recetas, deportes).
-- Elige de 3 a 5: 2-3 grandes (100 mil vistas o más, para que mucha gente vea el comentario) y 1-2 chicos de finanzas en
-  México (contestan y devuelven la visita). Nunca de menores de edad, política partidista, tragedias ni videos de odio.
-  Si no hay 3 que valgan la pena, pon los que haya y dilo; no rellenes.
-- Comentario de máximo 150 caracteres (límite de TikTok), en la voz de Victoria, específico al video: suma un dato
-  mexicano comprobado (con fuente oficial verificada con WebSearch), una opinión o una pregunta que invite a contestar.
-  Nunca enlaces, "sígueme", autopromoción, consejos de inversión ni el mismo texto en dos videos.
-- Formato: {"fecha", "videos": [{"url", "autor", "vistas", "comentarios", "publicado", "tema", "comentario", "por_que"}]}.
+de las 6:37 arma contenido/comentar_hoy.json y Rodrigo comenta a mano desde el panel (sección "Comenta hoy").
+
+LO QUE APRENDIMOS (12-nov-2026, Rodrigo: "de los creadores sí, pero solo eso"): los creadores le dan like y contestan
+a los comentarios de Victoria, pero el público no, y nadie llega al perfil. Los comentarios eran consejos amables para el
+creador ("Truco de Capital: apunta tu cuota..."). Al creador le gustan; al público no le dicen nada, no juntan likes y
+se quedan abajo, donde nadie los ve. Desde hoy se escribe PARA EL PÚBLICO del video, no para el creador:
+- OBJETIVO: que el comentario junte likes de otros y suba a los primeros lugares (ahí lo ven miles y algunos tocan el
+  perfil). Se mide así: Rodrigo dice cuáles subieron a los de arriba.
+- LLEGAR TEMPRANO: videos publicados hace menos de 24 h (mejor menos de 12 h) que ya van creciendo. Un comentario en un
+  video de 3 días con 500 comentarios no lo ve nadie. 4 a 6 videos al día, no 2; si el buscador trae poco en español de
+  México, haz más búsquedas (aguinaldo, quincena, renta, sueldo, tarjeta, deudas, Buen Fin, "cuánto gano", pareja y
+  dinero, "me corrieron"), no bajes la vara.
+- TAMAÑO: 20 mil a 1 millón de vistas, de México. Los chicos (menos de 10 mil) solo para hacer amistad con creadores,
+  máximo 1 al día.
+- QUÉ ESCRIBIR (uno de estos, máximo 120 caracteres, que se entienda sin ver el video):
+  1. La frase que todos pensaron y nadie dijo, con humor ("Mi aguinaldo ya tiene dueño y no soy yo 🥲").
+  2. Un número mexicano que sorprende y sirve, comprobado con fuente oficial ("Ojo: si te corren antes del 20 de
+     diciembre, igual te toca la parte de tu aguinaldo. Art. 87 LFT.").
+  3. Tomar postura clara para que la gente conteste a favor o en contra ("Prestarle a un familiar es regalar dinero con
+     pasos extra. Cámbienme de opinión.").
+- NUNCA: consejos dirigidos al creador ("buen video", "truco: haz esto"), enlaces, "sígueme", autopromoción, nombrar a
+  Victoria o a Capital (el nombre de la cuenta ya lo dice), consejos de inversión, el mismo texto en dos videos.
+- Nunca de menores de edad, política partidista, tragedias ni videos de odio.
+- Formato: {"fecha", "videos": [{"url", "autor", "vistas", "comentarios", "publicado", "tema", "tipo": "frase|dato|postura",
+  "comentario", "por_que"}]}.
+
+CREADORES QUE YA CONTESTARON = la puerta más barata. Si un creador le contestó a Victoria, no es para comentarle más:
+es para proponerle algo juntos (un dueto o stitch "Victoria hace las cuentas de tu video"). Rodrigo manda el mensaje a
+mano; la rutina deja el texto listo en contenido/comentar_hoy.json → "colaborar": [{"autor", "mensaje"}] cuando Rodrigo
+diga quién contestó.
 
 ## PLAN VIGENTE 10-nov → 24-nov-2026 (congelado: no se cambia el formato hasta medirlo el 24-nov)
 
