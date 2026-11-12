@@ -2,6 +2,8 @@
 shorts? así se reutilizan esos videos y ahorramos").
 
 Uso: python scripts/recortes.py <id del largo>          (con VOZ_PYTHON en el entorno para los subtítulos)
+     python scripts/recortes.py programar             2 al día desde el día siguiente a que sale su largo
+     python scripts/recortes.py publicar <id>          YouTube Shorts + Instagram + TikTok + Facebook
 
 Cada capítulo del largo es un short (si pasa de MAX_S, se parte donde Victoria vuelve a hablar). Como los largos van
 intercalados (Victoria → lámina → Victoria...), cada capítulo abre con Victoria a cámara: el gancho con cara, sin pagar
@@ -195,7 +197,101 @@ def recortar(vid):
     print(f'ok recortes {vid}: {len(registro)} shorts')
 
 
+# ---- Publicar en TODAS las redes (Rodrigo, 12-nov-2026: "TODO SE UTILIZA, TODO SE SUBE, TODO SE ADAPTA") ----
+# YouTube Shorts (youtube.py), Instagram Reel + TikTok + Facebook (publer.py: Facebook sale a la hora de Instagram).
+# 2 al día, desde el día siguiente a que sale su video largo (cada short dice "Video completo en mi canal"), en horas que
+# no chocan con los carruseles de la rutina (TikTok 9/13/19 h, Reels 11 y ~19 h): hora de México.
+TURNOS = [{'yt': '14:00', 'ig': '15:00', 'tt': '16:00'}, {'yt': '20:30', 'ig': '21:30', 'tt': '22:15'}]
+
+
+def _utc(dia, hora):
+    import datetime
+    from zoneinfo import ZoneInfo
+    h, m = map(int, hora.split(':'))
+    local = datetime.datetime.combine(dia, datetime.time(h, m), tzinfo=ZoneInfo('America/Mexico_City'))
+    return local.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+
+def programar():
+    """Reparte en el calendario los recortes "listo" que aún no tienen hora: 2 al día, alternando videos largos."""
+    import datetime
+    from zoneinfo import ZoneInfo
+    ruta = os.path.join(RAIZ, 'contenido', 'recortes.json')
+    todos = json.load(open(ruta))
+    largos = {l['id']: l for l in json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json')))}
+    ocupados = {}
+    for r in todos:
+        if r.get('publica_utc_por_red'):
+            dia = r['publica_utc_por_red']['ig'][:10]
+            ocupados[dia] = ocupados.get(dia, 0) + 1
+    hoy = datetime.datetime.now(ZoneInfo('America/Mexico_City')).date()
+    pendientes = [r for r in todos if r.get('estado') == 'listo' and not r.get('publica_utc_por_red')]
+    # Alternar: uno de cada largo por turno (más variedad), respetando el orden de los capítulos.
+    por_largo = {}
+    for r in pendientes:
+        por_largo.setdefault(r['largo'], []).append(r)
+    orden = []
+    while any(por_largo.values()):
+        for k in sorted(por_largo):
+            if por_largo[k]:
+                orden.append(por_largo[k].pop(0))
+    for r in orden:
+        sale = largos.get(r['largo'], {}).get('publica_utc')
+        desde = (datetime.datetime.fromisoformat(sale.replace('Z', '+00:00')).astimezone(ZoneInfo('America/Mexico_City')).date()
+                 + datetime.timedelta(days=1)) if sale else hoy + datetime.timedelta(days=1)
+        dia = max(desde, hoy + datetime.timedelta(days=1))
+        while ocupados.get(dia.isoformat(), 0) >= len(TURNOS):
+            dia += datetime.timedelta(days=1)
+        turno = TURNOS[ocupados.get(dia.isoformat(), 0)]
+        r['publica_utc_por_red'] = {red: _utc(dia, h) for red, h in turno.items()}
+        ocupados[dia.isoformat()] = ocupados.get(dia.isoformat(), 0) + 1
+        print(f"{r['id']}: {dia} (YouTube {turno['yt']}, Instagram y Facebook {turno['ig']}, TikTok {turno['tt']})")
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+
+
+def publicar(sid):
+    """Sube un recorte a YouTube (Short programado) y por Publer a Instagram, TikTok y Facebook."""
+    ruta = os.path.join(RAIZ, 'contenido', 'recortes.json')
+    todos = json.load(open(ruta))
+    r = next(x for x in todos if x['id'] == sid)
+    horas = r.get('publica_utc_por_red') or sys.exit(f'{sid} sin horario: corre "recortes.py programar"')
+    archivo = os.path.join(RAIZ, r['archivo'])
+    carpeta = os.path.dirname(archivo)
+    texto = os.path.join(carpeta, f'{sid}-texto.txt')
+    open(texto, 'w').write(r['texto'])
+    tags = os.path.join(carpeta, f'{sid}-tags.txt')
+    open(tags, 'w').write(','.join(r.get('tags', [])))
+    hecho = r.setdefault('publicado_en', {})
+    if 'yt' not in hecho:
+        y = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'subir', archivo, r['titulo'], texto,
+                            horas['yt'], '--tags', tags], capture_output=True, text=True)
+        print(y.stdout[-400:], y.stderr[-400:])
+        enlace = next((w for w in y.stdout.split() if 'youtube.com/shorts' in w), '')
+        if enlace:
+            hecho['yt'] = enlace
+            clave = (json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json'))) and
+                     next((l.get('playlist', 'aguinaldo') for l in json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json')))
+                           if l['id'] == r['largo']), 'aguinaldo'))
+            subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'playlist', enlace.split('/')[-1], clave])
+    if 'ig_tt_fb' not in hecho:
+        pb = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'publer.py'), 'publicar', archivo, texto,
+                             f"ig={horas['ig']},tt={horas['tt']}", r['titulo'][:90]], capture_output=True, text=True)
+        print(pb.stdout[-600:], pb.stderr[-400:])
+        if pb.returncode == 0:
+            hecho['ig_tt_fb'] = horas['ig']
+    r['estado'] = 'programado' if {'yt', 'ig_tt_fb'} <= set(hecho) else 'listo'
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+    print(f"{sid}: {r['estado']} {hecho}")
+
+
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
+    if len(sys.argv) == 2 and sys.argv[1] == 'programar':
+        programar()
+    elif len(sys.argv) == 3 and sys.argv[1] == 'publicar':
+        publicar(sys.argv[2])
+    elif len(sys.argv) == 2:
+        recortar(sys.argv[1])
+    else:
         sys.exit(__doc__)
-    recortar(sys.argv[1])
