@@ -100,11 +100,17 @@
  {
   "id": "LC1",
   "titulo": "Tarjeta de crédito en diciembre: cómo usarla sin endeudarte",
-  "estado": "produciendo",
+  "estado": "programado",
   "publica_utc": "2026-11-22T00:45:00Z",
-  "youtube": "",
-  "duracion_min": null,
-  "capitulos": [],
+  "youtube": "https://youtube.com/watch?v=i7BJGUstpHI",
+  "duracion_min": 6.7,
+  "capitulos": [
+   "0:00 Intro",
+   "0:30 Fecha de corte y fecha límite",
+   "2:09 Las reglas que nadie te explica",
+   "3:30 Meses sin intereses en diciembre",
+   "4:28 Mitos de la tarjeta y el Buró"
+  ],
   "segmentos": 34,
   "tomas_victoria": 16,
   "miniaturas": [

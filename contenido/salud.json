@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-12T14:03:00Z",
+ "generado_utc": "2026-11-12T14:10:19Z",
  "estado": "alerta",
  "checks": [
   {
@@ -30,12 +30,12 @@
   {
    "area": "Créditos",
    "estado": "ok",
-   "detalle": "Everygen (Viewmax) 8/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 05:30 UTC)"
+   "detalle": "Everygen (Viewmax) 0/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 14:03 UTC)"
   },
   {
    "area": "Calendario",
    "estado": "aviso",
-   "detalle": "2026-11-12: TikTok 2, Instagram 1, YouTube 2, Facebook 1 · faltan: TikTok 2/3, Instagram 1/2, YouTube 2/3"
+   "detalle": "2026-11-12: TikTok 3, Instagram 1, YouTube 4, Facebook 1 · faltan: Instagram 1/2"
   },
   {
    "area": "Calendario",
@@ -68,9 +68,9 @@
    "detalle": "LB1: YouTube y Facebook 2026-11-12, con recortes"
   },
   {
-   "area": "Videos largos",
-   "estado": "ok",
-   "detalle": "LC1: sale 2026-11-22, en producción"
+   "area": "Recortes",
+   "estado": "aviso",
+   "detalle": "LC1: subido sin recortes: recortes.py LC1"
   },
   {
    "area": "Videos largos",
@@ -165,7 +165,7 @@
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "63 carruseles listos para TikTok (~21 días a 3 por día)"
+   "detalle": "62 carruseles listos para TikTok (~21 días a 3 por día)"
   },
   {
    "area": "Cola",

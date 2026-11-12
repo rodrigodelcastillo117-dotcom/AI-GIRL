@@ -1,26 +1,50 @@
 {
- "fecha": "2026-11-11",
- "nota": "Hoy solo 2: el buscador trajo casi puro contenido de EE. UU. o en inglés; no se rellena con videos que no sirven.",
+ "fecha": "2026-11-12",
+ "nota": "Hoy solo 1 de TikTok: el buscador trajo casi puro contenido de EE. UU., en otros idiomas o sin tema de dinero; no se rellena. Los 3 de YouTube no salieron porque el último comentario de Victoria sigue en revisión en YouTube: si quieres, pégalos tú desde la cuenta de Victoria.",
  "videos": [
   {
-   "url": "https://www.tiktok.com/@bymarchan/video/7706652102210145544",
-   "autor": "bymarchan",
-   "vistas": 44000,
-   "comentarios": 65,
-   "publicado": "2026-11-10",
-   "tema": "no contesta llamadas por miedo a la cuota que olvidó",
-   "comentario": "Jajaja el miedo a la llamada del cobrador es real 😂 Truco de Capital: apunta cada cuota el día que cobras y se acabaron los sustos.",
-   "por_que": "44 mil vistas, humor de deudas que todos entienden. Un tip corto con humor cae bien en un video de risa. Opinión, sin cifras."
+   "url": "https://www.tiktok.com/@sonia.hdez7/video/7707022782155984146",
+   "autor": "sonia.hdez7",
+   "vistas": 730400,
+   "comentarios": 246,
+   "publicado": "2026-11-11",
+   "tema": "'cuando no tenía ni un peso se fijó en mí' (pareja)",
+   "tipo": "frase",
+   "comentario": "Eso vale más que cualquier quincena: quien te escoge sin un peso también te ayuda a armar el presupuesto cuando ya hay. 💛",
+   "por_que": "730 mil vistas en menos de 24 h, mexicano, tema parejas y dinero; frase con postura, sin cifras."
   },
   {
-   "url": "https://www.tiktok.com/@marthamendez_esq/video/7706635397635247374",
-   "autor": "marthamendez_esq",
-   "vistas": 3038,
-   "comentarios": 14,
-   "publicado": "2026-11-10",
-   "tema": "¿a qué edad dejar de mantener a los hijos?",
-   "comentario": "Yo digo: cuando ya cobran su propia quincena. Ayudar sí, pero con fecha de salida clara; si no, nunca aprenden a hacer su presupuesto.",
-   "por_que": "Cuenta chica que pide opiniones y contesta. Opinión de Victoria con postura (PERSONAJE.md), sin cifras."
+   "url": "https://youtube.com/watch?v=hWaKFGdhd_0",
+   "autor": "El Universal",
+   "vistas": 57850,
+   "comentarios": 20,
+   "publicado": "2026-11-11",
+   "tema": "YouTube · ¿Cuándo pagan el aguinaldo? Fechas límite 2026",
+   "tipo": "dato",
+   "comentario": "Ojo: en 2026 el 20 de diciembre cae en domingo. Y los primeros $3,519.30 del aguinaldo (30 UMA) van libres de ISR: el impuesto solo se calcula sobre lo que pase de ahí.",
+   "por_que": "Dato verificado (LISR art. 93 XIV; UMA 2026 INEGI)."
+  },
+  {
+   "url": "https://youtube.com/watch?v=w6njmlwA_wI",
+   "autor": "Experiencias de Compra",
+   "vistas": 38649,
+   "comentarios": 20,
+   "publicado": "2026-11-11",
+   "tema": "YouTube · ¿Ofertas del Buen Fin falsas?",
+   "tipo": "dato",
+   "comentario": "Truco que sí funciona: tómale captura al precio hoy y compáralo del 13 al 17. Profeco publica el historial de precios de 490 productos en su micrositio del Buen Fin. Si no bajó, no es oferta.",
+   "por_que": "Dato de Profeco (9-nov-2026), útil para su público."
+  },
+  {
+   "url": "https://youtube.com/watch?v=qD_uGSs8EfA",
+   "autor": "SarcaMex",
+   "vistas": 118491,
+   "comentarios": 17,
+   "publicado": "2026-11-11",
+   "tema": "YouTube · Las deudas en México",
+   "tipo": "dato",
+   "comentario": "Lo que más duele no es la deuda, es el pago mínimo: con $10,000 en la tarjeta pagando solo el mínimo tardas casi 3 años y pagas casi $5,000 de intereses (ejemplo de Profeco).",
+   "por_que": "Ejemplo de Profeco (35 meses, $4,963 de intereses)."
   }
  ]
 }
