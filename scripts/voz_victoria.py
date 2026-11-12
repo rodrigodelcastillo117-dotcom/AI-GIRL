@@ -49,6 +49,8 @@ def normal(texto):
     texto = re.sub(r'\d+', lambda m: ' ' + ' '.join(['cero'] * (len(m.group()) - len(m.group().lstrip('0')))) + ' '
                    + (num2words(int(m.group()), lang='es') if m.group().lstrip('0') else '') + ' ', texto)
     texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
+    # "trescientas once inconformidades" = 311: el femenino de los cientos cuenta igual (12-nov-2026)
+    texto = re.sub(r'cientas\b', 'cientos', texto)
     return re.sub(r'[^a-zñ ]', ' ', texto).split()
 
 
