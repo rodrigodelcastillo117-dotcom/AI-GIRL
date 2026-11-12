@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victoria The CEO · Tu dinero en México, sin rodeos</title>
-  <meta name="description" content="Calcula gratis tu aguinaldo 2026, descarga Las 30 reglas de la CEO y aprende lo que nadie te dice de la tarjeta, las deudas y tus derechos en México. Con fuente oficial.">
+  <meta name="description" content="Calcula gratis tu aguinaldo 2026, tu finiquito y tu presupuesto. Descarga Las 30 reglas de la CEO y aprende lo que nadie te dice de la tarjeta, las deudas y tus derechos en México. Con fuente oficial.">
   <meta property="og:title" content="Victoria The CEO · Tu dinero en México, sin rodeos">
-  <meta property="og:description" content="Calculadoras gratis, la guía de 30 reglas y lo que nadie te dice de tu dinero. Con fuente oficial.">
+  <meta property="og:description" content="7 calculadoras gratis, la guía de 30 reglas y lo que nadie te dice de tu dinero. Con fuente oficial.">
   <meta property="og:image" content="https://victoriatheceo.vercel.app/img/compartir.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -19,146 +19,365 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0b0d'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='700' fill='%23f5c542' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+   {"@type":"Question","name":"¿Victoria es una persona real?","acceptedAnswer":{"@type":"Answer","text":"No. Victoria es un personaje creado con inteligencia artificial. Los datos que comparte sí son reales y cada uno lleva su fuente oficial (LFT, SAT, Condusef, Profeco, INEGI)."}},
+   {"@type":"Question","name":"¿Las calculadoras cuestan?","acceptedAnswer":{"@type":"Answer","text":"No. Las 7 calculadoras y la guía Las 30 reglas de la CEO son gratis. Solo la plantilla El tablero de la CEO es de pago."}},
+   {"@type":"Question","name":"¿Esto es asesoría financiera?","acceptedAnswer":{"@type":"Answer","text":"No. Es contenido educativo con datos oficiales. Para tu caso particular consulta a un profesional."}},
+   {"@type":"Question","name":"¿Cuánto me toca de aguinaldo en 2026?","acceptedAnswer":{"@type":"Answer","text":"Mínimo 15 días de salario, pagados antes del 20 de diciembre (Ley Federal del Trabajo, art. 87). Los primeros $3,519.30 (30 UMA) no pagan ISR."}}]}
+  </script>
   <style>
-    :root { --negro: #0b0b0d; --oro: #f5c542; --crema: #f3ede2; --tenue: #a39b8d; --linea: rgba(245, 197, 66, .22); }
+    :root {
+      --negro: #0b0b0d; --carbon: #131317; --panel: #17171c; --oro: #f5c542; --oro-2: #ffdf7e; --crema: #f3ede2;
+      --texto: #d9d2c5; --tenue: #9b9488; --linea: rgba(245, 197, 66, .18); --linea-2: rgba(255, 255, 255, .08);
+      --verde: #34d399; --cielo: #38bdf8; --coral: #fb7185; --violeta: #a78bfa; --naranja: #fb923c; --menta: #2dd4bf;
+      --radio: 18px; --ancho: 1120px;
+    }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     html, body { margin: 0; background: var(--negro); color: var(--crema); font-family: Inter, system-ui, sans-serif; }
+    body { -webkit-font-smoothing: antialiased; }
     a { color: inherit; }
-    .heroe { position: relative; min-height: 100vh; display: grid; align-items: end; overflow: hidden; }
-    .heroe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
-    .heroe::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 11, 13, 0) 35%, rgba(11, 11, 13, .97) 70%); }
-    .caja { position: relative; z-index: 1; width: min(560px, 100%); margin: 0 auto; padding: 0 20px 40px; }
-    .marca { font-size: .78rem; letter-spacing: .32em; font-weight: 600; }
-    .marca b { color: var(--oro); }
-    h1 { font-weight: 900; font-size: clamp(2.3rem, 9vw, 3.4rem); line-height: 1.02; margin: 12px 0; }
-    h1 span { color: var(--oro); }
-    .lema { color: #d9d2c5; font-size: 1.05rem; line-height: 1.5; margin: 0 0 22px; }
-    .caja > .boton { margin-bottom: 14px; }
-    #captura .boton { background: transparent; color: var(--oro); border: 2px solid var(--oro); }
-    form, .descarga { display: grid; gap: 10px; }
-    input[type=email] { width: 100%; padding: 16px; border-radius: 12px; border: 1px solid var(--linea); background: rgba(255, 255, 255, .06); color: var(--crema); font: inherit; font-size: 1rem; }
-    .boton { display: block; width: 100%; padding: 16px; border: 0; border-radius: 12px; background: var(--oro); color: var(--negro); font: inherit; font-weight: 900; font-size: 1.05rem; text-align: center; text-decoration: none; cursor: pointer; }
-    .boton:hover { filter: brightness(1.08); }
-    .letra-chica { font-size: .78rem; color: var(--tenue); line-height: 1.5; margin: 6px 0 0; }
-    .gracias { display: none; padding: 16px; border: 1px solid var(--oro); border-radius: 12px; }
-    section.bloque { width: min(560px, 100%); margin: 0 auto; padding: 44px 20px; border-top: 1px solid var(--linea); }
-    .etiqueta { font-size: .72rem; letter-spacing: .3em; text-transform: uppercase; color: var(--oro); font-weight: 600; }
-    h2 { font-weight: 900; font-size: 1.7rem; line-height: 1.15; margin: 10px 0 18px; }
-    ol { margin: 0; padding: 0; list-style: none; counter-reset: r; display: grid; gap: 12px; }
-    ol li { counter-increment: r; display: grid; grid-template-columns: 42px 1fr; gap: 10px; align-items: start; line-height: 1.45; color: #d9d2c5; }
-    ol li::before { content: counter(r, decimal-leading-zero); font-weight: 900; color: var(--oro); font-size: 1.1rem; }
-    ol li b { color: var(--crema); }
-    .producto { border: 1px solid var(--linea); border-radius: 16px; padding: 20px; background: linear-gradient(160deg, rgba(245, 197, 66, .1), rgba(245, 197, 66, 0) 60%); }
-    .producto ul { margin: 0 0 16px; padding-left: 18px; color: #d9d2c5; line-height: 1.7; }
-    .precio { font-size: 1.6rem; font-weight: 900; color: var(--oro); }
-    .portada { display: block; width: 100%; border-radius: 12px; margin: 0 0 16px; }
-    .redes { display: flex; gap: 10px; flex-wrap: wrap; }
-    .redes a { flex: 1 1 140px; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-align: center; text-decoration: none; font-weight: 600; }
-    footer { width: min(560px, 100%); margin: 0 auto; padding: 24px 20px 48px; color: var(--tenue); font-size: .75rem; line-height: 1.6; border-top: 1px solid var(--linea); }
-      .destacada { display: block; padding: 16px; border-radius: 14px; background: var(--oro); color: var(--negro); text-decoration: none; font-weight: 900; font-size: 1.08rem; margin: 0 0 12px; }
-    .destacada small { display: block; font-weight: 600; font-size: .82rem; margin-top: 2px; }
-    .herramientas { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
-    @media (max-width: 420px) { .herramientas { grid-template-columns: 1fr; } }
-    .herramientas a { display: block; padding: 14px; border: 1px solid var(--linea); border-radius: 12px; text-decoration: none; font-weight: 600; line-height: 1.35; }
-    .herramientas a small { display: block; color: var(--tenue); font-weight: 400; font-size: .8rem; margin-top: 4px; }
-    .galeria { display: flex; align-items: flex-start; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 0 16px; padding-bottom: 6px; }
-    .galeria figure { flex: 0 0 85%; margin: 0; scroll-snap-align: start; }
-    .galeria img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--linea); background: #fff; }
+    img { max-width: 100%; }
+    .contenedor { width: min(var(--ancho), 100%); margin: 0 auto; padding: 0 20px; }
+
+    /* Menú */
+    .menu { position: sticky; top: 0; z-index: 20; background: rgba(11, 11, 13, .82); backdrop-filter: blur(14px); border-bottom: 1px solid var(--linea-2); }
+    .menu .contenedor { display: flex; align-items: center; gap: 18px; height: 62px; }
+    .logo { text-decoration: none; font-size: .82rem; letter-spacing: .28em; font-weight: 800; white-space: nowrap; }
+    .logo b { color: var(--oro); }
+    .menu nav { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+    .menu nav::-webkit-scrollbar { display: none; }
+    .menu nav a { text-decoration: none; font-size: .88rem; color: var(--texto); padding: 8px 12px; border-radius: 999px; white-space: nowrap; }
+    .menu nav a:hover { color: var(--crema); background: var(--linea-2); }
+    .menu .cta { background: var(--oro); color: var(--negro); font-weight: 800; }
+    .menu .cta:hover { background: var(--oro-2); color: var(--negro); }
+    @media (max-width: 720px) { .menu nav a:not(.cta) { display: none; } .logo { letter-spacing: .18em; font-size: .74rem; } .menu .cta { padding: 8px 12px; font-size: .82rem; } }
+    @media (max-width: 400px) { .menu .cta .largo { display: none; } }
+
+    /* Portada */
+    .heroe { position: relative; overflow: hidden; }
+    .heroe::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 70vw; height: 70vw; max-width: 900px; max-height: 900px;
+      background: radial-gradient(circle, rgba(245, 197, 66, .18), rgba(167, 139, 250, .10) 40%, transparent 70%); pointer-events: none; }
+    .heroe .contenedor { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; padding-top: 56px; padding-bottom: 64px; }
+    @media (max-width: 900px) { .heroe .contenedor { grid-template-columns: 1fr; gap: 28px; padding-top: 28px; } .heroe .foto { order: -1; } }
+    .insignia { display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600; color: var(--oro); border: 1px solid var(--linea); background: rgba(245, 197, 66, .08); padding: 6px 12px; border-radius: 999px; }
+    .insignia i { width: 7px; height: 7px; border-radius: 50%; background: var(--verde); box-shadow: 0 0 0 4px rgba(52, 211, 153, .18); }
+    h1 { font-weight: 900; font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.02; letter-spacing: -.02em; margin: 18px 0 16px; }
+    h1 em { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-weight: 400; color: var(--oro); letter-spacing: 0; }
+    .lema { color: var(--texto); font-size: 1.12rem; line-height: 1.6; margin: 0 0 26px; max-width: 34em; }
+    .acciones { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 520px; }
+    @media (max-width: 480px) { .acciones { grid-template-columns: 1fr; } }
+    .boton { display: block; width: 100%; padding: 16px 18px; border: 0; border-radius: 14px; background: var(--oro); color: var(--negro); font: inherit; font-weight: 800; font-size: 1.02rem; text-align: center; text-decoration: none; cursor: pointer; transition: transform .15s, filter .15s; }
+    .boton:hover { filter: brightness(1.07); transform: translateY(-1px); }
+    .boton.secundario, #captura .boton { background: transparent; color: var(--crema); border: 1.5px solid rgba(243, 237, 226, .35); }
+    .boton.secundario:hover, #captura .boton:hover { border-color: var(--oro); color: var(--oro); }
+    .descarga { display: grid; gap: 6px; }
+    .letra-chica { font-size: .78rem; color: var(--tenue); line-height: 1.5; margin: 4px 0 0; }
+    .confianza { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; color: var(--tenue); font-size: .82rem; }
+    .confianza b { color: var(--crema); font-weight: 700; }
+    .foto { position: relative; }
+    .foto img { display: block; width: 100%; height: auto; max-height: 640px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; border-radius: 28px; border: 1px solid var(--linea); box-shadow: 0 30px 80px rgba(0, 0, 0, .55); }
+    @media (max-width: 900px) { .foto img { aspect-ratio: 1 / 1; max-height: 420px; object-position: 35% 22%; border-radius: 22px; } }
+    .foto .globo { position: absolute; left: -16px; bottom: 28px; background: var(--crema); color: var(--negro); border-radius: 16px; padding: 12px 16px; font-size: .9rem; line-height: 1.35; max-width: 250px; box-shadow: 0 14px 40px rgba(0, 0, 0, .45); }
+    .foto .globo b { display: block; font-size: 1.5rem; font-weight: 900; color: #0f7a4f; }
+    @media (max-width: 900px) { .foto .globo { left: auto; right: 10px; bottom: 10px; padding: 9px 12px; font-size: .78rem; max-width: 190px; } .foto .globo b { font-size: 1.2rem; } }
+
+    /* Cifras */
+    .cifras { border-top: 1px solid var(--linea-2); border-bottom: 1px solid var(--linea-2); background: var(--carbon); }
+    .cifras .contenedor { display: grid; grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 720px) { .cifras .contenedor { grid-template-columns: repeat(2, 1fr); } }
+    .cifra { padding: 22px 8px; text-align: center; }
+    .cifra b { display: block; font-size: 1.9rem; font-weight: 900; letter-spacing: -.02em; }
+    .cifra span { font-size: .84rem; color: var(--tenue); }
+    .cifra:nth-child(1) b { color: var(--oro); } .cifra:nth-child(2) b { color: var(--verde); } .cifra:nth-child(3) b { color: var(--cielo); } .cifra:nth-child(4) b { color: var(--coral); }
+
+    /* Secciones */
+    section.bloque { padding: 84px 0; }
+    @media (max-width: 720px) { section.bloque { padding: 56px 0; } }
+    section.bloque.alterno { background: linear-gradient(180deg, var(--carbon), var(--negro)); }
+    .encabezado { max-width: 680px; margin-bottom: 36px; }
+    .etiqueta { font-size: .74rem; letter-spacing: .26em; text-transform: uppercase; color: var(--oro); font-weight: 700; }
+    h2 { font-weight: 900; font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.1; letter-spacing: -.015em; margin: 12px 0 12px; }
+    h2 em { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-weight: 400; color: var(--oro); }
+    .encabezado p { color: var(--texto); line-height: 1.6; margin: 0; font-size: 1.04rem; }
+
+    /* Calculadoras */
+    .destacada { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 16px; padding: 26px 28px; border-radius: var(--radio); text-decoration: none; margin: 0 0 16px;
+      background: linear-gradient(120deg, #f5c542, #fb923c); color: var(--negro); box-shadow: 0 18px 50px rgba(245, 158, 66, .25); }
+    .destacada b { display: block; font-size: 1.35rem; font-weight: 900; }
+    .destacada small { display: block; font-weight: 500; font-size: .95rem; margin-top: 4px; opacity: .85; }
+    .destacada .flecha { width: 48px; height: 48px; border-radius: 50%; background: var(--negro); color: var(--oro); display: grid; place-items: center; font-size: 1.4rem; font-weight: 900; }
+    .herramientas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    .herramientas a { --c: var(--oro); position: relative; display: block; padding: 22px 20px 20px 20px; border-radius: var(--radio); text-decoration: none; font-weight: 800; font-size: 1.06rem; line-height: 1.3;
+      background: var(--panel); border: 1px solid var(--linea-2); transition: transform .15s, border-color .15s; overflow: hidden; }
+    .herramientas a::before { content: var(--i, "$"); display: grid; place-items: center; color: var(--c); font-weight: 900; font-size: 1.05rem; width: 38px; height: 38px; border-radius: 12px; margin-bottom: 14px;
+      background: color-mix(in srgb, var(--c) 18%, transparent); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
+    .herramientas a::after { content: "→"; position: absolute; right: 18px; top: 22px; color: var(--c); font-weight: 900; }
+    .herramientas a:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--c) 55%, transparent); }
+    .herramientas a small { display: block; color: var(--tenue); font-weight: 400; font-size: .88rem; margin-top: 6px; }
+    @media (max-width: 560px) { .herramientas { grid-template-columns: 1fr 1fr; gap: 10px; } .herramientas a { padding: 16px 14px; font-size: .95rem; } .herramientas a small { font-size: .78rem; } .herramientas a::after { right: 12px; top: 16px; } .destacada { padding: 20px; } .destacada b { font-size: 1.15rem; } }
+    .herramientas a:nth-child(7n+1) { --c: var(--oro); --i: "$"; } .herramientas a:nth-child(7n+2) { --c: var(--verde); --i: "≈"; } .herramientas a:nth-child(7n+3) { --c: var(--cielo); --i: "§"; }
+    .herramientas a:nth-child(7n+4) { --c: var(--violeta); --i: "%"; } .herramientas a:nth-child(7n+5) { --c: var(--menta); --i: "½"; } .herramientas a:nth-child(7n+6) { --c: var(--naranja); --i: "☂"; } .herramientas a:nth-child(7n+7) { --c: var(--coral); --i: "↘"; }
+
+    /* Reglas */
+    .reglas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); counter-reset: r; }
+    .regla { counter-increment: r; padding: 24px; border-radius: var(--radio); background: var(--panel); border: 1px solid var(--linea-2); }
+    .regla::before { content: counter(r, decimal-leading-zero); display: block; font-family: "Instrument Serif", Georgia, serif; font-size: 2.2rem; color: var(--oro); line-height: 1; margin-bottom: 10px; }
+    .regla b { display: block; font-size: 1.08rem; margin-bottom: 6px; }
+    .regla p { margin: 0; color: var(--texto); line-height: 1.55; }
+    .regla small { display: inline-block; margin-top: 10px; font-size: .74rem; color: var(--tenue); border: 1px solid var(--linea-2); border-radius: 999px; padding: 3px 9px; }
+
+    /* Guía */
+    .guia { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding: 40px; border-radius: 28px;
+      background: radial-gradient(120% 140% at 0% 0%, rgba(167, 139, 250, .22), transparent 55%), radial-gradient(120% 140% at 100% 100%, rgba(45, 212, 191, .18), transparent 55%), var(--panel);
+      border: 1px solid var(--linea-2); }
+    @media (max-width: 860px) { .guia { grid-template-columns: 1fr; padding: 26px; gap: 24px; } .libro { max-width: 200px; padding: 18px; } .libro .t { font-size: 1.5rem; } }
+    .temas { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+    .temas li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; color: var(--texto); line-height: 1.5; }
+    .temas li::before { content: "✓"; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: .78rem; font-weight: 900; background: rgba(52, 211, 153, .16); color: var(--verde); }
+    .temas b { color: var(--crema); }
+    .libro { aspect-ratio: 3 / 4; max-width: 300px; margin: 0 auto; border-radius: 10px 18px 18px 10px; padding: 26px 22px; display: flex; flex-direction: column; justify-content: space-between;
+      background: linear-gradient(150deg, #1d1d24, #0b0b0d); border: 1px solid var(--linea); box-shadow: -10px 0 0 #2a2a33, 0 30px 70px rgba(0, 0, 0, .55); transform: rotate(-2deg); }
+    .libro .sello { font-size: .7rem; letter-spacing: .3em; color: var(--oro); font-weight: 800; }
+    .libro .t { font-size: 2.2rem; font-weight: 900; line-height: 1; }
+    .libro .t em { display: block; font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-weight: 400; color: var(--oro); }
+    .libro .pie { font-size: .8rem; color: var(--tenue); }
+
+    /* Plantilla */
+    .producto { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: start; }
+    @media (max-width: 860px) { .producto { grid-template-columns: 1fr; } }
+    .portada { display: block; width: 100%; height: auto; border-radius: var(--radio); border: 1px solid var(--linea-2); }
+    .galeria { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin-top: 12px; padding-bottom: 6px; }
+    .galeria figure { flex: 0 0 72%; margin: 0; scroll-snap-align: start; }
+    .galeria img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--linea-2); background: #fff; }
     .galeria figcaption { font-size: .78rem; color: var(--tenue); margin-top: 6px; }
+    .caja-venta { padding: 26px; border-radius: var(--radio); background: linear-gradient(160deg, rgba(245, 197, 66, .14), rgba(245, 197, 66, 0) 65%), var(--panel); border: 1px solid var(--linea); position: sticky; top: 84px; }
+    .caja-venta ul { margin: 0 0 18px; padding: 0; list-style: none; display: grid; gap: 8px; }
+    .caja-venta li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; color: var(--texto); }
+    .caja-venta li::before { content: "●"; color: var(--oro); font-size: .7rem; padding-top: 4px; }
+    .precio { font-size: 2.2rem; font-weight: 900; color: var(--oro); letter-spacing: -.02em; }
+
+    /* Vida de Victoria */
+    .vida { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    @media (max-width: 720px) { .vida { grid-template-columns: repeat(2, 1fr); } }
+    .vida img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 16px; border: 1px solid var(--linea-2); }
+    .redes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+    @media (max-width: 560px) { .redes { grid-template-columns: 1fr; } }
+    .redes a { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px; border-radius: 14px; text-decoration: none; font-weight: 800; border: 1px solid var(--linea-2); background: var(--panel); transition: transform .15s; }
+    .redes a:hover { transform: translateY(-2px); }
+    .redes a i { width: 12px; height: 12px; border-radius: 4px; }
+    .redes .yt i { background: #ff3b3b; } .redes .ig i { background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); } .redes .tt i { background: linear-gradient(45deg, #25f4ee, #fe2c55); }
+
+    /* Preguntas */
+    .preguntas { display: grid; gap: 10px; max-width: 820px; }
+    details { border-radius: 14px; background: var(--panel); border: 1px solid var(--linea-2); padding: 0 20px; }
+    summary { cursor: pointer; list-style: none; padding: 18px 0; font-weight: 700; display: flex; justify-content: space-between; gap: 12px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--oro); font-weight: 900; font-size: 1.2rem; }
+    details[open] summary::after { content: "–"; }
+    details p { margin: 0 0 18px; color: var(--texto); line-height: 1.6; }
+
+    footer { border-top: 1px solid var(--linea-2); padding: 36px 0 56px; color: var(--tenue); font-size: .82rem; line-height: 1.7; }
+    footer .contenedor { display: grid; grid-template-columns: 1fr auto; gap: 24px; }
+    @media (max-width: 720px) { footer .contenedor { grid-template-columns: 1fr; } }
+    footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+    footer nav a { text-decoration: none; color: var(--texto); }
+    footer nav a:hover { color: var(--oro); }
   </style>
   <script>// ?ref=X -> utm_source=X para que Vercel Web Analytics separe el origen (ig-dm, ig-cuentas, fb, yt...). 12-nov-2026
   try { const u = new URL(location.href); const r = u.searchParams.get('ref'); if (r && !u.searchParams.has('utm_source')) { u.searchParams.set('utm_source', r); history.replaceState(null, '', u); } } catch {}</script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-  <header class="heroe">
-    <img src="/img/victoria-navidad.jpg" alt="Victoria envolviendo regalos junto al árbol, con su Rottweiler Capital de gorro de Santa">
-    <div class="caja">
-      <div class="marca">VICTORIA <b>THE CEO</b></div>
-      <h1>Tu dinero en México, <span>sin rodeos</span>.</h1>
-      <p class="lema">Soy Victoria (una CEO creada con IA) y él es Capital: no presta dinero, ni a la familia. Calculadoras gratis y lo que nadie te dice de tu dinero, con fuente oficial.</p>
-      <a class="boton" href="/aguinaldo">Calcula tu aguinaldo 2026</a>
-      <div id="captura"></div>
+  <header class="menu">
+    <div class="contenedor">
+      <a class="logo" href="/">VICTORIA <b>THE CEO</b></a>
+      <nav aria-label="Principal">
+        <a href="#calculadoras">Calculadoras</a>
+        <a href="#reglas">Mis reglas</a>
+        <a href="#guia">Guía gratis</a>
+        <a href="#tablero">Plantilla</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="cta" href="/aguinaldo">Calcula<span class="largo"> tu</span> aguinaldo</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bloque" id="calculadoras">
-    <div class="etiqueta">Gratis · temporada de aguinaldo</div>
-    <h2>Calculadoras de Victoria</h2>
-    <a class="destacada" href="/aguinaldo">Calcula tu aguinaldo 2026 →<small>Cuánto te toca, cuánto paga ISR y cómo repartirlo</small></a>
-    <div class="herramientas"><!--herramientas--><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/te-alcanza-tu-sueldo">¿Te alcanza tu sueldo?<small>Renta, comida y lo que te queda</small></a><a href="/finiquito">Finiquito y liquidación<small>Cuánto te toca si renuncias o te corren</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a><!--/herramientas--></div>
-  </section>
-
-  <section class="bloque">
-    <div class="etiqueta">Lo que pienso (y no me da pena decirlo)</div>
-    <h2>Mis reglas, sin rodeos.</h2>
-    <ol>
-      <li><span><b>Tu aguinaldo no es para regalos.</b> Primero deudas caras, luego colchón, luego lo demás.</span></li>
-      <li><span><b>Pagar el mínimo es rentarle tu sueldo al banco.</b> Con $12,000 pagando solo el mínimo de $350: casi 6 años y más del doble (Condusef).</span></li>
-      <li><span><b>Ahorrar sin fondo de emergencia es apostar.</b> De 3 a 6 meses de tus gastos (Condusef).</span></li>
-      <li><span><b>Lo que la ley te da no es un favor.</b> Aguinaldo antes del 20 de diciembre, mínimo 15 días (LFT, art. 87).</span></li>
-      <li><span><b>Si te cobran antes de prestarte, es fraude.</b> Y quien cobra por "borrarte del Buró", también.</span></li>
-    </ol>
-  </section>
-
-  <section class="bloque">
-    <div class="etiqueta">Lo que vas a aprender</div>
-    <h2>Lo que nadie te enseñó del dinero.</h2>
-    <ol>
-      <li><span><b>Págate primero.</b> Por qué el ahorro es lo primero que sale, no lo que sobra.</span></li>
-      <li><span><b>La regla 50/30/20.</b> Tu sueldo en tres bolsas, sin hojas de cálculo eternas.</span></li>
-      <li><span><b>Fondo de emergencia.</b> Cuántos meses de gastos necesitas antes de invertir.</span></li>
-      <li><span><b>La regla del 72.</b> En cuántos años se duplica tu dinero, con una división.</span></li>
-      <li><span><b>Perder duele el doble.</b> El sesgo que te hace vender con pánico.</span></li>
-      <li><span><b>Y 25 más</b> de Buffett, Munger, Housel, Harvard y Stanford.</span></li>
-    </ol>
-  </section>
-
-  <section class="bloque" id="tablero">
-    <div class="etiqueta">Para ponerlo en práctica</div>
-    <h2>El tablero de la CEO</h2>
-    <div class="producto">
-      <img class="portada" src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel">
-      <p>La plantilla para aplicar las reglas con tus números, en Excel o Google Sheets:</p>
-      <div class="galeria">
-        <figure><img src="/img/hoja-presupuesto.jpg" alt="Hoja de presupuesto 50/30/20 de la plantilla" loading="lazy" width="900" height="590"><figcaption>Presupuesto 50/30/20 · escribes en lo amarillo</figcaption></figure>
-        <figure><img src="/img/hoja-deudas.jpg" alt="Hoja para salir de deudas con bola de nieve y avalancha" loading="lazy" width="900" height="403"><figcaption>Deudas: orden bola de nieve y avalancha</figcaption></figure>
-        <figure><img src="/img/hoja-interes.jpg" alt="Hoja de interés compuesto año por año" loading="lazy" width="862" height="753"><figcaption>Interés compuesto año por año</figcaption></figure>
+  <main>
+  <section class="heroe">
+    <div class="contenedor">
+      <div>
+        <span class="insignia"><i></i> Aguinaldo 2026 · calcula el tuyo gratis</span>
+        <h1>Tu dinero en México, <em>sin rodeos.</em></h1>
+        <p class="lema">Soy Victoria, una CEO creada con IA, y él es Capital: no presta dinero, ni a la familia. Aquí tienes calculadoras gratis y lo que nadie te dice de tu dinero, siempre con fuente oficial.</p>
+        <div class="acciones">
+          <a class="boton" href="/aguinaldo">Calcula tu aguinaldo 2026</a>
+          <div id="captura"></div>
+        </div>
+        <div class="confianza"><span>Datos de <b>LFT</b></span><span><b>SAT</b></span><span><b>Condusef</b></span><span><b>Profeco</b></span><span><b>INEGI</b></span></div>
       </div>
-      <ul>
-        <li>Presupuesto 50/30/20 que se calcula solo</li>
-        <li>Págate primero, mes a mes</li>
-        <li>Fondo de emergencia con meta y avance</li>
-        <li>Deudas: orden bola de nieve y avalancha</li>
-        <li>Interés compuesto y regla del 72</li>
-        <li>Metas con lo que tienes que apartar al mes</li>
-      </ul>
-      <div id="venta"></div>
+      <div class="foto">
+        <img src="/img/victoria-navidad.jpg" alt="Victoria envolviendo regalos junto al árbol, con su Rottweiler Capital de gorro de Santa" width="1080" height="1936">
+        <div class="globo"><b>$7,500</b>es el aguinaldo mínimo si ganas $15,000 al mes.</div>
+      </div>
     </div>
   </section>
 
-  <section class="bloque">
-    <div class="etiqueta">Algo nuevo cada día</div>
-    <h2>Sígueme</h2>
-    <div class="redes">
-      <a href="https://www.youtube.com/@victoriatheceo">YouTube</a>
-      <a href="https://www.instagram.com/victoriatheceo">Instagram</a>
-      <a href="https://www.tiktok.com/@victoriatheceo">TikTok</a>
+  <div class="cifras">
+    <div class="contenedor">
+      <div class="cifra"><b>7</b><span>calculadoras gratis</span></div>
+      <div class="cifra"><b>30</b><span>reglas en la guía</span></div>
+      <div class="cifra"><b>100%</b><span>con fuente oficial</span></div>
+      <div class="cifra"><b>$0</b><span>para empezar</span></div>
+    </div>
+  </div>
+
+  <section class="bloque" id="calculadoras">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="etiqueta">Gratis · sin registrarte</div>
+        <h2>Haz tus cuentas <em>en 1 minuto.</em></h2>
+        <p>Pones tus números y te dice cuánto te toca, cuánto paga de impuestos y qué hacer con él. Sin letra chiquita.</p>
+      </div>
+      <a class="destacada" href="/aguinaldo"><span><b>Calcula tu aguinaldo 2026</b><small>Cuánto te toca, cuánto paga ISR y cómo repartirlo. Te lo deben pagar antes del 20 de diciembre.</small></span><span class="flecha">→</span></a>
+      <div class="herramientas"><!--herramientas--><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/te-alcanza-tu-sueldo">¿Te alcanza tu sueldo?<small>Renta, comida y lo que te queda</small></a><a href="/finiquito">Finiquito y liquidación<small>Cuánto te toca si renuncias o te corren</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a><!--/herramientas--></div>
     </div>
   </section>
+
+  <section class="bloque alterno" id="reglas">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="etiqueta">Lo que pienso (y no me da pena decirlo)</div>
+        <h2>Mis reglas, <em>sin rodeos.</em></h2>
+      </div>
+      <div class="reglas">
+        <div class="regla"><b>Tu aguinaldo no es para regalos.</b><p>Primero deudas caras, luego colchón, luego lo demás.</p><small>Opinión de Victoria</small></div>
+        <div class="regla"><b>Pagar el mínimo es rentarle tu sueldo al banco.</b><p>Con $12,000 pagando solo el mínimo de $350: casi 6 años y más del doble.</p><small>Condusef</small></div>
+        <div class="regla"><b>Ahorrar sin fondo de emergencia es apostar.</b><p>Junta de 3 a 6 meses de tus gastos antes de invertir.</p><small>Condusef</small></div>
+        <div class="regla"><b>Lo que la ley te da no es un favor.</b><p>Aguinaldo antes del 20 de diciembre, mínimo 15 días de salario.</p><small>LFT, art. 87</small></div>
+        <div class="regla"><b>Si te cobran antes de prestarte, es fraude.</b><p>Y quien cobra por "borrarte del Buró", también: eso no se puede hacer.</p><small>Condusef</small></div>
+        <div class="regla"><b>Meses sin intereses no es sin costo.</b><p>Si te atrasas en una mensualidad, te cobran intereses. Revisa el CAT y el total.</p><small>Condusef</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="guia">
+    <div class="contenedor">
+      <div class="guia">
+        <div>
+          <div class="etiqueta">Guía gratis · PDF de 37 páginas</div>
+          <h2>Las 30 reglas <em>de la CEO.</em></h2>
+          <ul class="temas">
+            <li><span><b>Págate primero.</b> Por qué el ahorro es lo primero que sale, no lo que sobra.</span></li>
+            <li><span><b>La regla 50/30/20.</b> Tu sueldo en tres bolsas, sin hojas de cálculo eternas.</span></li>
+            <li><span><b>Fondo de emergencia.</b> Cuántos meses de gastos necesitas antes de invertir.</span></li>
+            <li><span><b>La regla del 72.</b> En cuántos años se duplica tu dinero, con una división.</span></li>
+            <li><span><b>Perder duele el doble.</b> El sesgo que te hace vender con pánico.</span></li>
+            <li><span><b>Y 25 más</b> de Buffett, Munger, Housel, Harvard y Stanford.</span></li>
+          </ul>
+          <div id="captura-guia" style="margin-top:22px;max-width:360px"></div>
+        </div>
+        <div class="libro" aria-hidden="true">
+          <div class="sello">VICTORIA THE CEO</div>
+          <div class="t">Las 30 reglas <em>de la CEO</em></div>
+          <div class="pie">Dinero en México, sin rodeos · 37 páginas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque alterno" id="tablero">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="etiqueta">Para ponerlo en práctica</div>
+        <h2>El tablero <em>de la CEO.</em></h2>
+        <p>La plantilla para aplicar las reglas con tus números, en Excel o Google Sheets. Escribes en lo amarillo y se calcula solo.</p>
+      </div>
+      <div class="producto">
+        <div>
+          <img class="portada" src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel" width="900" height="900" loading="lazy">
+          <div class="galeria">
+            <figure><img src="/img/hoja-presupuesto.jpg" alt="Hoja de presupuesto 50/30/20 de la plantilla" loading="lazy" width="900" height="590"><figcaption>Presupuesto 50/30/20</figcaption></figure>
+            <figure><img src="/img/hoja-deudas.jpg" alt="Hoja para salir de deudas con bola de nieve y avalancha" loading="lazy" width="900" height="403"><figcaption>Deudas: bola de nieve y avalancha</figcaption></figure>
+            <figure><img src="/img/hoja-interes.jpg" alt="Hoja de interés compuesto año por año" loading="lazy" width="862" height="753"><figcaption>Interés compuesto año por año</figcaption></figure>
+          </div>
+        </div>
+        <div class="caja-venta">
+          <ul>
+            <li>Presupuesto 50/30/20 que se calcula solo</li>
+            <li>Págate primero, mes a mes</li>
+            <li>Fondo de emergencia con meta y avance</li>
+            <li>Deudas: orden bola de nieve y avalancha</li>
+            <li>Interés compuesto y regla del 72</li>
+            <li>Metas con lo que tienes que apartar al mes</li>
+          </ul>
+          <div id="venta"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="sigueme">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="etiqueta">Algo nuevo cada día</div>
+        <h2>Un dato de dinero <em>que sí sirve, diario.</em></h2>
+        <p>Carruseles, videos y cuentas reales: aguinaldo, tarjeta, deudas, Buen Fin y lo que pasa con la economía en México.</p>
+      </div>
+      <div class="vida">
+        <img src="/img/vida-cafe.jpg" alt="Victoria tomando café en una terraza" loading="lazy" width="600" height="800">
+        <img src="/img/vida-calle.jpg" alt="Victoria caminando con bolsas de compras" loading="lazy" width="600" height="800">
+        <img src="/img/vida-cocina.jpg" alt="Victoria cocinando en su cocina" loading="lazy" width="600" height="800">
+        <img src="/img/vida-yate.jpg" alt="Victoria en la cubierta de un yate" loading="lazy" width="600" height="800">
+      </div>
+      <div class="redes">
+        <a class="yt" href="https://www.youtube.com/@victoriatheceo"><i></i>YouTube</a>
+        <a class="ig" href="https://www.instagram.com/victoriatheceo"><i></i>Instagram</a>
+        <a class="tt" href="https://www.tiktok.com/@victoriatheceo"><i></i>TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque alterno" id="preguntas">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="etiqueta">Preguntas frecuentes</div>
+        <h2>Lo que <em>me preguntan.</em></h2>
+      </div>
+      <div class="preguntas">
+        <details><summary>¿Victoria es una persona real?</summary><p>No. Victoria es un personaje creado con inteligencia artificial. Los datos que comparte sí son reales y cada uno lleva su fuente oficial: Ley Federal del Trabajo, SAT, Condusef, Profeco, INEGI.</p></details>
+        <details><summary>¿Las calculadoras cuestan?</summary><p>No. Las 7 calculadoras y la guía "Las 30 reglas de la CEO" son gratis y no necesitas registrarte. Solo la plantilla "El tablero de la CEO" es de pago.</p></details>
+        <details><summary>¿Cuánto me toca de aguinaldo en 2026?</summary><p>Mínimo 15 días de salario, pagados antes del 20 de diciembre (LFT, art. 87). Los primeros $3,519.30 (30 UMA) no pagan ISR. <a href="/aguinaldo">Calcula el tuyo aquí.</a></p></details>
+        <details><summary>¿Esto es asesoría financiera?</summary><p>No. Es contenido educativo con datos oficiales. Para tu caso particular, consulta a un profesional.</p></details>
+      </div>
+    </div>
+  </section>
+  </main>
 
   <footer>
-    Victoria es un personaje creado con inteligencia artificial. Contenido educativo: no es asesoría financiera, legal ni de inversión.
-    Los temas de bienestar no sustituyen la ayuda de un profesional de la salud.
+    <div class="contenedor">
+      <div>
+        <div class="logo" style="margin-bottom:10px">VICTORIA <b style="color:var(--oro)">THE CEO</b></div>
+        Victoria es un personaje creado con inteligencia artificial. Contenido educativo: no es asesoría financiera, legal ni de inversión.
+        Los temas de bienestar no sustituyen la ayuda de un profesional de la salud.
+      </div>
+      <nav aria-label="Pie">
+        <a href="/aguinaldo">Aguinaldo</a><a href="/finiquito">Finiquito</a><a href="/te-alcanza-tu-sueldo">¿Te alcanza?</a>
+        <a href="/pagar-deudas">Deudas</a><a href="#guia">Guía gratis</a><a href="#tablero">Plantilla</a>
+      </nav>
+    </div>
   </footer>
 
   <script src="/comun.js"></script>
   <script>
     const GUIA = '/guia/las-30-reglas-de-la-ceo.pdf';
-    document.getElementById('captura').append(crear('div', {className: 'descarga'},
-      crear('a', {className: 'boton', href: `${GUIA}?ref=${encodeURIComponent(REF)}`, textContent: 'Descargar la guía gratis (PDF)', download: ''}),
-      crear('p', {className: 'letra-chica', textContent: '37 páginas · se lee bien en el celular.'})));
+    const enlaceGuia = (texto) => crear('a', {className: 'boton secundario', href: `${GUIA}?ref=${encodeURIComponent(REF)}`, textContent: texto, download: ''});
+    document.getElementById('captura').append(crear('div', {className: 'descarga'}, enlaceGuia('Guía gratis (PDF)')));
+    document.getElementById('captura-guia').append(crear('div', {className: 'descarga'},
+      Object.assign(enlaceGuia('Descargar la guía gratis'), {className: 'boton'}),
+      crear('p', {className: 'letra-chica', textContent: '37 páginas · se lee bien en el celular · sin registrarte.'})));
     bloqueVenta(document.getElementById('venta'), '');
     // El botón de la plantilla dice "Lo quiero" en la portada.
     document.querySelector('#venta .boton').textContent = 'Lo quiero';
