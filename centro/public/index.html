@@ -33,9 +33,17 @@
     </div>
   </header>
 
+  <!-- 12-nov-2026, Rodrigo: "déjame el dashboard épico con la información que te pedí, lo que no es ESENCIAL, SIEMPRE
+       CERRADO". Abierto: estado, cifras clave, redes, vistas y seguidores por día, tu tarea. Lo demás va plegado y
+       siempre carga cerrado; cada sección cerrada dice su dato principal en la línea del título. -->
   <section class="bloque" aria-labelledby="t-estado">
     <h2 id="t-estado" class="sr">Estado</h2>
     <div id="estado" class="estado"></div>
+  </section>
+
+  <section class="bloque" aria-labelledby="t-kpis">
+    <div class="titulo-bloque"><h2 id="t-kpis">Cifras clave</h2><span class="nota">últimos 7 días contra los 7 anteriores</span></div>
+    <div id="kpis" class="kpis"></div>
   </section>
 
   <section class="bloque" aria-labelledby="t-redes">
@@ -50,14 +58,9 @@
     <details class="tabla-alt"><summary>Ver como tabla</summary><div id="tabla-vistas"></div></details>
   </section>
 
-  <section class="bloque" aria-labelledby="t-top">
-    <div class="titulo-bloque"><h2 id="t-top">Lo que está funcionando</h2><span class="nota">más vistas ganadas en 24 h</span></div>
-    <ol id="top" class="top"></ol>
-  </section>
-
-  <section class="bloque" aria-labelledby="t-agenda">
-    <div class="titulo-bloque"><h2 id="t-agenda">Hoy y mañana</h2><span class="nota">hora de México</span></div>
-    <div id="agenda" class="agenda"></div>
+  <section class="bloque" aria-labelledby="t-seg">
+    <div class="titulo-bloque"><h2 id="t-seg">Seguidores ganados</h2><span class="nota" id="seg-nota">por día y por red</span></div>
+    <div id="seguidores" class="multiples"></div>
   </section>
 
   <section class="bloque" aria-labelledby="t-tarea">
@@ -65,10 +68,75 @@
     <div id="tarea" class="tarea"></div>
   </section>
 
-  <section class="bloque" aria-labelledby="t-dinero">
-    <div class="titulo-bloque"><h2 id="t-dinero">Gasto y créditos</h2><span class="nota">Victoria</span></div>
-    <div id="dinero" class="dinero"></div>
-  </section>
+  <div class="plegables">
+    <details class="plegable" id="p-agenda">
+      <summary><span class="p-titulo">Hoy y mañana</span><span class="p-dato" id="d-agenda"></span></summary>
+      <div class="p-cuerpo"><div id="agenda" class="agenda"></div></div>
+    </details>
+
+    <details class="plegable" id="p-top">
+      <summary><span class="p-titulo">Lo que está funcionando</span><span class="p-dato" id="d-top"></span></summary>
+      <div class="p-cuerpo"><p class="p-nota">Más vistas ganadas en las últimas 24 h.</p><ol id="top" class="top"></ol></div>
+    </details>
+
+    <details class="plegable" id="p-horas">
+      <summary><span class="p-titulo">Mejores días y horas</span><span class="p-dato" id="d-horas"></span></summary>
+      <div class="p-cuerpo">
+        <div class="pestanas" id="pest-horas" role="tablist" aria-label="Red"></div>
+        <div class="dos">
+          <div><h3 class="sub">Por día de la semana</h3><div id="g-dias" class="hbarras"></div></div>
+          <div><h3 class="sub">Por hora de salida</h3><div id="g-horas" class="hbarras"></div></div>
+        </div>
+        <p class="p-nota" id="n-horas"></p>
+      </div>
+    </details>
+
+    <details class="plegable" id="p-temas">
+      <summary><span class="p-titulo">Mejores temas</span><span class="p-dato" id="d-temas"></span></summary>
+      <div class="p-cuerpo"><div id="g-temas" class="hbarras"></div><p class="p-nota">Vistas por publicación (mediana, todas las redes, con al menos 24 h publicadas). n = cuántas publicaciones por red.</p></div>
+    </details>
+
+    <details class="plegable" id="p-comp">
+      <summary><span class="p-titulo">Comparativas</span><span class="p-dato" id="d-comp"></span></summary>
+      <div class="p-cuerpo">
+        <h3 class="sub">Esta semana contra la anterior</h3><div id="c-semana"></div>
+        <h3 class="sub">Formato por red</h3><p class="p-nota">Vistas por publicación (mediana) · n</p><div id="c-formato"></div>
+        <h3 class="sub">Reparto de vistas, últimos 7 días</h3><div id="c-reparto"></div>
+      </div>
+    </details>
+
+    <details class="plegable" id="p-yt">
+      <summary><span class="p-titulo">YouTube a fondo</span><span class="p-dato" id="d-yt"></span></summary>
+      <div class="p-cuerpo">
+        <h3 class="sub">Minutos vistos por día</h3><div id="y-minutos" class="grafica"></div>
+        <div class="dos">
+          <div><h3 class="sub">De dónde llegan</h3><div id="y-fuentes" class="hbarras"></div></div>
+          <div><h3 class="sub">Países</h3><div id="y-paises" class="hbarras"></div></div>
+        </div>
+        <h3 class="sub">Quién ve (edad y sexo)</h3><div id="y-edades" class="hbarras"></div>
+        <p class="p-nota" id="n-yt"></p>
+      </div>
+    </details>
+
+    <details class="plegable" id="p-dinero">
+      <summary><span class="p-titulo">Dinero</span><span class="p-dato" id="d-dinero"></span></summary>
+      <div class="p-cuerpo">
+        <h3 class="sub">Gasto por día en Replicate</h3><div id="g-gasto" class="grafica"></div>
+        <h3 class="sub">En qué se fue este mes</h3><div id="g-modelos" class="hbarras"></div>
+        <h3 class="sub">Saldo y autorizaciones</h3><div id="dinero" class="dinero"></div>
+      </div>
+    </details>
+
+    <details class="plegable" id="p-creditos">
+      <summary><span class="p-titulo">Créditos de todo lo que usamos</span><span class="p-dato" id="d-creditos"></span></summary>
+      <div class="p-cuerpo"><div id="creditos" class="dinero"></div></div>
+    </details>
+
+    <details class="plegable" id="p-pubs">
+      <summary><span class="p-titulo">Todas las publicaciones</span><span class="p-dato" id="d-pubs"></span></summary>
+      <div class="p-cuerpo"><div id="t-pubs" class="tabla-scroll"></div></div>
+    </details>
+  </div>
 
   <footer class="pie">
     <a href="/completo.html">Panel completo →</a>
@@ -77,5 +145,6 @@
 </main>
 <div id="tip" class="tip" hidden></div>
 <script src="/panel.js" defer></script>
+<script src="/stats.js" defer></script>
 </body>
 </html>

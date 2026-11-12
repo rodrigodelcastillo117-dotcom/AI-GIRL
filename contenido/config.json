@@ -573,10 +573,11 @@
    },
    "largos-lc": {
     "fecha": "2026-11-13",
-    "tope_usd": 8,
+    "tope_usd": 10.5,
     "gastado_usd": 5.38,
     "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
-    "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria"
+    "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria",
+    "ampliacion": "Rodrigo, 12-nov-2026: \"acaba el LC2\" (tope 8 → 10.5: LC2 son ~94 s a cámara ≈ $4.25 + voces y un reintento; quedaban $2.62)"
    }
   },
   "extra_mes": {

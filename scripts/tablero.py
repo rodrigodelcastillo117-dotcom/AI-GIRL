@@ -593,6 +593,13 @@ def main():
         'creditos_apps': _json_o('creditos.json', {}),
         'publicaciones': publicaciones_vistas(plan, cargar_carruseles()),
     }])
+    # Estadísticas del panel (12-nov-2026): vistas y seguidores por día, mejores días/horas/temas, comparativas, dinero
+    # y créditos → centro/datos/estadisticas.json. Si falla, el resto del tablero ya quedó escrito.
+    try:
+        import estadisticas
+        estadisticas.main()
+    except Exception as e:
+        print('estadisticas:', e)
 
 
 def _json_o(nombre, defecto):

@@ -194,6 +194,7 @@ function pintarTop(pubs) {
     return {...p, gana: g, porRed, total: Object.values(porRed).reduce((a, b) => a + (b || 0), 0)};
   }).sort((a, b) => b.gana - a.gana || b.total - a.total).slice(0, 5);
   if (!filas.length) { $('top').replaceChildren(el('li', {className: 'vacio', textContent: 'Aparece con la primera medición.'})); return; }
+  if ($('d-top')) $('d-top').textContent = `${sinEmoji(filas[0].titulo).slice(0, 34)}${sinEmoji(filas[0].titulo).length > 34 ? '…' : ''} +${corto(filas[0].gana)}`;
   $('top').replaceChildren(...filas.map((p, i) => el('li', {},
     el('span', {className: 'n', textContent: i + 1}),
     el('div', {}, el('div', {className: 'tipo', textContent: `${p.tipo || ''} ${p.id}`.trim()}), el('div', {className: 't', textContent: sinEmoji(p.titulo)})),
@@ -216,6 +217,8 @@ function agenda(cal) {
         : el('p', {className: 'vacio', textContent: 'La rutina de las 6:37 lo programa.'}));
   });
   $('agenda').replaceChildren(...dias);
+  const nHoy = cal.filter((c) => c.fecha === hoy).length, nMan = cal.filter((c) => c.fecha === manana).length;
+  if ($('d-agenda')) $('d-agenda').textContent = `hoy ${nHoy} · mañana ${nMan}`;
 }
 
 // ---------- tarea de hoy ----------
@@ -274,13 +277,10 @@ function dinero(rep, apps) {
     for (const a of auts.filter((x) => !x.cerrada && x.gastado_usd < x.tope_usd)) {
       const pct = (a.gastado_usd / a.tope_usd) * 100;
       items.push(medidor(`Autorizado · ${a.clave}`, usd(a.gastado_usd), `de $${a.tope_usd}`,
-        `Quedan ${usd(a.tope_usd - a.gastado_usd)} · ${a.para.split(':')[0].split('(')[0].trim()}`, pct, pct >= 90 ? 'aviso' : null));
+        `Quedan ${usd(a.tope_usd - a.gastado_usd)} · ${a.para.split(':')[0].replace(/\s*\([^)]*\)/g, '').trim()}`, pct, pct >= 90 ? 'aviso' : null));
     }
   }
-  const eg = apps.everygen;
-  if (eg) items.push(medidor('Everygen', n0(eg.creditos), `de ${eg.mensual} este mes`, 'Se reinician cada mes y se pierden', eg.mensual ? (eg.creditos / eg.mensual) * 100 : null, null));
-  const oa = apps.openart;
-  if (oa) items.push(medidor('OpenArt', n0(oa.creditos), 'créditos', 'Respaldo de clips y fotos', null, null));
+  // Everygen, OpenArt y Higgsfield van en "Créditos de todo lo que usamos" (stats.js).
   caja.replaceChildren(...(items.length ? items : [el('p', {className: 'vacio', textContent: 'Sin datos de gasto todavía.'})]));
 }
 

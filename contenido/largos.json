@@ -2191,7 +2191,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Cuánto te llega",
-    "voz": "Hoy lo hago en cuatro partes. Cuánto te llega, la renta, cuántos días trabajas para cada cosa y tres sueldos de ejemplo."
+    "voz": "Hoy lo vemos en cuatro partes: cuánto te paga el mínimo, la renta, cuántos días trabajas para pagar cada cosa y tres sueldos de muestra."
    },
    {
     "tipo": "grafica",
@@ -2216,7 +2216,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y algo que casi nadie sabe. Al salario mínimo no le retienen impuesto, así que te llega casi completo."
+    "voz": "Mira, algo que muy pocos saben: al salario mínimo no le retienen impuesto, así que te llega prácticamente completo."
    },
    {
     "tipo": "lamina",
@@ -2263,13 +2263,8 @@
     "segundos": 3
    },
    {
-    "tipo": "victoria",
-    "capitulo": "La renta se come el 39%",
-    "voz": "Y lo primero que sale de esa quincena es la renta. Aquí es donde la cuenta empieza a doler."
-   },
-   {
     "tipo": "lamina",
-    "capitulo": null,
+    "capitulo": "La renta se come el 39%",
     "titulo": "La referencia del 30%",
     "dato_grande": "$2,875 al mes",
     "puntos": [
@@ -2278,7 +2273,7 @@
      "30% de un salario mínimo: $2,875"
     ],
     "fuente": "ONU, Informe del Secretario General E/CN.5/2020/3 (27-nov-2019); cálculo propio",
-    "voz": "Un informe de la ONU cita un parámetro común. La vivienda deja de ser asequible si cuesta más del treinta por ciento de los ingresos del hogar. Es una referencia, no una ley. Con un salario mínimo, ese treinta por ciento son dos mil ochocientos setenta y cinco pesos al mes."
+    "voz": "Y lo primero que sale de esa quincena es la renta. Aquí es donde la cuenta empieza a doler. Un informe de la ONU cita un parámetro común. La vivienda deja de ser asequible si cuesta más del treinta por ciento de los ingresos del hogar. Es una referencia, no una ley. Con un salario mínimo, ese treinta por ciento son dos mil ochocientos setenta y cinco pesos al mes."
    },
    {
     "tipo": "victoria",
@@ -2318,7 +2313,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Treinta y nueve por ciento, y eso con rentas de dos mil veinticuatro contra el salario de hoy."
+    "voz": "Casi el cuarenta por ciento. Y mira: eso es con las rentas de hace dos años, puestas contra el mínimo de hoy."
    },
    {
     "tipo": "lamina",
@@ -2341,7 +2336,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Cuántos días trabajas para pagarlo",
-    "voz": "Ahora te lo traduzco a algo que se siente más. Cuántos días tienes que trabajar para pagar cada cosa."
+    "voz": "Ahora te lo paso a algo que se siente más: cuántos días tienes que trabajar para pagar cada cosa."
    },
    {
     "tipo": "grafica",
@@ -2371,7 +2366,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y ahora una cuenta para quien está pensando en estrenar celular esta Navidad, o en sacarlo a meses."
+    "voz": "Y ahora una cuenta para quien piensa estrenar celular en Navidad, o pagarlo a meses."
    },
    {
     "tipo": "grafica",
@@ -2401,7 +2396,7 @@
    {
     "tipo": "victoria",
     "capitulo": "¿Te alcanza tu sueldo? 3 ejemplos",
-    "voz": "No es para que no te compres nada, es para que sepas cuántos días cuesta. Ahora, tres sueldos de ejemplo."
+    "voz": "No es para que no compres nada; es para que veas cuántos días de trabajo te cuesta. Vamos con tres sueldos de muestra."
    },
    {
     "tipo": "pasos",
@@ -2423,11 +2418,6 @@
     ],
     "fuente": "CONASAMI 2026; INEGI, ENIGH 2024 y líneas de pobreza oct-2026; cálculo propio",
     "voz": "Primer ejemplo. Una persona en la ciudad, con el salario mínimo y la renta promedio nacional. La renta se lleva el treinta y nueve por ciento. Y después de la comida mínima, le quedan tres mil doscientos sesenta y cuatro pesos para todo lo demás."
-   },
-   {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Ahora una familia de tres en la ciudad, con un sueldo que suena mucho mejor."
    },
    {
     "tipo": "grafica",
@@ -2457,7 +2447,7 @@
     ],
     "nota": null,
     "fuente": "INEGI, líneas de pobreza por ingresos, octubre 2026; cálculo propio",
-    "voz": "Quince mil pesos netos y seis mil quinientos de renta. El cuarenta y tres por ciento se va en renta. La comida mínima de tres personas cuesta siete mil setecientos ochenta y tres pesos. Quedan setecientos diecisiete para transporte, luz, ropa y todo lo demás. No alcanza."
+    "voz": "Ahora una familia de tres en la ciudad, con un sueldo que suena mucho mejor. Quince mil pesos netos y seis mil quinientos de renta. El cuarenta y tres por ciento se va en renta. La comida mínima de tres personas cuesta siete mil setecientos ochenta y tres pesos. Quedan setecientos diecisiete para transporte, luz, ropa y todo lo demás. No alcanza."
    },
    {
     "tipo": "victoria",
@@ -2496,11 +2486,6 @@
     "voz": "Es mi opinión, no una ley. Si tu renta pasa del treinta por ciento de tu sueldo, es lo primero que hay que mover. Bajarla te libera más dinero que cualquier recorte de café. Y compartir depa no es fracaso, puede ser lo que más alivia tu presupuesto."
    },
    {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Si quieres hacer tus propias cuentas, hice una calculadora gratis. Así funciona."
-   },
-   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Hazla tú en 10 segundos",
@@ -2511,12 +2496,12 @@
      "Y un plan de 3 pasos"
     ],
     "fuente": "Calculadora de Victoria, ¿Te alcanza tu sueldo? (enlace en la descripción)",
-    "voz": "Pones tu sueldo, tu renta y cuántas personas viven de él. Te da tu tope de renta, lo que te queda después de comer y un plan de tres pasos. Es gratis, y el enlace está en la descripción."
+    "voz": "Si quieres hacer tus propias cuentas, hice una calculadora gratis. Así funciona. Pones tu sueldo, tu renta y cuántas personas viven de él. Te da tu tope de renta, lo que te queda después de comer y un plan de tres pasos. Es gratis, y el enlace está en la descripción."
    },
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Antes de irte, te dejo todas las cuentas en una sola lámina, para que le tomes captura."
+    "voz": "Antes de irte, mira: puse todas las cuentas en una sola lámina para que la guardes con una captura de pantalla."
    },
    {
     "tipo": "lamina",
@@ -2539,6 +2524,7 @@
     "voz": "¿Qué porcentaje de tu sueldo se va en renta? Comenta el número y suscríbete. Capital ya hizo su presupuesto, cien por ciento croquetas."
    }
   ],
-  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")"
+  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")",
+  "nota_costo": "12-nov-2026, Rodrigo: \"acaba el LC2\". 3 transiciones a cámara (renta, ejemplo 2, calculadora) pasan a la voz de la lámina siguiente: ~18 s menos de Replicate (~$0.80) y eran las de menos de 4 palabras con p/b/m/v (qa_labios no las podía medir). Quedan 13 tomas a cámara, ~94 s."
  }
 ]
