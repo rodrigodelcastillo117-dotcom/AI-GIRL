@@ -11,6 +11,9 @@ Uso:
 El guion vive en contenido/largos.json → [{"id", "seo", "miniatura", "foto_horizontal", "segmentos": [...]}]:
   {"tipo": "victoria", "capitulo": "..."|null, "voz": "..."}                 Victoria a cámara (gancho, transiciones, cierre)
   {"tipo": "lamina", "capitulo": ..., "titulo", "dato_grande", "puntos": [], "fuente", "voz"}   lámina narrada con su voz
+  {"tipo": "grafica", ..., "barras": [{"etiqueta", "valor", "texto_valor"}], "nota", "fuente", "voz"}   barras horizontales
+  {"tipo": "pasos", ..., "pasos": [{"texto", "resultado"}], "fuente", "voz"}                    la cuenta paso a paso
+Rodrigo (12-nov-2026): "que sea mix de ella hablando con láminas, gráficas, fácil de entender".
 Por qué la mezcla: Victoria a cámara todo el video en Replicate cuesta ~$0.045 USD por segundo (8 min ≈ $22); con ~1 min a
 cámara y el resto en láminas narradas, cada largo cuesta ~$3-4 USD. Archivos en videos/largos/<id>/ (no van al repo,
 salvo el final y la miniatura).
@@ -150,6 +153,100 @@ def lamina(s, capitulo, ruta, cara):
     im.save(ruta, quality=95)
 
 
+def _base(capitulo, s, cara):
+    """Fondo, capítulo, título, fuente, Victoria en círculo y firma: lo común a lámina, gráfica y pasos."""
+    im = Image.new('RGB', (ANCHO, ALTO), NEGRO)
+    d = ImageDraw.Draw(im)
+    for y in range(ALTO):
+        tono = int(6 * (1 - abs(y - ALTO / 2) / (ALTO / 2)))
+        d.line([(0, y), (ANCHO, y)], fill=(NEGRO[0] + tono, NEGRO[1] + tono, NEGRO[2] + tono + 2))
+    x0, y = 150, 120
+    if capitulo:
+        d.text((x0, y), capitulo.upper(), font=fuente('SemiBold', 30), fill=ORO)
+        d.line([(x0, y + 50), (x0 + 90, y + 50)], fill=ORO, width=4)
+    y += 90
+    for renglon in textwrap.wrap(s.get('titulo') or '', 34)[:2]:
+        d.text((x0, y), renglon, font=fuente('Black', 66), fill=BLANCO)
+        y += 82
+    if s.get('fuente'):
+        d.text((x0, ALTO - 110), 'Fuente: ' + s['fuente'], font=fuente('Regular', 26), fill=GRIS)
+    foto, mascara = cara
+    borde = Image.new('RGB', (foto.width + 12, foto.height + 12), ORO)
+    m2 = Image.new('L', borde.size, 0)
+    ImageDraw.Draw(m2).ellipse((0, 0, borde.width, borde.height), fill=255)
+    im.paste(borde, (ANCHO - 150 - borde.width, 110), m2)
+    im.paste(foto, (ANCHO - 150 - borde.width + 6, 116), mascara)
+    d.text((ANCHO - 150, ALTO - 110), '@victoriatheceo · personaje creado con IA', font=fuente('Regular', 26), fill=GRIS,
+           anchor='ra')
+    return im, d, y
+
+
+def grafica(s, capitulo, ruta, cara):
+    """Barras horizontales de una sola serie (magnitud): una tonalidad (dorado), extremo redondeado anclado a la base,
+    2 px de aire entre barras, cifra directa al final de cada barra en tinta de texto (no en el color de la barra),
+    eje discreto. Guía: skill dataviz (una serie = sin leyenda; el título la nombra)."""
+    im, d, y = _base(capitulo, s, cara)
+    barras = s.get('barras') or []
+    x_et, x_bar, x_max = 150, 760, ANCHO - 330
+    alto_barra = min(105, int((ALTO - 300 - y) / max(1, len(barras))) - 30)
+    maximo = max((b['valor'] for b in barras), default=1) or 1
+    y = max(y + 60, 430)
+    d.line([(x_bar, y - 20), (x_bar, y + len(barras) * (alto_barra + 26))], fill=(60, 60, 64), width=2)  # base
+    for b in barras:
+        largo_px = max(8, int((x_max - x_bar) * b['valor'] / maximo))
+        d.rounded_rectangle((x_bar, y, x_bar + largo_px, y + alto_barra), radius=6, fill=ORO,
+                            corners=(False, True, True, False))
+        d.rectangle((x_bar, y, x_bar + 6, y + alto_barra), fill=ORO)
+        etiqueta = textwrap.wrap(b['etiqueta'], 30)[:2]
+        ye = y + alto_barra / 2 - len(etiqueta) * 22
+        for r in etiqueta:
+            d.text((x_et, ye), r, font=fuente('Medium', 40), fill=BLANCO)
+            ye += 44
+        valor = b.get('texto_valor') or f"{b['valor']:,}"
+        f = fuente('Bold', 48)
+        if x_bar + largo_px + 20 + d.textlength(valor, font=f) < ANCHO - 120:
+            d.text((x_bar + largo_px + 20, y + alto_barra / 2), valor, font=f, fill=BLANCO, anchor='lm')
+        else:
+            d.text((x_bar + largo_px - 20, y + alto_barra / 2), valor, font=f, fill=NEGRO, anchor='rm')
+        y += alto_barra + 30
+    if s.get('nota'):
+        d.text((x_et, y + 20), s['nota'], font=fuente('Medium', 34), fill=GRIS)
+    im.save(ruta, quality=95)
+
+
+def pasos(s, capitulo, ruta, cara):
+    """La cuenta paso a paso: cajas numeradas de izquierda a derecha con flechas, y el resultado de cada paso abajo."""
+    im, d, y = _base(capitulo, s, cara)
+    lista = (s.get('pasos') or [])[:4]
+    n = max(1, len(lista))
+    margen, hueco = 150, 70
+    ancho_caja = int((ANCHO - 2 * margen - (n - 1) * hueco) / n)
+    y0, alto = max(y + 70, 440), 430
+    for i, p in enumerate(lista):
+        x = margen + i * (ancho_caja + hueco)
+        d.rounded_rectangle((x, y0, x + ancho_caja, y0 + alto), radius=24, outline=(70, 70, 76), width=3,
+                            fill=(20, 20, 24))
+        d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=ORO)
+        d.text((x + 65, y0 + 65), str(i + 1), font=fuente('Black', 44), fill=NEGRO, anchor='mm')
+        yy = y0 + 130
+        ancho_txt = max(12, int(ancho_caja / 21))
+        for r in textwrap.wrap(p['texto'], ancho_txt)[:4]:
+            d.text((x + 30, yy), r, font=fuente('Medium', 36), fill=BLANCO)
+            yy += 46
+        if p.get('resultado'):
+            f = fuente('Black', 46 if len(p['resultado']) <= 18 else 36)
+            for r in textwrap.wrap(p['resultado'], max(10, int(ancho_caja / 25)))[:2]:
+                d.text((x + 30, y0 + alto - 120 + (0 if len(p['resultado']) <= 18 else -10)), r, font=f, fill=ORO)
+                break
+        if i < n - 1:
+            xa = x + ancho_caja + 12
+            d.polygon([(xa, y0 + alto / 2 - 18), (xa + hueco - 24, y0 + alto / 2), (xa, y0 + alto / 2 + 18)], fill=ORO)
+    im.save(ruta, quality=95)
+
+
+DIBUJOS = {'lamina': None, 'grafica': grafica, 'pasos': pasos}
+
+
 def laminas(vid):
     largo, carpeta = cargar(vid)
     cara = _foto_circular(os.path.join(RAIZ, largo['foto_horizontal']), 260, *largo.get('cara', []))
@@ -157,10 +254,10 @@ def laminas(vid):
     hechas = 0
     for i, s in enumerate(largo['segmentos']):
         capitulo = s.get('capitulo') or capitulo
-        if s['tipo'] != 'lamina':
+        if s['tipo'] not in DIBUJOS:
             continue
         png = os.path.join(carpeta, f'lamina-{i:02d}.png')
-        lamina(s, capitulo, png, cara)
+        (DIBUJOS[s['tipo']] or lamina)(s, capitulo, png, cara)
         audio = os.path.join(carpeta, f'voz-{i:02d}.mp3')
         seg = duracion(audio) + PAUSA_S
         # Acercamiento muy lento (1.00 → 1.04) para que la lámina no se vea congelada.
