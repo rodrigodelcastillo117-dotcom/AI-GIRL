@@ -152,6 +152,25 @@ es para proponerle algo juntos (un dueto o stitch "Victoria hace las cuentas de 
 mano; la rutina deja el texto listo en contenido/comentar_hoy.json → "colaborar": [{"autor", "mensaje"}] cuando Rodrigo
 diga quién contestó.
 
+## TODO SE UTILIZA, TODO SE SUBE, TODO SE ADAPTA (Rodrigo, 12-nov-2026)
+
+1. **Video largo → shorts → todas las redes.** Cada video largo (contenido/largos.json, scripts/largo.py) se parte en
+   shorts por capítulo con `scripts/recortes.py <id>` (Victoria en cuadro, láminas verticales, subtítulos, "Video completo
+   en mi canal"). `recortes.py programar` los reparte 2 al día desde el día siguiente a que sale su largo y
+   `recortes.py publicar <id>` los sube a YouTube Shorts, Instagram Reels, TikTok y Facebook.
+2. **Los videos largos** van a YouTube y a la página de Facebook (video nativo, misma hora): `largo.py subir <id>`.
+   TikTok e Instagram no (horizontal largo no rinde ahí). Spotify (video podcast) cuando haya 6-7 largos.
+3. **Shorts y carruseles → videos largos** (la regla 2), en este orden de valor:
+   (1) 3-4 carruseles del mismo tema convertidos en un largo de verdad: sus datos verificados como láminas horizontales y
+   Victoria intercalada; cada carrusel es un capítulo (LC1, LC2...). (2) Recopilación de shorts de un tema con Victoria de
+   anfitriona. (3) "Top 10" de un tema en cuenta regresiva. (4) Resumen semanal del domingo con los 5 shorts que más
+   rindieron. (5) "Victoria responde": sus videos hablando juntos por tema, sin tomas nuevas. Nunca se recompilan los
+   recortes de un largo (ese largo ya existe).
+4. **Intercalar formatos cada día**: TikTok 3 carruseles de fotos + 1 recorte; YouTube Shorts 2 recortes + 1 short de
+   carrusel; Instagram 1 recorte + 1 Reel de carrusel; Facebook lo de Instagram y YouTube.
+5. Ciclo completo de un carrusel: TikTok (fotos) → video largo del tema (YouTube + Facebook) → recortes con Victoria en
+   las 4 redes.
+
 ## PLAN VIGENTE 10-nov → 24-nov-2026 (congelado: no se cambia el formato hasta medirlo el 24-nov)
 
 Diagnóstico con datos (9-nov): TikTok 15 piezas, 471 vistas promedio, 4 comentarios en total; los 2 mejores son de
