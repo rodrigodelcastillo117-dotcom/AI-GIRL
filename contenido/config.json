@@ -574,7 +574,7 @@
    "largos-lc": {
     "fecha": "2026-11-13",
     "tope_usd": 8,
-    "gastado_usd": 0,
+    "gastado_usd": 2.59,
     "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
     "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria"
    }
