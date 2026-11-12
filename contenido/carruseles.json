@@ -6842,6 +6842,83 @@
    },
    "personaje": "2026-11-12: clon de c16 (3,903 vistas en TikTok contra una mediana de ~150-300): mismo formato \"Guarda esto: ... en 5 datos\", gancho guarda_esto, etiqueta en mayúsculas, 5 datos serios con su fuente al pie de cada diapositiva, voces \"Primero... Segundo... Y el último\", cierre \"Guárdalo para/antes de...\" + a quién mandárselo + \"Sígueme\"; la pregunta para comentar y el humor de Capital van solo en el texto del post (docs/PERSONAJE.md), para no meter tres llamados en la diapositiva de cierre (docs/CARRUSELES.md, paso 3).",
    "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo: LA3 (video largo) usa los ejemplos de $15,000 y $25,000 y explica los arts. 96 y 174 RLISR; aquí el ejemplo es $10,000 y se suma el cálculo anual del art. 97. La guía del SAT citada es la versión de oct-2019 (CFDI 3.3) que sigue en omawww.sat.gob.mx; el límite de 30 UMA y las claves 002 no cambiaron en la guía 4.0 según el material público, pero no se pudo descargar la guía 4.0 (sat.gob.mx respondió 403). | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra LISR (DOF 01-04-2024) art. 93 fr. I, XIV y XV, art. 96, 97 y 99 fr. III; INEGI 1/26 ($117.31); Conasami 2026 ($315.04 zona general, $440.87 frontera); LFT arts. 87 y 89; guía de nómina vigente del SAT (CFDI 4.0 y nómina 1.2, rev. 8 del 16-ene-2026, Apéndice 6 actualizado el 29-dic-2025: percepción 002 'Gratificación Anual (Aguinaldo)', Gravado y Exento, '30 UMA's', deducción 002 ISR; campos ImporteGravado e ImporteExento). Ya no hace falta la guía de 2019: se descargó la vigente de omawww.sat.gob.mx. Cuentas rehechas: $3,519.30, $5,000.00, $1,480.70, $4,725.60. Cambios: (1) la ley dice 'salario mínimo' y el SAT aplica UMA (con salario mínimo el tope sería $9,451.20 y el aguinaldo del ejemplo quedaría exento completo): diapositiva 1 y post dicen 'con el criterio del SAT' y 'la ley dice salario mínimo'; (2) el ejemplo de $10,000 supone que no hubo otra gratificación en el año (el tope es anual): añadido; (3) art. 97: el cálculo anual no se hace si dejaste de trabajar antes del 1-dic o avisas por escrito que harás tu declaración; título 'En diciembre, la cuenta del año' cambiado a 'Tu patrón hace la cuenta del año' (la ley no fija diciembre) y añadido 'sigues ahí en diciembre' y el aviso por escrito en el post; voz con el tope de cuatrocientos mil; (4) fuente del SAT cambiada a la guía vigente; (5) voces sin dos puntos. Sin consejo de inversión ni casos inventados. Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7)."
+  },
+  {
+   "id": "c77",
+   "estado": "listo",
+   "origen": "MUSE 12-nov-2026 (M3)",
+   "tema": "buen_fin_tarjeta_5_reglas",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/yate.jpg",
+   "ventana": {
+    "desde": "2026-11-16",
+    "hasta": "2026-11-17"
+   },
+   "publicar": "2026-11-16",
+   "portada": {
+    "foto": "assets/fotos/habla-calle.jpg",
+    "etiqueta": "BUEN FIN 2026",
+    "titulo": "Tu tarjeta en el Buen Fin: 5 reglas en una imagen. Guarda esto.",
+    "voz": "Tu tarjeta en el Buen Fin. Cinco reglas. Guarda esto.",
+    "gancho_tipo": "guarda_esto",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Foto al precio hoy",
+     "texto": "Si no tienes el precio de antes, no sabes si es oferta. Profeco encontró el mismo refrigerador hasta $9,309 más caro según la tienda.\n\nProfeco, monitoreo previo al Buen Fin (9-nov-2026); historial en elbuenfin.profeco.gob.mx",
+     "voz": "Uno. Tómale foto al precio hoy."
+    },
+    {
+     "titulo": "Compara con el precio de contado",
+     "texto": "No solo con el de meses. Si a meses pagas más que de contado, no es sin intereses.\n\nCondusef, recomendaciones para el Buen Fin",
+     "voz": "Dos. Compara con el precio de contado."
+    },
+    {
+     "titulo": "Revisa el total y el CAT",
+     "texto": "No solo la mensualidad. El CAT junta en una cifra intereses, comisiones y seguros: entre más bajo, más barato.\n\nCondusef, ¿Qué es el CAT?",
+     "voz": "Tres. Revisa el total y el CAT."
+    },
+    {
+     "titulo": "Compra solo lo de tu lista",
+     "texto": "Lo demás es impulso. Si no estaba en tu lista antes del viernes, no lo necesitabas.",
+     "voz": "Cuatro. Compra solo lo de tu lista."
+    },
+    {
+     "titulo": "Garantía por escrito",
+     "texto": "Si no te respetan la oferta, puedes exigirla y una bonificación. Teléfono del Consumidor: 55 5568 8722 y 800 468 8722.\n\nLFPC arts. 7, 50 y 92 Ter; Profeco",
+     "voz": "Cinco. Pide la garantía por escrito."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para el Buen Fin.",
+    "texto": "Cinco reglas, una imagen. Tenla a la mano antes de pagar.",
+    "voz": "Guárdalo para el Buen Fin."
+   },
+   "titulo_post": "Tu tarjeta en el Buen Fin, 5 reglas",
+   "texto_post": "Tu tarjeta en el Buen Fin: 5 reglas en una imagen. 💳\n1. Foto al precio hoy.\n2. Compara con el precio de contado, no solo con el de meses.\n3. Revisa el total y el CAT, no solo la mensualidad.\n4. Compra solo lo de tu lista.\n5. Garantía por escrito; si no te respetan la oferta, Profeco: 800 468 8722.\n\n🔖 Guárdalo para el Buen Fin.\n\n#buenfin #buenfin2026 #profeco #finanzaspersonales #victoriatheceo",
+   "seo": {
+    "palabra_clave": "buen fin 2026",
+    "titulo": "Tu tarjeta en el Buen Fin, 5 reglas 💳",
+    "tags_concretas": [
+     "buen fin 2026",
+     "tarjeta de credito buen fin",
+     "meses sin intereses",
+     "cat tarjeta de credito",
+     "profeco buen fin",
+     "garantia buen fin"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#profeco",
+     "#finanzaspersonales",
+     "#victoriatheceo"
+    ]
+   },
+   "llamado_unico": "guardar",
+   "fuente": "Profeco (9-nov-2026, monitoreo previo al Buen Fin: refrigerador hasta $9,309 de diferencia, según Crónica/Tiempo/Línea Directa); Condusef (recomendaciones Buen Fin; CAT); LFPC arts. 7, 50, 92 Ter; Teléfono del Consumidor 55 5568 8722 y 800 468 8722.",
+   "revision": "12-nov-2026: texto de MUSE; cifras y artículos verificados por segundo agente el 12-nov-2026 (Profeco $9,309 solo con respaldo periodístico: no se nombran tiendas)."
   }
  ]
 }

@@ -4026,23 +4026,22 @@
    "estado": "guion_listo",
    "publicar": "2026-11-18",
    "tema": "Tu Afore puede bajarte impuestos",
-   "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, son ciento ochenta mil al año. El diez por ciento son dieciocho mil que puedes deducir. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
+   "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, puedes deducir hasta dieciocho mil al año. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
    "mandar_a": "quien gana quince mil al mes",
    "subtitulos": [
     "Tu Afore puede bajarte impuestos y no lo sabías.",
     "Las aportaciones complementarias de retiro son deducibles.",
     "Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor.",
-    "Si ganas quince mil al mes, son ciento ochenta mil al año.",
-    "El diez por ciento son dieciocho mil que puedes deducir.",
+    "Si ganas quince mil al mes, puedes deducir hasta dieciocho mil al año.",
     "Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años.",
     "Se hace en tu declaración anual.",
     "¿Ya aportas a tu Afore? Comenta SÍ o NO."
    ],
-   "texto_pantalla": "AFORE = MENOS ISR · HASTA 10% DE TU INGRESO",
+   "texto_pantalla": "AFORE = MENOS ISR · $15,000 AL MES → $18,000",
    "fuente": "LISR art. 151 fr. V: aportaciones complementarias (y voluntarias con permanencia) deducibles hasta 10% de ingresos acumulables sin exceder 5 UMA anuales (2026: 5 × $42,794.64 = $213,973.20, cálculo propio con UMA de INEGI); no entran al tope global de deducciones. Si se retiran antes de los 65, se acumulan como ingreso. SAT minisitio Deducciones personales; CONSAR 'Beneficios fiscales del ahorro voluntario'. Verificado 12-nov-2026.",
    "texto_post": "Tu Afore puede bajarte impuestos: las aportaciones complementarias de retiro son deducibles hasta el 10% de tu ingreso anual o 5 UMAs, lo que sea menor (art. 151 de la Ley del ISR). Solo las de largo plazo, hasta tus 65 años. Esto es información general, no asesoría fiscal.\n\n📩 Compártelo con alguien que gane $15,000 al mes.",
    "llamado_cierre": "Compártelo con quien gane $15,000",
-   "guion_de": "MUSE (12-nov-2026); números largos dichos con cuidado (revisar_frases antes de pagar la toma)."
+   "guion_de": "MUSE (12-nov-2026); números largos dichos con cuidado (revisar_frases antes de pagar la toma). Se juntaron las dos frases del ejemplo ($180,000 al año y 10% = $18,000) en una para no pasar de 30 s."
   }
  ]
 }

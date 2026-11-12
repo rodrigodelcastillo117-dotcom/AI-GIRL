@@ -559,7 +559,7 @@
    "shorts-escena": {
     "fecha": "2026-11-12",
     "tope_usd": 15,
-    "gastado_usd": 4.0,
+    "gastado_usd": 4.04,
     "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
     "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
    }
@@ -580,5 +580,12 @@
   "texto": "Rodrigo, 12-nov-2026: \"higgsfield no lo pago, es el free\" / \"se va a quedar en sí, solo si no pago y tú haces todo\"",
   "tiktok_connector_id": "6ffc2f84-fb76-41a7-b8db-adfb8569a6e2",
   "respaldo": "si Higgsfield falla o pide pago: Publer en modo recordatorio (Rodrigo pone el sonido en la app)"
+ },
+ "instagram_temas_del_dia": {
+  "_regla": "MUSE 12-nov-2026: en Instagram nunca carrusel y reel del mismo tema el mismo día. La rutina no publica en Instagram un carrusel con este tema ese día (TikTok sí).",
+  "2026-11-12": "buen_fin",
+  "2026-11-13": "aguinaldo",
+  "2026-11-16": "buen_fin_tarjeta",
+  "2026-11-18": "afore"
  }
 }
