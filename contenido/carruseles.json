@@ -6845,7 +6845,7 @@
   },
   {
    "id": "c77",
-   "estado": "listo",
+   "estado": "programado",
    "origen": "MUSE 12-nov-2026 (M3)",
    "tema": "buen_fin_tarjeta_5_reglas",
    "pilar": "finanzas",
@@ -6914,11 +6914,21 @@
      "#profeco",
      "#finanzaspersonales",
      "#victoriatheceo"
+    ],
+    "preguntas": [
+     "¿Cómo usar la tarjeta en el Buen Fin?",
+     "¿Meses sin intereses conviene?",
+     "¿Qué es el CAT?"
     ]
    },
    "llamado_unico": "guardar",
    "fuente": "Profeco (9-nov-2026, monitoreo previo al Buen Fin: refrigerador hasta $9,309 de diferencia, según Crónica/Tiempo/Línea Directa); Condusef (recomendaciones Buen Fin; CAT); LFPC arts. 7, 50, 92 Ter; Teléfono del Consumidor 55 5568 8722 y 800 468 8722.",
-   "revision": "12-nov-2026: texto de MUSE; cifras y artículos verificados por segundo agente el 12-nov-2026 (Profeco $9,309 solo con respaldo periodístico: no se nombran tiendas)."
+   "revision": "12-nov-2026: texto de MUSE; cifras y artículos verificados por segundo agente el 12-nov-2026 (Profeco $9,309 solo con respaldo periodístico: no se nombran tiendas).",
+   "publica_utc_por_red": {
+    "ig": "2026-11-16T18:13:00Z",
+    "tt": "2026-11-16T22:41:00Z"
+   },
+   "publica_utc": "2026-11-16T22:41:00Z"
   }
  ]
 }
