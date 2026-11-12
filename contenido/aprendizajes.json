@@ -348,5 +348,12 @@
   "tipo": "tecnico",
   "aprendizaje": "qa_sync.py compara la apertura de la boca con el volumen de la voz; como la boca se abre antes del sonido, marcaba 'boca 300-400 ms adelante' en videos bien hechos. Con qa_labios.py (cierre de labios en palabras con p/b/m/v, transcritas con Whisper) los originales de Wan 40, O1 y O2 medían -39 ms (a tiempo) y los 'corregidos' con tpad +225 a +291 ms (tarde). O1 se publicó así.",
   "regla": "Los labios se aprueban con qa_labios.py (desfase máximo 100 ms, boca cerrada en p/b/m/v: apertura <= 0.35). qa_sync.py ya no reprueba por desfase. Nunca tpad ni mover el audio: si fallan los labios, se genera otra vez."
+ },
+ {
+  "fecha_utc": "2026-11-12T06:35Z",
+  "origen": "E1 short con acción",
+  "tipo": "tecnico",
+  "aprendizaje": "p-video-avatar con foto de medio cuerpo (cara chica) cambió la identidad a la mitad: pelo castaño y otra cara. Con la misma foto recortada de pecho para arriba la identidad quedó estable los 20 s.",
+  "regla": "Para p-video-avatar la foto hablando va SIEMPRE de pecho para arriba (cara en el tercio de arriba, ocupa ~40% del ancho). Si foto_escena.py la da más abierta, recortarla (crop 9:16 centrado en la cara) antes de pagar el video."
  }
 ]

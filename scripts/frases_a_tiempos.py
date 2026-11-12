@@ -59,8 +59,24 @@ if len(or_audio) == len(or_frases):
         exactas += exacto
     modo = f'por oraciones ({exactas}/{len(or_frases)} exactas)'
 else:
-    resultado, _ = repartir(frases, habladas(palabras))
-    modo = f'proporcional (oraciones: audio {len(or_audio)} vs plan {len(or_frases)})'
+    # 12-nov-2026 (E1): con oraciones distintas el reparto proporcional dejaba subtítulos ~0.9 s fuera. Se alinean las
+    # palabras del plan con las del audio (difflib) y cada frase arranca en su primera palabra encontrada.
+    import difflib
+    plan = [(i, w) for i, f in enumerate(frases) for w in normaliza(f).split()]
+    audio = [(p['start'], w) for p in palabras for w in normaliza(p['w']).split()]
+    m = difflib.SequenceMatcher(None, [w for _, w in plan], [w for _, w in audio], autojunk=False)
+    a_audio = {}
+    for b in m.get_matching_blocks():
+        for k in range(b.size):
+            a_audio[b.a + k] = audio[b.b + k][0]
+    resultado, k = [], 0
+    for i, f in enumerate(frases):
+        idx = [j for j, (fi, _) in enumerate(plan) if fi == i]
+        t = next((a_audio[j] for j in idx if j in a_audio), None)
+        if t is None:  # ninguna palabra encontrada: entre la anterior y la siguiente
+            t = resultado[-1]['start'] + 0.5 if resultado else palabras[0]['start']
+        resultado.append({'w': f, 'start': round(t, 2)})
+    modo = f'alineado por palabras (oraciones: audio {len(or_audio)} vs plan {len(or_frases)})'
 
 final = palabras[-1]['end'] + 0.3
 for i, r in enumerate(resultado):

@@ -3788,8 +3788,8 @@
    "formato": "escena",
    "pilar": "finanzas",
    "voz": "intima",
-   "duracion": 18,
-   "estado": "produciendo",
+   "duracion": 20,
+   "estado": "revision_rodrigo",
    "locacion": "cafe_terraza",
    "escena": "cafe",
    "guion": "¿Quieres saber en qué se te va el dinero? No es en lo grande. Es en lo pequeño de todos los días: el cafecito, el antojo, la app de comida. Haz esta prueba: una semana, anota todo lo que gastas, hasta lo más mínimo. Te vas a sorprender. ¿Tú cuánto crees que se te va en antojos? Te leo.",
@@ -3821,7 +3821,8 @@
    "vestuario": "Blazer camel, blusa de seda beige y jeans",
    "accion": "Sentada en una terraza de café; a media frase toma su café (inserto con movimiento real).",
    "foto_base_lista": {
-    "archivo": "assets/fotos/habla-cafe.jpg"
+    "archivo": "assets/fotos/habla-cafe-cerca.jpg",
+    "nota": "recorte de pecho para arriba de habla-cafe.jpg"
    },
    "texto_pantalla": "¿En qué se te va el dinero?",
    "texto_post": "No es en lo grande, es en lo pequeño de todos los días ☕\nHaz la prueba: una semana anotando todo. ¿Cuánto crees que se te va en antojos? Te leo.",
@@ -3846,6 +3847,15 @@
      "#dinero"
     ],
     "parrafo": "Los gastos hormiga son los pequeños gastos diarios que casi no se notan: el café, el antojo, la app de comida. Anotar todo durante una semana es la forma más simple de verlos."
+   },
+   "archivo": "videos/video-E1-FINAL.mp4",
+   "qa": {
+    "audio": "OK (guion completo; Whisper oye \"se te van antojos\" por \"se te va en antojos\")",
+    "labios": "OK: 7 palabras con p/b/m/v, desfase -39 ms en los dos tramos",
+    "sync": "FALLA solo por correlación 0.02 (mínimo 0.10); cara en 100% de cuadros, 0.63 s de boca sin voz. qa_sync confunde las sonrisas abiertas entre frases con habla.",
+    "cuadros": "10 cuadros: misma cara y pelo rojo en todo el video; acción del café 3.9-8.8 s",
+    "intento_1": "rechazado: pelo castaño y otra cara a la mitad (encuadre de medio cuerpo); se rehízo de pecho para arriba",
+    "costo_usd": 1.8
    }
   }
  ]

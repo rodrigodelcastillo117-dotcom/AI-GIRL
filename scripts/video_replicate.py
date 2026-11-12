@@ -88,8 +88,16 @@ def generar(foto, audio, salida, movimiento=MOVIMIENTO, tamano='1080:1920'):
         sys.exit(f'Replicate no lo generó: {p["status"]} {p.get("error")}')
     crudo = salida.rsplit('.', 1)[0] + '-replicate.mp4'
     url = p['output'] if isinstance(p['output'], str) else p['output'][0]
-    with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'victoria-pipeline/1.0'}), timeout=300) as r:
-        open(crudo, 'wb').write(r.read())
+    for intento in range(4):  # 12-nov-2026: la descarga se cortó (connection reset) con el video ya pagado
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'victoria-pipeline/1.0'}),
+                                        timeout=300) as r:
+                open(crudo, 'wb').write(r.read())
+            break
+        except OSError as e:
+            if intento == 3:
+                sys.exit(f'No se pudo bajar el video ya pagado ({e}); bájalo de la predicción {p["id"]}')
+            time.sleep(2 ** (intento + 1))
     segundos = duracion(audio)
     # Al largo del audio, 1080x1920, 30 fps; el audio se toma del archivo original (es la voz exacta).
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', crudo, '-i', audio, '-map', '0:v', '-map', '1:a',
@@ -97,6 +105,11 @@ def generar(foto, audio, salida, movimiento=MOVIMIENTO, tamano='1080:1920'):
                     '-c:v', 'libx264', '-crf', '16', '-preset', 'medium', '-pix_fmt', 'yuv420p',
                     '-c:a', 'aac', '-b:a', '192k', salida], check=True)
     costo = round(0.045 * (p.get('metrics') or {}).get('video_output_duration_seconds', segundos), 2)
+    try:  # si se corre con una autorización de Rodrigo, se descuenta de su tope (replicate_gasto.cargar)
+        from replicate_gasto import cargar
+        cargar(costo)
+    except Exception:  # noqa: BLE001
+        pass
     print(f'ok {salida} | {segundos:.1f} s | ~${costo} USD | crudo: {crudo}')
     return {'replicate_id': p['id'], 'costo_usd': costo, 'crudo': crudo}
 
