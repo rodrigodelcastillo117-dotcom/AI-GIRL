@@ -36,6 +36,9 @@ def _costo_video(p):
 PRECIOS = {
     'prunaai/p-video-avatar': _costo_video,
     'minimax/speech-02-hd': lambda p: len(str((p.get('input') or {}).get('text', ''))) / 1000 * 0.10,
+    # seedance-1-pro: se cobra por segundo de video; 1080p ≈ $0.124–0.15/s (se toma el alto para no quedarse corto).
+    'bytedance/seedance-1-pro': lambda p: ((p.get('metrics') or {}).get('video_output_duration_seconds')
+                                           or (p.get('input') or {}).get('duration') or 5) * 0.15,
     'black-forest-labs/flux-schnell': lambda p: 0.003 * max(1, int((p.get('input') or {}).get('num_outputs', 1) or 1)),
 }
 

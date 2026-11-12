@@ -547,6 +547,12 @@
     "para": "LA3: toma 3 (UMA) y la voz de la lámina 4",
     "cerrada": true,
     "gastado_usd": 0.22
+   },
+   "broll-movimiento": {
+    "fecha": "2026-11-12",
+    "tope_usd": 12,
+    "texto": "Rodrigo, 12-nov-2026: \"haz más escenas con movimiento real, no importa el gasto de Replicate\"",
+    "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)"
    }
   },
   "extra_mes": {

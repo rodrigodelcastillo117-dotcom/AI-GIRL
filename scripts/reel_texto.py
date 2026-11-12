@@ -129,9 +129,13 @@ def biblioteca():
         uso = json.load(open(USO))
     except (OSError, ValueError):
         uso = {}
-    todo = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'broll', '*.mp4')) +
-                  glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.png')) +
-                  glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.jpg')))
+    clips = glob.glob(os.path.join(RAIZ, 'assets', 'broll', '*.mp4'))
+    # Si la escena ya tiene movimiento real (assets/broll/<escena>-mov-N.mp4), la foto fija se deja de usar.
+    con_mov = {os.path.basename(c).split('-mov-')[0] for c in clips if '-mov-' in c}
+    fotos = [f for f in glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.png')) +
+             glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.jpg'))
+             if os.path.splitext(os.path.basename(f))[0][len('dinamica-'):] not in con_mov]
+    todo = sorted(clips + fotos)
     return sorted(todo, key=lambda r: (uso.get(os.path.relpath(r, RAIZ), 0), random.random())), uso
 
 

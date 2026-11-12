@@ -171,3 +171,11 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - **Movimiento**: el de alguien que platica: parpadea, mueve un poco la cabeza y las manos, sonríe entre frases. Nunca rígida ni exagerada.
 - **Revisión**: labios con qa_labios.py (y qa_sync.py si no se puede medir); además 6 cuadros a ojo: la cara igual en todo el clip, manos naturales, fondo sin deformarse. Si algo se ve falso, no se publica.
 - **Shorts de 15 a 30 s** (≈$0.70–1.40 cada uno en Replicate): un solo dato fuerte, gancho en el primer segundo y el texto clave en pantalla.
+
+## Movimiento real en las escenas (12-nov-2026)
+Rodrigo: "haz más escenas con movimiento real, no importa el gasto de Replicate".
+- `scripts/video_broll.py <escena> "<acción>"` anima la foto `assets/fotos/dinamica-<escena>` con Seedance 1 Pro
+  (Replicate, 1080p vertical, 5 s, ≈ $0.75 por clip) y la deja en `assets/broll/<escena>-mov-N.mp4` + catálogo.
+- Corre con `REPLICATE_AUTORIZACION=broll-movimiento` (autorización escrita en config.json; tope $12).
+- QA: 4 cuadros por clip. Se tira si: cara distinta, manos deformes, Capital acariciado o raro, texto o logos.
+- Cuando una escena ya tiene clip con movimiento, `reel_texto.py` deja de usar la foto fija de esa escena.
