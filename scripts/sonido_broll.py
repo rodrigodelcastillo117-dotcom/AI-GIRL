@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import replicate_gasto  # noqa: E402
 from video_broll import CRUDO, RAIZ, pedir  # noqa: E402
 
+VERSION = '62871fb59889b2d7c13777f08deb3b36bdff88f7e1d53a50ad7694548a41b484'  # zsxkib/mmaudio
 NEGATIVO = 'music, speech, voice, talking, singing, words, humming'
 
 
@@ -27,7 +28,8 @@ def main():
     dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', clip],
                                capture_output=True, text=True, check=True).stdout)
     replicate_gasto.freno(barato=True)
-    p = pedir('POST', 'https://api.replicate.com/v1/models/zsxkib/mmaudio/predictions', {'input': {
+    # Modelo de la comunidad: se pide por versión (el atajo /models/.../predictions da 404).
+    p = pedir('POST', 'https://api.replicate.com/v1/predictions', {'version': VERSION, 'input': {
         'video': CRUDO + os.path.relpath(clip, RAIZ), 'prompt': que + ', realistic natural sound, no music, no voices',
         'negative_prompt': NEGATIVO, 'duration': round(dur, 2)}})
     replicate_gasto.anotar(p['id'])

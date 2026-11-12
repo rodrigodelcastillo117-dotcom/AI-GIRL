@@ -36,6 +36,8 @@ lineas = []
 for i, g in enumerate(grupos):
     ini = g[0]['start']
     fin = grupos[i + 1][0]['start'] if i + 1 < len(grupos) else g[-1]['end'] + 0.3
+    if g[-1].get('pausa'):  # insertar_accion.py: Victoria se calla y hace la acción; ahí no va subtítulo
+        fin = min(fin, g[-1]['end'])
     if ini >= corte_cierre - 0.15:
         break
     fin = min(fin, corte_cierre)

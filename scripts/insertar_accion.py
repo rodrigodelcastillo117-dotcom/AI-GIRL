@@ -57,13 +57,28 @@ def main():
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', *entradas, '-filter_complex', filtro, '-map', '[v]', '-map', '[a]',
                     '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', salida],
                    check=True)
+    # Ambiente de la escena bajito debajo de TODO el short (una grabación real en un café no tiene silencio de estudio):
+    # assets/broll/sonido/<escena>-ambiente.m4a (sonido_broll.py ambiente). Va 14 dB debajo de la voz.
+    escena = os.path.basename(broll).split('-mov-')[0]
+    cama = os.path.join(os.path.dirname(os.path.abspath(broll)), 'sonido', f'{escena}-ambiente.m4a')
+    if os.path.exists(cama):
+        tmp = salida + '.cama.mp4'
+        os.replace(salida, tmp)
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', tmp, '-stream_loop', '-1', '-i', cama, '-filter_complex',
+                        '[1:a]volume=0.2,aresample=48000,aformat=channel_layouts=stereo[c];'
+                        '[0:a][c]amix=inputs=2:duration=first:normalize=0[a]',
+                        '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', salida], check=True)
+        os.remove(tmp)
+    else:
+        print(f'AVISO: falta {os.path.relpath(cama)} (ambiente de toda la escena)')
     d0, d1 = duracion(video), duracion(salida)
     if abs(d1 - (d0 + seg)) > 0.2:
         sys.exit(f'ERROR: largo inesperado ({d0:.2f} + {seg:.1f} → {d1:.2f} s)')
     # tiempos desplazados para los subtítulos: lo que va después del corte se recorre "seg" segundos
     nuevos = [dict(x, start=round(x['start'] + (seg if x['start'] >= corte else 0), 2),
                    end=round(x['end'] + (seg if x['end'] > corte else 0), 2)) for x in t]
-    nuevos[i]['end'] = round(corte, 2)  # durante la acción no hay subtítulo
+    nuevos[i]['end'] = round(corte, 2)  # durante la acción no hay subtítulo (subtitular.py respeta "pausa")
+    nuevos[i]['pausa'] = True
     json.dump(nuevos, open(os.path.splitext(salida)[0] + '-tiempos.json', 'w'), ensure_ascii=False, indent=1)
     print(f'ok {salida}: calla en {corte:.2f} s, acción {seg:.1f} s, sigue hablando; {d1:.1f} s en total')
 

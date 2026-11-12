@@ -21,7 +21,9 @@
    "segundos": 5,
    "accion": "She lifts the coffee cup, takes a slow sip, lowers it and glances out the window with a small smile. Steam rises from the cup. Gentle slow push-in. If a dog is in the frame it stays calm and only breathes or blinks.",
    "prediccion": "0zsawyvdcnrmr0d1ssd93zfxxm",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/cafe-mov-1.m4a",
+   "sonido_que": "outdoor Paris café terrace ambience, a porcelain coffee cup lifted and set down on its saucer, soft distant street sounds, light breeze"
   },
   {
    "archivo": "cocina-mov-1.mp4",
