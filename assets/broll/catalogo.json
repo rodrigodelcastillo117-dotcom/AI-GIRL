@@ -61,7 +61,7 @@
    "segundos": 5,
    "accion": "She speaks naturally into the podcast microphone with small hand gestures, then leans back and smiles. Slow arc camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "34xkn2dqbsrmy0d1ssg9awdvy4",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   },
   {
    "archivo": "calle-mov-1.mp4",
@@ -71,7 +71,7 @@
    "segundos": 5,
    "accion": "She walks confidently toward the camera along the street, natural stride, hair moving, people blurred in the background. Camera tracks backward with her. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "wj1f3sxp2hrmw0d1ssg88bw7pg",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   },
   {
    "archivo": "restaurante-mov-1.mp4",
@@ -81,7 +81,7 @@
    "segundos": 5,
    "accion": "She raises her glass of red wine, swirls it gently, takes a small sip and sets it down. Warm restaurant ambience, slow push-in. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "1y177gds4xrmy0d1ssg8wbjg9r",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   },
   {
    "archivo": "bar-mov-1.mp4",
@@ -91,17 +91,17 @@
    "segundos": 5,
    "accion": "She picks up her cocktail, takes a sip, puts it down and laughs softly looking off camera. Bokeh bar lights, slow lateral move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "pbbdtkafh9rmr0d1ssmrg0tymg",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   },
   {
    "archivo": "yate-mov-1.mp4",
    "foto": "dinamica-yate.jpg",
    "modelo": "bytedance/seedance-1-pro 1080p",
    "app": "Replicate",
-   "segundos": 5,
+   "segundos": 2.4,
    "accion": "She walks along the deck of the yacht holding the railing, wind in her hair, sea glittering behind. Camera follows smoothly. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "jafsfgak15rmr0d1ssmvahtsa8",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "recortado a 2.4 s: desde 3.0 s entraba por la orilla un perro que no es Capital; lo bueno se usa"
   },
   {
    "archivo": "coche-mov-1.mp4",
@@ -111,7 +111,7 @@
    "segundos": 5,
    "accion": "She drives calmly, hands on the steering wheel, glances at the mirror, then a quick look at the camera with a smile. Light and shadows pass across her face. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "anm93cjm2drmr0d1ssms7z37nr",
-   "nota_calidad": "por revisar"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
   }
  ],
  "rechazados": [
