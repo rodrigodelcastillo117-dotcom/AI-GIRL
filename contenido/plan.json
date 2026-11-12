@@ -3789,7 +3789,7 @@
    "pilar": "finanzas",
    "voz": "intima",
    "duracion": 20,
-   "estado": "revision_rodrigo",
+   "estado": "programado",
    "locacion": "cafe_terraza",
    "escena": "cafe",
    "guion": "¿Quieres saber en qué se te va el dinero? No es en lo grande. Es en lo pequeño de todos los días: el cafecito, el antojo, la app de comida. Haz esta prueba: una semana, anota todo lo que gastas, hasta lo más mínimo. Te vas a sorprender. ¿Tú cuánto crees que se te va en antojos? Te leo.",
@@ -3826,11 +3826,11 @@
    },
    "texto_pantalla": "¿En qué se te va el dinero?",
    "texto_post": "No es en lo grande, es en lo pequeño de todos los días ☕\nHaz la prueba: una semana anotando todo. ¿Cuánto crees que se te va en antojos? Te leo.",
-   "pregunta_comentarios": "¿Cuánto crees que se te va al mes en antojos? Comenta tu número.",
+   "pregunta_comentarios": "¿Cuánto se te va al mes en antojos? Comenta tu número.",
    "mandar_a": "quien dice que no sabe en qué se le va la quincena",
    "seo": {
     "palabra_clave": "gastos hormiga",
-    "titulo": "¿En qué se te va el dinero? La prueba de 1 semana ☕",
+    "titulo": "Gastos hormiga, la prueba de 1 semana ☕",
     "descripcion_inicio": "Gastos hormiga: no es en lo grande, es en lo pequeño de todos los días. La prueba de una semana de Victoria para ver en qué se te va el dinero.",
     "tags_concretas": [
      "gastos hormiga",
@@ -3855,7 +3855,20 @@
     "sync": "FALLA solo por correlación 0.02 (mínimo 0.10); cara en 100% de cuadros, 0.63 s de boca sin voz. qa_sync confunde las sonrisas abiertas entre frases con habla.",
     "cuadros": "10 cuadros: misma cara y pelo rojo en todo el video; acción del café 3.9-8.8 s",
     "intento_1": "rechazado: pelo castaño y otra cara a la mitad (encuadre de medio cuerpo); se rehízo de pecho para arriba",
-    "costo_usd": 1.8
+    "costo_usd": 1.8,
+    "decision": "12-nov noche: pasa (labios mide 7 palabras, -39 ms; qa_sync solo decide cuando labios no mide). Rodrigo pidió que la acción fuera pausa real: corregido."
+   },
+   "llamado_cierre": "Haz la prueba esta semana",
+   "publicacion": {
+    "hora_utc": "2026-11-14T19:07:00Z",
+    "redes": [
+     "instagram",
+     "tiktok",
+     "facebook",
+     "youtube"
+    ],
+    "youtube": "https://youtube.com/shorts/rmMgyWp4pDI",
+    "nota": "En Publer salió con el título por defecto \"Victoria The CEO\" (el título SEO falló la regla de 45 caracteres y se corrigió después); el pie sí es el bueno."
    }
   },
   {
@@ -4110,7 +4123,11 @@
     "UMAs"
    ],
    "qa": {
-    "intento_1": "rechazado: en la biblioteca oscura cambió la cara y hubo cuadros borrosos"
+    "intento_1": "rechazado: en la biblioteca oscura cambió la cara y hubo cuadros borrosos",
+    "audio": "OK",
+    "labios": "LABIOS OK",
+    "sync": "SINCRONÍA OK",
+    "cuadros": "videos/qa/M4-cuadros.jpg (revisar a ojo)"
    },
    "archivo": "videos/video-M4-FINAL.mp4"
   }

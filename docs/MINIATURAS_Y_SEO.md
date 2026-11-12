@@ -26,6 +26,9 @@ regla sin datos que la prueben (se prueba con Test & Compare).
   "+$8,000"; Victoria al centro (x 35-65 %), seria, boca cerrada.
 - **C · Objeto + alerta**: Victoria a la izquierda (x 0-45 %); a la derecha un objeto grande (tarjeta, recibo, estado
   de cuenta de la Afore) ≈ 40 % del ancho; un solo círculo o flecha cian #00C2D1 y máx. 3 palabras ("NO LA USES").
+- **Prueba del 12-nov**: la generación con IA de Canva (generate-design) salió PEOR que nuestras miniaturas de
+  largo.py (en una el perro tapaba la cara, otra sin la cifra). Se quedan las de largo.py (ya siguen la plantilla A) y
+  Canva Pro se usa para variantes B y C armadas a mano por Rodrigo o editando un diseño, no generadas.
 - Se arman en **Canva Pro** (cuenta de la hermana de Rodrigo, conector Canva): se sube la foto de Victoria y el
   objeto, se arma con las posiciones de arriba y se exporta JPG 1920x1080. Se guarda en `videos/miniaturas/<id>-A|B|C.jpg`.
 
