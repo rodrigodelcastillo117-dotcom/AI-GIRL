@@ -3961,7 +3961,7 @@
    "estado": "verificando",
    "publicar": "2026-11-13",
    "tema": "Aguinaldo: multiplica tu sueldo diario por 15",
-   "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Ese es el mínimo de ley, y te lo tienen que pagar antes del veinte de diciembre. Si trabajaste menos del año, te toca la parte proporcional. Y si no te pagan, Profedet te ayuda gratis. Guárdalo para diciembre y mándaselo a quien cobra aguinaldo por primera vez.",
+   "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Si ganas quince mil al mes, tu sueldo diario es de quinientos. Quinientos por quince días son siete mil quinientos brutos. Eso es lo mínimo. Te lo tienen que pagar antes del veinte de diciembre. Y unos tres mil quinientos pesos no pagan ISR. Haz la cuenta con tu sueldo y guárdala. ¿Cuánto te toca a ti? Comenta el número.",
    "insertos": [
     {
      "frase_despues": 1,
@@ -3969,8 +3969,24 @@
      "que": "camina a la barandilla con su copa (pausa)"
     }
    ],
-   "texto_pantalla": "Tu aguinaldo = sueldo diario × 15",
-   "mandar_a": "quien cobra aguinaldo por primera vez"
+   "texto_pantalla": "SUELDO DIARIO × 15 · $15,000 → $7,500",
+   "mandar_a": "quien cobra aguinaldo por primera vez",
+   "guion_de": "MUSE (12-nov-2026), casi literal. En voz se redondea la exención ('unos tres mil quinientos') y en pantalla va la exacta $3,519.30 (30 UMA × $117.31, LISR art. 93 fr. XIV).",
+   "subtitulos": [
+    "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince.",
+    "Si ganas quince mil al mes, tu sueldo diario es de quinientos.",
+    "Quinientos por quince días son siete mil quinientos brutos.",
+    "Eso es lo mínimo.",
+    "Te lo tienen que pagar antes del veinte de diciembre.",
+    "Y unos tres mil quinientos pesos no pagan ISR.",
+    "Haz la cuenta con tu sueldo y guárdala.",
+    "¿Cuánto te toca a ti? Comenta el número."
+   ],
+   "llamado_cierre": "Guarda la cuenta",
+   "pregunta_comentarios": "¿Cuánto te toca a ti? Comenta el número.",
+   "fuente": "LFT art. 87: mínimo 15 días de salario, antes del 20 de diciembre (20-dic-2026 es domingo). LISR art. 93 fr. XIV: exentos 30 UMA; UMA diaria 2026 $117.31 (INEGI, 8-ene-2026) = $3,519.30. PROFEDET 800 717 2942. Verificado 12-nov-2026.",
+   "texto_post": "Aguinaldo 2026: tu sueldo diario × 15 días, como mínimo. Con $15,000 al mes son $7,500 brutos, y te lo deben pagar antes del 20 de diciembre (Ley Federal del Trabajo, art. 87). Los primeros $3,519.30 no pagan ISR.\n\n🔖 Guárdalo para diciembre. ¿Cuánto te toca a ti? Comenta el número.",
+   "nota_muse": "El caption de MUSE pedía guardar Y mandar; se deja solo guardar (su propia regla: un solo llamado)."
   },
   {
    "id": "M3",
@@ -3988,7 +4004,18 @@
     "No saques efectivo con la tarjeta",
     "Compra solo lo de tu lista"
    ],
-   "cta": "Guárdalo para mañana y compártelo con quien trae la tarjeta al tope."
+   "cta": "Guárdalo para mañana y compártelo con quien trae la tarjeta al tope.",
+   "diapositivas": [
+    "Tu tarjeta en el Buen Fin: 5 reglas en una imagen. Guarda esto.",
+    "1. Foto al precio hoy. Si no tienes el precio de antes, no sabes si es oferta.",
+    "2. Compara con el precio de contado, no solo con el de meses.",
+    "3. Revisa el total y el CAT, no solo la mensualidad.",
+    "4. Compra solo lo de tu lista. Lo demás es impulso.",
+    "5. Pide la garantía por escrito. Si no te respetan la oferta, llama a Profeco."
+   ],
+   "texto_post": "Tu tarjeta en el Buen Fin: 5 reglas en una imagen. Foto al precio, compara con contado, revisa el total y el CAT, solo lo de tu lista y garantía por escrito.\n\n🔖 Guárdalo para el Buen Fin.",
+   "fuente": "Condusef (comparar contado vs meses; CAT); LFPC arts. 7, 50, 77 (respetar oferta, garantía); Profeco Teléfono del Consumidor 55 5568 8722 / 800 468 8722.",
+   "guion_de": "MUSE (12-nov-2026), literal; caption con un solo llamado (guardar)."
   },
   {
    "id": "M4",
@@ -3996,11 +4023,26 @@
    "formato": "escena",
    "escena": "lectura",
    "pilar": "finanzas",
-   "estado": "verificando",
+   "estado": "guion_listo",
    "publicar": "2026-11-18",
    "tema": "Tu Afore puede bajarte impuestos",
-   "guion": "PENDIENTE de la verificación (art. 151 fracc. V LISR, topes en UMA).",
-   "mandar_a": "quien gana quince mil al mes"
+   "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, son ciento ochenta mil al año. El diez por ciento son dieciocho mil que puedes deducir. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
+   "mandar_a": "quien gana quince mil al mes",
+   "subtitulos": [
+    "Tu Afore puede bajarte impuestos y no lo sabías.",
+    "Las aportaciones complementarias de retiro son deducibles.",
+    "Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor.",
+    "Si ganas quince mil al mes, son ciento ochenta mil al año.",
+    "El diez por ciento son dieciocho mil que puedes deducir.",
+    "Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años.",
+    "Se hace en tu declaración anual.",
+    "¿Ya aportas a tu Afore? Comenta SÍ o NO."
+   ],
+   "texto_pantalla": "AFORE = MENOS ISR · HASTA 10% DE TU INGRESO",
+   "fuente": "LISR art. 151 fr. V: aportaciones complementarias (y voluntarias con permanencia) deducibles hasta 10% de ingresos acumulables sin exceder 5 UMA anuales (2026: 5 × $42,794.64 = $213,973.20, cálculo propio con UMA de INEGI); no entran al tope global de deducciones. Si se retiran antes de los 65, se acumulan como ingreso. SAT minisitio Deducciones personales; CONSAR 'Beneficios fiscales del ahorro voluntario'. Verificado 12-nov-2026.",
+   "texto_post": "Tu Afore puede bajarte impuestos: las aportaciones complementarias de retiro son deducibles hasta el 10% de tu ingreso anual o 5 UMAs, lo que sea menor (art. 151 de la Ley del ISR). Solo las de largo plazo, hasta tus 65 años. Esto es información general, no asesoría fiscal.\n\n📩 Compártelo con alguien que gane $15,000 al mes.",
+   "llamado_cierre": "Compártelo con quien gane $15,000",
+   "guion_de": "MUSE (12-nov-2026); números largos dichos con cuidado (revisar_frases antes de pagar la toma)."
   }
  ]
 }
