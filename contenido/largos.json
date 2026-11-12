@@ -816,7 +816,11 @@
   "estado": "programado",
   "publica_utc": "2026-11-17T00:45:00Z",
   "intercalado": true,
-  "youtube": "https://youtube.com/watch?v=UCa3gTFXWms"
+  "youtube": "https://youtube.com/watch?v=UCa3gTFXWms",
+  "facebook": {
+   "publica_utc": "2026-11-17T00:45:00Z",
+   "estado": "programado"
+  }
  },
  {
   "id": "LA3",
