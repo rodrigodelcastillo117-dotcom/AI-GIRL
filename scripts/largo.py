@@ -61,15 +61,89 @@ def ffmpeg(*args):
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *args], check=True)
 
 
+import hashlib
+import re
+
+
+def clave_voz(s):
+    """Nombre del audio y de la toma de Victoria por su TEXTO (no por su posición): si se reordena o se intercala el
+    guion, lo ya generado (y pagado en Replicate) se reutiliza."""
+    return hashlib.sha1(s['voz'].strip().encode()).hexdigest()[:10]
+
+
+def clave_visual(s):
+    return hashlib.sha1(json.dumps(s, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:10]
+
+
+def ruta_voz(carpeta, s):
+    return os.path.join(carpeta, f'voz-{clave_voz(s)}.mp3')
+
+
+def ruta_seg(carpeta, s):
+    return os.path.join(carpeta, f"seg-{clave_voz(s) if s['tipo'] == 'victoria' else clave_visual(s)}.mp4")
+
+
+def migrar(vid):
+    """Pasa los archivos viejos (voz-03.mp3, seg-03.mp4: por posición) a nombres por contenido. Se corre una vez,
+    con el guion tal como estaba cuando se generaron."""
+    largo, carpeta = cargar(vid)
+    n = 0
+    for i, s in enumerate(largo['segmentos']):
+        pares = [(f'voz-{i:02d}.mp3', ruta_voz(carpeta, s))]
+        if s['tipo'] == 'victoria':
+            pares += [(f'seg-{i:02d}.mp4', ruta_seg(carpeta, s)), (f'seg-{i:02d}-palabras.json', ruta_seg(carpeta, s).replace('.mp4', '-palabras.json'))]
+        for viejo, nuevo in pares:
+            viejo = os.path.join(carpeta, viejo)
+            if os.path.exists(viejo) and not os.path.exists(nuevo):
+                os.rename(viejo, nuevo)
+                n += 1
+    print(f'ok migrar {vid}: {n} archivos')
+
+
+def _frases(texto):
+    return [f.strip() for f in re.findall(r'[^.?!¿¡]*[¿¡]?[^.?!]*[.?!]+|[^.?!]+$', texto) if f.strip()]
+
+
+def intercalar(vid):
+    """Victoria, lámina, Victoria, lámina (Rodrigo, 12-nov-2026: "muy orgánico, como si ella fuera real"). Donde hay
+    dos visuales seguidos, la primera frase del segundo la dice Victoria a cámara y el resto se narra sobre la lámina.
+    Se guarda en contenido/largos.json (una sola vez: "intercalado": true)."""
+    ruta = os.path.join(RAIZ, 'contenido', 'largos.json')
+    todos = json.load(open(ruta))
+    largo = next(x for x in todos if x['id'] == vid)
+    if largo.get('intercalado'):
+        print(f'{vid} ya está intercalado')
+        return
+    nuevos, puentes, sin_partir = [], 0, 0
+    for s in largo['segmentos']:
+        if s['tipo'] != 'victoria' and nuevos and nuevos[-1]['tipo'] != 'victoria':
+            frases = _frases(s['voz'])
+            primera, resto = (frases[0], ' '.join(frases[1:])) if len(frases) > 1 else ('', '')
+            if 4 <= len(primera.split()) <= 30 and len(resto.split()) >= 8:
+                nuevos.append({'tipo': 'victoria', 'capitulo': s.get('capitulo'), 'voz': primera, 'puente': True})
+                nuevos.append({**s, 'capitulo': None, 'voz': resto})
+                puentes += 1
+                continue
+            sin_partir += 1
+        nuevos.append(s)
+    largo['segmentos'], largo['intercalado'] = nuevos, True
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+    print(f'ok intercalar {vid}: {puentes} tomas nuevas de Victoria; {sin_partir} visuales seguidos que no se pudieron partir')
+
+
 def voces(vid):
     largo, carpeta = cargar(vid)
-    lista = [{'texto': s['voz'], 'salida': os.path.join(carpeta, f'voz-{i:02d}.mp3')}
-             for i, s in enumerate(largo['segmentos']) if not os.path.exists(os.path.join(carpeta, f'voz-{i:02d}.mp3'))]
+    vistos, lista = set(), []
+    for s in largo['segmentos']:
+        if not os.path.exists(ruta_voz(carpeta, s)) and ruta_voz(carpeta, s) not in vistos:
+            vistos.add(ruta_voz(carpeta, s))
+            lista.append({'texto': s['voz'], 'salida': ruta_voz(carpeta, s)})
     if lista:
         ruta = os.path.join(carpeta, 'voces.json')
         json.dump(lista, open(ruta, 'w'), ensure_ascii=False)
         subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'voz_victoria.py'), ruta], check=True)
-    total = sum(duracion(os.path.join(carpeta, f'voz-{i:02d}.mp3')) for i in range(len(largo['segmentos'])))
+    total = sum(duracion(ruta_voz(carpeta, s)) for s in largo['segmentos'])
     print(f'ok voces {vid}: {len(largo["segmentos"])} segmentos, {total / 60:.1f} min')
 
 
@@ -81,10 +155,10 @@ def victoria(vid):
     for i, s in enumerate(largo['segmentos']):
         if s['tipo'] != 'victoria':
             continue
-        salida = os.path.join(carpeta, f'seg-{i:02d}.mp4')
+        salida = ruta_seg(carpeta, s)
         if os.path.exists(salida):
             continue
-        r = video_replicate.generar(foto, os.path.join(carpeta, f'voz-{i:02d}.mp3'), salida,
+        r = video_replicate.generar(foto, ruta_voz(carpeta, s), salida,
                                     largo.get('movimiento', video_replicate.MOVIMIENTO), tamano=f'{ANCHO}:{ALTO}')
         gasto += r['costo_usd']
         # Labios: transcribir.py corre con VOZ_PYTHON; qa_labios con el python del sistema.
@@ -286,16 +360,18 @@ def laminas(vid):
         capitulo = s.get('capitulo') or capitulo
         if s['tipo'] not in DIBUJOS:
             continue
-        png = os.path.join(carpeta, f'lamina-{i:02d}.png')
+        if os.path.exists(ruta_seg(carpeta, s)) and os.environ.get('REHACER_LAMINAS') != '1':
+            continue
+        png = ruta_seg(carpeta, s).replace('.mp4', '.png')
         (DIBUJOS[s['tipo']] or lamina)(s, capitulo, png, cara)
-        audio = os.path.join(carpeta, f'voz-{i:02d}.mp3')
+        audio = ruta_voz(carpeta, s)
         seg = duracion(audio) + PAUSA_S
         # Acercamiento muy lento (1.00 → 1.04) para que la lámina no se vea congelada.
         ffmpeg('-loop', '1', '-i', png, '-i', audio, '-filter_complex',
                f"[0:v]scale=2304:1296,zoompan=z='1+0.04*on/({seg:.2f}*30)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
                f":d=1:s={ANCHO}x{ALTO}:fps=30,fade=t=in:st=0:d=0.25,format=yuv420p[v];[1:a]apad[a]",
                '-map', '[v]', '-map', '[a]', '-t', f'{seg:.3f}', '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
-               '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', os.path.join(carpeta, f'seg-{i:02d}.mp4'))
+               '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', ruta_seg(carpeta, s))
         hechas += 1
     print(f'ok laminas {vid}: {hechas}')
 
@@ -309,7 +385,7 @@ def armar(vid):
     largo, carpeta = cargar(vid)
     lista, capitulos, t = [], [], 0.0
     for i, s in enumerate(largo['segmentos']):
-        seg = os.path.join(carpeta, f'seg-{i:02d}.mp4')
+        seg = ruta_seg(carpeta, s)
         if not os.path.exists(seg):
             sys.exit(f'Falta {seg} (¿no pasó labios? corre "victoria" otra vez)')
         norm = os.path.join(carpeta, f'norm-{i:02d}.mp4')
@@ -439,7 +515,7 @@ def subir(vid):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir'):
+    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir', 'migrar', 'intercalar'):
         sys.exit(__doc__)
     paso, vid = sys.argv[1:]
     if paso == 'todo':

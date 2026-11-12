@@ -374,7 +374,7 @@
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, últ. reforma DOF 14-05-2026, arts. 42, 76, 87, 89 y 291-F; LISR, últ. reforma DOF 01-04-2024, art. 93 fr. I y XIV; CPEUM, art. tercero transitorio de desindexación DOF 27-01-2016; Conasami, resolución DOF 09-12-2025 y tabla 2026; INEGI, comunicado 1/26; SAT, Apéndice 6 CFDI de nómina; Profedet, Preguntas frecuentes Aguinaldo nov-2025). Todas las cuentas rehechas con Decimal, sin diferencias. Cambios: intro con 'salario mínimo general todo el año' y 'al menos'; fecha límite sin causalidad falsa (el 19 es el último día por ser 'antes del 20', no por caer el 20 en domingo); plataformas digitales: el aguinaldo va incluido en cada pago (LFT 291-F), no se paga aparte; renuncia o despido: finiquito o liquidación; ISR: redacción precisa (ley dice salario mínimo elevado a 30 días, SAT aplica 30 UMA), 'se grava' en vez de 'paga impuesto', nota de la gráfica corregida para el caso de salario mínimo (exento completo por fr. I); fuentes de art. 89 acotadas al último párrafo; SEO actualizado.",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "estado": "produciendo",
-  "publica_utc": "2026-11-14T00:45:00Z"
+  "publica_utc": "2026-11-15T00:45:00Z"
  },
  {
   "id": "LA2",
@@ -450,6 +450,12 @@
     "voz": "Primero, la fecha. La Ley Federal del Trabajo dice antes del veinte de diciembre, y este año el veinte cae en domingo. Si al terminar el sábado diecinueve no te pagaron al menos quince días de salario, o la parte proporcional si no cumpliste el año, ya te deben. Y la falta de utilidades no es excusa."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "También importa cómo te lo pagan.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Cómo te lo deben pagar",
@@ -460,7 +466,7 @@
      "Por depósito o transferencia, solo si aceptaste"
     ],
     "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 19 y 20",
-    "voz": "También importa cómo te lo pagan. Según la Procuraduría Federal de la Defensa del Trabajo, el aguinaldo va en dinero, no en mercancía ni en vales. Puede ser por depósito o transferencia si tú lo aceptaste antes. Y no te pueden descontar nada, salvo los descuentos que permite la ley."
+    "voz": "Según la Procuraduría Federal de la Defensa del Trabajo, el aguinaldo va en dinero, no en mercancía ni en vales. Puede ser por depósito o transferencia si tú lo aceptaste antes. Y no te pueden descontar nada, salvo los descuentos que permite la ley."
    },
    {
     "tipo": "victoria",
@@ -489,6 +495,12 @@
     "voz": "Ejemplo. Ganas quince mil pesos al mes y trabajaste todo el año, así que te tocaban al menos siete mil quinientos pesos. Si tu recibo dice cinco mil pesos de aguinaldo, te quedaron debiendo dos mil quinientos. Compara antes de impuestos, porque la retención aparece aparte, en las deducciones."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Te lo enseño con números, para que no te quede ninguna duda.",
+    "puente": true
+   },
+   {
     "tipo": "grafica",
     "capitulo": null,
     "titulo": "Ejemplo de aguinaldo incompleto",
@@ -514,6 +526,12 @@
     "voz": "Así se ve. La barra de en medio es lo que llegó, la última es lo que te deben. Ese número es el que vas a reclamar, así que anótalo con tu cuenta completa."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Si tu empresa no te da tu recibo, lo puedes bajar tú.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Dónde está tu recibo",
@@ -524,7 +542,7 @@
      "Con tu contraseña o tu e.firma"
     ],
     "fuente": "SAT, Consulta tus recibos de nómina a través del portal del SAT",
-    "voz": "Si tu empresa no te da tu recibo, lo puedes bajar tú. En el portal del Servicio de Administración Tributaria entras a factura electrónica, luego a consultar, cancelar y recuperar. Necesitas tu contraseña o tu firma electrónica. Ahí aparecen los recibos de nómina que te emitió tu patrón."
+    "voz": "En el portal del Servicio de Administración Tributaria entras a factura electrónica, luego a consultar, cancelar y recuperar. Necesitas tu contraseña o tu firma electrónica. Ahí aparecen los recibos de nómina que te emitió tu patrón."
    },
    {
     "tipo": "victoria",
@@ -545,6 +563,12 @@
     "voz": "Manda un correo o un mensaje a Recursos Humanos con tu nombre, cuánto te falta y desde cuándo, y guarda la respuesta. Si la empresa reconoce por escrito que te debe, la ley dice que eso interrumpe el plazo para reclamar. Pero tu mensaje solo no lo detiene, así que no esperes de más."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Guarda tus recibos de nómina, los estados de cuenta donde te cae el sueldo, tu contrato, tu gafete y tus mensajes con Recursos Humanos.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Qué pruebas guardar",
@@ -555,7 +579,7 @@
      "Mensajes con Recursos Humanos"
     ],
     "fuente": "LFT arts. 784 fr. IX y 804 fr. IV",
-    "voz": "Guarda tus recibos de nómina, los estados de cuenta donde te cae el sueldo, tu contrato, tu gafete y tus mensajes con Recursos Humanos. Y una buena noticia. Si llegas a juicio, al patrón le toca probar que pagó el aguinaldo, y la ley lo obliga a guardar esos comprobantes."
+    "voz": "Y una buena noticia. Si llegas a juicio, al patrón le toca probar que pagó el aguinaldo, y la ley lo obliga a guardar esos comprobantes."
    },
    {
     "tipo": "victoria",
@@ -594,6 +618,12 @@
     "voz": "La Ley Federal del Trabajo te pide ir primero a conciliación, salvo casos especiales como discriminación o acoso sexual. Si trabajas en una rama federal, como un banco, una automotriz o una minera, vas al Centro Federal de Conciliación y Registro Laboral. Si no, al centro de tu estado. Si te equivocas, ellos envían tu solicitud al correcto."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Presentas tu solicitud en persona, por escrito o en línea, con tu identificación y el domicilio donde trabajabas.",
+    "puente": true
+   },
+   {
     "tipo": "pasos",
     "capitulo": null,
     "titulo": "Cómo va la conciliación",
@@ -612,7 +642,13 @@
      }
     ],
     "fuente": "LFT arts. 684-C y 684-E fr. II, III, IV, V, VII, VIII y X",
-    "voz": "Presentas tu solicitud en persona, por escrito o en línea, con tu identificación y el domicilio donde trabajabas. Te dan un número y un buzón electrónico. Te citan a una audiencia dentro de los quince días siguientes y tienes que ir en persona. Si hay acuerdo, se firma un convenio. Si no, te dan una constancia para demandar."
+    "voz": "Te dan un número y un buzón electrónico. Te citan a una audiencia dentro de los quince días siguientes y tienes que ir en persona. Si hay acuerdo, se firma un convenio. Si no, te dan una constancia para demandar."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y ojo con los tiempos, porque aquí sí importan los días.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -658,6 +694,12 @@
     "voz": "El artículo quinientos dieciséis de la Ley Federal del Trabajo da un año para reclamar, contado desde el día siguiente a que el pago se volvió exigible. Para el aguinaldo dos mil veintiséis, el plazo llega a diciembre de dos mil veintisiete. Pero no lo dejes para el final."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Si te despidieron antes de diciembre, tu aguinaldo proporcional tiene que venir en el finiquito.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Si te despidieron antes de diciembre",
@@ -668,7 +710,13 @@
      "Corren desde el día siguiente a tu salida"
     ],
     "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 16; LFT art. 518",
-    "voz": "Si te despidieron antes de diciembre, tu aguinaldo proporcional tiene que venir en el finiquito. Pero ojo, si quieres reclamar el despido, la ley te da solo dos meses, contados desde el día siguiente a tu salida. Ese plazo es mucho más corto que el del aguinaldo. Busca asesoría esa misma semana."
+    "voz": "Pero ojo, si quieres reclamar el despido, la ley te da solo dos meses, contados desde el día siguiente a tu salida. Ese plazo es mucho más corto que el del aguinaldo. Busca asesoría esa misma semana."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Además, la autoridad del trabajo puede multar al patrón que no paga, con cincuenta a cinco mil veces la UMA.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -688,7 +736,7 @@
     ],
     "nota": "Con la UMA 2026 de $117.31. La impone la autoridad del trabajo, por cada trabajador afectado; no se le paga al trabajador",
     "fuente": "LFT arts. 1002, 992 y 1008; Profedet (20-dic-2019); INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "Además, la autoridad del trabajo puede multar al patrón que no paga, con cincuenta a cinco mil veces la UMA. Este año va de cinco mil ochocientos sesenta y cinco pesos con cincuenta centavos a quinientos ochenta y seis mil quinientos cincuenta pesos. Esa multa no es para ti y no reemplaza tu pago."
+    "voz": "Este año va de cinco mil ochocientos sesenta y cinco pesos con cincuenta centavos a quinientos ochenta y seis mil quinientos cincuenta pesos. Esa multa no es para ti y no reemplaza tu pago."
    },
    {
     "tipo": "victoria",
@@ -699,7 +747,8 @@
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT texto vigente, últ. reforma DOF 14-05-2026, arts. 87, 89, 516, 518, 521, 527, 529, 530, 531, 534, 684-A a 684-E, 685 Ter, 784, 804, 992, 994, 1002, 1008; Profedet, Preguntas frecuentes Aguinaldo nov-2025; STPS boletín 005/2026; Profedet conferencia 27-oct-2020 sobre competencia; Profedet art. 20-dic-2019; CFCRL solicitud en línea; SAT consulta de recibos de nómina; INEGI comunicado 1/26, UMA 2026 $117.31; cuentas rehechas con Decimal); cambios: la multa del art. 1002 ya no se atribuye a Profedet (la impone la autoridad del trabajo, art. 1008), se aclara que no se paga al trabajador y que es por trabajador afectado; Profedet solo representa en asuntos de competencia federal, se agrega la procuraduría de la defensa del trabajo de cada estado para lo local (lámina, voz, Victoria y SEO); se agrega la parte proporcional para quien no cumplió el año y 'año completo' en el ejemplo; se quita 'el reloj vuelve a empezar' y se aclara que el mensaje propio a RH no detiene el plazo; se agrega que la interrupción por conciliación cesa al día siguiente de la constancia (art. 521 fr. III); se agregan excepciones a la conciliación (art. 685 Ter), la obligación de ir en persona a la audiencia (684-E fr. VII) y datos de la solicitud (684-C); 'muchas veces ahí se arregla todo' suavizado; 'nadie te puede cobrar' acotado a funcionarios.",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "estado": "produciendo",
-  "publica_utc": "2026-11-17T00:45:00Z"
+  "publica_utc": "2026-11-17T00:45:00Z",
+  "intercalado": true
  },
  {
   "id": "LA3",
