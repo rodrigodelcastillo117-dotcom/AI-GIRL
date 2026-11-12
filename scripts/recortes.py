@@ -1,0 +1,194 @@
+"""Shorts verticales a partir de los videos largos (Rodrigo, 12-nov-2026: "podemos usar los videos largos para hacerlos
+shorts? así se reutilizan esos videos y ahorramos").
+
+Uso: python scripts/recortes.py <id del largo>          (con VOZ_PYTHON en el entorno para los subtítulos)
+
+Cada capítulo del largo es un short (si pasa de MAX_S, se parte donde Victoria vuelve a hablar). Como los largos van
+intercalados (Victoria → lámina → Victoria...), cada capítulo abre con Victoria a cámara: el gancho con cara, sin pagar
+otra toma en Replicate.
+
+Formato 1080x1920 (el de los recortes de podcast):
+- fondo: la misma imagen, ampliada y desenfocada;
+- arriba: el nombre del capítulo en grande y la etiqueta del tema;
+- en medio: Victoria en un cuadro de 1080x1080 recortado alrededor de su cara (resolución nativa: las tomas salen en
+  1920x1088, no se amplía) o la lámina a 1080x608;
+- abajo: subtítulos (transcribe.py) y, al final, "Video completo en el canal".
+Salida: videos/largos/<id>/shorts/<id>-cNN.mp4 y contenido/recortes.json (título, texto y tags para publicar).
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import largo as lg  # noqa: E402
+
+MAX_S = 59.0
+MIN_S = 20.0
+CUADRO_Y, LAMINA_Y = 430, 650
+CIERRE_S = 2.2
+
+
+def ff(*args):
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', *args], check=True)
+
+
+def _dur(ruta):
+    try:
+        return lg.duracion(ruta) if os.path.exists(ruta) else None
+    except Exception:  # se está escribiendo
+        return None
+
+
+def capitulos(largo):
+    """[(nombre, [segmentos])] partiendo donde empieza cada capítulo; si uno pasa de MAX_S, se parte en una toma de Victoria."""
+    grupos, actual, nombre = [], [], None
+    for s in largo['segmentos']:
+        if s.get('capitulo') and actual:
+            grupos.append((nombre, actual))
+            actual = []
+        nombre = s.get('capitulo') or nombre
+        actual.append(s)
+    if actual:
+        grupos.append((nombre, actual))
+    _, carpeta = lg.cargar(largo['id'])
+    salida = []
+    for nombre, segs in grupos:
+        trozo, t = [], 0.0
+        for s in segs:
+            d = _dur(lg.ruta_seg(carpeta, s)) or ((_dur(lg.ruta_voz(carpeta, s)) or 7.6) + 0.35)
+            d += 0.3
+            if trozo and t + d > MAX_S and s['tipo'] == 'victoria':
+                salida.append((nombre, trozo))
+                trozo, t = [], 0.0
+            trozo.append(s)
+            t += d
+        if trozo:
+            salida.append((nombre, trozo))
+    # Un short no puede abrir con lámina: si el primero de un trozo no es Victoria, se une al trozo anterior.
+    limpio = []
+    for nombre, segs in salida:
+        if limpio and segs[0]['tipo'] != 'victoria' and limpio[-1][0] == nombre:
+            limpio[-1] = (nombre, limpio[-1][1] + segs)
+        else:
+            limpio.append((nombre, segs))
+    # Los de menos de MIN_S (la intro de 2 frases, un cierre de una toma) se unen al vecino: hacia adelante, y el
+    # último hacia atrás. Se queda el nombre del capítulo con más contenido (nunca "Intro" ni "Cierre").
+    def seg_total(segs):
+        return sum((_dur(lg.ruta_seg(carpeta, x)) or ((_dur(lg.ruta_voz(carpeta, x)) or 7.6) + 0.35)) + 0.3 for x in segs)
+    cambio = True
+    while cambio and len(limpio) > 1:
+        cambio = False
+        for i, (nombre, segs) in enumerate(limpio):
+            if seg_total(segs) < MIN_S:
+                j = i + 1 if i + 1 < len(limpio) else i - 1
+                a, b = sorted((i, j))
+                nombres = [n for n in (limpio[a][0], limpio[b][0]) if n and n.lower() not in ('intro', 'cierre')]
+                limpio[a:b + 1] = [((nombres[0] if nombres else limpio[b][0]), limpio[a][1] + limpio[b][1])]
+                cambio = True
+                break
+    return limpio
+
+
+def tramo_vertical(origen, s, salida, cara_x):
+    """Un segmento del largo (1920x1080) en vertical 1080x1920 con fondo desenfocado."""
+    if s['tipo'] == 'victoria':
+        x = max(0, min(1920 - 1080, int(1920 * cara_x - 540)))
+        filtro = (f"[0:v]split[a][b];[b]scale=-2:1920,crop=1080:1920:(iw-1080)*{cara_x:.3f}:0,boxblur=24:2,eq=brightness=-0.18[f];"
+                  f"[a]crop=1080:1080:{x}:0[c];[f][c]overlay=0:{CUADRO_Y},fps=30,format=yuv420p[v]")
+    else:
+        filtro = ("[0:v]split[a][b];[b]scale=-2:1920,crop=1080:1920,boxblur=30:2,eq=brightness=-0.3[f];"
+                  f"[a]scale=1080:608[c];[f][c]overlay=0:{LAMINA_Y},fps=30,format=yuv420p[v]")
+    ff('-i', origen, '-filter_complex', filtro, '-map', '[v]', '-map', '0:a', '-c:v', 'libx264', '-crf', '18',
+       '-preset', 'medium', '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
+
+
+def ass_textos(titulo, etiqueta, palabras, duracion):
+    """Título arriba todo el short, subtítulos abajo (grupos de 3 palabras) y el cierre al final."""
+    def ts(t):
+        h, r = divmod(max(0, t), 3600)
+        m, s = divmod(r, 60)
+        return f'{int(h)}:{int(m):02d}:{s:05.2f}'
+    lineas = [f'Dialogue: 0,{ts(0)},{ts(duracion + 1)},Etiqueta,,0,0,0,,{etiqueta.upper()}',
+              f'Dialogue: 0,{ts(0)},{ts(duracion + 1)},Titulo,,0,0,0,,{titulo}']
+    corte = duracion - CIERRE_S
+    grupo = []
+    for i, w in enumerate(palabras):
+        grupo.append(w)
+        fin_grupo = len(grupo) == 3 or re.search(r'[.,:;!?]$', w['w']) or i == len(palabras) - 1
+        if fin_grupo:
+            ini = grupo[0]['start']
+            fin = palabras[i + 1]['start'] if i + 1 < len(palabras) else grupo[-1]['end'] + 0.3
+            if ini < corte - 0.15:
+                texto = re.sub(r'[.,:;!]+$', '', ' '.join(x['w'] for x in grupo))
+                lineas.append(f'Dialogue: 0,{ts(ini)},{ts(min(fin, corte))},Sub,,0,0,0,,{texto}')
+            grupo = []
+    lineas.append(f'Dialogue: 0,{ts(corte)},{ts(duracion + 1)},Cierre,,0,0,0,,VIDEO COMPLETO EN MI CANAL ▶')
+    return ('[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 0\n\n[V4+ Styles]\n'
+            'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, '
+            'StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n'
+            'Style: Etiqueta,Inter Black,40,&H0042C5F5,&H0042C5F5,&H00000000,&H00000000,1,0,0,0,100,100,3,0,1,0,0,8,80,80,170,1\n'
+            'Style: Titulo,Inter Black,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,1,0,0,0,100,100,0,0,3,20,0,8,70,70,235,1\n'
+            'Style: Sub,Inter Black,66,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,5,2,2,80,80,230,1\n'
+            'Style: Cierre,Inter Black,56,&H0042C5F5,&H0042C5F5,&H00000000,&HC8000000,1,0,0,0,100,100,1,0,3,18,0,2,70,70,250,1\n\n'
+            '[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n' + '\n'.join(lineas) + '\n')
+
+
+def recortar(vid):
+    largo, carpeta = lg.cargar(vid)
+    destino = os.path.join(carpeta, 'shorts')
+    os.makedirs(destino, exist_ok=True)
+    cara_x = (largo.get('cara') or [0.635])[0]
+    etiqueta = largo.get('etiqueta_shorts') or (largo['seo'].get('palabra_clave') or largo['id']).title()
+    voz_py = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
+    registro = []
+    for n, (nombre, segs) in enumerate(capitulos(largo), start=1):
+        sid = f'{vid}-c{n:02d}'
+        final = os.path.join(destino, f'{sid}.mp4')
+        faltan = [s for s in segs if not _dur(lg.ruta_seg(carpeta, s))]
+        if faltan:
+            print(f'{sid}: faltan {len(faltan)} tomas o láminas; se salta (corre "largo.py todo {vid}" primero)')
+            continue
+        if os.environ.get('SOLO') and sid not in os.environ['SOLO'].split(','):
+            continue
+        tramos = []
+        for k, s in enumerate(segs):
+            t = os.path.join(destino, f'{sid}-t{k:02d}.mp4')
+            tramo_vertical(lg.ruta_seg(carpeta, s), s, t, cara_x)
+            tramos.append(t)
+        lista = os.path.join(destino, f'{sid}.txt')
+        open(lista, 'w').write(''.join(f"file '{t}'\n" for t in tramos))
+        crudo = os.path.join(destino, f'{sid}-crudo.mp4')
+        ff('-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', crudo)
+        palabras = os.path.join(destino, f'{sid}-palabras.json')
+        subprocess.run([voz_py, os.path.join(RAIZ, 'scripts', 'transcribir.py'), crudo, palabras], check=True, capture_output=True)
+        dur = lg.duracion(crudo)
+        titulo = nombre if nombre and nombre.lower() not in ('intro', 'cierre') else largo['seo']['titulo'].split(':')[0]
+        ass = os.path.join(destino, f'{sid}.ass')
+        open(ass, 'w').write(ass_textos(titulo, etiqueta, json.load(open(palabras)), dur))
+        ff('-i', crudo, '-vf', f'ass={ass}', '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', '-pix_fmt', 'yuv420p',
+           '-c:a', 'copy', '-movflags', '+faststart', final)
+        for t in tramos + [crudo, lista]:
+            os.remove(t)
+        primera = next((s['voz'] for s in segs if s['tipo'] == 'victoria'), segs[0]['voz'])
+        registro.append({'id': sid, 'largo': vid, 'capitulo': nombre, 'archivo': os.path.relpath(final, RAIZ),
+                         'segundos': round(dur, 1), 'titulo': f"{titulo} · {largo['seo']['titulo'].split(':')[0]}"[:95],
+                         'texto': f"{primera}\n\nVideo completo en mi canal: {largo['seo']['titulo']}\n\n"
+                                  f"Victoria es un personaje creado con IA. Información general, no asesoría.\n\n"
+                                  + ' '.join(largo['seo'].get('hashtags', [])[:4]),
+                         'tags': largo['seo'].get('tags', [])[:10], 'estado': 'listo'})
+        print(f'ok {sid} | {dur:.1f} s | {titulo}', flush=True)
+    ruta = os.path.join(RAIZ, 'contenido', 'recortes.json')
+    todos = json.load(open(ruta)) if os.path.exists(ruta) else []
+    todos = [r for r in todos if r['largo'] != vid] + registro
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+    print(f'ok recortes {vid}: {len(registro)} shorts')
+
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    recortar(sys.argv[1])

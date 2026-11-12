@@ -66,7 +66,7 @@ def parecido_texto(esperado, oido):
     # antes de b/p ("embales" por "en vales"). Eso no es un error de la voz: se compara también sin espacios.
     # En México z, s y c (antes de e/i) suenan igual ("alcansa" por "alcanza"), y la voz lleva "Méjico" para pronunciarlo
     # bien mientras el oído escribe "México" (10-nov-2026).
-    sonido = lambda t: re.sub(r'c(?=[ei])', 's', re.sub(r'm(?=[bp])', 'n', t.replace('v', 'b').replace('z', 's').replace('mexic', 'mejic')))
+    sonido = lambda t: re.sub(r'c(?=[ei])', 's', re.sub(r'm(?=[bp])', 'n', t.replace('xc', 'x').replace('v', 'b').replace('z', 's').replace('mexic', 'mejic')))  # "excenta" = "exenta" (12-nov-2026)
     corrido = sonido(''.join(o))
     for palabra in {x for x in e if len(x) >= 4} - set(o):
         if not (palabra.endswith('s') and palabra[:-1] in o) and sonido(palabra) not in corrido:

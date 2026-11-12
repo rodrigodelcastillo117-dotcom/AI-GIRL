@@ -20,6 +20,7 @@ import os
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 
 MODELO = 'prunaai/p-video-avatar'
@@ -41,8 +42,18 @@ def _pedir(metodo, ruta, cuerpo=None):
     req = urllib.request.Request(API + ruta, method=metodo, data=json.dumps(cuerpo).encode() if cuerpo else None,
                                  headers={'Authorization': f'Bearer {token}', 'Content-Type': 'application/json',
                                           'User-Agent': 'victoria-pipeline/1.0'})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.load(r)
+    for espera in (5, 15, 30, 60, None):  # la red se corta a veces (12-nov-2026: "Connection reset by peer")
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code < 500 and e.code != 429 or espera is None:
+                raise
+        except (OSError, urllib.error.URLError):
+            if espera is None:
+                raise
+        print(f'  Replicate no respondió; reintento en {espera} s', flush=True)
+        time.sleep(espera)
 
 
 def _data_uri(ruta):
