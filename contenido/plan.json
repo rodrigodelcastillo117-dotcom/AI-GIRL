@@ -3857,6 +3857,77 @@
     "intento_1": "rechazado: pelo castaño y otra cara a la mitad (encuadre de medio cuerpo); se rehízo de pecho para arriba",
     "costo_usd": 1.8
    }
+  },
+  {
+   "id": "M1",
+   "origen": "MUSE 12-nov",
+   "formato": "escena",
+   "escena": "calle",
+   "pilar": "finanzas",
+   "estado": "verificando",
+   "publicar": "2026-11-12",
+   "tema": "Buen Fin: 3 errores con tu tarjeta",
+   "guion": "Tres errores con tu tarjeta en el Buen Fin. Uno: creer que meses sin intereses es gratis; si te atrasas, te cobran intereses. Dos: comprar sin ver el CAT. Tres: sacar efectivo con la tarjeta; eso cobra comisión e intereses desde el primer día. Mándaselo a quien ya tiene la tarjeta lista.",
+   "insertos": [
+    {
+     "frase_despues": 0,
+     "broll": "assets/broll/calle-mov-1.mp4",
+     "que": "camina con bolsas de compras (pausa, sin voz)"
+    }
+   ],
+   "texto_pantalla": "3 errores con tu tarjeta en el Buen Fin",
+   "mandar_a": "quien ya tiene la tarjeta lista para el Buen Fin",
+   "nota": "Cifra de Profeco ($9,309) fuera hasta verificar. Guion final después de la verificación."
+  },
+  {
+   "id": "M2",
+   "origen": "MUSE 12-nov",
+   "formato": "escena",
+   "escena": "terraza-depa",
+   "pilar": "finanzas",
+   "estado": "verificando",
+   "publicar": "2026-11-13",
+   "tema": "Aguinaldo: multiplica tu sueldo diario por 15",
+   "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Ese es el mínimo de ley, y te lo tienen que pagar antes del veinte de diciembre. Si trabajaste menos del año, te toca la parte proporcional. Y si no te pagan, Profedet te ayuda gratis. Guárdalo para diciembre y mándaselo a quien cobra aguinaldo por primera vez.",
+   "insertos": [
+    {
+     "frase_despues": 1,
+     "broll": "assets/broll/terraza-depa-mov-1.mp4",
+     "que": "camina a la barandilla con su copa (pausa)"
+    }
+   ],
+   "texto_pantalla": "Tu aguinaldo = sueldo diario × 15",
+   "mandar_a": "quien cobra aguinaldo por primera vez"
+  },
+  {
+   "id": "M3",
+   "origen": "MUSE 12-nov",
+   "formato": "carrusel",
+   "pilar": "finanzas",
+   "estado": "verificando",
+   "publicar": "2026-11-16",
+   "tema": "Tu tarjeta en el Buen Fin: 5 reglas en una imagen",
+   "portada": "Guarda esto antes de pagar en el Buen Fin",
+   "reglas": [
+    "Toma foto al precio hoy",
+    "Revisa el CAT y el total a pagar",
+    "Meses sin intereses no es lo mismo que sin costo",
+    "No saques efectivo con la tarjeta",
+    "Compra solo lo de tu lista"
+   ],
+   "cta": "Guárdalo para mañana y compártelo con quien trae la tarjeta al tope."
+  },
+  {
+   "id": "M4",
+   "origen": "MUSE 12-nov",
+   "formato": "escena",
+   "escena": "lectura",
+   "pilar": "finanzas",
+   "estado": "verificando",
+   "publicar": "2026-11-18",
+   "tema": "Tu Afore puede bajarte impuestos",
+   "guion": "PENDIENTE de la verificación (art. 151 fracc. V LISR, topes en UMA).",
+   "mandar_a": "quien gana quince mil al mes"
   }
  ]
 }
