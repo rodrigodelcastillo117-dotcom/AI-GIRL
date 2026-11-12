@@ -8,7 +8,7 @@ Uso: python scripts/reel_texto.py <id_carrusel> [--clips a.mp4,b.mp4]
 Salida en carruseles/<id>/:
   reel-texto.mp4          sin audio: Instagram (ig_reel_musica.py <id> --video reel-texto.mp4 le pone música en tendencia)
   reel-texto-musica.mp4   con música de fondo de assets/musica/: TikTok, YouTube Shorts y Facebook (publer.py)
-Sin clips en assets/broll/ usa la foto de la portada con un acercamiento lento (sirve, pero el clip se ve mejor).
+Cada tarjeta lleva su propio fondo: fotos dinámicas (assets/fotos/dinamica-*) con movimiento lento o clips de assets/broll/,\nsiempre lo menos usado (assets/broll/uso.json) para que Victoria casi no se repita.
 """
 import glob
 import json
@@ -113,35 +113,66 @@ def duracion(ruta):
                                 capture_output=True, text=True, check=True).stdout)
 
 
-def fondo(c, clips, total, salida, tmp):
-    """Clips de b-roll uno tras otro (cortes cada ~4 s) hasta cubrir el total; sin clips, la portada con acercamiento lento."""
-    if not clips:
-        foto = os.path.join(RAIZ, (c.get('portada') or {}).get('foto_reel') or (c.get('portada') or {}).get('foto'))
-        n = int(total * 30)
-        ff('-loop', '1', '-i', foto, '-vf', f"scale=1260:-2,crop=1080:1920,zoompan=z='min(zoom+0.0006,1.15)':d={n}:s=1080x1920:fps=30",
-           '-t', f'{total:.2f}', '-an', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', salida)
-        return
-    partes, t, k = [], 0.0, 0
-    while t < total:
-        clip = clips[k % len(clips)]
-        largo = min(4.2, duracion(clip), total - t + 0.05)
-        parte = os.path.join(tmp, f'b{k:02d}.mp4')
-        ff('-i', clip, '-t', f'{largo:.2f}', '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30',
-           '-an', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', parte)
-        partes.append(parte)
-        t += largo
-        k += 1
-    lista = os.path.join(tmp, 'lista.txt')
-    open(lista, 'w').write(''.join(f"file '{p}'\n" for p in partes))
-    ff('-f', 'concat', '-safe', '0', '-i', lista, '-t', f'{total:.2f}', '-c', 'copy', salida)
+USO = os.path.join(RAIZ, 'assets', 'broll', 'uso.json')
+MOVS = [  # movimiento lento distinto para cada foto (Rodrigo, 12-nov-2026: "sé dinámico")
+    "z='min(1.0+0.0010*on,1.18)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'",
+    "z='max(1.18-0.0010*on,1.0)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'",
+    "z='1.12':x='(iw-iw/zoom)*on/{n}':y='ih/2-(ih/zoom/2)'",
+    "z='1.12':x='(iw-iw/zoom)*(1-on/{n})':y='ih/2-(ih/zoom/2)'",
+    "z='min(1.0+0.0008*on,1.15)':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*0.25'",
+]
 
 
-def elegir_clips(cid, pedidos):
+def biblioteca():
+    """Fotos dinámicas (assets/fotos/dinamica-*) y clips (assets/broll/*.mp4), de lo menos usado a lo más usado."""
+    try:
+        uso = json.load(open(USO))
+    except (OSError, ValueError):
+        uso = {}
+    todo = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'broll', '*.mp4')) +
+                  glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.png')) +
+                  glob.glob(os.path.join(RAIZ, 'assets', 'fotos', 'dinamica-*.jpg')))
+    return sorted(todo, key=lambda r: (uso.get(os.path.relpath(r, RAIZ), 0), random.random())), uso
+
+
+def tramo(fuente, seg, salida, k):
+    n = int(seg * 30) + 1
+    if fuente.endswith('.mp4'):
+        largo = duracion(fuente)
+        ini = max(0.0, min(largo - seg, 0.6))
+        ff('-ss', f'{ini:.2f}', '-i', fuente, '-t', f'{seg:.2f}', '-vf',
+           'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30', '-an', '-c:v', 'libx264',
+           '-crf', '18', '-pix_fmt', 'yuv420p', salida)
+    else:
+        mov = MOVS[k % len(MOVS)].replace('{n}', str(n))
+        ff('-loop', '1', '-i', fuente, '-vf', f"scale=2160:-2,crop=2160:3840,zoompan={mov}:d={n}:s=1080x1920:fps=30",
+           '-t', f'{seg:.2f}', '-an', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', salida)
+
+
+def fondo(c, lista, salida, tmp, pedidos=None):
+    """Un fondo distinto por tarjeta (cortes al ritmo del texto). Lo menos usado primero, sin repetir dentro del Reel."""
     if pedidos:
-        return [p if os.path.isabs(p) else os.path.join(RAIZ, p) for p in pedidos]
-    todos = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'broll', '*.mp4')))
-    random.Random(cid).shuffle(todos)  # cada carrusel con su propia mezcla, siempre la misma para el mismo id
-    return todos[:5]
+        fuentes, uso = pedidos, None
+    else:
+        fuentes, uso = biblioteca()
+    if not fuentes:
+        p = c.get('portada') or {}
+        fuentes = [os.path.join(RAIZ, p.get('foto_reel') or p.get('foto'))]
+    partes = []
+    for k, item in enumerate(lista):
+        f = fuentes[k % len(fuentes)]
+        parte = os.path.join(tmp, f'b{k:02d}.mp4')
+        tramo(f, item[4], parte, k)
+        partes.append(parte)
+        if uso is not None:
+            clave = os.path.relpath(f, RAIZ)
+            uso[clave] = uso.get(clave, 0) + 1
+    if uso is not None:
+        os.makedirs(os.path.dirname(USO), exist_ok=True)
+        json.dump(uso, open(USO, 'w'), ensure_ascii=False, indent=1)
+    lst = os.path.join(tmp, 'lista.txt')
+    open(lst, 'w').write(''.join(f"file '{p}'\n" for p in partes))
+    ff('-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', salida)
 
 
 def main():
@@ -160,7 +191,7 @@ def main():
     total = sum(x[4] for x in lista)
     with tempfile.TemporaryDirectory() as tmp:
         base = os.path.join(tmp, 'fondo.mp4')
-        fondo(c, elegir_clips(cid, pedidos), total, base, tmp)
+        fondo(c, lista, base, tmp, [p if os.path.isabs(p) else os.path.join(RAIZ, p) for p in pedidos] if pedidos else None)
         entradas, filtros, t, previo = ['-i', base], [], 0.0, '0:v'
         for i, (titulo, linea, etiqueta, grande, seg) in enumerate(lista):
             png = os.path.join(tmp, f't{i:02d}.png')

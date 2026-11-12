@@ -66,6 +66,27 @@ def predicciones_desde(desde):
     return todas
 
 
+def freno(barato=False):
+    """Freno duro (Rodrigo, 12-nov-2026: "me llegó otro cargo de Replicate, por favor con cuidado con los gastos").
+    Todo script que crea algo en Replicate llama esto antes. Para si config.json → replicate.pausado es true o si el
+    gasto de Victoria de la semana o del mes (contenido/replicate.json → control, lo calcula este script) ya llegó al
+    presupuesto. No hay excepción automática: para pasar el tope Rodrigo tiene que subir el presupuesto o quitar la pausa."""
+    try:
+        cfg = (json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('replicate') or {})
+        c = (json.load(open(SALIDA)).get('control') or {}) if os.path.exists(SALIDA) else {}
+    except (OSError, ValueError):
+        return
+    if cfg.get('pausado'):
+        sys.exit('FRENO DE REPLICATE: está en pausa (config.json → replicate.pausado). No se generó nada.')
+    sem, tope_s = c.get('semana_usd') or 0, cfg.get('presupuesto_semanal_usd')
+    mes, tope_m = c.get('mes_usd') or 0, cfg.get('presupuesto_mensual_usd')
+    # barato=True (voz de Victoria, imágenes de fondo: centavos) solo se frena en el tope del MES; lo caro (videos de
+    # Victoria hablando, ~$0.045 por segundo) en el de la semana o el del mes.
+    if (not barato and tope_s and sem >= tope_s) or (tope_m and mes >= tope_m):
+        sys.exit(f'FRENO DE REPLICATE: Victoria ya gastó ${sem:.2f} esta semana (tope ${tope_s}) y ${mes:.2f} este mes '
+                 f'(tope ${tope_m}). No se generó nada; avísale a Rodrigo.')
+
+
 def resumen():
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
     base = config.get('replicate') or {}
@@ -120,6 +141,7 @@ def resumen():
         'otro_canal_semana_usd': round(periodos['semana']['otro'], 2),
         'otro_canal_mes_usd': round(periodos['mes']['otro'], 2),
         'presupuesto_semanal_usd': pres_sem, 'presupuesto_mensual_usd': pres_mes,
+        'presupuesto_otro_canal_mensual_usd': base.get('presupuesto_otro_canal_mensual_usd'),
         'proyeccion_mes_usd': round(periodos['mes']['victoria'] / mx.day * dias_mes, 2),
         'semana_desde': lunes.strftime('%Y-%m-%d'),
         'recarga_automatica': base.get('recarga_automatica'),

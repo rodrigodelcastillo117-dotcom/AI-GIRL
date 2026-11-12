@@ -6585,6 +6585,262 @@
     "desde": "2026-11-12",
     "hasta": "2026-11-17"
    }
+  },
+  {
+   "id": "c74",
+   "estado": "listo",
+   "clon_de": "c16",
+   "tema": "buen_fin_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-12",
+    "hasta": "2026-11-17"
+   },
+   "calculadora": [
+    "/pagar-deudas",
+    "Antes de usar la tarjeta, haz tu plan"
+   ],
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "BUEN FIN 2026",
+    "titulo": "Guarda esto: tu Buen Fin 2026 en 5 datos",
+    "voz": "Guarda esto. Tu Buen Fin de dos mil veintiséis en cinco datos.",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Del 13 al 17 de noviembre",
+     "texto": "Del viernes 13 al martes 17. Si pagas desde $250 con tarjeta de crédito o débito participante en un micro o pequeño comercio registrado, entras solo al sorteo del SAT.\n\nSAT, Sorteo El Buen Fin 2026",
+     "voz": "Primero, va del viernes trece al martes diecisiete, y si pagas con tarjeta desde doscientos cincuenta pesos en un comercio participante, entras solo al sorteo."
+    },
+    {
+     "titulo": "Estas no entran al sorteo",
+     "texto": "Tarjetas de crédito departamentales, tarjetas digitales o tokenizadas, pagos con billetera digital y cargos recurrentes. Solo se premia una compra por tarjeta.\n\nSAT, bases para tarjetahabientes 2026",
+     "voz": "Segundo, las tarjetas departamentales, las tarjetas digitales y las billeteras digitales no entran al sorteo."
+    },
+    {
+     "titulo": "Oferta sin fecha, sigue vigente",
+     "texto": "Toda oferta debe decir condiciones y plazo o cuántas piezas hay. Si no, la ley la presume vigente hasta que avisen que se acabó, por el mismo medio.\n\nLFPC, art. 48",
+     "voz": "Tercero, si una oferta no dice hasta cuándo dura, sigue vigente hasta que avisen que se acabó."
+    },
+    {
+     "titulo": "A meses: revisa el voucher",
+     "texto": "Antes de firmar, checa que el importe sea correcto y que diga la promoción que elegiste. Guarda el voucher: te sirve para cualquier aclaración.\n\nCondusef (12-nov-2019)",
+     "voz": "Cuarto, si compras a meses, revisa que el voucher diga la promoción antes de firmarlo, y guárdalo."
+    },
+    {
+     "titulo": "90 días para reclamar un cargo",
+     "texto": "¿Un cargo que no reconoces o una compra que no salió a meses? Pide la aclaración en 90 días naturales desde el corte. Tu banco tiene 45 días para responder.\n\nLTOSF, art. 23",
+     "voz": "Y el último, si ves un cargo que no reconoces, tienes noventa días para pedirle la aclaración a tu banco."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para el viernes 13.",
+    "texto": "Mándaselo a quien va a pagar todo con la tarjeta de la tienda.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para el viernes trece y sígueme."
+   },
+   "fuente": "SAT, 'Sorteo El Buen Fin 2026' (gob.mx/sat/articulos/sorteo-el-buen-fin-2026, 14-oct-2026): compras 'del 13 al 17 de noviembre de 2026'; bolsa de 500 millones y más de 300 mil premios. SAT, minisitio del sorteo (sat.gob.mx/minisitio/SorteoElBuenFin/index.html, permiso SEGOB 20260252PS01): 'realiza una compra desde 250 pesos con tarjeta de crédito o débito en micro y pequeños comercios registrados y entra automáticamente al sorteo'; 'A partir del 27 de noviembre de 2026, se podrán verificar las operaciones de compra' 'ingresando el número de la tarjeta'; sorteo el 4 de diciembre de 2026 a las 12:00; premios menores a 1,500 UMA 'mediante transferencia electrónica' a la tarjeta o cuenta de la compra ganadora dentro de 20 días hábiles. SAT, bases para tarjetahabientes (sat.gob.mx/minisitio/SorteoElBuenFin/tarjetahabientes.html): participan compras 'a partir de un monto de $250.00' del 13 al 17 de noviembre 'exclusivamente en establecimientos registrados exitosamente' en elbuenfin.org, con tarjetas de crédito o débito participantes emitidas en México; 'No participan': tarjetas emitidas en el extranjero, tarjetas privadas, preautorizaciones, 'cargos recurrentes', cancelaciones, reversos, retiros de efectivo, 'tarjetas de crédito departamentales', corporativas, 'tarjetas digitales o tokenizadas', 'billeteras digitales'; 'Solo se premiará una operación de compra por cada tarjeta participante'; tampoco vinos, licores, cervezas, cigarros, tabaco ni medicamentos. Ley Federal de Protección al Consumidor (texto vigente, última reforma DOF 12-12-2025, diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf), art. 48 fr. I: 'deberán indicarse las condiciones, así como el plazo de duración o el volumen de los bienes o servicios ofrecidos'; 'Si no se fija plazo ni volumen, se presume que son indefinidos hasta que se haga del conocimiento público la revocación de la promoción o de la oferta, de modo suficiente y por los mismos medios de difusión'. Condusef, '¿Vas a comprar en el Buen Fin?' (12-nov-2019, gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin): 'verificar que se haga válida la promoción al momento de firmar el voucher', 'que el importe sea correcto y refleje la promoción elegida', 'Guarda los vouchers para cualquier aclaración'. Ley para la Transparencia y Ordenamiento de los Servicios Financieros (texto vigente, última reforma DOF 14-11-2025, diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf), art. 23 fr. I: si el cliente 'no esté de acuerdo con alguno de los movimientos que aparezcan en el estado de cuenta', 'podrá presentar una solicitud de aclaración dentro del plazo de noventa días naturales contados a partir de la fecha de corte o, en su caso, de la realización de la operación'; fr. II: 'la institución tendrá un plazo máximo de cuarenta y cinco días para entregar al Cliente el dictamen' (180 días naturales si la operación fue en el extranjero). Días de la semana comprobados: 13-nov-2026 viernes, 17-nov-2026 martes. SAT, 'Bases, términos, condiciones de participación y requisitos para el Sorteo El Buen Fin 2026' (PDF oficial, sat.gob.mx/minisitio/SorteoElBuenFin/documentos/Bases_Terminos_Condiciones_Participacion_Requisitos_SBF2026.pdf): participan compras en comercios con registro exitoso en elbuenfin.org que cumplan las bases, y los comercios participantes son los que reportaron 'ingresos acumulables de hasta $5,000,000.00' en 2025 (micro y pequeños); consulta 'A partir del 27 de noviembre de 2026'; sorteo '4 de diciembre de 2026', 12:00 horas; publicación de resultados '7 de diciembre de 2026'; premios 'se pagarán antes del 5 de enero de 2027'. Las fechas '8 de diciembre' y '6 de enero de 2026' de la página de tarjetahabientes están dentro de un comentario HTML (no se ven publicadas). gob.mx/sat (14-oct-2026): calendario '13 de noviembre: Consulta los bancos y comercios participantes', '7 de diciembre: Consulta los resultados'. Consultado el 12-nov-2026; segunda revisión el 12-nov-2026.",
+   "titulo_post": "Buen Fin 2026 en 5 datos para guardar",
+   "texto_post": "Buen Fin 2026: los 5 datos que vas a buscar del 13 al 17 de noviembre, en un solo lugar. 🛍️\n1. Va del viernes 13 al martes 17. Si pagas desde $250 con tarjeta de crédito o débito participante en un micro o pequeño comercio registrado, entras solo al sorteo del SAT. Desde el 13 de noviembre el SAT publica la lista de bancos y comercios participantes.\n2. No entran al sorteo: tarjetas de crédito departamentales, tarjetas digitales o tokenizadas, billeteras digitales ni cargos recurrentes. Se premia una compra por tarjeta. Desde el 27 de noviembre revisas si participas con tu número de tarjeta en gob.mx/sorteoelbuenfin; el sorteo es el 4 de diciembre y los resultados salen desde el 7 de diciembre.\n3. Si una oferta no dice hasta cuándo dura ni cuántas piezas hay, la ley la presume vigente hasta que avisen que se acabó, por el mismo medio en que la anunciaron (LFPC art. 48).\n4. A meses: antes de firmar, revisa que el voucher tenga el importe correcto y la promoción que elegiste, y guárdalo para cualquier aclaración (Condusef).\n5. ¿Un cargo que no reconoces o una compra que no salió a meses? Tienes 90 días naturales desde el corte para pedir la aclaración a tu banco; el banco tiene 45 días para responder (LTOSF art. 23).\n\nCapital ya leyó las bases: el sorteo no acepta pagos en croquetas. 🐾\n📚 SAT, Sorteo El Buen Fin 2026 y bases para tarjetahabientes · LFPC, art. 48 · Condusef (12-nov-2019) · Ley para la Transparencia y Ordenamiento de los Servicios Financieros, art. 23\n💬 ¿Con qué vas a pagar en el Buen Fin? Comenta EFECTIVO, DÉBITO o MESES. Te contesto a todos.\n🔖 Guárdalo para el viernes 13.\n📩 Mándaselo a quien va a pagar todo con la tarjeta de la tienda.",
+   "seo": {
+    "palabra_clave": "buen fin 2026",
+    "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
+    "tags_concretas": [
+     "buen fin 2026",
+     "fechas buen fin 2026",
+     "sorteo buen fin 2026",
+     "sorteo sat buen fin",
+     "tarjetas que no participan sorteo buen fin",
+     "buen fin 13 al 17 de noviembre",
+     "oferta sin vigencia",
+     "meses sin intereses voucher",
+     "cargo no reconocido aclaracion",
+     "derechos del consumidor buen fin"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#sorteobuenfin",
+     "#derechosdelconsumidor"
+    ],
+    "preguntas": [
+     "¿Cuándo es el Buen Fin 2026?",
+     "¿Qué compras participan en el sorteo del Buen Fin 2026?",
+     "¿Qué tarjetas no participan en el sorteo del Buen Fin?",
+     "¿Cuánto tiempo tengo para reclamar un cargo no reconocido?"
+    ]
+   },
+   "personaje": "2026-11-12: clon de c16 (3,903 vistas en TikTok contra una mediana de ~150-300): mismo formato \"Guarda esto: ... en 5 datos\", gancho guarda_esto, etiqueta en mayúsculas, 5 datos serios con su fuente al pie de cada diapositiva, voces \"Primero... Segundo... Y el último\", cierre \"Guárdalo para/antes de...\" + a quién mandárselo + \"Sígueme\"; la pregunta para comentar y el humor de Capital van solo en el texto del post (docs/PERSONAJE.md), para no meter tres llamados en la diapositiva de cierre (docs/CARRUSELES.md, paso 3).",
+   "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo en la segunda revisión: el minisitio del SAT dice \"micro y pequeños comercios registrados\" en la portada y \"comercios registrados\" en las bases; se escribió \"comercio registrado\" (las dos lo cubren). Las bases dicen resultados \"a partir del 8 de diciembre\" y pago \"antes del 6 de enero de 2026\" (errata), y la portada \"7 de diciembre\" y \"antes del 5 de enero de 2027\": por eso no se usan esas fechas. | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra fuentes oficiales descargadas ese día (minisitio SAT, bases oficiales en PDF, gob.mx/sat 14-oct-2026, LFPC art. 48 fr. I DOF 12-12-2025, Condusef 12-nov-2019, LTOSF art. 23 fr. I y II DOF 14-11-2025); 13-nov-2026 viernes y 17-nov-2026 martes comprobados. Cambios: (1) solo entran compras en micro y pequeños comercios registrados (comercios con ingresos 2025 de hasta $5,000,000), no en cualquier comercio registrado; corregido en diapositiva 1, voz y texto del post; (2) 'tarjetas de crédito departamentales', como dicen las bases; (3) art. 48 LFPC es una presunción: 'la ley la presume vigente'; (4) fechas resueltas con las bases oficiales en PDF: consulta desde el 27-nov, sorteo 4-dic 12:00, resultados desde el 7-dic, pago antes del 5-ene-2027 (las fechas 8-dic y 6-ene-2026 están en un comentario HTML, no publicadas); se añadió 'resultados desde el 7 de diciembre' al post; (5) voces sin dos puntos (coma o punto en su lugar). Sin consejo de inversión ni casos inventados. Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7)."
+  },
+  {
+   "id": "c75",
+   "estado": "listo",
+   "clon_de": "c16",
+   "tema": "finiquito_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "FINIQUITO 2026",
+    "titulo": "Guarda esto: tu finiquito 2026 en 5 datos",
+    "voz": "Guarda esto. Tu finiquito de dos mil veintiséis en cinco datos.",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Tu aguinaldo, casi completo",
+     "texto": "Si sales el 15 de diciembre y trabajaste todo el año, cuentan 349 de 365 días. Con $15,000 al mes y 15 días de ley: $7,171.23 brutos.\n\nLFT, arts. 87 y 89",
+     "voz": "Primero, si te vas el quince de diciembre, renuncies o te corran, te toca casi todo tu aguinaldo."
+    },
+    {
+     "titulo": "Vacaciones: desde tu aniversario",
+     "texto": "Las vacaciones proporcionales van por año de servicio, que corre desde tu fecha de ingreso: desde tu último aniversario, no desde enero. Y llevan prima vacacional de mínimo 25%.\n\nLFT, arts. 76, 79, 80 y 81",
+     "voz": "Segundo, tus vacaciones proporcionales se cuentan desde tu último aniversario, no desde enero, y llevan su prima."
+    },
+    {
+     "titulo": "Tu constancia, en 3 días",
+     "texto": "Si te separas del trabajo, tu patrón debe darte por escrito una constancia de tus servicios dentro de los 3 días siguientes. Pídela.\n\nLFT, art. 132, fr. VIII",
+     "voz": "Tercero, si te vas, tu patrón te tiene que dar una constancia de servicios por escrito en tres días."
+    },
+    {
+     "titulo": "Renunciar a lo tuyo no vale",
+     "texto": "Renunciar a salarios o prestaciones que ya ganaste es nulo. Todo convenio va por escrito, con desglose, y se ratifica ante el Centro de Conciliación o el Tribunal.\n\nLFT, art. 33",
+     "voz": "Cuarto, si firmas que renuncias a lo que ya ganaste, esa renuncia no vale. Todo convenio va por escrito y con desglose."
+    },
+    {
+     "titulo": "Liquidación: una parte sin ISR",
+     "texto": "La prima de antigüedad y la indemnización no pagan ISR hasta 90 UMA por año de servicio, según el SAT: $10,557.90 por año en 2026.\n\nLISR, art. 93, fr. XIII · SAT · INEGI",
+     "voz": "Y el último, la indemnización y la prima de antigüedad no pagan impuesto hasta diez mil quinientos cincuenta y siete pesos por año trabajado."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo antes de firmar tu finiquito.",
+    "texto": "Mándaselo a quien ya no quiere regresar en enero.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo antes de firmar tu finiquito y sígueme."
+   },
+   "fuente": "Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026, diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf): art. 87 (aguinaldo de 'quince días de salario, por lo menos'; quienes no cumplieron el año, 'independientemente de que se encuentren laborando o no en la fecha de liquidación del aguinaldo', reciben 'la parte proporcional'); art. 89 ('Cuando el salario se fije por semana o por mes, se dividirá entre siete o entre treinta'). Cálculo propio: del 1-ene al 15-dic-2026 = 349 días; $15,000 ÷ 30 = $500 diarios; $500 × 15 = $7,500; $7,500 × 349 ÷ 365 = $7,171.23 (supone 15 días de aguinaldo y todo el año trabajado). Art. 76 (vacaciones por año de servicios, mínimo 12 días con más de un año; reformado DOF 27-12-2022); art. 79 ('Si la relación de trabajo termina antes de que se cumpla el año de servicios, el trabajador tendrá derecho a una remuneración proporcionada al tiempo de servicios prestados'); art. 80 ('prima no menor de veinticinco por ciento'); art. 81 (vacaciones 'dentro de los seis meses siguientes al cumplimiento del año de servicios'): el año de servicios corre desde la fecha de ingreso, por eso las proporcionales se cuentan desde el último aniversario. Art. 132 fr. VIII (obligación del patrón: 'Expedir al trabajador que lo solicite o se separe de la empresa, dentro del término de tres días, una constancia escrita relativa a sus servicios'). Art. 33 ('Es nula la renuncia que los trabajadores hagan de los salarios devengados, de las indemnizaciones y demás prestaciones que deriven de los servicios prestados'; 'Todo convenio o liquidación, para ser válido, deberá hacerse por escrito y contener una relación circunstanciada de los hechos que lo motiven y de los derechos comprendidos en él. Será ratificado ante los Centros de Conciliación o al Tribunal'). Art. 518 (las acciones por despido 'Prescriben en dos meses', desde el día siguiente a la separación; se suspende con la solicitud de conciliación). Ley del ISR (texto vigente, última reforma DOF 01-04-2024, diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf), art. 93 fr. XIII: exentos los pagos al separarse 'por concepto de primas de antigüedad, retiro e indemnizaciones u otros pagos' 'hasta por el equivalente a noventa veces el salario mínimo general' 'por cada año de servicio'; 'Toda fracción de más de seis meses se considerará un año completo'; fr. XIV: primas vacacionales exentas 'hasta por el equivalente a 15 días de salario mínimo general'. SAT, Guía de llenado del comprobante del recibo de pago de nómina y su complemento, CFDI 4.0 y nómina 1.2, revisión 8 del 16-ene-2026 (tablas del Apéndice 6 actualizadas el 29-dic-2025; omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/Guia_llenado_Nomina.pdf), Apéndice 6 (igual que la versión oct-2019 en omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiaNomina11102019.pdf): percepciones 022 Prima por antigüedad, 023 Pagos por separación y 025 Indemnizaciones, límite exento '90 UMA's por año de servicio'; 021 Prima vacacional, '15 UMA's'. INEGI, comunicado 1/26 (8-ene-2026, inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf): UMA diaria de $117.31 desde el 1-feb-2026. Cálculo propio: 90 × $117.31 = $10,557.90; 15 × $117.31 = $1,759.65. PROFEDET, '¿Sabes cuáles son tus derechos en caso de renuncia o despido injustificado?' (7-sep-2026, gob.mx/profedet/es/articulos/sabes-cuales-son-tus-derechos-en-caso-de-renuncia-o-despido-injustificado): en la renuncia voluntaria el finiquito incluye las partes proporcionales de 'Aguinaldo', 'Vacaciones y prima vacacional' y prima de antigüedad con 15 años o más. Consultado el 12-nov-2026.",
+   "titulo_post": "Finiquito 2026 en 5 datos para guardar",
+   "texto_post": "Finiquito 2026: los 5 datos que vas a buscar si te vas en diciembre, en un solo lugar. 📄\n1. Aguinaldo: si sales el 15 de diciembre y trabajaste todo el año, cuentan 349 de 365 días. Con $15,000 al mes y 15 días de ley: $7,171.23 brutos. Te toca renuncies o te corran (LFT arts. 87 y 89).\n2. Vacaciones: las proporcionales se cuentan por año de servicio, desde tu último aniversario y no desde enero, con prima vacacional de mínimo 25% (LFT arts. 76, 79, 80 y 81).\n3. Constancia: si te vas, tu patrón debe darte por escrito una constancia de tus servicios dentro de 3 días (LFT art. 132 fr. VIII).\n4. Renunciar a salarios o prestaciones que ya ganaste es nulo; todo convenio va por escrito, con desglose, y se ratifica ante el Centro de Conciliación o el Tribunal (LFT art. 33). Aun así, no firmes nada que no hayas leído.\n5. ISR: con el criterio del SAT (la ley dice salario mínimo y el SAT aplica la UMA), la prima de antigüedad y la indemnización están exentas hasta 90 UMA por año de servicio, $10,557.90 por año en 2026; más de 6 meses cuenta como año completo (LISR art. 93 fr. XIII). La prima vacacional, hasta 15 UMA al año: $1,759.65.\nSi te despidieron, tienes 2 meses para reclamar (LFT art. 518). PROFEDET te asesora gratis: gob.mx/profedet.\n\nCapital no firma nada sin olerlo primero. 🐾\n📚 LFT, arts. 33, 76, 79, 80, 81, 87, 89, 132 y 518 · LISR, art. 93 fr. XIII y XIV · UMA 2026 (INEGI) · SAT, guía del CFDI de nómina · PROFEDET (7-sep-2026)\n💬 ¿Cuántos años llevas en tu trabajo? Comenta el número. Te contesto a todos.\n🔖 Guárdalo antes de firmar tu finiquito.\n📩 Mándaselo a quien ya no quiere regresar en enero.",
+   "seo": {
+    "palabra_clave": "finiquito 2026",
+    "titulo": "Finiquito 2026 en 5 datos para guardar 🔖",
+    "tags_concretas": [
+     "finiquito 2026",
+     "finiquito diciembre",
+     "aguinaldo proporcional finiquito",
+     "vacaciones proporcionales finiquito",
+     "constancia de servicios",
+     "convenio de liquidacion",
+     "articulo 33 ley federal del trabajo",
+     "finiquito paga isr",
+     "indemnizacion exenta 90 uma",
+     "cuanto me toca de finiquito"
+    ],
+    "hashtags": [
+     "#finiquito",
+     "#derechoslaborales",
+     "#liquidacion",
+     "#aguinaldo2026"
+    ],
+    "preguntas": [
+     "¿Cuánto aguinaldo me toca si renuncio en diciembre?",
+     "¿Cómo se calculan las vacaciones proporcionales del finiquito?",
+     "¿La liquidación paga ISR?",
+     "¿Vale si firmo que renuncio a mis prestaciones?"
+    ]
+   },
+   "personaje": "2026-11-12: clon de c16 (3,903 vistas en TikTok contra una mediana de ~150-300): mismo formato \"Guarda esto: ... en 5 datos\", gancho guarda_esto, etiqueta en mayúsculas, 5 datos serios con su fuente al pie de cada diapositiva, voces \"Primero... Segundo... Y el último\", cierre \"Guárdalo para/antes de...\" + a quién mandárselo + \"Sígueme\"; la pregunta para comentar y el humor de Capital van solo en el texto del post (docs/PERSONAJE.md), para no meter tres llamados en la diapositiva de cierre (docs/CARRUSELES.md, paso 3).",
+   "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo: c11 y c53 (listo) ya dicen tres meses, prima de antigüedad y dos meses para reclamar; aquí esos van solo en el texto del post y las diapositivas usan otros datos (cifra del aguinaldo en diciembre, aniversario, constancia del art. 132, art. 33 e ISR del art. 93 fr. XIII). Conviene no publicarlo el mismo día que c53. | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra LFT (DOF 14-05-2026) arts. 33, 76, 79, 80, 81, 87, 89, 132 fr. VIII y 518; LISR (DOF 01-04-2024) art. 93 fr. XIII y XIV; INEGI comunicado 1/26 (UMA $117.31); guía de nómina vigente del SAT (CFDI 4.0, rev. 8 del 16-ene-2026: claves 022, 023 y 025 con '90 UMA's por año de servicio', 021 con '15 UMA's'); PROFEDET 7-sep-2026. Cuentas rehechas: 349 días, $7,171.23, $10,557.90, $1,759.65. Cambios: (1) LFT art. 33 dice 'ante los Centros de Conciliación o al Tribunal': añadido 'o el Tribunal' en diapositiva 4 y post; (2) la ley dice 'salario mínimo' y el SAT aplica UMA (desindexación 2016; Prodecon ha defendido el salario mínimo en algún caso): diapositiva 5 y post dicen 'según el SAT'; la cifra en UMA es la menor, así que no promete de más; (3) 'desde tu último aniversario' es la lectura de 'año de servicios' (arts. 76, 79 y 81), sin frase literal en la ley ni página de PROFEDET; se dejó atado a 'año de servicio, que corre desde tu fecha de ingreso'; (4) prima vacacional exenta '15 UMA al año' (fr. XIV dice 'durante el año de calendario'); (5) fuente del SAT cambiada a la guía vigente; (6) voces sin dos puntos. Sin consejo de inversión ni casos inventados (el ejemplo de $15,000 es hipotético). Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7)."
+  },
+  {
+   "id": "c76",
+   "estado": "listo",
+   "clon_de": "c16",
+   "tema": "isr_aguinaldo_datos_para_guardar",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "ISR DEL AGUINALDO 2026",
+    "titulo": "Guarda esto: el ISR de tu aguinaldo 2026 en 5 datos",
+    "voz": "Guarda esto. El impuesto de tu aguinaldo de dos mil veintiséis en cinco datos.",
+    "gancho_tipo": "guarda_esto"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Libres: $3,519.30 al año",
+     "texto": "Con el criterio del SAT son 30 UMA de $117.31 (la ley dice salario mínimo). Es un tope por año, no por pago: suma todas tus gratificaciones del año.\n\nLISR, art. 93, fr. XIV · SAT · INEGI",
+     "voz": "Primero, en tu nómina van libres de impuesto tres mil quinientos diecinueve pesos, y es un tope por año, no por pago."
+    },
+    {
+     "titulo": "Con $10,000 al mes: $1,480.70",
+     "texto": "Aguinaldo de 15 días: $5,000. Menos la parte exenta, $3,519.30, quedan $1,480.70 gravados si no tuviste otra gratificación en el año. El ISR va sobre eso, no sobre los $5,000.\n\nLFT, arts. 87 y 89 · LISR, art. 93",
+     "voz": "Segundo, si ganas diez mil al mes, solo mil cuatrocientos ochenta pesos de tu aguinaldo pagan impuesto."
+    },
+    {
+     "titulo": "Con el salario mínimo, nada",
+     "texto": "Si ganas el mínimo ($315.04 diarios en la zona general), tu aguinaldo de 15 días, $4,725.60, queda libre completo: la ley exenta tus prestaciones de ley.\n\nLISR, art. 93, fr. I · Conasami",
+     "voz": "Tercero, si ganas el salario mínimo, tu aguinaldo de ley va libre de impuesto completo."
+    },
+    {
+     "titulo": "Búscalo en tu recibo",
+     "texto": "En tu CFDI de nómina, la percepción \"Gratificación anual (aguinaldo)\" viene partida en exento y gravado. Lo retenido aparece en deducciones como ISR.\n\nLISR, art. 99, fr. III · SAT, guía de nómina",
+     "voz": "Cuarto, en tu recibo de nómina, el aguinaldo viene partido en exento y gravado. Revísalo."
+    },
+    {
+     "titulo": "Tu patrón hace la cuenta del año",
+     "texto": "¿Mismo patrón del 1 de enero a diciembre y hasta $400,000 al año? Él calcula tu ISR anual y compensa lo retenido de más a más tardar el año siguiente.\n\nLISR, art. 97",
+     "voz": "Y el último, si estás todo el año con el mismo patrón y ganas hasta cuatrocientos mil pesos, él hace la cuenta de tu impuesto anual."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para tu recibo de diciembre.",
+    "texto": "Mándaselo a quien dice que el SAT se queda con todo su aguinaldo.\nSígueme: cada día, un dato de dinero que sí sirve en México.",
+    "voz": "Guárdalo para tu recibo de diciembre y sígueme."
+   },
+   "fuente": "Ley del ISR (texto vigente, última reforma DOF 01-04-2024, diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf): art. 93 fr. XIV (exentas 'Las gratificaciones que reciban los trabajadores de sus patrones, durante un año de calendario, hasta el equivalente del salario mínimo general del área geográfica del trabajador elevado a 30 días, cuando dichas gratificaciones se otorguen en forma general'); fr. XV (por el excedente se paga el impuesto); fr. I (exentas 'Las prestaciones distintas del salario que reciban los trabajadores del salario mínimo general', 'calculadas sobre la base de dicho salario, cuando no excedan de los mínimos señalados por la legislación laboral'); art. 99 fr. III (el patrón debe 'Expedir y entregar comprobantes fiscales' 'en la fecha en que se realice la erogación', que sirven como recibo de pago); art. 97 (el retenedor 'calcularán el impuesto anual'; la diferencia a favor 'deberá compensarse contra la retención del mes de diciembre y las retenciones sucesivas, a más tardar dentro del año de calendario posterior'; no se hace si el trabajador inició después del 1 de enero o dejó de prestar servicios antes del 1 de diciembre, si sus ingresos anuales 'excedan de $400,000.00' o si comunica por escrito que presentará declaración anual). SAT, Guía de llenado del comprobante del recibo de pago de nómina y su complemento, CFDI 4.0 y nómina 1.2, revisión 8 del 16-ene-2026 (tablas del Apéndice 6 actualizadas el 29-dic-2025; omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/Guia_llenado_Nomina.pdf), Apéndice 6 (igual que la versión oct-2019 en omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiaNomina11102019.pdf): percepción 002 'Gratificación Anual (Aguinaldo)', 'Gravado y Exento', límite '30 UMA's', 'Art.93 fr.XIV de la LISR'; deducción 002 'ISR'; cada percepción lleva los campos ImporteGravado e ImporteExento. INEGI, comunicado 1/26 (8-ene-2026, inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf): UMA diaria de $117.31 vigente desde el 1-feb-2026. Conasami, Tabla de salarios mínimos 2026 (gob.mx/cms/uploads/attachment/file/1041076/Tabla_de_Salarios_M_nimos_2026.pdf; resolución DOF 9-dic-2025): $315.04 diarios en la Zona del Salario Mínimo General ($440.87 en la Zona Libre de la Frontera Norte), vigentes desde el 1-ene-2026. LFT art. 87 (15 días de salario por lo menos) y art. 89 (salario mensual ÷ 30). Cálculos propios (Decimal): 30 × $117.31 = $3,519.30; $10,000 ÷ 30 × 15 = $5,000.00; $5,000.00 − $3,519.30 = $1,480.70; $315.04 × 15 = $4,725.60. Consultado el 12-nov-2026.",
+   "titulo_post": "ISR del aguinaldo 2026 en 5 datos para guardar",
+   "texto_post": "ISR del aguinaldo 2026: los 5 datos para revisar tu recibo de diciembre, en un solo lugar. 🧾\n1. Los primeros $3,519.30 no pagan ISR: son 30 UMA de $117.31, como lo aplica el SAT (la ley dice salario mínimo). Es un tope por año para tus gratificaciones, no por pago (LISR art. 93 fr. XIV).\n2. Con $10,000 al mes, tu aguinaldo de 15 días es de $5,000: quedan gravados $1,480.70 si no tuviste otra gratificación en el año. El ISR se calcula sobre eso, no sobre los $5,000.\n3. Si ganas el salario mínimo ($315.04 diarios en la zona general), tu aguinaldo de ley ($4,725.60) va exento completo (LISR art. 93 fr. I).\n4. En tu CFDI de nómina, la percepción \"Gratificación anual (aguinaldo)\" viene partida en exento y gravado, y el ISR retenido va en deducciones. Tu patrón debe darte el CFDI cuando te paga (LISR art. 99 fr. III).\n5. Si estás con el mismo patrón desde el 1 de enero, sigues ahí en diciembre y ganas hasta $400,000 al año, él calcula tu ISR anual, salvo que le avises por escrito que presentarás tu declaración; lo que te retuvo de más te lo compensa a más tardar el año siguiente (LISR art. 97).\n\nCapital ya revisó su recibo: cero ISR. Cobra en croquetas. 🐾\n📚 LISR, arts. 93 fr. I y XIV, 97 y 99 · UMA 2026 (INEGI) · Salarios mínimos 2026 (Conasami) · LFT, arts. 87 y 89 · SAT, guía de llenado del CFDI de nómina\n💬 ¿Cuánto ganas al mes? Comenta la cifra y te digo qué parte de tu aguinaldo queda gravada. Te contesto a todos.\n🔖 Guárdalo para tu recibo de diciembre.\n📩 Mándaselo a quien dice que el SAT se queda con todo su aguinaldo.",
+   "seo": {
+    "palabra_clave": "isr aguinaldo 2026",
+    "titulo": "ISR aguinaldo 2026 en 5 datos para guardar 🔖",
+    "tags_concretas": [
+     "isr aguinaldo 2026",
+     "cuanto isr me quitan del aguinaldo",
+     "aguinaldo exento 2026",
+     "30 uma aguinaldo",
+     "aguinaldo gravado",
+     "aguinaldo salario minimo isr",
+     "cfdi aguinaldo exento gravado",
+     "calculo anual isr patron",
+     "articulo 93 ley del isr",
+     "uma 2026"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#isr",
+     "#sat"
+    ],
+    "preguntas": [
+     "¿Cuánto ISR me quitan del aguinaldo 2026?",
+     "¿Cuánto del aguinaldo está exento de ISR en 2026?",
+     "¿El aguinaldo del salario mínimo paga ISR?",
+     "¿Dónde veo el ISR del aguinaldo en mi recibo de nómina?"
+    ]
+   },
+   "personaje": "2026-11-12: clon de c16 (3,903 vistas en TikTok contra una mediana de ~150-300): mismo formato \"Guarda esto: ... en 5 datos\", gancho guarda_esto, etiqueta en mayúsculas, 5 datos serios con su fuente al pie de cada diapositiva, voces \"Primero... Segundo... Y el último\", cierre \"Guárdalo para/antes de...\" + a quién mandárselo + \"Sígueme\"; la pregunta para comentar y el humor de Capital van solo en el texto del post (docs/PERSONAJE.md), para no meter tres llamados en la diapositiva de cierre (docs/CARRUSELES.md, paso 3).",
+   "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo: LA3 (video largo) usa los ejemplos de $15,000 y $25,000 y explica los arts. 96 y 174 RLISR; aquí el ejemplo es $10,000 y se suma el cálculo anual del art. 97. La guía del SAT citada es la versión de oct-2019 (CFDI 3.3) que sigue en omawww.sat.gob.mx; el límite de 30 UMA y las claves 002 no cambiaron en la guía 4.0 según el material público, pero no se pudo descargar la guía 4.0 (sat.gob.mx respondió 403). | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra LISR (DOF 01-04-2024) art. 93 fr. I, XIV y XV, art. 96, 97 y 99 fr. III; INEGI 1/26 ($117.31); Conasami 2026 ($315.04 zona general, $440.87 frontera); LFT arts. 87 y 89; guía de nómina vigente del SAT (CFDI 4.0 y nómina 1.2, rev. 8 del 16-ene-2026, Apéndice 6 actualizado el 29-dic-2025: percepción 002 'Gratificación Anual (Aguinaldo)', Gravado y Exento, '30 UMA's', deducción 002 ISR; campos ImporteGravado e ImporteExento). Ya no hace falta la guía de 2019: se descargó la vigente de omawww.sat.gob.mx. Cuentas rehechas: $3,519.30, $5,000.00, $1,480.70, $4,725.60. Cambios: (1) la ley dice 'salario mínimo' y el SAT aplica UMA (con salario mínimo el tope sería $9,451.20 y el aguinaldo del ejemplo quedaría exento completo): diapositiva 1 y post dicen 'con el criterio del SAT' y 'la ley dice salario mínimo'; (2) el ejemplo de $10,000 supone que no hubo otra gratificación en el año (el tope es anual): añadido; (3) art. 97: el cálculo anual no se hace si dejaste de trabajar antes del 1-dic o avisas por escrito que harás tu declaración; título 'En diciembre, la cuenta del año' cambiado a 'Tu patrón hace la cuenta del año' (la ley no fija diciembre) y añadido 'sigues ahí en diciembre' y el aviso por escrito en el post; voz con el tope de cuatrocientos mil; (4) fuente del SAT cambiada a la guía vigente; (5) voces sin dos puntos. Sin consejo de inversión ni casos inventados. Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7)."
   }
  ]
 }

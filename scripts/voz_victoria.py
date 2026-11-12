@@ -81,6 +81,9 @@ def _replicate(modelo, entrada):
     # User-Agent: desde el 12-nov-2026 Cloudflare de Replicate rechaza el de Python ("403, error code: 1010").
     cab = {'Authorization': f"Bearer {os.environ['REPLICATE_API_TOKEN']}", 'Content-Type': 'application/json', 'Prefer': 'wait=60',
            'User-Agent': 'victoria-pipeline/1.0'}
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import replicate_gasto
+    replicate_gasto.freno(barato=True)  # tope de gasto (12-nov-2026)
     req = urllib.request.Request(f'https://api.replicate.com/v1/models/{modelo}/predictions',
                                  data=json.dumps({'input': entrada}).encode(), headers=cab, method='POST')
     for espera in (5, 10, 15, 20, 30, 45, 60, 60):  # 429: Replicate limita a 6 por minuto con menos de $5 de saldo

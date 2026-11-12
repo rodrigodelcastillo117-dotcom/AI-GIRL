@@ -194,6 +194,8 @@ def de_replicate(descripcion):
         return None
     cuerpo = json.dumps({'input': {'prompt': f'{descripcion}. Photographic, natural light. No text, no letters, no logos.',
                                    'aspect_ratio': '16:9', 'output_format': 'png'}}).encode()
+    import replicate_gasto
+    replicate_gasto.freno(barato=True)  # tope de gasto (12-nov-2026)
     req = urllib.request.Request('https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions',
                                  data=cuerpo, method='POST', headers={'Authorization': f'Bearer {token}',
                                                                       'Content-Type': 'application/json', 'Prefer': 'wait',

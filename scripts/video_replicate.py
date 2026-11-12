@@ -68,6 +68,8 @@ def duracion(ruta):
 
 def generar(foto, audio, salida, movimiento=MOVIMIENTO, tamano='1080:1920'):
     """tamano: '1080:1920' (vertical, Shorts/Reels) o '1920:1080' (horizontal, videos largos de YouTube)."""
+    import replicate_gasto
+    replicate_gasto.freno()  # tope de gasto (12-nov-2026)
     p = _pedir('POST', f'/models/{MODELO}/predictions', {'input': {
         'image': _data_uri(foto), 'audio': _data_uri(audio), 'resolution': '1080p',
         'video_prompt': movimiento, 'negative_prompt': NEGATIVO}})

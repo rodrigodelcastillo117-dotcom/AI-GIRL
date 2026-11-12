@@ -1,37 +1,38 @@
 {
  "control": {
-  "hoy_usd": 27.3,
-  "semana_usd": 27.54,
-  "mes_usd": 28.09,
+  "hoy_usd": 27.28,
+  "semana_usd": 27.52,
+  "mes_usd": 28.07,
   "otro_canal_semana_usd": 0.0,
   "otro_canal_mes_usd": 0.0,
-  "presupuesto_semanal_usd": 25,
-  "presupuesto_mensual_usd": 80,
-  "proyeccion_mes_usd": 76.61,
+  "presupuesto_semanal_usd": 12.5,
+  "presupuesto_mensual_usd": 50,
+  "presupuesto_otro_canal_mensual_usd": 22,
+  "proyeccion_mes_usd": 76.56,
   "semana_desde": "2026-11-09",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
  "saldo_base_usd": 30.68,
  "fecha_base_utc": "2026-11-12T03:12:10Z",
- "saldo_estimado_usd": 10.37,
+ "saldo_estimado_usd": 10.39,
  "gastado_desde_base": {
-  "victoria": 20.31,
+  "victoria": 20.29,
   "otro": 0.0
  },
  "gastado_7_dias": {
-  "victoria": 20.31,
+  "victoria": 20.29,
   "otro": 0.0
  },
  "por_dia": [
   {
    "dia": "2026-11-12",
-   "victoria": 20.31,
+   "victoria": 20.29,
    "otro": 0.0
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 20.2,
-  "minimax/speech-02-hd": 0.1
+  "minimax/speech-02-hd": 0.08
  },
  "costo_promedio_toma_usd": 0.26,
  "sin_precio": {
@@ -39,6 +40,6 @@
   "minimax/voice-cloning": 1
  },
  "incompleto": true,
- "generado_utc": "2026-11-12T05:16:08Z",
+ "generado_utc": "2026-11-12T05:30:56Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

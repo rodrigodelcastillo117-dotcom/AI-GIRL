@@ -1,257 +1,295 @@
 {
-  "generado": "2026-11-12",
-  "formato": "1080x1920, 30 fps, H.264 (crf 18), sin audio",
-  "clips": [
-    {
-      "archivo": "oficina-1-1.mp4",
-      "foto": "estilo-b-oficina-1.jpg",
-      "modelo": "Veo 3.1 (lite, 720p, sin audio)",
-      "app": "OpenArt",
-      "segundos": 6.0,
-      "creditos": 120,
-      "movimiento": "Push-in lento; baja la mano del pelo y sonrie a camara con mirada coqueta; Capital sentado a su derecha",
-      "nota_calidad": "Excelente: identidad, pelo y Capital estables; movimiento suave y elegante. Fuente 720p reescalada a 1080."
-    },
-    {
-      "archivo": "oficina-1-2.mp4",
-      "foto": "estilo-b-oficina-1.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Mira hacia la ventana y voltea a camara con media sonrisa",
-      "nota_calidad": "Bien: rostro y Capital estables; gesto sutil y natural."
-    },
-    {
-      "archivo": "oficina-1-3.mp4",
-      "foto": "estilo-b-oficina-1.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Se acomoda las solapas del blazer y sonrie de lado",
-      "nota_calidad": "Aceptable: manos correctas; a la mitad cierra los ojos un instante y termina tomando las solapas con los pulgares arriba. Mejor tramo: seg 5-8."
-    },
-    {
-      "archivo": "oficina-1-4.mp4",
-      "foto": "estilo-b-oficina-1.jpg",
-      "modelo": "Kling 4.0",
-      "app": "Viewmax/Everygen",
-      "segundos": 5.0,
-      "creditos": 20,
-      "movimiento": "Acaricia la cabeza de Capital y levanta la mirada a camara",
-      "nota_calidad": "Bien: mano natural sobre Capital, sonrisa calida al final; Capital no cambia."
-    },
-    {
-      "archivo": "oficina-2-1.mp4",
-      "foto": "estilo-b-oficina-2.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Push-in; se acomoda el blazer con un tiron y media sonrisa",
-      "nota_calidad": "Bien: rostro estable, mano natural; al final Capital queda medio cortado en la esquina inferior derecha."
-    },
-    {
-      "archivo": "oficina-2-2.mp4",
-      "foto": "estilo-b-oficina-2.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Acaricia a Capital y mira a camara",
-      "nota_calidad": "Muy bien: mano con unas rojas natural sobre Capital, mirada coqueta a camara; Capital se corta un poco al final."
-    },
-    {
-      "archivo": "oficina-2-3.mp4",
-      "foto": "estilo-b-oficina-2.jpg",
-      "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
-      "app": "OpenArt",
-      "segundos": 5.2,
-      "creditos": 100,
-      "movimiento": "Arco de camara hacia el ventanal mientras se pasa la mano por el pelo y sonrie",
-      "nota_calidad": "Aceptable: rostro y Capital estables, pero el fondo cambia de libreros a ventanal con ciudad y sala (parece paneo, no salto). Fuente 768P reescalada."
-    },
-    {
-      "archivo": "oficina-2-4.mp4",
-      "foto": "estilo-b-oficina-2.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Mira por la ventana de perfil y voltea a camara con media sonrisa",
-      "nota_calidad": "Muy bien: perfil y regreso a camara limpios, mirada directa al final."
-    },
-    {
-      "archivo": "yate-1.mp4",
-      "foto": "estilo-b-yate.jpg",
-      "modelo": "Veo 3.1 (lite, 720p, sin audio)",
-      "app": "OpenArt",
-      "segundos": 6.0,
-      "creditos": 120,
-      "movimiento": "Brisa en el pelo, push-in lento, sonrisa a camara; Capital voltea al mar",
-      "nota_calidad": "Excelente: viento natural en el pelo, identidad estable, Capital calmado. Fuente 720p reescalada."
-    },
-    {
-      "archivo": "yate-2.mp4",
-      "foto": "estilo-b-yate.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Se acomoda los lentes de sol en la cabeza y sonrie",
-      "nota_calidad": "Bien: mano natural, sonrisa amplia al final (sin hablar)."
-    },
-    {
-      "archivo": "yate-3.mp4",
-      "foto": "estilo-b-yate.jpg",
-      "modelo": "Kling 4.0",
-      "app": "Viewmax/Everygen",
-      "segundos": 5.0,
-      "creditos": 20,
-      "movimiento": "Acaricia a Capital, el se recarga en ella y lo abraza; sonrisa a camara",
-      "nota_calidad": "Muy bien: momento tierno, Capital realista y con el mismo collar; ella baja la mirada a la mitad."
-    },
-    {
-      "archivo": "yate-4.mp4",
-      "foto": "estilo-b-yate.jpg",
-      "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
-      "app": "OpenArt",
-      "segundos": 5.2,
-      "creditos": 100,
-      "movimiento": "Pull-back muy lento con brisa; sonrisa a camara",
-      "nota_calidad": "Bien: estable, movimiento minimo (casi foto viva). Fuente 768P reescalada."
-    },
-    {
-      "archivo": "yate-5.mp4",
-      "foto": "estilo-b-yate.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Levanta la cara al sol con ojos cerrados y luego mira a camara con sonrisa",
-      "nota_calidad": "Bien: tramo de ojos cerrados elegante, termina con media sonrisa coqueta; identidad estable."
-    },
-    {
-      "archivo": "jet-1.mp4",
-      "foto": "estilo-b-jet.jpg",
-      "modelo": "Veo 3.1 (lite, 720p, sin audio)",
-      "app": "OpenArt",
-      "segundos": 6.0,
-      "creditos": 120,
-      "movimiento": "Mira hacia la ventanilla y regresa a camara con media sonrisa",
-      "nota_calidad": "Bien: identidad estable; labios mas rosados (igual que la foto del jet). Fuente 720p reescalada."
-    },
-    {
-      "archivo": "jet-2.mp4",
-      "foto": "estilo-b-jet.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Selfie relajada en el asiento, sonrisa; la camara deriva hacia las ventanillas",
-      "nota_calidad": "Bien: estable; Capital visible todo el clip."
-    },
-    {
-      "archivo": "jet-3.mp4",
-      "foto": "estilo-b-jet.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Se inclina hacia Capital y ambos miran a camara",
-      "nota_calidad": "Muy bien: sonrisa natural, Capital estable y cerca de ella."
-    },
-    {
-      "archivo": "jet-4.mp4",
-      "foto": "estilo-b-jet.jpg",
-      "modelo": "Kling 4.0",
-      "app": "Viewmax/Everygen",
-      "segundos": 5.0,
-      "creditos": 20,
-      "movimiento": "Voltea a rascarle las orejas a Capital y regresa a camara",
-      "nota_calidad": "Aceptable: a la mitad se ve de espaldas (nuca) un momento; rostro igual al volver."
-    },
-    {
-      "archivo": "estadio-1.mp4",
-      "foto": "estilo-b-estadio.jpg",
-      "modelo": "Veo 3.1 (lite, 720p, sin audio)",
-      "app": "OpenArt",
-      "segundos": 6.0,
-      "creditos": 120,
-      "movimiento": "Camina en la yarda 50 en modo selfie con Capital trotando a su lado",
-      "nota_calidad": "Aceptable: unico clip caminando; Capital trota bien, pero aparece una correa colgando de su collar sin que nadie la sostenga (desde ~seg 1). Fuente 720p reescalada."
-    },
-    {
-      "archivo": "estadio-2.mp4",
-      "foto": "estilo-b-estadio.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Senala a camara y sonrie con seguridad",
-      "nota_calidad": "Excelente: gesto claro de 'tu', mano correcta, Capital sentado estable."
-    },
-    {
-      "archivo": "estadio-3.mp4",
-      "foto": "estilo-b-estadio.jpg",
-      "modelo": "Kling 4.0",
-      "app": "Viewmax/Everygen",
-      "segundos": 5.0,
-      "creditos": 20,
-      "movimiento": "Le da palmaditas a Capital en la yarda 50 y regresa a camara",
-      "nota_calidad": "Bien: aparece una correa negra en el pasto junto a Capital; rostro estable."
-    },
-    {
-      "archivo": "estadio-4.mp4",
-      "foto": "estilo-b-estadio.jpg",
-      "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
-      "app": "OpenArt",
-      "segundos": 5.2,
-      "creditos": 100,
-      "movimiento": "Brisa en el pelo, inclinacion de cabeza y sonrisa; luces del estadio",
-      "nota_calidad": "Bien: estable, movimiento sutil. Fuente 768P reescalada."
-    },
-    {
-      "archivo": "esqui-1.mp4",
-      "foto": "estilo-b-esqui.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 6.0,
-      "creditos": 14,
-      "movimiento": "Viento y copos de nieve, inclina la cabeza y sonrie",
-      "nota_calidad": "Bien: estable, movimiento sutil."
-    },
-    {
-      "archivo": "esqui-2.mp4",
-      "foto": "estilo-b-esqui.jpg",
-      "modelo": "Kling 3.0 Turbo",
-      "app": "Viewmax/Everygen",
-      "segundos": 8.0,
-      "creditos": 19,
-      "movimiento": "Se acomoda los goggles en la cabeza y sonrie con ceja levantada",
-      "nota_calidad": "Muy bien: mano natural, goggles se quedan en la cabeza, Capital estable."
-    },
-    {
-      "archivo": "esqui-3.mp4",
-      "foto": "estilo-b-esqui.jpg",
-      "modelo": "Kling 4.0",
-      "app": "Viewmax/Everygen",
-      "segundos": 5.0,
-      "creditos": 20,
-      "movimiento": "Voltea a acariciar a Capital en la nieve y regresa a camara con sonrisa",
-      "nota_calidad": "Aceptable: a la mitad se ve de espaldas y los goggles giran raro un instante; final con sonrisa amplia."
-    },
-    {
-      "archivo": "esqui-4.mp4",
-      "foto": "estilo-b-esqui.jpg",
-      "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
-      "app": "OpenArt",
-      "segundos": 5.2,
-      "creditos": 100,
-      "movimiento": "Push-in lento con brisa y sonrisa; aliento de Capital",
-      "nota_calidad": "Bien: push-in cerrado al rostro, identidad estable; Capital queda cortado a la derecha al final. Fuente 768P reescalada."
-    }
-  ],
-  "rechazados": []
+ "generado": "2026-11-12",
+ "formato": "1080x1920, 30 fps, H.264 (crf 18), sin audio",
+ "clips": [
+  {
+   "archivo": "lobby-camina-1.mp4",
+   "foto": "dinamica-lobby.png",
+   "modelo": "Kling 3.0 Turbo 1080p",
+   "app": "Everygen",
+   "segundos": 6,
+   "creditos": 14,
+   "accion": "camina hacia la cámara con Capital con correa",
+   "capital": "caminando",
+   "nota_calidad": "bien; lleva la correa en ambas manos"
+  }
+ ],
+ "rechazados": [
+  {
+   "archivo": "oficina-1-1.mp4",
+   "foto": "estilo-b-oficina-1.jpg",
+   "modelo": "Veo 3.1 (lite, 720p, sin audio)",
+   "app": "OpenArt",
+   "segundos": 6.0,
+   "creditos": 120,
+   "movimiento": "Push-in lento; baja la mano del pelo y sonrie a camara con mirada coqueta; Capital sentado a su derecha",
+   "nota_calidad": "Excelente: identidad, pelo y Capital estables; movimiento suave y elegante. Fuente 720p reescalada a 1080.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-1-2.mp4",
+   "foto": "estilo-b-oficina-1.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Mira hacia la ventana y voltea a camara con media sonrisa",
+   "nota_calidad": "Bien: rostro y Capital estables; gesto sutil y natural.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-1-3.mp4",
+   "foto": "estilo-b-oficina-1.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Se acomoda las solapas del blazer y sonrie de lado",
+   "nota_calidad": "Aceptable: manos correctas; a la mitad cierra los ojos un instante y termina tomando las solapas con los pulgares arriba. Mejor tramo: seg 5-8.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-1-4.mp4",
+   "foto": "estilo-b-oficina-1.jpg",
+   "modelo": "Kling 4.0",
+   "app": "Viewmax/Everygen",
+   "segundos": 5.0,
+   "creditos": 20,
+   "movimiento": "Acaricia la cabeza de Capital y levanta la mirada a camara",
+   "nota_calidad": "Bien: mano natural sobre Capital, sonrisa calida al final; Capital no cambia.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-2-1.mp4",
+   "foto": "estilo-b-oficina-2.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Push-in; se acomoda el blazer con un tiron y media sonrisa",
+   "nota_calidad": "Bien: rostro estable, mano natural; al final Capital queda medio cortado en la esquina inferior derecha.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-2-2.mp4",
+   "foto": "estilo-b-oficina-2.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Acaricia a Capital y mira a camara",
+   "nota_calidad": "Muy bien: mano con unas rojas natural sobre Capital, mirada coqueta a camara; Capital se corta un poco al final.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-2-3.mp4",
+   "foto": "estilo-b-oficina-2.jpg",
+   "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
+   "app": "OpenArt",
+   "segundos": 5.2,
+   "creditos": 100,
+   "movimiento": "Arco de camara hacia el ventanal mientras se pasa la mano por el pelo y sonrie",
+   "nota_calidad": "Aceptable: rostro y Capital estables, pero el fondo cambia de libreros a ventanal con ciudad y sala (parece paneo, no salto). Fuente 768P reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "oficina-2-4.mp4",
+   "foto": "estilo-b-oficina-2.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Mira por la ventana de perfil y voltea a camara con media sonrisa",
+   "nota_calidad": "Muy bien: perfil y regreso a camara limpios, mirada directa al final.",
+   "motivo": "Rodrigo, 12-nov-2026: \"se ve mal el perro\" (Capital tieso y pegado en las fotos base de oficina)"
+  },
+  {
+   "archivo": "yate-1.mp4",
+   "foto": "estilo-b-yate.jpg",
+   "modelo": "Veo 3.1 (lite, 720p, sin audio)",
+   "app": "OpenArt",
+   "segundos": 6.0,
+   "creditos": 120,
+   "movimiento": "Brisa en el pelo, push-in lento, sonrisa a camara; Capital voltea al mar",
+   "nota_calidad": "Excelente: viento natural en el pelo, identidad estable, Capital calmado. Fuente 720p reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "yate-2.mp4",
+   "foto": "estilo-b-yate.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Se acomoda los lentes de sol en la cabeza y sonrie",
+   "nota_calidad": "Bien: mano natural, sonrisa amplia al final (sin hablar).",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "yate-3.mp4",
+   "foto": "estilo-b-yate.jpg",
+   "modelo": "Kling 4.0",
+   "app": "Viewmax/Everygen",
+   "segundos": 5.0,
+   "creditos": 20,
+   "movimiento": "Acaricia a Capital, el se recarga en ella y lo abraza; sonrisa a camara",
+   "nota_calidad": "Muy bien: momento tierno, Capital realista y con el mismo collar; ella baja la mirada a la mitad.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "yate-4.mp4",
+   "foto": "estilo-b-yate.jpg",
+   "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
+   "app": "OpenArt",
+   "segundos": 5.2,
+   "creditos": 100,
+   "movimiento": "Pull-back muy lento con brisa; sonrisa a camara",
+   "nota_calidad": "Bien: estable, movimiento minimo (casi foto viva). Fuente 768P reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "yate-5.mp4",
+   "foto": "estilo-b-yate.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Levanta la cara al sol con ojos cerrados y luego mira a camara con sonrisa",
+   "nota_calidad": "Bien: tramo de ojos cerrados elegante, termina con media sonrisa coqueta; identidad estable.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "jet-1.mp4",
+   "foto": "estilo-b-jet.jpg",
+   "modelo": "Veo 3.1 (lite, 720p, sin audio)",
+   "app": "OpenArt",
+   "segundos": 6.0,
+   "creditos": 120,
+   "movimiento": "Mira hacia la ventanilla y regresa a camara con media sonrisa",
+   "nota_calidad": "Bien: identidad estable; labios mas rosados (igual que la foto del jet). Fuente 720p reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "jet-2.mp4",
+   "foto": "estilo-b-jet.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Selfie relajada en el asiento, sonrisa; la camara deriva hacia las ventanillas",
+   "nota_calidad": "Bien: estable; Capital visible todo el clip.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "jet-3.mp4",
+   "foto": "estilo-b-jet.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Se inclina hacia Capital y ambos miran a camara",
+   "nota_calidad": "Muy bien: sonrisa natural, Capital estable y cerca de ella.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "jet-4.mp4",
+   "foto": "estilo-b-jet.jpg",
+   "modelo": "Kling 4.0",
+   "app": "Viewmax/Everygen",
+   "segundos": 5.0,
+   "creditos": 20,
+   "movimiento": "Voltea a rascarle las orejas a Capital y regresa a camara",
+   "nota_calidad": "Aceptable: a la mitad se ve de espaldas (nuca) un momento; rostro igual al volver.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "estadio-1.mp4",
+   "foto": "estilo-b-estadio.jpg",
+   "modelo": "Veo 3.1 (lite, 720p, sin audio)",
+   "app": "OpenArt",
+   "segundos": 6.0,
+   "creditos": 120,
+   "movimiento": "Camina en la yarda 50 en modo selfie con Capital trotando a su lado",
+   "nota_calidad": "Aceptable: unico clip caminando; Capital trota bien, pero aparece una correa colgando de su collar sin que nadie la sostenga (desde ~seg 1). Fuente 720p reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "estadio-2.mp4",
+   "foto": "estilo-b-estadio.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Senala a camara y sonrie con seguridad",
+   "nota_calidad": "Excelente: gesto claro de 'tu', mano correcta, Capital sentado estable.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "estadio-3.mp4",
+   "foto": "estilo-b-estadio.jpg",
+   "modelo": "Kling 4.0",
+   "app": "Viewmax/Everygen",
+   "segundos": 5.0,
+   "creditos": 20,
+   "movimiento": "Le da palmaditas a Capital en la yarda 50 y regresa a camara",
+   "nota_calidad": "Bien: aparece una correa negra en el pasto junto a Capital; rostro estable.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "estadio-4.mp4",
+   "foto": "estilo-b-estadio.jpg",
+   "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
+   "app": "OpenArt",
+   "segundos": 5.2,
+   "creditos": 100,
+   "movimiento": "Brisa en el pelo, inclinacion de cabeza y sonrisa; luces del estadio",
+   "nota_calidad": "Bien: estable, movimiento sutil. Fuente 768P reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "esqui-1.mp4",
+   "foto": "estilo-b-esqui.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 6.0,
+   "creditos": 14,
+   "movimiento": "Viento y copos de nieve, inclina la cabeza y sonrie",
+   "nota_calidad": "Bien: estable, movimiento sutil.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "esqui-2.mp4",
+   "foto": "estilo-b-esqui.jpg",
+   "modelo": "Kling 3.0 Turbo",
+   "app": "Viewmax/Everygen",
+   "segundos": 8.0,
+   "creditos": 19,
+   "movimiento": "Se acomoda los goggles en la cabeza y sonrie con ceja levantada",
+   "nota_calidad": "Muy bien: mano natural, goggles se quedan en la cabeza, Capital estable.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "esqui-3.mp4",
+   "foto": "estilo-b-esqui.jpg",
+   "modelo": "Kling 4.0",
+   "app": "Viewmax/Everygen",
+   "segundos": 5.0,
+   "creditos": 20,
+   "movimiento": "Voltea a acariciar a Capital en la nieve y regresa a camara con sonrisa",
+   "nota_calidad": "Aceptable: a la mitad se ve de espaldas y los goggles giran raro un instante; final con sonrisa amplia.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  },
+  {
+   "archivo": "esqui-4.mp4",
+   "foto": "estilo-b-esqui.jpg",
+   "modelo": "MiniMax H3 Max Turbo (768P, 5 s)",
+   "app": "OpenArt",
+   "segundos": 5.2,
+   "creditos": 100,
+   "movimiento": "Push-in lento con brisa y sonrisa; aliento de Capital",
+   "nota_calidad": "Bien: push-in cerrado al rostro, identidad estable; Capital queda cortado a la derecha al final. Fuente 768P reescalada.",
+   "motivo": "Rodrigo, 12-nov-2026: \"¿por qué tu perro estaría en un yate, en la montaña, en el estadio?\" + siempre la misma selfie"
+  }
+ ],
+ "_nota": "Biblioteca de Victoria sin voz. Fotos en assets/fotos/dinamica-*.{png,jpg} y clips aquí. reel_texto.py elige lo menos usado (uso.json). Reglas: docs/DIRECCION_CREATIVA.md → \"Victoria dinámica\" y \"Capital con criterio\"."
 }

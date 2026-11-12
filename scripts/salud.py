@@ -93,6 +93,10 @@ def saldo():
         anotar('Gasto', 'aviso', texto + ' · arriba del 80%: solo lo indispensable')
     else:
         anotar('Gasto', 'ok', texto)
+    otro, tope_o = c.get('otro_canal_mes_usd') or 0, c.get('presupuesto_otro_canal_mensual_usd')
+    if tope_o and otro >= 0.8 * tope_o:
+        anotar('Gasto', 'alerta' if otro >= tope_o else 'aviso',
+               f'El espacio (otro canal) lleva ${otro:.2f} de ${tope_o} este mes en Replicate: avísale a Rodrigo (sus scripts no pasan por el freno de Victoria)')
 
 
 def creditos():

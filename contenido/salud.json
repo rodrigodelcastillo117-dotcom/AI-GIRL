@@ -1,16 +1,16 @@
 {
- "generado_utc": "2026-11-12T05:15:32Z",
+ "generado_utc": "2026-11-12T05:30:43Z",
  "estado": "alerta",
  "checks": [
   {
    "area": "Gasto",
    "estado": "alerta",
-   "detalle": "Replicate de Victoria: hoy $24.79 · semana $25.02 de $25 · mes $25.58 de $80 (proyección del mes $69.75) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+   "detalle": "Replicate de Victoria: hoy $27.30 · semana $27.54 de $12.5 · mes $28.09 de $50 (proyección del mes $76.61) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
   },
   {
    "area": "Créditos",
    "estado": "ok",
-   "detalle": "Everygen (Viewmax) 31/350 al mes · OpenArt 199 · Higgsfield 0.9 (leído 2026-11-12 05:13 UTC)"
+   "detalle": "Everygen (Viewmax) 8/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 05:30 UTC)"
   },
   {
    "area": "Calendario",
@@ -70,7 +70,7 @@
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "52 carruseles listos para TikTok (~17 días a 3 por día)"
+   "detalle": "55 carruseles listos para TikTok (~18 días a 3 por día)"
   },
   {
    "area": "Cola",
@@ -79,8 +79,8 @@
   },
   {
    "area": "Ganadores",
-   "estado": "aviso",
-   "detalle": "c16 «Aguinaldo 2026 en 5 datos para guardar 🔖» saca 3,903 en TikTok (mediana 197): faltan 3 clones con su misma estructura (clon_de: \"c16\")"
+   "estado": "ok",
+   "detalle": "c16 (TikTok 3,903 vs mediana 197): ya tiene 3 clones"
   }
  ]
 }
