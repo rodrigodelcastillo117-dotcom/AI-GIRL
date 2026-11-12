@@ -891,6 +891,12 @@
     "voz": "La Ley del Impuesto sobre la Renta, en su artículo noventa y tres, exenta el aguinaldo hasta treinta días de salario mínimo. Desde dos mil dieciséis esa referencia se lee como Unidad de Medida y Actualización, y el Servicio de Administración Tributaria marca el límite en treinta veces esa unidad. Lo que pase de ahí, paga impuesto."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "El tope exento en 2026",
@@ -901,7 +907,13 @@
      "Es un tope por año, no por pago"
     ],
     "fuente": "INEGI, comunicado 1/26 (8-ene-2026); LISR art. 93 fr. XIV",
-    "voz": "En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día. Por treinta da tres mil quinientos diecinueve pesos con treinta centavos. Y ojo, la ley habla de las gratificaciones de todo el año, así que es un tope anual, no uno por cada pago."
+    "voz": "Por treinta da tres mil quinientos diecinueve pesos con treinta centavos. Y ojo, la ley habla de las gratificaciones de todo el año, así que es un tope anual, no uno por cada pago."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Antes de seguir, dos detalles de la ley que tienes que saber.",
+    "puente": true
    },
    {
     "tipo": "lamina",
@@ -914,7 +926,13 @@
      "Tu aguinaldo de 15 días queda exento completo"
     ],
     "fuente": "LISR art. 93 fr. I y XIV; LFT art. 87",
-    "voz": "Dos detalles. La parte libre de impuesto aplica cuando la gratificación se da a todos los trabajadores en forma general. Y si ganas el salario mínimo, la ley deja libres de impuesto las prestaciones calculadas sobre el mínimo que no pasen de lo que marca la ley laboral. Tu aguinaldo de quince días queda libre completo."
+    "voz": "La parte libre de impuesto aplica cuando la gratificación se da a todos los trabajadores en forma general. Y si ganas el salario mínimo, la ley deja libres de impuesto las prestaciones calculadas sobre el mínimo que no pasen de lo que marca la ley laboral. Tu aguinaldo de quince días queda libre completo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Con el mínimo general, tu aguinaldo de ley es de cuatro mil setecientos veinticinco pesos con sesenta centavos, y queda exento completo.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -939,7 +957,7 @@
     ],
     "nota": "Salario mínimo general fuera de la frontera norte; la fracción I exenta todo el aguinaldo de ley",
     "fuente": "LISR art. 93 fr. I y XIV; LFT art. 87; Conasami, resolución DOF 09-12-2025",
-    "voz": "Con el mínimo general, tu aguinaldo de ley es de cuatro mil setecientos veinticinco pesos con sesenta centavos, y queda exento completo. Si solo contara el tope de treinta veces la UMA, quedarían gravados mil doscientos seis pesos con treinta centavos. Por eso esa fracción importa."
+    "voz": "Si solo contara el tope de treinta veces la UMA, quedarían gravados mil doscientos seis pesos con treinta centavos. Por eso esa fracción importa."
    },
    {
     "tipo": "victoria",
@@ -968,6 +986,12 @@
     "voz": "Con quince mil pesos al mes, tu aguinaldo de quince días es de siete mil quinientos pesos. Le quitas la parte exenta, tres mil quinientos diecinueve pesos con treinta centavos. Te quedan tres mil novecientos ochenta pesos con setenta centavos gravados. Sobre eso se calcula el impuesto, no sobre los siete mil quinientos."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "En la gráfica se ve clarito.",
+    "puente": true
+   },
+   {
     "tipo": "grafica",
     "capitulo": null,
     "titulo": "Con $15,000 al mes",
@@ -990,7 +1014,13 @@
     ],
     "nota": "El 53.08 % del aguinaldo queda gravado",
     "fuente": "LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "En la gráfica se ve clarito. Un poco más de la mitad de este aguinaldo queda gravado, el cincuenta y tres por ciento. El resto te llega libre de impuesto."
+    "voz": "Un poco más de la mitad de este aguinaldo queda gravado, el cincuenta y tres por ciento. El resto te llega libre de impuesto."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Con veinticinco mil pesos al mes, el aguinaldo es de doce mil quinientos pesos.",
+    "puente": true
    },
    {
     "tipo": "pasos",
@@ -1011,7 +1041,13 @@
      }
     ],
     "fuente": "LFT art. 87 (15 días; sueldo diario = mensual ÷ 30, como en LFT art. 89); LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "Con veinticinco mil pesos al mes, el aguinaldo es de doce mil quinientos pesos. La parte exenta es la misma, tres mil quinientos diecinueve pesos con treinta centavos. Quedan gravados ocho mil novecientos ochenta pesos con setenta centavos."
+    "voz": "La parte exenta es la misma, tres mil quinientos diecinueve pesos con treinta centavos. Quedan gravados ocho mil novecientos ochenta pesos con setenta centavos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Aquí la parte gravada ya es casi tres cuartas partes, el setenta y dos por ciento redondeado.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -1036,7 +1072,13 @@
     ],
     "nota": "El 71.85 % del aguinaldo queda gravado",
     "fuente": "LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "Aquí la parte gravada ya es casi tres cuartas partes, el setenta y dos por ciento redondeado. El tope exento no crece con tu sueldo, por eso entre más ganas, más proporción de tu aguinaldo paga impuesto."
+    "voz": "El tope exento no crece con tu sueldo, por eso entre más ganas, más proporción de tu aguinaldo paga impuesto."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Junta los tres casos y la regla se ve sola.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -1061,7 +1103,7 @@
     ],
     "nota": "El tope exento de $3,519.30 es igual para todos",
     "fuente": "LISR art. 93 fr. I y XIV; INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "Junta los tres casos y la regla se ve sola. Con el mínimo no queda nada gravado. Con quince mil, casi cuatro mil pesos. Con veinticinco mil, casi nueve mil. La parte exenta no cambia, cambia todo lo que está arriba de ella."
+    "voz": "Con el mínimo no queda nada gravado. Con quince mil, casi cuatro mil pesos. Con veinticinco mil, casi nueve mil. La parte exenta no cambia, cambia todo lo que está arriba de ella."
    },
    {
     "tipo": "victoria",
@@ -1082,6 +1124,12 @@
     "voz": "El método general está en el artículo noventa y seis. Tu patrón suma la parte gravada a lo que ganaste en el mes y a todo le aplica la tarifa mensual. Lo que te retiene es un pago provisional, a cuenta del impuesto de todo tu año."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "El otro camino es opcional y está en el artículo ciento setenta y cuatro del Reglamento.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Método opcional del Reglamento",
@@ -1092,7 +1140,13 @@
      "La retención puede salir más baja que con el método general"
     ],
     "fuente": "RLISR art. 174; LISR art. 96",
-    "voz": "El otro camino es opcional y está en el artículo ciento setenta y cuatro del Reglamento. El pago se convierte en una cantidad mensual, con eso se saca una tasa y esa tasa da la retención. Puede salir más baja que con el método general."
+    "voz": "El pago se convierte en una cantidad mensual, con eso se saca una tasa y esa tasa da la retención. Puede salir más baja que con el método general."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Por eso no te doy una cifra de impuesto.",
+    "puente": true
    },
    {
     "tipo": "lamina",
@@ -1105,7 +1159,7 @@
      "Pide el cálculo por escrito y compáralo con tu recibo"
     ],
     "fuente": "LISR art. 96; RLISR art. 174",
-    "voz": "Por eso no te doy una cifra de impuesto. Cambia según el método que elija tu patrón, tu sueldo de ese mes y la tarifa vigente. Lo que sí puedes hacer es pedir el cálculo por escrito a tu área de nómina y revisarlo contra tu recibo."
+    "voz": "Cambia según el método que elija tu patrón, tu sueldo de ese mes y la tarifa vigente. Lo que sí puedes hacer es pedir el cálculo por escrito a tu área de nómina y revisarlo contra tu recibo."
    },
    {
     "tipo": "victoria",
@@ -1126,6 +1180,12 @@
     "voz": "Entra al portal del Servicio de Administración Tributaria, a factura electrónica, y luego a consultar, cancelar y recuperar. Necesitas tu contraseña o tu firma electrónica vigente. Busca el recibo por la fecha en que te pagaron el aguinaldo y descárgalo."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "En las percepciones busca la clave cero cero dos, gratificación anual o aguinaldo.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Qué buscar en tu recibo",
@@ -1136,7 +1196,7 @@
      "Deducción 002: ISR retenido en ese recibo"
     ],
     "fuente": "SAT, Apéndice 6, matriz de percepciones y deducciones del CFDI de nómina",
-    "voz": "En las percepciones busca la clave cero cero dos, gratificación anual o aguinaldo. Trae dos importes, el gravado y el exento. En las deducciones, la clave cero cero dos es el impuesto sobre la renta. Ahí ves cuánto te retuvieron en ese recibo."
+    "voz": "Trae dos importes, el gravado y el exento. En las deducciones, la clave cero cero dos es el impuesto sobre la renta. Ahí ves cuánto te retuvieron en ese recibo."
    },
    {
     "tipo": "victoria",
@@ -1165,7 +1225,8 @@
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LISR texto vigente, últ. reforma DOF 01-04-2024, arts. 93 fr. I, XIV, XV y 96; RLISR art. 174; SAT Apéndice 6 del CFDI de nómina, percepción 002 límite exento 30 UMA, deducción 002 ISR; SAT consulta 25242 recibos de nómina; INEGI comunicado 1/26 UMA 2026 $117.31; DOF 27-01-2016 transitorio tercero; DOF 09-12-2025 salario mínimo 2026 $315.04; LFT art. 87). Cuentas rehechas con Decimal: 30 UMA = $3,519.30; mínimo 15 días = $4,725.60 (gravado hipotético $1,206.30); $15,000 -> $7,500.00 / $3,980.70 (53.08 %); $25,000 -> $12,500.00 / $8,980.70 (71.85 %). Cambios: exención redactada como límite que marca el SAT en 30 UMA y lectura constitucional de 2016 (no 'el SAT lo aplica desde la desindexación'); método opcional del art. 174 sin ejemplo numérico, porque el Reglamento habla de 'la remuneración' y 'sin deducción alguna' y no dice que se aplique solo a la parte gravada; se quitó el punto de no retención al mínimo (art. 96) que no estaba en voz y es dudoso en el mes en que también se cobra aguinaldo (la ley habla de quien 'únicamente' percibe un salario mínimo); 'al mes' en intro y SEO; supuesto de un solo aguinaldo de 15 días; 'la ley y su Reglamento' dan los dos caminos; alertas: exento en cero 'sin explicación' y suma contra aguinaldo bruto; recibo: retención 'en ese pago'; ruta del portal con Trámites y e.firma vigente; nota de zona general del mínimo; fuente de 30 días con LFT art. 89 como criterio; DOF del salario mínimo agregado a la descripción.",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "estado": "produciendo",
-  "publica_utc": "2026-11-20T00:45:00Z"
+  "publica_utc": "2026-11-20T00:45:00Z",
+  "intercalado": true
  },
  {
   "id": "LB1",
