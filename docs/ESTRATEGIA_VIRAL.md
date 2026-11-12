@@ -331,3 +331,25 @@ Rodrigo (12-nov): "sí, mantén el volumen" (MUSE proponía bajar a 4 por semana
    pantalla con la promesa. Medir el salto por reel en el tablero.
 3. **Cifras solo verificadas** (la de Profeco "$9,309 más caro" no se usa hasta tener el comparativo oficial).
 4. Medir el 19-nov contra la línea base de MUSE: seguidores 62, guardados 0, compartidos 0, salto 50–78 %.
+
+## Plan viral 13 → 20 de noviembre (12-nov noche, con nuestros datos)
+Rodrigo (12-nov): "piensa en cómo hacernos virales… vamos por todo". Lo que dicen los números (contenido/metricas.json):
+- **Ganador absoluto: c16 "Guarda esto: tu aguinaldo 2026 en 5 datos"** (TikTok 3,903 contra mediana ~200). Le siguen
+  c01 "Si ganas $15,000 al mes, te toca mínimo $7,500" (TikTok 642) y c08 "Tu café de $50 diario te cuesta $18,000
+  al año". Patrón: **una cifra en pesos de MI vida + aguinaldo/gasto diario + "guarda esto"**. En YouTube ganan las
+  ideas de mentalidad (01: 702, 02: 674) y aguinaldo con sueldo concreto (17: 548).
+- Instagram casi no reparte (62 seguidores): ahí manda MUSE (gancho con cifra, un llamado). TikTok y YouTube son donde
+  hay alcance: ahí va el volumen.
+
+Qué hacemos (además del ritmo de siempre):
+1. **"Tu sueldo, tu aguinaldo"**: serie diaria hasta el 19-dic con UN sueldo distinto cada día ($8,000, $10,000,
+   $12,000, $15,000, $20,000, $25,000, $30,000, salario mínimo, frontera): la cifra exacta en la portada, cuenta en 3
+   pasos, "guárdalo". Es el formato de c01/c16 repetido con la cifra de cada quien (la gente busca SU número).
+2. **Buen Fin en vivo (13-17)**: cada día "Victoria verifica" una oferta típica con el historial de Profeco
+   (elbuenfin.profeco.gob.mx): ¿bajó o no? Noticia del día = alcance.
+3. **Comentarios → contenido**: cada sueldo que comentan se contesta con su aguinaldo (rutina de comentarios) y los
+   mejores van a "Hago tus cuentas" (sin nombres). Cada video pide un número: "comenta tu sueldo y te digo tu aguinaldo".
+4. **Clonar en 72 h** todo lo que pase 5 veces la mediana (salud.py ya lo marca).
+5. **Empuje pagado (Rodrigo decide)**: el viernes, $300-500 MXN a la pieza de la semana con mejor retención en TikTok.
+6. **Trend "flick of the wrist"** con copa (bar/yate) cuando haya créditos (Everygen se recarga el 28-nov).
+7. Lo que NO: listas genéricas, temas sin cifra, dos piezas del mismo tema el mismo día en Instagram.
