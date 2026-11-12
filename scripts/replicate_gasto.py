@@ -39,6 +39,10 @@ PRECIOS = {
     # seedance-1-pro: se cobra por segundo de video; 1080p ≈ $0.124–0.15/s (se toma el alto para no quedarse corto).
     'bytedance/seedance-1-pro': lambda p: ((p.get('metrics') or {}).get('video_output_duration_seconds')
                                            or (p.get('input') or {}).get('duration') or 5) * 0.15,
+    'google/nano-banana': lambda p: 0.039,
+    # Del otro canal (El espacio): Hailuo video-01, un video de 6 s al día (≈$0.50, estimado) y el clon de voz.
+    'minimax/video-01': lambda p: 0.50,
+    'minimax/voice-cloning': lambda p: 3.0,
     'black-forest-labs/flux-schnell': lambda p: 0.003 * max(1, int((p.get('input') or {}).get('num_outputs', 1) or 1)),
 }
 
@@ -74,16 +78,23 @@ def freno(barato=False):
     Todo script que crea algo en Replicate llama esto antes. Para si config.json → replicate.pausado es true o si el
     gasto de Victoria de la semana o del mes (contenido/replicate.json → control, lo calcula este script) ya llegó al
     presupuesto. No hay excepción automática: para pasar el tope Rodrigo tiene que subir el presupuesto o quitar la pausa."""
+    cfg = (json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('replicate') or {})
+    # EN VIVO (12-nov-2026): antes leía la foto de contenido/replicate.json, que solo se actualizaba al correr el tablero;
+    # con 93 tomas en un día el freno nunca vio el gasto. Ahora cada llamada recalcula con la API de Replicate. Si la API
+    # no responde, NO se genera (un freno que no puede medir no deja pasar).
     try:
-        cfg = (json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('replicate') or {})
-        c = (json.load(open(SALIDA)).get('control') or {}) if os.path.exists(SALIDA) else {}
-    except (OSError, ValueError):
-        return
+        c = resumen()['control']
+    except Exception as e:  # noqa: BLE001
+        sys.exit(f'FRENO DE REPLICATE: no pude medir el gasto ({str(e)[:80]}). No se generó nada.')
     # Excepción que SOLO Rodrigo autoriza por escrito: config.json → replicate.autorizaciones[<clave>] y la variable de
     # entorno REPLICATE_AUTORIZACION=<clave> en la corrida. Vale mientras no esté "cerrada" (se cierra al terminar).
     clave = os.environ.get('REPLICATE_AUTORIZACION')
     aut = (cfg.get('autorizaciones') or {}).get(clave) if clave else None
     if aut and not aut.get('cerrada'):
+        # La autorización tiene su propio tope (tope_usd): lo gastado con ella se suma en gastado_usd (cargar()).
+        if aut.get('tope_usd') is not None and (aut.get('gastado_usd') or 0) >= aut['tope_usd']:
+            sys.exit(f"FRENO DE REPLICATE: la autorización '{clave}' ya usó ${aut.get('gastado_usd'):.2f} de "
+                     f"${aut['tope_usd']}. No se generó nada; avísale a Rodrigo.")
         return
     if cfg.get('pausado'):
         sys.exit('FRENO DE REPLICATE: está en pausa (config.json → replicate.pausado). No se generó nada.')
@@ -100,6 +111,23 @@ def freno(barato=False):
     if (not barato and tope_s and sem >= tope_s) or (tope_m and mes >= tope_m):
         sys.exit(f'FRENO DE REPLICATE: Victoria ya gastó ${sem:.2f} esta semana (tope ${tope_s}) y ${mes:.2f} este mes '
                  f'(tope ${tope_m}). No se generó nada; avísale a Rodrigo.')
+
+
+def cargar(usd):
+    """Suma lo que costó una predicción a la autorización con la que se corrió (REPLICATE_AUTORIZACION), para que su
+    tope_usd se respete. Sin autorización no hace nada (el gasto normal lo mide resumen() con la API)."""
+    clave = os.environ.get('REPLICATE_AUTORIZACION')
+    if not clave:
+        return
+    import fcntl
+    ruta = os.path.join(RAIZ, 'contenido', 'config.json')
+    with open(ruta + '.lock', 'w') as candado:
+        fcntl.flock(candado, fcntl.LOCK_EX)
+        cfg = json.load(open(ruta))
+        aut = ((cfg.get('replicate') or {}).get('autorizaciones') or {}).get(clave)
+        if aut is not None:
+            aut['gastado_usd'] = round((aut.get('gastado_usd') or 0) + usd, 3)
+            open(ruta, 'w').write(json.dumps(cfg, ensure_ascii=False, indent=1) + '\n')
 
 
 def resumen():
@@ -123,7 +151,12 @@ def resumen():
     semana = {'victoria': 0.0, 'otro': 0.0}
     por_dia, por_modelo, sin_precio = {}, {}, {}
     videos = []
-    for p in predicciones_desde(desde):
+    # Saldo con la recarga automática de Replicate (Rodrigo, 12-nov-2026: "bajó de 5 USD y se metieron otros 35"):
+    # se recorre en orden de tiempo y cada vez que el saldo estimado cae debajo del umbral se suman los USD de la recarga.
+    rec = base.get('recarga') or {}
+    umbral, monto = rec.get('umbral_usd'), rec.get('monto_usd')
+    saldo_vivo, recargas = base.get('saldo_base_usd'), []
+    for p in reversed(predicciones_desde(desde)):
         if p.get('status') != 'succeeded':
             continue
         quien = 'victoria' if p['id'] in nuestros else 'otro'
@@ -138,6 +171,11 @@ def resumen():
         if p['created_at'] < desde_base:
             continue
         total[quien] += costo
+        if saldo_vivo is not None:
+            saldo_vivo -= costo
+            if umbral is not None and monto and saldo_vivo < umbral:
+                saldo_vivo += monto
+                recargas.append({'utc': p['created_at'][:19] + 'Z', 'usd': monto})
         if p['created_at'] >= hace7:
             semana[quien] += costo
         dia = p['created_at'][:10]
@@ -164,7 +202,8 @@ def resumen():
     datos = {
         'control': control,
         'saldo_base_usd': saldo_base, 'fecha_base_utc': desde_base,
-        'saldo_estimado_usd': round(saldo_base - total['victoria'] - total['otro'], 2) if saldo_base is not None else None,
+        'saldo_estimado_usd': round(saldo_vivo, 2) if saldo_vivo is not None else None,
+        'recargas_estimadas': recargas,
         'gastado_desde_base': {k: round(v, 2) for k, v in total.items()},
         'gastado_7_dias': {k: round(v, 2) for k, v in semana.items()},
         'por_dia': [{'dia': d, **{k: round(v, 2) for k, v in x.items()}} for d, x in sorted(por_dia.items())],

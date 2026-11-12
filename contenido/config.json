@@ -552,12 +552,25 @@
     "fecha": "2026-11-12",
     "tope_usd": 12,
     "texto": "Rodrigo, 12-nov-2026: \"haz más escenas con movimiento real, no importa el gasto de Replicate\"",
-    "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)"
+    "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)",
+    "gastado_usd": 2.25
+   },
+   "shorts-escena": {
+    "fecha": "2026-11-12",
+    "tope_usd": 15,
+    "gastado_usd": 0.08,
+    "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
+    "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
    }
   },
   "extra_mes": {
    "2026-11": 8
   },
-  "_nota_extra": "Rodrigo, 12-nov-2026: \"Replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas en que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\". Extra de noviembre: 8 USD (~160 MXN) solo para shorts de Victoria hablando; Rodrigo puede subirlo o bajarlo."
+  "_nota_extra": "Rodrigo, 12-nov-2026: \"Replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas en que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\". Extra de noviembre: 8 USD (~160 MXN) solo para shorts de Victoria hablando; Rodrigo puede subirlo o bajarlo.",
+  "recarga": {
+   "umbral_usd": 5,
+   "monto_usd": 35,
+   "texto": "Rodrigo, 12-nov-2026: \"bajó de 5 USD y se metieron otros 35 USD\""
+  }
  }
 }

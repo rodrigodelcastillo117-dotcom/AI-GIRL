@@ -52,6 +52,7 @@ def main():
         'image': url, 'prompt': BASE + accion, 'duration': 5, 'resolution': '1080p', 'aspect_ratio': '9:16',
         'fps': 24, 'camera_fixed': False}})
     replicate_gasto.anotar(p['id'])
+    replicate_gasto.cargar(0.75)  # 5 s a 1080p ≈ $0.62–0.75 (se toma el alto)
     print('replicate:', p['id'], p.get('status'))
     while p.get('status') not in ('succeeded', 'failed', 'canceled'):
         time.sleep(8)

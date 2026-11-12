@@ -17,3 +17,4 @@ producto/plantilla/*.xlsx
 carruseles/
 videos/calcula/grab/
 node_modules/
+*.lock
