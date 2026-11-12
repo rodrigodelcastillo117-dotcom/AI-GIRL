@@ -12,8 +12,13 @@ mundo… la subes a las historias de Victoria, que te mande a una página… có
 3. Escribe contenido/noticias/<AAAA-MM-DD>.json (formato en scripts/noticias.py): qué pasó / cómo te afecta / qué hacer,
    frases cortas, de tú, lenguaje neutro. "Qué hacer" = hábito (comparar, revisar, esperar), nunca un producto, banco
    o inversión. Un "dato del día" con su cuenta y un cierre de Victoria.
-4. `python3 scripts/noticias.py pagina` y `python3 scripts/noticias.py historia`, commit y push; cuando
-   victoriatheceo.vercel.app/historias/<fecha>.jpg responda 200: `python3 scripts/noticias.py publicar`.
+4. `python3 scripts/noticias.py pagina` y `python3 scripts/noticias.py historia`, commit y push.
+   HISTORIA CON ENLACE (Rodrigo, 12-nov-2026: "mete el link… que le puedan picar"; eligió subirla él): la API de
+   Instagram NO deja poner el sticker de enlace. Mándale a Rodrigo con SendUserFile (status proactive) la imagen
+   sitio/public/historias/<fecha>.jpg con el texto: "Historia de hoy: súbela con sticker de enlace →
+   https://victoriatheceo.vercel.app/hoy?ref=ig-historia". Y con send_later a las 10:00 (America/Mexico_City) el
+   respaldo: "cd /home/user/ai-girl && git pull -q && python3 scripts/noticias.py publicar --si-falta" (si él ya la
+   subió, no publica nada; si no, la sube sin sticker para que nunca falte).
 5. Si algo falla, la página va igual y se lo dices a Rodrigo en el resumen. Nunca inventes una noticia para llenar.
 
 ## 00. 13-NOV (Rodrigo)

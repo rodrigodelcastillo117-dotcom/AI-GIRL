@@ -11,6 +11,7 @@ inversiones; "qué hacer" es una acción de hábito (comparar, revisar, esperar)
 Uso: python3 scripts/noticias.py pagina              → sitio/public/hoy.html (la de hoy) y noticias/<fecha>.html (archivo)
      python3 scripts/noticias.py historia [fecha]    → sitio/public/historias/<fecha>.jpg (1080x1920)
      python3 scripts/noticias.py publicar [fecha]    → la sube como historia de Instagram (necesita la imagen ya en línea)
+     python3 scripts/noticias.py publicar --si-falta → solo si hoy todavía no hay historia (respaldo de las 10 a.m.)
 """
 import glob
 import html
@@ -205,6 +206,21 @@ li span {{ display: block; font-size: 22px; letter-spacing: .2em; text-transform
     return salida
 
 
+def ya_hay_historia_hoy():
+    """True si @victoriatheceo ya tiene una historia publicada desde las 5 a.m. de hoy (hora de México): la que subió
+    Rodrigo a mano con el sticker de enlace (12-nov-2026: "mete el link de cómo te afecta como link que le puedan picar")."""
+    import datetime
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import ig_reel_musica as ig
+    from comentarios_ig import IG_USUARIO
+    mx = datetime.timezone(datetime.timedelta(hours=-6))
+    inicio = datetime.datetime.now(mx).replace(hour=5, minute=0, second=0, microsecond=0)
+    for h in ig.graph('GET', f'{IG_USUARIO}/stories?fields=id,timestamp').get('data', []):
+        if datetime.datetime.fromisoformat(h['timestamp'].replace('+0000', '+00:00')) >= inicio:
+            return True
+    return False
+
+
 def publicar(fecha=None):
     """Historia de Instagram (API de Meta, media_type=STORIES). La API no deja poner el sticker de enlace: la imagen
     lleva la dirección escrita y Rodrigo puede añadir el sticker a mano si quiere."""
@@ -234,4 +250,9 @@ def publicar(fecha=None):
 if __name__ == '__main__':
     accion = sys.argv[1] if len(sys.argv) > 1 else ''
     arg = sys.argv[2] if len(sys.argv) > 2 else None
+    if accion == 'publicar' and '--si-falta' in sys.argv:
+        if ya_hay_historia_hoy():
+            print('Ya hay historia de hoy (la subió Rodrigo con el enlace): no se publica otra.')
+            sys.exit(0)
+        arg = None
     {'pagina': pagina, 'historia': lambda: historia(arg), 'publicar': lambda: publicar(arg)}.get(accion, lambda: sys.exit(__doc__))()
