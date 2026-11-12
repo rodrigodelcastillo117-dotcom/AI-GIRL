@@ -6929,6 +6929,681 @@
     "tt": "2026-11-16T22:41:00Z"
    },
    "publica_utc": "2026-11-16T22:41:00Z"
+  },
+  {
+   "id": "c78",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/cocina.jpg",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "assets/fotos/habla-yate-cerca.jpg",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas el salario mínimo, tu aguinaldo mínimo es $4,725.60",
+    "voz": "Si ganas el salario mínimo, tu aguinaldo mínimo es de cuatro mil setecientos veintiséis pesos. Guarda esto.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/habla-calle.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo diario × 15.\n$315.04 diarios → $315.04 diarios × 15 = $4,725.60 brutos.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo diario por quince días."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $4,725.60, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $1,206.30.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30; salario mínimo 2026 (CONASAMI): general $315.04, frontera norte $440.87",
+   "titulo_post": "Si ganas el salario mínimo, tu aguinaldo mínimo es $4,725.60",
+   "texto_post": "Si ganas el salario mínimo, tu aguinaldo mínimo es $4,725.60 💰\n$315.04 diarios ÷ 30 × 15 = $4,725.60 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $4,725.60, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $1,206.30.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 con salario mínimo 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $315.04 diarios",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $315.04 diarios?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 315.04, aguinaldo 4725.60, exento 3519.30, gravado 1206.30); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c79",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas el mínimo de la frontera norte, tu aguinaldo mínimo es $6,613.05",
+    "voz": "Si ganas el mínimo de la frontera norte, tu aguinaldo mínimo es de seis mil seiscientos trece pesos. Guarda esto.",
+    "gancho_tipo": "si"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo diario × 15.\n$440.87 diarios → $440.87 diarios × 15 = $6,613.05 brutos.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo diario por quince días."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $6,613.05, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $3,093.75.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30; salario mínimo 2026 (CONASAMI): general $315.04, frontera norte $440.87",
+   "titulo_post": "Si ganas el mínimo de la frontera norte, tu aguinaldo mínimo",
+   "texto_post": "Si ganas el mínimo de la frontera norte, tu aguinaldo mínimo es $6,613.05 💰\n$440.87 diarios ÷ 30 × 15 = $6,613.05 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $6,613.05, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $3,093.75.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 con el mínimo fronterizo 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $440.87 diarios",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $440.87 diarios?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 440.87, aguinaldo 6613.05, exento 3519.30, gravado 3093.75); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c80",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "assets/fotos/habla-yate.jpg",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $8,000 al mes, tu aguinaldo mínimo es $4,000",
+    "voz": "Si ganas ocho mil pesos al mes, tu aguinaldo mínimo es de cuatro mil pesos. Guarda esto.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$8,000 ÷ 30 × 15 = $4,000 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $4,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $480.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $8,000 al mes, tu aguinaldo mínimo es $4,000",
+   "texto_post": "Si ganas $8,000 al mes, tu aguinaldo mínimo es $4,000 💰\n$8,000 al mes ÷ 30 × 15 = $4,000 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $4,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $480.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $8,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $8,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $8,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 266.67, aguinaldo 4000.00, exento 3519.30, gravado 480.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c81",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $10,000 al mes, tu aguinaldo mínimo es $5,000",
+    "voz": "Si ganas diez mil pesos al mes, tu aguinaldo mínimo es de cinco mil pesos. Guarda esto.",
+    "gancho_tipo": "si"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$10,000 ÷ 30 × 15 = $5,000 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $5,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $1,480.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $10,000 al mes, tu aguinaldo mínimo es $5,000",
+   "texto_post": "Si ganas $10,000 al mes, tu aguinaldo mínimo es $5,000 💰\n$10,000 al mes ÷ 30 × 15 = $5,000 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $5,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $1,480.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $10,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $10,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $10,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 333.33, aguinaldo 5000.00, exento 3519.30, gravado 1480.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c82",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $12,000 al mes, tu aguinaldo mínimo es $6,000",
+    "voz": "Si ganas doce mil pesos al mes, tu aguinaldo mínimo es de seis mil pesos. Guarda esto.",
+    "gancho_tipo": "si"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$12,000 ÷ 30 × 15 = $6,000 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $6,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $2,480.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $12,000 al mes, tu aguinaldo mínimo es $6,000",
+   "texto_post": "Si ganas $12,000 al mes, tu aguinaldo mínimo es $6,000 💰\n$12,000 al mes ÷ 30 × 15 = $6,000 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $6,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $2,480.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $12,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $12,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $12,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 400.00, aguinaldo 6000.00, exento 3519.30, gravado 2480.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c83",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $20,000 al mes, tu aguinaldo mínimo es $10,000",
+    "voz": "Si ganas veinte mil pesos al mes, tu aguinaldo mínimo es de diez mil pesos. Guarda esto.",
+    "gancho_tipo": "si"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$20,000 ÷ 30 × 15 = $10,000 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $10,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $6,480.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $20,000 al mes, tu aguinaldo mínimo es $10,000",
+   "texto_post": "Si ganas $20,000 al mes, tu aguinaldo mínimo es $10,000 💰\n$20,000 al mes ÷ 30 × 15 = $10,000 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $10,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $6,480.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $20,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $20,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $20,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 666.67, aguinaldo 10000.00, exento 3519.30, gravado 6480.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c84",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/jet.jpg",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "assets/fotos/habla-cocina-cerca.jpg",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $25,000 al mes, tu aguinaldo mínimo es $12,500",
+    "voz": "Si ganas veinticinco mil pesos al mes, tu aguinaldo mínimo es de doce mil quinientos pesos. Guarda esto.",
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/capital-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$25,000 ÷ 30 × 15 = $12,500 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $12,500, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $8,980.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $25,000 al mes, tu aguinaldo mínimo es $12,500",
+   "texto_post": "Si ganas $25,000 al mes, tu aguinaldo mínimo es $12,500 💰\n$25,000 al mes ÷ 30 × 15 = $12,500 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $12,500, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $8,980.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $25,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $25,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $25,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 833.33, aguinaldo 12500.00, exento 3519.30, gravado 8980.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c85",
+   "estado": "listo",
+   "tema": "aguinaldo_tu_sueldo",
+   "serie": "Tu sueldo, tu aguinaldo",
+   "clon_de": "c01",
+   "pilar": "finanzas",
+   "fondo": "auto",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-12-19"
+   },
+   "portada": {
+    "foto": "auto",
+    "etiqueta": "AGUINALDO 2026",
+    "titulo": "Si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000",
+    "voz": "Si ganas treinta mil pesos al mes, tu aguinaldo mínimo es de quince mil pesos. Guarda esto.",
+    "gancho_tipo": "si"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La cuenta",
+     "texto": "Sueldo mensual ÷ 30 × 15.\n$30,000 ÷ 30 × 15 = $15,000 brutos: la mitad de tu sueldo.\n\nLey Federal del Trabajo, art. 87",
+     "voz": "La cuenta: tu sueldo entre treinta, por quince. O sea, la mitad de tu sueldo."
+    },
+    {
+     "titulo": "¿Cuándo?",
+     "texto": "Antes del 20 de diciembre. En 2026 el 20 cae en domingo: a más tardar el sábado 19.\n\nLFT art. 87",
+     "voz": "Te lo tienen que pagar antes del veinte de diciembre."
+    },
+    {
+     "titulo": "¿Paga ISR?",
+     "texto": "De $15,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $11,480.70.\n\nLISR art. 93 fracc. XIV: 30 UMA × $117.31 (UMA 2026, INEGI)",
+     "voz": "Una parte va libre de impuestos: treinta UMAs."
+    },
+    {
+     "titulo": "¿Entraste o te fuiste este año?",
+     "texto": "También te toca: la parte proporcional a los días que trabajaste.",
+     "voz": "Si entraste o te fuiste este año, te toca la parte proporcional."
+    },
+    {
+     "titulo": "Calcula el tuyo exacto",
+     "texto": "victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)",
+     "voz": "Calcula el tuyo exacto con el enlace de mi perfil."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre.",
+    "texto": "¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.",
+    "voz": "Guárdalo para diciembre y comenta tu sueldo."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "LFT art. 87 (15 días, antes del 20-dic); LISR art. 93 fracc. XIV (30 UMA); UMA 2026 diaria $117.31 (INEGI) → exento $3,519.30",
+   "titulo_post": "Si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000",
+   "texto_post": "Si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000 💰\n$30,000 al mes ÷ 30 × 15 = $15,000 brutos, y te lo deben pagar antes del 20 de diciembre (LFT art. 87).\nDe $15,000, $3,519.30 van libres de ISR y el impuesto se calcula solo sobre $11,480.70.\n\n🔖 Guárdalo para diciembre. ¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.\n\n#aguinaldo #aguinaldo2026 #finanzaspersonales #dinero #victoriatheceo",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026 si ganas $30,000 al mes 💰",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "aguinaldo $30,000 al mes",
+     "cuanto me toca de aguinaldo",
+     "calcular aguinaldo",
+     "aguinaldo exento isr",
+     "aginaldo"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales",
+     "#dinero"
+    ],
+    "preguntas": [
+     "¿Cuánto es mi aguinaldo si gano $30,000 al mes?",
+     "¿Cuándo pagan el aguinaldo?",
+     "¿El aguinaldo paga ISR?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 Calcula tu aguinaldo gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 1000.00, aguinaldo 15000.00, exento 3519.30, gravado 11480.70); datos verificados por segundo agente el 12-nov."
   }
  ]
 }
