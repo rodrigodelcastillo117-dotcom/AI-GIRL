@@ -7,7 +7,8 @@ Uso:
   python scripts/largo.py laminas <id>               3) dibuja las láminas (1920x1080, negro y dorado)
   python scripts/largo.py armar <id>                 4) une todo, capítulos, miniatura y textos para YouTube
   python scripts/largo.py todo <id>                  2, 3 y 4 seguidos (las voces van aparte: necesitan VOZ_PYTHON)
-  python scripts/largo.py subir <id>                 5) a YouTube, programado a su publica_utc, con miniatura y lista
+  python scripts/largo.py subir <id>                 5) a YouTube, programado a su publica_utc, con miniatura y lista,
+                                                     y a la página de Facebook a la misma hora (publer.py --solo-facebook)
 
 El guion vive en contenido/largos.json → [{"id", "seo", "miniatura", "foto_horizontal", "segmentos": [...]}]:
   {"tipo": "victoria", "capitulo": "..."|null, "voz": "..."}                 Victoria a cámara (gancho, transiciones, cierre)
@@ -414,6 +415,12 @@ def armar(vid):
     open(os.path.join(carpeta, 'titulo.txt'), 'w').write(seo['titulo'])
     open(os.path.join(carpeta, 'descripcion_youtube.txt'), 'w').write(descripcion)
     open(os.path.join(carpeta, 'tags_youtube.txt'), 'w').write(','.join(seo.get('tags', [])))
+    # Facebook (Rodrigo, 12-nov-2026: "a Facebook subimos todo, incluyendo videos largos"): el gancho de la descripción
+    # (sus primeras líneas, con la calculadora), el aviso de IA y los hashtags.
+    gancho = seo['descripcion'].strip().split('\n\n')[0]
+    open(os.path.join(carpeta, 'texto_facebook.txt'), 'w').write(
+        seo['titulo'] + '\n\n' + gancho + '\n\nVictoria es un personaje creado con inteligencia artificial. Información general, '
+        'no asesoría financiera ni legal.\n\n' + ' '.join(seo.get('hashtags', [])))
     miniatura(largo, os.path.join(RAIZ, 'videos', 'largos', f'{vid}-miniatura.jpg'))
     print(f'ok {final} | {duracion(final) / 60:.1f} min | {len(capitulos)} capítulos\n{caps}')
 
@@ -512,10 +519,38 @@ def subir(vid):
     json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
     open(ruta, 'a').write('\n')
     print(f'ok {vid} programado {cuando}: {enlace}')
+    facebook(vid, cuando)
+
+
+def facebook(vid, cuando=None):
+    """El mismo video horizontal como video nativo en la página de Facebook de Victoria, a la hora de YouTube."""
+    largo, carpeta = cargar(vid)
+    if largo.get('facebook'):
+        print(f'{vid} ya está en Facebook')
+        return
+    texto = os.path.join(carpeta, 'texto_facebook.txt')
+    final = os.path.join(RAIZ, 'videos', 'largos', f'{vid}-horizontal.mp4')
+    if not os.path.exists(texto):
+        sys.exit(f'Falta {texto}: corre "largo.py armar {vid}"')
+    cuando = cuando or largo.get('publica_utc')
+    r = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'publer.py'), 'publicar', final, texto, cuando,
+                        largo['seo']['titulo'], '--solo-facebook'], capture_output=True, text=True)
+    print(r.stdout[-600:], r.stderr[-600:])
+    if r.returncode != 0:
+        print(f'AVISO: Facebook no quedó programado para {vid} (código {r.returncode}); YouTube sí.')
+        return
+    ruta = os.path.join(RAIZ, 'contenido', 'largos.json')
+    todos = json.load(open(ruta))
+    for x in todos:
+        if x['id'] == vid:
+            x['facebook'] = {'publica_utc': cuando, 'estado': 'programado'}
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+    print(f'ok {vid} en Facebook {cuando}')
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir', 'migrar', 'intercalar'):
+    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir', 'migrar', 'intercalar', 'facebook'):
         sys.exit(__doc__)
     paso, vid = sys.argv[1:]
     if paso == 'todo':
