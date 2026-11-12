@@ -69,7 +69,18 @@ def predicciones_desde(desde):
 def resumen():
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
     base = config.get('replicate') or {}
-    desde = base.get('fecha_base_utc', '2026-11-12T00:00:00Z')
+    desde_base = base.get('fecha_base_utc', '2026-11-12T00:00:00Z')
+    # Control de gasto (Rodrigo, 12-nov-2026: "se recarga solo cuando llega a 5 usd… solo te pido control para no
+    # sorprenderme con el gasto"): hoy, semana (lunes a domingo) y mes, en hora de México, contra el presupuesto.
+    from zoneinfo import ZoneInfo
+    mx = datetime.datetime.now(ZoneInfo('America/Mexico_City'))
+    lunes = (mx - datetime.timedelta(days=mx.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
+    dia1 = mx.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    utc = lambda d: d.astimezone(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    hoy0 = utc(mx.replace(hour=0, minute=0, second=0, microsecond=0))
+    lunes0, mes0 = utc(lunes), utc(dia1)
+    desde = min(desde_base, lunes0, mes0)
+    periodos = {'hoy': {'victoria': 0.0, 'otro': 0.0}, 'semana': {'victoria': 0.0, 'otro': 0.0}, 'mes': {'victoria': 0.0, 'otro': 0.0}}
     nuestros = set(open(IDS).read().split()) if os.path.exists(IDS) else set()
     hace7 = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%SZ')
     total = {'victoria': 0.0, 'otro': 0.0}
@@ -85,6 +96,11 @@ def resumen():
             sin_precio[p.get('model')] = sin_precio.get(p.get('model'), 0) + 1
             continue
         costo = precio(p)
+        for nombre, inicio in (('hoy', hoy0), ('semana', lunes0), ('mes', mes0)):
+            if p['created_at'] >= inicio:
+                periodos[nombre][quien] += costo
+        if p['created_at'] < desde_base:
+            continue
         total[quien] += costo
         if p['created_at'] >= hace7:
             semana[quien] += costo
@@ -94,8 +110,23 @@ def resumen():
         if p.get('model') == 'prunaai/p-video-avatar' and quien == 'victoria':
             videos.append(costo)
     saldo_base = base.get('saldo_base_usd')
+    import calendar
+    dias_mes = calendar.monthrange(mx.year, mx.month)[1]
+    pres_sem, pres_mes = base.get('presupuesto_semanal_usd'), base.get('presupuesto_mensual_usd')
+    control = {
+        'hoy_usd': round(periodos['hoy']['victoria'], 2),
+        'semana_usd': round(periodos['semana']['victoria'], 2),
+        'mes_usd': round(periodos['mes']['victoria'], 2),
+        'otro_canal_semana_usd': round(periodos['semana']['otro'], 2),
+        'otro_canal_mes_usd': round(periodos['mes']['otro'], 2),
+        'presupuesto_semanal_usd': pres_sem, 'presupuesto_mensual_usd': pres_mes,
+        'proyeccion_mes_usd': round(periodos['mes']['victoria'] / mx.day * dias_mes, 2),
+        'semana_desde': lunes.strftime('%Y-%m-%d'),
+        'recarga_automatica': base.get('recarga_automatica'),
+    }
     datos = {
-        'saldo_base_usd': saldo_base, 'fecha_base_utc': desde,
+        'control': control,
+        'saldo_base_usd': saldo_base, 'fecha_base_utc': desde_base,
         'saldo_estimado_usd': round(saldo_base - total['victoria'] - total['otro'], 2) if saldo_base is not None else None,
         'gastado_desde_base': {k: round(v, 2) for k, v in total.items()},
         'gastado_7_dias': {k: round(v, 2) for k, v in semana.items()},
@@ -115,8 +146,8 @@ if __name__ == '__main__':
     if len(sys.argv) == 3 and sys.argv[1] == 'saldo':
         ruta = os.path.join(RAIZ, 'contenido', 'config.json')
         config = json.load(open(ruta))
-        config['replicate'] = {'saldo_base_usd': float(sys.argv[2]),
-                               'fecha_base_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}
+        config.setdefault('replicate', {}).update({'saldo_base_usd': float(sys.argv[2]),
+                               'fecha_base_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')})
         open(ruta, 'w').write(json.dumps(config, ensure_ascii=False, indent=1) + '\n')
         print('nueva base:', config['replicate'])
     print(json.dumps(resumen(), ensure_ascii=False, indent=1))

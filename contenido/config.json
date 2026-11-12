@@ -527,6 +527,10 @@
  "ig_fotos_feed_por_dia": 1,
  "replicate": {
   "saldo_base_usd": 30.68,
-  "fecha_base_utc": "2026-11-12T03:12:10Z"
+  "fecha_base_utc": "2026-11-12T03:12:10Z",
+  "presupuesto_semanal_usd": 25,
+  "presupuesto_mensual_usd": 80,
+  "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)",
+  "_nota": "Tope de gasto de Victoria. Al 80% salud.py avisa; al 100% no se generan tomas nuevas salvo lo ya programado que se caería, y se avisa a Rodrigo."
  }
 }

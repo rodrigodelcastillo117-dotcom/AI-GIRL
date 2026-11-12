@@ -872,8 +872,9 @@ function dibujarSalud(salud) {
     crear('span', {textContent: '● ', style: `color:${color[c.estado]}`}),
     crear('b', {textContent: `${c.area}: `}), crear('span', {textContent: c.detalle}));
   // Lo que falla, a la vista; lo que está bien, plegado (el panel debe ser corto).
-  const malos = [...checks].filter((c) => c.estado !== 'ok').sort((a, b) => orden(a) - orden(b));
-  const buenos = checks.filter((c) => c.estado === 'ok');
+  // El gasto siempre a la vista (12-nov-2026, Rodrigo: "control para no sorprenderme con el gasto").
+  const malos = [...checks].filter((c) => c.estado !== 'ok' || c.area === 'Gasto').sort((a, b) => orden(a) - orden(b));
+  const buenos = checks.filter((c) => c.estado === 'ok' && c.area !== 'Gasto');
   const filas = [...malos.map(fila)];
   if (buenos.length) filas.push(crear('li', {style: 'list-style:none;margin-top:8px'}, crear('details', {},
     crear('summary', {textContent: `✓ ${buenos.length} cosas en orden (toca para ver)`, style: 'cursor:pointer;color:#3ddc84'}),

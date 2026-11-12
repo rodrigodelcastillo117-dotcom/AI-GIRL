@@ -76,16 +76,23 @@ def llaves():
 
 
 def saldo():
-    rep = leer('replicate.json', {})
-    s = rep.get('saldo_estimado_usd')
-    if s is None:
-        anotar('Replicate', 'aviso', 'Sin saldo estimado: corre scripts/replicate_gasto.py')
-    elif s < 10:
-        anotar('Replicate', 'alerta', f'Saldo estimado ${s:.2f}: no alcanza para un video largo (~$6-7). Rodrigo debe recargar.')
-    elif s < 15:
-        anotar('Replicate', 'aviso', f'Saldo estimado ${s:.2f}: alcanza para ~1 video largo más.')
+    """Control de gasto de Replicate (Rodrigo, 12-nov-2026: "se recarga solo cuando llega a 5 usd… solo te pido control
+    para no sorprenderme con el gasto"). El saldo ya no importa (recarga automática); importa el gasto de Victoria contra
+    config.json → replicate.presupuesto_semanal_usd / presupuesto_mensual_usd."""
+    c = leer('replicate.json', {}).get('control') or {}
+    if not c:
+        anotar('Gasto', 'aviso', 'Sin control de gasto: corre scripts/replicate_gasto.py')
+        return
+    sem, tope_s = c.get('semana_usd', 0), c.get('presupuesto_semanal_usd') or 0
+    mes, tope_m = c.get('mes_usd', 0), c.get('presupuesto_mensual_usd') or 0
+    texto = (f"Replicate de Victoria: hoy ${c.get('hoy_usd', 0):.2f} · semana ${sem:.2f} de ${tope_s} · mes ${mes:.2f} de ${tope_m} "
+             f"(proyección del mes ${c.get('proyeccion_mes_usd', 0):.2f}) · El espacio, semana ${c.get('otro_canal_semana_usd', 0):.2f}")
+    if (tope_s and sem >= tope_s) or (tope_m and mes >= tope_m):
+        anotar('Gasto', 'alerta', texto + ' · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo')
+    elif (tope_s and sem >= 0.8 * tope_s) or (tope_m and mes >= 0.8 * tope_m):
+        anotar('Gasto', 'aviso', texto + ' · arriba del 80%: solo lo indispensable')
     else:
-        anotar('Replicate', 'ok', f'Saldo estimado ${s:.2f}')
+        anotar('Gasto', 'ok', texto)
 
 
 def calendario():
