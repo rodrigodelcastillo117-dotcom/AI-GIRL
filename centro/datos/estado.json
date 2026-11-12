@@ -52,7 +52,7 @@
     "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (TikTok 09:00 · YouTube 12:00)"
    }
   ],
-  "generado_utc": "2026-11-12T03:14:21Z",
+  "generado_utc": "2026-11-12T03:58:53Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -478,30 +478,92 @@
   "replicate": {
    "saldo_base_usd": 30.68,
    "fecha_base_utc": "2026-11-12T03:12:10Z",
-   "saldo_estimado_usd": 30.32,
+   "saldo_estimado_usd": 14.6,
    "gastado_desde_base": {
-    "victoria": 0.0,
-    "otro": 0.36
+    "victoria": 14.46,
+    "otro": 1.62
    },
    "gastado_7_dias": {
-    "victoria": 0.0,
-    "otro": 0.36
+    "victoria": 14.46,
+    "otro": 1.62
    },
    "por_dia": [
     {
      "dia": "2026-11-12",
-     "victoria": 0.0,
-     "otro": 0.36
+     "victoria": 14.46,
+     "otro": 1.62
     }
    ],
    "por_modelo": {
-    "prunaai/p-video-avatar": 0.36
+    "prunaai/p-video-avatar": 14.4,
+    "minimax/speech-02-hd": 1.68
    },
-   "costo_promedio_toma_usd": null,
+   "costo_promedio_toma_usd": 0.23,
    "sin_precio": {},
    "incompleto": false,
-   "generado_utc": "2026-11-12T03:14:23Z",
+   "generado_utc": "2026-11-12T03:58:56Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
+  },
+  "salud": {
+   "generado_utc": "2026-11-12T03:58:14Z",
+   "estado": "aviso",
+   "checks": [
+    {
+     "area": "Replicate",
+     "estado": "ok",
+     "detalle": "Saldo estimado $15.54"
+    },
+    {
+     "area": "Calendario",
+     "estado": "ok",
+     "detalle": "2026-11-11: TikTok 3, Instagram 2, YouTube 3, Facebook 1"
+    },
+    {
+     "area": "Calendario",
+     "estado": "ok",
+     "detalle": "2026-11-12: TikTok 2, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 2/3"
+    },
+    {
+     "area": "Calendario",
+     "estado": "ok",
+     "detalle": "2026-11-13: TikTok 2, Instagram 1, YouTube 0, Facebook 0 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 0/3"
+    },
+    {
+     "area": "Videos largos",
+     "estado": "aviso",
+     "detalle": "LA1: sale en 69 h y no está subido (armado): largo.py subir LA1"
+    },
+    {
+     "area": "Videos largos",
+     "estado": "ok",
+     "detalle": "LA2: YouTube y Facebook 2026-11-17, con recortes"
+    },
+    {
+     "area": "Videos largos",
+     "estado": "ok",
+     "detalle": "LA3: sale 2026-11-20, en producción"
+    },
+    {
+     "area": "Videos largos",
+     "estado": "aviso",
+     "detalle": "LB1: sale en 12 h y no está subido (sin armar): largo.py subir LB1"
+    },
+    {
+     "area": "Recortes",
+     "estado": "aviso",
+     "detalle": "1 recortes listos sin horario: recortes.py programar"
+    },
+    {
+     "area": "Cola",
+     "estado": "ok",
+     "detalle": "52 carruseles listos para TikTok (~17 días a 3 por día)"
+    },
+    {
+     "area": "Cola",
+     "estado": "ok",
+     "detalle": "4 videos de Victoria listos para publicar"
+    }
+   ]
   }
  }
 ]

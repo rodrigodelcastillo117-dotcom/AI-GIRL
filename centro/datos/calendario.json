@@ -156,6 +156,16 @@
   "que": "Carrusel «Buen Fin 2026, mitos y verdades verificados 🔍» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
+  "fecha": "2026-11-12",
+  "tipo": "largo",
+  "id": "LB1",
+  "estado": "produciendo",
+  "que": "Video largo: Buen Fin 2026: ¿cómo saber si una oferta es real?",
+  "horas": {
+   "yt": "10:00"
+  }
+ },
+ {
   "fecha": "2026-11-13",
   "tipo": "facebook",
   "id": "c02",
@@ -205,16 +215,6 @@
   "que": "Carrusel «Qué comprar en el Buen Fin y qué no 🛍️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-13",
-  "tipo": "largo",
-  "id": "LA1",
-  "estado": "produciendo",
-  "que": "Video largo: Aguinaldo 2026: cuánto te toca y cómo calcularlo (3 ejemplos)",
-  "horas": {
-   "yt": "18:45"
-  }
- },
- {
   "fecha": "2026-11-14",
   "tipo": "facebook",
   "id": "c03",
@@ -247,6 +247,16 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Consejos de dinero de tu tío, calificados 👀» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-14",
+  "tipo": "largo",
+  "id": "LA1",
+  "estado": "produciendo",
+  "que": "Video largo: Aguinaldo 2026: cuánto te toca y cómo calcularlo (3 ejemplos)",
+  "horas": {
+   "yt": "18:45"
+  }
  },
  {
   "fecha": "2026-11-15",
@@ -300,7 +310,7 @@
   "fecha": "2026-11-16",
   "tipo": "largo",
   "id": "LA2",
-  "estado": "produciendo",
+  "estado": "programado",
   "que": "Video largo: No me pagaron el aguinaldo 2026: qué hacer paso a paso",
   "horas": {
    "yt": "18:45"

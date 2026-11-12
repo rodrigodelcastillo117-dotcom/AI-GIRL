@@ -551,7 +551,16 @@ def main():
         'serie_redes': series_reales(plan, cargar_carruseles())[2],
         'foto_perfil': foto,
         'replicate': replicate_resumen(),
+        'salud': _json_o('salud.json', {}),
     }])
+
+
+def _json_o(nombre, defecto):
+    """contenido/<nombre> si existe (salud.json lo escribe scripts/salud.py en la rutina diaria)."""
+    try:
+        return json.load(open(os.path.join(RAIZ, 'contenido', nombre)))
+    except (OSError, ValueError):
+        return defecto
 
 
 def replicate_resumen():

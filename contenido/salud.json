@@ -1,0 +1,61 @@
+{
+ "generado_utc": "2026-11-12T03:58:14Z",
+ "estado": "aviso",
+ "checks": [
+  {
+   "area": "Replicate",
+   "estado": "ok",
+   "detalle": "Saldo estimado $15.54"
+  },
+  {
+   "area": "Calendario",
+   "estado": "ok",
+   "detalle": "2026-11-11: TikTok 3, Instagram 2, YouTube 3, Facebook 1"
+  },
+  {
+   "area": "Calendario",
+   "estado": "ok",
+   "detalle": "2026-11-12: TikTok 2, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 2/3"
+  },
+  {
+   "area": "Calendario",
+   "estado": "ok",
+   "detalle": "2026-11-13: TikTok 2, Instagram 1, YouTube 0, Facebook 0 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 0/3"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "aviso",
+   "detalle": "LA1: sale en 69 h y no está subido (armado): largo.py subir LA1"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LA2: YouTube y Facebook 2026-11-17, con recortes"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LA3: sale 2026-11-20, en producción"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "aviso",
+   "detalle": "LB1: sale en 12 h y no está subido (sin armar): largo.py subir LB1"
+  },
+  {
+   "area": "Recortes",
+   "estado": "aviso",
+   "detalle": "1 recortes listos sin horario: recortes.py programar"
+  },
+  {
+   "area": "Cola",
+   "estado": "ok",
+   "detalle": "52 carruseles listos para TikTok (~17 días a 3 por día)"
+  },
+  {
+   "area": "Cola",
+   "estado": "ok",
+   "detalle": "4 videos de Victoria listos para publicar"
+  }
+ ]
+}

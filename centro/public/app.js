@@ -271,6 +271,7 @@ function dibujarTodo() {
   dibujarTablas(videos, ejecuciones);
   dibujarCalendario(FOTO.calendario);
   dibujarLargos(FOTO.largos);
+  dibujarSalud(estado.salud);
   dibujarMetas();
   dibujarDespegues();
   dibujarAudiencia();
@@ -809,6 +810,26 @@ function pintarReplicate() {
     $('rep-nota').textContent = base + toma + falta;
   }
   if (window.d3 && $('g-replicate')) barras($('g-replicate'), (rep?.por_dia || []).map((d) => ({k: d.dia.slice(5), v: d.victoria + d.otro})), {color: ORO, formato: usd});
+}
+
+// Salud del sistema (12-nov-2026, Rodrigo: "déjame todo fluyendo, sin errores"): scripts/salud.py en la rutina diaria.
+// Llaves, saldo de Replicate, huecos del calendario, largos y recortes pendientes. Alertas primero.
+function dibujarSalud(salud) {
+  const caja = $('salud');
+  if (!caja) return;
+  const checks = salud?.checks || [];
+  if (!checks.length) { caja.replaceChildren(crear('p', {className: 'nota', textContent: 'Todavía no hay chequeo de salud: lo corre la rutina diaria.'})); return; }
+  const color = {ok: '#3ddc84', aviso: ORO, alerta: ROJO};
+  const nombre = {ok: 'Todo fluye', aviso: 'Atender hoy', alerta: 'Algo se cae'};
+  const orden = (c) => ['alerta', 'aviso', 'ok'].indexOf(c.estado);
+  const filas = [...checks].sort((a, b) => orden(a) - orden(b)).map((c) => crear('li', {style: 'margin:6px 0;list-style:none'},
+    crear('span', {textContent: '● ', style: `color:${color[c.estado]}`}),
+    crear('b', {textContent: `${c.area}: `}), crear('span', {textContent: c.detalle})));
+  caja.replaceChildren(crear('article', {className: 'panel', style: 'grid-column:1/-1'},
+    crear('div', {className: 'codigo', textContent: 'SYS-00'}),
+    crear('h2', {textContent: nombre[salud.estado] || 'Salud', style: `color:${color[salud.estado] || ''}`}),
+    crear('p', {className: 'nota', textContent: `Último chequeo: ${mx(salud.generado_utc)}`}),
+    crear('ul', {style: 'padding:0;margin:0'}, ...filas)));
 }
 
 // Videos largos de YouTube (12-nov-2026, Rodrigo: "quiero TODO en el dashboard"): miniaturas A y B, estado, cuándo sale,
