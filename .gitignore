@@ -18,3 +18,7 @@ carruseles/
 videos/calcula/grab/
 node_modules/
 *.lock
+
+# temporales de video_broll.py / foto_escena.py
+assets/broll/.*-crudo.mp4
+assets/fotos/.*-crudo.jpg
