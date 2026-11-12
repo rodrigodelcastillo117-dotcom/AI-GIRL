@@ -43,8 +43,8 @@ def main():
     prompt = (
         'Candid vertical smartphone frame from a real talking-head video filmed by the creator herself. The red-haired '
         'woman of Image 1 (EXACT identity: same face, green eyes, long copper-red wavy hair, subtle freckles) in the SAME '
-        'place, light and outfit as Image 2, now a MEDIUM CLOSE-UP: her head, shoulders and upper chest fill the vertical '
-        'frame (never full body, never a wide shot), slightly off-center, camera at eye level and close, like a phone '
+        'place, light and outfit as Image 2, now CLOSE framing like a selfie video: only her head, shoulders and upper chest, her face large in the '
+        'upper third of the frame (never full body, never a wide shot; 12-nov: with a small face p-video-avatar changed her identity), slightly off-center, camera at eye level and close, like a phone '
         f'propped on the table. {accion} Nothing in front of her mouth or face; both hands below the chin. She looks straight into the lens, mid-sentence, with a confident, charming half-smile. '
         f'{capital} Real place, natural light, realistic skin texture with visible pores, slight natural grain, not a '
         'studio render, no HDR. Elegant and classy, never provocative. No text, no logos, no watermark, no readable '
