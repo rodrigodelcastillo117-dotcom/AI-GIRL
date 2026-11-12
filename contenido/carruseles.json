@@ -6412,6 +6412,177 @@
     "tt": "2026-11-13T15:00:00Z"
    },
    "publica_utc": "2026-11-13T15:00:00Z"
+  },
+  {
+   "id": "c72",
+   "estado": "listo",
+   "tema": "victoria_verifica_buen_fin_2026",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "calculadora": [
+    "/pagar-deudas",
+    "Antes de usar la tarjeta, haz tu plan"
+   ],
+   "portada": {
+    "foto": "assets/fotos/navidad-compras-calle.jpg",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "5 cosas que todos creen del Buen Fin 2026. Las verifiqué.",
+    "voz": "Cinco cosas que todos creen del Buen Fin. Las verifiqué con la ley en la mano.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/video-02-palco.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "\"En el Buen Fin todo está más barato\"",
+     "texto": "FALSO. En 2025, Profeco encontró ofertas reales y también simuladas: una pantalla bajó antes de la campaña y subió en El Buen Fin. Checa el historial: elbuenfin.profeco.gob.mx\n\nProfeco, monitoreo Buen Fin 2025 (1-dic-2025) · micrositio (9-nov-2026)",
+     "voz": "Falso: Profeco encontró ofertas reales, pero también precios que subieron justo en el Buen Fin."
+    },
+    {
+     "titulo": "\"Los meses sin intereses son gratis\"",
+     "texto": "DEPENDE. Son sin intereses si pagas cada mensualidad a tiempo; si fallas una, te cobran intereses. Y la mensualidad se suma a tu pago mínimo.\n\nCondusef (12-nov-2019) · Proteja su Dinero (act. feb-2021)",
+     "voz": "Depende: si fallas una mensualidad, te cobran intereses. Y se suma a tu pago mínimo."
+    },
+    {
+     "titulo": "\"Inflar el precio para 'rebajarlo' es legal\"",
+     "texto": "FALSO. Para la ley, un \"descuento\" es un precio menor al normal de esa tienda. Si inflan el precio para anunciar una rebaja falsa, ese anuncio es publicidad engañosa.\n\nLFPC, arts. 32 y 46",
+     "voz": "Falso: para la ley, un descuento es un precio menor al normal. Anunciar una rebaja falsa sobre un precio inflado es publicidad engañosa."
+    },
+    {
+     "titulo": "\"Si no respetan la oferta, ni modo\"",
+     "texto": "FALSO. Deben respetar lo anunciado. Puedes exigirlo, más la diferencia de precio y una bonificación mínima del 20% de lo pagado. Teléfono del Consumidor: 800 468 8722.\n\nLFPC, arts. 7, 50 y 92 Ter · Profeco",
+     "voz": "Falso: tienen que respetarla. Puedes exigirla, más la diferencia y una bonificación."
+    },
+    {
+     "titulo": "\"Si compras en línea, no hay garantía\"",
+     "texto": "FALSO. La ley también aplica en línea: si trae garantía, no puede ser menor a 90 días. Y tienes 5 días hábiles, desde que lo recibes, para cancelar.\n\nLFPC, arts. 56, 76 Bis y 77 · Profeco",
+     "voz": "Falso: la ley también aplica en línea. Si trae garantía, es de mínimo noventa días, y tienes cinco días hábiles para cancelar."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué vas a comprar en el Buen Fin? Comenta y te digo si conviene.",
+    "texto": "Mándaselo a quien ya tiene el carrito lleno.",
+    "voz": "¿Qué vas a comprar en el Buen Fin? Comenta y te digo si conviene."
+   },
+   "fuente": "Fechas: SAT, 'Sorteo El Buen Fin 2026' (14-oct-2026, gob.mx/sat/articulos/sorteo-el-buen-fin-2026): periodo de compras 'del 13 al 17 de noviembre de 2026' (viernes a martes); 1) Profeco, 'Monitoreo de precios de Profeco detectó ofertas reales y simulaciones durante Buen Fin' (1-dic-2025): 29 ciudades, 399 establecimientos, 46 mil productos; ejemplo de simulación: una pantalla de 50\" 'se mantuvo', 'bajó antes de la campaña de compras, y subió en los días de El Buen Fin'. Profeco, '¿Ofertas simuladas? Previo a El Buen Fin, Profeco llama a comparar precios' (15-oct-2026): Quién es Quién en los Precios en El Buen Fin (elbuenfin.profeco.gob.mx) muestra 'el costo mínimo, máximo, promedio, el historial de variaciones en el precio'. Profeco, micrositio (26-oct-2026): más de 490 productos en 30 ciudades desde el 17-sep, con la Secretaría de Economía, y 'simulador de pagos a meses con financiamiento, con el Costo Anual Total (CAT)'; en elbuenfin.profeco.gob.mx el simulador dice 'Cálculo de pago con tarjeta de crédito a meses con financiamiento'. Profeco (9-nov-2026): el micrositio muestra 'el histórico de precios, desde septiembre a la fecha, de 490 productos', 'recabados en 400 establecimientos'. 2) Condusef, '¿Vas a comprar en el Buen Fin?' (12-nov-2019): 'la mensualidad por comprar a meses sin intereses se agrega de manera adicional al pago mínimo'. Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (24-may-2012, act. 12-feb-2021): 'Si no cumples con una de las mensualidades, el banco o la tienda comercial te cobrará intereses'. 3) Ley Federal de Protección al Consumidor (texto vigente, última reforma DOF 12-12-2025, diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf), art. 46: oferta/descuento = 'precios rebajados o inferiores a los normales del establecimiento'; art. 32: publicidad engañosa (induce a error 'por la forma inexacta, falsa, exagerada...'). Lo que se califica de engañoso es anunciar como rebaja un precio que no es menor al normal; la LFPC no prohíbe por sí misma subir un precio. 4) LFPC art. 7 (obligación de respetar precios, garantías y condiciones ofrecidas); art. 50 (si no se cumple la oferta: exigir cumplimiento, bien equivalente o rescisión y 'en todo caso' la diferencia entre precio de oferta y normal, sin perjuicio de la bonificación del art. 92 Ter); art. 92 Ter (la bonificación de los arts. 92 y 92 Bis 'no podrá ser menor al veinte por ciento del precio pagado'; art. 92 fr. IV: 'en los demás casos previstos por esta ley'). Profeco (7-nov-2026): Teléfono del Consumidor 55 5568 8722 y 800 468 8722. Profeco, balance final (19-nov-2025, 'Profeco concilió más del 90% de inconformidades durante la 15ª edición de El Buen Fin'): 311 inconformidades, 289 conciliadas (92.9%), $1,885,683.44 recuperados; motivos principales: no respetar el precio anunciado (50), incumplimiento de promoción (49), negativa a entregar (40) e incumplimiento de oferta (32). (La cifra de 205 de 220 del 17-nov-2025 era un corte al mediodía del último día.) 5) LFPC art. 76 Bis (cap. VIII Bis, transacciones por medios electrónicos; fr. III: domicilio y teléfonos para reclamar); art. 77 (garantía no inferior a 90 días); art. 56 (5 días hábiles desde la entrega o la firma, lo último que suceda, para revocar; flete y seguro a cargo del consumidor; cap. V, art. 51: no aplica a perecederos recibidos y pagados de contado, y en servicios no aplica si se prestan a 10 días hábiles o menos de la orden). Profeco, 'Compra en línea sin problemas' (13-sep-2021, gob.mx/profeco/articulos/compra-en-linea-sin-problemas) aplica los arts. 56, 76 Bis y 77 a las compras en línea ('Desistir de la compra sin responsabilidad durante los próximos 5 días hábiles contados a partir de la entrega del bien'). Profeco (8-nov-2025): la garantía 'no debe ser inferior a 90 días'. Profeco (7-nov-2026): Monitoreo de tiendas virtuales (burocomercial.profeco.gob.mx/tiendasvirtuales/). Consultado el 12-nov-2026.",
+   "titulo_post": "Victoria verifica: 5 creencias del Buen Fin 2026",
+   "texto_post": "5 cosas que todos creen del Buen Fin 2026 (del 13 al 17 de noviembre). Las verifiqué. 🔍\n1. \"Todo está más barato\": FALSO. En 2025, Profeco encontró ofertas reales y también simuladas. Revisa el historial de precios en Quién es Quién en los Precios: elbuenfin.profeco.gob.mx\n2. \"Los meses sin intereses son gratis\": DEPENDE. Si fallas una mensualidad, te cobran intereses, y la mensualidad se suma a tu pago mínimo (Condusef). En elbuenfin.profeco.gob.mx hay un simulador de pagos a meses con intereses, con el CAT de tu tarjeta.\n3. \"Inflar el precio para 'rebajarlo' es legal\": FALSO. Para la ley, un descuento es un precio menor al normal de la tienda; anunciar una rebaja falsa sobre un precio inflado es publicidad engañosa (LFPC arts. 32 y 46).\n4. \"Si no respetan la oferta, ni modo\": FALSO. Puedes exigirla, más la diferencia y una bonificación de al menos 20% de lo que pagaste (LFPC arts. 7, 50 y 92 Ter). En el Buen Fin 2025, Profeco concilió 289 de 311 inconformidades. Teléfono del Consumidor: 55 5568 8722 y 800 468 8722.\n5. \"En línea no hay garantía\": FALSO. Si trae garantía, es de mínimo 90 días, y tienes 5 días hábiles desde que lo recibes para cancelar; si cancelas, el envío de regreso lo pagas tú (LFPC arts. 56, 76 Bis y 77). Revisa la tienda en el Monitoreo de tiendas virtuales de Profeco.\n\nCapital ya verificó su única compra del Buen Fin: una pelota. De contado. 🐾\n📚 Profeco (19-nov-2025, 1-dic-2025, 15-oct-2026, 26-oct-2026, 7-nov-2026 y 9-nov-2026) · Condusef (12-nov-2019; Proteja su Dinero, act. feb-2021) · Ley Federal de Protección al Consumidor, arts. 7, 32, 46, 50, 56, 76 Bis, 77 y 92 Ter (texto vigente) · SAT (fechas del Buen Fin 2026)\n💬 ¿Qué vas a comprar en el Buen Fin? Comenta y te digo si conviene. Te contesto a todos.\n📩 Mándaselo a quien ya tiene el carrito lleno.",
+   "seo": {
+    "palabra_clave": "buen fin 2026",
+    "titulo": "Buen Fin 2026, mitos y verdades verificados 🔍",
+    "tags_concretas": [
+     "buen fin 2026",
+     "buen fin profeco",
+     "buen fin mitos",
+     "ofertas falsas buen fin",
+     "meses sin intereses buen fin",
+     "no respetan oferta profeco",
+     "garantia compras en linea",
+     "quien es quien en los precios"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#profeco",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿En el Buen Fin todo está más barato?",
+     "¿Los meses sin intereses del Buen Fin son gratis?",
+     "¿Qué hago si no respetan una oferta del Buen Fin?",
+     "¿Las compras en línea del Buen Fin tienen garantía?"
+    ]
+   },
+   "personaje": "2026-11-12: segundo 'Victoria verifica' (después de c70), del momento (Buen Fin 13-17 nov) y pensado para mandarse; veredicto VERDADERO/FALSO/DEPENDE con artículo de la ley del consumidor y cierre que pide decir qué vas a comprar.",
+   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFPC vigente, última reforma DOF 12-12-2025, descargada de diputados.gob.mx y leídos los arts. 7, 32, 46, 50, 51, 53, 56, 76 Bis, 77, 92, 92 Bis y 92 Ter; comunicados de Profeco en gob.mx del 8-nov-2025, 17-nov-2025, 19-nov-2025, 1-dic-2025, 15-oct-2026, 22-oct-2026, 26-oct-2026, 27-oct-2026, 7-nov-2026, 8-nov-2026 y 9-nov-2026; Profeco 'Compra en línea sin problemas' 13-sep-2021; micrositio elbuenfin.profeco.gob.mx; Condusef 12-nov-2019 y Proteja su Dinero 'Meses ¿sin intereses?' 24-may-2012, act. 12-feb-2021; SAT 'Sorteo El Buen Fin 2026' 14-oct-2026; teléfonos 55 5568 8722 y 800 468 8722 confirmados en Profeco 7-nov-2026 y 8-nov-2026); cambios: diapositiva 3 reformulada (lo ilegal es anunciar una rebaja falsa, no subir precios: título, texto y voz); voz de la diapositiva 5 condicionada ('si trae garantía'); diapositiva 4 precisa que la bonificación es del 20% de lo pagado; texto del post: cifra del Buen Fin 2025 cambiada del corte parcial (205 de 220 'quejas', 17-nov-2025) al balance final (289 de 311 inconformidades, 19-nov-2025), simulador aclarado como pagos a meses con intereses (con CAT) y 'si cancelas' antes del envío de regreso; fuente: quitada la de Zacatecas (no oficial federal, sobra con SAT), añadidas las excepciones del art. 56 y las citas nuevas. Pendiente: leer las diapositivas dibujadas antes de publicar.",
+   "ventana": {
+    "desde": "2026-11-12",
+    "hasta": "2026-11-17"
+   }
+  },
+  {
+   "id": "c73",
+   "estado": "listo",
+   "tema": "buen_fin_compras_si_y_no_opinion",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/restaurante.jpg",
+   "calculadora": [
+    "/pagar-deudas",
+    "Antes de usar la tarjeta, haz tu plan"
+   ],
+   "portada": {
+    "foto": "assets/fotos/capital-tarjeta.jpg",
+    "etiqueta": "MI OPINIÓN · BUEN FIN",
+    "titulo": "Buen Fin 2026: 5 compras que sí haría y 5 que no",
+    "voz": "Del Buen Fin, esto sí lo compraría y esto no. Es mi opinión, y una te va a doler.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/video-19-sillon.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "La pantalla a 18 meses",
+     "texto": "NO: la pantalla a 18 meses con la tarjeta ya cargada. SÍ: lo que ibas a comprar igual, con el precio comparado. Esa mensualidad se suma a tu pago mínimo.\n\nMi opinión · dato: Condusef (12-nov-2019)",
+     "voz": "La pantalla a dieciocho meses con la tarjeta ya cargada: no. Lo que ya ibas a comprar y comparaste: sí."
+    },
+    {
+     "titulo": "\"Es que estaba al 50%\"",
+     "texto": "NO: lo que no estaba en tu lista pero \"estaba al 50%\". SÍ: lo de tu lista, con tope. Profeco: un presupuesto que no rebase tu capacidad de pago mensual.\n\nMi opinión · dato: Profeco (22-oct-2026)",
+     "voz": "Lo que no estaba en tu lista pero estaba a mitad de precio: no. Lo de tu lista, con tope: sí."
+    },
+    {
+     "titulo": "A meses, solo lo que dura",
+     "texto": "NO: la ropa, la cena o la fiesta a meses. SÍ: el refri que ya no enfría. Condusef: a meses, bienes duraderos, no consumos pasajeros.\n\nMi opinión · dato: Condusef (13-nov-2025)",
+     "voz": "La ropa o la fiesta a meses: no. El refri que ya no enfría: sí."
+    },
+    {
+     "titulo": "La regla del 30%",
+     "texto": "NO: la compra que sube tus pagos de deudas a más del 30% de tu ingreso. SÍ: si con todo sumado sigues abajo. Con $15,000 al mes, tope: $4,500.\n\nMi opinión · dato: Condusef (12-nov-2019) · cálculo propio",
+     "voz": "Si con esa compra tus pagos de deudas pasan del treinta por ciento de tu sueldo: no. Si sigues abajo: sí."
+    },
+    {
+     "titulo": "A meses con el aguinaldo",
+     "texto": "NO: comprar a meses contando con un aguinaldo que pueden pagarte hasta el 19 de diciembre. SÍ: de contado o con débito, con dinero que ya tienes.\n\nMi opinión · LFT, art. 87 · Condusef (12-nov-2019)",
+     "voz": "Comprar a meses contando con el aguinaldo: no. De contado, con dinero que ya tienes: sí."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Qué vas a comprar tú? Defiende tu compra en los comentarios.",
+    "texto": "Mándaselo a quien ya va a sacar la pantalla a 18 meses.",
+    "voz": "¿Qué vas a comprar tú? Defiende tu compra en los comentarios."
+   },
+   "fuente": "Opinión de Victoria (marcada en la portada y en cada diapositiva); los datos que la respaldan: Condusef, '¿Vas a comprar en el Buen Fin?' (12-nov-2019, gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin): 'la mensualidad por comprar a meses sin intereses se agrega de manera adicional al pago mínimo'; 'Conoce tu capacidad de pago, para no incumplir con los pagos mensuales de la deuda que adquieras. No es recomendable comprometer más del 30% de tu ingreso'; pagar de contado o con débito 'no comprometes tus ingresos futuros'; 'procura adquirir bienes duraderos cuyos beneficios o vida útil se prolonguen'. Condusef, 'El Buen Fin 2025: Gasta con cabeza, no con prisa' (13-nov-2025, gob.mx/condusef/es/articulos/el-buen-fin-2025-gasta-con-cabeza-no-con-prisa): 'Úsalos para bienes duraderos, no para consumos pasajeros'; 'Si tienes más de una compra a MSI, suma las mensualidades para que no excedan tu presupuesto'. Condusef, 'En este Buen Fin compra con conciencia' (10-nov-2026): los MSI 'se recomiendan para productos con una vida útil que supere la duración de la deuda (línea blanca o tecnología, no para despensa o ropa)'. Profeco, 'El presupuesto, una medida contra las compras impulsivas en El Buen Fin' (22-oct-2026, gob.mx/profeco/prensa/el-presupuesto-una-medida-contra-las-compras-impulsivas-en-el-buen-fin-profeco): limitar montos individuales y 'establecer un presupuesto general que no rebase la capacidad de pago mensual'. LFT art. 87 (texto vigente, última reforma DOF 14-05-2026): aguinaldo 'que deberá pagarse antes del día veinte de diciembre' (es decir, a más tardar el 19). Cálculo propio: 30% de $15,000 = $4,500 en pagos mensuales de deudas. Fechas del Buen Fin 2026 (13-17 nov): SAT (14-oct-2026). Consultado el 12-nov-2026.",
+   "titulo_post": "Buen Fin 2026: lo que sí compraría y lo que no",
+   "texto_post": "Buen Fin 2026: 5 compras que sí y 5 que no. Es mi opinión, y sé que alguien se va a enojar. 🛍️\n1. NO: la pantalla a 18 meses con la tarjeta ya cargada. SÍ: lo que ibas a comprar de todos modos, con el precio comparado. (Condusef: esa mensualidad se suma a tu pago mínimo.)\n2. NO: lo que no estaba en tu lista pero \"estaba al 50%\". SÍ: lo de tu lista, con un tope. (Profeco: un presupuesto que no rebase tu capacidad de pago mensual.)\n3. NO: la ropa, la cena o la fiesta a meses. SÍ: el refri que ya no enfría. (Condusef: a meses, bienes duraderos, no consumos pasajeros.)\n4. NO: la compra que sube tus pagos de deudas a más del 30% de tu ingreso. SÍ: si con todo sumado sigues abajo. Con $15,000 al mes, máximo $4,500. (Condusef: no comprometer más del 30% de tu ingreso; la cuenta es mía.)\n5. NO: comprar a meses contando con el aguinaldo, que pueden pagarte hasta el 19 de diciembre (la ley dice \"antes del 20\"). SÍ: de contado o con débito, con dinero que ya tienes. (Condusef: así no comprometes tus ingresos futuros.)\n\nCapital ya votó: todo NO, menos las croquetas. 🐾\n📚 Condusef (12-nov-2019, 13-nov-2025 y 10-nov-2026) · Profeco (22-oct-2026) · LFT art. 87 · cálculo propio\n💬 ¿Qué vas a comprar tú? Defiende tu compra en los comentarios. Te contesto a todos.\n📩 Mándaselo a quien ya va a sacar la pantalla a 18 meses.",
+   "seo": {
+    "palabra_clave": "qué comprar en el buen fin",
+    "titulo": "Qué comprar en el Buen Fin y qué no 🛍️",
+    "tags_concretas": [
+     "que comprar en el buen fin",
+     "buen fin 2026",
+     "vale la pena el buen fin",
+     "meses sin intereses conviene",
+     "pantalla a meses buen fin",
+     "presupuesto buen fin",
+     "comprar a meses con el aguinaldo",
+     "30 por ciento del ingreso en deudas"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#mesessinintereses",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿Qué conviene comprar en el Buen Fin?",
+     "¿Conviene comprar a meses sin intereses en el Buen Fin?",
+     "¿Cuánto de mi sueldo puedo usar para pagar deudas?"
+    ]
+   },
+   "personaje": "2026-11-12: pieza de postura (opinión marcada como tal) para que la gente discuta y defienda su compra; repite sus opiniones 2 y 7 (pago mínimo, meses sin intereses) y la 1 (aguinaldo); humor de Capital en el texto del post; sin marcas, tiendas ni productos financieros.",
+   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (Condusef '¿Vas a comprar en el Buen Fin?' 12-nov-2019 en gob.mx: mensualidad adicional al pago mínimo, 30% del ingreso, contado o débito, bienes duraderos; Condusef 'El Buen Fin 2025: Gasta con cabeza, no con prisa' 13-nov-2025 y 'En este Buen Fin compra con conciencia' 10-nov-2026; Profeco 'El presupuesto, una medida contra las compras impulsivas' 22-oct-2026: 'presupuesto general que no rebase la capacidad de pago mensual'; LFT vigente, última reforma DOF 14-05-2026, art. 87 leído en el PDF de diputados.gob.mx; SAT 14-oct-2026 para las fechas; cálculo 30% de $15,000 = $4,500 comprobado; sin marcas, tiendas ni productos financieros; opinión marcada en portada y en cada diapositiva; voces sin siglas); cambios: voz de la diapositiva 4 dice 'tus pagos de deudas' (no 'tus deudas'); diapositiva 5 y texto del post dicen 'hasta el 19 de diciembre' (la ley: 'antes del día veinte'), el 30% del post se atribuye a Condusef y la cuenta a Victoria, se añade 'no consumos pasajeros' y la fuente Condusef 10-nov-2026 con URLs. Pendiente: leer las diapositivas dibujadas antes de publicar.",
+   "ventana": {
+    "desde": "2026-11-12",
+    "hasta": "2026-11-17"
+   }
   }
  ]
 }

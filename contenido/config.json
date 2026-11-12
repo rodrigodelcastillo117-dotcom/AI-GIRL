@@ -456,6 +456,8 @@
   "nota": "Reemplazado el 9-nov-2026: TODOS los Reels de Instagram salen con música en tendencia de la biblioteca de Instagram, directo con la API de Meta (scripts/ig_reel_musica.py). Rodrigo ya no sube nada a mano."
  },
  "prioridad_carruseles": [
+  "c72",
+  "c73",
   "c67",
   "c49",
   "c53",
