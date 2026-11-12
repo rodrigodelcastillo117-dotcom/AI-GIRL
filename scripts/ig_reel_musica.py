@@ -9,6 +9,7 @@ Uso: python ig_reel_musica.py <id> --programar <cuando_utc>   anota reel_ig (por
      python ig_reel_musica.py <id> --publicar                   sube y publica ya, con música en tendencia
      python ig_reel_musica.py <id> --prueba                     prepara el Reel en Instagram pero NO lo publica
      python ig_reel_musica.py musica                            lista la música en tendencia que da Meta
+     ... --video reel-texto.mp4                                 usa el Reel de texto (reel_texto.py) en vez del de voz
 
 El video es carruseles/<id>/reel-limpio.mp4 (la voz de Victoria sin la música de fondo propia); la canción va al 15% y la
 voz al 100%. Meta pide el video en un enlace público: se sube a la rama medios-ig del repo (público) y se lee de
@@ -96,8 +97,9 @@ def subir_medio(ruta, nombre):
 
 def preparar(c, config, todos):
     carpeta = os.path.join(RAIZ, 'carruseles', c['id'])
-    video = next((os.path.join(carpeta, n) for n in ('reel-limpio.mp4', 'reel.mp4', 'short.mp4')
-                  if os.path.exists(os.path.join(carpeta, n))), None)
+    # --video reel-texto.mp4: el Reel de texto con clips de Victoria (reel_texto.py, 12-nov-2026) en vez del de voz
+    nombres = [sys.argv[sys.argv.index('--video') + 1]] if '--video' in sys.argv else ['reel-limpio.mp4', 'reel.mp4', 'short.mp4']
+    video = next((os.path.join(carpeta, n) for n in nombres if os.path.exists(os.path.join(carpeta, n))), None)
     if not video:
         sys.exit(f'ERROR: falta el video de {c["id"]}: corre primero carrusel_video.py short {c["id"]}')
     audio = elegir_audio(todos)
