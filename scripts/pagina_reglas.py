@@ -128,7 +128,7 @@ def main():
         <a href="#descargar">La guía</a>
         <a href="#calculadoras">Calculadoras</a>
         <a href="#las-30">Las {total} reglas</a>
-        <a href="/#tablero">Plantilla</a>
+        <a href="/#tablero">Kit CEO</a>
         <a class="cta" href="{guia}" data-guia download>Descargar gratis</a>
       </nav>
     </div>
@@ -180,9 +180,9 @@ def main():
   <section class="bloque azul" id="tablero">
     <div class="contenedor">
       <div class="encabezado">
-        <div class="antetitulo">Para ponerlo en práctica</div>
-        <h2>El tablero de la CEO.</h2>
-        <p>Las reglas, con tus números: presupuesto 50/30/20, fondo de emergencia, deudas, interés compuesto y metas, todo calculado solo.</p>
+        <div class="antetitulo">¿Quieres ir a fondo? · Kit CEO</div>
+        <h2>La Edición CEO.</h2>
+        <p>Esta guía te dice qué hacer. La Edición CEO te explica por qué, con un caso real y un ejercicio por regla, más tu tablero de Excel y la IA sin límite.</p>
       </div>
       {producto}
     </div>
