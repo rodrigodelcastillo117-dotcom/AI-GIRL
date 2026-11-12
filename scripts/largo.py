@@ -170,6 +170,11 @@ def victoria(vid):
         qa = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'qa_labios.py'), salida, palabras],
                             capture_output=True, text=True, cwd=os.path.join(RAIZ, 'scripts'))
         print(f'seg {i:02d}:', (qa.stdout.strip().splitlines() or ['?'])[-1])
+        if qa.returncode == 0 and 'SIN MEDIR' in qa.stdout:
+            # pocas p/b/m/v para medir cierres: entonces qa_sync (cara en cuadro, boca que sigue a la voz) decide
+            qa = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'qa_sync.py'), salida],
+                                capture_output=True, text=True, cwd=os.path.join(RAIZ, 'scripts'))
+            print(f'  seg {i:02d} qa_sync:', (qa.stdout.strip().splitlines() or ['?'])[-1])
         if qa.returncode != 0:
             os.rename(salida, salida.replace('.mp4', '-FALLA.mp4'))
             print(f'  seg {i:02d} no pasó labios: se vuelve a generar en la siguiente corrida (máximo 2 intentos)')
@@ -332,17 +337,27 @@ def pasos(s, capitulo, ruta, cara):
                             fill=(20, 20, 24))
         d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=ORO)
         d.text((x + 65, y0 + 65), str(i + 1), font=fuente('Black', 44), fill=NEGRO, anchor='mm')
+        # 12-nov-2026: el texto largo se encimaba con el resultado (LB1). Primero se mide el resultado y el texto se
+        # achica hasta caber en el espacio que queda arriba de él.
+        yr = y0 + alto - 30
+        if p.get('resultado'):
+            fr, tr, rres = _renglones(d, p['resultado'], 'Black', 46, ancho_caja - 60, 2, 24)
+            yr = y0 + alto - 40 - len(rres) * (tr + 8)
         yy = y0 + 130
-        f, tam, rr = _renglones(d, p['texto'], 'Medium', 36, ancho_caja - 60, 4, 24)
+        disponible = yr - 18 - yy
+        tam_max = 36
+        while True:
+            f, tam, rr = _renglones(d, p['texto'], 'Medium', tam_max, ancho_caja - 60, 5, 18)
+            if len(rr) * (tam + 10) <= disponible or tam_max <= 18:
+                break
+            tam_max -= 2
         for r in rr:
             d.text((x + 30, yy), r, font=f, fill=BLANCO)
             yy += tam + 10
         if p.get('resultado'):
-            f, tam, rr = _renglones(d, p['resultado'], 'Black', 46, ancho_caja - 60, 2, 24)
-            yr = y0 + alto - 40 - len(rr) * (tam + 8)
-            for r in rr:
-                d.text((x + 30, yr), r, font=f, fill=ORO)
-                yr += tam + 8
+            for r in rres:
+                d.text((x + 30, yr), r, font=fr, fill=ORO)
+                yr += tr + 8
         if i < n - 1:
             xa = x + ancho_caja + 12
             d.polygon([(xa, y0 + alto / 2 - 18), (xa + hueco - 24, y0 + alto / 2), (xa, y0 + alto / 2 + 18)], fill=ORO)

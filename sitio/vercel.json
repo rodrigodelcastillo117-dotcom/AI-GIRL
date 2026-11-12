@@ -40,5 +40,6 @@
       "source": "/pagar-deudas",
       "destination": "/pagar-deudas.html"
     }
-  ]
+  ],
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."
 }
