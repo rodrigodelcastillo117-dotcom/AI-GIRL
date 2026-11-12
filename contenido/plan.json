@@ -3958,7 +3958,7 @@
    "formato": "escena",
    "escena": "cocina",
    "pilar": "finanzas",
-   "estado": "verificando",
+   "estado": "programado",
    "publicar": "2026-11-13",
    "tema": "Aguinaldo: multiplica tu sueldo diario por 15",
    "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Si ganas quince mil al mes, tu sueldo diario es de quinientos. Quinientos por quince días son siete mil quinientos brutos. Eso es lo mínimo. Te lo tienen que pagar antes del veinte de diciembre. Y unos tres mil quinientos pesos no pagan ISR. Haz la cuenta con tu sueldo y guárdala. ¿Cuánto te toca a ti? Comenta el número.",
@@ -3998,9 +3998,45 @@
     "ISR"
    ],
    "qa": {
-    "intento_1": "rechazado: en la terraza al atardecer el pelo se volvió castaño y cambió la cara (contraluz)"
+    "intento_1": "rechazado: en la terraza al atardecer el pelo se volvió castaño y cambió la cara (contraluz)",
+    "audio": "OK",
+    "labios": "LABIOS OK",
+    "sync": "SINCRONÍA OK",
+    "cuadros": "videos/qa/M2-cuadros.jpg (revisar a ojo)",
+    "costo_usd": 2.24
    },
-   "archivo": "videos/video-M2-FINAL.mp4"
+   "archivo": "videos/video-M2-FINAL.mp4",
+   "seo": {
+    "palabra_clave": "aguinaldo 2026",
+    "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
+    "descripcion_inicio": "Aguinaldo 2026: cuánto te toca. Multiplica tu sueldo diario por 15: con $15,000 al mes son $7,500 brutos, y te lo deben pagar antes del 20 de diciembre.",
+    "tags_concretas": [
+     "aguinaldo 2026",
+     "cuanto me toca de aguinaldo",
+     "como calcular aguinaldo",
+     "aguinaldo 15 dias",
+     "aguinaldo exento isr",
+     "aginaldo 2026"
+    ],
+    "hashtags": [
+     "#aguinaldo",
+     "#aguinaldo2026",
+     "#finanzaspersonales"
+    ],
+    "parrafo": "Por ley (Ley Federal del Trabajo, art. 87) el aguinaldo es de al menos 15 días de salario y se paga antes del 20 de diciembre. Si ganas $15,000 al mes, tu salario diario es $500 y tu aguinaldo mínimo es $7,500 brutos. Los primeros $3,519.30 (30 UMA de 2026) no pagan ISR. Si no completaste el año, te toca la parte proporcional; si no te pagan, PROFEDET te asesora gratis."
+   },
+   "publicacion": {
+    "hora_utc": "2026-11-13T19:07:00Z",
+    "redes": [
+     "instagram",
+     "tiktok",
+     "facebook",
+     "youtube"
+    ],
+    "youtube": "https://youtube.com/shorts/Ich5p1Iespg",
+    "playlist": "aguinaldo",
+    "pie": "un solo llamado (guárdalo), versión MUSE"
+   }
   },
   {
    "id": "M3",
