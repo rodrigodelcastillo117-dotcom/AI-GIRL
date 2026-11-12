@@ -115,6 +115,7 @@ function calcular() {
     crear('td', {className: 'num', textContent: pesos(valorFuturo(inicial, mensual, tasa, a * 12))}))));
 }
 alCambiar('calculadora', calcular);
+victoriaIA('interes-compuesto');
 bloqueVenta(document.getElementById('venta'), 'interes-compuesto');
 // Compartir (11-nov-2026, Rodrigo: "WhatsApp no me late"): en celular abre el menú del teléfono; en computadora copia el enlace.
 document.getElementById('compartir').addEventListener('click', async (ev) => {

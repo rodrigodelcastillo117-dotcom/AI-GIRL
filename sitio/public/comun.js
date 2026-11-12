@@ -48,3 +48,50 @@ function alCambiar(formulario, calcular) {
   f.addEventListener('submit', (e) => { e.preventDefault(); calcular(); });
   calcular();
 }
+
+// "Victoria revisa tus números" (12-nov-2026; sitio/api/diagnostico.js). Se agrega solo al final de .resultado de la
+// calculadora: manda lo que la persona escribió (etiqueta: valor de cada campo) y el texto del resultado. 1 gratis al
+// día; con el código del Kit CEO, sin límite (se guarda en este navegador). Solo aparece si la función está activa.
+function victoriaIA(calculadora) {
+  const res = document.querySelector('.resultado');
+  const form = document.getElementById('calculadora');
+  if (!res || !form) return;
+  let codigo = '';
+  try { codigo = localStorage.getItem('kit_codigo') || ''; } catch (e) {}
+  const salida = crear('p', {className: 'nota', style: 'white-space: pre-line; margin-top: 10px'});
+  const preo = crear('textarea', {maxLength: 300, rows: 2, placeholder: 'Opcional: qué te preocupa o qué quieres lograr',
+    style: 'width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(216,178,90,.35); background:rgba(255,255,255,.05); color:inherit; font:inherit; margin:8px 0'});
+  const boton = crear('button', {type: 'button', className: 'boton', textContent: 'Victoria, revisa mis números'});
+  const nota = crear('p', {className: 'letra-chica', textContent: codigo ? 'Kit CEO activo: revisiones sin límite.' : '1 revisión gratis al día · sin límite con el Kit CEO.'});
+  const caja = crear('div', {hidden: true, style: 'margin-top:18px; padding:16px; border-radius:16px; border:1px solid rgba(216,178,90,.4); background:rgba(216,178,90,.06)'},
+    crear('div', {className: 'etiqueta', textContent: 'Victoria revisa tus números · IA'}), preo, boton, nota, salida);
+  const despues = res.querySelector('#compartir');
+  despues ? res.insertBefore(caja, despues) : res.append(caja);
+  fetch('/api/diagnostico').then((r) => { if (r.ok) caja.hidden = false; }).catch(() => {});
+  const etiqueta = (el) => {
+    const l = el.closest('label') || form.querySelector(`label[for="${el.id}"]`);
+    return (l ? l.childNodes[0]?.textContent || l.textContent : el.name || el.id || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+  };
+  boton.addEventListener('click', async () => {
+    const campos = [...form.querySelectorAll('input, select')].filter((el) => el.type !== 'hidden' && el.value !== '')
+      .map((el) => ({etiqueta: etiqueta(el), valor: el.type === 'checkbox' ? (el.checked ? 'sí' : 'no') : (el.tagName === 'SELECT' ? el.options[el.selectedIndex]?.text : el.value)}));
+    const clon = res.cloneNode(true);
+    clon.querySelectorAll('button, textarea, div[hidden], .boton').forEach((n) => n.remove());
+    [...clon.children].filter((n) => n.contains(clon.querySelector('.etiqueta')) && n.textContent.includes('Victoria revisa')).forEach((n) => n.remove());
+    const resultado = clon.innerText || clon.textContent;
+    boton.disabled = true; salida.textContent = 'Victoria está revisando tus números… 🐾';
+    try {
+      const r = await fetch('/api/diagnostico', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({calculadora, campos, resultado, preocupacion: preo.value, codigo})});
+      const d = await r.json();
+      salida.textContent = d.plan || d.error || 'No pude revisar tu caso ahorita.';
+      if (d.codigo === false) { try { localStorage.removeItem('kit_codigo'); } catch (e) {} codigo = ''; }
+      if (d.oferta) salida.append(crear('br'), crear('a', {href: enlacePago(`ia-${calculadora}`), className: 'boton', style: 'margin-top:10px', textContent: 'Quiero el Kit CEO'}),
+        crear('button', {type: 'button', className: 'boton secundario', style: 'margin:10px 0 0 8px', textContent: 'Ya tengo mi código', onclick: () => {
+          const c = (prompt('Escribe tu código del Kit CEO (viene en la página 2 de tu Edición CEO):') || '').trim();
+          if (c) { try { localStorage.setItem('kit_codigo', c); } catch (e) {} codigo = c; nota.textContent = 'Código guardado: vuelve a pedir tu revisión.'; }
+        }}));
+    } catch (e) { salida.textContent = 'No pude revisar tu caso ahorita. Intenta en un momento.'; }
+    boton.disabled = false;
+  });
+}
