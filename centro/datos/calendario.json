@@ -182,6 +182,17 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
+  "id": "c77",
+  "que": "Sale el carrusel «Tu tarjeta en el Buen Fin, 5 reglas 💳»",
+  "estado": "programado",
+  "horas": {
+   "ig": "12:13",
+   "tt": "16:41"
+  }
+ },
+ {
+  "fecha": "2026-11-16",
+  "tipo": "carrusel",
   "id": "c49",
   "estado": "por_programar",
   "horas": {},
@@ -194,14 +205,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Finiquito si te corren en diciembre 📄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c36",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Prestar dinero a familiares en 5 memes 🐕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
@@ -224,13 +227,21 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c36",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Prestar dinero a familiares en 5 memes 🐕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
   "id": "c54",
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Quincena de diciembre y 5 datos de dinero 💸» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-17",
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c40",
   "estado": "por_programar",
@@ -254,7 +265,7 @@
   "que": "Carrusel «Cuánto gana una enfermera en México 🩺» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c41",
   "estado": "por_programar",
@@ -276,14 +287,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Red flags financieras que no son normales 🚩» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c47",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Cuánto gana un programador en México 💻» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-19",
@@ -314,6 +317,14 @@
  {
   "fecha": "2026-11-20",
   "tipo": "carrusel",
+  "id": "c47",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Cuánto gana un programador en México 💻» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "carrusel",
   "id": "c05",
   "estado": "por_programar",
   "horas": {},
@@ -334,14 +345,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Memes de aguinaldo, posada e intercambio 🎄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-21",
-  "tipo": "carrusel",
-  "id": "c34",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Quincena que dura 3 días en 5 memes 😅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-21",

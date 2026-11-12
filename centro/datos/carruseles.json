@@ -1835,5 +1835,30 @@
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {}
+ },
+ {
+  "id": "c77",
+  "estado": "programado",
+  "tema": "buen fin tarjeta 5 reglas",
+  "pilar": "finanzas",
+  "gancho": "Tu tarjeta en el Buen Fin: 5 reglas en una imagen. Guarda esto.",
+  "titulo": "Tu tarjeta en el Buen Fin, 5 reglas 💳",
+  "diapositivas": 7,
+  "fondo": "yate.jpg",
+  "portada": "habla-calle.jpg",
+  "horas": {
+   "ig": "2026-11-16 12:13",
+   "tt": "2026-11-16 16:41"
+  },
+  "youtube_id": "",
+  "publica_utc": "2026-11-16T22:41:00Z",
+  "linea": "tu tarjeta en el buen fin: 5 reglas en una imagen. 💳",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "ig": "2026-11-16T18:13:00Z",
+   "tt": "2026-11-16T22:41:00Z"
+  }
  }
 ]
