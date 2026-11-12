@@ -23,3 +23,4 @@ node_modules/
 assets/broll/.*-crudo.mp4
 assets/fotos/.*-crudo.jpg
 videos/*-voz.mp3
+videos/*-tiempos.json
