@@ -52,7 +52,7 @@
     "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (TikTok 09:00 · YouTube 12:00)"
    }
   ],
-  "generado_utc": "2026-11-12T04:12:46Z",
+  "generado_utc": "2026-11-12T04:16:42Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -501,7 +501,7 @@
    "costo_promedio_toma_usd": 0.23,
    "sin_precio": {},
    "incompleto": false,
-   "generado_utc": "2026-11-12T04:12:48Z",
+   "generado_utc": "2026-11-12T04:16:45Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
   },
   "salud": {
@@ -578,10 +578,10 @@
     },
     "total": 4078,
     "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 10,
-     "fb": 0
+     "tt": 121,
+     "ig": 4,
+     "yt": 14,
+     "fb": 2
     },
     "horas": 77.2,
     "por_dia": 1268,
@@ -598,7 +598,7 @@
     },
     "total": 1007,
     "ultimas_24h": {
-     "tt": 0,
+     "tt": 2,
      "ig": 0,
      "yt": 0
     },
@@ -617,7 +617,7 @@
     },
     "total": 991,
     "ultimas_24h": {
-     "tt": 0,
+     "tt": 6,
      "ig": 0,
      "yt": 2
     },
@@ -655,9 +655,9 @@
     },
     "total": 684,
     "ultimas_24h": {
-     "tt": 0,
+     "tt": 12,
      "ig": 0,
-     "yt": 12
+     "yt": 25
     },
     "horas": 81.3,
     "por_dia": 202,
@@ -673,8 +673,8 @@
     },
     "total": 631,
     "ultimas_24h": {
-     "tt": 0,
-     "yt": 136
+     "tt": 276,
+     "yt": 355
     },
     "horas": 33.2,
     "por_dia": 456,
@@ -711,10 +711,10 @@
     },
     "total": 606,
     "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 7,
-     "fb": 0
+     "tt": 1,
+     "ig": 1,
+     "yt": 10,
+     "fb": 5
     },
     "horas": 180.3,
     "por_dia": 81,
@@ -751,10 +751,10 @@
     },
     "total": 542,
     "ultimas_24h": {
-     "tt": 0,
+     "tt": 7,
      "ig": 0,
      "yt": 0,
-     "fb": 0
+     "fb": 1
     },
     "horas": 198.3,
     "por_dia": 66,
@@ -770,8 +770,8 @@
     },
     "total": 517,
     "ultimas_24h": {
-     "tt": 0,
-     "yt": 78
+     "tt": 93,
+     "yt": 408
     },
     "horas": 27.3,
     "por_dia": 455,
@@ -810,8 +810,8 @@
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 1,
-     "fb": 0
+     "yt": 3,
+     "fb": 3
     },
     "horas": 223.3,
     "por_dia": 49,
@@ -846,8 +846,8 @@
     },
     "total": 341,
     "ultimas_24h": {
-     "tt": 0,
-     "yt": 33
+     "tt": 36,
+     "yt": 74
     },
     "horas": 55.2,
     "por_dia": 148,
@@ -868,7 +868,7 @@
      "tt": 0,
      "ig": 0,
      "yt": 1,
-     "fb": 0
+     "fb": 1
     },
     "horas": 125.3,
     "por_dia": 64,
@@ -884,8 +884,8 @@
     },
     "total": 317,
     "ultimas_24h": {
-     "tt": 0,
-     "yt": 28
+     "tt": 95,
+     "yt": 49
     },
     "horas": 51.3,
     "por_dia": 148,
@@ -903,8 +903,8 @@
     "total": 234,
     "ultimas_24h": {
      "tt": 0,
-     "ig": 0,
-     "yt": 0
+     "ig": 1,
+     "yt": 1
     },
     "horas": 106.3,
     "por_dia": 53,
@@ -939,9 +939,9 @@
     },
     "total": 208,
     "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 18,
+     "tt": 2,
+     "ig": 18,
+     "yt": 44,
      "fb": 0
     },
     "horas": 59.2,
@@ -973,10 +973,10 @@
     },
     "total": 106,
     "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
+     "tt": 91,
+     "ig": 11,
+     "yt": 2,
+     "fb": 1
     },
     "horas": 32.3,
     "por_dia": 79,

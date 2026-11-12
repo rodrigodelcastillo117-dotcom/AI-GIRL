@@ -440,7 +440,9 @@ def publicaciones_vistas(plan, carruseles):
         t = datetime.datetime.fromisoformat(ultima['fecha_utc'].replace('Z', '+00:00'))
         # la medición más cercana a 24 h antes de la última (entre 12 y 36 h); si no hay, no se inventa el dato
         antes = [f for f in lista[:-1] if 12 <= (t - datetime.datetime.fromisoformat(f['fecha_utc'].replace('Z', '+00:00'))).total_seconds() / 3600 <= 36]
-        previa = antes[-1] if antes else None
+        # la más cercana a 24 h exactas (TikTok vía Publer se actualiza una vez al día: la de la noche repite la de la mañana)
+        edad = lambda f: (t - datetime.datetime.fromisoformat(f['fecha_utc'].replace('Z', '+00:00'))).total_seconds() / 3600
+        previa = min(antes, key=lambda f: abs(edad(f) - 24)) if antes else None
         por_red = {r: de_red(ultima, r) for r in ('tt', 'ig', 'yt', 'fb') if r in ultima or (r == 'ig' and 'igr' in ultima)}
         dia = {r: max(0, por_red[r] - de_red(previa, r)) for r in por_red} if previa else None
         tipo, titulo = nombres.get(vid, ('', vid))
