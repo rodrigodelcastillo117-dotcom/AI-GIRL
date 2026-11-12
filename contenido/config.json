@@ -570,6 +570,13 @@
     "gastado_usd": 11.16,
     "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
     "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
+   },
+   "largos-lc": {
+    "fecha": "2026-11-13",
+    "tope_usd": 8,
+    "gastado_usd": 0,
+    "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
+    "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria"
    }
   },
   "extra_mes": {
@@ -595,5 +602,8 @@
   "2026-11-13": "aguinaldo",
   "2026-11-16": "buen_fin_tarjeta",
   "2026-11-18": "afore"
+ },
+ "miniaturas": {
+  "regla": "Rodrigo, 13-nov-2026: \"No importa lo de comparar las miniaturas, tú selecciona la mejor o crea la mejor en Canva Pro\". Sin Test & Compare: el agente elige una sola miniatura (la de largo.py, que salió mejor que Canva IA el 12-nov) y no se le recuerda nada a Rodrigo."
  }
 }

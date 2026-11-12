@@ -3,6 +3,12 @@
 La tarea programada diaria solo dice "sigue docs/RUTINA_DIARIA.md". Todo lo que hace está aquí, en el repo, para que se
 pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
 
+## 00. 13-NOV (Rodrigo)
+- LC1 (22-nov) y LC2 (26-nov): autorizados ≈$8 (config.json → replicate.autorizaciones.largos-lc). Correr voces y
+  tomas con REPLICATE_AUTORIZACION=largos-lc. Fotos de las tomas con luz de día y manos vacías.
+- Miniaturas: SIN Test & Compare. Elige tú la mejor (la de largo.py; Canva solo si sale mejor) y no se lo recuerdes.
+- Meta Business: Rodrigo ya aceptó el permiso (era para MUSE). Pendiente suyo: enlace de YouTube en la bio de IG.
+
 ## 0. LO NUEVO DEL 12-NOV NOCHE (manda sobre lo de abajo si chocan)
 
 Rodrigo (12-nov, noche): "volumen como lo teníamos… toma en cuenta lo importante de MUSE… LA MEJOR CALIDAD, que se
@@ -40,7 +46,7 @@ hablando. Ambiente del lugar bajito debajo de todo. Pasos:
   (18-nov). No los dupliques. El 19-nov hay medición contra la línea base (tarea programada aparte).
 
 **C. Miniaturas, títulos, descripciones y hashtags** (docs/MINIATURAS_Y_SEO.md, investigado el 12-nov): seguirlo en
-todo largo y en todo short.
+todo largo y en todo short (sin Test & Compare desde el 13-nov: una sola miniatura, la mejor).
 
 **D. Sonido real**: toda escena tiene `assets/broll/sonido/<escena>-ambiente.m4a` y el sonido de su acción
 `<clip>.m4a`; insertar_accion.py los usa solos. Escena nueva = `sonido_broll.py` (ambiente y acción) antes de usarla.
