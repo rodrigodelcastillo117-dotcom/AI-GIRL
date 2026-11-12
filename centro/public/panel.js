@@ -72,7 +72,7 @@ function pintar() {
   pintarTop(e.publicaciones || []);
   agenda(FOTO.calendario || []);
   tarea(FOTO.comentar_hoy);
-  dinero(e.replicate?.control, e.creditos_apps?.apps || {});
+  dinero(e.replicate, e.creditos_apps?.apps || {});
 }
 
 // ---------- estado ----------
@@ -204,7 +204,7 @@ function pintarTop(pubs) {
 // ---------- hoy y mañana ----------
 function agenda(cal) {
   const hoy = hoyMx(), manana = sumarDias(hoy, 1);
-  const etiqueta = {video: 'Video de Victoria', carrusel: 'Carrusel', reel: 'Reel', facebook: 'Facebook', largo: 'Video largo', recorte: 'Short del video largo'};
+  const etiqueta = {video: 'Victoria hablando', carrusel: 'Carrusel', reel: 'Reel', facebook: 'Facebook', largo: 'Video largo', recorte: 'Short del video largo'};
   const dias = [hoy, manana].map((f) => {
     const items = cal.filter((c) => c.fecha === f).map((c) => {
       const horas = Object.values(c.horas || {}).sort();
@@ -212,7 +212,7 @@ function agenda(cal) {
     }).sort((a, b) => (a.hora || '99').localeCompare(b.hora || '99'));
     return el('div', {className: 'dia'},
       el('h3', {textContent: new Date(`${f}T12:00:00Z`).toLocaleDateString('es-MX', {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC'})}),
-      items.length ? el('ul', {}, ...items.slice(0, 8).map((x) => el('li', {}, el('span', {className: 'hora', textContent: x.hora || 'por programar'}), el('span', {className: 'que', textContent: x.que}))))
+      items.length ? el('ul', {}, ...items.slice(0, 12).map((x) => el('li', {}, el('span', {className: 'hora', textContent: x.hora || 'por programar'}), el('span', {className: 'que', textContent: x.que}))))
         : el('p', {className: 'vacio', textContent: 'La rutina de las 6:37 lo programa.'}));
   });
   $('agenda').replaceChildren(...dias);
@@ -251,17 +251,34 @@ function medidor(nombre, cifra, de, detalle, pct, tono) {
     el('div', {className: 'det', textContent: detalle}));
 }
 
-function dinero(c, apps) {
+function dinero(rep, apps) {
+  // 12-nov-2026: el gasto se lee como Rodrigo lo maneja: saldo estimado (recarga sola), presupuesto base y sus
+  // autorizaciones escritas (config.json -> replicate.autorizaciones). Antes decía "$58.94 de $7" en rojo sin contexto.
   const caja = $('dinero');
   const items = [];
+  const c = rep?.control;
+  if (rep?.saldo_estimado_usd != null) {
+    const rc = rep.recarga || {};
+    const bajo = rc.umbral_usd && rep.saldo_estimado_usd <= rc.umbral_usd;
+    items.push(medidor('Replicate · saldo estimado', usd(rep.saldo_estimado_usd), '',
+      rc.monto_usd ? `Se recarga sola con $${rc.monto_usd} al bajar de $${rc.umbral_usd}${bajo ? ' · recarga próxima' : ''}` : 'Confirmar en replicate.com', null, null));
+  }
   if (c) {
-    const ps = c.presupuesto_semanal_usd ? (c.semana_usd / c.presupuesto_semanal_usd) * 100 : null;
-    const pm = c.presupuesto_mensual_usd ? (c.mes_usd / c.presupuesto_mensual_usd) * 100 : null;
-    items.push(medidor('Replicate · esta semana', usd(c.semana_usd), `de $${c.presupuesto_semanal_usd}`, `Hoy ${usd(c.hoy_usd)} · al llegar al tope se frena todo lo caro`, ps, ps >= 100 ? 'alerta' : ps >= 80 ? 'aviso' : null));
-    items.push(medidor('Replicate · este mes', usd(c.mes_usd), `de $${c.presupuesto_mensual_usd}`, `Proyección del mes ${usd(c.proyeccion_mes_usd)}`, pm, pm >= 100 ? 'alerta' : pm >= 80 ? 'aviso' : null));
+    const auts = rep.autorizaciones || [];
+    const autorizado = auts.reduce((s, a) => s + (a.gastado_usd || 0), 0);
+    const base = Math.max(0, c.semana_usd - autorizado);
+    const ps = c.presupuesto_semanal_usd ? (base / c.presupuesto_semanal_usd) * 100 : null;
+    items.push(medidor('Replicate · esta semana', usd(c.semana_usd), '',
+      `${usd(autorizado)} autorizado por ti · ${usd(base)} fuera de autorizaciones (base $${c.presupuesto_semanal_usd}${ps >= 100 ? ', agotada: solo se gasta lo autorizado' : ''})`,
+      ps, ps >= 100 ? 'aviso' : null));
+    for (const a of auts.filter((x) => !x.cerrada && x.gastado_usd < x.tope_usd)) {
+      const pct = (a.gastado_usd / a.tope_usd) * 100;
+      items.push(medidor(`Autorizado · ${a.clave}`, usd(a.gastado_usd), `de $${a.tope_usd}`,
+        `Quedan ${usd(a.tope_usd - a.gastado_usd)} · ${a.para.split(':')[0].split('(')[0].trim()}`, pct, pct >= 90 ? 'aviso' : null));
+    }
   }
   const eg = apps.everygen;
-  if (eg) items.push(medidor('Everygen', n0(eg.creditos), `de ${eg.mensual} este mes`, 'Clips y fotos de Victoria · se reinician cada mes y se pierden', eg.mensual ? (eg.creditos / eg.mensual) * 100 : null, null));
+  if (eg) items.push(medidor('Everygen', n0(eg.creditos), `de ${eg.mensual} este mes`, 'Se reinician cada mes y se pierden', eg.mensual ? (eg.creditos / eg.mensual) * 100 : null, null));
   const oa = apps.openart;
   if (oa) items.push(medidor('OpenArt', n0(oa.creditos), 'créditos', 'Respaldo de clips y fotos', null, null));
   caja.replaceChildren(...(items.length ? items : [el('p', {className: 'vacio', textContent: 'Sin datos de gasto todavía.'})]));

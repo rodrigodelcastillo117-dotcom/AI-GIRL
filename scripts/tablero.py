@@ -588,7 +588,7 @@ def main():
         'serie_publicaciones': series_reales(plan, cargar_carruseles())[1],
         'serie_redes': series_reales(plan, cargar_carruseles())[2],
         'foto_perfil': foto,
-        'replicate': replicate_resumen(),
+        'replicate': con_autorizaciones(replicate_resumen()),
         'salud': _json_o('salud.json', {}),
         'creditos_apps': _json_o('creditos.json', {}),
         'publicaciones': publicaciones_vistas(plan, cargar_carruseles()),
@@ -613,6 +613,21 @@ def replicate_resumen():
         print('replicate:', e)
     ruta = os.path.join(RAIZ, 'contenido', 'replicate.json')
     return json.load(open(ruta)) if os.path.exists(ruta) else None
+
+
+def con_autorizaciones(rep):
+    """Las autorizaciones escritas de Rodrigo (config.json → replicate.autorizaciones) van al centro con lo gastado de cada
+    una (12-nov-2026: el panel decía "$58.94 de $7" sin decir que casi todo era gasto autorizado)."""
+    if not rep:
+        return rep
+    conf = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('replicate') or {}
+    rep = dict(rep)
+    rep['autorizaciones'] = [{'clave': k, 'para': a.get('para', ''), 'tope_usd': a.get('tope_usd', 0),
+                              'gastado_usd': round(a.get('gastado_usd', 0), 2), 'cerrada': bool(a.get('cerrada')),
+                              'fecha': a.get('fecha', '')}
+                             for k, a in (conf.get('autorizaciones') or {}).items()]
+    rep['recarga'] = conf.get('recarga')
+    return rep
 
 
 if __name__ == '__main__':

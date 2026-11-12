@@ -1,21 +1,12 @@
-/* Panel esencial de Victoria (12-nov-2026). Oscuro, sobrio, una sola columna, legible en el celular.
+/* Panel esencial de Victoria (12-nov-2026; negro y oro como la página desde el 13-nov: Rodrigo no quiere fondo blanco). Oscuro, sobrio, una sola columna, legible en el celular.
    Colores de redes validados con el validador de paleta (orden TT, YT, FB, IG: pasa CVD y visión normal). */
 :root {
-  --fondo: #0d0d0d; --superficie: #151514; --linea: #262624; --linea-suave: #1d1d1b;
+  --fondo: #070707; --superficie: #121211; --linea: #262420; --linea-suave: #1b1a17;
   --texto: #f0efec; --texto-2: #c3c2b7; --tenue: #8d8c85;
-  --acento: #c9a227; --bien: #3dbe7a; --aviso: #e0a526; --alerta: #e5484d;
+  --acento: #d8b25a; --acento-claro: #f0d488; --bien: #3dbe7a; --aviso: #e0a526; --alerta: #e5484d;
   --tt: #199e70; --yt: #d95926; --fb: #3987e5; --ig: #d55181;
   --radio: 14px;
   color-scheme: dark;
-}
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --fondo: #f6f5f2; --superficie: #ffffff; --linea: #e4e2dc; --linea-suave: #efede8;
-    --texto: #1a1a19; --texto-2: #4a4945; --tenue: #7a7973;
-    --acento: #9c7a0f; --bien: #12873f; --aviso: #a86a00; --alerta: #c62f34;
-    --tt: #1baf7a; --yt: #eb6834; --fb: #2a78d6; --ig: #e87ba4;
-    color-scheme: light;
-  }
 }
 :root[data-theme="dark"] { color-scheme: dark; }
 
@@ -41,7 +32,7 @@ a { color: inherit; }
 /* estructura */
 .tablero { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
 .cabeza { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 0 20px; border-bottom: 1px solid var(--linea); }
-.marca { font: 400 30px/1 "Instrument Serif", Georgia, serif; letter-spacing: -.01em; }
+.marca { font: 500 30px/1 "Playfair Display", Georgia, serif; letter-spacing: -.01em; }
 .marca em { font-style: italic; color: var(--acento); }
 .cabeza-der { display: flex; align-items: center; gap: 14px; font-size: 12px; color: var(--tenue); }
 .vivo { display: inline-flex; align-items: center; gap: 7px; }
@@ -100,7 +91,7 @@ a { color: inherit; }
 /* top */
 .top { list-style: none; display: grid; gap: 8px; }
 .top li { background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio); padding: 14px 16px; display: grid; grid-template-columns: 22px 1fr auto; gap: 4px 12px; align-items: start; }
-.top .n { font: 400 22px/1 "Instrument Serif", Georgia, serif; color: var(--acento); }
+.top .n { font: 500 22px/1 "Playfair Display", Georgia, serif; color: var(--acento); }
 .top .t { font-weight: 500; line-height: 1.35; }
 .top .tipo { font-size: 11px; color: var(--tenue); text-transform: uppercase; letter-spacing: .06em; }
 .top .gana { text-align: right; font-weight: 600; color: var(--bien); white-space: nowrap; }

@@ -32,6 +32,19 @@
  },
  {
   "fecha": "2026-11-12",
+  "tipo": "video",
+  "id": "M1",
+  "que": "Sale el video «Buen Fin 2026, 3 errores con tu tarjeta 💳»",
+  "estado": "programado",
+  "horas": {
+   "ig": "12:51",
+   "tt": "12:51",
+   "fb": "12:51",
+   "yt": "12:51"
+  }
+ },
+ {
+  "fecha": "2026-11-12",
   "tipo": "carrusel",
   "id": "c68",
   "que": "Sale el carrusel «Sueldo y renta en México, haz tus cuentas 🧮»",
@@ -96,6 +109,19 @@
  },
  {
   "fecha": "2026-11-13",
+  "tipo": "video",
+  "id": "M2",
+  "que": "Sale el video «Aguinaldo 2026, tu sueldo diario por 15 💰»",
+  "estado": "programado",
+  "horas": {
+   "ig": "13:07",
+   "tt": "13:07",
+   "fb": "13:07",
+   "yt": "13:07"
+  }
+ },
+ {
+  "fecha": "2026-11-13",
   "tipo": "carrusel",
   "id": "c69",
   "que": "Sale el carrusel «Calculadoras de finanzas personales gratis 🧮»",
@@ -116,14 +142,6 @@
   }
  },
  {
-  "fecha": "2026-11-13",
-  "tipo": "carrusel",
-  "id": "c80",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $8,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-14",
   "tipo": "facebook",
   "id": "c03",
@@ -136,10 +154,23 @@
  {
   "fecha": "2026-11-14",
   "tipo": "video",
-  "id": "O2",
+  "id": "E1",
+  "que": "Sale el video «Gastos hormiga, la prueba de 1 semana ☕»",
+  "estado": "programado",
+  "horas": {
+   "ig": "13:07",
+   "tt": "13:07",
+   "fb": "13:07",
+   "yt": "13:07"
+  }
+ },
+ {
+  "fecha": "2026-11-14",
+  "tipo": "carrusel",
+  "id": "c80",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video «Aguinaldo primero a la deuda, luego regalos 🎁» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+  "que": "Carrusel «Aguinaldo 2026 si ganas $8,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-14",
@@ -151,14 +182,6 @@
  },
  {
   "fecha": "2026-11-14",
-  "tipo": "carrusel",
-  "id": "c78",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 con salario mínimo 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-14",
   "tipo": "largo",
   "id": "LA1",
   "estado": "programado",
@@ -166,6 +189,14 @@
   "horas": {
    "yt": "18:45"
   }
+ },
+ {
+  "fecha": "2026-11-15",
+  "tipo": "carrusel",
+  "id": "c78",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Aguinaldo 2026 con salario mínimo 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-15",
@@ -184,14 +215,6 @@
   "que": "Carrusel «Aguinaldo 2026 si ganas $10,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-15",
-  "tipo": "carrusel",
-  "id": "c84",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $25,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
   "id": "c77",
@@ -205,18 +228,18 @@
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c82",
+  "id": "c84",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Aguinaldo 2026 si ganas $25,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
   "tipo": "carrusel",
-  "id": "c83",
+  "id": "c82",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $20,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+  "que": "Carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-16",
@@ -230,11 +253,11 @@
  },
  {
   "fecha": "2026-11-17",
-  "tipo": "video",
-  "id": "40",
+  "tipo": "carrusel",
+  "id": "c83",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video «Pago mínimo de tarjeta y 6 años de deuda 💳» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+  "que": "Carrusel «Aguinaldo 2026 si ganas $20,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-17",
@@ -254,6 +277,19 @@
  },
  {
   "fecha": "2026-11-18",
+  "tipo": "video",
+  "id": "M4",
+  "que": "Sale el video «Afore, así te baja los impuestos 💼»",
+  "estado": "programado",
+  "horas": {
+   "ig": "13:07",
+   "tt": "13:07",
+   "fb": "13:07",
+   "yt": "13:07"
+  }
+ },
+ {
+  "fecha": "2026-11-18",
   "tipo": "carrusel",
   "id": "c67",
   "estado": "por_programar",
@@ -269,7 +305,7 @@
   "que": "Carrusel «Consejos de dinero de tu tío, calificados 👀» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
-  "fecha": "2026-11-18",
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c53",
   "estado": "por_programar",
@@ -294,14 +330,6 @@
  },
  {
   "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c40",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Gastos hormiga del café y las apps ☕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-19",
   "tipo": "largo",
   "id": "LA3",
   "estado": "programado",
@@ -312,11 +340,11 @@
  },
  {
   "fecha": "2026-11-20",
-  "tipo": "video",
-  "id": "18",
+  "tipo": "carrusel",
+  "id": "c40",
   "estado": "por_programar",
   "horas": {},
-  "que": "Video «Aguinaldo si renunciaste este año 📌» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+  "que": "Carrusel «Gastos hormiga del café y las apps ☕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-20",
@@ -336,6 +364,14 @@
  },
  {
   "fecha": "2026-11-21",
+  "tipo": "video",
+  "id": "O2",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Video «Aguinaldo primero a la deuda, luego regalos 🎁» (ya generado) · TikTok, Instagram, Facebook y YouTube"
+ },
+ {
+  "fecha": "2026-11-21",
   "tipo": "carrusel",
   "id": "c41",
   "estado": "por_programar",
@@ -349,14 +385,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Gastos hormiga que Capital juzga 🐾» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
- },
- {
-  "fecha": "2026-11-21",
-  "tipo": "carrusel",
-  "id": "c63",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Fecha de corte de tu tarjeta en 5 datos 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
   "fecha": "2026-11-21",

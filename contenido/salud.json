@@ -1,6 +1,6 @@
 {
- "generado_utc": "2026-11-12T14:10:19Z",
- "estado": "alerta",
+ "generado_utc": "2026-11-12T14:20:27Z",
+ "estado": "aviso",
  "checks": [
   {
    "area": "Llaves",
@@ -24,8 +24,8 @@
   },
   {
    "area": "Gasto",
-   "estado": "alerta",
-   "detalle": "Replicate de Victoria: hoy $28.28 · semana $58.94 de $7 · mes $59.50 de $28 (proyección del mes $148.74) · El espacio, semana $2.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+   "estado": "aviso",
+   "detalle": "Replicate de Victoria: hoy $28.28 · semana $58.94 de $7 · mes $59.50 de $28 (proyección del mes $148.74) · El espacio, semana $2.00 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $5.38 de $8 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -34,18 +34,18 @@
   },
   {
    "area": "Calendario",
-   "estado": "aviso",
-   "detalle": "2026-11-12: TikTok 3, Instagram 1, YouTube 4, Facebook 1 · faltan: Instagram 1/2"
+   "estado": "ok",
+   "detalle": "2026-11-12: TikTok 4, Instagram 2, YouTube 5, Facebook 2"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-13: TikTok 4, Instagram 3, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
+   "detalle": "2026-11-13: TikTok 5, Instagram 4, YouTube 3, Facebook 3"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-14: TikTok 2, Instagram 2, YouTube 3, Facebook 3 · la rutina de ese día llena: TikTok 2/3"
+   "detalle": "2026-11-14: TikTok 3, Instagram 3, YouTube 4, Facebook 4"
   },
   {
    "area": "Videos largos",
@@ -79,83 +79,8 @@
   },
   {
    "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c01: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-21T02:30): recortes.py publicar LA1-c01"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c02: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-22T02:30): recortes.py publicar LA1-c02"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c03: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-23T02:30): recortes.py publicar LA1-c03"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c04: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-24T02:30): recortes.py publicar LA1-c04"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c05: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-25T02:30): recortes.py publicar LA1-c05"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c06: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-26T02:30): recortes.py publicar LA1-c06"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c07: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-27T02:30): recortes.py publicar LA1-c07"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c08: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-28T02:30): recortes.py publicar LA1-c08"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c09: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-28T20:00): recortes.py publicar LA1-c09"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c01: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-21T20:00): recortes.py publicar LA3-c01"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c02: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-22T20:00): recortes.py publicar LA3-c02"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c03: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-23T20:00): recortes.py publicar LA3-c03"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c04: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-24T20:00): recortes.py publicar LA3-c04"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c05: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-25T20:00): recortes.py publicar LA3-c05"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c06: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-26T20:00): recortes.py publicar LA3-c06"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c07: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-27T20:00): recortes.py publicar LA3-c07"
+   "estado": "ok",
+   "detalle": "16 recortes con fecha (se suben 48 h antes): LA1-c01, LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07"
   },
   {
    "area": "Recortes",
@@ -175,7 +100,7 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 3,903 vs mediana 197): ya tiene 3 clones"
+   "detalle": "c16 (TikTok 3,959 vs mediana 190): ya tiene 3 clones"
   }
  ]
 }

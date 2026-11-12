@@ -41,6 +41,6 @@
  "costo_promedio_toma_usd": 0.61,
  "sin_precio": {},
  "incompleto": false,
- "generado_utc": "2026-11-12T14:10:44Z",
+ "generado_utc": "2026-11-12T14:21:45Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

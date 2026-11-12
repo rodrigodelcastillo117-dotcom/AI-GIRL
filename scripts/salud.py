@@ -87,8 +87,14 @@ def saldo():
     mes, tope_m = c.get('mes_usd', 0), c.get('presupuesto_mensual_usd') or 0
     texto = (f"Replicate de Victoria: hoy ${c.get('hoy_usd', 0):.2f} · semana ${sem:.2f} de ${tope_s} · mes ${mes:.2f} de ${tope_m} "
              f"(proyección del mes ${c.get('proyeccion_mes_usd', 0):.2f}) · El espacio, semana ${c.get('otro_canal_semana_usd', 0):.2f}")
+    auts = (leer('config.json', {}).get('replicate') or {}).get('autorizaciones') or {}
+    abiertas = {k: a for k, a in auts.items() if not a.get('cerrada') and a.get('gastado_usd', 0) < a.get('tope_usd', 0)}
+    if abiertas:
+        texto += ' · autorizado por Rodrigo: ' + ', '.join(f"{k} ${a.get('gastado_usd', 0):.2f} de ${a['tope_usd']}" for k, a in abiertas.items())
     if (tope_s and sem >= tope_s) or (tope_m and mes >= tope_m):
-        anotar('Gasto', 'alerta', texto + ' · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo')
+        # Con autorizaciones abiertas no es alarma: el freno solo deja gastar dentro de ellas (12-nov-2026).
+        anotar('Gasto', 'aviso' if abiertas else 'alerta', texto + (' · presupuesto base agotado: solo se gasta dentro de lo autorizado'
+               if abiertas else ' · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo'))
     elif (tope_s and sem >= 0.8 * tope_s) or (tope_m and mes >= 0.8 * tope_m):
         anotar('Gasto', 'aviso', texto + ' · arriba del 80%: solo lo indispensable')
     else:
@@ -199,14 +205,22 @@ def largos_y_recortes():
     sin_hora = [r['id'] for r in recortes if r.get('estado') == 'listo' and not r.get('publica_utc_por_red')]
     if sin_hora:
         anotar('Recortes', 'aviso', f"{len(sin_hora)} recortes listos sin horario: recortes.py programar")
+    lejanos = []
     for r in recortes:
         horas = r.get('publica_utc_por_red') or {}
         if r.get('estado') == 'listo' and horas:
             f = fecha(horas.get('yt'))
             hecho = r.get('publicado_en', {})
             faltan = [n for n, k in (('YouTube', 'yt'), ('Instagram/TikTok/Facebook', 'ig_tt_fb')) if k not in hecho]
+            # Solo es pendiente cuando ya se acerca (12-nov-2026: 16 avisos de recortes del 21 al 28-nov llenaban el
+            # panel). La rutina los sube 48 h antes por la cuota de YouTube (~6 subidas al día).
+            if f and f > AHORA + datetime.timedelta(hours=48):
+                lejanos.append(r['id'])
+                continue
             estado = 'alerta' if f and f < AHORA + datetime.timedelta(hours=6) else 'aviso'
             anotar('Recortes', estado, f"{r['id']}: falta subir a {', '.join(faltan)} (sale {horas.get('yt', '')[:16]}): recortes.py publicar {r['id']}")
+    if lejanos:
+        anotar('Recortes', 'ok', f"{len(lejanos)} recortes con fecha (se suben 48 h antes): {', '.join(lejanos)}")
     prog = sum(1 for r in recortes if r.get('estado') == 'programado')
     if prog:
         anotar('Recortes', 'ok', f'{prog} recortes programados en las 4 redes')
