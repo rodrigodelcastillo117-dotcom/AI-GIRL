@@ -128,3 +128,12 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - Logotipos o marcas reales (Ferrari, Rolex, nombres de estadios): riesgo de marca registrada.
 - Consejos de inversión específicos o de salud mental clínica.
 - Fingir que es una persona real.
+
+## Victoria dinámica: nada de la misma pose (Rodrigo, 12-nov-2026: "es lo mismitititito, solo cambió el fondo y la ropa… sé más dinámica: que camine a la cámara, que se siente, que esté cocinando, un café, un trago, vino, cosas diferentes")
+
+- **Prohibido repetir la selfie** (brazo derecho estirado hacia la cámara). Máximo 1 de cada 5 fotos o clips puede ser selfie.
+- **La cámara es otra persona** (tercera persona): plano medio o americano, a veces de cuerpo entero, a veces de cerca. Cambia el ángulo entre tomas.
+- **Siempre haciendo algo**: camina hacia la cámara con Capital con correa, se sienta y cruza la pierna, cocina en una cocina de lujo, toma café o espresso, brinda con vino o un coctel, lee en un sillón de piel, trabaja en la laptop riéndose, revisa el celular caminando, se acomoda el saco, acaricia a Capital, abre la puerta del coche, sube al jet.
+- **Lugar, ropa y acción van juntos** (tabla de locaciones): vino en el rooftop al atardecer con vestido, café en la terraza con blazer, cocina con ropa casual elegante.
+- **Capital siempre visible** y tranquilo; manos naturales, sin texto ni logos, nunca provocativa.
+- Las fotos nuevas van en `assets/fotos/dinamica-<escena>.jpg` y los clips en `assets/broll/` (catalogo.json dice la acción). `reel_texto.py` mezcla acciones distintas en cada Reel.

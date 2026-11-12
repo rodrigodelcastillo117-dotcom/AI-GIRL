@@ -590,6 +590,7 @@ def main():
         'foto_perfil': foto,
         'replicate': replicate_resumen(),
         'salud': _json_o('salud.json', {}),
+        'creditos_apps': _json_o('creditos.json', {}),
         'publicaciones': publicaciones_vistas(plan, cargar_carruseles()),
     }])
 

@@ -1,11 +1,16 @@
 {
- "generado_utc": "2026-11-12T04:58:39Z",
+ "generado_utc": "2026-11-12T05:15:32Z",
  "estado": "alerta",
  "checks": [
   {
    "area": "Gasto",
    "estado": "alerta",
    "detalle": "Replicate de Victoria: hoy $24.79 · semana $25.02 de $25 · mes $25.58 de $80 (proyección del mes $69.75) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+  },
+  {
+   "area": "Créditos",
+   "estado": "ok",
+   "detalle": "Everygen (Viewmax) 31/350 al mes · OpenArt 199 · Higgsfield 0.9 (leído 2026-11-12 05:13 UTC)"
   },
   {
    "area": "Calendario",
@@ -20,12 +25,12 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-13: TikTok 2, Instagram 1, YouTube 0, Facebook 0 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 0/3"
+   "detalle": "2026-11-13: TikTok 4, Instagram 3, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
   },
   {
-   "area": "Videos largos",
+   "area": "Recortes",
    "estado": "aviso",
-   "detalle": "LA1: sale en 68 h y no está subido (armado): largo.py subir LA1"
+   "detalle": "LA1: subido sin recortes: recortes.py LA1"
   },
   {
    "area": "Videos largos",
@@ -55,12 +60,12 @@
   {
    "area": "Recortes",
    "estado": "aviso",
-   "detalle": "8 recortes listos sin horario: recortes.py programar"
+   "detalle": "LB1-c02: falta subir a Instagram/TikTok/Facebook (sale 2026-11-14T02:30): recortes.py publicar LB1-c02"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "6 recortes programados en las 4 redes"
+   "detalle": "13 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",

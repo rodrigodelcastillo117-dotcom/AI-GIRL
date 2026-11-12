@@ -205,7 +205,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-13T20:00:00Z",
+   "ig": "2026-11-13T21:00:00Z",
+   "tt": "2026-11-13T22:00:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/I6wUFwvYIzs",
+   "ig_tt_fb": "2026-11-13T21:00:00Z"
+  }
  },
  {
   "id": "LB1-c02",
@@ -227,7 +236,15 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-11-14T02:30:00Z",
+   "ig": "2026-11-14T03:30:00Z",
+   "tt": "2026-11-14T04:15:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/x6bexn7B4sQ"
+  }
  },
  {
   "id": "LB1-c03",
@@ -249,7 +266,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-14T20:00:00Z",
+   "ig": "2026-11-14T21:00:00Z",
+   "tt": "2026-11-14T22:00:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/x6bexn7B4sQ",
+   "ig_tt_fb": "2026-11-14T21:00:00Z"
+  }
  },
  {
   "id": "LB1-c04",
@@ -271,7 +297,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-15T02:30:00Z",
+   "ig": "2026-11-15T03:30:00Z",
+   "tt": "2026-11-15T04:15:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/7wTIKZGrbp4",
+   "ig_tt_fb": "2026-11-15T03:30:00Z"
+  }
  },
  {
   "id": "LB1-c05",
@@ -293,7 +328,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-15T20:00:00Z",
+   "ig": "2026-11-15T21:00:00Z",
+   "tt": "2026-11-15T22:00:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/npJnqw9yUt0",
+   "ig_tt_fb": "2026-11-15T21:00:00Z"
+  }
  },
  {
   "id": "LB1-c06",
@@ -315,7 +359,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-16T02:30:00Z",
+   "ig": "2026-11-16T03:30:00Z",
+   "tt": "2026-11-16T04:15:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/h3TSM1tNMf4",
+   "ig_tt_fb": "2026-11-16T03:30:00Z"
+  }
  },
  {
   "id": "LB1-c07",
@@ -337,7 +390,16 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-16T20:00:00Z",
+   "ig": "2026-11-16T21:00:00Z",
+   "tt": "2026-11-16T22:00:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/7Qk_fVwPyTg",
+   "ig_tt_fb": "2026-11-16T21:00:00Z"
+  }
  },
  {
   "id": "LB1-c08",
@@ -359,6 +421,15 @@
    "ofertas falsas buen fin",
    "no respetan oferta profeco"
   ],
-  "estado": "listo"
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-17T02:30:00Z",
+   "ig": "2026-11-17T03:30:00Z",
+   "tt": "2026-11-17T04:15:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/vLyP_m7hLaU",
+   "ig_tt_fb": "2026-11-17T03:30:00Z"
+  }
  }
 ]

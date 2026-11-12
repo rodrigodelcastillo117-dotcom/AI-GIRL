@@ -1,0 +1,36 @@
+{
+ "apps": {
+  "everygen": {
+   "nombre": "Everygen (Viewmax)",
+   "plan": "Professional anual, ya pagado; termina el 26-jul-2027",
+   "mensual": 350,
+   "reinicia_dia": 27,
+   "uso": "clips de Victoria sin voz, fotos y miniaturas",
+   "regla": "Se pierden si no se usan: el día 23 de cada mes se gastan los que queden",
+   "creditos": 31,
+   "anterior": null,
+   "leido_utc": "2026-11-12T05:13:21Z"
+  },
+  "openart": {
+   "nombre": "OpenArt",
+   "plan": "Plus",
+   "mensual": null,
+   "uso": "respaldo de clips y fotos",
+   "regla": "Cancelar al renovar si Everygen cubre todo",
+   "creditos": 199,
+   "anterior": null,
+   "leido_utc": "2026-11-12T05:13:21Z"
+  },
+  "higgsfield": {
+   "nombre": "Higgsfield",
+   "plan": "gratis",
+   "mensual": null,
+   "uso": "sin uso",
+   "regla": "—",
+   "creditos": 0.9,
+   "anterior": null,
+   "leido_utc": "2026-11-12T05:13:21Z"
+  }
+ },
+ "actualizado_utc": "2026-11-12T05:13:21Z"
+}

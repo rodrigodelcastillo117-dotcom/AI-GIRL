@@ -439,9 +439,14 @@
   ],
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, últ. reforma DOF 14-05-2026, arts. 42, 76, 87, 89 y 291-F; LISR, últ. reforma DOF 01-04-2024, art. 93 fr. I y XIV; CPEUM, art. tercero transitorio de desindexación DOF 27-01-2016; Conasami, resolución DOF 09-12-2025 y tabla 2026; INEGI, comunicado 1/26; SAT, Apéndice 6 CFDI de nómina; Profedet, Preguntas frecuentes Aguinaldo nov-2025). Todas las cuentas rehechas con Decimal, sin diferencias. Cambios: intro con 'salario mínimo general todo el año' y 'al menos'; fecha límite sin causalidad falsa (el 19 es el último día por ser 'antes del 20', no por caer el 20 en domingo); plataformas digitales: el aguinaldo va incluido en cada pago (LFT 291-F), no se paga aparte; renuncia o despido: finiquito o liquidación; ISR: redacción precisa (ley dice salario mínimo elevado a 30 días, SAT aplica 30 UMA), 'se grava' en vez de 'paga impuesto', nota de la gráfica corregida para el caso de salario mínimo (exento completo por fr. I); fuentes de art. 89 acotadas al último párrafo; SEO actualizado.",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
-  "estado": "produciendo",
+  "estado": "programado",
   "publica_utc": "2026-11-15T00:45:00Z",
-  "intercalado": true
+  "intercalado": true,
+  "youtube": "https://youtube.com/watch?v=0bKU3Aq3k3Q",
+  "facebook": {
+   "publica_utc": "2026-11-15T00:45:00Z",
+   "estado": "programado"
+  }
  },
  {
   "id": "LA2",
@@ -898,7 +903,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día.",
+    "voz": "Para dos mil veintiséis, la UMA vale ciento diecisiete pesos por día, más treinta y un centavos.",
     "puente": true
    },
    {
@@ -1131,7 +1136,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "El otro camino es opcional. Lo marca el artículo ciento setenta y cuatro del Reglamento.",
+    "voz": "Para el otro método, mira bien: es voluntario y viene en el artículo ciento setenta y cuatro del Reglamento.",
     "puente": true
    },
    {
@@ -1224,7 +1229,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Tu recibo de nómina no es basura, se revisa. Comenta tu sueldo y te digo qué parte de tu aguinaldo queda exenta. Y suscríbete, Capital ya revisó el suyo, puras croquetas exentas."
+    "voz": "Tu recibo de nómina no es basura, se revisa. Pon tu sueldo en los comentarios y te digo qué parte de tu aguinaldo queda exenta. Y suscríbete, mi Capital ya revisó el suyo, puras croquetas exentas."
    }
   ],
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LISR texto vigente, últ. reforma DOF 01-04-2024, arts. 93 fr. I, XIV, XV y 96; RLISR art. 174; SAT Apéndice 6 del CFDI de nómina, percepción 002 límite exento 30 UMA, deducción 002 ISR; SAT consulta 25242 recibos de nómina; INEGI comunicado 1/26 UMA 2026 $117.31; DOF 27-01-2016 transitorio tercero; DOF 09-12-2025 salario mínimo 2026 $315.04; LFT art. 87). Cuentas rehechas con Decimal: 30 UMA = $3,519.30; mínimo 15 días = $4,725.60 (gravado hipotético $1,206.30); $15,000 -> $7,500.00 / $3,980.70 (53.08 %); $25,000 -> $12,500.00 / $8,980.70 (71.85 %). Cambios: exención redactada como límite que marca el SAT en 30 UMA y lectura constitucional de 2016 (no 'el SAT lo aplica desde la desindexación'); método opcional del art. 174 sin ejemplo numérico, porque el Reglamento habla de 'la remuneración' y 'sin deducción alguna' y no dice que se aplique solo a la parte gravada; se quitó el punto de no retención al mínimo (art. 96) que no estaba en voz y es dudoso en el mes en que también se cobra aguinaldo (la ley habla de quien 'únicamente' percibe un salario mínimo); 'al mes' en intro y SEO; supuesto de un solo aguinaldo de 15 días; 'la ley y su Reglamento' dan los dos caminos; alertas: exento en cero 'sin explicación' y suma contra aguinaldo bruto; recibo: retención 'en ese pago'; ruta del portal con Trámites y e.firma vigente; nota de zona general del mínimo; fuente de 30 días con LFT art. 89 como criterio; DOF del salario mínimo agregado a la descripción.",

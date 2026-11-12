@@ -95,6 +95,35 @@ def saldo():
         anotar('Gasto', 'ok', texto)
 
 
+def creditos():
+    """Créditos de Everygen, OpenArt y demás (contenido/creditos.json, lo anota la rutina con scripts/creditos.py)."""
+    import datetime as dt
+    datos = leer('creditos.json', {}).get('apps') or {}
+    if not datos:
+        anotar('Créditos', 'aviso', 'Sin créditos anotados: consulta OpenArt y Everygen y corre scripts/creditos.py anotar ...')
+        return
+    partes = []
+    for clave in ('everygen', 'openart', 'higgsfield'):
+        a = datos.get(clave)
+        if not a:
+            continue
+        txt = f"{a.get('nombre', clave)} {a['creditos']:,}" + (f"/{a['mensual']} al mes" if a.get('mensual') else '')
+        partes.append(txt)
+    hoy = dt.datetime.now(MX).date()
+    e = datos.get('everygen') or {}
+    estado = 'ok'
+    if e.get('reinicia_dia') and e.get('creditos', 0) > 30:
+        reinicio = hoy.replace(day=min(e['reinicia_dia'], 28))
+        if reinicio < hoy:
+            reinicio = (reinicio.replace(day=1) + dt.timedelta(days=32)).replace(day=min(e['reinicia_dia'], 28))
+        faltan = (reinicio - hoy).days
+        if faltan <= 4:
+            estado = 'aviso'
+            partes.append(f"Everygen se reinicia en {faltan} días y quedan {e['creditos']}: gástalos en clips y fotos")
+    leido = (e or next(iter(datos.values()))).get('leido_utc', '')[:16].replace('T', ' ')
+    anotar('Créditos', estado, ' · '.join(partes) + f' (leído {leido} UTC)')
+
+
 def calendario():
     """Publicaciones por día y red en los próximos 3 días (hora de México)."""
     config = leer('config.json', {})
@@ -222,6 +251,7 @@ def main():
     if '--sin-red' not in sys.argv:
         llaves()
     saldo()
+    creditos()
     calendario()
     largos_y_recortes()
     cola()
