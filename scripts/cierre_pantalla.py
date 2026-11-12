@@ -8,6 +8,8 @@ que lo repitan) pero nunca piden nada. Esto no toca la voz ni el bucle: solo tex
 SEGUNDOS, sin audio nuevo.
 - Arriba, chica: la pregunta del plan (`pregunta_comentarios`), para que comenten.
 - Abajo, grande y dorado: "COMENTA Y SÍGUEME", o en una serie "PARTE N+1 MAÑANA: SÍGUEME".
+- Desde el 12-nov-2026 los dos van en la franja de los subtítulos (abajo, sin tapar la cara ni a Capital) y
+  subtitular.py ya no pone subtítulos en estos SEGUNDOS: antes salían a media pantalla y encima del último subtítulo.
 Va después de titulo_pantalla.py (PIPELINE paso 6). El audio se copia tal cual: la sincronía no cambia.
 """
 import json
@@ -70,8 +72,8 @@ Style: Llamado,Inter Black,38,&H0042C5F5,&H0042C5F5,&H64000000,&H64000000,0,0,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-""" + '\n'.join(l.replace(',Pregunta,,0,0,0,,', ',Pregunta,,0,0,0,,{\\pos(360,600)}')
-                .replace(',Llamado,,0,0,0,,', ',Llamado,,0,0,0,,{\\pos(360,690)}') for l in lineas) + '\n'
+""" + '\n'.join(l.replace(',Pregunta,,0,0,0,,', ',Pregunta,,0,0,0,,{\\pos(360,860)}')
+                .replace(',Llamado,,0,0,0,,', ',Llamado,,0,0,0,,{\\pos(360,965)}') for l in lineas) + '\n'
     ruta_ass = salida.rsplit('.', 1)[0] + '-cierre.ass'
     open(ruta_ass, 'w').write(ass)
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', entrada, '-vf', f'ass={ruta_ass}',

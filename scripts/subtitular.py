@@ -25,10 +25,20 @@ def limpia(t, pregunta=False):
         return re.sub(r'[.,:;!]+$', '', t)
     return re.sub(r'[.,:;!?]+$', '', t)
 
+# Los últimos segundos son del cierre (cierre_pantalla.py), que va en esta misma franja: ahí no hay subtítulos
+# (Rodrigo, 12-nov-2026: el cierre y el último subtítulo salían juntos, amontonados y tapando a Victoria y a Capital).
+from cierre_pantalla import SEGUNDOS as SEGUNDOS_CIERRE
+duracion_video = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', video],
+                                      capture_output=True, text=True, check=True).stdout.strip())
+corte_cierre = duracion_video - SEGUNDOS_CIERRE
+
 lineas = []
 for i, g in enumerate(grupos):
     ini = g[0]['start']
     fin = grupos[i + 1][0]['start'] if i + 1 < len(grupos) else g[-1]['end'] + 0.3
+    if ini >= corte_cierre - 0.15:
+        break
+    fin = min(fin, corte_cierre)
     partes = []
     pregunta = '¿' in ' '.join(w['w'] for w in g)
     # Cada elemento puede ser una palabra o una frase completa (de frases_a_tiempos.py)
