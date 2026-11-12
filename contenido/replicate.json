@@ -5,8 +5,8 @@
   "mes_usd": 28.07,
   "otro_canal_semana_usd": 0.0,
   "otro_canal_mes_usd": 0.0,
-  "presupuesto_semanal_usd": 12.5,
-  "presupuesto_mensual_usd": 50,
+  "presupuesto_semanal_usd": 7,
+  "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
   "proyeccion_mes_usd": 76.56,
   "semana_desde": "2026-11-09",
@@ -40,6 +40,6 @@
   "minimax/voice-cloning": 1
  },
  "incompleto": true,
- "generado_utc": "2026-11-12T05:30:56Z",
+ "generado_utc": "2026-11-12T05:36:33Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

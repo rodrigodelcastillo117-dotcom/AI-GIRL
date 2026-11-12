@@ -145,3 +145,11 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - **Capital hace cosas distintas**: camina con correa, está echado, duerme, mira por la ventana, se asoma al coche. Nunca la misma caricia ni siempre sentado posando. A veces no sale aunque esté en casa.
 - **Realismo**: el lugar existe y se ve como en la vida real (nada de fondos de catálogo); la ropa va con el lugar y la hora; la acción tiene sentido (cocina con ropa cómoda, vino al atardecer, café en la mañana); manos y objetos naturales; sin logos ni marcas legibles (si salen, se difuminan con borde suave).
 - **Repertorio grande, pocas repeticiones**: cada mes se suman escenas nuevas (la tarea del día 23 con Everygen); `reel_texto.py` usa lo menos usado (`assets/broll/uso.json`). Escenas ya hechas: lobby, café, cocina, terraza del depa, lectura, calle, estudio, restaurante, bar, coche. Faltan: gimnasio/pilates, súper (comparando precios), banco/cajero, junta de negocios, mercado mexicano, aeropuerto, playa, golf, tenis, palco, departamento con vista de noche, home office en pijama elegante, firma de contrato, revisando estados de cuenta en la mesa.
+
+## Trends virales (Rodrigo, 12-nov-2026: "a veces que Victoria haga algún trend viral, para hacerla más realista, tipo baile, o algo así")
+
+- **Una vez a la semana** Victoria hace un trend del momento (baile corto, transición, gesto viral) con su estilo: elegante, segura, con humor, nunca provocativa. Si el trend se presta, le pega un dato de dinero en texto ("POV: ya te cayó el aguinaldo").
+- **Cómo se hace**: Everygen `generate_video` con `motionGuide` (Kling 3.0): `characterImageUrl` = una foto de Victoria de cuerpo entero (assets/fotos/dinamica-*) y `videoUrl` = el clip de referencia del trend (3-15 s, sin texto encima). Victoria copia el movimiento con su ropa y su lugar.
+- **El audio del trend** se pone en la app al publicar (TikTok/Instagram, con su sonido en tendencia), nunca dentro del archivo.
+- **Realista**: lugar y ropa que tengan sentido para bailar (su sala, su terraza, la oficina después del trabajo); Capital solo si está en casa y a veces se suma moviendo la cola. Si el movimiento sale raro (piernas o manos deformes), se descarta.
+- Sale de los créditos de Everygen (nunca Replicate).

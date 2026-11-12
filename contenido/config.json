@@ -531,11 +531,13 @@
  "replicate": {
   "saldo_base_usd": 30.68,
   "fecha_base_utc": "2026-11-12T03:12:10Z",
-  "presupuesto_semanal_usd": 12.5,
-  "presupuesto_mensual_usd": 50,
+  "presupuesto_semanal_usd": 7,
+  "presupuesto_mensual_usd": 28,
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)",
-  "_nota": "Rodrigo, 12-nov-2026: \"no quiero gastarme más de 1000 pesos al mes en Replicate… para el otro canal, usa 22 usd\". 1,000 MXN ≈ 50 USD (tipo de cambio ~20, conservador). Semana = 50/4. Al tope de la semana se frena lo caro; al del mes, todo (replicate_gasto.freno). El espacio no pasa por estos scripts: solo se vigila y se avisa.",
+  "_nota": "Rodrigo, 12-nov-2026: \"1000 pesos menos los 22 usd. 1000 entre los 2. máximo máximo, si se puede menos\". Total Replicate de los dos canales: 1,000 MXN ≈ 50 USD (tipo de cambio ~20, conservador). El espacio 22 USD; Victoria 28 USD al mes (7 por semana). Al tope de la semana se frena lo caro; al del mes, todo (replicate_gasto.freno). Gastar MENOS es mejor: todo lo que no sea Victoria hablando sale de Everygen.",
   "presupuesto_mensual_mxn": 1000,
-  "presupuesto_otro_canal_mensual_usd": 22
+  "presupuesto_otro_canal_mensual_usd": 22,
+  "presupuesto_total_mxn": 1000,
+  "presupuesto_total_usd": 50
  }
 }

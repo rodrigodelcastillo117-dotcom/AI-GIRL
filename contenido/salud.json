@@ -1,11 +1,11 @@
 {
- "generado_utc": "2026-11-12T05:30:43Z",
+ "generado_utc": "2026-11-12T05:36:33Z",
  "estado": "alerta",
  "checks": [
   {
    "area": "Gasto",
    "estado": "alerta",
-   "detalle": "Replicate de Victoria: hoy $27.30 · semana $27.54 de $12.5 · mes $28.09 de $50 (proyección del mes $76.61) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+   "detalle": "Replicate de Victoria: hoy $27.28 · semana $27.52 de $7 · mes $28.07 de $28 (proyección del mes $76.56) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
   },
   {
    "area": "Créditos",
@@ -59,13 +59,8 @@
   },
   {
    "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LB1-c02: falta subir a Instagram/TikTok/Facebook (sale 2026-11-14T02:30): recortes.py publicar LB1-c02"
-  },
-  {
-   "area": "Recortes",
    "estado": "ok",
-   "detalle": "13 recortes programados en las 4 redes"
+   "detalle": "14 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
