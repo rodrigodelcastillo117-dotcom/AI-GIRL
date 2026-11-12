@@ -296,7 +296,7 @@
     <div class="contenedor guia">
       <div class="portada-guia"><img src="/img/guia-portada.jpg" alt="Portada de la guía Las 30 reglas de la CEO" width="700" height="994" loading="lazy"></div>
       <div>
-        <div class="antetitulo">Guía gratis · PDF de 37 páginas</div>
+        <div class="antetitulo">Guía gratis · PDF de 46 páginas</div>
         <h2>Las 30 reglas de la CEO.</h2>
         <ul class="lista">
           <li><span><b>Págate primero.</b> Por qué el ahorro es lo primero que sale, no lo que sobra.</span></li>
@@ -304,7 +304,9 @@
           <li><span><b>Fondo de emergencia.</b> Cuántos meses de gastos necesitas antes de invertir.</span></li>
           <li><span><b>La regla del 72.</b> En cuántos años se duplica tu dinero, con una división.</span></li>
           <li><span><b>Y 26 más</b> de Buffett, Munger, Housel, Harvard y Stanford.</span></li>
+          <li><span><b>Tu tablero en papel.</b> Hojas para tu presupuesto, fondo, deudas y primer capital, y el reto de 30 días.</span></li>
         </ul>
+        <p><a href="/reglas" style="color:var(--oro-2)">Ver las 30 reglas aquí →</a></p>
         <div id="captura"></div>
       </div>
     </div>
@@ -389,7 +391,7 @@
     const GUIA = '/guia/las-30-reglas-de-la-ceo.pdf';
     document.getElementById('captura').append(crear('div', {className: 'descarga'},
       crear('a', {className: 'boton', href: `${GUIA}?ref=${encodeURIComponent(REF)}`, textContent: 'Descargar la guía gratis', download: ''}),
-      crear('p', {className: 'letra-chica', textContent: '37 páginas · se lee bien en el celular · sin registrarte.'})));
+      crear('p', {className: 'letra-chica', textContent: '46 páginas · ejercicios, hojas para llenar y reto de 30 días · sin registrarte.'})));
     bloqueVenta(document.getElementById('venta'), '');
     document.querySelector('#venta .boton').textContent = 'La quiero';
 

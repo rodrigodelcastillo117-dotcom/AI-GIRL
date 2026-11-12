@@ -39,6 +39,10 @@
     {
       "source": "/pagar-deudas",
       "destination": "/pagar-deudas.html"
+    },
+    {
+      "source": "/reglas",
+      "destination": "/reglas.html"
     }
   ],
   "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . 2>/dev/null; test $? -eq 0"

@@ -38,6 +38,18 @@ export function enlacePara(caption) {
   return `${SITIO}${ruta}?ref=ig-dm`;
 }
 
+// 12-nov-2026 (igual que scripts/comentarios_ig.py → mensaje_para): GUÍA o un post que promete "30 reglas" recibe la
+// página de la guía (/reglas: PDF + las 7 calculadoras) y la calculadora del tema de regalo; lo demás, la calculadora.
+export function mensajePara(usuario, comentario, caption) {
+  const calc = enlacePara(caption), guia = `${SITIO}/reglas?ref=ig-dm`;
+  const hola = `¡Hola${usuario ? ' @' + usuario : ''}!`;
+  if (/guia/.test(normal(comentario)) || /30 reglas/i.test(caption || '')) {
+    const extra = calc !== `${SITIO}?ref=ig-dm` ? `\n🧮 Y la calculadora del post: ${calc}` : '';
+    return [guia, `${hola} Aquí están mis 30 reglas de la CEO, gratis 👇\n${guia}\n\nAhí mismo tienes mis 7 calculadoras gratis.${extra}\n\nCuéntame en el post cuál te sirvió más. — Victoria`];
+  }
+  return [calc, `${hola} Aquí está lo que te prometí 👇\n${calc}\n\nY todas mis calculadoras gratis: ${SITIO}/?ref=ig-dm#herramientas — Victoria`];
+}
+
 export function firmaValida(cuerpo, cabecera, secreto) {
   if (!cabecera || !secreto) return false;
   const esperada = 'sha256=' + crypto.createHmac('sha256', secreto).update(cuerpo).digest('hex');
@@ -69,10 +81,9 @@ async function entregar(comentario, token) {
   const usuario = from?.username || '';
   if (!id || usuario === YO || !pideGuia(text)) return 'ignorado';
   const caption = media?.id ? (await graph('GET', `${media.id}?fields=caption`, token).catch(() => ({}))).caption : '';
-  const enlace = enlacePara(caption);
+  const [enlace, textoPrivado] = mensajePara(usuario, text, caption);
   try {
-    await graph('POST', `${IG}/messages`, token, {recipient: {comment_id: id},
-      message: {text: `¡Hola${usuario ? ' @' + usuario : ''}! Aquí está lo que te prometí 👇\n${enlace}\n\nSi te sirve, cuéntame en el post qué te pareció. — Victoria`}});
+    await graph('POST', `${IG}/messages`, token, {recipient: {comment_id: id}, message: {text: textoPrivado}});
     await graph('POST', `${id}/replies`, token, {message: '¡Listo! Te lo mandé por mensaje 📩 Revisa tus solicitudes si no lo ves.'});
     return 'privado';
   } catch (e) {

@@ -87,6 +87,26 @@ def enlace_para(texto_post):
     return f'{SITIO}{ruta}?ref=ig-dm'
 
 
+# 12-nov-2026, Rodrigo: "hay que mandarla a la correcta, no? quiero que se vean todas las calculadoras". Los posts dicen
+# "Mis 30 reglas de la CEO… comenta GUÍA y te lo mando" y se mandaba la calculadora del tema (c70 → /aguinaldo): mal.
+# Ahora GUÍA (o un post que promete las 30 reglas) recibe la página de la guía (/reglas: el PDF y las 7 calculadoras) y,
+# de regalo, la calculadora del tema del post. Lo demás ("quiero", "calculadora"...) sigue con la calculadora del tema.
+GUIA = f'{SITIO}/reglas?ref=ig-dm'
+
+
+def mensaje_para(nombre, comentario, caption):
+    """(enlace, texto del mensaje privado) para quien pidió algo en un post."""
+    t = (comentario or '').lower().replace('í', 'i')
+    calc = enlace_para(caption)
+    hola = f'¡Hola{" @" + nombre if nombre else ""}!'
+    if 'guia' in t or '30 reglas' in (caption or '').lower():
+        extra = f'\n🧮 Y la calculadora del post: {calc}' if calc != f'{SITIO}?ref=ig-dm' else ''
+        return GUIA, (f'{hola} Aquí están mis 30 reglas de la CEO, gratis 👇\n{GUIA}\n\n'
+                      f'Ahí mismo tienes mis 7 calculadoras gratis.{extra}\n\nCuéntame en el post cuál te sirvió más. — Victoria')
+    return calc, (f'{hola} Aquí está lo que te prometí 👇\n{calc}\n\n'
+                  f'Y todas mis calculadoras gratis: {SITIO}/?ref=ig-dm#herramientas — Victoria')
+
+
 # 11-nov-2026, Rodrigo autorizó ("si hazlo asi"): además de GUÍA, cuentan los comentarios cortos que piden el enlace
 # ("quiero", "pásamelo", "info" o la palabra del tema). GUÍA cuenta en cualquier parte; las demás solo si el comentario
 # tiene 4 palabras o menos, para no mandarle nada a quien está opinando ("el aguinaldo no me alcanza para nada...").
@@ -187,10 +207,9 @@ def guias():
                                'fecha': c.get('timestamp'), 'tipo': 'cuentas', 'numeros': numeros, 'texto': c.get('text')})
                 print(f'ok cuentas {via}: @{nombre} {numeros}')
                 continue
-            enlace = enlace_para(m.get('caption'))
+            enlace, texto_privado = mensaje_para(nombre, c.get('text'), m.get('caption'))
             try:
-                mid = privado(c['id'], f'¡Hola{" @" + nombre if nombre else ""}! Aquí está lo que te prometí 👇\n{enlace}\n\n'
-                                       'Si te sirve, cuéntame en el post qué te pareció. — Victoria')
+                mid = privado(c['id'], texto_privado)
                 publica, via = responder(c['id'], '¡Listo! Te lo mandé por mensaje 📩 Revisa tus solicitudes si no lo ves.'), 'privado'
             except RuntimeError as e:
                 print(e)

@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Las 30 reglas de la CEO · Guía gratis de dinero en México</title>
+  <meta name="description" content="Descarga gratis Las 30 reglas de la CEO (46 páginas): págate primero, 50/30/20, fondo de emergencia, deudas, interés compuesto y más, cada una con su fuente y una acción para hoy. Y 7 calculadoras gratis.">
+  <meta property="og:title" content="Las 30 reglas de la CEO · Guía gratis">
+  <meta property="og:description" content="30 reglas de dinero con su fuente y una acción para hoy. Gratis, sin registrarte. Más 7 calculadoras gratis.">
+  <meta property="og:image" content="https://victoriatheceo.vercel.app/img/guia-portada.jpg">
+  <meta property="og:url" content="https://victoriatheceo.vercel.app/reglas">
+  <link rel="canonical" href="https://victoriatheceo.vercel.app/reglas">
+  <meta name="theme-color" content="#070707">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23070707'/%3E%3Ctext x='16' y='22' font-size='17' font-family='Georgia' font-weight='700' fill='%23d8b25a' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --negro: #070707; --negro-2: #0e0e0f; --panel: #141415; --panel-2: #1b1b1d;
+      --marfil: #f4efe6; --texto: #cfc8bb; --tenue: #8c867b; --oro: #d8b25a; --oro-2: #f0d488; --oro-3: #a8843a;
+      --esmeralda: #2fa77a; --vino: #b0475a; --zafiro: #5b84e6;
+      --linea: rgba(216, 178, 90, .22); --linea-2: rgba(255, 255, 255, .07);
+      --radio: 18px; --ancho: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; background: var(--negro); color: var(--marfil); font-family: Inter, system-ui, sans-serif; }
+    body { -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .contenedor { width: min(var(--ancho), 100%); margin: 0 auto; padding: 0 22px; }
+    h1, h2, h3, .precio, .rapida .dato b, .regla .n { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: -.01em; font-variant-numeric: lining-nums; }
+    ::selection { background: var(--oro); color: var(--negro); }
+
+    /* Menú */
+    .menu { position: sticky; top: 0; z-index: 30; background: rgba(7, 7, 7, .78); backdrop-filter: blur(14px); border-bottom: 1px solid var(--linea-2); }
+    .menu .contenedor { display: flex; align-items: center; gap: 14px; height: 68px; }
+    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 600; letter-spacing: .22em; font-size: .78rem; text-transform: uppercase; white-space: nowrap; }
+    .logo i { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--oro); color: var(--oro); display: grid; place-items: center; font-style: normal; font-family: "Playfair Display", serif; font-size: 1.05rem; letter-spacing: 0; }
+    .logo b { color: var(--oro); font-weight: 600; }
+    .menu nav { display: flex; gap: 2px; margin-left: auto; }
+    .menu nav a { text-decoration: none; font-size: .9rem; color: var(--texto); padding: 9px 14px; border-radius: 999px; }
+    .menu nav a:hover { color: var(--marfil); }
+    .menu .cta { background: linear-gradient(180deg, var(--oro-2), var(--oro)); color: #1a1408; font-weight: 600; }
+    .menu .cta:hover { color: #1a1408; filter: brightness(1.06); }
+    @media (max-width: 820px) { .menu nav a:not(.cta) { display: none; } .menu .cta { font-size: .82rem; padding: 9px 13px; white-space: nowrap; } .logo { letter-spacing: .14em; } }
+    @media (max-width: 380px) { .logo span { display: none; } }
+
+    /* Botones */
+    .boton { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 24px; border-radius: 999px; border: 1px solid var(--oro);
+      background: linear-gradient(180deg, var(--oro-2), var(--oro)); color: #1a1408; font: inherit; font-weight: 600; font-size: 1rem; text-decoration: none; cursor: pointer; transition: transform .15s, filter .15s; }
+    .boton:hover { transform: translateY(-1px); filter: brightness(1.06); }
+    .letra-chica { font-size: .8rem; color: var(--tenue); line-height: 1.5; margin: 10px 0 0; }
+
+    /* Portada */
+    .heroe { position: relative; padding: 56px 0 80px; overflow: hidden; }
+    .heroe::before { content: ""; position: absolute; width: 900px; height: 900px; right: -260px; top: -320px; background: radial-gradient(circle, rgba(216, 178, 90, .16), transparent 62%); pointer-events: none; }
+    .heroe .contenedor { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: 52px; align-items: center; }
+    @media (max-width: 920px) { .heroe .contenedor { grid-template-columns: 1fr; gap: 34px; } .heroe { padding-top: 30px; } }
+    .sello { display: inline-flex; align-items: center; gap: 8px; color: var(--oro-2); font-size: .82rem; letter-spacing: .04em; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--linea); background: rgba(216, 178, 90, .06); }
+    .sello::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--esmeralda); box-shadow: 0 0 0 4px rgba(47, 167, 122, .2); }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.02; margin: 20px 0 18px; }
+    h1 .marca-texto { color: var(--oro); font-style: italic; }
+    .lema { font-size: 1.12rem; line-height: 1.65; color: var(--texto); margin: 0 0 28px; max-width: 32em; }
+
+    /* Calculadora rápida */
+    .rapida { background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--linea); border-radius: 22px; padding: 22px; max-width: 540px; box-shadow: 0 30px 80px rgba(0, 0, 0, .5); }
+    .rapida label { display: block; font-weight: 600; margin-bottom: 12px; color: var(--marfil); }
+    .rapida .campo { display: flex; align-items: center; border: 1px solid var(--linea); border-radius: 14px; padding: 0 16px; background: var(--negro); }
+    .rapida .campo:focus-within { border-color: var(--oro); }
+    .rapida .campo span { color: var(--oro); font-weight: 600; }
+    .rapida input { width: 100%; border: 0; outline: 0; background: transparent; font: inherit; font-size: 1.3rem; font-weight: 600; padding: 14px 8px; color: var(--marfil); }
+    .rapida .resultado { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .rapida .dato { border-radius: 14px; padding: 13px; background: var(--negro-2); border: 1px solid var(--linea-2); }
+    .rapida .dato small { display: block; font-size: .74rem; color: var(--tenue); }
+    .rapida .dato b { display: block; font-family: "Playfair Display", serif; font-size: 1.35rem; font-weight: 600; margin-top: 3px; }
+    .rapida .dato:nth-child(1) { border-color: var(--linea); } .rapida .dato:nth-child(1) b { color: var(--oro-2); }
+    .rapida .dato:nth-child(2) b { color: #7fd8b1; } .rapida .dato:nth-child(3) b { color: #f1a3ae; }
+    @media (max-width: 480px) { .rapida .resultado { grid-template-columns: 1fr; } .rapida .dato { display: flex; justify-content: space-between; align-items: baseline; } .rapida .dato b { margin: 0; } }
+    .rapida .pie-calc { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; font-size: .8rem; color: var(--tenue); }
+    .rapida .pie-calc a { font-weight: 600; color: var(--oro-2); text-decoration: none; }
+
+    .foto-heroe { position: relative; }
+    .foto-heroe .marco { border-radius: 260px 260px 24px 24px; overflow: hidden; border: 1px solid var(--linea); box-shadow: 0 40px 100px rgba(0, 0, 0, .6); }
+    .foto-heroe img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 40% 18%; }
+    .etiqueta-flota { position: absolute; background: rgba(14, 14, 15, .86); backdrop-filter: blur(8px); border: 1px solid var(--linea); color: var(--marfil); border-radius: 14px; padding: 10px 14px; font-size: .86rem; }
+    .etiqueta-flota b { color: var(--oro-2); }
+    .etiqueta-flota.uno { left: -20px; top: 20%; } .etiqueta-flota.dos { right: -16px; bottom: 14%; }
+    @media (max-width: 920px) { .foto-heroe { max-width: 420px; margin: 0 auto; } .etiqueta-flota.uno { left: 8px; } .etiqueta-flota.dos { right: 8px; } }
+
+    /* Cinta */
+    .cinta { border-block: 1px solid var(--linea-2); background: var(--negro-2); overflow: hidden; }
+    .cinta .pista { display: flex; gap: 44px; width: max-content; white-space: nowrap; padding: 15px 0; animation: correr 50s linear infinite; color: var(--texto); font-size: .92rem; }
+    .cinta .pista span::before { content: "◆"; color: var(--oro); margin-right: 14px; font-size: .7rem; }
+    @keyframes correr { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .cinta .pista { animation: none; } }
+
+    /* Secciones */
+    section.bloque { padding: 96px 0; }
+    @media (max-width: 720px) { section.bloque { padding: 64px 0; } }
+    .encabezado { max-width: 720px; margin-bottom: 40px; }
+    .antetitulo { font-size: .76rem; letter-spacing: .26em; text-transform: uppercase; color: var(--oro); font-weight: 600; }
+    h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); line-height: 1.06; margin: 12px 0 14px; }
+    .encabezado p { font-size: 1.06rem; line-height: 1.65; color: var(--texto); margin: 0; }
+
+    /* Calculadoras */
+    .herramientas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+    @media (max-width: 560px) { .herramientas { grid-template-columns: 1fr 1fr; gap: 10px; } }
+    .herramientas a { --c: var(--oro); position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 168px; padding: 20px; border-radius: var(--radio); text-decoration: none;
+      background: radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--c) 16%, transparent), transparent 60%), var(--panel); border: 1px solid var(--linea-2);
+      font-family: "Playfair Display", serif; font-weight: 600; font-size: 1.25rem; line-height: 1.15; transition: transform .15s, border-color .15s; }
+    .herramientas a:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--c) 55%, transparent); }
+    .herramientas a::before { content: var(--i); color: var(--c); font-family: Inter, sans-serif; font-size: 1rem; font-weight: 700; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--c) 50%, transparent); margin-bottom: auto; }
+    .herramientas a::after { content: "→"; position: absolute; right: 18px; top: 22px; color: var(--c); font-family: Inter, sans-serif; }
+    .herramientas a small { display: block; font-family: Inter, sans-serif; font-weight: 400; font-size: .85rem; margin-top: 8px; color: var(--tenue); line-height: 1.4; }
+    @media (max-width: 560px) { .herramientas a { min-height: 150px; padding: 16px; font-size: 1.05rem; } .herramientas a small { font-size: .78rem; } .herramientas a::after { right: 14px; top: 18px; } }
+    .herramientas a:nth-child(7n+1) { --c: var(--oro); --i: "$"; } .herramientas a:nth-child(7n+2) { --c: var(--esmeralda); --i: "≈"; } .herramientas a:nth-child(7n+3) { --c: var(--zafiro); --i: "§"; }
+    .herramientas a:nth-child(7n+4) { --c: #a68cf0; --i: "%"; } .herramientas a:nth-child(7n+5) { --c: #3fb6b0; --i: "½"; } .herramientas a:nth-child(7n+6) { --c: #e08a4c; --i: "☂"; } .herramientas a:nth-child(7n+7) { --c: var(--vino); --i: "↘"; }
+
+    /* Reglas */
+    .verde { background: linear-gradient(180deg, #0b1511, #070707); }
+    .reglas { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--linea); }
+    @media (max-width: 900px) { .reglas { grid-template-columns: 1fr; } }
+    .regla { padding: 30px 28px 32px 0; border-bottom: 1px solid var(--linea-2); }
+    @media (min-width: 901px) { .regla { padding-left: 28px; border-right: 1px solid var(--linea-2); } .regla:nth-child(3n+1) { padding-left: 0; } .regla:nth-child(3n) { border-right: 0; } }
+    .regla .n { display: block; font-family: "Playfair Display", serif; font-size: 2.4rem; color: var(--oro); line-height: 1; margin-bottom: 14px; }
+    .regla h3 { font-size: 1.3rem; line-height: 1.2; margin: 0 0 8px; }
+    .regla p { margin: 0; color: var(--texto); line-height: 1.6; }
+    .regla .fuente { display: inline-block; margin-top: 12px; font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--esmeralda); }
+
+    /* Guía */
+    .amarillo-bloque { background: radial-gradient(80% 120% at 0% 50%, rgba(216, 178, 90, .12), transparent 60%), var(--negro-2); border-block: 1px solid var(--linea-2); }
+    .guia { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: center; }
+    @media (max-width: 860px) { .guia { grid-template-columns: 1fr; gap: 34px; } }
+    .guia .portada-guia { max-width: 330px; width: 100%; margin: 0 auto; border-radius: 10px; overflow: hidden; border: 1px solid var(--linea); box-shadow: 0 40px 90px rgba(0, 0, 0, .7), 0 0 0 10px rgba(216, 178, 90, .05); transform: perspective(900px) rotateY(8deg); }
+    @media (max-width: 860px) { .guia .portada-guia { max-width: 230px; transform: none; } }
+    .guia .portada-guia img { width: 100%; height: auto; }
+    .lista { list-style: none; margin: 0 0 28px; padding: 0; display: grid; gap: 14px; }
+    .lista li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; line-height: 1.55; color: var(--texto); }
+    .lista li::before { content: "◆"; color: var(--oro); font-size: .8rem; padding-top: 3px; }
+    .lista b { color: var(--marfil); font-weight: 600; }
+
+    /* Plantilla */
+    .vitrina { border-radius: 22px; overflow: hidden; border: 1px solid var(--linea); box-shadow: 0 40px 90px rgba(0, 0, 0, .65), 0 0 0 10px rgba(216, 178, 90, .05); }
+    .vitrina img { width: 100%; height: auto; }
+    .azul { background: linear-gradient(180deg, #0a0d18, #070707); }
+    .producto { display: grid; grid-template-columns: 1.15fr .85fr; gap: 44px; align-items: center; }
+    @media (max-width: 900px) { .producto { grid-template-columns: 1fr; } }
+    .mosaico { position: relative; min-height: 460px; }
+    .mosaico figure { position: absolute; margin: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--linea); box-shadow: 0 30px 70px rgba(0, 0, 0, .65); background: #0f0f10; }
+    .mosaico figure img { width: 100%; height: auto; filter: brightness(.92) contrast(1.02); }
+    .mosaico figcaption { position: absolute; left: 10px; bottom: 10px; background: rgba(7, 7, 7, .85); color: var(--oro-2); font-size: .76rem; letter-spacing: .04em; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--linea); }
+    .mosaico .m1 { width: 64%; left: 0; top: 0; transform: rotate(-2deg); z-index: 2; }
+    .mosaico .m2 { width: 58%; right: 0; top: 70px; transform: rotate(3deg); z-index: 1; }
+    .mosaico .m3 { width: 54%; left: 16%; bottom: 0; transform: rotate(-1deg); z-index: 3; }
+    @media (max-width: 560px) { .mosaico { min-height: 330px; } .mosaico .m2 { top: 50px; } }
+    .caja-venta { background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--linea); border-radius: 22px; padding: 28px; box-shadow: 0 30px 80px rgba(0, 0, 0, .5); }
+    .caja-venta h3 { font-size: 1.5rem; margin: 0 0 14px; }
+    .caja-venta ul { margin: 0 0 20px; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .caja-venta li { display: grid; grid-template-columns: 24px 1fr; gap: 8px; color: var(--texto); }
+    .caja-venta li::before { content: "✓"; color: var(--esmeralda); font-weight: 700; }
+    .precio { font-family: "Playfair Display", serif; font-size: 2.5rem; font-weight: 600; color: var(--oro-2); }
+    #venta .boton { width: 100%; margin-top: 12px; }
+
+    /* Vida + redes */
+    .vida { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    @media (max-width: 760px) { .vida { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+    .vida figure { margin: 0; border-radius: 18px; overflow: hidden; position: relative; border: 1px solid var(--linea-2); }
+    .vida img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .4s; }
+    .vida figure:hover img { transform: scale(1.04); }
+    .vida figure::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .7)); }
+    .vida figcaption { position: absolute; z-index: 1; left: 14px; bottom: 12px; font-size: .84rem; letter-spacing: .04em; color: var(--marfil); }
+    .vida figcaption::before { content: "— "; color: var(--oro); }
+    .redes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
+    @media (max-width: 560px) { .redes { grid-template-columns: 1fr; } }
+    .redes a { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border-radius: 16px; border: 1px solid var(--linea-2); background: var(--panel); text-decoration: none; font-weight: 600; transition: border-color .15s, transform .15s; }
+    .redes a:hover { border-color: var(--oro); transform: translateY(-2px); }
+    .redes a small { color: var(--tenue); font-weight: 400; font-size: .82rem; }
+    .redes a::before { content: ""; width: 10px; height: 10px; border-radius: 50%; margin-right: 12px; }
+    .redes a { justify-content: flex-start; } .redes a small { margin-left: auto; }
+    .redes .yt::before { background: #ff4d4d; } .redes .ig::before { background: linear-gradient(45deg, #feda75, #d62976, #962fbf); } .redes .tt::before { background: linear-gradient(45deg, #25f4ee, #fe2c55); }
+
+    /* Preguntas */
+    .preguntas { display: grid; gap: 10px; max-width: 860px; }
+    details { background: var(--panel); border: 1px solid var(--linea-2); border-radius: 16px; padding: 0 22px; }
+    details[open] { border-color: var(--linea); }
+    summary { cursor: pointer; list-style: none; padding: 20px 0; font-weight: 600; display: flex; justify-content: space-between; gap: 14px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--oro); font-size: 1.3rem; line-height: 1; }
+    details[open] summary::after { content: "–"; }
+    details p { margin: 0 0 20px; color: var(--texto); line-height: 1.65; }
+    details a { color: var(--oro-2); }
+
+    footer { border-top: 1px solid var(--linea-2); background: var(--negro-2); color: var(--tenue); padding: 56px 0 60px; font-size: .86rem; line-height: 1.75; }
+    footer .contenedor { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 30px; }
+    @media (max-width: 760px) { footer .contenedor { grid-template-columns: 1fr; } }
+    footer .logo { color: var(--marfil); margin-bottom: 14px; }
+    footer h4 { color: var(--oro); margin: 0 0 10px; font-size: .74rem; text-transform: uppercase; letter-spacing: .2em; font-weight: 600; }
+    footer nav { display: grid; gap: 4px; }
+    footer nav a { text-decoration: none; color: var(--texto); }
+    footer nav a:hover { color: var(--oro-2); }
+  
+    /* /reglas (12-nov-2026) */
+    .heroe-guia { padding: 64px 0 40px; background: radial-gradient(900px 500px at 85% -10%, rgba(216,178,90,.16), transparent 60%), var(--negro); }
+    .heroe-guia .contenedor { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 48px; align-items: center; }
+    @media (max-width: 860px) { .heroe-guia .contenedor { grid-template-columns: 1fr; gap: 26px; } .heroe-guia .libro { order: -1; width: 62%; max-width: 260px; margin: 0 auto; } .heroe-guia { padding-top: 36px; } }
+    .heroe-guia h1 { font-family: "Playfair Display", serif; font-weight: 600; font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.02; margin: 14px 0 16px; letter-spacing: -.01em; }
+    .heroe-guia h1 em { font-style: italic; color: var(--oro-2); }
+    .heroe-guia .bajada { font-size: 1.12rem; color: var(--texto); max-width: 34rem; line-height: 1.6; }
+    .datos-guia { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 26px; }
+    .datos-guia span { border: 1px solid var(--linea); border-radius: 999px; padding: 7px 14px; font-size: .86rem; color: var(--marfil); background: rgba(216,178,90,.06); }
+    .datos-guia b { color: var(--oro-2); font-family: "Playfair Display", serif; font-variant-numeric: lining-nums; }
+    .heroe-guia h1, .regla-g .num, .parte-t { font-variant-numeric: lining-nums; }
+    .botones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .boton.grande { padding: 18px 30px; font-size: 1.05rem; }
+    .boton.fantasma { background: transparent; color: var(--oro-2); }
+    .libro { position: relative; perspective: 1200px; }
+    .libro img { width: 100%; height: auto; border-radius: 6px 14px 14px 6px; transform: rotateY(-14deg) rotateX(3deg); box-shadow: -18px 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(216,178,90,.3), 0 0 90px rgba(216,178,90,.14); transition: transform .4s; }
+    .libro:hover img { transform: rotateY(-4deg); }
+    .libro::after { content: "GRATIS"; position: absolute; top: 18px; right: -10px; background: var(--oro); color: #111; font-weight: 800; letter-spacing: .2em; font-size: .78rem; padding: 8px 14px; border-radius: 999px; box-shadow: 0 8px 24px rgba(216,178,90,.35); }
+    .parte { border: 1px solid var(--linea-2); border-radius: var(--radio); background: var(--negro-2); margin-bottom: 14px; overflow: hidden; }
+    .parte > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 14px; padding: 22px 24px; }
+    .parte > summary::-webkit-details-marker { display: none; }
+    .parte > summary::after { content: "+"; margin-left: auto; color: var(--oro); font-size: 1.4rem; line-height: 1; }
+    .parte[open] > summary::after { content: "−"; }
+    .parte-n { font-size: .74rem; letter-spacing: .24em; text-transform: uppercase; color: var(--oro); font-weight: 600; }
+    .parte-t { font-family: "Playfair Display", serif; font-size: 1.5rem; font-weight: 600; }
+    .parte-c { color: var(--tenue); font-size: .86rem; }
+    @media (max-width: 560px) { .parte > summary { flex-wrap: wrap; gap: 4px 12px; padding: 18px; } .parte-t { font-size: 1.25rem; } }
+    .rejilla-reglas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; padding: 0 18px 20px; }
+    @media (max-width: 560px) { .rejilla-reglas { grid-template-columns: 1fr; padding: 0 12px 14px; } }
+    .regla-g { position: relative; padding: 22px 20px 18px; border-radius: 14px; background: var(--panel); border: 1px solid var(--linea-2); display: flex; flex-direction: column; gap: 10px; }
+    .regla-g .num { position: absolute; top: 12px; right: 16px; font-family: "Playfair Display", serif; font-size: 2.6rem; font-weight: 700; color: rgba(216,178,90,.18); line-height: 1; }
+    .regla-g h3 { margin: 0; padding-right: 54px; font-family: "Playfair Display", serif; font-size: 1.25rem; font-weight: 600; line-height: 1.2; color: var(--marfil); }
+    .regla-g p { margin: 0; color: var(--texto); line-height: 1.6; font-size: .96rem; }
+    .hazlo { border-left: 3px solid var(--oro); background: rgba(216,178,90,.07); padding: 10px 12px; border-radius: 0 10px 10px 0; font-size: .92rem; color: var(--marfil); line-height: 1.5; }
+    .hazlo span { display: block; font-size: .68rem; letter-spacing: .22em; text-transform: uppercase; color: var(--oro); font-weight: 700; margin-bottom: 3px; }
+    .fte { margin-top: auto; font-size: .78rem; color: var(--tenue); border-top: 1px solid var(--linea-2); padding-top: 9px; }
+    .franja-descarga { margin-top: 28px; padding: 30px; border-radius: var(--radio); border: 1px solid var(--linea); background: radial-gradient(600px 300px at 0% 0%, rgba(216,178,90,.14), transparent 60%), var(--negro-2); display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .franja-descarga h3 { margin: 0 0 4px; font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 600; }
+    .franja-descarga p { margin: 0; color: var(--tenue); }
+  </style>
+  <script>try { const u = new URL(location.href); const r = u.searchParams.get('ref'); if (r && !u.searchParams.has('utm_source')) { u.searchParams.set('utm_source', r); history.replaceState(null, '', u); } } catch {}</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <header class="menu">
+    <div class="contenedor">
+      <a class="logo" href="/"><i>V</i><span>Victoria <b>The CEO</b></span></a>
+      <nav aria-label="Principal">
+        <a href="#descargar">La guía</a>
+        <a href="#calculadoras">Calculadoras</a>
+        <a href="#las-30">Las 30 reglas</a>
+        <a href="/#tablero">Plantilla</a>
+        <a class="cta" href="/guia/las-30-reglas-de-la-ceo.pdf" data-guia download>Descargar gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="heroe-guia" id="descargar">
+    <div class="contenedor">
+      <div>
+        <span class="sello">Guía gratis · PDF de 46 páginas · sin registrarte</span>
+        <h1>Las 30 reglas <em>de la CEO.</em></h1>
+        <p class="bajada">Dinero, negocio y mente fuerte. Lo que nadie te enseñó, en una página cada idea. Cada regla trae su fuente real, una acción para hoy y un ejercicio para escribir. Al final: tu tablero en papel y el reto de 30 días.</p>
+        <div class="datos-guia"><span><b>30</b> reglas</span><span><b>30</b> acciones para hoy</span><span><b>5</b> hojas para llenar</span><span>Reto de <b>30</b> días</span><span><b>7</b> calculadoras gratis</span></div>
+        <div class="botones">
+          <a class="boton grande" href="/guia/las-30-reglas-de-la-ceo.pdf" data-guia download>Descargar la guía gratis</a>
+          <a class="boton fantasma" href="#las-30">Leerla aquí</a>
+        </div>
+      </div>
+      <div class="libro"><img src="/img/guia-portada.jpg" alt="Portada de la guía Las 30 reglas de la CEO" width="700" height="994"></div>
+    </div>
+  </section>
+
+  <section class="bloque" id="calculadoras">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="antetitulo">Gratis · sin registrarte · con fuente oficial</div>
+        <h2>Tus 7 calculadoras.</h2>
+        <p>Pon tus números y en segundos sabes cuánto te toca, cuánto te queda y qué hacer primero.</p>
+      </div>
+      <div class="herramientas"><!--herramientas--><a href="/aguinaldo">Aguinaldo 2026<small>Cuánto te toca y cuánto paga ISR</small></a><a href="/te-alcanza-tu-sueldo">¿Te alcanza tu sueldo?<small>Renta, comida y lo que te queda</small></a><a href="/finiquito">Finiquito y liquidación<small>Cuánto te toca si renuncias o te corren</small></a><a href="/interes-compuesto">Interés compuesto<small>Cuánto crece tu ahorro con el tiempo</small></a><a href="/regla-50-30-20">Regla 50/30/20<small>Tu sueldo en tres partes</small></a><a href="/fondo-de-emergencia">Fondo de emergencia<small>Cuánto necesitas y cuándo llegas</small></a><a href="/pagar-deudas">Salir de deudas<small>Bola de nieve o avalancha</small></a><!--/herramientas--></div>
+    </div>
+  </section>
+
+  <section class="bloque" id="las-30">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="antetitulo">Toda la guía, aquí mismo</div>
+        <h2>Las 30 reglas.</h2>
+        <p>Toca cada parte para abrirla. Si no tiene fuente, es mi opinión, y te lo digo.</p>
+      </div>
+      <details class="parte" open>
+        <summary><span class="parte-n">Parte 1</span><span class="parte-t">Dinero</span><span class="parte-c">12 reglas</span></summary>
+        <div class="rejilla-reglas"><article class="regla-g">
+          <div class="num">01</div>
+          <h3>Págate primero</h3>
+          <p>Antes de pagarle a nadie, apártate al menos el 10% de lo que ganas. No es lo que sobra al final del mes: es lo primero que sale.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Programa hoy una transferencia automática el día que cobras.</div>
+          <div class="fte">George S. Clason, El hombre más rico de Babilonia (1926)</div>
+        </article><article class="regla-g">
+          <div class="num">02</div>
+          <h3>La regla 50/30/20</h3>
+          <p>Divide lo que te queda después de impuestos en tres: 50% para lo necesario, 30% para lo que quieres y 20% para ahorro y deudas. Es un punto de partida, ajústalo a tu vida.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Saca tus tres porcentajes de este mes.</div>
+          <div class="fte">Elizabeth Warren y Amelia Warren Tyagi, All Your Worth (2005)</div>
+        </article><article class="regla-g">
+          <div class="num">03</div>
+          <h3>Fondo de emergencia primero</h3>
+          <p>Antes de invertir, junta de 3 a 6 meses de tus gastos fijos: vivienda, comida, salud y deudas. Es lo que te deja dormir tranquila cuando algo se rompe.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Calcula tus gastos fijos de un mes y multiplícalos por 3.</div>
+          <div class="fte">Recomendación de la CONDUSEF</div>
+        </article><article class="regla-g">
+          <div class="num">04</div>
+          <h3>Automatiza el ahorro</h3>
+          <p>Cuando el ahorro sucede solo, no depende de tu fuerza de voluntad. En el programa Save More Tomorrow, el ahorro automático subió la tasa de ahorro de los participantes de forma sostenida.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Que el ahorro salga solo, el mismo día que entra tu dinero.</div>
+          <div class="fte">Richard Thaler y Shlomo Benartzi, Save More Tomorrow, Journal of Political Economy (2004)</div>
+        </article><article class="regla-g">
+          <div class="num">05</div>
+          <h3>La regla del 72</h3>
+          <p>Divide 72 entre la tasa anual y sabrás en cuántos años se duplica tu dinero. Al 8% anual: unos 9 años. Al 4%: 18.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Haz la cuenta con la tasa de tu ahorro actual.</div>
+          <div class="fte">Regla del 72, descrita por Luca Pacioli (1494)</div>
+        </article><article class="regla-g">
+          <div class="num">06</div>
+          <h3>El tiempo pesa más que el monto</h3>
+          <p>Mil pesos al mes durante 30 años, con un rendimiento hipotético de 8% anual, suman cerca de 1.49 millones; tú habrías puesto 360 mil. Es un ejemplo matemático, no una promesa de rendimiento.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Empieza con poco, pero empieza este mes.</div>
+          <div class="fte">Cálculo de interés compuesto mensual (ejemplo ilustrativo)</div>
+        </article><article class="regla-g">
+          <div class="num">07</div>
+          <h3>La riqueza es lo que no ves</h3>
+          <p>Ser rico no es lo que presumes: es el coche que no compraste y el lujo que no subiste a redes. Lo que gastas para aparentar es justo lo que no se queda contigo.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Antes de tu próxima compra grande, pregúntate para quién es.</div>
+          <div class="fte">Morgan Housel, La psicología del dinero (2020)</div>
+        </article><article class="regla-g">
+          <div class="num">08</div>
+          <h3>Los primeros 100 mil son los más difíciles</h3>
+          <p>Juntar el primer capital cuesta más que todo lo que viene después, porque al principio solo trabaja tu esfuerzo. Después, el dinero empieza a trabajar contigo.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Ponle fecha a tu primer capital.</div>
+          <div class="fte">Charlie Munger (frase pública atribuida)</div>
+        </article><article class="regla-g">
+          <div class="num">09</div>
+          <h3>Paga el total de la tarjeta</h3>
+          <p>Si pagas solo el mínimo, la deuda tarda años en bajar y terminas pagando mucho más en intereses. La tarjeta es un medio de pago, no un ingreso extra.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Revisa en tu estado de cuenta cuánto tardarías pagando solo el mínimo.</div>
+          <div class="fte">CONDUSEF, recomendaciones sobre tarjetas de crédito</div>
+        </article><article class="regla-g">
+          <div class="num">10</div>
+          <h3>Bola de nieve o avalancha</h3>
+          <p>Para salir de deudas: paga primero la más chica para ganar impulso (bola de nieve) o la de interés más alto para pagar menos (avalancha). Lo importante es elegir un método y no soltarlo.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Haz la lista de tus deudas con saldo y tasa.</div>
+          <div class="fte">Método bola de nieve popularizado por Dave Ramsey; avalancha: orden por tasa</div>
+        </article><article class="regla-g">
+          <div class="num">11</div>
+          <h3>Cuidado con la inflación de tu estilo de vida</h3>
+          <p>Nos acostumbramos rápido a lo nuevo: cada aumento de sueldo se vuelve normal y el gasto sube con él. Por eso ganar más no siempre se nota.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Del próximo aumento, ahorra al menos la mitad.</div>
+          <div class="fte">Brickman y Campbell, adaptación hedónica (1971)</div>
+        </article><article class="regla-g">
+          <div class="num">12</div>
+          <h3>El efecto Diderot</h3>
+          <p>Una compra nueva hace que lo demás se vea viejo, y una compra lleva a otra. Diderot estrenó una bata elegante y terminó cambiando todo su estudio.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Antes de comprar, piensa qué más vas a querer cambiar después.</div>
+          <div class="fte">Grant McCracken, Culture and Consumption (1988), sobre el ensayo de Denis Diderot</div>
+        </article></div>
+      </details><details class="parte">
+        <summary><span class="parte-n">Parte 2</span><span class="parte-t">Decisiones e inversión</span><span class="parte-c">8 reglas</span></summary>
+        <div class="rejilla-reglas"><article class="regla-g">
+          <div class="num">13</div>
+          <h3>Regla número 1: no pierdas dinero</h3>
+          <p>Regla número uno: no pierdas dinero. Regla número dos: no olvides la número uno. Antes de buscar cuánto puedes ganar, entiende cuánto puedes perder.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>No metas dinero en algo que no sabes explicar en una frase.</div>
+          <div class="fte">Warren Buffett (frase pública)</div>
+        </article><article class="regla-g">
+          <div class="num">14</div>
+          <h3>Tu círculo de competencia</h3>
+          <p>No tienes que saber de todo; tienes que saber dónde están los límites de lo que sí entiendes y quedarte dentro.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Escribe los tres temas que de verdad dominas.</div>
+          <div class="fte">Warren Buffett, carta a los accionistas de Berkshire Hathaway (1996)</div>
+        </article><article class="regla-g">
+          <div class="num">15</div>
+          <h3>No pongas todo en un solo lugar</h3>
+          <p>Repartir el riesgo entre cosas que no se mueven igual reduce la probabilidad de perderlo todo de golpe. Es el principio detrás de la diversificación.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Revisa si tu dinero depende de una sola cosa.</div>
+          <div class="fte">Harry Markowitz, teoría moderna de portafolios (1952)</div>
+        </article><article class="regla-g">
+          <div class="num">16</div>
+          <h3>Perder duele el doble</h3>
+          <p>Una pérdida nos duele alrededor del doble de lo que nos alegra una ganancia del mismo tamaño. Por eso vendemos con pánico y nos aferramos a lo que no funciona.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Decide tus reglas de salida antes de entrar, no en caliente.</div>
+          <div class="fte">Kahneman y Tversky, teoría de las perspectivas (1979 y 1992)</div>
+        </article><article class="regla-g">
+          <div class="num">17</div>
+          <h3>Lo que ya gastaste no vuelve</h3>
+          <p>Seguir en algo solo porque ya le invertiste tiempo o dinero es el sesgo del costo hundido. La pregunta correcta es si hoy, empezando de cero, lo volverías a elegir.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Revisa un proyecto que mantienes solo por lo que ya gastaste.</div>
+          <div class="fte">Arkes y Blumer, The Psychology of Sunk Cost (1985)</div>
+        </article><article class="regla-g">
+          <div class="num">18</div>
+          <h3>Todo tiene un costo de oportunidad</h3>
+          <p>Cada peso y cada hora que pones en algo es un peso y una hora que no pones en otra cosa. Decidir bien es comparar contra tu mejor alternativa, no contra nada.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>En tu próxima decisión, escribe cuál es la alternativa que dejas.</div>
+          <div class="fte">Concepto básico de economía</div>
+        </article><article class="regla-g">
+          <div class="num">19</div>
+          <h3>El primer número manda</h3>
+          <p>En una negociación, la primera cifra que se dice se vuelve el ancla de todo lo demás. Quien la pone, suele mover la conversación a su favor.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Llega a tu próxima negociación con tu número preparado.</div>
+          <div class="fte">Tversky y Kahneman, anclaje, Science (1974)</div>
+        </article><article class="regla-g">
+          <div class="num">20</div>
+          <h3>Minimiza arrepentimientos, no riesgos</h3>
+          <p>Imagínate a los 80 años mirando atrás. ¿Te arrepentirías de no haberlo intentado? Así decidió Jeff Bezos dejar su trabajo y fundar Amazon.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Haz esa pregunta sobre la decisión que llevas posponiendo.</div>
+          <div class="fte">Jeff Bezos, marco de minimización del arrepentimiento (entrevistas públicas)</div>
+        </article></div>
+      </details><details class="parte">
+        <summary><span class="parte-n">Parte 3</span><span class="parte-t">Negocio y productividad</span><span class="parte-c">6 reglas</span></summary>
+        <div class="rejilla-reglas"><article class="regla-g">
+          <div class="num">21</div>
+          <h3>El 20% que importa</h3>
+          <p>Muchas veces, alrededor del 80% de los resultados sale del 20% de las causas: clientes, productos o tareas. Encuentra tu 20% y cuídalo como oro.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Ordena tus clientes por lo que te dejan y mira quién está arriba.</div>
+          <div class="fte">Vilfredo Pareto; Richard Koch, El principio 80/20</div>
+        </article><article class="regla-g">
+          <div class="num">22</div>
+          <h3>Vende tu porqué</h3>
+          <p>La gente no compra lo que haces, compra por qué lo haces. Antes de vender tu producto, explica en una frase por qué existe.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Escribe el porqué de tu negocio en 15 palabras.</div>
+          <div class="fte">Simon Sinek, Empieza con el porqué (TED, 2009)</div>
+        </article><article class="regla-g">
+          <div class="num">23</div>
+          <h3>La ley de Parkinson</h3>
+          <p>El trabajo se expande hasta llenar el tiempo que le das. Si te das una semana, tardas una semana.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Dale a tu próximo proyecto la mitad del tiempo y mira qué pasa.</div>
+          <div class="fte">C. Northcote Parkinson, The Economist (1955)</div>
+        </article><article class="regla-g">
+          <div class="num">24</div>
+          <h3>La regla de los 2 minutos</h3>
+          <p>Si algo toma menos de dos minutos, hazlo ya. Lo pequeño que pospones es lo que más te roba la cabeza.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Saca ahora tres pendientes de menos de dos minutos.</div>
+          <div class="fte">David Allen, Organízate con eficacia (Getting Things Done)</div>
+        </article><article class="regla-g">
+          <div class="num">25</div>
+          <h3>Trágate el sapo</h3>
+          <p>Haz primero lo que más te cuesta. Después de eso, el resto del día es pura ganancia.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Elige esta noche el sapo de mañana.</div>
+          <div class="fte">Brian Tracy, ¡Tráguese ese sapo!</div>
+        </article><article class="regla-g">
+          <div class="num">26</div>
+          <h3>Mejora 1% cada día</h3>
+          <p>Si mejoras 1% diario durante un año, terminas unas 37 veces mejor (1.01 elevado a 365). Si empeoras 1% diario, casi llegas a cero.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Elige un hábito y súbelo 1% mañana.</div>
+          <div class="fte">James Clear, Hábitos Atómicos</div>
+        </article></div>
+      </details><details class="parte">
+        <summary><span class="parte-n">Parte 4</span><span class="parte-t">Mente fuerte</span><span class="parte-c">4 reglas</span></summary>
+        <div class="rejilla-reglas"><article class="regla-g">
+          <div class="num">27</div>
+          <h3>Lo pendiente no te deja dormir</h3>
+          <p>La mente sigue dándole vueltas a lo que dejaste a medias. Escribir el siguiente paso de una tarea ayuda a soltarla.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Antes de dormir, anota el siguiente paso de tu pendiente más grande.</div>
+          <div class="fte">Bluma Zeigarnik (1927); Masicampo y Baumeister (2011)</div>
+        </article><article class="regla-g">
+          <div class="num">28</div>
+          <h3>Escribe lo que te preocupa</h3>
+          <p>Escribir sobre lo que te preocupa durante unos 15 minutos ayuda a aligerar la mente. James Pennebaker lo estudió por décadas.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Esta noche: papel, pluma y quince minutos para ti.</div>
+          <div class="fte">James W. Pennebaker, investigación sobre escritura expresiva</div>
+        </article><article class="regla-g">
+          <div class="num">29</div>
+          <h3>El suspiro cíclico</h3>
+          <p>Dos inhalaciones por la nariz y una exhalación larga por la boca, cinco minutos al día. En un estudio de Stanford mejoró el ánimo más que la meditación de atención plena.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Pruébalo ahora, antes de tu siguiente pendiente.</div>
+          <div class="fte">Balban et al., Cell Reports Medicine (2023)</div>
+        </article><article class="regla-g">
+          <div class="num">30</div>
+          <h3>Las relaciones son la inversión</h3>
+          <p>El estudio de Harvard sobre la vida adulta lleva más de 80 años. Su conclusión: las buenas relaciones nos hacen más felices y más sanos.</p>
+          <div class="hazlo"><span>Hazlo hoy</span>Llama hoy a alguien que te importa.</div>
+          <div class="fte">Harvard Study of Adult Development (desde 1938), Robert Waldinger</div>
+        </article></div>
+      </details>
+      <div class="franja-descarga">
+        <div><h3>Llévatela en tu celular.</h3><p>El PDF de 46 páginas, una regla por página, para leerla sin internet.</p></div>
+        <a class="boton grande" href="/guia/las-30-reglas-de-la-ceo.pdf" data-guia download>Descargar gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque azul" id="tablero">
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="antetitulo">Para ponerlo en práctica</div>
+        <h2>El tablero de la CEO.</h2>
+        <p>Las reglas, con tus números: presupuesto 50/30/20, fondo de emergencia, deudas, interés compuesto y metas, todo calculado solo.</p>
+      </div>
+      <div class="producto">
+        <div class="vitrina"><img src="/img/tablero.jpg" alt="El tablero de la CEO: plantilla de finanzas personales en Excel y Google Sheets" width="900" height="900" loading="lazy"></div>
+        <div class="caja-venta">
+          <h3>Todo lo que trae</h3>
+          <ul>
+            <li>Presupuesto 50/30/20 que se calcula solo</li>
+            <li>Págate primero, mes a mes</li>
+            <li>Fondo de emergencia con meta y avance</li>
+            <li>Deudas: orden bola de nieve y avalancha</li>
+            <li>Interés compuesto y regla del 72</li>
+            <li>Metas con lo que tienes que apartar al mes</li>
+          </ul>
+          <div id="venta"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <div>
+        <div class="logo"><i>V</i><span>Victoria <b>The CEO</b></span></div>
+        Victoria es un personaje creado con inteligencia artificial. Contenido educativo: no es asesoría financiera, legal ni de inversión.
+        Los temas de bienestar no sustituyen la ayuda de un profesional de la salud.
+      </div>
+      <div><h4>Calculadoras</h4><nav><a href="/aguinaldo">Aguinaldo 2026</a><a href="/finiquito">Finiquito</a><a href="/te-alcanza-tu-sueldo">¿Te alcanza tu sueldo?</a><a href="/pagar-deudas">Salir de deudas</a></nav></div>
+      <div><h4>Victoria</h4><nav><a href="/reglas">Guía gratis</a><a href="/#tablero">Plantilla</a><a href="https://www.youtube.com/@victoriatheceo">YouTube</a><a href="https://www.instagram.com/victoriatheceo">Instagram</a><a href="https://www.tiktok.com/@victoriatheceo">TikTok</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="/comun.js"></script>
+  <script>
+    document.querySelectorAll('[data-guia]').forEach((a) => { a.href = `/guia/las-30-reglas-de-la-ceo.pdf?ref=${encodeURIComponent(REF)}`; });
+    bloqueVenta(document.getElementById('venta'), 'reglas');
+    document.querySelector('#venta .boton').textContent = 'La quiero';
+  </script>
+</body>
+</html>
