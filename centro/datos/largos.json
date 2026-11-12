@@ -77,8 +77,18 @@
   "estado": "produciendo",
   "publica_utc": "2026-11-12T16:00:00Z",
   "youtube": "",
-  "duracion_min": null,
-  "capitulos": [],
+  "duracion_min": 6.7,
+  "capitulos": [
+   "0:00 Intro",
+   "0:09 Las fechas",
+   "0:23 5 creencias, verificadas",
+   "2:18 Cómo revisar un precio",
+   "3:09 Meses sin intereses: cuándo sí",
+   "4:00 Si no te respetan la oferta",
+   "4:50 Compras en línea",
+   "5:23 Mis 5 sí y 5 no",
+   "6:32 Cierre"
+  ],
   "segmentos": 33,
   "tomas_victoria": 17,
   "miniaturas": [

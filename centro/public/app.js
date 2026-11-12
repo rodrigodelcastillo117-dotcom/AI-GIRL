@@ -272,6 +272,7 @@ function dibujarTodo() {
   dibujarCalendario(FOTO.calendario);
   dibujarLargos(FOTO.largos);
   dibujarSalud(estado.salud);
+  dibujarPublicaciones();
   dibujarMetas();
   dibujarDespegues();
   dibujarAudiencia();
@@ -502,7 +503,8 @@ function dibujarTablas(videos, ejecuciones) {
 // ---------- navegación y efectos ----------
 function armarNavegacion() {
   // Una pastilla por sección, tomada de la propia página; marca en cuál vas.
-  const secciones = [...document.querySelectorAll('main .seccion')];
+  // solo las visibles: la vista esencial oculta lo .extra (12-nov-2026)
+  const secciones = [...document.querySelectorAll('main .seccion')].filter((s) => getComputedStyle(s).display !== 'none');
   const nav = $('navegacion');
   const botones = secciones.map((sec, i) => {
     sec.id ||= `seccion-${i + 1}`;
@@ -812,6 +814,50 @@ function pintarReplicate() {
   if (window.d3 && $('g-replicate')) barras($('g-replicate'), (rep?.por_dia || []).map((d) => ({k: d.dia.slice(5), v: d.victoria + d.otro})), {color: ORO, formato: usd});
 }
 
+// Vistas POR PUBLICACIÓN y POR RED, con lo ganado en las últimas 24 h (Rodrigo, 12-nov-2026: "las vistas son totales,
+// no por día ni por video ni por red"). Datos de la medición diaria (estado.publicaciones); se ordena tocando la columna.
+let ORDEN_PUB = 'total', VER_TODAS_PUB = false;
+function dibujarPublicaciones() {
+  const cuerpo = $('t-publicaciones');
+  if (!cuerpo) return;
+  const lista = [...(FOTO.estado?.publicaciones || [])];
+  const valor = (x) => (ORDEN_PUB === 'total' ? x.total : ORDEN_PUB === '24h' ? (x.ultimas_24h ? Object.values(x.ultimas_24h).reduce((a, b) => a + b, 0) : -1)
+    : ORDEN_PUB === 'dia' ? x.por_dia : x.por_red[ORDEN_PUB] ?? -1);
+  lista.sort((a, b) => valor(b) - valor(a));
+  const mejor = Object.fromEntries(['tt', 'ig', 'yt', 'fb'].map((r) => [r, Math.max(0, ...lista.map((x) => x.por_red[r] || 0))]));
+  const visibles = VER_TODAS_PUB ? lista : lista.slice(0, 10);
+  cuerpo.replaceChildren(...visibles.map((x) => {
+    const d24 = x.ultimas_24h ? Object.values(x.ultimas_24h).reduce((a, b) => a + b, 0) : null;
+    const celda = (r) => {
+      const v = x.por_red[r];
+      const td = crear('td', {className: 'n', textContent: v == null ? '·' : compacto(v)});
+      if (v && v === mejor[r]) td.style.color = ORO;
+      const g = x.ultimas_24h?.[r];
+      if (g) td.append(crear('small', {textContent: ` +${compacto(g)}`, style: 'color:#3ddc84;display:block'}));
+      return td;
+    };
+    return crear('tr', {},
+      crear('td', {}, crear('small', {className: 'nota', textContent: `${x.tipo} ${x.id} · `}), crear('span', {textContent: x.titulo})),
+      celda('tt'), celda('ig'), celda('yt'), celda('fb'),
+      crear('td', {className: 'n', textContent: compacto(x.total), style: 'font-weight:700'}),
+      crear('td', {className: 'n', textContent: d24 == null ? '—' : `+${compacto(d24)}`, style: d24 ? 'color:#3ddc84' : ''}),
+      crear('td', {className: 'n', textContent: compacto(x.por_dia)}));
+  }));
+  if (lista.length > 10) {
+    const boton = crear('button', {type: 'button', className: 'resp-copiar', textContent: VER_TODAS_PUB ? 'Ver solo las 10 primeras' : `Ver las ${lista.length}`});
+    boton.onclick = () => { VER_TODAS_PUB = !VER_TODAS_PUB; dibujarPublicaciones(); };
+    cuerpo.append(crear('tr', {}, crear('td', {colSpan: 8, style: 'text-align:center'}, boton)));
+  }
+  const hora = FOTO.estado?.publicaciones?.[0]?.medido_utc;
+  if ($('pub-nota') && hora) $('pub-nota').textContent = `Medido ${mx(hora)}. En verde: lo que ganó en las últimas 24 h. En dorado: la mejor de cada red. Toca una columna para ordenar.`;
+}
+document.addEventListener('click', (e) => {
+  const th = e.target.closest('th[data-orden]');
+  if (!th) return;
+  ORDEN_PUB = th.dataset.orden;
+  dibujarPublicaciones();
+});
+
 // Salud del sistema (12-nov-2026, Rodrigo: "déjame todo fluyendo, sin errores"): scripts/salud.py en la rutina diaria.
 // Llaves, saldo de Replicate, huecos del calendario, largos y recortes pendientes. Alertas primero.
 function dibujarSalud(salud) {
@@ -822,9 +868,16 @@ function dibujarSalud(salud) {
   const color = {ok: '#3ddc84', aviso: ORO, alerta: ROJO};
   const nombre = {ok: 'Todo fluye', aviso: 'Atender hoy', alerta: 'Algo se cae'};
   const orden = (c) => ['alerta', 'aviso', 'ok'].indexOf(c.estado);
-  const filas = [...checks].sort((a, b) => orden(a) - orden(b)).map((c) => crear('li', {style: 'margin:6px 0;list-style:none'},
+  const fila = (c) => crear('li', {style: 'margin:6px 0;list-style:none'},
     crear('span', {textContent: '● ', style: `color:${color[c.estado]}`}),
-    crear('b', {textContent: `${c.area}: `}), crear('span', {textContent: c.detalle})));
+    crear('b', {textContent: `${c.area}: `}), crear('span', {textContent: c.detalle}));
+  // Lo que falla, a la vista; lo que está bien, plegado (el panel debe ser corto).
+  const malos = [...checks].filter((c) => c.estado !== 'ok').sort((a, b) => orden(a) - orden(b));
+  const buenos = checks.filter((c) => c.estado === 'ok');
+  const filas = [...malos.map(fila)];
+  if (buenos.length) filas.push(crear('li', {style: 'list-style:none;margin-top:8px'}, crear('details', {},
+    crear('summary', {textContent: `✓ ${buenos.length} cosas en orden (toca para ver)`, style: 'cursor:pointer;color:#3ddc84'}),
+    crear('ul', {style: 'padding:0;margin:6px 0 0'}, ...buenos.map(fila)))));
   caja.replaceChildren(crear('article', {className: 'panel', style: 'grid-column:1/-1'},
     crear('div', {className: 'codigo', textContent: 'SYS-00'}),
     crear('h2', {textContent: nombre[salud.estado] || 'Salud', style: `color:${color[salud.estado] || ''}`}),

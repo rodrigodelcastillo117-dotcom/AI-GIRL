@@ -93,6 +93,37 @@
       <div class="seccion">Salud del sistema <small>¿todo fluye? · chequeo diario</small></div>
       <section class="rejilla-paneles" id="salud"></section>
 
+      <div class="seccion">Vistas <small>por día, por red y por publicación</small></div>
+      <section class="rejilla-paneles">
+        <article class="panel ancho">
+          <div class="codigo">EVO-00 · MEJORA</div>
+          <h2>¿Vamos mejor que la semana pasada?</h2>
+          <p class="nota">Vistas ganadas en los últimos 7 días contra los 7 anteriores, por red. Y abajo, las vistas nuevas de cada día.</p>
+          <div class="kpis-mejora" id="mejora-semana"></div>
+          <div class="leyenda leyenda-redes"></div>
+          <div class="grafica" id="g-diario"></div>
+          <div class="extra">
+          <h3 class="sub">Bitácora: qué cambiamos y qué pasó</h3>
+          <p class="nota">Promedio de vistas nuevas por día en la red que se quería mover: 3 días antes del cambio contra 3 días después.</p>
+          <div class="bitacora" id="bitacora"></div>
+          <h3 class="sub">Muse (la IA de Meta)</h3>
+          <p class="nota">Una vez por semana: copia el reporte, pégalo en Muse y pégale a Claude lo que conteste. Claude decide qué se aplica y lo mide aquí.</p>
+          <button type="button" class="resp-copiar" id="copiar-muse">Copiar reporte para Muse</button>
+          <details class="vista-muse"><summary>Ver el reporte</summary><pre id="texto-muse"></pre></details>
+          </div>
+        </article>
+        <article class="panel ancho">
+          <div class="codigo">PUB-01 · VIDEO POR VIDEO</div>
+          <h2>Vistas por publicación y por red</h2>
+          <p class="nota" id="pub-nota">Cada publicación con sus vistas en cada red. En verde lo que ganó en las últimas 24 h.</p>
+          <div class="caja-tabla"><table>
+            <thead><tr><th>Publicación</th><th class="n" data-orden="tt" style="cursor:pointer">TikTok</th><th class="n" data-orden="ig" style="cursor:pointer">Instagram</th><th class="n" data-orden="yt" style="cursor:pointer">YouTube</th><th class="n" data-orden="fb" style="cursor:pointer">Facebook</th><th class="n" data-orden="total" style="cursor:pointer">Total</th><th class="n" data-orden="24h" style="cursor:pointer">24 h</th><th class="n" data-orden="dia" style="cursor:pointer">Por día</th></tr></thead>
+            <tbody id="t-publicaciones"></tbody>
+          </table></div>
+        </article>
+      </section>
+
+
       <div class="seccion">Centro de operaciones <small>datos reales · se actualiza solo cada minuto</small></div>
       <section class="ops aparece">
         <article class="panel hud">
@@ -121,10 +152,10 @@
         <div class="respuestas" id="respuestas"></div>
       </details>
 
-      <div class="seccion">Redes en vivo <small>se actualiza cada minuto</small></div>
-      <section class="redes" id="redes"></section>
+      <div class="extra seccion">Redes en vivo <small>se actualiza cada minuto</small></div>
+      <section class="extra redes" id="redes"></section>
 
-      <section class="mosaicos aparece">
+      <section class="extra mosaicos aparece">
         <div class="mosaico oro"><div class="lbl">Suscriptores YouTube</div><div class="val" id="m-subs">—</div><div class="sub">en vivo</div></div>
         <div class="mosaico"><div class="lbl">Likes totales</div><div class="val" id="m-likes">—</div><div class="sub">todas las redes</div></div>
         <div class="mosaico"><div class="lbl">Calidad promedio</div><div class="val" id="m-calidad">—</div><div class="sub">audio contra guion</div></div>
@@ -133,8 +164,8 @@
         <div class="mosaico oro"><div class="lbl">Lecciones</div><div class="val" id="m-lecciones">—</div><div class="sub">aplicadas a cada video</div></div>
       </section>
 
-      <div class="seccion">Dinero <small>ventas reales de Hotmart · qué red vende</small></div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Dinero <small>ventas reales de Hotmart · qué red vende</small></div>
+      <section class="extra rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">USD-01</div>
           <h2>Ventas por red</h2>
@@ -144,8 +175,8 @@
         </article>
       </section>
 
-      <div class="seccion">Sistema de energía</div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Sistema de energía</div>
+      <section class="extra rejilla-paneles">
         <article class="panel">
           <div class="codigo">PWR-01</div>
           <h2>Reactor de créditos</h2>
@@ -185,35 +216,16 @@
       <div class="seccion">Videos largos de YouTube</div>
       <section class="rejilla-paneles" id="largos"></section>
 
-      <div class="seccion">Hangar</div>
-      <article class="panel">
+      <div class="extra seccion">Hangar</div>
+      <article class="extra panel">
         <div class="codigo">VID-01</div>
         <h2>Videos de Victoria</h2>
         <p class="nota">Primero lo que viene, luego lo más reciente, con sus vistas en vivo. Desliza para ver más.</p>
         <div class="hangar" id="hangar"></div>
       </article>
 
-      <div class="seccion">Mejora día a día <small>vistas nuevas por día y por red · qué cambiamos y qué pasó</small></div>
-      <section class="rejilla-paneles">
-        <article class="panel ancho">
-          <div class="codigo">EVO-00 · MEJORA</div>
-          <h2>¿Vamos mejor que la semana pasada?</h2>
-          <p class="nota">Vistas ganadas en los últimos 7 días contra los 7 anteriores, por red. Y abajo, las vistas nuevas de cada día.</p>
-          <div class="kpis-mejora" id="mejora-semana"></div>
-          <div class="leyenda leyenda-redes"></div>
-          <div class="grafica" id="g-diario"></div>
-          <h3 class="sub">Bitácora: qué cambiamos y qué pasó</h3>
-          <p class="nota">Promedio de vistas nuevas por día en la red que se quería mover: 3 días antes del cambio contra 3 días después.</p>
-          <div class="bitacora" id="bitacora"></div>
-          <h3 class="sub">Muse (la IA de Meta)</h3>
-          <p class="nota">Una vez por semana: copia el reporte, pégalo en Muse y pégale a Claude lo que conteste. Claude decide qué se aplica y lo mide aquí.</p>
-          <button type="button" class="resp-copiar" id="copiar-muse">Copiar reporte para Muse</button>
-          <details class="vista-muse"><summary>Ver el reporte</summary><pre id="texto-muse"></pre></details>
-        </article>
-      </section>
-
-      <div class="seccion">Evolución</div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Evolución</div>
+      <section class="extra rejilla-paneles">
         <article class="panel">
           <div class="codigo">EVO-01</div>
           <h2>Calidad video a video</h2>
@@ -230,8 +242,8 @@
         </article>
       </section>
 
-      <div class="seccion">Qué funciona <small>horas, temas, días y audiencia</small></div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Qué funciona <small>horas, temas, días y audiencia</small></div>
+      <section class="extra rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">RDR-01</div>
           <h2>Mapa de mejores horas</h2>
@@ -274,13 +286,13 @@
             <tbody id="t-calendario"></tbody>
           </table></div>
         </article>
-        <article class="panel ancho">
+        <article class="panel ancho extra">
           <div class="codigo">CAL-02</div>
           <h2>Mejor hora y día por red</h2>
           <p class="nota">Cada red rota por 5 horarios hasta tener 4 publicaciones en cada uno. Índice 1.0 = lo normal en esa red (videos y carruseles, cada uno contra su propio promedio). Gana el horario que rinde 20% más que el segundo; después se usa 4 de cada 5 veces.</p>
           <div class="horarios-red" id="horarios-red"></div>
         </article>
-        <article class="panel ancho">
+        <article class="panel ancho extra">
           <div class="codigo">CAR-01</div>
           <h2>Carruseles</h2>
           <p class="nota">TikTok en fotos con su música; Instagram, Facebook y YouTube como video con voz. Vistas en vivo por red.</p>
@@ -291,8 +303,8 @@
         </article>
       </section>
 
-      <div class="seccion">Laboratorio <small>qué funciona y qué no · se recalcula cada mañana</small></div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Laboratorio <small>qué funciona y qué no · se recalcula cada mañana</small></div>
+      <section class="extra rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">LAB-01</div>
           <h2>Decisión de hoy</h2>
@@ -300,10 +312,10 @@
           <div class="decision" id="decision"></div>
         </article>
       </section>
-      <section class="rejilla-paneles" id="laboratorio"></section>
+      <section class="extra rejilla-paneles" id="laboratorio"></section>
 
-      <div class="seccion">Inteligencia</div>
-      <section class="rejilla-paneles">
+      <div class="extra seccion">Inteligencia</div>
+      <section class="extra rejilla-paneles">
         <article class="panel">
           <div class="codigo">INT-01</div>
           <h2>Qué hacer ahora</h2>
@@ -318,7 +330,7 @@
         </article>
       </section>
 
-      <section class="rejilla-paneles">
+      <section class="extra rejilla-paneles">
         <article class="panel ancho">
           <div class="codigo">OPS-01</div>
           <h2>Plan de vuelo</h2>
@@ -338,6 +350,7 @@
           </table></div>
         </article>
       </section>
+      <p class="nota" style="text-align:center;margin:24px 0"><a href="/completo.html">Ver el panel completo (horas, temas, créditos, laboratorio, bitácora) →</a></p>
     </main>
     <footer class="pie" id="pie">—</footer>
   </div>

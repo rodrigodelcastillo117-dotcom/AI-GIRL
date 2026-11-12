@@ -417,6 +417,42 @@ def series_reales(plan, carruseles):
             [{'fecha': f, **v} for f, v in sorted(por_red.items())])
 
 
+def publicaciones_vistas(plan, carruseles):
+    """Vistas de CADA publicación por red y cuántas ganó en las últimas ~24 h (Rodrigo, 12-nov-2026: "las vistas son
+    totales, no por día ni por video ni por red"). Sale de contenido/metricas.json (la medición de aprender.py)."""
+    try:
+        historial = sorted(json.load(open(os.path.join(RAIZ, 'contenido', 'metricas.json'))), key=lambda f: f['fecha_utc'])
+    except (OSError, ValueError):
+        return []
+    nombres = {}
+    for v in plan['videos']:
+        nombres[v['id']] = ('Video', (v.get('seo') or {}).get('titulo') or v.get('texto_pantalla') or primera_linea(v.get('texto_post')) or v['id'])
+    for c in carruseles:
+        nombres[c['id']] = ('Carrusel', (c.get('seo') or {}).get('titulo') or c.get('titulo_post') or c.get('tema') or c['id'])
+    for r in json.load(open(os.path.join(RAIZ, 'contenido', 'recortes.json'))) if os.path.exists(os.path.join(RAIZ, 'contenido', 'recortes.json')) else []:
+        nombres[r['id']] = ('Recorte', r.get('titulo') or r['id'])
+    fotos = {}
+    for f in historial:
+        fotos.setdefault(f['video_id'], []).append(f)
+    salida = []
+    for vid, lista in fotos.items():
+        ultima = lista[-1]
+        t = datetime.datetime.fromisoformat(ultima['fecha_utc'].replace('Z', '+00:00'))
+        # la medición más cercana a 24 h antes de la última (entre 12 y 36 h); si no hay, no se inventa el dato
+        antes = [f for f in lista[:-1] if 12 <= (t - datetime.datetime.fromisoformat(f['fecha_utc'].replace('Z', '+00:00'))).total_seconds() / 3600 <= 36]
+        previa = antes[-1] if antes else None
+        por_red = {r: de_red(ultima, r) for r in ('tt', 'ig', 'yt', 'fb') if r in ultima or (r == 'ig' and 'igr' in ultima)}
+        dia = {r: max(0, por_red[r] - de_red(previa, r)) for r in por_red} if previa else None
+        tipo, titulo = nombres.get(vid, ('', vid))
+        # horas desde que salió en su PRIMERA red (cada red guarda su 'h'); 'horas' de la foto es solo de la última red
+        horas = max([ultima.get('horas') or 0] + [(ultima.get(r) or {}).get('h') or 0 for r in ('tt', 'ig', 'igr', 'yt', 'fb')])
+        total = sum(por_red.values())
+        salida.append({'id': vid, 'tipo': tipo, 'titulo': str(titulo)[:80], 'por_red': por_red, 'total': total,
+                       'ultimas_24h': dia, 'horas': horas, 'por_dia': round(total / max(horas / 24, 1)),
+                       'medido_utc': ultima['fecha_utc']})
+    return sorted(salida, key=lambda x: -x['total'])
+
+
 def main():
     plan = json.load(open(os.path.join(RAIZ, 'contenido', 'plan.json')))
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
@@ -552,6 +588,7 @@ def main():
         'foto_perfil': foto,
         'replicate': replicate_resumen(),
         'salud': _json_o('salud.json', {}),
+        'publicaciones': publicaciones_vistas(plan, cargar_carruseles()),
     }])
 
 

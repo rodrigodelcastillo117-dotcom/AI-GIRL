@@ -52,7 +52,7 @@
     "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (TikTok 09:00 · YouTube 12:00)"
    }
   ],
-  "generado_utc": "2026-11-12T03:58:53Z",
+  "generado_utc": "2026-11-12T04:12:46Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -478,30 +478,30 @@
   "replicate": {
    "saldo_base_usd": 30.68,
    "fecha_base_utc": "2026-11-12T03:12:10Z",
-   "saldo_estimado_usd": 14.6,
+   "saldo_estimado_usd": 14.24,
    "gastado_desde_base": {
-    "victoria": 14.46,
+    "victoria": 14.82,
     "otro": 1.62
    },
    "gastado_7_dias": {
-    "victoria": 14.46,
+    "victoria": 14.82,
     "otro": 1.62
    },
    "por_dia": [
     {
      "dia": "2026-11-12",
-     "victoria": 14.46,
+     "victoria": 14.82,
      "otro": 1.62
     }
    ],
    "por_modelo": {
-    "prunaai/p-video-avatar": 14.4,
+    "prunaai/p-video-avatar": 14.76,
     "minimax/speech-02-hd": 1.68
    },
    "costo_promedio_toma_usd": 0.23,
    "sin_precio": {},
    "incompleto": false,
-   "generado_utc": "2026-11-12T03:58:56Z",
+   "generado_utc": "2026-11-12T04:12:48Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
   },
   "salud": {
@@ -564,6 +564,450 @@
      "detalle": "4 videos de Victoria listos para publicar"
     }
    ]
-  }
+  },
+  "publicaciones": [
+   {
+    "id": "c16",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 en 5 datos para guardar 🔖",
+    "por_red": {
+     "tt": 3903,
+     "ig": 13,
+     "yt": 157,
+     "fb": 5
+    },
+    "total": 4078,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 10,
+     "fb": 0
+    },
+    "horas": 77.2,
+    "por_dia": 1268,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "01",
+    "tipo": "Video",
+    "titulo": "Mejorar 1% diario te hace 37 veces mejor 📈",
+    "por_red": {
+     "tt": 284,
+     "ig": 21,
+     "yt": 702
+    },
+    "total": 1007,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 314.5,
+    "por_dia": 77,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c01",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 cuánto te toca y su ISR 💸",
+    "por_red": {
+     "tt": 642,
+     "ig": 10,
+     "yt": 339
+    },
+    "total": 991,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 2
+    },
+    "horas": 251.2,
+    "por_dia": 95,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "02",
+    "tipo": "Video",
+    "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
+    "por_red": {
+     "tt": 112,
+     "ig": 40,
+     "yt": 674
+    },
+    "total": 826,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 274.3,
+    "por_dia": 72,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "17",
+    "tipo": "Video",
+    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+    "por_red": {
+     "tt": 103,
+     "ig": 33,
+     "yt": 548
+    },
+    "total": 684,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 12
+    },
+    "horas": 81.3,
+    "por_dia": 202,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c65",
+    "tipo": "Carrusel",
+    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
+    "por_red": {
+     "tt": 276,
+     "yt": 355
+    },
+    "total": 631,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 136
+    },
+    "horas": 33.2,
+    "por_dia": 456,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c03",
+    "tipo": "Carrusel",
+    "titulo": "Reglas de dinero de Buffett y Munger 💡",
+    "por_red": {
+     "tt": 525,
+     "ig": 59,
+     "yt": 37
+    },
+    "total": 621,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 295.7,
+    "por_dia": 50,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "37",
+    "tipo": "Video",
+    "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
+    "por_red": {
+     "tt": 182,
+     "ig": 34,
+     "yt": 383,
+     "fb": 7
+    },
+    "total": 606,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 7,
+     "fb": 0
+    },
+    "horas": 180.3,
+    "por_dia": 81,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c08",
+    "tipo": "Carrusel",
+    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
+    "por_red": {
+     "tt": 184,
+     "ig": 16,
+     "yt": 386
+    },
+    "total": 586,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 131.2,
+    "por_dia": 107,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c06",
+    "tipo": "Carrusel",
+    "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
+    "por_red": {
+     "tt": 355,
+     "ig": 46,
+     "yt": 140,
+     "fb": 1
+    },
+    "total": 542,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0,
+     "fb": 0
+    },
+    "horas": 198.3,
+    "por_dia": 66,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c66",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
+    "por_red": {
+     "tt": 93,
+     "yt": 424
+    },
+    "total": 517,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 78
+    },
+    "horas": 27.3,
+    "por_dia": 455,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c02",
+    "tipo": "Carrusel",
+    "titulo": "Consejos de dinero que sí funcionan 💰",
+    "por_red": {
+     "tt": 468,
+     "ig": 10,
+     "yt": 38
+    },
+    "total": 516,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 296.3,
+    "por_dia": 42,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "19",
+    "tipo": "Video",
+    "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
+    "por_red": {
+     "tt": 167,
+     "ig": 27,
+     "yt": 261,
+     "fb": 3
+    },
+    "total": 458,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1,
+     "fb": 0
+    },
+    "horas": 223.3,
+    "por_dia": 49,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c07",
+    "tipo": "Carrusel",
+    "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
+    "por_red": {
+     "tt": 266,
+     "ig": 16,
+     "yt": 61
+    },
+    "total": 343,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 156.2,
+    "por_dia": 53,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c11",
+    "tipo": "Carrusel",
+    "titulo": "Finiquito y liquidación, qué te toca 📄",
+    "por_red": {
+     "tt": 200,
+     "yt": 141
+    },
+    "total": 341,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 33
+    },
+    "horas": 55.2,
+    "por_dia": 148,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "38",
+    "tipo": "Video",
+    "titulo": "Meses sin intereses en el Buen Fin 💳",
+    "por_red": {
+     "tt": 197,
+     "ig": 22,
+     "yt": 113,
+     "fb": 1
+    },
+    "total": 333,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1,
+     "fb": 0
+    },
+    "horas": 125.3,
+    "por_dia": 64,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c13",
+    "tipo": "Carrusel",
+    "titulo": "Recibo de nómina y el subsidio 2026 🧾",
+    "por_red": {
+     "tt": 214,
+     "yt": 103
+    },
+    "total": 317,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 28
+    },
+    "horas": 51.3,
+    "por_dia": 148,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c09",
+    "tipo": "Carrusel",
+    "titulo": "Ahorro voluntario Afore y tus impuestos 🧾",
+    "por_red": {
+     "tt": 119,
+     "ig": 15,
+     "yt": 100
+    },
+    "total": 234,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 106.3,
+    "por_dia": 53,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c04",
+    "tipo": "Carrusel",
+    "titulo": "Lecciones de negocio que valen millones 💼",
+    "por_red": {
+     "tt": 170,
+     "yt": 63
+    },
+    "total": 233,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 171.3,
+    "por_dia": 33,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c12",
+    "tipo": "Carrusel",
+    "titulo": "Días de vacaciones por ley en 2026 🌴",
+    "por_red": {
+     "tt": 89,
+     "ig": 18,
+     "yt": 101,
+     "fb": 0
+    },
+    "total": 208,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 18,
+     "fb": 0
+    },
+    "horas": 59.2,
+    "por_dia": 84,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "O1",
+    "tipo": "Video",
+    "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
+    "por_red": {
+     "yt": 206
+    },
+    "total": 206,
+    "ultimas_24h": null,
+    "horas": 10.3,
+    "por_dia": 206,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c43",
+    "tipo": "Carrusel",
+    "titulo": "Repartir el aguinaldo si ganas $10,000 💰",
+    "por_red": {
+     "tt": 91,
+     "ig": 11,
+     "yt": 3,
+     "fb": 1
+    },
+    "total": 106,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0,
+     "fb": 0
+    },
+    "horas": 32.3,
+    "por_dia": 79,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c52",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
+    "por_red": {
+     "yt": 17
+    },
+    "total": 17,
+    "ultimas_24h": null,
+    "horas": 6.3,
+    "por_dia": 17,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   },
+   {
+    "id": "c27",
+    "tipo": "Carrusel",
+    "titulo": "Gastos en pareja proporcionales al sueldo 💑",
+    "por_red": {
+     "yt": 0
+    },
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 0.3,
+    "por_dia": 0,
+    "medido_utc": "2026-11-12T02:16:39Z"
+   }
+  ]
  }
 ]

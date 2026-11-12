@@ -549,3 +549,13 @@ h3.sub { font-family: var(--etiqueta); font-size: .72rem; letter-spacing: .16em;
 }
 /* Computadora y celular: el tipo y los números nunca se parten (11-nov-2026: "Faceb/ook", "1/0") */
 .caja-tabla td:nth-child(2), td.n, th.n { white-space: nowrap; }
+
+/* 12-nov-2026 (Rodrigo: "el dashboard es inmenso, quita lo que no es esencial"): la vista principal deja solo salud,
+   vistas (por día, red y publicación), metas, Comenta hoy, videos largos y calendario. Todo lo demás está en completo.html. */
+.esencial .extra { display: none !important; }
+#t-publicaciones td:first-child { min-width: 150px; max-width: 220px; white-space: normal; }
+@media (max-width: 600px) { #t-publicaciones td:first-child { min-width: 118px; max-width: 130px; font-size: .78rem; position: sticky; left: 0; background: #0b1620; z-index: 1; } #t-publicaciones td.n { padding-left: 8px; padding-right: 8px; } }
+@media (max-width: 600px) { table:has(#t-publicaciones) th { letter-spacing: 0; padding: 8px 6px; font-size: .62rem; } table:has(#t-publicaciones) td { padding: 8px 6px; } .caja-tabla:has(#t-publicaciones) { max-height: none; } }
+@media (max-width: 600px) { table:has(#t-publicaciones) { table-layout: fixed; width: 470px; } table:has(#t-publicaciones) th:first-child { width: 124px; } }
+@media (max-width: 760px) { .caja-tabla table:has(#t-publicaciones) { min-width: 0; width: 440px; } }
+@media (max-width: 600px) { #t-publicaciones td.n { font-size: .72rem; padding: 8px 3px; } #t-publicaciones td.n small { font-size: .62rem; } }
