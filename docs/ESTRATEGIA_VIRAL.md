@@ -310,3 +310,13 @@ Todo con datos comprobados en fuente oficial y segunda revisión, como siempre. 
 7. **Capital, el que cuida el dinero** (6/10). Remates cortos de Capital en los cierres ("Capital ya revisó su recibo: puras croquetas exentas"). Mascota = marca.
 
 Ritmo: cada día al menos una pieza de 1, 2 o 3. Formato Reel de texto (`reel_texto.py`, sin Replicate) para todo lo que no necesite que Victoria hable; los videos donde habla, solo para lo que más rinde, dentro del tope de Replicate.
+
+## Temas: de todo, no solo aguinaldo (Rodrigo, 12-nov-2026: "que hable de muchas cosas: éxito, consejos, parejas, finanzas, explicando qué es un estado de resultados, cómo leerlo, temas virales, cómo impactan los aranceles, el T-MEC, de todo")
+
+Pilares que rotan cada semana (todo con fuente oficial y segunda revisión; opiniones marcadas como opinión; nunca recomendaciones de inversión):
+1. **Dinero personal** (lo que ya funciona): aguinaldo, sueldo, renta, deudas, tarjetas, ahorro, Afore.
+2. **Negocios explicados fácil**: qué es un estado de resultados y cómo leerlo, balance general, flujo de efectivo, margen, punto de equilibrio, cómo cobrar, facturar, RESICO.
+3. **Economía que te pega**: aranceles y cómo suben precios, el T-MEC y su revisión, el tipo de cambio, la inflación, tasas de Banxico, el salario mínimo. Siempre con la noticia oficial del día y qué significa para tu bolsillo.
+4. **Éxito y mentalidad con números**: hábitos de dinero, negociar sueldo, pedir aumento, emprender sin quebrar.
+5. **Parejas y dinero**: quién paga, cuentas en pareja, bodas, divorcio y bienes.
+6. **Temas virales**: lo que esté en tendencia esa semana con un ángulo de dinero.

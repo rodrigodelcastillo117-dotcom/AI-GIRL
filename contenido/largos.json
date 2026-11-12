@@ -903,7 +903,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Para dos mil veintiséis, la UMA vale ciento diecisiete pesos por día, más treinta y un centavos.",
+    "voz": "Para dos mil veintiséis, mira bien el valor de la UMA por día, porque de ahí sale todo.",
     "puente": true
    },
    {
@@ -917,7 +917,7 @@
      "Es un tope por año, no por pago"
     ],
     "fuente": "INEGI, comunicado 1/26 (8-ene-2026); LISR art. 93 fr. XIV",
-    "voz": "Por treinta da tres mil quinientos diecinueve pesos con treinta centavos. Y ojo, la ley habla de las gratificaciones de todo el año, así que es un tope anual, no uno por cada pago."
+    "voz": "La UMA vale ciento diecisiete pesos con treinta y un centavos al día. Por treinta da tres mil quinientos diecinueve pesos con treinta centavos. Y ojo, la ley habla de las gratificaciones de todo el año, así que es un tope anual, no uno por cada pago."
    },
    {
     "tipo": "victoria",

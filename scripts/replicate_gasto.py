@@ -76,6 +76,12 @@ def freno(barato=False):
         c = (json.load(open(SALIDA)).get('control') or {}) if os.path.exists(SALIDA) else {}
     except (OSError, ValueError):
         return
+    # Excepción que SOLO Rodrigo autoriza por escrito: config.json → replicate.autorizaciones[<clave>] y la variable de
+    # entorno REPLICATE_AUTORIZACION=<clave> en la corrida. Vale mientras no esté "cerrada" (se cierra al terminar).
+    clave = os.environ.get('REPLICATE_AUTORIZACION')
+    aut = (cfg.get('autorizaciones') or {}).get(clave) if clave else None
+    if aut and not aut.get('cerrada'):
+        return
     if cfg.get('pausado'):
         sys.exit('FRENO DE REPLICATE: está en pausa (config.json → replicate.pausado). No se generó nada.')
     sem, tope_s = c.get('semana_usd') or 0, cfg.get('presupuesto_semanal_usd')

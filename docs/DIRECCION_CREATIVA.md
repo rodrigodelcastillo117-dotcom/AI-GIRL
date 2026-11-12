@@ -153,3 +153,13 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - **El audio del trend** se pone en la app al publicar (TikTok/Instagram, con su sonido en tendencia), nunca dentro del archivo.
 - **Realista**: lugar y ropa que tengan sentido para bailar (su sala, su terraza, la oficina después del trabajo); Capital solo si está en casa y a veces se suma moviendo la cola. Si el movimiento sale raro (piernas o manos deformes), se descarta.
 - Sale de los créditos de Everygen (nunca Replicate).
+
+## Repertorio completo: usar TODOS los lugares (Rodrigo, 12-nov-2026: "que esté en el yate, alberca, jacuzzi, montaña de esquiar, cancha de tenis, campo de golf, oficina, estadio, avión privado… hangar de helicóptero, un helicóptero, lobby, la calle, estudio de podcast, su sillón, su cuarto, ubicaciones TOP del mundo… usa TODOS")
+
+**Lugares (todos se usan, rotando, ninguno se repite seguido):** yate · alberca infinita · jacuzzi (elegante, nunca provocativo) · montaña de esquí · cancha de tenis · campo de golf · su oficina · estadio vacío en la yarda 50 · palco · avión privado · hangar de helicópteros · helicóptero · lobby de su edificio · la calle de su colonia · su estudio de podcast · su sillón · su cuarto · su cocina · su terraza · café · restaurante · bar · coche · y lugares TOP del mundo (París, Nueva York, Tokio, Dubái, Santorini, Mónaco, Aspen, Cancún, Tulum, la Ciudad de México en Reforma y Polanco…), siempre sin logos ni marcas.
+
+**Acciones con el fondo (que haga cosas):** maquillándose, tomando vino, cocinando, preparando café, brindando, leyendo, firmando un contrato, revisando estados de cuenta, en una junta, caminando hacia la cámara, subiendo al helicóptero o al jet, jugando tenis o golf, esquiando, saliendo de la alberca con bata, trabajando en la laptop, grabando el podcast, eligiendo ropa, haciendo ejercicio, en el súper comparando precios, paseando a Capital.
+
+**Capital** sigue la regla "Capital con criterio": en su casa, oficina, estudio, coche, paseos y terrazas sí (y a veces no); en el yate, la alberca, el jacuzzi, la nieve, las canchas, el golf, el estadio, el palco, el jet, el helicóptero, bares, restaurantes y viajes, no.
+
+**Ya hechas (12-nov):** lobby, café, cocina, terraza, lectura, calle, estudio, restaurante, bar, coche, yate, helipuerto, alberca, cuarto maquillándose. Lo que falta de la lista se hace con Everygen el día 23 de cada mes y cuando haya créditos.
