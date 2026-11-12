@@ -1783,7 +1783,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y con esas dos fechas sale un truco que sí te conviene, sobre todo si vas a hacer una compra grande en diciembre."
+    "voz": "Y con esas dos fechas sale un truco que sí te conviene, sobre todo si vas a hacer una compra grande este mes. Mira bien."
    },
    {
     "tipo": "grafica",
@@ -1839,7 +1839,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y si estás pensando en sacar otra tarjeta, hay un solo número que junta todo lo que te cobran."
+    "voz": "Y si estás pensando en sacar otra tarjeta, hay un solo número que junta todo lo que te cobran. Ponle mucha atención."
    },
    {
     "tipo": "lamina",
@@ -1861,7 +1861,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Las reglas que nadie te explica",
-    "voz": "Con las fechas claras, vamos a las reglas que nadie te explica. La primera te ahorra todos los intereses de tus compras."
+    "voz": "Con las fechas claras, vamos a las reglas que nadie te explica. La primera te ahorra todos los intereses de tus compras: mira bien por qué."
    },
    {
     "tipo": "lamina",
@@ -1879,7 +1879,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "La segunda regla es para diciembre, cuando el efectivo se acaba antes que las posadas y la tarjeta parece la salida fácil."
+    "voz": "La segunda regla es para diciembre, cuando el efectivo se acaba antes de las posadas y la tarjeta parece la mejor salida, pero no lo es."
    },
    {
     "tipo": "lamina",
@@ -1897,7 +1897,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y la tercera regla es un tope. Si lo respetas, diciembre no se te come el año."
+    "voz": "Y la tercera regla es poner un tope por mes. Si lo respetas, diciembre no se mete con tu presupuesto de enero."
    },
    {
     "tipo": "pasos",
@@ -1928,7 +1928,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Meses sin intereses en diciembre",
-    "voz": "Ahora, los meses sin intereses. En diciembre todo te lo ofrecen a meses, y no son gratis si hoy no tienes el dinero."
+    "voz": "Ahora, los meses sin intereses. En diciembre todo te lo ofrecen a meses, pero no son gratis si hoy no tienes el dinero para pagarlo."
    },
    {
     "tipo": "lamina",
@@ -1946,7 +1946,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "La comisión da otras dos reglas. Yo las pegaría en la cartera antes de salir a comprar los regalos."
+    "voz": "Por eso vienen otras dos reglas. Yo las pegaría en la cartera antes de salir a comprar los regalos, para no perder la cabeza."
    },
    {
     "tipo": "lamina",
@@ -2004,7 +2004,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Entonces, ¿cuánto tiempo se queda ahí un atraso? Depende de cuánto debías."
+    "voz": "Entonces, ¿cuánto tiempo permanece ahí un atraso? Depende de cuánto debías. Mira bien este punto."
    },
    {
     "tipo": "grafica",
@@ -2039,7 +2039,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Y el último dato es gratis, literal. Una vez al año puedes revisar todo esto sin pagar nada."
+    "voz": "Y el último dato es gratis, literal. Una vez al año puedes revisar todo esto sin pagar ni un peso. Me encanta."
    },
    {
     "tipo": "lamina",
@@ -2055,7 +2055,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Antes de irte, te dejo todo en una sola lámina. Tómale captura antes de tu próxima compra con tarjeta."
+    "voz": "Antes de irte, te dejo todo en una sola lámina. Tómale captura, guárdala y búscala antes de pagar con tarjeta la próxima vez."
    },
    {
     "tipo": "lamina",
@@ -2075,7 +2075,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "En mi opinión, tu tarjeta es dinero prestado, no sueldo extra. ¿Qué día es tu fecha de corte? Comenta el número y suscríbete. Capital ya anotó la suya."
+    "voz": "En mi opinión, tu tarjeta es dinero prestado, no sueldo extra. ¿Qué día es tu fecha de corte? Comenta el número y suscríbete para más. Capital ya apuntó la suya."
    }
   ],
   "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")"
