@@ -288,6 +288,62 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
             titulo = 'C' + nombre(c)[1:] if c else 'Carrusel nuevo (se escribe)'
             filas.append({'fecha': dia.isoformat(), 'tipo': 'carrusel', 'id': c['id'] if c else '', 'estado': 'por_programar',
                           'horas': {}, 'que': titulo + ' · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube'})
+    # Videos largos de YouTube (contenido/largos.json, 12-nov-2026): su día y su hora en YouTube.
+    for l in cargar_largos():
+        if l.get('publica_utc'):
+            h = a_mexico(l['publica_utc'])
+            if local <= h.date() < local + datetime.timedelta(days=dias):
+                filas.append({'fecha': h.date().isoformat(), 'tipo': 'largo', 'id': l['id'], 'estado': l.get('estado', 'produciendo'),
+                              'que': 'Video largo: ' + l['seo']['titulo'], 'horas': {'yt': h.strftime('%H:%M')}})
+    filas.sort(key=lambda f: f['fecha'])  # estable: dentro de cada día queda el orden de arriba
+    return filas
+
+
+def cargar_largos():
+    ruta = os.path.join(RAIZ, 'contenido', 'largos.json')
+    return json.load(open(ruta)) if os.path.exists(ruta) else []
+
+
+def largos_centro():
+    """Videos largos para el centro: título, estado, cuándo sale, duración, capítulos, enlace y miniaturas A y B."""
+    filas = []
+    for l in cargar_largos():
+        final = os.path.join(RAIZ, 'videos', 'largos', f"{l['id']}-horizontal.mp4")
+        duracion = None
+        if os.path.exists(final):
+            try:
+                duracion = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', final],
+                                                capture_output=True, text=True).stdout.strip())
+            except ValueError:
+                pass
+        desc = os.path.join(RAIZ, 'videos', 'largos', l['id'], 'descripcion_youtube.txt')
+        capitulos = []
+        if os.path.exists(desc):
+            texto = open(desc).read()
+            if 'Capítulos:' in texto:
+                capitulos = [r for r in texto.split('Capítulos:')[1].strip().split('\n\n')[0].split('\n') if r.strip()]
+        minis = []
+        try:
+            import io
+            import largo as lg
+            for v in [l.get('miniatura', {})] + list((l.get('miniatura') or {}).get('variantes', []))[:1]:
+                datos = dict(l)
+                datos['miniatura'] = {**(l.get('miniatura') or {}), **v}
+                tmp = io.BytesIO()
+                ruta = os.path.join(RAIZ, 'videos', 'largos', f"{l['id']}-mini-{len(minis)}.jpg")
+                os.makedirs(os.path.dirname(ruta), exist_ok=True)
+                lg.miniatura(datos, ruta)
+                from PIL import Image
+                Image.open(ruta).resize((480, 270)).save(tmp, 'JPEG', quality=80)
+                minis.append('data:image/jpeg;base64,' + base64.b64encode(tmp.getvalue()).decode())
+        except Exception as e:  # sin PIL o sin fuentes: el centro sale sin miniaturas
+            print('miniaturas de largos:', e)
+        filas.append({'id': l['id'], 'titulo': l['seo']['titulo'], 'estado': l.get('estado', 'produciendo'),
+                      'publica_utc': l.get('publica_utc', ''), 'youtube': l.get('youtube', ''),
+                      'duracion_min': round(duracion / 60, 1) if duracion else None, 'capitulos': capitulos,
+                      'segmentos': len(l.get('segmentos', [])),
+                      'tomas_victoria': sum(1 for x in l.get('segmentos', []) if x['tipo'] == 'victoria'),
+                      'miniaturas': minis, 'revision': l.get('revision', '')})
     return filas
 
 
@@ -468,6 +524,7 @@ def main():
         jpg = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', perfil, '-vf', 'scale=160:-2', '-q:v', '5', '-f', 'mjpeg', '-'],
                              capture_output=True).stdout
         foto = 'data:image/jpeg;base64,' + base64.b64encode(jpg).decode()
+    guardar('largos.json', largos_centro())
     guardar('estado.json', [{
         'canal': '@victoriatheceo',
         'frecuencia': (lambda r: f"Al día: TikTok {r.get('tt', 1)} · Instagram {r.get('ig', 1)} (mañana y tarde) · YouTube "
@@ -493,7 +550,20 @@ def main():
         'serie_publicaciones': series_reales(plan, cargar_carruseles())[1],
         'serie_redes': series_reales(plan, cargar_carruseles())[2],
         'foto_perfil': foto,
+        'replicate': replicate_resumen(),
     }])
+
+
+def replicate_resumen():
+    """Saldo estimado y gasto de Replicate para el centro (replicate_gasto.py). Sin clave, el último guardado."""
+    try:
+        if os.environ.get('REPLICATE_API_TOKEN'):
+            import replicate_gasto
+            return replicate_gasto.resumen()
+    except Exception as e:  # sin red o Replicate caído: no rompe el tablero
+        print('replicate:', e)
+    ruta = os.path.join(RAIZ, 'contenido', 'replicate.json')
+    return json.load(open(ruta)) if os.path.exists(ruta) else None
 
 
 if __name__ == '__main__':

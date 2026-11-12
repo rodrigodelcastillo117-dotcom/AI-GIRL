@@ -61,6 +61,11 @@ def generar(foto, audio, salida, movimiento=MOVIMIENTO, tamano='1080:1920'):
         'image': _data_uri(foto), 'audio': _data_uri(audio), 'resolution': '1080p',
         'video_prompt': movimiento, 'negative_prompt': NEGATIVO}})
     print('replicate:', p['id'], p['status'], flush=True)
+    try:
+        from replicate_gasto import anotar
+        anotar(p['id'])  # para el panel: este gasto es de Victoria
+    except Exception:
+        pass
     for _ in range(120):  # hasta 10 minutos
         if p['status'] in ('succeeded', 'failed', 'canceled'):
             break

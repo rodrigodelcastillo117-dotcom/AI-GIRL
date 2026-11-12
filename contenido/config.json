@@ -519,5 +519,9 @@
   "O2"
  ],
  "_prioridad_publicar": "11-nov-2026: prueba de formato de opinión (Victoria a cámara, 15 s). O1 sale en el siguiente día de video y O2 en el que sigue; luego el orden normal (18, C1).",
- "ig_fotos_feed_por_dia": 1
+ "ig_fotos_feed_por_dia": 1,
+ "replicate": {
+  "saldo_base_usd": 30.68,
+  "fecha_base_utc": "2026-11-12T03:12:10Z"
+ }
 }

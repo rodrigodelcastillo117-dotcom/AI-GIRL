@@ -5,7 +5,7 @@ const REDES = [
   {clave: 'ig', nombre: 'Instagram', corto: 'IG', color: '#a855f7'},
   {clave: 'fb', nombre: 'Facebook', corto: 'FB', color: '#1877f2'},  // página "Victoria the CEO" desde el 9-nov-2026
 ];
-const ESTADOS = {pendiente: ['En cola', ''], reserva: ['En reserva', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', '']};
+const ESTADOS = {pendiente: ['En cola', ''], reserva: ['En reserva', ''], listo_para_publicar: ['Listo', 'listo'], en_proceso: ['Generando', 'vivo'], programado: ['Programado', 'ok'], publicado: ['Publicado', 'ok'], ok: ['OK', 'ok'], fallido: ['Falló', 'mal'], omitido: ['Omitido', ''], listo: ['Listo', 'listo'], borrador: ['Borrador', ''], por_programar: ['Por programar', ''], produciendo: ['Produciendo', 'vivo']};
 const NOMBRE_RED = {ig: 'Instagram', tt: 'TikTok', yt: 'YouTube', fb: 'Facebook'};
 // Todo lo que sale: videos y carruseles (los dos se miden en vivo).
 const todo = () => [...FOTO.videos, ...(FOTO.carruseles || [])];
@@ -255,6 +255,7 @@ function dibujarTodo() {
   $('a-usados').textContent = fmt(r.usados);
   $('a-costo').textContent = fmt(r.costo);
   $('a-dias').textContent = r.alcanzan == null ? '—' : fmt(r.alcanzan * 2);
+  pintarReplicate();
 
   const errores = VIVO?.errores || [];
   $('aviso').hidden = !errores.length;
@@ -269,6 +270,7 @@ function dibujarTodo() {
   dibujarListas(aprendizajes);
   dibujarTablas(videos, ejecuciones);
   dibujarCalendario(FOTO.calendario);
+  dibujarLargos(FOTO.largos);
   dibujarMetas();
   dibujarDespegues();
   dibujarAudiencia();
@@ -730,7 +732,7 @@ function dibujarCalendario(filas = []) {
     const vistas = vivo && salio(vivo) && medido(vivo) ? fmt(vistasDe(vivo)) : '';
     return crear('tr', {className: f.fecha === hoy ? 'hoy' : ''},
       celda(new Date(`${f.fecha}T12:00:00`).toLocaleDateString('es-MX', {weekday: 'short', day: 'numeric', month: 'short'})),
-      celda({carrusel: 'Carrusel', reel: 'Reel IG', facebook: 'Facebook'}[f.tipo] || 'Video'), celda(f.que),
+      celda({carrusel: 'Carrusel', reel: 'Reel IG', facebook: 'Facebook', largo: 'Video largo'}[f.tipo] || 'Video'), celda(f.que),
       celda(horas.ig || '—', 'n'), celda(horas.tt || '—', 'n'), celda(horas.yt || '—', 'n'), celda(horas.fb || '—', 'n'), chip(f.estado), celda(vistas, 'n'));
   }));
 }
@@ -788,6 +790,52 @@ function globo(caja) {
     },
     ocultar() { g.hidden = true; },
   };
+}
+
+// Replicate (12-nov-2026): videos de Victoria y su voz. No hay saldo por API: es el saldo que Rodrigo leyó en su cuenta
+// menos lo gastado desde entonces (scripts/replicate_gasto.py), separado en Victoria y el otro canal que usa la cuenta.
+function pintarReplicate() {
+  const rep = FOTO?.estado?.replicate;
+  if (!$('rep-saldo')) return;
+  const usd = (n) => (n == null ? '—' : `$${Number(n).toFixed(2)}`);
+  $('rep-saldo').textContent = usd(rep?.saldo_estimado_usd);
+  $('rep-saldo').style.color = rep?.saldo_estimado_usd != null && rep.saldo_estimado_usd < 5 ? ROJO : '';
+  $('rep-victoria').textContent = usd(rep?.gastado_7_dias?.victoria);
+  $('rep-otro').textContent = usd(rep?.gastado_7_dias?.otro);
+  if (rep) {
+    const base = `Saldo base ${usd(rep.saldo_base_usd)} (${String(rep.fecha_base_utc).slice(0, 10)}) menos lo gastado desde entonces.`;
+    const toma = rep.costo_promedio_toma_usd != null ? ` Cada toma de Victoria a cámara: ~${usd(rep.costo_promedio_toma_usd)}.` : '';
+    const falta = rep.incompleto ? ` Hay modelos sin precio conocido (${Object.keys(rep.sin_precio || {}).join(', ')}): el saldo puede ser menor.` : '';
+    $('rep-nota').textContent = base + toma + falta;
+  }
+  if (window.d3 && $('g-replicate')) barras($('g-replicate'), (rep?.por_dia || []).map((d) => ({k: d.dia.slice(5), v: d.victoria + d.otro})), {color: ORO, formato: usd});
+}
+
+// Videos largos de YouTube (12-nov-2026, Rodrigo: "quiero TODO en el dashboard"): miniaturas A y B, estado, cuándo sale,
+// duración, capítulos y enlace.
+function dibujarLargos(lista = []) {
+  const caja = $('largos');
+  if (!caja) return;
+  if (!lista.length) { caja.replaceChildren(crear('p', {className: 'nota', textContent: 'Todavía no hay videos largos.'})); return; }
+  caja.replaceChildren(...lista.map((l) => {
+    const cuando = l.publica_utc ? new Date(l.publica_utc).toLocaleString('es-MX', {timeZone: 'America/Mexico_City', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'}) : 'sin fecha';
+    const minis = (l.miniaturas || []).map((src, i) => crear('figure', {className: 'mini-largo'},
+      crear('img', {src, alt: `Miniatura ${i ? 'B' : 'A'} de ${l.titulo}`, loading: 'lazy', style: 'width:100%;border-radius:10px;display:block'}),
+      crear('figcaption', {className: 'nota', textContent: i ? 'Miniatura B (para comparar en YouTube Studio)' : 'Miniatura A (la que se sube)'})));
+    const datos = [
+      `Sale: ${cuando} (YouTube)`,
+      l.duracion_min ? `Duración: ${l.duracion_min} min` : `En producción: ${l.segmentos} partes, ${l.tomas_victoria} de Victoria a cámara`,
+      l.capitulos?.length ? `${l.capitulos.length} capítulos` : '',
+    ].filter(Boolean);
+    return crear('article', {className: 'panel'},
+      crear('div', {className: 'codigo', textContent: l.id}),
+      crear('h2', {textContent: l.titulo}),
+      crear('p', {}, crear('span', {className: `chip ${(ESTADOS[l.estado] || [])[1] || ''}`, textContent: (ESTADOS[l.estado] || [l.estado])[0]})),
+      ...minis,
+      ...datos.map((t) => crear('p', {className: 'nota', textContent: t})),
+      ...(l.capitulos?.length ? [crear('details', {}, crear('summary', {textContent: 'Capítulos'}), ...l.capitulos.map((c) => crear('p', {className: 'nota', textContent: c})))] : []),
+      ...(l.youtube ? [crear('p', {}, crear('a', {href: l.youtube, target: '_blank', rel: 'noopener', textContent: 'Ver en YouTube →'}))] : []));
+  }));
 }
 
 function dibujarGraficas() {

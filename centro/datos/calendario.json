@@ -205,6 +205,16 @@
   "que": "Carrusel «Qué comprar en el Buen Fin y qué no 🛍️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
+  "fecha": "2026-11-13",
+  "tipo": "largo",
+  "id": "LA1",
+  "estado": "produciendo",
+  "que": "Video largo: Aguinaldo 2026: cuánto te toca y cómo calcularlo (3 ejemplos)",
+  "horas": {
+   "yt": "18:45"
+  }
+ },
+ {
   "fecha": "2026-11-14",
   "tipo": "facebook",
   "id": "c03",
@@ -287,6 +297,16 @@
   "que": "Carrusel «Cuánto gana una enfermera en México 🩺» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
  },
  {
+  "fecha": "2026-11-16",
+  "tipo": "largo",
+  "id": "LA2",
+  "estado": "produciendo",
+  "que": "Video largo: No me pagaron el aguinaldo 2026: qué hacer paso a paso",
+  "horas": {
+   "yt": "18:45"
+  }
+ },
+ {
   "fecha": "2026-11-17",
   "tipo": "video",
   "id": "40",
@@ -357,6 +377,16 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Quincena que dura 3 días en 5 memes 😅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube"
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "largo",
+  "id": "LA3",
+  "estado": "produciendo",
+  "que": "Video largo: Aguinaldo 2026 e ISR: cuánto te descuentan y cuánto es exento",
+  "horas": {
+   "yt": "18:45"
+  }
  },
  {
   "fecha": "2026-11-20",

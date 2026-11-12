@@ -1,0 +1,28 @@
+{
+ "saldo_base_usd": 30.68,
+ "fecha_base_utc": "2026-11-12T03:12:10Z",
+ "saldo_estimado_usd": 30.32,
+ "gastado_desde_base": {
+  "victoria": 0.0,
+  "otro": 0.36
+ },
+ "gastado_7_dias": {
+  "victoria": 0.0,
+  "otro": 0.36
+ },
+ "por_dia": [
+  {
+   "dia": "2026-11-12",
+   "victoria": 0.0,
+   "otro": 0.36
+  }
+ ],
+ "por_modelo": {
+  "prunaai/p-video-avatar": 0.36
+ },
+ "costo_promedio_toma_usd": null,
+ "sin_precio": {},
+ "incompleto": false,
+ "generado_utc": "2026-11-12T03:14:23Z",
+ "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
+}

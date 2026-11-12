@@ -96,6 +96,12 @@ def _replicate(modelo, entrada):
             raise RuntimeError(f'Replicate {e.code}: {cuerpo}')
     else:
         raise RuntimeError('Replicate siguió limitando (429) varios minutos: probablemente sin saldo suficiente.')
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from replicate_gasto import anotar
+        anotar(r.get('id'))  # para el panel: este gasto es de Victoria
+    except Exception:
+        pass
     while r.get('status') in ('starting', 'processing'):
         time.sleep(2)
         r = json.loads(urllib.request.urlopen(urllib.request.Request(r['urls']['get'], headers=cab), timeout=60).read())

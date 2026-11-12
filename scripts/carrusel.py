@@ -198,7 +198,13 @@ def de_replicate(descripcion):
                                  data=cuerpo, method='POST', headers={'Authorization': f'Bearer {token}',
                                                                       'Content-Type': 'application/json', 'Prefer': 'wait',
                                                                       'User-Agent': 'victoria-pipeline/1.0'})
-    salida = json.load(urllib.request.urlopen(req, timeout=120)).get('output') or []
+    respuesta = json.load(urllib.request.urlopen(req, timeout=120))
+    try:
+        from replicate_gasto import anotar
+        anotar(respuesta.get('id'))  # para el panel: este gasto es de Victoria
+    except Exception:
+        pass
+    salida = respuesta.get('output') or []
     if not salida:
         return None
     foto = urllib.request.urlopen(urllib.request.Request(salida[0] if isinstance(salida, list) else salida,

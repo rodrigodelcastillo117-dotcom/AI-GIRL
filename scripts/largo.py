@@ -7,6 +7,7 @@ Uso:
   python scripts/largo.py laminas <id>               3) dibuja las láminas (1920x1080, negro y dorado)
   python scripts/largo.py armar <id>                 4) une todo, capítulos, miniatura y textos para YouTube
   python scripts/largo.py todo <id>                  2, 3 y 4 seguidos (las voces van aparte: necesitan VOZ_PYTHON)
+  python scripts/largo.py subir <id>                 5) a YouTube, programado a su publica_utc, con miniatura y lista
 
 El guion vive en contenido/largos.json → [{"id", "seo", "miniatura", "foto_horizontal", "segmentos": [...]}]:
   {"tipo": "victoria", "capitulo": "..."|null, "voz": "..."}                 Victoria a cámara (gancho, transiciones, cierre)
@@ -371,8 +372,48 @@ def miniatura(largo, ruta):
     im.save(ruta, quality=92)
 
 
+def subir(vid):
+    """Sube el largo a YouTube programado a su publica_utc (Rodrigo, 12-nov-2026: "que salga todo directamente"): título,
+    descripción con capítulos, tags, miniatura A, categoría Educación, marcado como contenido sintético (youtube.py), y lo
+    agrega a la lista de su tema. Solo si ya está armado y no se subió antes. Guarda el enlace y estado "programado"."""
+    largo, carpeta = cargar(vid)
+    final = os.path.join(RAIZ, 'videos', 'largos', f'{vid}-horizontal.mp4')
+    if largo.get('youtube'):
+        print(f'{vid} ya está en YouTube: {largo["youtube"]}')
+        return
+    if not os.path.exists(final) or not os.path.exists(os.path.join(carpeta, 'descripcion_youtube.txt')):
+        sys.exit(f'{vid} no está armado: corre "largo.py todo {vid}" primero')
+    miniatura(largo, os.path.join(RAIZ, 'videos', 'largos', f'{vid}-miniatura.jpg'))
+    import datetime
+    cuando = largo.get('publica_utc') or ''
+    ahora = datetime.datetime.now(datetime.timezone.utc)
+    if not cuando or datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00')) < ahora + datetime.timedelta(minutes=15):
+        cuando = (ahora + datetime.timedelta(minutes=20)).strftime('%Y-%m-%dT%H:%M:%SZ')
+    salida = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'subir', final,
+                             open(os.path.join(carpeta, 'titulo.txt')).read().strip(),
+                             os.path.join(carpeta, 'descripcion_youtube.txt'), cuando,
+                             '--tags', os.path.join(carpeta, 'tags_youtube.txt'),
+                             '--miniatura', os.path.join(RAIZ, 'videos', 'largos', f'{vid}-miniatura.jpg'), '--largo'],
+                            capture_output=True, text=True)
+    print(salida.stdout[-800:], salida.stderr[-800:])
+    enlace = next((x for x in salida.stdout.split() if 'youtube.com/watch' in x), '')
+    if salida.returncode != 0 or not enlace:
+        sys.exit(f'No se pudo subir {vid} (código {salida.returncode})')
+    video_id = enlace.split('v=')[-1]
+    clave = largo.get('playlist', 'aguinaldo')
+    subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'playlist', video_id, clave])
+    ruta = os.path.join(RAIZ, 'contenido', 'largos.json')
+    todos = json.load(open(ruta))
+    for x in todos:
+        if x['id'] == vid:
+            x.update(youtube=enlace, estado='programado', publica_utc=cuando)
+    json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
+    open(ruta, 'a').write('\n')
+    print(f'ok {vid} programado {cuando}: {enlace}')
+
+
 if __name__ == '__main__':
-    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo'):
+    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir'):
         sys.exit(__doc__)
     paso, vid = sys.argv[1:]
     if paso == 'todo':
