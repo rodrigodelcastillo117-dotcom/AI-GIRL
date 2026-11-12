@@ -1,11 +1,31 @@
 {
- "generado_utc": "2026-11-12T05:36:33Z",
+ "generado_utc": "2026-11-12T08:19:09Z",
  "estado": "alerta",
  "checks": [
   {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "YouTube responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Publer responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Replicate responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Meta (Instagram y Facebook) responde"
+  },
+  {
    "area": "Gasto",
    "estado": "alerta",
-   "detalle": "Replicate de Victoria: hoy $27.28 · semana $27.52 de $7 · mes $28.07 de $28 (proyección del mes $76.56) · El espacio, semana $0.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+   "detalle": "Replicate de Victoria: hoy $23.07 · semana $53.72 de $7 · mes $54.28 de $28 (proyección del mes $135.70) · El espacio, semana $2.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
   },
   {
    "area": "Créditos",
@@ -14,18 +34,18 @@
   },
   {
    "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-11: TikTok 3, Instagram 2, YouTube 3, Facebook 1"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-12: TikTok 2, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: TikTok 2/3, Instagram 1/2, YouTube 2/3"
+   "estado": "aviso",
+   "detalle": "2026-11-12: TikTok 2, Instagram 1, YouTube 2, Facebook 1 · faltan: TikTok 2/3, Instagram 1/2, YouTube 2/3"
   },
   {
    "area": "Calendario",
    "estado": "ok",
    "detalle": "2026-11-13: TikTok 4, Instagram 3, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
+  },
+  {
+   "area": "Calendario",
+   "estado": "ok",
+   "detalle": "2026-11-14: TikTok 2, Instagram 2, YouTube 3, Facebook 3 · la rutina de ese día llena: TikTok 2/3"
   },
   {
    "area": "Recortes",
@@ -38,9 +58,9 @@
    "detalle": "LA2: YouTube y Facebook 2026-11-17, con recortes"
   },
   {
-   "area": "Videos largos",
-   "estado": "ok",
-   "detalle": "LA3: sale 2026-11-20, en producción"
+   "area": "Recortes",
+   "estado": "aviso",
+   "detalle": "LA3: subido sin recortes: recortes.py LA3"
   },
   {
    "area": "Videos largos",
