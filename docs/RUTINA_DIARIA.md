@@ -9,6 +9,12 @@ pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
 - Miniaturas: SIN Test & Compare. Elige tú la mejor (la de largo.py; Canva solo si sale mejor) y no se lo recuerdes.
 - Meta Business: Rodrigo ya aceptó el permiso (era para MUSE). Pendiente suyo: enlace de YouTube en la bio de IG.
 
+- Panel (12-nov): tablero.py ahora corre scripts/estadisticas.py (vistas y seguidores por día, mejores días/horas/temas,
+  comparativas, YouTube Analytics, dinero y créditos) y guarda una foto diaria de seguidores en contenido/seguidores.json:
+  NO te saltes tablero.py ni un día, o se pierde el dato diario. Regla de Rodrigo: lo no esencial, SIEMPRE cerrado.
+- Vercel gratis = 100 publicaciones al día (se acabaron el 12-nov). Junta los cambios: un push al final de la rutina.
+- LC2: Rodrigo dijo "acaba el LC2" (autorización largos-lc ampliada a $10.5).
+
 ## 0. LO NUEVO DEL 12-NOV NOCHE (manda sobre lo de abajo si chocan)
 
 Rodrigo (12-nov, noche): "volumen como lo teníamos… toma en cuenta lo importante de MUSE… LA MEJOR CALIDAD, que se

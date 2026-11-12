@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-12T14:31:23Z",
+ "generado_utc": "2026-11-12T15:12:28Z",
  "estado": "aviso",
  "checks": [
   {
@@ -25,7 +25,7 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $28.71 · semana $59.36 de $7 · mes $59.92 de $28 (proyección del mes $149.80) · El espacio, semana $2.00 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $5.38 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $33.74 · semana $64.40 de $7 · mes $64.95 de $28 (proyección del mes $162.38) · El espacio, semana $2.00 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -75,12 +75,12 @@
   {
    "area": "Videos largos",
    "estado": "ok",
-   "detalle": "LC2: sale 2026-11-26, en producción"
+   "detalle": "LC2: YouTube y Facebook 2026-11-26, con recortes"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "23 recortes con fecha (se suben 48 h antes): LA1-c01, LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07"
+   "detalle": "29 recortes con fecha (se suben 48 h antes): LA1-c01, LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06"
   },
   {
    "area": "Recortes",

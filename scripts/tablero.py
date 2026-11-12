@@ -295,8 +295,87 @@ def calendario(plan, carruseles, config, auditoria, ahora, dias=10):
             if local <= h.date() < local + datetime.timedelta(days=dias):
                 filas.append({'fecha': h.date().isoformat(), 'tipo': 'largo', 'id': l['id'], 'estado': l.get('estado', 'produciendo'),
                               'que': 'Video largo: ' + l['seo']['titulo'], 'horas': {'yt': h.strftime('%H:%M')}})
+    # Shorts recortados de los largos (contenido/recortes.json, 12-nov-2026: no salían en "Hoy y mañana" aunque Publer y
+    # YouTube ya los tenían programados). Facebook sale a la hora de Instagram.
+    for r in (json.load(open(os.path.join(RAIZ, 'contenido', 'recortes.json'))) if os.path.exists(os.path.join(RAIZ, 'contenido', 'recortes.json')) else []):
+        por_red = r.get('publica_utc_por_red') or {}
+        if r.get('estado') not in ('programado', 'listo', 'publicado') or not por_red:
+            continue
+        horas = {red: a_mexico(t) for red, t in por_red.items()}
+        if 'ig' in horas and 'fb' not in horas:
+            horas['fb'] = horas['ig']
+        for dia in sorted({h.date() for h in horas.values()}):
+            if local <= dia < local + datetime.timedelta(days=dias):
+                filas.append({'fecha': dia.isoformat(), 'tipo': 'recorte', 'id': r['id'], 'estado': r['estado'],
+                              'que': f"Short del video largo «{corto(r.get('titulo') or r['id'])}»",
+                              'horas': {red: h.strftime('%H:%M') for red, h in horas.items() if h.date() == dia}})
     filas.sort(key=lambda f: f['fecha'])  # estable: dentro de cada día queda el orden de arriba
     return filas
+
+
+def con_publer(filas, plan, carruseles, dias=3):
+    """Las horas de "Hoy y mañana" salen de lo que Publer de verdad tiene programado (Rodrigo, 12-nov-2026: "¿el
+    dashboard va a mostrar lo programado con las horas correctas?"). Se casa por la primera línea del texto: corrige o
+    completa la hora de cada red (Facebook de los carruseles no estaba en nuestros registros), marca la fila como
+    confirmada y agrega como fila aparte lo que esté en Publer y no en el plan. YouTube no pasa por Publer: se queda con
+    nuestra hora (la de publishAt al subir). Sin llave de Publer, el calendario queda como estaba."""
+    if not os.environ.get('PUBLER_API_KEY'):
+        return filas
+    try:
+        import urllib.parse
+        import publer
+        ws = publer.workspace_id()
+        cuentas = dict(publer.CONFIG.get('cuentas_publer') or {})
+        if publer.CONFIG.get('facebook_victoria'):
+            cuentas[publer.CONFIG['facebook_victoria']] = 'facebook'
+        hoy = datetime.datetime.now(CDMX).date()
+        filtros = [('state', 'scheduled'), ('from', hoy.isoformat()), ('to', (hoy + datetime.timedelta(days=dias)).isoformat())]
+        r = publer._pedir('GET', '/posts?' + urllib.parse.urlencode(filtros), ws)
+        posts = r.get('posts', []) if isinstance(r, dict) else r
+    except (SystemExit, Exception) as e:  # Publer caído: no rompe el tablero
+        print('publer (calendario):', e)
+        return filas
+    corta = {'instagram': 'ig', 'tiktok': 'tt', 'facebook': 'fb'}
+    textos = {}
+    recortes = json.load(open(os.path.join(RAIZ, 'contenido', 'recortes.json'))) if os.path.exists(os.path.join(RAIZ, 'contenido', 'recortes.json')) else []
+    for x in plan['videos'] + carruseles + recortes + cargar_largos():
+        for t in (x.get('texto_post'), x.get('texto'), (x.get('reel_ig') or {}).get('texto'), (x.get('facebook') or {}).get('texto'),
+                  (x.get('seo') or {}).get('titulo'), (x.get('seo') or {}).get('descripcion')):
+            if primera_linea(t):
+                textos.setdefault(primera_linea(t), set()).add(x['id'])
+    for f in filas:
+        f.setdefault('confirmado', [])
+    sueltos = []
+    for p in posts:
+        red = corta.get(cuentas.get(p.get('account_id')))
+        cuando = p.get('scheduled_at')
+        if not red or not cuando:
+            continue
+        local = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00')).astimezone(CDMX)
+        linea = primera_linea(p.get('text'))
+        ids = textos.get(linea) or {i for k, v in textos.items() if k and linea and (k.startswith(linea[:40]) or linea.startswith(k[:40])) for i in v}
+        candidatas = [f for f in filas if f['fecha'] == local.date().isoformat() and f['id'] in ids]
+        if not candidatas:  # texto distinto (E1 salió con otro pie): misma red, mismo día y misma hora
+            candidatas = [f for f in filas if f['fecha'] == local.date().isoformat() and f['horas'].get(red) == local.strftime('%H:%M')]
+        # si el mismo id tiene varias filas ese día (Reel y carrusel), la que ya trae esa red, o la de Facebook/Reel
+        fila = next((f for f in candidatas if red in f['horas']), None) or next((f for f in candidatas if f['tipo'] in ('reel', 'facebook') and red in ('ig', 'fb')), None) or (candidatas[0] if candidatas else None)
+        if fila:
+            fila['horas'][red] = local.strftime('%H:%M')
+            fila['confirmado'].append(red)
+        else:
+            sueltos.append({'fecha': local.date().isoformat(), 'tipo': 'publer', 'id': '', 'estado': 'programado',
+                            'que': f"«{corto(p.get('text') or '', 60)}»", 'horas': {red: local.strftime('%H:%M')}, 'confirmado': [red]})
+    juntos = {}
+    for s in sueltos:  # el mismo texto en varias redes va en una sola fila
+        clave = (s['fecha'], s['que'])
+        if clave in juntos:
+            juntos[clave]['horas'].update(s['horas'])
+            juntos[clave]['confirmado'] += s['confirmado']
+        else:
+            juntos[clave] = s
+    salida = filas + list(juntos.values())
+    salida.sort(key=lambda f: f['fecha'])
+    return salida
 
 
 def cargar_largos():
@@ -525,7 +604,7 @@ def main():
         **({'c_ig_reales': sum(reales_ig.get(l, 0) for l in {primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto'))} if l)}
            if any(l in reales_ig for l in (primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto')))) else {}),
     } for c in carruseles])
-    guardar('calendario.json', calendario(plan, carruseles, config, auditoria, datetime.datetime.now(datetime.timezone.utc)))
+    guardar('calendario.json', con_publer(calendario(plan, carruseles, config, auditoria, datetime.datetime.now(datetime.timezone.utc)), plan, carruseles))
     guardar('ejecuciones.json', json.load(open(os.path.join(RAIZ, 'contenido', 'ejecuciones.json'))))
     try:  # bitácora de cambios (Rodrigo, 9-nov-2026: "el chiste es mejorar día a día"): qué se cambió y cuándo
         guardar('cambios.json', json.load(open(os.path.join(RAIZ, 'contenido', 'cambios.json'))))

@@ -2160,7 +2160,7 @@
   },
   "playlist": "finanzas",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
-  "estado": "produciendo",
+  "estado": "programado",
   "publica_utc": "2026-11-26T00:45:00Z",
   "intercalado": true,
   "revision": {
@@ -2276,11 +2276,6 @@
     "voz": "Y lo primero que sale de esa quincena es la renta. Aquí es donde la cuenta empieza a doler. Un informe de la ONU cita un parámetro común. La vivienda deja de ser asequible si cuesta más del treinta por ciento de los ingresos del hogar. Es una referencia, no una ley. Con un salario mínimo, ese treinta por ciento son dos mil ochocientos setenta y cinco pesos al mes."
    },
    {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Ahora compáralo con lo que de verdad se paga en las más de seis millones de viviendas rentadas del país."
-   },
-   {
     "tipo": "grafica",
     "capitulo": null,
     "titulo": "Renta al mes de los hogares que rentan (2024)",
@@ -2308,7 +2303,7 @@
     ],
     "nota": "Rentas de 2024 contra el salario mínimo de 2026: la comparación se queda corta",
     "fuente": "INEGI, ENIGH 2024 (microdatos, cálculo propio ponderado); ONU E/CN.5/2020/3",
-    "voz": "Según la encuesta de ingresos y gastos del INEGI, en dos mil veinticuatro los hogares que rentan pagaban en promedio tres mil setecientos veinticuatro pesos al mes. Eso es el treinta y nueve por ciento del mínimo. La mitad pagaba dos mil quinientos o menos, y en ciudades de cien mil habitantes o más, tres mil."
+    "voz": "Ahora compáralo con lo que de verdad se paga en las más de seis millones de viviendas rentadas del país. Según la encuesta de ingresos y gastos del INEGI, en dos mil veinticuatro los hogares que rentan pagaban en promedio tres mil setecientos veinticuatro pesos al mes. Eso es el treinta y nueve por ciento del mínimo. La mitad pagaba dos mil quinientos o menos, y en ciudades de cien mil habitantes o más, tres mil."
    },
    {
     "tipo": "victoria",
@@ -2364,11 +2359,6 @@
     "voz": "Con trescientos quince pesos al día, comer un mes, lo mínimo para una persona en la ciudad, son ocho días de trabajo. La renta promedio, casi doce días. Y comida con lo básico, como transporte, salud y ropa, casi dieciséis días. Y eso no alcanza para una renta completa."
    },
    {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Y ahora una cuenta para quien piensa estrenar celular en Navidad, o pagarlo a meses."
-   },
-   {
     "tipo": "grafica",
     "capitulo": null,
     "titulo": "Tu aguinaldo mínimo contra un celular",
@@ -2386,7 +2376,7 @@
     ],
     "nota": "El celular son casi 70 días de salario mínimo; el aguinaldo mínimo no llega ni a la cuarta parte",
     "fuente": "Apple México, precio de contado (11-nov-2026); LFT, art. 87; cálculo propio",
-    "voz": "Un iPhone diecisiete cuesta desde veintiún mil novecientos noventa y nueve pesos de contado. Son casi setenta días de salario mínimo, más de dos meses sin gastar en nada más. Y tu aguinaldo mínimo, quince días, son cuatro mil setecientos veinticinco pesos con sesenta centavos. Ni la cuarta parte."
+    "voz": "Y ahora una cuenta para quien piensa estrenar celular en Navidad, o pagarlo a meses. Un iPhone diecisiete cuesta desde veintiún mil novecientos noventa y nueve pesos de contado. Son casi setenta días de salario mínimo, más de dos meses sin gastar en nada más. Y tu aguinaldo mínimo, quince días, son cuatro mil setecientos veinticinco pesos con sesenta centavos. Ni la cuarta parte."
    },
    {
     "tipo": "accion",
@@ -2450,11 +2440,6 @@
     "voz": "Ahora una familia de tres en la ciudad, con un sueldo que suena mucho mejor. Quince mil pesos netos y seis mil quinientos de renta. El cuarenta y tres por ciento se va en renta. La comida mínima de tres personas cuesta siete mil setecientos ochenta y tres pesos. Quedan setecientos diecisiete para transporte, luz, ropa y todo lo demás. No alcanza."
    },
    {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Y el tercer ejemplo gana menos, pero le va mejor. Mira por qué."
-   },
-   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Ejemplo 3: sin renta",
@@ -2465,12 +2450,7 @@
      "Comida mínima: $3,893 (sin contar predial ni servicios)"
     ],
     "fuente": "INEGI, líneas de pobreza por ingresos, octubre 2026 (rural); cálculo propio",
-    "voz": "Ocho mil pesos al mes, dos personas en un pueblo y casa propia. La comida mínima cuesta tres mil ochocientos noventa y tres pesos, y les quedan cuatro mil ciento siete, sin contar predial ni servicios. No pagar renta cambia el mes."
-   },
-   {
-    "tipo": "victoria",
-    "capitulo": null,
-    "voz": "Por eso mi regla no empieza por el café. Empieza por la renta."
+    "voz": "Y el tercer ejemplo gana menos, pero le va mejor. Mira por qué. Ocho mil pesos al mes, dos personas en un pueblo y casa propia. La comida mínima cuesta tres mil ochocientos noventa y tres pesos, y les quedan cuatro mil ciento siete, sin contar predial ni servicios. No pagar renta cambia el mes."
    },
    {
     "tipo": "lamina",
@@ -2483,7 +2463,7 @@
      "Compartir depa no es fracaso"
     ],
     "fuente": "Opinión de Victoria",
-    "voz": "Es mi opinión, no una ley. Si tu renta pasa del treinta por ciento de tu sueldo, es lo primero que hay que mover. Bajarla te libera más dinero que cualquier recorte de café. Y compartir depa no es fracaso, puede ser lo que más alivia tu presupuesto."
+    "voz": "Por eso mi regla no empieza por el café. Empieza por la renta. Es mi opinión, no una ley. Si tu renta pasa del treinta por ciento de tu sueldo, es lo primero que hay que mover. Bajarla te libera más dinero que cualquier recorte de café. Y compartir depa no es fracaso, puede ser lo que más alivia tu presupuesto."
    },
    {
     "tipo": "lamina",
@@ -2525,6 +2505,11 @@
    }
   ],
   "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")",
-  "nota_costo": "12-nov-2026, Rodrigo: \"acaba el LC2\". 3 transiciones a cámara (renta, ejemplo 2, calculadora) pasan a la voz de la lámina siguiente: ~18 s menos de Replicate (~$0.80) y eran las de menos de 4 palabras con p/b/m/v (qa_labios no las podía medir). Quedan 13 tomas a cámara, ~94 s."
+  "nota_costo": "12-nov-2026, Rodrigo: \"acaba el LC2\". 3 transiciones a cámara (renta, ejemplo 2, calculadora) pasan a la voz de la lámina siguiente: ~18 s menos de Replicate (~$0.80) y eran las de menos de 4 palabras con p/b/m/v (qa_labios no las podía medir). Quedan 13 tomas a cámara, ~94 s. 12-nov tarde: 4 tomas más (compáralo, celular, tercer ejemplo, regla de la renta) fallaron labios dos veces y pasan a la voz de su lámina: quedan 9 tomas a cámara y no se gasta más de lo autorizado.",
+  "youtube": "https://youtube.com/watch?v=uORY8a98-Ps",
+  "facebook": {
+   "publica_utc": "2026-11-26T00:45:00Z",
+   "estado": "programado"
+  }
  }
 ]

@@ -209,11 +209,15 @@ function agenda(cal) {
   const dias = [hoy, manana].map((f) => {
     const items = cal.filter((c) => c.fecha === f).map((c) => {
       const horas = Object.values(c.horas || {}).sort();
-      return {hora: horas[0] || '', que: `${etiqueta[c.tipo] || c.tipo} · ${sinEmoji((c.que || '').replace(/^[^«]*«/, '«').split('»')[0].replace('«', ''))}`, redes: Object.keys(c.horas || {})};
+      // 12-nov-2026: la hora de CADA red (antes solo la primera: c68 decía 13:00 y en Instagram sale a las 19:00)
+      const porRed = REDES.filter((r) => c.horas?.[r.k]).sort((a, b) => c.horas[a.k].localeCompare(c.horas[b.k]))
+        .map((r) => el('span', {className: 'chip', style: `--color:${color(r)}`}, el('i'), `${r.nombre} ${c.horas[r.k]}`));
+      return {hora: horas[0] || '', porRed, que: `${etiqueta[c.tipo] || c.tipo} · ${sinEmoji((c.que || '').replace(/^[^«]*«/, '«').split('»')[0].replace('«', ''))}`};
     }).sort((a, b) => (a.hora || '99').localeCompare(b.hora || '99'));
     return el('div', {className: 'dia'},
       el('h3', {textContent: new Date(`${f}T12:00:00Z`).toLocaleDateString('es-MX', {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC'})}),
-      items.length ? el('ul', {}, ...items.slice(0, 12).map((x) => el('li', {}, el('span', {className: 'hora', textContent: x.hora || 'por programar'}), el('span', {className: 'que', textContent: x.que}))))
+      items.length ? el('ul', {}, ...items.map((x) => el('li', {}, el('span', {className: 'hora', textContent: x.hora || 'por programar'}), el('span', {className: 'que', textContent: x.que}),
+        x.porRed.length ? el('div', {className: 'chips agenda-redes'}, ...x.porRed) : null)))
         : el('p', {className: 'vacio', textContent: 'La rutina de las 6:37 lo programa.'}));
   });
   $('agenda').replaceChildren(...dias);

@@ -196,3 +196,5 @@ svg .reja { stroke: var(--linea-suave); }
 .tabla-scroll, #c-formato, #c-semana { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .reparto { display: flex; height: 14px; border-radius: 999px; overflow: hidden; gap: 2px; background: var(--fondo); }
 .reparto span { display: block; height: 100%; }
+.agenda-redes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.agenda-redes .chip { font-size: 11px; padding: 1px 8px; }
