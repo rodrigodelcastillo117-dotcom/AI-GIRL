@@ -85,15 +85,40 @@ def pendientes_ig():
     return salida
 
 
+def token_pagina(pagina):
+    """Token de la página (lo da /me/accounts con el token de usuario de Meta). Solo vive en memoria: nunca se imprime."""
+    from comentarios_ig import _http
+    for p in _http('GET', 'me/accounts?fields=id,access_token&limit=50').get('data', []):
+        if p['id'] == pagina:
+            return p['access_token']
+    raise RuntimeError('el token de Meta no administra la página de Victoria')
+
+
+def fb(metodo, ruta, pagina, datos=None):
+    """Graph API con el token de la página (comentar como la página, no como Rodrigo)."""
+    import urllib.request
+    tok = token_pagina(pagina)
+    if metodo == 'GET':
+        url = f'https://graph.facebook.com/v21.0/{ruta}{"&" if "?" in ruta else "?"}access_token={tok}'
+        req = urllib.request.Request(url)
+    else:
+        req = urllib.request.Request(f'https://graph.facebook.com/v21.0/{ruta}', data=urllib.parse.urlencode({**(datos or {}), 'access_token': tok}).encode(), method=metodo)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'ERROR {e.code} de Facebook en {ruta.split("?")[0]}: {e.read().decode()[:300]}')
+
+
 def pendientes_fb():
     """Página de Facebook: solo si el token tiene permiso de páginas (pages_read_engagement)."""
-    from comentarios_ig import _http
     import publer
     pagina = publer.CONFIG.get('facebook_pagina_id')
     if not pagina:
         return [{'red': 'fb', 'error': 'falta config.json → facebook_pagina_id y el permiso pages_manage_engagement del token de Meta'}]
     try:
-        r = _http('GET', f'{pagina}/posts?fields=id,message,created_time,permalink_url,comments.limit(50){{from}}&limit=25')
+        # Lo que publica Publer en la página son videos (el borde /posts solo trae cambios de foto): se revisan los videos.
+        r = fb('GET', f'{pagina}/videos?fields=id,title,description,created_time,permalink_url,comments.limit(50){{from}}&limit=25', pagina)
     except (SystemExit, RuntimeError) as e:
         return [{'red': 'fb', 'error': str(e)[:200]}]
     hechos = {x['post'] for x in registro() if x['red'] == 'fb'}
@@ -103,8 +128,9 @@ def pendientes_fb():
             continue
         if any((c.get('from') or {}).get('id') == pagina for c in (p.get('comments') or {}).get('data', [])):
             continue
-        salida.append({'red': 'fb', 'id': p['id'], 'titulo': (p.get('message') or '').split('\n')[0][:120], 'texto_post': (p.get('message') or '')[:300],
-                       'url': p.get('permalink_url')})
+        texto = p.get('title') or p.get('description') or ''
+        salida.append({'red': 'fb', 'id': p['id'], 'titulo': texto.split('\n')[0][:120], 'texto_post': (p.get('description') or '')[:300],
+                       'url': 'https://www.facebook.com' + p['permalink_url'] if str(p.get('permalink_url', '')).startswith('/') else p.get('permalink_url')})
     return salida
 
 
@@ -133,8 +159,14 @@ def main():
         from comentarios_ig import _http
         cid = _http('POST', f'{pid}/comments', {'message': texto}).get('id')
     elif accion == 'fb':
-        from comentarios_ig import _http
-        cid = _http('POST', f'{pid}/comments', {'message': texto}).get('id')
+        import publer
+        try:
+            cid = fb('POST', f'{pid}/comments', publer.CONFIG['facebook_pagina_id'], {'message': texto}).get('id')
+        except RuntimeError as e:
+            if '(#200)' in str(e):  # video que no es publicación (sin comentarios posibles): se anota para no reintentarlo
+                anotar('fb', pid, None, 'no admite comentarios')
+                sys.exit(f'{pid}: Facebook no deja comentar ahí (no es una publicación); anotado para no reintentar')
+            raise
     else:
         sys.exit(__doc__)
     anotar(accion, pid, cid, texto)
