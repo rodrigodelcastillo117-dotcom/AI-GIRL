@@ -62,6 +62,16 @@
    "accion": "She speaks naturally into the podcast microphone with small hand gestures, then leans back and smiles. Slow arc camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "34xkn2dqbsrmy0d1ssg9awdvy4",
    "nota_calidad": "por revisar"
+  },
+  {
+   "archivo": "calle-mov-1.mp4",
+   "foto": "dinamica-calle.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She walks confidently toward the camera along the street, natural stride, hair moving, people blurred in the background. Camera tracks backward with her. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "wj1f3sxp2hrmw0d1ssg88bw7pg",
+   "nota_calidad": "por revisar"
   }
  ],
  "rechazados": [
