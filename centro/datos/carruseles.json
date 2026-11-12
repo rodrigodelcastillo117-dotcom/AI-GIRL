@@ -27,7 +27,7 @@
    "yt": "2026-11-01T23:00:00Z",
    "fb": "2026-11-12T03:30:00Z"
   },
-  "v_yt": 337,
+  "v_yt": 339,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
@@ -39,7 +39,7 @@
   "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 49.2,
+  "r_yt": 48.7,
   "c_yt_reales": 0,
   "c_ig_reales": 1
  },
@@ -271,7 +271,7 @@
   "l_ig": 12,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 189.4,
+  "r_yt": 178.3,
   "c_yt_reales": 0,
   "c_ig_reales": 4
  },
@@ -301,7 +301,7 @@
    "yt": "2026-11-06T20:00:00Z",
    "fb": "2026-11-12T15:30:00Z"
   },
-  "v_yt": 387,
+  "v_yt": 386,
   "l_yt": 6,
   "c_yt": 2,
   "s_yt": 0,
@@ -355,7 +355,7 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "r_yt": 46.4,
+  "r_yt": 53.4,
   "c_yt_reales": 0,
   "c_ig_reales": 2
  },
@@ -404,14 +404,15 @@
    "yt": "2026-11-10T02:00:00Z",
    "fb": "2026-11-10T04:30:00Z"
   },
-  "v_yt": 108,
-  "l_yt": 2,
+  "v_yt": 141,
+  "l_yt": 4,
   "c_yt": 2,
   "s_yt": 0,
   "v_tt": 200,
   "l_tt": 6,
   "c_tt": 0,
   "s_tt": 0,
+  "r_yt": 89.5,
   "c_yt_reales": 0
  },
  {
@@ -440,7 +441,7 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 83,
+  "v_yt": 101,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
@@ -456,6 +457,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
+  "r_yt": 78.0,
   "c_yt_reales": 0,
   "c_ig_reales": 3
  },
@@ -485,7 +487,7 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 75,
+  "v_yt": 103,
   "l_yt": 3,
   "c_yt": 2,
   "s_yt": 0,
@@ -493,8 +495,9 @@
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 0,
+  "r_yt": 47.3,
   "c_yt_reales": 0,
-  "c_ig_reales": 1
+  "c_ig_reales": 2
  },
  {
   "id": "c14",
@@ -547,11 +550,11 @@
   "horas": {
    "tt": "2026-11-08 15:06",
    "yt": "2026-11-08 17:00",
-   "ig": "2026-11-11 18:30",
+   "ig": "2026-11-11 18:32",
    "fb": "2026-11-09 15:00"
   },
   "youtube_id": "VhWYrJ5NmrY",
-  "publica_utc": "2026-11-12T00:30:00Z",
+  "publica_utc": "2026-11-12T00:32:30Z",
   "linea": "aguinaldo 2026: los 5 datos que vas a buscar en diciembre, en un solo lugar. 🗓️",
   "tipo": "carrusel",
   "linea_reel": "guarda esto: tu aguinaldo 2026 en 5 datos",
@@ -559,10 +562,10 @@
   "publica_utc_por_red": {
    "tt": "2026-11-08T21:06:03Z",
    "yt": "2026-11-08T23:00:00Z",
-   "ig": "2026-11-12T00:30:00Z",
+   "ig": "2026-11-12T00:32:30Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 147,
+  "v_yt": 157,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
@@ -578,9 +581,9 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 47.4,
+  "r_yt": 41.8,
   "c_yt_reales": 0,
-  "c_ig_reales": 1
+  "c_ig_reales": 3
  },
  {
   "id": "c17",
@@ -783,21 +786,25 @@
   "fondo": "rincon-lectura.jpg",
   "portada": "pareja-cuenta-restaurante.jpg",
   "horas": {
-   "tt": "2026-11-11 20:00",
+   "tt": "2026-11-11 20:06",
    "yt": "2026-11-11 20:00",
    "fb": "2026-11-11 20:00"
   },
   "youtube_id": "7RyzCU7VFUQ",
-  "publica_utc": "2026-11-12T02:00:00Z",
+  "publica_utc": "2026-11-12T02:06:03Z",
   "linea": "gastos en pareja: el amor es 50/50, el recibo de la luz no tiene por qué serlo. 💑",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-12T02:00:00Z",
+   "tt": "2026-11-12T02:06:03Z",
    "yt": "2026-11-12T02:00:00Z",
    "fb": "2026-11-12T02:00:00Z"
   },
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 1,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -1293,21 +1300,25 @@
   "fondo": "yate.jpg",
   "portada": "capital-cafe.jpg",
   "horas": {
-   "tt": "2026-11-11 09:00",
+   "tt": "2026-11-11 09:07",
    "yt": "2026-11-11 14:00",
    "fb": "2026-11-11 14:00"
   },
   "youtube_id": "e_VpMZHW8TQ",
-  "publica_utc": "2026-11-11T15:00:00Z",
+  "publica_utc": "2026-11-11T20:00:00Z",
   "linea": "aguinaldo 2026, parte 2: lo que la ley te da no es un favor de tu patrón, así que haz la cuenta. 5 datos más, ahora con pesos (la parte 1 está en mi perfil). 🧾",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-11T15:00:00Z",
+   "tt": "2026-11-11T15:07:06Z",
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
+  "v_yt": 17,
+  "l_yt": 0,
+  "c_yt": 1,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -1564,7 +1575,7 @@
    "yt": "2026-11-11T02:00:00Z",
    "fb": "2026-11-11T02:00:00Z"
   },
-  "v_yt": 219,
+  "v_yt": 355,
   "l_yt": 2,
   "c_yt": 2,
   "s_yt": 0,
@@ -1600,7 +1611,7 @@
    "yt": "2026-11-10T23:00:00Z",
    "fb": "2026-11-10T23:00:00Z"
   },
-  "v_yt": 346,
+  "v_yt": 424,
   "l_yt": 7,
   "c_yt": 2,
   "s_yt": 0,
@@ -1695,7 +1706,7 @@
    "fb": "2026-11-12 11:00"
   },
   "youtube_id": "_ZdghO90lbY",
-  "publica_utc": "2026-11-12T15:00:00Z",
+  "publica_utc": "2026-11-12T18:00:00Z",
   "linea": "5 rumores del aguinaldo 2026 que te van a llegar por whatsapp. los verifiqué. 🔍",
   "tipo": "carrusel",
   "linea_reel": "5 rumores del aguinaldo 2026 que te van a mandar por whatsapp",
@@ -1729,5 +1740,43 @@
   "publica_utc_por_red": {
    "tt": "2026-11-13T15:00:00Z"
   }
+ },
+ {
+  "id": "c72",
+  "estado": "listo",
+  "tema": "victoria verifica buen fin 2026",
+  "pilar": "finanzas",
+  "gancho": "5 cosas que todos creen del Buen Fin 2026. Las verifiqué.",
+  "titulo": "Buen Fin 2026, mitos y verdades verificados 🔍",
+  "diapositivas": 7,
+  "fondo": "recamara.jpg",
+  "portada": "navidad-compras-calle.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "5 cosas que todos creen del buen fin 2026 (del 13 al 17 de noviembre). las verifiqué. 🔍",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c73",
+  "estado": "listo",
+  "tema": "buen fin compras si y no opinion",
+  "pilar": "finanzas",
+  "gancho": "Buen Fin 2026: 5 compras que sí haría y 5 que no",
+  "titulo": "Qué comprar en el Buen Fin y qué no 🛍️",
+  "diapositivas": 7,
+  "fondo": "restaurante.jpg",
+  "portada": "capital-tarjeta.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "buen fin 2026: 5 compras que sí y 5 que no. es mi opinión, y sé que alguien se va a enojar. 🛍️",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
  }
 ]

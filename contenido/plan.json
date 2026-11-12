@@ -3486,7 +3486,7 @@
     "tipo_gancho": "postura"
    },
    "id": "O1",
-   "estado": "programado",
+   "estado": "publicado",
    "locacion": "restaurante",
    "guion": "Si tu pareja gana el doble que tú, mitad y mitad no es justo. Cada quien pone según lo que gana. Eso no es mantener a nadie: es ser equipo. ¿Estoy mal? Te leo.",
    "subtitulos": [
@@ -3565,7 +3565,11 @@
    },
    "publica_utc": "2026-11-11T21:00:00Z",
    "publicacion": {
-    "youtube": "https://youtube.com/shorts/qM_e2ImPA1s"
+    "youtube": "https://youtube.com/shorts/qM_e2ImPA1s",
+    "ig": "https://www.instagram.com/reel/DfnZnFnCeJw/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7707022093463997716?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/qM_e2ImPA1s",
+    "comentario_youtube": "UgyA91ylGAIczDL903l4AaABAg"
    },
    "decision": {
     "toca_publicar": true,

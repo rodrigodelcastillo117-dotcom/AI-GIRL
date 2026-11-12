@@ -142,5 +142,35 @@
   "cambio": "Reglas de lo viral (investigación): gancho público + número, cierre para mandárselo a una persona concreta, del momento, pregunta abierta; series nuevas \"Victoria verifica\" (c70) y \"¿Cuántos días de salario mínimo cuesta…?\"; cada carrusel termina en su calculadora",
   "por_que": "Los virales de finanzas en español (2-4.5M vistas) y nuestro único éxito (c16) comparten el patrón; los compartidos son la señal que más reparte",
   "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-11",
+  "cambio": "Embudo medible: las páginas copian ?ref= a utm_source para Vercel Web Analytics; la planeación del domingo mide enlaces entregados → visitas por origen → planes de IA",
+  "por_que": "Montamos comentario → mensaje → calculadora → IA y nadie medía si funciona. Web Analytics sí está prendido en el sitio (el script responde 200), pero la API de consulta responde 'Web Analytics not found' desde aquí: los números se leen en el panel de Vercel",
+  "vigilar": "ig"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Comenta hoy: comentarios escritos para el público del video (frase con humor, dato que sorprende o postura), en videos de menos de 24 h y 20 mil a 1 millón de vistas, 4-6 al día; los creadores que contestan pasan a propuesta de colaboración",
+  "por_que": "Rodrigo: los creadores contestan los comentarios de Victoria pero el público no; eran consejos amables para el creador y se quedaban abajo",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Cola de TikTok: las 17 piezas de opinión y memes ya revisadas (consejos del tío, prestar a la familia, cuánto gana un ___, gastos hormiga, quién paga la cita...) suben y se alternan con las de temporada; antes iban detrás de las listas 'en 5 datos'",
+  "por_que": "Cero comentarios: las listas informativas se guardan pero no se comentan; ninguna pieza de opinión había salido",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Videos de Victoria en 1080x1920: naturalizar escala antes de subtitular; 40 y O2 rehechos en 1080 (pasaron qa_sync). O1 ya salió en 720; 18 sigue en 720",
+  "por_que": "Rodrigo: en Instagram se ven en mala calidad; Wan entrega 720x1280",
+  "vigilar": "ig"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Videos de Victoria hablando: de Wan (OpenArt, 720p) a Replicate p-video-avatar (1080p, voz MiniMax, ~$0.045 USD/s) con actitud 'sexy entrepreneur' con elegancia; labios con qa_labios.py y sin tpad. 40 y O2 rehechos",
+  "por_que": "Rodrigo: 'se ve mejor Replicate, cámbialo'; vio los labios desfasados (era el tpad); 'un poquito más coqueta... con elegancia'",
+  "vigilar": "todas"
  }
 ]
