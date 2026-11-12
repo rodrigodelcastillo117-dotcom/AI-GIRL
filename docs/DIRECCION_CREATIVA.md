@@ -85,6 +85,13 @@ más provocativo.
   voluminous tousled glossy copper waves", "sultry, confident half-smile and a teasing direct gaze into the lens",
   "no lingerie, no nudity". En el video: scripts/video_replicate.py ya trae la actitud.
 
+## Videos largos: Victoria y lámina intercaladas (Rodrigo, 12-nov-2026: "ME GUSTA ESO DE QUE ELLA HABLE Y SALGA, ESO VENDE MUCHÍSIMO MÁS QUE UN SLIDE SHOW")
+
+Regla fija: Victoria a cámara → lámina/gráfica/pasos → Victoria → lámina... Nunca dos láminas seguidas. Cada toma de
+Victoria es una frase natural (8-25 palabras) que presenta la lámina que viene o reacciona a la anterior, como alguien
+que habla, no un resumen. `scripts/largo.py intercalar <id>` lo hace solo en guiones viejos (la primera frase de la
+segunda lámina pasa a Victoria). Costo: ~$0.30-0.45 USD por toma; un largo de 6 min ≈ $6-7 USD.
+
 ## Capital, el Rottweiler
 
 Un solo perro fijo, con hoja de referencia propia (`assets/rottweiler-hoja.png`): Rottweiler adulto,
