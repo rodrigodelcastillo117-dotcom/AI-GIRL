@@ -45,7 +45,9 @@ def normal(texto):
     """Minúsculas, sin acentos ni signos y con los números en letra (Whisper escribe "regla 1")."""
     texto = texto.lower().replace('%', ' por ciento ').replace('$', ' ')
     texto = re.sub(r'(\d)[.,](\d{3})', r'\1\2', texto)  # "4.500" y "4,500" son cuatro mil quinientos
-    texto = re.sub(r'\d+', lambda m: ' ' + num2words(int(m.group()), lang='es') + ' ', texto)
+    # Los ceros a la izquierda se dicen ("079" = "cero setenta y nueve"; 12-nov-2026 el 079 de Profedet salía como error).
+    texto = re.sub(r'\d+', lambda m: ' ' + ' '.join(['cero'] * (len(m.group()) - len(m.group().lstrip('0')))) + ' '
+                   + (num2words(int(m.group()), lang='es') if m.group().lstrip('0') else '') + ' ', texto)
     texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
     return re.sub(r'[^a-zñ ]', ' ', texto).split()
 
