@@ -76,6 +76,12 @@
     "voz": "El aguinaldo es un pago anual que manda la Ley Federal del Trabajo en su artículo ochenta y siete. Son por lo menos quince días de salario. Si tu contrato o tu empresa te dan más días, perfecto. Menos, nunca."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "La ley dice antes del veinte de diciembre, así que el último día para pagarte es el diecinueve.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Fecha límite 2026",
@@ -86,7 +92,13 @@
      "Falta de utilidades no es excusa para no pagar"
     ],
     "fuente": "LFT art. 87 (texto vigente, últ. reforma DOF 14-05-2026); Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 18",
-    "voz": "La ley dice antes del veinte de diciembre, así que el último día para pagarte es el diecinueve. Este año cae en sábado, y el veinte en domingo. Y según la Procuraduría Federal de la Defensa del Trabajo, tu patrón no puede alegar que la empresa no tuvo utilidades para no pagarte."
+    "voz": "Este año cae en sábado, y el veinte en domingo. Y según la Procuraduría Federal de la Defensa del Trabajo, tu patrón no puede alegar que la empresa no tuvo utilidades para no pagarte."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Le toca a casi todo el que trabaja para un patrón.",
+    "puente": true
    },
    {
     "tipo": "lamina",
@@ -99,7 +111,7 @@
      "La clave: trabajo subordinado"
     ],
     "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 1, 24 y 25; LFT art. 291-F",
-    "voz": "Le toca a casi todo el que trabaja para un patrón. De base o de confianza, eventual, por obra o por temporada. También a las personas trabajadoras del hogar. En plataformas digitales, la ley dice que ya viene incluido en el pago de cada servicio. Lo que importa es la subordinación, que trabajes bajo las órdenes de alguien."
+    "voz": "De base o de confianza, eventual, por obra o por temporada. También a las personas trabajadoras del hogar. En plataformas digitales, la ley dice que ya viene incluido en el pago de cada servicio. Lo que importa es la subordinación, que trabajes bajo las órdenes de alguien."
    },
    {
     "tipo": "victoria",
@@ -128,6 +140,12 @@
     "voz": "Paso uno, divide tu sueldo mensual entre treinta y te da tu salario diario. Con quince mil pesos son quinientos pesos al día. Paso dos, multiplica por quince, y salen siete mil quinientos pesos. Paso tres, solo si no completaste el año, divides entre trescientos sesenta y cinco y multiplicas por tus días trabajados."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ojo con el salario que usas.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "¿Qué salario se usa?",
@@ -138,7 +156,7 @@
      "A destajo: promedio de los últimos 30 días trabajados"
     ],
     "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 5; LFT art. 89",
-    "voz": "Ojo con el salario que usas. Si tu sueldo es fijo, se toma tu cuota diaria, sin otros ingresos, y la que tengas al momento del pago. Si te pagan a destajo, por pieza o por obra, se usa el promedio diario de los últimos treinta días que trabajaste."
+    "voz": "Si tu sueldo es fijo, se toma tu cuota diaria, sin otros ingresos, y la que tengas al momento del pago. Si te pagan a destajo, por pieza o por obra, se usa el promedio diario de los últimos treinta días que trabajaste."
    },
    {
     "tipo": "victoria",
@@ -159,6 +177,12 @@
     "voz": "Si ganas el mínimo general, tu salario ya viene fijado por día, trescientos quince pesos con cuatro centavos. Por quince da cuatro mil setecientos veinticinco pesos con sesenta centavos. Los nueve mil quinientos ochenta y dos pesos al mes que publica el gobierno son una equivalencia. Para el mínimo, usa el diario."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Con quince mil pesos al mes, tu salario diario es de quinientos pesos.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Si ganas $15,000 al mes",
@@ -169,7 +193,13 @@
      "Atajo: 15 días = medio mes de sueldo"
     ],
     "fuente": "LFT art. 87; art. 89, último párrafo (mensual entre 30)",
-    "voz": "Con quince mil pesos al mes, tu salario diario es de quinientos pesos. Por quince, siete mil quinientos pesos. Y aquí va un atajo. Si tu sueldo es mensual y se divide entre treinta, quince días son justo medio mes. Tu aguinaldo mínimo es la mitad de tu sueldo."
+    "voz": "Por quince, siete mil quinientos pesos. Y aquí va un atajo. Si tu sueldo es mensual y se divide entre treinta, quince días son justo medio mes. Tu aguinaldo mínimo es la mitad de tu sueldo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Con veinticinco mil pesos al mes, el diario es de ochocientos treinta y tres pesos con treinta y tres centavos.",
+    "puente": true
    },
    {
     "tipo": "lamina",
@@ -182,7 +212,13 @@
      "Con el diario redondeado da $12,499.95"
     ],
     "fuente": "LFT art. 87; art. 89, último párrafo (mensual entre 30)",
-    "voz": "Con veinticinco mil pesos al mes, el diario es de ochocientos treinta y tres pesos con treinta y tres centavos. El aguinaldo es de doce mil quinientos pesos. Si a ti te salen unos centavos menos, es porque redondeaste el diario. Con el atajo de medio mes te sale exacto."
+    "voz": "El aguinaldo es de doce mil quinientos pesos. Si a ti te salen unos centavos menos, es porque redondeaste el diario. Con el atajo de medio mes te sale exacto."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Aquí lo ves junto.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -212,7 +248,7 @@
     ],
     "nota": "Todos reciben 15 días; cambia el salario diario",
     "fuente": "LFT art. 87; Conasami, resolución DOF 09-12-2025",
-    "voz": "Aquí lo ves junto. En la zona libre de la frontera norte el mínimo es de cuatrocientos cuarenta pesos con ochenta y siete centavos, y su aguinaldo, seis mil seiscientos trece pesos con cinco centavos. Todos reciben quince días. Lo que cambia es el salario diario, por eso tiene que estar bien en tu recibo."
+    "voz": "En la zona libre de la frontera norte el mínimo es de cuatrocientos cuarenta pesos con ochenta y siete centavos, y su aguinaldo, seis mil seiscientos trece pesos con cinco centavos. Todos reciben quince días. Lo que cambia es el salario diario, por eso tiene que estar bien en tu recibo."
    },
    {
     "tipo": "victoria",
@@ -241,6 +277,12 @@
     "voz": "Ejemplo. Ganas quince mil pesos y entraste el primero de julio. Hasta el treinta y uno de diciembre son ciento ochenta y cuatro días. Tus siete mil quinientos pesos de año completo los divides entre trescientos sesenta y cinco, multiplicas por ciento ochenta y cuatro, y te tocan tres mil setecientos ochenta pesos con ochenta y dos centavos."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Si renunciaste o te despidieron, te toca la parte proporcional y se paga al terminar la relación, en tu finiquito o liquidación.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Si renunciaste o te despidieron",
@@ -251,7 +293,13 @@
      "$7,500.00 ÷ 365 × 273 = $5,609.59"
     ],
     "fuente": "LFT art. 87; Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 15 y 16",
-    "voz": "Si renunciaste o te despidieron, te toca la parte proporcional y se paga al terminar la relación, en tu finiquito o liquidación. Si ganabas quince mil pesos y saliste el treinta de septiembre, trabajaste doscientos setenta y tres días del año. Te tocan cinco mil seiscientos nueve pesos con cincuenta y nueve centavos."
+    "voz": "Si ganabas quince mil pesos y saliste el treinta de septiembre, trabajaste doscientos setenta y tres días del año. Te tocan cinco mil seiscientos nueve pesos con cincuenta y nueve centavos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora te lo pongo con un sueldo de quince mil pesos al mes.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -297,6 +345,12 @@
     "voz": "Según la Procuraduría, la incapacidad por maternidad y el permiso de paternidad cuentan como días trabajados. Si tuviste un accidente de trabajo, te toca el aguinaldo completo. Las vacaciones son días pagados por ley. Y si tu incapacidad fue por enfermedad general, la ley la trata como suspensión, así que consulta tu caso gratis con la Procuraduría."
    },
    {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Si trabajas por honorarios, como prestador de servicios profesionales independiente, no te toca aguinaldo.",
+    "puente": true
+   },
+   {
     "tipo": "lamina",
     "capitulo": null,
     "titulo": "Si trabajas por honorarios",
@@ -307,7 +361,7 @@
      "Aunque no tengas contrato por escrito"
     ],
     "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 10 y 23",
-    "voz": "Si trabajas por honorarios, como prestador de servicios profesionales independiente, no te toca aguinaldo. La excepción es que en los hechos haya subordinación, que trabajes bajo las órdenes de un patrón. Si la puedes comprobar, la Procuraduría dice que sí te corresponde, aunque no tengas contrato por escrito."
+    "voz": "La excepción es que en los hechos haya subordinación, que trabajes bajo las órdenes de un patrón. Si la puedes comprobar, la Procuraduría dice que sí te corresponde, aunque no tengas contrato por escrito."
    },
    {
     "tipo": "victoria",
@@ -326,6 +380,12 @@
     ],
     "fuente": "LISR art. 93 fr. XIV (dice 30 días de salario mínimo; se entiende UMA por el art. tercero transitorio, DOF 27-01-2016); SAT, Apéndice 6 CFDI de nómina (aguinaldo: 30 UMA); INEGI, comunicado 1/26 (8-ene-2026)",
     "voz": "La Ley del Impuesto sobre la Renta deja exenta una parte del aguinaldo. El Servicio de Administración Tributaria la aplica como treinta veces la UMA, la Unidad de Medida y Actualización. En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día. Por treinta, tres mil quinientos diecinueve pesos con treinta centavos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Lo que pasa de esa cifra se grava, se suma a tu ingreso para el impuesto.",
+    "puente": true
    },
    {
     "tipo": "grafica",
@@ -350,11 +410,17 @@
     ],
     "nota": "Se grava lo que pasa de $3,519.30; con salario mínimo, exento completo (fr. I)",
     "fuente": "LISR art. 93 fr. I y XIV; INEGI, comunicado 1/26 (8-ene-2026)",
-    "voz": "Lo que pasa de esa cifra se grava, se suma a tu ingreso para el impuesto. Con quince mil pesos quedan gravados tres mil novecientos ochenta pesos con setenta centavos. Con veinticinco mil, ocho mil novecientos ochenta pesos con setenta centavos. Y si ganas el salario mínimo, otra fracción de la ley exenta completo tu aguinaldo de quince días."
+    "voz": "Con quince mil pesos quedan gravados tres mil novecientos ochenta pesos con setenta centavos. Con veinticinco mil, ocho mil novecientos ochenta pesos con setenta centavos. Y si ganas el salario mínimo, otra fracción de la ley exenta completo tu aguinaldo de quince días."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Calculadora gratis",
+    "voz": "Si no quieres hacer cuentas, te dejé una calculadora gratis, la ves aquí en pantalla y el enlace está en la descripción.",
+    "puente": true
    },
    {
     "tipo": "lamina",
-    "capitulo": "Calculadora gratis",
+    "capitulo": null,
     "titulo": "Calcula el tuyo gratis",
     "dato_grande": "victoriatheceo.vercel.app/aguinaldo",
     "puntos": [
@@ -363,7 +429,7 @@
      "Te dice cuánto te toca"
     ],
     "fuente": "Calculadora de Victoria The CEO",
-    "voz": "Si no quieres hacer cuentas, te dejé una calculadora gratis, la ves aquí en pantalla y el enlace está en la descripción. Pones tu sueldo mensual, tus días de aguinaldo y tu fecha de ingreso o de salida, y te dice cuánto te toca."
+    "voz": "Pones tu sueldo mensual, tus días de aguinaldo y tu fecha de ingreso o de salida, y te dice cuánto te toca."
    },
    {
     "tipo": "victoria",
@@ -374,7 +440,8 @@
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, últ. reforma DOF 14-05-2026, arts. 42, 76, 87, 89 y 291-F; LISR, últ. reforma DOF 01-04-2024, art. 93 fr. I y XIV; CPEUM, art. tercero transitorio de desindexación DOF 27-01-2016; Conasami, resolución DOF 09-12-2025 y tabla 2026; INEGI, comunicado 1/26; SAT, Apéndice 6 CFDI de nómina; Profedet, Preguntas frecuentes Aguinaldo nov-2025). Todas las cuentas rehechas con Decimal, sin diferencias. Cambios: intro con 'salario mínimo general todo el año' y 'al menos'; fecha límite sin causalidad falsa (el 19 es el último día por ser 'antes del 20', no por caer el 20 en domingo); plataformas digitales: el aguinaldo va incluido en cada pago (LFT 291-F), no se paga aparte; renuncia o despido: finiquito o liquidación; ISR: redacción precisa (ley dice salario mínimo elevado a 30 días, SAT aplica 30 UMA), 'se grava' en vez de 'paga impuesto', nota de la gráfica corregida para el caso de salario mínimo (exento completo por fr. I); fuentes de art. 89 acotadas al último párrafo; SEO actualizado.",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "estado": "produciendo",
-  "publica_utc": "2026-11-15T00:45:00Z"
+  "publica_utc": "2026-11-15T00:45:00Z",
+  "intercalado": true
  },
  {
   "id": "LA2",
