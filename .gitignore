@@ -24,3 +24,6 @@ assets/broll/.*-crudo.mp4
 assets/fotos/.*-crudo.jpg
 videos/*-voz.mp3
 videos/*-tiempos.json
+videos/qa/*.json
+videos/qa/*.mp4
+videos/rechazados/
