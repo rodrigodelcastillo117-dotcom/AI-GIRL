@@ -22,3 +22,4 @@ node_modules/
 # temporales de video_broll.py / foto_escena.py
 assets/broll/.*-crudo.mp4
 assets/fotos/.*-crudo.jpg
+videos/*-voz.mp3

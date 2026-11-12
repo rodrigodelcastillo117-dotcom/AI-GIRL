@@ -392,3 +392,31 @@ programó y a qué hora (franja de la prueba), créditos usados y restantes, qu�
 (lo que gana, lo que pierde, lo que se probó) y cualquier problema. Los días sin publicación, una
 o dos líneas. Los lunes, pide a Rodrigo capturas de las estadísticas de Instagram y TikTok de la
 semana (regla 33). Es lo que le llega como notificación.
+
+## 1f. Tendencias de la semana (lunes, o si contenido/tendencias.json tiene más de 7 días)
+Rodrigo (12-nov-2026): "bailes virales, tendencias de la semana, canciones de la semana, todo".
+1. **Bailes y formatos:** `search_viral_videos` de revid (SOLO búsqueda, nunca generar: revid es de Guardianes) con
+   `contentType: "Dance"`, plataformas tiktok e instagram, `postedAfter` = hace 7 días, `sort: "popular"`; repetir con
+   `language: "es"`. Quedarse con 1-3 que Victoria pueda hacer con elegancia (manos, copa, caminar, giro), nunca sexis.
+2. **Canciones:** Higgsfield `tiktok_music_trending` (connector de config.json → higgsfield, país MX, 7DAY). Solo el plan
+   GRATIS: si una herramienta pide créditos o pago, no se usa (Rodrigo: "solo si no pago").
+3. **Temas:** `search_viral_videos` con temas de dinero, éxito, pareja, aranceles, T-MEC, noticias de la semana en México;
+   lo que tenga muchas vistas y se pueda explicar con un dato verificado entra a la lista de guiones (paso 1c).
+4. Guardar en `contenido/tendencias.json` (bailes, canciones, temas, con url y vistas) y hacer commit.
+5. **Hacer el baile:** foto de Victoria en una escena que encaje (bar, yate, terraza) + video con control de movimiento
+   (Kling motion control en Everygen cuando haya créditos, o el de Higgsfield si es gratis). Revisar 6 cuadros: misma
+   cara, manos bien, nada provocativo. Con la canción: Higgsfield publica directo con el sonido; si no se puede, Publer en
+   modo recordatorio con el nombre de la canción en el texto para Rodrigo.
+
+## 4b. Short con acción (`"formato": "escena"`)
+Rodrigo (12-nov-2026): "shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del
+entorno". Victoria habla a cámara en una escena del repertorio y a media frase se corta a la acción de esa escena con
+movimiento real; la voz sigue igual, al volver a cámara los labios siguen exactos.
+1. Foto hablando: `REPLICATE_AUTORIZACION=shorts-escena python3 scripts/foto_escena.py <escena> "<qué hace>" [perro]`
+   → `assets/fotos/habla-<escena>.jpg`. Revisarla: un solo perro (o ninguno), nada tapa la boca, de pecho para arriba.
+2. Voz: `$VOZ_PYTHON scripts/voz_guion.py <id> videos/video-<id>-voz.mp3` (15-20 s).
+3. Video: `REPLICATE_AUTORIZACION=shorts-escena python3 scripts/video_replicate.py <foto> <voz> videos/video-<id>.mp4 "<cómo se mueve>"`.
+4. QA completo del paso 5 sobre `video-<id>.mp4` (labios, sync, cuadros) ANTES de meter la acción.
+5. `frases_a_tiempos.py` y luego `python3 scripts/insertar_accion.py videos/video-<id>.mp4 tiempos.json <frases del plan
+   → insertos> <broll> videos/video-<id>-accion.mp4`; desde aquí sigue el paso 6 (naturalizar, subtítulos, título, cierre)
+   con `-accion.mp4` como entrada.
