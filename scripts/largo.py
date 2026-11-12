@@ -24,7 +24,10 @@ import subprocess
 import sys
 import textwrap
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+try:  # el paso "voces" corre con VOZ_PYTHON, que no trae PIL: solo los pasos que dibujan la necesitan
+    from PIL import Image, ImageDraw, ImageFont
+except ImportError:
+    Image = ImageDraw = ImageFont = None
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

@@ -196,11 +196,13 @@ def de_replicate(descripcion):
                                    'aspect_ratio': '16:9', 'output_format': 'png'}}).encode()
     req = urllib.request.Request('https://api.replicate.com/v1/models/black-forest-labs/flux-schnell/predictions',
                                  data=cuerpo, method='POST', headers={'Authorization': f'Bearer {token}',
-                                                                      'Content-Type': 'application/json', 'Prefer': 'wait'})
+                                                                      'Content-Type': 'application/json', 'Prefer': 'wait',
+                                                                      'User-Agent': 'victoria-pipeline/1.0'})
     salida = json.load(urllib.request.urlopen(req, timeout=120)).get('output') or []
     if not salida:
         return None
-    foto = urllib.request.urlopen(salida[0] if isinstance(salida, list) else salida, timeout=60).read()
+    foto = urllib.request.urlopen(urllib.request.Request(salida[0] if isinstance(salida, list) else salida,
+                                                         headers={'User-Agent': 'victoria-pipeline/1.0'}), timeout=60).read()
     return Image.open(io.BytesIO(foto)).convert('RGB'), 'Imagen ilustrativa creada con IA'
 
 

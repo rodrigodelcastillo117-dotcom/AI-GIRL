@@ -1,0 +1,994 @@
+[
+ {
+  "id": "LA1",
+  "titulo_trabajo": "Aguinaldo 2026: cuánto te toca y cómo calcularlo (con ejemplos)",
+  "seo": {
+   "palabra_clave": "aguinaldo 2026",
+   "titulo": "Aguinaldo 2026 cuánto te toca y cómo calcularlo con ejemplos",
+   "descripcion": "Aguinaldo 2026: cuánto te toca y cómo calcularlo en 3 pasos, con ejemplos para el salario mínimo ($4,725.60), $15,000 ($7,500.00) y $25,000 ($12,500.00).\nFecha límite (antes del 20 de diciembre), aguinaldo proporcional si entraste a mitad de año, si renunciaste o te despidieron, incapacidad, maternidad y honorarios.\nParte exenta de ISR 2026: 30 UMA = $3,519.30 (con salario mínimo, los 15 días quedan exentos completos). Calculadora gratis: https://victoriatheceo.vercel.app/aguinaldo\nFuentes oficiales:\n• Ley Federal del Trabajo, arts. 42, 76, 87, 89 y 291-F: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf\n• Profedet, Preguntas frecuentes Aguinaldo: https://www.gob.mx/cms/uploads/attachment/file/1036814/Aguinaldo_2025_Preguntas_Frecuentes.pdf\n• Conasami, salarios mínimos 2026 (DOF 09-12-2025): https://www.gob.mx/conasami/es/articulos/se-publican-en-el-diario-oficial-de-la-federacion-los-salarios-minimos-vigentes-a-partir-del-1-de-enero-de-2026\n• Conasami, resolución DOF 09-12-2025 (PDF): https://www.gob.mx/cms/uploads/attachment/file/1041936/Resoluci_n_SM_2026_DOF251209.pdf\n• INEGI, UMA 2026: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf\n• Ley del ISR, art. 93 fr. I y XIV: https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf\n• SAT, Apéndice 6 de nómina (aguinaldo exento 30 UMA): https://www.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461175070298&ssbinary=true",
+   "tags": [
+    "aguinaldo 2026",
+    "cómo calcular el aguinaldo",
+    "cuánto aguinaldo me toca",
+    "aguinaldo proporcional",
+    "aguinaldo salario mínimo 2026",
+    "fecha límite aguinaldo 20 de diciembre",
+    "aguinaldo si renuncio",
+    "aguinaldo honorarios",
+    "aguinaldo exento isr 2026",
+    "ley federal del trabajo artículo 87"
+   ],
+   "hashtags": [
+    "#aguinaldo",
+    "#aguinaldo2026",
+    "#finanzaspersonales",
+    "#derechoslaborales",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "texto": "¿CUÁNTO TE TOCA?",
+   "subtexto": "Aguinaldo 2026 con ejemplos"
+  },
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si ganas el salario mínimo general todo el año, tu aguinaldo es de al menos cuatro mil setecientos veinticinco pesos con sesenta centavos. Pagártelo el veinte de diciembre o después ya es tarde."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "En este video sacas el tuyo en tres pasos, con tres sueldos de ejemplo. Y vemos los casos raros, entrar a medio año, renunciar, incapacidad y honorarios."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": "Qué es el aguinaldo",
+    "titulo": "Qué dice la ley",
+    "dato_grande": "Mínimo 15 días de salario",
+    "puntos": [
+     "Pago anual obligatorio por ley",
+     "Mínimo 15 días de salario",
+     "Tu contrato puede darte más, nunca menos"
+    ],
+    "fuente": "LFT art. 87 (texto vigente, últ. reforma DOF 14-05-2026)",
+    "voz": "El aguinaldo es un pago anual que manda la Ley Federal del Trabajo en su artículo ochenta y siete. Son por lo menos quince días de salario. Si tu contrato o tu empresa te dan más días, perfecto. Menos, nunca."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Fecha límite 2026",
+    "dato_grande": "Antes del 20 de diciembre",
+    "puntos": [
+     "El 20 de diciembre de 2026 cae en domingo",
+     "Último día para pagarte: sábado 19",
+     "Falta de utilidades no es excusa para no pagar"
+    ],
+    "fuente": "LFT art. 87 (texto vigente, últ. reforma DOF 14-05-2026); Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 18",
+    "voz": "La ley dice antes del veinte de diciembre, así que el último día para pagarte es el diecinueve. Este año cae en sábado, y el veinte en domingo. Y según la Procuraduría Federal de la Defensa del Trabajo, tu patrón no puede alegar que la empresa no tuvo utilidades para no pagarte."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "¿A quién le toca?",
+    "dato_grande": null,
+    "puntos": [
+     "Base, confianza, planta, eventuales, por obra o por temporada",
+     "Del hogar; en plataformas va incluido en cada pago",
+     "La clave: trabajo subordinado"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 1, 24 y 25; LFT art. 291-F",
+    "voz": "Le toca a casi todo el que trabaja para un patrón. De base o de confianza, eventual, por obra o por temporada. También a las personas trabajadoras del hogar. En plataformas digitales, la ley dice que ya viene incluido en el pago de cada servicio. Lo que importa es la subordinación, que trabajes bajo las órdenes de alguien."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cómo calcularlo",
+    "voz": "Ahora sí, la cuenta. Solo necesitas tu recibo de nómina y una calculadora. Capital ya sacó la suya, aunque él nada más sabe contar croquetas."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Tu aguinaldo en 3 pasos",
+    "pasos": [
+     {
+      "texto": "Divide tu sueldo mensual entre 30",
+      "resultado": "$15,000 ÷ 30 = $500.00 al día"
+     },
+     {
+      "texto": "Multiplica tu salario diario por 15",
+      "resultado": "$500.00 × 15 = $7,500.00"
+     },
+     {
+      "texto": "Si no completaste el año, divide entre 365 y multiplica por tus días",
+      "resultado": "$7,500.00 ÷ 365 × 184 = $3,780.82"
+     }
+    ],
+    "fuente": "LFT art. 87; art. 89, último párrafo (mensual entre 30); Profedet, preg. 4",
+    "voz": "Paso uno, divide tu sueldo mensual entre treinta y te da tu salario diario. Con quince mil pesos son quinientos pesos al día. Paso dos, multiplica por quince, y salen siete mil quinientos pesos. Paso tres, solo si no completaste el año, divides entre trescientos sesenta y cinco y multiplicas por tus días trabajados."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "¿Qué salario se usa?",
+    "dato_grande": null,
+    "puntos": [
+     "Salario fijo: tu cuota diaria, sin otros ingresos",
+     "La que tienes cuando te pagan el aguinaldo",
+     "A destajo: promedio de los últimos 30 días trabajados"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 5; LFT art. 89",
+    "voz": "Ojo con el salario que usas. Si tu sueldo es fijo, se toma tu cuota diaria, sin otros ingresos, y la que tengas al momento del pago. Si te pagan a destajo, por pieza o por obra, se usa el promedio diario de los últimos treinta días que trabajaste."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Ejemplos con 3 sueldos",
+    "voz": "Vamos con tres sueldos. Busca el tuyo o el más parecido y haz la cuenta conmigo. Te toma menos de un minuto."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si ganas el salario mínimo",
+    "dato_grande": "$4,725.60",
+    "puntos": [
+     "Salario mínimo general 2026: $315.04 al día",
+     "Equivale a $9,582.47 al mes",
+     "$315.04 × 15 = $4,725.60"
+    ],
+    "fuente": "Conasami, resolución DOF 09-12-2025 (resolutivo cuarto: mensual = diario × 365 ÷ 12)",
+    "voz": "Si ganas el mínimo general, tu salario ya viene fijado por día, trescientos quince pesos con cuatro centavos. Por quince da cuatro mil setecientos veinticinco pesos con sesenta centavos. Los nueve mil quinientos ochenta y dos pesos al mes que publica el gobierno son una equivalencia. Para el mínimo, usa el diario."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si ganas $15,000 al mes",
+    "dato_grande": "$7,500.00",
+    "puntos": [
+     "$15,000 ÷ 30 = $500.00 al día",
+     "$500.00 × 15 = $7,500.00",
+     "Atajo: 15 días = medio mes de sueldo"
+    ],
+    "fuente": "LFT art. 87; art. 89, último párrafo (mensual entre 30)",
+    "voz": "Con quince mil pesos al mes, tu salario diario es de quinientos pesos. Por quince, siete mil quinientos pesos. Y aquí va un atajo. Si tu sueldo es mensual y se divide entre treinta, quince días son justo medio mes. Tu aguinaldo mínimo es la mitad de tu sueldo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si ganas $25,000 al mes",
+    "dato_grande": "$12,500.00",
+    "puntos": [
+     "$25,000 ÷ 30 = $833.33 al día",
+     "$25,000 ÷ 30 × 15 = $12,500.00",
+     "Con el diario redondeado da $12,499.95"
+    ],
+    "fuente": "LFT art. 87; art. 89, último párrafo (mensual entre 30)",
+    "voz": "Con veinticinco mil pesos al mes, el diario es de ochocientos treinta y tres pesos con treinta y tres centavos. El aguinaldo es de doce mil quinientos pesos. Si a ti te salen unos centavos menos, es porque redondeaste el diario. Con el atajo de medio mes te sale exacto."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Aguinaldo mínimo según tu sueldo",
+    "barras": [
+     {
+      "etiqueta": "Salario mínimo general ($315.04 al día)",
+      "valor": 4725.6,
+      "texto_valor": "$4,725.60"
+     },
+     {
+      "etiqueta": "Salario mínimo frontera norte ($440.87 al día)",
+      "valor": 6613.05,
+      "texto_valor": "$6,613.05"
+     },
+     {
+      "etiqueta": "Sueldo de $15,000 al mes",
+      "valor": 7500.0,
+      "texto_valor": "$7,500.00"
+     },
+     {
+      "etiqueta": "Sueldo de $25,000 al mes",
+      "valor": 12500.0,
+      "texto_valor": "$12,500.00"
+     }
+    ],
+    "nota": "Todos reciben 15 días; cambia el salario diario",
+    "fuente": "LFT art. 87; Conasami, resolución DOF 09-12-2025",
+    "voz": "Aquí lo ves junto. En la zona libre de la frontera norte el mínimo es de cuatrocientos cuarenta pesos con ochenta y siete centavos, y su aguinaldo, seis mil seiscientos trece pesos con cinco centavos. Todos reciben quince días. Lo que cambia es el salario diario, por eso tiene que estar bien en tu recibo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Proporcional, renuncia o despido",
+    "voz": "¿Y si no trabajaste todo el año? Igual te toca. La ley dice que se paga la parte proporcional, sigas en la empresa o ya no."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Entraste el 1 de julio de 2026",
+    "pasos": [
+     {
+      "texto": "Cuenta tus días del año",
+      "resultado": "1 de julio al 31 de diciembre = 184 días"
+     },
+     {
+      "texto": "Saca tu aguinaldo de año completo",
+      "resultado": "$15,000 ÷ 30 × 15 = $7,500.00"
+     },
+     {
+      "texto": "Divide entre 365 y multiplica por tus días",
+      "resultado": "$7,500.00 ÷ 365 × 184 = $3,780.82"
+     }
+    ],
+    "fuente": "LFT art. 87, segundo párrafo",
+    "voz": "Ejemplo. Ganas quince mil pesos y entraste el primero de julio. Hasta el treinta y uno de diciembre son ciento ochenta y cuatro días. Tus siete mil quinientos pesos de año completo los divides entre trescientos sesenta y cinco, multiplicas por ciento ochenta y cuatro, y te tocan tres mil setecientos ochenta pesos con ochenta y dos centavos."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si renunciaste o te despidieron",
+    "dato_grande": "También te toca",
+    "puntos": [
+     "Se paga al salir, en tu finiquito o liquidación",
+     "Saliste el 30 de septiembre: 273 días",
+     "$7,500.00 ÷ 365 × 273 = $5,609.59"
+    ],
+    "fuente": "LFT art. 87; Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 15 y 16",
+    "voz": "Si renunciaste o te despidieron, te toca la parte proporcional y se paga al terminar la relación, en tu finiquito o liquidación. Si ganabas quince mil pesos y saliste el treinta de septiembre, trabajaste doscientos setenta y tres días del año. Te tocan cinco mil seiscientos nueve pesos con cincuenta y nueve centavos."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Aguinaldo proporcional con sueldo de $15,000",
+    "barras": [
+     {
+      "etiqueta": "Año completo (365 días)",
+      "valor": 7500.0,
+      "texto_valor": "$7,500.00"
+     },
+     {
+      "etiqueta": "Saliste el 30 de septiembre (273 días)",
+      "valor": 5609.59,
+      "texto_valor": "$5,609.59"
+     },
+     {
+      "etiqueta": "Entraste el 1 de julio (184 días)",
+      "valor": 3780.82,
+      "texto_valor": "$3,780.82"
+     }
+    ],
+    "nota": "Cada día trabajado suma unos $20.55 al aguinaldo",
+    "fuente": "LFT art. 87",
+    "voz": "Mira la proporción. Con este sueldo, cada día que trabajaste suma unos veinte pesos con cincuenta y cinco centavos a tu aguinaldo. Por eso tu fecha de entrada y tu fecha de salida tienen que estar bien en el finiquito. Revísalas antes de firmar."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Casos especiales",
+    "voz": "Ahora los casos que más me preguntan. Incapacidad, maternidad, vacaciones y honorarios. Aquí es donde más errores veo, y casi nunca a tu favor."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Incapacidad, maternidad y vacaciones",
+    "dato_grande": null,
+    "puntos": [
+     "Maternidad y paternidad: cuentan como días trabajados",
+     "Incapacidad por accidente de trabajo: aguinaldo completo",
+     "Vacaciones: días pagados por ley"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 12 a 14; LFT arts. 42 y 76",
+    "voz": "Según la Procuraduría, la incapacidad por maternidad y el permiso de paternidad cuentan como días trabajados. Si tuviste un accidente de trabajo, te toca el aguinaldo completo. Las vacaciones son días pagados por ley. Y si tu incapacidad fue por enfermedad general, la ley la trata como suspensión, así que consulta tu caso gratis con la Procuraduría."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si trabajas por honorarios",
+    "dato_grande": "Sin subordinación, no hay aguinaldo",
+    "puntos": [
+     "Servicios profesionales independientes: no te toca",
+     "Con subordinación comprobable: sí te toca",
+     "Aunque no tengas contrato por escrito"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 10 y 23",
+    "voz": "Si trabajas por honorarios, como prestador de servicios profesionales independiente, no te toca aguinaldo. La excepción es que en los hechos haya subordinación, que trabajes bajo las órdenes de un patrón. Si la puedes comprobar, la Procuraduría dice que sí te corresponde, aunque no tengas contrato por escrito."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Impuestos",
+    "voz": "Y la pregunta del millón. ¿Tu aguinaldo paga impuesto? Una parte sí y otra no. Te enseño dónde está la línea."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Parte exenta de ISR 2026",
+    "dato_grande": "$3,519.30",
+    "puntos": [
+     "Exento: hasta 30 UMA al año",
+     "UMA 2026: $117.31 al día",
+     "30 × $117.31 = $3,519.30"
+    ],
+    "fuente": "LISR art. 93 fr. XIV (dice 30 días de salario mínimo; se entiende UMA por el art. tercero transitorio, DOF 27-01-2016); SAT, Apéndice 6 CFDI de nómina (aguinaldo: 30 UMA); INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "La Ley del Impuesto sobre la Renta deja exenta una parte del aguinaldo. El Servicio de Administración Tributaria la aplica como treinta veces la UMA, la Unidad de Medida y Actualización. En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día. Por treinta, tres mil quinientos diecinueve pesos con treinta centavos."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Parte gravada de tu aguinaldo",
+    "barras": [
+     {
+      "etiqueta": "Salario mínimo ($4,725.60 de aguinaldo)",
+      "valor": 0.0,
+      "texto_valor": "$0.00, todo exento"
+     },
+     {
+      "etiqueta": "Sueldo de $15,000 ($7,500.00)",
+      "valor": 3980.7,
+      "texto_valor": "$3,980.70"
+     },
+     {
+      "etiqueta": "Sueldo de $25,000 ($12,500.00)",
+      "valor": 8980.7,
+      "texto_valor": "$8,980.70"
+     }
+    ],
+    "nota": "Se grava lo que pasa de $3,519.30; con salario mínimo, exento completo (fr. I)",
+    "fuente": "LISR art. 93 fr. I y XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Lo que pasa de esa cifra se grava, se suma a tu ingreso para el impuesto. Con quince mil pesos quedan gravados tres mil novecientos ochenta pesos con setenta centavos. Con veinticinco mil, ocho mil novecientos ochenta pesos con setenta centavos. Y si ganas el salario mínimo, otra fracción de la ley exenta completo tu aguinaldo de quince días."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": "Calculadora gratis",
+    "titulo": "Calcula el tuyo gratis",
+    "dato_grande": "victoriatheceo.vercel.app/aguinaldo",
+    "puntos": [
+     "Pones tu sueldo mensual y tus días de aguinaldo",
+     "Agrega tu fecha de ingreso o de salida",
+     "Te dice cuánto te toca"
+    ],
+    "fuente": "Calculadora de Victoria The CEO",
+    "voz": "Si no quieres hacer cuentas, te dejé una calculadora gratis en victoriatheceo punto vercel punto app, diagonal aguinaldo. Pones tu sueldo mensual, tus días de aguinaldo y tu fecha de ingreso o de salida, y te dice cuánto te toca. El enlace está en la descripción."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Tu aguinaldo no es un regalo de tu patrón, es tuyo por ley. Comenta tu sueldo y te digo cuánto te toca. Suscríbete, Capital ya lo hizo, y eso que no comparte ni su pelota."
+   }
+  ],
+  "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, últ. reforma DOF 14-05-2026, arts. 42, 76, 87, 89 y 291-F; LISR, últ. reforma DOF 01-04-2024, art. 93 fr. I y XIV; CPEUM, art. tercero transitorio de desindexación DOF 27-01-2016; Conasami, resolución DOF 09-12-2025 y tabla 2026; INEGI, comunicado 1/26; SAT, Apéndice 6 CFDI de nómina; Profedet, Preguntas frecuentes Aguinaldo nov-2025). Todas las cuentas rehechas con Decimal, sin diferencias. Cambios: intro con 'salario mínimo general todo el año' y 'al menos'; fecha límite sin causalidad falsa (el 19 es el último día por ser 'antes del 20', no por caer el 20 en domingo); plataformas digitales: el aguinaldo va incluido en cada pago (LFT 291-F), no se paga aparte; renuncia o despido: finiquito o liquidación; ISR: redacción precisa (ley dice salario mínimo elevado a 30 días, SAT aplica 30 UMA), 'se grava' en vez de 'paga impuesto', nota de la gráfica corregida para el caso de salario mínimo (exento completo por fr. I); fuentes de art. 89 acotadas al último párrafo; SEO actualizado.",
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "estado": "produciendo"
+ },
+ {
+  "id": "LA2",
+  "titulo_trabajo": "No me pagaron el aguinaldo: qué hacer paso a paso",
+  "seo": {
+   "palabra_clave": "no me pagaron el aguinaldo",
+   "titulo": "No me pagaron el aguinaldo qué hacer paso a paso",
+   "descripcion": "No me pagaron el aguinaldo: qué hacer paso a paso si no te lo dan antes del 20 de diciembre de 2026 o te lo pagan incompleto.\nRevisa tu recibo, pídelo por escrito, pide asesoría gratis a la Procuraduría de la Defensa del Trabajo (Profedet si tu empresa es de rama federal, la de tu estado si no; orientación en el 079), ve a la conciliación obligatoria en el Centro Federal de Conciliación o en el centro de tu estado, y recuerda que tienes 1 año para reclamar.\nQué pruebas guardar, qué pasa si te despidieron antes de diciembre y la multa al patrón (50 a 5,000 UMA), que impone la autoridad del trabajo y no se le paga al trabajador.\nFuentes oficiales:\n• Ley Federal del Trabajo, arts. 87, 89, 516, 518, 521, 527, 529, 530, 531, 534, 684-B, 684-C, 684-D, 684-E, 685 Ter, 784, 804, 992, 994, 1002 y 1008: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf\n• Profedet, Preguntas frecuentes Aguinaldo: https://www.gob.mx/cms/uploads/attachment/file/1036814/Aguinaldo_2025_Preguntas_Frecuentes.pdf\n• STPS/Profedet, boletín 005/2026 (079 y servicios gratuitos): https://www.gob.mx/stps/prensa/profedet-llama-a-trabajadores-a-reclamar-utilidades-no-pagadas-tras-concluir-plazo-legal?idiom=es\n• Profedet, multa por no pagar aguinaldo (art. 1002): https://www.gob.mx/profedet/es/articulos/la-procuraduria-federal-de-la-defensa-del-trabajo-profedet-protege-los-derechos-laborales-de-las-y-los-trabajadores\n• Profedet, competencia federal y procuradurías locales (conferencia 27-oct-2020): https://www.gob.mx/profedet/articulos/destaca-la-dra-carolina-ortiz-porras-los-servicios-gratuitos-que-ofrece-la-profedet?idiom=es\n• Centro Federal de Conciliación y Registro Laboral, solicitud en línea: https://conciliacion.centrolaboral.gob.mx/solicitudes/create-public\n• SAT, consulta tus recibos de nómina: https://www.sat.gob.mx/consulta/25242/consulta-tus-recibos-de-nomina-a-traves-del-portal-del-sat\n• INEGI, UMA 2026: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf",
+   "tags": [
+    "no me pagaron el aguinaldo",
+    "qué hacer si no me pagan el aguinaldo",
+    "profedet aguinaldo",
+    "cómo reclamar el aguinaldo",
+    "aguinaldo 2026 fecha límite",
+    "conciliación laboral aguinaldo",
+    "centro federal de conciliación y registro laboral",
+    "multa por no pagar aguinaldo",
+    "plazo para reclamar aguinaldo",
+    "aguinaldo si me despidieron"
+   ],
+   "hashtags": [
+    "#aguinaldo",
+    "#aguinaldo2026",
+    "#profedet",
+    "#derechoslaborales",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "texto": "¿NO TE PAGARON?",
+   "subtexto": "Reclámalo paso a paso"
+  },
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si no te pagan tu aguinaldo antes del veinte de diciembre, tienes un año para reclamarlo. Y la asesoría del gobierno para hacerlo es gratis, ningún funcionario te puede cobrar por ella."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Lo que la ley te da no es un favor de tu patrón. Hoy te digo qué hacer, en orden, y qué guardar desde ya."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": "La fecha límite",
+    "titulo": "Fecha límite 2026",
+    "dato_grande": "Antes del 20 de diciembre",
+    "puntos": [
+     "A más tardar el sábado 19 de diciembre de 2026",
+     "Mínimo 15 días de salario, o la parte proporcional si no cumpliste el año",
+     "Falta de utilidades no es excusa"
+    ],
+    "fuente": "LFT art. 87 (texto vigente, últ. reforma DOF 14-05-2026); Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 7 y 18",
+    "voz": "Primero, la fecha. La Ley Federal del Trabajo dice antes del veinte de diciembre, y este año el veinte cae en domingo. Si al terminar el sábado diecinueve no te pagaron al menos quince días de salario, o la parte proporcional si no cumpliste el año, ya te deben. Y la falta de utilidades no es excusa."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Cómo te lo deben pagar",
+    "dato_grande": null,
+    "puntos": [
+     "En efectivo y en moneda de curso legal",
+     "Nada de mercancía ni vales",
+     "Por depósito o transferencia, solo si aceptaste"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 19 y 20",
+    "voz": "También importa cómo te lo pagan. Según la Procuraduría Federal de la Defensa del Trabajo, el aguinaldo va en dinero, no en mercancía ni en vales. Puede ser por depósito o transferencia si tú lo aceptaste antes. Y no te pueden descontar nada, salvo los descuentos que permite la ley."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Paso 1. Revisa tu recibo",
+    "voz": "Antes de pelear, revisa. A veces sí te pagaron, pero incompleto, o con un salario diario mal calculado. Tu recibo te lo dice."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "¿Te pagaron completo?",
+    "pasos": [
+     {
+      "texto": "Saca lo que te tocaba si trabajaste todo el año",
+      "resultado": "$15,000 ÷ 30 × 15 = $7,500.00"
+     },
+     {
+      "texto": "Busca en tu recibo cuánto te pagaron de aguinaldo",
+      "resultado": "Ejemplo: $5,000.00"
+     },
+     {
+      "texto": "Resta para saber cuánto falta",
+      "resultado": "$7,500.00 − $5,000.00 = $2,500.00"
+     }
+    ],
+    "fuente": "LFT arts. 87 y 89",
+    "voz": "Ejemplo. Ganas quince mil pesos al mes y trabajaste todo el año, así que te tocaban al menos siete mil quinientos pesos. Si tu recibo dice cinco mil pesos de aguinaldo, te quedaron debiendo dos mil quinientos. Compara antes de impuestos, porque la retención aparece aparte, en las deducciones."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Ejemplo de aguinaldo incompleto",
+    "barras": [
+     {
+      "etiqueta": "Lo que te tocaba",
+      "valor": 7500.0,
+      "texto_valor": "$7,500.00"
+     },
+     {
+      "etiqueta": "Lo que te pagaron",
+      "valor": 5000.0,
+      "texto_valor": "$5,000.00"
+     },
+     {
+      "etiqueta": "Lo que te deben",
+      "valor": 2500.0,
+      "texto_valor": "$2,500.00"
+     }
+    ],
+    "nota": "Ejemplo con sueldo de $15,000 y año completo; compara antes de impuestos",
+    "fuente": "LFT art. 87",
+    "voz": "Así se ve. La barra de en medio es lo que llegó, la última es lo que te deben. Ese número es el que vas a reclamar, así que anótalo con tu cuenta completa."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Dónde está tu recibo",
+    "dato_grande": null,
+    "puntos": [
+     "Portal del SAT: Factura electrónica",
+     "Consultar, cancelar y recuperar",
+     "Con tu contraseña o tu e.firma"
+    ],
+    "fuente": "SAT, Consulta tus recibos de nómina a través del portal del SAT",
+    "voz": "Si tu empresa no te da tu recibo, lo puedes bajar tú. En el portal del Servicio de Administración Tributaria entras a factura electrónica, luego a consultar, cancelar y recuperar. Necesitas tu contraseña o tu firma electrónica. Ahí aparecen los recibos de nómina que te emitió tu patrón."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Paso 2. Pídelo por escrito",
+    "voz": "Si falta dinero, primero habla con Recursos Humanos. Pero por escrito. Lo que se dice en el pasillo no se puede probar."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Pídelo por escrito",
+    "dato_grande": null,
+    "puntos": [
+     "Correo o mensaje a Recursos Humanos",
+     "Tu nombre, cuánto falta y desde cuándo",
+     "Guarda tu mensaje y su respuesta"
+    ],
+    "fuente": "LFT art. 521 fr. II",
+    "voz": "Manda un correo o un mensaje a Recursos Humanos con tu nombre, cuánto te falta y desde cuándo, y guarda la respuesta. Si la empresa reconoce por escrito que te debe, la ley dice que eso interrumpe el plazo para reclamar. Pero tu mensaje solo no lo detiene, así que no esperes de más."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Qué pruebas guardar",
+    "dato_grande": "Al patrón le toca probar que pagó",
+    "puntos": [
+     "Recibos de nómina y estados de cuenta",
+     "Contrato, gafete y correos de trabajo",
+     "Mensajes con Recursos Humanos"
+    ],
+    "fuente": "LFT arts. 784 fr. IX y 804 fr. IV",
+    "voz": "Guarda tus recibos de nómina, los estados de cuenta donde te cae el sueldo, tu contrato, tu gafete y tus mensajes con Recursos Humanos. Y una buena noticia. Si llegas a juicio, al patrón le toca probar que pagó el aguinaldo, y la ley lo obliga a guardar esos comprobantes."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Paso 3. Asesoría gratis",
+    "voz": "Si no te pagan, no vayas solo. La Procuraduría de la Defensa del Trabajo te asesora gratis y, si hace falta, te representa en el juicio. Hay una federal y una en cada estado."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Procuraduría de la Defensa del Trabajo",
+    "dato_grande": "Llama al 079",
+    "puntos": [
+     "Rama federal: Procuraduría Federal (Profedet)",
+     "Todo lo demás: la procuraduría de tu estado",
+     "Asesoría, conciliación y juicio, sin costo"
+    ],
+    "fuente": "LFT arts. 527, 529, 530, 531 y 534; Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 26; STPS, boletín 005/2026; Profedet, conferencia 27-oct-2020 (competencia federal)",
+    "voz": "La Procuraduría Federal de la Defensa del Trabajo atiende a quienes trabajan en una rama federal. Si tu empresa es de competencia local, te toca la procuraduría de tu estado. Las dos te asesoran, te acompañan en la conciliación y te representan en juicio sin cobrarte. Llama al cero setenta y nueve y te orientan."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Paso 4. Conciliación obligatoria",
+    "voz": "Antes de demandar, la ley te pide un paso intermedio. Se llama conciliación, y a veces ahí se arregla el problema sin llegar a juicio."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Conciliación, antes de demandar",
+    "dato_grande": "Es obligatoria",
+    "puntos": [
+     "Antes del tribunal, salvo pocas excepciones",
+     "Industrias federales: Centro Federal de Conciliación y Registro Laboral",
+     "Todo lo demás: el centro de conciliación de tu estado"
+    ],
+    "fuente": "LFT arts. 684-B, 684-E fr. I y V, 685 Ter, 527 y 529",
+    "voz": "La Ley Federal del Trabajo te pide ir primero a conciliación, salvo casos especiales como discriminación o acoso sexual. Si trabajas en una rama federal, como un banco, una automotriz o una minera, vas al Centro Federal de Conciliación y Registro Laboral. Si no, al centro de tu estado. Si te equivocas, ellos envían tu solicitud al correcto."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Cómo va la conciliación",
+    "pasos": [
+     {
+      "texto": "Presentas tu solicitud en persona, por escrito o en línea",
+      "resultado": "Te asignan número y buzón electrónico"
+     },
+     {
+      "texto": "Te citan a una audiencia y debes ir en persona",
+      "resultado": "Dentro de los 15 días siguientes"
+     },
+     {
+      "texto": "Hay acuerdo o no",
+      "resultado": "Convenio por escrito, o constancia para demandar"
+     }
+    ],
+    "fuente": "LFT arts. 684-C y 684-E fr. II, III, IV, V, VII, VIII y X",
+    "voz": "Presentas tu solicitud en persona, por escrito o en línea, con tu identificación y el domicilio donde trabajabas. Te dan un número y un buzón electrónico. Te citan a una audiencia dentro de los quince días siguientes y tienes que ir en persona. Si hay acuerdo, se firma un convenio. Si no, te dan una constancia para demandar."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Los plazos, en días",
+    "barras": [
+     {
+      "etiqueta": "Audiencia de conciliación (máximo)",
+      "valor": 15.0,
+      "texto_valor": "15 días"
+     },
+     {
+      "etiqueta": "Todo el procedimiento de conciliación (máximo)",
+      "valor": 45.0,
+      "texto_valor": "45 días naturales"
+     },
+     {
+      "etiqueta": "Para reclamar tu aguinaldo",
+      "valor": 365.0,
+      "texto_valor": "1 año"
+     }
+    ],
+    "nota": "Pedir la conciliación interrumpe el plazo de 1 año; vuelve a correr al día siguiente de la constancia",
+    "fuente": "LFT arts. 516, 521 fr. III, 684-D, 684-E fr. IV y 994 fr. VIII",
+    "voz": "Mira los plazos. La conciliación completa no debe pasar de cuarenta y cinco días naturales, y tú tienes un año para reclamar. Pedir la conciliación interrumpe ese plazo, que vuelve a correr al día siguiente de la constancia. Si tu patrón no va a la audiencia, la ley prevé multarlo con cincuenta a cien veces la UMA."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Plazos, despido y multas",
+    "voz": "Ahora los relojes que corren. Hay uno para el aguinaldo y otro, mucho más corto, si te despidieron. No los confundas."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Cuánto tiempo tienes para reclamar",
+    "dato_grande": "1 año",
+    "puntos": [
+     "Corre desde el día siguiente a que debió pagarse",
+     "Aguinaldo 2026: hasta diciembre de 2027",
+     "La solicitud de conciliación lo interrumpe"
+    ],
+    "fuente": "LFT arts. 516 y 521 fr. III; Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 21",
+    "voz": "El artículo quinientos dieciséis de la Ley Federal del Trabajo da un año para reclamar, contado desde el día siguiente a que el pago se volvió exigible. Para el aguinaldo dos mil veintiséis, el plazo llega a diciembre de dos mil veintisiete. Pero no lo dejes para el final."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Si te despidieron antes de diciembre",
+    "dato_grande": "2 meses para el despido",
+    "puntos": [
+     "Tu aguinaldo proporcional va en el finiquito",
+     "Para reclamar el despido tienes 2 meses",
+     "Corren desde el día siguiente a tu salida"
+    ],
+    "fuente": "Profedet, Preguntas frecuentes Aguinaldo (nov-2025), preg. 16; LFT art. 518",
+    "voz": "Si te despidieron antes de diciembre, tu aguinaldo proporcional tiene que venir en el finiquito. Pero ojo, si quieres reclamar el despido, la ley te da solo dos meses, contados desde el día siguiente a tu salida. Ese plazo es mucho más corto que el del aguinaldo. Busca asesoría esa misma semana."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Multa al patrón por no pagar el aguinaldo",
+    "barras": [
+     {
+      "etiqueta": "Mínimo, 50 UMA",
+      "valor": 5865.5,
+      "texto_valor": "$5,865.50"
+     },
+     {
+      "etiqueta": "Máximo, 5,000 UMA",
+      "valor": 586550.0,
+      "texto_valor": "$586,550.00"
+     }
+    ],
+    "nota": "Con la UMA 2026 de $117.31. La impone la autoridad del trabajo, por cada trabajador afectado; no se le paga al trabajador",
+    "fuente": "LFT arts. 1002, 992 y 1008; Profedet (20-dic-2019); INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Además, la autoridad del trabajo puede multar al patrón que no paga, con cincuenta a cinco mil veces la UMA. Este año va de cinco mil ochocientos sesenta y cinco pesos con cincuenta centavos a quinientos ochenta y seis mil quinientos cincuenta pesos. Esa multa no es para ti y no reemplaza tu pago."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Tu aguinaldo se pide y se reclama. ¿Ya te pagaron el tuyo? Comenta SÍ o NO, te contesto a todos. Y suscríbete, Capital ya marcó el diecinueve en el calendario."
+   }
+  ],
+  "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT texto vigente, últ. reforma DOF 14-05-2026, arts. 87, 89, 516, 518, 521, 527, 529, 530, 531, 534, 684-A a 684-E, 685 Ter, 784, 804, 992, 994, 1002, 1008; Profedet, Preguntas frecuentes Aguinaldo nov-2025; STPS boletín 005/2026; Profedet conferencia 27-oct-2020 sobre competencia; Profedet art. 20-dic-2019; CFCRL solicitud en línea; SAT consulta de recibos de nómina; INEGI comunicado 1/26, UMA 2026 $117.31; cuentas rehechas con Decimal); cambios: la multa del art. 1002 ya no se atribuye a Profedet (la impone la autoridad del trabajo, art. 1008), se aclara que no se paga al trabajador y que es por trabajador afectado; Profedet solo representa en asuntos de competencia federal, se agrega la procuraduría de la defensa del trabajo de cada estado para lo local (lámina, voz, Victoria y SEO); se agrega la parte proporcional para quien no cumplió el año y 'año completo' en el ejemplo; se quita 'el reloj vuelve a empezar' y se aclara que el mensaje propio a RH no detiene el plazo; se agrega que la interrupción por conciliación cesa al día siguiente de la constancia (art. 521 fr. III); se agregan excepciones a la conciliación (art. 685 Ter), la obligación de ir en persona a la audiencia (684-E fr. VII) y datos de la solicitud (684-C); 'muchas veces ahí se arregla todo' suavizado; 'nadie te puede cobrar' acotado a funcionarios.",
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "estado": "produciendo"
+ },
+ {
+  "id": "LA3",
+  "titulo_trabajo": "Aguinaldo e ISR: cuánto te descuentan y cómo revisarlo",
+  "seo": {
+   "palabra_clave": "aguinaldo e ISR",
+   "titulo": "Aguinaldo e ISR cuánto te descuentan y cómo revisarlo",
+   "descripcion": "Aguinaldo e ISR 2026: qué parte de tu aguinaldo está exenta (30 UMA = $3,519.30, límite que marca el SAT con base en el art. 93 fr. XIV de la Ley del ISR) y qué parte paga impuesto, con ejemplos de sueldos de $15,000 y $25,000 al mes y del salario mínimo.\nCómo puede calcular tu patrón la retención (art. 96 de la Ley del ISR o método opcional del art. 174 de su Reglamento) y cómo revisar tu recibo de nómina (CFDI) en el portal del SAT.\nFuentes oficiales:\n• Ley del ISR, arts. 93 fr. I, XIV y XV, y 96: https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf\n• Reglamento de la Ley del ISR, art. 174: https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf\n• SAT, Apéndice 6, matriz de percepciones y deducciones del CFDI de nómina: https://www.sat.gob.mx/cs/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1461175070298&ssbinary=true\n• SAT, consulta tus recibos de nómina: https://www.sat.gob.mx/consulta/25242/consulta-tus-recibos-de-nomina-a-traves-del-portal-del-sat\n• INEGI, UMA 2026: https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf\n• DOF 27-01-2016, desindexación del salario mínimo: https://dof.gob.mx/nota_detalle.php?codigo=5423663&fecha=27%2F01%2F2016\n• DOF 09-12-2025, salarios mínimos 2026 (Conasami): https://dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025",
+   "tags": [
+    "aguinaldo e isr",
+    "isr aguinaldo 2026",
+    "aguinaldo exento 30 uma",
+    "cuánto me descuentan del aguinaldo",
+    "aguinaldo exento 3519.30",
+    "cómo se calcula el isr del aguinaldo",
+    "artículo 174 reglamento isr",
+    "artículo 93 fracción xiv lisr",
+    "recibo de nómina cfdi aguinaldo",
+    "uma 2026 117.31"
+   ],
+   "hashtags": [
+    "#aguinaldo",
+    "#isr",
+    "#sat",
+    "#aguinaldo2026",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "texto": "¿CUÁNTO TE QUITAN?",
+   "subtexto": "Aguinaldo e ISR 2026"
+  },
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si ganas quince mil pesos al mes, tres mil quinientos diecinueve pesos con treinta centavos de tu aguinaldo no pagan impuesto. El resto sí. Te enseño a revisar que te lo calculen bien."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Aquí no te voy a inventar una cifra de impuesto. Te enseño qué parte está exenta, qué parte está gravada, cómo se calcula la retención y dónde verlo en tu recibo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": "La parte exenta",
+    "titulo": "Lo que dice la ley",
+    "dato_grande": "Exento hasta 30 UMA",
+    "puntos": [
+     "Gratificaciones del año exentas hasta 30 días de salario mínimo, si se dan en forma general",
+     "En 2016 la Constitución ordenó leer esas referencias al mínimo como UMA",
+     "El SAT marca el límite exento del aguinaldo en 30 UMA"
+    ],
+    "fuente": "LISR art. 93 fr. XIV y XV; DOF 27-01-2016, transitorio tercero; SAT, Apéndice 6 del CFDI de nómina (percepción 002)",
+    "voz": "La Ley del Impuesto sobre la Renta, en su artículo noventa y tres, exenta el aguinaldo hasta treinta días de salario mínimo. Desde dos mil dieciséis esa referencia se lee como Unidad de Medida y Actualización, y el Servicio de Administración Tributaria marca el límite en treinta veces esa unidad. Lo que pase de ahí, paga impuesto."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "El tope exento en 2026",
+    "dato_grande": "$3,519.30",
+    "puntos": [
+     "UMA diaria 2026: $117.31, vigente desde el 1 de febrero",
+     "30 × $117.31 = $3,519.30",
+     "Es un tope por año, no por pago"
+    ],
+    "fuente": "INEGI, comunicado 1/26 (8-ene-2026); LISR art. 93 fr. XIV",
+    "voz": "En dos mil veintiséis la UMA vale ciento diecisiete pesos con treinta y un centavos al día. Por treinta da tres mil quinientos diecinueve pesos con treinta centavos. Y ojo, la ley habla de las gratificaciones de todo el año, así que es un tope anual, no uno por cada pago."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Dos detalles de la ley",
+    "dato_grande": null,
+    "puntos": [
+     "La exención aplica cuando la gratificación se da en forma general",
+     "Si ganas el mínimo, la fracción I exenta prestaciones que no pasen del mínimo de ley",
+     "Tu aguinaldo de 15 días queda exento completo"
+    ],
+    "fuente": "LISR art. 93 fr. I y XIV; LFT art. 87",
+    "voz": "Dos detalles. La exención aplica cuando la gratificación se da a los trabajadores en forma general. Y si ganas el salario mínimo, la ley exenta las prestaciones calculadas sobre el mínimo que no pasen de lo que marca la ley laboral. Tu aguinaldo de quince días queda exento completo."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Si ganas el salario mínimo",
+    "barras": [
+     {
+      "etiqueta": "Aguinaldo de 15 días ($315.04 × 15)",
+      "valor": 4725.6,
+      "texto_valor": "$4,725.60"
+     },
+     {
+      "etiqueta": "Exento por la fracción I",
+      "valor": 4725.6,
+      "texto_valor": "$4,725.60"
+     },
+     {
+      "etiqueta": "Gravado",
+      "valor": 0.0,
+      "texto_valor": "$0.00"
+     }
+    ],
+    "nota": "Salario mínimo general fuera de la frontera norte; la fracción I exenta todo el aguinaldo de ley",
+    "fuente": "LISR art. 93 fr. I y XIV; LFT art. 87; Conasami, resolución DOF 09-12-2025",
+    "voz": "Con el mínimo general, tu aguinaldo de ley es de cuatro mil setecientos veinticinco pesos con sesenta centavos, y queda exento completo. Si solo contara el tope de treinta veces la UMA, quedarían gravados mil doscientos seis pesos con treinta centavos. Por eso esa fracción importa."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Exento y gravado con 2 sueldos",
+    "voz": "Ahora con números. Tomo dos sueldos, un aguinaldo de quince días y ninguna otra gratificación en el año. La parte gravada es la única que entra al cálculo del impuesto."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Sueldo de $15,000 al mes",
+    "pasos": [
+     {
+      "texto": "Aguinaldo de 15 días",
+      "resultado": "$15,000 ÷ 30 × 15 = $7,500.00"
+     },
+     {
+      "texto": "Parte exenta",
+      "resultado": "30 × $117.31 = $3,519.30"
+     },
+     {
+      "texto": "Parte gravada",
+      "resultado": "$7,500.00 − $3,519.30 = $3,980.70"
+     }
+    ],
+    "fuente": "LFT art. 87 (15 días; sueldo diario = mensual ÷ 30, como en LFT art. 89); LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Con quince mil pesos al mes, tu aguinaldo de quince días es de siete mil quinientos pesos. Le quitas la parte exenta, tres mil quinientos diecinueve pesos con treinta centavos. Te quedan tres mil novecientos ochenta pesos con setenta centavos gravados. Sobre eso se calcula el impuesto, no sobre los siete mil quinientos."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Con $15,000 al mes",
+    "barras": [
+     {
+      "etiqueta": "Aguinaldo total",
+      "valor": 7500.0,
+      "texto_valor": "$7,500.00"
+     },
+     {
+      "etiqueta": "Exento",
+      "valor": 3519.3,
+      "texto_valor": "$3,519.30"
+     },
+     {
+      "etiqueta": "Gravado",
+      "valor": 3980.7,
+      "texto_valor": "$3,980.70"
+     }
+    ],
+    "nota": "El 53.08 % del aguinaldo queda gravado",
+    "fuente": "LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "En la gráfica se ve clarito. Un poco más de la mitad de este aguinaldo queda gravado, el cincuenta y tres por ciento. El resto te llega libre de impuesto."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Sueldo de $25,000 al mes",
+    "pasos": [
+     {
+      "texto": "Aguinaldo de 15 días",
+      "resultado": "$25,000 ÷ 30 × 15 = $12,500.00"
+     },
+     {
+      "texto": "Parte exenta",
+      "resultado": "30 × $117.31 = $3,519.30"
+     },
+     {
+      "texto": "Parte gravada",
+      "resultado": "$12,500.00 − $3,519.30 = $8,980.70"
+     }
+    ],
+    "fuente": "LFT art. 87 (15 días; sueldo diario = mensual ÷ 30, como en LFT art. 89); LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Con veinticinco mil pesos al mes, el aguinaldo es de doce mil quinientos pesos. La parte exenta es la misma, tres mil quinientos diecinueve pesos con treinta centavos. Quedan gravados ocho mil novecientos ochenta pesos con setenta centavos."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Con $25,000 al mes",
+    "barras": [
+     {
+      "etiqueta": "Aguinaldo total",
+      "valor": 12500.0,
+      "texto_valor": "$12,500.00"
+     },
+     {
+      "etiqueta": "Exento",
+      "valor": 3519.3,
+      "texto_valor": "$3,519.30"
+     },
+     {
+      "etiqueta": "Gravado",
+      "valor": 8980.7,
+      "texto_valor": "$8,980.70"
+     }
+    ],
+    "nota": "El 71.85 % del aguinaldo queda gravado",
+    "fuente": "LISR art. 93 fr. XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Aquí la parte gravada ya es casi tres cuartas partes, el setenta y dos por ciento redondeado. El tope exento no crece con tu sueldo, por eso entre más ganas, más proporción de tu aguinaldo paga impuesto."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Parte gravada según tu sueldo",
+    "barras": [
+     {
+      "etiqueta": "Salario mínimo ($4,725.60 de aguinaldo)",
+      "valor": 0.0,
+      "texto_valor": "$0.00"
+     },
+     {
+      "etiqueta": "Sueldo de $15,000 ($7,500.00)",
+      "valor": 3980.7,
+      "texto_valor": "$3,980.70"
+     },
+     {
+      "etiqueta": "Sueldo de $25,000 ($12,500.00)",
+      "valor": 8980.7,
+      "texto_valor": "$8,980.70"
+     }
+    ],
+    "nota": "El tope exento de $3,519.30 es igual para todos",
+    "fuente": "LISR art. 93 fr. I y XIV; INEGI, comunicado 1/26 (8-ene-2026)",
+    "voz": "Junta los tres casos y la regla se ve sola. Con el mínimo no queda nada gravado. Con quince mil, casi cuatro mil pesos. Con veinticinco mil, casi nueve mil. La parte exenta no cambia, cambia todo lo que está arriba de ella."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cómo se calcula la retención",
+    "voz": "¿Y cuánto te retienen? Depende del método que use tu patrón. La ley y su Reglamento le dan dos caminos, y los dos son legales."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Método general",
+    "dato_grande": "Artículo 96",
+    "puntos": [
+     "La parte gravada se suma a tus ingresos del mes",
+     "Al total gravado se le aplica la tarifa mensual",
+     "Lo retenido es un pago provisional a cuenta de tu impuesto anual"
+    ],
+    "fuente": "LISR art. 96",
+    "voz": "El método general está en el artículo noventa y seis. Tu patrón suma la parte gravada a lo que ganaste en el mes y a todo le aplica la tarifa mensual. Lo que te retiene es un pago provisional, a cuenta del impuesto de todo tu año."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Método opcional del Reglamento",
+    "dato_grande": "Artículo 174",
+    "puntos": [
+     "Tu patrón puede elegirlo para aguinaldo, utilidades y primas",
+     "Lleva el pago a una cantidad mensual y con ella saca una tasa",
+     "La retención puede salir más baja que con el método general"
+    ],
+    "fuente": "RLISR art. 174; LISR art. 96",
+    "voz": "El otro camino es opcional y está en el artículo ciento setenta y cuatro del Reglamento. El pago se convierte en una cantidad mensual, con eso se saca una tasa y esa tasa da la retención. Puede salir más baja que con el método general."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Por qué no te doy la cifra del impuesto",
+    "dato_grande": null,
+    "puntos": [
+     "Depende del método que elija tu patrón",
+     "Y de tu sueldo del mes y la tarifa vigente",
+     "Pide el cálculo por escrito y compáralo con tu recibo"
+    ],
+    "fuente": "LISR art. 96; RLISR art. 174",
+    "voz": "Por eso no te doy una cifra de impuesto. Cambia según el método que elija tu patrón, tu sueldo de ese mes y la tarifa vigente. Lo que sí puedes hacer es pedir el cálculo por escrito a tu área de nómina y revisarlo contra tu recibo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Revisa tu recibo de nómina",
+    "voz": "Ahora lo más útil. Tu recibo de nómina digital dice cuánto de tu aguinaldo quedó exento, cuánto gravado y cuánto impuesto te retuvieron en ese pago. Vamos a encontrarlo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Descarga tu recibo",
+    "dato_grande": null,
+    "puntos": [
+     "Portal del SAT: Trámites, Factura electrónica",
+     "Consultar, cancelar y recuperar",
+     "Entra con tu contraseña o tu e.firma vigente"
+    ],
+    "fuente": "SAT, Consulta tus recibos de nómina a través del portal del SAT",
+    "voz": "Entra al portal del Servicio de Administración Tributaria, a factura electrónica, y luego a consultar, cancelar y recuperar. Necesitas tu contraseña o tu firma electrónica vigente. Busca el recibo por la fecha en que te pagaron el aguinaldo y descárgalo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Qué buscar en tu recibo",
+    "dato_grande": null,
+    "puntos": [
+     "Percepción 002: Gratificación anual (aguinaldo)",
+     "Dos importes: gravado y exento",
+     "Deducción 002: ISR retenido en ese recibo"
+    ],
+    "fuente": "SAT, Apéndice 6, matriz de percepciones y deducciones del CFDI de nómina",
+    "voz": "En las percepciones busca la clave cero cero dos, gratificación anual o aguinaldo. Trae dos importes, el gravado y el exento. En las deducciones, la clave cero cero dos es el impuesto sobre la renta. Ahí ves cuánto te retuvieron en ese recibo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Señales de alerta",
+    "voz": "Si tu recibo trae alguna de estas tres cosas, no lo dejes pasar. Pregunta por escrito y guarda la respuesta."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Señales de alerta",
+    "dato_grande": null,
+    "puntos": [
+     "Exento en $0.00 sin que te expliquen por qué",
+     "Exento mayor a $3,519.30 sin explicación",
+     "Gravado + exento distinto a tu aguinaldo bruto"
+    ],
+    "fuente": "LISR art. 93 fr. I y XIV; SAT, Apéndice 6 del CFDI de nómina",
+    "voz": "Uno, que el exento venga en cero pesos y nadie te explique por qué. Dos, que el exento pase de tres mil quinientos diecinueve pesos con treinta centavos sin explicación. Tres, que gravado más exento no sume tu aguinaldo antes de descuentos. En cualquiera, pide aclaración a nómina por escrito."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Tu recibo de nómina no es basura, se revisa. Comenta tu sueldo y te digo qué parte de tu aguinaldo queda exenta. Y suscríbete, Capital ya revisó el suyo, puras croquetas exentas."
+   }
+  ],
+  "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LISR texto vigente, últ. reforma DOF 01-04-2024, arts. 93 fr. I, XIV, XV y 96; RLISR art. 174; SAT Apéndice 6 del CFDI de nómina, percepción 002 límite exento 30 UMA, deducción 002 ISR; SAT consulta 25242 recibos de nómina; INEGI comunicado 1/26 UMA 2026 $117.31; DOF 27-01-2016 transitorio tercero; DOF 09-12-2025 salario mínimo 2026 $315.04; LFT art. 87). Cuentas rehechas con Decimal: 30 UMA = $3,519.30; mínimo 15 días = $4,725.60 (gravado hipotético $1,206.30); $15,000 -> $7,500.00 / $3,980.70 (53.08 %); $25,000 -> $12,500.00 / $8,980.70 (71.85 %). Cambios: exención redactada como límite que marca el SAT en 30 UMA y lectura constitucional de 2016 (no 'el SAT lo aplica desde la desindexación'); método opcional del art. 174 sin ejemplo numérico, porque el Reglamento habla de 'la remuneración' y 'sin deducción alguna' y no dice que se aplique solo a la parte gravada; se quitó el punto de no retención al mínimo (art. 96) que no estaba en voz y es dudoso en el mes en que también se cobra aguinaldo (la ley habla de quien 'únicamente' percibe un salario mínimo); 'al mes' en intro y SEO; supuesto de un solo aguinaldo de 15 días; 'la ley y su Reglamento' dan los dos caminos; alertas: exento en cero 'sin explicación' y suma contra aguinaldo bruto; recibo: retención 'en ese pago'; ruta del portal con Trámites y e.firma vigente; nota de zona general del mínimo; fuente de 30 días con LFT art. 89 como criterio; DOF del salario mínimo agregado a la descripción.",
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "estado": "produciendo"
+ }
+]

@@ -74,7 +74,9 @@ def _replicate(modelo, entrada):
     """Corre un modelo de Replicate y regresa su salida (espera hasta que termine)."""
     import time
     import urllib.request
-    cab = {'Authorization': f"Bearer {os.environ['REPLICATE_API_TOKEN']}", 'Content-Type': 'application/json', 'Prefer': 'wait=60'}
+    # User-Agent: desde el 12-nov-2026 Cloudflare de Replicate rechaza el de Python ("403, error code: 1010").
+    cab = {'Authorization': f"Bearer {os.environ['REPLICATE_API_TOKEN']}", 'Content-Type': 'application/json', 'Prefer': 'wait=60',
+           'User-Agent': 'victoria-pipeline/1.0'}
     req = urllib.request.Request(f'https://api.replicate.com/v1/models/{modelo}/predictions',
                                  data=json.dumps({'input': entrada}).encode(), headers=cab, method='POST')
     for espera in (5, 10, 15, 20, 30, 45, 60, 60):  # 429: Replicate limita a 6 por minuto con menos de $5 de saldo
@@ -135,7 +137,8 @@ def con_minimax(frases, voz):
                     continue
                 raise
             crudo = f"{f['salida']}.{intento}.minimax.mp3"
-            urllib.request.urlretrieve(url, crudo)
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'victoria-pipeline/1.0'}), timeout=120) as r_:
+                open(crudo, 'wb').write(r_.read())
             audio_16k = librosa.load(crudo, sr=16000)[0]
             dicho = ' '.join(s.text.strip() for s in oido.transcribe(audio_16k, language='es')[0])
             nota = parecido_texto(f['texto'], dicho)
