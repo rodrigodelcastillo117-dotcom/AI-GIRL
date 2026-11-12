@@ -21,6 +21,28 @@ mundo… la subes a las historias de Victoria, que te mande a una página… có
    subió, no publica nada; si no, la sube sin sticker para que nunca falte).
 5. Si algo falla, la página va igual y se lo dices a Rodrigo en el resumen. Nunca inventes una noticia para llenar.
 
+## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también
+en Facebook"). Mismo volumen de siempre; esto cambia QUÉ va primero, no cuánto se publica.
+1. **Historia en Facebook todos los días**: después del paso 4 de Victoria Hoy, `python3 scripts/noticias.py facebook`
+   (sube la imagen del día como historia de la página; verifica con GET /{página}/stories que salga `published`).
+   Sin sticker de enlace (la API no lo da): la imagen ya trae la dirección escrita.
+2. **Serie "Tu sueldo, tu aguinaldo" en TikTok, una por día, primero que todo**: c78 → c85 en orden (13 al 20-nov).
+   Es el primer carrusel de TikTok del día; los demás carruseles del día van después. Al acabarse, se escribe la
+   siguiente serie de sueldos reales (con revisión de cifras por un segundo agente, como siempre).
+3. **Cada short de YouTube termina con una razón concreta para suscribirse**, nunca un "suscríbete" pelón: en el cierre
+   hablado/pantalla y en la primera línea de la descripción, p. ej. "Suscríbete: cada semana hago las cuentas de un
+   sueldo real" o "Suscríbete: te aviso cuándo cae tu aguinaldo y cuánto te quitan". Una sola razón por short.
+4. **YouTube prioriza a la gente de 55+** (es la que más ve el canal según YouTube Analytics): Afore, pensión, retiro,
+   Ley 73 / Ley 97, finiquito, aguinaldo, ISR. Al elegir qué short o largo va a YouTube, esos temas primero; los de
+   tarjeta de crédito, Buen Fin y apps van más a TikTok/IG. Pensión y Afore: cifras solo de IMSS/CONSAR/DOF, dos
+   fuentes, cuentas con python.
+5. **"Victoria verifica" 2 veces por semana (martes y viernes)**: toma un dato de dinero que se está moviendo en redes
+   (WebSearch / tendencias.json), lo checa contra la fuente oficial y dice VERDAD / FALSO / A MEDIAS con la fuente en
+   pantalla. Formato carrusel o reel de texto (no gasta Replicate). Si no hay dos fuentes oficiales, no se publica.
+   Nunca nombra ni exhibe a una persona: se verifica el dato, no al que lo dijo.
+6. Al medir (tablero.py / estadisticas.py), compara cada semana: suscriptores ganados por short con razón vs. antes,
+   y seguidores de TikTok los días de la serie. Lo que no mueva el número en 2 semanas se cambia y se le dice a Rodrigo.
+
 ## 00. 13-NOV (Rodrigo)
 - LC1 (22-nov) y LC2 (26-nov): autorizados ≈$8 (config.json → replicate.autorizaciones.largos-lc). Correr voces y
   tomas con REPLICATE_AUTORIZACION=largos-lc. Fotos de las tomas con luz de día y manos vacías.

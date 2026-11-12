@@ -247,9 +247,31 @@ def publicar(fecha=None):
     print('ok historia publicada', pub.get('id'))
 
 
+def publicar_fb(fecha=None):
+    """Historia en la página de Facebook (Rodrigo, 12-nov-2026: "historias también en Facebook"). Graph API: foto sin
+    publicar → /{página}/photo_stories (permiso pages_manage_posts). Sin sticker de enlace (la API tampoco lo da); la
+    imagen lleva la dirección escrita."""
+    ed = cargar(fecha)
+    url = f'{SITIO}/historias/{ed["fecha"]}.jpg'
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import primer_comentario as pc
+    import publer
+    pagina = publer.CONFIG['facebook_pagina_id']
+    foto = pc.fb('POST', f'{pagina}/photos', pagina, {'url': url, 'published': 'false'})
+    hist = pc.fb('POST', f'{pagina}/photo_stories', pagina, {'photo_id': foto['id']})
+    registro = os.path.join(RAIZ, 'contenido', 'noticias', 'historias.json')
+    hechas = json.load(open(registro)) if os.path.exists(registro) else []
+    hechas.append({'fecha': ed['fecha'], 'red': 'fb', 'id': hist.get('post_id') or hist.get('id'), 'imagen': url})
+    json.dump(hechas, open(registro, 'w'), ensure_ascii=False, indent=1)
+    print('ok historia de Facebook', hist.get('post_id') or hist.get('id'))
+
+
 if __name__ == '__main__':
     accion = sys.argv[1] if len(sys.argv) > 1 else ''
     arg = sys.argv[2] if len(sys.argv) > 2 else None
+    if accion == 'facebook':
+        publicar_fb(arg)
+        sys.exit(0)
     if accion == 'publicar' and '--si-falta' in sys.argv:
         if ya_hay_historia_hoy():
             print('Ya hay historia de hoy (la subió Rodrigo con el enlace): no se publica otra.')
