@@ -56,6 +56,72 @@ TU_TURNO = {
     'Las relaciones son la inversión': ['A quién llamo hoy:', '☐ Lo hice'],
 }
 
+ESTILO = '''@page { size: A5; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, sans-serif; color: #f4efe6; background: #070707; font-variant-numeric: lining-nums; }
+.pagina { width: 148mm; height: 210mm; padding: 17mm 14mm 16mm; position: relative; overflow: hidden; page-break-after: always;
+  background: radial-gradient(130% 70% at 100% 0%, #241b0d 0%, #0b0b0c 52%, #070707 100%); }
+.pagina::before { content: ""; position: absolute; inset: 7mm; border: 1px solid rgba(216,178,90,.16); border-radius: 3mm; pointer-events: none; }
+.folio { position: absolute; bottom: 9.5mm; left: 0; right: 0; text-align: center; font-size: 7pt; letter-spacing: .3em; color: #8c867b; }
+.etiqueta { font-size: 7.5pt; letter-spacing: .32em; text-transform: uppercase; color: #d8b25a; font-weight: 700; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: -.005em; }
+h1 { font-size: 34pt; line-height: 1.0; margin: 4mm 0 5mm; }
+h1 em, h2 em { color: #f0d488; font-style: italic; }
+h2 { font-size: 21pt; line-height: 1.12; margin: 5mm 0 6mm; }
+h2.grande { font-size: 34pt; }
+h3 { font-size: 20pt; line-height: 1.12; margin: 3mm 0 5mm; }
+p { font-size: 10.5pt; line-height: 1.55; color: #d6cfc2; margin: 0 0 4mm; }
+.nota { font-size: 9pt; color: #b8b1a4; }
+.portada { padding: 0; }
+.portada::before { display: none; }
+.portada img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.portada .velo { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,7,7,0) 28%, rgba(7,7,7,.94) 70%); }
+.portada .texto { position: absolute; left: 13mm; right: 13mm; bottom: 15mm; }
+.portada p { font-size: 10pt; }
+.marca { font-size: 8.5pt; letter-spacing: .32em; font-weight: 700; }
+.marca b { color: #d8b25a; }
+.sellos { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 4mm; }
+.sellos span { border: 1px solid rgba(216,178,90,.6); color: #f0d488; font-size: 7pt; letter-spacing: .1em; text-transform: uppercase; padding: 1.5mm 3mm; border-radius: 10mm; }
+.pasos { display: grid; gap: 3.5mm; margin: 6mm 0; }
+.pasos div { display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; align-items: center; }
+.pasos b { width: 9mm; height: 9mm; border-radius: 50%; display: grid; place-items: center; background: #d8b25a; color: #111; font-weight: 800; }
+.pasos span { font-size: 10pt; color: #d6cfc2; line-height: 1.45; }
+.pasos strong { color: #f4efe6; }
+.firma { color: #d8b25a; font-weight: 600; font-family: "Playfair Display", serif; font-style: italic; font-size: 12pt; }
+.ind { display: flex; align-items: baseline; gap: 2mm; padding: 2.6mm 0; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 10.5pt; }
+.ind i { flex: 1; border-bottom: 1px dotted rgba(216,178,90,.35); }
+.ind b { color: #d8b25a; font-family: "Playfair Display", serif; }
+.divisor { display: flex; flex-direction: column; justify-content: center; }
+.linea { width: 30mm; height: 2px; background: linear-gradient(90deg, #f0d488, #a8843a); margin-bottom: 5mm; }
+.numero { position: absolute; right: 12mm; top: 9mm; font-family: "Playfair Display", serif; font-size: 66pt; font-weight: 700; color: rgba(216,178,90,.17); line-height: 1; }
+.regla { padding-top: 27mm; }
+.cuerpo { font-size: 11.5pt; }
+.accion { margin-top: 4mm; padding: 4mm 5mm; border-left: 3px solid #d8b25a; background: rgba(216,178,90,.08); border-radius: 0 2mm 2mm 0; font-size: 10.5pt; line-height: 1.45; }
+.accion span, .turno > span { display: block; font-size: 7pt; letter-spacing: .28em; text-transform: uppercase; color: #d8b25a; font-weight: 700; margin-bottom: 1.5mm; }
+.turno { margin-top: 5mm; padding: 4mm 5mm 3mm; border: 1px dashed rgba(216,178,90,.35); border-radius: 2mm; }
+.campo { display: flex; align-items: flex-end; gap: 2mm; min-height: 8mm; font-size: 9.5pt; color: #cfc8bb; }
+.campo span { white-space: nowrap; }
+.campo i { flex: 1; border-bottom: 1px solid rgba(244,239,230,.28); margin-bottom: 1mm; }
+.hecho { margin-top: 2mm; font-size: 8.5pt; color: #8c867b; }
+.fuente { position: absolute; left: 14mm; right: 14mm; bottom: 15mm; font-size: 7.5pt; color: #8c867b; border-top: 1px solid rgba(216,178,90,.22); padding-top: 2.5mm; margin: 0; }
+.hojas h3 { margin-top: 2mm; }
+table.hoja { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 9pt; }
+table.hoja th { text-align: left; font-size: 7pt; letter-spacing: .18em; text-transform: uppercase; color: #d8b25a; padding: 2mm 2mm; border-bottom: 1px solid rgba(216,178,90,.45); }
+table.hoja td { padding: 2.6mm 2mm; border-bottom: 1px solid rgba(244,239,230,.14); color: #cfc8bb; height: 8mm; }
+.reto { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4mm 4mm; }
+.dia { display: grid; grid-template-columns: 7mm 1fr 4mm; align-items: center; gap: 1.5mm; font-size: 7.6pt; padding: 1.2mm 0; border-bottom: 1px solid rgba(255,255,255,.06); }
+.dia b { color: #d8b25a; font-family: "Playfair Display", serif; font-size: 9pt; }
+.dia span { color: #d6cfc2; line-height: 1.25; }
+.dia i { color: #d8b25a; font-style: normal; }
+.calcs { display: grid; gap: 2.6mm; }
+.calc { display: grid; padding: 3mm 4mm; border-radius: 2.5mm; border: 1px solid rgba(216,178,90,.28); background: rgba(216,178,90,.05); text-decoration: none; color: inherit; }
+.calc b { font-family: "Playfair Display", serif; font-size: 11.5pt; font-weight: 600; }
+.calc span { font-size: 8.5pt; color: #b8b1a4; }
+.calc em { font-style: normal; font-size: 7.5pt; color: #d8b25a; margin-top: 1mm; }
+.boton { display: inline-block; margin: 2mm 0 6mm; padding: 3.5mm 7mm; border-radius: 10mm; background: linear-gradient(180deg, #f0d488, #d8b25a); color: #111; font-weight: 800; text-decoration: none; font-size: 10.5pt; }
+.avisos { margin-top: 8mm; padding-left: 4mm; font-size: 7.5pt; color: #8c867b; line-height: 1.5; }
+'''
+
 CALCULADORAS = [
     ('Aguinaldo 2026', 'Cuánto te toca y cuánto paga ISR', '/aguinaldo'),
     ('¿Te alcanza tu sueldo?', 'Renta, comida y lo que te queda', '/te-alcanza-tu-sueldo'),
@@ -198,71 +264,7 @@ tu presupuesto 50/30/20, tu fondo de emergencia, el orden de tus deudas, tu inte
     documento = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Las {total} reglas de la CEO</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-@page {{ size: A5; margin: 0; }}
-* {{ box-sizing: border-box; }}
-body {{ margin: 0; font-family: Inter, sans-serif; color: #f4efe6; background: #070707; font-variant-numeric: lining-nums; }}
-.pagina {{ width: 148mm; height: 210mm; padding: 17mm 14mm 16mm; position: relative; overflow: hidden; page-break-after: always;
-  background: radial-gradient(130% 70% at 100% 0%, #241b0d 0%, #0b0b0c 52%, #070707 100%); }}
-.pagina::before {{ content: ""; position: absolute; inset: 7mm; border: 1px solid rgba(216,178,90,.16); border-radius: 3mm; pointer-events: none; }}
-.folio {{ position: absolute; bottom: 9.5mm; left: 0; right: 0; text-align: center; font-size: 7pt; letter-spacing: .3em; color: #8c867b; }}
-.etiqueta {{ font-size: 7.5pt; letter-spacing: .32em; text-transform: uppercase; color: #d8b25a; font-weight: 700; }}
-h1, h2, h3 {{ font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: -.005em; }}
-h1 {{ font-size: 34pt; line-height: 1.0; margin: 4mm 0 5mm; }}
-h1 em, h2 em {{ color: #f0d488; font-style: italic; }}
-h2 {{ font-size: 21pt; line-height: 1.12; margin: 5mm 0 6mm; }}
-h2.grande {{ font-size: 34pt; }}
-h3 {{ font-size: 20pt; line-height: 1.12; margin: 3mm 0 5mm; }}
-p {{ font-size: 10.5pt; line-height: 1.55; color: #d6cfc2; margin: 0 0 4mm; }}
-.nota {{ font-size: 9pt; color: #b8b1a4; }}
-.portada {{ padding: 0; }}
-.portada::before {{ display: none; }}
-.portada img {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
-.portada .velo {{ position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,7,7,0) 28%, rgba(7,7,7,.94) 70%); }}
-.portada .texto {{ position: absolute; left: 13mm; right: 13mm; bottom: 15mm; }}
-.portada p {{ font-size: 10pt; }}
-.marca {{ font-size: 8.5pt; letter-spacing: .32em; font-weight: 700; }}
-.marca b {{ color: #d8b25a; }}
-.sellos {{ display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 4mm; }}
-.sellos span {{ border: 1px solid rgba(216,178,90,.6); color: #f0d488; font-size: 7pt; letter-spacing: .1em; text-transform: uppercase; padding: 1.5mm 3mm; border-radius: 10mm; }}
-.pasos {{ display: grid; gap: 3.5mm; margin: 6mm 0; }}
-.pasos div {{ display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; align-items: center; }}
-.pasos b {{ width: 9mm; height: 9mm; border-radius: 50%; display: grid; place-items: center; background: #d8b25a; color: #111; font-weight: 800; }}
-.pasos span {{ font-size: 10pt; color: #d6cfc2; line-height: 1.45; }}
-.pasos strong {{ color: #f4efe6; }}
-.firma {{ color: #d8b25a; font-weight: 600; font-family: "Playfair Display", serif; font-style: italic; font-size: 12pt; }}
-.ind {{ display: flex; align-items: baseline; gap: 2mm; padding: 2.6mm 0; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 10.5pt; }}
-.ind i {{ flex: 1; border-bottom: 1px dotted rgba(216,178,90,.35); }}
-.ind b {{ color: #d8b25a; font-family: "Playfair Display", serif; }}
-.divisor {{ display: flex; flex-direction: column; justify-content: center; }}
-.linea {{ width: 30mm; height: 2px; background: linear-gradient(90deg, #f0d488, #a8843a); margin-bottom: 5mm; }}
-.numero {{ position: absolute; right: 12mm; top: 9mm; font-family: "Playfair Display", serif; font-size: 66pt; font-weight: 700; color: rgba(216,178,90,.17); line-height: 1; }}
-.regla {{ padding-top: 27mm; }}
-.cuerpo {{ font-size: 11.5pt; }}
-.accion {{ margin-top: 4mm; padding: 4mm 5mm; border-left: 3px solid #d8b25a; background: rgba(216,178,90,.08); border-radius: 0 2mm 2mm 0; font-size: 10.5pt; line-height: 1.45; }}
-.accion span, .turno > span {{ display: block; font-size: 7pt; letter-spacing: .28em; text-transform: uppercase; color: #d8b25a; font-weight: 700; margin-bottom: 1.5mm; }}
-.turno {{ margin-top: 5mm; padding: 4mm 5mm 3mm; border: 1px dashed rgba(216,178,90,.35); border-radius: 2mm; }}
-.campo {{ display: flex; align-items: flex-end; gap: 2mm; min-height: 8mm; font-size: 9.5pt; color: #cfc8bb; }}
-.campo span {{ white-space: nowrap; }}
-.campo i {{ flex: 1; border-bottom: 1px solid rgba(244,239,230,.28); margin-bottom: 1mm; }}
-.hecho {{ margin-top: 2mm; font-size: 8.5pt; color: #8c867b; }}
-.fuente {{ position: absolute; left: 14mm; right: 14mm; bottom: 15mm; font-size: 7.5pt; color: #8c867b; border-top: 1px solid rgba(216,178,90,.22); padding-top: 2.5mm; margin: 0; }}
-.hojas h3 {{ margin-top: 2mm; }}
-table.hoja {{ width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 9pt; }}
-table.hoja th {{ text-align: left; font-size: 7pt; letter-spacing: .18em; text-transform: uppercase; color: #d8b25a; padding: 2mm 2mm; border-bottom: 1px solid rgba(216,178,90,.45); }}
-table.hoja td {{ padding: 2.6mm 2mm; border-bottom: 1px solid rgba(244,239,230,.14); color: #cfc8bb; height: 8mm; }}
-.reto {{ display: grid; grid-template-columns: 1fr 1fr; gap: 1.4mm 4mm; }}
-.dia {{ display: grid; grid-template-columns: 7mm 1fr 4mm; align-items: center; gap: 1.5mm; font-size: 7.6pt; padding: 1.2mm 0; border-bottom: 1px solid rgba(255,255,255,.06); }}
-.dia b {{ color: #d8b25a; font-family: "Playfair Display", serif; font-size: 9pt; }}
-.dia span {{ color: #d6cfc2; line-height: 1.25; }}
-.dia i {{ color: #d8b25a; font-style: normal; }}
-.calcs {{ display: grid; gap: 2.6mm; }}
-.calc {{ display: grid; padding: 3mm 4mm; border-radius: 2.5mm; border: 1px solid rgba(216,178,90,.28); background: rgba(216,178,90,.05); text-decoration: none; color: inherit; }}
-.calc b {{ font-family: "Playfair Display", serif; font-size: 11.5pt; font-weight: 600; }}
-.calc span {{ font-size: 8.5pt; color: #b8b1a4; }}
-.calc em {{ font-style: normal; font-size: 7.5pt; color: #d8b25a; margin-top: 1mm; }}
-.boton {{ display: inline-block; margin: 2mm 0 6mm; padding: 3.5mm 7mm; border-radius: 10mm; background: linear-gradient(180deg, #f0d488, #d8b25a); color: #111; font-weight: 800; text-decoration: none; font-size: 10.5pt; }}
-.avisos {{ margin-top: 8mm; padding-left: 4mm; font-size: 7.5pt; color: #8c867b; line-height: 1.5; }}
-</style></head><body>{"".join(cuerpo)}</body></html>'''
+{ESTILO}</style></head><body>{"".join(cuerpo)}</body></html>'''
     os.makedirs(SALIDA, exist_ok=True)
     ruta_html = os.path.join(SALIDA, 'vista-previa.html')
     open(ruta_html, 'w').write(documento)
