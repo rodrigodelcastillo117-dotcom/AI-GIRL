@@ -82,6 +82,36 @@
    "accion": "She raises her glass of red wine, swirls it gently, takes a small sip and sets it down. Warm restaurant ambience, slow push-in. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "1y177gds4xrmy0d1ssg8wbjg9r",
    "nota_calidad": "por revisar"
+  },
+  {
+   "archivo": "bar-mov-1.mp4",
+   "foto": "dinamica-bar.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She picks up her cocktail, takes a sip, puts it down and laughs softly looking off camera. Bokeh bar lights, slow lateral move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "pbbdtkafh9rmr0d1ssmrg0tymg",
+   "nota_calidad": "por revisar"
+  },
+  {
+   "archivo": "yate-mov-1.mp4",
+   "foto": "dinamica-yate.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She walks along the deck of the yacht holding the railing, wind in her hair, sea glittering behind. Camera follows smoothly. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "jafsfgak15rmr0d1ssmvahtsa8",
+   "nota_calidad": "por revisar"
+  },
+  {
+   "archivo": "coche-mov-1.mp4",
+   "foto": "dinamica-coche.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She drives calmly, hands on the steering wheel, glances at the mirror, then a quick look at the camera with a smile. Light and shadows pass across her face. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "anm93cjm2drmr0d1ssms7z37nr",
+   "nota_calidad": "por revisar"
   }
  ],
  "rechazados": [
