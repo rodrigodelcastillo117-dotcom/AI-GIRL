@@ -160,5 +160,11 @@
   "cambio": "Cola de TikTok: las 17 piezas de opinión y memes ya revisadas (consejos del tío, prestar a la familia, cuánto gana un ___, gastos hormiga, quién paga la cita...) suben y se alternan con las de temporada; antes iban detrás de las listas 'en 5 datos'",
   "por_que": "Cero comentarios: las listas informativas se guardan pero no se comentan; ninguna pieza de opinión había salido",
   "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-12",
+  "cambio": "Videos de Victoria en 1080x1920: naturalizar escala antes de subtitular; 40 y O2 rehechos en 1080 (pasaron qa_sync). O1 ya salió en 720; 18 sigue en 720",
+  "por_que": "Rodrigo: en Instagram se ven en mala calidad; Wan entrega 720x1280",
+  "vigilar": "ig"
  }
 ]

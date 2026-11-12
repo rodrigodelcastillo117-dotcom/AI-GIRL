@@ -275,6 +275,9 @@ Esperar con `sleep` en segundo plano (tarda 10-15 min) y consultar `openart_crea
 
 Primero, `python scripts/naturalizar.py video.mp4 video-nat.mp4` (grano fino, movimiento leve de mano y
 color menos saturado: quita el acabado "de IA"); los subtítulos y el título van sobre `video-nat.mp4`.
+Desde el 12-nov-2026 naturalizar también escala a 1080x1920 (Wan entrega 720x1280; Rodrigo: "se ven en mala calidad en
+Instagram, no son ni 1080"). Por eso todo lo que va encima (subtítulos, título, cierre) se dibuja ya en 1080. Generar en
+1080p con Wan cuesta el doble de créditos (15 s: 1,200 contra 600): solo si Rodrigo lo pide.
 
 ```
 python scripts/frases_a_tiempos.py palabras.json frases.json tiempos.json   # frases = "subtitulos" del plan
