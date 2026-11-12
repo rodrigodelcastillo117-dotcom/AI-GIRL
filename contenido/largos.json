@@ -1735,7 +1735,7 @@
   },
   "playlist": "finanzas",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
-  "estado": "produciendo",
+  "estado": "programado",
   "publica_utc": "2026-11-22T00:45:00Z",
   "intercalado": true,
   "revision": {
@@ -2078,7 +2078,12 @@
     "voz": "En mi opinión, tu tarjeta es dinero prestado, no sueldo extra. ¿Qué día es tu fecha de corte? Comenta el número y suscríbete para más. Capital ya apuntó la suya."
    }
   ],
-  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")"
+  "nota_accion": "12-nov: 3 respiros de acción con movimiento real y sonido de la escena entre capítulos (Rodrigo: \"que se muevan, animados\")",
+  "youtube": "https://youtube.com/watch?v=i7BJGUstpHI",
+  "facebook": {
+   "publica_utc": "2026-11-22T00:45:00Z",
+   "estado": "programado"
+  }
  },
  {
   "id": "LC2",

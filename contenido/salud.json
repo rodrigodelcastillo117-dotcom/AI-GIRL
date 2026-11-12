@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-12T08:41:51Z",
+ "generado_utc": "2026-11-12T14:03:00Z",
  "estado": "alerta",
  "checks": [
   {
@@ -25,7 +25,7 @@
   {
    "area": "Gasto",
    "estado": "alerta",
-   "detalle": "Replicate de Victoria: hoy $22.93 · semana $53.59 de $7 · mes $54.14 de $28 (proyección del mes $135.35) · El espacio, semana $2.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
+   "detalle": "Replicate de Victoria: hoy $28.28 · semana $58.94 de $7 · mes $59.50 de $28 (proyección del mes $148.74) · El espacio, semana $2.00 · TOPE ALCANZADO: no se generan tomas nuevas; avísale a Rodrigo"
   },
   {
    "area": "Créditos",

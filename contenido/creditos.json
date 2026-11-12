@@ -7,9 +7,9 @@
    "reinicia_dia": 27,
    "uso": "clips de Victoria sin voz, fotos y miniaturas",
    "regla": "Se pierden si no se usan: el día 23 de cada mes se gastan los que queden",
-   "creditos": 8,
-   "anterior": 31,
-   "leido_utc": "2026-11-12T05:30:43Z"
+   "creditos": 0,
+   "anterior": 8,
+   "leido_utc": "2026-11-12T14:03:39Z"
   },
   "openart": {
    "nombre": "OpenArt",
@@ -18,8 +18,8 @@
    "uso": "respaldo de clips y fotos",
    "regla": "Cancelar al renovar si Everygen cubre todo",
    "creditos": 19,
-   "anterior": 199,
-   "leido_utc": "2026-11-12T05:30:43Z"
+   "anterior": 19,
+   "leido_utc": "2026-11-12T14:03:39Z"
   },
   "higgsfield": {
    "nombre": "Higgsfield",
@@ -32,5 +32,5 @@
    "leido_utc": "2026-11-12T05:13:21Z"
   }
  },
- "actualizado_utc": "2026-11-12T05:30:43Z"
+ "actualizado_utc": "2026-11-12T14:03:39Z"
 }

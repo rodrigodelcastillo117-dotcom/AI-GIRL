@@ -6136,9 +6136,12 @@
    "revision": "11-nov-2026: aritmética y fuentes revisadas por un segundo agente (todo correcto); se aplicaron sus 5 precisiones (neto, promedio nacional, lo recomendable, $717 no alcanza, sin predial).",
    "publica_utc_por_red": {
     "ig": "2026-11-13T01:00:00Z",
-    "tt": "2026-11-12T19:00:00Z"
+    "tt": "2026-11-12T19:00:00Z",
+    "yt": "2026-11-13T02:00:00Z"
    },
-   "publica_utc": "2026-11-13T01:00:00Z"
+   "publica_utc": "2026-11-13T01:00:00Z",
+   "youtube": "https://youtube.com/shorts/BH_9lIvPPJM",
+   "short_formato": "reel_texto (sin voz, 12-nov: freno de Replicate)"
   },
   {
    "id": "c69",
@@ -6588,7 +6591,7 @@
   },
   {
    "id": "c74",
-   "estado": "listo",
+   "estado": "programado",
    "clon_de": "c16",
    "tema": "buen_fin_datos_para_guardar",
    "pilar": "finanzas",
@@ -6673,7 +6676,14 @@
     ]
    },
    "personaje": "2026-11-12: clon de c16 (3,903 vistas en TikTok contra una mediana de ~150-300): mismo formato \"Guarda esto: ... en 5 datos\", gancho guarda_esto, etiqueta en mayúsculas, 5 datos serios con su fuente al pie de cada diapositiva, voces \"Primero... Segundo... Y el último\", cierre \"Guárdalo para/antes de...\" + a quién mandárselo + \"Sígueme\"; la pregunta para comentar y el humor de Capital van solo en el texto del post (docs/PERSONAJE.md), para no meter tres llamados en la diapositiva de cierre (docs/CARRUSELES.md, paso 3).",
-   "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo en la segunda revisión: el minisitio del SAT dice \"micro y pequeños comercios registrados\" en la portada y \"comercios registrados\" en las bases; se escribió \"comercio registrado\" (las dos lo cubren). Las bases dicen resultados \"a partir del 8 de diciembre\" y pago \"antes del 6 de enero de 2026\" (errata), y la portada \"7 de diciembre\" y \"antes del 5 de enero de 2027\": por eso no se usan esas fechas. | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra fuentes oficiales descargadas ese día (minisitio SAT, bases oficiales en PDF, gob.mx/sat 14-oct-2026, LFPC art. 48 fr. I DOF 12-12-2025, Condusef 12-nov-2019, LTOSF art. 23 fr. I y II DOF 14-11-2025); 13-nov-2026 viernes y 17-nov-2026 martes comprobados. Cambios: (1) solo entran compras en micro y pequeños comercios registrados (comercios con ingresos 2025 de hasta $5,000,000), no en cualquier comercio registrado; corregido en diapositiva 1, voz y texto del post; (2) 'tarjetas de crédito departamentales', como dicen las bases; (3) art. 48 LFPC es una presunción: 'la ley la presume vigente'; (4) fechas resueltas con las bases oficiales en PDF: consulta desde el 27-nov, sorteo 4-dic 12:00, resultados desde el 7-dic, pago antes del 5-ene-2027 (las fechas 8-dic y 6-ene-2026 están en un comentario HTML, no publicadas); se añadió 'resultados desde el 7 de diciembre' al post; (5) voces sin dos puntos (coma o punto en su lugar). Sin consejo de inversión ni casos inventados. Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7)."
+   "revision": "12-nov-2026: primera redacción (agente), cada cifra comprobada contra la fuente oficial descargada ese día (ver \"fuente\" y scratchpad/clones-c16-fuentes.md); cuentas hechas con Decimal. Pendiente: segunda revisión (regla 7) por otro agente y leer las diapositivas dibujadas antes de pasar a listo. Ojo en la segunda revisión: el minisitio del SAT dice \"micro y pequeños comercios registrados\" en la portada y \"comercios registrados\" en las bases; se escribió \"comercio registrado\" (las dos lo cubren). Las bases dicen resultados \"a partir del 8 de diciembre\" y pago \"antes del 6 de enero de 2026\" (errata), y la portada \"7 de diciembre\" y \"antes del 5 de enero de 2027\": por eso no se usan esas fechas. | 12-nov-2026, segunda revisión (regla 7, otro agente): verificado contra fuentes oficiales descargadas ese día (minisitio SAT, bases oficiales en PDF, gob.mx/sat 14-oct-2026, LFPC art. 48 fr. I DOF 12-12-2025, Condusef 12-nov-2019, LTOSF art. 23 fr. I y II DOF 14-11-2025); 13-nov-2026 viernes y 17-nov-2026 martes comprobados. Cambios: (1) solo entran compras en micro y pequeños comercios registrados (comercios con ingresos 2025 de hasta $5,000,000), no en cualquier comercio registrado; corregido en diapositiva 1, voz y texto del post; (2) 'tarjetas de crédito departamentales', como dicen las bases; (3) art. 48 LFPC es una presunción: 'la ley la presume vigente'; (4) fechas resueltas con las bases oficiales en PDF: consulta desde el 27-nov, sorteo 4-dic 12:00, resultados desde el 7-dic, pago antes del 5-ene-2027 (las fechas 8-dic y 6-ene-2026 están en un comentario HTML, no publicadas); se añadió 'resultados desde el 7 de diciembre' al post; (5) voces sin dos puntos (coma o punto en su lugar). Sin consejo de inversión ni casos inventados. Diapositivas de datos dibujadas de prueba con scripts/carrusel.py (fondo y foto fijos, fuera del repo): ningún texto cortado y todas en 30 palabras o menos. Al publicar: dibujarlo con su foto y fondo reales y correr scripts/revisar_texto_foto.py (CARRUSELES.md, pasos 6 y 7).",
+   "publica_utc_por_red": {
+    "tt": "2026-11-13T02:00:00Z",
+    "yt": "2026-11-12T23:00:00Z"
+   },
+   "publica_utc": "2026-11-13T02:00:00Z",
+   "youtube": "https://youtube.com/shorts/pGZrNPNF1wg",
+   "short_formato": "reel_texto (sin voz, 12-nov: freno de Replicate)"
   },
   {
    "id": "c75",

@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-11T12:39:03Z",
+ "fecha_utc": "2026-11-12T14:03:39Z",
  "videos_calificados": 6,
  "base_vistas_36h": 473.5,
  "notas": {
@@ -20,21 +20,21 @@
   "17": {
    "vistas_36h": 440,
    "engagement": 0.0409,
-   "retencion": 77.3,
+   "retencion": 86.6,
    "horas": 32.3,
    "indice": 0.93
   },
   "19": {
    "vistas_36h": 386,
    "engagement": 0.0259,
-   "retencion": 102.8,
+   "retencion": 102.7,
    "horas": 34.6,
    "indice": 0.82
   },
   "37": {
    "vistas_36h": 507,
    "engagement": 0.0316,
-   "retencion": 76.0,
+   "retencion": 75.8,
    "horas": 34.7,
    "indice": 1.07
   },
@@ -70,7 +70,7 @@
     "indice": 0.82,
     "estado": "normal",
     "engagement": 0.0421,
-    "retencion": 98.5
+    "retencion": 100.7
    }
   ],
   "formato": [
@@ -80,7 +80,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 92.5
+    "retencion": 94.0
    }
   ],
   "locacion": [
@@ -106,7 +106,7 @@
     "indice": 1.0,
     "estado": "en prueba",
     "engagement": 0.0363,
-    "retencion": 76.7
+    "retencion": 81.2
    },
    {
     "valor": "sillon",
@@ -114,7 +114,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 102.8
+    "retencion": 102.7
    },
    {
     "valor": "oficina",
@@ -148,7 +148,7 @@
     "indice": 0.94,
     "estado": "normal",
     "engagement": 0.0328,
-    "retencion": 85.4
+    "retencion": 88.4
    }
   ],
   "estilo_vestuario": [
@@ -166,7 +166,7 @@
     "indice": 0.95,
     "estado": "en prueba",
     "engagement": 0.0288,
-    "retencion": 89.4
+    "retencion": 89.2
    },
    {
     "valor": "casual",
@@ -174,7 +174,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": 77.3
+    "retencion": 86.6
    }
   ],
   "color_vestuario": [
@@ -200,7 +200,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.0
+    "retencion": 75.8
    },
    {
     "valor": "negro",
@@ -208,7 +208,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 102.8
+    "retencion": 102.7
    },
    {
     "valor": "rojo",
@@ -216,7 +216,7 @@
     "indice": 0.69,
     "estado": "en prueba",
     "engagement": 0.0555,
-    "retencion": 107.6
+    "retencion": 112.2
    }
   ],
   "tipo_gancho": [
@@ -234,7 +234,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.0
+    "retencion": 75.8
    },
    {
     "valor": "pregunta",
@@ -242,7 +242,7 @@
     "indice": 0.88,
     "estado": "en prueba",
     "engagement": 0.0334,
-    "retencion": 90.0
+    "retencion": 94.7
    },
    {
     "valor": "contradiccion",
@@ -260,7 +260,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 92.5
+    "retencion": 94.0
    }
   ],
   "titulo_largo": [
@@ -270,7 +270,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 92.5
+    "retencion": 94.0
    }
   ],
   "titulo_tipo": [
@@ -280,7 +280,7 @@
     "indice": 1.06,
     "estado": "normal",
     "engagement": 0.0389,
-    "retencion": 92.5
+    "retencion": 94.0
    }
   ],
   "dia": [
@@ -306,7 +306,7 @@
     "indice": 1.07,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.0
+    "retencion": 75.8
    },
    {
     "valor": "dom",
@@ -314,7 +314,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": 77.3
+    "retencion": 86.6
    },
    {
     "valor": "lun",
@@ -322,7 +322,7 @@
     "indice": 0.82,
     "estado": "en prueba",
     "engagement": 0.0259,
-    "retencion": 102.8
+    "retencion": 102.7
    },
    {
     "valor": "vie",
@@ -356,7 +356,7 @@
     "indice": 0.93,
     "estado": "en prueba",
     "engagement": 0.0409,
-    "retencion": 77.3
+    "retencion": 86.6
    },
    {
     "valor": "20:00",
@@ -364,123 +364,105 @@
     "indice": 0.78,
     "estado": "en prueba",
     "engagement": 0.0425,
-    "retencion": 105.5
+    "retencion": 105.4
    }
   ]
  },
  "decision": {
-  "toca_publicar": true,
-  "motivo": "el último salió el 2026-11-08",
-  "hora_siguiente": "15:00",
+  "toca_publicar": false,
+  "motivo": "el último sale el 2026-11-11; toca publicar en 2 día(s)",
+  "hora_siguiente": "18:00",
   "horarios": {
-   "ig": "15:00",
-   "tt": "15:00",
+   "ig": "18:00",
+   "tt": "11:00",
    "yt": "10:00"
   },
   "cuando": {
-   "ig": "2026-11-11T21:00:00Z",
-   "tt": "2026-11-11T21:00:00Z",
-   "yt": "2026-11-11T16:00:00Z"
+   "ig": "2026-11-13T00:00:00Z",
+   "tt": "2026-11-12T17:00:00Z",
+   "yt": "2026-11-12T16:00:00Z"
   },
-  "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 2/4, 15:00 1/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 3/4, 11:00 3/4, 13:00 3/4, 15:00 3/4, 17:00 4/4, 20:00 4/4) · yt: en prueba (10:00 3/4, 12:00 4/4, 14:00 4/4, 17:00 5/4, 20:00 4/4)",
+  "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 3/4, 15:00 2/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 6/4, 11:00 3/4, 13:00 5/4, 15:00 4/4, 17:00 5/4, 20:00 5/4) · yt: en prueba (10:00 4/4, 12:00 5/4, 14:00 5/4, 17:00 5/4, 20:00 5/4)",
   "conteo_horas": {
    "ig": {
     "08:00": 2,
     "11:00": 1,
-    "12:00": 2,
-    "15:00": 1,
+    "12:00": 3,
+    "15:00": 2,
     "18:00": 2,
     "20:00": 2
    },
    "tt": {
-    "09:00": 3,
+    "09:00": 6,
     "11:00": 3,
-    "13:00": 3,
-    "15:00": 3,
-    "17:00": 4,
-    "20:00": 4
+    "13:00": 5,
+    "15:00": 4,
+    "17:00": 5,
+    "20:00": 5
    },
    "yt": {
-    "10:00": 3,
-    "12:00": 4,
-    "14:00": 4,
+    "10:00": 4,
+    "12:00": 5,
+    "14:00": 5,
     "17:00": 5,
-    "20:00": 4
+    "20:00": 5
    }
   },
-  "publicar_hoy": "O1",
-  "video_id": "40",
+  "publicar_hoy": null,
+  "video_id": "39",
   "modo": "prioridad",
   "esperado": null,
   "cambios_sugeridos": [],
-  "por_que": "Prioridad: el video 40 va primero (config.json → prioridad_videos).",
+  "por_que": "Prioridad: el video 39 va primero (config.json → prioridad_videos).",
   "carruseles": {
    "tiktok": {
-    "id": "c52",
-    "cuando": "2026-11-11T15:00:00Z"
+    "id": "c74",
+    "cuando": "2026-11-13T02:00:00Z"
    },
-   "instagram": {
-    "id": "c13",
-    "cuando_ig": "2026-11-11T17:00:00Z",
-    "turno": "mañana",
-    "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
-   },
+   "instagram": null,
    "youtube": {
-    "id": "c52",
-    "cuando_yt": "2026-11-11T20:00:00Z",
+    "id": "c74",
+    "cuando_yt": "2026-11-12T23:00:00Z",
     "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
    },
    "tiktoks": [
     {
-     "id": "c52",
-     "cuando": "2026-11-11T15:00:00Z"
-    },
-    {
-     "id": "c27",
-     "cuando": "2026-11-12T02:00:00Z"
+     "id": "c74",
+     "cuando": "2026-11-13T02:00:00Z"
     }
    ],
-   "instagrams": [
-    {
-     "id": "c13",
-     "cuando_ig": "2026-11-11T17:00:00Z",
-     "turno": "mañana",
-     "por_que": "214 vistas en TikTok; lleva 1 día(s) esperando"
-    }
-   ],
+   "instagrams": [],
    "youtubes": [
     {
-     "id": "c52",
-     "cuando_yt": "2026-11-11T20:00:00Z",
+     "id": "c74",
+     "cuando_yt": "2026-11-12T23:00:00Z",
      "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
     },
     {
-     "id": "c27",
-     "cuando_yt": "2026-11-12T02:00:00Z",
-     "por_que": "sale hoy en TikTok y todavía no hay probados que falten"
+     "id": "c68",
+     "cuando_yt": "2026-11-13T02:00:00Z",
+     "por_que": "sale en TikTok hoy a las 13:00; no quedan probados que falten aquí"
     }
    ],
-   "notas": [],
-   "quedan_tiktok": 38,
-   "quedan_instagram": 5,
-   "quedan_youtube": 0,
+   "notas": [
+    "Instagram ya tiene sus 2 publicaciones de hoy.",
+    "Instagram lleva 7 carruseles atrás de TikTok: subir Instagram a 3 al día o bajar TikTok (config → publicaciones_por_dia)."
+   ],
+   "quedan_tiktok": 41,
+   "quedan_instagram": 7,
+   "quedan_youtube": 2,
    "comandos": [
-    "python scripts/publer_carrusel.py c52 \"tt=2026-11-11T15:00:00Z\"",
-    "python scripts/publer_carrusel.py c27 \"tt=2026-11-12T02:00:00Z\"",
-    "python scripts/carrusel_video.py short c13",
-    "python scripts/carrusel_video.py short c52",
-    "python scripts/carrusel_video.py short c27",
-    "python scripts/ig_reel_musica.py c13 --programar 2026-11-11T17:00:00Z",
-    "python scripts/publer_carrusel.py c13 --reel 2026-11-11T17:00:00Z --solo-facebook",
-    "RECORDATORIO (send_later a las 11:00): python scripts/ig_reel_musica.py c13 --publicar",
-    "youtube.py subir carruseles/c52/short.mp4 ... 2026-11-11T20:00:00Z (CARRUSELES.md)",
-    "python scripts/publer_carrusel.py c52 --reel 2026-11-11T20:00:00Z --solo-facebook",
-    "youtube.py subir carruseles/c27/short.mp4 ... 2026-11-12T02:00:00Z (CARRUSELES.md)",
-    "python scripts/publer_carrusel.py c27 --reel 2026-11-12T02:00:00Z --solo-facebook"
+    "python scripts/publer_carrusel.py c74 \"tt=2026-11-13T02:00:00Z\"",
+    "python scripts/carrusel_video.py short c74",
+    "python scripts/carrusel_video.py short c68",
+    "youtube.py subir carruseles/c74/short.mp4 ... 2026-11-12T23:00:00Z (CARRUSELES.md)",
+    "python scripts/publer_carrusel.py c74 --reel 2026-11-12T23:00:00Z --solo-facebook",
+    "youtube.py subir carruseles/c68/short.mp4 ... 2026-11-13T02:00:00Z (CARRUSELES.md)",
+    "python scripts/publer_carrusel.py c68 --reel 2026-11-13T02:00:00Z --solo-facebook"
    ]
   },
-  "segundos": 19,
-  "creditos": 790
+  "segundos": 17,
+  "creditos": 710
  },
  "horarios_por_red": {
   "ig": {
@@ -553,58 +535,58 @@
      "indice": 1.81
     },
     "11:00": {
-     "n": 2,
-     "indice": 0.7
+     "n": 3,
+     "indice": 0.89
     },
     "20:00": {
-     "n": 3,
-     "indice": 1.36
+     "n": 4,
+     "indice": 1.2
     },
     "15:00": {
      "n": 3,
-     "indice": 5.98
+     "indice": 6.54
     },
     "13:00": {
      "n": 3,
-     "indice": 0.99
+     "indice": 1.05
     },
     "09:00": {
-     "n": 3,
-     "indice": 1.13
+     "n": 4,
+     "indice": 1.19
     },
     "17:00": {
-     "n": 3,
-     "indice": 1.13
+     "n": 4,
+     "indice": 1.08
     }
    },
    "dias": {
     "jueves": {
      "n": 2,
-     "indice": 1.46
+     "indice": 1.51
     },
     "sábado": {
      "n": 2,
-     "indice": 0.63
+     "indice": 0.66
     },
     "miércoles": {
-     "n": 2,
-     "indice": 0.97
+     "n": 3,
+     "indice": 1.01
     },
     "viernes": {
      "n": 4,
-     "indice": 1.43
+     "indice": 1.55
     },
     "domingo": {
      "n": 3,
-     "indice": 6.24
+     "indice": 6.83
     },
     "lunes": {
      "n": 4,
-     "indice": 0.78
+     "indice": 0.83
     },
     "martes": {
-     "n": 1,
-     "indice": 1.3
+     "n": 4,
+     "indice": 0.93
     }
    },
    "ganadora": null
@@ -613,57 +595,57 @@
    "franjas": {
     "17:47": {
      "n": 1,
-     "indice": 1.42
+     "indice": 1.38
     },
     "10:00": {
-     "n": 3,
-     "indice": 1.17
+     "n": 4,
+     "indice": 1.16
     },
     "12:00": {
-     "n": 3,
-     "indice": 0.83
+     "n": 4,
+     "indice": 0.61
     },
     "20:00": {
-     "n": 3,
-     "indice": 0.76
+     "n": 4,
+     "indice": 2.27
     },
     "17:00": {
-     "n": 4,
-     "indice": 1.72
+     "n": 5,
+     "indice": 2.46
     },
     "14:00": {
      "n": 4,
-     "indice": 1.97
+     "indice": 1.88
     }
    },
    "dias": {
     "jueves": {
      "n": 2,
-     "indice": 1.09
+     "indice": 1.04
     },
     "sábado": {
      "n": 2,
-     "indice": 1.38
+     "indice": 1.32
     },
     "miércoles": {
-     "n": 2,
-     "indice": 0.86
+     "n": 3,
+     "indice": 0.98
     },
     "viernes": {
      "n": 4,
-     "indice": 1.49
+     "indice": 1.42
     },
     "domingo": {
      "n": 3,
-     "indice": 2.07
+     "indice": 1.97
     },
     "lunes": {
      "n": 4,
-     "indice": 1.0
+     "indice": 0.95
     },
     "martes": {
-     "n": 1,
-     "indice": 1.65
+     "n": 4,
+     "indice": 3.57
     }
    },
    "ganadora": null
@@ -671,8 +653,8 @@
  },
  "reglas_vigentes": [],
  "alertas": [
-  "Créditos para 4 videos (unos 12 días al ritmo actual). Recargar OpenArt.",
-  "Prueba de voz íntima: 0 de 3 videos publicados."
+  "Créditos para 1 videos (unos 3 días al ritmo actual). Recargar OpenArt.",
+  "Prueba de voz íntima: 1 de 3 videos publicados."
  ],
  "ganchos_carrusel": {
   "tipos": [
@@ -683,13 +665,13 @@
    },
    {
     "tipo": "si",
-    "n": 2,
-    "vistas_48h": 504
+    "n": 3,
+    "vistas_48h": 380
    },
    {
     "tipo": "dato",
-    "n": 6,
-    "vistas_48h": 261
+    "n": 8,
+    "vistas_48h": 250
    },
    {
     "tipo": "postura",
@@ -697,6 +679,6 @@
     "vistas_48h": 168
    }
   ],
-  "gana": "dato"
+  "gana": "si"
  }
 }
