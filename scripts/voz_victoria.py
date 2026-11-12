@@ -45,12 +45,13 @@ def normal(texto):
     """Minúsculas, sin acentos ni signos y con los números en letra (Whisper escribe "regla 1")."""
     texto = texto.lower().replace('%', ' por ciento ').replace('$', ' ')
     texto = re.sub(r'(\d)[.,](\d{3})', r'\1\2', texto)  # "4.500" y "4,500" son cuatro mil quinientos
+    texto = re.sub(r'(\d)\.(\d{1,2})\b', r'\1 punto \2', texto)  # "1.5%" = "uno punto cinco" (LC1, 13-nov-2026)
     # Los ceros a la izquierda se dicen ("079" = "cero setenta y nueve"; 12-nov-2026 el 079 de Profedet salía como error).
     texto = re.sub(r'\d+', lambda m: ' ' + ' '.join(['cero'] * (len(m.group()) - len(m.group().lstrip('0')))) + ' '
                    + (num2words(int(m.group()), lang='es') if m.group().lstrip('0') else '') + ' ', texto)
     texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
     # "trescientas once inconformidades" = 311: el femenino de los cientos cuenta igual (12-nov-2026)
-    texto = re.sub(r'cientas\b', 'cientos', texto)
+    texto = re.sub(r'ientas\b', 'ientos', texto)  # también "quinientas" (LC1, 13-nov)
     return re.sub(r'[^a-zñ ]', ' ', texto).split()
 
 
@@ -66,7 +67,7 @@ def parecido_texto(esperado, oido):
     # antes de b/p ("embales" por "en vales"). Eso no es un error de la voz: se compara también sin espacios.
     # En México z, s y c (antes de e/i) suenan igual ("alcansa" por "alcanza"), y la voz lleva "Méjico" para pronunciarlo
     # bien mientras el oído escribe "México" (10-nov-2026).
-    sonido = lambda t: re.sub(r'c(?=[ei])', 's', re.sub(r'm(?=[bp])', 'n', t.replace('xc', 'x').replace('v', 'b').replace('z', 's').replace('mexic', 'mejic')))  # "excenta" = "exenta" (12-nov-2026)
+    sonido = lambda t: re.sub(r'c(?=[ei])', 's', re.sub(r'm(?=[bp])', 'n', t.replace('rr', 'r').replace('xc', 'x').replace('v', 'b').replace('z', 's').replace('mexic', 'mejic')))  # "excenta" = "exenta" (12-nov-2026)
     corrido = sonido(''.join(o))
     for palabra in {x for x in e if len(x) >= 4} - set(o):
         if not (palabra.endswith('s') and palabra[:-1] in o) and sonido(palabra) not in corrido:
