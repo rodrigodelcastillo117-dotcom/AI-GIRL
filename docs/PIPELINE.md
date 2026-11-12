@@ -176,18 +176,21 @@ hoja maestra de Victoria (`manifest.personaje.maestra`), Rottweiler (`manifest.p
 
 Si el video ya trae `foto_base_lista` en el plan, se usa esa (no se genera otra).
 
-Prompt (estilo celular desde el 31-oct-2026: el de estudio "se veía muy AI"):
+Prompt (estilo celular desde el 31-oct-2026: el de estudio "se veía muy AI"; con el estilo B aprobado el 12-nov-2026,
+referencia `assets/fotos/estilo-b-oficina-1.jpg`):
 ```
 Candid vertical smartphone frame from a real talking-head video filmed by the creator herself with a
 phone front camera. The red-haired woman of Image 1 (EXACT identity: same face, green eyes, long
 copper-red wavy hair, subtle freckles) in a real, lived-in place like Image 3, with a few everyday
 objects around, natural daylight from a window, slightly uneven soft light, realistic skin texture
-with visible pores and tiny imperfections, natural everyday makeup with a soft red lip, hair natural,
-not styled. She wears <vestuario en inglés>. <accion en inglés>, mid-sentence, talking to the camera.
+with visible pores and tiny imperfections. Style: a flirty, alluring 'sexy entrepreneur', glamorous and
+confident, tasteful and Instagram-appropriate: glamorous makeup (classic red lip, soft smoky winged liner,
+luminous skin), voluminous tousled glossy copper waves. She wears <vestuario en inglés, de la tabla de
+Locaciones de DIRECCION_CREATIVA.md>. <accion en inglés>, mid-sentence, with a sultry, confident half-smile
+and a teasing direct gaze into the lens. No lingerie, no nudity.
 Framed from the chest up, slightly off-center, camera at eye level and close, like a real creator
 filming herself. (NUNCA de cuerpo entero: el 6-nov Wan hizo zoom, Capital salió del cuadro y la boca no se pudo medir.) The Rottweiler of Image 2 (same dog, black leather collar with gold plate) relaxed
-next to her (lying down, looking away, partly visible). Not a studio, not glamorous, not symmetrical,
-no posed look, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark, no readable words
+right beside her, calm and fully inside the frame. Real place, not a studio render, not symmetrical, no HDR. Photorealistic phone photo, slight natural grain, no text, no logos, no watermark, no readable words
 anywhere (no calendars, posters, signs, book covers or screens with writing).
 ```
 
