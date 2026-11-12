@@ -40,6 +40,7 @@ PRECIOS = {
     'bytedance/seedance-1-pro': lambda p: ((p.get('metrics') or {}).get('video_output_duration_seconds')
                                            or (p.get('input') or {}).get('duration') or 5) * 0.15,
     'google/nano-banana': lambda p: 0.039,
+    'zsxkib/mmaudio': lambda p: 0.02,
     # Del otro canal (El espacio): Hailuo video-01, un video de 6 s al día (≈$0.50, estimado) y el clon de voz.
     'minimax/video-01': lambda p: 0.50,
     'minimax/voice-cloning': lambda p: 3.0,
