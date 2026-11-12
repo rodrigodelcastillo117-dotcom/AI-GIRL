@@ -41,5 +41,5 @@
       "destination": "/pagar-deudas.html"
     }
   ],
-  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- ."
+  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . 2>/dev/null; test $? -eq 0"
 }
