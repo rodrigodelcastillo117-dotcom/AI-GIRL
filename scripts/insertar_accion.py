@@ -33,6 +33,9 @@ def main():
     i = int(frase)
     if i < 0 or i >= len(t) - 1:
         sys.exit('ERROR: la acción va después de una frase que no sea la última')
+    cat = json.load(open(os.path.join(os.path.dirname(os.path.abspath(broll)), 'catalogo.json')))
+    if any(c.get('archivo') == os.path.basename(broll) and c.get('sirve_para_pausa') is False for c in cat['clips']):
+        sys.exit(f'ERROR: {os.path.basename(broll)} no sirve como pausa (en el clip ella habla); usa otro')
     seg = max(2.0, min(seg, 4.0, duracion(broll) - 0.3))
     # Corte en el silencio: la frase i termina donde arranca la i+1; se corta 0.12 s antes para no comerse la palabra.
     corte = max(t[i]['start'] + 0.3, t[i + 1]['start'] - 0.12)

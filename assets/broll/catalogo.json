@@ -23,7 +23,8 @@
    "prediccion": "0zsawyvdcnrmr0d1ssd93zfxxm",
    "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
    "sonido": "sonido/cafe-mov-1.m4a",
-   "sonido_que": "outdoor Paris café terrace ambience, a porcelain coffee cup lifted and set down on its saucer, soft distant street sounds, light breeze"
+   "sonido_que": "outdoor Paris café terrace ambience, a porcelain coffee cup lifted and set down on its saucer, soft distant street sounds, light breeze",
+   "nota_sonido": "Whisper \"oye\" ¡Suscríbete! / ¡Hasta la próxima! en el ruido: alucinación típica de Whisper en ruido de fondo (no hay voz a -28 dB)"
   },
   {
    "archivo": "cocina-mov-1.mp4",
@@ -33,7 +34,10 @@
    "segundos": 5,
    "accion": "She stirs the pan with a wooden spoon, tastes the sauce from the spoon and nods with approval. Steam rises. Slow lateral camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "yzwsre77v1rmw0d1ssdtjxwfjg",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/cocina-mov-1.m4a",
+   "sonido_que": "wooden spoon stirring sauce in a sizzling pan, a soft taste, kitchen ambience",
+   "nota_sonido": "Whisper \"oye\" ¡Suscríbete! / ¡Hasta la próxima! en el ruido: alucinación típica de Whisper en ruido de fondo (no hay voz a -28 dB)"
   },
   {
    "archivo": "terraza-depa-mov-1.mp4",
@@ -43,7 +47,9 @@
    "segundos": 5,
    "accion": "She walks slowly across the terrace toward the railing, rests her hands on it and looks at the city skyline, the breeze moves her hair. Slow follow camera. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "wxv8p877mnrmw0d1ssdrg47f0g",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/terraza-depa-mov-1.m4a",
+   "sonido_que": "footsteps on a terrace, a wine glass set on a glass railing, wind, distant city traffic"
   },
   {
    "archivo": "lectura-mov-1.mp4",
@@ -53,7 +59,9 @@
    "segundos": 5,
    "accion": "She turns a page of the book, reads, then looks up at the camera with a subtle confident smile. Very slow push-in. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "nkrqza77n1rmy0d1ssdtx9gvgg",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/lectura-mov-1.m4a",
+   "sonido_que": "a book page turning, quiet room"
   },
   {
    "archivo": "estudio-mov-1.mp4",
@@ -63,7 +71,11 @@
    "segundos": 5,
    "accion": "She speaks naturally into the podcast microphone with small hand gestures, then leans back and smiles. Slow arc camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "34xkn2dqbsrmy0d1ssg9awdvy4",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/estudio-mov-1.m4a",
+   "sonido_que": "quiet podcast studio, chair creak, soft movement",
+   "sirve_para_pausa": false,
+   "nota_sonido": "ella habla al micrófono en el clip y el sonido trae murmullo de voz: no sirve como pausa (se ve hablando); sí como fondo de reels de texto"
   },
   {
    "archivo": "calle-mov-1.mp4",
@@ -73,7 +85,9 @@
    "segundos": 5,
    "accion": "She walks confidently toward the camera along the street, natural stride, hair moving, people blurred in the background. Camera tracks backward with her. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "wj1f3sxp2hrmw0d1ssg88bw7pg",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/calle-mov-1.m4a",
+   "sonido_que": "high heels walking on stone pavement, shopping bags rustling, city traffic, a distant car horn"
   },
   {
    "archivo": "restaurante-mov-1.mp4",
@@ -83,7 +97,9 @@
    "segundos": 5,
    "accion": "She raises her glass of red wine, swirls it gently, takes a small sip and sets it down. Warm restaurant ambience, slow push-in. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "1y177gds4xrmy0d1ssg8wbjg9r",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/restaurante-mov-1.m4a",
+   "sonido_que": "wine glass swirl and soft clink on a table, restaurant murmur"
   },
   {
    "archivo": "bar-mov-1.mp4",
@@ -93,7 +109,9 @@
    "segundos": 5,
    "accion": "She picks up her cocktail, takes a sip, puts it down and laughs softly looking off camera. Bokeh bar lights, slow lateral move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "pbbdtkafh9rmr0d1ssmrg0tymg",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/bar-mov-1.m4a",
+   "sonido_que": "cocktail glass lifted and set on the bar, ice clinking, low bar murmur"
   },
   {
    "archivo": "yate-mov-1.mp4",
@@ -103,7 +121,9 @@
    "segundos": 2.4,
    "accion": "She walks along the deck of the yacht holding the railing, wind in her hair, sea glittering behind. Camera follows smoothly. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "jafsfgak15rmr0d1ssmvahtsa8",
-   "nota_calidad": "recortado a 2.4 s: desde 3.0 s entraba por la orilla un perro que no es Capital; lo bueno se usa"
+   "nota_calidad": "recortado a 2.4 s: desde 3.0 s entraba por la orilla un perro que no es Capital; lo bueno se usa",
+   "sonido": "sonido/yate-mov-1.m4a",
+   "sonido_que": "footsteps on a wooden yacht deck, sea waves, wind, a glass of champagne"
   },
   {
    "archivo": "coche-mov-1.mp4",
@@ -113,7 +133,9 @@
    "segundos": 5,
    "accion": "She drives calmly, hands on the steering wheel, glances at the mirror, then a quick look at the camera with a smile. Light and shadows pass across her face. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "anm93cjm2drmr0d1ssms7z37nr",
-   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/coche-mov-1.m4a",
+   "sonido_que": "classic car driving, engine hum, tires on road, indicator click"
   },
   {
    "archivo": "helipuerto-mov-1.mp4",
@@ -123,7 +145,9 @@
    "segundos": 5,
    "accion": "She walks from the helicopter toward the camera holding her sunglasses, hair blown by wind, confident stride. Slow tracking shot. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "sx88m4dmw5rmw0d1ssnbwsrd6m",
-   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/helipuerto-mov-1.m4a",
+   "sonido_que": "high heels on a helipad, helicopter rotor running behind, strong wind"
   },
   {
    "archivo": "cuarto-maquillaje-mov-1.mp4",
@@ -133,7 +157,9 @@
    "segundos": 5,
    "accion": "She applies lipstick in the vanity mirror, presses her lips, then checks her reflection and smiles. Slow push-in over her shoulder. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
    "prediccion": "hxmjksxjanrmy0d1ssnba5hh9c",
-   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/cuarto-maquillaje-mov-1.m4a",
+   "sonido_que": "lipstick cap clicking, makeup brush on skin, quiet bedroom"
   },
   {
    "archivo": "alberca-mov-1.mp4",
@@ -143,7 +169,33 @@
    "segundos": 5,
    "accion": "She sits at the edge of the infinity pool with her feet in the water, turns a page of her book, then looks at the sunset with a calm smile. Gentle water ripples, slow push-in. She is completely alone: no animals, no dogs, no other people anywhere in the frame.",
    "prediccion": "mexnfxfgddrmt0d1sspszwmj4m",
-   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+   "nota_calidad": "aprobado: 4-5 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto",
+   "sonido": "sonido/alberca-mov-1.m4a",
+   "sonido_que": "feet moving gently in pool water, a book page turning, soft sea breeze"
+  },
+  {
+   "archivo": "helicoptero-mov-1.mp4",
+   "foto": "dinamica-helicoptero.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "The helicopter is in flight: subtle cabin vibration, the coastline and sea slowly moving below through the window, sunlight shifting. She looks out the window, then turns to the camera and smiles, adjusting her headset. No dogs or animals anywhere.",
+   "prediccion": "6wvepfhzc9rmw0d1st4vy9mpd8",
+   "nota_calidad": "aprobado: 5 cuadros, misma cara, manos bien, sin animales, sin texto",
+   "sonido": "sonido/helicoptero-mov-1.m4a",
+   "sonido_que": "helicopter cabin in flight, muffled rotor and turbine, headset rustle"
+  },
+  {
+   "archivo": "esqui-mov-1.mp4",
+   "foto": "dinamica-esqui.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She pulls her goggles down over her eyes, pushes off with her poles and skis smoothly toward and past the camera, snow spraying lightly; other skiers move far in the background. Camera pans to follow her. No dogs or animals anywhere.",
+   "prediccion": "x0f933t3bdrmy0d1st4r681jz0",
+   "nota_calidad": "aprobado: 5 cuadros, misma cara, manos bien, sin animales, sin texto",
+   "sonido": "sonido/esqui-mov-1.m4a",
+   "sonido_que": "skis carving on snow coming closer, ski poles planting in snow, mountain wind"
   }
  ],
  "rechazados": [
