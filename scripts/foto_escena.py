@@ -46,7 +46,7 @@ def main():
         'place, light and outfit as Image 2, now CLOSE framing like a selfie video: only her head, shoulders and upper chest, her face large in the '
         'upper third of the frame (never full body, never a wide shot; 12-nov: with a small face p-video-avatar changed her identity), slightly off-center, camera at eye level and close, like a phone '
         f'propped on the table. {accion} Nothing in front of her mouth or face; both hands below the chin. She looks straight into the lens, mid-sentence, with a confident, charming half-smile. '
-        f'{capital} Real place, natural light, realistic skin texture with visible pores, slight natural grain, not a '
+        f'{capital} Bright daylight falling evenly on her FACE from the front (no backlight, no sunset, no dim room: 12-nov, M2 and M4 lost her identity with backlight and low light). Real place, realistic skin texture with visible pores, slight natural grain, not a '
         'studio render, no HDR. Elegant and classy, never provocative. No text, no logos, no watermark, no readable '
         'words anywhere.')
     replicate_gasto.freno(barato=True)

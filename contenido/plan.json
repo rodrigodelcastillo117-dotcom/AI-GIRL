@@ -3956,7 +3956,7 @@
    "id": "M2",
    "origen": "MUSE 12-nov",
    "formato": "escena",
-   "escena": "terraza-depa",
+   "escena": "cocina",
    "pilar": "finanzas",
    "estado": "verificando",
    "publicar": "2026-11-13",
@@ -3964,12 +3964,13 @@
    "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Si ganas quince mil al mes, tu sueldo diario es de quinientos. Quinientos por quince días son siete mil quinientos brutos. Eso es lo mínimo. Te lo tienen que pagar antes del veinte de diciembre. Y unos tres mil quinientos pesos no pagan ISR. Haz la cuenta con tu sueldo y guárdala. ¿Cuánto te toca a ti? Comenta el número.",
    "insertos": [
     {
-     "frase_despues": 1,
-     "broll": "assets/broll/terraza-depa-mov-1.mp4",
-     "que": "camina a la barandilla con su copa (pausa)"
+     "frase": 3,
+     "broll": "assets/broll/cocina-mov-1.mp4",
+     "segundos": 3,
+     "que": "prueba la salsa de la cuchara (pausa real, sonido de cocina)"
     }
    ],
-   "texto_pantalla": "SUELDO DIARIO × 15 · $15,000 → $7,500",
+   "texto_pantalla": "SUELDO DIARIO × 15 = TU AGUINALDO",
    "mandar_a": "quien cobra aguinaldo por primera vez",
    "guion_de": "MUSE (12-nov-2026), casi literal. En voz se redondea la exención ('unos tres mil quinientos') y en pantalla va la exacta $3,519.30 (30 UMA × $117.31, LISR art. 93 fr. XIV).",
    "subtitulos": [
@@ -3986,7 +3987,20 @@
    "pregunta_comentarios": "¿Cuánto te toca a ti? Comenta el número.",
    "fuente": "LFT art. 87: mínimo 15 días de salario, antes del 20 de diciembre (20-dic-2026 es domingo). LISR art. 93 fr. XIV: exentos 30 UMA; UMA diaria 2026 $117.31 (INEGI, 8-ene-2026) = $3,519.30. PROFEDET 800 717 2942. Verificado 12-nov-2026.",
    "texto_post": "Aguinaldo 2026: tu sueldo diario × 15 días, como mínimo. Con $15,000 al mes son $7,500 brutos, y te lo deben pagar antes del 20 de diciembre (Ley Federal del Trabajo, art. 87). Los primeros $3,519.30 no pagan ISR.\n\n🔖 Guárdalo para diciembre. ¿Cuánto te toca a ti? Comenta el número.",
-   "nota_muse": "El caption de MUSE pedía guardar Y mandar; se deja solo guardar (su propia regla: un solo llamado)."
+   "nota_muse": "El caption de MUSE pedía guardar Y mandar; se deja solo guardar (su propia regla: un solo llamado).",
+   "foto_base_lista": {
+    "archivo": "assets/fotos/habla-cocina-cerca.jpg"
+   },
+   "palabras_clave": [
+    "aguinaldo",
+    "quince",
+    "diciembre",
+    "ISR"
+   ],
+   "qa": {
+    "intento_1": "rechazado: en la terraza al atardecer el pelo se volvió castaño y cambió la cara (contraluz)"
+   },
+   "archivo": "videos/video-M2-FINAL.mp4"
   },
   {
    "id": "M3",
@@ -4021,7 +4035,7 @@
    "id": "M4",
    "origen": "MUSE 12-nov",
    "formato": "escena",
-   "escena": "lectura",
+   "escena": "yate",
    "pilar": "finanzas",
    "estado": "guion_listo",
    "publicar": "2026-11-18",
@@ -4037,11 +4051,32 @@
     "Se hace en tu declaración anual.",
     "¿Ya aportas a tu Afore? Comenta SÍ o NO."
    ],
-   "texto_pantalla": "AFORE = MENOS ISR · $15,000 AL MES → $18,000",
+   "texto_pantalla": "TU AFORE TE BAJA EL ISR",
    "fuente": "LISR art. 151 fr. V: aportaciones complementarias (y voluntarias con permanencia) deducibles hasta 10% de ingresos acumulables sin exceder 5 UMA anuales (2026: 5 × $42,794.64 = $213,973.20, cálculo propio con UMA de INEGI); no entran al tope global de deducciones. Si se retiran antes de los 65, se acumulan como ingreso. SAT minisitio Deducciones personales; CONSAR 'Beneficios fiscales del ahorro voluntario'. Verificado 12-nov-2026.",
    "texto_post": "Tu Afore puede bajarte impuestos: las aportaciones complementarias de retiro son deducibles hasta el 10% de tu ingreso anual o 5 UMAs, lo que sea menor (art. 151 de la Ley del ISR). Solo las de largo plazo, hasta tus 65 años. Esto es información general, no asesoría fiscal.\n\n📩 Compártelo con alguien que gane $15,000 al mes.",
    "llamado_cierre": "Compártelo con quien gane $15,000",
-   "guion_de": "MUSE (12-nov-2026); números largos dichos con cuidado (revisar_frases antes de pagar la toma). Se juntaron las dos frases del ejemplo ($180,000 al año y 10% = $18,000) en una para no pasar de 30 s."
+   "guion_de": "MUSE (12-nov-2026); números largos dichos con cuidado (revisar_frases antes de pagar la toma). Se juntaron las dos frases del ejemplo ($180,000 al año y 10% = $18,000) en una para no pasar de 30 s.",
+   "insertos": [
+    {
+     "frase": 2,
+     "broll": "assets/broll/yate-mov-1.mp4",
+     "segundos": 2.2,
+     "que": "camina por la cubierta con el mar (pausa real)"
+    }
+   ],
+   "foto_base_lista": {
+    "archivo": "assets/fotos/habla-yate-cerca.jpg"
+   },
+   "palabras_clave": [
+    "Afore",
+    "impuestos",
+    "deducibles",
+    "UMAs"
+   ],
+   "qa": {
+    "intento_1": "rechazado: en la biblioteca oscura cambió la cara y hubo cuadros borrosos"
+   },
+   "archivo": "videos/video-M4-FINAL.mp4"
   }
  ]
 }

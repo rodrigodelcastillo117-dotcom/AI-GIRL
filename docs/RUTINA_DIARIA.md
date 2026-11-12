@@ -1,0 +1,52 @@
+# Rutina diaria de VictoriatheCEO (6:37, hora de México)
+
+La tarea programada diaria solo dice "sigue docs/RUTINA_DIARIA.md". Todo lo que hace está aquí, en el repo, para que se
+pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
+
+## 0. LO NUEVO DEL 12-NOV NOCHE (manda sobre lo de abajo si chocan)
+
+Rodrigo (12-nov, noche): "volumen como lo teníamos… toma en cuenta lo importante de MUSE… LA MEJOR CALIDAD, que se
+muevan, animados, movimiento, videos largos, miniaturas top, tags, hashtags, todo… descripciones TOP… todo real".
+
+**A. Shorts de Victoria hablando = formato escena** (docs/PIPELINE.md → 4b). Victoria habla a cámara en un lugar real
+del repertorio; a media pieza SE CALLA y hace la acción del lugar con su sonido real (pausa de 2-3 s); luego sigue
+hablando. Ambiente del lugar bajito debajo de todo. Pasos:
+1. Foto hablando: `REPLICATE_AUTORIZACION=shorts-escena python3 scripts/foto_escena.py <escena> "<qué hace>" [perro]`.
+   SIEMPRE con luz de día pareja en la cara (nada de atardecer, contraluz ni interiores oscuros: con eso p-video-avatar
+   cambió la cara y el pelo en M2 y M4) y de pecho para arriba (si sale más abierta, recórtala 9:16 centrada en la cara
+   antes de pagar). Escenas buenas para hablar: café, calle, cocina, yate de día, coche de día. Las de atardecer o
+   interiores oscuros (terraza, bar, restaurante, lectura, alberca, helipuerto) solo como ACCIÓN.
+2. Voz: `REPLICATE_AUTORIZACION=shorts-escena $VOZ_PYTHON scripts/voz_guion.py <id> videos/video-<id>-voz.mp3`
+   (15-30 s; si pasa de 27 s, quita una frase antes de pagar el video).
+3. Video: `REPLICATE_AUTORIZACION=shorts-escena python3 scripts/video_replicate.py <foto> <voz> videos/video-<id>.mp4 "<movimiento>"`
+   (en el movimiento: "Her face, green eyes, freckles and copper-red hair stay exactly the same in every frame", el
+   fondo con movimiento suave y la luz de día).
+4. Todo lo demás de un jalón: `python3 scripts/armar_escena.py <id>` (revisión completa, pausa con acción y sonido,
+   naturalizar, subtítulos, título, cierre). Luego MIRA `videos/qa/<id>-cuadros.jpg`: si en algún cuadro cambia la cara
+   o el pelo deja de ser cobrizo, se tira (un solo reintento, con otra foto de día).
+5. Pago: los shorts hablados salen de la autorización escrita de Rodrigo `shorts-escena` (config.json → replicate →
+   autorizaciones, tope 15 USD, el freno lo respeta). Si se acaba, los demás salen como Reels de texto y se le avisa.
+
+**B. Reglas de MUSE para Instagram y Facebook** (docs/MUSE_auditoria_2026-11-12.md):
+- El gancho manda (salto de Reels 50-78 %): cada reel empieza con el número y el dinero en pantalla
+  (`texto_pantalla`, p. ej. "$9,309 MÁS CARO"); las cifras largas se dicen redondeadas y la exacta va en pantalla.
+- Un solo llamado por pieza: guardar O compartir, nunca los dos, nunca "link en bio". En el plan: `llamado_cierre`
+  (sale en el cierre del video) y un pie con UNA línea de llamado (si seo.py pone varios, déjalo en uno).
+- Pregunta de respuesta obligada en comentarios ("¿1, 2 o 3?", "Comenta SÍ o NO", "Comenta el número").
+- En Instagram nunca carrusel y reel del mismo tema el mismo día (config.json → instagram_temas_del_dia).
+- Reel = traer gente nueva; carrusel = que lo guarden.
+- Rodrigo eligió MANTENER EL VOLUMEN (no bajar a 4 por semana): el ritmo de abajo sigue igual.
+- Ya programado de MUSE: M1 Buen Fin (12-nov 12:51), M2 aguinaldo (13-nov), c77 carrusel tarjeta (16-nov), M4 Afore
+  (18-nov). No los dupliques. El 19-nov hay medición contra la línea base (tarea programada aparte).
+
+**C. Miniaturas, títulos, descripciones y hashtags** (docs/MINIATURAS_Y_SEO.md, investigado el 12-nov): seguirlo en
+todo largo y en todo short.
+
+**D. Sonido real**: toda escena tiene `assets/broll/sonido/<escena>-ambiente.m4a` y el sonido de su acción
+`<clip>.m4a`; insertar_accion.py los usa solos. Escena nueva = `sonido_broll.py` (ambiente y acción) antes de usarla.
+El clip del estudio NO sirve como pausa (ella habla en el clip).
+
+## 1. Todo lo demás (igual que antes)
+
+El resto de la rutina sigue en el texto de la tarea programada diaria (6:37). Si algo de aquí arriba choca con eso,
+gana lo de arriba.

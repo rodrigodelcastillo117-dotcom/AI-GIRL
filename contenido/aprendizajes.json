@@ -355,5 +355,12 @@
   "tipo": "tecnico",
   "aprendizaje": "p-video-avatar con foto de medio cuerpo (cara chica) cambió la identidad a la mitad: pelo castaño y otra cara. Con la misma foto recortada de pecho para arriba la identidad quedó estable los 20 s.",
   "regla": "Para p-video-avatar la foto hablando va SIEMPRE de pecho para arriba (cara en el tercio de arriba, ocupa ~40% del ancho). Si foto_escena.py la da más abierta, recortarla (crop 9:16 centrado en la cara) antes de pagar el video."
+ },
+ {
+  "fecha_utc": "2026-11-12T08:10Z",
+  "origen": "M2 y M4 (MUSE)",
+  "tipo": "tecnico",
+  "aprendizaje": "p-video-avatar perdió la identidad (pelo castaño, otra cara, cuadros borrosos) con la foto a contraluz de atardecer (terraza) y con la de biblioteca oscura. Con luz de día de frente (café, calle) salió estable.",
+  "regla": "Foto hablando SIEMPRE con luz de día pareja sobre la cara, sin contraluz ni atardecer ni interiores oscuros, y de pecho para arriba. Las escenas de atardecer o noche solo como acción (pausa), nunca como foto hablando."
  }
 ]
