@@ -544,7 +544,9 @@
     "fecha": "2026-11-12",
     "tope_usd": 0.5,
     "texto": "Rodrigo, 12-nov-2026: \"sí autorizo el .30 para la toma\"",
-    "para": "LA3: toma 3 (UMA) y la voz de la lámina 4"
+    "para": "LA3: toma 3 (UMA) y la voz de la lámina 4",
+    "cerrada": true,
+    "gastado_usd": 0.22
    }
   }
  }
