@@ -27,7 +27,7 @@ import largo as lg  # noqa: E402
 
 MAX_S = 59.0
 MIN_S = 20.0
-CUADRO_Y, LAMINA_Y = 430, 650
+CUADRO_Y, LAMINA_Y = 430, 360
 CIERRE_S = 2.2
 
 
@@ -92,17 +92,24 @@ def capitulos(largo):
     return limpio
 
 
-def tramo_vertical(origen, s, salida, cara_x):
+def tramo_vertical(origen, s, salida, cara_x, capitulo=None):
     """Un segmento del largo (1920x1080) en vertical 1080x1920 con fondo desenfocado."""
     if s['tipo'] == 'victoria':
         x = max(0, min(1920 - 1080, int(1920 * cara_x - 540)))
         filtro = (f"[0:v]split[a][b];[b]scale=-2:1920,crop=1080:1920:(iw-1080)*{cara_x:.3f}:0,boxblur=24:2,eq=brightness=-0.18[f];"
                   f"[a]crop=1080:1080:{x}:0[c];[f][c]overlay=0:{CUADRO_Y},fps=30,format=yuv420p[v]")
-    else:
-        filtro = ("[0:v]split[a][b];[b]scale=-2:1920,crop=1080:1920,boxblur=30:2,eq=brightness=-0.3[f];"
-                  f"[a]scale=1080:608[c];[f][c]overlay=0:{LAMINA_Y},fps=30,format=yuv420p[v]")
-    ff('-i', origen, '-filter_complex', filtro, '-map', '[v]', '-map', '0:a', '-c:v', 'libx264', '-crf', '18',
-       '-preset', 'medium', '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
+        ff('-i', origen, '-filter_complex', filtro, '-map', '[v]', '-map', '0:a', '-c:v', 'libx264', '-crf', '18',
+           '-preset', 'medium', '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
+        return
+    # Lámina: la versión vertical (lg.lamina_vertical) sobre fondo negro, con el audio del segmento.
+    png = salida.replace('.mp4', '.png')
+    lg.lamina_vertical(s, capitulo, png)
+    seg = lg.duracion(origen)
+    ff('-loop', '1', '-i', png, '-i', origen, '-filter_complex',
+       f"[0:v]pad=1080:1920:0:{LAMINA_Y}:color=0x0B0B0D,fps=30,fade=t=in:st=0:d=0.2,format=yuv420p[v]",
+       '-map', '[v]', '-map', '1:a', '-t', f'{seg:.3f}', '-c:v', 'libx264', '-crf', '18', '-preset', 'medium',
+       '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
+    os.remove(png)
 
 
 def ass_textos(titulo, etiqueta, palabras, duracion):
@@ -156,7 +163,7 @@ def recortar(vid):
         tramos = []
         for k, s in enumerate(segs):
             t = os.path.join(destino, f'{sid}-t{k:02d}.mp4')
-            tramo_vertical(lg.ruta_seg(carpeta, s), s, t, cara_x)
+            tramo_vertical(lg.ruta_seg(carpeta, s), s, t, cara_x, nombre)
             tramos.append(t)
         lista = os.path.join(destino, f'{sid}.txt')
         open(lista, 'w').write(''.join(f"file '{t}'\n" for t in tramos))

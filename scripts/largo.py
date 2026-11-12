@@ -349,6 +349,94 @@ def pasos(s, capitulo, ruta, cara):
     im.save(ruta, quality=95)
 
 
+# ---- Láminas verticales para los shorts (recortes.py): mismos datos, pensadas para leerse en un celular (12-nov-2026:
+# la lámina horizontal reducida a 1080 de ancho quedaba con letra de ~24 px). Lienzo 1080x1215, sin la cara (en el
+# short Victoria ya sale en su cuadro).
+V_ANCHO, V_ALTO, V_X = 1080, 1215, 70
+
+
+def lamina_vertical(s, capitulo, ruta):
+    im = Image.new('RGB', (V_ANCHO, V_ALTO), NEGRO)
+    d = ImageDraw.Draw(im)
+    ancho = V_ANCHO - 2 * V_X
+    y = 40
+    if capitulo:
+        d.text((V_X, y), capitulo.upper(), font=fuente('SemiBold', 32), fill=ORO)
+        d.line([(V_X, y + 50), (V_X + 90, y + 50)], fill=ORO, width=5)
+        y += 80
+    f, tam, rr = _renglones(d, s.get('titulo') or '', 'Black', 72, ancho, 3, 44)
+    for r in rr:
+        d.text((V_X, y), r, font=f, fill=BLANCO)
+        y += tam + 12
+    y += 24
+    tipo = s.get('tipo')
+    if tipo == 'grafica':
+        barras = s.get('barras') or []
+        maximo = max((b['valor'] for b in barras), default=1) or 1
+        alto_b = 64
+        for b in barras:
+            fe, te, re_ = _renglones(d, b['etiqueta'], 'Medium', 40, ancho, 2, 28)
+            for r in re_:
+                d.text((V_X, y), r, font=fe, fill=BLANCO)
+                y += te + 6
+            y += 12
+            valor = b.get('texto_valor') or f"{b['valor']:,}"
+            fv = fuente('Black', 50)
+            espacio_valor = d.textlength(valor, font=fv) + 24
+            largo_px = max(10, int((ancho - espacio_valor) * b['valor'] / maximo))
+            d.rounded_rectangle((V_X, y, V_X + largo_px, y + alto_b), radius=8, fill=ORO, corners=(False, True, True, False))
+            d.text((V_X + largo_px + 18, y + alto_b / 2), valor, font=fv, fill=BLANCO, anchor='lm')
+            y += alto_b + 30
+        if s.get('nota'):
+            fn_, tn, rn = _renglones(d, s['nota'], 'Medium', 34, ancho, 3, 24)
+            for r in rn:
+                d.text((V_X, y), r, font=fn_, fill=GRIS)
+                y += tn + 8
+    elif tipo == 'pasos':
+        lista = (s.get('pasos') or [])[:4]
+        disponible = V_ALTO - 120 - y
+        alto_caja = min(250, int(disponible / max(1, len(lista))) - 18)
+        for i, p_ in enumerate(lista):
+            d.rounded_rectangle((V_X, y, V_X + ancho, y + alto_caja), radius=22, outline=(70, 70, 76), width=3, fill=(20, 20, 24))
+            d.ellipse((V_X + 24, y + 24, V_X + 94, y + 94), fill=ORO)
+            d.text((V_X + 59, y + 59), str(i + 1), font=fuente('Black', 44), fill=NEGRO, anchor='mm')
+            ft, tt, rt = _renglones(d, p_['texto'], 'Medium', 38, ancho - 150, 2, 26)
+            yy = y + 26
+            for r in rt:
+                d.text((V_X + 120, yy), r, font=ft, fill=BLANCO)
+                yy += tt + 8
+            if p_.get('resultado'):
+                fr, tr, rr2 = _renglones(d, p_['resultado'], 'Black', 46, ancho - 150, 2, 26)
+                yy = max(yy + 6, y + alto_caja - 22 - len(rr2) * (tr + 6))
+                for r in rr2:
+                    d.text((V_X + 120, yy), r, font=fr, fill=ORO)
+                    yy += tr + 6
+            y += alto_caja + 18
+    else:
+        if s.get('dato_grande'):
+            fd, td, rd = _renglones(d, s['dato_grande'], 'Black', 130, ancho, 2, 56)
+            for r in rd:
+                d.text((V_X, y), r, font=fd, fill=ORO)
+                y += td + 14
+            y += 16
+        for p_ in s.get('puntos') or []:
+            fp, tp, rp = _renglones(d, p_, 'Medium', 46, ancho - 46, 3, 30)
+            d.ellipse((V_X, y + tp / 2 - 9, V_X + 18, y + tp / 2 + 9), fill=ORO)
+            for r in rp:
+                d.text((V_X + 46, y), r, font=fp, fill=BLANCO)
+                y += tp + 10
+            y += 18
+            if y > V_ALTO - 160:
+                break
+    if s.get('fuente'):
+        ff_, tf, rf = _renglones(d, 'Fuente: ' + s['fuente'], 'Regular', 24, ancho, 2, 18)
+        yf = V_ALTO - 40 - len(rf) * (tf + 6)
+        for r in rf:
+            d.text((V_X, yf), r, font=ff_, fill=GRIS)
+            yf += tf + 6
+    im.save(ruta, quality=95)
+
+
 DIBUJOS = {'lamina': None, 'grafica': grafica, 'pasos': pasos}
 
 
