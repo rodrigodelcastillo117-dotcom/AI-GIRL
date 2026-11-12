@@ -334,5 +334,12 @@
   "tipo": "tecnico",
   "aprendizaje": "Revid generate_media con foto base + voz de referencia: \"base\" (grok-imagine-video, 3 créditos/s) sale en 480p con 2.2 s de boca sin voz y 417 ms de desfase: no sirve. \"pro\" (MiniMax H3, ~8.6 créditos/s, 768x1344) dice el guion exacto y mantiene cara y Capital, pero la boca sigue a la voz con correlación 0.07 (mínimo 0.10) en 6 s.",
   "regla": "Revid no reemplaza a OpenArt para videos de Victoria hablando mientras no pase qa_sync. Si se acaban los créditos de OpenArt, se publican carruseles y videos ya listos; no se publica un Revid que no pase el control. Una prueba más larga (15-19 s) de \"pro\" podría medir distinto: hacerla solo con el visto bueno de Rodrigo a la voz."
+ },
+ {
+  "fecha_utc": "2026-11-12T02:30:00Z",
+  "origen": "prueba Replicate p-video-avatar (Rodrigo: '¿es más barato en Replicate?')",
+  "tipo": "tecnico",
+  "aprendizaje": "prunaai/p-video-avatar en Replicate (foto + audio → video, 1080p, $0.045 USD/s; 19 s = $0.86, 1:44 min) con la foto y el audio del video 40: sale 1088x1920 a 24 fps, más nítido que Wan 720, Victoria y Capital consistentes en los 7 cuadros revisados. Trae ~1 s de video de más al final (sin voz): eso hacía que qa_sync diera correlación NaN. Recortado al largo del audio, la boca va ~290 ms adelante con correlación 0.257 (desfase constante, como Wan); con tpad 0.292 s queda desfase 0 y correlación 0.189: SINCRONÍA OK (Wan 40: 0.175). Recibe el audio tal cual: puede usar directo la voz clonada de MiniMax.",
+  "regla": "Candidato a reemplazar Wan para los videos de Victoria hablando, pendiente de que Rodrigo compare video-40-WAN contra video-40-REPLICATE. Si se usa: recortar el video al largo del audio, medir el desfase con qa_sync en ±1 s y corregir con tpad solo si es constante y la correlación ≥ 0.10. Una sola prueba: confirmar con 2 o 3 videos más."
  }
 ]
