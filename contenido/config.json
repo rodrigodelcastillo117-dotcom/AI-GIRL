@@ -1,639 +1,639 @@
 {
-  "filtro_cuentas": "victoria",
-  "zona_horaria": "America/Mexico_City",
-  "hora_por_defecto": "18:45",
-  "max_intentos_video": 2,
-  "similitud_minima_audio": 0.85,
-  "cuentas_publer": {
-    "6a9658e6510cfb283e2fff83": "instagram",
-    "6a96586502b3146e69fa11b0": "tiktok"
-  },
-  "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
-  "frecuencia": "cada_2_dias",
-  "dias_entre_videos": 3,
-  "hora_auditoria": "06:37",
-  "prueba_horas": {
-    "franjas": [
-      "08:00",
-      "12:30",
-      "15:00",
-      "18:45",
-      "21:00"
-    ],
-    "min_por_franja": 4,
-    "ganadoras": {},
-    "nota": "Cada red prueba sus 5 franjas hasta tener 4 publicaciones en cada una; entre las menos probadas va primero la más fuerte para ese día según los estudios (orden_por_dia). Gana la que rinda 20% más que la segunda; luego se usa 4 de cada 5. Las 11:00 en Instagram y TikTok las agregó Rodrigo el 31-oct (las sintió buenas): entran a la prueba como las demás. Un post cuenta en una franja si sale a 20 min o menos de ella.",
-    "franjas_por_red": {
-      "ig": [
-        "08:00",
-        "11:00",
-        "12:00",
-        "15:00",
-        "18:00",
-        "20:00"
-      ],
-      "tt": [
-        "09:00",
-        "11:00",
-        "13:00",
-        "15:00",
-        "17:00",
-        "20:00"
-      ],
-      "yt": [
-        "10:00",
-        "12:00",
-        "14:00",
-        "17:00",
-        "20:00"
-      ]
-    },
-    "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas).",
-    "orden_por_dia": {
-      "ig": {
-        "0": [
-          "18:00",
-          "20:00",
-          "12:00",
-          "15:00",
-          "08:00",
-          "11:00"
-        ],
-        "1": [
-          "18:00",
-          "15:00",
-          "20:00",
-          "12:00",
-          "08:00",
-          "11:00"
-        ],
-        "2": [
-          "18:00",
-          "12:00",
-          "08:00",
-          "20:00",
-          "15:00",
-          "11:00"
-        ],
-        "3": [
-          "08:00",
-          "18:00",
-          "12:00",
-          "20:00",
-          "15:00",
-          "11:00"
-        ],
-        "4": [
-          "20:00",
-          "18:00",
-          "12:00",
-          "08:00",
-          "15:00",
-          "11:00"
-        ],
-        "5": [
-          "20:00",
-          "18:00",
-          "12:00",
-          "15:00",
-          "08:00",
-          "11:00"
-        ],
-        "6": [
-          "20:00",
-          "18:00",
-          "12:00",
-          "15:00",
-          "08:00",
-          "11:00"
-        ]
-      },
-      "tt": {
-        "0": [
-          "13:00",
-          "09:00",
-          "20:00",
-          "17:00",
-          "15:00",
-          "11:00"
-        ],
-        "1": [
-          "20:00",
-          "17:00",
-          "15:00",
-          "13:00",
-          "09:00",
-          "11:00"
-        ],
-        "2": [
-          "20:00",
-          "17:00",
-          "15:00",
-          "13:00",
-          "09:00",
-          "11:00"
-        ],
-        "3": [
-          "20:00",
-          "13:00",
-          "17:00",
-          "15:00",
-          "09:00",
-          "11:00"
-        ],
-        "4": [
-          "17:00",
-          "20:00",
-          "15:00",
-          "13:00",
-          "09:00",
-          "11:00"
-        ],
-        "5": [
-          "17:00",
-          "15:00",
-          "20:00",
-          "13:00",
-          "09:00",
-          "11:00"
-        ],
-        "6": [
-          "09:00",
-          "13:00",
-          "15:00",
-          "17:00",
-          "20:00",
-          "11:00"
-        ]
-      },
-      "yt": {
-        "0": [
-          "14:00",
-          "12:00",
-          "17:00",
-          "10:00",
-          "20:00"
-        ],
-        "1": [
-          "14:00",
-          "12:00",
-          "17:00",
-          "10:00",
-          "20:00"
-        ],
-        "2": [
-          "14:00",
-          "12:00",
-          "17:00",
-          "10:00",
-          "20:00"
-        ],
-        "3": [
-          "14:00",
-          "12:00",
-          "17:00",
-          "10:00",
-          "20:00"
-        ],
-        "4": [
-          "14:00",
-          "10:00",
-          "12:00",
-          "17:00",
-          "20:00"
-        ],
-        "5": [
-          "14:00",
-          "12:00",
-          "10:00",
-          "17:00",
-          "20:00"
-        ],
-        "6": [
-          "14:00",
-          "12:00",
-          "17:00",
-          "10:00",
-          "20:00"
-        ]
-      }
-    }
-  },
-  "titulo_max": 45,
-  "hashtags_fijos": [
-    "#victoriatheceo",
-    "#emprendimiento",
-    "#finanzaspersonales",
-    "#mentalidad"
+ "filtro_cuentas": "victoria",
+ "zona_horaria": "America/Mexico_City",
+ "hora_por_defecto": "18:45",
+ "max_intentos_video": 2,
+ "similitud_minima_audio": 0.85,
+ "cuentas_publer": {
+  "6a9658e6510cfb283e2fff83": "instagram",
+  "6a96586502b3146e69fa11b0": "tiktok"
+ },
+ "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
+ "frecuencia": "cada_2_dias",
+ "dias_entre_videos": 3,
+ "hora_auditoria": "06:37",
+ "prueba_horas": {
+  "franjas": [
+   "08:00",
+   "12:30",
+   "15:00",
+   "18:45",
+   "21:00"
   ],
-  "tags_genericas": [
-    "negocios",
-    "dinero",
-    "finanzas personales",
-    "emprendimiento",
-    "mentalidad",
-    "motivacion",
-    "exito",
-    "desarrollo personal",
-    "educacion financiera",
-    "victoria the ceo"
-  ],
-  "tags_formato": {
-    "negocio": [
-      "consejos para emprendedores",
-      "consejos para emprendedoras",
-      "consejos de negocios",
-      "como emprender",
-      "ideas de negocio"
+  "min_por_franja": 4,
+  "ganadoras": {},
+  "nota": "Cada red prueba sus 5 franjas hasta tener 4 publicaciones en cada una; entre las menos probadas va primero la más fuerte para ese día según los estudios (orden_por_dia). Gana la que rinda 20% más que la segunda; luego se usa 4 de cada 5. Las 11:00 en Instagram y TikTok las agregó Rodrigo el 31-oct (las sintió buenas): entran a la prueba como las demás. Un post cuenta en una franja si sale a 20 min o menos de ella.",
+  "franjas_por_red": {
+   "ig": [
+    "08:00",
+    "11:00",
+    "12:00",
+    "15:00",
+    "18:00",
+    "20:00"
+   ],
+   "tt": [
+    "09:00",
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00",
+    "20:00"
+   ],
+   "yt": [
+    "10:00",
+    "12:00",
+    "14:00",
+    "17:00",
+    "20:00"
+   ]
+  },
+  "fuente": "Gráficas de engagement por hora que mandó Rodrigo (30-oct-2026): Instagram y TikTok en hora local, YouTube Shorts en UTC (convertido a México, UTC-6). Son de muchas cuentas, no de Victoria: la prueba decide con sus datos. TikTok también cubre 15:00 por el resumen de Sprout Social, Metricool y Buffer (tardes de 3 a 5 PM), que contradice la gráfica (mañanas).",
+  "orden_por_dia": {
+   "ig": {
+    "0": [
+     "18:00",
+     "20:00",
+     "12:00",
+     "15:00",
+     "08:00",
+     "11:00"
     ],
-    "finanzas": [
-      "consejos de finanzas",
-      "como ahorrar dinero",
-      "como invertir",
-      "finanzas para principiantes",
-      "libertad financiera"
+    "1": [
+     "18:00",
+     "15:00",
+     "20:00",
+     "12:00",
+     "08:00",
+     "11:00"
     ],
-    "mentalidad": [
-      "bienestar emocional",
-      "como manejar el estres",
-      "habitos saludables",
-      "mentalidad positiva",
-      "consejos de bienestar"
+    "2": [
+     "18:00",
+     "12:00",
+     "08:00",
+     "20:00",
+     "15:00",
+     "11:00"
     ],
-    "vida": [
-      "consejos de vida",
-      "habitos de exito",
-      "rutina diaria",
-      "como ser productivo",
-      "crecimiento personal"
+    "3": [
+     "08:00",
+     "18:00",
+     "12:00",
+     "20:00",
+     "15:00",
+     "11:00"
     ],
-    "motivacion_economica": [
-      "motivacion financiera",
-      "mentalidad millonaria",
-      "consejos de dinero",
-      "disciplina financiera",
-      "como ganar dinero"
+    "4": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "08:00",
+     "15:00",
+     "11:00"
     ],
-    "relaciones": [
-      "dinero y pareja",
-      "finanzas en pareja",
-      "relaciones de pareja",
-      "consejos de pareja",
-      "vida en pareja"
+    "5": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "15:00",
+     "08:00",
+     "11:00"
     ],
-    "empresas": [
-      "historias de empresas",
-      "casos de negocio",
-      "modelos de negocio",
-      "como ganan dinero las empresas",
-      "estrategia empresarial"
+    "6": [
+     "20:00",
+     "18:00",
+     "12:00",
+     "15:00",
+     "08:00",
+     "11:00"
     ]
-  },
-  "enlace_venta": "https://victoriatheceo.vercel.app",
-  "enlace_producto": "https://victoriatheceo.vercel.app/#tablero",
-  "pago_hotmart": "https://pay.hotmart.com/T108246040P",
-  "enlace_perfil": "",
-  "hora_largo": "18:45",
-  "shorts_por_largo": 12,
-  "primer_comentario_instagram": "📥 Mis 30 reglas de la CEO, cada una con su fuente, gratis: el enlace está en mi perfil 👆",
-  "comentario_youtube": "Si quieres las 30 reglas completas, cada una con su fuente y una acción para hacer hoy, te dejé mi guía gratis aquí 👉 {enlace}",
-  "comentario_youtube_producto": "Si quieres hacerlo con tus propios números, esta es la plantilla que uso (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo) 👉 {enlace}",
-  "llamados": {
-    "aguinaldo": {
-      "enlace": "https://victoriatheceo.vercel.app/aguinaldo",
-      "etiqueta": "🧮 Calcula tu aguinaldo 2026 gratis",
-      "pie": "🧮 Calcula tu aguinaldo gratis: enlace en mi perfil 👆",
-      "comentario": "Calcula tu aguinaldo 2026 gratis: cuánto te toca, cuánto paga ISR y cómo repartirlo 👉 {enlace}"
-    },
-    "deudas": {
-      "enlace": "https://victoriatheceo.vercel.app/pagar-deudas",
-      "etiqueta": "🧮 Calcula en cuántos meses sales de tus deudas",
-      "pie": "🧮 Calcula en cuántos meses sales de tus deudas: enlace en mi perfil 👆",
-      "comentario": "Calcula gratis en cuántos meses sales de tus deudas y cuál pagar primero 👉 {enlace}"
-    },
-    "fondo": {
-      "enlace": "https://victoriatheceo.vercel.app/fondo-de-emergencia",
-      "etiqueta": "🧮 Calcula tu fondo de emergencia gratis",
-      "pie": "🧮 Calcula cuánto necesitas de fondo de emergencia: enlace en mi perfil 👆",
-      "comentario": "Calcula gratis cuánto necesitas de fondo de emergencia y en cuántos meses llegas 👉 {enlace}"
-    },
-    "presupuesto": {
-      "enlace": "https://victoriatheceo.vercel.app/regla-50-30-20",
-      "etiqueta": "🧮 Haz tu presupuesto 50/30/20 gratis",
-      "pie": "🧮 Haz tu presupuesto 50/30/20 gratis: enlace en mi perfil 👆",
-      "comentario": "Haz tu presupuesto 50/30/20 gratis y compáralo con lo que gastas hoy 👉 {enlace}"
-    }
-  },
-  "hashtags_marca": [
-    "#finanzaspersonales",
-    "#victoriatheceo"
-  ],
-  "max_hashtags": {
-    "youtube": 5,
-    "instagram": 5,
-    "tiktok": 7
-  },
-  "palabras_por_segundo": 2.65,
-  "creditos_por_segundo": 40,
-  "creditos_foto": 30,
-  "segundos_minimos": 10,
-  "segundos_maximos": 25,
-  "creditos_al_mes": 12000,
-  "playlists_youtube": {
-    "asi_empezaron": {
-      "titulo": "Así empezaron: historias de empresas famosas",
-      "descripcion": "Cómo empezaron Airbnb, Zara, Canva, Mailchimp y más: historias reales de emprendedores con fuente, en menos de 20 segundos. Una nueva cada semana."
-    },
-    "aguinaldo": {
-      "titulo": "Aguinaldo 2026: cuánto te toca y qué hacer",
-      "descripcion": "Cuánto aguinaldo te toca, cuándo te lo pagan, cuánto paga de ISR y qué hacer con él para no llegar a enero sin dinero. Según la Ley Federal del Trabajo.",
-      "id": "PLY764AlG2GHk"
-    },
-    "finanzas": {
-      "titulo": "Finanzas personales: reglas de dinero",
-      "descripcion": "Reglas de dinero que sí funcionan: ahorro, deudas, tarjetas de crédito, presupuesto 50/30/20, fondo de emergencia e interés compuesto. Cada dato con su fuente.",
-      "id": "PLZWt3yJ_354g"
-    },
-    "negocios": {
-      "titulo": "Negocios y emprendimiento",
-      "descripcion": "Lecciones de negocio, errores al emprender y estrategias de empresas como Costco, Netflix y Amazon. Para emprendedores en español.",
-      "id": "PLJJlUhkZO84s"
-    },
-    "mente": {
-      "titulo": "Mente fuerte y productividad",
-      "descripcion": "Hábitos, productividad y mente fuerte con respaldo científico: estrés, pendientes, enfoque y felicidad."
-    },
-    "buenfin": {
-      "titulo": "Buen Fin 2026: compra sin caer en trampas",
-      "descripcion": "Cómo saber si una oferta del Buen Fin es real, tus derechos como consumidor y cuándo sí conviene comprar a meses. Con datos de Profeco y Condusef.",
-      "id": "PLdJwa3uya_5Q"
-    }
-  },
-  "productos_hotmart": {
-    "8834813": "El Tablero de la CEO"
-  },
-  "reserva_final_creditos": 100,
-  "renovacion_creditos": "2026-11-28",
-  "nota_creditos": "12,000 al mes; se renuevan el día 28 (confirmado por Rodrigo, 31-oct-2026). Se gasta hasta dejar 100.",
-  "prueba_youtube_carrusel_diario": {
-    "desde": "2026-11-04",
-    "hasta": "2026-11-17",
-    "nota": "Rodrigo (3-nov-2026) aprobó probar 2 semanas: los días con video, YouTube también sube un short de carrusel a 3 h o más del video. Al terminar, comparar las vistas de los videos de Victoria de estas 2 semanas contra las anteriores (600-690 por video): si bajan, se quita; si no, se queda y se suman las vistas de los shorts extra."
-  },
-  "canal_youtube_perfil": {
-    "description": "Tu dinero en México, sin rodeos. Victoria es una CEO creada con inteligencia artificial que te dice cómo cuidar tu dinero: aguinaldo, deudas, tarjeta, ahorro, SAT, Afore, Infonavit y tus derechos en el trabajo. Cada dato con su fuente oficial (Condusef, Profeco, SAT, Ley Federal del Trabajo). Capital, su Rottweiler, siempre a su lado.\n\n🧮 Calcula tu aguinaldo 2026 gratis: https://victoriatheceo.vercel.app/aguinaldo?ref=yt\n📥 Mis 30 reglas de la CEO, gratis: https://victoriatheceo.vercel.app?ref=yt\n📌 Suscríbete: algo nuevo cada día.\n\nContenido educativo; no es asesoría financiera, fiscal ni legal. Victoria es un personaje creado con IA.",
-    "keywords": "\"finanzas personales\" \"finanzas personales mexico\" \"educacion financiera\" aguinaldo \"aguinaldo 2026\" \"cuanto me toca de aguinaldo\" SAT \"tarjeta de credito\" Afore Infonavit finiquito \"derechos laborales\" \"como ahorrar dinero\" ahorro dinero \"buen fin\" \"salario minimo 2026\" negocios emprendimiento \"victoria the ceo\"",
-    "defaultLanguage": "es"
-  },
-  "nota_palabras_por_segundo": "4-nov-2026: la voz real del video 38 dijo 42 palabras en 15.9 s (2.65/s). Con 2.33 se pedían 19 s y Wan rellenaba el tiempo sobrante inventando una frase. Duración = palabras / 2.65 + 1 s.",
-  "pronunciacion": {
-    "México": "Méjico",
-    "mexicano": "mejicano",
-    "mexicana": "mejicana",
-    "mexicanos": "mejicanos",
-    "mexicanas": "mejicanas",
-    "Afore": "Afóre",
-    "Infonavit": "Infonavít",
-    "Netflix": "Nétflix",
-    "Spanx": "Spanks",
-    "Costco": "Cóstco",
-    "Mailchimp": "Méilchimp",
-    "Warren Buffett": "Uórren Bófet"
-  },
-  "nota_pronunciacion": "4-nov-2026 (Rodrigo: \"se le complica México, aguinaldo\"): así se le escribe a Wan y a la voz de los carruseles lo que pronuncia mal. Si qa_audio dice \"no se entiende X\", agregar X aquí con su forma dicha y volver a generar.",
-  "pronunciacion_wan": {},
-  "nota_pronunciacion_wan": "6-nov-2026: con \"aguinaldo\" Wan decía a-ɣ-w-i-naldo (suena la u); con \"aghinaldo\" dijo \"ajinado\". Lo que funcionó (prueba con reconocedor de fonemas): escribir \"aguinaldo\" normal y poner en el prompt instruccion_pronunciacion_wan. Verificar siempre con scripts/fonemas.py.",
-  "instruccion_pronunciacion_wan": "The Spanish word aguinaldo is always pronounced with a SILENT u and a hard g, exactly like the English sounds 'ah-ghee-NAHL-doh' (g as in 'go', never like a j, never sounding the u).",
-  "tono_voz_wan": "in a warm, intimate voice, slightly lower and unhurried, as if sharing a secret with a close friend, with a confident smile in her voice (not whispering, not flirty)",
-  "nota_tono_voz_wan": "7-nov-2026 (Rodrigo: \"que hable más sensual, eso vende más\"; acordado: cálida e íntima, no seductora, para no perder alcance ni credibilidad). Va en el prompt de Wan donde antes decía 'confident and warm'. Misma voz de referencia, solo cambia la forma de hablar.",
-  "prueba_voz_intima": {
-    "desde": "2026-11-07",
-    "videos": 3,
-    "tono_anterior": "confident and warm",
-    "comparar_con": [
-      "17",
-      "18",
-      "37",
-      "38"
+   },
+   "tt": {
+    "0": [
+     "13:00",
+     "09:00",
+     "20:00",
+     "17:00",
+     "15:00",
+     "11:00"
     ],
-    "metricas": [
-      "porcentaje visto (YouTube averageViewPercentage, salto en Reels)",
-      "guardados",
-      "comentarios",
-      "visitas al perfil"
+    "1": [
+     "20:00",
+     "17:00",
+     "15:00",
+     "13:00",
+     "09:00",
+     "11:00"
     ],
-    "nota": "Cada video generado con tono_voz_wan lleva \"voz\": \"intima\" en plan.json. Con 3 publicados y 3 días de datos, comparar contra los videos de comparar_con y decidir con Rodrigo. Medir también palabras por segundo reales del primero: si habla más lento, ajustar palabras_por_segundo."
-  },
-  "prioridad_videos": [
-    "40",
-    "39",
-    "41"
-  ],
-  "nota_prioridad_videos": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México. Los de temporada (aguinaldo) siguen yendo antes por su ventana. Quitar o cambiar cuando renueven créditos.",
-  "largo_tematico": {
-    "titulo": "Aguinaldo 2026: todo lo que necesitas saber",
-    "desde": "2026-12-01",
-    "videos": [
-      "19",
-      "17",
-      "18",
-      "20",
-      "21"
+    "2": [
+     "20:00",
+     "17:00",
+     "15:00",
+     "13:00",
+     "09:00",
+     "11:00"
     ],
-    "hecho": true,
-    "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20. 10-nov-2026: se armó con 6 carruseles de aguinaldo (c16, c52, c30, c05, c43, c15) con la voz real de Victoria, 3:57, horizontal, con capítulos y miniatura; sale el 12-nov 19:00 (búsquedas de aguinaldo en subida). 0 créditos.",
-    "youtube": "https://youtube.com/watch?v=Tg6QnFhSsek",
-    "publica_utc": "2026-11-13T01:00:00Z"
-  },
-  "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov.",
-  "publicaciones_por_dia": {
-    "tt": 3,
-    "ig": 2,
-    "yt": 3
-  },
-  "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red. 9-nov-2026, más tarde: Rodrigo aprobó YouTube a 3 al día (para que no se atrase respecto a TikTok).",
-  "prioridad_reel_ig": [],
-  "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube.",
-  "facebook_victoria": "6af202cb29e54cb1259515de",
-  "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok.",
-  "sonido_biblioteca_ig": {
-    "dias": [],
-    "nota": "Reemplazado el 9-nov-2026: TODOS los Reels de Instagram salen con música en tendencia de la biblioteca de Instagram, directo con la API de Meta (scripts/ig_reel_musica.py). Rodrigo ya no sube nada a mano."
-  },
-  "prioridad_carruseles": [
-    "c74",
-    "c80",
-    "c76",
-    "c78",
-    "c75",
-    "c81",
-    "c84",
-    "c82",
-    "c83",
-    "c79",
-    "c85",
-    "c72",
-    "c73",
-    "c67",
-    "c49",
-    "c53",
-    "c36",
-    "c54",
-    "c40",
-    "c60",
-    "c44",
-    "c41",
-    "c51",
-    "c63",
-    "c42",
-    "c47",
-    "c05",
-    "c50",
-    "c37",
-    "c34",
-    "c62",
-    "c28",
-    "c64",
-    "c15",
-    "c61",
-    "c30",
-    "c29",
-    "c55",
-    "c59",
-    "c56",
-    "c58",
-    "c57"
-  ],
-  "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Parejas (c27, c41, c28, c29) y la serie Socios en casa (c55-c59, revisada el 9-nov) van primero en TikTok, prioridad_por_dia al día (2) para no tapar la temporada de aguinaldo; se quitan solos cuando ya salieron.",
-  "prioridad_por_dia": 3,
-  "voz_victoria": {
-    "motor": "minimax",
-    "modelo": "minimax/speech-02-hd",
-    "voice_id": "R8_LEAVFNPT",
-    "language_boost": "Spanish",
-    "emotion": "auto",
-    "speed": 1.0,
-    "muestra": "assets/voz-referencia-intima.wav",
-    "nota": "9-nov-2026, Rodrigo: \"sí, conéctala y déjala para siempre\". La voz REAL de sus videos (audio del video 18) clonada con MiniMax Speech 02 HD en Replicate (REPLICATE_API_TOKEN). La misma voz siempre en carruseles, Reels y shorts: si MiniMax falla, se detiene; nunca cambia a otra voz. Si el clon caduca, voz_victoria.py lo vuelve a clonar de la muestra y guarda el voice_id nuevo aquí."
-  },
-  "fotos_con_texto": [
-    "assets/fotos/enero-oficina-casa.jpg"
-  ],
-  "nota_fotos_con_texto": "10-nov-2026, Rodrigo: un calendario de fondo decía \"January\" en la portada de c64: \"que no vuelva a pasar, déjalo así\". Estas fotos ya no se eligen solas para portada ni Reel (carrusel.py); las que ya las usan se quedan. Toda foto nueva pasa por scripts/revisar_texto_foto.py antes de guardarse en assets/fotos/.",
-  "bio_con_enlace": {
-    "ig": false,
-    "tt": false
-  },
-  "nota_bio_con_enlace": "10-nov-2026: los posts decían \"el enlace está en mi perfil\" y la bio no tenía enlace. Mientras aquí diga false, publer.sin_perfil cambia esa frase por la dirección escrita (victoriatheceo.vercel.app) en Instagram y TikTok. Cuando Rodrigo ponga el enlace en la bio de esa red, se cambia a true.",
-  "guia_por_mensaje_ig": true,
-  "_guia_por_mensaje_ig": "Rodrigo lo aprobó el 10-nov-2026 ('siii'). En Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace; si Meta no deja, respuesta pública con el enlace).",
-  "_prioridad_10nov": "10-nov tarde: 'Guarda esto' primero (c16, el único hit: 3,361 vistas; gancho guarda_esto promedia 3,782 contra 261 de 'dato'); c52 es la parte 2 de c16. Intercalado con pareja (debate). La serie del salario mínimo y las noticias se meten al frente cuando toquen.",
-  "ig_reels_de_prueba": false,
-  "_ig_reels_de_prueba": "Listo en ig_reel_musica.py pero APAGADO: el 10-nov-2026 Meta respondió 'La cuenta de Instagram no alcanza el mínimo de seguidores que se requiere para crear reels de prueba' (no dice cuántos). Prender cuando crezca la cuenta.",
-  "prioridad_publicar": [
-    "O1",
-    "O2"
-  ],
-  "_prioridad_publicar": "11-nov-2026: prueba de formato de opinión (Victoria a cámara, 15 s). O1 sale en el siguiente día de video y O2 en el que sigue; luego el orden normal (18, C1).",
-  "ig_fotos_feed_por_dia": 1,
-  "replicate": {
-    "saldo_base_usd": 27.16,
-    "fecha_base_utc": "2026-11-12T06:22:02Z",
-    "presupuesto_semanal_usd": 7,
-    "presupuesto_mensual_usd": 28,
-    "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)",
-    "_nota": "Rodrigo, 12-nov-2026: \"1000 pesos menos los 22 usd. 1000 entre los 2. máximo máximo, si se puede menos\". Total Replicate de los dos canales: 1,000 MXN ≈ 50 USD (tipo de cambio ~20, conservador). El espacio 22 USD; Victoria 28 USD al mes (7 por semana). Al tope de la semana se frena lo caro; al del mes, todo (replicate_gasto.freno). Gastar MENOS es mejor: todo lo que no sea Victoria hablando sale de Everygen.",
-    "presupuesto_mensual_mxn": 1000,
-    "presupuesto_otro_canal_mensual_usd": 22,
-    "presupuesto_total_mxn": 1000,
-    "presupuesto_total_usd": 50,
-    "autorizaciones": {
-      "LA3-toma-uma": {
-        "fecha": "2026-11-12",
-        "tope_usd": 0.5,
-        "texto": "Rodrigo, 12-nov-2026: \"sí autorizo el .30 para la toma\"",
-        "para": "LA3: toma 3 (UMA) y la voz de la lámina 4",
-        "cerrada": true,
-        "gastado_usd": 0.22
-      },
-      "broll-movimiento": {
-        "fecha": "2026-11-12",
-        "tope_usd": 12,
-        "texto": "Rodrigo, 12-nov-2026: \"haz más escenas con movimiento real, no importa el gasto de Replicate\"",
-        "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)",
-        "gastado_usd": 12.0,
-        "nota_gastado": "14 clips × $0.75 (los primeros 4 no se sumaron solos: cargar() llegó después)"
-      },
-      "shorts-escena": {
-        "fecha": "2026-11-12",
-        "tope_usd": 15,
-        "gastado_usd": 11.16,
-        "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
-        "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
-      },
-      "largos-lc": {
-        "fecha": "2026-11-13",
-        "tope_usd": 10.5,
-        "gastado_usd": 10.01,
-        "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
-        "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria",
-        "ampliacion": "Rodrigo, 12-nov-2026: \"acaba el LC2\" (tope 8 → 10.5: LC2 son ~94 s a cámara ≈ $4.25 + voces y un reintento; quedaban $2.62)"
-      }
-    },
-    "extra_mes": {
-      "2026-11": 8
-    },
-    "_nota_extra": "Rodrigo, 12-nov-2026: \"Replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas en que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\". Extra de noviembre: 8 USD (~160 MXN) solo para shorts de Victoria hablando; Rodrigo puede subirlo o bajarlo.",
-    "recarga": {
-      "umbral_usd": 5,
-      "monto_usd": 35,
-      "texto": "Rodrigo, 12-nov-2026: \"bajó de 5 USD y se metieron otros 35 USD\""
-    }
-  },
-  "higgsfield": {
-    "uso": "solo plan GRATIS: música comercial en tendencia de TikTok y publicar bailes con la canción puesta",
-    "nunca_pagar": true,
-    "texto": "Rodrigo, 12-nov-2026: \"higgsfield no lo pago, es el free\" / \"se va a quedar en sí, solo si no pago y tú haces todo\"",
-    "tiktok_connector_id": "6ffc2f84-fb76-41a7-b8db-adfb8569a6e2",
-    "respaldo": "si Higgsfield falla o pide pago: Publer en modo recordatorio (Rodrigo pone el sonido en la app)"
-  },
-  "instagram_temas_del_dia": {
-    "_regla": "MUSE 12-nov-2026: en Instagram nunca carrusel y reel del mismo tema el mismo día. La rutina no publica en Instagram un carrusel con este tema ese día (TikTok sí).",
-    "2026-11-12": "buen_fin",
-    "2026-11-13": "aguinaldo",
-    "2026-11-16": "buen_fin_tarjeta",
-    "2026-11-18": "afore"
-  },
-  "miniaturas": {
-    "regla": "Rodrigo, 13-nov-2026: \"No importa lo de comparar las miniaturas, tú selecciona la mejor o crea la mejor en Canva Pro\". Sin Test & Compare: el agente elige una sola miniatura (la de largo.py, que salió mejor que Canva IA el 12-nov) y no se le recuerda nada a Rodrigo."
-  },
-  "facebook_pagina_id": "1382943384905216",
-  "automatizaciones": {
-    "tareas": [
-      {
-        "nombre": "Rutina diaria",
-        "cuando": "Todos los días 6:37",
-        "hace": "Victoria Hoy (página, imagen, te manda la historia de IG y sube la de Facebook), serie de sueldos en TikTok primero, carruseles, Reels, shorts (con razón para suscribirse), largos y recortes, Victoria verifica (mar y vie), medir, panel y resumen"
-      },
-      {
-        "nombre": "Respaldo de la historia",
-        "cuando": "Todos los días 10:00",
-        "hace": "Si no subiste la historia de Victoria Hoy, la publica sin sticker"
-      },
-      {
-        "nombre": "Comentarios y guías",
-        "cuando": "Cada hora, 8:13 a 23:13",
-        "hace": "Guías por mensaje (IG) y respuesta (YouTube), comentario propio de Victoria en YouTube, Instagram y Facebook, contestar comentarios y mensajes"
-      },
-      {
-        "nombre": "Medición de MUSE",
-        "cuando": "19-nov",
-        "hace": "Instagram contra la línea base de MUSE"
-      }
+    "3": [
+     "20:00",
+     "13:00",
+     "17:00",
+     "15:00",
+     "09:00",
+     "11:00"
     ],
-    "token_meta_vence": "2027-01-11",
-    "token_meta_aviso": "2027-01-03",
-    "newsletter": "pendiente: Rodrigo abre su cuenta en beehiiv.com",
-    "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)"
+    "4": [
+     "17:00",
+     "20:00",
+     "15:00",
+     "13:00",
+     "09:00",
+     "11:00"
+    ],
+    "5": [
+     "17:00",
+     "15:00",
+     "20:00",
+     "13:00",
+     "09:00",
+     "11:00"
+    ],
+    "6": [
+     "09:00",
+     "13:00",
+     "15:00",
+     "17:00",
+     "20:00",
+     "11:00"
+    ]
+   },
+   "yt": {
+    "0": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "1": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "2": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "3": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ],
+    "4": [
+     "14:00",
+     "10:00",
+     "12:00",
+     "17:00",
+     "20:00"
+    ],
+    "5": [
+     "14:00",
+     "12:00",
+     "10:00",
+     "17:00",
+     "20:00"
+    ],
+    "6": [
+     "14:00",
+     "12:00",
+     "17:00",
+     "10:00",
+     "20:00"
+    ]
+   }
   }
+ },
+ "titulo_max": 45,
+ "hashtags_fijos": [
+  "#victoriatheceo",
+  "#emprendimiento",
+  "#finanzaspersonales",
+  "#mentalidad"
+ ],
+ "tags_genericas": [
+  "negocios",
+  "dinero",
+  "finanzas personales",
+  "emprendimiento",
+  "mentalidad",
+  "motivacion",
+  "exito",
+  "desarrollo personal",
+  "educacion financiera",
+  "victoria the ceo"
+ ],
+ "tags_formato": {
+  "negocio": [
+   "consejos para emprendedores",
+   "consejos para emprendedoras",
+   "consejos de negocios",
+   "como emprender",
+   "ideas de negocio"
+  ],
+  "finanzas": [
+   "consejos de finanzas",
+   "como ahorrar dinero",
+   "como invertir",
+   "finanzas para principiantes",
+   "libertad financiera"
+  ],
+  "mentalidad": [
+   "bienestar emocional",
+   "como manejar el estres",
+   "habitos saludables",
+   "mentalidad positiva",
+   "consejos de bienestar"
+  ],
+  "vida": [
+   "consejos de vida",
+   "habitos de exito",
+   "rutina diaria",
+   "como ser productivo",
+   "crecimiento personal"
+  ],
+  "motivacion_economica": [
+   "motivacion financiera",
+   "mentalidad millonaria",
+   "consejos de dinero",
+   "disciplina financiera",
+   "como ganar dinero"
+  ],
+  "relaciones": [
+   "dinero y pareja",
+   "finanzas en pareja",
+   "relaciones de pareja",
+   "consejos de pareja",
+   "vida en pareja"
+  ],
+  "empresas": [
+   "historias de empresas",
+   "casos de negocio",
+   "modelos de negocio",
+   "como ganan dinero las empresas",
+   "estrategia empresarial"
+  ]
+ },
+ "enlace_venta": "https://victoriatheceo.vercel.app",
+ "enlace_producto": "https://victoriatheceo.vercel.app/#tablero",
+ "pago_hotmart": "https://pay.hotmart.com/T108246040P",
+ "enlace_perfil": "",
+ "hora_largo": "18:45",
+ "shorts_por_largo": 12,
+ "primer_comentario_instagram": "📥 Mis 30 reglas de la CEO, cada una con su fuente, gratis: el enlace está en mi perfil 👆",
+ "comentario_youtube": "Si quieres las 30 reglas completas, cada una con su fuente y una acción para hacer hoy, te dejé mi guía gratis aquí 👉 {enlace}",
+ "comentario_youtube_producto": "Si quieres hacerlo con tus propios números, esta es la plantilla que uso (presupuesto, deudas, fondo de emergencia y metas, todo calculado solo) 👉 {enlace}",
+ "llamados": {
+  "aguinaldo": {
+   "enlace": "https://victoriatheceo.vercel.app/aguinaldo",
+   "etiqueta": "🧮 Calcula tu aguinaldo 2026 gratis",
+   "pie": "🧮 Calcula tu aguinaldo gratis: enlace en mi perfil 👆",
+   "comentario": "Calcula tu aguinaldo 2026 gratis: cuánto te toca, cuánto paga ISR y cómo repartirlo 👉 {enlace}"
+  },
+  "deudas": {
+   "enlace": "https://victoriatheceo.vercel.app/pagar-deudas",
+   "etiqueta": "🧮 Calcula en cuántos meses sales de tus deudas",
+   "pie": "🧮 Calcula en cuántos meses sales de tus deudas: enlace en mi perfil 👆",
+   "comentario": "Calcula gratis en cuántos meses sales de tus deudas y cuál pagar primero 👉 {enlace}"
+  },
+  "fondo": {
+   "enlace": "https://victoriatheceo.vercel.app/fondo-de-emergencia",
+   "etiqueta": "🧮 Calcula tu fondo de emergencia gratis",
+   "pie": "🧮 Calcula cuánto necesitas de fondo de emergencia: enlace en mi perfil 👆",
+   "comentario": "Calcula gratis cuánto necesitas de fondo de emergencia y en cuántos meses llegas 👉 {enlace}"
+  },
+  "presupuesto": {
+   "enlace": "https://victoriatheceo.vercel.app/regla-50-30-20",
+   "etiqueta": "🧮 Haz tu presupuesto 50/30/20 gratis",
+   "pie": "🧮 Haz tu presupuesto 50/30/20 gratis: enlace en mi perfil 👆",
+   "comentario": "Haz tu presupuesto 50/30/20 gratis y compáralo con lo que gastas hoy 👉 {enlace}"
+  }
+ },
+ "hashtags_marca": [
+  "#finanzaspersonales",
+  "#victoriatheceo"
+ ],
+ "max_hashtags": {
+  "youtube": 5,
+  "instagram": 5,
+  "tiktok": 7
+ },
+ "palabras_por_segundo": 2.65,
+ "creditos_por_segundo": 40,
+ "creditos_foto": 30,
+ "segundos_minimos": 10,
+ "segundos_maximos": 25,
+ "creditos_al_mes": 12000,
+ "playlists_youtube": {
+  "asi_empezaron": {
+   "titulo": "Así empezaron: historias de empresas famosas",
+   "descripcion": "Cómo empezaron Airbnb, Zara, Canva, Mailchimp y más: historias reales de emprendedores con fuente, en menos de 20 segundos. Una nueva cada semana."
+  },
+  "aguinaldo": {
+   "titulo": "Aguinaldo 2026: cuánto te toca y qué hacer",
+   "descripcion": "Cuánto aguinaldo te toca, cuándo te lo pagan, cuánto paga de ISR y qué hacer con él para no llegar a enero sin dinero. Según la Ley Federal del Trabajo.",
+   "id": "PLY764AlG2GHk"
+  },
+  "finanzas": {
+   "titulo": "Finanzas personales: reglas de dinero",
+   "descripcion": "Reglas de dinero que sí funcionan: ahorro, deudas, tarjetas de crédito, presupuesto 50/30/20, fondo de emergencia e interés compuesto. Cada dato con su fuente.",
+   "id": "PLZWt3yJ_354g"
+  },
+  "negocios": {
+   "titulo": "Negocios y emprendimiento",
+   "descripcion": "Lecciones de negocio, errores al emprender y estrategias de empresas como Costco, Netflix y Amazon. Para emprendedores en español.",
+   "id": "PLJJlUhkZO84s"
+  },
+  "mente": {
+   "titulo": "Mente fuerte y productividad",
+   "descripcion": "Hábitos, productividad y mente fuerte con respaldo científico: estrés, pendientes, enfoque y felicidad."
+  },
+  "buenfin": {
+   "titulo": "Buen Fin 2026: compra sin caer en trampas",
+   "descripcion": "Cómo saber si una oferta del Buen Fin es real, tus derechos como consumidor y cuándo sí conviene comprar a meses. Con datos de Profeco y Condusef.",
+   "id": "PLdJwa3uya_5Q"
+  }
+ },
+ "productos_hotmart": {
+  "8834813": "El Tablero de la CEO"
+ },
+ "reserva_final_creditos": 100,
+ "renovacion_creditos": "2026-11-28",
+ "nota_creditos": "12,000 al mes; se renuevan el día 28 (confirmado por Rodrigo, 31-oct-2026). Se gasta hasta dejar 100.",
+ "prueba_youtube_carrusel_diario": {
+  "desde": "2026-11-04",
+  "hasta": "2026-11-17",
+  "nota": "Rodrigo (3-nov-2026) aprobó probar 2 semanas: los días con video, YouTube también sube un short de carrusel a 3 h o más del video. Al terminar, comparar las vistas de los videos de Victoria de estas 2 semanas contra las anteriores (600-690 por video): si bajan, se quita; si no, se queda y se suman las vistas de los shorts extra."
+ },
+ "canal_youtube_perfil": {
+  "description": "Tu dinero en México, sin rodeos. Victoria es una CEO creada con inteligencia artificial que te dice cómo cuidar tu dinero: aguinaldo, deudas, tarjeta, ahorro, SAT, Afore, Infonavit y tus derechos en el trabajo. Cada dato con su fuente oficial (Condusef, Profeco, SAT, Ley Federal del Trabajo). Capital, su Rottweiler, siempre a su lado.\n\n🧮 Calcula tu aguinaldo 2026 gratis: https://victoriatheceo.vercel.app/aguinaldo?ref=yt\n📥 Mis 30 reglas de la CEO, gratis: https://victoriatheceo.vercel.app?ref=yt\n📌 Suscríbete: algo nuevo cada día.\n\nContenido educativo; no es asesoría financiera, fiscal ni legal. Victoria es un personaje creado con IA.",
+  "keywords": "\"finanzas personales\" \"finanzas personales mexico\" \"educacion financiera\" aguinaldo \"aguinaldo 2026\" \"cuanto me toca de aguinaldo\" SAT \"tarjeta de credito\" Afore Infonavit finiquito \"derechos laborales\" \"como ahorrar dinero\" ahorro dinero \"buen fin\" \"salario minimo 2026\" negocios emprendimiento \"victoria the ceo\"",
+  "defaultLanguage": "es"
+ },
+ "nota_palabras_por_segundo": "4-nov-2026: la voz real del video 38 dijo 42 palabras en 15.9 s (2.65/s). Con 2.33 se pedían 19 s y Wan rellenaba el tiempo sobrante inventando una frase. Duración = palabras / 2.65 + 1 s.",
+ "pronunciacion": {
+  "México": "Méjico",
+  "mexicano": "mejicano",
+  "mexicana": "mejicana",
+  "mexicanos": "mejicanos",
+  "mexicanas": "mejicanas",
+  "Afore": "Afóre",
+  "Infonavit": "Infonavít",
+  "Netflix": "Nétflix",
+  "Spanx": "Spanks",
+  "Costco": "Cóstco",
+  "Mailchimp": "Méilchimp",
+  "Warren Buffett": "Uórren Bófet"
+ },
+ "nota_pronunciacion": "4-nov-2026 (Rodrigo: \"se le complica México, aguinaldo\"): así se le escribe a Wan y a la voz de los carruseles lo que pronuncia mal. Si qa_audio dice \"no se entiende X\", agregar X aquí con su forma dicha y volver a generar.",
+ "pronunciacion_wan": {},
+ "nota_pronunciacion_wan": "6-nov-2026: con \"aguinaldo\" Wan decía a-ɣ-w-i-naldo (suena la u); con \"aghinaldo\" dijo \"ajinado\". Lo que funcionó (prueba con reconocedor de fonemas): escribir \"aguinaldo\" normal y poner en el prompt instruccion_pronunciacion_wan. Verificar siempre con scripts/fonemas.py.",
+ "instruccion_pronunciacion_wan": "The Spanish word aguinaldo is always pronounced with a SILENT u and a hard g, exactly like the English sounds 'ah-ghee-NAHL-doh' (g as in 'go', never like a j, never sounding the u).",
+ "tono_voz_wan": "in a warm, intimate voice, slightly lower and unhurried, as if sharing a secret with a close friend, with a confident smile in her voice (not whispering, not flirty)",
+ "nota_tono_voz_wan": "7-nov-2026 (Rodrigo: \"que hable más sensual, eso vende más\"; acordado: cálida e íntima, no seductora, para no perder alcance ni credibilidad). Va en el prompt de Wan donde antes decía 'confident and warm'. Misma voz de referencia, solo cambia la forma de hablar.",
+ "prueba_voz_intima": {
+  "desde": "2026-11-07",
+  "videos": 3,
+  "tono_anterior": "confident and warm",
+  "comparar_con": [
+   "17",
+   "18",
+   "37",
+   "38"
+  ],
+  "metricas": [
+   "porcentaje visto (YouTube averageViewPercentage, salto en Reels)",
+   "guardados",
+   "comentarios",
+   "visitas al perfil"
+  ],
+  "nota": "Cada video generado con tono_voz_wan lleva \"voz\": \"intima\" en plan.json. Con 3 publicados y 3 días de datos, comparar contra los videos de comparar_con y decidir con Rodrigo. Medir también palabras por segundo reales del primero: si habla más lento, ajustar palabras_por_segundo."
+ },
+ "prioridad_videos": [
+  "40",
+  "39",
+  "41"
+ ],
+ "nota_prioridad_videos": "9-nov-2026: con ~4 videos de créditos hasta el 28-nov, primero los de dinero en México. Los de temporada (aguinaldo) siguen yendo antes por su ventana. Quitar o cambiar cuando renueven créditos.",
+ "largo_tematico": {
+  "titulo": "Aguinaldo 2026: todo lo que necesitas saber",
+  "desde": "2026-12-01",
+  "videos": [
+   "19",
+   "17",
+   "18",
+   "20",
+   "21"
+  ],
+  "hecho": true,
+  "nota": "9-nov-2026 (Rodrigo: \"siii\"): los videos largos salen en búsquedas de YouTube y viven meses. Hoy solo hay 2 de aguinaldo publicados (menos de 1 min): no alcanza para un largo de 3+ min. Se arma en diciembre, antes del 20. 10-nov-2026: se armó con 6 carruseles de aguinaldo (c16, c52, c30, c05, c43, c15) con la voz real de Victoria, 3:57, horizontal, con capítulos y miniatura; sale el 12-nov 19:00 (búsquedas de aguinaldo en subida). 0 créditos.",
+  "youtube": "https://youtube.com/watch?v=Tg6QnFhSsek",
+  "publica_utc": "2026-11-13T01:00:00Z"
+ },
+ "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov.",
+ "publicaciones_por_dia": {
+  "tt": 3,
+  "ig": 2,
+  "yt": 3
+ },
+ "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red. 9-nov-2026, más tarde: Rodrigo aprobó YouTube a 3 al día (para que no se atrase respecto a TikTok).",
+ "prioridad_reel_ig": [],
+ "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube.",
+ "facebook_victoria": "6af202cb29e54cb1259515de",
+ "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok.",
+ "sonido_biblioteca_ig": {
+  "dias": [],
+  "nota": "Reemplazado el 9-nov-2026: TODOS los Reels de Instagram salen con música en tendencia de la biblioteca de Instagram, directo con la API de Meta (scripts/ig_reel_musica.py). Rodrigo ya no sube nada a mano."
+ },
+ "prioridad_carruseles": [
+  "c74",
+  "c80",
+  "c76",
+  "c78",
+  "c75",
+  "c81",
+  "c84",
+  "c82",
+  "c83",
+  "c79",
+  "c85",
+  "c72",
+  "c73",
+  "c67",
+  "c49",
+  "c53",
+  "c36",
+  "c54",
+  "c40",
+  "c60",
+  "c44",
+  "c41",
+  "c51",
+  "c63",
+  "c42",
+  "c47",
+  "c05",
+  "c50",
+  "c37",
+  "c34",
+  "c62",
+  "c28",
+  "c64",
+  "c15",
+  "c61",
+  "c30",
+  "c29",
+  "c55",
+  "c59",
+  "c56",
+  "c58",
+  "c57"
+ ],
+ "nota_prioridad_carruseles": "9-nov-2026, Rodrigo: \"¿no hemos subido nada de parejas?\". Parejas (c27, c41, c28, c29) y la serie Socios en casa (c55-c59, revisada el 9-nov) van primero en TikTok, prioridad_por_dia al día (2) para no tapar la temporada de aguinaldo; se quitan solos cuando ya salieron.",
+ "prioridad_por_dia": 3,
+ "voz_victoria": {
+  "motor": "minimax",
+  "modelo": "minimax/speech-02-hd",
+  "voice_id": "R8_LEAVFNPT",
+  "language_boost": "Spanish",
+  "emotion": "auto",
+  "speed": 1.0,
+  "muestra": "assets/voz-referencia-intima.wav",
+  "nota": "9-nov-2026, Rodrigo: \"sí, conéctala y déjala para siempre\". La voz REAL de sus videos (audio del video 18) clonada con MiniMax Speech 02 HD en Replicate (REPLICATE_API_TOKEN). La misma voz siempre en carruseles, Reels y shorts: si MiniMax falla, se detiene; nunca cambia a otra voz. Si el clon caduca, voz_victoria.py lo vuelve a clonar de la muestra y guarda el voice_id nuevo aquí."
+ },
+ "fotos_con_texto": [
+  "assets/fotos/enero-oficina-casa.jpg"
+ ],
+ "nota_fotos_con_texto": "10-nov-2026, Rodrigo: un calendario de fondo decía \"January\" en la portada de c64: \"que no vuelva a pasar, déjalo así\". Estas fotos ya no se eligen solas para portada ni Reel (carrusel.py); las que ya las usan se quedan. Toda foto nueva pasa por scripts/revisar_texto_foto.py antes de guardarse en assets/fotos/.",
+ "bio_con_enlace": {
+  "ig": false,
+  "tt": false
+ },
+ "nota_bio_con_enlace": "10-nov-2026: los posts decían \"el enlace está en mi perfil\" y la bio no tenía enlace. Mientras aquí diga false, publer.sin_perfil cambia esa frase por la dirección escrita (victoriatheceo.vercel.app) en Instagram y TikTok. Cuando Rodrigo ponga el enlace en la bio de esa red, se cambia a true.",
+ "guia_por_mensaje_ig": true,
+ "_guia_por_mensaje_ig": "Rodrigo lo aprobó el 10-nov-2026 ('siii'). En Instagram 'enlace en mi perfil' se vuelve 'comenta GUÍA y te lo mando por mensaje' y la rutina de comentarios corre comentarios_ig.py guias (mensaje privado con el enlace; si Meta no deja, respuesta pública con el enlace).",
+ "_prioridad_10nov": "10-nov tarde: 'Guarda esto' primero (c16, el único hit: 3,361 vistas; gancho guarda_esto promedia 3,782 contra 261 de 'dato'); c52 es la parte 2 de c16. Intercalado con pareja (debate). La serie del salario mínimo y las noticias se meten al frente cuando toquen.",
+ "ig_reels_de_prueba": false,
+ "_ig_reels_de_prueba": "Listo en ig_reel_musica.py pero APAGADO: el 10-nov-2026 Meta respondió 'La cuenta de Instagram no alcanza el mínimo de seguidores que se requiere para crear reels de prueba' (no dice cuántos). Prender cuando crezca la cuenta.",
+ "prioridad_publicar": [
+  "O1",
+  "O2"
+ ],
+ "_prioridad_publicar": "11-nov-2026: prueba de formato de opinión (Victoria a cámara, 15 s). O1 sale en el siguiente día de video y O2 en el que sigue; luego el orden normal (18, C1).",
+ "ig_fotos_feed_por_dia": 1,
+ "replicate": {
+  "saldo_base_usd": 27.16,
+  "fecha_base_utc": "2026-11-12T06:22:02Z",
+  "presupuesto_semanal_usd": 7,
+  "presupuesto_mensual_usd": 28,
+  "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)",
+  "_nota": "Rodrigo, 12-nov-2026: \"1000 pesos menos los 22 usd. 1000 entre los 2. máximo máximo, si se puede menos\". Total Replicate de los dos canales: 1,000 MXN ≈ 50 USD (tipo de cambio ~20, conservador). El espacio 22 USD; Victoria 28 USD al mes (7 por semana). Al tope de la semana se frena lo caro; al del mes, todo (replicate_gasto.freno). Gastar MENOS es mejor: todo lo que no sea Victoria hablando sale de Everygen.",
+  "presupuesto_mensual_mxn": 1000,
+  "presupuesto_otro_canal_mensual_usd": 22,
+  "presupuesto_total_mxn": 1000,
+  "presupuesto_total_usd": 50,
+  "autorizaciones": {
+   "LA3-toma-uma": {
+    "fecha": "2026-11-12",
+    "tope_usd": 0.5,
+    "texto": "Rodrigo, 12-nov-2026: \"sí autorizo el .30 para la toma\"",
+    "para": "LA3: toma 3 (UMA) y la voz de la lámina 4",
+    "cerrada": true,
+    "gastado_usd": 0.22
+   },
+   "broll-movimiento": {
+    "fecha": "2026-11-12",
+    "tope_usd": 12,
+    "texto": "Rodrigo, 12-nov-2026: \"haz más escenas con movimiento real, no importa el gasto de Replicate\"",
+    "para": "animar las 13 escenas del repertorio dinámico con seedance-1-pro (≈$0.75 cada una)",
+    "gastado_usd": 12.0,
+    "nota_gastado": "14 clips × $0.75 (los primeros 4 no se sumaron solos: cargar() llegó después)"
+   },
+   "shorts-escena": {
+    "fecha": "2026-11-12",
+    "tope_usd": 15,
+    "gastado_usd": 11.16,
+    "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
+    "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
+   },
+   "largos-lc": {
+    "fecha": "2026-11-13",
+    "tope_usd": 10.5,
+    "gastado_usd": 10.01,
+    "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
+    "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria",
+    "ampliacion": "Rodrigo, 12-nov-2026: \"acaba el LC2\" (tope 8 → 10.5: LC2 son ~94 s a cámara ≈ $4.25 + voces y un reintento; quedaban $2.62)"
+   }
+  },
+  "extra_mes": {
+   "2026-11": 8
+  },
+  "_nota_extra": "Rodrigo, 12-nov-2026: \"Replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas en que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\". Extra de noviembre: 8 USD (~160 MXN) solo para shorts de Victoria hablando; Rodrigo puede subirlo o bajarlo.",
+  "recarga": {
+   "umbral_usd": 5,
+   "monto_usd": 35,
+   "texto": "Rodrigo, 12-nov-2026: \"bajó de 5 USD y se metieron otros 35 USD\""
+  }
+ },
+ "higgsfield": {
+  "uso": "solo plan GRATIS: música comercial en tendencia de TikTok y publicar bailes con la canción puesta",
+  "nunca_pagar": true,
+  "texto": "Rodrigo, 12-nov-2026: \"higgsfield no lo pago, es el free\" / \"se va a quedar en sí, solo si no pago y tú haces todo\"",
+  "tiktok_connector_id": "6ffc2f84-fb76-41a7-b8db-adfb8569a6e2",
+  "respaldo": "si Higgsfield falla o pide pago: Publer en modo recordatorio (Rodrigo pone el sonido en la app)"
+ },
+ "instagram_temas_del_dia": {
+  "_regla": "MUSE 12-nov-2026: en Instagram nunca carrusel y reel del mismo tema el mismo día. La rutina no publica en Instagram un carrusel con este tema ese día (TikTok sí).",
+  "2026-11-12": "buen_fin",
+  "2026-11-13": "aguinaldo",
+  "2026-11-16": "buen_fin_tarjeta",
+  "2026-11-18": "afore"
+ },
+ "miniaturas": {
+  "regla": "Rodrigo, 13-nov-2026: \"No importa lo de comparar las miniaturas, tú selecciona la mejor o crea la mejor en Canva Pro\". Sin Test & Compare: el agente elige una sola miniatura (la de largo.py, que salió mejor que Canva IA el 12-nov) y no se le recuerda nada a Rodrigo."
+ },
+ "facebook_pagina_id": "1382943384905216",
+ "automatizaciones": {
+  "tareas": [
+   {
+    "nombre": "Rutina diaria",
+    "cuando": "Todos los días 6:37",
+    "hace": "Victoria Hoy (página, imagen, te manda la historia de IG y sube la de Facebook), serie de sueldos en TikTok primero, carruseles, Reels, shorts (con razón para suscribirse), largos y recortes, Victoria verifica (mar y vie), medir, panel y resumen"
+   },
+   {
+    "nombre": "Respaldo de la historia",
+    "cuando": "Todos los días 10:00",
+    "hace": "Si no subiste la historia de Victoria Hoy, la publica sin sticker"
+   },
+   {
+    "nombre": "Comentarios y guías",
+    "cuando": "Cada hora, 8:13 a 23:13",
+    "hace": "Guías por mensaje (IG) y respuesta (YouTube), comentario propio de Victoria en YouTube, Instagram y Facebook, contestar comentarios y mensajes"
+   },
+   {
+    "nombre": "Medición de MUSE",
+    "cuando": "19-nov",
+    "hace": "Instagram contra la línea base de MUSE"
+   }
+  ],
+  "token_meta_vence": "2027-01-11",
+  "token_meta_aviso": "2027-01-03",
+  "newsletter": "pendiente: Rodrigo abre su cuenta en beehiiv.com",
+  "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)"
+ }
 }
