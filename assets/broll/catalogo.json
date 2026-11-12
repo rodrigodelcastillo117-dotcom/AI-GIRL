@@ -12,6 +12,56 @@
    "accion": "camina hacia la cámara con Capital con correa",
    "capital": "caminando",
    "nota_calidad": "bien; lleva la correa en ambas manos"
+  },
+  {
+   "archivo": "cafe-mov-1.mp4",
+   "foto": "dinamica-cafe.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She lifts the coffee cup, takes a slow sip, lowers it and glances out the window with a small smile. Steam rises from the cup. Gentle slow push-in. If a dog is in the frame it stays calm and only breathes or blinks.",
+   "prediccion": "0zsawyvdcnrmr0d1ssd93zfxxm",
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "cocina-mov-1.mp4",
+   "foto": "dinamica-cocina.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She stirs the pan with a wooden spoon, tastes the sauce from the spoon and nods with approval. Steam rises. Slow lateral camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "yzwsre77v1rmw0d1ssdtjxwfjg",
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "terraza-depa-mov-1.mp4",
+   "foto": "dinamica-terraza-depa.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She walks slowly across the terrace toward the railing, rests her hands on it and looks at the city skyline, the breeze moves her hair. Slow follow camera. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "wxv8p877mnrmw0d1ssdrg47f0g",
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "lectura-mov-1.mp4",
+   "foto": "dinamica-lectura.png",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She turns a page of the book, reads, then looks up at the camera with a subtle confident smile. Very slow push-in. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "nkrqza77n1rmy0d1ssdtx9gvgg",
+   "nota_calidad": "aprobado: 4 cuadros, misma cara, manos bien, Capital tranquilo o ausente, sin texto"
+  },
+  {
+   "archivo": "estudio-mov-1.mp4",
+   "foto": "dinamica-estudio.jpg",
+   "modelo": "bytedance/seedance-1-pro 1080p",
+   "app": "Replicate",
+   "segundos": 5,
+   "accion": "She speaks naturally into the podcast microphone with small hand gestures, then leans back and smiles. Slow arc camera move. If a dog is in the frame it stays calm, only breathing, blinking or slightly moving its head; nobody touches it.",
+   "prediccion": "34xkn2dqbsrmy0d1ssg9awdvy4",
+   "nota_calidad": "por revisar"
   }
  ],
  "rechazados": [
