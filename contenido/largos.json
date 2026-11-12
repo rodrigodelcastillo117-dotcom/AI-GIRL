@@ -1099,5 +1099,416 @@
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
   "estado": "produciendo",
   "publica_utc": "2026-11-20T00:45:00Z"
+ },
+ {
+  "id": "LB1",
+  "titulo_trabajo": "Buen Fin 2026: cómo saber si una oferta es real (y 5 compras que sí y 5 que no)",
+  "seo": {
+   "palabra_clave": "buen fin 2026",
+   "titulo": "Buen Fin 2026: ¿cómo saber si una oferta es real?",
+   "descripcion": "Buen Fin 2026 (del viernes 13 al martes 17 de noviembre): cómo saber si una oferta es real antes de pagar, con el historial de precios de Profeco.\nLas 5 creencias del Buen Fin verificadas con la ley del consumidor, cuándo sí convienen los meses sin intereses y mis 5 compras que sí y 5 que no.\n\nEn este video:\n• Cómo revisar un precio en Quién es Quién en los Precios (historial de 490 productos desde septiembre, mínimo, máximo y promedio).\n• Meses sin intereses: si fallas una mensualidad te cobran intereses, y la mensualidad se suma a tu pago mínimo. Mi regla del 30%: con $15,000 al mes, máximo $4,500 en pagos de deudas.\n• Si no te respetan la oferta: puedes exigirla, más la diferencia y una bonificación mínima del 20% de lo pagado (LFPC arts. 7, 50 y 92 Ter). Teléfono del Consumidor de Profeco: 55 5568 8722 y 800 468 8722.\n• Compras en línea: si trae garantía, mínimo 90 días; 5 días hábiles desde que lo recibes para cancelar (LFPC arts. 56, 76 Bis y 77).\nLas 5 compras sí y 5 no son mi opinión, no una recomendación de compra ni de inversión.\n\nAntes de usar la tarjeta, haz tu plan: https://victoriatheceo.vercel.app/pagar-deudas\n\nFuentes oficiales:\n• SAT, Sorteo El Buen Fin 2026 (fechas, 14-oct-2026): https://www.gob.mx/sat/articulos/sorteo-el-buen-fin-2026\n• Profeco, Quién es Quién en los Precios en El Buen Fin (historial de precios y simulador de pagos a meses con intereses): https://elbuenfin.profeco.gob.mx\n• Profeco, Monitoreo de tiendas virtuales: https://burocomercial.profeco.gob.mx/tiendasvirtuales/\n• Profeco, Compra en línea sin problemas (13-sep-2021): https://www.gob.mx/profeco/articulos/compra-en-linea-sin-problemas\n• Profeco, El presupuesto, una medida contra las compras impulsivas en El Buen Fin (22-oct-2026): https://www.gob.mx/profeco/prensa/el-presupuesto-una-medida-contra-las-compras-impulsivas-en-el-buen-fin-profeco\n• Profeco, monitoreo Buen Fin 2025 (1-dic-2025) y balance final (19-nov-2025); comunicados del 15-oct-2026, 26-oct-2026, 7-nov-2026 y 9-nov-2026 (gob.mx/profeco)\n• Ley Federal de Protección al Consumidor, arts. 7, 32, 46, 50, 56, 76 Bis, 77 y 92 Ter (texto vigente): https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf\n• Ley Federal del Trabajo, art. 87: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf\n• Condusef, ¿Vas a comprar en el Buen Fin? (12-nov-2019): https://www.gob.mx/condusef/prensa/vas-a-comprar-en-el-buen-fin\n• Condusef, El Buen Fin 2025: Gasta con cabeza, no con prisa (13-nov-2025): https://www.gob.mx/condusef/es/articulos/el-buen-fin-2025-gasta-con-cabeza-no-con-prisa\n• Condusef, En este Buen Fin compra con conciencia (10-nov-2026) y Proteja su Dinero, Meses ¿sin intereses? (act. 12-feb-2021)\nVictoria es un personaje creado con IA. Consultado el 12-nov-2026.",
+   "tags": [
+    "buen fin 2026",
+    "fechas buen fin 2026",
+    "ofertas buen fin",
+    "cómo saber si una oferta es real",
+    "profeco buen fin",
+    "meses sin intereses buen fin",
+    "quién es quién en los precios",
+    "historial de precios profeco",
+    "ofertas falsas buen fin",
+    "no respetan oferta profeco",
+    "teléfono del consumidor profeco",
+    "compras en línea buen fin",
+    "garantía compras en línea",
+    "qué comprar en el buen fin",
+    "vale la pena el buen fin"
+   ],
+   "hashtags": [
+    "#buenfin2026",
+    "#buenfin",
+    "#finanzaspersonales",
+    "#profeco",
+    "#victoriatheceo"
+   ]
+  },
+  "miniatura": {
+   "superior": "Buen Fin 2026",
+   "grande": "¿Oferta o trampa?",
+   "banda": "Revísalo así",
+   "color_grande": "blanco",
+   "color_banda": "oro",
+   "variantes": [
+    {
+     "superior": "Antes de comprar",
+     "grande": "5 trampas",
+     "banda": "del Buen Fin",
+     "color_grande": "oro",
+     "color_banda": "rojo"
+    }
+   ],
+   "foto": "assets/fotos/miniatura-lb1.jpg"
+  },
+  "playlist": "buenfin",
+  "segmentos": [
+   {
+    "tipo": "victoria",
+    "capitulo": "Intro",
+    "voz": "Si vas a comprar en el Buen Fin, no le creas a la etiqueta. El año pasado hubo precios que subieron justo esos días."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": "Las fechas",
+    "titulo": "Buen Fin 2026",
+    "dato_grande": "13 al 17 nov",
+    "puntos": [
+     "Del viernes 13 al martes 17 de noviembre de 2026",
+     "Cinco días de compras"
+    ],
+    "fuente": "SAT, 'Sorteo El Buen Fin 2026' (14-oct-2026)",
+    "voz": "Primero, las fechas. El Buen Fin dos mil veintiséis va del viernes trece al martes diecisiete de noviembre, según el Servicio de Administración Tributaria. Son cinco días, tiempo de sobra para comparar antes de pagar."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "5 creencias, verificadas",
+    "voz": "Cinco días, sin prisa. Ahora, cinco cosas que todos creen del Buen Fin. Las verifiqué una por una."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "1. \"Todo está más barato\"",
+    "dato_grande": "FALSO",
+    "puntos": [
+     "2025: Profeco revisó 46 mil productos en 29 ciudades",
+     "Halló ofertas reales y también simuladas",
+     "Una pantalla bajó antes y subió en el Buen Fin"
+    ],
+    "fuente": "Profeco, monitoreo de precios Buen Fin 2025 (1-dic-2025)",
+    "voz": "Primera. En el Buen Fin todo está más barato. Falso. En dos mil veinticinco, la Procuraduría Federal del Consumidor, Profeco, revisó cuarenta y seis mil productos en veintinueve ciudades. Encontró ofertas reales y también simuladas, como una pantalla que bajó antes de la campaña y subió justo en los días del Buen Fin."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Esa pantalla es justo la trampa. La segunda creencia es la favorita de todo el mundo."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "2. \"Los meses sin intereses son gratis\"",
+    "dato_grande": "DEPENDE",
+    "puntos": [
+     "Si fallas una mensualidad, te cobran intereses",
+     "La mensualidad se suma a tu pago mínimo"
+    ],
+    "fuente": "Condusef (12-nov-2019) · Condusef, Proteja su Dinero, 'Meses ¿sin intereses?' (act. 12-feb-2021)",
+    "voz": "Segunda. Los meses sin intereses son gratis. Depende. Según la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros, si fallas una mensualidad, el banco o la tienda te cobra intereses. Y esa mensualidad se suma a tu pago mínimo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y aquí viene una que casi nadie sabe. Tiene que ver con el precio de antes."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "3. \"Inflar el precio para rebajarlo es legal\"",
+    "dato_grande": "FALSO",
+    "puntos": [
+     "Descuento: un precio menor al normal de esa tienda",
+     "Anunciar una rebaja falsa sobre un precio inflado es publicidad engañosa"
+    ],
+    "fuente": "Ley Federal de Protección al Consumidor, arts. 32 y 46",
+    "voz": "Tercera. Inflar el precio para luego rebajarlo es legal. Falso. Para la ley del consumidor, un descuento es un precio menor al normal de esa tienda. Si suben el precio para anunciar una rebaja que no existe, ese anuncio es publicidad engañosa."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Ahora, ¿qué pasa si llegas a la caja y te cobran otra cosa?"
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "4. \"Si no respetan la oferta, ni modo\"",
+    "dato_grande": "FALSO",
+    "puntos": [
+     "Deben respetar lo que anunciaron",
+     "Puedes exigirlo, más la diferencia de precio",
+     "Y una bonificación de al menos 20% de lo pagado"
+    ],
+    "fuente": "Ley Federal de Protección al Consumidor, arts. 7, 50 y 92 Ter",
+    "voz": "Cuarta. Si no te respetan la oferta, ni modo. Falso. Tienen que respetar lo que anunciaron. Puedes exigirlo, más la diferencia de precio y una bonificación de al menos el veinte por ciento de lo que pagaste."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "La última es para quien compra desde el sillón, con el celular en la mano."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "5. \"En línea no hay garantía\"",
+    "dato_grande": "FALSO",
+    "puntos": [
+     "La ley del consumidor también aplica en línea",
+     "Si trae garantía, es de mínimo 90 días",
+     "5 días hábiles para cancelar desde que lo recibes"
+    ],
+    "fuente": "Ley Federal de Protección al Consumidor, arts. 56, 76 Bis y 77 · Profeco",
+    "voz": "Quinta. Si compras en línea, no hay garantía. Falso. La ley del consumidor también aplica en línea. Si el producto trae garantía, no puede ser menor a noventa días. Y tienes cinco días hábiles, desde que lo recibes, para cancelar."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cómo revisar un precio",
+    "voz": "Ya viste que no todo baja. Entonces, ¿cómo sabes si un precio bajó de verdad? Con esto."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Quién es Quién en los Precios",
+    "dato_grande": "490 productos",
+    "puntos": [
+     "Historial de precios desde septiembre",
+     "Precio mínimo, máximo y promedio",
+     "400 establecimientos en 30 ciudades",
+     "elbuenfin.profeco.gob.mx"
+    ],
+    "fuente": "Profeco (15-oct-2026, 26-oct-2026 y 9-nov-2026), con la Secretaría de Economía",
+    "voz": "Profeco tiene un micrositio del Buen Fin, Quién es Quién en los Precios. Ahí ves el historial de cuatrocientos noventa productos desde septiembre, recabados en cuatrocientos establecimientos. Te muestra el precio mínimo, el máximo y el promedio. El enlace está en la descripción."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Mira, así lo revisas paso a paso, antes de pagar."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "¿La oferta es real? Revísalo así",
+    "pasos": [
+     {
+      "texto": "Busca tu producto en el micrositio de Profeco",
+      "resultado": "490 productos"
+     },
+     {
+      "texto": "Mira su precio mínimo, máximo y promedio",
+      "resultado": "Su historial"
+     },
+     {
+      "texto": "Compáralo con el precio de la oferta",
+      "resultado": "¿Menor al normal?"
+     },
+     {
+      "texto": "¿Subió antes del Buen Fin para luego bajar?",
+      "resultado": "Rebaja simulada"
+     }
+    ],
+    "fuente": "Profeco, Quién es Quién en los Precios en El Buen Fin: elbuenfin.profeco.gob.mx · LFPC, art. 46",
+    "voz": "Paso uno, busca tu producto en el micrositio. Si no está entre los cuatrocientos noventa, compara precios antes de pagar, como pide Profeco. Paso dos, mira su mínimo, su máximo y su promedio. Paso tres, compáralo con el precio de la oferta. Paso cuatro, si subió justo antes para luego bajar, no es rebaja de verdad."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Meses sin intereses: cuándo sí",
+    "voz": "Ahora, los meses sin intereses. Capital no los usa, él paga sus croquetas de contado. Pero tú sí puedes usarlos bien."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "¿Cuándo sí convienen?",
+    "dato_grande": null,
+    "puntos": [
+     "Para lo que dura más que la deuda: línea blanca o tecnología",
+     "No para despensa ni ropa",
+     "¿Varias compras a meses? Suma todas las mensualidades",
+     "Simulador de pagos a meses con intereses y CAT: elbuenfin.profeco.gob.mx"
+    ],
+    "fuente": "Condusef (13-nov-2025 y 10-nov-2026) · Profeco, micrositio (26-oct-2026)",
+    "voz": "Esa misma Comisión los recomienda para cosas que duran más que la deuda, como línea blanca o tecnología. No para la despensa ni la ropa. Si tienes varias, suma las mensualidades. Y si vas a pagar a meses con intereses, el micrositio de Profeco tiene un simulador con el costo anual total."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y esta es mi regla favorita. Mira cómo se ve con números."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Mi regla del 30%: con $15,000 al mes",
+    "barras": [
+     {
+      "etiqueta": "Ingreso mensual",
+      "valor": 15000,
+      "texto_valor": "$15,000"
+     },
+     {
+      "etiqueta": "Tope para pagos de deudas (30%)",
+      "valor": 4500,
+      "texto_valor": "$4,500"
+     }
+    ],
+    "nota": "Suma lo que ya pagas al mes más la mensualidad nueva. Si pasa de $4,500, mi regla: no.",
+    "fuente": "Condusef (12-nov-2019): no comprometer más del 30% de tu ingreso · cálculo propio",
+    "voz": "La Comisión dice que no es recomendable comprometer más del treinta por ciento de tu ingreso. Yo lo aplico a los pagos de deudas. Con quince mil pesos al mes, tu tope es de cuatro mil quinientos. Suma lo que ya pagas al mes más la mensualidad nueva. Si te pasas, mi regla es no comprar."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Si no te respetan la oferta",
+    "voz": "Ahora sí, el reclamo. Si no te respetan la oferta, no es ni modo. Haz esto."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Si no te respetan la oferta",
+    "pasos": [
+     {
+      "texto": "Pide el precio o la promoción que anunciaron",
+      "resultado": "Deben respetarlo"
+     },
+     {
+      "texto": "Exige que te cumplan, un producto equivalente o cancelar",
+      "resultado": "Más la diferencia"
+     },
+     {
+      "texto": "Pide tu bonificación",
+      "resultado": "Mínimo 20%"
+     },
+     {
+      "texto": "Si no te hacen caso, llama al Teléfono del Consumidor",
+      "resultado": "800 468 8722"
+     }
+    ],
+    "fuente": "LFPC, arts. 7, 50 y 92 Ter · Profeco (7-nov-2026), Teléfono del Consumidor: 55 5568 8722 y 800 468 8722",
+    "voz": "Uno, pide el precio anunciado, la ley los obliga a respetarlo. Dos, exige que te cumplan, un producto equivalente o cancelar, y en todo caso la diferencia de precio. Tres, una bonificación de al menos el veinte por ciento de lo que pagaste. Cuatro, si no te hacen caso, llama al Teléfono del Consumidor de Profeco, que ves en pantalla."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y no creas que es raro. Mira lo que pasó en el Buen Fin pasado."
+   },
+   {
+    "tipo": "grafica",
+    "capitulo": null,
+    "titulo": "Buen Fin 2025: motivos de inconformidad",
+    "barras": [
+     {
+      "etiqueta": "No respetar el precio anunciado",
+      "valor": 50,
+      "texto_valor": "50"
+     },
+     {
+      "etiqueta": "Incumplimiento de promoción",
+      "valor": 49,
+      "texto_valor": "49"
+     },
+     {
+      "etiqueta": "Negativa a entregar",
+      "valor": 40,
+      "texto_valor": "40"
+     },
+     {
+      "etiqueta": "Incumplimiento de oferta",
+      "valor": 32,
+      "texto_valor": "32"
+     }
+    ],
+    "nota": "311 inconformidades en total · Profeco concilió 289 (92.9%) y recuperó $1,885,683.44",
+    "fuente": "Profeco, balance final de El Buen Fin 2025 (19-nov-2025)",
+    "voz": "En el Buen Fin pasado, Profeco recibió trescientas once inconformidades. El motivo número uno fue no respetar el precio anunciado, con cincuenta. La buena noticia, Profeco concilió doscientas ochenta y nueve. Reclamar sí funciona."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Compras en línea",
+    "voz": "Si vas a comprar en línea, esto te toca a ti. Cuatro cosas antes de pagar."
+   },
+   {
+    "tipo": "pasos",
+    "capitulo": null,
+    "titulo": "Antes de comprar en línea",
+    "pasos": [
+     {
+      "texto": "Revisa la tienda en el Monitoreo de tiendas virtuales",
+      "resultado": "De Profeco"
+     },
+     {
+      "texto": "Busca su domicilio y teléfonos para reclamar",
+      "resultado": "Art. 76 Bis"
+     },
+     {
+      "texto": "Si trae garantía, que sea de 90 días o más",
+      "resultado": "Art. 77"
+     },
+     {
+      "texto": "¿Te arrepentiste? Cancela en 5 días hábiles",
+      "resultado": "Desde que llega"
+     }
+    ],
+    "fuente": "LFPC, arts. 56, 76 Bis y 77 · Profeco, Monitoreo de tiendas virtuales: burocomercial.profeco.gob.mx/tiendasvirtuales/",
+    "voz": "Uno, revisa la tienda en el Monitoreo de tiendas virtuales de Profeco. El enlace está en la descripción. Dos, busca que te dé un domicilio y teléfonos para reclamar. Tres, si trae garantía, es de noventa días o más. Y cuatro, si te arrepientes, tienes cinco días hábiles desde que lo recibes para cancelar. El envío de regreso lo pagas tú, y hay excepciones, como algunos perecederos."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Mis 5 sí y 5 no",
+    "voz": "Hasta aquí, puros datos. Ahora va mi opinión. Cinco compras que yo no haría, y lo que sí haría en su lugar."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Mi opinión: 1 y 2",
+    "dato_grande": null,
+    "puntos": [
+     "NO: la pantalla a 18 meses con la tarjeta ya cargada",
+     "SÍ: lo que ibas a comprar igual, con el precio comparado",
+     "NO: lo que no estaba en tu lista pero \"estaba al 50%\"",
+     "SÍ: lo de tu lista, con un tope"
+    ],
+    "fuente": "Mi opinión · datos: Condusef (12-nov-2019) · Profeco (22-oct-2026)",
+    "voz": "Uno, no a la pantalla a dieciocho meses con la tarjeta ya cargada. Sí a lo que ibas a comprar igual, con el precio comparado. Dos, no a lo que no estaba en tu lista pero estaba a mitad de precio. Sí a lo de tu lista, con un tope que no rebase tu capacidad de pago mensual, como pide Profeco."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "¿Te dolió la de la pantalla? Todavía faltan tres."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Mi opinión: 3 y 4",
+    "dato_grande": null,
+    "puntos": [
+     "NO: la ropa, la cena o la fiesta a meses",
+     "SÍ: el refri que ya no enfría",
+     "NO: si tus pagos de deudas pasan del 30% de tu ingreso",
+     "SÍ: si con todo sumado sigues abajo"
+    ],
+    "fuente": "Mi opinión · datos: Condusef (12-nov-2019 y 13-nov-2025) · cálculo propio",
+    "voz": "Tres, no a la ropa, la cena o la fiesta a meses. Sí al refri que ya no enfría, porque dura. Cuatro, no a la compra que sube tus pagos de deudas a más del treinta por ciento de tu ingreso. Sí, si con todo sumado sigues abajo."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": null,
+    "voz": "Y la última es la que más me van a reclamar en los comentarios."
+   },
+   {
+    "tipo": "lamina",
+    "capitulo": null,
+    "titulo": "Mi opinión: la 5, la que duele",
+    "dato_grande": "19 de dic.",
+    "puntos": [
+     "NO: comprar a meses contando con el aguinaldo",
+     "La ley: se paga antes del 20 de diciembre",
+     "SÍ: de contado o con débito, con dinero que ya tienes"
+    ],
+    "fuente": "Mi opinión · Ley Federal del Trabajo, art. 87 · Condusef (12-nov-2019)",
+    "voz": "Cinco, no a comprar a meses contando con el aguinaldo. La Ley Federal del Trabajo dice que se paga antes del veinte de diciembre, así que te lo pueden dar hasta el diecinueve. Sí, de contado o con débito, con dinero que ya tienes. Así no comprometes tus ingresos futuros."
+   },
+   {
+    "tipo": "victoria",
+    "capitulo": "Cierre",
+    "voz": "¿Qué vas a comprar tú? Defiende tu compra en los comentarios y te digo si conviene. Y suscríbete, Capital ya lo hizo."
+   }
+  ],
+  "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
+  "publica_utc": "2026-11-12T16:00:00Z",
+  "estado": "produciendo",
+  "intercalado": true
  }
 ]
