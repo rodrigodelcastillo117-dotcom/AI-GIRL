@@ -39,6 +39,8 @@ def textos(video):
         llamado = f"PARTE {serie['numero'] + 1} MUY PRONTO: SÍGUEME"
     elif '/' in str(parte) and int(str(parte).split('/')[0]) < int(str(parte).split('/')[1]):
         llamado = f"PARTE {int(str(parte).split('/')[0]) + 1} MUY PRONTO: SÍGUEME"
+    elif video.get('llamado_cierre'):  # MUSE (12-nov-2026): un solo llamado por pieza (guardar O compartir)
+        llamado = limpio(video['llamado_cierre']).upper()
     else:
         llamado = 'COMENTA Y SÍGUEME'
     return pregunta, llamado

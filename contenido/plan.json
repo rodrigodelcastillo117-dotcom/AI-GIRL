@@ -3864,20 +3864,93 @@
    "formato": "escena",
    "escena": "calle",
    "pilar": "finanzas",
-   "estado": "verificando",
+   "estado": "programado",
    "publicar": "2026-11-12",
    "tema": "Buen Fin: 3 errores con tu tarjeta",
-   "guion": "Tres errores con tu tarjeta en el Buen Fin. Uno: creer que meses sin intereses es gratis; si te atrasas, te cobran intereses. Dos: comprar sin ver el CAT. Tres: sacar efectivo con la tarjeta; eso cobra comisión e intereses desde el primer día. Mándaselo a quien ya tiene la tarjeta lista.",
+   "guion": "Tres errores con tu tarjeta en el Buen Fin. El primero: no tomarle foto al precio hoy. Profeco encontró el mismo refri más de nueve mil pesos más caro según la tienda. El segundo: pagar a meses sin ver el total. Meses sin intereses no es lo mismo que sin costo. Revisa el CAT y cuánto pagas al final. Y el tercero: comprar sin lista. Solo compra lo de tu lista; lo demás es impulso.",
    "insertos": [
     {
-     "frase_despues": 0,
+     "frase": 2,
      "broll": "assets/broll/calle-mov-1.mp4",
-     "que": "camina con bolsas de compras (pausa, sin voz)"
+     "segundos": 3,
+     "que": "camina con sus bolsas (pausa real, sin voz)"
     }
    ],
-   "texto_pantalla": "3 errores con tu tarjeta en el Buen Fin",
+   "texto_pantalla": "3 ERRORES · $9,309 MÁS CARO",
    "mandar_a": "quien ya tiene la tarjeta lista para el Buen Fin",
-   "nota": "Cifra de Profeco ($9,309) fuera hasta verificar. Guion final después de la verificación."
+   "nota": "Cifra de Profeco ($9,309) fuera hasta verificar. Guion final después de la verificación.",
+   "hora_publicacion": "rotacion",
+   "voz": "intima",
+   "duracion": 20,
+   "locacion": "calle",
+   "subtitulos": [
+    "Tres errores con tu tarjeta en el Buen Fin.",
+    "El primero: no tomarle foto al precio hoy.",
+    "Profeco encontró el mismo refri más de nueve mil pesos más caro según la tienda.",
+    "El segundo: pagar a meses sin ver el total.",
+    "Meses sin intereses no es lo mismo que sin costo.",
+    "Revisa el CAT y cuánto pagas al final.",
+    "Y el tercero: comprar sin lista.",
+    "Solo compra lo de tu lista; lo demás es impulso."
+   ],
+   "palabras_clave": [
+    "Buen Fin",
+    "Profeco",
+    "intereses",
+    "efectivo"
+   ],
+   "foto_base_lista": {
+    "archivo": "assets/fotos/habla-calle.jpg"
+   },
+   "vestuario": "Gabardina crema y blusa negra",
+   "fuente": "Buen Fin 2026: 13 al 17 de noviembre (SAT, Sorteo El Buen Fin 2026, 14-oct-2026; Concanaco). Profeco, monitoreo previo al Buen Fin presentado el 9-nov-2026 (490 productos, 400 establecimientos): un refrigerador de 19 pies con hasta $9,309 de diferencia según la tienda (Crónica, Tiempo y Línea Directa, 9-nov-2026; precios en elbuenfin.profeco.gob.mx); no se nombran tiendas. Condusef: si no pagas a tiempo la mensualidad de MSI se vuelve deuda y genera intereses. Condusef: la disposición de efectivo cobra comisión por retiro y con frecuencia intereses desde el retiro (sin periodo de gracia). Verificado por segundo agente el 12-nov-2026.",
+   "texto_post": "Buen Fin 2026, del 13 al 17 de noviembre. Hoy es el último día para tomarle foto al precio: Profeco encontró el mismo refrigerador hasta $9,309 más caro según la tienda. Revisa el CAT y cuánto pagas al final, y compra solo lo de tu lista.\nGuárdalo para mañana. ¿Qué vas a comprar? Te leo.",
+   "pregunta_comentarios": "¿Qué vas a comprar en el Buen Fin?",
+   "guardar_para": "mañana",
+   "seo": {
+    "palabra_clave": "buen fin 2026",
+    "titulo": "Buen Fin 2026, 3 errores con tu tarjeta 💳",
+    "descripcion_inicio": "Buen Fin 2026 (13 al 17 de noviembre): 3 errores con tu tarjeta de crédito que te salen caros. Profeco encontró el mismo refrigerador más de $9,000 más caro según la tienda.",
+    "tags_concretas": [
+     "buen fin 2026",
+     "buen fin tarjeta de credito",
+     "meses sin intereses",
+     "profeco buen fin",
+     "errores en el buen fin",
+     "disposicion de efectivo tarjeta"
+    ],
+    "hashtags": [
+     "#buenfin",
+     "#buenfin2026",
+     "#profeco",
+     "#finanzaspersonales",
+     "#victoriatheceo"
+    ],
+    "parrafo": "El Buen Fin 2026 va del 13 al 17 de noviembre. Profeco detectó en su monitoreo previo que un mismo refrigerador llegó a costar más de 9 mil pesos más según la tienda. Meses sin intereses solo es sin costo si pagas a tiempo; y sacar efectivo con la tarjeta de crédito cobra comisión y suele generar intereses desde el primer día."
+   },
+   "guion_de": "MUSE (12-nov-2026), dicho casi literal. Cambio técnico: dice 'más de nueve mil pesos' en voz y el $9,309 exacto va en pantalla (las cifras largas dichas adelantan los labios ~600 ms, regla del 12-nov). Se quitó 'Por eso, tómale foto al precio hoy' (repetía la frase 2) para quedar en menos de 30 s con la pausa.",
+   "cta_unico": "guardar",
+   "llamado_cierre": "Guárdalo para mañana",
+   "archivo": "videos/video-M1-FINAL.mp4",
+   "publicacion": {
+    "hora_utc": "2026-11-12T18:51:00Z",
+    "redes": [
+     "instagram",
+     "tiktok",
+     "facebook",
+     "youtube"
+    ],
+    "youtube": "https://youtube.com/shorts/J9TViN7FCq4",
+    "playlist": "buenfin",
+    "pie": "un solo llamado (guárdalo), versión MUSE"
+   },
+   "qa": {
+    "audio": "OK (Whisper alucinó la primera frase al final con duración 0; qa_audio ya ignora eso)",
+    "labios": "OK: 15 palabras p/b/m/v, -39 ms",
+    "sync": "OK",
+    "cuadros": "misma cara y pelo; gente caminando atrás; pausa con bolsas y sonido de calle 11.0-14.0 s",
+    "costo_usd": 1.2
+   }
   },
   {
    "id": "M2",

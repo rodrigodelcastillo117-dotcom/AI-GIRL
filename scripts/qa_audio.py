@@ -13,6 +13,10 @@ from texto import normaliza
 
 
 palabras = json.load(open(sys.argv[1]))
+# Alucinación de Whisper al final (12-nov-2026, M1): repite la primera frase con palabras de duración 0 en el último
+# instante del audio (9 palabras en 0.04 s, imposible de decir). Se quitan las palabras finales de duración <= 0.02 s.
+while len(palabras) > 1 and palabras[-1]['end'] - palabras[-1]['start'] <= 0.02:
+    palabras.pop()
 dicho = normaliza(' '.join(p['w'] for p in palabras))
 esperado = normaliza(sys.argv[2])
 minimo = float(sys.argv[3]) if len(sys.argv) > 3 else 0.85
