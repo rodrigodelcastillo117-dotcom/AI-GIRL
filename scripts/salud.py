@@ -182,6 +182,35 @@ def cola():
     anotar('Cola', 'ok' if videos else 'aviso', f'{len(videos)} videos de Victoria listos para publicar')
 
 
+def ganadores():
+    """Regla "clonar al ganador" (Rodrigo, 12-nov-2026: "el 1 me encanta"): una publicación que en alguna red saca el
+    CINCO VECES la mediana de esa red (y al menos 1,000 vistas; con el doble salían videos viejos que solo acumularon) recibe 3 variantes con su misma estructura en 72 h. Las
+    variantes llevan "clon_de": "<id>" en carruseles.json o plan.json."""
+    import statistics
+    try:
+        pubs = json.load(open(os.path.join(RAIZ, 'centro', 'datos', 'estado.json')))[0].get('publicaciones') or []
+    except (OSError, ValueError, IndexError, KeyError):
+        return
+    clones = {}
+    for x in leer('carruseles.json', {}).get('carruseles', []) + leer('plan.json', {}).get('videos', []):
+        if x.get('clon_de'):
+            clones[x['clon_de']] = clones.get(x['clon_de'], 0) + 1
+    for red in ('tt', 'ig', 'yt', 'fb'):
+        valores = [p['por_red'][red] for p in pubs if p['por_red'].get(red)]
+        if len(valores) < 5:
+            continue
+        mediana = statistics.median(valores)
+        for p in pubs:
+            v = p['por_red'].get(red) or 0
+            if v >= max(1000, 5 * mediana):
+                hechos = clones.get(p['id'], 0)
+                if hechos >= 3:
+                    anotar('Ganadores', 'ok', f"{p['id']} ({REDES[red]} {v:,} vs mediana {mediana:,.0f}): ya tiene {hechos} clones")
+                else:
+                    anotar('Ganadores', 'aviso', f"{p['id']} «{p['titulo'][:50]}» saca {v:,} en {REDES[red]} (mediana {mediana:,.0f}): "
+                           f"faltan {3 - hechos} clones con su misma estructura (clon_de: \"{p['id']}\")")
+
+
 def main():
     if '--sin-red' not in sys.argv:
         llaves()
@@ -189,6 +218,7 @@ def main():
     calendario()
     largos_y_recortes()
     cola()
+    ganadores()
     peor = 'alerta' if any(c['estado'] == 'alerta' for c in checks) else 'aviso' if any(c['estado'] == 'aviso' for c in checks) else 'ok'
     salida = {'generado_utc': AHORA.strftime('%Y-%m-%dT%H:%M:%SZ'), 'estado': peor, 'checks': checks}
     with open(os.path.join(RAIZ, 'contenido', 'salud.json'), 'w') as f:

@@ -1,11 +1,11 @@
 {
- "generado_utc": "2026-11-12T03:58:14Z",
+ "generado_utc": "2026-11-12T04:52:29Z",
  "estado": "aviso",
  "checks": [
   {
    "area": "Replicate",
-   "estado": "ok",
-   "detalle": "Saldo estimado $15.54"
+   "estado": "aviso",
+   "detalle": "Saldo estimado $14.24: alcanza para ~1 video largo más."
   },
   {
    "area": "Calendario",
@@ -25,7 +25,7 @@
   {
    "area": "Videos largos",
    "estado": "aviso",
-   "detalle": "LA1: sale en 69 h y no está subido (armado): largo.py subir LA1"
+   "detalle": "LA1: sale en 68 h y no está subido (armado): largo.py subir LA1"
   },
   {
    "area": "Videos largos",
@@ -38,14 +38,24 @@
    "detalle": "LA3: sale 2026-11-20, en producción"
   },
   {
-   "area": "Videos largos",
+   "area": "Recortes",
    "estado": "aviso",
-   "detalle": "LB1: sale en 12 h y no está subido (sin armar): largo.py subir LB1"
+   "detalle": "LB1: subido sin recortes: recortes.py LB1"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LC1: sale 2026-11-22, en producción"
+  },
+  {
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LC2: sale 2026-11-26, en producción"
   },
   {
    "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "1 recortes listos sin horario: recortes.py programar"
+   "estado": "ok",
+   "detalle": "6 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
@@ -56,6 +66,11 @@
    "area": "Cola",
    "estado": "ok",
    "detalle": "4 videos de Victoria listos para publicar"
+  },
+  {
+   "area": "Ganadores",
+   "estado": "aviso",
+   "detalle": "c16 «Aguinaldo 2026 en 5 datos para guardar 🔖» saca 3,903 en TikTok (mediana 197): faltan 3 clones con su misma estructura (clon_de: \"c16\")"
   }
  ]
 }

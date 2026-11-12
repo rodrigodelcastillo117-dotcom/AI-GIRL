@@ -288,3 +288,11 @@ Reglas desde hoy (todas las piezas nuevas):
    extra, nunca en lugar del Reel.
 No se sabe por qué los carruseles de TikTok bajaron de 350-650 vistas (octubre) a ~90 (noviembre); TikTok dice que los
 seguidores y los éxitos previos no cuentan directo. Hipótesis: los de noviembre son menos útiles para mandar. Se mide.
+
+## Clonar al ganador (Rodrigo, 12-nov-2026: "el 1 me encanta… tenemos que seguir subiendo")
+
+- **Ganador** = una publicación que en alguna red saca **5 veces la mediana** de esa red y al menos **1,000 vistas**. `scripts/salud.py` lo detecta solo (área "Ganadores") y lo marca como AVISO hasta que tenga sus clones.
+- **Qué se hace**: en las siguientes 72 h salen **3 variantes con la MISMA estructura** (mismo formato, mismo número de diapositivas, mismo tipo de gancho y portada, mismo cierre), cambiando solo el tema por otro de la temporada. Cada una lleva `"clon_de": "<id del ganador>"` y pasa la segunda revisión de datos como cualquier carrusel. Van primero en `config.json → prioridad_carruseles`.
+- **Primer caso**: c16 "Aguinaldo 2026 en 5 datos para guardar" (3,903 vistas en TikTok contra una mediana de 197) → clones de Buen Fin, finiquito e ISR del aguinaldo, "en 5 datos para guardar".
+- **Si un clon también gana**, se clona el clon: la estructura que funciona se vuelve serie.
+- **Volumen**: se sigue subiendo todo (largos, recortes, carruseles). El volumen da más boletos; clonar al ganador hace que cada boleto tenga mejores probabilidades. El algoritmo decide post por post por la reacción de las primeras personas, no por insistencia.
