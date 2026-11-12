@@ -29,7 +29,8 @@ import largo as lg  # noqa: E402
 
 MAX_S = 59.0
 MIN_S = 20.0
-CUADRO_Y, LAMINA_Y = 430, 360
+CUADRO_Y, LAMINA_Y = 470, 360
+ENCUADRE = [40, 1520]  # recortar() lo cambia con largos.json → encuadre_short
 CIERRE_S = 2.2
 
 
@@ -97,9 +98,12 @@ def capitulos(largo):
 def tramo_vertical(origen, s, salida, cara_x, capitulo=None):
     """Un segmento del largo (1920x1080) en vertical 1080x1920 con fondo desenfocado."""
     if s['tipo'] == 'victoria':
-        x = max(0, min(1920 - 1080, int(1920 * cara_x - 540)))
+        # 12-nov-2026: el cuadro de 1080 centrado en la cara dejaba fuera a Capital (está a la izquierda de Victoria).
+        # Ahora se toma un cuadro más ancho que incluye a los dos (encuadre_short = [x0, ancho] en px del 1920 original;
+        # por defecto el de la foto de podcast) y se escala a 1080 de ancho.
+        x0, ancho = ENCUADRE
         filtro = (f"[0:v]split[a][b];[b]scale=-2:1920,crop=1080:1920:(iw-1080)*{cara_x:.3f}:0,boxblur=24:2,eq=brightness=-0.18[f];"
-                  f"[a]crop=1080:1080:{x}:0[c];[f][c]overlay=0:{CUADRO_Y},fps=30,format=yuv420p[v]")
+                  f"[a]crop={ancho}:ih:{x0}:0,scale=1080:-2:flags=lanczos[c];[f][c]overlay=0:{CUADRO_Y},fps=30,format=yuv420p[v]")
         ff('-i', origen, '-filter_complex', filtro, '-map', '[v]', '-map', '0:a', '-c:v', 'libx264', '-crf', '18',
            '-preset', 'medium', '-c:a', 'aac', '-ar', '44100', '-ac', '2', '-b:a', '192k', salida)
         return
@@ -150,6 +154,8 @@ def recortar(vid):
     destino = os.path.join(carpeta, 'shorts')
     os.makedirs(destino, exist_ok=True)
     cara_x = (largo.get('cara') or [0.635])[0]
+    global ENCUADRE
+    ENCUADRE = largo.get('encuadre_short') or [40, 1520]
     etiqueta = largo.get('etiqueta_shorts') or (largo['seo'].get('palabra_clave') or largo['id']).title()
     voz_py = os.environ.get('VOZ_PYTHON', '/tmp/voz/bin/python')
     registro = []

@@ -198,7 +198,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Ahora subimos el sueldo. Veinticinco mil pesos al mes, divididos entre treinta, dan unos ochocientos treinta y tres pesos diarios.",
+    "voz": "Segundo ejemplo. Veinticinco mil al mes. Entre treinta, unos ochocientos treinta y tres diarios.",
     "puente": true
    },
    {
@@ -434,7 +434,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "Tu aguinaldo no es un regalo de tu patrón, es tuyo por ley. Comenta tu sueldo y te digo cuánto te toca. Suscríbete, Capital ya lo hizo, y eso que no comparte ni su pelota."
+    "voz": "Tu aguinaldo es tuyo por ley, no es un regalo. Comenta tu sueldo y te digo cuánto te toca. Y suscríbete, Capital ya lo hizo."
    }
   ],
   "revision": "12-nov-2026: segunda revisión con fuentes oficiales (LFT vigente, últ. reforma DOF 14-05-2026, arts. 42, 76, 87, 89 y 291-F; LISR, últ. reforma DOF 01-04-2024, art. 93 fr. I y XIV; CPEUM, art. tercero transitorio de desindexación DOF 27-01-2016; Conasami, resolución DOF 09-12-2025 y tabla 2026; INEGI, comunicado 1/26; SAT, Apéndice 6 CFDI de nómina; Profedet, Preguntas frecuentes Aguinaldo nov-2025). Todas las cuentas rehechas con Decimal, sin diferencias. Cambios: intro con 'salario mínimo general todo el año' y 'al menos'; fecha límite sin causalidad falsa (el 19 es el último día por ser 'antes del 20', no por caer el 20 en domingo); plataformas digitales: el aguinaldo va incluido en cada pago (LFT 291-F), no se paga aparte; renuncia o despido: finiquito o liquidación; ISR: redacción precisa (ley dice salario mínimo elevado a 30 días, SAT aplica 30 UMA), 'se grava' en vez de 'paga impuesto', nota de la gráfica corregida para el caso de salario mínimo (exento completo por fr. I); fuentes de art. 89 acotadas al último párrafo; SEO actualizado.",
@@ -1131,7 +1131,7 @@
    {
     "tipo": "victoria",
     "capitulo": null,
-    "voz": "El otro camino es opcional y está en el artículo ciento setenta y cuatro del Reglamento.",
+    "voz": "El otro camino es opcional. Lo marca el artículo ciento setenta y cuatro del Reglamento.",
     "puente": true
    },
    {
@@ -1169,7 +1169,7 @@
    {
     "tipo": "victoria",
     "capitulo": "Revisa tu recibo de nómina",
-    "voz": "Ahora lo más útil. Tu recibo de nómina digital dice cuánto de tu aguinaldo quedó exento, cuánto gravado y cuánto impuesto te retuvieron en ese pago. Vamos a encontrarlo."
+    "voz": "Ahora lo más útil. Tu recibo de nómina dice cuánto quedó exento, cuánto gravado y cuánto impuesto te retuvieron. Vamos a encontrarlo."
    },
    {
     "tipo": "lamina",
