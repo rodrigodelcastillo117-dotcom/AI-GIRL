@@ -4086,7 +4086,7 @@
    "formato": "escena",
    "escena": "yate",
    "pilar": "finanzas",
-   "estado": "guion_listo",
+   "estado": "reintentar",
    "publicar": "2026-11-18",
    "tema": "Tu Afore puede bajarte impuestos",
    "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, puedes deducir hasta dieciocho mil al año. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
@@ -4126,10 +4126,13 @@
     "intento_1": "rechazado: en la biblioteca oscura cambió la cara y hubo cuadros borrosos",
     "audio": "OK",
     "labios": "LABIOS OK",
-    "sync": "SINCRONÍA OK",
-    "cuadros": "videos/qa/M4-cuadros.jpg (revisar a ojo)"
+    "sync": "SINCRONÍA FALLA: la boca casi no sigue a la voz (correlación 0.08, mínimo 0.1)",
+    "cuadros": "videos/qa/M4-cuadros.jpg (revisar a ojo)",
+    "intento_2": "rechazado: en el yate con copa, bebe champaña mientras habla y en 1 cuadro cambia la cara",
+    "intento_3": "rechazado: yate sin copa, en 2 de 10 cuadros el pelo se vuelve castaño y cambia la cara"
    },
-   "archivo": "videos/video-M4-FINAL.mp4"
+   "archivo": "videos/video-M4-FINAL.mp4",
+   "siguiente_intento": "Antes del 18-nov (sale ese día 13:07 MX): usar una foto hablando YA PROBADA estable (assets/fotos/habla-calle.jpg de M1 o habla-cafe-cerca.jpg de E1, con otra ropa no se puede: se usa tal cual) con la voz ya hecha videos/video-M4-voz.mp3 (no pagar voz otra vez); inserto: yate-mov-1 (2.2 s). Si vuelve a cambiar la identidad, M4 sale como Reel de texto (reel_texto) con las mismas cifras."
   }
  ]
 }
