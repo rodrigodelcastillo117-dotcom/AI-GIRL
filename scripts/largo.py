@@ -144,7 +144,9 @@ def lamina(s, capitulo, ruta, cara):
         if y > ALTO - 170:
             break
     if s.get('fuente'):
-        d.text((x0, ALTO - 110), 'Fuente: ' + s['fuente'], font=fuente('Regular', 26), fill=GRIS)
+        f, tam, rr = _renglones(d, 'Fuente: ' + s['fuente'], 'Regular', 26, ANCHO - 2 * x0 - 640, 2, 18)
+        for k, r in enumerate(rr):
+            d.text((x0, ALTO - 120 + k * (tam + 6) - (len(rr) - 1) * (tam + 6) / 2), r, font=f, fill=GRIS)
     # Victoria en un círculo, arriba a la derecha, y la firma abajo a la derecha.
     foto, mascara = cara
     borde = Image.new('RGB', (foto.width + 12, foto.height + 12), ORO)
@@ -155,6 +157,25 @@ def lamina(s, capitulo, ruta, cara):
     d.text((ANCHO - 150, ALTO - 110), '@victoriatheceo · personaje creado con IA', font=fuente('Regular', 26), fill=GRIS,
            anchor='ra')
     im.save(ruta, quality=95)
+
+
+def _renglones(d, texto, peso, tam_max, ancho, max_renglones, tam_min=22):
+    """Parte texto en renglones de hasta `ancho` px; si no cabe en max_renglones, achica la letra."""
+    for tam in range(tam_max, tam_min - 1, -2):
+        f = fuente(peso, tam)
+        renglones, actual = [], ''
+        for palabra in str(texto).split():
+            prueba = (actual + ' ' + palabra).strip()
+            if d.textlength(prueba, font=f) <= ancho or not actual:
+                actual = prueba
+            else:
+                renglones.append(actual)
+                actual = palabra
+        if actual:
+            renglones.append(actual)
+        if len(renglones) <= max_renglones:
+            return f, tam, renglones
+    return f, tam, renglones[:max_renglones]
 
 
 def _base(capitulo, s, cara):
@@ -173,7 +194,9 @@ def _base(capitulo, s, cara):
         d.text((x0, y), renglon, font=fuente('Black', 66), fill=BLANCO)
         y += 82
     if s.get('fuente'):
-        d.text((x0, ALTO - 110), 'Fuente: ' + s['fuente'], font=fuente('Regular', 26), fill=GRIS)
+        f, tam, rr = _renglones(d, 'Fuente: ' + s['fuente'], 'Regular', 26, ANCHO - 2 * x0 - 640, 2, 18)
+        for k, r in enumerate(rr):
+            d.text((x0, ALTO - 120 + k * (tam + 6) - (len(rr) - 1) * (tam + 6) / 2), r, font=f, fill=GRIS)
     foto, mascara = cara
     borde = Image.new('RGB', (foto.width + 12, foto.height + 12), ORO)
     m2 = Image.new('L', borde.size, 0)
@@ -214,7 +237,9 @@ def grafica(s, capitulo, ruta, cara):
             d.text((x_bar + largo_px - 20, y + alto_barra / 2), valor, font=f, fill=NEGRO, anchor='rm')
         y += alto_barra + 30
     if s.get('nota'):
-        d.text((x_et, y + 20), s['nota'], font=fuente('Medium', 34), fill=GRIS)
+        f, tam, rr = _renglones(d, s['nota'], 'Medium', 34, ANCHO - x_et - 150, 2, 24)
+        for k, r in enumerate(rr):
+            d.text((x_et, y + 20 + k * (tam + 8)), r, font=f, fill=GRIS)
     im.save(ruta, quality=95)
 
 
@@ -233,15 +258,16 @@ def pasos(s, capitulo, ruta, cara):
         d.ellipse((x + 30, y0 + 30, x + 100, y0 + 100), fill=ORO)
         d.text((x + 65, y0 + 65), str(i + 1), font=fuente('Black', 44), fill=NEGRO, anchor='mm')
         yy = y0 + 130
-        ancho_txt = max(12, int(ancho_caja / 21))
-        for r in textwrap.wrap(p['texto'], ancho_txt)[:4]:
-            d.text((x + 30, yy), r, font=fuente('Medium', 36), fill=BLANCO)
-            yy += 46
+        f, tam, rr = _renglones(d, p['texto'], 'Medium', 36, ancho_caja - 60, 4, 24)
+        for r in rr:
+            d.text((x + 30, yy), r, font=f, fill=BLANCO)
+            yy += tam + 10
         if p.get('resultado'):
-            f = fuente('Black', 46 if len(p['resultado']) <= 18 else 36)
-            for r in textwrap.wrap(p['resultado'], max(10, int(ancho_caja / 25)))[:2]:
-                d.text((x + 30, y0 + alto - 120 + (0 if len(p['resultado']) <= 18 else -10)), r, font=f, fill=ORO)
-                break
+            f, tam, rr = _renglones(d, p['resultado'], 'Black', 46, ancho_caja - 60, 2, 24)
+            yr = y0 + alto - 40 - len(rr) * (tam + 8)
+            for r in rr:
+                d.text((x + 30, yr), r, font=f, fill=ORO)
+                yr += tam + 8
         if i < n - 1:
             xa = x + ancho_caja + 12
             d.polygon([(xa, y0 + alto / 2 - 18), (xa + hueco - 24, y0 + alto / 2), (xa, y0 + alto / 2 + 18)], fill=ORO)
