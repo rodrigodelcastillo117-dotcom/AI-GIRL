@@ -302,8 +302,10 @@ def armar(vid):
         capitulos.insert(0, (0, 'Intro'))
     caps = '\n'.join(f'{_ts(a)} {b}' for a, b in capitulos)
     seo = largo['seo']
-    descripcion = seo['descripcion'].strip() + '\n\nCapítulos:\n' + caps + (
-        '\n\n🧮 Calcula el tuyo gratis: https://victoriatheceo.vercel.app/aguinaldo?ref=yt-largo'
+    # Las 2 primeras líneas son lo único que se ve sin abrir la descripción: ahí va el gancho y la calculadora
+    # (seo.descripcion ya empieza con ellos); luego capítulos, fuentes y, al final, los hashtags (los 3 primeros salen
+    # arriba del título).
+    descripcion = seo['descripcion'].strip().replace('\n\n', '\n\nCapítulos:\n' + caps + '\n\n', 1) + (
         '\n\nVictoria es un personaje creado con inteligencia artificial. Información general, no asesoría financiera ni legal.'
         '\n\n' + ' '.join(seo.get('hashtags', [])))
     open(os.path.join(carpeta, 'titulo.txt'), 'w').write(seo['titulo'])
@@ -314,37 +316,58 @@ def armar(vid):
 
 
 def miniatura(largo, ruta):
-    """1280x720: Victoria a la derecha (de la foto horizontal), texto enorme a la izquierda."""
-    foto = Image.open(os.path.join(RAIZ, largo['foto_horizontal'])).convert('RGB').resize((1280, 720))
-    im = foto.copy()
-    sombra = Image.new('RGB', (1280, 720), NEGRO)
-    # Sombra negra a la izquierda (donde va el texto) que se desvanece antes de llegar a Victoria.
-    degradado = Image.linear_gradient('L').rotate(-90).resize((1280, 720))  # izquierda 255 → derecha 0
-    im = Image.composite(sombra, im, degradado.point(lambda v: max(0, min(235, int((v - 90) * 1.9)))))
-    d = ImageDraw.Draw(im)
+    """Miniatura 1280x720 hecha para el clic (Rodrigo, 12-nov-2026: "una miniatura mega super TOP"):
+    Victoria con emoción fuerte a la derecha (foto propia, largos.json → miniatura.foto, con la mitad izquierda vacía),
+    a la izquierda una línea chica arriba, una cifra o frase GIGANTE y una banda de color con 2-3 palabras. Máximo ~6
+    palabras en total; contorno negro grueso para que se lea en celular; foto con más contraste y una viñeta."""
+    from PIL import ImageEnhance
     m = largo.get('miniatura', {})
-    # El texto no pasa de MAX_X (la mitad izquierda): se parte en renglones y se achica hasta que quepa.
-    MAX_X = 600
-    texto = (m.get('texto') or '').upper()
-    for tam in range(120, 60, -6):
-        f = fuente('Black', tam)
-        renglones, actual = [], ''
-        for palabra in texto.split():
-            prueba = (actual + ' ' + palabra).strip()
-            if d.textlength(prueba, font=f) <= MAX_X - 60 or not actual:
-                actual = prueba
+    foto = Image.open(os.path.join(RAIZ, m.get('foto') or largo['foto_horizontal'])).convert('RGB').resize((1280, 720))
+    foto = ImageEnhance.Contrast(ImageEnhance.Color(foto).enhance(1.18)).enhance(1.08)
+    sombra = Image.new('RGB', (1280, 720), NEGRO)
+    degradado = Image.linear_gradient('L').rotate(-90).resize((1280, 720))
+    im = Image.composite(sombra, foto, degradado.point(lambda v: max(0, min(170, int((v - 120) * 1.6)))))
+    d = ImageDraw.Draw(im)
+    colores = {'oro': ORO, 'rojo': (226, 45, 45), 'blanco': BLANCO, 'verde': (32, 190, 120), 'turquesa': (40, 200, 200)}
+    MAX_X = m.get('max_x', 640)  # hasta dónde puede llegar el texto sin tocar a Victoria
+
+    def ajustar(texto, peso, maximo, renglones_max):
+        for tam in range(maximo, 40, -4):
+            f = fuente(peso, tam)
+            renglones, actual = [], ''
+            for palabra in texto.split():
+                prueba = (actual + ' ' + palabra).strip()
+                if d.textlength(prueba, font=f) <= MAX_X - 50 or not actual:
+                    actual = prueba
+                else:
+                    renglones.append(actual)
+                    actual = palabra
+            renglones.append(actual)
+            if len(renglones) <= renglones_max and all(d.textlength(r, font=f) <= MAX_X - 50 for r in renglones):
+                return f, tam, renglones
+        return f, tam, renglones
+
+    bloques = []
+    if m.get('superior'):
+        bloques.append(('sup',) + ajustar(m['superior'].upper(), 'Black', 52, 1))
+    bloques.append(('grande',) + ajustar(m['grande'].upper(), 'Black', 190, 2))
+    if m.get('banda'):
+        bloques.append(('banda',) + ajustar(m['banda'].upper(), 'Black', 64, 1))
+    alto_total = sum(tam * 1.05 * len(r) + 28 for _, f, tam, r in bloques)
+    y = (720 - alto_total) / 2
+    for tipo, f, tam, renglones in bloques:
+        for r in renglones:
+            if tipo == 'banda':
+                ancho = d.textlength(r, font=f)
+                color = colores.get(m.get('color_banda', 'rojo'), (226, 45, 45))
+                d.rounded_rectangle((44, y - 6, 44 + ancho + 36, y + tam * 1.12), radius=12, fill=color)
+                d.text((62, y), r, font=f, fill=NEGRO if color in (ORO, BLANCO, (32, 190, 120), (40, 200, 200)) else BLANCO)
             else:
-                renglones.append(actual)
-                actual = palabra
-        renglones.append(actual)
-        if len(renglones) <= 3 and all(d.textlength(r, font=f) <= MAX_X - 60 for r in renglones):
-            break
-    y = 360 - len(renglones) * tam * 0.55
-    for r in renglones:
-        d.text((60, y), r, font=f, fill=ORO, stroke_width=4, stroke_fill=NEGRO)
-        y += tam * 1.08
-    if m.get('subtexto'):
-        d.text((64, y + 16), m['subtexto'].upper(), font=fuente('Black', 50), fill=BLANCO, stroke_width=3, stroke_fill=NEGRO)
+                color = colores.get(m.get('color_grande', 'oro'), ORO) if tipo == 'grande' else BLANCO
+                d.text((50, y + 6), r, font=f, fill=(0, 0, 0))  # sombra
+                d.text((44, y), r, font=f, fill=color, stroke_width=max(4, tam // 22), stroke_fill=NEGRO)
+            y += tam * 1.05
+        y += 28
     im.save(ruta, quality=92)
 
 
