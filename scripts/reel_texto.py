@@ -202,6 +202,12 @@ def main():
         sin_audio = os.path.join(carpeta, 'reel-texto.mp4')
         ff(*entradas, '-filter_complex', ';'.join(filtros), '-map', f'[{previo}]', '-c:v', 'libx264', '-crf', '18',
            '-preset', 'medium', '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', sin_audio)
+    # Instagram rechaza un Reel sin pista de audio (error 2207082, 12-nov-2026): se le pone una pista muda; la canción
+    # en tendencia la pone Instagram encima (ig_reel_musica.py --video reel-texto.mp4).
+    con_mudo = sin_audio.replace('.mp4', '-tmp.mp4')
+    ff('-i', sin_audio, '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100', '-map', '0:v', '-map', '1:a',
+       '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k', '-shortest', con_mudo)
+    os.replace(con_mudo, sin_audio)
     pistas = sorted(glob.glob(os.path.join(RAIZ, 'assets', 'musica', '*.mp3')))
     con_musica = os.path.join(carpeta, 'reel-texto-musica.mp4')
     if pistas:

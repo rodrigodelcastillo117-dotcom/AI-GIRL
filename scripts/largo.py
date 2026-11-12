@@ -133,6 +133,29 @@ def intercalar(vid):
     print(f'ok intercalar {vid}: {puentes} tomas nuevas de Victoria; {sin_partir} visuales seguidos que no se pudieron partir')
 
 
+def bilabiales(texto):
+    """Palabras que empiezan con p, b, m o v: qa_labios necesita al menos 4 para medir los labios (12-nov-2026)."""
+    import unicodedata
+    return sum(1 for w in re.findall(r"[\wáéíóúñü]+", texto.lower()) if w[0] in 'pbmv')
+
+
+def revisar_frases(vid):
+    """Antes de pagar tomas: frases de Victoria que qa_labios no podría medir o que traen muchas cifras dichas
+    (las frases de números largos fallaron siempre: los labios se adelantan ~600 ms)."""
+    largo, carpeta = cargar(vid)
+    malas = []
+    for i, s in enumerate(largo['segmentos']):
+        if s['tipo'] != 'victoria' or os.path.exists(ruta_seg(carpeta, s)):
+            continue
+        b = bilabiales(s['voz'])
+        cifras = len(re.findall(r'\b(mil|cientos?|cientas?|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|centavos)\b', s['voz'].lower()))
+        if b < 4 or cifras >= 3:
+            malas.append((i, b, cifras, s['voz']))
+    for i, b, cifras, voz in malas:
+        print(f'AVISO seg {i:02d}: {b} palabras con p/b/m/v (mínimo 4) y {cifras} palabras de cifras: reescríbela antes de generar → {voz[:90]}')
+    return malas
+
+
 def voces(vid):
     largo, carpeta = cargar(vid)
     vistos, lista = set(), []
@@ -150,6 +173,8 @@ def voces(vid):
 
 def victoria(vid):
     import video_replicate
+    if revisar_frases(vid) and os.environ.get('FORZAR_FRASES') != '1':
+        sys.exit(f'Antes de pagar tomas, reescribe las frases marcadas de {vid} (o corre con FORZAR_FRASES=1 si ya se revisaron).')
     largo, carpeta = cargar(vid)
     foto = os.path.join(RAIZ, largo['foto_horizontal'])
     gasto = 0
@@ -653,7 +678,7 @@ def facebook(vid, cuando=None):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir', 'migrar', 'intercalar', 'facebook'):
+    if len(sys.argv) != 3 or sys.argv[1] not in ('voces', 'victoria', 'laminas', 'armar', 'todo', 'subir', 'migrar', 'intercalar', 'facebook', 'revisar_frases'):
         sys.exit(__doc__)
     paso, vid = sys.argv[1:]
     if paso == 'todo':

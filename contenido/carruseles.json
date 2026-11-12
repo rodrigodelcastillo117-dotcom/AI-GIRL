@@ -6592,7 +6592,7 @@
    "clon_de": "c16",
    "tema": "buen_fin_datos_para_guardar",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
    "ventana": {
     "desde": "2026-11-12",
     "hasta": "2026-11-17"
@@ -6602,11 +6602,12 @@
     "Antes de usar la tarjeta, haz tu plan"
    ],
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/dinamica-cuarto-maquillaje.jpg",
     "etiqueta": "BUEN FIN 2026",
     "titulo": "Guarda esto: tu Buen Fin 2026 en 5 datos",
     "voz": "Guarda esto. Tu Buen Fin de dos mil veintiséis en cinco datos.",
-    "gancho_tipo": "guarda_esto"
+    "gancho_tipo": "guarda_esto",
+    "foto_reel": "assets/fotos/video-40-cocina.jpg"
    },
    "diapositivas": [
     {

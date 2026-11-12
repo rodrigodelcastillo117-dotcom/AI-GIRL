@@ -163,3 +163,11 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 **Capital** sigue la regla "Capital con criterio": en su casa, oficina, estudio, coche, paseos y terrazas sí (y a veces no); en el yate, la alberca, el jacuzzi, la nieve, las canchas, el golf, el estadio, el palco, el jet, el helicóptero, bares, restaurantes y viajes, no.
 
 **Ya hechas (12-nov):** lobby, café, cocina, terraza, lectura, calle, estudio, restaurante, bar, coche, yate, helipuerto, alberca, cuarto maquillándose. Lo que falta de la lista se hace con Everygen el día 23 de cada mes y cuando haya créditos.
+
+## Victoria hablando: súper mega realista (Rodrigo, 12-nov-2026: "Replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas en que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA")
+
+- **Foto base**: una escena del repertorio dinámico (assets/fotos/dinamica-*) o una nueva hecha igual: tercera persona, Victoria mirando a la cámara de frente o a tres cuartos, cara bien iluminada y nítida, de cintura o pecho para arriba, en un lugar real (su cocina, su estudio, su terraza, el café, el coche estacionado, la oficina). Nada de selfies ni de la sala roja de siempre.
+- **Lo que dice**: frases cortas y naturales, como habla una persona; al menos 4 palabras que empiecen con p, b, m o v por toma (así se revisan bien los labios) y sin cifras largas dichas en voz (las cifras van en pantalla). `largo.py victoria` ya no deja pagar tomas con frases que no cumplen.
+- **Movimiento**: el de alguien que platica: parpadea, mueve un poco la cabeza y las manos, sonríe entre frases. Nunca rígida ni exagerada.
+- **Revisión**: labios con qa_labios.py (y qa_sync.py si no se puede medir); además 6 cuadros a ojo: la cara igual en todo el clip, manos naturales, fondo sin deformarse. Si algo se ve falso, no se publica.
+- **Shorts de 15 a 30 s** (≈$0.70–1.40 cada uno en Replicate): un solo dato fuerte, gancho en el primer segundo y el texto clave en pantalla.

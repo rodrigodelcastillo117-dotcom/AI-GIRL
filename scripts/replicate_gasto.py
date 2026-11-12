@@ -86,6 +86,12 @@ def freno(barato=False):
         sys.exit('FRENO DE REPLICATE: está en pausa (config.json → replicate.pausado). No se generó nada.')
     sem, tope_s = c.get('semana_usd') or 0, cfg.get('presupuesto_semanal_usd')
     mes, tope_m = c.get('mes_usd') or 0, cfg.get('presupuesto_mensual_usd')
+    # Extra del mes que Rodrigo aprueba por escrito (config.json → replicate.extra_mes {"AAAA-MM": usd}): sube los dos topes.
+    import datetime as _dt
+    extra = (cfg.get('extra_mes') or {}).get(_dt.datetime.now().strftime('%Y-%m'), 0)
+    if extra:  # con extra aprobado manda el tope del mes (la semana ya se pasó por el arranque)
+        tope_s = None
+        tope_m = (tope_m or 0) + extra
     # barato=True (voz de Victoria, imágenes de fondo: centavos) solo se frena en el tope del MES; lo caro (videos de
     # Victoria hablando, ~$0.045 por segundo) en el de la semana o el del mes.
     if (not barato and tope_s and sem >= tope_s) or (tope_m and mes >= tope_m):
