@@ -594,6 +594,13 @@
     "vence": "2026-12-13",
     "texto": "Rodrigo, 13-nov-2026: \"Sí, 1 por semana, tope $20/mes\" (largo de pensión en YouTube)",
     "para": "1 video largo de pensión/retiro por semana para YouTube y Facebook (8-15 min, de usted, fecha límite, fuentes en pantalla); se mide en suscriptores netos · Incluye las fotos de sus escenarios de confianza (Rodrigo, 13-nov-2026: \"Del largo de pensión ($20)\"): oficina, home office y mesa de estados de cuenta, ~$0.04 c/u."
+   },
+   "lora-victoria": {
+    "fecha": "2026-11-13",
+    "tope_usd": 5,
+    "gastado_usd": 0,
+    "texto": "Rodrigo, 13-nov-2026: \"Sí, tope $5 USD\" (entrenar un modelo propio con la cara de Victoria) tras \"déjalo perfecto, siempre, siempre siempre igual\"",
+    "para": "Entrenar una vez un LoRA de identidad de Victoria con 15-25 fotos aprobadas y 4 pruebas contra la hoja maestra; solo se vuelve oficial si la cara sale igual"
    }
   },
   "extra_mes": {
