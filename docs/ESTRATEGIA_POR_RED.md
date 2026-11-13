@@ -99,6 +99,23 @@ TikTok (lo revisa Rodrigo en la app y manda captura). No se toma: 30 % relacione
 parejas 83 vistas, vacaciones 91; YouTube es 55+ de pensión), casos "reales" que no podamos verificar (solo hipotéticos
 dichos en pantalla), A/B de miniaturas (Rodrigo dijo no a Test & Compare el 13-nov).
 
+## Reparto de temas por red (hipótesis 13-nov; se revisa el 15-dic con seguidores por 1,000 vistas)
+Promesa del canal: "el dinero que ganas, recibes, gastas y necesitas para vivir" (pensión, sueldo, derechos laborales,
+bancos, deudas, decisiones de familia; todo bajo esa promesa, nada fuera).
+| Tema | YouTube y Facebook | TikTok e Instagram |
+|---|---|---|
+| Pensión, IMSS, Afore, retiro | 40 % | 10 % (ángulo "si tus papás cobran pensión") |
+| Sueldos, aguinaldo, finiquito, derechos laborales | 30 % | 50 % |
+| Ahorro, deudas, cuentas del día a día | 20 % | 30 % |
+| Pruebas (pareja y dinero, negocio) | 10 % | 10 % |
+Nota honesta: parejas (83) y vacaciones (91) fueron UN post cada uno y de carruseles no hay retención ni impresiones;
+son señal débil, no prueba de que el tema no sirva. Por eso quedan en el 10 % de pruebas, no fuera.
+Se mantienen fijos temas y series 2-4 semanas; se ajustan cada semana primer segundo, duración y presentación.
+Modelo de primer segundo por red (pensión hipotética de $12,000, dicho como hipotética): TikTok "Te jubilaste y
+recibes $12,000 al mes. ¿Qué sacrificas primero?" · Instagram "Si tus papás viven de su pensión, vale la pena hacer
+esta cuenta" · YouTube "¿Alcanza una pensión de $12,000 para vivir en México?" · Facebook "Después de toda una vida
+trabajando, llega una pregunta difícil: ¿para cuánto alcanza la pensión?"
+
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
 miniaturas, mezclar información con préstamos o asesorías de pago, consejos de inversión.
