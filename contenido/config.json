@@ -384,6 +384,35 @@
    "titulo": "Buen Fin 2026: compra sin caer en trampas",
    "descripcion": "Cómo saber si una oferta del Buen Fin es real, tus derechos como consumidor y cuándo sí conviene comprar a meses. Con datos de Profeco y Condusef.",
    "id": "PLdJwa3uya_5Q"
+  },
+  "largos": {
+   "titulo": "Videos completos: tu dinero explicado a fondo",
+   "descripcion": "Los videos largos de Victoria: aguinaldo, ISR, salario mínimo, tarjetas, Buen Fin y pensión, explicados paso a paso con fuente oficial. Victoria es un personaje creado con IA. Información general, no asesoría personalizada.",
+   "id": "PLdBt0pCal-xA"
+  },
+  "shorts": {
+   "titulo": "Shorts: datos de dinero en menos de un minuto",
+   "descripcion": "Todos los shorts de Victoria en orden: aguinaldo, sueldo, tarjetas, ahorro y más, cada dato con su fuente. Victoria es un personaje creado con IA."
+  },
+  "pension": {
+   "titulo": "Pensión IMSS, Afore y retiro: explicado claro",
+   "descripcion": "Pensión IMSS (Ley 73 y Ley 97), Afore, Modalidad 40, semanas cotizadas y Pensión Bienestar: qué le toca, cuándo y cómo, con fuente oficial (IMSS, CONSAR, Bienestar). Victoria es un personaje creado con IA.",
+   "id": "PLBI9Hn6R9njI"
+  },
+  "verifica": {
+   "titulo": "Victoria verifica: ¿verdad o rumor?",
+   "descripcion": "Los rumores de dinero que circulan por WhatsApp y redes, revisados contra la fuente oficial: verdad, rumor o no verificado. Victoria es un personaje creado con IA.",
+   "id": "PLKlEkmzph1mo"
+  },
+  "sueldo": {
+   "titulo": "Tu sueldo y tus derechos laborales",
+   "descripcion": "Salario mínimo 2026, recibo de nómina, vacaciones, finiquito y liquidación: lo que dice la Ley Federal del Trabajo, en cuentas claras. Victoria es un personaje creado con IA.",
+   "id": "PLOcQx6rKIz-U"
+  },
+  "no_me_pagaron": {
+   "titulo": "No me pagaron el aguinaldo: qué hacer paso a paso",
+   "descripcion": "Serie completa: revisa tu recibo, pídelo por escrito, asesoría gratis en PROFEDET, conciliación obligatoria, plazos y multas. Con la Ley Federal del Trabajo. Victoria es un personaje creado con IA.",
+   "id": "PLMbkJnbVHjjo"
   }
  },
  "productos_hotmart": {

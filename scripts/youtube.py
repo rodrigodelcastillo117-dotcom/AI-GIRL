@@ -166,6 +166,11 @@ def main():
         return
     if sys.argv[1] == 'playlist' and len(sys.argv) == 4:
         print('ok lista', a_playlist(token(), sys.argv[2], sys.argv[3]))
+        try:  # además a sus listas de formato y de serie (listas_youtube.py, 13-nov-2026): largos/shorts, pensión, verifica…
+            import listas_youtube
+            listas_youtube.llenar(listas_youtube.videos([sys.argv[2]]))
+        except SystemExit as e:
+            print('listas extra:', str(e)[:160])
         return
     if sys.argv[1] != 'subir' or len(sys.argv) < 6:
         sys.exit(__doc__)
