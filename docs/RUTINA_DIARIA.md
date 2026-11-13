@@ -36,7 +36,10 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - LUNES: producir el largo de pensión de la semana (REPLICATE_AUTORIZACION=largo-pension, tope $20/mes) y programarlo
   el MIÉRCOLES 18:00 en YouTube y Facebook, con 2-3 shorts de avance ("el video completo está en el canal").
 - MIÉRCOLES: sketch de TikTok de la semana (REPLICATE_AUTORIZACION=sketch-tiktok, tope $8/mes; ver ESTRATEGIA_POR_RED).
-- Métrica del resumen diario: seguidores/suscriptores NETOS por red (contenido/seguidores.json), antes que vistas.
+- Mismo tema, PRIMERA LÍNEA distinta por red (no el mismo texto de arranque en las cuatro): TikTok = conflicto
+  ("Gana $X y no le alcanza: te explico"), Instagram = identificación ("Si te pasa esto con tu aguinaldo…"),
+  YouTube = pregunta ("¿Cuánto le toca de aguinaldo si cobra pensión?"), Facebook = historia corta con consecuencia.
+- Métrica del resumen diario: seguidores/suscriptores NETOS por red y SEGUIDORES POR CADA 1,000 VISTAS de la semana (contenido/seguidores.json), antes que vistas.
 
 ## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también
 en Facebook"). Mismo volumen de siempre; esto cambia QUÉ va primero, no cuánto se publica.

@@ -91,6 +91,14 @@ muchos hashtags y el "engagement bait" ("escribe SÍ", "comenta AMÉN").
    crea grupos).
 5. Nunca: nombres o logos que parezcan del gobierno, calendarios "tentativos" como si fueran oficiales, "ALERTA MÁXIMA".
 
+## Contraste con el informe de ChatGPT que trajo Rodrigo (13-nov)
+Se toma: (1) mismo tema, PRIMER SEGUNDO distinto por red (TikTok conflicto, Instagram identificación, YouTube pregunta,
+Facebook historia); (2) "¿Quién tiene razón?" (debate de dinero) como UNA prueba dentro del sketch semanal, serie solo
+si gana en seguidores; (3) métrica "seguidores por cada 1,000 vistas" por red y semana; (4) Creator Search Insights de
+TikTok (lo revisa Rodrigo en la app y manda captura). No se toma: 30 % relaciones / 30 % negocios (nuestros datos:
+parejas 83 vistas, vacaciones 91; YouTube es 55+ de pensión), casos "reales" que no podamos verificar (solo hipotéticos
+dichos en pantalla), A/B de miniaturas (Rodrigo dijo no a Test & Compare el 13-nov).
+
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
 miniaturas, mezclar información con préstamos o asesorías de pago, consejos de inversión.
