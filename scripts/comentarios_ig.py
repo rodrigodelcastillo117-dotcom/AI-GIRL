@@ -31,6 +31,18 @@ IG_USUARIO = '17841478105608541'  # @victoriatheceo (Instagram business, comprob
 YO = 'victoriatheceo'
 
 
+def _propias():
+    """Cuentas de Rodrigo (config.json → cuentas_propias, 13-nov-2026): no cuentan como interacción ni reciben GUÍA."""
+    try:
+        conf = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'contenido', 'config.json')))
+        return {u.lower().lstrip('@') for u in conf.get('cuentas_propias', [])} - {YO}
+    except (OSError, ValueError):
+        return set()
+
+
+PROPIAS = _propias()
+
+
 def _http(metodo, ruta, datos=None):
     cuerpo = urllib.parse.urlencode(datos).encode() if datos else None
     req = urllib.request.Request(f'{GRAPH}/{ruta}', data=cuerpo, method=metodo)
@@ -53,6 +65,7 @@ def pendientes(publicaciones=25):
             if any(r.get('username') == YO for r in (c.get('replies') or {}).get('data', [])):
                 continue
             salida.append({'id': c['id'], 'post': m.get('permalink'), 'autor': c.get('username'),
+                           'propia': (c.get('username') or '').lower() in PROPIAS,
                            'fecha': c.get('timestamp'), 'texto': c.get('text'),
                            'post_inicio': (m.get('caption') or '').split('\n')[0][:80]})
     return salida
@@ -184,7 +197,7 @@ def guias():
     for m in media.get('data', []):
         for c in (m.get('comments') or {}).get('data', []):
             texto = (c.get('text') or '').lower().replace('í', 'i')
-            if c.get('username') == YO or c['id'] in ya:
+            if c.get('username') == YO or c['id'] in ya or (c.get('username') or '').lower() in PROPIAS:
                 continue
             numeros = None if pide_enlace(texto) else cuentas_de(c.get('text'), m.get('caption'))
             if numeros is None and not pide_enlace(texto):
@@ -262,7 +275,11 @@ def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     if sys.argv[1] == 'pendientes':
-        print(json.dumps(pendientes(), ensure_ascii=False, indent=1))
+        todos = pendientes()
+        print(json.dumps([c for c in todos if not c['propia']], ensure_ascii=False, indent=1))
+        propias = [c for c in todos if c['propia']]
+        if propias:  # se reportan aparte: no son interacción real
+            print(f"\n# Cuentas propias (no cuentan): {len(propias)} — " + ', '.join(sorted({'@' + c['autor'] for c in propias})))
     elif sys.argv[1] == 'responder' and len(sys.argv) == 4:
         print('ok', responder(sys.argv[2], sys.argv[3]))
     elif sys.argv[1] == 'privado' and len(sys.argv) == 4:

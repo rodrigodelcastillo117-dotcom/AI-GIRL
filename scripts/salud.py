@@ -179,6 +179,33 @@ def calendario():
     return cuenta
 
 
+def serie_primero():
+    """SERIE PRIMERO (13-nov-2026): el primer TikTok de cada día, desde config.json → reservar_primer_lugar_tiktok.desde,
+    es la siguiente parte de la serie vigente. Revisa hoy, mañana y pasado."""
+    regla = leer('config.json', {}).get('reservar_primer_lugar_tiktok') or {}
+    if not regla.get('serie'):
+        return
+    carr = leer('carruseles.json', {}).get('carruseles', [])
+    pendientes = [c['id'] for c in carr if c.get('serie') == regla['serie'] and c.get('estado') == 'listo'
+                  and not (c.get('publica_utc_por_red') or {}).get('tt')]
+    for i in range(3):
+        d = (AHORA.astimezone(MX) + datetime.timedelta(days=i)).date()
+        if regla.get('desde') and d.isoformat() < regla['desde']:
+            continue
+        del_dia = sorted((fecha(c['publica_utc_por_red']['tt']), c) for c in carr
+                         if fecha((c.get('publica_utc_por_red') or {}).get('tt'))
+                         and fecha(c['publica_utc_por_red']['tt']).astimezone(MX).date() == d)
+        primero = del_dia[0][1] if del_dia else None
+        if primero and primero.get('serie') == regla['serie']:
+            anotar('Serie', 'ok', f"{d}: el primer TikTok es de la serie ({primero['id']})")
+        elif not pendientes:
+            anotar('Serie', 'aviso', f"{d}: no quedan partes listas de \"{regla['serie']}\": escribe la siguiente")
+        else:
+            otro = f"el primero es {primero['id']}, no la serie" if primero else 'aún no tiene la parte de la serie'
+            anotar('Serie', 'aviso' if i < 2 else 'ok',
+                   f"{d}: {otro}; siguiente parte lista: {pendientes[0]} (prográmala como primer TikTok del día)")
+
+
 def largos_y_recortes():
     recortes = leer('recortes.json', [])
     con_recortes = {r['largo'] for r in recortes}
@@ -271,6 +298,7 @@ def main():
     saldo()
     creditos()
     calendario()
+    serie_primero()
     largos_y_recortes()
     cola()
     ganadores()
