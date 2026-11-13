@@ -633,7 +633,13 @@
   ],
   "token_meta_vence": "VENCIDO 12-nov-2026 13:00 PST (era token corto, no de 60 días)",
   "token_meta_aviso": "renovar ya: Rodrigo extiende el token en el depurador de Meta",
-  "newsletter": "pendiente: Rodrigo abre su cuenta en beehiiv.com",
+  "newsletter": "Beehiiv conectado (publicación pub_5d12…); falta la API key como secreto de red",
   "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)"
+ },
+ "beehiiv": {
+  "publicacion_id": "pub_5d125224-7063-41dc-b732-1f77d360ead7",
+  "api": "https://api.beehiiv.com/v2",
+  "llave": "secreto de red del entorno (api.beehiiv.com), nunca en el repo",
+  "plan": "prueba 14 días → Free (2,500 suscriptores)"
  }
 }
