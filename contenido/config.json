@@ -730,13 +730,11 @@
   "desde": "2026-11-14",
   "meta": "3 con gancho vs 3 sin gancho (shorts hablados formato escena)",
   "hechos": [
-   "E1",
-   "M4",
-   "O2"
+   "E1"
   ],
   "evaluar": "2026-11-26",
   "autorizacion": "shorts-escena",
   "regla": "máximo 1 de cada 3 shorts hablados; docs/GANCHOS.md → Gancho de impacto",
-  "nota": "Los 3 con gancho: E1 (ticket del café, 14-nov), M4 (sobre de la Afore en la calle, 18-nov) y O2 (regalo en la sala navideña, por programar). Comparar contra 3 shorts hablados sin gancho comparables (M1, M2, O1)."
+  "nota": "v2 (13-nov): persona que avienta algo de golpe (Rodrigo: \"una persona aventándole algo, más brusco\"). M4 y O2 retirados; rehacer con este estilo cuando haya autorización."
  }
 }

@@ -7,7 +7,7 @@ Uso:
   REPLICATE_AUTORIZACION=shorts-escena python3 scripts/gancho_impacto.py generar <id> "<acción en inglés>"
       anima el primer cuadro de videos/video-<id>.mp4 con seedance-1-pro (5 s, 1080p, ≈$0.75) → videos/video-<id>-gancho-crudo.mp4
       y deja una hoja de cuadros en videos/qa/<id>-gancho-cuadros.jpg para elegir el corte
-  python3 scripts/gancho_impacto.py armar <id> <desde_s> <hasta_s>
+  python3 scripts/gancho_impacto.py armar <id> <desde_s> <hasta_s> [<impacto_s>]   (segundo del golpe en el crudo)
       recorta el gancho, le pone el texto de pantalla y el golpe de sonido, y lo pega antes de video-<id>-FINAL.mp4
       → video-<id>-FINAL.mp4 (el original queda como video-<id>-FINAL-sin-gancho.mp4) y plan.json → gancho_impacto
 """
@@ -79,18 +79,18 @@ def generar(vid, accion):
     return p['id']
 
 
-def golpe(segundos, salida):
+def golpe(segundos, salida, en=None):
     """Silbido (ruido filtrado que sube) y golpe seco grave al final: el sonido del objeto llegando a la cámara."""
     s = max(0.4, segundos)
     ffmpeg('-f', 'lavfi', '-i', f'anoisesrc=d={s}:c=pink:a=0.6', '-f', 'lavfi', '-i', 'sine=f=55:d=0.35',
            '-filter_complex',
            f"[0]highpass=f=900,lowpass=f=6000,afade=t=in:d={s * 0.8},volume=0.55[w];"
-           f"[1]afade=t=out:st=0.05:d=0.3,volume=2.2,adelay={int((s - 0.12) * 1000)}|{int((s - 0.12) * 1000)}[g];"
+           f"[1]afade=t=out:st=0.05:d=0.3,volume=2.2,adelay={int(((en if en is not None else s - 0.12)) * 1000)}|{int(((en if en is not None else s - 0.12)) * 1000)}[g];"
            "[w][g]amix=inputs=2:duration=longest:normalize=0,aresample=48000,pan=stereo|c0=c0|c1=c0",
            '-t', f'{s + 0.25}', '-c:a', 'aac', '-b:a', '192k', salida)
 
 
-def armar(vid, desde, hasta):
+def armar(vid, desde, hasta, impacto=None):
     plan_ruta = os.path.join(RAIZ, 'contenido', 'plan.json')
     plan = json.load(open(plan_ruta))
     item = next(x for x in plan['videos'] if x['id'] == vid)
@@ -103,7 +103,7 @@ def armar(vid, desde, hasta):
     textfile = v(f'.{vid}-gancho-texto.txt')
     open(textfile, 'w').write(' '.join(palabras[:mitad]) + ('\n' + ' '.join(palabras[mitad:]) if len(palabras) > 3 else ''))
     clip, sonido = v(f'.{vid}-gancho-clip.mp4'), v(f'.{vid}-gancho.m4a')
-    golpe(dur, sonido)
+    golpe(dur, sonido, None if impacto is None else impacto - desde)
     # Mismo estilo que el título del video (mayúsculas, blanco sobre caja negra arriba): que no se note el pegado.
     dibujo = (f"drawtext=fontfile={FUENTE}:textfile={textfile}:fontsize=50:fontcolor=white:line_spacing=6:box=1:"
               "boxcolor=black@0.85:boxborderw=14:text_align=center:x=(w-text_w)/2:y=130" if palabras else 'null')
@@ -127,7 +127,7 @@ def armar(vid, desde, hasta):
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'generar':
         generar(sys.argv[2], sys.argv[3])
-    elif len(sys.argv) == 5 and sys.argv[1] == 'armar':
-        armar(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]))
+    elif len(sys.argv) in (5, 6) and sys.argv[1] == 'armar':
+        armar(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]) if len(sys.argv) == 6 else None)
     else:
         sys.exit(__doc__)
