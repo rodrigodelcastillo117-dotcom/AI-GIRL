@@ -100,8 +100,23 @@ def tarjetas_de(c):
     lista = [(sin_emoji(p.get('titulo') or c.get('titulo_post', '')), '', p.get('etiqueta'), True, SEG_GANCHO)]
     for i, d in enumerate(c.get('diapositivas') or [], start=1):
         lista.append((f"{i}. {sin_emoji(d.get('titulo', ''))}", primera_frase(d.get('texto', '')), None, False, SEG_DATO))
-    lista.append((sin_emoji(cierre.get('titulo', 'Guárdalo.')), 'Sígueme: un dato de dinero que sí sirve, cada día.', None, True, SEG_CIERRE))
+    # De usted (pensión en YouTube/Facebook, 13-nov-2026): la razón para suscribirse de pensión, no el "sígueme" de tú.
+    pie = ('Suscríbase: cuando cambien fechas o montos, se lo explico aquí.' if c.get('trato') == 'usted'
+           else 'Sígueme: un dato de dinero que sí sirve, cada día.')
+    lista.append((sin_emoji(cierre.get('titulo', 'Guárdalo.')), pie, None, True, SEG_CIERRE))
     return lista
+
+
+# Pensión, derechos laborales y fraudes solo en escenarios de confianza (PERSONAJE.md → Identidad, 13-nov-2026):
+# nada de alberca, jacuzzi, yate, vino al atardecer ni lujo.
+CONFIANZA = ('oficina', 'home-office', 'estados-de-cuenta', 'estudio', 'cafe', 'lectura', 'lobby', 'cocina', 'calle')
+PALABRAS_CONFIANZA = ('pension', 'pensión', 'imss', 'issste', 'afore', 'bienestar', 'jubil', 'retiro', 'finiquito',
+                      'liquidaci', 'despido', 'fraude', 'modalidad 40', 'semanas cotizadas')
+
+
+def es_confianza(c):
+    texto = json.dumps({k: c.get(k) for k in ('tema', 'titulo_post', 'portada', 'serie')}, ensure_ascii=False).lower()
+    return c.get('trato') == 'usted' or any(k in texto for k in PALABRAS_CONFIANZA)
 
 
 def ff(*args):
@@ -163,6 +178,9 @@ def fondo(c, lista, salida, tmp, pedidos=None):
         fuentes, uso = pedidos, None
     else:
         fuentes, uso = biblioteca()
+        if es_confianza(c):
+            fuentes = [f for f in fuentes if any(f'dinamica-{e}.' in f or f'/{e}-' in f for e in CONFIANZA)
+                       and '-alt.' not in f] or fuentes
     if not fuentes:
         p = c.get('portada') or {}
         fuentes = [os.path.join(RAIZ, p.get('foto_reel') or p.get('foto'))]

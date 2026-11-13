@@ -148,6 +148,8 @@ def metadatos(titulo, descripcion, cuando, tags=None):
         estado['privacyStatus'] = 'public'
     else:
         estado.update(privacyStatus='private', publishAt=cuando)  # YouTube lo hace público a esa hora
+    # YouTube rechaza "<" y ">" en título y descripción (invalidDescription, 13-nov-2026).
+    titulo, descripcion = (x.replace('<', '‹').replace('>', '›') for x in (titulo, descripcion))
     return {
         'snippet': {'title': titulo[:100], 'description': descripcion[:4900], 'categoryId': '27',
                     'defaultLanguage': 'es', 'defaultAudioLanguage': 'es',

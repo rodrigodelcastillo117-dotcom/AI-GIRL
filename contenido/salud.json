@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-13T12:39:14Z",
+ "generado_utc": "2026-11-13T12:55:43Z",
  "estado": "aviso",
  "checks": [
   {
@@ -35,7 +35,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-13: TikTok 5, Instagram 4, YouTube 3, Facebook 3"
+   "detalle": "2026-11-13: TikTok 5, Instagram 4, YouTube 6, Facebook 3"
   },
   {
    "area": "Calendario",
@@ -45,7 +45,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-15: TikTok 2, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: TikTok 2/3, YouTube 2/3"
+   "detalle": "2026-11-15: TikTok 3, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
   },
   {
    "area": "Videos largos",

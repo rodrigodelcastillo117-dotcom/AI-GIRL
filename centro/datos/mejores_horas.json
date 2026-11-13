@@ -82,7 +82,7 @@
  {
   "dia": "lun",
   "hora": 16,
-  "puntaje": 8.5
+  "puntaje": 9.0
  },
  {
   "dia": "lun",
@@ -182,7 +182,7 @@
  {
   "dia": "mar",
   "hora": 12,
-  "puntaje": 183.5
+  "puntaje": 186.0
  },
  {
   "dia": "mar",
@@ -202,7 +202,7 @@
  {
   "dia": "mar",
   "hora": 16,
-  "puntaje": 219.5
+  "puntaje": 220.0
  },
  {
   "dia": "mar",
@@ -212,7 +212,7 @@
  {
   "dia": "mar",
   "hora": 18,
-  "puntaje": 67.0
+  "puntaje": 68.0
  },
  {
   "dia": "mar",
@@ -222,7 +222,7 @@
  {
   "dia": "mar",
   "hora": 20,
-  "puntaje": 702.0
+  "puntaje": 350.5
  },
  {
   "dia": "mar",
@@ -292,7 +292,7 @@
  {
   "dia": "mié",
   "hora": 10,
-  "puntaje": 112.0
+  "puntaje": 155.0
  },
  {
   "dia": "mié",
@@ -302,7 +302,7 @@
  {
   "dia": "mié",
   "hora": 12,
-  "puntaje": 8.0
+  "puntaje": 9.0
  },
  {
   "dia": "mié",
@@ -322,7 +322,7 @@
  {
   "dia": "mié",
   "hora": 16,
-  "puntaje": 53.0
+  "puntaje": 54.0
  },
  {
   "dia": "mié",
@@ -337,7 +337,7 @@
  {
   "dia": "mié",
   "hora": 19,
-  "puntaje": 159.0
+  "puntaje": 159.5
  },
  {
   "dia": "mié",
@@ -347,7 +347,7 @@
  {
   "dia": "mié",
   "hora": 21,
-  "puntaje": 136.0
+  "puntaje": 138.0
  },
  {
   "dia": "mié",
@@ -407,12 +407,12 @@
  {
   "dia": "jue",
   "hora": 9,
-  "puntaje": 10.0
+  "puntaje": 10.5
  },
  {
   "dia": "jue",
   "hora": 10,
-  "puntaje": 0.0
+  "puntaje": 524.0
  },
  {
   "dia": "jue",
@@ -422,7 +422,7 @@
  {
   "dia": "jue",
   "hora": 12,
-  "puntaje": 0.0
+  "puntaje": 11.5
  },
  {
   "dia": "jue",
@@ -432,7 +432,7 @@
  {
   "dia": "jue",
   "hora": 14,
-  "puntaje": 138.0
+  "puntaje": 232.5
  },
  {
   "dia": "jue",
@@ -462,12 +462,12 @@
  {
   "dia": "jue",
   "hora": 20,
-  "puntaje": 2444.5
+  "puntaje": 2454.0
  },
  {
   "dia": "jue",
   "hora": 21,
-  "puntaje": 0.0
+  "puntaje": 84.5
  },
  {
   "dia": "jue",
@@ -772,7 +772,7 @@
  {
   "dia": "dom",
   "hora": 10,
-  "puntaje": 329.5
+  "puntaje": 332.0
  },
  {
   "dia": "dom",
@@ -782,7 +782,7 @@
  {
   "dia": "dom",
   "hora": 12,
-  "puntaje": 58.5
+  "puntaje": 59.0
  },
  {
   "dia": "dom",
@@ -802,7 +802,7 @@
  {
   "dia": "dom",
   "hora": 16,
-  "puntaje": 2022.0
+  "puntaje": 2096.5
  },
  {
   "dia": "dom",
