@@ -52,13 +52,14 @@
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
-  "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 4,
+  "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 7,
   "google/nano-banana-pro": 11,
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 1,
-  "resemble-ai/chatterbox-multilingual": 11
+  "resemble-ai/chatterbox-multilingual": 11,
+  "kwaivgi/kling-v2.5-turbo-pro": 1
  },
  "incompleto": true,
- "generado_utc": "2026-11-13T17:47:34Z",
+ "generado_utc": "2026-11-13T17:55:32Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

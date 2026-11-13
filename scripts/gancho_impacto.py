@@ -52,12 +52,14 @@ def hoja(video, salida, n=10):
         os.remove(f'{salida}-{i:02d}.png')
 
 
-def generar(vid, accion, modelo='seedance'):
+def generar(vid, accion, modelo='seedance', foto=None):
     """modelo 'veo' (Rodrigo, 13-nov: "ya hazlo perfecto"): google/veo-3.1-fast, 4 s, 1080p, con su PROPIO sonido (el agua,
     el ladrido); mucho mejor en física y en sustos que seedance. El prompt describe el SUSTO, nunca el golpe."""
+    # --foto <ruta>: la toma del gancho es OTRA composición (Rodrigo, 13-nov: persona en primer plano avienta una caja y
+    # Victoria al fondo), no el primer cuadro del video hablado.
     cuadro = v('qa', f'.{vid}-primer-cuadro.jpg')
-    ffmpeg('-i', v(f'video-{vid}.mp4'), '-frames:v', '1', '-vf', 'scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280',
-           '-q:v', '3', cuadro)
+    ffmpeg('-i', foto or v(f'video-{vid}.mp4'), '-frames:v', '1', '-vf',
+           'scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280', '-q:v', '3', cuadro)
     imagen = 'data:image/jpeg;base64,' + base64.b64encode(open(cuadro, 'rb').read()).decode()
     os.remove(cuadro)
     replicate_gasto.freno()
@@ -156,7 +158,8 @@ def armar(vid, desde, hasta, impacto=None):
 
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'generar':
-        generar(sys.argv[2], sys.argv[3], 'veo' if '--veo' in sys.argv else 'kling' if '--kling' in sys.argv else 'seedance')
+        generar(sys.argv[2], sys.argv[3], 'veo' if '--veo' in sys.argv else 'kling' if '--kling' in sys.argv else 'seedance',
+                sys.argv[sys.argv.index('--foto') + 1] if '--foto' in sys.argv else None)
     elif len(sys.argv) in (5, 6) and sys.argv[1] == 'armar':
         armar(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]) if len(sys.argv) == 6 else None)
     else:
