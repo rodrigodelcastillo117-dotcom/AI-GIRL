@@ -62,7 +62,8 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - HISTORIAS DE POSTS (13-nov, Rodrigo: "todos los posts, shorts y reels, que se hagan historias, también en Facebook"):
   scripts/historias_posts.py corre en la tarea de cada hora; cada post nuevo de IG sale como historia en IG y FB
   (tope config.json → historias_de_posts.max_por_dia = 3, aparte de Victoria Hoy). La API no da destacadas, sticker de
-  enlace ni historias de TikTok: las destacadas las arma Rodrigo con las portadas de assets/destacadas/.
+  enlace ni historias de TikTok. Destacadas CREADAS por Rodrigo el 13-nov (Aguinaldo, Sueldo, Verifica, Hoy, Pensión,
+  Guía; portadas en assets/destacadas/): cada noche la revisión de las 20:13 le manda la lista (scripts/destacadas.py).
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.
