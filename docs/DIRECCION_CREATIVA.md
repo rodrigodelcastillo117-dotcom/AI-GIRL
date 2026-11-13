@@ -139,7 +139,7 @@ clave en dorado, en el tercio inferior sin tapar la cara. Sincronizados con la v
 - **La cámara es otra persona** (tercera persona): plano medio o americano, a veces de cuerpo entero, a veces de cerca. Cambia el ángulo entre tomas.
 - **Siempre haciendo algo**: camina hacia la cámara con Capital con correa, se sienta y cruza la pierna, cocina en una cocina de lujo, toma café o espresso, brinda con vino o un coctel, lee en un sillón de piel, trabaja en la laptop riéndose, revisa el celular caminando, se acomoda el saco, acaricia a Capital, abre la puerta del coche, sube al jet.
 - **Lugar, ropa y acción van juntos** (tabla de locaciones): vino en el rooftop al atardecer con vestido, café en la terraza con blazer, cocina con ropa casual elegante.
-- **Capital siempre visible** y tranquilo; manos naturales, sin texto ni logos, nunca provocativa.
+- **Capital solo donde un perro de verdad estaría** (lista maestra abajo) y no siempre; manos naturales, sin texto ni logos, nunca provocativa.
 - Las fotos nuevas van en `assets/fotos/dinamica-<escena>.jpg` y los clips en `assets/broll/` (catalogo.json dice la acción). `reel_texto.py` mezcla acciones distintas en cada Reel.
 
 ## Capital con criterio y todo realista (Rodrigo, 12-nov-2026: "¿por qué tu perro estaría en un yate? ¿en la montaña? ¿en el estadio?… siempre lo acaricia de la misma forma… siempre realista los fondos, ropa, todo… ten criterio")
@@ -183,3 +183,50 @@ Rodrigo: "haz más escenas con movimiento real, no importa el gasto de Replicate
 - Corre con `REPLICATE_AUTORIZACION=broll-movimiento` (autorización escrita en config.json; tope $12).
 - QA: 4 cuadros por clip. Se tira si: cara distinta, manos deformes, Capital acariciado o raro, texto o logos.
 - Cuando una escena ya tiene clip con movimiento, `reel_texto.py` deja de usar la foto fija de esa escena.
+
+## LISTA MAESTRA de locaciones (13-nov-2026) — manda sobre las tablas de arriba si chocan
+
+Capital: **Sí** = puede salir (no siempre: a veces no aunque esté en casa) · **No** = nunca. Temas según la dosis de
+PERSONAJE.md → "Identidad": pensión, derechos laborales y fraudes SOLO en las marcadas "Confianza". Foto = escena ya
+generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del día 28) cuando haya créditos.
+
+| # | Lugar | Atuendo | Capital | Temas | Foto |
+|---|---|---|---|---|---|
+| 1 | Su sala / sillón (leyendo) | Suéter fino, pantalón de vestir suave | Sí (echado o dormido) | Confianza · todos | ✅ |
+| 2 | Su cocina | Blusa de seda o suéter fino, pelo recogido | Sí (mirando la comida) | Confianza · gastos, súper, ahorro | ✅ |
+| 3 | Terraza de su depa | Mañana: blazer o suéter con café · atardecer: vestido midi con vino | Sí | Confianza (mañana) · ligeros (atardecer) | ✅ |
+| 4 | Su cuarto (maquillándose / eligiendo ropa) | Bata de seda o blusa de satín | A veces (en la cama) | Ligeros, rutina, compras | ✅ |
+| 5 | Home office | Suéter fino o blusa de seda, joyería mínima | Sí (a sus pies) | Confianza · todos | — |
+| 6 | Sala de Navidad (dic) | Suéter de punto fino, pantalón de vestir | Sí (gorro de Santa) | Aguinaldo, Navidad, cuesta de enero | — |
+| 7 | Su oficina ejecutiva | Blazer entallado sobre camisola de satín (estilo B) | Sí | Confianza · todos | — (ref. estilo-b-oficina) |
+| 8 | Estudio de podcast | Blazer de color (rojo, esmeralda, camel) sobre camisola | Sí | Confianza · opinión, Victoria verifica | ✅ |
+| 9 | Mesa revisando estados de cuenta | Blusa, lentes de lectura | Sí | Confianza · deudas, tarjeta, nómina | — |
+| 10 | Junta de negocios / firma de contrato | Traje sastre | No | Negocio, finiquito, derechos laborales | — |
+| 11 | Lobby de su edificio | Traje sastre de color | Sí (con correa) | Todos | ✅ |
+| 12 | La calle de su colonia (paseando) | Jeans de tiro alto, trench o blazer camel, botines | Sí (con correa) | Todos, sueldos | ✅ |
+| 13 | Café (terraza que acepta perros) | Blazer o trench con blusa | Sí (bajo la mesa) | Confianza · todos | ✅ |
+| 14 | Coche (sin logos) | Blazer y lentes de sol | Sí (asiento de atrás) | Ligeros, gasolina, créditos de auto | ✅ |
+| 15 | Súper (comparando precios) | Jeans, suéter o blusa, chamarra ligera | No | Inflación, gastos, cuesta de enero | — |
+| 16 | Banco / cajero | Blazer y bolso sin marca | No | Bancos, IPAB, fraudes, tarjetas | — |
+| 17 | Mercado mexicano | Vestido casual o jeans con blusa | No | Inflación, precios, gasto diario | — |
+| 18 | Gimnasio / pilates | Conjunto deportivo sobrio con chamarra, sin marcas | No | Hábitos, constancia (ligeros) | — |
+| 19 | Restaurante caro | Vestido de noche o slip dress de satín con blazer en los hombros | No | Ligeros, metas, "piensa como CEO" | ✅ |
+| 20 | Bar speakeasy | Vestido de cóctel | No | Ligeros, opinión | ✅ |
+| 21 | Departamento con vista de noche | Vestido midi ajustado o pantalón de vestir con blusa de satín | A veces | Metas, opinión | — |
+| 22 | Palco de teatro | Vestido de noche negro o esmeralda, aretes largos | No | Ligeros, metas | — |
+| 23 | Palco de estadio | Blazer con jeans de diseñador o vestido de punto | No | Ligeros | — |
+| 24 | Estadio vacío, yarda 50 | Chamarra de piel o blazer, jeans, botines | No | Opinión, metas | — |
+| 25 | Yate / velero | Vestido de lino blanco o camel, lentes, sombrero de ala ancha | No | Metas, aguinaldo bien usado | ✅ |
+| 26 | Alberca infinita | Bata de seda sobre traje de una pieza elegante; de hombros arriba | No | Ligeros (nunca pensión) | ✅ |
+| 27 | Jacuzzi en rooftop | Bata de seda o traje de una pieza elegante; agua al pecho, de hombros arriba | No | Ligeros (nunca pensión) | — |
+| 28 | Helipuerto / helicóptero / hangar | Traje sastre o palazzo con blazer, lentes | No | Metas, negocio | ✅ |
+| 29 | Jet privado | Traje sastre o palazzo con blazer | No | Metas, negocio | — |
+| 30 | Aeropuerto | Pantalón palazzo, abrigo largo, maleta de mano sin marca | No | Viajes, vacaciones, meses sin intereses | — |
+| 31 | Montaña de esquí | Traje de esquí entallado blanco o negro, gogles en la cabeza | No | Ligeros, vacaciones | ✅ |
+| 32 | Cancha de tenis | Vestido de tenis blanco, gorra o banda, sin marcas | No | Ligeros, hábitos | — |
+| 33 | Campo de golf | Polo ajustado, falda plisada o pantalón blanco, visera | No | Negocio, metas | — |
+| 34 | Playa (Cancún, Tulum) | Vestido de lino o camisa larga sobre traje de una pieza; nunca bikini | No | Vacaciones, aguinaldo | — |
+| 35 | Ciudades TOP: París (trench), Nueva York (abrigo largo), Tokio (blazer y pantalón), Dubái (vestido largo de lino), Santorini (vestido blanco), Mónaco (vestido de cóctel), Aspen (abrigo y suéter), CDMX Reforma/Polanco (blazer) | según ciudad y clima | No | Metas, "piensa como CEO", dólar/tipo de cambio | — |
+
+Reglas que siguen: el lugar va con el TEMA (salario mínimo, renta o deudas nunca desde un yate); 3 de cada 4 videos
+en lujo y 1 de cada 4 en casa; nunca logos; ropa nunca se repite igual; en videos hablando, de pecho para arriba.
