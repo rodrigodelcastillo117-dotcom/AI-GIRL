@@ -26,8 +26,11 @@ from video_broll import pedir  # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODELO = 'bytedance/seedance-1-pro'
-BASE = ('Photorealistic, real-life footage, same red-haired woman as in the image, same face, same hair, same outfit, same '
-        'place, static camera. Natural hands, no morphing, no extra people, no text, no logos. Elegant, never provocative. ')
+# Rodrigo, 13-nov: "tiene que ser una PERSONA aventándole algo por atrás o adelante, más brusco": aquí sí entra otra
+# persona (solo su brazo o de espaldas), y la acción es rápida y de golpe. Nunca objetos duros ni a la cara.
+BASE = ('Photorealistic, real-life handheld footage, same red-haired woman as in the image, same face, same hair, same '
+        'outfit, same place. Abrupt, fast, sudden action with real physics and motion blur. Another person may appear only as '
+        'an arm or from behind, never their face. Natural hands, no morphing, no text, no logos. Elegant, never provocative. ')
 FUENTE = '/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf'
 
 

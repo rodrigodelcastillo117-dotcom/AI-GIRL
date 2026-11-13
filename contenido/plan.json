@@ -3785,7 +3785,9 @@
     "desde_s": 0.4,
     "hasta_s": 0.95,
     "archivo_sin_gancho": "videos/video-O2-FINAL-sin-gancho.mp4",
-    "prueba": "gancho-impacto-nov26"
+    "prueba": "gancho-impacto-nov26",
+    "rechazado": "Rodrigo, 13-nov: \"está malísimo, tiene que ser una persona aventándole algo, más brusco\"",
+    "activo": false
    }
   },
   {
@@ -3887,7 +3889,9 @@
     "desde_s": 0.2,
     "hasta_s": 0.65,
     "archivo_sin_gancho": "videos/video-E1-FINAL-sin-gancho.mp4",
-    "prueba": "gancho-impacto-nov26"
+    "prueba": "gancho-impacto-nov26",
+    "rechazado": "Rodrigo, 13-nov: \"está malísimo, tiene que ser una persona aventándole algo, más brusco\"",
+    "activo": false
    }
   },
   {
@@ -4212,7 +4216,9 @@
     "desde_s": 0.35,
     "hasta_s": 1.1,
     "archivo_sin_gancho": "videos/video-M4-FINAL-sin-gancho.mp4",
-    "prueba": "gancho-impacto-nov26"
+    "prueba": "gancho-impacto-nov26",
+    "rechazado": "Rodrigo, 13-nov: \"está malísimo, tiene que ser una persona aventándole algo, más brusco\"",
+    "activo": false
    }
   }
  ]
