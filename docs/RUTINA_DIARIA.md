@@ -42,6 +42,16 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - Mismo tema, PRIMERA LÍNEA distinta por red (no el mismo texto de arranque en las cuatro): TikTok = conflicto
   ("Gana $X y no le alcanza: te explico"), Instagram = identificación ("Si te pasa esto con tu aguinaldo…"),
   YouTube = pregunta ("¿Cuánto le toca de aguinaldo si cobra pensión?"), Facebook = historia corta con consecuencia.
+- MINIATURAS CON CANVA PRO (Rodrigo, 13-nov-2026: "usar Canva PRO para miniaturas y lo necesario"): toda miniatura
+  de video largo (y de shorts destacados) se hace en Canva: sube la foto de Victoria del escenario del video
+  (mcp Canva upload-asset-from-url con el enlace raw de GitHub), generate-design tipo youtube_thumbnail con esa foto,
+  3-4 palabras en mayúsculas, una cifra o fecha, sello CONFIRMADO/RUMOR/NO VERIFICADO solo si toca, colores de marca
+  (rojo, negro, crema, esmeralda, camel). Elige el mejor candidato, create-design-from-candidate, export PNG 1280x720,
+  revisa que la cara sea la de la hoja maestra y que el texto se lea en chico; si ninguno sirve, se usa la de largo.py.
+  Sin logos ajenos. El Brand Kit que hay en Canva parece el de Vonhaucke: no se usa para Victoria.
+- SEO (13-nov): título en la 1a línea de la descripción, tags de YouTube a 485 caracteres (seo.py), hashtags YouTube 12,
+  TikTok 10, Instagram 5, Facebook 3 (más de 15 en YouTube anula todos). Perfiles: scripts/perfiles.py y
+  contenido/perfiles.json (YouTube y Facebook por API; Instagram y TikTok los pega Rodrigo).
 - Métrica del resumen diario: seguidores/suscriptores NETOS por red y SEGUIDORES POR CADA 1,000 VISTAS de la semana (contenido/seguidores.json), antes que vistas.
 
 ## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también
