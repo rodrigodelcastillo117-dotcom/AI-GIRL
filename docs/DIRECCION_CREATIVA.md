@@ -196,11 +196,11 @@ generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del d
 | 2 | Su cocina | Blusa de seda o suéter fino, pelo recogido | Sí (mirando la comida) | Confianza · gastos, súper, ahorro | ✅ |
 | 3 | Terraza de su depa | Mañana: blazer o suéter con café · atardecer: vestido midi con vino | Sí | Confianza (mañana) · ligeros (atardecer) | ✅ |
 | 4 | Su cuarto (maquillándose / eligiendo ropa) | Bata de seda o blusa de satín | A veces (en la cama) | Ligeros, rutina, compras | ✅ |
-| 5 | Home office | Suéter fino o blusa de seda, joyería mínima | Sí (a sus pies) | Confianza · todos | — |
+| 5 | Home office | Suéter fino o blusa de seda, joyería mínima | Sí (a sus pies) | Confianza · todos | ✅ (sin Capital) |
 | 6 | Sala de Navidad (dic) | Suéter de punto fino, pantalón de vestir | Sí (gorro de Santa) | Aguinaldo, Navidad, cuesta de enero | — |
-| 7 | Su oficina ejecutiva | Blazer entallado sobre camisola de satín (estilo B) | Sí | Confianza · todos | — (ref. estilo-b-oficina) |
+| 7 | Su oficina ejecutiva | Blazer entallado sobre camisola de satín (estilo B) | Sí | Confianza · todos | ✅ |
 | 8 | Estudio de podcast | Blazer de color (rojo, esmeralda, camel) sobre camisola | Sí | Confianza · opinión, Victoria verifica | ✅ |
-| 9 | Mesa revisando estados de cuenta | Blusa, lentes de lectura | Sí | Confianza · deudas, tarjeta, nómina | — |
+| 9 | Mesa revisando estados de cuenta | Blusa, lentes de lectura | Sí | Confianza · deudas, tarjeta, nómina | ✅ |
 | 10 | Junta de negocios / firma de contrato | Traje sastre | No | Negocio, finiquito, derechos laborales | — |
 | 11 | Lobby de su edificio | Traje sastre de color | Sí (con correa) | Todos | ✅ |
 | 12 | La calle de su colonia (paseando) | Jeans de tiro alto, trench o blazer camel, botines | Sí (con correa) | Todos, sueldos | ✅ |
@@ -228,7 +228,7 @@ generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del d
 | 34 | Playa (Cancún, Tulum) | Vestido de lino o camisa larga sobre traje de una pieza; nunca bikini | No | Vacaciones, aguinaldo | — |
 | 35 | Ciudades TOP: París (trench), Nueva York (abrigo largo), Tokio (blazer y pantalón), Dubái (vestido largo de lino), Santorini (vestido blanco), Mónaco (vestido de cóctel), Aspen (abrigo y suéter), CDMX Reforma/Polanco (blazer) | según ciudad y clima | No | Metas, "piensa como CEO", dólar/tipo de cambio | — |
 
-Fotos hechas: 15 de 35 filas (16 archivos: helipuerto y helicóptero son dos fotos de la misma fila). Faltan 20.
+Fotos hechas: 18 de 35 filas (13-nov: + oficina, home office y estados de cuenta, de la autorización largo-pension). Faltan 17.
 
 Reglas que siguen (13-nov-2026, ajustadas por Rodrigo; reemplazan "3 de cada 4 en lujo"):
 - **Reparto visual (hipótesis, se mide):** 60 % casa, oficina y estudio · 25 % lujo y lifestyle · 15 % ciudad, deporte
