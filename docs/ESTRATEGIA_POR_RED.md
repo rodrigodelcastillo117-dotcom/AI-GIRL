@@ -123,7 +123,9 @@ trabajando, llega una pregunta difícil: ¿para cuánto alcanza la pensión?"
 ## Revisión semanal (domingos) — ajusta EJECUCIÓN, nunca los pilares (Rodrigo, 13-nov)
 Cuatro preguntas, por red: ¿qué series dan más seguidores por cada 1,000 vistas? ¿qué primeros segundos retienen más?
 ¿qué temas repiten resultado (no un viral aislado)? ¿qué formato funciona en esta red? Regla: ninguna serie o formato
-se declara ganador con un solo video; mínimo 3 publicaciones comparables (misma red, edad parecida). Temas, series y
+se declara ganador con un solo video; mínimo 3 publicaciones comparables (misma red, edad parecida). Desde el 16-nov,
+además, compara piezas con y sin cada rasgo de personalidad (campo `rasgos`, PERSONAJE.md → Identidad): se conserva el
+rasgo que mejore seguidores o comentarios por 1,000 vistas y se quita el que no. Temas, series y
 reparto no se tocan hasta el 15-dic.
 
 ## Qué NO se copia de la competencia
