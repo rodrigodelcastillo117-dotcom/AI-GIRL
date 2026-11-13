@@ -709,5 +709,16 @@
   "pension": "Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.",
   "otro": "Suscríbete: cada semana hago las cuentas de un sueldo real."
  },
- "youtube_max_subidas_dia": 5
+ "youtube_max_subidas_dia": 5,
+ "cuentas_propias": [
+  "victoriatheceo",
+  "rodelcast11",
+  "ruedasvalientes",
+  "guardianessalvajestv"
+ ],
+ "reservar_primer_lugar_tiktok": {
+  "serie": "Tu sueldo, tu aguinaldo",
+  "desde": "2026-11-15",
+  "nota": "Al programar días adelante, el primer carrusel de TikTok de cada día es la siguiente parte de la serie vigente (ESTRATEGIA_POR_RED); no se llena el día sin ella."
+ }
 }

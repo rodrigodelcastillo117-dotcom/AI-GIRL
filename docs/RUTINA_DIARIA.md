@@ -59,6 +59,14 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - CUOTA DE YOUTUBE (13-nov): máximo 5 subidas al día por youtube.py (config.json → youtube_max_subidas_dia); si sale
   CUOTA_RESERVADA, esa pieza se sube al día siguiente (los recortes se reintentan solos). Prioridad del día: largo >
   shorts de Victoria > recortes > carruseles en short.
+- SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
+  parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
+  de sueldos tuvo que arrancar el 15: que no vuelva a pasar.
+- CUENTAS PROPIAS (13-nov): comentarios de config.json → cuentas_propias (Rodrigo y sus otras cuentas) no cuentan
+  como interacción ni como preguntas; en el resumen se reportan aparte.
+- COMENTA HOY y YOUTUBE AJENO (13-nov): si el buscador no trae videos de México que cumplan, NO se insiste más de 3
+  búsquedas (2 días seguidos en 0). YouTube ajeno: mientras el último comentario siga "heldForReview", no se gasta
+  tiempo: solo se dejan 2-3 comentarios listos en comentar_hoy.json para que Rodrigo los pegue.
 - Métrica del resumen diario: seguidores/suscriptores NETOS por red y SEGUIDORES POR CADA 1,000 VISTAS de la semana (contenido/seguidores.json), antes que vistas.
 
 ## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también
