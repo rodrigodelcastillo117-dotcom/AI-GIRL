@@ -222,9 +222,9 @@ def textos_youtube(c, config):
     if errores:
         sys.exit(f"ERROR: el título del carrusel {c['id']} \"{s['titulo']}\" " + '; '.join(errores))
     propio = c.get('enlace') or {}
-    enlaces = [f'{e}: {u}' for e, u in ((propio.get('etiqueta'), con_ref(propio.get('url'), 'yt')),
-                                        ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
-                                        ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt'))) if u][:2]
+    enlaces = [f'{e}: {u}' for e, u in ((propio.get('etiqueta'), con_ref(propio.get('url'), f"yt-{c['id']}")),
+                                        ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), f"yt-{c['id']}")),
+                                        ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), f"yt-{c['id']}"))) if u][:2]
     post = '\n'.join(l for l in c['texto_post'].strip().splitlines() if 'enlace en mi perfil' not in l)  # en YouTube va el enlace directo
     if s['palabra_clave'].lower() not in post.split('\n')[0].lower():  # la búsqueda lee la primera línea (docs/SEO.md)
         post = s['palabra_clave'][:1].upper() + s['palabra_clave'][1:] + ': ' + post[:1].lower() + post[1:]

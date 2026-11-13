@@ -113,10 +113,10 @@ def textos(video, plan, config):
     preguntas = seo.get('preguntas') or []
     # Videos de temporada (aguinaldo, deudas...): su calculadora gratis va primero en todo.
     ll = config.get('llamados', {}).get(video.get('llamado'))
-    enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (((ll['etiqueta'], con_ref(ll['enlace'], 'yt')) if ll else ('', '')),
-                                                     ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), 'yt')),
-                                                     ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), 'yt')),
-                                                     ('Más de Victoria', con_ref(config.get('enlace_perfil'), 'yt'))) if e][:2]
+    enlaces = [f'{etiqueta}: {e}' for etiqueta, e in (((ll['etiqueta'], con_ref(ll['enlace'], f"yt-{video['id']}")) if ll else ('', '')),
+                                                     ('📥 Mis 30 reglas de la CEO, gratis', con_ref(config.get('enlace_venta'), f"yt-{video['id']}")),
+                                                     ('📊 El tablero de la CEO, mi plantilla de dinero', con_ref(config.get('enlace_producto'), f"yt-{video['id']}")),
+                                                     ('Más de Victoria', con_ref(config.get('enlace_perfil'), f"yt-{video['id']}"))) if e][:2]
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
     # YouTube: 2 líneas que se buscan, enlaces, el párrafo con variantes de la búsqueda, el post,
     # las preguntas que la gente escribe y 5 hashtags (regla 18-20). Máximo 4,900 caracteres.
@@ -148,11 +148,11 @@ def textos(video, plan, config):
         ' '.join(hashtags_para('tiktok', seo, config)), cierre,
     ] if x)[:4000]
     tags = etiquetas(seo, video['pilar'], config)
-    comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), 'yt')) if config.get('enlace_venta') else ''
+    comentario = config.get('comentario_youtube', '').format(enlace=con_ref(config.get('enlace_venta'), f"yt-{video['id']}")) if config.get('enlace_venta') else ''
     if ll:
-        comentario = ll['comentario'].format(enlace=con_ref(ll['enlace'], 'yt'))
+        comentario = ll['comentario'].format(enlace=con_ref(ll['enlace'], f"yt-{video['id']}"))
     elif puente and config.get('comentario_youtube_producto'):
-        comentario = config['comentario_youtube_producto'].format(enlace=con_ref(config['enlace_producto'], 'yt'))
+        comentario = config['comentario_youtube_producto'].format(enlace=con_ref(config['enlace_producto'], f"yt-{video['id']}"))
     return {'titulo': seo['titulo'], 'descripcion_youtube': descripcion, 'tags_youtube': ','.join(tags),
             'texto_redes': instagram, 'texto_instagram': instagram, 'texto_tiktok': tiktok, 'comentario_youtube': comentario}
 

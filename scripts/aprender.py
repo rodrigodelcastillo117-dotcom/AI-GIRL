@@ -364,9 +364,9 @@ def comentar_carruseles(carruseles_json, avisos):
             continue
         c = pendientes[item['id']]
         if c.get('enlace'):
-            texto = f"{c['enlace']['etiqueta']} 👉 {seo.con_ref(c['enlace']['url'], 'yt')}"
+            texto = f"{c['enlace']['etiqueta']} 👉 {seo.con_ref(c['enlace']['url'], f"yt-{c.get('id', '')}".rstrip('-'))}"
         else:
-            texto = config['comentario_youtube'].format(enlace=seo.con_ref(config['enlace_venta'], 'yt'))
+            texto = config['comentario_youtube'].format(enlace=seo.con_ref(config['enlace_venta'], f"yt-{c.get('id', '')}".rstrip('-')))
         try:
             c['comentario_youtube'] = youtube.comentar(acceso, item['id'], texto + '\nSi no te deja tocarlo, está en el enlace de mi canal.')
             avisos.append(f"Fija a mano el comentario con enlace del carrusel {c['id']}: https://studio.youtube.com/video/{item['id']}/comments")

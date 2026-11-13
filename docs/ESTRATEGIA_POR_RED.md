@@ -165,6 +165,21 @@ reparto no se tocan hasta el 15-dic.
 - **NO se adopta su tabla de volumen semanal** (TikTok 3 videos + 2 carruseles, etc.): bajaría TikTok de ~21 a 5 piezas
   por semana y subiría los videos con costo; Rodrigo decidió mantener el volumen. Se revisa el 15-dic con datos.
 
+## Sistema atraer → convencer → convertir (13-nov, lo trajo Rodrigo)
+Cada pieza NUEVA guarda dos campos (no se reescriben las que ya están listas):
+- `funcion`: ATRAER (TikTok, Reels, Shorts, carruseles de pregunta de alta demanda → seguidores) · CONVENCER (largos,
+  Me preguntaron, cálculos completos, Victoria verifica → audiencia que regresa) · CONVERTIR (el Kit CEO cuando de
+  verdad resuelve lo que se explicó, diciendo qué incluye y qué no → clics y ventas).
+- `vigencia`: atemporal · estacional (aguinaldo nov-dic, cuesta de enero, declaración anual, PTU) · noticia (prioridad
+  por vigencia, siempre con verificación antes).
+Ventas por PUBLICACIÓN (no solo por red): desde el 13-nov los enlaces de YouTube llevan ?ref=yt-<id de la pieza>
+(seo.py, carrusel_video.py, aprender.py) y los comentarios automáticos ?ref=yt-<id>/fb-<id>. La página pasa ese ref a
+la analítica (utm_source) y a Hotmart (src/sck): en la revisión semanal se agrupa por prefijo (yt, fb, ig-dm…) y por pieza.
+Las métricas se comparan DENTRO de cada red y tipo de pieza, nunca TikTok contra YouTube (cuentan vistas distinto).
+Tres comparables es el mínimo para empezar a mirar, no una prueba.
+Pendiente de diseño (próxima semana, solo piezas nuevas): una marca visual por sección (Hagamos cuentas, Me
+preguntaron, Victoria verifica) en la portada del carrusel y en el título del video, misma tipografía y colores.
+
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
 miniaturas, mezclar información con préstamos o asesorías de pago, consejos de inversión.
