@@ -7624,6 +7624,105 @@
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
    "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 1000.00, aguinaldo 15000.00, exento 3519.30, gravado 11480.70); datos verificados por segundo agente el 12-nov."
+  },
+  {
+   "id": "c86",
+   "estado": "borrador",
+   "tema": "victoria_verifica_pago_doble_pension_bienestar_noviembre",
+   "serie": "Victoria verifica",
+   "funcion": "convencer",
+   "vigencia": "noticia",
+   "rasgos": [
+    "verifica"
+   ],
+   "clon_de": "c70",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/rincon-lectura.jpg",
+   "ventana": {
+    "desde": "2026-11-13",
+    "hasta": "2026-11-27"
+   },
+   "portada": {
+    "foto": "assets/fotos/estilo-b-oficina-2.jpg",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "¿La Pensión Bienestar paga doble en noviembre? Lo verifiqué",
+    "voz": "¿Te llegó que la Pensión Bienestar paga doble en noviembre? Lo verifiqué.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/habla-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "El calendario oficial",
+     "texto": "Del 3 al 27 de noviembre, según la letra del primer apellido. Es el último pago bimestral de 2026. De pago doble, nada.\n\nProgramas para el Bienestar, 27-oct-2026",
+     "voz": "El calendario oficial: del tres al veintisiete de noviembre, el último pago bimestral del año. De pago doble, nada."
+    },
+    {
+     "titulo": "¿Por qué parece doble?",
+     "texto": "Son $6,400: $3,200 al mes, pagados cada dos meses. Noviembre y diciembre llegan juntos, como en cada bimestre.\n\nReglas de Operación 2026, num. 3.4 (DOF 12-feb-2026)",
+     "voz": "Son seis mil cuatrocientos pesos: noviembre y diciembre juntos, como cada bimestre."
+    },
+    {
+     "titulo": "¿Y el aguinaldo?",
+     "texto": "Las reglas 2026 dan dos apoyos económicos: la pensión y un pago de marcha, una sola vez, para su auxiliar si la persona fallece. Aguinaldo no aparece.\n\nReglas de Operación 2026, num. 3.4",
+     "voz": "¿Aguinaldo? Las reglas solo dan la pensión y un pago de marcha si la persona fallece."
+    },
+    {
+     "titulo": "Sello: RUMOR",
+     "texto": "El calendario de noviembre no anuncia pago doble, adelanto, bono ni aguinaldo. Y las reglas 2026 no incluyen aguinaldo.\n\nConsultado el 13-nov-2026",
+     "voz": "Sello: rumor. El calendario no anuncia ningún pago doble y las reglas no incluyen aguinaldo."
+    },
+    {
+     "titulo": "¿Y el aumento?",
+     "texto": "Las reglas dicen que el monto se actualiza a partir de 2027. ¿De cuánto? Aún no hay monto oficial publicado: NO VERIFICADO.\n\nReglas de Operación 2026, num. 3.4",
+     "voz": "¿El aumento? Las reglas lo marcan para dos mil veintisiete, pero el monto aún no está publicado."
+    },
+    {
+     "titulo": "Sin intermediarios",
+     "texto": "Se entrega directa y sin intermediarios, y cualquier trámite es sin costo. Si alguien te pide tu NIP o dinero para \"liberar\" un pago extra, no se lo des.\n\nReglas de Operación 2026, num. 3.5.1 y 4.1.1",
+     "voz": "Se entrega directa, sin intermediarios. Si te piden tu NIP o dinero, no se lo des."
+    },
+    {
+     "titulo": "Antes de reenviar",
+     "texto": "Revisa el calendario oficial o llama a la Línea Bienestar: 800 639 42 64, de lunes a viernes de 8 a 21 h.\n\nReglas de Operación 2026, num. 6.2",
+     "voz": "Antes de reenviar, revisa el calendario oficial o llama a la Línea Bienestar."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándaselo a quien te lo pasó por WhatsApp.",
+    "texto": "Martes y viernes verifico un dato de dinero que circula, con su fuente oficial.",
+    "voz": "Mándaselo a quien te lo pasó por WhatsApp. Martes y viernes verifico un dato."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 13-nov-2026. 1) Programas para el Bienestar, 'Listo, calendario de pagos del bimestre noviembre-diciembre de Programas para el Bienestar' (27-oct-2026): pagos del martes 3 al viernes 27 de noviembre por letra del primer apellido; 'el último pago bimestral de 2026'; los recursos permanecen disponibles en la tarjeta; Línea de Bienestar 800 639 42 64; no menciona pago doble, bono, adelanto ni aguinaldo. https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/ 2) Reglas de Operación del Programa Pensión para el Bienestar de las Personas Adultas Mayores 2026 (DOF 12-feb-2026): num. 3.4 ($3,200 mensuales pagaderos bimestralmente = $6,400 por bimestre; 'se actualizará a partir del año 2027'; apoyos: pensión mensual de entrega bimestral y pago de marcha por única ocasión al adulto auxiliar si la persona fallece); num. 3.5.1 d) (trámites 'sin costo alguno o condicionamiento'); num. 4.1.1 (entrega bimestral, directa y sin intermediarios); num. 3.6.1 i) prevé 'bimestres en los que se emitan pagos anticipados' (el calendario nov-dic 2026 no anuncia ninguno); la palabra 'aguinaldo' no aparece en las reglas; num. 6.2 (Línea de Bienestar 800 639 42 64, lunes a viernes 8:00 a 21:00, fines de semana y festivos 9:00 a 13:00). https://www.gob.mx/cms/uploads/attachment/file/1056925/ROPS_PAM_26.pdf 3) Banco del Bienestar, galería 'Calendario de pagos de la Pensión Adulto Mayor noviembre - diciembre 2026' (3-nov-2026). https://www.gob.mx/bancodelbienestar/galerias/calendario-de-pagos-de-la-pension-adulto-mayor-noviembre-diciembre-2026 Monto 2027: no publicado (el PEF 2027 seguía en discusión según prensa) -> NO VERIFICADO.",
+   "titulo_post": "Victoria verifica: ¿la Pensión Bienestar paga doble en noviembre?",
+   "texto_post": "Pago doble Pensión Bienestar en noviembre: lo verifiqué. Sello: RUMOR 🔍\nDel 3 al 27 de noviembre cae el último pago bimestral de 2026 (calendario oficial, 27-oct-2026). Son $6,400: $3,200 al mes, noviembre y diciembre juntos, como en cada bimestre (Reglas de Operación 2026). El calendario de noviembre no anuncia pago doble, adelanto, bono ni aguinaldo, y las reglas 2026 no incluyen aguinaldo. (Las reglas sí prevén \"pagos anticipados\" en algunos bimestres, pero este calendario no anuncia ninguno.)\n¿Aumento? Las reglas dicen que el monto se actualiza a partir de 2027; la cifra aún no está publicada: NO VERIFICADO.\nLa pensión se entrega directa y sin intermediarios, y cualquier trámite es sin costo: si alguien te pide tu NIP o dinero para \"liberar\" un pago extra, no se lo des. Y no tienes que ir el día del depósito: el dinero se queda en tu tarjeta.\n\n📚 Programas para el Bienestar, calendario nov-dic 2026 (27-oct-2026) · Reglas de Operación Pensión Adultos Mayores 2026, DOF 12-feb-2026 (num. 3.4, 3.5.1, 4.1.1 y 6.2) · consultado el 13-nov-2026\n📩 Mándaselo a quien te lo pasó por WhatsApp.\n\n#pensionbienestar #adultosmayores #victoriaverifica #finanzaspersonales #victoriatheceo",
+   "seo": {
+    "palabra_clave": "pago doble pensión bienestar",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "tags_concretas": [
+     "pago doble pension bienestar",
+     "pension bienestar noviembre 2026",
+     "pension bienestar aguinaldo",
+     "calendario pension bienestar noviembre",
+     "pension bienestar 6400",
+     "aumento pension bienestar 2027",
+     "pencion bienestar pago doble"
+    ],
+    "hashtags": [
+     "#pensionbienestar",
+     "#adultosmayores",
+     "#victoriaverifica",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿La Pensión Bienestar paga doble en noviembre?",
+     "¿La Pensión Bienestar da aguinaldo?",
+     "¿Cuánto es el pago de noviembre de la Pensión Bienestar?",
+     "¿Cuándo me toca cobrar la Pensión Bienestar en noviembre?"
+    ]
+   },
+   "enlace": null,
+   "revision": "13-nov-2026: borrador. Segunda revisión del mismo agente, reabriendo las fuentes: calendario de Programas para el Bienestar (27-oct-2026: 3 al 27-nov, 'último pago bimestral de 2026', sin 'doble/aguinaldo/bono/adelanto/extra', recursos permanecen en la tarjeta, 800 639 42 64) y ROP 2026 en PDF (num. 3.4 $3,200 mensuales pagaderos bimestralmente y actualización desde 2027; 3.5.1 d); 4.1.1; 6.2 horario 8 a 21 h). Correcciones: 'dos apoyos económicos' (la tabla de apoyos económicos del num. 3.4 tiene solo esos dos; 4.1.2 menciona aparte ayudas técnicas y apoyo de traslado), 'aguinaldo no aparece' en vez de 'no hay', sello acotado a lo que dice cada fuente, y nota de que las ROP prevén pagos anticipados (no anunciados para nov-dic). Fechas: 3-nov martes y 27-nov viernes (comprobado). Falta la revisión de un segundo agente y ver las diapositivas dibujadas antes de 'listo'."
   }
  ]
 }
