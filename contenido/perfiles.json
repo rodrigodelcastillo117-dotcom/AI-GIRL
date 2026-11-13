@@ -2,7 +2,48 @@
  "youtube": {
   "descripcion": "Victoria, la CEO · personaje creado con IA. Sueldos, pensiones y tu dinero en México: sin humo, con números.\n\nAquí hacemos cuentas: aguinaldo, finiquito y liquidación, ISR y SAT, salario mínimo, prestaciones de ley, pensión IMSS (Ley 73 y Ley 97), Afore, Modalidad 40, semanas cotizadas, Pensión Bienestar, deudas, tarjeta de crédito y ahorro. Cada cifra con su fuente oficial (IMSS, ISSSTE, SAT, PROFEDET, CONSAR, CONDUSEF, DOF).\n\nSecciones: Hagamos cuentas · Victoria verifica (¿verdad, rumor o no verificado?) · Me preguntaron · Victoria resuelve.\n\nCalculadoras gratis de aguinaldo, finiquito y más: https://victoriatheceo.vercel.app\n\nSuscríbete: cada vez que cambien las fechas o los montos de tu aguinaldo, tu sueldo o tu pensión, te lo explico aquí.\n\nInformación general para entender tu dinero; no es asesoría financiera, fiscal ni legal personalizada.",
   "tope_palabras": 485,
-  "palabras_clave": ["finanzas personales", "victoria the ceo", "aguinaldo 2026", "pension imss", "afore", "ley 73", "ley 97", "modalidad 40", "semanas cotizadas", "pension bienestar", "finiquito", "liquidacion", "isr", "sat", "salario minimo 2026", "prestaciones de ley", "ley federal del trabajo", "educacion financiera", "finanzas personales mexico", "como ahorrar dinero", "deudas", "tarjeta de credito", "buro de credito", "presupuesto", "calcular aguinaldo", "calcular pension imss", "jubilacion", "retiro", "uma 2026", "imss", "issste", "condusef", "profedet", "dinero", "ahorro", "sueldo", "nomina", "declaracion anual", "cuesta de enero", "dinero en mexico"]
+  "palabras_clave": [
+   "finanzas personales",
+   "victoria the ceo",
+   "aguinaldo 2026",
+   "pension imss",
+   "afore",
+   "ley 73",
+   "ley 97",
+   "modalidad 40",
+   "semanas cotizadas",
+   "pension bienestar",
+   "finiquito",
+   "liquidacion",
+   "isr",
+   "sat",
+   "salario minimo 2026",
+   "prestaciones de ley",
+   "ley federal del trabajo",
+   "educacion financiera",
+   "finanzas personales mexico",
+   "como ahorrar dinero",
+   "deudas",
+   "tarjeta de credito",
+   "buro de credito",
+   "presupuesto",
+   "calcular aguinaldo",
+   "calcular pension imss",
+   "jubilacion",
+   "retiro",
+   "uma 2026",
+   "imss",
+   "issste",
+   "condusef",
+   "profedet",
+   "dinero",
+   "ahorro",
+   "sueldo",
+   "nomina",
+   "declaracion anual",
+   "cuesta de enero",
+   "dinero en mexico"
+  ]
  },
  "facebook": {
   "acerca": "Victoria, la CEO · personaje creado con IA. Sueldos, pensiones y tu dinero en México: sin humo, con números. Aguinaldo, finiquito, ISR, pensión IMSS, Afore y más, con fuente oficial.",
@@ -13,10 +54,14 @@
   "bio": "Victoria, la CEO · personaje con IA 🤖\nSueldos, pensiones y tu dinero en México 🇲🇽\nSin humo. Con números.\n👇 Calculadoras gratis y mis 30 reglas"
  },
  "tiktok": {
-  "bio": "Victoria, la CEO · personaje con IA 🤖\nSueldos, pensiones y tu dinero en MX 🇲🇽\nSin humo. Con números 👇"
+  "bio": "Victoria, la CEO · personaje con IA 🤖\nTu dinero en México, con números 🇲🇽👇"
  },
  "enlace_bio": {
   "instagram": "https://victoriatheceo.vercel.app/?ref=ig-bio",
   "tiktok": "https://victoriatheceo.vercel.app/?ref=tt-bio"
+ },
+ "limites_bio": {
+  "instagram": 150,
+  "tiktok": 80
  }
 }

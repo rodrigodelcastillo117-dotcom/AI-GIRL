@@ -42,6 +42,7 @@ $('salir').addEventListener('click', async () => { await fetch('/api/login', {me
 async function arrancar() {
   try {
     FOTO = await pedir('/api/estado');
+    VERSION.v = FOTO.version || null;
   } catch (err) {
     if (err.acceso) { $('acceso').hidden = false; $('tablero').hidden = true; $('clave').focus(); return; }
     throw err;
@@ -51,6 +52,25 @@ async function arrancar() {
   pintar();
   vivo();
   setInterval(vivo, 60_000);
+  setInterval(foto, 2 * 60_000);
+  // El celular y las pestañas de fondo congelan los relojes: al volver a la pantalla se refresca todo de inmediato.
+  const alVolver = () => { if (document.visibilityState === 'visible') { vivo(); foto(); window.refrescarStats?.(); } };
+  document.addEventListener('visibilitychange', alVolver);
+  addEventListener('focus', alVolver);
+  addEventListener('online', alVolver);
+}
+
+// Rodrigo, 13-nov-2026: "que se actualice SOLO el dashboard, siempre, siempre, siempre, sin que yo dé Command R".
+// Cada 2 min vuelve a pedir la foto del sistema; si hay una versión nueva publicada (otro diseño o datos), recarga sola.
+const VERSION = {v: null};
+async function foto() {
+  try {
+    const nueva = await pedir('/api/estado');
+    if (VERSION.v && nueva.version && nueva.version !== VERSION.v) return location.reload();
+    VERSION.v = nueva.version || VERSION.v;
+    FOTO = nueva;
+    pintar();
+  } catch (err) { if (err.acceso) location.reload(); }
 }
 
 async function vivo() {

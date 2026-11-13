@@ -283,7 +283,7 @@ function tablaPubs() {
 // Siempre cerrado al cargar (también si el navegador restaura el estado al volver atrás).
 window.addEventListener('pageshow', () => document.querySelectorAll('details.plegable').forEach((d) => { d.open = false; }));
 // Arranca cuando panel.js ya mostró el tablero (después del acceso).
-const espera = setInterval(() => { if (!$('tablero').hidden) { clearInterval(espera); estadisticas(); } }, 300);
+const espera = setInterval(() => { if (!$('tablero').hidden) { clearInterval(espera); estadisticas(); setInterval(estadisticas, 5 * 60_000); } }, 300);
 
 // ---------- sistema (12-nov-2026: "conecta todo al dashboard. todo, todo, todo") ----------
 let SIS = null;
@@ -368,4 +368,6 @@ function pSistema() {
   $('d-sistema').textContent = mal ? `${mal} cosas por revisar` : `todo en línea · ${tareas.length} automatizaciones`;
 }
 
-const esperaSis = setInterval(() => { if (!$('tablero').hidden) { clearInterval(esperaSis); sistema(); setInterval(() => { try { pVentas(); pSistema(); } catch {} }, 60_000); } }, 300);
+const esperaSis = setInterval(() => { if (!$('tablero').hidden) { clearInterval(esperaSis); sistema(); setInterval(sistema, 2 * 60_000); setInterval(() => { try { pVentas(); pSistema(); } catch {} }, 60_000); } }, 300);
+// panel.js la llama al volver a la pantalla (celular desbloqueado, pestaña de nuevo al frente).
+window.refrescarStats = () => { if (!$('tablero').hidden) { estadisticas(); sistema(); } };

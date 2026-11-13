@@ -59,7 +59,9 @@ def facebook():
 def ver():
     print('YouTube palabras clave (', len(palabras_canal()), '):', palabras_canal())
     for red in ('instagram', 'tiktok'):
-        print(f'\n{red.upper()} (a mano):\n{P[red]["bio"]}\n({len(P[red]["bio"])} caracteres)')
+        bio, tope = P[red]['bio'], P.get('limites_bio', {}).get(red, 999)
+        largo = len(bio.encode('utf-16-le')) // 2  # las apps cuentan los emoji como 2
+        print(f'\n{red.upper()} (a mano):\n{bio}\n({largo} de {tope} caracteres{"  ← DEMASIADO LARGA" if largo > tope else ""})')
 
 
 if __name__ == '__main__':
