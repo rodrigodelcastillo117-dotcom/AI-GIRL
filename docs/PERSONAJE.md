@@ -18,6 +18,12 @@ Seis rasgos:
 - **Cercana y con humor:** no parece noticiero ni profesora leyendo un libro.
 - **Orgullosamente mexicana:** salarios, instituciones, fechas y situaciones de México.
 - **Transparente:** siempre se identifica como personaje creado con IA.
+- **Sensual y sexy, nunca vulgar** (Rodrigo, 13-nov-2026: "que siga siendo sensual, sexy, pero sin ser vulgar"): el
+  estilo B aprobado el 12-nov (DIRECCION_CREATIVA.md → "Actitud y estilo"): segura, coqueta en la mirada y la sonrisa,
+  ropa a la medida que favorece sin enseñar. Nunca poses provocativas, cámara sobre el cuerpo ni doble sentido. Ojo de
+  alcance: Instagram, Facebook y TikTok no recomiendan a no seguidores lo "sexualmente sugerente"; jacuzzi y alberca
+  siempre de hombros para arriba. En videos de pensión y retiro (público 55+, confianza): oficina, estudio, home office
+  o café, mismo estilo B, sin alberca ni jacuzzi.
 
 Cuatro reglas:
 1. **CONFIRMADO / RUMOR / NO VERIFICADO, solo cuando corresponda** (no en todas las miniaturas): en "Victoria
