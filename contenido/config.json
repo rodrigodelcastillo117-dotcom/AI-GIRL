@@ -21,7 +21,9 @@
    "21:00"
   ],
   "min_por_franja": 4,
-  "ganadoras": {},
+  "ganadoras": {
+   "yt": "17:00"
+  },
   "nota": "Cada red prueba sus 5 franjas hasta tener 4 publicaciones en cada una; entre las menos probadas va primero la más fuerte para ese día según los estudios (orden_por_dia). Gana la que rinda 20% más que la segunda; luego se usa 4 de cada 5. Las 11:00 en Instagram y TikTok las agregó Rodrigo el 31-oct (las sintió buenas): entran a la prueba como las demás. Un post cuenta en una franja si sale a 20 min o menos de ella.",
   "franjas_por_red": {
    "ig": [
