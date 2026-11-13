@@ -7,6 +7,20 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
 
 ## Identidad (Rodrigo, 13-nov-2026) — manda sobre lo de abajo si chocan
 
+**IDENTIDAD FIJA — no se cambia sin una decisión deliberada de marca de Rodrigo (13-nov-2026):**
+- Mismo rostro: estructura facial angulosa con pómulos marcados y mentón fino, ojos verdes, nariz, labios y sonrisa
+  de la hoja maestra (assets/personaje-hoja-v4-pecas.png), unos 28 años, pecas sutiles.
+- Cabello cobrizo intenso, largo y ondulado (no rubio rojizo ni castaño); el peinado puede variar con naturalidad.
+- Silueta y proporciones corporales consistentes.
+- Voz: la clonada aprobada, con su forma de hablar propia.
+- Capital: siempre el mismo Rottweiler negro y fuego, collar negro con placa dorada.
+- Elegancia y sensualidad discreta: nunca más piel para llamar la atención. Lo que la distingue es el contraste entre
+  su imagen sofisticada y su manera cercana, divertida e inteligente de hablar de dinero.
+Control: toda foto nueva se compara lado a lado contra la hoja maestra ANTES de usarse (cara, ojos, pelo, edad). Si
+se desvía, se repite con más peso de identidad o se descarta. foto_dinamica.py usa dos referencias de identidad (hoja
+maestra + estilo-b-oficina-1) desde el 13-nov, porque con una sola y fotos de muebles la cara se redondeaba.
+
+
 > **Victoria tiene una sensualidad elegante y natural.** Es una mujer atractiva, sofisticada, segura de sí misma y
 > consciente de su encanto. Su presencia llama la atención, pero su inteligencia, su criterio y su manera de explicar el
 > dinero hacen que las personas se queden. Jamás es vulgar ni utiliza insinuaciones sexuales para conseguir

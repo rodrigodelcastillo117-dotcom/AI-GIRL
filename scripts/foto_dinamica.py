@@ -25,17 +25,22 @@ def main():
     # escritorios de Vonhaucke, su empresa). Van al repo y se pasan por su enlace público de GitHub (hacer push antes).
     muebles = [sys.argv[i + 1] for i, a in enumerate(sys.argv) if a == '--mueble' and i + 1 < len(sys.argv)]
     man = json.load(open(os.path.join(RAIZ, 'assets', 'manifest.json')))
-    refs = [man['personaje']['maestra']['url']] + ([man['perro']['url']] if perro else [])
     crudo_gh = 'https://raw.githubusercontent.com/rodrigodelcastillo117-dotcom/AI-GIRL/main/'
+    # Consistencia facial (Rodrigo, 13-nov-2026): DOS referencias de identidad (hoja maestra + foto estilo B aprobada).
+    # Con una sola y varias fotos de muebles, la cara se desviaba (más redonda, más joven, pelo más claro).
+    refs = [man['personaje']['maestra']['url'], crudo_gh + 'assets/fotos/estilo-b-oficina-1.jpg'] + \
+        ([man['perro']['url']] if perro else [])
     if muebles:
         n0 = len(refs) + 1
         refs += [crudo_gh + os.path.relpath(os.path.abspath(m), RAIZ) for m in muebles]
         que += (f' The desk and chair must be EXACTLY the furniture shown in Images {n0} to {len(refs)} (same shape, '
                 'materials, colors, legs and proportions), placed naturally in the room, no logo on it.')
-    capital = ('Exactly ONE dog: the Rottweiler of Image 2, calm, nobody touching it.' if perro else
+    capital = ('Exactly ONE dog: the Rottweiler of Image 3, calm, nobody touching it.' if perro else
                'No dogs and no animals anywhere in the frame.')
     prompt = ('Candid vertical photo taken by a friend with a phone, a real moment, not posed for a studio. The red-haired '
-              'woman of Image 1 (EXACT identity: same face, green eyes, long copper-red wavy hair, subtle freckles). '
+              'woman of Images 1 and 2 (EXACT same person: same face shape with defined cheekbones and a slim jaw, same '
+              'green eyes, nose, lips and smile, same age around 28, deep copper-red long wavy hair, only subtle freckles). '
+              'Her face must match Images 1 and 2 exactly; furniture images never change her face. '
               f'{que} {capital} Real place, natural light, realistic skin with visible pores, slight natural grain, no HDR, '
               'not a render. Elegant and classy, never provocative. No text, no logos, no brand names, no watermark, no '
               'readable words anywhere.')
