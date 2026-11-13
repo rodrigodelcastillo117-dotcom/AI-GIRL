@@ -720,5 +720,9 @@
   "serie": "Tu sueldo, tu aguinaldo",
   "desde": "2026-11-15",
   "nota": "Al programar días adelante, el primer carrusel de TikTok de cada día es la siguiente parte de la serie vigente (ESTRATEGIA_POR_RED); no se llena el día sin ella."
+ },
+ "historias_de_posts": {
+  "max_por_dia": 3,
+  "nota": "scripts/historias_posts.py: cada post nuevo de IG se anuncia en historias de IG y FB (Rodrigo, 13-nov). Tope para no saturar a los seguidores; cuenta aparte de la historia de Victoria Hoy."
  }
 }

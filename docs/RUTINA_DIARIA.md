@@ -59,6 +59,10 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - CUOTA DE YOUTUBE (13-nov): máximo 5 subidas al día por youtube.py (config.json → youtube_max_subidas_dia); si sale
   CUOTA_RESERVADA, esa pieza se sube al día siguiente (los recortes se reintentan solos). Prioridad del día: largo >
   shorts de Victoria > recortes > carruseles en short.
+- HISTORIAS DE POSTS (13-nov, Rodrigo: "todos los posts, shorts y reels, que se hagan historias, también en Facebook"):
+  scripts/historias_posts.py corre en la tarea de cada hora; cada post nuevo de IG sale como historia en IG y FB
+  (tope config.json → historias_de_posts.max_por_dia = 3, aparte de Victoria Hoy). La API no da destacadas, sticker de
+  enlace ni historias de TikTok: las destacadas las arma Rodrigo con las portadas de assets/destacadas/.
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.
