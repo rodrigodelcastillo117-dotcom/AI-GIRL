@@ -249,7 +249,7 @@ def firma_tiktok(c):
         n, total = serie.get('numero'), serie.get('total')
         if n and total and n < total:
             return f'📌 Parte {n} de {total} de "{serie.get("nombre")}". La parte {n + 1} sale pronto: sígueme para no perdértela.'
-        return 'Soy Victoria, una IA que no te vende nada. Sígueme y mañana te doy el siguiente dato.'
+        return 'Soy Victoria, la CEO (personaje con IA). Sin humo, con números: sígueme y mañana te doy el siguiente dato.'
     if serie:  # series nuevas (texto), una parte por día
         hermanos = sorted((x for x in json.load(open(RUTA))['carruseles'] if x.get('serie') == serie),
                           key=lambda x: int(''.join(ch for ch in x['id'] if ch.isdigit()) or 0))
@@ -259,7 +259,7 @@ def firma_tiktok(c):
             return f'📌 Parte {n} de {len(ids)} de "{serie}". Mañana la parte {n + 1}: sígueme para no perdértela.'
         if n:
             return f'📌 Última parte de "{serie}". Sígueme: la siguiente serie empieza esta semana.'
-    return 'Soy Victoria, una IA que no te vende nada. Sígueme y mañana te doy el siguiente dato.'
+    return 'Soy Victoria, la CEO (personaje con IA). Sin humo, con números: sígueme y mañana te doy el siguiente dato.'
 
 
 def main():

@@ -25,7 +25,7 @@ el "sígueme" va DENTRO del contenido con una razón; series con la parte siguie
 contenido ("Respuesta a @"); sketches con un villano (el SAT, el banco, el jefe) le ganan 10-100× al que habla a cámara;
 fechas útiles con "guárdalo y mándalo a tu familia".
 1. **YA APLICADO (código):** texto de TikTok de cada carrusel lleva la parte de la serie y "mañana la parte N: sígueme";
-   si no es serie, la firma fija "Soy Victoria, una IA que no te vende nada. Sígueme y mañana te doy el siguiente dato."
+   si no es serie, la firma fija "Soy Victoria, la CEO (personaje con IA). Sin humo, con números: sígueme y mañana te doy el siguiente dato."
    (scripts/publer_carrusel.py → firma_tiktok). Diapositivas y forma de subir: igual (Rodrigo: no cambiar el formato).
 2. **Series siempre**: la cola de TikTok se arma en series de 4-8 partes (la de sueldos c78-c85 es la primera). Cada
    serie nueva que se escriba: mismo formato de carrusel de "Guarda esto" + datos.
@@ -100,8 +100,12 @@ parejas 83 vistas, vacaciones 91; YouTube es 55+ de pensión), casos "reales" qu
 dichos en pantalla), A/B de miniaturas (Rodrigo dijo no a Test & Compare el 13-nov).
 
 ## Reparto de temas por red (hipótesis 13-nov; se revisa el 15-dic con seguidores por 1,000 vistas)
-Promesa del canal: "el dinero que ganas, recibes, gastas y necesitas para vivir" (pensión, sueldo, derechos laborales,
+Bio corta (todas las redes, la cambia Rodrigo a mano): "Victoria, la CEO · personaje con IA 🤖 / Sueldos, pensiones y
+tu dinero en México 🇲🇽 / Sin humo. Con números." Nunca "no te vendo nada" (vendemos el Kit CEO).
+Promesa del canal (descripción de YouTube y página): "el dinero que ganas, recibes, gastas y necesitas para vivir" (pensión, sueldo, derechos laborales,
 bancos, deudas, decisiones de familia; todo bajo esa promesa, nada fuera).
+Solo YouTube tiene dato de edad (57 % de 55+, YouTube Analytics). Facebook (4 seguidores), TikTok e Instagram NO tienen
+evidencia de edad: su columna es hipótesis y se corrige con sus propios resultados.
 | Tema | YouTube y Facebook | TikTok e Instagram |
 |---|---|---|
 | Pensión, IMSS, Afore, retiro | 40 % | 10 % (ángulo "si tus papás cobran pensión") |
@@ -115,6 +119,12 @@ Modelo de primer segundo por red (pensión hipotética de $12,000, dicho como hi
 recibes $12,000 al mes. ¿Qué sacrificas primero?" · Instagram "Si tus papás viven de su pensión, vale la pena hacer
 esta cuenta" · YouTube "¿Alcanza una pensión de $12,000 para vivir en México?" · Facebook "Después de toda una vida
 trabajando, llega una pregunta difícil: ¿para cuánto alcanza la pensión?"
+
+## Revisión semanal (domingos) — ajusta EJECUCIÓN, nunca los pilares (Rodrigo, 13-nov)
+Cuatro preguntas, por red: ¿qué series dan más seguidores por cada 1,000 vistas? ¿qué primeros segundos retienen más?
+¿qué temas repiten resultado (no un viral aislado)? ¿qué formato funciona en esta red? Regla: ninguna serie o formato
+se declara ganador con un solo video; mínimo 3 publicaciones comparables (misma red, edad parecida). Temas, series y
+reparto no se tocan hasta el 15-dic.
 
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
