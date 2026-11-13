@@ -52,6 +52,13 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - SEO (13-nov): título en la 1a línea de la descripción, tags de YouTube a 485 caracteres (seo.py), hashtags YouTube 12,
   TikTok 10, Instagram 5, Facebook 3 (más de 15 en YouTube anula todos). Perfiles: scripts/perfiles.py y
   contenido/perfiles.json (YouTube y Facebook por API; Instagram y TikTok los pega Rodrigo).
+- PREGUNTAS DE LA GENTE (13-nov): la tarea de comentarios de cada hora corre sin permiso de push y no puede guardar
+  contenido/preguntas.json. La rutina diaria las recoge: lee los comentarios y mensajes de las últimas 24 h de YouTube
+  (comentarios.py) e Instagram (comentarios_ig.py, también los ya contestados) y agrega a preguntas.json las de OTRAS
+  personas que sean pregunta de dinero, duda de la ley, sueldo o profesión, sin repetir. De ahí salen "Me preguntaron".
+- CUOTA DE YOUTUBE (13-nov): máximo 5 subidas al día por youtube.py (config.json → youtube_max_subidas_dia); si sale
+  CUOTA_RESERVADA, esa pieza se sube al día siguiente (los recortes se reintentan solos). Prioridad del día: largo >
+  shorts de Victoria > recortes > carruseles en short.
 - Métrica del resumen diario: seguidores/suscriptores NETOS por red y SEGUIDORES POR CADA 1,000 VISTAS de la semana (contenido/seguidores.json), antes que vistas.
 
 ## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también

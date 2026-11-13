@@ -189,6 +189,22 @@ def main():
         print(f"OMITIDO: '{nombre}' ya tiene este video: {previo}")
         return
 
+    # Cuota de YouTube (13-nov-2026): 10,000 unidades al día (se reinician a medianoche del Pacífico); cada subida
+    # gasta ~1,650 con miniatura y lista. Con más de 5 al día no quedaba cuota para contestar comentarios cada hora.
+    # Tope de subidas por día (config.json → youtube_max_subidas_dia); lo que pase se sube al día siguiente.
+    import datetime as _dt
+    from zoneinfo import ZoneInfo
+    dia = _dt.datetime.now(ZoneInfo('America/Los_Angeles')).strftime('%Y-%m-%d')
+    ruta_cuota = os.path.join(RAIZ, 'contenido', 'youtube_cuota.json')
+    try:
+        cuota = json.load(open(ruta_cuota))
+    except (OSError, ValueError):
+        cuota = {}
+    tope = CONFIG.get('youtube_max_subidas_dia', 5)
+    if len(cuota.get(dia, [])) >= tope and '--forzar-cuota' not in sys.argv:
+        sys.exit(f'CUOTA_RESERVADA: ya van {len(cuota[dia])} subidas hoy ({dia}, hora del Pacífico); tope {tope} para dejar '
+                 'cuota a los comentarios. Se sube mañana (o --forzar-cuota si es urgente).')
+
     contenido = open(video, 'rb').read()
     cabeceras, _ = _http(
         'POST', 'https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status',
@@ -198,6 +214,9 @@ def main():
     _, cuerpo = _http('PUT', cabeceras['Location'], contenido,
                       {'Authorization': f'Bearer {acceso}', 'Content-Type': 'video/mp4'})
     subido = json.loads(cuerpo)
+    cuota.setdefault(dia, []).append(subido.get('id'))
+    json.dump({k: v for k, v in cuota.items() if k >= (_dt.date.fromisoformat(dia) - _dt.timedelta(days=7)).isoformat()},
+              open(ruta_cuota, 'w'), indent=1)
     _, cuerpo = _http('GET', f"{API}/videos?part=status,snippet&id={subido['id']}", headers={'Authorization': f'Bearer {acceso}'})
     revisado = (json.loads(cuerpo).get('items') or [{}])[0]
     estado = revisado.get('status', {})

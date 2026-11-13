@@ -705,5 +705,6 @@
  "razon_suscribirse": {
   "pension": "Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.",
   "otro": "Suscríbete: cada semana hago las cuentas de un sueldo real."
- }
+ },
+ "youtube_max_subidas_dia": 5
 }
