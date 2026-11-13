@@ -153,7 +153,7 @@ def tramo(fuente, seg, salida, k):
            '-crf', '18', '-pix_fmt', 'yuv420p', salida)
     else:
         mov = MOVS[k % len(MOVS)].replace('{n}', str(n))
-        ff('-loop', '1', '-i', fuente, '-vf', f"scale=2160:-2,crop=2160:3840,zoompan={mov}:d={n}:s=1080x1920:fps=30",
+        ff('-loop', '1', '-i', fuente, '-vf', f"scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,zoompan={mov}:d={n}:s=1080x1920:fps=30",
            '-t', f'{seg:.2f}', '-an', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', salida)
 
 
