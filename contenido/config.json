@@ -631,10 +631,11 @@
     "hace": "Instagram contra la línea base de MUSE"
    }
   ],
-  "token_meta_vence": "VENCIDO 12-nov-2026 13:00 PST (era token corto, no de 60 días)",
-  "token_meta_aviso": "renovar ya: Rodrigo extiende el token en el depurador de Meta",
+  "token_meta_vence": "2027-01-11",
+  "token_meta_aviso": "2027-01-03",
   "newsletter": "Beehiiv conectado (publicación pub_5d12…); falta la API key como secreto de red",
-  "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)"
+  "kit_hotmart": "Kit CEO subido a Hotmart el 12-nov-2026 (Edición CEO 136 págs + plantilla + código de IA)",
+  "token_meta_nota": "Renovado el 13-nov-2026 con \"Ampliar token de acceso\" (verificado: tokens de página sin vencimiento, acceso a datos hasta 2027-02-11)"
  },
  "beehiiv": {
   "publicacion_id": "pub_5d125224-7063-41dc-b732-1f77d360ead7",
