@@ -230,6 +230,12 @@ generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del d
 
 Fotos hechas: 18 de 35 filas (13-nov: + oficina, home office y estados de cuenta, de la autorización largo-pension). Faltan 17.
 
+**Muebles de Vonhaucke (empresa de Rodrigo, 13-nov-2026):** su oficina usa el escritorio ejecutivo gris y su home
+office el escritorio de nogal con patas en "A" (referencias en assets/referencias/vonhaucke/; foto_dinamica.py --mueble).
+Fotos oficiales: dinamica-oficina.jpg y dinamica-home-office.jpg (las anteriores quedan como -alt). Es escenografía: sin
+logo y sin mencionar la marca. Si algún día Victoria nombra o etiqueta a Vonhaucke, ese post se marca como publicidad
+con la herramienta de contenido de marca de cada red.
+
 Reglas que siguen (13-nov-2026, ajustadas por Rodrigo; reemplazan "3 de cada 4 en lujo"):
 - **Reparto visual (hipótesis, se mide):** 60 % casa, oficina y estudio · 25 % lujo y lifestyle · 15 % ciudad, deporte
   y viajes. Victoria vende confianza en temas de dinero cotidiano: el lujo es aspiracional, no la regla. No hace falta
