@@ -2,7 +2,7 @@
 
 Rodrigo (12-nov): "usa Canva Pro para las miniaturas, investiga cuáles son los formatos que más funcionan… las
 descripciones deben ser TOP". "Oficial" = lo dice la plataforma; "estudio" = datos de terceros; "criterio" = nuestra
-regla sin datos que la prueben (se prueba con Test & Compare).
+regla sin datos que la prueben (se prueba comparando CTR y tiempo visto entre videos; SIN Test & Compare: Rodrigo, 13-nov).
 
 ## Miniatura de video largo (YouTube)
 - **Medida** (oficial): 16:9, recomendada 3840x2160 (mínimo 640 de ancho). Exportar JPG 1920x1080 o 3840x2160;
@@ -10,7 +10,8 @@ regla sin datos que la prueben (se prueba con Test & Compare).
 - **YouTube dice** (oficial): regla de tercios, letra legible, sin saturar, "lo más grande posible" para pantallas
   chicas; título y miniatura cuentan la historia JUNTOS (la miniatura no repite el título).
 - **Test & Compare** (oficial): hasta 3 miniaturas (y desde dic-2025 también títulos). Gana la de más TIEMPO VISTO, no
-  la de más CTR; tarda días hasta ~2 semanas. Úsalo en TODO largo: 3 variantes (A, B y C de abajo).
+  la de más CTR; tarda días hasta ~2 semanas. NO SE USA (Rodrigo, 13-nov): una sola miniatura por video, la mejor de
+  las plantillas de abajo.
 - **Datos** (estudio vidIQ, 500 videos top, jun-2026): 69 % con cara (80 % en el top 50), 56 % alto contraste,
   mediana de 5 palabras de texto, solo 1 de cada 20 con cara exagerada. 1of10 (300 mil virales 2025): en Finanzas la
   cara SÍ rinde mejor. MrBeast: boca cerrada subió su tiempo visto (anécdota).
@@ -18,7 +19,7 @@ regla sin datos que la prueben (se prueba con Test & Compare).
   Black o Anton con contorno negro 6-8 px y letra ≥ 12 % del alto; 3-5 palabras; NUNCA fondo rojo (se pierde con su pelo
   y con la interfaz). Victoria con expresión segura (boca cerrada o media sonrisa), nunca sorpresa exagerada.
 
-### Las 3 plantillas (hacer las 3 por largo y ponerlas en Test & Compare)
+### Las 3 plantillas (se elige UNA por video según el tema; sin Test & Compare desde el 13-nov)
 - **A · Cifra + Victoria**: Victoria a la derecha (x 55-100 %), cara ≈ 35 % del alto, mirando a la cifra. Cifra a la
   izquierda (x 5-50 %, y 20-60 %) en amarillo #FFD400 sobre azul marino #0B1F3A (ej. "$3,519"); debajo 2-3 palabras en
   blanco (y 65-80 %).

@@ -44,7 +44,7 @@ locaciones_nuevas` (se genera cada una una sola vez y se reutiliza) o de `manife
 | Departamento (sala, cocina, recámara, sillón) | Casual elegante |
 
 Reglas:
-- 3 de cada 4 videos en locación de lujo; 1 de cada 4 en casa (sala, cocina, home office), para que también se vea cercana.
+- ~~3 de cada 4 en lujo~~ REEMPLAZADO el 13-nov: reparto 60/25/15 de la sección de reglas de abajo (lista maestra de 35 lugares).
 - El lugar va con el TEMA: lo de salario mínimo, renta y deudas va en casa, home office u oficina (si habla de ganar
   el mínimo desde un yate, la gente se burla y no le cree). Los yates, jets, palcos, esquí y restaurantes van con temas
   de negocio, metas, aguinaldo bien usado, ahorro, "piensa como CEO" y opinión.
