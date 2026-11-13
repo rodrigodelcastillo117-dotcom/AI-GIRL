@@ -82,6 +82,8 @@ El laboratorio (`scripts/aprender.py`) compara las fórmulas por `adn.tipo_ganch
 ## Gancho de impacto — EN PAUSA (13-nov: v1 y v2 rechazados por Rodrigo; ver "Lo que aprendimos")
 
 ### Lo que aprendimos (13-nov)
+- Veo 3.1 Fast (Capital brincando a la cámara; cubeta de agua desde arriba, corte antes de mojarla) también fue
+  rechazado: "no, está malo, así no". NO se gasta más en ganchos sin un video de referencia de Rodrigo.
 - Rodrigo NO quiere que le peguen: quiere el SUSTO (la amenaza) y cortar justo antes. Ejemplos suyos: un señor en una
   escalera le avienta agua desde arriba → corte → Victoria hablando; Capital brincando hacia la cámara → corte → habla.
 - Animar el primer cuadro del video hablado con seedance-1-pro NO sirve: objetos que flotan, brazos que no se entienden,

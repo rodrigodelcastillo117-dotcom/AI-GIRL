@@ -3786,10 +3786,11 @@
     "hasta_s": 1.95,
     "archivo_sin_gancho": "videos/video-O2-FINAL-sin-gancho.mp4",
     "prueba": "gancho-impacto-nov26",
-    "activo": true,
+    "activo": false,
     "version": "susto-veo",
     "que": "Capital brinca hacia la cámara con la lengua de fuera; corte cuando llena la pantalla",
-    "por_aprobar": "Rodrigo ve el preview antes de publicar"
+    "por_aprobar": "Rodrigo ve el preview antes de publicar",
+    "rechazado": "Rodrigo, 13-nov: \"no, está malo, así no\" (versión Veo: Capital brincando / cubeta de agua)"
    }
   },
   {
@@ -4221,10 +4222,11 @@
     "hasta_s": 2.0,
     "archivo_sin_gancho": "videos/video-M4-FINAL-sin-gancho.mp4",
     "prueba": "gancho-impacto-nov26",
-    "activo": true,
+    "activo": false,
     "version": "susto-veo",
     "que": "cae una cubeta de agua desde arriba, ella grita mirando arriba; corte antes de que la moje",
-    "por_aprobar": "Rodrigo ve el preview antes de publicar"
+    "por_aprobar": "Rodrigo ve el preview antes de publicar",
+    "rechazado": "Rodrigo, 13-nov: \"no, está malo, así no\" (versión Veo: Capital brincando / cubeta de agua)"
    }
   }
  ]
