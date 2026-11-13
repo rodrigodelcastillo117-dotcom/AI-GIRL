@@ -61,6 +61,9 @@ def main():
     if pregunta:
         lineas.append(f"Dialogue: 0,{ts(inicio)},{ts(fin + 1)},Pregunta,,0,0,0,,{pregunta}")
     lineas.append(f"Dialogue: 0,{ts(inicio)},{ts(fin + 1)},Llamado,,0,0,0,,{llamado}")
+    # Etiqueta visible de IA todo el video (13-nov-2026): Publer no deja poner la etiqueta oficial de IA de TikTok,
+    # Instagram ni Facebook (solo "promocional"/"pagado"); los videos hablados son lo más realista que publicamos.
+    lineas.append(f"Dialogue: 1,{ts(0)},{ts(fin + 1)},IA,,0,0,0,,{{\\pos(360,236)}}Victoria · personaje creado con IA")
     ass = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 720
@@ -71,6 +74,7 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Pregunta,Inter SemiBold,34,&H00FFFFFF,&H00FFFFFF,&H64000000,&H64000000,0,0,0,0,100,100,0,0,3,14,0,5,70,70,0,1
 Style: Llamado,Inter Black,38,&H0042C5F5,&H0042C5F5,&H64000000,&H64000000,0,0,0,0,100,100,1,0,3,16,0,5,60,60,0,1
+Style: IA,Inter Medium,21,&H40FFFFFF,&H40FFFFFF,&H80000000,&H80000000,0,0,0,0,100,100,0.5,0,1,1.4,0,5,40,40,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

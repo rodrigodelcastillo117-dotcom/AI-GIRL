@@ -155,8 +155,11 @@ reparto no se tocan hasta el 15-dic.
   preguntas frecuentes). De ahí salen el largo, los shorts, el carrusel y el post de Facebook con arranque, duración
   y cierre distintos por red. Una investigación verificada, varias piezas originales.
 - **Etiqueta de IA de cada plataforma, no solo la bio:** YouTube ya se marca como sintético al subir directo
-  (youtube.py → containsSyntheticMedia). Lo que sale por Publer (TikTok, Instagram, Facebook) hoy NO lleva la etiqueta
-  de la plataforma: en revisión si la API de Publer la permite; si no, Rodrigo la activa a mano o se sube distinto.
+  (youtube.py → containsSyntheticMedia). La API de Publer NO tiene campo de IA en ninguna red (revisado 13-nov: solo
+  "promotional"/"paid"; TikTok details y Facebook sponsor). Por eso TODO lleva la leyenda VISIBLE en la imagen:
+  carruseles y Reels de texto ya la tenían; desde el 13-nov los videos hablados también ("Victoria · personaje creado
+  con IA", todo el video, bajo el título; cierre_pantalla.py). Opcional: Rodrigo puede activar a mano la etiqueta "Contenido
+  generado por IA" de TikTok en los videos de Victoria hablando. Si algún post nombra a Vonhaucke: Publer "promotional".
 - **Stories de Instagram para comunidad y Kit:** encuestas y preguntas son stickers que la API no pone; las hace
   Rodrigo a mano cuando quiera (1-2 por semana), con presentación transparente del Kit CEO.
 - **NO se adopta su tabla de volumen semanal** (TikTok 3 videos + 2 carruseles, etc.): bajaría TikTok de ~21 a 5 piezas
