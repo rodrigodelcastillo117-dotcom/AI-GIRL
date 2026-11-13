@@ -3780,7 +3780,13 @@
     "replicate_12nov": "Rehecho en Replicate p-video-avatar 1080p (foto navidad-regalos.jpg, mismo audio, actitud \"sexy entrepreneur\" con elegancia; ~$0.67 USD). qa_labios: -39 ms, apertura 0.09: LABIOS OK; qa_sync OK. La versión con tpad tenía los labios 291 ms tarde."
    },
    "archivo": "videos/video-O2-FINAL.mp4",
-   "foto_base": "assets/fotos/navidad-regalos.jpg"
+   "foto_base": "assets/fotos/navidad-regalos.jpg",
+   "gancho_impacto": {
+    "desde_s": 0.4,
+    "hasta_s": 0.95,
+    "archivo_sin_gancho": "videos/video-O2-FINAL-sin-gancho.mp4",
+    "prueba": "gancho-impacto-nov26"
+   }
   },
   {
    "id": "E1",
@@ -4201,6 +4207,12 @@
     "tt": "2026-11-18T19:07:00Z",
     "fb": "2026-11-18T19:07:00Z",
     "yt": "2026-11-18T19:07:00Z"
+   },
+   "gancho_impacto": {
+    "desde_s": 0.35,
+    "hasta_s": 1.1,
+    "archivo_sin_gancho": "videos/video-M4-FINAL-sin-gancho.mp4",
+    "prueba": "gancho-impacto-nov26"
    }
   }
  ]

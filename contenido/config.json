@@ -585,7 +585,7 @@
    "shorts-escena": {
     "fecha": "2026-11-12",
     "tope_usd": 15,
-    "gastado_usd": 11.91,
+    "gastado_usd": 13.41,
     "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
     "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
    },
@@ -730,10 +730,13 @@
   "desde": "2026-11-14",
   "meta": "3 con gancho vs 3 sin gancho (shorts hablados formato escena)",
   "hechos": [
-   "E1"
+   "E1",
+   "M4",
+   "O2"
   ],
   "evaluar": "2026-11-26",
   "autorizacion": "shorts-escena",
-  "regla": "máximo 1 de cada 3 shorts hablados; docs/GANCHOS.md → Gancho de impacto"
+  "regla": "máximo 1 de cada 3 shorts hablados; docs/GANCHOS.md → Gancho de impacto",
+  "nota": "Los 3 con gancho: E1 (ticket del café, 14-nov), M4 (sobre de la Afore en la calle, 18-nov) y O2 (regalo en la sala navideña, por programar). Comparar contra 3 shorts hablados sin gancho comparables (M1, M2, O1)."
  }
 }
