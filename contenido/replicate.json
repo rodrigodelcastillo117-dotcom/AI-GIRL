@@ -1,20 +1,20 @@
 {
  "control": {
-  "hoy_usd": 3.31,
-  "semana_usd": 66.89,
-  "mes_usd": 67.44,
+  "hoy_usd": 3.39,
+  "semana_usd": 66.97,
+  "mes_usd": 67.52,
   "otro_canal_semana_usd": 3.04,
   "otro_canal_mes_usd": 8.54,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 155.64,
+  "proyeccion_mes_usd": 155.82,
   "semana_desde": "2026-11-09",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 34.72,
+ "saldo_estimado_usd": 34.64,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -22,11 +22,11 @@
   }
  ],
  "gastado_desde_base": {
-  "victoria": 26.4,
+  "victoria": 26.48,
   "otro": 1.04
  },
  "gastado_7_dias": {
-  "victoria": 26.4,
+  "victoria": 26.48,
   "otro": 1.04
  },
  "por_dia": [
@@ -37,7 +37,7 @@
   },
   {
    "dia": "2026-11-13",
-   "victoria": 3.31,
+   "victoria": 3.39,
    "otro": 0.52
   }
  ],
@@ -45,14 +45,14 @@
   "prunaai/p-video-avatar": 19.89,
   "bytedance/seedance-1-pro": 5.25,
   "minimax/video-01": 1.0,
-  "google/nano-banana": 0.66,
+  "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
   "black-forest-labs/flux-schnell": 0.04,
   "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
-  "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 7,
+  "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
   "google/nano-banana-pro": 11,
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 1,
@@ -61,6 +61,6 @@
   "stability-ai/stable-audio-2.5": 3
  },
  "incompleto": true,
- "generado_utc": "2026-11-13T18:00:49Z",
+ "generado_utc": "2026-11-13T18:03:56Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
