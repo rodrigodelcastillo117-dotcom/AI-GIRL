@@ -112,3 +112,35 @@ Prueba (desde el 14-nov): 3 shorts con gancho de impacto contra 3 normales compa
 red, edad parecida). Se mide: % que sigue después de 3 s (YouTube: % visto; TikTok: vistas a la misma edad) y seguidores
 por cada 1,000 vistas. Nadie gana con menos de 3 contra 3 (regla de ESTRATEGIA_POR_RED). Registro: plan.json →
 gancho_impacto.prueba = "gancho-impacto-nov26"; evaluación en la revisión del 26-nov.
+
+## Formato "la teoría" (Rodrigo, 13-nov-2026, consejo de una creadora sobre Trial Reels)
+
+Qué es: video de 5-7 s (b-roll de Victoria haciendo algo, texto en pantalla, canción en tendencia) con el gancho
+"Cuando [situación de dinero], [alguien] me contó sobre [teoría] y desde entonces no volví a ver mi dinero igual", y
+TODO el valor en el caption largo: qué dice la teoría, cómo se aplica con números de México, y un llamado (sígueme /
+guarda / comenta). La retención sale de que el video es corto y se repite mientras leen.
+
+Reglas propias (no del consejo original):
+- La teoría tiene que ser REAL y con fuente (nada de "puede ser inventada"): regla de dos fuentes y segunda revisión.
+- La anécdota es del personaje (Victoria es IA y está etiquetada); nunca se presenta como dato ni testimonio real.
+- Sin guiones largos en el texto (consejo útil: se lee más humano).
+- Entra en el 10 % de "pruebas" del reparto (ESTRATEGIA_POR_RED): no cambia pilares antes del 15-dic.
+- Trial Reels (solo a no seguidores): el script ya los soporta (config.json → ig_reels_de_prueba), pero Meta los
+  NIEGA a @victoriatheceo: "la cuenta no alcanza el mínimo de seguidores" (probado el 10-nov y el 13-nov con 62
+  seguidores; Meta no dice el mínimo). Se vuelve a probar cada lunes en el reporte semanal.
+
+10 ideas (teorías reales):
+1. Efecto Diderot: "Cuando me compré mi primer bolso caro, mi mentora me contó sobre el efecto Diderot…" (una compra
+   jala otras; Denis Diderot y su bata nueva, ensayo de 1769).
+2. Ley de Parkinson del gasto: "Cuando me subieron el sueldo y seguía sin ahorrar…" (C. Northcote Parkinson, 1960: el
+   gasto sube hasta alcanzar el ingreso).
+3. Efecto latte: "Cuando sentía que no me alcanzaba…" (David Bach: gastos hormiga diarios × 365).
+4. Adaptación hedónica: "Cuando el coche nuevo dejó de emocionarme en un mes…" (Brickman y Campbell, 1971).
+5. Contabilidad mental: "Cuando gasté todo mi aguinaldo en una semana…" (Richard Thaler, Nobel 2017: el "dinero extra"
+   se gasta más fácil).
+6. Págate primero: "Cuando trabajaba en mi primer empleo…" (George S. Clason, El hombre más rico de Babilonia, 1926).
+7. Kakeibo: "Cuando no sabía en qué se me iba la quincena…" (Hani Motoko, 1904: libreta japonesa de 4 preguntas).
+8. El experimento del malvavisco: "Cuando quería todo YA…" (Walter Mischel, Stanford: aguantar para ganar más).
+9. Regla del 72: "Cuando pensé que ahorrar no servía de nada…" (72 ÷ tasa = años para duplicar; solo como cuenta, sin
+   recomendar productos).
+10. Método bola de nieve: "Cuando tenía tres tarjetas al tope…" (pagar primero la deuda más chica para ganar impulso).
