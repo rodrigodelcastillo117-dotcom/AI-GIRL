@@ -1,6 +1,6 @@
 {
- "generado_utc": "2026-11-12T15:12:28Z",
- "estado": "aviso",
+ "generado_utc": "2026-11-13T02:14:30Z",
+ "estado": "alerta",
  "checks": [
   {
    "area": "Llaves",
@@ -19,13 +19,13 @@
   },
   {
    "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Meta (Instagram y Facebook) responde"
+   "estado": "alerta",
+   "detalle": "Meta (Instagram y Facebook) no responde: HTTPError HTTP Error 401: Unauthorized"
   },
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $33.74 · semana $64.40 de $7 · mes $64.95 de $28 (proyección del mes $162.38) · El espacio, semana $2.00 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $32.92 · semana $63.58 de $7 · mes $64.13 de $28 (proyección del mes $160.33) · El espacio, semana $2.52 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",

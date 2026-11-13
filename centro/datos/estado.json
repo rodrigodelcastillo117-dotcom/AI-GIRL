@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-12T23:00:00Z",
-  "proxima_que": "Sale el carrusel «Buen Fin 2026 en 5 datos para guardar 🔖» (TikTok 20:00 · YouTube 17:00)",
+  "proxima_ejecucion_utc": "2026-11-13T15:00:00Z",
+  "proxima_que": "Sale el carrusel «Salario mínimo 2026 en días de trabajo 🧾» (TikTok 09:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -55,15 +55,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-12T23:00:00Z",
-    "que": "Sale el carrusel «Buen Fin 2026 en 5 datos para guardar 🔖» (TikTok 20:00 · YouTube 17:00)"
+    "utc": "2026-11-13T15:00:00Z",
+    "que": "Sale el carrusel «Salario mínimo 2026 en días de trabajo 🧾» (TikTok 09:00)"
    },
    {
-    "utc": "2026-11-13T01:00:00Z",
-    "que": "Sale el carrusel «Sueldo y renta en México, haz tus cuentas 🧮» (Instagram 19:00 · TikTok 13:00 · YouTube 20:00)"
+    "utc": "2026-11-13T19:00:00Z",
+    "que": "Sale el carrusel «Calculadoras de finanzas personales gratis 🧮» (Instagram 19:00 · TikTok 13:00)"
    }
   ],
-  "generado_utc": "2026-11-12T19:47:56Z",
+  "generado_utc": "2026-11-13T02:15:51Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -342,7 +342,7 @@
    },
    {
     "fecha": "2026-11-12",
-    "v": 15573
+    "v": 16487
    }
   ],
   "serie_publicaciones": [
@@ -494,7 +494,7 @@
    },
    {
     "fecha": "2026-11-12",
-    "yt": 5922,
+    "yt": 6836,
     "tt": 9209,
     "ig": 424,
     "fb": 18
@@ -551,7 +551,7 @@
    "costo_promedio_toma_usd": 0.46,
    "sin_precio": {},
    "incompleto": false,
-   "generado_utc": "2026-11-12T19:48:07Z",
+   "generado_utc": "2026-11-13T02:15:58Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -594,8 +594,8 @@
    }
   },
   "salud": {
-   "generado_utc": "2026-11-12T15:12:28Z",
-   "estado": "aviso",
+   "generado_utc": "2026-11-13T02:14:30Z",
+   "estado": "alerta",
    "checks": [
     {
      "area": "Llaves",
@@ -614,13 +614,13 @@
     },
     {
      "area": "Llaves",
-     "estado": "ok",
-     "detalle": "Meta (Instagram y Facebook) responde"
+     "estado": "alerta",
+     "detalle": "Meta (Instagram y Facebook) no responde: HTTPError HTTP Error 401: Unauthorized"
     },
     {
      "area": "Gasto",
      "estado": "aviso",
-     "detalle": "Replicate de Victoria: hoy $33.74 · semana $64.40 de $7 · mes $64.95 de $28 (proyección del mes $162.38) · El espacio, semana $2.00 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+     "detalle": "Replicate de Victoria: hoy $32.92 · semana $63.58 de $7 · mes $64.13 de $28 (proyección del mes $160.33) · El espacio, semana $2.52 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
     },
     {
      "area": "Créditos",
@@ -743,19 +743,36 @@
     "por_red": {
      "tt": 3959,
      "ig": 19,
-     "yt": 157,
+     "yt": 161,
      "fb": 6
     },
-    "total": 4141,
+    "total": 4145,
     "ultimas_24h": {
      "tt": 56,
      "ig": 6,
-     "yt": 10,
+     "yt": 4,
      "fb": 1
     },
-    "horas": 89.0,
-    "por_dia": 1117,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 101.1,
+    "por_dia": 984,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c65",
+    "tipo": "Carrusel",
+    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
+    "por_red": {
+     "tt": 338,
+     "yt": 849
+    },
+    "total": 1187,
+    "ultimas_24h": {
+     "tt": 62,
+     "yt": 494
+    },
+    "horas": 57.1,
+    "por_dia": 499,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "01",
@@ -764,17 +781,17 @@
     "por_red": {
      "tt": 284,
      "ig": 21,
-     "yt": 702
+     "yt": 703
     },
-    "total": 1007,
+    "total": 1008,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 0
+     "yt": 1
     },
-    "horas": 326.3,
-    "por_dia": 74,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 338.5,
+    "por_dia": 71,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c01",
@@ -783,171 +800,17 @@
     "por_red": {
      "tt": 649,
      "ig": 10,
-     "yt": 339
+     "yt": 340
     },
-    "total": 998,
+    "total": 999,
     "ultimas_24h": {
      "tt": 7,
      "ig": 0,
-     "yt": 2
+     "yt": 1
     },
-    "horas": 262.9,
-    "por_dia": 91,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "c65",
-    "tipo": "Carrusel",
-    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
-    "por_red": {
-     "tt": 338,
-     "yt": 573
-    },
-    "total": 911,
-    "ultimas_24h": {
-     "tt": 62,
-     "yt": 354
-    },
-    "horas": 44.9,
-    "por_dia": 487,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "02",
-    "tipo": "Video",
-    "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
-    "por_red": {
-     "tt": 112,
-     "ig": 40,
-     "yt": 674
-    },
-    "total": 826,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 286.1,
-    "por_dia": 69,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "17",
-    "tipo": "Video",
-    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
-    "por_red": {
-     "tt": 112,
-     "ig": 33,
-     "yt": 554,
-     "fb": 3
-    },
-    "total": 702,
-    "ultimas_24h": {
-     "tt": 9,
-     "ig": 0,
-     "yt": 18,
-     "fb": 3
-    },
-    "horas": 93.1,
-    "por_dia": 181,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "c03",
-    "tipo": "Carrusel",
-    "titulo": "Reglas de dinero de Buffett y Munger 💡",
-    "por_red": {
-     "tt": 525,
-     "ig": 59,
-     "yt": 37
-    },
-    "total": 621,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 307.5,
-    "por_dia": 48,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "37",
-    "tipo": "Video",
-    "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
-    "por_red": {
-     "tt": 182,
-     "ig": 34,
-     "yt": 384,
-     "fb": 1
-    },
-    "total": 601,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 8,
-     "fb": 0
-    },
-    "horas": 192.1,
-    "por_dia": 75,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "c08",
-    "tipo": "Carrusel",
-    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
-    "por_red": {
-     "tt": 184,
-     "ig": 16,
-     "yt": 386
-    },
-    "total": 586,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 142.9,
-    "por_dia": 98,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "c66",
-    "tipo": "Carrusel",
-    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
-    "por_red": {
-     "tt": 96,
-     "yt": 478
-    },
-    "total": 574,
-    "ultimas_24h": {
-     "tt": 3,
-     "yt": 132
-    },
-    "horas": 39.1,
-    "por_dia": 352,
-    "medido_utc": "2026-11-12T14:03:08Z"
-   },
-   {
-    "id": "c06",
-    "tipo": "Carrusel",
-    "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
-    "por_red": {
-     "tt": 357,
-     "ig": 46,
-     "yt": 140,
-     "fb": 1
-    },
-    "total": 544,
-    "ultimas_24h": {
-     "tt": 2,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 210.1,
-    "por_dia": 62,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 275.1,
+    "por_dia": 87,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "O1",
@@ -956,14 +819,156 @@
     "por_red": {
      "tt": 84,
      "ig": 15,
-     "yt": 427,
+     "yt": 769,
      "fb": 2
     },
-    "total": 528,
-    "ultimas_24h": null,
-    "horas": 22.1,
-    "por_dia": 528,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "total": 870,
+    "ultimas_24h": {
+     "tt": 84,
+     "ig": 15,
+     "yt": 563,
+     "fb": 2
+    },
+    "horas": 34.2,
+    "por_dia": 611,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "02",
+    "tipo": "Video",
+    "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
+    "por_red": {
+     "tt": 112,
+     "ig": 40,
+     "yt": 675
+    },
+    "total": 827,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1
+    },
+    "horas": 298.2,
+    "por_dia": 67,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "17",
+    "tipo": "Video",
+    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+    "por_red": {
+     "tt": 112,
+     "ig": 33,
+     "yt": 563,
+     "fb": 3
+    },
+    "total": 711,
+    "ultimas_24h": {
+     "tt": 9,
+     "ig": 0,
+     "yt": 15,
+     "fb": 3
+    },
+    "horas": 105.2,
+    "por_dia": 162,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c03",
+    "tipo": "Carrusel",
+    "titulo": "Reglas de dinero de Buffett y Munger 💡",
+    "por_red": {
+     "tt": 525,
+     "ig": 59,
+     "yt": 38
+    },
+    "total": 622,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1
+    },
+    "horas": 319.7,
+    "por_dia": 47,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c66",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
+    "por_red": {
+     "tt": 96,
+     "yt": 516
+    },
+    "total": 612,
+    "ultimas_24h": {
+     "tt": 3,
+     "yt": 92
+    },
+    "horas": 51.2,
+    "por_dia": 287,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "37",
+    "tipo": "Video",
+    "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
+    "por_red": {
+     "tt": 182,
+     "ig": 34,
+     "yt": 388,
+     "fb": 1
+    },
+    "total": 605,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 5,
+     "fb": 0
+    },
+    "horas": 204.2,
+    "por_dia": 71,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c08",
+    "tipo": "Carrusel",
+    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
+    "por_red": {
+     "tt": 184,
+     "ig": 16,
+     "yt": 387
+    },
+    "total": 587,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1
+    },
+    "horas": 155.1,
+    "por_dia": 91,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c06",
+    "tipo": "Carrusel",
+    "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
+    "por_red": {
+     "tt": 357,
+     "ig": 46,
+     "yt": 142,
+     "fb": 1
+    },
+    "total": 546,
+    "ultimas_24h": {
+     "tt": 2,
+     "ig": 0,
+     "yt": 2,
+     "fb": 0
+    },
+    "horas": 222.2,
+    "por_dia": 59,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c02",
@@ -972,17 +977,17 @@
     "por_red": {
      "tt": 468,
      "ig": 10,
-     "yt": 38
+     "yt": 39
     },
-    "total": 516,
+    "total": 517,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 0
+     "yt": 1
     },
-    "horas": 308.1,
-    "por_dia": 40,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 320.2,
+    "por_dia": 39,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "19",
@@ -991,19 +996,19 @@
     "por_red": {
      "tt": 167,
      "ig": 27,
-     "yt": 264,
+     "yt": 265,
      "fb": 1
     },
-    "total": 459,
+    "total": 460,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
      "yt": 4,
      "fb": 0
     },
-    "horas": 235.1,
-    "por_dia": 47,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 247.2,
+    "por_dia": 45,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c11",
@@ -1011,16 +1016,16 @@
     "titulo": "Finiquito y liquidación, qué te toca 📄",
     "por_red": {
      "tt": 200,
-     "yt": 164
+     "yt": 172
     },
-    "total": 364,
+    "total": 372,
     "ultimas_24h": {
      "tt": 0,
-     "yt": 56
+     "yt": 31
     },
-    "horas": 66.9,
-    "por_dia": 131,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 79.1,
+    "por_dia": 113,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c07",
@@ -1029,17 +1034,17 @@
     "por_red": {
      "tt": 266,
      "ig": 16,
-     "yt": 61
+     "yt": 62
     },
-    "total": 343,
+    "total": 344,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 0
+     "yt": 1
     },
-    "horas": 168.0,
-    "por_dia": 49,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 180.2,
+    "por_dia": 46,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "38",
@@ -1048,19 +1053,19 @@
     "por_red": {
      "tt": 197,
      "ig": 22,
-     "yt": 113,
+     "yt": 115,
      "fb": 1
     },
-    "total": 333,
+    "total": 335,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 1,
+     "yt": 2,
      "fb": 0
     },
-    "horas": 137.1,
-    "por_dia": 58,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 149.2,
+    "por_dia": 54,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c13",
@@ -1069,17 +1074,17 @@
     "por_red": {
      "tt": 215,
      "ig": 8,
-     "yt": 104
+     "yt": 109
     },
-    "total": 327,
+    "total": 332,
     "ultimas_24h": {
      "tt": 1,
      "ig": 8,
-     "yt": 29
+     "yt": 6
     },
-    "horas": 63.1,
-    "por_dia": 124,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 75.2,
+    "por_dia": 106,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c52",
@@ -1087,13 +1092,16 @@
     "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
     "por_red": {
      "tt": 221,
-     "yt": 34
+     "yt": 59
     },
-    "total": 255,
-    "ultimas_24h": null,
-    "horas": 22.9,
-    "por_dia": 255,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "total": 280,
+    "ultimas_24h": {
+     "tt": 221,
+     "yt": 42
+    },
+    "horas": 35.1,
+    "por_dia": 191,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c09",
@@ -1102,17 +1110,17 @@
     "por_red": {
      "tt": 119,
      "ig": 15,
-     "yt": 103
+     "yt": 106
     },
-    "total": 237,
+    "total": 240,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 3
+     "yt": 6
     },
-    "horas": 118.1,
-    "por_dia": 48,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 130.2,
+    "por_dia": 44,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c04",
@@ -1120,16 +1128,16 @@
     "titulo": "Lecciones de negocio que valen millones 💼",
     "por_red": {
      "tt": 170,
-     "yt": 63
+     "yt": 64
     },
-    "total": 233,
+    "total": 234,
     "ultimas_24h": {
      "tt": 0,
-     "yt": 0
+     "yt": 1
     },
-    "horas": 183.1,
-    "por_dia": 31,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 195.2,
+    "por_dia": 29,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c12",
@@ -1138,19 +1146,19 @@
     "por_red": {
      "tt": 91,
      "ig": 21,
-     "yt": 108,
+     "yt": 110,
      "fb": 1
     },
-    "total": 221,
+    "total": 223,
     "ultimas_24h": {
      "tt": 2,
      "ig": 3,
-     "yt": 25,
+     "yt": 9,
      "fb": 1
     },
-    "horas": 70.9,
-    "por_dia": 75,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 83.1,
+    "por_dia": 64,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c43",
@@ -1159,19 +1167,32 @@
     "por_red": {
      "tt": 130,
      "ig": 12,
-     "yt": 3,
+     "yt": 4,
      "fb": 2
     },
-    "total": 147,
+    "total": 148,
     "ultimas_24h": {
      "tt": 39,
      "ig": 1,
-     "yt": 0,
+     "yt": 1,
      "fb": 1
     },
-    "horas": 44.1,
-    "por_dia": 80,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 56.2,
+    "por_dia": 63,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c70",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 de 30 días, rumor o realidad 🔍",
+    "por_red": {
+     "yt": 120
+    },
+    "total": 120,
+    "ultimas_24h": null,
+    "horas": 8.2,
+    "por_dia": 120,
+    "medido_utc": "2026-11-13T02:14:07Z"
    },
    {
     "id": "c27",
@@ -1179,13 +1200,55 @@
     "titulo": "Gastos en pareja proporcionales al sueldo 💑",
     "por_red": {
      "tt": 83,
-     "yt": 16
+     "yt": 34
     },
-    "total": 99,
+    "total": 117,
+    "ultimas_24h": {
+     "tt": 83,
+     "yt": 34
+    },
+    "horas": 24.2,
+    "por_dia": 116,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "M1",
+    "tipo": "Video",
+    "titulo": "Buen Fin 2026, 3 errores con tu tarjeta 💳",
+    "por_red": {
+     "yt": 31
+    },
+    "total": 31,
     "ultimas_24h": null,
-    "horas": 12.1,
-    "por_dia": 99,
-    "medido_utc": "2026-11-12T14:03:08Z"
+    "horas": 7.4,
+    "por_dia": 31,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c74",
+    "tipo": "Carrusel",
+    "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
+    "por_red": {
+     "yt": 15
+    },
+    "total": 15,
+    "ultimas_24h": null,
+    "horas": 3.2,
+    "por_dia": 15,
+    "medido_utc": "2026-11-13T02:14:07Z"
+   },
+   {
+    "id": "c68",
+    "tipo": "Carrusel",
+    "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
+    "por_red": {
+     "yt": 0
+    },
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 0.2,
+    "por_dia": 0,
+    "medido_utc": "2026-11-13T02:14:07Z"
    }
   ]
  }

@@ -40,7 +40,7 @@
   "tipo": "video",
   "id": "M1",
   "que": "Sale el video «Buen Fin 2026, 3 errores con tu tarjeta 💳»",
-  "estado": "programado",
+  "estado": "publicado",
   "horas": {
    "ig": "12:51",
    "tt": "12:51",
@@ -56,15 +56,11 @@
   "que": "Sale el carrusel «Sueldo y renta en México, haz tus cuentas 🧮»",
   "estado": "programado",
   "horas": {
-   "ig": "19:00",
-   "tt": "13:00",
-   "yt": "20:00",
-   "fb": "20:03"
+   "ig": "19:02",
+   "tt": "13:06",
+   "yt": "20:00"
   },
-  "confirmado": [
-   "ig",
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-12",
@@ -73,7 +69,7 @@
   "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00",
+   "tt": "09:06",
    "yt": "12:00"
   },
   "confirmado": []
@@ -85,14 +81,10 @@
   "que": "Sale el carrusel «Buen Fin 2026 en 5 datos para guardar 🔖»",
   "estado": "programado",
   "horas": {
-   "tt": "20:00",
-   "yt": "17:00",
-   "fb": "17:01"
+   "tt": "20:05",
+   "yt": "17:00"
   },
-  "confirmado": [
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-12",

@@ -3884,7 +3884,7 @@
    "formato": "escena",
    "escena": "calle",
    "pilar": "finanzas",
-   "estado": "programado",
+   "estado": "publicado",
    "publicar": "2026-11-12",
    "tema": "Buen Fin: 3 errores con tu tarjeta",
    "guion": "Tres errores con tu tarjeta en el Buen Fin. El primero: no tomarle foto al precio hoy. Profeco encontró el mismo refri más de nueve mil pesos más caro según la tienda. El segundo: pagar a meses sin ver el total. Meses sin intereses no es lo mismo que sin costo. Revisa el CAT y cuánto pagas al final. Y el tercero: comprar sin lista. Solo compra lo de tu lista; lo demás es impulso.",
@@ -3962,7 +3962,11 @@
     ],
     "youtube": "https://youtube.com/shorts/J9TViN7FCq4",
     "playlist": "buenfin",
-    "pie": "un solo llamado (guárdalo), versión MUSE"
+    "pie": "un solo llamado (guárdalo), versión MUSE",
+    "ig": "https://www.instagram.com/reel/DfpvhHOjO0b/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7707359627393912072?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/J9TViN7FCq4",
+    "comentario_youtube": "UgwOPrtG3yLSUrBewMN4AaABAg"
    },
    "qa": {
     "audio": "OK (Whisper alucinó la primera frase al final con duración 0; qa_audio ya ignora eso)",

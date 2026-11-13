@@ -158,7 +158,7 @@ def seguidores_hoy():
             import publer
             pag = publer.CONFIG.get('facebook_pagina_id')
             foto['fb'] = primer_comentario.fb('GET', f'{pag}?fields=followers_count', pag).get('followers_count')
-        except Exception as e:
+        except (Exception, SystemExit) as e:
             print('facebook seguidores:', e)
     ruta = os.path.join(RAIZ, 'contenido', 'seguidores.json')
     log = leer('contenido/seguidores.json', [])

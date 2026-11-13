@@ -677,13 +677,13 @@ def main():
     try:
         import estadisticas
         estadisticas.main()
-    except Exception as e:
+    except (Exception, SystemExit) as e:
         print('estadisticas:', e)
     # Sistema (12-nov-2026, "conecta todo al dashboard"): Victoria Hoy, comunidad, Instagram a fondo, Facebook, web y automatizaciones.
     try:
         import sistema
         sistema.main()
-    except Exception as e:
+    except (Exception, SystemExit) as e:
         print('sistema:', e)
 
 
