@@ -619,6 +619,14 @@
     "gastado_usd": 1.36,
     "texto": "Rodrigo, 13-nov-2026: \"Sí, tope $5 USD\" (entrenar un modelo propio con la cara de Victoria) tras \"déjalo perfecto, siempre, siempre siempre igual\"",
     "para": "Entrenar una vez un LoRA de identidad de Victoria con 15-25 fotos aprobadas y 4 pruebas contra la hoja maestra; solo se vuelve oficial si la cara sale igual"
+   },
+   "ganchos-susto": {
+    "fecha": "2026-11-13",
+    "tope_usd": 5,
+    "gastado_usd": 0.6,
+    "texto": "Rodrigo, 13-nov-2026: \"sí, autorizo los $5, hazlo. ya hazlo perfectooo\"",
+    "para": "ganchos de susto con Veo 3.1 Fast: Capital brincando a la cámara (O2) y señor en escalera aventando agua (M4); corte antes del contacto",
+    "vence": "2026-12-13"
    }
   },
   "extra_mes": {

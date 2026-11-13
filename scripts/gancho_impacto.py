@@ -4,7 +4,7 @@ ES el tema (ticket, tarjeta, sobre del SAT, billetes…) volando hacia la cámar
 Victoria hablando. Reglas en docs/GANCHOS.md → "Gancho de impacto".
 
 Uso:
-  REPLICATE_AUTORIZACION=shorts-escena python3 scripts/gancho_impacto.py generar <id> "<acción en inglés>"
+  REPLICATE_AUTORIZACION=ganchos-susto python3 scripts/gancho_impacto.py generar <id> "<susto en inglés>" --veo
       anima el primer cuadro de videos/video-<id>.mp4 con seedance-1-pro (5 s, 1080p, ≈$0.75) → videos/video-<id>-gancho-crudo.mp4
       y deja una hoja de cuadros en videos/qa/<id>-gancho-cuadros.jpg para elegir el corte
   python3 scripts/gancho_impacto.py armar <id> <desde_s> <hasta_s> [<impacto_s>]   (segundo del golpe en el crudo)
@@ -52,17 +52,30 @@ def hoja(video, salida, n=10):
         os.remove(f'{salida}-{i:02d}.png')
 
 
-def generar(vid, accion):
+def generar(vid, accion, modelo='seedance'):
+    """modelo 'veo' (Rodrigo, 13-nov: "ya hazlo perfecto"): google/veo-3.1-fast, 4 s, 1080p, con su PROPIO sonido (el agua,
+    el ladrido); mucho mejor en física y en sustos que seedance. El prompt describe el SUSTO, nunca el golpe."""
     cuadro = v('qa', f'.{vid}-primer-cuadro.jpg')
-    ffmpeg('-i', v(f'video-{vid}.mp4'), '-frames:v', '1', '-vf', 'scale=720:-2', '-q:v', '4', cuadro)
+    ffmpeg('-i', v(f'video-{vid}.mp4'), '-frames:v', '1', '-vf', 'scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280',
+           '-q:v', '3', cuadro)
     imagen = 'data:image/jpeg;base64,' + base64.b64encode(open(cuadro, 'rb').read()).decode()
     os.remove(cuadro)
     replicate_gasto.freno()
-    p = pedir('POST', f'https://api.replicate.com/v1/models/{MODELO}/predictions', {'input': {
-        'image': imagen, 'prompt': BASE + accion, 'duration': 5, 'resolution': '1080p', 'aspect_ratio': '9:16',
-        'fps': 24, 'camera_fixed': True}})
+    if modelo == 'veo':
+        url = 'https://api.replicate.com/v1/models/google/veo-3.1-fast/predictions'
+        entrada = {'image': imagen, 'prompt': accion, 'duration': 4, 'resolution': '1080p', 'aspect_ratio': '9:16',
+                   'generate_audio': True,
+                   'negative_prompt': 'text, captions, logos, watermark, morphing face, different woman, extra fingers, '
+                                      'violence, injury, the object hitting her'}
+        costo = 0.6  # ≈ $0.15/s con audio × 4 s (se toma el alto)
+    else:
+        url = f'https://api.replicate.com/v1/models/{MODELO}/predictions'
+        entrada = {'image': imagen, 'prompt': BASE + accion, 'duration': 5, 'resolution': '1080p', 'aspect_ratio': '9:16',
+                   'fps': 24, 'camera_fixed': True}
+        costo = 0.75
+    p = pedir('POST', url, {'input': entrada})
     replicate_gasto.anotar(p['id'])
-    replicate_gasto.cargar(0.75)
+    replicate_gasto.cargar(costo)
     print('replicate:', p['id'])
     while p.get('status') not in ('succeeded', 'failed', 'canceled'):
         time.sleep(8)
@@ -71,12 +84,19 @@ def generar(vid, accion):
         sys.exit(f"ERROR: {p.get('error')}")
     crudo = v(f'video-{vid}-gancho-crudo.mp4')
     urllib.request.urlretrieve(p['output'] if isinstance(p['output'], str) else p['output'][0], crudo + '.tmp.mp4')
+    audio = ['-c:a', 'aac', '-ar', '48000', '-ac', '2'] if modelo == 'veo' else ['-an']
     ffmpeg('-i', crudo + '.tmp.mp4', '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30',
-           '-an', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', crudo)
+           *audio, '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', crudo)
     os.remove(crudo + '.tmp.mp4')
-    hoja(crudo, v('qa', f'{vid}-gancho-cuadros.jpg'))
+    hoja(crudo, v('qa', f'{vid}-gancho-cuadros.jpg'), 16)
     print('ok', crudo, '| cuadros: videos/qa/' + f'{vid}-gancho-cuadros.jpg', '| prediccion', p['id'])
     return p['id']
+
+
+def tiene_audio(video):
+    r = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'a', '-show_entries', 'stream=index', '-of', 'csv=p=0',
+                        video], capture_output=True, text=True)
+    return bool(r.stdout.strip())
 
 
 def golpe(segundos, salida, en=None):
@@ -103,7 +123,12 @@ def armar(vid, desde, hasta, impacto=None):
     textfile = v(f'.{vid}-gancho-texto.txt')
     open(textfile, 'w').write(' '.join(palabras[:mitad]) + ('\n' + ' '.join(palabras[mitad:]) if len(palabras) > 3 else ''))
     clip, sonido = v(f'.{vid}-gancho-clip.mp4'), v(f'.{vid}-gancho.m4a')
-    golpe(dur, sonido, None if impacto is None else impacto - desde)
+    crudo = v(f'video-{vid}-gancho-crudo.mp4')
+    if tiene_audio(crudo):  # Veo trae su propio sonido (agua, ladrido): ese manda, con un corte seco al final
+        ffmpeg('-ss', str(desde), '-t', str(dur), '-i', crudo, '-vn', '-af', f'afade=t=out:st={max(0, dur - 0.04)}:d=0.04',
+               '-c:a', 'aac', '-ar', '48000', '-ac', '2', sonido)
+    else:
+        golpe(dur, sonido, None if impacto is None else impacto - desde)
     # Mismo estilo que el título del video (mayúsculas, blanco sobre caja negra arriba): que no se note el pegado.
     dibujo = (f"drawtext=fontfile={FUENTE}:textfile={textfile}:fontsize=50:fontcolor=white:line_spacing=6:box=1:"
               "boxcolor=black@0.85:boxborderw=14:text_align=center:x=(w-text_w)/2:y=130" if palabras else 'null')
@@ -126,7 +151,7 @@ def armar(vid, desde, hasta, impacto=None):
 
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'generar':
-        generar(sys.argv[2], sys.argv[3])
+        generar(sys.argv[2], sys.argv[3], 'veo' if '--veo' in sys.argv else 'seedance')
     elif len(sys.argv) in (5, 6) and sys.argv[1] == 'armar':
         armar(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]) if len(sys.argv) == 6 else None)
     else:
