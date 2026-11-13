@@ -21,8 +21,17 @@ def main():
     if len(sys.argv) < 3:
         sys.exit(__doc__)
     escena, que, perro = sys.argv[1], sys.argv[2], 'perro' in sys.argv[3:]
+    # --mueble <ruta> (se puede repetir): fotos de un mueble real que debe salir tal cual (Rodrigo, 13-nov-2026: los
+    # escritorios de Vonhaucke, su empresa). Van al repo y se pasan por su enlace público de GitHub (hacer push antes).
+    muebles = [sys.argv[i + 1] for i, a in enumerate(sys.argv) if a == '--mueble' and i + 1 < len(sys.argv)]
     man = json.load(open(os.path.join(RAIZ, 'assets', 'manifest.json')))
     refs = [man['personaje']['maestra']['url']] + ([man['perro']['url']] if perro else [])
+    crudo_gh = 'https://raw.githubusercontent.com/rodrigodelcastillo117-dotcom/AI-GIRL/main/'
+    if muebles:
+        n0 = len(refs) + 1
+        refs += [crudo_gh + os.path.relpath(os.path.abspath(m), RAIZ) for m in muebles]
+        que += (f' The desk and chair must be EXACTLY the furniture shown in Images {n0} to {len(refs)} (same shape, '
+                'materials, colors, legs and proportions), placed naturally in the room, no logo on it.')
     capital = ('Exactly ONE dog: the Rottweiler of Image 2, calm, nobody touching it.' if perro else
                'No dogs and no animals anywhere in the frame.')
     prompt = ('Candid vertical photo taken by a friend with a phone, a real moment, not posed for a studio. The red-haired '
