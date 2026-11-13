@@ -578,6 +578,22 @@
     "texto": "Rodrigo, 13-nov-2026: \"Sí lo autorizo\" (a la pregunta: LC1 y LC2 necesitan ≈$4 cada uno; si no autorizas ≈$8 más, no salen)",
     "para": "tomas de Victoria hablando de LC1 (sale 22-nov) y LC2 (26-nov): REPLICATE_AUTORIZACION=largos-lc en largo.py voces/victoria",
     "ampliacion": "Rodrigo, 12-nov-2026: \"acaba el LC2\" (tope 8 → 10.5: LC2 son ~94 s a cámara ≈ $4.25 + voces y un reintento; quedaban $2.62)"
+   },
+   "sketch-tiktok": {
+    "fecha": "2026-11-13",
+    "tope_usd": 8,
+    "gastado_usd": 0,
+    "vence": "2026-12-13",
+    "texto": "Rodrigo, 13-nov-2026: \"Sí, 1 por semana, tope $8/mes\" (sketch de TikTok)",
+    "para": "1 sketch por semana para TikTok (35-55 s, Victoria contra \"el SAT\" / \"tu jefe y tu finiquito\" / \"el pago mínimo\"); si en 2 semanas no suben seguidores, se cortan"
+   },
+   "largo-pension": {
+    "fecha": "2026-11-13",
+    "tope_usd": 20,
+    "gastado_usd": 0,
+    "vence": "2026-12-13",
+    "texto": "Rodrigo, 13-nov-2026: \"Sí, 1 por semana, tope $20/mes\" (largo de pensión en YouTube)",
+    "para": "1 video largo de pensión/retiro por semana para YouTube y Facebook (8-15 min, de usted, fecha límite, fuentes en pantalla); se mide en suscriptores netos"
    }
   },
   "extra_mes": {

@@ -34,8 +34,11 @@ fechas útiles con "guárdalo y mándalo a tu familia".
    comentarios de TikTok a mano, entran a la misma lista.
 4. **Fechas con fuente**: aguinaldo (20-dic), PTU (mayo), declaración anual (abril), cuesta de enero; cierre
    "guárdalo y mándaselo a tu familia" y la fuente oficial en la foto.
-5. **PENDIENTE DE PRESUPUESTO (Rodrigo):** 1 sketch por semana (35-55 s, Victoria vs. "el SAT"/"tu jefe y tu finiquito"/
-   "el pago mínimo"), ~$1-2 USD c/u en Replicate. No se hace sin su autorización escrita.
+5. **AUTORIZADO (Rodrigo, 13-nov): 1 sketch por semana, tope $8 al mes** (autorización `sketch-tiktok`, vence
+   13-dic). 35-55 s, Victoria contra un "villano" que aparece como texto en pantalla o voz en off ("el SAT", "tu jefe y
+   tu finiquito", "el pago mínimo", "el gestor que te cobra la pensión"); ella lo desarma con el dato verificado. Se
+   produce con el formato escena (RUTINA → A) y REPLICATE_AUTORIZACION=sketch-tiktok. Sale el MIÉRCOLES en TikTok
+   (y Reel de Instagram/Facebook si pasa QA). Si en 2 semanas no suben seguidores, se corta y se le dice a Rodrigo.
 
 ## YouTube — la audiencia es 55+ (57 %): pensión, retiro, aguinaldo de pensionados
 Lo que hacen los canales que crecen (Pensión al Día MX: de 77 a 182K vistas en 3 semanas; Pensión a la Medida 179K;
@@ -56,9 +59,12 @@ el canal"); listas por tema; preguntas y respuestas.
 4. **Miniatura fija**: cara de Victoria (con etiqueta IA), 3-4 palabras en mayúsculas, una cifra o fecha y la etiqueta
    CONFIRMADO o RUMOR. Nunca caras ni logos del gobierno (riesgo de suplantación).
 5. **Victoria responde** (semanal): video con 3-5 preguntas reales de comentarios (preguntas.json), en vez de lives.
-6. **PENDIENTE DE DECISIÓN (Rodrigo):** (a) "usted" en YouTube de pensiones (los canales que crecen con 55+ hablan de
-   usted; el personaje habla de tú); (b) presupuesto para 1 largo de pensión por semana (~$5 USD en Replicate);
-   (c) dejar de convertir carruseles en shorts de YouTube (0-15 vistas) — se evalúa el 18-nov (tarea programada).
+6. **DECIDIDO (Rodrigo, 13-nov):** (a) **usted** en YouTube y Facebook cuando el tema es pensión o retiro (en TikTok
+   e Instagram sigue de tú); (b) **1 largo de pensión por semana, tope $20 al mes** (autorización `largo-pension`,
+   vence 13-dic): 8-15 min con largo.py y REPLICATE_AUTORIZACION=largo-pension, se produce el LUNES y sale el MIÉRCOLES
+   18:00 en YouTube y Facebook, con 2-3 shorts de avance antes. Primero: "Aguinaldo de pensionados 2026: cuánto y
+   cuándo le pagan" (IMSS Ley 73, ISSSTE, Bienestar; fechas y montos solo de fuente oficial, dos fuentes);
+   (c) dejar de convertir carruseles en shorts de YouTube (0-15 vistas): se evalúa el 18-nov (tarea programada).
 
 ## Instagram — la menor prioridad hasta que repartan (62 seguidores)
 Evidencia 2026 (Mosseri/Instagram): para llegar a no seguidores pesan tiempo visto, likes y sobre todo ENVÍOS por DM;

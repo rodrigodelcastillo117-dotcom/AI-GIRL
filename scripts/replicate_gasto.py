@@ -91,6 +91,9 @@ def freno(barato=False):
     # entorno REPLICATE_AUTORIZACION=<clave> en la corrida. Vale mientras no esté "cerrada" (se cierra al terminar).
     clave = os.environ.get('REPLICATE_AUTORIZACION')
     aut = (cfg.get('autorizaciones') or {}).get(clave) if clave else None
+    if aut and aut.get('vence') and __import__('datetime').date.today().isoformat() > aut['vence']:
+        sys.exit(f"FRENO DE REPLICATE: la autorización '{clave}' venció el {aut['vence']} (es mensual: Rodrigo la "
+                 "renueva). No se generó nada.")
     if aut and not aut.get('cerrada'):
         # La autorización tiene su propio tope (tope_usd): lo gastado con ella se suma en gastado_usd (cargar()).
         if aut.get('tope_usd') is not None and (aut.get('gastado_usd') or 0) >= aut['tope_usd']:

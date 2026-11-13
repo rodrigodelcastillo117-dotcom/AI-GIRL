@@ -32,6 +32,10 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - Instagram: el llamado único de los Reels pasa a "mándaselo a quien…"; "Comenta GUÍA" solo en 1 de cada 3.
 - Facebook: sin "Comenta SÍ o NO" ni "escribe…" (Meta lo castiga): cierre "Mándaselo por WhatsApp a quien…", máximo 3
   hashtags. Si el texto de Facebook sale igual al de Instagram, quítale la línea de "Comenta…" antes de programar.
+- YouTube y Facebook de pensión/retiro: Victoria habla de USTED (Rodrigo, 13-nov). TikTok e Instagram: de tú.
+- LUNES: producir el largo de pensión de la semana (REPLICATE_AUTORIZACION=largo-pension, tope $20/mes) y programarlo
+  el MIÉRCOLES 18:00 en YouTube y Facebook, con 2-3 shorts de avance ("el video completo está en el canal").
+- MIÉRCOLES: sketch de TikTok de la semana (REPLICATE_AUTORIZACION=sketch-tiktok, tope $8/mes; ver ESTRATEGIA_POR_RED).
 - Métrica del resumen diario: seguidores/suscriptores NETOS por red (contenido/seguidores.json), antes que vistas.
 
 ## 0000. PLAN DE CRECIMIENTO — desde el 13-nov (Rodrigo, 12-nov-2026: "aplícalo todo desde mañana y historias también
