@@ -16,6 +16,9 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
 - Capital: siempre el mismo Rottweiler negro y fuego, collar negro con placa dorada.
 - Elegancia y sensualidad discreta: nunca más piel para llamar la atención. Lo que la distingue es el contraste entre
   su imagen sofisticada y su manera cercana, divertida e inteligente de hablar de dinero.
+MODELO DE IDENTIDAD OFICIAL (13-nov-2026): las fotos nuevas de Victoria salen de su LoRA entrenado (scripts/foto_lora.py,
+palabra VICTORIACEO, 22 fotos aprobadas, $1.31). Escenas con muebles exactos (Vonhaucke) o con Capital: foto_dinamica.py
+con doble referencia de identidad y revisión manual de la cara.
 Control: toda foto nueva se compara lado a lado contra la hoja maestra ANTES de usarse (cara, ojos, pelo, edad). Si
 se desvía, se repite con más peso de identidad o se descarta. foto_dinamica.py usa dos referencias de identidad (hoja
 maestra + estilo-b-oficina-1) desde el 13-nov, porque con una sola y fotos de muebles la cara se redondeaba.

@@ -613,7 +613,7 @@
    "lora-victoria": {
     "fecha": "2026-11-13",
     "tope_usd": 5,
-    "gastado_usd": 0,
+    "gastado_usd": 1.36,
     "texto": "Rodrigo, 13-nov-2026: \"Sí, tope $5 USD\" (entrenar un modelo propio con la cara de Victoria) tras \"déjalo perfecto, siempre, siempre siempre igual\"",
     "para": "Entrenar una vez un LoRA de identidad de Victoria con 15-25 fotos aprobadas y 4 pruebas contra la hoja maestra; solo se vuelve oficial si la cara sale igual"
    }
@@ -626,6 +626,16 @@
    "umbral_usd": 5,
    "monto_usd": 35,
    "texto": "Rodrigo, 12-nov-2026: \"bajó de 5 USD y se metieron otros 35 USD\""
+  },
+  "lora_victoria": {
+   "version": "rodrigodelcastillo117-dotcom/victoria-ceo-lora:050ae12b0adbe6ba2a17d8c96569f4856eb41d6a046e494c605aa68dc9f0e983",
+   "palabra": "VICTORIACEO",
+   "entrenamiento": "ejjwdnqr0xrmy0d1tecb2knymw",
+   "pasos": 1000,
+   "oficial": true,
+   "aprobado": "2026-11-13: 4 pruebas consistentes contra la hoja maestra (oficina, café, estudio, casa)",
+   "costo_entrenamiento_usd": 1.31,
+   "fotos_entrenamiento": 22
   }
  },
  "higgsfield": {
