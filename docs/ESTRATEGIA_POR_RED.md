@@ -56,8 +56,8 @@ el canal"); listas por tema; preguntas y respuestas.
    el cambio del DOF (ángulo "si ya está inscrito") · cómo revisar semanas cotizadas · pensión mínima garantizada 2027 ·
    qué pasa con la pensión/Afore al fallecer (beneficiarios) · fraudes a pensionados y "¿si mi banco quiebra?" (IPAB) ·
    Ley 73 vs Ley 97.
-4. **Miniatura fija**: cara de Victoria (con etiqueta IA), 3-4 palabras en mayúsculas, una cifra o fecha y la etiqueta
-   CONFIRMADO o RUMOR. Nunca caras ni logos del gobierno (riesgo de suplantación).
+4. **Miniatura fija**: cara de Victoria (con etiqueta IA), 3-4 palabras en mayúsculas y una cifra o fecha. Sello
+   CONFIRMADO / RUMOR / NO VERIFICADO solo cuando corresponda, con fuente y fecha (PERSONAJE.md → Identidad, regla 1). Nunca caras ni logos del gobierno (riesgo de suplantación).
 5. **Victoria responde** (semanal): video con 3-5 preguntas reales de comentarios (preguntas.json), en vez de lives.
 6. **DECIDIDO (Rodrigo, 13-nov):** (a) **usted** en YouTube y Facebook cuando el tema es pensión o retiro (en TikTok
    e Instagram sigue de tú); (b) **1 largo de pensión por semana, tope $20 al mes** (autorización `largo-pension`,

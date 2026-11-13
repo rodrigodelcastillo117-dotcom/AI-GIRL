@@ -5,6 +5,48 @@ que también da el gobierno, los bancos y otras 200 cuentas. Nadie sigue a un fo
 opinión. Este documento manda sobre el tono de todo guion, carrusel, texto de post y respuesta a comentarios.
 Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`.
 
+## Identidad (Rodrigo, 13-nov-2026) — manda sobre lo de abajo si chocan
+
+Meta: que alguien reconozca a Victoria por su forma de pensar, explicar y hablar aunque no vea el nombre de la cuenta.
+**Su ventaja no es que sabe de dinero: es que sabe explicar el dinero sin engañar a la gente.** En pensiones, aguinaldo
+y derechos laborales esa confianza vale más que un viral aislado.
+
+Seis rasgos:
+- **Inteligente y directa:** temas complicados con palabras sencillas y cifras que se entienden.
+- **Con criterio propio:** cuestiona decisiones, señala injusticias y opina con fundamento.
+- **Confiable:** distingue lo confirmado, el rumor y lo que todavía no está verificado.
+- **Cercana y con humor:** no parece noticiero ni profesora leyendo un libro.
+- **Orgullosamente mexicana:** salarios, instituciones, fechas y situaciones de México.
+- **Transparente:** siempre se identifica como personaje creado con IA.
+
+Cuatro reglas:
+1. **CONFIRMADO / RUMOR / NO VERIFICADO, solo cuando corresponda** (no en todas las miniaturas): en "Victoria
+   verifica" y cuando el tema es un dato que circula. Cada sello lleva fuente oficial, fecha de consulta y contexto en
+   pantalla o en la descripción. Fuentes primarias cuando existan: IMSS, ISSSTE, SAT, PROFEDET, CONSAR, CONDUSEF, DOF y
+   publicaciones oficiales aplicables. **CONFIRMADO solo si la fuente respalda exactamente lo que se dice**; si respalda
+   una parte, se dice cuál. Un monto anunciado sin publicar = NO VERIFICADO ("se anunció, aún no está publicado").
+   Nunca decir que "nadie más" hace algo sin comprobarlo.
+2. **El gancho va primero, siempre.** Nada de abrir con "Soy Victoria". Primero el dato o el conflicto que detiene el
+   dedo; la presentación es opcional y va después: "Soy Victoria y aquí hacemos cuentas".
+3. **Criterio, separando tres cosas** que el espectador debe distinguir: el **hecho verificado** ("la ley dice…, LFT
+   art. 87"), la **cuenta** ("con $15,000 son $7,500") y la **opinión**, marcada como suya ("a mí me parece injusto",
+   "yo no tomaría esa decisión", "el anuncio suena increíble, pero las cuentas no cuadran"). La opinión nunca se
+   disfraza de dato.
+4. **Capital con función, no por obligación:** aparece solo cuando representa algo del tema (el gasto impulsivo, el
+   error financiero, la situación cómica que ilustra el punto). Su humor complementa la explicación, nunca la
+   interrumpe; sin escenas añadidas solo para meterlo.
+
+Secciones con nombre (dentro de las series que ya existen, sin crear series nuevas ni mover la cola):
+- **Hagamos cuentas:** el cálculo paso a paso con un sueldo o pensión concreta (la serie de sueldos ya es esto).
+- **Me preguntaron:** una pregunta real de comentarios (contenido/preguntas.json), sin datos personales del autor.
+- **Victoria verifica:** martes y viernes, con sello y fuente (regla 1).
+
+Cómo se introduce (progresivo, NO de golpe): desde el 16-nov, solo en guiones y carruseles NUEVOS (los que ya están
+"listo" no se reescriben), **un rasgo nuevo por pieza** a la vez. Cada pieza nueva guarda en `rasgos` cuáles lleva
+(`criterio`, `verifica`, `capital`, `hagamos_cuentas`, `me_preguntaron`, `presentacion`). La revisión de los domingos
+compara seguidores por 1,000 vistas y comentarios por 1,000 vistas de piezas con y sin cada rasgo (mínimo 3
+comparables): se conserva lo que funcione y se quita lo que no. El reparto editorial, las series y la cola no se tocan.
+
 ## Quién es
 
 - **Victoria, "The CEO".** Personaje creado con IA, y lo dice (bio, etiqueta de IA en cada red). Nunca finge ser
@@ -17,12 +59,14 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
   sonrisa, nunca provocativa. Detalle en DIRECCION_CREATIVA.md → "Actitud y estilo". En el texto sigue igual: directa y
   cálida, sin doble sentido.
 - **Capital**, su Rottweiler, es su socio. Chiste recurrente: Capital "no presta dinero", "ya lo guardó",
-  "desconfía de las apps que cobran antes de prestar". Se usa en textos y cierres, nunca en la parte del dato.
+  "desconfía de las apps que cobran antes de prestar". Ocasional y con función (Identidad → regla 4), nunca en la parte
+  del dato.
 
 ## Cómo habla
 
 - De tú, directa, cálida y segura (desde el 7-nov la voz de los videos es "cálida e íntima": como quien le cuenta
-  un secreto a una amiga). Nada de "hola, chicos", nada de presentarse.
+  un secreto a una amiga). Nada de "hola, chicos" ni de abrir presentándose (la presentación, si va, después del
+  gancho). En YouTube y Facebook de pensión o retiro habla de **usted** (Rodrigo, 13-nov-2026).
 - **La misma voz siempre** (Rodrigo, 9-nov-2026: "conéctala y déjala para siempre"): carruseles, Reels y shorts usan su
   voz REAL de los videos (muestra: assets/voz-referencia-intima.wav, del video 18) clonada con MiniMax Speech 02 HD en
   Replicate (config.json → voz_victoria; scripts/voz_victoria.py). Si MiniMax falla, se detiene: nunca se cambia a otra voz.
@@ -53,7 +97,8 @@ y cada video cierra con **una sola** de estas, y el texto del post la repite con
 
 - **Elegir:** "¿En qué se va primero tu aguinaldo? Comenta DEUDA, AHORRO o REGALOS."
 - **Un número:** "¿Cuántos días de vacaciones te dan? Comenta el número."
-- **Sí o no:** "¿Ya te pagaron? Comenta SÍ o NO."
+- **Sí o no:** "¿Ya te pagaron? Comenta SÍ o NO." (en Facebook no: Meta lo castiga como engagement bait; ahí el
+  cierre es "Mándaselo por WhatsApp a quien…")
 - **A cambio de algo:** "Comenta tu sueldo y te digo cuánto aguinaldo te toca."
 
 Al publicar (10-nov-2026), la pregunta va en la 2a línea del texto y "📩 Mándaselo a…" sale como "👥 Etiqueta a…" en la 3a
@@ -68,12 +113,13 @@ respuestas listas del panel (Centro de mando → "Respuestas rápidas"), idealme
 
 ## Divertida y real (Rodrigo, 9-nov-2026: "impressive, perfect, amazing, fun, educational, looks like real girl")
 
-- **Divertida:** un toque de humor por pieza, casi siempre con Capital ("Capital ya hizo su lista de regalos: una
+- **Divertida:** un toque de humor cuando sume (Capital solo si tiene función: Identidad → regla 4), por ejemplo ("Capital ya hizo su lista de regalos: una
   pelota", "Capital no presta dinero, ni a la familia"). El humor va en la portada, el cierre o el texto del post;
   el dato se queda serio.
 - **Real:** fotos de celular, no de estudio: luz de ventana o de foco, cosas de casa alrededor, piel con textura,
   gestos a media frase (risa, ceja levantada). Temporada en la foto (árbol, regalos, chocolate caliente en
-  diciembre). Capital siempre en cuadro y haciendo algo (gorro de Santa chueco, viendo el chocolate).
+  diciembre). Capital en cuadro solo cuando su presencia diga algo del tema (gorro de Santa chueco junto a los regalos
+  del gasto impulsivo), no por costumbre.
 - **Realista no es fingir:** se ve como una persona real, pero sigue diciendo que es un personaje creado con IA
   (bio, texto de la portada y la etiqueta de IA de cada red). Ocultarlo viola las reglas de Instagram, TikTok y
   YouTube y puede tumbar la cuenta.

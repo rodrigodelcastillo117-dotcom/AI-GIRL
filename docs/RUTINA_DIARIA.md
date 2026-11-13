@@ -28,7 +28,9 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - YouTube: en todo short/largo de pensión, aguinaldo o retiro la razón para suscribirse es "cada vez que el IMSS o el
   Bienestar cambien fechas o montos, te lo explico aquí"; los shorts que tengan largo del tema terminan con "el video
   completo está en el canal" y su enlace va en la descripción y en el comentario propio. Miniatura: cara + 3-4 palabras
-  + cifra/fecha + CONFIRMADO o RUMOR.
+  + cifra/fecha (sello CONFIRMADO / RUMOR / NO VERIFICADO solo cuando corresponda, con fuente y fecha).
+- Guiones y carruseles NUEVOS desde el 16-nov: docs/PERSONAJE.md → "Identidad" (gancho primero, criterio separado del
+  dato, Capital con función, un rasgo nuevo por pieza y guardado en `rasgos`). Los "listo" no se reescriben.
 - Instagram: el llamado único de los Reels pasa a "mándaselo a quien…"; "Comenta GUÍA" solo en 1 de cada 3.
 - Facebook: sin "Comenta SÍ o NO" ni "escribe…" (Meta lo castiga): cierre "Mándaselo por WhatsApp a quien…", máximo 3
   hashtags. Si el texto de Facebook sale igual al de Instagram, quítale la línea de "Comenta…" antes de programar.
