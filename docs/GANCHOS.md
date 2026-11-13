@@ -79,7 +79,15 @@ Patrones, no textos (nunca copiar a otro creador). Muestra: 20 videos virales de
 El laboratorio (`scripts/aprender.py`) compara las fórmulas por `adn.tipo_gancho` con las vistas a
 36 h: cuando haya datos, manda lo que gane con la audiencia de Victoria, no esta tabla.
 
-## Gancho de impacto (Rodrigo, 13-nov-2026: "que parece que les avientan algo, corta y hablan… adaptado al fondo, a la persona, al tema" · "hazlo con Replicate")
+## Gancho de impacto — EN PAUSA (13-nov: v1 y v2 rechazados por Rodrigo; ver "Lo que aprendimos")
+
+### Lo que aprendimos (13-nov)
+- Rodrigo NO quiere que le peguen: quiere el SUSTO (la amenaza) y cortar justo antes. Ejemplos suyos: un señor en una
+  escalera le avienta agua desde arriba → corte → Victoria hablando; Capital brincando hacia la cámara → corte → habla.
+- Animar el primer cuadro del video hablado con seedance-1-pro NO sirve: objetos que flotan, brazos que no se entienden,
+  letras inventadas. El gancho tiene que ser su PROPIA toma (otro encuadre), con un modelo mejor en física.
+
+### (versión anterior) Gancho de impacto (Rodrigo, 13-nov-2026: "que parece que les avientan algo, corta y hablan… adaptado al fondo, a la persona, al tema" · "hazlo con Replicate")
 
 Qué es: 0.4-0.8 s de acción en la MISMA escena y con el MISMO cuadro donde Victoria va a hablar: un objeto que ES el
 tema vuela hacia la cámara (o cae de golpe), silbido + golpe seco, CORTE y entra Victoria hablando. Interrumpe el

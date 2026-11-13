@@ -729,12 +729,11 @@
   "id": "gancho-impacto-nov26",
   "desde": "2026-11-14",
   "meta": "3 con gancho vs 3 sin gancho (shorts hablados formato escena)",
-  "hechos": [
-   "E1"
-  ],
+  "hechos": [],
   "evaluar": "2026-11-26",
   "autorizacion": "shorts-escena",
   "regla": "máximo 1 de cada 3 shorts hablados; docs/GANCHOS.md → Gancho de impacto",
-  "nota": "v2 (13-nov): persona que avienta algo de golpe (Rodrigo: \"una persona aventándole algo, más brusco\"). M4 y O2 retirados; rehacer con este estilo cuando haya autorización."
+  "nota": "v2 (13-nov): persona que avienta algo de golpe (Rodrigo: \"una persona aventándole algo, más brusco\"). M4 y O2 retirados; rehacer con este estilo cuando haya autorización.",
+  "estado": "en pausa: seedance desde el cuadro hablado no sirve para sustos; siguiente intento con otro modelo y toma propia, con autorización de Rodrigo"
  }
 }

@@ -3890,9 +3890,10 @@
     "hasta_s": 1.6,
     "archivo_sin_gancho": "videos/video-E1-FINAL-sin-gancho.mp4",
     "prueba": "gancho-impacto-nov26",
-    "activo": true,
+    "activo": false,
     "version": 2,
-    "que": "un brazo le avienta una bola de papel (ticket), le pega en el hombro, brinca y se ríe; corte y habla"
+    "que": "un brazo le avienta una bola de papel (ticket), le pega en el hombro, brinca y se ríe; corte y habla",
+    "rechazado": "Rodrigo, 13-nov: v1 \"malísimo\", v2 \"pésimo\" (no se entiende el brazo; él quiere SUSTO sin pegarle: agua desde una escalera, Capital brincando a la cámara)"
    }
   },
   {
