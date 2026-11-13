@@ -58,8 +58,8 @@ mundo del personaje sea consistente.
 
 ## Vestuario
 
-Nunca se repite: cada combinación (prenda + color + tela) queda registrada como usada. El vestuario
-siempre corresponde a la locación (tabla anterior).
+Los 6 looks firma (lista maestra) se repiten a propósito; el resto rota. Nunca se repite la misma foto, pose o toma.
+El vestuario siempre corresponde a la locación.
 
 ## Actitud y estilo: "sexy entrepreneur", con elegancia (Rodrigo, 12-nov-2026)
 
@@ -212,7 +212,7 @@ generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del d
 | 18 | Gimnasio / pilates | Conjunto deportivo sobrio con chamarra, sin marcas | No | Hábitos, constancia (ligeros) | — |
 | 19 | Restaurante caro | Vestido de noche o slip dress de satín con blazer en los hombros | No | Ligeros, metas, "piensa como CEO" | ✅ |
 | 20 | Bar speakeasy | Vestido de cóctel | No | Ligeros, opinión | ✅ |
-| 21 | Departamento con vista de noche | Vestido midi ajustado o pantalón de vestir con blusa de satín | A veces | Metas, opinión | — |
+| 21 | Su departamento con vista de noche (EXCEPCIÓN: es su casa, por eso Capital puede salir) | Vestido midi ajustado o pantalón de vestir con blusa de satín | A veces | Metas, opinión | — |
 | 22 | Palco de teatro | Vestido de noche negro o esmeralda, aretes largos | No | Ligeros, metas | — |
 | 23 | Palco de estadio | Blazer con jeans de diseñador o vestido de punto | No | Ligeros | — |
 | 24 | Estadio vacío, yarda 50 | Chamarra de piel o blazer, jeans, botines | No | Opinión, metas | — |
@@ -228,5 +228,17 @@ generada (assets/fotos/dinamica-*); el resto se genera con Everygen (tarea del d
 | 34 | Playa (Cancún, Tulum) | Vestido de lino o camisa larga sobre traje de una pieza; nunca bikini | No | Vacaciones, aguinaldo | — |
 | 35 | Ciudades TOP: París (trench), Nueva York (abrigo largo), Tokio (blazer y pantalón), Dubái (vestido largo de lino), Santorini (vestido blanco), Mónaco (vestido de cóctel), Aspen (abrigo y suéter), CDMX Reforma/Polanco (blazer) | según ciudad y clima | No | Metas, "piensa como CEO", dólar/tipo de cambio | — |
 
-Reglas que siguen: el lugar va con el TEMA (salario mínimo, renta o deudas nunca desde un yate); 3 de cada 4 videos
-en lujo y 1 de cada 4 en casa; nunca logos; ropa nunca se repite igual; en videos hablando, de pecho para arriba.
+Fotos hechas: 15 de 35 filas (16 archivos: helipuerto y helicóptero son dos fotos de la misma fila). Faltan 20.
+
+Reglas que siguen (13-nov-2026, ajustadas por Rodrigo; reemplazan "3 de cada 4 en lujo"):
+- **Reparto visual (hipótesis, se mide):** 60 % casa, oficina y estudio · 25 % lujo y lifestyle · 15 % ciudad, deporte
+  y viajes. Victoria vende confianza en temas de dinero cotidiano: el lujo es aspiracional, no la regla. No hace falta
+  que parezca dueña del yate o el jet: son escenas de su vida ficticia de personaje con IA.
+- El lugar va con el TEMA (salario mínimo, renta, deudas y pensión nunca desde el lujo).
+- **Looks firma:** 6 atuendos que se repiten a propósito para que la reconozcan: (1) blazer negro sobre camisola de satín
+  crema (oficina); (2) blazer rojo sobre camisola negra (estudio de podcast); (3) suéter fino camel (home office y casa);
+  (4) blusa de seda esmeralda (estados de cuenta, café); (5) trench camel con jeans (calle); (6) vestido midi negro
+  (noche y lujo). Lo que nunca se repite es la misma foto, pose o toma; el resto del vestuario sí rota.
+- Nunca logos; en videos hablando, de pecho para arriba.
+- Sensualidad en todos los escenarios desde la seguridad, la elegancia, la expresividad y el carisma: nunca poses
+  forzadas ni sexualizar la escena.
