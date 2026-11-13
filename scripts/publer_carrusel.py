@@ -240,6 +240,28 @@ def subir_video(ws, c, video):
     return media_id
 
 
+def firma_tiktok(c):
+    """Estrategia por red (13-nov-2026, docs/ESTRATEGIA_POR_RED.md → TikTok): las vistas no se vuelven seguidores. Las
+    cuentas que sí crecen meten el "sígueme" dentro del contenido con una razón: la siguiente parte (series) y una firma
+    fija del personaje. Solo cambia el TEXTO de TikTok; las diapositivas y la forma de subir quedan igual."""
+    serie = c.get('serie')
+    if isinstance(serie, dict):  # series viejas: {'nombre', 'numero', 'total'}; su ritmo no es diario
+        n, total = serie.get('numero'), serie.get('total')
+        if n and total and n < total:
+            return f'📌 Parte {n} de {total} de "{serie.get("nombre")}". La parte {n + 1} sale pronto: sígueme para no perdértela.'
+        return 'Soy Victoria, una IA que no te vende nada. Sígueme y mañana te doy el siguiente dato.'
+    if serie:  # series nuevas (texto), una parte por día
+        hermanos = sorted((x for x in json.load(open(RUTA))['carruseles'] if x.get('serie') == serie),
+                          key=lambda x: int(''.join(ch for ch in x['id'] if ch.isdigit()) or 0))
+        ids = [x['id'] for x in hermanos]
+        n = ids.index(c['id']) + 1 if c['id'] in ids else 0
+        if n and n < len(ids):
+            return f'📌 Parte {n} de {len(ids)} de "{serie}". Mañana la parte {n + 1}: sígueme para no perdértela.'
+        if n:
+            return f'📌 Última parte de "{serie}". Sígueme: la siguiente serie empieza esta semana.'
+    return 'Soy Victoria, una IA que no te vende nada. Sígueme y mañana te doy el siguiente dato.'
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     config = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json')))
@@ -263,7 +285,7 @@ def main():
     # Instagram busca por las palabras del pie y corta en 5 hashtags; TikTok, además, por las preguntas (docs/SEO.md).
     texto_post = texto_con_calculadora(c)  # su calculadora (11-nov-2026)
     por_red = {'instagram': texto_post + '\n\n' + ' '.join(hashtags_para('instagram', c['seo'], config)),
-               'tiktok': '\n\n'.join([texto_post, '🔎 ' + ' '.join(c['seo']['preguntas']),
+               'tiktok': '\n\n'.join([texto_post, firma_tiktok(c), '🔎 ' + ' '.join(c['seo']['preguntas']),
                                        ' '.join(hashtags_para('tiktok', c['seo'], config))])}
     if '--prueba' in sys.argv:
         media = [{'id': f'MEDIA_{i}', 'type': 'image'} for i in range(len(fotos))]
