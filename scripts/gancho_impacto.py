@@ -68,6 +68,11 @@ def generar(vid, accion, modelo='seedance'):
                    'negative_prompt': 'text, captions, logos, watermark, morphing face, different woman, extra fingers, '
                                       'violence, injury, the object hitting her'}
         costo = 0.6  # ≈ $0.15/s con audio × 4 s (se toma el alto)
+    elif modelo == 'kling':  # cuando el filtro de Veo bloquea la escena (E1, 13-nov: "flagged as sensitive" dos veces)
+        url = 'https://api.replicate.com/v1/models/kwaivgi/kling-v2.5-turbo-pro/predictions'
+        entrada = {'start_image': imagen, 'prompt': accion, 'duration': 5, 'aspect_ratio': '9:16',
+                   'negative_prompt': 'text, logos, watermark, morphing face, different woman, extra fingers, injury'}
+        costo = 0.5  # no sé el precio exacto de Kling 2.5 Turbo Pro en Replicate: se anota alto
     else:
         url = f'https://api.replicate.com/v1/models/{MODELO}/predictions'
         entrada = {'image': imagen, 'prompt': BASE + accion, 'duration': 5, 'resolution': '1080p', 'aspect_ratio': '9:16',
@@ -84,7 +89,7 @@ def generar(vid, accion, modelo='seedance'):
         sys.exit(f"ERROR: {p.get('error')}")
     crudo = v(f'video-{vid}-gancho-crudo.mp4')
     urllib.request.urlretrieve(p['output'] if isinstance(p['output'], str) else p['output'][0], crudo + '.tmp.mp4')
-    audio = ['-c:a', 'aac', '-ar', '48000', '-ac', '2'] if modelo == 'veo' else ['-an']
+    audio = ['-c:a', 'aac', '-ar', '48000', '-ac', '2'] if modelo == 'veo' else ['-an']  # Kling: sin audio → golpe sintético
     ffmpeg('-i', crudo + '.tmp.mp4', '-vf', 'scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30',
            *audio, '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', crudo)
     os.remove(crudo + '.tmp.mp4')
@@ -151,7 +156,7 @@ def armar(vid, desde, hasta, impacto=None):
 
 if __name__ == '__main__':
     if len(sys.argv) >= 4 and sys.argv[1] == 'generar':
-        generar(sys.argv[2], sys.argv[3], 'veo' if '--veo' in sys.argv else 'seedance')
+        generar(sys.argv[2], sys.argv[3], 'veo' if '--veo' in sys.argv else 'kling' if '--kling' in sys.argv else 'seedance')
     elif len(sys.argv) in (5, 6) and sys.argv[1] == 'armar':
         armar(sys.argv[2], float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]) if len(sys.argv) == 6 else None)
     else:
