@@ -22,6 +22,7 @@ export default function handler(req, res) {
     calendario: leerSiHay('calendario.json'),
     cambios: leerSiHay('cambios.json'),
     comentar_hoy: leerSiHay('comentar_hoy.json'),
+    pendientes: leerSiHay('pendientes.json'),
     largos: leerSiHay('largos.json'),
   });
 }

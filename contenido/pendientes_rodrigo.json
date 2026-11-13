@@ -1,0 +1,38 @@
+[
+ {
+  "id": "bio-ig",
+  "texto": "Pegar la bio nueva de Instagram y cambiar el enlace a ?ref=ig-bio",
+  "como": "Perfil → Editar perfil. Texto en contenido/perfiles.json (o pídemelo).",
+  "hecho": false
+ },
+ {
+  "id": "bio-tt",
+  "texto": "Pegar la bio nueva de TikTok",
+  "como": "Perfil → Editar perfil → Biografía (78 de 80 caracteres).",
+  "hecho": false
+ },
+ {
+  "id": "fijar-yt",
+  "texto": "Fijar el comentario con enlace en c68, c70 y c74 de YouTube",
+  "como": "YouTube Studio → Comentarios → ⋮ → Fijar.",
+  "hecho": false
+ },
+ {
+  "id": "beehiiv",
+  "texto": "Beehiiv: verificación con INE y API key",
+  "como": "Al tener la key, agrégala como secreto de red para api.beehiiv.com.",
+  "hecho": false
+ },
+ {
+  "id": "destacadas",
+  "texto": "Agregar las historias de hoy a sus destacadas",
+  "como": "Te llega la lista a las 20:13: abre la historia → Destacar → elige.",
+  "hecho": false
+ },
+ {
+  "id": "drive-vonhaucke",
+  "texto": "Compartir la carpeta de catálogos de Vonhaucke (o 3-4 capturas)",
+  "como": "Drive → Compartir → Cualquiera con el enlace, un rato.",
+  "hecho": false
+ }
+]

@@ -91,7 +91,7 @@ function pintar() {
   grafica(diario.slice(-14));
   pintarTop(e.publicaciones || []);
   agenda(FOTO.calendario || []);
-  tarea(FOTO.comentar_hoy);
+  tarea(FOTO.comentar_hoy, FOTO.pendientes);
   dinero(e.replicate, e.creditos_apps?.apps || {});
 }
 
@@ -248,26 +248,54 @@ function agenda(cal) {
 }
 
 // ---------- tarea de hoy ----------
-function tarea(c) {
+function tarea(c, pendientes) {
+  // Rodrigo, 13-nov-2026: "ve cómo no se actualiza solo": al terminar Comenta hoy la sección se quedaba igual. Ahora,
+  // cuando ya no queda nada de Comenta hoy, muestra lo siguiente que solo él puede hacer (contenido/pendientes_rodrigo.json).
   const vids = c?.videos || [];
   const hechos = new Set(JSON.parse(localStorage.getItem('comentados') || '[]'));
-  $('tarea-nota').textContent = vids.length ? `Comenta hoy · TikTok · ${vids.filter((v) => hechos.has(v.url)).length} de ${vids.length}` : 'Comenta hoy · TikTok';
-  if (!vids.length) { $('tarea').replaceChildren(el('p', {className: 'vacio', textContent: 'Hoy no hay videos que cumplan. Nada que hacer.'})); return; }
-  $('tarea').replaceChildren(...vids.map((v) => {
-    const hecho = hechos.has(v.url);
-    const copiar = el('button', {className: 'boton principal', type: 'button', textContent: 'Copiar'});
-    copiar.onclick = async () => { await navigator.clipboard.writeText(v.comentario); copiar.textContent = 'Copiado'; setTimeout(() => (copiar.textContent = 'Copiar'), 1500); };
-    const listo = el('button', {className: `boton${hecho ? ' hecho' : ''}`, type: 'button', textContent: hecho ? 'Hecho ✓' : 'Ya lo comenté'});
-    listo.onclick = () => {
-      const s = new Set(JSON.parse(localStorage.getItem('comentados') || '[]'));
-      s.has(v.url) ? s.delete(v.url) : s.add(v.url);
-      localStorage.setItem('comentados', JSON.stringify([...s]));
-      tarea(c);
+  const faltan = vids.filter((v) => !hechos.has(v.url));
+  const listos = new Set(JSON.parse(localStorage.getItem('pendientes_hechos') || '[]'));
+  const pend = (pendientes || []).filter((p) => !p.hecho && !listos.has(p.id));
+  if (vids.length && faltan.length) {
+    $('tarea-nota').textContent = `Comenta hoy · TikTok · ${vids.length - faltan.length} de ${vids.length}`;
+    $('tarea').replaceChildren(...vids.map((v) => {
+      const hecho = hechos.has(v.url);
+      const copiar = el('button', {className: 'boton principal', type: 'button', textContent: 'Copiar'});
+      copiar.onclick = async () => { await navigator.clipboard.writeText(v.comentario); copiar.textContent = 'Copiado'; setTimeout(() => (copiar.textContent = 'Copiar'), 1500); };
+      const listo = el('button', {className: `boton${hecho ? ' hecho' : ''}`, type: 'button', textContent: hecho ? 'Hecho ✓' : 'Ya lo comenté'});
+      listo.onclick = () => {
+        const s = new Set(JSON.parse(localStorage.getItem('comentados') || '[]'));
+        s.has(v.url) ? s.delete(v.url) : s.add(v.url);
+        localStorage.setItem('comentados', JSON.stringify([...s]));
+        tarea(c, pendientes);
+      };
+      return el('div', {className: 'comentario', style: hecho ? 'opacity:.55' : ''},
+        el('div', {className: 'quien'}, el('b', {textContent: `@${v.autor}`}), ` · ${corto(v.vistas)} vistas`),
+        el('p', {textContent: v.comentario}),
+        el('div', {className: 'acciones'}, copiar, el('a', {className: 'boton', href: v.url, target: '_blank', rel: 'noopener', textContent: 'Abrir'}), listo));
+    }));
+    return;
+  }
+  const hechoHoy = vids.length ? `Comenta hoy ✓ ${vids.length} de ${vids.length}` : 'Comenta hoy: nada hoy';
+  if (!pend.length) {
+    $('tarea-nota').textContent = hechoHoy;
+    $('tarea').replaceChildren(el('p', {className: 'vacio', textContent: 'Listo por hoy ✓ Mañana a las 6:37 llega lo nuevo.'}));
+    return;
+  }
+  $('tarea-nota').textContent = `${hechoHoy} · siguiente: ${pend.length} pendiente${pend.length > 1 ? 's' : ''} tuyo${pend.length > 1 ? 's' : ''}`;
+  $('tarea').replaceChildren(...pend.map((p) => {
+    const ya = el('button', {className: 'boton principal', type: 'button', textContent: 'Ya lo hice'});
+    ya.onclick = () => {
+      const s = new Set(JSON.parse(localStorage.getItem('pendientes_hechos') || '[]'));
+      s.add(p.id);
+      localStorage.setItem('pendientes_hechos', JSON.stringify([...s]));
+      tarea(c, pendientes);
     };
-    return el('div', {className: 'comentario', style: hecho ? 'opacity:.55' : ''},
-      el('div', {className: 'quien'}, el('b', {textContent: `@${v.autor}`}), ` · ${corto(v.vistas)} vistas`),
-      el('p', {textContent: v.comentario}),
-      el('div', {className: 'acciones'}, copiar, el('a', {className: 'boton', href: v.url, target: '_blank', rel: 'noopener', textContent: 'Abrir'}), listo));
+    return el('div', {className: 'comentario'},
+      el('div', {className: 'quien'}, el('b', {textContent: 'Solo tú puedes'})),
+      el('p', {textContent: p.texto}),
+      el('div', {className: 'quien', textContent: p.como}),
+      el('div', {className: 'acciones'}, ya));
   }));
 }
 

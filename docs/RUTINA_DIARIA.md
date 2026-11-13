@@ -67,6 +67,9 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- PENDIENTES DE RODRIGO EN EL PANEL (13-nov, "ve cómo no se actualiza solo"): contenido/pendientes_rodrigo.json se muestra en
+  "Tu tarea de hoy" cuando termina Comenta hoy. Cada rutina marca "hecho": true lo que pueda comprobar (bio de IG por
+  la API, llave de Beehiiv con una llamada) y agrega lo nuevo que solo él puede hacer; tablero.py lo copia al panel.
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.

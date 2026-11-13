@@ -614,6 +614,10 @@ def main():
         guardar('comentar_hoy.json', json.load(open(os.path.join(RAIZ, 'contenido', 'comentar_hoy.json'))))
     except (OSError, ValueError):
         guardar('comentar_hoy.json', {})
+    try:  # Pendientes de Rodrigo (13-nov-2026): lo que solo él puede hacer; el panel los muestra al terminar Comenta hoy
+        guardar('pendientes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'pendientes_rodrigo.json'))))
+    except (OSError, ValueError):
+        guardar('pendientes.json', [])
     guardar('aprendizajes.json', json.load(open(os.path.join(RAIZ, 'contenido', 'aprendizajes.json'))))
     json.dump(auditoria, open(os.path.join(SALIDA, 'auditoria.json'), 'w'), ensure_ascii=False, indent=1)
     guardar('mejores_horas.json', [
