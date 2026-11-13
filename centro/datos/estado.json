@@ -63,7 +63,7 @@
     "que": "Sale el carrusel «Calculadoras de finanzas personales gratis 🧮» (Instagram 19:00 · TikTok 13:00)"
    }
   ],
-  "generado_utc": "2026-11-13T02:15:51Z",
+  "generado_utc": "2026-11-13T05:30:04Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -551,7 +551,7 @@
    "costo_promedio_toma_usd": 0.46,
    "sin_precio": {},
    "incompleto": false,
-   "generado_utc": "2026-11-13T02:15:58Z",
+   "generado_utc": "2026-11-13T05:30:14Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -594,8 +594,8 @@
    }
   },
   "salud": {
-   "generado_utc": "2026-11-13T02:14:30Z",
-   "estado": "alerta",
+   "generado_utc": "2026-11-13T05:29:39Z",
+   "estado": "aviso",
    "checks": [
     {
      "area": "Llaves",
@@ -614,8 +614,8 @@
     },
     {
      "area": "Llaves",
-     "estado": "alerta",
-     "detalle": "Meta (Instagram y Facebook) no responde: HTTPError HTTP Error 401: Unauthorized"
+     "estado": "ok",
+     "detalle": "Meta (Instagram y Facebook) responde"
     },
     {
      "area": "Gasto",

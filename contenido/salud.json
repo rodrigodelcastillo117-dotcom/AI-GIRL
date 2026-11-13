@@ -1,6 +1,6 @@
 {
- "generado_utc": "2026-11-13T02:14:30Z",
- "estado": "alerta",
+ "generado_utc": "2026-11-13T05:29:39Z",
+ "estado": "aviso",
  "checks": [
   {
    "area": "Llaves",
@@ -19,8 +19,8 @@
   },
   {
    "area": "Llaves",
-   "estado": "alerta",
-   "detalle": "Meta (Instagram y Facebook) no responde: HTTPError HTTP Error 401: Unauthorized"
+   "estado": "ok",
+   "detalle": "Meta (Instagram y Facebook) responde"
   },
   {
    "area": "Gasto",
