@@ -228,10 +228,19 @@ def textos_youtube(c, config):
     post = '\n'.join(l for l in c['texto_post'].strip().splitlines() if 'enlace en mi perfil' not in l)  # en YouTube va el enlace directo
     if s['palabra_clave'].lower() not in post.split('\n')[0].lower():  # la búsqueda lee la primera línea (docs/SEO.md)
         post = s['palabra_clave'][:1].upper() + s['palabra_clave'][1:] + ': ' + post[:1].lower() + post[1:]
+    from seo import sin_errores
+    relacionadas = sin_errores([t for t in s.get('tags_concretas', []) if t.lower() not in s['titulo'].lower()],
+                               s['titulo'] + ' ' + c['texto_post'])[:8]
+    pension = any(k in (s['titulo'] + ' '.join(s.get('tags_concretas', []))).lower()
+                  for k in ('pension', 'pensión', 'imss', 'afore', 'jubil', 'retiro', 'modalidad 40', 'semanas cotizadas'))
+    razon = config.get('razon_suscribirse', {}).get('pension' if pension else 'otro') or \
+        f"Soy Victoria: tu dinero en México, sin rodeos, {cada(config)}. Suscríbete para no perderte el siguiente."
     descripcion = '\n\n'.join(x for x in [
+        s['titulo'].strip(),  # 13-nov-2026: el título en la primera línea de la descripción
         post, '\n'.join(enlaces), f"📚 Fuentes: {c['fuente']}",
         'Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in s['preguntas']),
-        f"Soy Victoria: tu dinero en México, sin rodeos, {cada(config)}. Suscríbete para no perderte el siguiente.",
+        razon,
+        ('También te sirve si buscas: ' + ', '.join(relacionadas) + '.') if relacionadas else '',
         ' '.join(hashtags_para('youtube', s, config)),
         'Victoria es un personaje creado con IA.'] if x)[:4900]
     return s['titulo'], descripcion, ','.join(etiquetas(s, c.get('pilar', 'finanzas'), config))

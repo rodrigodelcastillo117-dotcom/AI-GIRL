@@ -222,20 +222,34 @@
  "titulo_max": 45,
  "hashtags_fijos": [
   "#victoriatheceo",
-  "#emprendimiento",
   "#finanzaspersonales",
-  "#mentalidad"
+  "#dinero",
+  "#mexico"
  ],
  "tags_genericas": [
-  "negocios",
-  "dinero",
   "finanzas personales",
-  "emprendimiento",
-  "mentalidad",
-  "motivacion",
-  "exito",
-  "desarrollo personal",
   "educacion financiera",
+  "dinero",
+  "finanzas personales mexico",
+  "educacion financiera mexico",
+  "aguinaldo 2026",
+  "aguinaldo",
+  "salario minimo 2026",
+  "sueldo",
+  "prestaciones de ley",
+  "ley federal del trabajo",
+  "finiquito",
+  "liquidacion",
+  "imss",
+  "pension imss",
+  "afore",
+  "sat",
+  "isr",
+  "ahorro",
+  "como ahorrar dinero",
+  "deudas",
+  "tarjeta de credito",
+  "presupuesto",
   "victoria the ceo"
  ],
  "tags_formato": {
@@ -329,9 +343,10 @@
   "#victoriatheceo"
  ],
  "max_hashtags": {
-  "youtube": 5,
+  "youtube": 12,
   "instagram": 5,
-  "tiktok": 7
+  "tiktok": 10,
+  "facebook": 3
  },
  "palabras_por_segundo": 2.65,
  "creditos_por_segundo": 40,
@@ -665,5 +680,20 @@
   "api": "https://api.beehiiv.com/v2",
   "llave": "secreto de red del entorno (api.beehiiv.com), nunca en el repo",
   "plan": "prueba 14 días → Free (2,500 suscriptores)"
+ },
+ "hashtags_genericos": [
+  "#dinero",
+  "#finanzas",
+  "#educacionfinanciera",
+  "#mexico",
+  "#ahorro",
+  "#finanzasmexico",
+  "#dineroenmexico",
+  "#tudinero"
+ ],
+ "tags_max_caracteres": 485,
+ "razon_suscribirse": {
+  "pension": "Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.",
+  "otro": "Suscríbete: cada semana hago las cuentas de un sueldo real."
  }
 }

@@ -122,6 +122,10 @@ def texto_facebook(texto, enlace=None, etiqueta=None):
     """Pie de Facebook: el de Instagram, pero ahí los enlaces sí se pueden tocar (9-nov-2026). "enlace en mi perfil"
     se cambia por el enlace directo con ?ref=fb; si no lo trae, se agrega el del carrusel o el de la página."""
     from seo import con_ref  # aquí y no arriba: seo importa de varios lados
+    # Facebook castiga los textos con muchos hashtags (Meta, abr-2025): máximo 3 (config.json → max_hashtags.facebook).
+    tope = CONFIG.get('max_hashtags', {}).get('facebook', 3)
+    texto = '\n'.join(' '.join([w for w in l.split() if w.startswith('#')][:tope]) if l.strip().startswith('#') else l
+                      for l in texto.split('\n'))
     url = con_ref(enlace or CONFIG.get('enlace_venta') or 'https://victoriatheceo.vercel.app', 'fb')
     nuevo, n = re.subn(r'enlace en mi perfil\s*👆?', url, texto)
     if n:

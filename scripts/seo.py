@@ -1,3 +1,4 @@
+import re
 """Arma y valida los textos de publicación de un video a partir de su bloque "seo" del plan.
 
 Uso: python seo.py <id_video> <carpeta_salida>      (sale con error si el SEO rompe una regla)
@@ -20,7 +21,7 @@ import sys
 import textwrap
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TOPE_TAGS = 480
+TOPE_TAGS = 485  # Rodrigo, 13-nov-2026: tags completos, apuntar a 485 de 500 (comas y comillas cuentan)
 
 
 def es_emoji(caracter):
@@ -62,7 +63,7 @@ def etiquetas(seo, pilar, config):
     genericas = [t.lower() for t in config['tags_genericas']]
     elegidas, usados = set(), 0
     for t in concretas + formato + genericas:
-        if t not in elegidas and usados + costo_tag(t) <= TOPE_TAGS and len(elegidas) < 40:
+        if t not in elegidas and usados + costo_tag(t) <= TOPE_TAGS + 1 and len(elegidas) < 70:
             elegidas.add(t)
             usados += costo_tag(t)
     orden = []
@@ -75,6 +76,21 @@ def etiquetas(seo, pilar, config):
 def cada(config):
     dias = config.get('dias_entre_videos', 2)
     return 'cada día' if dias == 1 else f'cada {dias} días'
+
+
+def sin_errores(frases, texto=''):
+    """Quita de una lista VISIBLE los tags con error de dedo a propósito ("aginaldo"): sirven como tag oculto, pero en la
+    descripción se leen como falta de ortografía. Es error si es UNA palabra que no está en las demás frases ni en el
+    texto, pero se parece mucho a una que sí (aginaldo ~ aguinaldo)."""
+    import difflib
+    vocab = set(re.findall(r"[a-záéíóúñü0-9]+", (texto + ' ' + ' '.join(frases)).lower()))
+    def mal(f):
+        w = f.lower().strip()
+        if ' ' in w:
+            return False
+        otras = vocab - {w}
+        return bool(difflib.get_close_matches(w, otras, n=1, cutoff=0.8)) and w not in texto.lower()
+    return [f for f in frases if not mal(f)]
 
 
 def con_ref(enlace, red):
@@ -91,7 +107,10 @@ def hashtags_para(red, seo, config):
     extra = config['hashtags_fijos'] if red == 'tiktok' else []
     maximo = config.get('max_hashtags', {}).get(red, 5)
     concretos = seo['hashtags'][:maximo - len(marca)]
-    return list(dict.fromkeys(concretos + marca + extra + seo['hashtags']))[:maximo]
+    # 13-nov-2026: más hashtags donde sí cuentan (YouTube 12 de 15 máx: con más de 15 los ignora todos; TikTok 10),
+    # rellenando con genéricos del nicho; Instagram sigue en 5 (tope de la red) y Facebook en 3 (castiga el exceso).
+    genericos = config.get('hashtags_genericos', [])
+    return list(dict.fromkeys(concretos + marca + extra + seo['hashtags'] + genericos))[:maximo]
 
 
 def textos(video, plan, config):
@@ -120,14 +139,24 @@ def textos(video, plan, config):
     capitulos = '\n'.join(f"{c['inicio'] // 60}:{c['inicio'] % 60:02d} {c['titulo']}" for c in video.get('capitulos') or [])
     # YouTube: 2 líneas que se buscan, enlaces, el párrafo con variantes de la búsqueda, el post,
     # las preguntas que la gente escribe y 5 hashtags (regla 18-20). Máximo 4,900 caracteres.
+    # 13-nov-2026 (Rodrigo): el TÍTULO va en la primera línea de la descripción y las palabras clave del video se
+    # dicen completas en una línea de búsquedas relacionadas (natural, sin repetir: YouTube castiga el relleno).
+    relacionadas = sin_errores([t for t in seo.get('tags_concretas', []) if t.lower() not in seo['titulo'].lower()],
+                               seo['titulo'] + ' ' + seo['descripcion_inicio'] + ' ' + video['texto_post'])[:8]
     descripcion = '\n\n'.join(x for x in [
+        seo['titulo'].strip(),
         seo['descripcion_inicio'].strip(),
         '\n'.join(enlaces),
         capitulos,  # solo en videos largos: 0:00 Título... (regla de YouTube: empieza en 0:00, 3 o más)
         parrafo,
         post,
         ('Preguntas que responde este video:\n' + '\n'.join(f'• {q}' for q in preguntas)) if preguntas else '',
+        # Razón concreta para suscribirse (ESTRATEGIA_POR_RED, 13-nov-2026): la de pensión (de usted) o la de sueldos.
+        (config.get('razon_suscribirse', {}).get('pension') if any(k in (seo['titulo'] + ' '.join(seo.get('tags_concretas', []))).lower()
+         for k in ('pension', 'pensión', 'imss', 'afore', 'jubil', 'retiro', 'modalidad 40', 'semanas cotizadas'))
+         else config.get('razon_suscribirse', {}).get('otro')) or
         f"Soy Victoria: tu dinero en México, sin rodeos, {cada(config)}. Suscríbete para no perderte el siguiente.",
+        ('También te sirve si buscas: ' + ', '.join(relacionadas) + '.') if relacionadas else '',
         ' '.join(hashtags_para('youtube', seo, config)),
         cierre,
     ] if x)[:4900]
