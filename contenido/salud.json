@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-13T05:29:39Z",
+ "generado_utc": "2026-11-13T06:56:30Z",
  "estado": "aviso",
  "checks": [
   {
@@ -25,17 +25,12 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $32.92 · semana $63.58 de $7 · mes $64.13 de $28 (proyección del mes $160.33) · El espacio, semana $2.52 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.31 · semana $63.89 de $7 · mes $64.44 de $28 (proyección del mes $148.71) · El espacio, semana $2.52 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $0.32 de $20, lora-victoria $1.36 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
    "estado": "ok",
    "detalle": "Everygen (Viewmax) 0/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 14:03 UTC)"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-12: TikTok 4, Instagram 2, YouTube 5, Facebook 2"
   },
   {
    "area": "Calendario",
@@ -46,6 +41,11 @@
    "area": "Calendario",
    "estado": "ok",
    "detalle": "2026-11-14: TikTok 3, Instagram 3, YouTube 4, Facebook 4"
+  },
+  {
+   "area": "Calendario",
+   "estado": "ok",
+   "detalle": "2026-11-15: TikTok 2, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: TikTok 2/3, YouTube 2/3"
   },
   {
    "area": "Videos largos",

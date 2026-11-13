@@ -1,101 +1,5 @@
 [
  {
-  "fecha": "2026-11-12",
-  "tipo": "facebook",
-  "id": "c08",
-  "estado": "programado",
-  "que": "Video del carrusel «Gastos hormiga que se comen tu sueldo ☕» en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "09:30"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "facebook",
-  "id": "c09",
-  "estado": "programado",
-  "que": "Video del carrusel «Ahorro voluntario Afore y tus impuestos 🧾» en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "21:30"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "reel",
-  "id": "c70",
-  "estado": "programado",
-  "que": "Reel del carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» (el mismo video del Short)",
-  "horas": {
-   "ig": "11:06",
-   "fb": "11:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "video",
-  "id": "M1",
-  "que": "Sale el video «Buen Fin 2026, 3 errores con tu tarjeta 💳»",
-  "estado": "publicado",
-  "horas": {
-   "ig": "12:51",
-   "tt": "12:51",
-   "fb": "12:51",
-   "yt": "12:51"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "carrusel",
-  "id": "c68",
-  "que": "Sale el carrusel «Sueldo y renta en México, haz tus cuentas 🧮»",
-  "estado": "programado",
-  "horas": {
-   "ig": "19:02",
-   "tt": "13:06",
-   "yt": "20:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "carrusel",
-  "id": "c70",
-  "que": "Sale el carrusel «Aguinaldo 2026 de 30 días, rumor o realidad 🔍»",
-  "estado": "programado",
-  "horas": {
-   "tt": "09:06",
-   "yt": "12:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "carrusel",
-  "id": "c74",
-  "que": "Sale el carrusel «Buen Fin 2026 en 5 datos para guardar 🔖»",
-  "estado": "programado",
-  "horas": {
-   "tt": "20:05",
-   "yt": "17:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-12",
-  "tipo": "largo",
-  "id": "LB1",
-  "estado": "programado",
-  "que": "Video largo: Buen Fin 2026: ¿cómo saber si una oferta es real?",
-  "horas": {
-   "yt": "10:00"
-  },
-  "confirmado": []
- },
- {
   "fecha": "2026-11-13",
   "tipo": "facebook",
   "id": "c02",
@@ -375,7 +279,10 @@
    "ig": "12:13",
    "tt": "16:41"
   },
-  "confirmado": []
+  "confirmado": [
+   "ig",
+   "tt"
+  ]
  },
  {
   "fecha": "2026-11-16",
@@ -402,9 +309,12 @@
   "estado": "programado",
   "que": "Video largo: No me pagaron el aguinaldo 2026: qué hacer paso a paso",
   "horas": {
-   "yt": "18:45"
+   "yt": "18:45",
+   "fb": "18:45"
   },
-  "confirmado": []
+  "confirmado": [
+   "fb"
+  ]
  },
  {
   "fecha": "2026-11-16",
@@ -418,7 +328,11 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": []
+  "confirmado": [
+   "fb",
+   "ig",
+   "tt"
+  ]
  },
  {
   "fecha": "2026-11-16",
@@ -432,7 +346,11 @@
    "tt": "22:15",
    "fb": "21:30"
   },
-  "confirmado": []
+  "confirmado": [
+   "ig",
+   "fb",
+   "tt"
+  ]
  },
  {
   "fecha": "2026-11-17",
@@ -714,6 +632,61 @@
   "id": "LA3-c01",
   "estado": "listo",
   "que": "Short del video largo «Aguinaldo 2026 e ISR · Aguinaldo 2026 e ISR»",
+  "horas": {
+   "yt": "14:00",
+   "ig": "15:07",
+   "tt": "16:04",
+   "fb": "15:07"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
+  "id": "c63",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Fecha de corte de tu tarjeta en 5 datos 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
+  "id": "c42",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Red flags financieras que no son normales 🚩» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
+  "id": "c47",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Cuánto gana un programador en México 💻» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "recorte",
+  "id": "LA1-c03",
+  "estado": "listo",
+  "que": "Short del video largo «Cómo calcularlo · Aguinaldo 2026»",
+  "horas": {
+   "yt": "20:30",
+   "ig": "21:37",
+   "tt": "22:19",
+   "fb": "21:37"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "recorte",
+  "id": "LA3-c02",
+  "estado": "listo",
+  "que": "Short del video largo «La parte exenta (parte 1) · Aguinaldo 2026 e ISR»",
   "horas": {
    "yt": "14:00",
    "ig": "15:07",

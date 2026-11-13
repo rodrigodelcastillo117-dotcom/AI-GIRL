@@ -51,8 +51,10 @@
   "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.46,
- "sin_precio": {},
- "incompleto": false,
- "generado_utc": "2026-11-13T06:45:19Z",
+ "sin_precio": {
+  "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 4
+ },
+ "incompleto": true,
+ "generado_utc": "2026-11-13T06:57:00Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
