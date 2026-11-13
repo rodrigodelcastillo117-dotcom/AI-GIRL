@@ -585,7 +585,7 @@
    "shorts-escena": {
     "fecha": "2026-11-12",
     "tope_usd": 15,
-    "gastado_usd": 11.16,
+    "gastado_usd": 11.91,
     "texto": "Rodrigo, 12-nov-2026: \"replicate no pasa nada, si es necesario úsalo para hacer más shorts y cosas que ella salga hablando, pero TIENE QUE SER SÚPER MEGA REALISTA\" y \"shorts que duren 15-20 segundos, que hable, que diga cosas, que haga acciones dependiendo del entorno\"",
     "para": "shorts con acción: foto hablando por escena (nano-banana ≈$0.04), voz MiniMax y p-video-avatar 15-20 s (≈$0.70-0.90 por short + reintentos)"
    },
@@ -724,5 +724,16 @@
  "historias_de_posts": {
   "max_por_dia": 3,
   "nota": "scripts/historias_posts.py: cada post nuevo de IG se anuncia en historias de IG y FB (Rodrigo, 13-nov). Tope para no saturar a los seguidores; cuenta aparte de la historia de Victoria Hoy."
+ },
+ "prueba_gancho_impacto": {
+  "id": "gancho-impacto-nov26",
+  "desde": "2026-11-14",
+  "meta": "3 con gancho vs 3 sin gancho (shorts hablados formato escena)",
+  "hechos": [
+   "E1"
+  ],
+  "evaluar": "2026-11-26",
+  "autorizacion": "shorts-escena",
+  "regla": "máximo 1 de cada 3 shorts hablados; docs/GANCHOS.md → Gancho de impacto"
  }
 }

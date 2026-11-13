@@ -3876,6 +3876,12 @@
     "tt": "2026-11-14T19:07:00Z",
     "fb": "2026-11-14T19:07:00Z",
     "yt": "2026-11-14T19:07:00Z"
+   },
+   "gancho_impacto": {
+    "desde_s": 0.2,
+    "hasta_s": 0.65,
+    "archivo_sin_gancho": "videos/video-E1-FINAL-sin-gancho.mp4",
+    "prueba": "gancho-impacto-nov26"
    }
   },
   {

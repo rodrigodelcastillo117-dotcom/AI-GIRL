@@ -78,3 +78,37 @@ Patrones, no textos (nunca copiar a otro creador). Muestra: 20 videos virales de
 
 El laboratorio (`scripts/aprender.py`) compara las fórmulas por `adn.tipo_gancho` con las vistas a
 36 h: cuando haya datos, manda lo que gane con la audiencia de Victoria, no esta tabla.
+
+## Gancho de impacto (Rodrigo, 13-nov-2026: "que parece que les avientan algo, corta y hablan… adaptado al fondo, a la persona, al tema" · "hazlo con Replicate")
+
+Qué es: 0.4-0.8 s de acción en la MISMA escena y con el MISMO cuadro donde Victoria va a hablar: un objeto que ES el
+tema vuela hacia la cámara (o cae de golpe), silbido + golpe seco, CORTE y entra Victoria hablando. Interrumpe el
+scroll en el primer medio segundo. Script: scripts/gancho_impacto.py (generar → revisar cuadros → armar).
+
+Reglas (no negociables):
+1. El objeto ES el tema. Si el susto no tiene que ver, la gente se va en el segundo 2 y el video se castiga.
+2. Elegante: el impacto lo pone el dinero, no la violencia. NUNCA atropellos, golpes a personas, armas, accidentes de
+   coche realistas (contenido peligroso/engañoso con IA) ni nada que la haga ver vulgar.
+3. Mismo cuadro que el video hablado (generar usa el primer cuadro de videos/video-<id>.mp4): que no se note el pegado.
+4. Corte ANTES de que el modelo invente texto o marcas en el objeto (pasó con E1: después de 0.7 s el ticket mostraba
+   "NICII"). Se elige el corte mirando la hoja de cuadros; ideal: el objeto en su punto más grande y borroso.
+5. Texto de pantalla en el segundo 0, mismo estilo que el título del video (lo pone armar).
+6. Máximo 1 de cada 3 shorts hablados: si se usa diario, se gasta.
+7. Costo: seedance-1-pro 5 s 1080p ≈ $0.75 con la autorización shorts-escena (el freno manda).
+
+Catálogo escena × tema (elegir el que va con el lugar donde está Victoria):
+| Escena | Tema | Objeto / acción |
+|---|---|---|
+| café, terraza | gastos hormiga, antojos | un ticket larguísimo del café sale volando a la cámara (E1, 13-nov) |
+| oficina, escritorio Vonhaucke | SAT, ISR, declaración | un sobre del SAT cae de golpe sobre el escritorio frente a la cámara |
+| home office, estados de cuenta | tarjeta, deudas, MSI | una tarjeta de crédito sale disparada hacia la cámara |
+| calle, compras | Buen Fin, ofertas | una bolsa de compras / etiqueta de precio vuela a la cámara |
+| cocina, casa | aguinaldo, sueldo | billetes que se escapan volando hacia la cámara |
+| estudio, lectura | Afore, pensión, retiro | un estado de cuenta de la Afore cae de golpe frente a la cámara |
+| terraza nevada, invierno | cuesta de enero | bola de nieve que rueda hacia la cámara |
+| lobby, junta | negocios, ventas | un fajo de facturas que alguien avienta sobre la mesa |
+
+Prueba (desde el 14-nov): 3 shorts con gancho de impacto contra 3 normales comparables (mismo formato escena, misma
+red, edad parecida). Se mide: % que sigue después de 3 s (YouTube: % visto; TikTok: vistas a la misma edad) y seguidores
+por cada 1,000 vistas. Nadie gana con menos de 3 contra 3 (regla de ESTRATEGIA_POR_RED). Registro: plan.json →
+gancho_impacto.prueba = "gancho-impacto-nov26"; evaluación en la revisión del 26-nov.

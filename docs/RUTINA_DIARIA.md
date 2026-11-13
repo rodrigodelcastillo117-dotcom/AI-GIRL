@@ -64,6 +64,9 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
   (tope config.json → historias_de_posts.max_por_dia = 3, aparte de Victoria Hoy). La API no da destacadas, sticker de
   enlace ni historias de TikTok. Destacadas CREADAS por Rodrigo el 13-nov (Aguinaldo, Sueldo, Verifica, Hoy, Pensión,
   Guía; portadas en assets/destacadas/): cada noche la revisión de las 20:13 le manda la lista (scripts/destacadas.py).
+- GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
+  prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
+  y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.
