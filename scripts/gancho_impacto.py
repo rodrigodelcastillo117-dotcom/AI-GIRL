@@ -73,7 +73,7 @@ def generar(vid, accion, modelo='seedance', foto=None):
     elif modelo == 'kling':  # cuando el filtro de Veo bloquea la escena (E1, 13-nov: "flagged as sensitive" dos veces)
         url = 'https://api.replicate.com/v1/models/kwaivgi/kling-v2.5-turbo-pro/predictions'
         entrada = {'start_image': imagen, 'prompt': accion, 'duration': 5, 'aspect_ratio': '9:16',
-                   'negative_prompt': 'text, logos, watermark, morphing face, different woman, extra fingers, injury'}
+                   'negative_prompt': os.environ.get('GANCHO_NEGATIVO', 'text, logos, watermark, morphing face, different woman, extra fingers, injury')}
         costo = 0.5  # no sé el precio exacto de Kling 2.5 Turbo Pro en Replicate: se anota alto
     else:
         url = f'https://api.replicate.com/v1/models/{MODELO}/predictions'
