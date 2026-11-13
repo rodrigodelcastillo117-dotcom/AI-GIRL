@@ -140,6 +140,19 @@ def a_playlist(acceso, video_id, clave):
     return lista
 
 
+def portada_carrusel(video):
+    """carruseles/<id>/short.mp4 → JPG de su lámina 00 (Victoria + título) de menos de 2 MB, o None si no es carrusel."""
+    import re
+    import subprocess
+    m = re.search(r'carruseles[/\\]([^/\\]+)[/\\]', os.path.abspath(video))
+    lamina = os.path.join(RAIZ, 'carruseles', m[1], '00.png') if m else None
+    if not lamina or not os.path.exists(lamina):
+        return None
+    salida = os.path.join(RAIZ, 'carruseles', m[1], 'portada-youtube.jpg')
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', lamina, '-vf', 'scale=1080:-2', '-q:v', '3', salida], check=True)
+    return salida
+
+
 def metadatos(titulo, descripcion, cuando, tags=None):
     publica = datetime.datetime.fromisoformat(cuando.replace('Z', '+00:00'))
     inmediato = publica - datetime.datetime.now(datetime.timezone.utc) < datetime.timedelta(minutes=15)
@@ -229,8 +242,12 @@ def main():
     estado = revisado.get('status', {})
     if not revisado or revisado['snippet']['title'] != meta['snippet']['title'] or estado.get('uploadStatus') in ('failed', 'rejected', 'deleted'):
         sys.exit(f"ERROR: YouTube no muestra el video como se subió ({subido['id']}): {json.dumps(estado)[:500]}")
-    if '--miniatura' in sys.argv:
-        imagen = open(sys.argv[sys.argv.index('--miniatura') + 1], 'rb').read()
+    # Rodrigo, 13-nov-2026: "que en los shorts siempre sea Victoria en la portada". Un short de carrusel
+    # (carruseles/<id>/...mp4) lleva de portada su lámina 00 (Victoria + título) aunque no se pida --miniatura:
+    # sin esto YouTube elegía un cuadro de en medio y salía una lámina de puro texto.
+    auto = portada_carrusel(video) if '--miniatura' not in sys.argv else None
+    if '--miniatura' in sys.argv or auto:
+        imagen = open(auto or sys.argv[sys.argv.index('--miniatura') + 1], 'rb').read()
         try:
             _http('POST', f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={subido['id']}", imagen,
                   {'Authorization': f'Bearer {acceso}', 'Content-Type': 'image/jpeg'})
