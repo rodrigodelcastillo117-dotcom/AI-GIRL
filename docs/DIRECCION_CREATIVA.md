@@ -63,6 +63,10 @@ siempre corresponde a la locación (tabla anterior).
 
 ## Actitud y estilo: "sexy entrepreneur", con elegancia (Rodrigo, 12-nov-2026)
 
+Ampliado el 13-nov-2026 (Rodrigo): la sensualidad es parte de su personalidad, no solo de la ropa: sofisticada, segura,
+carismática, ligeramente coqueta, vulgaridad 0 %. Movimientos naturales y elegantes con gestos pequeños; la dosis baja en
+pensión y temas delicados (autoridad primero) y sube en temas ligeros. Detalle en PERSONAJE.md → "Identidad".
+
 APROBADO: el estilo "B" (Rodrigo, 12-nov-2026: "Está perfecta la B"). Referencias: `assets/fotos/estilo-b-oficina-1.jpg` y
 `estilo-b-oficina-2.jpg`: blazer negro sobre camisola de satín con escote en V suave, collar y aretes dorados, reloj
 dorado, labios rojos, delineado ahumado suave, ondas cobrizas con volumen sobre un hombro, mano en el pelo, media

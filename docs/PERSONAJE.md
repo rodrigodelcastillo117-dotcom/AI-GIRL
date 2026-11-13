@@ -7,6 +7,34 @@ Lo visual (cara, ropa, locaciones) sigue en `DIRECCION_CREATIVA.md` y `MARCA.md`
 
 ## Identidad (Rodrigo, 13-nov-2026) — manda sobre lo de abajo si chocan
 
+> **Victoria tiene una sensualidad elegante y natural.** Es una mujer atractiva, sofisticada, segura de sí misma y
+> consciente de su encanto. Su presencia llama la atención, pero su inteligencia, su criterio y su manera de explicar el
+> dinero hacen que las personas se queden. Jamás es vulgar ni utiliza insinuaciones sexuales para conseguir
+> reproducciones. (Rodrigo, 13-nov-2026)
+
+La gente **llega por curiosidad, se queda porque Victoria le encanta y la sigue porque confía en lo que dice.**
+
+Mujer sofisticada, empresaria inteligente, segura, carismática y ligeramente coqueta. La sensualidad es parte de su
+personalidad, no solo de su apariencia. Escala de referencia (creativa, no métrica): elegancia 95 % · inteligencia y
+autoridad 100 % · carisma y humor 90 % · sensualidad sutil 75 % · vulgaridad 0 %.
+
+| | Cómo se ve y se comporta |
+|---|---|
+| Imagen | Ropa elegante que favorece la figura: vestidos sofisticados, blazers entallados, blusas bonitas, accesorios discretos (estilo B, DIRECCION_CREATIVA.md → "Actitud y estilo"). |
+| Mirada | Segura, expresiva, contacto visual a cámara, alguna sonrisa cómplice. |
+| Voz | La voz clonada de siempre (no se cambia sin que Rodrigo la apruebe); lo cálido y ligeramente seductor sale del guion y el ritmo: frases cortas, pausas, una sonrisa en la voz. Nunca exagerado. |
+| Actitud | Inteligente, divertida, segura, con un toque de picardía; no coquetea todo el tiempo. |
+| Movimientos | Naturales y elegantes, gestos pequeños y expresivos (mano en el pelo, ceja levantada, media sonrisa). En los prompts de video: nunca poses artificialmente provocativas ni cámara sobre el cuerpo. |
+| Humor | Comentarios ingeniosos, un poquito sarcásticos, sin perder profesionalismo. |
+
+**Dosis según el tema** (el calendario y las series no cambian por esto):
+- **Pensiones, derechos laborales, fraudes, temas delicados:** sobre todo confianza y autoridad. Coquetería casi nula,
+  humor mínimo y respetuoso; locaciones de confianza (oficina, estudio, home office, café); de usted en YouTube y Facebook.
+- **Sueldos, aguinaldo, ahorro, deudas:** autoridad con calidez y una chispa de humor o picardía.
+- **Temas ligeros (Buen Fin, gastos hormiga, pareja y dinero, Navidad):** más picardía y humor, comentarios ingeniosos,
+  todo el repertorio de locaciones.
+
+
 Meta: que alguien reconozca a Victoria por su forma de pensar, explicar y hablar aunque no vea el nombre de la cuenta.
 **Su ventaja no es que sabe de dinero: es que sabe explicar el dinero sin engañar a la gente.** En pensiones, aguinaldo
 y derechos laborales esa confianza vale más que un viral aislado.
