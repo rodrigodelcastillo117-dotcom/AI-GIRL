@@ -3782,12 +3782,14 @@
    "archivo": "videos/video-O2-FINAL.mp4",
    "foto_base": "assets/fotos/navidad-regalos.jpg",
    "gancho_impacto": {
-    "desde_s": 0.4,
-    "hasta_s": 0.95,
+    "desde_s": 1.0,
+    "hasta_s": 1.95,
     "archivo_sin_gancho": "videos/video-O2-FINAL-sin-gancho.mp4",
     "prueba": "gancho-impacto-nov26",
-    "rechazado": "Rodrigo, 13-nov: \"está malísimo, tiene que ser una persona aventándole algo, más brusco\"",
-    "activo": false
+    "activo": true,
+    "version": "susto-veo",
+    "que": "Capital brinca hacia la cámara con la lengua de fuera; corte cuando llena la pantalla",
+    "por_aprobar": "Rodrigo ve el preview antes de publicar"
    }
   },
   {
@@ -4215,12 +4217,14 @@
     "yt": "2026-11-18T19:07:00Z"
    },
    "gancho_impacto": {
-    "desde_s": 0.35,
-    "hasta_s": 1.1,
+    "desde_s": 0.9,
+    "hasta_s": 2.0,
     "archivo_sin_gancho": "videos/video-M4-FINAL-sin-gancho.mp4",
     "prueba": "gancho-impacto-nov26",
-    "rechazado": "Rodrigo, 13-nov: \"está malísimo, tiene que ser una persona aventándole algo, más brusco\"",
-    "activo": false
+    "activo": true,
+    "version": "susto-veo",
+    "que": "cae una cubeta de agua desde arriba, ella grita mirando arriba; corte antes de que la moje",
+    "por_aprobar": "Rodrigo ve el preview antes de publicar"
    }
   }
  ]
