@@ -26,8 +26,8 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - TikTok: la firma/serie en el texto ya sale sola (publer_carrusel.py). La cola se arma en SERIES; usa preguntas.json
   para carruseles "Me preguntaron: gano $X…". Cierre de fechas: "guárdalo y mándaselo a tu familia" + fuente.
 - YouTube: en todo short/largo de pensión, aguinaldo o retiro la razón para suscribirse es "cada vez que el IMSS o el
-  Bienestar cambien fechas o montos, te lo explico aquí"; los shorts que tengan largo del tema terminan con "el video
-  completo está en el canal" y su enlace va en la descripción y en el comentario propio. Miniatura: cara + 3-4 palabras
+  Bienestar cambien fechas o montos, te lo explico aquí"; el short resuelve la duda solo; si hay largo del tema, se
+  ofrece como continuación opcional ("el cálculo completo está en el canal") con enlace en descripción y comentario propio. Miniatura: cara + 3-4 palabras
   + cifra/fecha (sello CONFIRMADO / RUMOR / NO VERIFICADO solo cuando corresponda, con fuente y fecha).
 - Guiones y carruseles NUEVOS desde el 16-nov: docs/PERSONAJE.md → "Identidad" (gancho primero, criterio separado del
   dato, Capital con función, un rasgo nuevo por pieza y guardado en `rasgos`). Los "listo" no se reescriben.
@@ -36,7 +36,8 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
   hashtags. Si el texto de Facebook sale igual al de Instagram, quítale la línea de "Comenta…" antes de programar.
 - YouTube y Facebook de pensión/retiro: Victoria habla de USTED (Rodrigo, 13-nov). TikTok e Instagram: de tú.
 - LUNES: producir el largo de pensión de la semana (REPLICATE_AUTORIZACION=largo-pension, tope $20/mes) y programarlo
-  el MIÉRCOLES 18:00 en YouTube y Facebook, con 2-3 shorts de avance ("el video completo está en el canal").
+  el MIÉRCOLES 18:00 en YouTube y Facebook, formato "Victoria resuelve" (ESTRATEGIA_POR_RED → Auditoría competitiva),
+  cuentas visibles en pantalla, con 2-3 shorts que resuelven una duda cada uno y ofrecen el largo como continuación.
 - MIÉRCOLES: sketch de TikTok de la semana (REPLICATE_AUTORIZACION=sketch-tiktok, tope $8/mes; ver ESTRATEGIA_POR_RED).
 - Mismo tema, PRIMERA LÍNEA distinta por red (no el mismo texto de arranque en las cuatro): TikTok = conflicto
   ("Gana $X y no le alcanza: te explico"), Instagram = identificación ("Si te pasa esto con tu aguinaldo…"),

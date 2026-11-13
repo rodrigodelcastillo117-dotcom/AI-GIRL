@@ -49,8 +49,10 @@ el canal"); listas por tema; preguntas y respuestas.
 1. **Razón para suscribirse ligada a algo que se repite** (reemplaza a la genérica): en shorts y largos de pensión/
    aguinaldo: "Suscríbete: cada vez que el IMSS o el Bienestar cambien fechas o montos, te lo explico aquí". En la
    serie de sueldos sigue "cada semana hago las cuentas de un sueldo real".
-2. **Shorts de YouTube = avance de un largo**: termina con "el video completo está en el canal" y el largo va en el
-   comentario propio y en la descripción. 
+2. **El short RESUELVE la duda por sí solo** (corregido 13-nov tras la auditoría competitiva: un short incompleto deja
+   insatisfecho al que lo ve). El largo del tema es continuación opcional: "si quiere el cálculo completo, está en el
+   canal", con su enlace en la descripción y en el comentario propio (y como video relacionado en Studio si la API no
+   lo permite: lo hace Rodrigo).
 3. **Temas en orden** (todos con dos fuentes oficiales; montos no publicados = "aún no oficial", nunca inventados):
    aguinaldo de pensionados y fechas de pago dic/ene · Pensión Bienestar 2027 "confirmado vs. rumor" · Modalidad 40 tras
    el cambio del DOF (ángulo "si ya está inscrito") · cómo revisar semanas cotizadas · pensión mínima garantizada 2027 ·
@@ -127,6 +129,25 @@ se declara ganador con un solo video; mínimo 3 publicaciones comparables (misma
 además, compara piezas con y sin cada rasgo de personalidad (campo `rasgos`, PERSONAJE.md → Identidad): se conserva el
 rasgo que mejore seguidores o comentarios por 1,000 vistas y se quita el que no. Temas, series y
 reparto no se tocan hasta el 15-dic.
+
+## Auditoría competitiva México (13-nov, la trajo Rodrigo) — se toma solo ejecución
+- **Largo semanal de pensión = formato "Victoria resuelve":** pregunta real → regla aplicable (fuente) → ejemplo
+  resuelto con supuestos explícitos → resultado y condiciones que lo cambian → lista de lo que debe revisar. 8-14 min.
+- **Las cuentas se ven:** datos de entrada, operación, resultado y condiciones aparecen en pantalla mientras habla.
+- **Short de 45 s (modelo):** 0-3 pregunta · 3-8 regla · 8-29 cuentas visibles · 29-39 resultado y supuestos
+  (proporcional, impuestos) · 39-45 cierre. Cierre firma opcional: "Aquí hacemos cuentas, no promesas."
+- **Ideas para las series existentes (sin reordenar la cola):** "¿Cuánto le corresponde de pensión con su régimen y
+  semanas?" (YouTube largo) · "Si ganas $12,000, $18,000 o $25,000, ¿cuánto aguinaldo te toca?" (TikTok) · "Tres errores
+  al revisar tu finiquito" (Instagram) · "¿Es cierto que habrá un pago adicional para pensionados?" (Facebook, Victoria
+  verifica, solo con fuente vigente) · "¿Conviene pedir un préstamo para pagar deudas?" (Shorts) · "Victoria responde:
+  ¿por qué mi nómina no coincide con mi sueldo?" (TikTok/Instagram).
+- **Panel de 5 referentes para la revisión semanal** (solo mirar qué despuntó en la semana, nunca copiar afirmaciones):
+  Princesa Godín (TikTok), Rafa Hurtado y Pensión a la Medida (YouTube especializado), Las Pensiones Bienestar
+  (actualidad), Moris Dieck (marca multiplataforma).
+- **Métricas que se suman:** errores de datos detectados y correcciones publicadas; clics al Kit CEO y ventas por red.
+- **Riesgo abierto:** los datos los revisa un segundo agente de IA contra fuentes oficiales, no un experto humano. Para
+  montos de pensión se recomendó a Rodrigo una revisión humana (contador o abogado laboral) del largo semanal: decisión
+  suya, pendiente.
 
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
