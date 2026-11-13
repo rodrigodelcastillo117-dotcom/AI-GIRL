@@ -149,6 +149,19 @@ reparto no se tocan hasta el 15-dic.
   montos de pensión se recomendó a Rodrigo una revisión humana (contador o abogado laboral) del largo semanal: decisión
   suya, pendiente.
 
+## Plan por red con fórmula propia (13-nov, lo trajo Rodrigo) — se toma solo esto
+- **Expediente maestro por tema:** antes de producir un tema de pensión o derechos laborales se escribe
+  contenido/expedientes/<tema>.json (pregunta, fuentes oficiales con fecha de consulta, fórmula, supuestos, ejemplos,
+  preguntas frecuentes). De ahí salen el largo, los shorts, el carrusel y el post de Facebook con arranque, duración
+  y cierre distintos por red. Una investigación verificada, varias piezas originales.
+- **Etiqueta de IA de cada plataforma, no solo la bio:** YouTube ya se marca como sintético al subir directo
+  (youtube.py → containsSyntheticMedia). Lo que sale por Publer (TikTok, Instagram, Facebook) hoy NO lleva la etiqueta
+  de la plataforma: en revisión si la API de Publer la permite; si no, Rodrigo la activa a mano o se sube distinto.
+- **Stories de Instagram para comunidad y Kit:** encuestas y preguntas son stickers que la API no pone; las hace
+  Rodrigo a mano cuando quiera (1-2 por semana), con presentación transparente del Kit CEO.
+- **NO se adopta su tabla de volumen semanal** (TikTok 3 videos + 2 carruseles, etc.): bajaría TikTok de ~21 a 5 piezas
+  por semana y subiría los videos con costo; Rodrigo decidió mantener el volumen. Se revisa el 15-dic con datos.
+
 ## Qué NO se copia de la competencia
 Montos de pensión no confirmados (el clickbait de "pensión para mayores de 50" es falso), caras de funcionarios en
 miniaturas, mezclar información con préstamos o asesorías de pago, consejos de inversión.
