@@ -76,6 +76,10 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - PORTADA DE SHORTS = VICTORIA (13-nov, Rodrigo: "que en los shorts siempre sea Victoria en la portada"): youtube.py pone
   sola la lámina 00 del carrusel como portada (portada_carrusel). Los shorts de Victoria hablando ya abren con ella.
   Shorts viejos: scripts/portadas_shorts.py. Cada portada cuesta 50 unidades de cuota.
+- PENSIÓN EN YOUTUBE (14-nov, Rodrigo: "sí" a 3 de cada 5): config.json → cola_youtube_pension (c87u…c92u, de usted,
+  revisados por un segundo agente). No salen por TikTok, así que NO los toma decidir_carruseles: prográmalos tú, 1 al día
+  como short de YouTube (carrusel_video.py short + youtube.py, portada con Victoria) y en Facebook, en el orden de la cola y
+  antes de su fecha "antes_de". Cuando se acabe la cola, escribe 5 más (pensión con urgencia y fecha) con segunda revisión.
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.

@@ -778,5 +778,34 @@
   "hasta": "2026-11-26",
   "pension_de_cada_5": 3,
   "nota": "Rodrigo 14-nov: sí. Urgencia y fecha, de usted, fuente oficial. Evaluar el 26-nov."
+ },
+ "cola_youtube_pension": {
+  "nota": "Carruseles de usted solo para YouTube y Facebook (no pasan por TikTok, así que decidir_carruseles no los toma): la rutina de las 6:37 los programa en este orden, 1 al día en YouTube (short) y Facebook, hasta cumplir 3 de cada 5 publicaciones de YouTube con pensión (youtube_mezcla_temporal).",
+  "orden": [
+   {
+    "id": "c87u",
+    "antes_de": "2026-11-30",
+    "por_que": "pago de diciembre (martes 1): sirve solo antes de esa fecha"
+   },
+   {
+    "id": "c89u",
+    "antes_de": "2026-11-20",
+    "por_que": "Modalidad 40 cambió el 22-oct: noticia"
+   },
+   {
+    "id": "c91u",
+    "antes_de": "2026-11-27",
+    "por_que": "pago Bienestar en curso hasta el 27-nov"
+   },
+   {
+    "id": "c88u"
+   },
+   {
+    "id": "c90u"
+   },
+   {
+    "id": "c92u"
+   }
+  ]
  }
 }
