@@ -1,0 +1,72 @@
+{
+ "fecha": "2026-11-14",
+ "titulo": "Buen Fin día 2, tu pensión de diciembre y la Modalidad 40 que cambió",
+ "intro": "Sábado de Buen Fin. Tres cosas que sí mueven tu dinero esta semana, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "Buen Fin: Profeco tiene más de mil inspectores en la calle",
+   "que_paso": "Para el Buen Fin (13 al 17 de noviembre), Profeco desplegó más de mil inspectores, 169 módulos y más de 350 brigadas, y también vigila tiendas en línea y redes sociales.",
+   "te_afecta": "Si en caja te cobran distinto a lo que anunciaron, la tienda tiene que respetar el precio anunciado y puedes reclamar en el momento.",
+   "que_hacer": "Antes de pagar, toma foto del precio en el anaquel o en la página y guarda tu ticket. Sin prueba es tu palabra contra la de la tienda.",
+   "fuentes": [
+    {
+     "nombre": "IDC Online, 11-nov-2026",
+     "url": "https://idconline.mx/corporativo/2026/11/11/operativo-de-profeco-en-el-buen-fin-2026-que-medidas-tomara-la-procuraduria"
+    },
+    {
+     "nombre": "Publimetro, 29-oct-2026",
+     "url": "https://www.publimetro.com.mx/noticias/2026/10/29/buen-fin-2026-profeco-ofertas-falsas-tiendas-online-redes/"
+    },
+    {
+     "nombre": "Expansión, 9-nov-2026",
+     "url": "https://expansion.mx/finanzas-personales/2026/11/09/buen-fin-2026-tienda-no-respeta-precio-promocion-anunciada"
+    }
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Pensionados IMSS: el pago de diciembre llega el martes 1",
+   "que_paso": "El calendario de pagos del IMSS marca el depósito de diciembre el martes 1. El aguinaldo de quienes tienen pensión de Ley 73 por cesantía o vejez es una mensualidad y se paga en noviembre, junto con la pensión.",
+   "te_afecta": "Si tú o tus papás cobran pensión del IMSS, el aguinaldo ya debió llegar con el pago de noviembre; no esperes otro depósito en diciembre.",
+   "que_hacer": "Revisa el estado de cuenta de noviembre. Si no ves el aguinaldo, llama al IMSS: 800 623 2323, opción 3.",
+   "fuentes": [
+    {
+     "nombre": "IMSS, calendario de pago de pensiones 2026",
+     "url": "https://www.imss.gob.mx/sites/all/statics/pensiones/Pensiones-pago.pdf"
+    },
+    {
+     "nombre": "Expansión, calendario de pagos IMSS 2026",
+     "url": "https://expansion.mx/finanzas-personales/2025/12/11/calendario-de-pagos-pension-imss-2026"
+    },
+    {
+     "nombre": "El Imparcial, 11-nov-2026",
+     "url": "https://www.elimparcial.com/mexico/2026/11/11/aguinaldo-para-pensionados-del-imss-2026-cuando-y-cuanto-reciben/"
+    }
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Modalidad 40: desde el 22 de octubre ya no se pagan meses hacia atrás",
+   "que_paso": "Un acuerdo del IMSS publicado en el DOF el 21 de octubre cambió la Modalidad 40: ya no hay pagos retroactivos, el salario para cotizar tiene tope (el último salario o ese más una UMA) y el trámite es solo digital. Quien ya estaba inscrito conserva sus condiciones.",
+   "te_afecta": "Si pensabas inscribirte para subir tu pensión de Ley 73, ya no puedes elegir un salario tan alto como antes ni ponerte al corriente pagando meses atrás.",
+   "que_hacer": "Si estás pensando en la Modalidad 40, revisa tu caso con números en el IMSS antes de decidir. Si ya estás inscrito, sigue pagando a tiempo.",
+   "fuentes": [
+    {
+     "nombre": "Diario Oficial de la Federación, 21-oct-2026",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5801708&fecha=21/10/2026"
+    },
+    {
+     "nombre": "Publimetro, 22-oct-2026",
+     "url": "https://www.publimetro.com.mx/noticias/2026/10/22/imss-actualiza-reglas-de-la-modalidad-40-nuevas-reglas-restricciones-y-pensiones/"
+    },
+    {
+     "nombre": "IDC Online, 23-oct-2026",
+     "url": "https://idconline.mx/seguridad-social/2026/10/23/modalidad-40-imss-restringe-salario-de-cotizacion"
+    }
+   ]
+  }
+ ],
+ "dato": "Una tele que \"bajó\" de $8,000 a $6,800 parece 15% más barata. Pero si hace dos semanas costaba $7,200, el descuento real es de 5.6%. Compara contra el precio de antes, no contra el tachado.",
+ "cierre": "El Buen Fin no se trata de comprar más, sino de pagar menos por lo que ya ibas a comprar. — Victoria"
+}
