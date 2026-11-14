@@ -46,7 +46,7 @@ def leer(ruta):
 def main():
     import ig_reel_musica as ig
     from comentarios_ig import IG_USUARIO
-    vivas = ig.graph('GET', f'{IG_USUARIO}/stories?fields=id,timestamp').get('data', [])
+    vivas = ig.graph('GET', f'{IG_USUARIO}/stories?fields=id,timestamp&limit=100').get('data', [])
     if not vivas:
         print('Destacadas: hoy no hay historias vivas.')
         return
@@ -55,15 +55,20 @@ def main():
     for r in leer('contenido/noticias/historias.json'):
         if r.get('ig_media_id'):
             que[r['ig_media_id']] = ('Victoria Hoy', 'Hoy')
-    lineas = []
+    lineas, mano = [], []
     for h in sorted(vivas, key=lambda h: h['timestamp']):
         cuando = datetime.datetime.fromisoformat(h['timestamp'].replace('+0000', '+00:00')).astimezone(MX)
         hora = ('' if cuando.date() == datetime.datetime.now(MX).date() else 'ayer ') + cuando.strftime('%H:%M')
         titulo, fija = que.get(h['id'], ('(subida a mano)', None))
         destino = fija or (destacada_de(titulo) if titulo != '(subida a mano)' else 'la que corresponda')
+        if titulo == '(subida a mano)':
+            mano.append(hora)
+            continue
         lineas.append(f'- {hora} · {titulo[:60]} → **{destino}**')
     print('Destacadas de hoy (abre la historia → Destacar → elige):')
-    print('\n'.join(lineas))
+    print('\n'.join(lineas) or '- (ninguna historia automática hoy)')
+    if mano:  # las que sube Rodrigo a mano: no sé qué son; se resumen en una línea en vez de 20 renglones
+        print(f'- Además {len(mano)} historias que subiste tú ({mano[0]}–{mano[-1]}): agrégalas tú a la que corresponda.')
 
 
 if __name__ == '__main__':

@@ -239,6 +239,11 @@ def ajenos(plan):
     propias = {primera_linea(v.get('texto_post')) for v in plan['videos'] + plan.get('largos', [])}
     for c in cargar('carruseles.json', {'carruseles': []})['carruseles']:
         propias |= {primera_linea(c.get('texto_post')), primera_linea((c.get('reel_ig') or {}).get('texto'))}
+    # Recortes de los largos (recortes.py) y textos de largos: son nuestros (13-nov: "Las fechas · Buen Fin" salía AJENO)
+    for r in cargar('recortes.json', []):
+        propias |= {primera_linea(r.get('texto')), primera_linea(r.get('titulo'))}
+    for l in cargar('largos.json', []):
+        propias.add(primera_linea(l.get('texto_post')))
     hoy = datetime.date.today()
     filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]

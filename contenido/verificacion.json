@@ -1,7 +1,12 @@
 {
- "fecha_utc": "2026-11-13T14:49:45Z",
- "problemas": [],
+ "fecha_utc": "2026-11-14T02:14:19Z",
+ "problemas": [
+  "Post AJENO publicado en instagram el 2026-11-13T15:02: \"Si vas a comprar en el Buen Fin, no le creas a la etiqueta. \" (https://www.instagram.com/reel/DfsjHhUiJyX/)",
+  "Post AJENO publicado en tiktok el 2026-11-13T16:06: \"Si vas a comprar en el Buen Fin, no le creas a la etiqueta. \" (https://www.tiktok.com/@victoriatheceo/video/7707779577006869781?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1)"
+ ],
  "avisos": [
-  "Alguien cambió el video de YouTube DhHVSFb1iS8 (enlaces ajenos: https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/, https://www.gob.mx/cms/uploads/attachment/file/1056925/ROPS_PAM_26.pdf, https://www.gob.mx/bancodelbienestar/galerias/calendario-de-pagos-de-la-pension-adulto-mayor-noviembre-diciembre-2026; audio es). Ya lo restauré. Fue la automatización de Errores invisibles de Rodrigo (es suya: no preguntar), que sigue escribiendo en este canal."
+  "No pude verificar en YouTube: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n",
+  "No pude revisar las descripciones de YouTube: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n",
+  "No pude revisar los comentarios con enlace de los carruseles: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n"
  ]
 }

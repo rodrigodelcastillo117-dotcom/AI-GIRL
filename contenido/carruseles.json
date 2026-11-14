@@ -6232,11 +6232,11 @@
    "personaje": "2026-11-11: carrusel menú de las calculadoras, para fijar en el perfil (Rodrigo: 'haz lo necesario')",
    "revision": "11-nov-2026: solo describe lo que hace cada calculadora (comprobado leyendo cada página); dato legal: aguinaldo antes del 20 de diciembre (LFT art. 87, ya revisado en c16).",
    "publica_utc_por_red": {
-    "ig": "2026-11-14T01:00:00Z",
-    "tt": "2026-11-13T19:00:00Z",
+    "ig": "2026-11-14T01:03:02Z",
+    "tt": "2026-11-13T19:06:15Z",
     "yt": "2026-11-13T23:00:00Z"
    },
-   "publica_utc": "2026-11-14T01:00:00Z",
+   "publica_utc": "2026-11-14T01:03:02Z",
    "youtube": "https://youtube.com/shorts/b6TcPHkT4kk",
    "youtube_formato": "reel_texto",
    "facebook": {
@@ -6429,10 +6429,10 @@
    "personaje": "2026-11-11: estreno de la serie de comparaciones (formato del video de @pepsgranadosv, 4.5M vistas)",
    "revision": "11-nov-2026: segundo revisor: las 6 cuentas correctas; se aplicaron sus 3 matices (renta por hogar y de 2024, lo básico no alcanza para una renta completa, días de salario).",
    "publica_utc_por_red": {
-    "tt": "2026-11-13T15:00:00Z",
+    "tt": "2026-11-13T15:06:53Z",
     "yt": "2026-11-13T16:00:00Z"
    },
-   "publica_utc": "2026-11-13T15:00:00Z",
+   "publica_utc": "2026-11-13T16:00:00Z",
    "youtube": "https://youtube.com/shorts/rWU273Cdcnc",
    "youtube_formato": "reel_texto",
    "facebook": {
@@ -7867,7 +7867,8 @@
    "youtube_formato": "reel_texto",
    "facebook": {
     "publica_utc": "2026-11-14T02:00:00Z"
-   }
+   },
+   "publica_utc": "2026-11-14T02:00:00Z"
   }
  ]
 }
