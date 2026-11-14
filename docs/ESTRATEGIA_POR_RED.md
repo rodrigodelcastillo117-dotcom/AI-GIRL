@@ -110,10 +110,15 @@ Solo YouTube tiene dato de edad (57 % de 55+, YouTube Analytics). Facebook (4 se
 evidencia de edad: su columna es hipótesis y se corrige con sus propios resultados.
 | Tema | YouTube y Facebook | TikTok e Instagram |
 |---|---|---|
-| Pensión, IMSS, Afore, retiro | 40 % | 10 % (ángulo "si tus papás cobran pensión") |
+| Pensión, IMSS, Afore, retiro | **60 % en YouTube (3 de cada 5) del 14 al 26-nov** · 40 % en Facebook | 10 % (ángulo "si tus papás cobran pensión") |
 | Sueldos, aguinaldo, finiquito, derechos laborales | 30 % | 50 % |
 | Ahorro, deudas, cuentas del día a día | 20 % | 30 % |
 | Pruebas (pareja y dinero, negocio) | 10 % | 10 % |
+AJUSTE 14-nov (Rodrigo: "sí"): YouTube sube pensión a 3 de cada 5 publicaciones hasta la revisión del 26-nov, con
+URGENCIA y FECHA (cuándo pagan, qué cambia, rumor o verdad), de usted, fuente oficial y portada con Victoria + cifra o
+fecha. Por qué: los canales que ganan en el nicho venden urgencia de pensiones a un público 55+ (57 % del nuestro en
+YouTube) y nosotros dábamos consejos sin fecha. Se mide el 26-nov: suscriptores netos y suscriptores por 1,000 vistas de
+los shorts de pensión contra el resto. Si no traen suscriptores, se regresa a 40 %.
 Nota honesta: parejas (83) y vacaciones (91) fueron UN post cada uno y de carruseles no hay retención ni impresiones;
 son señal débil, no prueba de que el tema no sirva. Por eso quedan en el 10 % de pruebas, no fuera.
 Se mantienen fijos temas y series 2-4 semanas; se ajustan cada semana primer segundo, duración y presentación.
