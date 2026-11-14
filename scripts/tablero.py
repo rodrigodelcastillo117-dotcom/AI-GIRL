@@ -77,7 +77,7 @@ def comentarios_yt_reales():
             if not pagina:
                 break
         return salida
-    except Exception as e:  # noqa: BLE001 - sin credenciales de YouTube: el centro usa el conteo público
+    except (Exception, SystemExit) as e:  # noqa: BLE001 - sin credenciales o sin cuota de YouTube: conteo público
         print(f'AVISO: no leí los comentarios de YouTube ({str(e)[:120]}); el centro usa el conteo público.')
         return {}
 

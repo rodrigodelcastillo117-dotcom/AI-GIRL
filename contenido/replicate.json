@@ -57,10 +57,10 @@
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 1,
   "resemble-ai/chatterbox-multilingual": 11,
-  "kwaivgi/kling-v2.5-turbo-pro": 3,
+  "kwaivgi/kling-v2.5-turbo-pro": 4,
   "stability-ai/stable-audio-2.5": 3
  },
  "incompleto": true,
- "generado_utc": "2026-11-13T18:29:15Z",
+ "generado_utc": "2026-11-14T02:16:45Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

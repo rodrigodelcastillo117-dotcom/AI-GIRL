@@ -8,9 +8,7 @@
   "horas": {
    "fb": "09:30"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -34,9 +32,7 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -47,9 +43,7 @@
   "horas": {
    "fb": "10:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -60,9 +54,7 @@
   "horas": {
    "fb": "20:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -76,11 +68,7 @@
    "fb": "13:07",
    "yt": "13:07"
   },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -89,14 +77,11 @@
   "que": "Sale el carrusel «Calculadoras de finanzas personales gratis 🧮»",
   "estado": "programado",
   "horas": {
-   "ig": "19:00",
-   "tt": "13:00",
+   "ig": "19:03",
+   "tt": "13:06",
    "yt": "17:00"
   },
-  "confirmado": [
-   "tt",
-   "ig"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -105,12 +90,10 @@
   "que": "Sale el carrusel «Salario mínimo 2026 en días de trabajo 🧾»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00",
+   "tt": "09:06",
    "yt": "10:00"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
@@ -135,11 +118,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-13",
