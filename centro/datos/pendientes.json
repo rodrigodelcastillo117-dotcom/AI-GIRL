@@ -3,13 +3,13 @@
   "id": "bio-ig",
   "texto": "Pegar la bio nueva de Instagram y cambiar el enlace a ?ref=ig-bio",
   "como": "Perfil → Editar perfil. Texto en contenido/perfiles.json (o pídemelo).",
-  "hecho": false
+  "hecho": true
  },
  {
   "id": "bio-tt",
   "texto": "Pegar la bio nueva de TikTok",
   "como": "Perfil → Editar perfil → Biografía (78 de 80 caracteres).",
-  "hecho": false
+  "hecho": true
  },
  {
   "id": "fijar-yt",
