@@ -1,27 +1,7 @@
 {
- "generado_utc": "2026-11-14T12:50:53Z",
+ "generado_utc": "2026-11-14T12:51:55Z",
  "estado": "aviso",
  "checks": [
-  {
-   "area": "Llaves",
-   "estado": "ok",
-   "detalle": "YouTube responde"
-  },
-  {
-   "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Publer responde"
-  },
-  {
-   "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Replicate responde"
-  },
-  {
-   "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Meta (Instagram y Facebook) responde"
-  },
   {
    "area": "Gasto",
    "estado": "aviso",
@@ -110,12 +90,17 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,106 vs mediana 183): ya tiene 3 clones"
+   "detalle": "c16 (TikTok 4,133 vs mediana 183): ya tiene 3 clones"
+  },
+  {
+   "area": "Ganadores",
+   "estado": "ok",
+   "detalle": "c70 (TikTok 1,058 vs mediana 183): ya tiene 3 clones"
   },
   {
    "area": "Ganadores",
    "estado": "aviso",
-   "detalle": "c70 «Aguinaldo 2026 de 30 días, rumor o realidad 🔍» saca 1,044 en TikTok (mediana 183): faltan 1 clones con su misma estructura (clon_de: \"c70\")"
+   "detalle": "O1 «Gastos en pareja mitad y mitad no es justo 💸» saca 1,025 en YouTube (mediana 167): faltan 3 clones con su misma estructura (clon_de: \"O1\")"
   }
  ]
 }
