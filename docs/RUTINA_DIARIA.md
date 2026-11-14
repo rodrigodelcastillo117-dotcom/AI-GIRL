@@ -80,6 +80,13 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
   revisados por un segundo agente). No salen por TikTok, así que NO los toma decidir_carruseles: prográmalos tú, 1 al día
   como short de YouTube (carrusel_video.py short + youtube.py, portada con Victoria) y en Facebook, en el orden de la cola y
   antes de su fecha "antes_de". Cuando se acabe la cola, escribe 5 más (pensión con urgencia y fecha) con segunda revisión.
+- ENGAGEMENT CON CUENTA PERSONAL (14-nov, Rodrigo: "quiero ya generar engagement"): las piezas con
+  "cuenta_en_comentarios" piden un dato fácil y Victoria contesta con SU cuenta (de usted en pensión):
+  · ley_por_anio: empezó a cotizar ANTES del 1-jul-1997 → puede elegir Ley 73 al pensionarse; DESPUÉS → Ley 97.
+  · semanas_faltantes: Ley 97 pide 875 semanas en 2026, 900 en 2027 y +25 por año hasta 1,000 en 2031 (Ley 73: 500).
+    Falta = las del año en que piensa pensionarse menos las que tiene. Si no dice el año, usa 2027 y dilo.
+  · aguinaldo (tú, TikTok/IG): sueldo mensual / 30 × 15 = mínimo con el año completo.
+  Nunca prometas montos de pensión; cierra con una pregunta corta para seguir la conversación.
 - SERIE PRIMERO (13-nov): al programar TikTok de días adelante, RESERVA el primer lugar de cada día para la siguiente
   parte de la serie vigente (config.json → reservar_primer_lugar_tiktok). El 13 y 14-nov ya estaban llenos y la serie
   de sueldos tuvo que arrancar el 15: que no vuelva a pasar.

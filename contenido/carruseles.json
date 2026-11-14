@@ -8035,11 +8035,11 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdelo para el día que vaya a pensionarse.",
-    "texto": "Una fecha decide su régimen. Y si es Ley 73, la decisión final es suya.",
-    "voz": "Guárdelo para el día que vaya a pensionarse."
+    "titulo": "Escríbame en qué año empezó a cotizar y le digo qué ley le toca.",
+    "texto": "Le contesto a cada quien, con la regla del 1 de julio de 1997. Y guárdelo para el día que vaya a pensionarse.",
+    "voz": "Escríbame en qué año empezó a cotizar y le digo qué ley le toca."
    },
-   "llamado_unico": "guardar",
+   "llamado_unico": "comentar",
    "fuente": "Consultadas el 14-nov-2026. 1) Ley del Seguro Social (texto vigente, última reforma DOF 15-01-2026): transitorio primero (la ley entró en vigor el 1-jul-1997), transitorio tercero (los inscritos antes pueden optar por la ley de 1973 o la de 1997 al pensionarse), transitorio cuarto (el IMSS, a solicitud, calcula la pensión con ambos regímenes); arts. 154 y 162 (60 y 65 años); decreto DOF 16-12-2020, transitorio cuarto: 750 semanas en 2021 y +25 por año hasta 1,000 en 2031. 2) IMSS, ficha IMSS-01-002: Ley 73 = 60 años cesantía / 65 vejez y 500 semanas, inscrito antes del 1-jul-1997, puede elegir régimen; Ley 97: tabla con 875 semanas en 2026. 3) IMSS comunicado 480/2025: LSS 1973 = 500 semanas, salario promedio de las últimas 250 semanas, el cálculo depende de la edad; LSS 1997 = saldo de la Afore. 4) PENSIONISSSTE, \"¿Cotizas al IMSS? Así puedes saber si estás en la Ley 73 o Ley 97\" (4-jun-2025): fecha de alta antes/después del 1-jul-1997; 250 semanas; 500 semanas; 100% a los 65 y menos antes; Ley 97 sube 25 semanas por año; la fecha de alta se ve en el estado de cuenta Afore o en la Constancia de Vigencia de Derechos. 5) Uno TV (19-ago-2026): confirmar régimen con estado de cuenta Afore o Constancia de Vigencia de Derechos. Diapositiva 7 = opinión de Victoria. URLs: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf · https://www.gob.mx/imss/articulos/homoclave-imss-01-002 · https://www.imss.gob.mx/prensa/archivo/202509/480 · https://www.gob.mx/pensionissste/articulos/cotizas-al-imss-asi-puedes-saber-si-estas-en-la-ley-73-o-ley-97 · https://www.unotv.com/pensiones/no-tendras-aguinaldo-el-regimen-de-tu-pension-imss-define-si-recibiras-este-pago-en-2026/",
    "titulo_post": "Ley 73 o Ley 97: una fecha decide su pensión",
    "texto_post": "Ley 73 o Ley 97: la fecha en que se dio de alta en el IMSS decide su pensión 🗓️\nAntes del 1 de julio de 1997: Ley 73. Desde esa fecha: Ley 97.\nLey 73: 500 semanas y se calcula con su salario promedio de las últimas 250 semanas. Ley 97: su pensión sale de su Afore y en 2026 piden 875 semanas (suben 25 por año hasta 1,000 en 2031).\nEn las dos: cesantía desde los 60 y vejez a los 65. Si usted cotizó antes de julio de 1997, al pensionarse puede elegir, y el IMSS debe calcularle las dos si lo pide.\nSu fecha de alta viene en su estado de cuenta de la Afore o en la Constancia de Vigencia de Derechos del IMSS.\nMi opinión: no decida por lo que le dijo un vecino; pida el cálculo de las dos leyes por escrito.\n\n📚 Ley del Seguro Social (transitorios 1o, 3o y 4o; DOF 16-dic-2020) · IMSS, ficha IMSS-01-002 y comunicado 480/2025 · PENSIONISSSTE (4-jun-2025) · consultado el 14-nov-2026\n🔖 Guárdelo para el día que vaya a pensionarse.\n\n#ley73 #ley97 #pensionimss #jubilacion #victoriatheceo",
@@ -8080,7 +8080,8 @@
     "fecha": "2026-11-14",
     "por": "segundo agente",
     "notas": "Verificado sin cambios. LSS vigente (diputados.gob.mx, últ. reforma DOF 15-01-2026): transitorio primero (vigor 1-jul-1997), tercero (inscritos antes pueden optar), cuarto (IMSS calcula ambos regímenes a solicitud); arts. 154 (60 años) y 162 (65 años, 1,000 semanas); decreto DOF 16-12-2020 transitorio cuarto (750 en 2021 +25 por año hasta 2031 => 875 en 2026). IMSS ficha IMSS-01-002 (500 semanas Ley 73, 60/65 años, tabla 875 en 2026) y comunicado 480/2025 (salario promedio últimas 250 semanas). PENSIONISSSTE 4-jun-2025 (fecha de alta, 75% a los 60 y 100% a los 65, Constancia de Vigencia de Derechos). Tono de usted; título SEO sin errores."
-   }
+   },
+   "cuenta_en_comentarios": "ley_por_anio"
   },
   {
    "id": "c89u",
@@ -8253,11 +8254,11 @@
     }
    ],
    "cierre": {
-    "titulo": "Guárdelo y revise sus semanas antes de que acabe el año.",
-    "texto": "Con la constancia en la mano sabe cuántas semanas lleva y cuántas le faltan.",
-    "voz": "Guárdelo y revise sus semanas antes de que acabe el año."
+    "titulo": "Escríbame cuántas semanas tiene y le digo cuántas le faltan.",
+    "texto": "Le contesto a cada quien con las semanas que pide la ley para el año en que se pensione.",
+    "voz": "Escríbame cuántas semanas tiene y le digo cuántas le faltan."
    },
-   "llamado_unico": "guardar",
+   "llamado_unico": "comentar",
    "fuente": "Consultadas el 14-nov-2026. 1) Ley del Seguro Social, decreto DOF 16-12-2020, transitorio cuarto: 750 semanas en 2021 y +25 cada año hasta 1,000 en 2031 (2026 = 875; 2027 = 900). 2) IMSS, ficha IMSS-01-002: tabla con 875 semanas en 2026, +25 por año hasta 1,000 en 2031; Ley 73 = 500 semanas. 3) IMSS, \"Constancia de semanas cotizadas en el IMSS\" (actualizada 17-jul-2026): en línea se necesitan CURP, NSS, correo electrónico y número de celular; en ventanilla NSS, CURP e identificación oficial vigente; \"Todos los trámites son gratuitos\". 4) IDC Online (23-feb-2026): el celular con confirmación es requisito nuevo obligatorio; también en la subdelegación. 5) gob.mx, ficha IMSS-02-025-A: \"Costo del trámite: Gratuito\"; respuesta inmediata; en línea: buscar \"Semanas cotizadas\", modalidad A; requisitos CURP, identificación, NSS y correo. 6) PROFEDET (1-mar-2023): modalidad A; capturar CURP, NSS y correo; \"No olvides dar click en finalizar para que la constancia sea enviada al correo electrónico\". 7) IMSS, comunicado sobre la constancia en línea: el documento es un PDF con semanas cotizadas, historial laboral, patrones y datos personales. URLs: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf · https://www.gob.mx/imss/articulos/homoclave-imss-01-002 · https://www.imss.gob.mx/node/112571 · https://idconline.mx/seguridad-social/2026/02/23/semanas-cotizadas-imss-el-nuevo-candado-sms · https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=IMSS-02-025-A · https://www.gob.mx/profedet/articulos/tramita-tu-constancia-de-semanas-cotizadas-via-internet-en-un-minuto · https://www.gob.mx/imss/prensa/el-imss-te-invita-a-obtener-tu-constancia-de-semanas-cotizadas-a-traves-de-sus-servicios-digitales-sin-salir-de-casa",
    "titulo_post": "Semanas cotizadas IMSS: cómo consultarlas gratis en 3 pasos",
    "texto_post": "Semanas cotizadas IMSS: consúltelas gratis en 3 pasos 📄\nEn la Ley 97 piden 875 semanas en 2026 y 900 en 2027 (suben 25 por año hasta 1,000 en 2031). En la Ley 73 son 500.\nTenga a la mano su CURP, su Número de Seguridad Social, un correo propio y su celular (requisito nuevo en 2026).\n1) En la página del IMSS busque \"semanas cotizadas\" y elija la constancia, modalidad A. 2) Escriba sus datos, confirme correo y celular y dé clic en finalizar. 3) Le llega en PDF a su correo, con sus semanas, sus patrones y su historial.\nSin internet: en ventanilla de su subdelegación, con CURP, NSS e identificación oficial vigente.\nEs gratuita y la respuesta es inmediata. Mi consejo: no le pague a nadie por \"sacarle sus semanas\".\n\n📚 IMSS, Constancia de semanas cotizadas (17-jul-2026) · gob.mx, ficha IMSS-02-025-A · PROFEDET (1-mar-2023) · Ley del Seguro Social (DOF 16-dic-2020) · consultado el 14-nov-2026\n🔖 Guárdelo y revise sus semanas antes de que acabe el año.\n\n#semanascotizadas #imss #pensionimss #ley97 #victoriatheceo",
@@ -8298,7 +8299,8 @@
     "fecha": "2026-11-14",
     "por": "segundo agente",
     "notas": "Verificado sin cambios. Semanas Ley 97 (875 en 2026, 900 en 2027, +25 hasta 1,000 en 2031) y 500 en Ley 73: LSS decreto DOF 16-12-2020 transitorio cuarto + IMSS ficha IMSS-01-002. Constancia: IMSS imss.gob.mx/node/112571 (CURP, NSS, correo y número de celular en línea; identificación oficial vigente en ventanilla; \"Todos los trámites son gratuitos\") + IDC 23-feb-2026 (celular/SMS); gob.mx ficha IMSS-02-025-A (gratuito, respuesta inmediata, modalidad A); PROFEDET 1-mar-2023 (dar clic en finalizar para que llegue al correo); IMSS prensa 11-jul-2025 (PDF con semanas, historial y patrones). Tono de usted; título SEO sin errores."
-   }
+   },
+   "cuenta_en_comentarios": "semanas_faltantes"
   },
   {
    "id": "c91u",
