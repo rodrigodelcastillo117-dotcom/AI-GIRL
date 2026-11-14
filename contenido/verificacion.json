@@ -1,12 +1,9 @@
 {
- "fecha_utc": "2026-11-14T02:14:19Z",
- "problemas": [
-  "Post AJENO publicado en instagram el 2026-11-13T15:02: \"Si vas a comprar en el Buen Fin, no le creas a la etiqueta. \" (https://www.instagram.com/reel/DfsjHhUiJyX/)",
-  "Post AJENO publicado en tiktok el 2026-11-13T16:06: \"Si vas a comprar en el Buen Fin, no le creas a la etiqueta. \" (https://www.tiktok.com/@victoriatheceo/video/7707779577006869781?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1)"
- ],
+ "fecha_utc": "2026-11-14T12:40:03Z",
+ "problemas": [],
  "avisos": [
-  "No pude verificar en YouTube: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n",
-  "No pude revisar las descripciones de YouTube: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n",
-  "No pude revisar los comentarios con enlace de los carruseles: ERROR 403 en GET https://www.googleapis.com/youtube/v3/videos: {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n    \"errors\": [\n      {\n        \"message\": \"The request cannot be completed because you have exceeded your \\u003ca href=\\\"/youtube/data/getting-started#quota\\\"\\u003equota\\u003c/a\\u003e.\",\n        \"domain\": \"youtube.quota\",\n        \"reason\": \"quotaExceeded\"\n      }\n    ]\n  }\n}\n"
+  "Fija a mano el comentario con enlace del carrusel c69: https://studio.youtube.com/video/b6TcPHkT4kk/comments",
+  "Fija a mano el comentario con enlace del carrusel c71: https://studio.youtube.com/video/rWU273Cdcnc/comments",
+  "Fija a mano el comentario con enlace del carrusel c86u: https://studio.youtube.com/video/DhHVSFb1iS8/comments"
  ]
 }

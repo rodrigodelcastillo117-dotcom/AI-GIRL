@@ -34,6 +34,9 @@ def pendientes(acceso):
         respuestas = (hilo.get('replies') or {}).get('comments', [])
         if any(x['snippet'].get('authorChannelId', {}).get('value') == canal for x in respuestas):
             continue
+        # Cuentas de Rodrigo (config.json → cuentas_propias, 14-nov-2026): no se contestan ni cuentan como interacción.
+        if (arriba.get('authorDisplayName') or '').lower().lstrip('@') in {u.lower() for u in CONFIG.get('cuentas_propias', [])}:
+            continue
         salida.append({'id': hilo['snippet']['topLevelComment']['id'], 'video': hilo['snippet'].get('videoId'),
                        'autor': arriba.get('authorDisplayName'), 'fecha': arriba.get('publishedAt'),
                        'texto': arriba.get('textDisplay')})

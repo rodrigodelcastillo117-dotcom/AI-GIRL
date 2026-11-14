@@ -1,11 +1,31 @@
 {
- "generado_utc": "2026-11-13T15:23:46Z",
+ "generado_utc": "2026-11-14T12:50:53Z",
  "estado": "aviso",
  "checks": [
   {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "YouTube responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Publer responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Replicate responde"
+  },
+  {
+   "area": "Llaves",
+   "estado": "ok",
+   "detalle": "Meta (Instagram y Facebook) responde"
+  },
+  {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.31 · semana $63.89 de $7 · mes $64.44 de $28 (proyección del mes $148.71) · El espacio, semana $2.52 · autorizado por Rodrigo: shorts-escena $11.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $0.32 de $20, lora-victoria $1.36 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $66.97 de $7 · mes $67.52 de $28 (proyección del mes $144.69) · El espacio, semana $3.04 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $0.32 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -15,22 +35,27 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-13: TikTok 5, Instagram 4, YouTube 6, Facebook 3"
+   "detalle": "2026-11-14: TikTok 3, Instagram 3, YouTube 5, Facebook 4"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-14: TikTok 3, Instagram 3, YouTube 4, Facebook 4"
+   "detalle": "2026-11-15: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-15: TikTok 3, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
+   "detalle": "2026-11-16: TikTok 4, Instagram 3, YouTube 3, Facebook 3"
   },
   {
    "area": "Serie",
    "estado": "ok",
    "detalle": "2026-11-15: el primer TikTok es de la serie (c78)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-16: el primer TikTok es de la serie (c79)"
   },
   {
    "area": "Videos largos",
@@ -75,7 +100,7 @@
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "62 carruseles listos para TikTok (~21 días a 3 por día)"
+   "detalle": "65 carruseles listos para TikTok (~22 días a 3 por día)"
   },
   {
    "area": "Cola",

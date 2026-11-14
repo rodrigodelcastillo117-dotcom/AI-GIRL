@@ -4008,7 +4008,7 @@
    "formato": "escena",
    "escena": "cocina",
    "pilar": "finanzas",
-   "estado": "programado",
+   "estado": "publicado",
    "publicar": "2026-11-13",
    "tema": "Aguinaldo: multiplica tu sueldo diario por 15",
    "guion": "¿Cuánto te toca de aguinaldo? Multiplica tu sueldo diario por quince. Si ganas quince mil al mes, tu sueldo diario es de quinientos. Quinientos por quince días son siete mil quinientos brutos. Eso es lo mínimo. Te lo tienen que pagar antes del veinte de diciembre. Y unos tres mil quinientos pesos no pagan ISR. Haz la cuenta con tu sueldo y guárdala. ¿Cuánto te toca a ti? Comenta el número.",
@@ -4085,7 +4085,11 @@
     ],
     "youtube": "https://youtube.com/shorts/Ich5p1Iespg",
     "playlist": "aguinaldo",
-    "pie": "un solo llamado (guárdalo), versión MUSE"
+    "pie": "un solo llamado (guárdalo), versión MUSE",
+    "ig": "https://www.instagram.com/reel/DfsWHq0imtt/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7707734838299626773?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/Ich5p1Iespg",
+    "comentario_youtube": "UgwN4qid6wdca0AB3-l4AaABAg"
    },
    "publica_utc": "2026-11-13T19:07:00Z",
    "publica_utc_por_red": {
