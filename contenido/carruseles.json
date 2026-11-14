@@ -7872,7 +7872,7 @@
   },
   {
    "id": "c87u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "pension_imss_pago_diciembre_2026_y_aguinaldo",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -7902,7 +7902,7 @@
     },
     {
      "titulo": "¿Le toca aguinaldo?",
-     "texto": "Si es pensionado de Ley 73 por cesantía o vejez, sí: una mensualidad de su pensión. Las pensiones de Ley 97 no lo tienen.\n\nUno TV, 19-ago-2026 · El Imparcial, 11-nov-2026",
+     "texto": "Si es pensionado de Ley 73 por cesantía o vejez, sí: una mensualidad de su pensión. Las de cesantía o vejez de Ley 97 no lo tienen.\n\nIMSS, “¿Tengo derecho a un aguinaldo?” · Uno TV, 19-ago-2026",
      "voz": "Si es pensionado de la Ley setenta y tres por cesantía o vejez, le toca una mensualidad de aguinaldo."
     },
     {
@@ -7932,9 +7932,9 @@
     "voz": "Suscríbase. Si cambia una fecha de su pensión, aquí se lo explico."
    },
    "llamado_unico": "suscribirse",
-   "fuente": "Consultadas el 14-nov-2026. 1) IMSS, \"Calendario de pago de pensiones 2026\" (PDF oficial, versión del 2-nov-2026): diciembre = martes 1 (noviembre = martes 3). 2) Expansión (11-dic-2025): diciembre, martes 1 de diciembre. 3) Uno TV (19-ago-2026): el aguinaldo es para pensionados por cesantía o vejez de la LSS 1973, equivale a una mensualidad, no lo reciben los de LSS 1997, \"El IMSS señala que este aguinaldo se entrega en noviembre\". 4) El Imparcial (11-nov-2026): Ley 73 cesantía y vejez, una mensualidad de la cuantía base, se deposita durante noviembre; no aplica a Ley 97. 5) IMSS boletín 562/2022 (31-oct-2022): mensualidad de noviembre y aguinaldo pagados juntos el 1-nov-2022 (precedente). Día exacto 2026 del aguinaldo: sin comunicado IMSS 2026 -> NO VERIFICADO. 6) IMSS comunicado 480/2025 y COM. 733/2020: línea 800 623 2323, opción 3 (pensionados). 7) Calendario IMSS 2027: no publicado al 14-nov-2026 -> NO VERIFICADO. Diapositiva 6 = opinión de Victoria. URLs: https://www.imss.gob.mx/sites/all/statics/pensiones/Pensiones-pago.pdf · https://expansion.mx/finanzas-personales/2025/12/11/calendario-de-pagos-pension-imss-2026 · https://www.unotv.com/pensiones/no-tendras-aguinaldo-el-regimen-de-tu-pension-imss-define-si-recibiras-este-pago-en-2026/ · https://www.elimparcial.com/mexico/2026/11/11/aguinaldo-para-pensionados-del-imss-2026-cuando-y-cuanto-reciben/ · http://www.imss.gob.mx/prensa/archivo/202210/562 · https://www.imss.gob.mx/prensa/archivo/202509/480 · https://www.gob.mx/imss/prensa/com-733-a-partir-del-30-de-octubre-pensionados-del-imss-recibiran-aguinaldo-y-pago-correspondiente-a-noviembre",
+   "fuente": "Consultadas el 14-nov-2026. 0) IMSS, \"¿Tengo derecho a un aguinaldo?\" (imss.gob.mx/node/98869): pensionados por cesantía o vejez de la LSS vigente hasta el 30-jun-1997, una mensualidad de la cuantía, se paga en noviembre; las de cesantía o vejez de la ley vigente no lo reciben (las de invalidez y vida de Ley 97 sí tienen aguinaldo, LSS art. 142). 1) IMSS, \"Calendario de pago de pensiones 2026\" (PDF oficial, versión del 2-nov-2026): diciembre = martes 1 (noviembre = martes 3). 2) Expansión (11-dic-2025): diciembre, martes 1 de diciembre. 3) Uno TV (19-ago-2026): el aguinaldo es para pensionados por cesantía o vejez de la LSS 1973, equivale a una mensualidad, no lo reciben los de LSS 1997, \"El IMSS señala que este aguinaldo se entrega en noviembre\". 4) El Imparcial (11-nov-2026): Ley 73 cesantía y vejez, una mensualidad de la cuantía base, se deposita durante noviembre; no aplica a Ley 97. 5) IMSS boletín 562/2022 (31-oct-2022): mensualidad de noviembre y aguinaldo pagados juntos el 1-nov-2022 (precedente). Día exacto 2026 del aguinaldo: sin comunicado IMSS 2026 -> NO VERIFICADO. 6) IMSS comunicado 480/2025 y COM. 733/2020: línea 800 623 2323, opción 3 (pensionados). 7) Calendario IMSS 2027: no publicado al 14-nov-2026 -> NO VERIFICADO. Diapositiva 6 = opinión de Victoria. URLs: https://www.imss.gob.mx/sites/all/statics/pensiones/Pensiones-pago.pdf · https://expansion.mx/finanzas-personales/2025/12/11/calendario-de-pagos-pension-imss-2026 · https://www.unotv.com/pensiones/no-tendras-aguinaldo-el-regimen-de-tu-pension-imss-define-si-recibiras-este-pago-en-2026/ · https://www.elimparcial.com/mexico/2026/11/11/aguinaldo-para-pensionados-del-imss-2026-cuando-y-cuanto-reciben/ · http://www.imss.gob.mx/prensa/archivo/202210/562 · https://www.imss.gob.mx/prensa/archivo/202509/480 · https://www.gob.mx/imss/prensa/com-733-a-partir-del-30-de-octubre-pensionados-del-imss-recibiran-aguinaldo-y-pago-correspondiente-a-noviembre",
    "titulo_post": "Pensión IMSS de diciembre 2026: llega el martes 1",
-   "texto_post": "Pensión IMSS diciembre 2026: llega el martes 1 de diciembre 📅\nAsí lo marca el calendario oficial de pagos 2026 del IMSS.\nSi usted es pensionado de Ley 73 por cesantía o vejez, su aguinaldo es una mensualidad de su pensión y se paga con el depósito de noviembre, no en diciembre. Las pensiones de Ley 97 no lo tienen. El IMSS no publicó un aviso 2026 con el día exacto del aguinaldo: NO VERIFICADO.\nSi no lo ve en su depósito de noviembre: 800 623 2323, opción 3 (pensionados).\n¿Enero 2027? El IMSS aún no publica ese calendario: cualquier fecha que circule hoy es NO VERIFICADO.\nMi opinión: ese aguinaldo no es para regalos. Primero deudas caras y un colchón para enero.\n\n📚 IMSS, Calendario de pago de pensiones 2026 · Expansión (11-dic-2025) · Uno TV (19-ago-2026) · El Imparcial (11-nov-2026) · IMSS, comunicado 480/2025 · consultado el 14-nov-2026\n🔔 Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #pensionados #aguinaldo2026 #ley73 #victoriatheceo",
+   "texto_post": "Pensión IMSS diciembre 2026: llega el martes 1 de diciembre 📅\nAsí lo marca el calendario oficial de pagos 2026 del IMSS.\nSi usted es pensionado de Ley 73 por cesantía o vejez, su aguinaldo es una mensualidad de su pensión y se paga con el depósito de noviembre, no en diciembre. Las pensiones de cesantía o vejez de Ley 97 no lo tienen. El IMSS no publicó un aviso 2026 con el día exacto del aguinaldo: NO VERIFICADO.\nSi no lo ve en su depósito de noviembre: 800 623 2323, opción 3 (pensionados).\n¿Enero 2027? El IMSS aún no publica ese calendario: cualquier fecha que circule hoy es NO VERIFICADO.\nMi opinión: ese aguinaldo no es para regalos. Primero deudas caras y un colchón para enero.\n\n📚 IMSS, Calendario de pago de pensiones 2026 · Expansión (11-dic-2025) · Uno TV (19-ago-2026) · El Imparcial (11-nov-2026) · IMSS, comunicado 480/2025 · consultado el 14-nov-2026\n🔔 Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #pensionados #aguinaldo2026 #ley73 #victoriatheceo",
    "seo": {
     "palabra_clave": "pensión IMSS diciembre 2026",
     "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
@@ -7966,11 +7966,16 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado. Dic-2026 = martes 1: PDF oficial IMSS \"Calendario de pago de pensiones 2026\" + Expansión 11-dic-2025 y Crónica 9-nov-2026. Aguinaldo Ley 73 cesantía/vejez = una mensualidad, se paga en noviembre: IMSS imss.gob.mx/node/98869 + boletines IMSS 562/2022 y 539/2023 (va con la mensualidad de noviembre) + Uno TV/El Imparcial. Línea 800 623 2323 opción 3: IMSS comunicados 480/2025 y COM. 733/2020. CORREGIDO: \"Las pensiones de Ley 97 no lo tienen\" era demasiado amplio (LSS art. 142 da aguinaldo a pensiones de invalidez y vida de Ley 97); ahora dice \"las de cesantía o vejez de Ley 97\". Día exacto del aguinaldo 2026 y calendario 2027 siguen como NO VERIFICADO (correcto: no hay publicación oficial al 14-nov-2026). Tono de usted; opinión marcada; título SEO sin errores."
+   }
   },
   {
    "id": "c88u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "ley_73_o_ley_97_fecha_de_alta",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -8070,11 +8075,16 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado sin cambios. LSS vigente (diputados.gob.mx, últ. reforma DOF 15-01-2026): transitorio primero (vigor 1-jul-1997), tercero (inscritos antes pueden optar), cuarto (IMSS calcula ambos regímenes a solicitud); arts. 154 (60 años) y 162 (65 años, 1,000 semanas); decreto DOF 16-12-2020 transitorio cuarto (750 en 2021 +25 por año hasta 2031 => 875 en 2026). IMSS ficha IMSS-01-002 (500 semanas Ley 73, 60/65 años, tabla 875 en 2026) y comunicado 480/2025 (salario promedio últimas 250 semanas). PENSIONISSSTE 4-jun-2025 (fecha de alta, 75% a los 60 y 100% a los 65, Constancia de Vigencia de Derechos). Tono de usted; título SEO sin errores."
+   }
   },
   {
    "id": "c89u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "modalidad_40_cambios_22_octubre_2026",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -8124,8 +8134,8 @@
     },
     {
      "titulo": "¿Cuánto cuesta?",
-     "texto": "En 2026, 14.438% del salario registrado, por mes adelantado. Sube cada año por la reforma de 2020.\n\nLSS, arts. 25, 147, 168 y 218 · Uno TV, 7-sep-2026 · Infobae, 11-ago-2026",
-     "voz": "Este año cuesta poco más del catorce por ciento de su salario, por mes adelantado."
+     "texto": "En 2026, hasta 14.438% del salario registrado (si es de más de 4 UMA; con salario menor, es menos). Se paga por mes adelantado y sube cada año.\n\nDOF 16-dic-2020, transitorio segundo · LSS, arts. 25, 147, 168 y 218 · IDC, 17-mar-2026",
+     "voz": "Este año cuesta hasta poco más del catorce por ciento de su salario, por mes adelantado."
     },
     {
      "titulo": "Mi opinión",
@@ -8139,9 +8149,9 @@
     "voz": "Mándeselo a quien está pensando en la Modalidad cuarenta."
    },
    "llamado_unico": "mandar",
-   "fuente": "Consultadas el 14-nov-2026. 1) Ley del Seguro Social (vigente, última reforma DOF 15-01-2026): art. 218 (52 cotizaciones semanales en los últimos cinco años, al ser dado de baja; cuotas por mensualidad adelantada; retiro completo + cuotas obrero-patronales de CEAV e IV + art. 25 párr. 2), art. 219 (el derecho se pierde si no se pide por escrito dentro de cinco años desde la baja), art. 220 (termina si deja de pagar dos meses). 2) IMSS, \"Continuación Voluntaria al Régimen Obligatorio\" (12-abr-2021): 52 semanas en los últimos cinco años; no han pasado cinco años desde la baja; trámite gratuito, sin pagar a terceros. 3) IMSS, ficha IMSS-02-007: \"Trámite gratuito\"; antes se podía elegir salario igual o mayor al de la baja, hasta 25 veces el salario mínimo. 4) DOF 21-oct-2026, Acuerdo ACDO.AS2.HCT.101026/302.P.DG del H. Consejo Técnico del IMSS (sesión 10-oct-2026): punto cuarto (medida temporal; inscritos siguen en condiciones actuales hasta concluir su periodo; nuevos: último SBC al causar baja o hasta ese importe más una UMA, nunca menos de un salario mínimo; nuevos aseguramientos solo a partir de la fecha de la solicitud), punto quinto (inscripción únicamente por mecanismos digitales), punto segundo (análisis financiero en máximo 6 meses), punto séptimo (vigor el día hábil siguiente a su publicación = 22-oct-2026; se conservan semanas y salarios pagados). 5) IDC Online (23-oct-2026) y Publimetro (22-oct-2026): mismas reglas; Publimetro: aplican desde el jueves 22-oct-2026. 6) Cuota 2026 de 14.438%: Uno TV (7-sep-2026) e Infobae (11-ago-2026) (2025: 13.347%); cuadra con la LSS: 2% retiro + 7.513% CEAV patronal 2026 para 4.01 UMA o más (tabla gradual del decreto DOF 16-12-2020, citada por El Contribuyente) + 1.125% CEAV obrera (art. 168 II b) + 2.375% IV (art. 147) + 1.425% (art. 25). El IMSS no publica ese porcentaje en una página propia: el dato se apoya en prensa especializada y en la suma de la ley. No se recomienda si conviene o no a cada persona. URLs: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf · https://www.gob.mx/imss/prensa/continuacion-voluntaria-al-regimen-obligatorio?idiom=es · https://www.gob.mx/imss/articulos/homoclave-imss-02-007 · https://dof.gob.mx/nota_detalle.php?codigo=5801708&fecha=21/10/2026 · https://idconline.mx/seguridad-social/2026/10/23/modalidad-40-imss-restringe-salario-de-cotizacion · https://www.publimetro.com.mx/noticias/2026/10/22/imss-actualiza-reglas-de-la-modalidad-40-nuevas-reglas-restricciones-y-pensiones/ · https://www.unotv.com/pensiones/modalidad-40-del-imss-el-cambio-de-cuota-que-ya-aplica-en-2026-y-seguira-en-octubre/ · https://www.infobae.com/mexico/2026/08/11/modalidad-40-para-pension-del-imss-2026-que-es-cuanto-cuesta-y-como-inscribirse-paso-a-paso/ · https://www.elcontribuyente.mx/2025/11/asi-cambiaran-las-cuotas-patronales-del-imss-en-2026-tablas-y-ajustes-clave/",
+   "fuente": "Consultadas el 14-nov-2026. 1) Ley del Seguro Social (vigente, última reforma DOF 15-01-2026): art. 218 (52 cotizaciones semanales en los últimos cinco años, al ser dado de baja; cuotas por mensualidad adelantada; retiro completo + cuotas obrero-patronales de CEAV e IV + art. 25 párr. 2), art. 219 (el derecho se pierde si no se pide por escrito dentro de cinco años desde la baja), art. 220 (termina si deja de pagar dos meses). 2) IMSS, \"Continuación Voluntaria al Régimen Obligatorio\" (12-abr-2021): 52 semanas en los últimos cinco años; no han pasado cinco años desde la baja; trámite gratuito, sin pagar a terceros. 3) IMSS, ficha IMSS-02-007: \"Trámite gratuito\"; antes se podía elegir salario igual o mayor al de la baja, hasta 25 veces el salario mínimo. 4) DOF 21-oct-2026, Acuerdo ACDO.AS2.HCT.101026/302.P.DG del H. Consejo Técnico del IMSS (sesión 10-oct-2026): punto cuarto (medida temporal; inscritos siguen en condiciones actuales hasta concluir su periodo; nuevos: último SBC al causar baja o hasta ese importe más una UMA, nunca menos de un salario mínimo; nuevos aseguramientos solo a partir de la fecha de la solicitud), punto quinto (inscripción únicamente por mecanismos digitales), punto segundo (análisis financiero en máximo 6 meses), punto séptimo (vigor el día hábil siguiente a su publicación = 22-oct-2026; se conservan semanas y salarios pagados). 5) IDC Online (23-oct-2026) y Publimetro (22-oct-2026): mismas reglas; Publimetro: aplican desde el jueves 22-oct-2026. 6) Cuota 2026 de 14.438% (solo para salario de 4.01 UMA en adelante; la cuota patronal CEAV 2026 baja por rango hasta 3.150% con 1 salario mínimo, tabla del transitorio segundo, DOF 16-12-2020, verificada en el PDF del DOF; IDC Online 17-mar-2026 da la misma tabla): Uno TV (7-sep-2026) e Infobae (11-ago-2026) (2025: 13.347%); cuadra con la LSS: 2% retiro + 7.513% CEAV patronal 2026 para 4.01 UMA o más (tabla gradual del decreto DOF 16-12-2020, citada por El Contribuyente) + 1.125% CEAV obrera (art. 168 II b) + 2.375% IV (art. 147) + 1.425% (art. 25). El IMSS no publica ese porcentaje en una página propia: el dato se apoya en prensa especializada y en la suma de la ley. No se recomienda si conviene o no a cada persona. URLs: https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf · https://www.gob.mx/imss/prensa/continuacion-voluntaria-al-regimen-obligatorio?idiom=es · https://www.gob.mx/imss/articulos/homoclave-imss-02-007 · https://dof.gob.mx/nota_detalle.php?codigo=5801708&fecha=21/10/2026 · https://idconline.mx/seguridad-social/2026/10/23/modalidad-40-imss-restringe-salario-de-cotizacion · https://www.publimetro.com.mx/noticias/2026/10/22/imss-actualiza-reglas-de-la-modalidad-40-nuevas-reglas-restricciones-y-pensiones/ · https://www.unotv.com/pensiones/modalidad-40-del-imss-el-cambio-de-cuota-que-ya-aplica-en-2026-y-seguira-en-octubre/ · https://www.infobae.com/mexico/2026/08/11/modalidad-40-para-pension-del-imss-2026-que-es-cuanto-cuesta-y-como-inscribirse-paso-a-paso/ · https://www.elcontribuyente.mx/2025/11/asi-cambiaran-las-cuotas-patronales-del-imss-en-2026-tablas-y-ajustes-clave/",
    "titulo_post": "Modalidad 40: lo que cambió el 22 de octubre de 2026",
-   "texto_post": "Modalidad 40: desde el 22 de octubre de 2026 cambiaron las reglas ⚠️\nEs la continuación voluntaria en el IMSS: sigue pagando sus cuotas sin patrón para sumar semanas. Pide 52 semanas en los últimos cinco años, estar dado de baja y solicitarla dentro de los cinco años siguientes a su baja (Ley del Seguro Social, arts. 218 y 219).\nLo nuevo (DOF 21-oct-2026): las inscripciones nuevas cuentan solo desde el día de la solicitud, sin pagos hacia atrás; el salario tiene tope (su último salario registrado, o hasta ese más una UMA, nunca menos de un salario mínimo) y el trámite es solo digital.\nSi ya está inscrito: sigue en sus condiciones actuales hasta terminar el periodo que contrató, y sus semanas pagadas cuentan completas.\nCuota 2026: 14.438% del salario registrado, por mes adelantado. Es una medida temporal: el IMSS ordenó un análisis de hasta seis meses.\nMi opinión: si alguien le cobra por inscribirlo o por \"meterle semanas\", desconfíe. El trámite es gratis. Si le conviene o no depende de su caso.\n\n📚 DOF 21-oct-2026, acuerdo ACDO.AS2.HCT.101026/302.P.DG · Ley del Seguro Social, arts. 218-220 · IMSS (12-abr-2021) · IDC (23-oct-2026) · Uno TV (7-sep-2026) · consultado el 14-nov-2026\n📩 Mándeselo a quien está pensando en la Modalidad 40.\n\n#modalidad40 #pensionimss #ley73 #jubilacion #victoriatheceo",
+   "texto_post": "Modalidad 40: desde el 22 de octubre de 2026 cambiaron las reglas ⚠️\nEs la continuación voluntaria en el IMSS: sigue pagando sus cuotas sin patrón para sumar semanas. Pide 52 semanas en los últimos cinco años, estar dado de baja y solicitarla dentro de los cinco años siguientes a su baja (Ley del Seguro Social, arts. 218 y 219).\nLo nuevo (DOF 21-oct-2026): las inscripciones nuevas cuentan solo desde el día de la solicitud, sin pagos hacia atrás; el salario tiene tope (su último salario registrado, o hasta ese más una UMA, nunca menos de un salario mínimo) y el trámite es solo digital.\nSi ya está inscrito: sigue en sus condiciones actuales hasta terminar el periodo que contrató, y sus semanas pagadas cuentan completas.\nCuota 2026: hasta 14.438% del salario registrado (si es de más de 4 UMA; con salario menor, el porcentaje es menor), por mes adelantado. Es una medida temporal: el IMSS ordenó un análisis de hasta seis meses.\nMi opinión: si alguien le cobra por inscribirlo o por \"meterle semanas\", desconfíe. El trámite es gratis. Si le conviene o no depende de su caso.\n\n📚 DOF 21-oct-2026, acuerdo ACDO.AS2.HCT.101026/302.P.DG · Ley del Seguro Social, arts. 218-220 · IMSS (12-abr-2021) · IDC (23-oct-2026) · Uno TV (7-sep-2026) · consultado el 14-nov-2026\n📩 Mándeselo a quien está pensando en la Modalidad 40.\n\n#modalidad40 #pensionimss #ley73 #jubilacion #victoriatheceo",
    "seo": {
     "palabra_clave": "Modalidad 40",
     "titulo": "Modalidad 40 cambió el 22 de octubre ⚠️",
@@ -8174,11 +8184,16 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado en el DOF. El acuerdo ACDO.AS2.HCT.101026/302.P.DG existe: DOF 21/10/2026 (dof.gob.mx nota 5801708, leída directamente) y copia en imss.gob.mx (PDF 2026_10_21_MAT_imss-ACDO...). Confirmado: sin retroactividad (nuevos aseguramientos solo desde la solicitud), tope último SBC o hasta ese más 1 UMA y nunca menos de 1 salario mínimo, inscripción solo por mecanismos digitales, inscritos conservan condiciones hasta concluir su periodo, semanas pagadas cuentan, análisis en máximo 6 meses, vigor el día hábil siguiente (miércoles 21 -> jueves 22-oct-2026). Prensa: La Jornada 21-oct, Informador 21-oct, El Universal. Arts. 218-220 LSS (52 semanas en 5 años, 5 años desde la baja) + IMSS 12-abr-2021 (trámite gratuito) + ficha IMSS-02-007 (gratuito). CORREGIDO: \"14.438% del salario registrado\" solo aplica a salarios de 4.01 UMA o más (tabla del transitorio segundo, DOF 16-12-2020: CEAV patronal 2026 de 3.150% a 7.513% según el salario); ahora dice \"hasta 14.438% ... si es de más de 4 UMA; con salario menor, es menos\". Suma verificada: 2 + 7.513 + 1.125 + 2.375 + 1.425 = 14.438. No recomienda si conviene. Tono de usted; título SEO sin errores."
+   }
   },
   {
    "id": "c90u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "semanas_cotizadas_imss_consulta_gratis",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -8278,11 +8293,16 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado sin cambios. Semanas Ley 97 (875 en 2026, 900 en 2027, +25 hasta 1,000 en 2031) y 500 en Ley 73: LSS decreto DOF 16-12-2020 transitorio cuarto + IMSS ficha IMSS-01-002. Constancia: IMSS imss.gob.mx/node/112571 (CURP, NSS, correo y número de celular en línea; identificación oficial vigente en ventanilla; \"Todos los trámites son gratuitos\") + IDC 23-feb-2026 (celular/SMS); gob.mx ficha IMSS-02-025-A (gratuito, respuesta inmediata, modalidad A); PROFEDET 1-mar-2023 (dar clic en finalizar para que llegue al correo); IMSS prensa 11-jul-2025 (PDF con semanas, historial y patrones). Tono de usted; título SEO sin errores."
+   }
   },
   {
    "id": "c91u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "victoria_verifica_pension_bienestar_enero_2027_y_registro",
    "serie": "Victoria verifica",
    "funcion": "convencer",
@@ -8307,8 +8327,8 @@
    "diapositivas": [
     {
      "titulo": "El último pago de 2026",
-     "texto": "Fue del 3 al 27 de noviembre, según la letra de su primer apellido. Es el último pago bimestral del año.\n\nProgramas para el Bienestar, 27-oct-2026 · Banco del Bienestar, 3-nov-2026",
-     "voz": "El último pago del año fue del tres al veintisiete de noviembre, por la letra de su apellido."
+     "texto": "Se programó del 3 al 27 de noviembre, según la letra de su primer apellido. Es el último pago bimestral del año.\n\nProgramas para el Bienestar, 27-oct-2026 · Banco del Bienestar, 3-nov-2026",
+     "voz": "El último pago del año va del tres al veintisiete de noviembre, por la letra de su apellido."
     },
     {
      "titulo": "Sello: NO VERIFICADO",
@@ -8332,7 +8352,7 @@
     },
     {
      "titulo": "¿Cuándo registrarse?",
-     "texto": "El último registro fue del 19 al 25 de octubre en los Módulos Bienestar. El próximo aún no tiene fecha: NO VERIFICADO.\n\nBienestar, 19-oct-2026 · La Crónica, 19-oct-2026",
+     "texto": "El último registro fue del 19 al 25 de octubre en los módulos de registro. El próximo aún no tiene fecha: NO VERIFICADO.\n\nBienestar, 19-oct-2026 · La Crónica, 19-oct-2026",
      "voz": "El último registro fue en octubre. El próximo todavía no tiene fecha oficial."
     },
     {
@@ -8349,7 +8369,7 @@
    "llamado_unico": "mandar",
    "fuente": "Consultadas el 14-nov-2026. 1) Programas para el Bienestar, \"Listo, calendario de pagos del bimestre noviembre-diciembre\" (27-oct-2026): \"Del 3 al 27 de noviembre se realizará el último pago bimestral de 2026\", por letra del primer apellido; no menciona fechas de 2027. 2) Banco del Bienestar, galería \"Calendario de pagos de la Pensión Adulto Mayor noviembre - diciembre 2026\" (3-nov-2026). 3) Calendario de enero 2027: no publicado en programasparaelbienestar.gob.mx ni en gob.mx/bienestar al 14-nov-2026 -> NO VERIFICADO. 4) Reglas de Operación de la Pensión para el Bienestar de las Personas Adultas Mayores 2026 (DOF 12-feb-2026): num. 3.3.1 (65 años o más, nacionalidad mexicana por nacimiento o naturalización, residir en México), num. 3.3.2 (acta de nacimiento; credencial para votar o pasaporte o credencial INAPAM; CURP; comprobante de domicilio de máximo 6 meses; Formato Único de Bienestar; original y copia), num. 3.4 ($3,200 mensuales pagaderos bimestralmente; se actualizará a partir de 2027), num. 3.5.1 (trámites sin costo), num. 4.1.1 (entrega directa y sin intermediarios), num. 6.2 (Línea de Bienestar 800 639 42 64). 5) Expansión (6-ene-2026): 6,400 pesos cada dos meses. 6) Programas para el Bienestar, \"Del 19 al 25 de octubre se realiza el registro a las Pensiones para Adultos Mayores y Mujeres Bienestar\" (19-oct-2026): registro del 19 al 25 de octubre en módulos, 9:00 a 16:00, documentos (identificación, CURP, acta, comprobante de domicilio); no anuncia un registro posterior. 7) La Crónica (19-oct-2026): mismo periodo de registro. Próximo registro: sin fecha oficial -> NO VERIFICADO. Monto 2027: no publicado -> NO VERIFICADO. URLs: https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/listo-el-calendario-de-pagos-del-bimestre-noviembre-diciembre-de-programas-para-el-bienestar/ · https://www.gob.mx/bancodelbienestar/galerias/calendario-de-pagos-de-la-pension-adulto-mayor-noviembre-diciembre-2026 · https://www.gob.mx/cms/uploads/attachment/file/1056925/ROPS_PAM_26.pdf · https://expansion.mx/finanzas-personales/2026/01/06/pension-adultos-mayores-bienestar · https://www.programasparaelbienestar.gob.mx/noticias-y-comunicados/noticia/del-19-al-25-de-octubre-se-realiza-el-registro-a-las-pensiones-para-adultos-mayores-y-mujeres-bienestar/ · https://www.cronica.com.mx/nacional/2026/10/19/registro-pensiones-bienestar-octubre-2026-calendario-fechas-por-apellido-y-modulos-para-solicitar-el-apoyo-a-mujeres-y-adultos-mayores/",
    "titulo_post": "Victoria verifica: ¿ya hay fechas de enero 2027 de la Pensión Bienestar?",
-   "texto_post": "Pensión Bienestar enero 2027: ¿ya hay fechas? Lo verifiqué. Sello: NO VERIFICADO 🔍\nEl último pago bimestral de 2026 fue del 3 al 27 de noviembre (calendario oficial, 27-oct-2026). Al 14 de noviembre no hay calendario oficial de enero 2027: cualquier fecha que circule no tiene respaldo.\nEn 2026 son $3,200 al mes, pagados de dos en dos: $6,400 por bimestre. El monto de 2027 aún no se publica: NO VERIFICADO.\nPara registrarse: 65 años o más, mexicano, viviendo en México. Lleve acta de nacimiento, credencial para votar (o pasaporte o INAPAM), CURP y comprobante de domicilio de máximo 6 meses. El último registro fue del 19 al 25 de octubre; el próximo aún no tiene fecha oficial.\nLos trámites son sin costo y la pensión se entrega directa, sin intermediarios. Dudas: Línea Bienestar 800 639 42 64.\n\n📚 Programas para el Bienestar (27-oct-2026 y 19-oct-2026) · Reglas de Operación Pensión Adultos Mayores 2026, DOF 12-feb-2026 (num. 3.3, 3.4, 3.5.1, 4.1.1 y 6.2) · consultado el 14-nov-2026\n📩 Mándeselo a quien va a cumplir 65.\n\n#pensionbienestar #adultosmayores #victoriaverifica #pension65 #victoriatheceo",
+   "texto_post": "Pensión Bienestar enero 2027: ¿ya hay fechas? Lo verifiqué. Sello: NO VERIFICADO 🔍\nEl último pago bimestral de 2026 se programó del 3 al 27 de noviembre (calendario oficial, 27-oct-2026). Al 14 de noviembre no hay calendario oficial de enero 2027: cualquier fecha que circule no tiene respaldo.\nEn 2026 son $3,200 al mes, pagados de dos en dos: $6,400 por bimestre. El monto de 2027 aún no se publica: NO VERIFICADO.\nPara registrarse: 65 años o más, mexicano, viviendo en México. Lleve acta de nacimiento, credencial para votar (o pasaporte o INAPAM), CURP y comprobante de domicilio de máximo 6 meses. El último registro fue del 19 al 25 de octubre; el próximo aún no tiene fecha oficial.\nLos trámites son sin costo y la pensión se entrega directa, sin intermediarios. Dudas: Línea Bienestar 800 639 42 64.\n\n📚 Programas para el Bienestar (27-oct-2026 y 19-oct-2026) · Reglas de Operación Pensión Adultos Mayores 2026, DOF 12-feb-2026 (num. 3.3, 3.4, 3.5.1, 4.1.1 y 6.2) · consultado el 14-nov-2026\n📩 Mándeselo a quien va a cumplir 65.\n\n#pensionbienestar #adultosmayores #victoriaverifica #pension65 #victoriatheceo",
    "seo": {
     "palabra_clave": "Pensión Bienestar enero 2027",
     "titulo": "Pensión Bienestar enero 2027, aún sin fecha 🔍",
@@ -8381,11 +8401,16 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado. Calendario nov-dic 2026 del 3 al 27 de noviembre, último pago bimestral del año, por letra del primer apellido: Programas para el Bienestar 27-oct-2026 + Expansión 29-oct-2026 y Publimetro 26-oct-2026. Reglas de Operación PAM 2026 (DOF 12-feb-2026, PDF en gob.mx): 3.3.1 (65+, mexicanos por nacimiento o naturalización, domicilio en México), 3.3.2 (acta, credencial para votar o pasaporte o INAPAM, CURP, comprobante de máx. 6 meses), 3.4 ($3,200 mensuales pagaderos bimestralmente, se actualiza a partir de 2027), 3.5.1 y 4.1.1 (sin costo, directa y sin intermediarios), 6.2 (Línea de Bienestar 800 639 42 64) + Uno TV y Fox Sports ($6,400 bimestrales; misma línea). Registro 19-25 oct 2026: Programas para el Bienestar 19-oct-2026 + Crónica. CORREGIDO: al 14-nov el pago de noviembre sigue en curso, así que \"fue del 3 al 27\" pasó a \"se programó del 3 al 27\" (voz: \"va del\"); \"Módulos Bienestar\" -> \"módulos de registro\" (así lo nombra el comunicado). Enero 2027, monto 2027 y próximo registro siguen como NO VERIFICADO (correcto). Título SEO sin errores."
+   }
   },
   {
    "id": "c92u",
-   "estado": "borrador",
+   "estado": "listo",
    "tema": "afore_en_que_afore_estoy_y_saldo_gratis",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -8416,7 +8441,7 @@
     {
      "titulo": "Por internet",
      "texto": "En AforeWeb elija “¿No recuerdas en qué Afore estás?”, escriba su NSS o CURP y un correo. La respuesta le llega al correo.\n\nCONSAR, 25-mar-2024 · PENSIONISSSTE, 4-jun-2025",
-     "voz": "O por internet, en Afore Web: escribe su número y su correo, y le llega la respuesta."
+     "voz": "O por internet, en Afore Web: escriba su número y su correo, y le llega la respuesta."
     },
     {
      "titulo": "En el celular",
@@ -8480,7 +8505,12 @@
     "fb"
    ],
    "trato": "usted",
-   "calculadora": false
+   "calculadora": false,
+   "revision": {
+    "fecha": "2026-11-14",
+    "por": "segundo agente",
+    "notas": "Verificado. SARTEL 55 1328 5000 sin costo: CONSAR \"¿No sabes en qué Afore estás?\" (25-mar-2024) + PENSIONISSSTE 4-jun-2025. AforeWeb \"¿No recuerdas en qué AFORE estás?\" con NSS/CURP y correo: PENSIONISSSTE + CONSAR (Localiza tu AFORE). AforeMóvil gratuita: CONSAR folleto AforeMóvil + prensa; \"Mi ahorro\" saldo y movimientos de 4 meses: CONSAR ficha de trámite + El Imparcial. Estado de cuenta al menos 3 veces al año (enero, mayo, septiembre) y 5 días hábiles si se pide: CONSAR 30-abr-2018 + CONDUSEF. CORREGIDO: voz de la diapositiva 2 decía \"escribe\" (tú); ahora \"escriba\". Ninguna Afore ni banco recomendado. Título SEO sin errores."
+   }
   }
  ]
 }
