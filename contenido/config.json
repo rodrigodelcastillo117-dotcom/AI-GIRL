@@ -808,5 +808,26 @@
     "id": "c92u"
    }
   ]
+ },
+ "variantes": {
+  "por_dia": {
+   "tt": 2,
+   "yt": 1,
+   "ig_trial": 3
+  },
+  "max_por_original": 6,
+  "minimo_vistas": 500,
+  "veces_mediana": 3,
+  "rompe_vistas": 10000,
+  "rompe_fraccion_original": 0.5,
+  "checkpoints_dias": [
+   1,
+   3,
+   7
+  ],
+  "ig_trial": false,
+  "min_seguidores_ig_trial": 200,
+  "redes_por_original": "La variante va a TikTok siempre (ahí casi todo es Para ti, gente que no sigue a Victoria) y a YouTube solo si el original ganó en YouTube; a Instagram solo como Trial Reel cuando ig_trial sea true (variantes.py probar lo prende solo).",
+  "nota": "Nuestro BuzzFy (Rodrigo, 14-nov-2026: \"haz eso justamente\"): versiones nuevas de lo que ya ganó (otro gancho y otra edición del cuadro; nunca otros datos), medidas a 1/3/7 días; la que rompe (10k o la mitad del original) recibe sus propias variantes. scripts/variantes.py."
  }
 }

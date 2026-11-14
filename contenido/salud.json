@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-14T12:51:59Z",
+ "generado_utc": "2026-11-14T15:36:24Z",
  "estado": "aviso",
  "checks": [
   {
@@ -90,7 +90,7 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,133 vs mediana 183): ya tiene 3 clones"
+   "detalle": "c16 (TikTok 4,133 vs mediana 183): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
@@ -99,8 +99,8 @@
   },
   {
    "area": "Ganadores",
-   "estado": "aviso",
-   "detalle": "O1 «Gastos en pareja mitad y mitad no es justo 💸» saca 1,025 en YouTube (mediana 167): faltan 3 clones con su misma estructura (clon_de: \"O1\")"
+   "estado": "ok",
+   "detalle": "O1 (YouTube 1,025 vs mediana 167): ya tiene 3 clones"
   }
  ]
 }

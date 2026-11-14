@@ -5,7 +5,7 @@ Lee PUBLER_API_KEY del entorno (nunca del repo). Comandos:
   python publer.py cuentas
       Lista workspaces y cuentas conectadas.
   python publer.py publicar video.mp4 texto.txt "2026-10-30T02:47:00Z" "Título corto" [--prueba]
-      Sube el video, programa el post en las cuentas de Victoria y espera el resultado.
+      Sube el video, programa el post en las cuentas de Victoria y espera el resultado. --solo-tiktok: solo TikTok.
       Omite las cuentas que ya tienen un post con la misma primera línea (programado o publicado),
       por si una ejecución anterior publicó pero no pudo guardar su estado en el repo.
       --prueba arma el payload y lo imprime sin llamar a la API.
@@ -309,6 +309,10 @@ def main():
         if not fb:
             sys.exit('ERROR: no encontré la página de Facebook de Victoria (config → facebook_victoria).')
         cuentas = [fb]
+    elif '--solo-tiktok' in sys.argv:  # 14-nov-2026: variantes de ganadores (variantes.py) solo a TikTok
+        cuentas = [c for c in cuentas if red(c) == 'tiktok']
+        if not cuentas:
+            sys.exit('ERROR: no encontré la cuenta de TikTok de Victoria en Publer.')
     elif fb and any(red(c) == 'instagram' for c in cuentas):
         cuentas.append(fb)  # lo que sale en Instagram sale también en Facebook
     print('Cuentas:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas))

@@ -137,7 +137,8 @@ Reglas propias (no del consejo original):
 - Entra en el 10 % de "pruebas" del reparto (ESTRATEGIA_POR_RED): no cambia pilares antes del 15-dic.
 - Trial Reels (solo a no seguidores): el script ya los soporta (config.json → ig_reels_de_prueba), pero Meta los
   NIEGA a @victoriatheceo: "la cuenta no alcanza el mínimo de seguidores" (probado el 10-nov y el 13-nov con 62
-  seguidores; Meta no dice el mínimo). Se vuelve a probar cada lunes en el reporte semanal.
+  seguidores; Meta no dice el mínimo). Desde el 14-nov lo revisa solo scripts/variantes.py probar (200+ seguidores o
+  cada lunes) y, cuando Meta acepte, las variantes de ganadores salen como Trial Reels (nuestro BuzzFy).
 
 10 ideas (teorías reales):
 1. Efecto Diderot: "Cuando me compré mi primer bolso caro, mi mentora me contó sobre el efecto Diderot…" (una compra

@@ -67,6 +67,15 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- VARIANTES DE GANADORES = NUESTRO BUZZFY (14-nov, Rodrigo: "haz eso justamente"): scripts/variantes.py. Cada mañana:
+  1) `variantes.py medir` (fotos a 1/3/7 días; la que pasa 10k o la mitad del original "rompe" y se vuelve original).
+  2) `variantes.py pendientes` (sube a YouTube lo que sale en 48 h o menos). 3) `variantes.py probar` (Trial Reels de
+  Instagram: se prueba al llegar a 200 seguidores y cada lunes; si Meta los acepta prende config.variantes.ig_trial solo).
+  4) `variantes.py candidatos`: para el de más vistas que tenga menos variantes, escribe un gancho NUEVO (pregunta, postura
+  o "guarda esto"; nunca otro dato ni otra cifra: solo empaque) y `hacer <id> "<gancho>"` (la edición rota sola: inicio,
+  zoom, fondo, color). Revisa 3 cuadros. Programa con `publicar <vid> <utc> --redes tt` (TikTok siempre) y `,yt` solo si el
+  original ganó en YouTube (tope config.variantes.por_dia: TikTok 2, YouTube 1; YouTube cuenta en la cuota de 5). Burbuja
+  de "respuesta a" solo con un comentario REAL y que NO sea de cuentas_propias. En el resumen: variantes que rompieron.
 - PENDIENTES DE RODRIGO EN EL PANEL (13-nov, "ve cómo no se actualiza solo"): contenido/pendientes_rodrigo.json se muestra en
   "Tu tarea de hoy" cuando termina Comenta hoy. Cada rutina marca "hecho": true lo que pueda comprobar (bio de IG por
   la API, llave de Beehiiv con una llamada) y agrega lo nuevo que solo él puede hacer; tablero.py lo copia al panel.

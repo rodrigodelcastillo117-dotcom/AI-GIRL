@@ -1,0 +1,107 @@
+[
+ {
+  "id": "O1-v1",
+  "original": "O1",
+  "clon_de": "O1",
+  "gancho": "¿Mitad y mitad si tu pareja gana el doble?",
+  "edicion": "inicio",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/O1-v1/video.mp4",
+  "titulo": "¿Mitad y mitad si tu pareja gana el doble? | gastos en pareja",
+  "palabra_clave": "gastos en pareja",
+  "creada_utc": "2026-11-14T15:32:08Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-15T19:00:00Z",
+    "via": "publer"
+   },
+   "yt": {
+    "publica_utc": "2026-11-15T19:00:00Z",
+    "enlace": "https://youtube.com/shorts/lIX_szs8I0U",
+    "video_id": "lIX_szs8I0U"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-15T19:00:00Z",
+   "yt": "2026-11-15T19:00:00Z"
+  }
+ },
+ {
+  "id": "O1-v2",
+  "original": "O1",
+  "clon_de": "O1",
+  "gancho": "Si ganas menos, ¿pagas lo mismo en la casa?",
+  "edicion": "zoom",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/O1-v2/video.mp4",
+  "titulo": "Si ganas menos, ¿pagas lo mismo en la casa? | gastos en pareja",
+  "palabra_clave": "gastos en pareja",
+  "creada_utc": "2026-11-14T15:32:33Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-16T19:00:00Z",
+    "via": "publer"
+   },
+   "yt": {
+    "publica_utc": "2026-11-16T19:00:00Z",
+    "enlace": "https://youtube.com/shorts/z5wDL0wLG2k",
+    "video_id": "z5wDL0wLG2k"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-16T19:00:00Z",
+   "yt": "2026-11-16T19:00:00Z"
+  }
+ },
+ {
+  "id": "O1-v3",
+  "original": "O1",
+  "clon_de": "O1",
+  "gancho": "Pagar igual ganando la mitad no es justo",
+  "edicion": "fondo",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/O1-v3/video.mp4",
+  "titulo": "Pagar igual ganando la mitad no es justo | gastos en pareja",
+  "palabra_clave": "gastos en pareja",
+  "creada_utc": "2026-11-14T15:32:59Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-17T19:00:00Z",
+    "via": "publer"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-17T19:00:00Z",
+   "yt": "2026-11-17T19:00:00Z"
+  }
+ },
+ {
+  "id": "c16-v1",
+  "original": "c16",
+  "clon_de": "c16",
+  "gancho": "Guarda esto antes de que te paguen el aguinaldo",
+  "edicion": "inicio",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/c16-v1/video.mp4",
+  "titulo": "Guarda esto antes de que te paguen el aguinaldo | aguinaldo 2026",
+  "palabra_clave": "aguinaldo 2026",
+  "creada_utc": "2026-11-14T15:34:14Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-16T02:00:00Z",
+    "via": "publer"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-16T02:00:00Z"
+  }
+ }
+]

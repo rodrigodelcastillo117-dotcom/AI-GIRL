@@ -273,7 +273,8 @@ def ganadores():
     except (OSError, ValueError, IndexError, KeyError):
         return
     clones = {}
-    for x in leer('carruseles.json', {}).get('carruseles', []) + leer('plan.json', {}).get('videos', []):
+    # variantes.json (variantes.py, 14-nov-2026): versiones nuevas del mismo original también cuentan como clones
+    for x in leer('carruseles.json', {}).get('carruseles', []) + leer('plan.json', {}).get('videos', []) + leer('variantes.json', []):
         if x.get('clon_de'):
             clones[x['clon_de']] = clones.get(x['clon_de'], 0) + 1
     for red in ('tt', 'ig', 'yt', 'fb'):
