@@ -69,6 +69,9 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- PORTADA DE CARRUSELES NUEVOS EN TIKTOK (revisión del 15-nov, contenido/cambios.json): gancho 'sí' (pregunta de sí/no)
+  o 'guarda esto' en la portada (portada.gancho_tipo); la postura va en la 2a lámina o en el pie. Medianas a 48 h: sí 466
+  (3), guarda esto 250 (4), dato 223 (8), postura 145 (4). Los "listo" no se reescriben. Se revisa el 22-nov.
 - VARIANTES DE GANADORES = NUESTRO BUZZFY (14-nov, Rodrigo: "haz eso justamente"): scripts/variantes.py. Cada mañana:
   1) `variantes.py medir` (fotos a 1/3/7 días; la que pasa 10k o la mitad del original "rompe" y se vuelve original).
   2) `variantes.py pendientes` (sube a YouTube lo que sale en 48 h o menos). 3) `variantes.py probar` (Trial Reels de
