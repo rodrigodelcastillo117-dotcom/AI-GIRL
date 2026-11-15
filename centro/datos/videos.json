@@ -184,7 +184,7 @@
   "g_fb": null,
   "c_ig_reales": 3,
   "c_yt_reales": 5,
-  "r_yt": 137.8
+  "r_yt": 136.0
  },
  {
   "id": "39",
@@ -913,7 +913,7 @@
   "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
   "v_ig": 35,
   "v_tt": 119,
-  "v_yt": 587,
+  "v_yt": 594,
   "v_fb": 7,
   "l_ig": 6,
   "l_tt": 5,
@@ -933,7 +933,7 @@
   "g_fb": null,
   "c_ig_reales": 2,
   "c_yt_reales": 5,
-  "r_yt": 107.2
+  "r_yt": 106.4
  },
  {
   "id": "18",
@@ -1038,7 +1038,7 @@
   "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
   "v_ig": 31,
   "v_tt": 168,
-  "v_yt": 281,
+  "v_yt": 283,
   "v_fb": 3,
   "l_ig": 5,
   "l_tt": 2,
@@ -1058,7 +1058,7 @@
   "g_fb": null,
   "c_ig_reales": 1,
   "c_yt_reales": 3,
-  "r_yt": 104.7
+  "r_yt": 106.7
  },
  {
   "id": "20",
@@ -1748,7 +1748,7 @@
   "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
   "v_ig": 21,
   "v_tt": 86,
-  "v_yt": 1025,
+  "v_yt": 1033,
   "v_fb": 2,
   "l_ig": 5,
   "l_tt": 1,
@@ -1768,7 +1768,7 @@
   "g_fb": null,
   "c_yt_reales": 7,
   "c_ig_reales": 2,
-  "r_yt": 94.9
+  "r_yt": 125.5
  },
  {
   "id": "O2",
@@ -1811,7 +1811,7 @@
  },
  {
   "id": "E1",
-  "estado": "programado",
+  "estado": "publicado",
   "pilar": "finanzas",
   "locacion": "cafe_terraza",
   "fuente": "Consejo de Victoria sin cifras: anotar una semana de gastos para ver los gastos hormiga (práctica común de presupuesto; Condusef recomienda registrar ingresos y gastos). No cita cantidades.",
@@ -1834,19 +1834,19 @@
   "titulo": "Gastos hormiga, la prueba de 1 semana ☕",
   "v_ig": null,
   "v_tt": null,
-  "v_yt": null,
+  "v_yt": 28,
   "v_fb": null,
   "l_ig": null,
   "l_tt": null,
-  "l_yt": null,
+  "l_yt": 1,
   "l_fb": null,
   "c_ig": null,
   "c_tt": null,
-  "c_yt": null,
+  "c_yt": 2,
   "c_fb": null,
   "s_ig": null,
   "s_tt": null,
-  "s_yt": null,
+  "s_yt": 0,
   "s_fb": null,
   "g_ig": null,
   "g_tt": null,
@@ -1898,7 +1898,8 @@
   "g_yt": null,
   "g_fb": null,
   "c_yt_reales": 6,
-  "c_ig_reales": 0
+  "c_ig_reales": 0,
+  "r_yt": 86.7
  },
  {
   "id": "M2",
@@ -1925,11 +1926,11 @@
   "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
   "v_ig": 20,
   "v_tt": 86,
-  "v_yt": 165,
+  "v_yt": 200,
   "v_fb": 4,
   "l_ig": 4,
   "l_tt": 2,
-  "l_yt": 1,
+  "l_yt": 3,
   "l_fb": 0,
   "c_ig": 4,
   "c_tt": 2,

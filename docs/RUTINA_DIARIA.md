@@ -60,7 +60,9 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
   CUOTA_RESERVADA, esa pieza se sube al día siguiente (los recortes se reintentan solos). Prioridad del día: largo >
   shorts de Victoria > recortes > carruseles en short.
 - HISTORIAS DE POSTS (13-nov, Rodrigo: "todos los posts, shorts y reels, que se hagan historias, también en Facebook"):
-  scripts/historias_posts.py corre en la tarea de cada hora; cada post nuevo de IG sale como historia en IG y FB
+  `python3 scripts/historias_posts.py --rutina` corre en ESTA rutina (6:37) y en la revisión de las 20:13, NUNCA en la
+  tarea de cada hora (esa no puede hacer push: el registro se perdía y el 14-nov repitió 3 historias dos veces; sin
+  --rutina el script ya no publica). Cada post nuevo de IG sale como historia en IG y FB
   (tope config.json → historias_de_posts.max_por_dia = 3, aparte de Victoria Hoy). La API no da destacadas, sticker de
   enlace ni historias de TikTok. Destacadas CREADAS por Rodrigo el 13-nov (Aguinaldo, Sueldo, Verifica, Hoy, Pensión,
   Guía; portadas en assets/destacadas/): cada noche la revisión de las 20:13 le manda la lista (scripts/destacadas.py).

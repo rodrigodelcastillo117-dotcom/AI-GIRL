@@ -3,8 +3,8 @@
   "hoy_usd": 0.0,
   "semana_usd": 66.97,
   "mes_usd": 67.52,
-  "otro_canal_semana_usd": 3.04,
-  "otro_canal_mes_usd": 8.54,
+  "otro_canal_semana_usd": 3.55,
+  "otro_canal_mes_usd": 9.05,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
@@ -14,7 +14,7 @@
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 34.64,
+ "saldo_estimado_usd": 34.12,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -23,11 +23,11 @@
  ],
  "gastado_desde_base": {
   "victoria": 26.48,
-  "otro": 1.04
+  "otro": 1.55
  },
  "gastado_7_dias": {
   "victoria": 26.48,
-  "otro": 1.04
+  "otro": 1.55
  },
  "por_dia": [
   {
@@ -39,15 +39,20 @@
    "dia": "2026-11-13",
    "victoria": 3.39,
    "otro": 0.52
+  },
+  {
+   "dia": "2026-11-14",
+   "victoria": 0.0,
+   "otro": 0.52
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 19.89,
   "bytedance/seedance-1-pro": 5.25,
-  "minimax/video-01": 1.0,
+  "minimax/video-01": 1.5,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.04,
+  "black-forest-labs/flux-schnell": 0.05,
   "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.46,
@@ -61,6 +66,6 @@
   "stability-ai/stable-audio-2.5": 3
  },
  "incompleto": true,
- "generado_utc": "2026-11-14T12:51:20Z",
+ "generado_utc": "2026-11-15T02:20:53Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

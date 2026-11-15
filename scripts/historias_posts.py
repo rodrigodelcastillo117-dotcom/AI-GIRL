@@ -1,7 +1,7 @@
 """Cada post nuevo de Instagram se anuncia en historias de Instagram y Facebook (Rodrigo, 13-nov-2026: "todos los posts,
 shorts y reels, que se hagan historias, también en Facebook").
 
-Uso: python3 scripts/historias_posts.py              publica las historias que falten (tope: config.json →
+Uso: python3 scripts/historias_posts.py --rutina     publica las historias que falten (tope: config.json →
                                                      historias_de_posts.max_por_dia, cuenta las de hoy en México)
      python3 scripts/historias_posts.py --simular    solo arma las imágenes en videos/qa/ y dice qué publicaría
 
@@ -146,8 +146,29 @@ def publicar(m, jpg):
     return fila
 
 
+def puede_guardar():
+    """El registro (contenido/historias_posts.json) es lo único que evita repetir historias: si esta copia del repo no
+    puede hacer push (la tarea de cada hora clona el repo público sin permiso de escritura), el registro se pierde y la
+    hora siguiente las vuelve a publicar. Pasó el 14-nov: 3 historias repetidas a las 04:17 y otra vez a las 08:17."""
+    try:
+        r = subprocess.run(['git', '-C', RAIZ, 'push', '--dry-run', '-q', 'origin', 'HEAD:main'],
+                           capture_output=True, text=True, timeout=60)
+        return r.returncode == 0
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+
+
 def main():
     simular = '--simular' in sys.argv
+    if not simular and '--rutina' not in sys.argv:
+        print('SIN --rutina: no publico. Las historias de posts las publica solo la rutina de las 6:37 y la revisión de las '
+              '20:13 (python3 scripts/historias_posts.py --rutina), que sí guardan el registro; la tarea de cada hora no '
+              '(14-nov: sin push repetía las mismas 3 historias cada vez).')
+        return
+    if not simular and not puede_guardar():
+        print('SIN PUSH: no publico historias desde esta copia (no podría guardar el registro y se repetirían cada hora). '
+              'Las publica la rutina de las 6:37 o la revisión de las 20:13.')
+        return
     conf = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('historias_de_posts', {})
     tope = int(conf.get('max_por_dia', 3))
     filas = registro()

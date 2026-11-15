@@ -64,6 +64,16 @@ def primera_linea(texto):
     return ' '.join(lineas[0].split()).lower() if lineas else ''
 
 
+def clave_linea(texto):
+    """Para empatar un post de Publer con su pieza: la primera línea sin la palabra clave de adelante ("Gastos hormiga: …"
+    se publicó así y en el plan dice "No es en lo grande…": salía AJENO y "no publicado" el 14-nov) y solo 40 caracteres
+    (a veces el pie publicado junta la primera línea con la segunda)."""
+    l = primera_linea(texto)
+    if ': ' in l[:35]:
+        l = l.split(': ', 1)[1]
+    return l[:40]
+
+
 def a_utc(texto):
     return datetime.datetime.fromisoformat(texto.replace('Z', '+00:00')).astimezone(datetime.timezone.utc)
 
@@ -125,7 +135,7 @@ def medir_publer(videos):
     # Facebook (9-nov-2026) se mide como 'fb': va en el centro y en la evolución diaria, pero no en la calificación
     # de videos (total() suma YouTube, TikTok e Instagram) ni en la prueba de horarios.
     fb = publer.CONFIG.get('facebook_victoria')
-    por_linea = {primera_linea(v.get('texto_post')): v['id'] for v in videos}
+    por_linea = {clave_linea(v.get('texto_post')): v['id'] for v in videos}
     por_minuto = {v['publica_utc'][:16]: v['id'] for v in videos if v.get('publica_utc')}
     # El Reel de un carrusel (mismo video del Short) va aparte, como 'igr': sumado al carrusel inflaría su hora.
     reels = {primera_linea(v['texto_reel']): v['id'] for v in videos if v.get('texto_reel')}
@@ -140,7 +150,7 @@ def medir_publer(videos):
             if not red:
                 continue
             minuto = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M') if p.get('scheduled_at') else ''
-            video = por_linea.get(primera_linea(p.get('text'))) or (por_minuto.get(minuto) if red != 'fb' else None)
+            video = por_linea.get(clave_linea(p.get('text'))) or (por_minuto.get(minuto) if red != 'fb' else None)
             if primera_linea(p.get('text')) in reels:
                 video = reels[primera_linea(p.get('text'))]
                 red = 'fb' if red == 'fb' else 'igr'  # en Facebook el Reel del carrusel es su único video
@@ -180,7 +190,7 @@ def verificar_publer(videos):
     import publer
     ws = publer.workspace_id()
     cuentas = publer.CONFIG.get('cuentas_publer', {})
-    por_linea = {primera_linea(v.get('texto_post')): v['id'] for v in videos}
+    por_linea = {clave_linea(v.get('texto_post')): v['id'] for v in videos}
     hoy = datetime.date.today()
     filtros = [('state', 'all'), ('from', (hoy - datetime.timedelta(days=DIAS_DE_MEDICION + 2)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]
@@ -189,7 +199,7 @@ def verificar_publer(videos):
         r = publer._pedir('GET', '/posts?' + urllib.parse.urlencode(filtros + [('page', pagina)]), ws)
         for p in r.get('posts') or []:
             red = REDES.get(cuentas.get(p.get('account_id')))
-            video = por_linea.get(primera_linea(p.get('text')))
+            video = por_linea.get(clave_linea(p.get('text')))
             if red and video:
                 datos.setdefault(video, {})[red] = {'estado': p.get('state') or '', 'enlace': p.get('post_link') or ''}
         if pagina + 1 >= (r.get('total_pages') or 0):
@@ -244,13 +254,16 @@ def ajenos(plan):
         propias |= {primera_linea(r.get('texto')), primera_linea(r.get('titulo'))}
     for l in cargar('largos.json', []):
         propias.add(primera_linea(l.get('texto_post')))
+    for x in cargar('variantes.json', []):  # variantes de ganadores (variantes.py, 14-nov): su primera línea es el gancho
+        propias.add(primera_linea(x.get('gancho')))
+    propias = {clave_linea(t) for t in propias}
     hoy = datetime.date.today()
     filtros = [('state', 'published'), ('from', (hoy - datetime.timedelta(days=3)).isoformat()),
                ('to', (hoy + datetime.timedelta(days=1)).isoformat())] + [('account_ids[]', c) for c in cuentas]
     r = publer._pedir('GET', '/posts?' + urllib.parse.urlencode(filtros), ws)
     return [f"Post AJENO publicado en {cuentas.get(p.get('account_id'))} el {str(p.get('scheduled_at'))[:16]}: "
             f"\"{(p.get('text') or '').strip().splitlines()[0][:60] if (p.get('text') or '').strip() else ''}\" ({p.get('post_link')})"
-            for p in r.get('posts') or [] if primera_linea(p.get('text')) not in propias]
+            for p in r.get('posts') or [] if clave_linea(p.get('text')) not in propias]
 
 
 def comentar_enlace(video, plan, avisos):

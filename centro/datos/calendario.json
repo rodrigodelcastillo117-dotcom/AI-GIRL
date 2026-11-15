@@ -8,9 +8,7 @@
   "horas": {
    "fb": "09:30"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-14",
@@ -21,27 +19,21 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-14",
   "tipo": "video",
   "id": "E1",
   "que": "Sale el video «Gastos hormiga, la prueba de 1 semana ☕»",
-  "estado": "programado",
+  "estado": "publicado",
   "horas": {
    "ig": "13:07",
    "tt": "13:07",
    "fb": "13:07",
    "yt": "13:07"
   },
-  "confirmado": [
-   "ig",
-   "tt",
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-14",
@@ -61,12 +53,9 @@
   "estado": "programado",
   "que": "Video largo: Aguinaldo 2026: cuánto te toca y cómo calcularlo (3 ejemplos)",
   "horas": {
-   "yt": "18:45",
-   "fb": "18:45"
+   "yt": "18:45"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-14",
@@ -80,11 +69,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-14",
@@ -172,8 +157,8 @@
    "fb": "15:00"
   },
   "confirmado": [
-   "ig",
    "fb",
+   "ig",
    "tt"
   ]
  },
@@ -192,6 +177,32 @@
   "confirmado": [
    "ig",
    "fb",
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "tipo": "publer",
+  "id": "",
+  "estado": "programado",
+  "que": "«¿Mitad y mitad si tu pareja gana el doble? 💬 ¿Mitad y mitad…»",
+  "horas": {
+   "tt": "13:00"
+  },
+  "confirmado": [
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-15",
+  "tipo": "publer",
+  "id": "",
+  "estado": "programado",
+  "que": "«Guarda esto antes de que te paguen el aguinaldo 👥 Etiqueta…»",
+  "horas": {
+   "tt": "20:00"
+  },
+  "confirmado": [
    "tt"
   ]
  },
@@ -283,6 +294,19 @@
   ]
  },
  {
+  "fecha": "2026-11-16",
+  "tipo": "publer",
+  "id": "",
+  "estado": "programado",
+  "que": "«Si ganas menos, ¿pagas lo mismo en la casa? 💬 ¿Mitad y…»",
+  "horas": {
+   "tt": "13:00"
+  },
+  "confirmado": [
+   "tt"
+  ]
+ },
+ {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
   "id": "c75",
@@ -322,8 +346,8 @@
    "fb": "15:00"
   },
   "confirmado": [
-   "ig",
    "fb",
+   "ig",
    "tt"
   ]
  },
@@ -340,8 +364,21 @@
    "fb": "21:30"
   },
   "confirmado": [
-   "ig",
    "fb",
+   "ig",
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "publer",
+  "id": "",
+  "estado": "programado",
+  "que": "«Pagar igual ganando la mitad no es justo 💬 ¿Mitad y mitad o…»",
+  "horas": {
+   "tt": "13:00"
+  },
+  "confirmado": [
    "tt"
   ]
  },

@@ -3800,7 +3800,7 @@
    "pilar": "finanzas",
    "voz": "intima",
    "duracion": 20,
-   "estado": "programado",
+   "estado": "publicado",
    "locacion": "cafe_terraza",
    "escena": "cafe",
    "guion": "¿Quieres saber en qué se te va el dinero? No es en lo grande. Es en lo pequeño de todos los días: el cafecito, el antojo, la app de comida. Haz esta prueba: una semana, anota todo lo que gastas, hasta lo más mínimo. Te vas a sorprender. ¿Tú cuánto crees que se te va en antojos? Te leo.",
@@ -3879,7 +3879,11 @@
      "youtube"
     ],
     "youtube": "https://youtube.com/shorts/rmMgyWp4pDI",
-    "nota": "En Publer salió con el título por defecto \"Victoria The CEO\" (el título SEO falló la regla de 45 caracteres y se corrigió después); el pie sí es el bueno."
+    "nota": "En Publer salió con el título por defecto \"Victoria The CEO\" (el título SEO falló la regla de 45 caracteres y se corrigió después); el pie sí es el bueno.",
+    "ig": "https://www.instagram.com/reel/Dfu668BDxtp/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7708105893723819271?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/rmMgyWp4pDI",
+    "comentario_youtube": "Ugy-xnzIzISnYO9gQL14AaABAg"
    },
    "publica_utc": "2026-11-14T19:07:00Z",
    "publica_utc_por_red": {
