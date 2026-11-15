@@ -64,7 +64,7 @@
     "que": "Sale el carrusel «Modalidad 40 cambió el 22 de octubre ⚠️» (YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-11-15T12:50:48Z",
+  "generado_utc": "2026-11-15T15:18:27Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -617,7 +617,7 @@
     "stability-ai/stable-audio-2.5": 3
    },
    "incompleto": true,
-   "generado_utc": "2026-11-15T12:50:58Z",
+   "generado_utc": "2026-11-15T15:18:40Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
