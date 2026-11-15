@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-15T12:39:13Z",
+ "generado_utc": "2026-11-15T12:50:32Z",
  "estado": "aviso",
  "checks": [
   {
@@ -40,12 +40,12 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-16: TikTok 4, Instagram 3, YouTube 3, Facebook 3"
+   "detalle": "2026-11-16: TikTok 4, Instagram 3, YouTube 4, Facebook 3"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-17: TikTok 2, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: TikTok 2/3, YouTube 2/3"
+   "detalle": "2026-11-17: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Serie",
@@ -60,7 +60,7 @@
   {
    "area": "Serie",
    "estado": "ok",
-   "detalle": "2026-11-17: aún no tiene la parte de la serie; siguiente parte lista: c80 (prográmala como primer TikTok del día)"
+   "detalle": "2026-11-17: el primer TikTok es de la serie (c80)"
   },
   {
    "area": "Videos largos",
@@ -105,7 +105,7 @@
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "65 carruseles listos para TikTok (~22 días a 3 por día)"
+   "detalle": "60 carruseles listos para TikTok (~20 días a 3 por día)"
   },
   {
    "area": "Cola",
@@ -120,7 +120,7 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,058 vs mediana 183): ya tiene 3 clones"
+   "detalle": "c70 (TikTok 1,058 vs mediana 183): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",

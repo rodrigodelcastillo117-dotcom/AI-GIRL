@@ -4724,7 +4724,13 @@
    "facebook": {
     "publica_utc": "2026-11-11T20:00:00Z"
    },
-   "comentario_youtube": "Ugwtp9C9Oh7g2tlLjh14AaABAg"
+   "comentario_youtube": "Ugwtp9C9Oh7g2tlLjh14AaABAg",
+   "reel_ig": {
+    "publica_utc": "2026-11-16T02:00:00Z",
+    "texto": "Guarda esto: tu aguinaldo 2026, parte 2 (5 datos más)\nAguinaldo 2026, parte 2: lo que la ley te da no es un favor de tu patrón, así que haz la cuenta. 5 datos más, ahora con pesos (la parte 1 está en mi perfil). 🧾\n1. La cuenta: salario diario × 15, como mínimo. Con $15,000 al mes: $500 × 15 = $7,500 brutos.\n2. ¿Medio año trabajado? Te toca la mitad: unos $3,750 con ese sueldo.\n3. Eventual, por temporada, por obra, de confianza o del hogar: también te toca.\n4. La incapacidad por maternidad, el permiso de paternidad y la incapacidad por accidente de trabajo cuentan como tiempo trabajado.\n5. Se paga en efectivo o, si tú aceptas, por depósito; nunca en vales, y no te lo pueden negar por \"falta de utilidades\".\nCapital también pidió su aguinaldo: quince días de croquetas, ni uno menos.\n\n📚 LFT, arts. 87, 89 y 101; PROFEDET, Preguntas frecuentes Aguinaldo 2025.\n💬 ¿Cuántos días de aguinaldo te dan? Comenta el número. Te contesto a todos.\n🔖 Guárdalo para cuando revises tu recibo del aguinaldo.\n📩 Mándaselo a quien entró a trabajar este año.\n🧮 Calcula tu aguinaldo, gratis: victoriatheceo.vercel.app/aguinaldo\n\n#aguinaldo #aguinaldo2026 #derechoslaborales #finanzaspersonales #victoriatheceo",
+    "via": "meta",
+    "estado": "por_publicar"
+   }
   },
   {
    "id": "c53",
@@ -5863,7 +5869,13 @@
    "facebook": {
     "publica_utc": "2026-11-11T02:00:00Z"
    },
-   "comentario_youtube": "Ugwli_G6NURKemrKUqB4AaABAg"
+   "comentario_youtube": "Ugwli_G6NURKemrKUqB4AaABAg",
+   "reel_ig": {
+    "publica_utc": "2026-11-15T17:00:00Z",
+    "texto": "Intervinieron un banco y casi 3 millones no podían sacar su dinero. ¿Y en México?\nIntervinieron un banco en Paraguay y casi 3 millones no podían sacar su dinero. ¿Te puede pasar en México? 🏦\n1. El 3 de noviembre, el Banco Central del Paraguay intervino Ueno: dejaron de funcionar su app, tarjetas y transferencias.\n2. En México, si tu banco quiebra, el IPAB te paga tus depósitos hasta 400 mil UDIS por persona y por banco (más de 3.5 millones de pesos).\n3. Ya pasó: en octubre de 2025 liquidaron CIBanco y el IPAB empezó a pagar 3 días después.\n4. Tres cuentas en el mismo banco no triplican la protección; dos bancos distintos, sí.\n5. En una SOFIPO autorizada, el seguro cubre hasta 25 mil UDIS (unos 220 mil pesos).\n6. El saldo de una billetera de pago en una app no es depósito: el IPAB no lo cubre.\nMi regla: nunca más dinero en un solo lugar de lo que cubre su seguro, con margen para los intereses.\nCapital guarda sus croquetas en tres escondites distintos. Diversificado desde cachorro.\n\n📚 Banco Central del Paraguay · Ley de Protección al Ahorro Bancario · IPAB · Ley de Ahorro y Crédito Popular · Ley Fintech\n💬 ¿Dónde guardas tu dinero? Comenta BANCO, SOFIPO o APP. Te contesto a todos.\n🔖 Guárdalo para cuando abras una cuenta nueva.\n📩 Mándaselo a quien tiene todo su dinero en una sola app.\n🧮 Haz tu plan para salir de deudas, gratis: victoriatheceo.vercel.app/pagar-deudas\n\n#ipab #bancos #ahorro #finanzaspersonales #victoriatheceo",
+    "via": "meta",
+    "estado": "por_publicar"
+   }
   },
   {
    "id": "c66",
@@ -7233,22 +7245,23 @@
   },
   {
    "id": "c81",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "aguinaldo_tu_sueldo",
    "serie": "Tu sueldo, tu aguinaldo",
    "clon_de": "c01",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/recamara.jpg",
    "ventana": {
     "desde": "2026-11-13",
     "hasta": "2026-12-19"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/dinamica-gancho-cafe-caja.jpg",
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Si ganas $10,000 al mes, tu aguinaldo mínimo es $5,000",
     "voz": "Si ganas diez mil pesos al mes, tu aguinaldo mínimo es de cinco mil pesos. Guarda esto.",
-    "gancho_tipo": "si"
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/video-40-cocina.jpg"
    },
    "diapositivas": [
     {
@@ -7313,26 +7326,31 @@
     "etiqueta": "🧮 Calcula tu aguinaldo gratis",
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
-   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 333.33, aguinaldo 5000.00, exento 3519.30, gravado 1480.70); datos verificados por segundo agente el 12-nov."
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 333.33, aguinaldo 5000.00, exento 3519.30, gravado 1480.70); datos verificados por segundo agente el 12-nov.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-18T15:00:00Z"
+   },
+   "publica_utc": "2026-11-18T15:00:00Z"
   },
   {
    "id": "c82",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "aguinaldo_tu_sueldo",
    "serie": "Tu sueldo, tu aguinaldo",
    "clon_de": "c01",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/restaurante.jpg",
    "ventana": {
     "desde": "2026-11-13",
     "hasta": "2026-12-19"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/lora-prueba-4-casa.jpg",
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Si ganas $12,000 al mes, tu aguinaldo mínimo es $6,000",
     "voz": "Si ganas doce mil pesos al mes, tu aguinaldo mínimo es de seis mil pesos. Guarda esto.",
-    "gancho_tipo": "si"
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/habla-yate-cerca.jpg"
    },
    "diapositivas": [
     {
@@ -7397,7 +7415,11 @@
     "etiqueta": "🧮 Calcula tu aguinaldo gratis",
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
-   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 400.00, aguinaldo 6000.00, exento 3519.30, gravado 2480.70); datos verificados por segundo agente el 12-nov."
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 400.00, aguinaldo 6000.00, exento 3519.30, gravado 2480.70); datos verificados por segundo agente el 12-nov.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-19T15:00:00Z"
+   },
+   "publica_utc": "2026-11-19T15:00:00Z"
   },
   {
    "id": "c83",
@@ -7995,7 +8017,7 @@
   },
   {
    "id": "c88u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "ley_73_o_ley_97_fecha_de_alta",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -8101,7 +8123,14 @@
     "por": "segundo agente",
     "notas": "Verificado sin cambios. LSS vigente (diputados.gob.mx, últ. reforma DOF 15-01-2026): transitorio primero (vigor 1-jul-1997), tercero (inscritos antes pueden optar), cuarto (IMSS calcula ambos regímenes a solicitud); arts. 154 (60 años) y 162 (65 años, 1,000 semanas); decreto DOF 16-12-2020 transitorio cuarto (750 en 2021 +25 por año hasta 2031 => 875 en 2026). IMSS ficha IMSS-01-002 (500 semanas Ley 73, 60/65 años, tabla 875 en 2026) y comunicado 480/2025 (salario promedio últimas 250 semanas). PENSIONISSSTE 4-jun-2025 (fecha de alta, 75% a los 60 y 100% a los 65, Constancia de Vigencia de Derechos). Tono de usted; título SEO sin errores."
    },
-   "cuenta_en_comentarios": "ley_por_anio"
+   "cuenta_en_comentarios": "ley_por_anio",
+   "facebook": {
+    "publica_utc": "2026-11-17T23:00:00Z"
+   },
+   "youtube": "https://youtube.com/shorts/eYfnIwvjxe4",
+   "publica_utc_por_red": {
+    "yt": "2026-11-17T23:00:00Z"
+   }
   },
   {
    "id": "c89u",
@@ -8331,7 +8360,7 @@
   },
   {
    "id": "c91u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "victoria_verifica_pension_bienestar_enero_2027_y_registro",
    "serie": "Victoria verifica",
    "funcion": "convencer",
@@ -8436,7 +8465,14 @@
     "por": "segundo agente",
     "notas": "Verificado. Calendario nov-dic 2026 del 3 al 27 de noviembre, último pago bimestral del año, por letra del primer apellido: Programas para el Bienestar 27-oct-2026 + Expansión 29-oct-2026 y Publimetro 26-oct-2026. Reglas de Operación PAM 2026 (DOF 12-feb-2026, PDF en gob.mx): 3.3.1 (65+, mexicanos por nacimiento o naturalización, domicilio en México), 3.3.2 (acta, credencial para votar o pasaporte o INAPAM, CURP, comprobante de máx. 6 meses), 3.4 ($3,200 mensuales pagaderos bimestralmente, se actualiza a partir de 2027), 3.5.1 y 4.1.1 (sin costo, directa y sin intermediarios), 6.2 (Línea de Bienestar 800 639 42 64) + Uno TV y Fox Sports ($6,400 bimestrales; misma línea). Registro 19-25 oct 2026: Programas para el Bienestar 19-oct-2026 + Crónica. CORREGIDO: al 14-nov el pago de noviembre sigue en curso, así que \"fue del 3 al 27\" pasó a \"se programó del 3 al 27\" (voz: \"va del\"); \"Módulos Bienestar\" -> \"módulos de registro\" (así lo nombra el comunicado). Enero 2027, monto 2027 y próximo registro siguen como NO VERIFICADO (correcto). Título SEO sin errores."
    },
-   "clon_de": "c70"
+   "clon_de": "c70",
+   "facebook": {
+    "publica_utc": "2026-11-16T23:00:00Z"
+   },
+   "youtube": "https://youtube.com/shorts/pnI0kIhaHak",
+   "publica_utc_por_red": {
+    "yt": "2026-11-16T23:00:00Z"
+   }
   },
   {
    "id": "c92u",
