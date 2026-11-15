@@ -1,0 +1,44 @@
+{
+ "hecho_por": "Planeación semanal del domingo 15-nov-2026",
+ "largo_pension_lunes": {
+  "fecha_produccion": "2026-11-16",
+  "publica": "miércoles 18-nov 18:00 MX en YouTube y Facebook",
+  "autorizacion": "largo-pension (tope $20 al mes; van $0.32)",
+  "formato": "Victoria resuelve (ESTRATEGIA_POR_RED → Auditoría competitiva): pregunta real → regla con fuente → ejemplo con supuestos → resultado y lo que lo cambia → lista de qué revisar. 8-14 min, de USTED, cuentas en pantalla, aviso de información general.",
+  "titulo_tentativo": "Pensión y aguinaldo en diciembre y enero: cuándo le pagan (IMSS y Bienestar)",
+  "pregunta": "Cobro pensión: ¿cuándo me depositan en diciembre, cuándo llega el aguinaldo y qué pasa en enero?",
+  "bloques": [
+   "IMSS Ley 73: el pago de diciembre es el martes 1; el aguinaldo (una mensualidad para cesantía y vejez) se paga en noviembre junto con la pensión. Si no lo ve en el estado de cuenta de noviembre: IMSS 800 623 2323, opción 3.",
+   "Pensión Bienestar: el bimestre noviembre-diciembre se paga del 3 al 27 de noviembre por letra del primer apellido; el lunes 16 no hay depósitos; en diciembre no hay pago. Adultos mayores: $6,400 por bimestre (mujeres 60-64: $3,100; discapacidad: $3,300).",
+   "Enero 2027: las fechas de la Pensión Bienestar aún no son oficiales (sello NO VERIFICADO, como en c91u). No se dan fechas ni montos nuevos hasta que los publique Bienestar.",
+   "Ejemplo resuelto: con $6,400 del bimestre, cuánto toca por mes ($3,200) y cuánto separar para que diciembre alcance.",
+   "Qué revisar: estado de cuenta de noviembre, letra del apellido, fraudes de 'gestores' que cobran por tramitar (no hace falta pagarle a nadie)."
+  ],
+  "fuentes": [
+   {"nombre": "IMSS, calendario de pago de pensiones 2026", "url": "https://www.imss.gob.mx/sites/all/statics/pensiones/Pensiones-pago.pdf"},
+   {"nombre": "Expansión, calendario de pagos IMSS 2026", "url": "https://expansion.mx/finanzas-personales/2025/12/11/calendario-de-pagos-pension-imss-2026"},
+   {"nombre": "Expansión Política, Bienestar nov-dic, 26-oct-2026", "url": "https://politica.expansion.mx/mexico/2026/10/26/calendario-pago-pensiones-bienestar-noviembre-diciembre"},
+   {"nombre": "Publimetro, Bienestar nov-dic, 26-oct-2026", "url": "https://www.publimetro.com.mx/nacional/2026/10/26/pension-bienestar-calendario-pagos-noviembre-diciembre-2026/"},
+   {"nombre": "Crónica, Bienestar nov-dic, 26-oct-2026", "url": "https://www.cronica.com.mx/nacional/2026/10/26/pension-bienestar-2026-calendario-de-pagos-de-noviembre-diciembre/"}
+  ],
+  "shorts_que_lo_acompanan": ["c87u (pago de diciembre, ya programado)", "c91u (Bienestar enero 2027, sin fecha, 16-nov)", "c88u (Ley 73 o 97, 17-nov)"],
+  "pendiente": "Segunda revisión de datos con otro agente antes de generar voces; el aguinaldo IMSS de pensionados se vuelve a cruzar con una segunda fuente el lunes (hoy solo El Imparcial y el calendario del IMSS)."
+ },
+ "sketch_miercoles": {
+  "fecha_publicacion": "miércoles 18-nov en TikTok (Reel de IG y FB si pasa control de calidad)",
+  "autorizacion": "sketch-tiktok (tope $8 al mes; van $0)",
+  "formato": "35-55 s, formato escena; el villano solo como texto en pantalla o voz en off; Victoria de tú; etiqueta de IA.",
+  "villano": "Tu jefe y el aguinaldo",
+  "guion": [
+   {"quien": "Jefe (texto en pantalla)", "dice": "Este año el aguinaldo se los doy en enero, ¿eh? No salen los números."},
+   {"quien": "Victoria", "dice": "No, jefe. La ley dice antes del 20 de diciembre. Este año, a más tardar el sábado 19."},
+   {"quien": "Jefe", "dice": "Bueno, te doy la mitad ahorita y la otra después."},
+   {"quien": "Victoria", "dice": "Mínimo son 15 días de salario, completos. Y si no completé el año, la parte proporcional, también completa."},
+   {"quien": "Jefe", "dice": "¿Y si no te pago?"},
+   {"quien": "Victoria", "dice": "Lo reclamo en PROFEDET, que es gratis. Y tengo un año para hacerlo."},
+   {"quien": "Victoria (a cámara)", "dice": "Guárdalo y mándaselo a quien cobra aguinaldo por primera vez. Sígueme: cada semana desarmo a un villano de tu dinero."}
+  ],
+  "fuentes": "Las mismas de c16 ya verificadas: LFT arts. 87 y 516; PROFEDET (gob.mx/profedet).",
+  "capital": "Capital a su lado, mirando al 'jefe' con cara de juicio (función: reacción, no adorno)."
+ }
+}

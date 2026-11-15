@@ -17,6 +17,14 @@ Tu dinero en México. Nada de salud mental, productividad ni historias de empres
 
 - **9-nov-2026: c16 "Guarda esto: tu aguinaldo 2026 en 5 datos"**: 3,361 vistas en TikTok en 15 h, 14 compartidos
   (7 veces lo mejor anterior). Formato "Guarda esto: ___ en 5 datos" + tema de temporada + cifras con fecha. Se repite.
+- **Revisión del 15-nov-2026 (solo grupos con 3+ publicaciones comparables):**
+  - TikTok, portada de carrusel, vistas a ~48 h: "sí" (pregunta de sí o no) mediana 466 (3) · "guarda esto" 250 (4) ·
+    dato 223 (8) · postura 145 (4). La postura en portada es la que menos jala.
+  - TikTok, tema: aguinaldo, 4 de 5 carruseles arriba de la mediana (c16 3,782 · c70 1,058 · c01 543 · c52 307; c43 130).
+  - TikTok, formato: carrusel mediana 186 (26) contra Victoria hablando 109 (5).
+  - YouTube, formato: Victoria hablando, mediana 99 % visto y ~506 vistas (8) contra short de carrusel 47 % y ~129 (20).
+  - Seguidores: ninguna red ganó seguidores netos en la semana (TikTok 0 con 7,947 vistas; YouTube +3 en Analytics).
+    No se puede saber qué serie da seguidores: las redes no dan seguidores por publicación por la API.
 
 ## Series (cada una es una promesa: "sígueme para la siguiente")
 

@@ -64,7 +64,7 @@
     "que": "Sale el carrusel «Modalidad 40 cambió el 22 de octubre ⚠️» (YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-11-15T15:18:27Z",
+  "generado_utc": "2026-11-15T17:26:21Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -554,8 +554,8 @@
     "hoy_usd": 0.0,
     "semana_usd": 66.97,
     "mes_usd": 67.52,
-    "otro_canal_semana_usd": 3.55,
-    "otro_canal_mes_usd": 9.05,
+    "otro_canal_semana_usd": 4.57,
+    "otro_canal_mes_usd": 10.07,
     "presupuesto_semanal_usd": 7,
     "presupuesto_mensual_usd": 28,
     "presupuesto_otro_canal_mensual_usd": 22,
@@ -565,7 +565,7 @@
    },
    "saldo_base_usd": 27.16,
    "fecha_base_utc": "2026-11-12T06:22:02Z",
-   "saldo_estimado_usd": 34.12,
+   "saldo_estimado_usd": 33.11,
    "recargas_estimadas": [
     {
      "utc": "2026-11-12T14:49:22Z",
@@ -574,11 +574,11 @@
    ],
    "gastado_desde_base": {
     "victoria": 26.48,
-    "otro": 1.55
+    "otro": 2.57
    },
    "gastado_7_dias": {
     "victoria": 26.48,
-    "otro": 1.55
+    "otro": 2.57
    },
    "por_dia": [
     {
@@ -595,15 +595,20 @@
      "dia": "2026-11-14",
      "victoria": 0.0,
      "otro": 0.52
+    },
+    {
+     "dia": "2026-11-15",
+     "victoria": 0.0,
+     "otro": 1.02
     }
    ],
    "por_modelo": {
     "prunaai/p-video-avatar": 19.89,
     "bytedance/seedance-1-pro": 5.25,
-    "minimax/video-01": 1.5,
+    "minimax/video-01": 2.5,
     "google/nano-banana": 0.74,
     "zsxkib/mmaudio": 0.6,
-    "black-forest-labs/flux-schnell": 0.05,
+    "black-forest-labs/flux-schnell": 0.07,
     "minimax/speech-02-hd": 0.0
    },
    "costo_promedio_toma_usd": 0.46,
@@ -617,7 +622,7 @@
     "stability-ai/stable-audio-2.5": 3
    },
    "incompleto": true,
-   "generado_utc": "2026-11-15T15:18:40Z",
+   "generado_utc": "2026-11-15T17:26:32Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {

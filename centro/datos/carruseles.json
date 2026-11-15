@@ -1596,7 +1596,7 @@
   "linea": "intervinieron un banco en paraguay y casi 3 millones no podían sacar su dinero. ¿te puede pasar en méxico? 🏦",
   "tipo": "carrusel",
   "linea_reel": "intervinieron un banco y casi 3 millones no podían sacar su dinero. ¿y en méxico?",
-  "reel_ig": "2026-11-15 11:00",
+  "reel_ig": "2026-11-15 11:03",
   "publica_utc_por_red": {
    "tt": "2026-11-10T17:07:00Z",
    "yt": "2026-11-11T02:00:00Z",
@@ -1611,7 +1611,8 @@
   "c_tt": 1,
   "s_tt": 0,
   "r_yt": 40.9,
-  "c_yt_reales": 6
+  "c_yt_reales": 6,
+  "c_ig_reales": 0
  },
  {
   "id": "c66",
