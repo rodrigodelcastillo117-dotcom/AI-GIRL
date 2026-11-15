@@ -7144,7 +7144,7 @@
   },
   {
    "id": "c80",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "aguinaldo_tu_sueldo",
    "serie": "Tu sueldo, tu aguinaldo",
    "clon_de": "c01",
@@ -7225,7 +7225,11 @@
     "etiqueta": "🧮 Calcula tu aguinaldo gratis",
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
-   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 266.67, aguinaldo 4000.00, exento 3519.30, gravado 480.70); datos verificados por segundo agente el 12-nov."
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 266.67, aguinaldo 4000.00, exento 3519.30, gravado 480.70); datos verificados por segundo agente el 12-nov.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-17T15:00:00Z"
+   },
+   "publica_utc": "2026-11-17T15:00:00Z"
   },
   {
    "id": "c81",

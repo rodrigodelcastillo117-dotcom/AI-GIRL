@@ -8,7 +8,7 @@
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 144.69,
+  "proyeccion_mes_usd": 135.04,
   "semana_desde": "2026-11-09",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
@@ -66,6 +66,6 @@
   "stability-ai/stable-audio-2.5": 3
  },
  "incompleto": true,
- "generado_utc": "2026-11-15T02:20:53Z",
+ "generado_utc": "2026-11-15T12:39:13Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

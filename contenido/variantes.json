@@ -13,7 +13,7 @@
   "estado": "programada",
   "redes": {
    "tt": {
-    "publica_utc": "2026-11-15T19:00:00Z",
+    "publica_utc": "2026-11-16T00:00:00Z",
     "via": "publer"
    },
    "yt": {
@@ -24,9 +24,10 @@
   },
   "medidas": {},
   "plan": {
-   "tt": "2026-11-15T19:00:00Z",
+   "tt": "2026-11-16T00:00:00Z",
    "yt": "2026-11-15T19:00:00Z"
-  }
+  },
+  "nota": "TikTok movido de 13:00 a 18:00 MX el 15-nov: el primer TikTok del día es la serie (c78, 15:00)."
  },
  {
   "id": "O1-v2",

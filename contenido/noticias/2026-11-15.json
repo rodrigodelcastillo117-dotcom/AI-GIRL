@@ -1,0 +1,68 @@
+{
+ "fecha": "2026-11-15",
+ "titulo": "Mañana es descanso obligatorio, la Pensión Bienestar hace pausa y al Buen Fin le quedan dos días",
+ "intro": "Domingo de puente. Tres cosas que mueven tu dinero entre hoy y el martes, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "México",
+   "titulo": "Lunes 16: si te toca trabajar, te pagan triple",
+   "que_paso": "El lunes 16 de noviembre es día de descanso obligatorio por la Revolución Mexicana: la Ley Federal del Trabajo lo pasa al tercer lunes del mes. Quien trabaja ese día cobra su salario normal más el doble por la jornada.",
+   "te_afecta": "Si ganas el salario mínimo ($315.04 al día), trabajar mañana te deja $945.12 por ese día: $315.04 normales más $630.08 extra.",
+   "que_hacer": "Si te toca ir, anota tu horario y revisa que el pago extra venga en tu siguiente recibo. Si no viene, pregúntalo primero en Recursos Humanos.",
+   "fuentes": [
+    {
+     "nombre": "Azteca Jalisco, noviembre 2026",
+     "url": "https://www.aztecajalisco.com/noticias-jalisco-local/que-dia-de-noviembre-2026-es-descanso-obligatorio-y-se-paga-al-triple-en-mexico/"
+    },
+    {
+     "nombre": "N+, puentes y descansos de noviembre 2026",
+     "url": "https://www.nmas.com.mx/sociedad/cuando-hay-puente-noviembre-2026-fechas-exactas-todos-feriados-y-descansos-obligatorios/"
+    },
+    {
+     "nombre": "Fox Sports México, 6-nov-2026",
+     "url": "https://www.foxsports.com.mx/2026/11/06/pago-triple-noviembre-2026-dia-descanso-obligatorio-lft-uti/"
+    }
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Pensión Bienestar: mañana no hay depósitos y este es el último pago del año",
+   "que_paso": "El pago del bimestre noviembre-diciembre va del 3 al 27 de noviembre, por letra del primer apellido, y el lunes 16 no hay depósitos por el día festivo. En diciembre no hay otro pago.",
+   "te_afecta": "Si tus papás o abuelos cobran la pensión de adultos mayores, son $6,400 que tienen que durar noviembre y diciembre.",
+   "que_hacer": "Revisa qué día le toca según su letra y, cuando llegue, sepárale desde ya lo de diciembre. Ese dinero tiene que alcanzar dos meses.",
+   "fuentes": [
+    {
+     "nombre": "Expansión Política, 26-oct-2026",
+     "url": "https://politica.expansion.mx/mexico/2026/10/26/calendario-pago-pensiones-bienestar-noviembre-diciembre"
+    },
+    {
+     "nombre": "Publimetro, 26-oct-2026",
+     "url": "https://www.publimetro.com.mx/nacional/2026/10/26/pension-bienestar-calendario-pagos-noviembre-diciembre-2026/"
+    },
+    {
+     "nombre": "Crónica, 26-oct-2026",
+     "url": "https://www.cronica.com.mx/nacional/2026/10/26/pension-bienestar-2026-calendario-de-pagos-de-noviembre-diciembre/"
+    }
+   ]
+  },
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "Al Buen Fin le quedan dos días: revisa la tienda antes de pagar",
+   "que_paso": "El Buen Fin termina el martes 17. Profeco recomienda consultar su Buró Comercial antes de comprar: ahí se ven las quejas que tiene cada tienda y cómo las resolvió.",
+   "te_afecta": "Una oferta buena en una tienda que no responde te puede salir cara si después tienes que reclamar una garantía o un cargo mal hecho.",
+   "que_hacer": "Antes de una compra grande, busca la tienda en el Buró Comercial de Profeco (búscalo así en Google, es gratis) y compara cuántas quejas resolvió.",
+   "fuentes": [
+    {
+     "nombre": "Crónica, 5-nov-2026",
+     "url": "https://www.cronica.com.mx/negocios/2026/11/05/profeco-recomienda-revisar-el-buro-comercial-antes-de-comprar-en-el-buen-fin-2026/"
+    },
+    {
+     "nombre": "Expansión, 5-nov-2026",
+     "url": "https://expansion.mx/finanzas-personales/2026/11/05/profeco-buro-comercial-para-lugares-con-malas-practicas"
+    }
+   ]
+  }
+ ],
+ "dato": "Mínimo de 2026: $315.04 al día. Si trabajas el lunes 16: $315.04 + 2 × $315.04 = $945.12 por ese día.",
+ "cierre": "El puente también es dinero: si descansas, descansa; si trabajas, que te lo paguen como dice la ley. Nos vemos mañana. — Victoria"
+}
