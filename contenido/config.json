@@ -845,13 +845,20 @@
   "reel_c74_cancelado": "El recordatorio de las 18:00 del 16-nov (Reel c74) NO se publica: hoy la pieza de Instagram es c77. No se pudo borrar el recordatorio (permiso negado).",
   "recortes_ig_pendientes_de_borrar": [
    "6af54aaff9116176eb1007c7",
-   "6af54abdf9116176eb1007db",
-   "6af53b53f9116176eb0ff839",
-   "6af53b5e0acc11d344682582",
-   "6af53b691710035d7b48b1e7",
-   "6af53b740acc11d344682597",
-   "6af53b7d0acc11d3446825a9",
-   "6af53b880acc11d3446825b1"
-  ]
+   "6af54abdf9116176eb1007db"
+  ],
+  "recortes_ig_movidos_a_diciembre": {
+   "ids": [
+    "6af53b53f9116176eb0ff839",
+    "6af53b5e0acc11d344682582",
+    "6af53b691710035d7b48b1e7",
+    "6af53b740acc11d344682597",
+    "6af53b7d0acc11d3446825a9",
+    "6af53b880acc11d3446825b1"
+   ],
+   "fechas": "21 al 26-dic 11:00 MX, 1 al día",
+   "por_que": "Serie \"no me pagaron el aguinaldo\": sirve justo después del 20-dic. Rodrigo, 16-nov: \"solo moverlos de día\". Siguen cerrando con Video completo en mi canal."
+  },
+  "nota_buen_fin": "Los 2 recortes de Buen Fin (16-nov 15:00 y 21:30) no se pueden mover: el Buen Fin termina el 17. Borrarlos a mano en Publer o dejarlos salir."
  }
 }
