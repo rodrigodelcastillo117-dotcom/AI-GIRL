@@ -69,6 +69,11 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- INSTAGRAM = PLAN DE MUSE (16-nov, docs/muse/plan-retencion-2026-11-16.md; medición el jueves 19-nov): en Instagram
+  máximo 1 pieza al día y la manda el calendario de MUSE. Nada de Reels que anuncien el video de YouTube ("Video completo
+  en mi canal"): recortes.py ya NO los manda a Instagram (--sin-instagram; TikTok y Facebook sí). La rutina NO agrega
+  Reels de Instagram por su cuenta (ig_reel_musica.py) mientras dure la prueba. Gancho: número del bolsillo del que mira
+  en pantalla desde el segundo 1; un solo llamado (guardar O compartir); pregunta cerrada; a quién mandárselo.
 - PORTADA DE CARRUSELES NUEVOS EN TIKTOK (revisión del 15-nov, contenido/cambios.json): gancho 'sí' (pregunta de sí/no)
   o 'guarda esto' en la portada (portada.gancho_tipo); la postura va en la 2a lámina o en el pie. Medianas a 48 h: sí 466
   (3), guarda esto 250 (4), dato 223 (8), postura 145 (4). Los "listo" no se reescriben. Se revisa el 22-nov.

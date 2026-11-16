@@ -315,6 +315,8 @@ def main():
             sys.exit('ERROR: no encontré la cuenta de TikTok de Victoria en Publer.')
     elif fb and any(red(c) == 'instagram' for c in cuentas):
         cuentas.append(fb)  # lo que sale en Instagram sale también en Facebook
+    if '--sin-instagram' in sys.argv:  # 16-nov-2026 (plan de MUSE): los recortes que anuncian el largo no van a Instagram
+        cuentas = [c for c in cuentas if red(c) != 'instagram']
     print('Cuentas:', ', '.join(f"{red(c)}:{c.get('name')}" for c in cuentas))
     try:
         repetidas = ya_programadas(ws, cuentas, texto)

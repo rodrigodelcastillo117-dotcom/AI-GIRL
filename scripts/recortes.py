@@ -295,7 +295,9 @@ def publicar(sid):
             subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'playlist', enlace.split('/')[-1], clave])
     if 'ig_tt_fb' not in hecho:
         pb = subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'publer.py'), 'publicar', archivo, texto,
-                             f"ig={horas['ig']},tt={horas['tt']}", r['titulo'][:90]], capture_output=True, text=True)
+                             f"ig={horas['ig']},tt={horas['tt']}", r['titulo'][:90], '--sin-instagram'], capture_output=True, text=True)
+        # 16-nov-2026 (plan de MUSE): un recorte que cierra con "Video completo en mi canal" fue lo peor de Instagram
+        # (0 guardados, 0 compartidos, 77-100 % se salta). Va a TikTok y Facebook (a la hora de "ig"); a Instagram no.
         print(pb.stdout[-600:], pb.stderr[-400:])
         if pb.returncode == 0:
             hecho['ig_tt_fb'] = horas['ig']
