@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-15T21:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 con salario mínimo 💰» (TikTok 15:00)",
+  "proxima_ejecucion_utc": "2026-11-16T15:00:00Z",
+  "proxima_que": "Sale el carrusel «Aguinaldo 2026 con el mínimo fronterizo 💰» (TikTok 09:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -56,15 +56,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-15T21:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 con salario mínimo 💰» (TikTok 15:00)"
+    "utc": "2026-11-16T15:00:00Z",
+    "que": "Sale el carrusel «Aguinaldo 2026 con el mínimo fronterizo 💰» (TikTok 09:00)"
    },
    {
-    "utc": "2026-11-15T23:00:00Z",
-    "que": "Sale el carrusel «Modalidad 40 cambió el 22 de octubre ⚠️» (YouTube 17:00)"
+    "utc": "2026-11-16T18:13:00Z",
+    "que": "Sale el carrusel «Tu tarjeta en el Buen Fin, 5 reglas 💳» (Instagram 12:13 · TikTok 16:41)"
    }
   ],
-  "generado_utc": "2026-11-15T17:26:21Z",
+  "generado_utc": "2026-11-16T02:15:39Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -357,7 +357,7 @@
    },
    {
     "fecha": "2026-11-15",
-    "v": 21038
+    "v": 21849
    }
   ],
   "serie_publicaciones": [
@@ -542,10 +542,10 @@
    },
    {
     "fecha": "2026-11-15",
-    "yt": 8942,
+    "yt": 9751,
     "tt": 11433,
     "ig": 599,
-    "fb": 64
+    "fb": 66
    }
   ],
   "foto_perfil": "data:image/jpeg;base64,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",
@@ -622,7 +622,7 @@
     "stability-ai/stable-audio-2.5": 3
    },
    "incompleto": true,
-   "generado_utc": "2026-11-15T17:26:32Z",
+   "generado_utc": "2026-11-16T02:15:51Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -871,19 +871,19 @@
     "por_red": {
      "tt": 4149,
      "ig": 25,
-     "yt": 174,
+     "yt": 175,
      "fb": 4
     },
-    "total": 4352,
+    "total": 4353,
     "ultimas_24h": {
      "tt": 16,
      "ig": 0,
-     "yt": 3,
+     "yt": 1,
      "fb": 1
     },
-    "horas": 159.6,
-    "por_dia": 654,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 173.1,
+    "por_dia": 604,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c70",
@@ -892,19 +892,19 @@
     "por_red": {
      "tt": 1060,
      "ig": 19,
-     "yt": 322,
+     "yt": 323,
      "fb": 11
     },
-    "total": 1412,
+    "total": 1413,
     "ultimas_24h": {
      "tt": 2,
      "ig": 0,
-     "yt": 13,
+     "yt": 3,
      "fb": 0
     },
-    "horas": 69.5,
-    "por_dia": 488,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 83.1,
+    "por_dia": 408,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c65",
@@ -912,16 +912,18 @@
     "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
     "por_red": {
      "tt": 348,
-     "yt": 860
+     "yt": 860,
+     "fb": 1
     },
-    "total": 1208,
+    "total": 1209,
     "ultimas_24h": {
      "tt": 0,
-     "yt": 0
+     "yt": 0,
+     "fb": 1
     },
-    "horas": 115.5,
-    "por_dia": 251,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 129.1,
+    "por_dia": 225,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "O1",
@@ -930,19 +932,19 @@
     "por_red": {
      "tt": 86,
      "ig": 21,
-     "yt": 1037,
+     "yt": 1040,
      "fb": 2
     },
-    "total": 1146,
+    "total": 1149,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 12,
+     "yt": 8,
      "fb": 0
     },
-    "horas": 92.7,
-    "por_dia": 297,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 106.2,
+    "por_dia": 260,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c01",
@@ -951,17 +953,17 @@
     "por_red": {
      "tt": 661,
      "ig": 11,
-     "yt": 349
+     "yt": 350
     },
-    "total": 1021,
+    "total": 1022,
     "ultimas_24h": {
      "tt": 3,
      "ig": 0,
      "yt": 1
     },
-    "horas": 333.5,
-    "por_dia": 73,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 347.1,
+    "por_dia": 71,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "01",
@@ -1008,19 +1010,32 @@
     "por_red": {
      "tt": 119,
      "ig": 35,
-     "yt": 594,
+     "yt": 601,
      "fb": 7
     },
-    "total": 755,
+    "total": 762,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
      "yt": 7,
      "fb": 0
     },
-    "horas": 163.7,
-    "por_dia": 111,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 177.2,
+    "por_dia": 103,
+    "medido_utc": "2026-11-16T02:14:02Z"
+   },
+   {
+    "id": "c87u",
+    "tipo": "Carrusel",
+    "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
+    "por_red": {
+     "yt": 736
+    },
+    "total": 736,
+    "ultimas_24h": null,
+    "horas": 27.2,
+    "por_dia": 649,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "37",
@@ -1029,19 +1044,19 @@
     "por_red": {
      "tt": 183,
      "ig": 38,
-     "yt": 418,
+     "yt": 419,
      "fb": 2
     },
-    "total": 641,
+    "total": 642,
     "ultimas_24h": {
      "tt": 0,
      "ig": 1,
-     "yt": 0,
+     "yt": 1,
      "fb": 0
     },
-    "horas": 262.7,
-    "por_dia": 59,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 276.2,
+    "por_dia": 56,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c03",
@@ -1077,9 +1092,9 @@
      "yt": 0,
      "fb": 3
     },
-    "horas": 109.7,
-    "por_dia": 137,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 123.2,
+    "por_dia": 122,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c08",
@@ -1098,9 +1113,9 @@
      "yt": 0,
      "fb": 0
     },
-    "horas": 213.5,
-    "por_dia": 67,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 227.1,
+    "por_dia": 63,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c06",
@@ -1119,9 +1134,9 @@
      "yt": 0,
      "fb": 0
     },
-    "horas": 280.7,
-    "por_dia": 49,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 294.2,
+    "por_dia": 46,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c71",
@@ -1129,16 +1144,16 @@
     "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
     "por_red": {
      "tt": 178,
-     "yt": 375
+     "yt": 377
     },
-    "total": 553,
+    "total": 555,
     "ultimas_24h": {
      "tt": 21,
-     "yt": 54
+     "yt": 11
     },
-    "horas": 45.5,
-    "por_dia": 292,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 59.1,
+    "por_dia": 225,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c02",
@@ -1173,12 +1188,12 @@
     "ultimas_24h": {
      "tt": 0,
      "ig": 1,
-     "yt": 4,
+     "yt": 1,
      "fb": 0
     },
-    "horas": 305.7,
-    "por_dia": 38,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 319.2,
+    "por_dia": 37,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c52",
@@ -1186,16 +1201,18 @@
     "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
     "por_red": {
      "tt": 316,
-     "yt": 112
+     "yt": 114,
+     "fb": 1
     },
-    "total": 428,
+    "total": 431,
     "ultimas_24h": {
      "tt": 1,
-     "yt": 5
+     "yt": 3,
+     "fb": 1
     },
-    "horas": 93.5,
-    "por_dia": 110,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 107.1,
+    "por_dia": 97,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c11",
@@ -1210,9 +1227,9 @@
      "tt": 0,
      "yt": 0
     },
-    "horas": 137.6,
-    "por_dia": 68,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 151.1,
+    "por_dia": 62,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c07",
@@ -1229,9 +1246,9 @@
      "ig": 0,
      "yt": 0
     },
-    "horas": 238.6,
-    "por_dia": 36,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 252.2,
+    "por_dia": 34,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c13",
@@ -1250,9 +1267,9 @@
      "yt": 0,
      "fb": 4
     },
-    "horas": 133.7,
-    "por_dia": 64,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 147.2,
+    "por_dia": 58,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "38",
@@ -1271,9 +1288,9 @@
      "yt": 1,
      "fb": 0
     },
-    "horas": 207.7,
-    "por_dia": 40,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 221.2,
+    "por_dia": 38,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "M2",
@@ -1282,19 +1299,19 @@
     "por_red": {
      "tt": 99,
      "ig": 29,
-     "yt": 211,
+     "yt": 212,
      "fb": 4
     },
-    "total": 343,
+    "total": 344,
     "ultimas_24h": {
      "tt": 13,
      "ig": 9,
-     "yt": 46,
+     "yt": 13,
      "fb": 0
     },
-    "horas": 41.5,
-    "por_dia": 198,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 55.1,
+    "por_dia": 150,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c74",
@@ -1302,18 +1319,33 @@
     "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
     "por_red": {
      "tt": 197,
-     "yt": 110,
+     "yt": 111,
      "fb": 5
     },
-    "total": 312,
+    "total": 313,
     "ultimas_24h": {
      "tt": 5,
-     "yt": 9,
+     "yt": 1,
      "fb": 3
     },
-    "horas": 61.7,
-    "por_dia": 121,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 75.2,
+    "por_dia": 100,
+    "medido_utc": "2026-11-16T02:14:02Z"
+   },
+   {
+    "id": "c86u",
+    "tipo": "Carrusel",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "por_red": {
+     "yt": 298
+    },
+    "total": 298,
+    "ultimas_24h": {
+     "yt": 57
+    },
+    "horas": 48.2,
+    "por_dia": 148,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c68",
@@ -1322,34 +1354,19 @@
     "por_red": {
      "tt": 80,
      "ig": 9,
-     "yt": 202,
+     "yt": 204,
      "fb": 1
     },
-    "total": 292,
+    "total": 294,
     "ultimas_24h": {
      "tt": 1,
      "ig": 1,
-     "yt": 33,
+     "yt": 8,
      "fb": 0
     },
-    "horas": 65.6,
-    "por_dia": 107,
-    "medido_utc": "2026-11-15T12:39:26Z"
-   },
-   {
-    "id": "c86u",
-    "tipo": "Carrusel",
-    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
-    "por_red": {
-     "yt": 272
-    },
-    "total": 272,
-    "ultimas_24h": {
-     "yt": 59
-    },
-    "horas": 34.7,
-    "por_dia": 188,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 79.1,
+    "por_dia": 89,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c09",
@@ -1365,12 +1382,12 @@
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 3,
+     "yt": 2,
      "fb": 0
     },
-    "horas": 188.7,
-    "por_dia": 33,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 202.2,
+    "por_dia": 31,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c12",
@@ -1386,12 +1403,12 @@
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 1,
+     "yt": 0,
      "fb": 0
     },
-    "horas": 141.5,
-    "por_dia": 43,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 155.1,
+    "por_dia": 39,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c04",
@@ -1406,9 +1423,9 @@
      "tt": 0,
      "yt": 0
     },
-    "horas": 253.7,
-    "por_dia": 23,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 267.2,
+    "por_dia": 21,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "M1",
@@ -1417,19 +1434,19 @@
     "por_red": {
      "tt": 113,
      "ig": 19,
-     "yt": 95,
+     "yt": 96,
      "fb": 3
     },
-    "total": 230,
+    "total": 231,
     "ultimas_24h": {
      "tt": 10,
      "ig": 0,
-     "yt": 0,
+     "yt": 1,
      "fb": 1
     },
-    "horas": 65.8,
-    "por_dia": 84,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 79.4,
+    "por_dia": 70,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c43",
@@ -1448,9 +1465,9 @@
      "yt": 0,
      "fb": 0
     },
-    "horas": 114.7,
-    "por_dia": 35,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 128.2,
+    "por_dia": 31,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c27",
@@ -1463,11 +1480,11 @@
     "total": 146,
     "ultimas_24h": {
      "tt": 2,
-     "yt": 1
+     "yt": 0
     },
-    "horas": 82.7,
-    "por_dia": 42,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 96.2,
+    "por_dia": 36,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "E1",
@@ -1476,14 +1493,19 @@
     "por_red": {
      "tt": 73,
      "ig": 30,
-     "yt": 40,
+     "yt": 41,
      "fb": 0
     },
-    "total": 143,
-    "ultimas_24h": null,
-    "horas": 17.5,
-    "por_dia": 143,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "total": 144,
+    "ultimas_24h": {
+     "tt": 73,
+     "ig": 30,
+     "yt": 16,
+     "fb": 0
+    },
+    "horas": 31.1,
+    "por_dia": 111,
+    "medido_utc": "2026-11-16T02:14:02Z"
    },
    {
     "id": "c69",
@@ -1492,17 +1514,41 @@
     "por_red": {
      "tt": 76,
      "ig": 9,
-     "yt": 46
+     "yt": 47
     },
-    "total": 131,
+    "total": 132,
     "ultimas_24h": {
      "tt": 1,
      "ig": 3,
-     "yt": 2
+     "yt": 1
     },
-    "horas": 41.6,
-    "por_dia": 76,
-    "medido_utc": "2026-11-15T12:39:26Z"
+    "horas": 55.1,
+    "por_dia": 57,
+    "medido_utc": "2026-11-16T02:14:02Z"
+   },
+   {
+    "id": "c89u",
+    "tipo": "Carrusel",
+    "titulo": "Modalidad 40 cambió el 22 de octubre ⚠️",
+    "por_red": {
+     "yt": 22
+    },
+    "total": 22,
+    "ultimas_24h": null,
+    "horas": 3.2,
+    "por_dia": 22,
+    "medido_utc": "2026-11-16T02:14:02Z"
+   },
+   {
+    "id": "c78",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 con salario mínimo 💰",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 5.1,
+    "por_dia": 0,
+    "medido_utc": "2026-11-16T02:14:02Z"
    }
   ]
  }

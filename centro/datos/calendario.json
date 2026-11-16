@@ -6,7 +6,7 @@
   "estado": "programado",
   "que": "Reel del carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» (el mismo video del Short)",
   "horas": {
-   "ig": "20:00"
+   "ig": "20:05"
   },
   "confirmado": []
  },
@@ -30,9 +30,7 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-15",
@@ -41,11 +39,9 @@
   "que": "Sale el carrusel «Aguinaldo 2026 con salario mínimo 💰»",
   "estado": "programado",
   "horas": {
-   "tt": "15:00"
+   "tt": "15:06"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-15",
@@ -70,11 +66,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-15",
@@ -89,34 +81,8 @@
    "fb": "21:30"
   },
   "confirmado": [
-   "fb",
    "ig",
-   "tt"
-  ]
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "publer",
-  "id": "",
-  "estado": "programado",
-  "que": "«¿Mitad y mitad si tu pareja gana el doble? 💬 ¿Mitad y mitad…»",
-  "horas": {
-   "tt": "18:00"
-  },
-  "confirmado": [
-   "tt"
-  ]
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "publer",
-  "id": "",
-  "estado": "programado",
-  "que": "«Guarda esto antes de que te paguen el aguinaldo 👥 Etiqueta…»",
-  "horas": {
-   "tt": "20:00"
-  },
-  "confirmado": [
+   "fb",
    "tt"
   ]
  },

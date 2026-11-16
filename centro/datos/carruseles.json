@@ -27,7 +27,7 @@
    "yt": "2026-11-01T23:00:00Z",
    "fb": "2026-11-12T03:30:00Z"
   },
-  "v_yt": 349,
+  "v_yt": 350,
   "l_yt": 2,
   "c_yt": 7,
   "s_yt": 0,
@@ -39,7 +39,7 @@
   "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 49.0,
+  "r_yt": 49.1,
   "c_yt_reales": 3,
   "c_ig_reales": 1
  },
@@ -163,7 +163,7 @@
   "l_tt": 4,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 29.9,
+  "r_yt": 38.6,
   "c_yt_reales": 4
  },
  {
@@ -229,7 +229,7 @@
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 62.3,
+  "r_yt": 82.0,
   "c_yt_reales": 5,
   "c_ig_reales": 4
  },
@@ -271,7 +271,7 @@
   "l_ig": 13,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 178.3,
+  "r_yt": 160.1,
   "c_yt_reales": 4,
   "c_ig_reales": 4
  },
@@ -317,7 +317,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 41.7,
+  "r_yt": 44.3,
   "c_yt_reales": 4,
   "c_ig_reales": 2
  },
@@ -363,7 +363,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 53.5,
+  "r_yt": 61.9,
   "c_yt_reales": 4,
   "c_ig_reales": 2
  },
@@ -420,7 +420,7 @@
   "l_tt": 8,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 69.3,
+  "r_yt": 73.1,
   "c_yt_reales": 5
  },
  {
@@ -465,7 +465,7 @@
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 1,
-  "r_yt": 95.5,
+  "r_yt": 96.4,
   "c_yt_reales": 4,
   "c_ig_reales": 3
  },
@@ -511,7 +511,7 @@
   "l_fb": 0,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 53.2,
+  "r_yt": 56.6,
   "c_yt_reales": 5,
   "c_ig_reales": 2
  },
@@ -581,7 +581,7 @@
    "ig": "2026-11-12T00:32:30Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 174,
+  "v_yt": 175,
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
@@ -597,7 +597,7 @@
   "l_fb": 2,
   "c_fb": 2,
   "s_fb": 0,
-  "r_yt": 43.4,
+  "r_yt": 45.3,
   "c_yt_reales": 4,
   "c_ig_reales": 4
  },
@@ -825,7 +825,7 @@
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 68.5,
+  "r_yt": 72.7,
   "c_yt_reales": 6
  },
  {
@@ -1174,7 +1174,7 @@
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 27.5,
+  "r_yt": 64.2,
   "c_yt_reales": 5,
   "c_ig_reales": 2
  },
@@ -1331,13 +1331,13 @@
   "linea": "aguinaldo 2026, parte 2: lo que la ley te da no es un favor de tu patrón, así que haz la cuenta. 5 datos más, ahora con pesos (la parte 1 está en mi perfil). 🧾",
   "tipo": "carrusel",
   "linea_reel": "guarda esto: tu aguinaldo 2026, parte 2 (5 datos más)",
-  "reel_ig": "2026-11-15 20:00",
+  "reel_ig": "2026-11-15 20:05",
   "publica_utc_por_red": {
    "tt": "2026-11-11T15:07:06Z",
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 112,
+  "v_yt": 114,
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
@@ -1345,8 +1345,13 @@
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 62.2,
-  "c_yt_reales": 6
+  "v_fb": 1,
+  "l_fb": 1,
+  "c_fb": 1,
+  "s_fb": 0,
+  "r_yt": 83.5,
+  "c_yt_reales": 6,
+  "c_ig_reales": 0
  },
  {
   "id": "c53",
@@ -1610,7 +1615,11 @@
   "l_tt": 3,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 40.9,
+  "v_fb": 1,
+  "l_fb": 2,
+  "c_fb": 1,
+  "s_fb": 0,
+  "r_yt": 41.3,
   "c_yt_reales": 6,
   "c_ig_reales": 0
  },
@@ -1652,7 +1661,7 @@
   "l_fb": 3,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 52.3,
+  "r_yt": 52.8,
   "c_yt_reales": 5
  },
  {
@@ -1700,7 +1709,7 @@
    "tt": "2026-11-12T19:06:25Z",
    "yt": "2026-11-13T02:00:00Z"
   },
-  "v_yt": 202,
+  "v_yt": 204,
   "l_yt": 0,
   "c_yt": 11,
   "s_yt": 0,
@@ -1716,7 +1725,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 45.7,
+  "r_yt": 59.2,
   "c_yt_reales": 6,
   "c_ig_reales": 4
  },
@@ -1748,7 +1757,7 @@
    "yt": "2026-11-13T23:00:00Z",
    "fb": "2026-11-13T23:00:00Z"
   },
-  "v_yt": 46,
+  "v_yt": 47,
   "l_yt": 5,
   "c_yt": 9,
   "s_yt": 0,
@@ -1760,6 +1769,7 @@
   "l_ig": 4,
   "c_ig": 4,
   "s_ig": 0,
+  "r_yt": 106.7,
   "c_yt_reales": 5,
   "c_ig_reales": 3
  },
@@ -1789,7 +1799,7 @@
    "yt": "2026-11-12T18:00:00Z",
    "fb": "2026-11-12T17:00:00Z"
   },
-  "v_yt": 322,
+  "v_yt": 323,
   "l_yt": 6,
   "c_yt": 15,
   "s_yt": 0,
@@ -1805,7 +1815,7 @@
   "l_fb": 0,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 45.9,
+  "r_yt": 49.6,
   "c_yt_reales": 7,
   "c_ig_reales": 5
  },
@@ -1835,7 +1845,7 @@
    "yt": "2026-11-13T16:00:00Z",
    "fb": "2026-11-13T16:00:00Z"
   },
-  "v_yt": 375,
+  "v_yt": 377,
   "l_yt": 4,
   "c_yt": 14,
   "s_yt": 0,
@@ -1843,6 +1853,7 @@
   "l_tt": 5,
   "c_tt": 2,
   "s_tt": 0,
+  "r_yt": 61.8,
   "c_yt_reales": 7
  },
  {
@@ -1907,7 +1918,7 @@
    "tt": "2026-11-13T02:05:57Z",
    "yt": "2026-11-12T23:00:00Z"
   },
-  "v_yt": 110,
+  "v_yt": 111,
   "l_yt": 3,
   "c_yt": 14,
   "s_yt": 0,
@@ -1919,7 +1930,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 44.5,
+  "r_yt": 169.1,
   "c_yt_reales": 7
  },
  {
@@ -1996,16 +2007,16 @@
   "fondo": "cocina.jpg",
   "portada": "habla-yate-cerca.jpg",
   "horas": {
-   "tt": "2026-11-15 15:00"
+   "tt": "2026-11-15 15:06"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-15T21:00:00Z",
+  "publica_utc": "2026-11-15T21:06:09Z",
   "linea": "si ganas el salario mínimo, tu aguinaldo mínimo es $4,725.60 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-15T21:00:00Z"
+   "tt": "2026-11-15T21:06:09Z"
   }
  },
  {
@@ -2200,10 +2211,11 @@
    "yt": "2026-11-14T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
-  "v_yt": 272,
+  "v_yt": 298,
   "l_yt": 8,
   "c_yt": 11,
   "s_yt": 0,
+  "r_yt": 80.7,
   "c_yt_reales": 6
  },
  {
@@ -2221,7 +2233,7 @@
    "fb": "2026-11-14 17:00"
   },
   "youtube_id": "d_pk0icW-yQ",
-  "publica_utc": "",
+  "publica_utc": "2026-11-14T23:00:00Z",
   "linea": "pensión imss diciembre 2026: llega el martes 1 de diciembre 📅",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2230,6 +2242,10 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
+  "v_yt": 736,
+  "l_yt": 5,
+  "c_yt": 2,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -2247,7 +2263,7 @@
    "fb": "2026-11-17 17:00"
   },
   "youtube_id": "eYfnIwvjxe4",
-  "publica_utc": "",
+  "publica_utc": "2026-11-17T23:00:00Z",
   "linea": "ley 73 o ley 97: la fecha en que se dio de alta en el imss decide su pensión 🗓️",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2273,7 +2289,7 @@
    "fb": "2026-11-15 17:00"
   },
   "youtube_id": "NnvHdrbQPFA",
-  "publica_utc": "",
+  "publica_utc": "2026-11-15T23:00:00Z",
   "linea": "modalidad 40: desde el 22 de octubre de 2026 cambiaron las reglas ⚠️",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2282,6 +2298,10 @@
    "yt": "2026-11-15T23:00:00Z",
    "fb": "2026-11-15T23:00:00Z"
   },
+  "v_yt": 22,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -2318,7 +2338,7 @@
    "fb": "2026-11-16 17:00"
   },
   "youtube_id": "pnI0kIhaHak",
-  "publica_utc": "",
+  "publica_utc": "2026-11-16T23:00:00Z",
   "linea": "pensión bienestar enero 2027: ¿ya hay fechas? lo verifiqué. sello: no verificado 🔍",
   "tipo": "carrusel",
   "linea_reel": "",

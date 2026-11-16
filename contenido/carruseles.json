@@ -5878,7 +5878,7 @@
    },
    "comentario_youtube": "Ugwli_G6NURKemrKUqB4AaABAg",
    "reel_ig": {
-    "publica_utc": "2026-11-15T17:03:44Z",
+    "publica_utc": "2026-11-15T17:03:35Z",
     "texto": "Intervinieron un banco y casi 3 millones no podían sacar su dinero. ¿Y en México?\n💬 ¿Dónde guardas tu dinero? Comenta BANCO, SOFIPO o APP. Te contesto a todos.\n👥 Etiqueta a quien tiene todo su dinero en una sola app.\n📥 Mis 30 reglas de la CEO, cada una con su fuente, gratis: comenta GUÍA y te lo mando por mensaje 📩\nIntervinieron un banco en Paraguay y casi 3 millones no podían sacar su dinero. ¿Te puede pasar en México? 🏦\n1. El 3 de noviembre, el Banco Central del Paraguay intervino Ueno: dejaron de funcionar su app, tarjetas y transferencias.\n2. En México, si tu banco quiebra, el IPAB te paga tus depósitos hasta 400 mil UDIS por persona y por banco (más de 3.5 millones de pesos).\n3. Ya pasó: en octubre de 2025 liquidaron CIBanco y el IPAB empezó a pagar 3 días después.\n4. Tres cuentas en el mismo banco no triplican la protección; dos bancos distintos, sí.\n5. En una SOFIPO autorizada, el seguro cubre hasta 25 mil UDIS (unos 220 mil pesos).\n6. El saldo de una billetera de pago en una app no es depósito: el IPAB no lo cubre.\nMi regla: nunca más dinero en un solo lugar de lo que cubre su seguro, con margen para los intereses.\nCapital guarda sus croquetas en tres escondites distintos. Diversificado desde cachorro.\n\n📚 Banco Central del Paraguay · Ley de Protección al Ahorro Bancario · IPAB · Ley de Ahorro y Crédito Popular · Ley Fintech\n🔖 Guárdalo para cuando abras una cuenta nueva.\n🧮 Haz tu plan para salir de deudas, gratis: victoriatheceo.vercel.app/pagar-deudas\n\n#ipab #bancos #ahorro #finanzaspersonales #victoriatheceo",
     "via": "meta",
     "estado": "publicado",
@@ -7075,9 +7075,9 @@
    },
    "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 315.04, aguinaldo 4725.60, exento 3519.30, gravado 1206.30); datos verificados por segundo agente el 12-nov.",
    "publica_utc_por_red": {
-    "tt": "2026-11-15T21:00:00Z"
+    "tt": "2026-11-15T21:06:09Z"
    },
-   "publica_utc": "2026-11-15T21:00:00Z"
+   "publica_utc": "2026-11-15T21:06:09Z"
   },
   {
    "id": "c79",
@@ -8027,7 +8027,8 @@
    "publica_utc_por_red": {
     "yt": "2026-11-14T23:00:00Z"
    },
-   "comentario_youtube": "Ugw7g3AjZ_gdTeT7R0p4AaABAg"
+   "comentario_youtube": "Ugw7g3AjZ_gdTeT7R0p4AaABAg",
+   "publica_utc": "2026-11-14T23:00:00Z"
   },
   {
    "id": "c88u",
@@ -8144,7 +8145,8 @@
    "youtube": "https://youtube.com/shorts/eYfnIwvjxe4",
    "publica_utc_por_red": {
     "yt": "2026-11-17T23:00:00Z"
-   }
+   },
+   "publica_utc": "2026-11-17T23:00:00Z"
   },
   {
    "id": "c89u",
@@ -8260,7 +8262,9 @@
    "youtube": "https://youtube.com/shorts/NnvHdrbQPFA",
    "publica_utc_por_red": {
     "yt": "2026-11-15T23:00:00Z"
-   }
+   },
+   "publica_utc": "2026-11-15T23:00:00Z",
+   "comentario_youtube": "UgyBiEyPHiwbEu2hTzh4AaABAg"
   },
   {
    "id": "c90u",
@@ -8486,7 +8490,8 @@
    "youtube": "https://youtube.com/shorts/pnI0kIhaHak",
    "publica_utc_por_red": {
     "yt": "2026-11-16T23:00:00Z"
-   }
+   },
+   "publica_utc": "2026-11-16T23:00:00Z"
   },
   {
    "id": "c92u",
