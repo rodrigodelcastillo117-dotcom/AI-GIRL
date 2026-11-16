@@ -2583,7 +2583,7 @@
   },
   "playlist": "pension",
   "foto_horizontal": "assets/fotos/estilo-b-podcast-16x9.jpg",
-  "estado": "borrador",
+  "estado": "programado",
   "publica_utc": "2026-11-19T00:00:00Z",
   "intercalado": true,
   "nota_intercalado": "Se marca true a propósito: el guion ya trae sus 6 tomas a cámara (104 palabras). Correr \"largo.py intercalar\" agregaría tomas puente y subiría el costo de Replicate.",
@@ -2695,9 +2695,17 @@
     "voz": "La pregunta de hoy es muy concreta. Cobro pensión: ¿cuándo me depositan en diciembre, cuándo llega el aguinaldo y qué pasa en enero? Le respondo en cinco partes. El Seguro Social, la Pensión Bienestar, lo que todavía no es oficial, un ejemplo con cuentas y una lista de lo que debe revisar. Una aclaración antes de empezar: esto es información general, no asesoría. Cada dato lleva su fuente en pantalla."
    },
    {
-    "tipo": "victoria",
+    "tipo": "lamina",
     "capitulo": "IMSS: diciembre y aguinaldo",
-    "voz": "Primero, el Seguro Social. Si su pensión es por cesantía o vejez, mire bien esta fecha."
+    "voz": "Primero, el Seguro Social. Si su pensión es por cesantía o vejez, mire bien esta fecha.",
+    "titulo": "Primero: el Seguro Social",
+    "dato_grande": "Pensión IMSS por cesantía o vejez",
+    "puntos": [
+     "Ley 73: pago de diciembre y aguinaldo",
+     "Fechas del calendario oficial 2026"
+    ],
+    "fuente": "IMSS, Calendario de pago de pensiones 2026",
+    "nota_qa": "16-nov: la toma a cámara falló labios 2 veces (boca abierta en p/b/m/v); pasa a lámina con la misma voz (como LC2)."
    },
    {
     "tipo": "lamina",
@@ -3028,6 +3036,11 @@
     "capitulo": null,
     "voz": "Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí. Mientras, revise su pago de noviembre."
    }
-  ]
+  ],
+  "youtube": "https://youtube.com/watch?v=HDYvyZYch8U",
+  "facebook": {
+   "publica_utc": "2026-11-19T00:00:00Z",
+   "estado": "programado"
+  }
  }
 ]

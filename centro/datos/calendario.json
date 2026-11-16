@@ -1,89 +1,16 @@
 [
  {
-  "fecha": "2026-11-15",
+  "fecha": "2026-11-16",
   "tipo": "reel",
-  "id": "c52",
+  "id": "c74",
   "estado": "programado",
-  "que": "Reel del carrusel «Aguinaldo 2026 cómo calcularlo en 5 datos 🧮» (el mismo video del Short)",
+  "que": "Reel del carrusel «Buen Fin 2026 en 5 datos para guardar 🔖» (el mismo video del Short)",
   "horas": {
-   "ig": "20:05"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "reel",
-  "id": "c65",
-  "estado": "programado",
-  "que": "Reel del carrusel «IPAB cuánto protege si tu banco quiebra 🏦» (el mismo video del Short)",
-  "horas": {
-   "ig": "11:03"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "facebook",
-  "id": "c89u",
-  "estado": "programado",
-  "que": "Video del carrusel «Modalidad 40 cambió el 22 de octubre ⚠️» en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "17:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "carrusel",
-  "id": "c78",
-  "que": "Sale el carrusel «Aguinaldo 2026 con salario mínimo 💰»",
-  "estado": "programado",
-  "horas": {
-   "tt": "15:06"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "carrusel",
-  "id": "c89u",
-  "que": "Sale el carrusel «Modalidad 40 cambió el 22 de octubre ⚠️»",
-  "estado": "programado",
-  "horas": {
-   "yt": "17:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "recorte",
-  "id": "LB1-c05",
-  "estado": "programado",
-  "que": "Short del video largo «Meses sin intereses: cuándo sí · Buen Fin 2026»",
-  "horas": {
-   "yt": "14:00",
-   "ig": "15:00",
-   "tt": "16:00",
-   "fb": "15:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-15",
-  "tipo": "recorte",
-  "id": "LB1-c06",
-  "estado": "programado",
-  "que": "Short del video largo «Si no te respetan la oferta · Buen Fin 2026»",
-  "horas": {
-   "yt": "20:30",
-   "ig": "21:30",
-   "tt": "22:15",
-   "fb": "21:30"
+   "ig": "18:00",
+   "fb": "18:00"
   },
   "confirmado": [
-   "ig",
-   "fb",
-   "tt"
+   "fb"
   ]
  },
  {
@@ -136,15 +63,6 @@
   "horas": {
    "yt": "17:00"
   },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c86",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Pago doble Pensión Bienestar, es rumor 🔍» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -239,6 +157,19 @@
  {
   "fecha": "2026-11-17",
   "tipo": "carrusel",
+  "id": "c86",
+  "que": "Sale el carrusel «Pago doble Pensión Bienestar, es rumor 🔍»",
+  "estado": "programado",
+  "horas": {
+   "tt": "20:00"
+  },
+  "confirmado": [
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-17",
+  "tipo": "carrusel",
   "id": "c88u",
   "que": "Sale el carrusel «Ley 73 o Ley 97, su fecha de alta decide 🗓️»",
   "estado": "programado",
@@ -254,15 +185,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «ISR aguinaldo 2026 en 5 datos para guardar 🔖» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-17",
-  "tipo": "carrusel",
-  "id": "c75",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Finiquito 2026 en 5 datos para guardar 🔖» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -348,11 +270,25 @@
  {
   "fecha": "2026-11-18",
   "tipo": "carrusel",
-  "id": "c84",
+  "id": "c75",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $25,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "que": "Carrusel «Finiquito 2026 en 5 datos para guardar 🔖» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
+ },
+ {
+  "fecha": "2026-11-18",
+  "tipo": "largo",
+  "id": "LP1",
+  "estado": "programado",
+  "que": "Video largo: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero",
+  "horas": {
+   "yt": "18:00",
+   "fb": "18:00"
+  },
+  "confirmado": [
+   "fb"
+  ]
  },
  {
   "fecha": "2026-11-18",
@@ -412,6 +348,17 @@
   "horas": {
    "tt": "09:00"
   },
+  "confirmado": [
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "carrusel",
+  "id": "c84",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Aguinaldo 2026 si ganas $25,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -425,23 +372,17 @@
  },
  {
   "fecha": "2026-11-19",
-  "tipo": "carrusel",
-  "id": "c85",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-19",
   "tipo": "largo",
   "id": "LA3",
   "estado": "programado",
   "que": "Video largo: Aguinaldo 2026 e ISR: cuánto te descuentan y cuánto es exento",
   "horas": {
-   "yt": "18:45"
+   "yt": "18:45",
+   "fb": "18:45"
   },
-  "confirmado": []
+  "confirmado": [
+   "fb"
+  ]
  },
  {
   "fecha": "2026-11-19",
@@ -455,7 +396,11 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": []
+  "confirmado": [
+   "fb",
+   "ig",
+   "tt"
+  ]
  },
  {
   "fecha": "2026-11-19",
@@ -469,6 +414,19 @@
    "tt": "22:15",
    "fb": "21:30"
   },
+  "confirmado": [
+   "ig",
+   "fb",
+   "tt"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "carrusel",
+  "id": "c85",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -487,15 +445,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Consejos de dinero de tu tío, calificados 👀» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-20",
-  "tipo": "carrusel",
-  "id": "c53",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Finiquito si te corren en diciembre 📄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -524,19 +473,19 @@
  {
   "fecha": "2026-11-21",
   "tipo": "carrusel",
-  "id": "c36",
+  "id": "c53",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Prestar dinero a familiares en 5 memes 🐕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "que": "Carrusel «Finiquito si te corren en diciembre 📄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
   "fecha": "2026-11-21",
   "tipo": "carrusel",
-  "id": "c54",
+  "id": "c36",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Quincena de diciembre y 5 datos de dinero 💸» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "que": "Carrusel «Prestar dinero a familiares en 5 memes 🐕» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -581,6 +530,15 @@
  {
   "fecha": "2026-11-22",
   "tipo": "carrusel",
+  "id": "c54",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Quincena de diciembre y 5 datos de dinero 💸» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
   "id": "c40",
   "estado": "por_programar",
   "horas": {},
@@ -594,15 +552,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Días inhábiles bancarios de diciembre 2026 🗓️» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-22",
-  "tipo": "carrusel",
-  "id": "c44",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Cuánto gana una enfermera en México 🩺» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -636,6 +585,15 @@
  {
   "fecha": "2026-11-23",
   "tipo": "carrusel",
+  "id": "c44",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Cuánto gana una enfermera en México 🩺» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-23",
+  "tipo": "carrusel",
   "id": "c41",
   "estado": "por_programar",
   "horas": {},
@@ -649,15 +607,6 @@
   "estado": "por_programar",
   "horas": {},
   "que": "Carrusel «Gastos hormiga que Capital juzga 🐾» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-23",
-  "tipo": "carrusel",
-  "id": "c63",
-  "estado": "por_programar",
-  "horas": {},
-  "que": "Carrusel «Fecha de corte de tu tarjeta en 5 datos 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -700,19 +649,19 @@
  {
   "fecha": "2026-11-24",
   "tipo": "carrusel",
-  "id": "c42",
+  "id": "c63",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Red flags financieras que no son normales 🚩» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "que": "Carrusel «Fecha de corte de tu tarjeta en 5 datos 💳» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
   "fecha": "2026-11-24",
   "tipo": "carrusel",
-  "id": "c47",
+  "id": "c42",
   "estado": "por_programar",
   "horas": {},
-  "que": "Carrusel «Cuánto gana un programador en México 💻» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "que": "Carrusel «Red flags financieras que no son normales 🚩» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
   "confirmado": []
  },
  {
@@ -735,6 +684,72 @@
   "id": "LA3-c04",
   "estado": "listo",
   "que": "Short del video largo «Exento y gravado con 2 sueldos · Aguinaldo 2026…»",
+  "horas": {
+   "yt": "14:00",
+   "ig": "15:07",
+   "tt": "16:04",
+   "fb": "15:07"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "carrusel",
+  "id": "c47",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Cuánto gana un programador en México 💻» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "carrusel",
+  "id": "c05",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Qué hacer con el aguinaldo antes de enero 💸» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "carrusel",
+  "id": "c50",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Consejos financieros de tu tío, parte 2 🧐» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "largo",
+  "id": "LC2",
+  "estado": "programado",
+  "que": "Video largo: Salario mínimo 2026: ¿alcanza para vivir en México?",
+  "horas": {
+   "yt": "18:45"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "recorte",
+  "id": "LA1-c06",
+  "estado": "listo",
+  "que": "Short del video largo «Proporcional, renuncia o despido · Aguinaldo…»",
+  "horas": {
+   "yt": "20:30",
+   "ig": "21:37",
+   "tt": "22:19",
+   "fb": "21:37"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-25",
+  "tipo": "recorte",
+  "id": "LA3-c05",
+  "estado": "listo",
+  "que": "Short del video largo «Cómo se calcula la retención · Aguinaldo 2026 e…»",
   "horas": {
    "yt": "14:00",
    "ig": "15:07",
