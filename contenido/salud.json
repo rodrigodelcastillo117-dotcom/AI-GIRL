@@ -1,6 +1,6 @@
 {
- "generado_utc": "2026-11-15T12:50:32Z",
- "estado": "aviso",
+ "generado_utc": "2026-11-16T12:40:04Z",
+ "estado": "alerta",
  "checks": [
   {
    "area": "Llaves",
@@ -14,8 +14,8 @@
   },
   {
    "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Replicate responde"
+   "estado": "alerta",
+   "detalle": "Replicate no responde: HTTPError HTTP Error 502: Bad Gateway"
   },
   {
    "area": "Llaves",
@@ -25,17 +25,12 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.00 · semana $66.97 de $7 · mes $67.52 de $28 (proyección del mes $135.04) · El espacio, semana $3.55 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $0.32 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $66.97 de $7 · mes $67.52 de $28 (proyección del mes $135.04) · El espacio, semana $4.57 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $0.32 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
    "estado": "ok",
    "detalle": "Everygen (Viewmax) 0/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 14:03 UTC)"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-15: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
@@ -48,9 +43,9 @@
    "detalle": "2026-11-17: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
   },
   {
-   "area": "Serie",
+   "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-15: el primer TikTok es de la serie (c78)"
+   "detalle": "2026-11-18: TikTok 4, Instagram 3, YouTube 3, Facebook 3"
   },
   {
    "area": "Serie",
@@ -61,6 +56,11 @@
    "area": "Serie",
    "estado": "ok",
    "detalle": "2026-11-17: el primer TikTok es de la serie (c80)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-18: el primer TikTok es de la serie (c81)"
   },
   {
    "area": "Videos largos",
@@ -115,17 +115,17 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,133 vs mediana 183): ya tiene 4 clones"
+   "detalle": "c16 (TikTok 4,149 vs mediana 180): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,058 vs mediana 183): ya tiene 4 clones"
+   "detalle": "c70 (TikTok 1,060 vs mediana 180): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "O1 (YouTube 1,033 vs mediana 174): ya tiene 3 clones"
+   "detalle": "O1 (YouTube 1,040 vs mediana 175): ya tiene 3 clones"
   }
  ]
 }

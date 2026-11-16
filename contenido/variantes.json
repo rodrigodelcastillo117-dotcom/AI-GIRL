@@ -75,6 +75,11 @@
    "tt": {
     "publica_utc": "2026-11-17T19:00:00Z",
     "via": "publer"
+   },
+   "yt": {
+    "publica_utc": "2026-11-17T19:00:00Z",
+    "enlace": "https://youtube.com/shorts/oaQYBJ9bvY8",
+    "video_id": "oaQYBJ9bvY8"
    }
   },
   "medidas": {},

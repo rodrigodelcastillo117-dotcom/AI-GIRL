@@ -1,0 +1,43 @@
+{
+ "fecha": "2026-11-16",
+ "titulo": "Último día de Buen Fin mañana, lo que cuesta no ser pobre y el ISR de tu aguinaldo",
+ "intro": "Lunes de descanso. Tres cosas para tu dinero esta semana, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "El Buen Fin termina mañana martes 17",
+   "que_paso": "Los comercios esperan vender 235 mil millones de pesos en estos cinco días, según Concanaco. Profeco tiene un micrositio para comparar precios y vigila 490 productos para detectar descuentos simulados.",
+   "te_afecta": "El último día llegan las ofertas de \"última hora\". Algunas son reales y otras solo regresan al precio de antes.",
+   "que_hacer": "Antes de pagar, compara el precio en el micrositio de Profeco o en otra tienda. Si no puedes compararlo, no es urgente.",
+   "fuentes": [
+    {"nombre": "UnoTV, Concanaco estima ventas", "url": "https://www.unotv.com/negocios/buen-fin-2026-concanaco-estima-ventas-235-mil-millones-de-pesos-menor-crecimiento/"},
+    {"nombre": "Publimetro, 28-oct-2026", "url": "https://www.publimetro.com.mx/noticias/2026/10/28/buen-fin-2026-ventas-235-mil-millones-tiendas-fisicas/"},
+    {"nombre": "Publimetro, micrositio de Profeco, 27-oct-2026", "url": "https://www.publimetro.com.mx/noticias/2026/10/27/profeco-lanza-micrositio-para-comparar-precios-en-el-buen-fin-2026/"}
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Una persona en la ciudad necesita $4,951.66 al mes para no ser pobre",
+   "que_paso": "El INEGI puso la línea de pobreza por ingresos de septiembre en $4,951.66 por persona al mes en zonas urbanas ($3,553.70 en zonas rurales). Subió 4.4% en un año, más que la inflación.",
+   "te_afecta": "Para una familia de 4 en la ciudad son $19,806.64 al mes. Un salario mínimo (unos $9,577 al mes) cubre menos de la mitad.",
+   "que_hacer": "Haz la cuenta de tu casa: suma lo que entra y divídelo entre las personas que viven ahí. Saber el número es el primer paso para mover algo.",
+   "fuentes": [
+    {"nombre": "Plano Informativo, septiembre 2026", "url": "https://planoinformativo.com/1176279/el-costo-de-la-canasta-basica-urbana-alcanzo-los-4-mil-951-pesos-por-persona-en-septiembre"},
+    {"nombre": "Crónica, 13-oct-2026", "url": "https://www.cronica.com.mx/nacional/2026/10/13/inegi-actualiza-informacion-estos-son-los-ingresos-de-la-poblacion-en-pobreza-y-pobreza-extrema-en-2026/"}
+   ]
+  },
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "Aguinaldo: los primeros $3,519.30 no pagan ISR",
+   "que_paso": "En 2026 el aguinaldo está libre de ISR hasta 30 UMA: $3,519.30. Lo que pase de ahí paga impuesto. Si te retuvieron de más, se puede recuperar en la declaración anual.",
+   "te_afecta": "Si tu aguinaldo es mayor a $3,519.30, no esperes recibirlo completo: lo de arriba de esa cifra lleva ISR.",
+   "que_hacer": "Cuando te paguen, revisa tu recibo: la parte exenta y la gravada deben venir separadas. Guárdalo para la declaración de abril.",
+   "fuentes": [
+    {"nombre": "Expansión, 5-nov-2026", "url": "https://expansion.mx/finanzas-personales/2026/11/05/aguinaldo-2026-no-llega-completo-recupera-declaracion-anual"},
+    {"nombre": "Récord, octubre 2026", "url": "https://www.record.com.mx/historia/cuanto-te-quita-el-sat-de-isr-por-recibir-el-aguinaldo-2026-2026100622503409798"}
+   ]
+  }
+ ],
+ "dato": "Familia de 4 en la ciudad: 4 × $4,951.66 = $19,806.64 al mes para no ser pobre por ingresos (INEGI, septiembre 2026).",
+ "cierre": "Mañana se acaba el Buen Fin, pero tus cuentas siguen. Compra lo que ya tenías pensado, no lo que te encontró la oferta. — Victoria"
+}
