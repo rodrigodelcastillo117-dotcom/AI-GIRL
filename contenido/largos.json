@@ -2795,7 +2795,7 @@
      "H, I, J, K: jueves 12 · L: viernes 13"
     ],
     "fuente": "Programas para el Bienestar, calendario del bimestre noviembre-diciembre (27-oct-2026); Expansión Política y Crónica, 26-oct-2026",
-    "voz": "Este es el calendario oficial, letra por letra. Si su primer apellido empieza con a, le tocó el martes tres. Con be, el miércoles cuatro. Con ce, el jueves cinco y el viernes seis. De, e y efe, el lunes nueve. Ge, el martes diez y el miércoles once. Hache, i, jota y ka, el jueves doce. Y ele, el viernes trece."
+    "voz": "Este es el calendario oficial, y lo tiene completo en pantalla. Se paga por la letra de su primer apellido. Por ejemplo, la letra a cobró el martes tres, y la letra ele, el viernes trece."
    },
    {
     "tipo": "lamina",
@@ -2806,10 +2806,11 @@
      "M: martes 17 y miércoles 18",
      "N, Ñ, O: jueves 19 · P, Q: viernes 20",
      "R: lunes 23 y martes 24 · S: miércoles 25",
-     "T, U, V: jueves 26 · W, X, Y, Z: viernes 27"
+     "T, U, V: jueves 26 · W, X, Y, Z: viernes 27",
+     "¿No llegó? Línea Bienestar: 800 639 42 64"
     ],
     "fuente": "Programas para el Bienestar, 27-oct-2026; Expansión Política y Crónica, 26-oct-2026 · Línea Bienestar: 800 639 42 64",
-    "voz": "Después del lunes dieciséis, que no tuvo pagos, sigue la eme: martes diecisiete y miércoles dieciocho. Ene, eñe y o, el jueves diecinueve. Pe y cu, el viernes veinte. Erre, el lunes veintitrés y el martes veinticuatro. Ese, el miércoles veinticinco. Te, u y uve, el jueves veintiséis. Y doble uve, equis, ye y zeta, el viernes veintisiete. Si su día ya pasó y no ve el depósito, llame a la Línea Bienestar: ochocientos, seiscientos treinta y nueve, cuarenta y dos, sesenta y cuatro."
+    "voz": "Después del lunes dieciséis, que no tuvo pagos, siguen las demás letras hasta el viernes veintisiete. Revise su letra en pantalla. Si su día ya pasó y no ve el depósito, llame a la Línea Bienestar. El número está en pantalla."
    },
    {
     "tipo": "grafica",
@@ -2871,7 +2872,7 @@
      "El IMSS nunca pide depósitos ni transferencias por un trámite de pensión"
     ],
     "fuente": "Programas para el Bienestar, 27-oct-2026; IMSS, comunicado 480/2025; IMSS vía La Silla Rota, 19-jun-2026, y El Imparcial, 15-mar-2026",
-    "voz": "¿Cómo distinguir una fecha real de un rumor? Fíjese de dónde viene. Las fechas de la Pensión Bienestar las publica la Secretaría de Bienestar en su página oficial, y también puede preguntar en la Línea Bienestar. Las del Seguro Social salen en su página, imss punto gob punto mx, o en su línea de pensionados. Si un mensaje le da una fecha sin fuente, o le pide dinero o sus datos, desconfíe. El Seguro Social dice que nunca pide depósitos ni transferencias para un trámite de pensión."
+    "voz": "¿Cómo distinguir una fecha real de un rumor? Fíjese de dónde viene. Las fechas de la Pensión Bienestar las publica la Secretaría de Bienestar en su página oficial, y también puede preguntar en la Línea Bienestar. Las del Seguro Social salen en la página oficial del Seguro Social o en su línea de pensionados. Si un mensaje le da una fecha sin fuente, o le pide dinero o sus datos, desconfíe. El Seguro Social dice que nunca pide depósitos ni transferencias para un trámite de pensión."
    },
    {
     "tipo": "accion",
