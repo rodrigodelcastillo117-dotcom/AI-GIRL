@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-16T13:35:59Z",
+ "generado_utc": "2026-11-17T12:40:46Z",
  "estado": "aviso",
  "checks": [
   {
@@ -25,7 +25,7 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $3.71 · semana $3.71 de $7 · mes $71.23 de $28 (proyección del mes $133.56) · El espacio, semana $0.00 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $1.66 de $7 · mes $69.19 de $28 (proyección del mes $122.09) · El espacio, semana $0.62 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $0.00 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -35,12 +35,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-16: TikTok 4, Instagram 3, YouTube 4, Facebook 3"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-17: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
+   "detalle": "2026-11-17: TikTok 5, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
@@ -48,9 +43,9 @@
    "detalle": "2026-11-18: TikTok 4, Instagram 3, YouTube 4, Facebook 4"
   },
   {
-   "area": "Serie",
+   "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-16: el primer TikTok es de la serie (c79)"
+   "detalle": "2026-11-19: TikTok 3, Instagram 2, YouTube 3, Facebook 3"
   },
   {
    "area": "Serie",
@@ -61,6 +56,11 @@
    "area": "Serie",
    "estado": "ok",
    "detalle": "2026-11-18: el primer TikTok es de la serie (c81)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-19: el primer TikTok es de la serie (c82)"
   },
   {
    "area": "Videos largos",
@@ -120,17 +120,17 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,149 vs mediana 180): ya tiene 4 clones"
+   "detalle": "c16 (TikTok 4,219 vs mediana 183): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,060 vs mediana 180): ya tiene 4 clones"
+   "detalle": "c70 (TikTok 1,061 vs mediana 183): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "O1 (YouTube 1,040 vs mediana 175): ya tiene 3 clones"
+   "detalle": "O1 (YouTube 1,039 vs mediana 166): ya tiene 3 clones"
   }
  ]
 }

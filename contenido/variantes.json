@@ -21,7 +21,7 @@
     "publica_utc": "2026-11-15T19:00:00Z",
     "enlace": "https://youtube.com/shorts/lIX_szs8I0U",
     "video_id": "lIX_szs8I0U",
-    "vistas": 128
+    "vistas": 135
    }
   },
   "medidas": {
@@ -53,13 +53,14 @@
   "redes": {
    "tt": {
     "publica_utc": "2026-11-16T19:00:00Z",
-    "via": "publer"
+    "via": "publer",
+    "vistas": 84
    },
    "yt": {
     "publica_utc": "2026-11-16T19:00:00Z",
     "enlace": "https://youtube.com/shorts/z5wDL0wLG2k",
     "video_id": "z5wDL0wLG2k",
-    "vistas": 35
+    "vistas": 91
    }
   },
   "medidas": {},
@@ -113,7 +114,7 @@
    "tt": {
     "publica_utc": "2026-11-16T02:00:00Z",
     "via": "publer",
-    "vistas": 91
+    "vistas": 100
    }
   },
   "medidas": {

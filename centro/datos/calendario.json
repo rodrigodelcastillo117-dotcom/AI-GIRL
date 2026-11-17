@@ -1,105 +1,5 @@
 [
  {
-  "fecha": "2026-11-16",
-  "tipo": "reel",
-  "id": "c74",
-  "estado": "programado",
-  "que": "Reel del carrusel «Buen Fin 2026 en 5 datos para guardar 🔖» (el mismo video del Short)",
-  "horas": {
-   "ig": "18:00",
-   "fb": "18:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "facebook",
-  "id": "c91u",
-  "estado": "programado",
-  "que": "Video del carrusel «Pensión Bienestar enero 2027, aún sin fecha 🔍» en Facebook (ya salió en las otras redes)",
-  "horas": {
-   "fb": "17:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c77",
-  "que": "Sale el carrusel «Tu tarjeta en el Buen Fin, 5 reglas 💳»",
-  "estado": "programado",
-  "horas": {
-   "ig": "12:14",
-   "tt": "16:47"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c79",
-  "que": "Sale el carrusel «Aguinaldo 2026 con el mínimo fronterizo 💰»",
-  "estado": "programado",
-  "horas": {
-   "tt": "09:06"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "carrusel",
-  "id": "c91u",
-  "que": "Sale el carrusel «Pensión Bienestar enero 2027, aún sin fecha 🔍»",
-  "estado": "programado",
-  "horas": {
-   "yt": "17:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "largo",
-  "id": "LA2",
-  "estado": "programado",
-  "que": "Video largo: No me pagaron el aguinaldo 2026: qué hacer paso a paso",
-  "horas": {
-   "yt": "18:45"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "recorte",
-  "id": "LB1-c07",
-  "estado": "programado",
-  "que": "Short del video largo «Compras en línea · Buen Fin 2026»",
-  "horas": {
-   "yt": "14:00",
-   "ig": "15:00",
-   "tt": "16:00",
-   "fb": "15:00"
-  },
-  "confirmado": []
- },
- {
-  "fecha": "2026-11-16",
-  "tipo": "recorte",
-  "id": "LB1-c08",
-  "estado": "programado",
-  "que": "Short del video largo «Mis 5 sí y 5 no · Buen Fin 2026»",
-  "horas": {
-   "yt": "20:30",
-   "ig": "21:30",
-   "tt": "22:15",
-   "fb": "21:30"
-  },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
- },
- {
   "fecha": "2026-11-17",
   "tipo": "facebook",
   "id": "c88u",
@@ -137,17 +37,6 @@
   "confirmado": [
    "tt"
   ]
- },
- {
-  "fecha": "2026-11-17",
-  "tipo": "carrusel",
-  "id": "c86u",
-  "que": "Sale el carrusel «Pago doble Pensión Bienestar, es rumor 🔍»",
-  "estado": "programado",
-  "horas": {
-   "tt": "20:00"
-  },
-  "confirmado": []
  },
  {
   "fecha": "2026-11-17",
@@ -310,6 +199,19 @@
  },
  {
   "fecha": "2026-11-19",
+  "tipo": "facebook",
+  "id": "c90u",
+  "estado": "programado",
+  "que": "Video del carrusel «Semanas cotizadas IMSS gratis en 3 pasos 📄» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "17:00"
+  },
+  "confirmado": [
+   "fb"
+  ]
+ },
+ {
+  "fecha": "2026-11-19",
   "tipo": "carrusel",
   "id": "c82",
   "que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰»",
@@ -320,6 +222,17 @@
   "confirmado": [
    "tt"
   ]
+ },
+ {
+  "fecha": "2026-11-19",
+  "tipo": "carrusel",
+  "id": "c90u",
+  "que": "Sale el carrusel «Semanas cotizadas IMSS gratis en 3 pasos 📄»",
+  "estado": "programado",
+  "horas": {
+   "yt": "17:00"
+  },
+  "confirmado": []
  },
  {
   "fecha": "2026-11-19",
@@ -386,6 +299,30 @@
    "fb",
    "tt"
   ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "facebook",
+  "id": "c92u",
+  "estado": "programado",
+  "que": "Video del carrusel «En qué Afore estoy, véalo gratis hoy 🔎» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "17:00"
+  },
+  "confirmado": [
+   "fb"
+  ]
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "carrusel",
+  "id": "c92u",
+  "que": "Sale el carrusel «En qué Afore estoy, véalo gratis hoy 🔎»",
+  "estado": "programado",
+  "horas": {
+   "yt": "17:00"
+  },
+  "confirmado": []
  },
  {
   "fecha": "2026-11-20",
@@ -717,6 +654,61 @@
   "id": "LA3-c05",
   "estado": "listo",
   "que": "Short del video largo «Cómo se calcula la retención · Aguinaldo 2026 e…»",
+  "horas": {
+   "yt": "14:00",
+   "ig": "15:07",
+   "tt": "16:04",
+   "fb": "15:07"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-26",
+  "tipo": "carrusel",
+  "id": "c50",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Consejos financieros de tu tío, parte 2 🧐» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-26",
+  "tipo": "carrusel",
+  "id": "c37",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Memes de aguinaldo, posada e intercambio 🎄» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-26",
+  "tipo": "carrusel",
+  "id": "c34",
+  "estado": "por_programar",
+  "horas": {},
+  "que": "Carrusel «Quincena que dura 3 días en 5 memes 😅» · TikTok primero; luego Reel en Instagram y Facebook y short en YouTube",
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-26",
+  "tipo": "recorte",
+  "id": "LA1-c07",
+  "estado": "listo",
+  "que": "Short del video largo «Casos especiales · Aguinaldo 2026»",
+  "horas": {
+   "yt": "20:30",
+   "ig": "21:37",
+   "tt": "22:19",
+   "fb": "21:37"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-26",
+  "tipo": "recorte",
+  "id": "LA3-c06",
+  "estado": "listo",
+  "que": "Short del video largo «Revisa tu recibo de nómina · Aguinaldo 2026 e…»",
   "horas": {
    "yt": "14:00",
    "ig": "15:07",

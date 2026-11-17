@@ -217,7 +217,7 @@
   "l_yt": 5,
   "c_yt": 9,
   "s_yt": 0,
-  "v_tt": 360,
+  "v_tt": 361,
   "l_tt": 19,
   "c_tt": 2,
   "s_tt": 1,
@@ -495,15 +495,15 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 128,
+  "v_yt": 130,
   "l_yt": 4,
-  "c_yt": 10,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 215,
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 11,
+  "v_ig": 13,
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
@@ -581,11 +581,11 @@
    "ig": "2026-11-12T00:32:30Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 176,
+  "v_yt": 177,
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
-  "v_tt": 4219,
+  "v_tt": 4228,
   "l_tt": 71,
   "c_tt": 2,
   "s_tt": 15,
@@ -817,11 +817,11 @@
    "yt": "2026-11-12T02:00:00Z",
    "fb": "2026-11-12T02:00:00Z"
   },
-  "v_yt": 54,
+  "v_yt": 53,
   "l_yt": 2,
   "c_yt": 11,
   "s_yt": 0,
-  "v_tt": 92,
+  "v_tt": 93,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
@@ -1170,7 +1170,7 @@
   "l_ig": 4,
   "c_ig": 5,
   "s_ig": 0,
-  "v_fb": 1,
+  "v_fb": 2,
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 0,
@@ -1337,16 +1337,16 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 114,
+  "v_yt": 115,
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
-  "v_tt": 317,
+  "v_tt": 319,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 12,
-  "l_ig": 1,
+  "v_ig": 23,
+  "l_ig": 2,
   "c_ig": 1,
   "s_ig": 0,
   "v_fb": 3,
@@ -1615,12 +1615,12 @@
   "l_yt": 7,
   "c_yt": 11,
   "s_yt": 0,
-  "v_tt": 348,
+  "v_tt": 350,
   "l_tt": 3,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 10,
-  "l_ig": 2,
+  "v_ig": 12,
+  "l_ig": 3,
   "c_ig": 1,
   "s_ig": 0,
   "v_fb": 1,
@@ -1717,7 +1717,7 @@
    "tt": "2026-11-12T19:06:25Z",
    "yt": "2026-11-13T02:00:00Z"
   },
-  "v_yt": 208,
+  "v_yt": 207,
   "l_yt": 0,
   "c_yt": 11,
   "s_yt": 0,
@@ -1765,16 +1765,16 @@
    "yt": "2026-11-13T23:00:00Z",
    "fb": "2026-11-13T23:00:00Z"
   },
-  "v_yt": 48,
+  "v_yt": 47,
   "l_yt": 5,
-  "c_yt": 10,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 77,
   "l_tt": 2,
   "c_tt": 1,
   "s_tt": 0,
   "v_ig": 9,
-  "l_ig": 4,
+  "l_ig": 5,
   "c_ig": 4,
   "s_ig": 0,
   "r_yt": 98.6,
@@ -1807,15 +1807,15 @@
    "yt": "2026-11-12T18:00:00Z",
    "fb": "2026-11-12T17:00:00Z"
   },
-  "v_yt": 323,
+  "v_yt": 324,
   "l_yt": 6,
   "c_yt": 15,
   "s_yt": 0,
-  "v_tt": 1061,
+  "v_tt": 1063,
   "l_tt": 5,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 19,
+  "v_ig": 21,
   "l_ig": 5,
   "c_ig": 11,
   "s_ig": 0,
@@ -1853,7 +1853,7 @@
    "yt": "2026-11-13T16:00:00Z",
    "fb": "2026-11-13T16:00:00Z"
   },
-  "v_yt": 383,
+  "v_yt": 385,
   "l_yt": 4,
   "c_yt": 15,
   "s_yt": 0,
@@ -1932,13 +1932,13 @@
   "l_yt": 3,
   "c_yt": 14,
   "s_yt": 0,
-  "v_tt": 203,
+  "v_tt": 205,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "v_fb": 6,
+  "v_fb": 9,
   "l_fb": 1,
-  "c_fb": 1,
+  "c_fb": 2,
   "s_fb": 0,
   "r_yt": 169.1,
   "c_yt_reales": 7
@@ -2005,6 +2005,14 @@
    "ig": "2026-11-16T18:14:48Z",
    "tt": "2026-11-16T22:47:03Z"
   },
+  "v_tt": 72,
+  "l_tt": 1,
+  "c_tt": 0,
+  "s_tt": 0,
+  "v_ig": 5,
+  "l_ig": 1,
+  "c_ig": 1,
+  "s_ig": 0,
   "c_ig_reales": 0
  },
  {
@@ -2029,7 +2037,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-15T21:06:09Z"
   },
-  "v_tt": 313,
+  "v_tt": 320,
   "l_tt": 7,
   "c_tt": 0,
   "s_tt": 0
@@ -2055,7 +2063,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "tt": "2026-11-16T15:06:44Z"
-  }
+  },
+  "v_tt": 184,
+  "l_tt": 0,
+  "c_tt": 0,
+  "s_tt": 0
  },
  {
   "id": "c80",
@@ -2218,18 +2230,16 @@
   "portada": "estilo-b-oficina-2.jpg",
   "horas": {
    "yt": "2026-11-13 20:00",
-   "tt": "2026-11-17 20:00",
    "fb": "2026-11-13 20:00"
   },
   "youtube_id": "DhHVSFb1iS8",
-  "publica_utc": "2026-11-18T02:00:00Z",
+  "publica_utc": "2026-11-14T02:00:00Z",
   "linea": "pago doble pensión bienestar en noviembre: lo verifiqué. sello: rumor 🔍",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
    "yt": "2026-11-14T02:00:00Z",
-   "tt": "2026-11-18T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
   "v_yt": 330,
@@ -2263,7 +2273,7 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 837,
+  "v_yt": 859,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
@@ -2320,7 +2330,7 @@
    "yt": "2026-11-15T23:00:00Z",
    "fb": "2026-11-15T23:00:00Z"
   },
-  "v_yt": 70,
+  "v_yt": 90,
   "l_yt": 0,
   "c_yt": 3,
   "s_yt": 0,
@@ -2328,7 +2338,7 @@
  },
  {
   "id": "c90u",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "semanas cotizadas imss consulta gratis",
   "pilar": "finanzas",
   "gancho": "Ley 97: en 2027 piden 900 semanas. ¿Cuántas tiene usted?",
@@ -2336,14 +2346,21 @@
   "diapositivas": 9,
   "fondo": "dinamica-lectura.png",
   "portada": "dinamica-home-office.jpg",
-  "horas": {},
-  "youtube_id": "",
+  "horas": {
+   "yt": "2026-11-19 17:00",
+   "fb": "2026-11-19 17:00"
+  },
+  "youtube_id": "Au_j37WjJNs",
   "publica_utc": "",
   "linea": "semanas cotizadas imss: consúltelas gratis en 3 pasos 📄",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "yt": "2026-11-19T23:00:00Z",
+   "fb": "2026-11-19T23:00:00Z"
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c91u",
@@ -2369,15 +2386,15 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 81,
+  "v_yt": 156,
   "l_yt": 0,
-  "c_yt": 2,
+  "c_yt": 3,
   "s_yt": 0,
   "c_yt_reales": 0
  },
  {
   "id": "c92u",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "afore en que afore estoy y saldo gratis",
   "pilar": "finanzas",
   "gancho": "No espere a enero: vea hoy su Afore, gratis",
@@ -2385,13 +2402,20 @@
   "diapositivas": 8,
   "fondo": "dinamica-home-office.jpg",
   "portada": "dinamica-oficina-alt.jpg",
-  "horas": {},
-  "youtube_id": "",
+  "horas": {
+   "yt": "2026-11-20 17:00",
+   "fb": "2026-11-20 17:00"
+  },
+  "youtube_id": "PpGNvEGcTMk",
   "publica_utc": "",
   "linea": "en qué afore estoy y cuánto tengo: se consulta gratis, hoy mismo 🔎",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "yt": "2026-11-20T23:00:00Z",
+   "fb": "2026-11-20T23:00:00Z"
+  },
+  "c_yt_reales": 0
  }
 ]
