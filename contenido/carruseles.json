@@ -8625,6 +8625,795 @@
    "publica_utc_por_red": {
     "yt": "2026-11-20T23:00:00Z"
    }
+  },
+  {
+   "id": "c93u",
+   "estado": "borrador",
+   "tema": "victoria_verifica_pension_minima_garantizada_ley97_2027",
+   "serie": "Pensión clara",
+   "funcion": "convencer",
+   "vigencia": "noticia",
+   "rasgos": [
+    "verifica"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-oficina.jpg",
+   "ventana": {
+    "desde": "2026-11-17",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/lora-prueba-3-estudio.jpg",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "Pensión mínima garantizada 2027: ¿ya hay monto? Lo verifiqué",
+    "voz": "¿Ya le dijeron cuánto será la pensión mínima garantizada en dos mil veintisiete? Lo verifiqué.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/video-38-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "El monto 2027 aún no existe",
+     "texto": "La ley ordena actualizarlo cada febrero con la inflación (INPC). Hoy no hay cifra oficial de 2027: cualquier monto que le manden es NO VERIFICADO.\n\nLey del Seguro Social, art. 170 · DOF 16-dic-2020",
+     "voz": "La cifra de dos mil veintisiete todavía no existe. Se actualiza en febrero, con la inflación."
+    },
+    {
+     "titulo": "¿Qué es?",
+     "texto": "Si usted es Ley 97 y lo de su Afore no alcanza para una pensión, el Gobierno Federal la completa, por medio del IMSS.\n\nLSS, arts. 170 a 172 · CONSAR, 20-mar-2025",
+     "voz": "Si es Ley noventa y siete y su Afore no alcanza, el gobierno le completa una pensión mínima."
+    },
+    {
+     "titulo": "¿Quién la recibe?",
+     "texto": "Quien empezó a cotizar desde el 1 de julio de 1997, tiene 60 años o más y junta las semanas: 875 en 2026 y 900 en 2027.\n\nLSS, art. 170 y transitorio cuarto (DOF 16-dic-2020) · CONSAR, 20-mar-2025 · Uno TV, 6-mar-2026",
+     "voz": "Pide sesenta años o más y las semanas del año: ochocientas setenta y cinco hoy, novecientas en dos mil veintisiete."
+    },
+    {
+     "titulo": "No es un monto único",
+     "texto": "Depende de su edad, sus semanas cotizadas y su salario promedio. Por eso dos personas reciben cantidades distintas.\n\nLSS, art. 170 · Uno TV, 6-mar-2026",
+     "voz": "No hay un monto único. Depende de su edad, sus semanas y su salario promedio."
+    },
+    {
+     "titulo": "¿Dónde se pide?",
+     "texto": "En su subdelegación del IMSS, con su solicitud de pensión. Con la resolución del IMSS, va a su Afore para que empiece el pago.\n\nCONSAR, 20-mar-2025 · Expansión, 3-sep-2025",
+     "voz": "Se pide en el Seguro Social. Con la resolución en la mano, su Afore empieza a pagar."
+    },
+    {
+     "titulo": "Antes de ir",
+     "texto": "Tenga al día su Expediente de Identificación del Trabajador: se genera en su Afore y es requisito.\n\nCONSAR, 20-mar-2025 · Expansión, 3-sep-2025",
+     "voz": "Antes de ir, actualice su expediente en su Afore. Es requisito."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Si alguien le asegura una cifra de 2027 antes de febrero, está adivinando. Yo esperaría el dato oficial antes de hacer planes.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: quien le da una cifra antes de febrero está adivinando. Espere el dato oficial."
+    }
+   ],
+   "cierre": {
+    "titulo": "Suscríbase: en febrero, cuando salga el monto 2027, se lo explico.",
+    "texto": "Cada vez que el IMSS o el Bienestar muevan fechas o montos, se lo explico con la fuente oficial.",
+    "voz": "Suscríbase. En febrero, cuando salga el monto, aquí se lo explico."
+   },
+   "llamado_unico": "suscribirse",
+   "fuente": "Consultadas el 17-nov-2026. 1) Ley del Seguro Social, texto vigente (diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf, última reforma DOF 15-01-2026): art. 170 (Estado asegura pensión garantizada a quien tenga 60 años o más y las semanas; se calcula con la tabla del artículo considerando el promedio del salario base de cotización; \"El monto de la pensión se actualizará anualmente en el mes de febrero, conforme al Índice Nacional de Precios al Consumidor\"); art. 171 (recursos insuficientes para renta vitalicia o retiro programado -> aportación complementaria del Gobierno Federal); art. 172 (el Gobierno Federal, por conducto del Instituto, cubre la pensión garantizada con recursos complementarios a los de la cuenta; el trabajador la solicita al Instituto). 2) DOF 16-dic-2020, decreto de reforma a la LSS (dof.gob.mx/nota_detalle_popup.php?codigo=5607729): mismo texto del art. 170 y transitorio cuarto (750 semanas en 2021, +25 por año hasta 1,000 en 2031 => 875 en 2026, 900 en 2027; la pensión garantizada se paga considerando edad, semanas y rango salarial de la tabla). 3) CONSAR, \"Pensión por Régimen 97\" (20-mar-2025), gob.mx/consar/articulos/por-regimen-de-97: el Estado la otorga cuando los recursos no alcanzan para renta vitalicia o retiro programado; requisitos: 60 o 65 años, semanas, Expediente de Identificación del Trabajador actualizado, saldo en Afore; trámite: solicitud en el IMSS, resolución, Afore inicia el pago. 4) Uno TV, \"Todo sobre la pensión mínima garantizada del IMSS para Ley 97\" (6-mar-2026): solo Ley 97 (desde julio de 1997); factores: edad, semanas, salario base de cotización, ajuste anual por inflación; 875 semanas en 2026. 5) Expansión, \"Ley 97 del IMSS tiene pensión mínima garantizada\" (3-sep-2025): solicitud en la subdelegación del IMSS; con la resolución, acudir a la Afore; Expediente de Identificación y saldo insuficiente. Monto 2027: no publicado (se actualiza en febrero de 2027) -> NO VERIFICADO. Montos 2026 en pesos: solo estimaciones de medios, sin tabla oficial localizada -> no se usan. Diapositiva 7 = opinión de Victoria.",
+   "titulo_post": "Pensión mínima garantizada 2027: ¿ya hay monto?",
+   "texto_post": "Pensión mínima garantizada 2027: todavía no hay monto oficial 🔍\nLa Ley del Seguro Social (art. 170) ordena actualizarla cada febrero con la inflación (INPC). Hasta que eso pase, cualquier cifra de 2027 que le manden es NO VERIFICADO.\nQué es: si usted es Ley 97 (empezó a cotizar desde el 1 de julio de 1997) y lo de su Afore no alcanza para una pensión, el Gobierno Federal la completa por medio del IMSS.\nRequisitos: 60 años o más y las semanas del año (875 en 2026, 900 en 2027). El monto no es único: depende de su edad, sus semanas y su salario promedio.\nSe pide en su subdelegación del IMSS; con la resolución, su Afore empieza a pagar. Antes, actualice su Expediente de Identificación del Trabajador.\nMi opinión: quien le asegura una cifra de 2027 antes de febrero está adivinando.\n\n📚 Ley del Seguro Social, arts. 170-172 y transitorio cuarto (DOF 16-dic-2020) · CONSAR (20-mar-2025) · Uno TV (6-mar-2026) · Expansión (3-sep-2025) · consultado el 17-nov-2026\n🔔 Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #ley97 #afore #pensionados #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Pensión mínima garantizada 2027",
+    "titulo": "Pensión mínima garantizada 2027, ¿ya hay? 🔍",
+    "tags_concretas": [
+     "pension minima garantizada 2027",
+     "pension minima garantizada ley 97",
+     "pension garantizada imss",
+     "cuanto es la pension minima garantizada",
+     "pension minima garantizada requisitos",
+     "ley 97 900 semanas 2027",
+     "pension minima garantisada"
+    ],
+    "hashtags": [
+     "#pensionimss",
+     "#ley97",
+     "#afore",
+     "#pensionados"
+    ],
+    "preguntas": [
+     "¿Cuánto será la pensión mínima garantizada en 2027?",
+     "¿Quién tiene derecho a la pensión mínima garantizada?",
+     "¿Cuántas semanas pide la pensión garantizada en 2027?",
+     "¿Dónde se tramita la pensión mínima garantizada?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "El monto de la pensión garantizada se actualiza cada febrero conforme al INPC",
+     "fuente1": "LSS art. 170 (texto vigente, diputados.gob.mx)",
+     "fuente2": "DOF 16-dic-2020, decreto de reforma, art. 170 (dof.gob.mx 5607729)"
+    },
+    {
+     "dato": "Monto 2027: no publicado -> NO VERIFICADO (sale en febrero de 2027)",
+     "fuente1": "LSS art. 170 (actualización en febrero)",
+     "fuente2": "Uno TV 8-oct-2026: solo estimaciones de \"especialistas\", sin cifra oficial; ninguna fuente oficial con monto 2027 al 17-nov-2026"
+    },
+    {
+     "dato": "Ley 97 con saldo insuficiente para renta vitalicia o retiro programado: el Gobierno Federal completa la pensión, por conducto del IMSS",
+     "fuente1": "LSS arts. 171 y 172",
+     "fuente2": "CONSAR, Pensión por Régimen 97 (20-mar-2025)"
+    },
+    {
+     "dato": "Aplica a quien empezó a cotizar desde el 1-jul-1997 (Ley 97)",
+     "fuente1": "Uno TV 6-mar-2026",
+     "fuente2": "PENSIONISSSTE 24-ago-2022 / LSS transitorio primero (verificado en c88u)"
+    },
+    {
+     "dato": "Requisito de 60 años o más",
+     "fuente1": "LSS art. 170",
+     "fuente2": "CONSAR 20-mar-2025 (\"60 o 65 años cumplidos\")"
+    },
+    {
+     "dato": "Semanas: 875 en 2026 y 900 en 2027 (+25 por año hasta 1,000 en 2031)",
+     "fuente1": "DOF 16-dic-2020, transitorio cuarto (750 en 2021 +25 por año)",
+     "fuente2": "Uno TV 6-mar-2026 (875 en 2026; 1,000 en 2031) y CONSAR 20-mar-2025 (+25 por año hasta 1,000 en 2031)"
+    },
+    {
+     "dato": "El monto depende de edad, semanas y salario promedio de cotización",
+     "fuente1": "LSS art. 170 y DOF 16-dic-2020 transitorio cuarto (edad, semanas y rango salarial)",
+     "fuente2": "Uno TV 6-mar-2026"
+    },
+    {
+     "dato": "Se solicita en la subdelegación del IMSS; con la resolución, la Afore inicia el pago",
+     "fuente1": "CONSAR 20-mar-2025",
+     "fuente2": "Expansión 3-sep-2025 (y LSS art. 172: se solicita al Instituto)"
+    },
+    {
+     "dato": "Expediente de Identificación del Trabajador actualizado es requisito",
+     "fuente1": "CONSAR 20-mar-2025",
+     "fuente2": "Expansión 3-sep-2025"
+    }
+   ],
+   "revision": {
+    "pendiente": true
+   }
+  },
+  {
+   "id": "c94u",
+   "estado": "borrador",
+   "tema": "fallecimiento_pension_beneficiarios_y_saldo_afore",
+   "serie": "Pensión clara",
+   "funcion": "convencer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "criterio"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-estudio.jpg",
+   "ventana": {
+    "desde": "2026-11-17",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/lora-prueba-4-casa.jpg",
+    "etiqueta": "AFORE · BENEFICIARIOS",
+    "titulo": "Su Afore no se hereda sola: nombre hoy a sus beneficiarios",
+    "voz": "Su Afore no se hereda sola. Si usted falta, esto es lo que su familia puede cobrar, y dónde.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/habla-lectura-cerca.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Pensión para su familia",
+     "texto": "Si el trabajador muere con al menos 150 semanas cotizadas, o ya estaba pensionado, su familia puede pedir pensión al IMSS.\n\nLSS, arts. 127 y 128 · IMSS, ficha IMSS-01-003-A · PROFEDET, 2-oct-2024",
+     "voz": "Si el trabajador tenía al menos ciento cincuenta semanas, o ya era pensionado, su familia puede pedir pensión."
+    },
+    {
+     "titulo": "¿Quién?",
+     "texto": "Esposa o esposo, o la pareja de 5 años o con hijos en común. Hijos menores de 16, o hasta 25 si estudian. Si no hay, los padres que dependían de él.\n\nLSS, arts. 130 y 134 · PROFEDET, 2-oct-2024",
+     "voz": "La esposa o el esposo, la pareja de cinco años, los hijos, y a falta de ellos, los padres que dependían de él."
+    },
+    {
+     "titulo": "¿Cuánto?",
+     "texto": "La pensión de viudez es el 90% de la pensión que tenía, o que le habría tocado, al trabajador.\n\nLSS, art. 131 · Uno TV, 3-feb-2026",
+     "voz": "La pensión de viudez es el noventa por ciento de la que tenía o le habría tocado."
+    },
+    {
+     "titulo": "Su Afore",
+     "texto": "El dinero de la Afore que se entrega en una sola exhibición va a los beneficiarios que el trabajador nombró en su Afore, en el porcentaje que él fijó.\n\nLSS, art. 193 · CONSAR, 6-dic-2024",
+     "voz": "El dinero de la Afore que se entrega de una vez va a quien usted nombró como beneficiario."
+    },
+    {
+     "titulo": "Si no nombró a nadie",
+     "texto": "Se entrega en el orden de la Ley Federal del Trabajo. Si hay pleito, lo resuelve un tribunal: más tiempo y más papeles para su familia.\n\nLSS, art. 193 · CONDUSEF, Proteja su Dinero",
+     "voz": "Si no nombró a nadie, decide el orden de la ley, y si hay pleito, un tribunal."
+    },
+    {
+     "titulo": "¿Dónde se cobra?",
+     "texto": "Primero, la resolución del IMSS. Luego, la Afore del trabajador: formato de Disposición de Recursos y acta de defunción. Sin derecho a pensión, la Afore entrega todo junto.\n\nCONSAR, 6-dic-2024 · CONDUSEF, Proteja su Dinero",
+     "voz": "Primero el Seguro Social, con la resolución. Luego la Afore, con el acta de defunción."
+    },
+    {
+     "titulo": "Ayuda para el funeral",
+     "texto": "El IMSS da dos meses de salario mínimo si era pensionado o cotizó 12 semanas en los 9 meses previos. Se pide con el acta y la cuenta del funeral.\n\nLSS, art. 104 · PROFEDET, 2-oct-2024",
+     "voz": "Y el Seguro Social da una ayuda para el funeral: dos meses de salario mínimo, si cumple requisitos."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Nombrar beneficiarios en su Afore toma minutos y puede ahorrarle a su familia un juicio. Yo lo haría esta semana. Si hay dudas, PROFEDET asesora gratis.\n\nOpinión de Victoria · base: LSS, art. 193 · PROFEDET",
+     "voz": "Mi opinión: nombrar beneficiarios toma minutos y le ahorra un pleito a su familia. Hágalo esta semana."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: revisen hoy a sus beneficiarios.",
+    "texto": "Una llamada a su Afore hoy le ahorra meses de trámites a los suyos.",
+    "voz": "Mándeselo a su familia, y revisen hoy a sus beneficiarios."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 17-nov-2026. 1) Ley del Seguro Social, texto vigente (diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf, última reforma DOF 15-01-2026): art. 127 (pensiones de viudez, orfandad y ascendientes; si fallece un pensionado, se pagan con el seguro de sobrevivencia), art. 128 (mínimo 150 cotizaciones semanales o pensión de invalidez), art. 130 (cónyuge; a falta de él, concubina o concubinario con 5 años o hijos en común, libres de matrimonio; varias concubinas = ninguna), art. 131 (viudez = 90%), art. 134 (orfandad: menores de 16, hasta 25 si estudian), art. 104 (ayuda de gastos de funeral: 12 cotizaciones en los 9 meses previos o pensionado; acta de defunción y cuenta original de gastos; dos meses de salario mínimo), art. 193 (beneficiarios designados en el contrato de la Afore reciben los recursos que se entregan en una sola exhibición, en la proporción estipulada; a falta de designados, orden del art. 501 LFT; conflictos ante los tribunales). 2) IMSS, ficha IMSS-01-003-A \"Solicitud de Pensión por Viudez\" (gob.mx/imss/articulos/homoclave-imss-01-003-a, 19-abr-2024): 150 semanas y vigencia de derechos; concubinato de 5 años o hijos; varias concubinas = ninguna; tel. 800 623 23 23 opción 3. 3) PROFEDET, \"¿Tu familiar falleció y deseas saber a qué tienes derecho como persona beneficiaria?\" (2-oct-2024): 150 semanas; orfandad hasta 25 si estudian; ascendientes dependientes a falta de cónyuge, hijos o concubina; ayuda de funeral de dos meses de salario mínimo con 12 semanas en 9 meses; servicios gratuitos. 4) Uno TV, \"Así calcula el IMSS la pensión de viudez y el porcentaje que te toca en 2026\" (3-feb-2026): hasta 90% de la pensión base. 5) CONSAR, \"Retiro por Beneficiarios IMSS\" (6-dic-2024), gob.mx/consar/articulos/retiro-por-beneficiarios-imss: resolución de pensión en subdelegación IMSS, Afore del trabajador, formato de Disposición de Recursos, sin derecho a pensión se entrega todo en una sola exhibición; beneficiarios designados expresamente. 6) CONDUSEF, Revista Proteja su Dinero, \"¿Cómo saber si eres beneficiario de las cuentas de un familiar fallecido?\" (3-nov-2017, act. 11-feb-2021): resolución IMSS/ISSSTE, luego la Afore con formato de Disposición de Recursos, acta de defunción, identificaciones; sustitutos acuden a la Junta o Tribunal. 7) PROFEDET, micrositio \"Devolución del total de los recursos de la cuenta de Afore (beneficiaria)\": designados por el trabajador o por mecanismos legales; asesoría y representación gratuitas; juicio ante tribunales laborales federales si hace falta. 8) Ley Federal del Trabajo, art. 501 (diputados.gob.mx, última reforma DOF 14-05-2026). Diapositiva 8 = opinión de Victoria.",
+   "titulo_post": "Si usted falta: pensión de su familia y su Afore",
+   "texto_post": "Si usted falta, ¿su familia sabría qué cobrar y dónde? 🗂️\nPensión: si el trabajador tenía al menos 150 semanas cotizadas, o ya estaba pensionado, su familia puede pedir pensión al IMSS. La de viudez es el 90% de la que tenía o le habría tocado.\nQuiénes: esposa o esposo; si no hay, la pareja con 5 años juntos o hijos en común; hijos menores de 16 (hasta 25 si estudian); a falta de ellos, los padres que dependían de él.\nAfore: el dinero que se entrega en un solo pago va a los beneficiarios que usted nombró en su Afore. Si no nombró a nadie, se sigue el orden de la Ley Federal del Trabajo y, si hay pleito, decide un tribunal.\nTrámite: primero la resolución del IMSS; luego la Afore del trabajador con el formato de Disposición de Recursos y el acta de defunción. Ayuda para el funeral: dos meses de salario mínimo, si cumple requisitos.\nMi opinión: nombrar beneficiarios en su Afore toma minutos y puede ahorrarle un juicio a su familia. PROFEDET asesora gratis.\n\n📚 Ley del Seguro Social, arts. 104, 127-134 y 193 · IMSS, ficha IMSS-01-003-A · CONSAR (6-dic-2024) · PROFEDET (2-oct-2024) · CONDUSEF · consultado el 17-nov-2026\n📩 Mándeselo por WhatsApp a su familia y revisen hoy a sus beneficiarios.\n\n#afore #pensionimss #beneficiarios #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Beneficiarios Afore",
+    "titulo": "Beneficiarios Afore: si usted falta mañana 🗂️",
+    "tags_concretas": [
+     "beneficiarios afore",
+     "que pasa con mi afore si muero",
+     "pension de viudez imss requisitos",
+     "retiro afore por fallecimiento",
+     "como cobrar la afore de un familiar fallecido",
+     "designar beneficiarios afore",
+     "pension de viudez 90 por ciento",
+     "benefisiarios afore"
+    ],
+    "hashtags": [
+     "#afore",
+     "#pensionimss",
+     "#beneficiarios",
+     "#pensionados"
+    ],
+    "preguntas": [
+     "¿Qué pasa con mi Afore si fallezco?",
+     "¿Quién cobra la Afore de un familiar que murió?",
+     "¿Cuánto es la pensión de viudez del IMSS?",
+     "¿Qué pasa si no nombré beneficiarios en mi Afore?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Pensión a beneficiarios si el asegurado tenía mínimo 150 semanas (o era pensionado)",
+     "fuente1": "LSS arts. 127 y 128",
+     "fuente2": "IMSS ficha IMSS-01-003-A (19-abr-2024) y PROFEDET 2-oct-2024"
+    },
+    {
+     "dato": "Viudez: cónyuge; a falta, concubina/o con 5 años o hijos en común, libres de matrimonio",
+     "fuente1": "LSS art. 130",
+     "fuente2": "IMSS ficha IMSS-01-003-A"
+    },
+    {
+     "dato": "Orfandad: hijos menores de 16, hasta 25 si estudian",
+     "fuente1": "LSS art. 134",
+     "fuente2": "PROFEDET 2-oct-2024 y CONDUSEF Proteja su Dinero (\"hijos de 16 o hasta 25 años si se encuentran estudiando\")"
+    },
+    {
+     "dato": "Ascendientes que dependían económicamente, a falta de cónyuge, hijos o concubina",
+     "fuente1": "PROFEDET 2-oct-2024",
+     "fuente2": "CONDUSEF Proteja su Dinero (padres entre beneficiarios legales) / LSS art. 171 fr. III"
+    },
+    {
+     "dato": "Pensión de viudez = 90% de la pensión del trabajador",
+     "fuente1": "LSS art. 131",
+     "fuente2": "Uno TV 3-feb-2026"
+    },
+    {
+     "dato": "Recursos de Afore de una sola exhibición -> beneficiarios designados en la Afore, en la proporción fijada",
+     "fuente1": "LSS art. 193",
+     "fuente2": "CONSAR, Retiro por Beneficiarios IMSS (6-dic-2024)"
+    },
+    {
+     "dato": "Sin designados: orden del art. 501 LFT; conflictos ante tribunales",
+     "fuente1": "LSS art. 193",
+     "fuente2": "CONDUSEF Proteja su Dinero (sustitutos ante la Junta o Tribunal) y PROFEDET micrositio (juicio ante tribunales laborales federales)"
+    },
+    {
+     "dato": "Trámite: resolución IMSS, luego Afore con formato de Disposición de Recursos y acta de defunción",
+     "fuente1": "CONSAR 6-dic-2024",
+     "fuente2": "CONDUSEF Proteja su Dinero"
+    },
+    {
+     "dato": "Sin derecho a pensión, la Afore entrega todo en una sola exhibición",
+     "fuente1": "CONSAR 6-dic-2024",
+     "fuente2": "PROFEDET micrositio Afore (beneficiarios reciben el saldo en una sola exhibición si no cumplen requisitos de pensión)"
+    },
+    {
+     "dato": "Ayuda de funeral: dos meses de salario mínimo; 12 cotizaciones en 9 meses previos o pensionado; acta de defunción y cuenta del funeral",
+     "fuente1": "LSS art. 104",
+     "fuente2": "PROFEDET 2-oct-2024"
+    },
+    {
+     "dato": "PROFEDET asesora gratis",
+     "fuente1": "PROFEDET 2-oct-2024",
+     "fuente2": "PROFEDET micrositio Afore (\"asesoría y representación jurídica GRATUITAS\")"
+    }
+   ],
+   "revision": {
+    "pendiente": true
+   }
+  },
+  {
+   "id": "c95u",
+   "estado": "borrador",
+   "tema": "fraudes_a_pensionados_depositos_gestores_canales_oficiales",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "capital"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/estilo-b-oficina-2.jpg",
+   "ventana": {
+    "desde": "2026-11-17",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/capital-no-presta.jpg",
+    "etiqueta": "FRAUDE A PENSIONADOS",
+    "titulo": "Si le piden un depósito para subir su pensión, es fraude",
+    "voz": "Si le piden un depósito para aumentar su pensión, es fraude. Así lo reconoce.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/enero-oficina-casa.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "El \"aumento\" que cobra",
+     "texto": "Circulan documentos falsos, con apariencia oficial, que piden depositar en tiendas o transferir para \"aumentar\" o \"agilizar\" su pensión.\n\nUno TV, 21-sep-2025 · El Imparcial, 15-mar-2026",
+     "voz": "Circulan papeles falsos que piden un depósito para aumentar o agilizar su pensión."
+    },
+    {
+     "titulo": "El IMSS no cobra",
+     "texto": "El IMSS no pide pagos en tiendas, transferencias ni depósitos para trámites de pensión ni aumentos. Sus trámites son gratuitos.\n\nIMSS, comunicado 3-oct-2022 · Uno TV, 21-sep-2025 · El Imparcial, 15-mar-2026",
+     "voz": "El Seguro Social no cobra por trámites de pensión. Ni en tiendas, ni por transferencia."
+    },
+    {
+     "titulo": "Ni por WhatsApp",
+     "texto": "El IMSS no manda documentos oficiales por WhatsApp ni por correos personales.\n\nUno TV, 21-sep-2025 · El Imparcial, 15-mar-2026",
+     "voz": "Y no manda documentos oficiales por WhatsApp."
+    },
+    {
+     "titulo": "El falso gestor",
+     "texto": "Quien le cobra por \"arreglar\" su trámite no le garantiza nada, y el IMSS no reconoce sus papeles. La CONSAR tampoco tiene \"asesores\" que cobren.\n\nIMSS, comunicado 3-oct-2022 · CONSAR, 25-feb-2025",
+     "voz": "El gestor que cobra no le garantiza nada, y sus papeles no valen."
+    },
+    {
+     "titulo": "El SAR 92 \"olvidado\"",
+     "texto": "Si le ofrecen recuperar su dinero del SAR 92 a cambio de un pago: ese trámite es gratuito. Pregunte directo a su Afore.\n\nCONDUSEF, 24-ene-2017 · CONSAR, 25-feb-2025",
+     "voz": "Si le ofrecen recuperar su dinero del SAR noventa y dos por un pago: es gratis. Pregunte a su Afore."
+    },
+    {
+     "titulo": "Sus claves no se dan",
+     "texto": "No dé su NIP ni sus contraseñas. Si \"su banco\" le llama, cuelgue y marque usted al número de su banco.\n\nProfeco y CONDUSEF, 15-oct-2025 · CONDUSEF, Proteja su Dinero, ago-2021",
+     "voz": "No dé su NIP ni contraseñas. Si su banco le llama, cuelgue y marque usted."
+    },
+    {
+     "titulo": "Dónde sí preguntar",
+     "texto": "Pensiones IMSS: 800 623 2323, opción 3. Su Afore: SARTEL, 55 1328 5000, sin costo.\n\nIMSS, comunicado 480/2025 · CONSAR, 25-mar-2024",
+     "voz": "Para dudas, use solo los números oficiales. Están en pantalla."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Nadie le aumenta la pensión por un depósito. Si le piden dinero primero, es fraude, aunque el papel tenga sellos.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: si le piden dinero primero, es fraude, aunque el papel tenga sellos."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo por WhatsApp a quien cobra pensión.",
+    "texto": "Capital le gruñe a cualquiera que pida un depósito para \"aumentar\" la pensión. Usted haga lo mismo: cuelgue.",
+    "voz": "Mándeselo a quien cobra pensión. Capital ya le gruñó al del depósito."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 17-nov-2026. 1) Uno TV, \"IMSS alerta por falso mensaje donde solicitan depósitos para obtener pensión\" (21-sep-2025; cita publicación del IMSS en X, @Tu_IMSS): documentos falsos piden \"realizar depósitos en tiendas de conveniencia o transferencias electrónicas\" para trámites de pensión o aumentos; el IMSS \"no solicita pagos por trámites\", servicios gratuitos, no comparte documentos oficiales por WhatsApp ni correos personales. 2) El Imparcial, \"IMSS alerta sobre fraude contra pensionados: así operan los falsos trámites para aumentar la pensión\" (15-mar-2026; cita tarjeta informativa y publicación del IMSS en X del 19-sep-2025): \"nunca solicita pagos por tiendas de conveniencia, transferencias o depósitos para trámites de pensión o aumentos\"; contacto por WhatsApp, correo o redes; documentos falsificados. 3) IMSS, comunicado \"Advierte IMSS sobre falsos gestores; recuerda que todos los trámites ante el Instituto son gratuitos\" (3-oct-2022): \"los trámites en el IMSS son gratuitos\"; el personal de las Subdelegaciones es el único autorizado; documentos apócrifos no se reconocen; sin garantía de que el trámite se presente. 4) CONSAR, \"¡No te dejes engañar!\" (25-feb-2025): \"La CONSAR NO tiene asesores que te ayuden a realizar trámites en tu Afore a cambio de un pago\"; \"Los trámites del SAR son gratuitos\". 5) CONDUSEF, comunicado \"Falsos gestores prometen tramitar recursos del SAR 92\" (24-ene-2017): falsos gestores con adultos mayores y el SAR 92 a cambio de remuneración; \"el trámite para obtener los recursos del SAR 92 es totalmente gratuito\"; acudir a la Afore. 6) Profeco y CONDUSEF, \"Profeco y Condusef orientan a personas adultas mayores para protegerse de estafas\" (15-oct-2025): no proporcionar contraseñas bancarias ni NIP; verificar movimientos directamente con el banco; llamadas engañosas. 7) CONDUSEF, Revista Proteja su Dinero, \"Los fraudes no distinguen edad\" (1-ago-2021): no compartir datos bancarios; si el banco llama, verificar marcando directamente al banco. 8) IMSS, comunicado 480/2025 y COM. 733/2020 (línea 800 623 2323, opción 3, pensionados; ya verificados en c87u). 9) CONSAR, \"¿No sabes en qué Afore estás?\" (25-mar-2024) y PENSIONISSSTE (4-jun-2025): SARTEL 55 1328 5000 sin costo (ya verificados en c92u). Capital: solo en el cierre (función: el guardián que desconfía del depósito). Diapositiva 8 = opinión de Victoria.",
+   "titulo_post": "Fraudes a pensionados: si le piden un depósito, es fraude",
+   "texto_post": "Fraude a pensionados: si le piden un depósito para \"aumentar\" su pensión, es fraude 🚫\nCirculan documentos falsos que piden depositar en tiendas o transferir para aumentar o agilizar la pensión. El IMSS no pide pagos en tiendas, transferencias ni depósitos para trámites de pensión, y no manda documentos oficiales por WhatsApp ni por correos personales.\nEl falso gestor: quien cobra por \"arreglar\" su trámite no le garantiza nada y el IMSS no reconoce sus papeles. La CONSAR tampoco tiene \"asesores\" que cobren. Recuperar el SAR 92 es gratuito: pregunte directo a su Afore.\nNo dé su NIP ni contraseñas. Si \"su banco\" le llama, cuelgue y marque usted.\nDónde sí preguntar: IMSS pensiones 800 623 2323, opción 3 · SARTEL 55 1328 5000, sin costo.\nMi opinión: si le piden dinero primero, es fraude, aunque el papel tenga sellos. Capital ya le gruñó al del depósito.\n\n📚 IMSS (comunicado 3-oct-2022 y 480/2025) · Uno TV (21-sep-2025) · El Imparcial (15-mar-2026) · CONSAR (25-feb-2025, 25-mar-2024) · CONDUSEF (24-ene-2017) · Profeco y CONDUSEF (15-oct-2025) · consultado el 17-nov-2026\n📩 Mándeselo por WhatsApp a quien cobra pensión.\n\n#pensionados #fraude #pensionimss #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Fraude a pensionados",
+    "titulo": "Fraude a pensionados: si piden depósito 🚫",
+    "tags_concretas": [
+     "fraude a pensionados",
+     "fraude pension imss",
+     "falsos gestores imss",
+     "aumento de pension fraude",
+     "imss no cobra tramites",
+     "fraude sar 92",
+     "como evitar fraudes pension",
+     "fraude pencionados"
+    ],
+    "hashtags": [
+     "#pensionados",
+     "#fraude",
+     "#pensionimss",
+     "#afore"
+    ],
+    "preguntas": [
+     "¿El IMSS cobra por aumentar la pensión?",
+     "¿Cómo saber si un gestor de pensiones es fraude?",
+     "¿El IMSS manda documentos por WhatsApp?",
+     "¿Cuál es el teléfono del IMSS para pensionados?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Circulan documentos falsos que piden depósitos en tiendas o transferencias para trámites o aumentos de pensión",
+     "fuente1": "Uno TV 21-sep-2025 (cita publicación del IMSS en X)",
+     "fuente2": "El Imparcial 15-mar-2026 (cita tarjeta informativa del IMSS)"
+    },
+    {
+     "dato": "El IMSS no pide pagos en tiendas, transferencias ni depósitos para trámites de pensión; trámites gratuitos",
+     "fuente1": "IMSS comunicado 3-oct-2022 (trámites gratuitos) + Uno TV 21-sep-2025",
+     "fuente2": "El Imparcial 15-mar-2026"
+    },
+    {
+     "dato": "El IMSS no envía documentos oficiales por WhatsApp ni correos personales",
+     "fuente1": "Uno TV 21-sep-2025",
+     "fuente2": "El Imparcial 15-mar-2026"
+    },
+    {
+     "dato": "Falsos gestores: sin garantía, documentos apócrifos no reconocidos; solo personal del IMSS orienta",
+     "fuente1": "IMSS comunicado 3-oct-2022",
+     "fuente2": "CONSAR 25-feb-2025 (no hay asesores que cobren; trámites SAR gratuitos)"
+    },
+    {
+     "dato": "Recuperar el SAR 92 es gratuito; acudir a la Afore",
+     "fuente1": "CONDUSEF comunicado 24-ene-2017",
+     "fuente2": "CONSAR 25-feb-2025 (trámites del SAR gratuitos)"
+    },
+    {
+     "dato": "No dar NIP ni contraseñas; si el banco llama, verificar marcando uno mismo al banco",
+     "fuente1": "Profeco y CONDUSEF 15-oct-2025",
+     "fuente2": "CONDUSEF, Proteja su Dinero, 1-ago-2021"
+    },
+    {
+     "dato": "Línea IMSS pensionados 800 623 2323, opción 3",
+     "fuente1": "IMSS comunicado 480/2025 (verificado en c87u)",
+     "fuente2": "IMSS ficha IMSS-01-003-A (19-abr-2024) / COM. 733/2020"
+    },
+    {
+     "dato": "SARTEL 55 1328 5000, sin costo",
+     "fuente1": "CONSAR 25-mar-2024 (verificado en c92u)",
+     "fuente2": "PENSIONISSSTE 4-jun-2025"
+    }
+   ],
+   "revision": {
+    "pendiente": true
+   }
+  },
+  {
+   "id": "c96u",
+   "estado": "borrador",
+   "tema": "retiro_por_desempleo_afore_y_semanas_cotizadas",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "hagamos_cuentas"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-home-office-alt.jpg",
+   "ventana": {
+    "desde": "2026-11-17",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/lora-prueba-2-cafe.jpg",
+    "etiqueta": "AFORE · RETIRO POR DESEMPLEO",
+    "titulo": "Retiro por desempleo: sale el dinero y también sus semanas",
+    "voz": "El retiro por desempleo de la Afore no es gratis: con el dinero también se van semanas de su pensión.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/habla-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Cuándo se puede?",
+     "texto": "Desde el día 46 sin empleo, y solo si no lo usó en los 5 años anteriores.\n\nLey del Seguro Social, art. 191 · CONSAR, 8-dic-2021",
+     "voz": "Desde el día cuarenta y seis sin empleo, y una vez cada cinco años."
+    },
+    {
+     "titulo": "Modalidad A",
+     "texto": "Cuenta con 3 años abierta y 12 bimestres cotizados: 30 días de su último salario base de cotización, en un pago, con un tope.\n\nLSS, art. 191 · CONSAR, ficha del trámite",
+     "voz": "Con tres años de cuenta y dos cotizados, le dan treinta días de su último salario."
+    },
+    {
+     "titulo": "Modalidad B",
+     "texto": "Cuenta con 5 años o más: lo que sea menor entre 90 días de su salario de las últimas 250 semanas o el 11.5% de su subcuenta de retiro.\n\nLSS, art. 191 · CONSAR, 8-dic-2021",
+     "voz": "Con cinco años o más, lo menor entre noventa días de salario o el once punto cinco por ciento de su ahorro."
+    },
+    {
+     "titulo": "Le restan semanas",
+     "texto": "El IMSS le descuenta semanas cotizadas en proporción a lo que retira. Puede afectar su pensión.\n\nLSS, art. 198 · CONSAR, ficha del trámite",
+     "voz": "Lo que retira le cuesta semanas cotizadas, en proporción."
+    },
+    {
+     "titulo": "Hagamos cuentas",
+     "texto": "Ejemplo hipotético: salario de $500 diarios. Modalidad A: 30 × $500 = $15,000, bajo el tope. Con $300,000 ahorrados y 600 semanas, cada semana vale $500: pierde 30.\n\nFórmula: LSS, art. 198 · CONSAR, 8-dic-2021",
+     "voz": "Ejemplo: con quinientos pesos diarios saca quince mil. Si cada semana vale quinientos, pierde treinta semanas."
+    },
+    {
+     "titulo": "Se pueden recuperar",
+     "texto": "Si después devuelve a su Afore lo que retiró, total o en partes, le regresan las semanas.\n\nLSS, art. 198 · CONSAR, ficha del trámite",
+     "voz": "Si después lo devuelve a su Afore, le regresan las semanas."
+    },
+    {
+     "titulo": "¿Dónde?",
+     "texto": "En su Afore, en AforeMóvil o en AforeWeb. Es gratuito: no le pague a ningún gestor.\n\nCONSAR, 8-dic-2021 · CONSAR, 25-feb-2025",
+     "voz": "Se pide en su Afore o en la app. Es gratis: no le pague a nadie."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Si le faltan pocas semanas para pensionarse, yo lo pensaría dos veces: el dinero de hoy puede costarle la pensión de mañana.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: si le faltan pocas semanas para pensionarse, piénselo dos veces."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdelo por si un día lo necesita.",
+    "texto": "Antes de retirar, saque su constancia de semanas y haga esta cuenta con sus números.",
+    "voz": "Guárdelo por si un día lo necesita."
+   },
+   "llamado_unico": "guardar",
+   "fuente": "Consultadas el 17-nov-2026. 1) Ley del Seguro Social, texto vigente (diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf, última reforma DOF 15-01-2026): art. 191 fr. II (retiro parcial por desempleo a partir del día 46 natural; inciso a: cuenta con 3 años y 12 bimestres, 30 días del último salario base de cotización con límite de diez veces el salario mínimo mensual; inciso b: cuenta con 5 años o más, lo menor entre 90 días del salario de las últimas 250 semanas o el 11.5% de la subcuenta RCV; sin retiros en los 5 años anteriores) y art. 198 (disminuye semanas en igual proporción: saldo / semanas = valor por semana; monto retirado / valor = semanas que se restan; pueden reintegrarse los recursos y se reintegran las semanas). 2) CONSAR, \"Retiros parciales IMSS\" (8-dic-2021), gob.mx/consar/articulos/retiros-parciales-97089: 46 días naturales; 3 años de cuenta y 2 años cotizados; 30 días del último SBC con límite de 10 UMA (sic); modalidad B igual que la ley; descuenta semanas y \"podría afectar tu pensión futura\"; se pueden reintegrar; AforeMóvil, AforeWeb o sucursal; \"Este trámite es completamente gratuito\". 3) CONSAR, ficha de trámite \"Retiro Parcial por Desempleo IMSS\" (catálogo de trámites, consar.gob.mx idTramite=13): 46 días; no haber ejercido el derecho en 5 años; modalidad A 3 años y 12 bimestres, 30 días del último SBC con límite de 10 salarios mínimos mensuales; modalidad B 5 años; \"descuento de semanas cotizadas que será proporcional al monto\"; \"podrán ser recuperadas realizando aportaciones parciales o totales\". 4) CONSAR, \"¡No te dejes engañar!\" (25-feb-2025): trámites del SAR gratuitos. Tope: la ley y la ficha dicen salario mínimo y el artículo de 2021 dice UMA; el ejemplo de $15,000 queda por debajo de ambos (10 UMA mensuales 2026 = $35,662.20, INEGI). Ejemplo de diapositiva 5 = cuenta con supuestos hipotéticos. Diapositiva 8 = opinión de Victoria.",
+   "titulo_post": "Retiro por desempleo Afore: cuánto sale y cuántas semanas pierde",
+   "texto_post": "Retiro por desempleo de la Afore: sale el dinero y también sus semanas ⚠️\nSe puede desde el día 46 sin empleo y una vez cada 5 años.\nModalidad A (cuenta con 3 años y 12 bimestres cotizados): 30 días de su último salario base de cotización, con tope. Modalidad B (cuenta con 5 años o más): lo menor entre 90 días de su salario de las últimas 250 semanas o el 11.5% de su subcuenta de retiro.\nEl costo: el IMSS le resta semanas en proporción a lo que retira. Ejemplo hipotético: con $500 diarios saca $15,000; si tiene $300,000 y 600 semanas, cada semana \"vale\" $500 y pierde 30 semanas. Si después lo devuelve a su Afore, le regresan las semanas.\nSe pide en su Afore, AforeMóvil o AforeWeb. Es gratuito: no le pague a gestores.\nMi opinión: si le faltan pocas semanas para pensionarse, piénselo dos veces.\n\n📚 Ley del Seguro Social, arts. 191 y 198 · CONSAR (8-dic-2021, 25-feb-2025) · CONSAR, ficha Retiro Parcial por Desempleo IMSS · consultado el 17-nov-2026\n🔖 Guárdelo por si un día lo necesita.\n\n#afore #retiropordesempleo #semanascotizadas #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Retiro por desempleo Afore",
+    "titulo": "Retiro por desempleo Afore, cuesta semanas ⚠️",
+    "tags_concretas": [
+     "retiro por desempleo afore",
+     "retiro parcial por desempleo imss",
+     "cuanto me dan por desempleo afore",
+     "retiro por desempleo semanas cotizadas",
+     "modalidad a y b desempleo afore",
+     "recuperar semanas retiro desempleo",
+     "retiro por desenpleo afore"
+    ],
+    "hashtags": [
+     "#afore",
+     "#retiropordesempleo",
+     "#semanascotizadas",
+     "#pensionimss"
+    ],
+    "preguntas": [
+     "¿Cuánto me dan de retiro por desempleo de la Afore?",
+     "¿El retiro por desempleo quita semanas cotizadas?",
+     "¿Cada cuánto puedo hacer el retiro por desempleo?",
+     "¿Cómo recupero las semanas del retiro por desempleo?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Desde el día 46 natural sin empleo",
+     "fuente1": "LSS art. 191 fr. II",
+     "fuente2": "CONSAR 8-dic-2021 y ficha CONSAR del trámite"
+    },
+    {
+     "dato": "Solo si no hizo este retiro en los 5 años anteriores",
+     "fuente1": "LSS art. 191 fr. II (último párrafo)",
+     "fuente2": "CONSAR ficha del trámite y CONSAR 8-dic-2021"
+    },
+    {
+     "dato": "Modalidad A: cuenta con 3 años y 12 bimestres; 30 días del último SBC, una exhibición, con tope",
+     "fuente1": "LSS art. 191 fr. II inciso a)",
+     "fuente2": "CONSAR ficha del trámite (y CONSAR 8-dic-2021: 3 años y 2 años cotizados)"
+    },
+    {
+     "dato": "Modalidad B: cuenta con 5 años o más; lo menor entre 90 días del SBC de las últimas 250 semanas o 11.5% de la subcuenta RCV",
+     "fuente1": "LSS art. 191 fr. II inciso b)",
+     "fuente2": "CONSAR 8-dic-2021 y ficha CONSAR"
+    },
+    {
+     "dato": "Descuenta semanas en proporción al monto retirado; puede afectar la pensión",
+     "fuente1": "LSS art. 198",
+     "fuente2": "CONSAR ficha del trámite y CONSAR 8-dic-2021"
+    },
+    {
+     "dato": "Fórmula del ejemplo: saldo / semanas = valor por semana; retiro / valor = semanas que se restan (cuenta hipotética)",
+     "fuente1": "LSS art. 198 (texto literal de la fórmula)",
+     "fuente2": "CONSAR ficha (descuento proporcional)"
+    },
+    {
+     "dato": "Ejemplo de $15,000 queda bajo el tope (10 UMA mensuales 2026 = $35,662.20; con salario mínimo el tope es mayor)",
+     "fuente1": "INEGI, UMA 2026 ($3,566.22 mensual)",
+     "fuente2": "LSS art. 191 / CONSAR (tope de 10 veces)"
+    },
+    {
+     "dato": "Si reintegra los recursos, le regresan las semanas",
+     "fuente1": "LSS art. 198",
+     "fuente2": "CONSAR ficha del trámite y CONSAR 8-dic-2021"
+    },
+    {
+     "dato": "Se tramita en la Afore, AforeMóvil o AforeWeb; es gratuito",
+     "fuente1": "CONSAR 8-dic-2021 (\"completamente gratuito\")",
+     "fuente2": "CONSAR 25-feb-2025 (trámites del SAR gratuitos)"
+    }
+   ],
+   "revision": {
+    "pendiente": true
+   }
+  },
+  {
+   "id": "c97u",
+   "estado": "borrador",
+   "tema": "pension_issste_diciembre_27_noviembre_y_aguinaldo_2026",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "noticia",
+   "rasgos": [
+    "presentacion"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-lectura.png",
+   "ventana": {
+    "desde": "2026-11-17",
+    "hasta": "2026-11-27"
+   },
+   "portada": {
+    "foto": "assets/fotos/video-18-oficina.jpg",
+    "etiqueta": "PENSIÓN ISSSTE · DICIEMBRE",
+    "titulo": "Su pensión ISSSTE de diciembre llega el viernes 27",
+    "voz": "Su pensión del ISSSTE de diciembre llega el viernes veintisiete de noviembre. Soy Victoria, y aquí le explico su aguinaldo.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/estilo-b-oficina-1.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Viernes 27 de noviembre",
+     "texto": "El calendario oficial 2026 del ISSSTE marca el depósito de la pensión de diciembre el 27 de noviembre.\n\nISSSTE, comunicado 8-ene-2026 · Expansión, 1-nov-2026",
+     "voz": "El calendario oficial marca la pensión de diciembre el viernes veintisiete de noviembre."
+    },
+    {
+     "titulo": "Aguinaldo: hasta 40 días",
+     "texto": "El decreto de aguinaldo 2026 da a los pensionistas del ISSSTE hasta 40 días de su cuota, y permite pagarlo desde el 10 de noviembre.\n\nDOF, decreto de aguinaldo 2026 · Uno TV, 10-nov-2026",
+     "voz": "El decreto de aguinaldo da a los pensionados del ISSSTE hasta cuarenta días de su pensión."
+    },
+    {
+     "titulo": "Primera parte",
+     "texto": "El ISSSTE anunció la primera parte del aguinaldo en la primera quincena de noviembre. Revise su cuenta.\n\nISSSTE, comunicado 8-ene-2026 · Expansión, 1-nov-2026",
+     "voz": "La primera parte se anunció para la primera quincena de noviembre. Revise su cuenta."
+    },
+    {
+     "titulo": "¿Y la segunda parte?",
+     "texto": "Varios medios dicen que llega el 27 de noviembre con la pensión de diciembre, pero el ISSSTE no lo ha publicado: NO VERIFICADO.\n\nExpansión, 1-nov-2026 · Crónica, 11-nov-2026 · ISSSTE, consultado el 17-nov-2026",
+     "voz": "¿Y la segunda parte? Los medios dicen que el veintisiete, pero el ISSSTE no lo ha publicado."
+    },
+    {
+     "titulo": "Hagamos la cuenta",
+     "texto": "Ejemplo hipotético: pensión de $12,000 al mes ÷ 30 = $400 diarios. 40 días = hasta $16,000 de aguinaldo.\n\nDOF, decreto de aguinaldo 2026 (días de su cuota) · Expansión, 1-nov-2026",
+     "voz": "Con doce mil pesos al mes, son cuatrocientos diarios. Cuarenta días: hasta dieciséis mil."
+    },
+    {
+     "titulo": "¿Y enero de 2027?",
+     "texto": "El ISSSTE aún no publica su calendario de pagos 2027. Si le mandan una fecha de enero: NO VERIFICADO.\n\nISSSTE, comunicados de prensa, consultado el 17-nov-2026",
+     "voz": "El calendario de dos mil veintisiete todavía no sale. Cualquier fecha de enero aún no es oficial."
+    },
+    {
+     "titulo": "Si tiene dudas",
+     "texto": "Llame a Issstetel: 55 4000 1000. Si su pensión es de cuenta individual, pregunte antes de contar con ese aguinaldo.\n\nISSSTE, comunicado 9-nov-2023 · Expansión, 1-nov-2026",
+     "voz": "Si tiene dudas, llame al ISSSTE. El número está en pantalla."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Si el 27 le cae pensión y aguinaldo juntos, no lo gaste el 28: su pensión de enero también tiene que alcanzar.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: si le cae todo junto el veintisiete, no lo gaste el veintiocho."
+    }
+   ],
+   "cierre": {
+    "titulo": "Escríbame cuánto es su pensión al mes y le digo cuánto serían 40 días.",
+    "texto": "Le contesto a cada quien con la cuenta: su pensión entre 30, por 40 días. Y guárdelo para el 27.",
+    "voz": "Escríbame cuánto es su pensión al mes, y le digo cuánto serían cuarenta días."
+   },
+   "llamado_unico": "comentar",
+   "fuente": "Consultadas el 17-nov-2026. 1) ISSSTE, comunicado \"Anuncia ISSSTE Calendario de Pagos 2026 a personas pensionadas y jubiladas\" (8-ene-2026): \"Noviembre: 29 de octubre\", \"Diciembre: 27 de noviembre\"; \"la primera parte del aguinaldo se entregará en la primera quincena de noviembre de 2026\"; no menciona la segunda parte. 2) DOF, \"DECRETO que establece las disposiciones para el otorgamiento del aguinaldo correspondiente al ejercicio fiscal de 2026\" (dado el 23-oct-2026; sidof.segob.gob.mx/notas/docFuente/5802080): art. Cuarto fr. II inciso f), art. Quinto fr. II inciso e) y art. Sexto: pensionistas del ISSSTE o con cargo al erario federal y sus deudos; \"hasta cuarenta días de las cuotas que tengan asignadas\"; \"se podrá cubrir a partir del 10 de noviembre de 2026\". 3) Uno TV, \"ISSSTE inicia entrega de 40 días de aguinaldo en noviembre 2026: quiénes lo reciben\" (10-nov-2026): el decreto incluye pensión civil del ISSSTE; pago a partir del 10-nov-2026. 4) Expansión, \"Decreto: estas personas recibirán 40 días de aguinaldo\" (10-nov-2026): pensionistas ISSSTE hasta 40 días de las cuotas; desde el 10-nov. 5) Expansión, \"Aguinaldo ISSSTE 2026: así puedes calcular cuánto recibirás si eres pensionado del Décimo Transitorio\" (1-nov-2026): diciembre el 27-nov; primera parte en la primera quincena de noviembre; segunda parte el 27-nov (no oficial); cálculo pensión/30 x 40 (ejemplo $12,000 -> $16,000); cuentas individuales no deben asumir que lo reciben; Issstetel 55 4000 1000. 6) Crónica, \"¿Cuándo cae el depósito de aguinaldo a pensionados del ISSSTE?\" (11-nov-2026): depósito de diciembre el viernes 27-nov; segunda parte el 27-nov (no oficial). 7) El Imparcial, \"Aguinaldo ISSSTE 2026: fechas de pago, monto y quiénes lo reciben\" (15-oct-2026): 40 días en dos partes; diciembre 27-nov. 8) ISSSTE, comunicado \"Anuncia Issste pago de primera parte de aguinaldo para pensionados y jubilados\" (9-nov-2023): Issstetel 55 4000 1000. Segunda parte: solo medios, sin comunicado del ISSSTE -> NO VERIFICADO. Calendario 2027: no publicado al 17-nov-2026 -> NO VERIFICADO. Ejemplo de diapositiva 5 = cuenta hipotética. Diapositiva 8 = opinión de Victoria.",
+   "titulo_post": "Pensión ISSSTE diciembre 2026: llega el viernes 27 de noviembre",
+   "texto_post": "Pensión ISSSTE diciembre 2026: llega el viernes 27 de noviembre 📅\nAsí lo marca el calendario oficial de pagos 2026 del ISSSTE.\nAguinaldo: el decreto de aguinaldo 2026 (DOF) da a los pensionistas del ISSSTE hasta 40 días de su cuota y permite pagarlo desde el 10 de noviembre. El ISSSTE anunció la primera parte en la primera quincena de noviembre.\nSegunda parte: varios medios dicen que llega el 27 con la pensión de diciembre, pero el ISSSTE no lo ha publicado: NO VERIFICADO.\nCuenta hipotética: pensión de $12,000 ÷ 30 = $400 diarios; 40 días = hasta $16,000.\n¿Enero 2027? El ISSSTE aún no publica ese calendario: cualquier fecha es NO VERIFICADO. Dudas: Issstetel 55 4000 1000.\nMi opinión: si le cae todo junto el 27, no lo gaste el 28.\n\n💬 Escríbame cuánto es su pensión al mes y le digo cuánto serían 40 días. Le contesto a todos.\n📚 ISSSTE, Calendario de pagos 2026 (8-ene-2026) · DOF, decreto de aguinaldo 2026 · Uno TV (10-nov-2026) · Expansión (1-nov-2026) · Crónica (11-nov-2026) · consultado el 17-nov-2026\n🔔 Suscríbase: cada vez que el IMSS o el ISSSTE cambien fechas o montos, se lo explico aquí.\n\n#pensionissste #aguinaldo2026 #pensionados #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Pensión ISSSTE diciembre 2026",
+    "titulo": "Pensión ISSSTE diciembre 2026, viernes 27 📅",
+    "tags_concretas": [
+     "pension issste diciembre 2026",
+     "pago pension issste diciembre",
+     "aguinaldo pensionados issste 2026",
+     "aguinaldo issste 40 dias",
+     "segunda parte aguinaldo issste",
+     "calendario issste 2026",
+     "pension issste enero 2027",
+     "pencion issste diciembre"
+    ],
+    "hashtags": [
+     "#pensionissste",
+     "#aguinaldo2026",
+     "#pensionados",
+     "#issste"
+    ],
+    "preguntas": [
+     "¿Cuándo pagan la pensión del ISSSTE en diciembre 2026?",
+     "¿Cuántos días de aguinaldo reciben los pensionados del ISSSTE?",
+     "¿Cuándo pagan la segunda parte del aguinaldo ISSSTE?",
+     "¿Cuándo pagan la pensión ISSSTE en enero 2027?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "cuenta_en_comentarios": "aguinaldo_issste_40_dias",
+   "fuentes_verificadas": [
+    {
+     "dato": "Pensión ISSSTE de diciembre 2026 se deposita el viernes 27-nov-2026",
+     "fuente1": "ISSSTE comunicado 8-ene-2026 (calendario oficial)",
+     "fuente2": "Expansión 1-nov-2026 y Crónica 11-nov-2026"
+    },
+    {
+     "dato": "Pensionistas del ISSSTE: aguinaldo de hasta 40 días de su cuota",
+     "fuente1": "DOF, decreto de aguinaldo 2026, art. Quinto fr. II inciso e)",
+     "fuente2": "Uno TV 10-nov-2026 y Expansión 10-nov-2026"
+    },
+    {
+     "dato": "El aguinaldo 2026 se puede pagar desde el 10-nov-2026",
+     "fuente1": "DOF, decreto de aguinaldo 2026, art. Sexto",
+     "fuente2": "Uno TV 10-nov-2026"
+    },
+    {
+     "dato": "Primera parte del aguinaldo: primera quincena de noviembre de 2026",
+     "fuente1": "ISSSTE comunicado 8-ene-2026",
+     "fuente2": "Expansión 1-nov-2026"
+    },
+    {
+     "dato": "Segunda parte el 27-nov: reportado por medios, sin publicación del ISSSTE -> NO VERIFICADO",
+     "fuente1": "Expansión 1-nov-2026 / Crónica 11-nov-2026 / El Imparcial 15-oct-2026 (medios)",
+     "fuente2": "ISSSTE comunicado 8-ene-2026 no la menciona (sin fuente oficial)"
+    },
+    {
+     "dato": "Cálculo: pensión mensual / 30 x 40 días (ejemplo hipotético $12,000 -> $16,000)",
+     "fuente1": "DOF decreto 2026 (días de la cuota asignada)",
+     "fuente2": "Expansión 1-nov-2026 (mismo método y ejemplo)"
+    },
+    {
+     "dato": "Calendario ISSSTE 2027 no publicado al 17-nov-2026 -> NO VERIFICADO",
+     "fuente1": "Búsqueda en gob.mx/issste (sin comunicado 2027)",
+     "fuente2": "Búsqueda en medios: ninguna fuente con calendario 2027"
+    },
+    {
+     "dato": "Issstetel 55 4000 1000",
+     "fuente1": "ISSSTE comunicado 9-nov-2023",
+     "fuente2": "Expansión 1-nov-2026"
+    }
+   ],
+   "revision": {
+    "pendiente": true
+   }
   }
  ]
 }
