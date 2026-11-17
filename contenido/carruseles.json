@@ -6995,10 +6995,10 @@
    "fuente": "Profeco (9-nov-2026, monitoreo previo al Buen Fin: refrigerador hasta $9,309 de diferencia, según Crónica/Tiempo/Línea Directa); Condusef (recomendaciones Buen Fin; CAT); LFPC arts. 7, 50, 92 Ter; Teléfono del Consumidor 55 5568 8722 y 800 468 8722.",
    "revision": "12-nov-2026: texto de MUSE; cifras y artículos verificados por segundo agente el 12-nov-2026 (Profeco $9,309 solo con respaldo periodístico: no se nombran tiendas).",
    "publica_utc_por_red": {
-    "ig": "2026-11-16T18:13:00Z",
-    "tt": "2026-11-16T22:41:00Z"
+    "ig": "2026-11-16T18:14:48Z",
+    "tt": "2026-11-16T22:47:03Z"
    },
-   "publica_utc": "2026-11-16T22:41:00Z"
+   "publica_utc": "2026-11-16T22:47:03Z"
   },
   {
    "id": "c78",
@@ -7174,9 +7174,9 @@
    },
    "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 440.87, aguinaldo 6613.05, exento 3519.30, gravado 3093.75); datos verificados por segundo agente el 12-nov.",
    "publica_utc_por_red": {
-    "tt": "2026-11-16T15:00:00Z"
+    "tt": "2026-11-16T15:06:44Z"
    },
-   "publica_utc": "2026-11-16T15:00:00Z"
+   "publica_utc": "2026-11-16T15:06:44Z"
   },
   {
    "id": "c80",
@@ -7923,13 +7923,14 @@
    "trato": "usted",
    "youtube": "https://youtube.com/shorts/DhHVSFb1iS8",
    "publica_utc_por_red": {
-    "yt": "2026-11-14T02:00:00Z"
+    "yt": "2026-11-14T02:00:00Z",
+    "tt": "2026-11-18T02:00:00Z"
    },
    "youtube_formato": "reel_texto",
    "facebook": {
     "publica_utc": "2026-11-14T02:00:00Z"
    },
-   "publica_utc": "2026-11-14T02:00:00Z",
+   "publica_utc": "2026-11-18T02:00:00Z",
    "comentario_youtube": "UgzObd9EUNmo-KBxiB94AaABAg"
   },
   {
@@ -8505,7 +8506,8 @@
    "publica_utc_por_red": {
     "yt": "2026-11-16T23:00:00Z"
    },
-   "publica_utc": "2026-11-16T23:00:00Z"
+   "publica_utc": "2026-11-16T23:00:00Z",
+   "comentario_youtube": "UgxSwOto5CQVUxpTBxN4AaABAg"
   },
   {
    "id": "c92u",
