@@ -64,7 +64,7 @@
     "que": "Sale el carrusel «Ley 73 o Ley 97, su fecha de alta decide 🗓️» (YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-11-17T12:48:05Z",
+  "generado_utc": "2026-11-17T13:14:03Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -659,7 +659,7 @@
     "black-forest-labs/flux-1.1-pro": 11
    },
    "incompleto": true,
-   "generado_utc": "2026-11-17T12:48:17Z",
+   "generado_utc": "2026-11-17T13:14:11Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -742,7 +742,7 @@
    }
   },
   "salud": {
-   "generado_utc": "2026-11-17T12:40:46Z",
+   "generado_utc": "2026-11-17T13:13:49Z",
    "estado": "aviso",
    "checks": [
     {
@@ -778,7 +778,7 @@
     {
      "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-17: TikTok 5, Instagram 2, YouTube 3, Facebook 2"
+     "detalle": "2026-11-17: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
     },
     {
      "area": "Calendario",
@@ -788,7 +788,7 @@
     {
      "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-19: TikTok 3, Instagram 2, YouTube 3, Facebook 3"
+     "detalle": "2026-11-19: TikTok 3, Instagram 2, YouTube 4, Facebook 3"
     },
     {
      "area": "Serie",
@@ -853,7 +853,7 @@
     {
      "area": "Cola",
      "estado": "ok",
-     "detalle": "59 carruseles listos para TikTok (~20 días a 3 por día)"
+     "detalle": "60 carruseles listos para TikTok (~20 días a 3 por día)"
     },
     {
      "area": "Cola",
@@ -863,17 +863,17 @@
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c16 (TikTok 4,219 vs mediana 183): ya tiene 4 clones"
+     "detalle": "c16 (TikTok 4,228 vs mediana 183): ya tiene 4 clones"
     },
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c70 (TikTok 1,061 vs mediana 183): ya tiene 4 clones"
+     "detalle": "c70 (TikTok 1,063 vs mediana 183): ya tiene 4 clones"
     },
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "O1 (YouTube 1,039 vs mediana 166): ya tiene 3 clones"
+     "detalle": "O1 (YouTube 1,041 vs mediana 166): ya tiene 3 clones"
     }
    ]
   },

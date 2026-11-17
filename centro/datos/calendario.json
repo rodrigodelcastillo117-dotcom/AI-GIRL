@@ -367,6 +367,28 @@
  },
  {
   "fecha": "2026-11-21",
+  "tipo": "facebook",
+  "id": "c97u",
+  "estado": "programado",
+  "que": "Video del carrusel «Pensión ISSSTE diciembre 2026, viernes 27 📅» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "17:00"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-21",
+  "tipo": "carrusel",
+  "id": "c97u",
+  "que": "Sale el carrusel «Pensión ISSSTE diciembre 2026, viernes 27 📅»",
+  "estado": "programado",
+  "horas": {
+   "yt": "17:00"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-21",
   "tipo": "video",
   "id": "O2",
   "estado": "por_programar",
@@ -428,6 +450,28 @@
    "ig": "15:07",
    "tt": "16:04",
    "fb": "15:07"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "facebook",
+  "id": "c93u",
+  "estado": "programado",
+  "que": "Video del carrusel «Pensión mínima garantizada 2027 sin monto 🔍» en Facebook (ya salió en las otras redes)",
+  "horas": {
+   "fb": "17:00"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
+  "id": "c93u",
+  "que": "Sale el carrusel «Pensión mínima garantizada 2027 sin monto 🔍»",
+  "estado": "programado",
+  "horas": {
+   "yt": "17:00"
   },
   "confirmado": []
  },

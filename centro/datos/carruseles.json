@@ -2417,5 +2417,114 @@
    "fb": "2026-11-20T23:00:00Z"
   },
   "c_yt_reales": 0
+ },
+ {
+  "id": "c93u",
+  "estado": "programado",
+  "tema": "victoria verifica pension minima garantizada ley97 2027",
+  "pilar": "finanzas",
+  "gancho": "Pensión mínima garantizada 2027: ¿ya hay monto? Lo verifiqué",
+  "titulo": "Pensión mínima garantizada 2027 sin monto 🔍",
+  "diapositivas": 9,
+  "fondo": "dinamica-oficina.jpg",
+  "portada": "lora-prueba-3-estudio.jpg",
+  "horas": {
+   "yt": "2026-11-22 17:00",
+   "fb": "2026-11-22 17:00"
+  },
+  "youtube_id": "WDGEAvYvzUg",
+  "publica_utc": "",
+  "linea": "pensión mínima garantizada 2027: todavía no hay monto oficial 🔍",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "yt": "2026-11-22T23:00:00Z",
+   "fb": "2026-11-22T23:00:00Z"
+  },
+  "c_yt_reales": 0
+ },
+ {
+  "id": "c94u",
+  "estado": "listo",
+  "tema": "fallecimiento pension beneficiarios y saldo afore",
+  "pilar": "finanzas",
+  "gancho": "Su Afore no se hereda sola: nombre hoy a sus beneficiarios",
+  "titulo": "Beneficiarios Afore, nómbrelos hoy 🗂️",
+  "diapositivas": 10,
+  "fondo": "dinamica-estudio.jpg",
+  "portada": "lora-prueba-4-casa.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "si usted falta, ¿su familia sabría qué cobrar y dónde? 🗂️",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c95u",
+  "estado": "listo",
+  "tema": "fraudes a pensionados depositos gestores canales oficiales",
+  "pilar": "finanzas",
+  "gancho": "Si le piden un depósito para subir su pensión, es fraude",
+  "titulo": "Fraude a pensionados, nunca pague depósitos 🚫",
+  "diapositivas": 10,
+  "fondo": "estilo-b-oficina-2.jpg",
+  "portada": "capital-no-presta.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "fraude a pensionados: si le piden un depósito para \"aumentar\" su pensión, es fraude 🚫",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c96u",
+  "estado": "listo",
+  "tema": "retiro por desempleo afore y semanas cotizadas",
+  "pilar": "finanzas",
+  "gancho": "Retiro por desempleo: sale el dinero y también sus semanas",
+  "titulo": "Retiro por desempleo Afore, cuesta semanas ⚠️",
+  "diapositivas": 10,
+  "fondo": "dinamica-home-office-alt.jpg",
+  "portada": "habla-cafe-cerca.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "retiro por desempleo de la afore: sale el dinero y también sus semanas ⚠️",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c97u",
+  "estado": "programado",
+  "tema": "pension issste diciembre 27 noviembre y aguinaldo 2026",
+  "pilar": "finanzas",
+  "gancho": "Su pensión ISSSTE de diciembre llega el viernes 27",
+  "titulo": "Pensión ISSSTE diciembre 2026, viernes 27 📅",
+  "diapositivas": 10,
+  "fondo": "dinamica-lectura.png",
+  "portada": "video-18-oficina.jpg",
+  "horas": {
+   "yt": "2026-11-21 17:00",
+   "fb": "2026-11-21 17:00"
+  },
+  "youtube_id": "LXAv88BDfJ8",
+  "publica_utc": "",
+  "linea": "pensión issste diciembre 2026: llega el viernes 27 de noviembre 📅",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "yt": "2026-11-21T23:00:00Z",
+   "fb": "2026-11-21T23:00:00Z"
+  },
+  "c_yt_reales": 0
  }
 ]

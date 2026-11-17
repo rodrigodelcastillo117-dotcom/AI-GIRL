@@ -796,30 +796,22 @@
   "nota": "Carruseles de usted solo para YouTube y Facebook (no pasan por TikTok, así que decidir_carruseles no los toma): la rutina de las 6:37 los programa en este orden, 1 al día en YouTube (short) y Facebook, hasta cumplir 3 de cada 5 publicaciones de YouTube con pensión (youtube_mezcla_temporal).",
   "orden": [
    {
-    "id": "c87u",
-    "antes_de": "2026-11-30",
-    "por_que": "pago de diciembre (martes 1): sirve solo antes de esa fecha"
+    "id": "c94u",
+    "antes_de": "2026-12-15",
+    "por_que": "beneficiarios de la Afore (sin fecha límite)"
    },
    {
-    "id": "c89u",
-    "antes_de": "2026-11-20",
-    "por_que": "Modalidad 40 cambió el 22-oct: noticia"
+    "id": "c95u",
+    "antes_de": "2026-12-15",
+    "por_que": "fraudes a pensionados (temporada de pagos)"
    },
    {
-    "id": "c91u",
-    "antes_de": "2026-11-27",
-    "por_que": "pago Bienestar en curso hasta el 27-nov"
-   },
-   {
-    "id": "c88u"
-   },
-   {
-    "id": "c90u"
-   },
-   {
-    "id": "c92u"
+    "id": "c96u",
+    "antes_de": "2026-12-31",
+    "por_que": "retiro por desempleo (cuesta semanas)"
    }
-  ]
+  ],
+  "nota_17nov": "c87u-c92u ya programados; c97u (ISSSTE, 21-nov) y c93u (pensión mínima, 22-nov) subidos el 17-nov. Siguen c94u, c95u, c96u: uno al día desde el 23-nov, 17:00 MX, YouTube y Facebook."
  },
  "variantes": {
   "por_dia": {
