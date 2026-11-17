@@ -1,0 +1,44 @@
+{
+ "fecha": "2026-11-17",
+ "titulo": "Último día de Buen Fin, el sorteo del SAT y el aguinaldo de pensionados del ISSSTE",
+ "intro": "Hoy se acaba el Buen Fin. Tres cosas para tu dinero, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "Hoy termina el Buen Fin y Profeco ya recuperó dinero de cientos de quejas",
+   "que_paso": "En los primeros dos días, Profeco recibió 72 quejas y recuperó casi 400 mil pesos. Lo que más se reclama: promociones que no se respetaron y precios distintos en caja.",
+   "te_afecta": "Si hoy te cobran distinto a lo anunciado, no es pleito tuyo con la tienda: la tienda tiene que respetar el precio que anunció.",
+   "que_hacer": "Toma foto del precio antes de pagar y guarda tu ticket. Si no te lo respetan, puedes reclamar ante Profeco.",
+   "fuentes": [
+    {"nombre": "Crónica, 15-nov-2026", "url": "https://www.cronica.com.mx/nacional/2026/11/15/en-dos-dias-profeco-recibe-72-quejas-durante-el-buen-fin-incumplir-promociones-y-precios-encabezan-reclamos/"},
+    {"nombre": "Expansión, 14-nov-2026", "url": "https://expansion.mx/empresas/2026/11/14/sams-club-walmart-first-cash-elektra-quejas-un-dia-buen-fin"},
+    {"nombre": "UnoTV", "url": "https://www.unotv.com/negocios/profeco-ha-recuperado-200-mil-pesos-para-consumidores-en-este-buen-fin/"}
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Sorteo del Buen Fin: el 27 de noviembre sabes si participas",
+   "que_paso": "El SAT sortea 500 millones de pesos entre compras de $250 o más con tarjeta de crédito o débito, hechas del 13 al 17 de noviembre en comercios registrados. El sorteo es el 4 de diciembre.",
+   "te_afecta": "Si hoy pagas con tarjeta en un comercio participante, esa compra puede entrar al sorteo sin hacer ningún trámite.",
+   "que_hacer": "Desde el 27 de noviembre revisa en el sitio oficial del SAT, con el número de tu tarjeta, si participas. Nadie te debe pedir dinero por \"cobrar\" un premio.",
+   "fuentes": [
+    {"nombre": "SAT, minisitio Sorteo El Buen Fin 2026", "url": "https://www.sat.gob.mx/minisitio/SorteoElBuenFin/index.html"},
+    {"nombre": "Publimetro, 28-oct-2026", "url": "https://www.publimetro.com.mx/noticias/2026/10/28/buen-fin-2026-sorteo-sat-500-millones-premios-compras-250-pesos/"}
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Pensionados del ISSSTE: la segunda parte del aguinaldo llega el viernes 27",
+   "que_paso": "El aguinaldo de pensionados del ISSSTE se paga en dos partes: la primera en la primera quincena de noviembre y la segunda el viernes 27 de noviembre, junto con la pensión de diciembre.",
+   "te_afecta": "Si tus papás cobran pensión del ISSSTE, el 27 les llegan dos cosas juntas. Ese dinero tiene que alcanzar hasta el pago de enero.",
+   "que_hacer": "El 27 revisa que vengan la pensión y la segunda parte del aguinaldo. Si falta algo, pregunta directo al ISSSTE, nunca a un gestor.",
+   "fuentes": [
+    {"nombre": "Expansión, 4-nov-2026", "url": "https://expansion.mx/finanzas-personales/2026/11/04/aguinaldo-issste-2026-pensionados-fecha-pago"},
+    {"nombre": "N+", "url": "https://www.nmas.com.mx/economia/cuando-pagan-segunda-parte-aguinaldo-pensionados-issste-2026-adelantan-fecha-deposito/"},
+    {"nombre": "Crónica, 11-nov-2026", "url": "https://www.cronica.com.mx/nacional/2026/11/11/cuando-cae-el-deposito-de-aguinaldo-a-pensionados-del-issste-fechas-de-pago-a-jubilados/"}
+   ]
+  }
+ ],
+ "dato": "Sorteo del Buen Fin: compras desde $250 con tarjeta, del 13 al 17 de noviembre. Consulta desde el 27 de noviembre; sorteo el 4 de diciembre.",
+ "cierre": "Hoy es el último día de ofertas. Si no lo tenías en tu lista ayer, hoy tampoco lo necesitas. — Victoria"
+}

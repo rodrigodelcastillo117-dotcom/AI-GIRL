@@ -420,6 +420,9 @@ def sincronizar_horas_publer(carruseles_json, avisos):
                 if reel.get('publica_utc') != real:
                     reel['publica_utc'], cambio = real, True
                 continue
+            # c86u (solo YouTube y Facebook) copia el texto de c86: no le toca la hora de TikTok de c86 (17-nov)
+            if c.get('redes') and red not in c['redes']:
+                continue
             if primera_linea(c.get('texto_post')) == primera_linea(p.get('text')):
                 real = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M:%SZ')
                 if c['publica_utc_por_red'].get(red) != real:

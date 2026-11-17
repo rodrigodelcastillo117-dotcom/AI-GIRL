@@ -192,9 +192,10 @@ def serie_primero():
         d = (AHORA.astimezone(MX) + datetime.timedelta(days=i)).date()
         if regla.get('desde') and d.isoformat() < regla['desde']:
             continue
-        del_dia = sorted((fecha(c['publica_utc_por_red']['tt']), c) for c in carr
-                         if fecha((c.get('publica_utc_por_red') or {}).get('tt'))
-                         and fecha(c['publica_utc_por_red']['tt']).astimezone(MX).date() == d)
+        del_dia = sorted([(fecha(c['publica_utc_por_red']['tt']), c) for c in carr
+                          if fecha((c.get('publica_utc_por_red') or {}).get('tt'))
+                          and fecha(c['publica_utc_por_red']['tt']).astimezone(MX).date() == d],
+                         key=lambda t: t[0])  # dos a la misma hora no deben tirar la salud (17-nov)
         primero = del_dia[0][1] if del_dia else None
         if primero and primero.get('serie') == regla['serie']:
             anotar('Serie', 'ok', f"{d}: el primer TikTok es de la serie ({primero['id']})")
