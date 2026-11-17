@@ -856,5 +856,26 @@
    "por_que": "Serie \"no me pagaron el aguinaldo\": sirve justo después del 20-dic. Rodrigo, 16-nov: \"solo moverlos de día\". Siguen cerrando con Video completo en mi canal."
   },
   "nota_buen_fin": "Rodrigo, 16-nov: \"los dejamos salir\". Los 2 recortes de Buen Fin salen hoy 15:00 y 21:30 en Instagram: en la medición del 19-nov se reportan aparte (tipo \"anuncia YouTube\") y el 16-nov no cuenta para la regla de 1 pieza al día."
+ },
+ "cortes_victoria": {
+  "decidido": "2026-11-17",
+  "texto": "Rodrigo, 17-nov-2026: \"no sé si ya cancelar el canal… a Victoria en total\" → \"siii\" a los cortes y a medir suscriptores por video.",
+  "linea_base": {
+   "fecha": "2026-11-17",
+   "tt": 1172,
+   "yt": 547,
+   "ig": 62,
+   "fb": 4
+  },
+  "corte_1": {
+   "fecha": "2026-11-30",
+   "regla": "Si la suma de seguidores netos de todas las redes desde la línea base es menor a +50, se propone pausar."
+  },
+  "corte_2": {
+   "fecha": "2026-12-15",
+   "regla": "Menos de +150 seguidores netos sumados o ninguna venta del Kit: se pausa todo (pausar, no borrar)."
+  },
+  "gasto": "Hasta el 15-dic: nada nuevo en Replicate fuera de lo ya autorizado (reel-hormiga $2, lo que quede de largo-pension y sketch-tiktok). Formatos gratis.",
+  "medir": "scripts/suscriptores_video.py (suscriptores por video de YouTube) cada lunes y en cada corte; seguidores netos por red en contenido/seguidores.json."
  }
 }

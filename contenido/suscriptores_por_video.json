@@ -1,0 +1,545 @@
+{
+ "generado": "2026-11-17T21:39:36Z",
+ "nota": "YouTube Analytics llega con 2-3 días de atraso. Solo YouTube: TikTok e Instagram no dan seguidores por publicación.",
+ "total": {
+  "videos": 45,
+  "vistas": 10253,
+  "ganados": 6,
+  "perdidos": 0
+ },
+ "por_formato": {
+  "Largo": {
+   "videos": 2,
+   "vistas": 23,
+   "netos": 2,
+   "netos_por_mil": 86.96
+  },
+  "Carrusel en short": {
+   "videos": 22,
+   "vistas": 5203,
+   "netos": 3,
+   "netos_por_mil": 0.58
+  },
+  "Sin registrar": {
+   "videos": 4,
+   "vistas": 535,
+   "netos": 1,
+   "netos_por_mil": 1.87
+  },
+  "Victoria hablando": {
+   "videos": 10,
+   "vistas": 4249,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  "Recorte de largo": {
+   "videos": 6,
+   "vistas": 131,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  "Variante": {
+   "videos": 1,
+   "vistas": 112,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  }
+ },
+ "videos": [
+  {
+   "video_id": "t6rmpeZv5bI",
+   "pieza": "LB1",
+   "titulo": "Buen Fin 2026: ¿cómo saber si una oferta es real?",
+   "formato": "Largo",
+   "vistas": 22,
+   "ganados": 2,
+   "perdidos": 0,
+   "netos": 2,
+   "netos_por_mil": 90.91
+  },
+  {
+   "video_id": "d_pk0icW-yQ",
+   "pieza": "c87u",
+   "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
+   "formato": "Carrusel en short",
+   "vistas": 777,
+   "ganados": 1,
+   "perdidos": 0,
+   "netos": 1,
+   "netos_por_mil": 1.29
+  },
+  {
+   "video_id": "e_VpMZHW8TQ",
+   "pieza": "c52",
+   "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
+   "formato": "Carrusel en short",
+   "vistas": 117,
+   "ganados": 1,
+   "perdidos": 0,
+   "netos": 1,
+   "netos_por_mil": 8.55
+  },
+  {
+   "video_id": "sWemM2dSuAw",
+   "pieza": "c66",
+   "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
+   "formato": "Carrusel en short",
+   "vistas": 533,
+   "ganados": 1,
+   "perdidos": 0,
+   "netos": 1,
+   "netos_por_mil": 1.88
+  },
+  {
+   "video_id": "y-HMXcYyAHY",
+   "pieza": null,
+   "titulo": null,
+   "formato": "Sin registrar",
+   "vistas": 121,
+   "ganados": 1,
+   "perdidos": 0,
+   "netos": 1,
+   "netos_por_mil": 8.26
+  },
+  {
+   "video_id": "0WFSr4BHo-o",
+   "pieza": "c65",
+   "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
+   "formato": "Carrusel en short",
+   "vistas": 868,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "0bKU3Aq3k3Q",
+   "pieza": "LA1",
+   "titulo": "Aguinaldo 2026: cuánto te toca y cómo calcularlo (3 ejemplos)",
+   "formato": "Largo",
+   "vistas": 1,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "3TJ3AGsHl6w",
+   "pieza": "38",
+   "titulo": "Meses sin intereses en el Buen Fin 💳",
+   "formato": "Victoria hablando",
+   "vistas": 127,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "4-XMOqZF8qA",
+   "pieza": "c06",
+   "titulo": "Buen Fin 2026 y 5 cosas antes de comprar 🛍️",
+   "formato": "Carrusel en short",
+   "vistas": 156,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "6MXvfosTIBw",
+   "pieza": null,
+   "titulo": null,
+   "formato": "Sin registrar",
+   "vistas": 190,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "7RyzCU7VFUQ",
+   "pieza": "c27",
+   "titulo": "Gastos en pareja proporcionales al sueldo 💑",
+   "formato": "Carrusel en short",
+   "vistas": 54,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "7wTIKZGrbp4",
+   "pieza": "LB1-c04",
+   "titulo": "Cómo revisar un precio · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 16,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "84pixgjFEXU",
+   "pieza": "19",
+   "titulo": "Aguinaldo exento de ISR hasta 3,519 pesos 🧾",
+   "formato": "Victoria hablando",
+   "vistas": 285,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "8N7NHtj0E3o",
+   "pieza": "c43",
+   "titulo": "Repartir el aguinaldo si ganas $10,000 💰",
+   "formato": "Carrusel en short",
+   "vistas": 9,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "A-CSBL-994c",
+   "pieza": "c13",
+   "titulo": "Recibo de nómina y el subsidio 2026 🧾",
+   "formato": "Carrusel en short",
+   "vistas": 124,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "AO8W9KwN9EA",
+   "pieza": "c08",
+   "titulo": "Gastos hormiga que se comen tu sueldo ☕",
+   "formato": "Carrusel en short",
+   "vistas": 398,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "BH_9lIvPPJM",
+   "pieza": "c68",
+   "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
+   "formato": "Carrusel en short",
+   "vistas": 208,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "CQAdpk1SqR4",
+   "pieza": "c03",
+   "titulo": "Reglas de dinero de Buffett y Munger 💡",
+   "formato": "Carrusel en short",
+   "vistas": 42,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "DhHVSFb1iS8",
+   "pieza": "c86u",
+   "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+   "formato": "Carrusel en short",
+   "vistas": 330,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "E5GH6hKOYog",
+   "pieza": "17",
+   "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+   "formato": "Victoria hablando",
+   "vistas": 613,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "I0FGv7MROTI",
+   "pieza": "c07",
+   "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
+   "formato": "Carrusel en short",
+   "vistas": 68,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "I6wUFwvYIzs",
+   "pieza": "LB1-c01",
+   "titulo": "Las fechas · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 71,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "IPwU8EGGwZU",
+   "pieza": "c02",
+   "titulo": "Consejos de dinero que sí funcionan 💰",
+   "formato": "Carrusel en short",
+   "vistas": 44,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "Ich5p1Iespg",
+   "pieza": "M2",
+   "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
+   "formato": "Victoria hablando",
+   "vistas": 222,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "J9TViN7FCq4",
+   "pieza": "M1",
+   "titulo": "Buen Fin 2026, 3 errores con tu tarjeta 💳",
+   "formato": "Victoria hablando",
+   "vistas": 97,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "NnvHdrbQPFA",
+   "pieza": "c89u",
+   "titulo": "Modalidad 40 cambió el 22 de octubre ⚠️",
+   "formato": "Carrusel en short",
+   "vistas": 58,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "QvNGQd0NxYo",
+   "pieza": "LB1-c03",
+   "titulo": "5 creencias, verificadas (parte 2) · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 14,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "SI04CvAqvjg",
+   "pieza": "37",
+   "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
+   "formato": "Victoria hablando",
+   "vistas": 419,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "Tg6QnFhSsek",
+   "pieza": null,
+   "titulo": null,
+   "formato": "Sin registrar",
+   "vistas": 48,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "V7iOZ3wh1zM",
+   "pieza": "c04",
+   "titulo": "Lecciones de negocio que valen millones 💼",
+   "formato": "Carrusel en short",
+   "vistas": 68,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "VhWYrJ5NmrY",
+   "pieza": null,
+   "titulo": null,
+   "formato": "Sin registrar",
+   "vistas": 176,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "_2hyj6BDQYs",
+   "pieza": "02",
+   "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
+   "formato": "Victoria hablando",
+   "vistas": 682,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "_ZdghO90lbY",
+   "pieza": "c70",
+   "titulo": "Aguinaldo 2026 de 30 días, rumor o realidad 🔍",
+   "formato": "Carrusel en short",
+   "vistas": 323,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "b6TcPHkT4kk",
+   "pieza": "c69",
+   "titulo": "Calculadoras de finanzas personales gratis 🧮",
+   "formato": "Carrusel en short",
+   "vistas": 47,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "eYNxOcD44Kw",
+   "pieza": "c01",
+   "titulo": "Aguinaldo 2026 cuánto te toca y su ISR 💸",
+   "formato": "Carrusel en short",
+   "vistas": 351,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "gj-wm-D7qZE",
+   "pieza": "c12",
+   "titulo": "Días de vacaciones por ley en 2026 🌴",
+   "formato": "Carrusel en short",
+   "vistas": 136,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "h3TSM1tNMf4",
+   "pieza": "LB1-c06",
+   "titulo": "Si no te respetan la oferta · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 2,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "lIX_szs8I0U",
+   "pieza": "O1-v1",
+   "titulo": "¿Mitad y mitad si tu pareja gana el doble?",
+   "formato": "Variante",
+   "vistas": 112,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "npJnqw9yUt0",
+   "pieza": "LB1-c05",
+   "titulo": "Meses sin intereses: cuándo sí · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 4,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "pGZrNPNF1wg",
+   "pieza": "c74",
+   "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
+   "formato": "Carrusel en short",
+   "vistas": 111,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "qM_e2ImPA1s",
+   "pieza": "O1",
+   "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
+   "formato": "Victoria hablando",
+   "vistas": 1045,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "rWU273Cdcnc",
+   "pieza": "c71",
+   "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
+   "formato": "Carrusel en short",
+   "vistas": 381,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "rmMgyWp4pDI",
+   "pieza": "E1",
+   "titulo": "Gastos hormiga, la prueba de 1 semana ☕",
+   "formato": "Victoria hablando",
+   "vistas": 42,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "v25vIDTienI",
+   "pieza": "01",
+   "titulo": "Mejorar 1% diario te hace 37 veces mejor 📈",
+   "formato": "Victoria hablando",
+   "vistas": 717,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  },
+  {
+   "video_id": "x6bexn7B4sQ",
+   "pieza": "LB1-c02",
+   "titulo": "5 creencias, verificadas (parte 1) · Buen Fin 2026",
+   "formato": "Recorte de largo",
+   "vistas": 24,
+   "ganados": 0,
+   "perdidos": 0,
+   "netos": 0,
+   "netos_por_mil": 0.0
+  }
+ ]
+}

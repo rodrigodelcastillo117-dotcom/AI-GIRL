@@ -69,6 +69,11 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- CORTES DE VICTORIA (Rodrigo, 17-nov: "no sé si ya cancelar"): config.json → cortes_victoria. Línea base 17-nov
+  (TikTok 1,172 · YouTube 547 · Instagram 62 · Facebook 4). 30-nov: menos de +50 netos sumados → proponer pausar.
+  15-dic: menos de +150 o ninguna venta → pausar todo. Cada resumen diario abre con los seguidores netos desde la línea
+  base. Gasto: nada nuevo en Replicate fuera de lo ya autorizado. Cada lunes: python3 scripts/suscriptores_video.py
+  (qué video de YouTube trae suscriptores) y usarlo para elegir qué se repite.
 - INSTAGRAM = PLAN DE MUSE (16-nov, docs/muse/plan-retencion-2026-11-16.md; medición el jueves 19-nov): en Instagram
   máximo 1 pieza al día y la manda el calendario de MUSE. Nada de Reels que anuncien el video de YouTube ("Video completo
   en mi canal"): recortes.py ya NO los manda a Instagram (--sin-instagram; TikTok y Facebook sí). La rutina NO agrega
