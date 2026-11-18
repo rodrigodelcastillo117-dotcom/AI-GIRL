@@ -9460,6 +9460,123 @@
     "yt": "2026-11-21T23:00:00Z"
    },
    "publica_utc": "2026-11-21T23:00:00Z"
+  },
+  {
+   "id": "c98",
+   "estado": "listo",
+   "origen": "MUSE 16-nov (Reel de texto: el video hablado M5 no pasó QA el 18-nov)",
+   "tema": "gastos_hormiga_diciembre",
+   "pilar": "finanzas",
+   "redes": [
+    "ig"
+   ],
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "portada": {
+    "foto": "assets/fotos/habla-cafe-cerca.jpg",
+    "etiqueta": "GASTOS HORMIGA",
+    "titulo": "$2,850 al mes: 3 gastos hormiga que en diciembre sí se notan",
+    "voz": "Tres gastos hormiga te quitan dos mil ochocientos cincuenta pesos al mes.",
+    "gancho_tipo": "guarda_esto",
+    "foto_reel": "assets/fotos/habla-cafe-cerca.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Café: $50 × 30 = $1,500",
+     "texto": "Tu café de $50 al día son $1,500 al mes.\n\nEjemplo con precios cotidianos",
+     "voz": "El primero: tu café de cincuenta pesos al día. Son mil quinientos al mes."
+    },
+    {
+     "titulo": "Antojo: $30 × 20 = $600",
+     "texto": "El antojo de $30, 20 veces al mes, son $600.\n\nEjemplo con precios cotidianos",
+     "voz": "El segundo: el antojo de treinta pesos, veinte veces al mes. Son seiscientos."
+    },
+    {
+     "titulo": "Refresco: $25 × 30 = $750",
+     "texto": "Un refresco de $25 al día son $750 al mes.\n\nEjemplo con precios cotidianos",
+     "voz": "El tercero: un refresco de veinticinco pesos al día. Son setecientos cincuenta."
+    },
+    {
+     "titulo": "$2,850 al mes",
+     "texto": "Más de un tercio de un aguinaldo de $7,500 (el mínimo con $15,000 al mes).\n\nLFT, art. 87",
+     "voz": "Son dos mil ochocientos cincuenta al mes, más de un tercio de un aguinaldo de siete mil quinientos."
+    }
+   ],
+   "cierre": {
+    "titulo": "¿Café, antojo o refresco?",
+    "texto": "Comenta cuál es el tuyo.\nGuárdalo para diciembre.",
+    "voz": "Guárdalo para diciembre. ¿Café, antojo o refresco? Comenta cuál es el tuyo."
+   },
+   "fuente": "Ejemplos con precios cotidianos (no dato oficial): 50×30=1,500; 30×20=600; 25×30=750; total 2,850 > 2,500 (un tercio de 7,500). Aguinaldo mínimo con $15,000: LFT art. 87.",
+   "texto_post": "3 gastos hormiga que en diciembre sí se notan: café $50 × 30 = $1,500 al mes, antojo $30 × 20 = $600, refresco $25 × 30 = $750. Son $2,850 al mes, más de un tercio de un aguinaldo de $7,500.\n\n🔖 Guárdalo para diciembre. ¿Café, antojo o refresco? Comenta cuál es el tuyo.\n\n#gastoshormiga #dinero #finanzaspersonales #aguinaldo #victoriatheceo",
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "Gastos hormiga, $2,850 al mes en diciembre ☕"
+   },
+   "revision": {
+    "fecha": "2026-11-18",
+    "resultado": "aritmética verificada; ejemplos marcados como ejemplos; aguinaldo mínimo LFT art. 87 (ya verificado en c16/M2)"
+   }
+  },
+  {
+   "id": "c99",
+   "estado": "listo",
+   "origen": "MUSE 16-nov (docs/muse/carrusel-5-fechas-diciembre.md)",
+   "tema": "5_fechas_dinero_diciembre",
+   "pilar": "finanzas",
+   "redes": [
+    "ig"
+   ],
+   "fondo": "assets/fondos/gimnasio-ciudad.jpg",
+   "portada": {
+    "foto": "assets/fotos/dinamica-cuarto-maquillaje.jpg",
+    "etiqueta": "DICIEMBRE 2026",
+    "titulo": "Guarda esto: 5 fechas de tu dinero en diciembre",
+    "voz": "Guarda esto. Cinco fechas de tu dinero en diciembre.",
+    "gancho_tipo": "guarda_esto",
+    "foto_reel": "assets/fotos/dinamica-estados-de-cuenta.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "1 DIC: haz tu lista hoy",
+     "texto": "Regalos, cena y posadas. Sin lista, el aguinaldo se va en impulso.",
+     "voz": "Uno de diciembre: haz tu lista."
+    },
+    {
+     "titulo": "12 DIC: la mayoría de los bancos no abre",
+     "texto": "Día del Empleado Bancario, día inhábil de la CNBV. Cae en sábado: la mayoría de las sucursales cierra (algunos bancos abren con aviso a la CNBV). La app y los cajeros sí funcionan.\n\nCNBV, calendario de días inhábiles 2026",
+     "voz": "Doce de diciembre: la mayoría de los bancos no abre. La app y los cajeros sí funcionan."
+    },
+    {
+     "titulo": "Antes del 20 DIC: tu aguinaldo",
+     "texto": "Te lo deben pagar antes del 20 de diciembre. Con $15,000 al mes son $7,500 como mínimo.\n\nLFT, art. 87",
+     "voz": "Antes del veinte de diciembre: tu aguinaldo. Con quince mil al mes, son siete mil quinientos como mínimo."
+    },
+    {
+     "titulo": "24 DIC: Nochebuena con tope",
+     "texto": "Cena y regalos con tope. Si lo pagas a meses, revisa el total y el CAT.",
+     "voz": "Veinticuatro de diciembre: Nochebuena con tope."
+    },
+    {
+     "titulo": "31 DIC: último día para deducir",
+     "texto": "Tus aportaciones complementarias de retiro cuentan en la declaración de este año solo si quedan hechas antes del 31 de diciembre. Cada Afore tiene su fecha de corte: no esperes al último día.\n\nLISR, art. 151 fr. V · Información general, no asesoría fiscal",
+     "voz": "Treinta y uno de diciembre: último día para que tus aportaciones de retiro deducibles cuenten este año."
+    }
+   ],
+   "cierre": {
+    "titulo": "Guárdalo para diciembre",
+    "texto": "Mándaselo a quien ya está gastando su aguinaldo.",
+    "voz": "Guárdalo y mándaselo a quien ya está gastando su aguinaldo."
+   },
+   "fuente": "LFT art. 87 (aguinaldo antes del 20-dic). CNBV: 12-dic Día del Empleado Bancario, día inhábil (UnoTV 'bancos cerrarán el 12 de diciembre'; Cronista; los bancos pueden abrir avisando a la CNBV). LISR art. 151 fr. V (aportaciones complementarias deducibles en el ejercicio en que se hacen; SAT artículo 151; El Contribuyente 2026).",
+   "texto_post": "Guarda esto: 5 fechas de tu dinero en diciembre. 1 dic haz tu lista, 12 dic la mayoría de los bancos no abre, antes del 20 dic tu aguinaldo ($15,000 → $7,500), 24 dic Nochebuena con tope, 31 dic último día para que tus aportaciones deducibles cuenten este año.\n\n🔖 Guárdalo para diciembre. Información general, no asesoría fiscal.\n\n#diciembre #aguinaldo #dinero #finanzaspersonales #victoriatheceo",
+   "seo": {
+    "palabra_clave": "fechas de diciembre",
+    "titulo": "Fechas de diciembre de tu dinero, guárdalas 📅"
+   },
+   "revision": {
+    "fecha": "2026-11-18",
+    "resultado": "12-dic corregido (no todas las sucursales cierran: un banco puede abrir con aviso a la CNBV); 31-dic verificado con LISR 151 fr. V (SAT y El Contribuyente); aguinaldo LFT 87"
+   }
   }
  ]
 }

@@ -1,20 +1,20 @@
 {
  "control": {
-  "hoy_usd": 0.0,
-  "semana_usd": 1.66,
-  "mes_usd": 69.19,
-  "otro_canal_semana_usd": 1.13,
-  "otro_canal_mes_usd": 11.21,
+  "hoy_usd": 1.77,
+  "semana_usd": 3.43,
+  "mes_usd": 70.96,
+  "otro_canal_semana_usd": 1.17,
+  "otro_canal_mes_usd": 11.25,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 115.31,
+  "proyeccion_mes_usd": 118.26,
   "semana_desde": "2026-11-16",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 30.31,
+ "saldo_estimado_usd": 28.5,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -22,12 +22,12 @@
   }
  ],
  "gastado_desde_base": {
-  "victoria": 28.15,
-  "otro": 3.71
+  "victoria": 29.92,
+  "otro": 3.75
  },
  "gastado_7_dias": {
-  "victoria": 28.15,
-  "otro": 3.71
+  "victoria": 29.92,
+  "otro": 3.75
  },
  "por_dia": [
   {
@@ -62,20 +62,20 @@
   },
   {
    "dia": "2026-11-18",
-   "victoria": 0.0,
-   "otro": 0.0
+   "victoria": 1.77,
+   "otro": 0.04
   }
  ],
  "por_modelo": {
-  "prunaai/p-video-avatar": 21.56,
+  "prunaai/p-video-avatar": 23.27,
   "bytedance/seedance-1-pro": 5.25,
   "minimax/video-01": 3.5,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
   "black-forest-labs/flux-schnell": 0.21,
-  "minimax/speech-02-hd": 0.0
+  "minimax/speech-02-hd": 0.1
  },
- "costo_promedio_toma_usd": 0.43,
+ "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
   "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
   "google/nano-banana-pro": 11,
@@ -84,12 +84,12 @@
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 4,
   "stability-ai/stable-audio-2.5": 3,
-  "victor-upmeet/whisperx": 59,
+  "victor-upmeet/whisperx": 61,
   "black-forest-labs/flux-1.1-pro": 119,
-  "elevenlabs/music": 22,
+  "elevenlabs/music": 24,
   "851-labs/background-remover": 2
  },
  "incompleto": true,
- "generado_utc": "2026-11-18T12:44:05Z",
+ "generado_utc": "2026-11-18T14:43:32Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

@@ -4234,6 +4234,74 @@
     "por_aprobar": "Rodrigo ve el preview antes de publicar",
     "rechazado": "Rodrigo, 13-nov: \"no, está malo, así no\" (versión Veo: Capital brincando / cubeta de agua)"
    }
+  },
+  {
+   "id": "M5",
+   "origen": "MUSE 16-nov",
+   "formato": "escena",
+   "escena": "cafe",
+   "pilar": "finanzas",
+   "estado": "descartado_qa",
+   "publicar": "2026-11-20",
+   "tema": "3 gastos hormiga que en diciembre sí se notan",
+   "guion": "Tres gastos hormiga te quitan dos mil ochocientos cincuenta pesos al mes. Y en diciembre sí se notan. El primero: tu café de cincuenta pesos al día. Cincuenta por treinta días son mil quinientos al mes. El segundo: el antojo de treinta pesos, veinte veces al mes. Son seiscientos. El tercero: un refresco de veinticinco pesos al día. Veinticinco por treinta son setecientos cincuenta. Son dos mil ochocientos cincuenta al mes, más de un tercio de un aguinaldo de siete mil quinientos. Guárdalo para diciembre. ¿Café, antojo o refresco? Comenta cuál es el tuyo.",
+   "subtitulos": [
+    "Tres gastos hormiga te quitan $2,850 al mes.",
+    "Y en diciembre sí se notan.",
+    "El primero: tu café de $50 al día.",
+    "$50 × 30 días = $1,500 al mes.",
+    "El segundo: el antojo de $30, 20 veces al mes.",
+    "Son $600.",
+    "El tercero: un refresco de $25 al día.",
+    "$25 × 30 = $750.",
+    "Son $2,850 al mes,",
+    "más de un tercio de un aguinaldo de $7,500.",
+    "Guárdalo para diciembre.",
+    "¿Café, antojo o refresco?",
+    "Comenta cuál es el tuyo."
+   ],
+   "insertos": [
+    {
+     "frase": 3,
+     "broll": "assets/broll/cafe-mov-1.mp4",
+     "segundos": 3,
+     "que": "toma su café (pausa real, sonido del café)"
+    }
+   ],
+   "texto_pantalla": "$2,850 AL MES",
+   "mandar_a": "quien dice que no le alcanza",
+   "guion_de": "MUSE (16-nov-2026), docs/muse/reel-gastos-hormiga-diciembre.md, casi literal.",
+   "llamado_cierre": "Guárdalo para diciembre",
+   "pregunta_comentarios": "¿Café, antojo o refresco? Comenta cuál es el tuyo.",
+   "fuente": "Ejemplos con precios cotidianos (no es dato oficial): 50×30=1,500; 30×20=600; 25×30=750; total 2,850; 2,850 > 7,500/3=2,500. Aguinaldo mínimo con $15,000: 15,000/30×15 = 7,500 (LFT art. 87).",
+   "texto_post": "3 gastos hormiga que en diciembre sí se notan: café $50 × 30 = $1,500 al mes, antojo $30 × 20 = $600, refresco $25 × 30 = $750. Son $2,850 al mes, más de un tercio de un aguinaldo de $7,500.\n\n🔖 Guárdalo para diciembre. ¿Café, antojo o refresco? Comenta cuál es el tuyo.",
+   "foto_base_lista": {
+    "archivo": "assets/fotos/habla-cafe-cerca.jpg"
+   },
+   "palabras_clave": [
+    "gastos hormiga",
+    "café",
+    "refresco",
+    "aguinaldo"
+   ],
+   "seo": {
+    "palabra_clave": "gastos hormiga",
+    "titulo": "Gastos hormiga, $2,850 al mes en diciembre ☕",
+    "hashtags": [
+     "#gastoshormiga",
+     "#dinero",
+     "#finanzaspersonales",
+     "#aguinaldo"
+    ]
+   },
+   "autorizacion": "reel-hormiga",
+   "qa": {
+    "audio": "FALLA FALLA: no se entiende \"hormiga\"",
+    "labios": "LABIOS FALLA: en p/b/m/v la boca está abierta (0.42, máximo 0.35)",
+    "sync": "SINCRONÍA OK",
+    "cuadros": "videos/qa/M5-cuadros.jpg (revisar a ojo)"
+   },
+   "nota_qa": "18-nov: labios FALLA (0.42 > 0.35) y Whisper no entendió \"hormiga\". Sin presupuesto para otro intento ($1.71 de $2). Pasa a Reel de texto c98."
   }
  ]
 }
