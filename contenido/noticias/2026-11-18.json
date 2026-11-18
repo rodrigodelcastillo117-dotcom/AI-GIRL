@@ -1,0 +1,43 @@
+{
+ "fecha": "2026-11-18",
+ "titulo": "Lo que sigue después del Buen Fin, tu aguinaldo en un mes y la pensión de diciembre",
+ "intro": "Se acabó el Buen Fin. Tres cosas que siguen para tu dinero, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "Tu bolsillo",
+   "titulo": "Buen Fin: 94 quejas y todas se resolvieron a favor del consumidor",
+   "que_paso": "En los primeros días del Buen Fin, Profeco recibió 94 quejas y todas se resolvieron a favor de quien compró. Lo más reclamado: promociones que no se respetaron y precios distintos en caja. El balance final lo publica después del cierre.",
+   "te_afecta": "Si compraste a meses o con tarjeta y algo no cuadra en tu estado de cuenta, todavía estás a tiempo de reclamar.",
+   "que_hacer": "Guarda tickets y vouchers. Si ves un cargo que no reconoces o una compra que no salió a meses, tienes 90 días desde el corte para pedir la aclaración a tu banco.",
+   "fuentes": [
+    {"nombre": "Crónica, 16-nov-2026", "url": "https://www.cronica.com.mx/nacional/2026/11/16/buen-fin-acumula-94-quejas-todas-favorecen-a-consumidores/"},
+    {"nombre": "Publimetro, 16-nov-2026", "url": "https://www.publimetro.com.mx/noticias/2026/11/16/quejas-buen-fin-2026-profeco/"},
+    {"nombre": "Ley para la Transparencia y Ordenamiento de los Servicios Financieros, art. 23 (aclaraciones: 90 días)", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf"}
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Tu aguinaldo: falta poco más de un mes para la fecha límite",
+   "que_paso": "La ley dice que el aguinaldo se paga antes del 20 de diciembre. En 2026 el 20 cae en domingo, así que lo normal es que llegue a más tardar el sábado 19. Mínimo son 15 días de salario.",
+   "te_afecta": "Si ganas $15,000 al mes, tu aguinaldo mínimo es $7,500 (antes de impuestos; los primeros $3,519.30 no pagan ISR).",
+   "que_hacer": "Haz la cuenta hoy con tu sueldo: sueldo mensual entre 30, por 15. Si no completaste el año, es la parte proporcional.",
+   "fuentes": [
+    {"nombre": "Ley Federal del Trabajo, art. 87", "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf"},
+    {"nombre": "Expansión, 5-nov-2026", "url": "https://expansion.mx/finanzas-personales/2026/11/05/aguinaldo-2026-no-llega-completo-recupera-declaracion-anual"}
+   ]
+  },
+  {
+   "tema": "México",
+   "titulo": "Pensión IMSS: el pago de diciembre llega el martes 1",
+   "que_paso": "El calendario oficial del IMSS marca el pago de diciembre de las pensiones el martes 1. Para Ley 73 por cesantía o vejez, el aguinaldo ya se pagó en noviembre junto con la pensión.",
+   "te_afecta": "Si tus papás cobran pensión del IMSS, en diciembre no llega aguinaldo aparte: lo de noviembre tiene que alcanzar.",
+   "que_hacer": "Revisa el estado de cuenta de noviembre. Si no ves el aguinaldo, llama al IMSS: 800 623 2323, opción 3.",
+   "fuentes": [
+    {"nombre": "IMSS, calendario de pago de pensiones 2026", "url": "https://www.imss.gob.mx/sites/all/statics/pensiones/Pensiones-pago.pdf"},
+    {"nombre": "Expansión, calendario de pagos IMSS 2026", "url": "https://expansion.mx/finanzas-personales/2025/12/11/calendario-de-pagos-pension-imss-2026"}
+   ]
+  }
+ ],
+ "dato": "Aguinaldo mínimo: sueldo mensual ÷ 30 × 15. Con $15,000 al mes: $15,000 ÷ 30 × 15 = $7,500.",
+ "cierre": "El Buen Fin ya pasó; tus cuentas no. Revisa tu estado de cuenta este mes, no en enero. — Victoria"
+}
