@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-17T13:13:49Z",
+ "generado_utc": "2026-11-18T12:40:32Z",
  "estado": "aviso",
  "checks": [
   {
@@ -25,17 +25,12 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.00 · semana $1.66 de $7 · mes $69.19 de $28 (proyección del mes $122.09) · El espacio, semana $0.62 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $0.00 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $1.66 de $7 · mes $69.19 de $28 (proyección del mes $115.31) · El espacio, semana $1.13 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $0.00 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
    "estado": "ok",
    "detalle": "Everygen (Viewmax) 0/350 al mes · OpenArt 19 · Higgsfield 0.9 (leído 2026-11-12 14:03 UTC)"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
-   "detalle": "2026-11-17: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
@@ -48,9 +43,9 @@
    "detalle": "2026-11-19: TikTok 3, Instagram 2, YouTube 4, Facebook 3"
   },
   {
-   "area": "Serie",
+   "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-17: el primer TikTok es de la serie (c80)"
+   "detalle": "2026-11-20: TikTok 1, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: TikTok 1/3, Instagram 1/2, YouTube 2/3"
   },
   {
    "area": "Serie",
@@ -61,6 +56,11 @@
    "area": "Serie",
    "estado": "ok",
    "detalle": "2026-11-19: el primer TikTok es de la serie (c82)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-20: aún no tiene la parte de la serie; siguiente parte lista: c83 (prográmala como primer TikTok del día)"
   },
   {
    "area": "Videos largos",
@@ -130,7 +130,7 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "O1 (YouTube 1,041 vs mediana 166): ya tiene 3 clones"
+   "detalle": "O1 (YouTube 1,041 vs mediana 177): ya tiene 3 clones"
   }
  ]
 }

@@ -877,5 +877,10 @@
   },
   "gasto": "Hasta el 15-dic: nada nuevo en Replicate fuera de lo ya autorizado (reel-hormiga $2, lo que quede de largo-pension y sketch-tiktok). Formatos gratis.",
   "medir": "scripts/suscriptores_video.py (suscriptores por video de YouTube) cada lunes y en cada corte; seguidores netos por red en contenido/seguidores.json."
+ },
+ "alerta_meta": {
+  "desde": "2026-11-18",
+  "problema": "El secreto de red graph.facebook.com del entorno Default ahora es un token de \"Seis Estrellas Publicador\" (página Seis Estrellas), no el de Victoria. Todo lo que usa la API de Meta falla: historias IG/FB, Reels por ig_reel_musica, comentarios de IG, destacadas, historias_posts. Publer (TikTok/IG/FB programado) y YouTube siguen bien.",
+  "que_hacer": "Rodrigo: volver a guardar el token de Victoria o separar entornos (uno por marca). No publicar nada con el token de otra marca."
  }
 }

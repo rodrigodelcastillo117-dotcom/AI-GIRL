@@ -8,7 +8,7 @@
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 122.09,
+  "proyeccion_mes_usd": 115.31,
   "semana_desde": "2026-11-16",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
@@ -59,6 +59,11 @@
    "dia": "2026-11-17",
    "victoria": 0.0,
    "otro": 0.52
+  },
+  {
+   "dia": "2026-11-18",
+   "victoria": 0.0,
+   "otro": 0.0
   }
  ],
  "por_modelo": {
@@ -79,11 +84,12 @@
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 4,
   "stability-ai/stable-audio-2.5": 3,
-  "victor-upmeet/whisperx": 29,
-  "black-forest-labs/flux-1.1-pro": 113,
-  "elevenlabs/music": 10
+  "victor-upmeet/whisperx": 59,
+  "black-forest-labs/flux-1.1-pro": 119,
+  "elevenlabs/music": 22,
+  "851-labs/background-remover": 2
  },
  "incompleto": true,
- "generado_utc": "2026-11-18T02:15:57Z",
+ "generado_utc": "2026-11-18T12:44:05Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
