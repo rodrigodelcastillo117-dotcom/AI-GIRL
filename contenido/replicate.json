@@ -3,8 +3,8 @@
   "hoy_usd": 0.0,
   "semana_usd": 1.66,
   "mes_usd": 69.19,
-  "otro_canal_semana_usd": 0.62,
-  "otro_canal_mes_usd": 10.69,
+  "otro_canal_semana_usd": 1.13,
+  "otro_canal_mes_usd": 11.21,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
@@ -14,7 +14,7 @@
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 30.82,
+ "saldo_estimado_usd": 30.31,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -23,11 +23,11 @@
  ],
  "gastado_desde_base": {
   "victoria": 28.15,
-  "otro": 3.19
+  "otro": 3.71
  },
  "gastado_7_dias": {
   "victoria": 28.15,
-  "otro": 3.19
+  "otro": 3.71
  },
  "por_dia": [
   {
@@ -54,15 +54,20 @@
    "dia": "2026-11-16",
    "victoria": 1.66,
    "otro": 0.62
+  },
+  {
+   "dia": "2026-11-17",
+   "victoria": 0.0,
+   "otro": 0.52
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 21.56,
   "bytedance/seedance-1-pro": 5.25,
-  "minimax/video-01": 3.0,
+  "minimax/video-01": 3.5,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.19,
+  "black-forest-labs/flux-schnell": 0.21,
   "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.43,
@@ -70,14 +75,15 @@
   "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
   "google/nano-banana-pro": 11,
   "google/veo-3.1-fast": 21,
-  "meta/musicgen": 2,
+  "meta/musicgen": 9,
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 4,
   "stability-ai/stable-audio-2.5": 3,
-  "victor-upmeet/whisperx": 1,
-  "black-forest-labs/flux-1.1-pro": 11
+  "victor-upmeet/whisperx": 29,
+  "black-forest-labs/flux-1.1-pro": 113,
+  "elevenlabs/music": 10
  },
  "incompleto": true,
- "generado_utc": "2026-11-17T13:14:11Z",
+ "generado_utc": "2026-11-18T02:15:57Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

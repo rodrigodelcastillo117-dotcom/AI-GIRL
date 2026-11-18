@@ -21,7 +21,7 @@
     "publica_utc": "2026-11-15T19:00:00Z",
     "enlace": "https://youtube.com/shorts/lIX_szs8I0U",
     "video_id": "lIX_szs8I0U",
-    "vistas": 135
+    "vistas": 141
    }
   },
   "medidas": {
@@ -60,10 +60,17 @@
     "publica_utc": "2026-11-16T19:00:00Z",
     "enlace": "https://youtube.com/shorts/z5wDL0wLG2k",
     "video_id": "z5wDL0wLG2k",
-    "vistas": 91
+    "vistas": 121
    }
   },
-  "medidas": {},
+  "medidas": {
+   "yt": {
+    "d1": 121
+   },
+   "tt": {
+    "d1": 84
+   }
+  },
   "plan": {
    "tt": "2026-11-16T19:00:00Z",
    "yt": "2026-11-16T19:00:00Z"
@@ -89,7 +96,8 @@
    "yt": {
     "publica_utc": "2026-11-17T19:00:00Z",
     "enlace": "https://youtube.com/shorts/oaQYBJ9bvY8",
-    "video_id": "oaQYBJ9bvY8"
+    "video_id": "oaQYBJ9bvY8",
+    "vistas": 77
    }
   },
   "medidas": {},

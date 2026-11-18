@@ -8,9 +8,7 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-17",
@@ -19,11 +17,9 @@
   "que": "Sale el carrusel «Aguinaldo 2026 si ganas $8,000 al mes 💰»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00"
+   "tt": "09:06"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-17",
@@ -32,11 +28,9 @@
   "que": "Sale el carrusel «Pago doble Pensión Bienestar, es rumor 🔍»",
   "estado": "programado",
   "horas": {
-   "tt": "20:00"
+   "tt": "20:06"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-17",
@@ -61,10 +55,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-17",
@@ -80,19 +71,6 @@
   },
   "confirmado": [
    "fb",
-   "tt"
-  ]
- },
- {
-  "fecha": "2026-11-17",
-  "tipo": "publer",
-  "id": "",
-  "estado": "programado",
-  "que": "«Pagar igual ganando la mitad no es justo 💬 ¿Mitad y mitad o…»",
-  "horas": {
-   "tt": "13:00"
-  },
-  "confirmado": [
    "tt"
   ]
  },

@@ -347,8 +347,8 @@
    "yt": "2026-11-07T16:00:00Z",
    "fb": "2026-11-13T03:30:00Z"
   },
-  "v_yt": 119,
-  "l_yt": 5,
+  "v_yt": 133,
+  "l_yt": 6,
   "c_yt": 7,
   "s_yt": 0,
   "v_tt": 119,
@@ -412,7 +412,7 @@
    "yt": "2026-11-10T02:00:00Z",
    "fb": "2026-11-10T04:30:00Z"
   },
-  "v_yt": 189,
+  "v_yt": 194,
   "l_yt": 6,
   "c_yt": 10,
   "s_yt": 0,
@@ -449,7 +449,7 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 134,
+  "v_yt": 135,
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
@@ -495,7 +495,7 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 130,
+  "v_yt": 132,
   "l_yt": 4,
   "c_yt": 11,
   "s_yt": 0,
@@ -597,7 +597,7 @@
   "l_fb": 2,
   "c_fb": 2,
   "s_fb": 0,
-  "r_yt": 46.2,
+  "r_yt": 45.6,
   "c_yt_reales": 4,
   "c_ig_reales": 4
  },
@@ -1337,7 +1337,7 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 115,
+  "v_yt": 117,
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
@@ -1733,7 +1733,7 @@
   "l_fb": 1,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 53.4,
+  "r_yt": 54.1,
   "c_yt_reales": 6,
   "c_ig_reales": 4
  },
@@ -1823,7 +1823,7 @@
   "l_fb": 0,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 50.6,
+  "r_yt": 50.4,
   "c_yt_reales": 7,
   "c_ig_reales": 5
  },
@@ -1853,7 +1853,7 @@
    "yt": "2026-11-13T16:00:00Z",
    "fb": "2026-11-13T16:00:00Z"
   },
-  "v_yt": 385,
+  "v_yt": 384,
   "l_yt": 4,
   "c_yt": 15,
   "s_yt": 0,
@@ -1861,7 +1861,7 @@
   "l_tt": 5,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 59.6,
+  "r_yt": 58.4,
   "c_yt_reales": 7
  },
  {
@@ -2080,16 +2080,16 @@
   "fondo": "gimnasio-ciudad.jpg",
   "portada": "habla-yate.jpg",
   "horas": {
-   "tt": "2026-11-17 09:00"
+   "tt": "2026-11-17 09:06"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-17T15:00:00Z",
+  "publica_utc": "2026-11-17T15:06:42Z",
   "linea": "si ganas $8,000 al mes, tu aguinaldo mínimo es $4,000 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-17T15:00:00Z"
+   "tt": "2026-11-17T15:06:42Z"
   }
  },
  {
@@ -2206,16 +2206,16 @@
   "fondo": "rincon-lectura.jpg",
   "portada": "estilo-b-oficina-2.jpg",
   "horas": {
-   "tt": "2026-11-17 20:00"
+   "tt": "2026-11-17 20:06"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-18T02:00:00Z",
+  "publica_utc": "2026-11-18T02:06:01Z",
   "linea": "pago doble pensión bienestar en noviembre: lo verifiqué. sello: rumor 🔍",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-18T02:00:00Z"
+   "tt": "2026-11-18T02:06:01Z"
   }
  },
  {
@@ -2242,11 +2242,11 @@
    "yt": "2026-11-14T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
-  "v_yt": 330,
+  "v_yt": 348,
   "l_yt": 8,
-  "c_yt": 12,
+  "c_yt": 13,
   "s_yt": 0,
-  "r_yt": 80.7,
+  "r_yt": 85.2,
   "c_yt_reales": 6
  },
  {
@@ -2273,11 +2273,11 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 859,
+  "v_yt": 877,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 60.7,
+  "r_yt": 62.7,
   "c_yt_reales": 0
  },
  {
@@ -2304,6 +2304,10 @@
    "yt": "2026-11-17T23:00:00Z",
    "fb": "2026-11-17T23:00:00Z"
   },
+  "v_yt": 21,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -2330,10 +2334,11 @@
    "yt": "2026-11-15T23:00:00Z",
    "fb": "2026-11-15T23:00:00Z"
   },
-  "v_yt": 90,
+  "v_yt": 92,
   "l_yt": 0,
   "c_yt": 3,
   "s_yt": 0,
+  "r_yt": 91.3,
   "c_yt_reales": 0
  },
  {
@@ -2351,7 +2356,7 @@
    "fb": "2026-11-19 17:00"
   },
   "youtube_id": "Au_j37WjJNs",
-  "publica_utc": "",
+  "publica_utc": "2026-11-19T23:00:00Z",
   "linea": "semanas cotizadas imss: consúltelas gratis en 3 pasos 📄",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2386,7 +2391,7 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 156,
+  "v_yt": 206,
   "l_yt": 0,
   "c_yt": 3,
   "s_yt": 0,
@@ -2407,7 +2412,7 @@
    "fb": "2026-11-20 17:00"
   },
   "youtube_id": "PpGNvEGcTMk",
-  "publica_utc": "",
+  "publica_utc": "2026-11-20T23:00:00Z",
   "linea": "en qué afore estoy y cuánto tengo: se consulta gratis, hoy mismo 🔎",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2433,7 +2438,7 @@
    "fb": "2026-11-22 17:00"
   },
   "youtube_id": "WDGEAvYvzUg",
-  "publica_utc": "",
+  "publica_utc": "2026-11-22T23:00:00Z",
   "linea": "pensión mínima garantizada 2027: todavía no hay monto oficial 🔍",
   "tipo": "carrusel",
   "linea_reel": "",
@@ -2516,7 +2521,7 @@
    "fb": "2026-11-21 17:00"
   },
   "youtube_id": "LXAv88BDfJ8",
-  "publica_utc": "",
+  "publica_utc": "2026-11-21T23:00:00Z",
   "linea": "pensión issste diciembre 2026: llega el viernes 27 de noviembre 📅",
   "tipo": "carrusel",
   "linea_reel": "",
