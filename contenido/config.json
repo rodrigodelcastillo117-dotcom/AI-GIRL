@@ -501,8 +501,8 @@
  "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red. 9-nov-2026, más tarde: Rodrigo aprobó YouTube a 3 al día (para que no se atrase respecto a TikTok).",
  "prioridad_reel_ig": [],
  "nota_prioridad_reel_ig": "9-nov-2026: la revisión vespertina (20:13) pone aquí los carruseles que rompen en TikTok (3x la mediana) para que la rutina de las 6:37 los suba primero como Reel de Instagram y short de YouTube.",
- "facebook_victoria": "6af202cb29e54cb1259515de",
- "nota_facebook_victoria": "9-nov-2026: página \"Victoria the CEO\" conectada en Publer (Rodrigo quitó Ruedas Valientes para liberar el lugar). Todo lo que sale en Instagram (videos de Victoria y Reels de carrusel) sale también aquí, a la misma hora, como video normal de Facebook (no Reel: regla 28, para que no se duplique en el Instagram enlazado). No está en cuentas_publer a propósito: medir y el tablero siguen solo con Instagram y TikTok.",
+ "facebook_victoria": null,
+ "nota_facebook_victoria": "18-nov-2026: Rodrigo desconectó la página de Victoria en Facebook de Publer (\"desconecté victoria de facebook en publer\"). Mientras sea null, nada se programa en Facebook (publer.py la salta; --solo-facebook no aplica). Antes: 6af202cb29e54cb1259515de",
  "sonido_biblioteca_ig": {
   "dias": [],
   "nota": "Reemplazado el 9-nov-2026: TODOS los Reels de Instagram salen con música en tendencia de la biblioteca de Instagram, directo con la API de Meta (scripts/ig_reel_musica.py). Rodrigo ya no sube nada a mano."
@@ -882,5 +882,6 @@
   "desde": "2026-11-18",
   "problema": "El secreto de red graph.facebook.com del entorno Default ahora es un token de \"Seis Estrellas Publicador\" (página Seis Estrellas), no el de Victoria. Todo lo que usa la API de Meta falla: historias IG/FB, Reels por ig_reel_musica, comentarios de IG, destacadas, historias_posts. Publer (TikTok/IG/FB programado) y YouTube siguen bien.",
   "que_hacer": "Rodrigo: volver a guardar el token de Victoria o separar entornos (uno por marca). No publicar nada con el token de otra marca."
- }
+ },
+ "facebook_victoria_anterior": "6af202cb29e54cb1259515de"
 }

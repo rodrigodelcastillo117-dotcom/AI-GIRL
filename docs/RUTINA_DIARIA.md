@@ -69,6 +69,8 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - GANCHO DE IMPACTO (13-nov, Rodrigo: "hazlo con Replicate"): docs/GANCHOS.md → "Gancho de impacto". Mientras dure la
   prueba (config.json → prueba_gancho_impacto), 1 de cada 3 shorts hablados lleva gancho de impacto adaptado a su escena
   y tema (scripts/gancho_impacto.py generar → revisar cuadros → armar), hasta completar 3; anótalo en "hechos".
+- FACEBOOK DESCONECTADO (18-nov, Rodrigo lo quitó de Publer): config.json → facebook_victoria = null. No se programa
+  nada en Facebook (ni --solo-facebook ni historias de FB) hasta que Rodrigo lo vuelva a conectar.
 - CORTES DE VICTORIA (Rodrigo, 17-nov: "no sé si ya cancelar"): config.json → cortes_victoria. Línea base 17-nov
   (TikTok 1,172 · YouTube 547 · Instagram 62 · Facebook 4). 30-nov: menos de +50 netos sumados → proponer pausar.
   15-dic: menos de +150 o ninguna venta → pausar todo. Cada resumen diario abre con los seguidores netos desde la línea
