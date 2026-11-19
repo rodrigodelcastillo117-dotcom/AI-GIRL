@@ -1,10 +1,10 @@
 [
  {
   "canal": "@victoriatheceo",
-  "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
+  "frecuencia": "Al día: TikTok 3 · Instagram 0 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-19T15:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» (TikTok 09:00)",
+  "proxima_ejecucion_utc": "2026-11-19T23:00:00Z",
+  "proxima_que": "Sale el carrusel «Semanas cotizadas IMSS gratis en 3 pasos 📄» (YouTube 17:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -56,15 +56,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-19T15:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» (TikTok 09:00)"
-   },
-   {
     "utc": "2026-11-19T23:00:00Z",
     "que": "Sale el carrusel «Semanas cotizadas IMSS gratis en 3 pasos 📄» (YouTube 17:00)"
+   },
+   {
+    "utc": "2026-11-20T15:00:00Z",
+    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $20,000 al mes 💰» (TikTok 09:00)"
    }
   ],
-  "generado_utc": "2026-11-19T12:59:13Z",
+  "generado_utc": "2026-11-19T15:20:34Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -636,7 +636,7 @@
     "otro": 7.23
    },
    "gastado_7_dias": {
-    "victoria": 11.4,
+    "victoria": 6.76,
     "otro": 7.23
    },
    "por_dia": [
@@ -713,7 +713,7 @@
     "google/veo-3.1": 23
    },
    "incompleto": true,
-   "generado_utc": "2026-11-19T12:59:28Z",
+   "generado_utc": "2026-11-19T15:20:49Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -796,7 +796,7 @@
    }
   },
   "salud": {
-   "generado_utc": "2026-11-19T12:47:07Z",
+   "generado_utc": "2026-11-19T15:20:02Z",
    "estado": "aviso",
    "checks": [
     {
@@ -813,11 +813,6 @@
      "area": "Llaves",
      "estado": "ok",
      "detalle": "Replicate responde"
-    },
-    {
-     "area": "Llaves",
-     "estado": "ok",
-     "detalle": "Meta (Instagram y Facebook) responde"
     },
     {
      "area": "Gasto",
@@ -837,7 +832,7 @@
     {
      "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-20: TikTok 3, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: Instagram 1/2, YouTube 2/3"
+     "detalle": "2026-11-20: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
     },
     {
      "area": "Calendario",
@@ -890,24 +885,19 @@
      "detalle": "LC2: YouTube y Facebook 2026-11-26, con recortes"
     },
     {
-     "area": "Recortes",
-     "estado": "aviso",
-     "detalle": "LP1: subido sin recortes: recortes.py LP1"
-    },
-    {
-     "area": "Recortes",
-     "estado": "aviso",
-     "detalle": "LA1-c01: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-21T02:30): recortes.py publicar LA1-c01"
+     "area": "Videos largos",
+     "estado": "ok",
+     "detalle": "LP1: YouTube y Facebook 2026-11-19, con recortes"
     },
     {
      "area": "Recortes",
      "estado": "ok",
-     "detalle": "28 recortes con fecha (se suben 48 h antes): LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06"
+     "detalle": "33 recortes con fecha (se suben 48 h antes): LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
     },
     {
      "area": "Recortes",
      "estado": "ok",
-     "detalle": "14 recortes programados en las 4 redes"
+     "detalle": "16 recortes programados en las 4 redes"
     },
     {
      "area": "Cola",
@@ -922,12 +912,17 @@
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c16 (TikTok 4,238 vs mediana 180): ya tiene 4 clones"
+     "detalle": "c16 (TikTok 4,261 vs mediana 171): ya tiene 4 clones"
     },
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c70 (TikTok 1,063 vs mediana 180): ya tiene 4 clones"
+     "detalle": "c70 (TikTok 1,064 vs mediana 171): ya tiene 4 clones"
+    },
+    {
+     "area": "Ganadores",
+     "estado": "ok",
+     "detalle": "O1 (YouTube 1,043 vs mediana 166): ya tiene 3 clones"
     }
    ]
   },

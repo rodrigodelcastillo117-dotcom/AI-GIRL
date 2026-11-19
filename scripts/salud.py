@@ -72,7 +72,8 @@ def llaves():
     def meta():
         # El proxy de la sesión pone el token de la app "Victoria Comentarios" en graph.facebook.com.
         urllib.request.urlopen('https://graph.facebook.com/v22.0/me?fields=id', timeout=30).read()
-    probar('Meta (Instagram y Facebook)', meta)
+    if 'instagram' in leer('config.json', {}).get('redes_activas', ['instagram']):  # 19-nov: IG y FB cancelados
+        probar('Meta (Instagram y Facebook)', meta)
 
 
 def saldo():

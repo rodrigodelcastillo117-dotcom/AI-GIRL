@@ -420,6 +420,9 @@ def probar():
     """¿Ya hay Trial Reels? Arma un contenedor de prueba (no se publica; Meta lo borra solo en 24 h)."""
     import ig_reel_musica as ig
     c = conf()
+    if 'instagram' not in json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('redes_activas', ['instagram']):
+        print('Instagram cancelado por Rodrigo (19-nov-2026): no hay Trial Reels que probar.')
+        return
     seguidores = ig.graph('GET', f'{ig.IG}?fields=followers_count').get('followers_count', 0)
     lunes = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-6))).weekday() == 0
     if seguidores < c['min_seguidores_ig_trial'] and not lunes and '--forzar' not in sys.argv:

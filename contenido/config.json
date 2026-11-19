@@ -495,7 +495,7 @@
  "nota_dias_entre_videos": "9-nov-2026 (Rodrigo: \"me gusta la idea\"): carrusel diario (gratis) + 2 o 3 videos de Victoria a la semana, solo temas fuertes. Así los créditos alcanzan hasta la renovación del 28-nov.",
  "publicaciones_por_dia": {
   "tt": 3,
-  "ig": 2,
+  "ig": 0,
   "yt": 3
  },
  "nota_publicaciones_por_dia": "9-nov-2026, Rodrigo: \"TikTok 3 al día, YouTube 2, Instagram 2 (uno en la mañanita, otro en la tarde). El chiste es subir lo mismo en todas las redes, no perder ningún reel ni carrusel.\" El video de Victoria del día cuenta como una de esas publicaciones. Instagram: Reel del carrusel, uno antes de las 13:00 y otro después. Todo carrusel acaba en TikTok, Instagram y YouTube (hits primero, luego lo probado en TikTok, luego lo que más lleva esperando). A 3 h o más entre publicaciones de la misma red. 9-nov-2026, más tarde: Rodrigo aprobó YouTube a 3 al día (para que no se atrase respecto a TikTok).",
@@ -894,5 +894,18 @@
   "que_hacer": "Rodrigo: volver a guardar el token de Victoria o separar entornos (uno por marca). No publicar nada con el token de otra marca."
  },
  "facebook_victoria_anterior": "6af202cb29e54cb1259515de",
- "nota_instagram_nombre_publer": "18-nov-2026, Rodrigo: el Instagram se llamaba \"Nadie Te lo Explicó\" y lo cambió a Victoria; Publer todavía muestra el nombre viejo. Es la cuenta de Victoria (id 6a9658e6510cfb283e2fff83) y se queda para Victoria."
+ "nota_instagram_nombre_publer": "18-nov-2026, Rodrigo: el Instagram se llamaba \"Nadie Te lo Explicó\" y lo cambió a Victoria; Publer todavía muestra el nombre viejo. Es la cuenta de Victoria (id 6a9658e6510cfb283e2fff83) y se queda para Victoria.",
+ "redes_activas": [
+  "tiktok",
+  "youtube"
+ ],
+ "instagram_facebook_cancelados": {
+  "fecha": "2026-11-19",
+  "quien": "Rodrigo: \"si cancele instagram y facebook. NO FUNCIONABA NADA\"",
+  "efecto": "publer.py ya no elige la cuenta de Instagram; no se programa nada en IG ni FB, no se corren ig_reel_musica, historias_posts, comentarios_ig, destacadas, noticias.py historia/facebook ni variantes.py probar. Cortes de Victoria: solo cuentan TikTok y YouTube.",
+  "base_ig_fb_al_cerrar": {
+   "ig": 62,
+   "fb": 4
+  }
+ }
 }

@@ -146,7 +146,8 @@ def cuentas_victoria(ws):
     todas = _lista(_pedir('GET', '/accounts', ws), 'accounts')
     filtro = CONFIG['filtro_cuentas'].lower()
     ids = CONFIG.get('cuentas_publer', {})  # la de Instagram era "Nadie Te lo Explicó" y Publer guarda el nombre viejo
-    elegidas = [c for c in todas if c.get('provider') in REDES
+    activas = CONFIG.get('redes_activas', REDES)  # 19-nov-2026: Rodrigo canceló Instagram y Facebook
+    elegidas = [c for c in todas if c.get('provider') in REDES and c.get('provider') in activas
                 and (c['id'] in ids or filtro in (c.get('name') or '').lower())]
     return todas, elegidas
 

@@ -27,7 +27,8 @@
   "id": "destacadas",
   "texto": "Agregar las historias de hoy a sus destacadas",
   "como": "Te llega la lista a las 20:13: abre la historia → Destacar → elige.",
-  "hecho": false
+  "hecho": true,
+  "nota": "Ya no aplica: Instagram y Facebook cancelados el 19-nov-2026."
  },
  {
   "id": "drive-vonhaucke",
@@ -39,6 +40,7 @@
   "id": "llave-meta",
   "texto": "Regresar la llave de Meta de Victoria al entorno (hoy está la de Seis Estrellas Publicador)",
   "como": "Ajustes del entorno de Claude Code → secretos de red de graph.facebook.com: la llave de Victoria. Seis Estrellas en su propio entorno.",
-  "hecho": false
+  "hecho": true,
+  "nota": "Ya no aplica: Instagram y Facebook cancelados el 19-nov-2026."
  }
 ]

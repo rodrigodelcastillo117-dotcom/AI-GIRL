@@ -72,4 +72,7 @@ def main():
 
 
 if __name__ == '__main__':
+    import json as _j, os as _o, sys as _s
+    if 'instagram' not in _j.load(open(_o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))), 'contenido', 'config.json'))).get('redes_activas', ['instagram']):
+        _s.exit('Instagram y Facebook cancelados por Rodrigo (19-nov-2026): config.json → redes_activas. No se hace nada.')
     main()

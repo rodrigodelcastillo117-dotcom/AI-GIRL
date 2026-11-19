@@ -3,6 +3,19 @@
 La tarea programada diaria solo dice "sigue docs/RUTINA_DIARIA.md". Todo lo que hace está aquí, en el repo, para que se
 pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
 
+## 0000000. INSTAGRAM Y FACEBOOK CANCELADOS (Rodrigo, 19-nov-2026: "si cancelé instagram y facebook. NO FUNCIONABA NADA")
+MANDA SOBRE TODO LO DE ABAJO. Victoria vive solo en TikTok y YouTube (config.json → redes_activas).
+- No se programa nada en Instagram ni Facebook. publer.py ya no elige esas cuentas; historias_posts, comentarios_ig,
+  destacadas, ig_reel_musica, noticias.py historia/facebook/publicar y variantes.py probar salen sin hacer nada.
+- Se acaban: plan de Muse, historias, destacadas, Trial Reels, "Comenta hoy" de Instagram y la llave de Meta.
+- VICTORIA HOY EN PAUSA: existía para la historia de Instagram con enlace; sin Instagram nadie llega a /hoy. No se
+  escriben noticias diarias ni se manda la imagen a Rodrigo. La página se queda como está. Si Rodrigo la quiere de
+  vuelta, se reactiva aquí.
+- Cortes de Victoria (30-nov y 15-dic): se cuentan solo TikTok + YouTube contra la línea base del 17-nov
+  (TikTok 1,172 · YouTube 547).
+- Lo que sigue igual: serie de TikTok primero, carruseles, variantes en TikTok, cola de pensión en YouTube, largos,
+  recortes (YouTube + TikTok), comentarios de YouTube, suscriptores_video.py los lunes.
+
 ## 000. VICTORIA HOY — TODOS LOS DÍAS, sin excepción (Rodrigo, 12-nov-2026: "cada día noticias relevantes de México y el
 mundo… la subes a las historias de Victoria, que te mande a una página… cómo afecta al cliente. Hazlo digerible. TODOS LOS DÍAS")
 1. Busca (WebSearch) lo que movió el dinero de la gente en México y el mundo en las últimas 24-48 h: inflación, tasas

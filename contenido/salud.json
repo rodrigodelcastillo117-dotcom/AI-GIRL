@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-19T13:00:01Z",
+ "generado_utc": "2026-11-19T15:20:02Z",
  "estado": "aviso",
  "checks": [
   {
@@ -16,11 +16,6 @@
    "area": "Llaves",
    "estado": "ok",
    "detalle": "Replicate responde"
-  },
-  {
-   "area": "Llaves",
-   "estado": "ok",
-   "detalle": "Meta (Instagram y Facebook) responde"
   },
   {
    "area": "Gasto",

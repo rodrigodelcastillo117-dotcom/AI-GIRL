@@ -269,6 +269,9 @@ def publicar_fb(fecha=None):
 if __name__ == '__main__':
     accion = sys.argv[1] if len(sys.argv) > 1 else ''
     arg = sys.argv[2] if len(sys.argv) > 2 else None
+    redes = json.load(open(os.path.join(RAIZ, 'contenido', 'config.json'))).get('redes_activas', ['instagram'])
+    if accion in ('facebook', 'publicar') and 'instagram' not in redes:
+        sys.exit('Instagram y Facebook cancelados por Rodrigo (19-nov-2026): no se publica historia.')
     if accion == 'facebook':
         publicar_fb(arg)
         sys.exit(0)

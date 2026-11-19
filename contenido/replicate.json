@@ -26,7 +26,7 @@
   "otro": 7.23
  },
  "gastado_7_dias": {
-  "victoria": 11.4,
+  "victoria": 6.76,
   "otro": 7.23
  },
  "por_dia": [
@@ -103,6 +103,6 @@
   "google/veo-3.1": 23
  },
  "incompleto": true,
- "generado_utc": "2026-11-19T13:00:01Z",
+ "generado_utc": "2026-11-19T15:20:49Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
