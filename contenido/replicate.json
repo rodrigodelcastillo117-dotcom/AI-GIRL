@@ -1,20 +1,20 @@
 {
  "control": {
-  "hoy_usd": 1.77,
-  "semana_usd": 3.43,
-  "mes_usd": 70.96,
-  "otro_canal_semana_usd": 1.17,
-  "otro_canal_mes_usd": 11.25,
+  "hoy_usd": 1.71,
+  "semana_usd": 3.37,
+  "mes_usd": 70.9,
+  "otro_canal_semana_usd": 4.65,
+  "otro_canal_mes_usd": 14.73,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 118.26,
+  "proyeccion_mes_usd": 118.16,
   "semana_desde": "2026-11-16",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 28.5,
+ "saldo_estimado_usd": 25.08,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -22,12 +22,12 @@
   }
  ],
  "gastado_desde_base": {
-  "victoria": 29.92,
-  "otro": 3.75
+  "victoria": 29.86,
+  "otro": 7.23
  },
  "gastado_7_dias": {
-  "victoria": 29.92,
-  "otro": 3.75
+  "victoria": 29.86,
+  "otro": 7.23
  },
  "por_dia": [
   {
@@ -62,18 +62,19 @@
   },
   {
    "dia": "2026-11-18",
-   "victoria": 1.77,
-   "otro": 0.04
+   "victoria": 1.71,
+   "otro": 3.52
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 23.27,
   "bytedance/seedance-1-pro": 5.25,
-  "minimax/video-01": 3.5,
+  "minimax/video-01": 4.0,
+  "minimax/voice-cloning": 3.0,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.21,
-  "minimax/speech-02-hd": 0.1
+  "black-forest-labs/flux-schnell": 0.23,
+  "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
@@ -82,14 +83,18 @@
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 9,
   "resemble-ai/chatterbox-multilingual": 11,
-  "kwaivgi/kling-v2.5-turbo-pro": 4,
-  "stability-ai/stable-audio-2.5": 3,
-  "victor-upmeet/whisperx": 61,
+  "kwaivgi/kling-v2.5-turbo-pro": 24,
+  "stability-ai/stable-audio-2.5": 6,
+  "victor-upmeet/whisperx": 112,
   "black-forest-labs/flux-1.1-pro": 119,
-  "elevenlabs/music": 24,
-  "851-labs/background-remover": 2
+  "elevenlabs/music": 37,
+  "851-labs/background-remover": 7,
+  "minimax/speech-2.6-hd": 60,
+  "elevenlabs/v3": 10,
+  "nightmareai/real-esrgan": 10,
+  "anthropic/claude-4.5-sonnet": 1
  },
  "incompleto": true,
- "generado_utc": "2026-11-18T14:43:32Z",
+ "generado_utc": "2026-11-19T02:17:02Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

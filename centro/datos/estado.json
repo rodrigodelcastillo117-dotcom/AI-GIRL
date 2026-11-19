@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 2 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-18T15:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 si ganas $10,000 al mes 💰» (TikTok 09:00)",
+  "proxima_ejecucion_utc": "2026-11-19T15:00:00Z",
+  "proxima_que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» (TikTok 09:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -56,21 +56,20 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-18T15:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $10,000 al mes 💰» (TikTok 09:00)"
+    "utc": "2026-11-19T15:00:00Z",
+    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰» (TikTok 09:00)"
    },
    {
-    "utc": "2026-11-18T19:07:00Z",
-    "que": "Sale el video «Afore, así te baja los impuestos 💼» (Facebook 13:07 · Instagram 13:07 · TikTok 13:07 · YouTube 13:07)"
+    "utc": "2026-11-19T23:00:00Z",
+    "que": "Sale el carrusel «Semanas cotizadas IMSS gratis en 3 pasos 📄» (YouTube 17:00)"
    }
   ],
-  "generado_utc": "2026-11-18T12:43:52Z",
+  "generado_utc": "2026-11-19T02:16:49Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
    "6a9658e6510cfb283e2fff83": "instagram",
-   "6a96586502b3146e69fa11b0": "tiktok",
-   "6af202cb29e54cb1259515de": "facebook"
+   "6a96586502b3146e69fa11b0": "tiktok"
   },
   "publer_workspace": "69d88051883c731fdaac6c20",
   "canal_youtube": "UCGyza9C58eMH3VnGgkMPr1A",
@@ -369,7 +368,7 @@
    },
    {
     "fecha": "2026-11-18",
-    "v": 23476
+    "v": 15272
    }
   ],
   "serie_publicaciones": [
@@ -587,30 +586,30 @@
    },
    {
     "fecha": "2026-11-18",
-    "yt": 10397,
+    "yt": 2263,
     "tt": 12344,
     "ig": 661,
-    "fb": 74
+    "fb": 4
    }
   ],
   "foto_perfil": "data:image/jpeg;base64,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",
   "replicate": {
    "control": {
-    "hoy_usd": 0.0,
-    "semana_usd": 1.66,
-    "mes_usd": 69.19,
-    "otro_canal_semana_usd": 1.13,
-    "otro_canal_mes_usd": 11.21,
+    "hoy_usd": 1.71,
+    "semana_usd": 3.37,
+    "mes_usd": 70.9,
+    "otro_canal_semana_usd": 4.65,
+    "otro_canal_mes_usd": 14.73,
     "presupuesto_semanal_usd": 7,
     "presupuesto_mensual_usd": 28,
     "presupuesto_otro_canal_mensual_usd": 22,
-    "proyeccion_mes_usd": 115.31,
+    "proyeccion_mes_usd": 118.16,
     "semana_desde": "2026-11-16",
     "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
    },
    "saldo_base_usd": 27.16,
    "fecha_base_utc": "2026-11-12T06:22:02Z",
-   "saldo_estimado_usd": 30.31,
+   "saldo_estimado_usd": 25.08,
    "recargas_estimadas": [
     {
      "utc": "2026-11-12T14:49:22Z",
@@ -618,12 +617,12 @@
     }
    ],
    "gastado_desde_base": {
-    "victoria": 28.15,
-    "otro": 3.71
+    "victoria": 29.86,
+    "otro": 7.23
    },
    "gastado_7_dias": {
-    "victoria": 28.15,
-    "otro": 3.71
+    "victoria": 29.86,
+    "otro": 7.23
    },
    "por_dia": [
     {
@@ -658,35 +657,40 @@
     },
     {
      "dia": "2026-11-18",
-     "victoria": 0.0,
-     "otro": 0.0
+     "victoria": 1.71,
+     "otro": 3.52
     }
    ],
    "por_modelo": {
-    "prunaai/p-video-avatar": 21.56,
+    "prunaai/p-video-avatar": 23.27,
     "bytedance/seedance-1-pro": 5.25,
-    "minimax/video-01": 3.5,
+    "minimax/video-01": 4.0,
+    "minimax/voice-cloning": 3.0,
     "google/nano-banana": 0.74,
     "zsxkib/mmaudio": 0.6,
-    "black-forest-labs/flux-schnell": 0.21,
+    "black-forest-labs/flux-schnell": 0.23,
     "minimax/speech-02-hd": 0.0
    },
-   "costo_promedio_toma_usd": 0.43,
+   "costo_promedio_toma_usd": 0.46,
    "sin_precio": {
     "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
     "google/nano-banana-pro": 11,
     "google/veo-3.1-fast": 21,
     "meta/musicgen": 9,
     "resemble-ai/chatterbox-multilingual": 11,
-    "kwaivgi/kling-v2.5-turbo-pro": 4,
-    "stability-ai/stable-audio-2.5": 3,
-    "victor-upmeet/whisperx": 59,
+    "kwaivgi/kling-v2.5-turbo-pro": 24,
+    "stability-ai/stable-audio-2.5": 6,
+    "victor-upmeet/whisperx": 112,
     "black-forest-labs/flux-1.1-pro": 119,
-    "elevenlabs/music": 22,
-    "851-labs/background-remover": 2
+    "elevenlabs/music": 37,
+    "851-labs/background-remover": 7,
+    "minimax/speech-2.6-hd": 60,
+    "elevenlabs/v3": 10,
+    "nightmareai/real-esrgan": 10,
+    "anthropic/claude-4.5-sonnet": 1
    },
    "incompleto": true,
-   "generado_utc": "2026-11-18T12:44:05Z",
+   "generado_utc": "2026-11-19T02:17:02Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -757,7 +761,7 @@
      "clave": "reel-hormiga",
      "para": "Reel de MUSE \"3 gastos hormiga que en diciembre sí se notan\" (docs/muse/reel-gastos-hormiga-diciembre.md): Victoria hablando ~30 s, número en pantalla desde el segundo 1; sale el viernes 20-nov en Instagram y Facebook",
      "tope_usd": 2,
-     "gastado_usd": 0,
+     "gastado_usd": 1.71,
      "cerrada": false,
      "fecha": "2026-11-16"
     }
@@ -948,19 +952,17 @@
     "por_red": {
      "tt": 4238,
      "ig": 25,
-     "yt": 177,
-     "fb": 6
+     "yt": 0
     },
-    "total": 4446,
+    "total": 4263,
     "ultimas_24h": {
      "tt": 10,
      "ig": 0,
-     "yt": 0,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 231.6,
-    "por_dia": 461,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 245.2,
+    "por_dia": 417,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c70",
@@ -969,61 +971,17 @@
     "por_red": {
      "tt": 1063,
      "ig": 21,
-     "yt": 324,
-     "fb": 12
+     "yt": 0
     },
-    "total": 1420,
+    "total": 1084,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 0,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 141.6,
-    "por_dia": 241,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c65",
-    "tipo": "Carrusel",
-    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
-    "por_red": {
-     "tt": 350,
-     "ig": 14,
-     "yt": 859,
-     "fb": 1
-    },
-    "total": 1224,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 2,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 187.6,
-    "por_dia": 157,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "O1",
-    "tipo": "Video",
-    "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
-    "por_red": {
-     "tt": 87,
-     "ig": 22,
-     "yt": 1041,
-     "fb": 2
-    },
-    "total": 1152,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 164.7,
+    "horas": 155.1,
     "por_dia": 168,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c01",
@@ -1064,21 +1022,6 @@
     "medido_utc": "2026-11-13T14:49:45Z"
    },
    {
-    "id": "c87u",
-    "tipo": "Carrusel",
-    "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
-    "por_red": {
-     "yt": 886
-    },
-    "total": 886,
-    "ultimas_24h": {
-     "yt": 27
-    },
-    "horas": 85.7,
-    "por_dia": 248,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
     "id": "02",
     "tipo": "Video",
     "titulo": "Principio de Pareto y tu 20% de clientes 🎯",
@@ -1098,48 +1041,6 @@
     "medido_utc": "2026-11-15T12:39:26Z"
    },
    {
-    "id": "17",
-    "tipo": "Video",
-    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
-    "por_red": {
-     "tt": 124,
-     "ig": 35,
-     "yt": 618,
-     "fb": 7
-    },
-    "total": 784,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 0,
-     "yt": 4,
-     "fb": 0
-    },
-    "horas": 235.7,
-    "por_dia": 80,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "37",
-    "tipo": "Video",
-    "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
-    "por_red": {
-     "tt": 183,
-     "ig": 38,
-     "yt": 421,
-     "fb": 3
-    },
-    "total": 645,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 334.7,
-    "por_dia": 46,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
     "id": "c03",
     "tipo": "Carrusel",
     "titulo": "Reglas de dinero de Buffett y Munger 💡",
@@ -1157,46 +1058,6 @@
     "horas": 354.1,
     "por_dia": 43,
     "medido_utc": "2026-11-14T12:40:03Z"
-   },
-   {
-    "id": "c66",
-    "tipo": "Carrusel",
-    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
-    "por_red": {
-     "tt": 99,
-     "yt": 528,
-     "fb": 3
-    },
-    "total": 630,
-    "ultimas_24h": {
-     "tt": 3,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 181.7,
-    "por_dia": 83,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c08",
-    "tipo": "Carrusel",
-    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
-    "por_red": {
-     "tt": 185,
-     "ig": 18,
-     "yt": 393,
-     "fb": 2
-    },
-    "total": 598,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 285.6,
-    "por_dia": 50,
-    "medido_utc": "2026-11-18T12:40:35Z"
    },
    {
     "id": "c06",
@@ -1220,23 +1081,6 @@
     "medido_utc": "2026-11-18T12:40:35Z"
    },
    {
-    "id": "c71",
-    "tipo": "Carrusel",
-    "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
-    "por_red": {
-     "tt": 180,
-     "yt": 384
-    },
-    "total": 564,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 0
-    },
-    "horas": 117.6,
-    "por_dia": 115,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
     "id": "c02",
     "tipo": "Carrusel",
     "titulo": "Consejos de dinero que sí funcionan 💰",
@@ -1254,27 +1098,6 @@
     "horas": 354.7,
     "por_dia": 35,
     "medido_utc": "2026-11-14T12:40:03Z"
-   },
-   {
-    "id": "c52",
-    "tipo": "Carrusel",
-    "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
-    "por_red": {
-     "tt": 345,
-     "ig": 27,
-     "yt": 118,
-     "fb": 3
-    },
-    "total": 493,
-    "ultimas_24h": {
-     "tt": 26,
-     "ig": 4,
-     "yt": 3,
-     "fb": 0
-    },
-    "horas": 165.6,
-    "por_dia": 71,
-    "medido_utc": "2026-11-18T12:40:35Z"
    },
    {
     "id": "19",
@@ -1298,136 +1121,42 @@
     "medido_utc": "2026-11-17T12:39:47Z"
    },
    {
-    "id": "c86u",
+    "id": "c52",
     "tipo": "Carrusel",
-    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
     "por_red": {
-     "tt": 86,
-     "yt": 348
-    },
-    "total": 434,
-    "ultimas_24h": null,
-    "horas": 106.7,
-    "por_dia": 98,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c11",
-    "tipo": "Carrusel",
-    "titulo": "Finiquito y liquidación, qué te toca 📄",
-    "por_red": {
-     "tt": 203,
-     "yt": 197
-    },
-    "total": 400,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 8
-    },
-    "horas": 209.6,
-    "por_dia": 46,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "M2",
-    "tipo": "Video",
-    "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
-    "por_red": {
-     "tt": 114,
-     "ig": 31,
-     "yt": 226,
-     "fb": 6
-    },
-    "total": 377,
-    "ultimas_24h": {
-     "tt": 6,
-     "ig": 1,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 113.6,
-    "por_dia": 80,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c13",
-    "tipo": "Carrusel",
-    "titulo": "Recibo de nómina y el subsidio 2026 🧾",
-    "por_red": {
-     "tt": 215,
-     "ig": 13,
-     "yt": 133,
-     "fb": 6
-    },
-    "total": 367,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 3,
-     "fb": 0
-    },
-    "horas": 205.7,
-    "por_dia": 43,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c07",
-    "tipo": "Carrusel",
-    "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
-    "por_red": {
-     "tt": 267,
-     "ig": 20,
-     "yt": 68
-    },
-    "total": 355,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
+     "tt": 345,
+     "ig": 27,
      "yt": 0
     },
-    "horas": 310.6,
-    "por_dia": 27,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "total": 372,
+    "ultimas_24h": {
+     "tt": 26,
+     "ig": 4,
+     "yt": 0
+    },
+    "horas": 179.1,
+    "por_dia": 50,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "38",
-    "tipo": "Video",
-    "titulo": "Meses sin intereses en el Buen Fin 💳",
+    "id": "c65",
+    "tipo": "Carrusel",
+    "titulo": "IPAB cuánto protege si tu banco quiebra 🏦",
     "por_red": {
-     "tt": 199,
-     "ig": 24,
-     "yt": 126,
-     "fb": 1
+     "tt": 350,
+     "ig": 14,
+     "yt": 0
     },
-    "total": 350,
+    "total": 364,
     "ultimas_24h": {
      "tt": 0,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
+     "ig": 2,
+     "yt": 0
     },
-    "horas": 279.7,
-    "por_dia": 30,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c74",
-    "tipo": "Carrusel",
-    "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
-    "por_red": {
-     "tt": 209,
-     "yt": 111,
-     "fb": 9
-    },
-    "total": 329,
-    "ultimas_24h": {
-     "tt": 4,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 133.7,
-    "por_dia": 59,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 201.1,
+    "por_dia": 43,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c78",
@@ -1440,125 +1169,138 @@
     "ultimas_24h": {
      "tt": 3
     },
-    "horas": 63.6,
-    "por_dia": 122,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 77.1,
+    "por_dia": 101,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "c68",
+    "id": "c07",
     "tipo": "Carrusel",
-    "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
+    "titulo": "Tarjeta de crédito y 5 trampas que evitar 💳",
     "por_red": {
-     "tt": 82,
-     "ig": 9,
-     "yt": 207,
-     "fb": 1
+     "tt": 267,
+     "ig": 20,
+     "yt": 0
     },
-    "total": 299,
-    "ultimas_24h": {
-     "tt": 2,
-     "ig": 0,
-     "yt": 0,
-     "fb": 0
-    },
-    "horas": 137.6,
-    "por_dia": 52,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c09",
-    "tipo": "Carrusel",
-    "titulo": "Ahorro voluntario Afore y tus impuestos 🧾",
-    "por_red": {
-     "tt": 119,
-     "ig": 18,
-     "yt": 134,
-     "fb": 1
-    },
-    "total": 272,
+    "total": 287,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 15,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 260.7,
+    "horas": 324.2,
+    "por_dia": 21,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c13",
+    "tipo": "Carrusel",
+    "titulo": "Recibo de nómina y el subsidio 2026 🧾",
+    "por_red": {
+     "tt": 215,
+     "ig": 13,
+     "yt": 0
+    },
+    "total": 228,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 219.3,
     "por_dia": 25,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "c12",
-    "tipo": "Carrusel",
-    "titulo": "Días de vacaciones por ley en 2026 🌴",
+    "id": "38",
+    "tipo": "Video",
+    "titulo": "Meses sin intereses en el Buen Fin 💳",
     "por_red": {
-     "tt": 91,
+     "tt": 199,
      "ig": 24,
-     "yt": 135,
-     "fb": 2
+     "yt": 0
     },
-    "total": 252,
+    "total": 223,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 1,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 213.6,
-    "por_dia": 28,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 293.3,
+    "por_dia": 18,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "c04",
-    "tipo": "Carrusel",
-    "titulo": "Lecciones de negocio que valen millones 💼",
+    "id": "37",
+    "tipo": "Video",
+    "titulo": "Buen Fin 2026 y las ofertas que no bajan 🏷️",
     "por_red": {
-     "tt": 171,
-     "yt": 68
+     "tt": 183,
+     "ig": 38,
+     "yt": 0
     },
-    "total": 239,
+    "total": 221,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 348.3,
+    "por_dia": 15,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c74",
+    "tipo": "Carrusel",
+    "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
+    "por_red": {
+     "tt": 209,
+     "yt": 0
+    },
+    "total": 209,
+    "ultimas_24h": {
+     "tt": 4,
+     "yt": 0
+    },
+    "horas": 147.3,
+    "por_dia": 34,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c08",
+    "tipo": "Carrusel",
+    "titulo": "Gastos hormiga que se comen tu sueldo ☕",
+    "por_red": {
+     "tt": 185,
+     "ig": 18,
+     "yt": 0
+    },
+    "total": 203,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 299.1,
+    "por_dia": 16,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c11",
+    "tipo": "Carrusel",
+    "titulo": "Finiquito y liquidación, qué te toca 📄",
+    "por_red": {
+     "tt": 203,
+     "yt": 0
+    },
+    "total": 203,
     "ultimas_24h": {
      "tt": 0,
      "yt": 0
     },
-    "horas": 325.7,
-    "por_dia": 18,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "M1",
-    "tipo": "Video",
-    "titulo": "Buen Fin 2026, 3 errores con tu tarjeta 💳",
-    "por_red": {
-     "tt": 119,
-     "ig": 20,
-     "yt": 97,
-     "fb": 3
-    },
-    "total": 239,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 0,
-     "yt": 1,
-     "fb": 0
-    },
-    "horas": 137.8,
-    "por_dia": 42,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c91u",
-    "tipo": "Carrusel",
-    "titulo": "Pensión Bienestar enero 2027, aún sin fecha 🔍",
-    "por_red": {
-     "yt": 229
-    },
-    "total": 229,
-    "ultimas_24h": {
-     "yt": 73
-    },
-    "horas": 37.7,
-    "por_dia": 146,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 223.1,
+    "por_dia": 22,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c79",
@@ -1571,9 +1313,62 @@
     "ultimas_24h": {
      "tt": 0
     },
-    "horas": 45.6,
-    "por_dia": 97,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 59.1,
+    "por_dia": 75,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c71",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
+    "por_red": {
+     "tt": 180,
+     "yt": 0
+    },
+    "total": 180,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 131.1,
+    "por_dia": 33,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c04",
+    "tipo": "Carrusel",
+    "titulo": "Lecciones de negocio que valen millones 💼",
+    "por_red": {
+     "tt": 171,
+     "yt": 0
+    },
+    "total": 171,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 339.3,
+    "por_dia": 12,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "17",
+    "tipo": "Video",
+    "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
+    "por_red": {
+     "tt": 124,
+     "ig": 35,
+     "yt": 0
+    },
+    "total": 159,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 249.3,
+    "por_dia": 15,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c43",
@@ -1582,19 +1377,112 @@
     "por_red": {
      "tt": 136,
      "ig": 15,
-     "yt": 9,
-     "fb": 2
+     "yt": 0
     },
-    "total": 162,
+    "total": 151,
     "ultimas_24h": {
      "tt": 0,
      "ig": 0,
-     "yt": 0,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 186.7,
-    "por_dia": 21,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 200.3,
+    "por_dia": 18,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "M2",
+    "tipo": "Video",
+    "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
+    "por_red": {
+     "tt": 114,
+     "ig": 31,
+     "yt": 0
+    },
+    "total": 145,
+    "ultimas_24h": {
+     "tt": 6,
+     "ig": 1,
+     "yt": 0
+    },
+    "horas": 127.1,
+    "por_dia": 27,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "M1",
+    "tipo": "Video",
+    "titulo": "Buen Fin 2026, 3 errores con tu tarjeta 💳",
+    "por_red": {
+     "tt": 119,
+     "ig": 20,
+     "yt": 0
+    },
+    "total": 139,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 151.4,
+    "por_dia": 22,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c09",
+    "tipo": "Carrusel",
+    "titulo": "Ahorro voluntario Afore y tus impuestos 🧾",
+    "por_red": {
+     "tt": 119,
+     "ig": 18,
+     "yt": 0
+    },
+    "total": 137,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 274.3,
+    "por_dia": 12,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c12",
+    "tipo": "Carrusel",
+    "titulo": "Días de vacaciones por ley en 2026 🌴",
+    "por_red": {
+     "tt": 91,
+     "ig": 24,
+     "yt": 0
+    },
+    "total": 115,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 227.1,
+    "por_dia": 12,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "O1",
+    "tipo": "Video",
+    "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
+    "por_red": {
+     "tt": 87,
+     "ig": 22,
+     "yt": 0
+    },
+    "total": 109,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 178.3,
+    "por_dia": 15,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "E1",
@@ -1603,19 +1491,34 @@
     "por_red": {
      "tt": 73,
      "ig": 34,
-     "yt": 44,
-     "fb": 0
+     "yt": 0
     },
-    "total": 151,
+    "total": 107,
     "ultimas_24h": {
      "tt": 0,
      "ig": 3,
-     "yt": 2,
-     "fb": 0
+     "yt": 0
     },
-    "horas": 89.6,
-    "por_dia": 40,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 103.1,
+    "por_dia": 25,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c66",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2026 al mes y por quincena 💵",
+    "por_red": {
+     "tt": 99,
+     "yt": 0
+    },
+    "total": 99,
+    "ultimas_24h": {
+     "tt": 3,
+     "yt": 0
+    },
+    "horas": 195.3,
+    "por_dia": 12,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c27",
@@ -1623,50 +1526,35 @@
     "titulo": "Gastos en pareja proporcionales al sueldo 💑",
     "por_red": {
      "tt": 93,
-     "yt": 53
+     "yt": 0
     },
-    "total": 146,
+    "total": 93,
     "ultimas_24h": {
      "tt": 0,
      "yt": 0
     },
-    "horas": 154.7,
-    "por_dia": 23,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 168.3,
+    "por_dia": 13,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "c69",
+    "id": "c68",
     "tipo": "Carrusel",
-    "titulo": "Calculadoras de finanzas personales gratis 🧮",
+    "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
     "por_red": {
-     "tt": 78,
+     "tt": 82,
      "ig": 9,
-     "yt": 50
+     "yt": 0
     },
-    "total": 137,
+    "total": 91,
     "ultimas_24h": {
-     "tt": 1,
+     "tt": 2,
      "ig": 0,
-     "yt": 3
+     "yt": 0
     },
-    "horas": 113.6,
-    "por_dia": 29,
-    "medido_utc": "2026-11-18T12:40:35Z"
-   },
-   {
-    "id": "c89u",
-    "tipo": "Carrusel",
-    "titulo": "Modalidad 40 cambió el 22 de octubre ⚠️",
-    "por_red": {
-     "yt": 95
-    },
-    "total": 95,
-    "ultimas_24h": {
-     "yt": 5
-    },
-    "horas": 61.7,
-    "por_dia": 37,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 151.1,
+    "por_dia": 14,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c77",
@@ -1681,9 +1569,45 @@
      "tt": 8,
      "ig": 4
     },
-    "horas": 42.4,
-    "por_dia": 50,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "horas": 56.0,
+    "por_dia": 38,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c69",
+    "tipo": "Carrusel",
+    "titulo": "Calculadoras de finanzas personales gratis 🧮",
+    "por_red": {
+     "tt": 78,
+     "ig": 9,
+     "yt": 0
+    },
+    "total": 87,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 127.1,
+    "por_dia": 16,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c86u",
+    "tipo": "Carrusel",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "por_red": {
+     "tt": 86,
+     "yt": 0
+    },
+    "total": 86,
+    "ultimas_24h": {
+     "tt": 86,
+     "yt": 0
+    },
+    "horas": 120.3,
+    "por_dia": 17,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c80",
@@ -1693,23 +1617,57 @@
      "tt": 64
     },
     "total": 64,
-    "ultimas_24h": null,
-    "horas": 21.6,
-    "por_dia": 64,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "ultimas_24h": {
+     "tt": 64
+    },
+    "horas": 35.1,
+    "por_dia": 44,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
-    "id": "c88u",
+    "id": "c87u",
     "tipo": "Carrusel",
-    "titulo": "Ley 73 o Ley 97, su fecha de alta decide 🗓️",
+    "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
     "por_red": {
-     "yt": 55
+     "yt": 0
     },
-    "total": 55,
-    "ultimas_24h": null,
-    "horas": 13.7,
-    "por_dia": 55,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "total": 0,
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 99.3,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c89u",
+    "tipo": "Carrusel",
+    "titulo": "Modalidad 40 cambió el 22 de octubre ⚠️",
+    "por_red": {
+     "yt": 0
+    },
+    "total": 0,
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 75.3,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c91u",
+    "tipo": "Carrusel",
+    "titulo": "Pensión Bienestar enero 2027, aún sin fecha 🔍",
+    "por_red": {
+     "yt": 0
+    },
+    "total": 0,
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 51.3,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
    },
    {
     "id": "c86",
@@ -1717,10 +1675,43 @@
     "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
     "por_red": {},
     "total": 0,
-    "ultimas_24h": null,
-    "horas": 10.6,
+    "ultimas_24h": {},
+    "horas": 24.2,
     "por_dia": 0,
-    "medido_utc": "2026-11-18T12:40:35Z"
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c88u",
+    "tipo": "Carrusel",
+    "titulo": "Ley 73 o Ley 97, su fecha de alta decide 🗓️",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": {},
+    "horas": 27.3,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "M4",
+    "tipo": "Video",
+    "titulo": "Afore, así te baja los impuestos 💼",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 7.1,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
+   },
+   {
+    "id": "c81",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 si ganas $10,000 al mes 💰",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 11.1,
+    "por_dia": 0,
+    "medido_utc": "2026-11-19T02:15:07Z"
    }
   ]
  }

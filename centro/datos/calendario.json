@@ -11,11 +11,7 @@
    "fb": "13:07",
    "yt": "13:07"
   },
-  "confirmado": [
-   "ig",
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-18",
@@ -24,11 +20,9 @@
   "que": "Sale el carrusel «Aguinaldo 2026 si ganas $10,000 al mes 💰»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00"
+   "tt": "09:08"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-18",
@@ -37,12 +31,9 @@
   "estado": "programado",
   "que": "Video largo: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero",
   "horas": {
-   "yt": "18:00",
-   "fb": "18:00"
+   "yt": "18:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-18",
@@ -56,10 +47,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "fb",
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-18",
@@ -74,20 +62,6 @@
    "fb": "21:30"
   },
   "confirmado": [
-   "fb",
-   "tt"
-  ]
- },
- {
-  "fecha": "2026-11-18",
-  "tipo": "publer",
-  "id": "",
-  "estado": "programado",
-  "que": "«¿30 días de aguinaldo este año? Lo verifiqué 💬 ¿Qué rumor…»",
-  "horas": {
-   "tt": "19:00"
-  },
-  "confirmado": [
    "tt"
   ]
  },
@@ -100,9 +74,7 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-19",
@@ -153,12 +125,9 @@
   "estado": "programado",
   "que": "Video largo: Aguinaldo 2026 e ISR: cuánto te descuentan y cuánto es exento",
   "horas": {
-   "yt": "18:45",
-   "fb": "18:45"
+   "yt": "18:45"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-19",
@@ -173,7 +142,6 @@
    "fb": "15:00"
   },
   "confirmado": [
-   "fb",
    "tt"
   ]
  },
@@ -190,7 +158,6 @@
    "fb": "21:30"
   },
   "confirmado": [
-   "fb",
    "tt"
   ]
  },
@@ -203,8 +170,19 @@
   "horas": {
    "fb": "17:00"
   },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-20",
+  "tipo": "reel",
+  "id": "c98",
+  "estado": "programado",
+  "que": "Reel del carrusel «Gastos hormiga, $2,850 al mes en diciembre ☕» (el mismo video del Short)",
+  "horas": {
+   "ig": "11:00"
+  },
   "confirmado": [
-   "fb"
+   "ig"
   ]
  },
  {
@@ -268,9 +246,7 @@
   "horas": {
    "fb": "17:00"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-21",
@@ -317,12 +293,9 @@
   "estado": "programado",
   "que": "Video largo: Tarjeta de crédito en diciembre: cómo usarla sin endeudarte",
   "horas": {
-   "yt": "18:45",
-   "fb": "18:45"
+   "yt": "18:45"
   },
-  "confirmado": [
-   "fb"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-21",
@@ -371,6 +344,17 @@
   "estado": "programado",
   "horas": {
    "yt": "17:00"
+  },
+  "confirmado": []
+ },
+ {
+  "fecha": "2026-11-22",
+  "tipo": "carrusel",
+  "id": "c99",
+  "que": "Sale el carrusel «Fechas de diciembre de tu dinero, guárdalas 📅»",
+  "estado": "programado",
+  "horas": {
+   "ig": "11:00"
   },
   "confirmado": []
  },

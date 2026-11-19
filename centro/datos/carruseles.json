@@ -39,8 +39,7 @@
   "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 49.1,
-  "c_yt_reales": 3
+  "r_yt": 49.1
  },
  {
   "id": "c02",
@@ -82,8 +81,7 @@
   "l_ig": 6,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 20.5,
-  "c_yt_reales": 3
+  "r_yt": 20.5
  },
  {
   "id": "c03",
@@ -125,8 +123,7 @@
   "l_ig": 8,
   "c_ig": 12,
   "s_ig": 2,
-  "r_yt": 40.1,
-  "c_yt_reales": 3
+  "r_yt": 40.1
  },
  {
   "id": "c04",
@@ -152,16 +149,15 @@
    "tt": "2026-11-04T23:05:40Z",
    "yt": "2026-11-04T23:00:00Z"
   },
-  "v_yt": 68,
-  "l_yt": 1,
-  "c_yt": 9,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 171,
   "l_tt": 4,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 38.6,
-  "c_yt_reales": 4
+  "r_yt": 38.6
  },
  {
   "id": "c05",
@@ -226,8 +222,7 @@
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 82.0,
-  "c_yt_reales": 5
+  "r_yt": 82.0
  },
  {
   "id": "c07",
@@ -255,9 +250,9 @@
    "tt": "2026-11-05T19:05:48Z",
    "yt": "2026-11-05T16:00:00Z"
   },
-  "v_yt": 68,
-  "l_yt": 1,
-  "c_yt": 9,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 267,
   "l_tt": 8,
@@ -267,8 +262,7 @@
   "l_ig": 13,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 160.1,
-  "c_yt_reales": 4
+  "r_yt": 160.1
  },
  {
   "id": "c08",
@@ -296,9 +290,9 @@
    "yt": "2026-11-06T20:00:00Z",
    "fb": "2026-11-12T15:30:00Z"
   },
-  "v_yt": 393,
-  "l_yt": 7,
-  "c_yt": 9,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 185,
   "l_tt": 5,
@@ -308,12 +302,7 @@
   "l_ig": 5,
   "c_ig": 6,
   "s_ig": 0,
-  "v_fb": 2,
-  "l_fb": 1,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 44.3,
-  "c_yt_reales": 4
+  "r_yt": 44.3
  },
  {
   "id": "c09",
@@ -341,9 +330,9 @@
    "yt": "2026-11-07T16:00:00Z",
    "fb": "2026-11-13T03:30:00Z"
   },
-  "v_yt": 134,
-  "l_yt": 6,
-  "c_yt": 7,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 119,
   "l_tt": 1,
@@ -353,12 +342,7 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "v_fb": 1,
-  "l_fb": 1,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 61.9,
-  "c_yt_reales": 4
+  "r_yt": 61.5
  },
  {
   "id": "c10",
@@ -405,16 +389,15 @@
    "yt": "2026-11-10T02:00:00Z",
    "fb": "2026-11-10T04:30:00Z"
   },
-  "v_yt": 197,
-  "l_yt": 6,
-  "c_yt": 10,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 203,
   "l_tt": 8,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 73.1,
-  "c_yt_reales": 5
+  "r_yt": 73.1
  },
  {
   "id": "c12",
@@ -442,9 +425,9 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 135,
-  "l_yt": 2,
-  "c_yt": 8,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 91,
   "l_tt": 4,
@@ -454,12 +437,7 @@
   "l_ig": 4,
   "c_ig": 7,
   "s_ig": 0,
-  "v_fb": 2,
-  "l_fb": 2,
-  "c_fb": 1,
-  "s_fb": 1,
-  "r_yt": 96.4,
-  "c_yt_reales": 4
+  "r_yt": 96.4
  },
  {
   "id": "c13",
@@ -487,9 +465,9 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 133,
-  "l_yt": 4,
-  "c_yt": 11,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 215,
   "l_tt": 2,
@@ -499,12 +477,7 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "v_fb": 6,
-  "l_fb": 0,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 56.6,
-  "c_yt_reales": 5
+  "r_yt": 57.0
  },
  {
   "id": "c14",
@@ -572,9 +545,9 @@
    "ig": "2026-11-12T00:32:30Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 177,
-  "l_yt": 2,
-  "c_yt": 8,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 4238,
   "l_tt": 71,
@@ -584,12 +557,7 @@
   "l_ig": 11,
   "c_ig": 10,
   "s_ig": 0,
-  "v_fb": 6,
-  "l_fb": 2,
-  "c_fb": 2,
-  "s_fb": 0,
-  "r_yt": 45.6,
-  "c_yt_reales": 4
+  "r_yt": 45.6
  },
  {
   "id": "c17",
@@ -807,16 +775,15 @@
    "yt": "2026-11-12T02:00:00Z",
    "fb": "2026-11-12T02:00:00Z"
   },
-  "v_yt": 53,
-  "l_yt": 2,
-  "c_yt": 11,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 93,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 69.8,
-  "c_yt_reales": 6
+  "r_yt": 69.8
  },
  {
   "id": "c28",
@@ -1148,9 +1115,9 @@
    "yt": "2026-11-10T18:00:00Z",
    "fb": "2026-11-10T21:00:00Z"
   },
-  "v_yt": 9,
-  "l_yt": 2,
-  "c_yt": 9,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 136,
   "l_tt": 6,
@@ -1160,12 +1127,7 @@
   "l_ig": 4,
   "c_ig": 5,
   "s_ig": 0,
-  "v_fb": 2,
-  "l_fb": 2,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 64.2,
-  "c_yt_reales": 5
+  "r_yt": 64.2
  },
  {
   "id": "c44",
@@ -1326,9 +1288,9 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 118,
-  "l_yt": 3,
-  "c_yt": 10,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 345,
   "l_tt": 4,
@@ -1338,12 +1300,7 @@
   "l_ig": 4,
   "c_ig": 2,
   "s_ig": 0,
-  "v_fb": 3,
-  "l_fb": 1,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 81.9,
-  "c_yt_reales": 6
+  "r_yt": 81.9
  },
  {
   "id": "c53",
@@ -1599,9 +1556,9 @@
    "yt": "2026-11-11T02:00:00Z",
    "fb": "2026-11-11T02:00:00Z"
   },
-  "v_yt": 859,
-  "l_yt": 7,
-  "c_yt": 11,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 350,
   "l_tt": 3,
@@ -1611,12 +1568,7 @@
   "l_ig": 5,
   "c_ig": 2,
   "s_ig": 0,
-  "v_fb": 1,
-  "l_fb": 2,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 41.3,
-  "c_yt_reales": 6
+  "r_yt": 41.3
  },
  {
   "id": "c66",
@@ -1644,20 +1596,15 @@
    "yt": "2026-11-10T23:00:00Z",
    "fb": "2026-11-10T23:00:00Z"
   },
-  "v_yt": 528,
-  "l_yt": 10,
-  "c_yt": 9,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 99,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0,
-  "v_fb": 3,
-  "l_fb": 3,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 52.8,
-  "c_yt_reales": 5
+  "r_yt": 52.8
  },
  {
   "id": "c67",
@@ -1704,9 +1651,9 @@
    "tt": "2026-11-12T19:06:25Z",
    "yt": "2026-11-13T02:00:00Z"
   },
-  "v_yt": 207,
+  "v_yt": 0,
   "l_yt": 0,
-  "c_yt": 11,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 82,
   "l_tt": 2,
@@ -1716,12 +1663,7 @@
   "l_ig": 6,
   "c_ig": 9,
   "s_ig": 2,
-  "v_fb": 1,
-  "l_fb": 1,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 54.1,
-  "c_yt_reales": 6
+  "r_yt": 54.1
  },
  {
   "id": "c69",
@@ -1751,9 +1693,9 @@
    "yt": "2026-11-13T23:00:00Z",
    "fb": "2026-11-13T23:00:00Z"
   },
-  "v_yt": 50,
-  "l_yt": 5,
-  "c_yt": 11,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 78,
   "l_tt": 2,
@@ -1763,8 +1705,7 @@
   "l_ig": 5,
   "c_ig": 4,
   "s_ig": 0,
-  "r_yt": 98.6,
-  "c_yt_reales": 5
+  "r_yt": 98.6
  },
  {
   "id": "c70",
@@ -1792,9 +1733,9 @@
    "yt": "2026-11-12T18:00:00Z",
    "fb": "2026-11-12T17:00:00Z"
   },
-  "v_yt": 324,
-  "l_yt": 6,
-  "c_yt": 15,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 1063,
   "l_tt": 5,
@@ -1804,12 +1745,7 @@
   "l_ig": 5,
   "c_ig": 11,
   "s_ig": 0,
-  "v_fb": 12,
-  "l_fb": 0,
-  "c_fb": 1,
-  "s_fb": 0,
-  "r_yt": 50.4,
-  "c_yt_reales": 7
+  "r_yt": 50.2
  },
  {
   "id": "c71",
@@ -1837,16 +1773,15 @@
    "yt": "2026-11-13T16:00:00Z",
    "fb": "2026-11-13T16:00:00Z"
   },
-  "v_yt": 384,
-  "l_yt": 4,
-  "c_yt": 15,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 180,
   "l_tt": 5,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 58.4,
-  "c_yt_reales": 7
+  "r_yt": 58.2
  },
  {
   "id": "c72",
@@ -1912,20 +1847,15 @@
    "yt": "2026-11-12T23:00:00Z",
    "fb": "2026-11-17T00:00:00Z"
   },
-  "v_yt": 111,
-  "l_yt": 3,
-  "c_yt": 14,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 209,
   "l_tt": 5,
   "c_tt": 1,
   "s_tt": 0,
-  "v_fb": 9,
-  "l_fb": 1,
-  "c_fb": 2,
-  "s_fb": 0,
-  "r_yt": 169.1,
-  "c_yt_reales": 7
+  "r_yt": 169.1
  },
  {
   "id": "c75",
@@ -2090,16 +2020,16 @@
   "fondo": "recamara.jpg",
   "portada": "dinamica-gancho-cafe-caja.jpg",
   "horas": {
-   "tt": "2026-11-18 09:00"
+   "tt": "2026-11-18 09:08"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-18T15:00:00Z",
+  "publica_utc": "2026-11-18T15:08:37Z",
   "linea": "si ganas $10,000 al mes, tu aguinaldo mínimo es $5,000 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-18T15:00:00Z"
+   "tt": "2026-11-18T15:08:37Z"
   }
  },
  {
@@ -2229,16 +2159,15 @@
    "yt": "2026-11-14T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
-  "v_yt": 348,
-  "l_yt": 8,
-  "c_yt": 13,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
   "v_tt": 86,
   "l_tt": 1,
   "c_tt": 0,
   "s_tt": 1,
-  "r_yt": 85.2,
-  "c_yt_reales": 6
+  "r_yt": 83.3
  },
  {
   "id": "c87u",
@@ -2264,12 +2193,11 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 886,
-  "l_yt": 6,
-  "c_yt": 3,
+  "v_yt": 0,
+  "l_yt": 0,
+  "c_yt": 0,
   "s_yt": 0,
-  "r_yt": 62.7,
-  "c_yt_reales": 0
+  "r_yt": 63.0
  },
  {
   "id": "c88u",
@@ -2294,12 +2222,7 @@
   "publica_utc_por_red": {
    "yt": "2026-11-17T23:00:00Z",
    "fb": "2026-11-17T23:00:00Z"
-  },
-  "v_yt": 55,
-  "l_yt": 1,
-  "c_yt": 2,
-  "s_yt": 0,
-  "c_yt_reales": 0
+  }
  },
  {
   "id": "c89u",
@@ -2325,12 +2248,11 @@
    "yt": "2026-11-15T23:00:00Z",
    "fb": "2026-11-15T23:00:00Z"
   },
-  "v_yt": 95,
+  "v_yt": 0,
   "l_yt": 0,
-  "c_yt": 3,
+  "c_yt": 0,
   "s_yt": 0,
-  "r_yt": 91.3,
-  "c_yt_reales": 0
+  "r_yt": 58.8
  },
  {
   "id": "c90u",
@@ -2355,8 +2277,7 @@
   "publica_utc_por_red": {
    "yt": "2026-11-19T23:00:00Z",
    "fb": "2026-11-19T23:00:00Z"
-  },
-  "c_yt_reales": 0
+  }
  },
  {
   "id": "c91u",
@@ -2382,11 +2303,11 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 229,
+  "v_yt": 0,
   "l_yt": 0,
-  "c_yt": 3,
+  "c_yt": 0,
   "s_yt": 0,
-  "c_yt_reales": 0
+  "r_yt": 64.8
  },
  {
   "id": "c92u",
@@ -2411,8 +2332,7 @@
   "publica_utc_por_red": {
    "yt": "2026-11-20T23:00:00Z",
    "fb": "2026-11-20T23:00:00Z"
-  },
-  "c_yt_reales": 0
+  }
  },
  {
   "id": "c93u",
@@ -2437,8 +2357,7 @@
   "publica_utc_por_red": {
    "yt": "2026-11-22T23:00:00Z",
    "fb": "2026-11-22T23:00:00Z"
-  },
-  "c_yt_reales": 0
+  }
  },
  {
   "id": "c94u",
@@ -2520,7 +2439,48 @@
   "publica_utc_por_red": {
    "yt": "2026-11-21T23:00:00Z",
    "fb": "2026-11-21T23:00:00Z"
+  }
+ },
+ {
+  "id": "c98",
+  "estado": "programado",
+  "tema": "gastos hormiga diciembre",
+  "pilar": "finanzas",
+  "gancho": "$2,850 al mes: 3 gastos hormiga que en diciembre sí se notan",
+  "titulo": "Gastos hormiga, $2,850 al mes en diciembre ☕",
+  "diapositivas": 6,
+  "fondo": "gimnasio-ciudad.jpg",
+  "portada": "habla-cafe-cerca.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "3 gastos hormiga que en diciembre sí se notan: café $50 × 30 = $1,500 al mes, antojo $30 × 20 = $600, refresco $25 × 30 = $750. son $2,850 al mes, más de un tercio de un aguinaldo de $7,500.",
+  "tipo": "carrusel",
+  "linea_reel": "$2,850 al mes: 3 gastos hormiga que en diciembre sí se notan",
+  "reel_ig": "2026-11-20 11:00",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c99",
+  "estado": "programado",
+  "tema": "5 fechas dinero diciembre",
+  "pilar": "finanzas",
+  "gancho": "Guarda esto: 5 fechas de tu dinero en diciembre",
+  "titulo": "Fechas de diciembre de tu dinero, guárdalas 📅",
+  "diapositivas": 7,
+  "fondo": "gimnasio-ciudad.jpg",
+  "portada": "dinamica-cuarto-maquillaje.jpg",
+  "horas": {
+   "ig": "2026-11-22 11:00"
   },
-  "c_yt_reales": 0
+  "youtube_id": "",
+  "publica_utc": "2026-11-22T17:00:00Z",
+  "linea": "guarda esto: 5 fechas de tu dinero en diciembre. 1 dic haz tu lista, 12 dic la mayoría de los bancos no abre, antes del 20 dic tu aguinaldo ($15,000 → $7,500), 24 dic nochebuena con tope, 31 dic último día para que tus aportaciones deducibles cuenten este año.",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "ig": "2026-11-22T17:00:00Z"
+  }
  }
 ]
