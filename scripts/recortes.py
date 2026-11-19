@@ -238,11 +238,15 @@ def programar():
     ruta = os.path.join(RAIZ, 'contenido', 'recortes.json')
     todos = json.load(open(ruta))
     largos = {l['id']: l for l in json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json')))}
+    # 19-nov-2026: el día se cuenta en hora de México y por turno ocupado (antes por fecha UTC de "ig": el turno de la
+    # noche caía en el día siguiente y LP1-c01 quedó encima de LA1-c01).
+    mx = ZoneInfo('America/Mexico_City')
     ocupados = {}
     for r in todos:
-        if r.get('publica_utc_por_red'):
-            dia = r['publica_utc_por_red']['ig'][:10]
-            ocupados[dia] = ocupados.get(dia, 0) + 1
+        yt = (r.get('publica_utc_por_red') or {}).get('yt')
+        if yt:
+            local = datetime.datetime.fromisoformat(yt.replace('Z', '+00:00')).astimezone(mx)
+            ocupados.setdefault(local.date().isoformat(), set()).add(local.strftime('%H:%M'))
     hoy = datetime.datetime.now(ZoneInfo('America/Mexico_City')).date()
     pendientes = [r for r in todos if r.get('estado') == 'listo' and not r.get('publica_utc_por_red')]
     # Alternar: uno de cada largo por turno (más variedad), respetando el orden de los capítulos.
@@ -259,11 +263,11 @@ def programar():
         desde = (datetime.datetime.fromisoformat(sale.replace('Z', '+00:00')).astimezone(ZoneInfo('America/Mexico_City')).date()
                  + datetime.timedelta(days=1)) if sale else hoy + datetime.timedelta(days=1)
         dia = max(desde, hoy + datetime.timedelta(days=1))
-        while ocupados.get(dia.isoformat(), 0) >= len(TURNOS):
+        while all(t['yt'] in ocupados.get(dia.isoformat(), set()) for t in TURNOS):
             dia += datetime.timedelta(days=1)
-        turno = TURNOS[ocupados.get(dia.isoformat(), 0)]
+        turno = next(t for t in TURNOS if t['yt'] not in ocupados.get(dia.isoformat(), set()))
         r['publica_utc_por_red'] = {red: _utc(dia, h) for red, h in turno.items()}
-        ocupados[dia.isoformat()] = ocupados.get(dia.isoformat(), 0) + 1
+        ocupados.setdefault(dia.isoformat(), set()).add(turno['yt'])
         print(f"{r['id']}: {dia} (YouTube {turno['yt']}, Instagram y Facebook {turno['ig']}, TikTok {turno['tt']})")
     json.dump(todos, open(ruta, 'w'), ensure_ascii=False, indent=1)
     open(ruta, 'a').write('\n')
@@ -290,7 +294,7 @@ def publicar(sid):
         if enlace:
             hecho['yt'] = enlace
             clave = (json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json'))) and
-                     next((l.get('playlist', 'aguinaldo') for l in json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json')))
+                     next((l.get('playlist') or 'aguinaldo' for l in json.load(open(os.path.join(RAIZ, 'contenido', 'largos.json')))
                            if l['id'] == r['largo']), 'aguinaldo'))
             subprocess.run([sys.executable, os.path.join(RAIZ, 'scripts', 'youtube.py'), 'playlist', enlace.split('/')[-1], clave])
     if 'ig_tt_fb' not in hecho:

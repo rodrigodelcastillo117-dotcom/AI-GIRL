@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-18T12:40:32Z",
+ "generado_utc": "2026-11-19T13:00:01Z",
  "estado": "aviso",
  "checks": [
   {
@@ -25,7 +25,7 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.00 · semana $1.66 de $7 · mes $69.19 de $28 (proyección del mes $115.31) · El espacio, semana $1.13 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $0.00 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $3.37 de $7 · mes $70.90 de $28 (proyección del mes $111.94) · El espacio, semana $4.65 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -35,22 +35,17 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-18: TikTok 4, Instagram 3, YouTube 4, Facebook 4"
-  },
-  {
-   "area": "Calendario",
-   "estado": "ok",
    "detalle": "2026-11-19: TikTok 3, Instagram 2, YouTube 4, Facebook 3"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-20: TikTok 1, Instagram 1, YouTube 2, Facebook 1 · la rutina de ese día llena: TikTok 1/3, Instagram 1/2, YouTube 2/3"
+   "detalle": "2026-11-20: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
   },
   {
-   "area": "Serie",
+   "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-18: el primer TikTok es de la serie (c81)"
+   "detalle": "2026-11-21: TikTok 3, Instagram 2, YouTube 4, Facebook 3"
   },
   {
    "area": "Serie",
@@ -60,7 +55,12 @@
   {
    "area": "Serie",
    "estado": "ok",
-   "detalle": "2026-11-20: aún no tiene la parte de la serie; siguiente parte lista: c83 (prográmala como primer TikTok del día)"
+   "detalle": "2026-11-20: el primer TikTok es de la serie (c83)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-21: el primer TikTok es de la serie (c84)"
   },
   {
    "area": "Videos largos",
@@ -93,24 +93,24 @@
    "detalle": "LC2: YouTube y Facebook 2026-11-26, con recortes"
   },
   {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LP1: subido sin recortes: recortes.py LP1"
+   "area": "Videos largos",
+   "estado": "ok",
+   "detalle": "LP1: YouTube y Facebook 2026-11-19, con recortes"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "29 recortes con fecha (se suben 48 h antes): LA1-c01, LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06"
+   "detalle": "33 recortes con fecha (se suben 48 h antes): LA1-c02, LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c01, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "14 recortes programados en las 4 redes"
+   "detalle": "16 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "60 carruseles listos para TikTok (~20 días a 3 por día)"
+   "detalle": "57 carruseles listos para TikTok (~19 días a 3 por día)"
   },
   {
    "area": "Cola",
@@ -120,17 +120,17 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,228 vs mediana 183): ya tiene 4 clones"
+   "detalle": "c16 (TikTok 4,261 vs mediana 171): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,063 vs mediana 183): ya tiene 4 clones"
+   "detalle": "c70 (TikTok 1,064 vs mediana 171): ya tiene 4 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "O1 (YouTube 1,041 vs mediana 177): ya tiene 3 clones"
+   "detalle": "O1 (YouTube 1,043 vs mediana 166): ya tiene 3 clones"
   }
  ]
 }

@@ -39,7 +39,8 @@
   "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 49.1
+  "r_yt": 49.1,
+  "c_yt_reales": 3
  },
  {
   "id": "c02",
@@ -81,7 +82,8 @@
   "l_ig": 6,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 20.5
+  "r_yt": 20.5,
+  "c_yt_reales": 3
  },
  {
   "id": "c03",
@@ -123,7 +125,8 @@
   "l_ig": 8,
   "c_ig": 12,
   "s_ig": 2,
-  "r_yt": 40.1
+  "r_yt": 40.1,
+  "c_yt_reales": 3
  },
  {
   "id": "c04",
@@ -149,15 +152,16 @@
    "tt": "2026-11-04T23:05:40Z",
    "yt": "2026-11-04T23:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 68,
+  "l_yt": 1,
+  "c_yt": 9,
   "s_yt": 0,
   "v_tt": 171,
   "l_tt": 4,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 38.6
+  "r_yt": 38.6,
+  "c_yt_reales": 4
  },
  {
   "id": "c05",
@@ -222,7 +226,8 @@
   "l_fb": 2,
   "c_fb": 1,
   "s_fb": 0,
-  "r_yt": 82.0
+  "r_yt": 82.0,
+  "c_yt_reales": 5
  },
  {
   "id": "c07",
@@ -250,9 +255,9 @@
    "tt": "2026-11-05T19:05:48Z",
    "yt": "2026-11-05T16:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 68,
+  "l_yt": 1,
+  "c_yt": 9,
   "s_yt": 0,
   "v_tt": 267,
   "l_tt": 8,
@@ -262,7 +267,8 @@
   "l_ig": 13,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 160.1
+  "r_yt": 160.1,
+  "c_yt_reales": 4
  },
  {
   "id": "c08",
@@ -290,9 +296,9 @@
    "yt": "2026-11-06T20:00:00Z",
    "fb": "2026-11-12T15:30:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 393,
+  "l_yt": 7,
+  "c_yt": 9,
   "s_yt": 0,
   "v_tt": 185,
   "l_tt": 5,
@@ -302,7 +308,8 @@
   "l_ig": 5,
   "c_ig": 6,
   "s_ig": 0,
-  "r_yt": 44.3
+  "r_yt": 44.3,
+  "c_yt_reales": 4
  },
  {
   "id": "c09",
@@ -330,9 +337,9 @@
    "yt": "2026-11-07T16:00:00Z",
    "fb": "2026-11-13T03:30:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 140,
+  "l_yt": 6,
+  "c_yt": 7,
   "s_yt": 0,
   "v_tt": 119,
   "l_tt": 1,
@@ -342,7 +349,8 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "r_yt": 61.5
+  "r_yt": 61.5,
+  "c_yt_reales": 4
  },
  {
   "id": "c10",
@@ -389,15 +397,16 @@
    "yt": "2026-11-10T02:00:00Z",
    "fb": "2026-11-10T04:30:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 204,
+  "l_yt": 6,
+  "c_yt": 10,
   "s_yt": 0,
   "v_tt": 203,
   "l_tt": 8,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 73.1
+  "r_yt": 73.1,
+  "c_yt_reales": 5
  },
  {
   "id": "c12",
@@ -425,9 +434,9 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 136,
+  "l_yt": 2,
+  "c_yt": 8,
   "s_yt": 0,
   "v_tt": 91,
   "l_tt": 4,
@@ -437,7 +446,8 @@
   "l_ig": 4,
   "c_ig": 7,
   "s_ig": 0,
-  "r_yt": 96.4
+  "r_yt": 96.4,
+  "c_yt_reales": 4
  },
  {
   "id": "c13",
@@ -465,9 +475,9 @@
    "yt": "2026-11-09T23:00:00Z",
    "fb": "2026-11-14T03:30:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 133,
+  "l_yt": 4,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 215,
   "l_tt": 2,
@@ -477,7 +487,8 @@
   "l_ig": 6,
   "c_ig": 5,
   "s_ig": 0,
-  "r_yt": 57.0
+  "r_yt": 57.0,
+  "c_yt_reales": 5
  },
  {
   "id": "c14",
@@ -545,11 +556,11 @@
    "ig": "2026-11-12T00:32:30Z",
    "fb": "2026-11-09T21:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 177,
+  "l_yt": 2,
+  "c_yt": 8,
   "s_yt": 0,
-  "v_tt": 4238,
+  "v_tt": 4261,
   "l_tt": 71,
   "c_tt": 2,
   "s_tt": 15,
@@ -557,7 +568,8 @@
   "l_ig": 11,
   "c_ig": 10,
   "s_ig": 0,
-  "r_yt": 45.6
+  "r_yt": 45.6,
+  "c_yt_reales": 4
  },
  {
   "id": "c17",
@@ -775,15 +787,16 @@
    "yt": "2026-11-12T02:00:00Z",
    "fb": "2026-11-12T02:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 53,
+  "l_yt": 2,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 93,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 69.8
+  "r_yt": 69.8,
+  "c_yt_reales": 6
  },
  {
   "id": "c28",
@@ -1115,9 +1128,9 @@
    "yt": "2026-11-10T18:00:00Z",
    "fb": "2026-11-10T21:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 9,
+  "l_yt": 2,
+  "c_yt": 9,
   "s_yt": 0,
   "v_tt": 136,
   "l_tt": 6,
@@ -1127,7 +1140,8 @@
   "l_ig": 4,
   "c_ig": 5,
   "s_ig": 0,
-  "r_yt": 64.2
+  "r_yt": 64.2,
+  "c_yt_reales": 5
  },
  {
   "id": "c44",
@@ -1288,19 +1302,20 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 121,
+  "l_yt": 3,
+  "c_yt": 10,
   "s_yt": 0,
-  "v_tt": 345,
+  "v_tt": 380,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 27,
+  "v_ig": 30,
   "l_ig": 4,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 81.9
+  "r_yt": 81.9,
+  "c_yt_reales": 6
  },
  {
   "id": "c53",
@@ -1556,9 +1571,9 @@
    "yt": "2026-11-11T02:00:00Z",
    "fb": "2026-11-11T02:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 859,
+  "l_yt": 7,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 350,
   "l_tt": 3,
@@ -1568,7 +1583,8 @@
   "l_ig": 5,
   "c_ig": 2,
   "s_ig": 0,
-  "r_yt": 41.3
+  "r_yt": 41.3,
+  "c_yt_reales": 6
  },
  {
   "id": "c66",
@@ -1596,15 +1612,16 @@
    "yt": "2026-11-10T23:00:00Z",
    "fb": "2026-11-10T23:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 528,
+  "l_yt": 10,
+  "c_yt": 9,
   "s_yt": 0,
   "v_tt": 99,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0,
-  "r_yt": 52.8
+  "r_yt": 52.8,
+  "c_yt_reales": 5
  },
  {
   "id": "c67",
@@ -1651,9 +1668,9 @@
    "tt": "2026-11-12T19:06:25Z",
    "yt": "2026-11-13T02:00:00Z"
   },
-  "v_yt": 0,
+  "v_yt": 206,
   "l_yt": 0,
-  "c_yt": 0,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 82,
   "l_tt": 2,
@@ -1663,7 +1680,8 @@
   "l_ig": 6,
   "c_ig": 9,
   "s_ig": 2,
-  "r_yt": 54.1
+  "r_yt": 54.1,
+  "c_yt_reales": 6
  },
  {
   "id": "c69",
@@ -1693,9 +1711,9 @@
    "yt": "2026-11-13T23:00:00Z",
    "fb": "2026-11-13T23:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 50,
+  "l_yt": 5,
+  "c_yt": 11,
   "s_yt": 0,
   "v_tt": 78,
   "l_tt": 2,
@@ -1705,7 +1723,8 @@
   "l_ig": 5,
   "c_ig": 4,
   "s_ig": 0,
-  "r_yt": 98.6
+  "r_yt": 98.6,
+  "c_yt_reales": 5
  },
  {
   "id": "c70",
@@ -1733,19 +1752,20 @@
    "yt": "2026-11-12T18:00:00Z",
    "fb": "2026-11-12T17:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 331,
+  "l_yt": 6,
+  "c_yt": 15,
   "s_yt": 0,
-  "v_tt": 1063,
-  "l_tt": 5,
+  "v_tt": 1064,
+  "l_tt": 6,
   "c_tt": 0,
   "s_tt": 0,
   "v_ig": 21,
   "l_ig": 5,
   "c_ig": 11,
   "s_ig": 0,
-  "r_yt": 50.2
+  "r_yt": 50.2,
+  "c_yt_reales": 7
  },
  {
   "id": "c71",
@@ -1773,15 +1793,16 @@
    "yt": "2026-11-13T16:00:00Z",
    "fb": "2026-11-13T16:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 385,
+  "l_yt": 4,
+  "c_yt": 15,
   "s_yt": 0,
-  "v_tt": 180,
+  "v_tt": 181,
   "l_tt": 5,
   "c_tt": 2,
   "s_tt": 0,
-  "r_yt": 58.2
+  "r_yt": 58.2,
+  "c_yt_reales": 7
  },
  {
   "id": "c72",
@@ -1847,15 +1868,16 @@
    "yt": "2026-11-12T23:00:00Z",
    "fb": "2026-11-17T00:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 111,
+  "l_yt": 3,
+  "c_yt": 14,
   "s_yt": 0,
   "v_tt": 209,
   "l_tt": 5,
   "c_tt": 1,
   "s_tt": 0,
-  "r_yt": 169.1
+  "r_yt": 169.1,
+  "c_yt_reales": 7
  },
  {
   "id": "c75",
@@ -1878,22 +1900,26 @@
  },
  {
   "id": "c76",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "isr aguinaldo datos para guardar",
   "pilar": "finanzas",
   "gancho": "Guarda esto: el ISR de tu aguinaldo 2026 en 5 datos",
   "titulo": "ISR aguinaldo 2026 en 5 datos para guardar 🔖",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
+  "fondo": "cocina.jpg",
+  "portada": "lora-prueba-1-oficina.jpg",
+  "horas": {
+   "tt": "2026-11-20 13:00"
+  },
   "youtube_id": "",
-  "publica_utc": "",
+  "publica_utc": "2026-11-20T19:00:00Z",
   "linea": "isr del aguinaldo 2026: los 5 datos para revisar tu recibo de diciembre, en un solo lugar. 🧾",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-20T19:00:00Z"
+  }
  },
  {
   "id": "c77",
@@ -1919,7 +1945,7 @@
    "ig": "2026-11-16T18:14:48Z",
    "tt": "2026-11-16T22:47:03Z"
   },
-  "v_tt": 80,
+  "v_tt": 81,
   "l_tt": 1,
   "c_tt": 0,
   "s_tt": 0,
@@ -1950,7 +1976,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-15T21:06:09Z"
   },
-  "v_tt": 323,
+  "v_tt": 325,
   "l_tt": 7,
   "c_tt": 0,
   "s_tt": 0
@@ -1977,7 +2003,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-16T15:06:44Z"
   },
-  "v_tt": 184,
+  "v_tt": 185,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0
@@ -2004,7 +2030,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-17T15:06:42Z"
   },
-  "v_tt": 64,
+  "v_tt": 72,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0
@@ -2030,7 +2056,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "tt": "2026-11-18T15:08:37Z"
-  }
+  },
+  "v_tt": 89,
+  "l_tt": 5,
+  "c_tt": 1,
+  "s_tt": 1
  },
  {
   "id": "c82",
@@ -2057,26 +2087,30 @@
  },
  {
   "id": "c83",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "aguinaldo tu sueldo",
   "pilar": "finanzas",
   "gancho": "Si ganas $20,000 al mes, tu aguinaldo mínimo es $10,000",
   "titulo": "Aguinaldo 2026 si ganas $20,000 al mes 💰",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
+  "fondo": "yate.jpg",
+  "portada": "lora-prueba-2-cafe.jpg",
+  "horas": {
+   "tt": "2026-11-20 09:00"
+  },
   "youtube_id": "",
-  "publica_utc": "",
+  "publica_utc": "2026-11-20T15:00:00Z",
   "linea": "si ganas $20,000 al mes, tu aguinaldo mínimo es $10,000 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-20T15:00:00Z"
+  }
  },
  {
   "id": "c84",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "aguinaldo tu sueldo",
   "pilar": "finanzas",
   "gancho": "Si ganas $25,000 al mes, tu aguinaldo mínimo es $12,500",
@@ -2084,14 +2118,18 @@
   "diapositivas": 7,
   "fondo": "jet.jpg",
   "portada": "habla-cocina-cerca.jpg",
-  "horas": {},
+  "horas": {
+   "tt": "2026-11-21 09:00"
+  },
   "youtube_id": "",
-  "publica_utc": "",
+  "publica_utc": "2026-11-21T15:00:00Z",
   "linea": "si ganas $25,000 al mes, tu aguinaldo mínimo es $12,500 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-21T15:00:00Z"
+  }
  },
  {
   "id": "c85",
@@ -2159,15 +2197,16 @@
    "yt": "2026-11-14T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 343,
+  "l_yt": 8,
+  "c_yt": 13,
   "s_yt": 0,
-  "v_tt": 86,
-  "l_tt": 1,
+  "v_tt": 119,
+  "l_tt": 2,
   "c_tt": 0,
   "s_tt": 1,
-  "r_yt": 83.3
+  "r_yt": 83.3,
+  "c_yt_reales": 6
  },
  {
   "id": "c87u",
@@ -2193,11 +2232,12 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 0,
-  "l_yt": 0,
-  "c_yt": 0,
+  "v_yt": 912,
+  "l_yt": 6,
+  "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 63.0
+  "r_yt": 63.0,
+  "c_yt_reales": 0
  },
  {
   "id": "c88u",
@@ -2222,7 +2262,12 @@
   "publica_utc_por_red": {
    "yt": "2026-11-17T23:00:00Z",
    "fb": "2026-11-17T23:00:00Z"
-  }
+  },
+  "v_yt": 65,
+  "l_yt": 1,
+  "c_yt": 2,
+  "s_yt": 0,
+  "c_yt_reales": 0
  },
  {
   "id": "c89u",
@@ -2248,11 +2293,12 @@
    "yt": "2026-11-15T23:00:00Z",
    "fb": "2026-11-15T23:00:00Z"
   },
-  "v_yt": 0,
+  "v_yt": 95,
   "l_yt": 0,
-  "c_yt": 0,
+  "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 58.8
+  "r_yt": 58.8,
+  "c_yt_reales": 0
  },
  {
   "id": "c90u",
@@ -2277,7 +2323,8 @@
   "publica_utc_por_red": {
    "yt": "2026-11-19T23:00:00Z",
    "fb": "2026-11-19T23:00:00Z"
-  }
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c91u",
@@ -2303,11 +2350,12 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 0,
+  "v_yt": 239,
   "l_yt": 0,
-  "c_yt": 0,
+  "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 64.8
+  "r_yt": 64.8,
+  "c_yt_reales": 0
  },
  {
   "id": "c92u",
@@ -2332,7 +2380,8 @@
   "publica_utc_por_red": {
    "yt": "2026-11-20T23:00:00Z",
    "fb": "2026-11-20T23:00:00Z"
-  }
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c93u",
@@ -2357,7 +2406,8 @@
   "publica_utc_por_red": {
    "yt": "2026-11-22T23:00:00Z",
    "fb": "2026-11-22T23:00:00Z"
-  }
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c94u",
@@ -2439,7 +2489,8 @@
   "publica_utc_por_red": {
    "yt": "2026-11-21T23:00:00Z",
    "fb": "2026-11-21T23:00:00Z"
-  }
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c98",

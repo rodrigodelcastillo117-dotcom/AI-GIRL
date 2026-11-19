@@ -1,6 +1,6 @@
 {
  "control": {
-  "hoy_usd": 1.71,
+  "hoy_usd": 0.0,
   "semana_usd": 3.37,
   "mes_usd": 70.9,
   "otro_canal_semana_usd": 4.65,
@@ -8,7 +8,7 @@
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
-  "proyeccion_mes_usd": 118.16,
+  "proyeccion_mes_usd": 111.94,
   "semana_desde": "2026-11-16",
   "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
  },
@@ -26,7 +26,7 @@
   "otro": 7.23
  },
  "gastado_7_dias": {
-  "victoria": 29.86,
+  "victoria": 11.4,
   "otro": 7.23
  },
  "por_dia": [
@@ -64,6 +64,11 @@
    "dia": "2026-11-18",
    "victoria": 1.71,
    "otro": 3.52
+  },
+  {
+   "dia": "2026-11-19",
+   "victoria": 0.0,
+   "otro": 0.0
   }
  ],
  "por_modelo": {
@@ -79,22 +84,25 @@
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
   "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
-  "google/nano-banana-pro": 11,
+  "google/nano-banana-pro": 36,
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 9,
   "resemble-ai/chatterbox-multilingual": 11,
-  "kwaivgi/kling-v2.5-turbo-pro": 24,
-  "stability-ai/stable-audio-2.5": 6,
-  "victor-upmeet/whisperx": 112,
-  "black-forest-labs/flux-1.1-pro": 119,
-  "elevenlabs/music": 37,
+  "kwaivgi/kling-v2.5-turbo-pro": 29,
+  "stability-ai/stable-audio-2.5": 15,
+  "victor-upmeet/whisperx": 160,
+  "black-forest-labs/flux-1.1-pro": 124,
+  "elevenlabs/music": 48,
   "851-labs/background-remover": 7,
-  "minimax/speech-2.6-hd": 60,
-  "elevenlabs/v3": 10,
-  "nightmareai/real-esrgan": 10,
-  "anthropic/claude-4.5-sonnet": 1
+  "minimax/speech-2.6-hd": 104,
+  "elevenlabs/v3": 95,
+  "nightmareai/real-esrgan": 27,
+  "anthropic/claude-4.5-sonnet": 2,
+  "black-forest-labs/flux-1.1-pro-ultra": 3,
+  "black-forest-labs/flux-kontext-pro": 32,
+  "google/veo-3.1": 23
  },
  "incompleto": true,
- "generado_utc": "2026-11-19T02:17:02Z",
+ "generado_utc": "2026-11-19T13:00:01Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

@@ -4138,7 +4138,7 @@
    "formato": "escena",
    "escena": "calle",
    "pilar": "finanzas",
-   "estado": "programado",
+   "estado": "publicado",
    "publicar": "2026-11-18",
    "tema": "Tu Afore puede bajarte impuestos",
    "guion": "Tu Afore puede bajarte impuestos y no lo sabías. Las aportaciones complementarias de retiro son deducibles. Hasta el diez por ciento de tu ingreso anual, o cinco UMAs, lo que sea menor. Si ganas quince mil al mes, puedes deducir hasta dieciocho mil al año. Ojo: solo las de largo plazo, las que se quedan hasta tus sesenta y cinco años. Se hace en tu declaración anual. ¿Ya aportas a tu Afore? Comenta SÍ o NO.",
@@ -4214,7 +4214,11 @@
      "youtube"
     ],
     "youtube": "https://youtube.com/shorts/wzoozIavqEA",
-    "pie": "un solo llamado (compártelo) + pregunta SÍ/NO, versión MUSE"
+    "pie": "un solo llamado (compártelo) + pregunta SÍ/NO, versión MUSE",
+    "ig": "https://www.instagram.com/reel/Df5OFcuD_Qq/",
+    "tt": "https://www.tiktok.com/@victoriatheceo/video/7709589625236426036?utm_campaign=tt4d_open_api&utm_source=awzzzzrixltkdgr1",
+    "yt": "https://youtube.com/shorts/wzoozIavqEA",
+    "comentario_youtube": "Ugyo0PBxkKd9S1RZPAh4AaABAg"
    },
    "publica_utc": "2026-11-18T19:07:00Z",
    "publica_utc_por_red": {

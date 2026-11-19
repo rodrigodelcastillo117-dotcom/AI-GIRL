@@ -454,11 +454,15 @@
    "aguinaldo 15 días",
    "aguinaldo si renuncio"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-21T02:30:00Z",
    "ig": "2026-11-21T03:37:00Z",
    "tt": "2026-11-21T04:19:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/l9I8cn_Kkek",
+   "ig_tt_fb": "2026-11-21T03:37:00Z"
   }
  },
  {
@@ -1215,6 +1219,172 @@
    "yt": "2026-12-05T20:00:00Z",
    "ig": "2026-12-05T21:07:00Z",
    "tt": "2026-12-05T22:04:00Z"
+  }
+ },
+ {
+  "id": "LP1-c01",
+  "largo": "LP1",
+  "capitulo": "Intro",
+  "archivo": "videos/largos/LP1/shorts/LP1-c01.mp4",
+  "segundos": 30.8,
+  "titulo": "Pensión diciembre 2026 · Pensión diciembre 2026",
+  "texto": "Si usted cobra pensión, diciembre puede ser el mes más largo del año. Hoy le hago las cuentas.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "programado",
+  "publica_utc_por_red": {
+   "yt": "2026-11-20T20:00:00Z",
+   "ig": "2026-11-20T21:07:00Z",
+   "tt": "2026-11-20T22:04:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/Yc_TtzU_4v0",
+   "ig_tt_fb": "2026-11-20T21:07:00Z"
+  }
+ },
+ {
+  "id": "LP1-c02",
+  "largo": "LP1",
+  "capitulo": "IMSS: diciembre y aguinaldo",
+  "archivo": "videos/largos/LP1/shorts/LP1-c02.mp4",
+  "segundos": 114.7,
+  "titulo": "IMSS: diciembre y aguinaldo · Pensión diciembre 2026",
+  "texto": "Primero, el Seguro Social. Si su pensión es por cesantía o vejez, mire bien esta fecha.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-11-29T02:30:00Z",
+   "ig": "2026-11-29T03:37:00Z",
+   "tt": "2026-11-29T04:19:00Z"
+  }
+ },
+ {
+  "id": "LP1-c03",
+  "largo": "LP1",
+  "capitulo": "Pensión Bienestar: noviembre y diciembre",
+  "archivo": "videos/largos/LP1/shorts/LP1-c03.mp4",
+  "segundos": 91.6,
+  "titulo": "Pensión Bienestar: noviembre y diciembre · Pensión diciembre 2026",
+  "texto": "Ahora, la Pensión Bienestar. Aquí lo más importante: el pago de noviembre también cubre diciembre.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-12-03T02:30:00Z",
+   "ig": "2026-12-03T03:37:00Z",
+   "tt": "2026-12-03T04:19:00Z"
+  }
+ },
+ {
+  "id": "LP1-c04",
+  "largo": "LP1",
+  "capitulo": "Enero 2027: aún no es oficial",
+  "archivo": "videos/largos/LP1/shorts/LP1-c04.mp4",
+  "segundos": 68.0,
+  "titulo": "Enero 2027: aún no es oficial · Pensión diciembre 2026",
+  "texto": "¿Y enero? Aquí le pido mucho cuidado con los mensajes que le mandan al celular.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-12-06T20:00:00Z",
+   "ig": "2026-12-06T21:07:00Z",
+   "tt": "2026-12-06T22:04:00Z"
+  }
+ },
+ {
+  "id": "LP1-c05",
+  "largo": "LP1",
+  "capitulo": "Ejemplo resuelto: que alcance hasta enero",
+  "archivo": "videos/largos/LP1/shorts/LP1-c05.mp4",
+  "segundos": 146.2,
+  "titulo": "Ejemplo resuelto: que alcance hasta enero · Pensión diciembre 2026",
+  "texto": "Vamos con un ejemplo, peso por peso, para que el pago de noviembre le alcance hasta enero.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-12-07T02:30:00Z",
+   "ig": "2026-12-07T03:37:00Z",
+   "tt": "2026-12-07T04:19:00Z"
+  }
+ },
+ {
+  "id": "LP1-c06",
+  "largo": "LP1",
+  "capitulo": "Qué revisar y cuidado con los gestores",
+  "archivo": "videos/largos/LP1/shorts/LP1-c06.mp4",
+  "segundos": 76.0,
+  "titulo": "Qué revisar y cuidado con los gestores · Pensión diciembre 2026",
+  "texto": "Suscríbase: cada vez que el IMSS o el Bienestar cambien fechas o montos, se lo explico aquí. Mientras, revise su pago de noviembre.\n\nVideo completo en mi canal: Pensión diciembre 2026: IMSS, Bienestar, aguinaldo y enero\n\nVictoria es un personaje creado con IA. Información general, no asesoría.\n\n#pensionimss #pensionbienestar #aguinaldo #ley73",
+  "tags": [
+   "pensión diciembre 2026",
+   "pago pensión imss diciembre 2026",
+   "pensión imss diciembre",
+   "aguinaldo pensionados imss 2026",
+   "aguinaldo ley 73",
+   "cuándo pagan el aguinaldo a pensionados",
+   "pensión bienestar noviembre diciembre 2026",
+   "calendario pensión bienestar por letra",
+   "pensión bienestar diciembre 2026",
+   "pensión bienestar enero 2027"
+  ],
+  "estado": "listo",
+  "publica_utc_por_red": {
+   "yt": "2026-12-07T20:00:00Z",
+   "ig": "2026-12-07T21:07:00Z",
+   "tt": "2026-12-07T22:04:00Z"
   }
  }
 ]

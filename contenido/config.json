@@ -855,7 +855,17 @@
    "fechas": "21 al 26-dic 11:00 MX, 1 al día",
    "por_que": "Serie \"no me pagaron el aguinaldo\": sirve justo después del 20-dic. Rodrigo, 16-nov: \"solo moverlos de día\". Siguen cerrando con Video completo en mi canal."
   },
-  "nota_buen_fin": "Rodrigo, 16-nov: \"los dejamos salir\". Los 2 recortes de Buen Fin salen hoy 15:00 y 21:30 en Instagram: en la medición del 19-nov se reportan aparte (tipo \"anuncia YouTube\") y el 16-nov no cuenta para la regla de 1 pieza al día."
+  "nota_buen_fin": "Rodrigo, 16-nov: \"los dejamos salir\". Los 2 recortes de Buen Fin salen hoy 15:00 y 21:30 en Instagram: en la medición del 19-nov se reportan aparte (tipo \"anuncia YouTube\") y el 16-nov no cuenta para la regla de 1 pieza al día.",
+  "medicion_19nov": {
+   "seguidores_ig": "62 → 62 (sin cambio desde la línea base del 15-nov)",
+   "piezas": {
+    "c77 (carrusel tarjeta Buen Fin, 16-nov)": "9 vistas, 3 likes, 2 comentarios, 0 compartidos a 62 h",
+    "M4 (reel Afore, 18-nov)": "9 vistas, 1 like, 2 comentarios, 0 compartidos a 18 h",
+    "M3 (reel aguinaldo en 3 sueldos, 17-nov)": "no se pudo confirmar que salió (plan.json: verificando)"
+   },
+   "veredicto": "No cumple: ninguna pieza con compartidos > 0 y seguidores sin moverse. Skip rate y guardados no se pudieron leer: la llave de Meta del entorno es de Seis Estrellas (Graph API devuelve error 100).",
+   "datos": "Publer analytics (aprender.py medir, 19-nov 12:40 UTC). Sin Insights de Instagram hasta que regrese la llave de Victoria."
+  }
  },
  "cortes_victoria": {
   "decidido": "2026-11-17",

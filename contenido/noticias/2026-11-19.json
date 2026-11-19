@@ -1,0 +1,42 @@
+{
+ "fecha": "2026-11-19",
+ "titulo": "Último pago del año de la Pensión Bienestar, lo que se discute del salario mínimo 2027 y Banxico en 6.25%",
+ "intro": "Tres cosas que mueven tu dinero esta semana, cada una con su fuente.",
+ "noticias": [
+  {
+   "tema": "México",
+   "titulo": "Pensión Bienestar: hoy cobran las letras N, Ñ y O, y es el último pago del año",
+   "que_paso": "El depósito de noviembre-diciembre va por la primera letra del primer apellido. Hoy jueves 19: N, Ñ y O. Viernes 20: P y Q. Lunes 23 y martes 24: R. Miércoles 25: S. Jueves 26: T, U y V. Viernes 27: W, X, Y y Z. Adultos mayores reciben $6,400.",
+   "te_afecta": "Es el último depósito de 2026. Esos $6,400 cubren dos meses: $3,200 por mes. No llega otro pago en diciembre.",
+   "que_hacer": "Si tus papás cobran, ayúdales a separar lo de diciembre el mismo día que cae. Nadie debe pedirles dinero ni datos para \"liberar\" el pago.",
+   "fuentes": [
+    {"nombre": "Expansión Política, 29-oct-2026", "url": "https://politica.expansion.mx/mexico/2026/10/29/calendario-pagos-pension-bienestar-noviembre-2026"},
+    {"nombre": "Crónica, 26-oct-2026", "url": "https://www.cronica.com.mx/nacional/2026/10/26/pension-bienestar-2026-calendario-de-pagos-de-noviembre-diciembre/"}
+   ]
+  },
+  {
+   "tema": "Tu sueldo",
+   "titulo": "Salario mínimo 2027: empresarios piden subir 5-6%; el gobierno habla de cerca de 11%",
+   "que_paso": "Hoy el mínimo es $315.04 diarios ($440.87 en la frontera norte). El aumento de 2027 se negocia en la Conasami entre gobierno, empresarios y sindicatos. Todavía no hay cifra oficial.",
+   "te_afecta": "Si ganas el mínimo, la diferencia entre 5% y 11% son unos $567 al mes ($330.79 contra $349.69 diarios, por 30 días).",
+   "que_hacer": "No hagas cuentas con un aumento que aún no existe. Espera la cifra oficial de la Conasami antes de comprometer pagos de enero.",
+   "fuentes": [
+    {"nombre": "Expansión, 17-nov-2026", "url": "https://expansion.mx/economia/2026/11/17/salario-minimo-2027-empresarios-sheinbaum-bajar-aumentos"},
+    {"nombre": "Líder Empresarial", "url": "https://www.liderempresarial.com/salario-minimo-2027-esto-analiza-conasami/"}
+   ]
+  },
+  {
+   "tema": "Tasas",
+   "titulo": "Banxico dejó la tasa en 6.25% y su próxima decisión es el 17 de diciembre",
+   "que_paso": "El 5 de noviembre Banxico bajó su tasa 0.25 puntos, a 6.25%, y dijo que la mantendría así por un tiempo prolongado. La siguiente decisión es el jueves 17 de diciembre.",
+   "te_afecta": "Cuando la tasa baja, lo que te pagan por ahorrar suele bajar primero. Lo que te cobra tu tarjeta casi no se mueve.",
+   "que_hacer": "Revisa cuánto te paga hoy tu cuenta de ahorro y compáralo con lo que te pagaba en octubre.",
+   "fuentes": [
+    {"nombre": "El CEO, 5-nov-2026", "url": "https://elceo.com/economia/banxico-recorta-tasa-interes-a-6-25-noviembre-2026/"},
+    {"nombre": "N+", "url": "https://www.nmas.com.mx/economia/banxico-reduce-tasa-de-interes-la-coloca-en-625/"}
+   ]
+  }
+ ],
+ "dato": "Pensión Bienestar: $6,400 ÷ 2 meses = $3,200 por mes. Es el último depósito de 2026.",
+ "cierre": "Diciembre se gasta solo. Separa lo de enero antes de que llegue la primera posada. — Victoria"
+}

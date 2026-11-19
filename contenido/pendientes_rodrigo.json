@@ -34,5 +34,11 @@
   "texto": "Compartir la carpeta de catálogos de Vonhaucke (o 3-4 capturas)",
   "como": "Drive → Compartir → Cualquiera con el enlace, un rato.",
   "hecho": false
+ },
+ {
+  "id": "llave-meta",
+  "texto": "Regresar la llave de Meta de Victoria al entorno (hoy está la de Seis Estrellas Publicador)",
+  "como": "Ajustes del entorno de Claude Code → secretos de red de graph.facebook.com: la llave de Victoria. Seis Estrellas en su propio entorno.",
+  "hecho": false
  }
 ]

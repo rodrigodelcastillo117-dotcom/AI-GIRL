@@ -1,5 +1,5 @@
 {
- "fecha_utc": "2026-11-18T12:40:51Z",
+ "fecha_utc": "2026-11-19T12:41:27Z",
  "videos_calificados": 10,
  "base_vistas_36h": 413.0,
  "notas": {
@@ -34,7 +34,7 @@
   "37": {
    "vistas_36h": 507,
    "engagement": 0.0316,
-   "retencion": 76.7,
+   "retencion": 76.9,
    "horas": 34.7,
    "indice": 1.23
   },
@@ -62,7 +62,7 @@
   "M2": {
    "vistas_36h": 305,
    "engagement": 0.1082,
-   "retencion": 78.1,
+   "retencion": 78.6,
    "horas": 31.1,
    "indice": 0.74
   },
@@ -98,7 +98,7 @@
     "indice": 0.97,
     "estado": "normal",
     "engagement": 0.0517,
-    "retencion": 98.4
+    "retencion": 98.5
    }
   ],
   "formato": [
@@ -108,7 +108,7 @@
     "indice": 1.42,
     "estado": "gana",
     "engagement": 0.0383,
-    "retencion": 101.0
+    "retencion": 101.1
    },
    {
     "valor": "escena",
@@ -116,7 +116,7 @@
     "indice": 0.45,
     "estado": "pierde",
     "engagement": 0.0701,
-    "retencion": 80.5
+    "retencion": 80.6
    }
   ],
   "locacion": [
@@ -150,7 +150,7 @@
     "indice": 1.15,
     "estado": "en prueba",
     "engagement": 0.0363,
-    "retencion": 92.3
+    "retencion": 92.4
    },
    {
     "valor": "sillon",
@@ -166,7 +166,7 @@
     "indice": 0.74,
     "estado": "en prueba",
     "engagement": 0.1082,
-    "retencion": 78.1
+    "retencion": 78.6
    },
    {
     "valor": "oficina",
@@ -224,7 +224,7 @@
     "indice": 1.08,
     "estado": "normal",
     "engagement": 0.0328,
-    "retencion": 96.9
+    "retencion": 97.0
    },
    {
     "valor": "otro",
@@ -232,7 +232,7 @@
     "indice": 0.45,
     "estado": "pierde",
     "engagement": 0.0701,
-    "retencion": 80.5
+    "retencion": 80.6
    }
   ],
   "estilo_vestuario": [
@@ -242,7 +242,7 @@
     "indice": 1.61,
     "estado": "gana",
     "engagement": 0.0307,
-    "retencion": 102.2
+    "retencion": 102.3
    },
    {
     "valor": "ejecutivo",
@@ -266,7 +266,7 @@
     "indice": 0.51,
     "estado": "en prueba",
     "engagement": 0.0809,
-    "retencion": 83.8
+    "retencion": 84.1
    }
   ],
   "color_vestuario": [
@@ -316,7 +316,7 @@
     "indice": 0.79,
     "estado": "en prueba",
     "engagement": 0.0401,
-    "retencion": 75.2
+    "retencion": 75.3
    },
    {
     "valor": "otro",
@@ -324,7 +324,7 @@
     "indice": 0.74,
     "estado": "en prueba",
     "engagement": 0.1082,
-    "retencion": 78.1
+    "retencion": 78.6
    }
   ],
   "tipo_gancho": [
@@ -350,7 +350,7 @@
     "indice": 1.23,
     "estado": "en prueba",
     "engagement": 0.0316,
-    "retencion": 76.7
+    "retencion": 76.9
    },
    {
     "valor": "pregunta",
@@ -358,7 +358,7 @@
     "indice": 0.77,
     "estado": "pierde",
     "engagement": 0.0559,
-    "retencion": 91.5
+    "retencion": 91.6
    },
    {
     "valor": "contradiccion",
@@ -414,7 +414,7 @@
     "indice": 1.95,
     "estado": "en prueba",
     "engagement": 0.0331,
-    "retencion": 100.2
+    "retencion": 100.3
    },
    {
     "valor": "dom",
@@ -454,7 +454,7 @@
     "indice": 0.63,
     "estado": "en prueba",
     "engagement": 0.0892,
-    "retencion": 104.7
+    "retencion": 105.0
    }
   ],
   "hora": [
@@ -496,7 +496,7 @@
     "indice": 0.89,
     "estado": "en prueba",
     "engagement": 0.0425,
-    "retencion": 104.7
+    "retencion": 104.8
    },
    {
     "valor": "13:07",
@@ -504,7 +504,7 @@
     "indice": 0.54,
     "estado": "en prueba",
     "engagement": 0.0784,
-    "retencion": 75.9
+    "retencion": 76.2
    },
    {
     "valor": "12:51",
@@ -518,23 +518,23 @@
  },
  "decision": {
   "toca_publicar": false,
-  "motivo": "el último sale el 2026-11-18; toca publicar en 3 día(s)",
-  "hora_siguiente": "11:00",
+  "motivo": "el último sale el 2026-11-18; toca publicar en 2 día(s)",
+  "hora_siguiente": "08:00",
   "horarios": {
-   "ig": "11:00",
+   "ig": "08:00",
    "tt": "11:00",
    "yt": "17:00"
   },
   "cuando": {
-   "ig": "2026-11-18T17:00:00Z",
-   "tt": "2026-11-18T17:00:00Z",
-   "yt": "2026-11-18T23:00:00Z"
+   "ig": "2026-11-19T14:00:00Z",
+   "tt": "2026-11-19T17:00:00Z",
+   "yt": "2026-11-19T23:00:00Z"
   },
-  "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 1/4, 12:00 3/4, 15:00 2/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 10/4, 11:00 3/4, 13:00 9/4, 15:00 5/4, 17:00 5/4, 20:00 7/4) · yt: fija 17:00 (10:00 5/4, 12:00 5/4, 14:00 5/4, 17:00 15/4, 20:00 7/4)",
+  "prueba_horas": "ig: en prueba (08:00 2/4, 11:00 2/4, 12:00 3/4, 15:00 2/4, 18:00 2/4, 20:00 2/4) · tt: en prueba (09:00 10/4, 11:00 3/4, 13:00 9/4, 15:00 5/4, 17:00 5/4, 20:00 7/4) · yt: fija 17:00 (10:00 5/4, 12:00 5/4, 14:00 5/4, 17:00 15/4, 20:00 7/4)",
   "conteo_horas": {
    "ig": {
     "08:00": 2,
-    "11:00": 1,
+    "11:00": 2,
     "12:00": 3,
     "15:00": 2,
     "18:00": 2,
@@ -565,63 +565,76 @@
   "carruseles": {
    "tiktok": {
     "id": "c76",
-    "cuando": "2026-11-18T23:00:00Z"
+    "cuando": "2026-11-19T23:00:00Z"
    },
    "instagram": {
     "id": "c66",
-    "cuando_ig": "2026-11-18T14:00:00Z",
+    "cuando_ig": "2026-11-19T14:00:00Z",
     "turno": "mañana",
-    "por_que": "99 vistas en TikTok; lleva 7 día(s) esperando"
+    "por_que": "99 vistas en TikTok; lleva 8 día(s) esperando"
    },
    "youtube": {
     "id": "c78",
-    "cuando_yt": "2026-11-18T16:00:00Z",
-    "por_que": "323 vistas en TikTok; lleva 2 día(s) esperando"
+    "cuando_yt": "2026-11-19T20:00:00Z",
+    "por_que": "325 vistas en TikTok; lleva 3 día(s) esperando"
    },
    "tiktoks": [
     {
      "id": "c76",
-     "cuando": "2026-11-18T23:00:00Z"
+     "cuando": "2026-11-19T23:00:00Z"
+    },
+    {
+     "id": "c75",
+     "cuando": "2026-11-20T02:00:00Z"
     }
    ],
    "instagrams": [
     {
      "id": "c66",
-     "cuando_ig": "2026-11-18T14:00:00Z",
+     "cuando_ig": "2026-11-19T14:00:00Z",
      "turno": "mañana",
-     "por_que": "99 vistas en TikTok; lleva 7 día(s) esperando"
+     "por_que": "99 vistas en TikTok; lleva 8 día(s) esperando"
+    },
+    {
+     "id": "c11",
+     "cuando_ig": "2026-11-20T00:00:00Z",
+     "turno": "tarde",
+     "por_que": "203 vistas en TikTok; lleva 9 día(s) esperando"
     }
    ],
    "youtubes": [
     {
      "id": "c78",
-     "cuando_yt": "2026-11-18T16:00:00Z",
-     "por_que": "323 vistas en TikTok; lleva 2 día(s) esperando"
+     "cuando_yt": "2026-11-19T20:00:00Z",
+     "por_que": "325 vistas en TikTok; lleva 3 día(s) esperando"
     },
     {
      "id": "c79",
-     "cuando_yt": "2026-11-19T02:00:00Z",
-     "por_que": "184 vistas en TikTok; lleva 1 día(s) esperando"
+     "cuando_yt": "2026-11-19T16:00:00Z",
+     "por_que": "185 vistas en TikTok; lleva 2 día(s) esperando"
     }
    ],
    "notas": [
     "Instagram lleva 10 carruseles atrás de TikTok: subir Instagram a 3 al día o bajar TikTok (config → publicaciones_por_dia)."
    ],
-   "quedan_tiktok": 61,
+   "quedan_tiktok": 62,
    "quedan_instagram": 10,
-   "quedan_youtube": 5,
+   "quedan_youtube": 6,
    "comandos": [
-    "python scripts/publer_carrusel.py c76 \"tt=2026-11-18T23:00:00Z\"",
+    "python scripts/publer_carrusel.py c76 \"tt=2026-11-19T23:00:00Z\"",
+    "python scripts/publer_carrusel.py c75 \"tt=2026-11-20T02:00:00Z\"",
     "python scripts/carrusel_video.py short c66",
+    "python scripts/carrusel_video.py short c11",
     "python scripts/carrusel_video.py short c78",
     "python scripts/carrusel_video.py short c79",
-    "python scripts/ig_reel_musica.py c66 --programar 2026-11-18T14:00:00Z",
-    "python scripts/publer_carrusel.py c66 --reel 2026-11-18T14:00:00Z --solo-facebook",
+    "python scripts/ig_reel_musica.py c66 --programar 2026-11-19T14:00:00Z",
+    "python scripts/publer_carrusel.py c66 --reel 2026-11-19T14:00:00Z --solo-facebook",
     "RECORDATORIO (send_later a las 08:00): python scripts/ig_reel_musica.py c66 --publicar",
-    "youtube.py subir carruseles/c78/short.mp4 ... 2026-11-18T16:00:00Z (CARRUSELES.md)",
-    "python scripts/publer_carrusel.py c78 --reel 2026-11-18T16:00:00Z --solo-facebook",
-    "youtube.py subir carruseles/c79/short.mp4 ... 2026-11-19T02:00:00Z (CARRUSELES.md)",
-    "python scripts/publer_carrusel.py c79 --reel 2026-11-19T02:00:00Z --solo-facebook"
+    "python scripts/ig_reel_musica.py c11 --programar 2026-11-20T00:00:00Z",
+    "python scripts/publer_carrusel.py c11 --reel 2026-11-20T00:00:00Z --solo-facebook",
+    "RECORDATORIO (send_later a las 18:00): python scripts/ig_reel_musica.py c11 --publicar",
+    "youtube.py subir carruseles/c78/short.mp4 ... 2026-11-19T20:00:00Z (CARRUSELES.md)",
+    "youtube.py subir carruseles/c79/short.mp4 ... 2026-11-19T16:00:00Z (CARRUSELES.md)"
    ]
   },
   "segundos": 17,
@@ -723,19 +736,19 @@
     },
     "20:00": {
      "n": 6,
-     "indice": 1.24
+     "indice": 1.25
     },
     "15:00": {
      "n": 5,
-     "indice": 5.22
+     "indice": 5.26
     },
     "13:00": {
      "n": 8,
-     "indice": 0.91
+     "indice": 0.92
     },
     "09:00": {
-     "n": 8,
-     "indice": 1.7
+     "n": 9,
+     "indice": 1.58
     },
     "17:00": {
      "n": 5,
@@ -745,15 +758,15 @@
    "dias": {
     "jueves": {
      "n": 6,
-     "indice": 2.0
+     "indice": 2.01
     },
     "sábado": {
      "n": 3,
-     "indice": 0.8
+     "indice": 0.81
     },
     "miércoles": {
-     "n": 5,
-     "indice": 1.02
+     "n": 6,
+     "indice": 0.94
     },
     "viernes": {
      "n": 7,
@@ -761,15 +774,15 @@
     },
     "domingo": {
      "n": 4,
-     "indice": 6.57
+     "indice": 6.62
     },
     "lunes": {
      "n": 6,
-     "indice": 0.93
+     "indice": 0.94
     },
     "martes": {
      "n": 5,
-     "indice": 0.96
+     "indice": 0.97
     }
    },
    "ganadora": null
@@ -782,15 +795,15 @@
     },
     "10:00": {
      "n": 5,
-     "indice": 2.03
+     "indice": 2.06
     },
     "12:00": {
      "n": 5,
-     "indice": 1.17
+     "indice": 1.19
     },
     "20:00": {
      "n": 7,
-     "indice": 1.75
+     "indice": 1.8
     },
     "13:07": {
      "n": 2,
@@ -801,42 +814,42 @@
      "indice": 0.37
     },
     "17:00": {
-     "n": 10,
-     "indice": 2.17
+     "n": 11,
+     "indice": 2.1
     },
     "14:00": {
      "n": 5,
-     "indice": 1.34
+     "indice": 1.39
     }
    },
    "dias": {
     "jueves": {
      "n": 6,
-     "indice": 1.38
+     "indice": 1.41
     },
     "sábado": {
      "n": 4,
-     "indice": 2.66
+     "indice": 2.73
     },
     "miércoles": {
      "n": 5,
-     "indice": 1.18
+     "indice": 1.19
     },
     "viernes": {
      "n": 8,
-     "indice": 1.5
+     "indice": 1.55
     },
     "domingo": {
      "n": 4,
-     "indice": 1.51
+     "indice": 1.56
     },
     "lunes": {
      "n": 5,
-     "indice": 1.11
+     "indice": 1.14
     },
     "martes": {
-     "n": 4,
-     "indice": 2.83
+     "n": 5,
+     "indice": 2.47
     }
    },
    "ganadora": "17:00"
@@ -870,8 +883,8 @@
    },
    {
     "tipo": "si",
-    "n": 5,
-    "vistas_48h": 329
+    "n": 6,
+    "vistas_48h": 286
    },
    {
     "tipo": "dato",
