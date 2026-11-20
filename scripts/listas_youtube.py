@@ -58,8 +58,9 @@ def videos(ids=None):
     for i in range(0, len(ids), 50):
         _, r = yt._http('GET', f'{yt.API}/videos?part=snippet,contentDetails&id={",".join(ids[i:i + 50])}', headers=h)
         for v in json.loads(r)['items']:
-            m = re.match(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', v['contentDetails']['duration'])
-            seg = int(m[1] or 0) * 3600 + int(m[2] or 0) * 60 + int(m[3] or 0)
+            # Un video recién subido y aún en proceso trae "P0D" (sin "T"): antes tronaba y no se llenaban las listas.
+            m = re.match(r'P(?:\d+D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', v['contentDetails'].get('duration') or '')
+            seg = (int(m[1] or 0) * 3600 + int(m[2] or 0) * 60 + int(m[3] or 0)) if m else 0
             salida.append({'id': v['id'], 'titulo': v['snippet']['title'], 'seg': seg})
     return salida
 

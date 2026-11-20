@@ -7630,22 +7630,23 @@
   },
   {
    "id": "c85",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "aguinaldo_tu_sueldo",
    "serie": "Tu sueldo, tu aguinaldo",
    "clon_de": "c01",
    "pilar": "finanzas",
-   "fondo": "auto",
+   "fondo": "assets/fondos/jet.jpg",
    "ventana": {
     "desde": "2026-11-13",
     "hasta": "2026-12-19"
    },
    "portada": {
-    "foto": "auto",
+    "foto": "assets/fotos/dinamica-home-office-alt.jpg",
     "etiqueta": "AGUINALDO 2026",
     "titulo": "Si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000",
     "voz": "Si ganas treinta mil pesos al mes, tu aguinaldo mínimo es de quince mil pesos. Guarda esto.",
-    "gancho_tipo": "si"
+    "gancho_tipo": "si",
+    "foto_reel": "assets/fotos/habla-calle.jpg"
    },
    "diapositivas": [
     {
@@ -7710,7 +7711,11 @@
     "etiqueta": "🧮 Calcula tu aguinaldo gratis",
     "url": "https://victoriatheceo.vercel.app/aguinaldo"
    },
-   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 1000.00, aguinaldo 15000.00, exento 3519.30, gravado 11480.70); datos verificados por segundo agente el 12-nov."
+   "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 1000.00, aguinaldo 15000.00, exento 3519.30, gravado 11480.70); datos verificados por segundo agente el 12-nov.",
+   "publica_utc_por_red": {
+    "tt": "2026-11-22T15:00:00Z"
+   },
+   "publica_utc": "2026-11-22T15:00:00Z"
   },
   {
    "id": "c86",
@@ -8812,7 +8817,7 @@
   },
   {
    "id": "c94u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "fallecimiento_pension_beneficiarios_y_saldo_afore",
    "serie": "Pensión clara",
    "funcion": "convencer",
@@ -8982,7 +8987,13 @@
     "correcciones": [
      "Diap. 2 (padres dependientes): cita 'LSS, arts. 130 y 134' -> 'LSS, arts. 130, 134 y 137' (el derecho de los ascendientes está en el art. 137); texto_post 'arts. 104, 127-134 y 193' -> 'arts. 104, 127-137 y 193'; fuente y fuentes_verificadas actualizadas."
     ]
-   }
+   },
+   "youtube": "https://youtube.com/shorts/EJjUAp5TzcY",
+   "publica_utc_por_red": {
+    "yt": "2026-11-23T23:00:00Z"
+   },
+   "publica_utc": "2026-11-23T23:00:00Z",
+   "formato_youtube": "reel_texto (gratis, sin Replicate)"
   },
   {
    "id": "c95u",
