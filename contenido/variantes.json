@@ -198,5 +198,28 @@
   "plan": {
    "tt": "2026-11-20T01:00:00Z"
   }
+ },
+ {
+  "id": "c16-v2",
+  "original": "c16",
+  "clon_de": "c16",
+  "gancho": "¿Sabes cuánto te toca de aguinaldo? 5 datos antes del 20",
+  "edicion": "zoom",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/c16-v2/video.mp4",
+  "titulo": "¿Sabes cuánto te toca de aguinaldo? 5 datos antes del 20 | aguinaldo 2026",
+  "palabra_clave": "aguinaldo 2026",
+  "creada_utc": "2026-11-20T12:54:19Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-22T01:00:00Z",
+    "via": "publer"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-22T01:00:00Z"
+  }
  }
 ]

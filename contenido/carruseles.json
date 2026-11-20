@@ -9653,7 +9653,7 @@
   },
   {
    "id": "c100",
-   "estado": "borrador",
+   "estado": "programado",
    "tema": "victoria_verifica_salario_minimo_2027_352_84",
    "serie": "Victoria verifica",
    "funcion": "convencer",
@@ -9666,7 +9666,7 @@
    "fondo": "assets/fondos/palco-vip.jpg",
    "ventana": {
     "desde": "2026-11-20",
-    "hasta": "2026-12-20"
+    "hasta": "2026-12-01"
    },
    "portada": {
     "foto": "assets/fotos/dinamica-lectura.png",
@@ -9719,7 +9719,7 @@
    "texto_post": "Salario mínimo 2027: ¿ya quedó en $352.84 diarios? Lo verifiqué. Sello: FALSO 🔍\nLo único oficial hoy: $315.04 diarios en la zona general y $440.87 en la Zona Libre de la Frontera Norte, vigentes desde el 1 de enero de 2026 (CONASAMI, DOF 9-dic-2025).\n$352.84 es $315.04 más 12%: lo que piden la CTM y la CROC. Es una propuesta sindical, no una resolución. La Conasami habla de al menos 10% ($346.54), los sindicatos piden de 12% a 18% y los patrones, menos.\nLa Ley Federal del Trabajo dice que el Consejo de Representantes de la Conasami fija el mínimo en diciembre, lo publica en el DOF a más tardar el 31 y rige desde el 1 de enero (arts. 570 y 571). Al 20 de noviembre no hay resolución ni publicación. Que habrá aumento, se ha dicho; de cuánto, todavía no.\nMi consejo: no gastes ni prometas un aumento que todavía no existe. Haz tus cuentas con lo que hoy cobras.\n\n📚 CONASAMI, DOF 9-dic-2025 · STPS, boletines 14/2025 y 07/2026 · Ley Federal del Trabajo, arts. 570 y 571 · Uno TV, Infobae y Expansión, 17-nov-2026 · consultado el 20-nov-2026\n📩 Mándaselo a quien te lo pasó por WhatsApp.\n\n#salariominimo #salariominimo2027 #victoriaverifica #finanzaspersonales #victoriatheceo",
    "seo": {
     "palabra_clave": "salario mínimo 2027",
-    "titulo": "Salario mínimo 2027 en $352.84, es falso 🔍",
+    "titulo": "Salario mínimo 2027 ya en $352.84, es falso 🔍",
     "tags_concretas": [
      "salario minimo 2027",
      "salario minimo 2027 mexico",
@@ -9749,7 +9749,7 @@
    },
    "revision": {
     "fecha": "2026-11-20",
-    "segunda": "pendiente: falta la segunda revisión (docs/CARRUSELES.md, paso 7) antes de pasar a 'listo'",
+    "segunda": "Segunda revisión 20-nov-2026: reabiertas las 9 fuentes. DOF 9-dic-2025 (315.04 ZSMG +13%, 440.87 ZLFN +5%, MIR 17.01 + 6.5%, vigencia 1-ene-2026, cita art. 570) y STPS boletín 14/2025 del 3-dic-2025 (278.80 -> 315.04; 419.88 -> 440.87; 9,582.47 y 13,409.80 mensuales) coinciden. LFT vigente (últ. reforma DOF 14-05-2026, PDF de Diputados): art. 570 (fija cada año, rige el 1 de enero), art. 571 fr. I (estudios hasta el último de noviembre), fr. III (resolución en diciembre, antes del último día hábil), fr. V (DOF a más tardar el 31), art. 94 (comisión tripartita): textual. Archivo de prensa de la Conasami al 20-nov: lo más reciente es el boletín 07/2026 (6-nov-2026), sin cifra 2027; Infobae 17-nov ('todavía no tiene una cifra aprobada') y Uno TV 17-nov ('no representan el monto definitivo') lo confirman; Dossier Político/El Sol de México 20-nov: el Consejo de Representantes se instala el jueves 26-nov y el presidente de la Conasami dice 'la verdad no lo sé todavía' (rango 10-15%, 'lo mínimo es que sean dos dígitos'). CTM y CROC 12%: Uno TV, Infobae y Buzos 11-nov. Sindicatos 12-18%, Coparmex 9-9.9% (Uno TV, Infobae) y 5-6% (Expansión): la lámina no da porcentaje patronal, correcto. Expansión 17-nov: Sheinbaum adelantó que habrá aumento y que su tamaño se negociará. Cuentas rehechas en python (Decimal, ROUND_HALF_UP): 315.04x1.12 = 352.84; 315.04x1.10 = 346.54; 352.84/315.04-1 = 11.998%; 315.04/278.80-1 = 12.999%; 440.87/419.88-1 = 4.999%; (278.80+17.01)x1.065 = 315.04; x365/12 = 9,582.47 y 13,409.80; 20-nov-2026 viernes, 26-nov jueves, 1-dic martes, 31-dic jueves. Sello FALSO justo: lo que se verifica es que 'ya quedó'; hoy no hay resolución ni DOF. $352.84 sí aparece en la red (p. ej. hacecuentas.com), pero como escenario matemático, no oficial. Corregido: título SEO (también la franja de la portada del Reel 00r) decía 'Salario mínimo 2027 en $352.84, es falso', que da por falsa la cifra y no el 'ya quedó'; como el 12% cae dentro del rango de la Conasami (10-15%), podría resultar la cifra final: ahora 'Salario mínimo 2027 ya en $352.84, es falso 🔍' (45 caracteres). Ventana recortada al 1-dic-2026 (la Conasami decide a principios de diciembre). Sin recomendar inversiones ni productos (el consejo de no gastar un aumento inexistente va marcado como opinión), sin exhibir a nadie (el cierre es genérico), español neutro de tú sin faltas; láminas 00-07 y 00r revisadas a ojo: nada cortado ni fuera de la lámina; revisar_texto_foto.py: portada y foto_reel sin texto legible. Pasa a listo.",
     "sello": "FALSO: lo que circula dice que el mínimo 2027 'ya quedó' o 'ya es oficial' en $352.84. Es la propuesta de 12% de CTM y CROC; al 20-nov-2026 no hay resolución de la Conasami ni publicación en el DOF, y la LFT (art. 571 fr. III) manda dictarla en diciembre.",
     "cuentas_python": [
      "315.04 * 1.12 = 352.8448 -> 352.84 (redondeo a centavos, ROUND_HALF_UP)",
@@ -9818,8 +9818,16 @@
      "Porcentaje de los patrones (5-6% contra 9-9.9% según el medio)",
      "Meta de 2.5 canastas y estimaciones de contadores (352-355)"
     ],
-    "caducidad": "En cuanto la Conasami anuncie el mínimo 2027 (se espera a inicios de diciembre) el sello FALSO deja de servir: si la cifra final fuera 12%, el post confundiría. Sacarlo de la cola ese día o reescribirlo, aunque la ventana diga hasta el 20-dic."
-   }
+    "caducidad": "En cuanto la Conasami anuncie el mínimo 2027 (se espera a inicios de diciembre) el sello FALSO deja de servir: si la cifra final fuera 12%, el post confundiría. Sacarlo de la cola ese día o reescribirlo; la ventana ya cierra el 1-dic-2026 (segunda revisión).",
+    "cambios_segunda": [
+     "seo.titulo: \"ya en $352.84, es falso\" (el sello es sobre el \"ya quedó\", no sobre la cifra)",
+     "ventana hasta 2026-12-01"
+    ]
+   },
+   "publica_utc_por_red": {
+    "tt": "2026-11-21T01:00:00Z"
+   },
+   "publica_utc": "2026-11-21T01:00:00Z"
   }
  ]
 }

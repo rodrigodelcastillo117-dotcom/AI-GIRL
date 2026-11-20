@@ -337,7 +337,7 @@
    "yt": "2026-11-07T16:00:00Z",
    "fb": "2026-11-13T03:30:00Z"
   },
-  "v_yt": 140,
+  "v_yt": 142,
   "l_yt": 6,
   "c_yt": 7,
   "s_yt": 0,
@@ -434,7 +434,7 @@
    "yt": "2026-11-09T20:00:00Z",
    "fb": "2026-11-10T17:00:00Z"
   },
-  "v_yt": 136,
+  "v_yt": 137,
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
@@ -479,12 +479,12 @@
   "l_yt": 4,
   "c_yt": 11,
   "s_yt": 0,
-  "v_tt": 215,
+  "v_tt": 216,
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 13,
-  "l_ig": 6,
+  "v_ig": 14,
+  "l_ig": 7,
   "c_ig": 5,
   "s_ig": 0,
   "r_yt": 58.3,
@@ -560,7 +560,7 @@
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
-  "v_tt": 4261,
+  "v_tt": 4265,
   "l_tt": 71,
   "c_tt": 2,
   "s_tt": 15,
@@ -1302,11 +1302,11 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 122,
+  "v_yt": 125,
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
-  "v_tt": 380,
+  "v_tt": 392,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
@@ -1575,11 +1575,11 @@
   "l_yt": 7,
   "c_yt": 11,
   "s_yt": 0,
-  "v_tt": 350,
+  "v_tt": 351,
   "l_tt": 3,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 14,
+  "v_ig": 19,
   "l_ig": 5,
   "c_ig": 2,
   "s_ig": 0,
@@ -1676,8 +1676,8 @@
   "l_tt": 2,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 9,
-  "l_ig": 6,
+  "v_ig": 10,
+  "l_ig": 7,
   "c_ig": 9,
   "s_ig": 2,
   "r_yt": 54.1,
@@ -1756,12 +1756,12 @@
   "l_yt": 6,
   "c_yt": 15,
   "s_yt": 0,
-  "v_tt": 1064,
+  "v_tt": 1065,
   "l_tt": 6,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 21,
-  "l_ig": 5,
+  "v_ig": 22,
+  "l_ig": 6,
   "c_ig": 11,
   "s_ig": 0,
   "r_yt": 50.2,
@@ -1872,7 +1872,7 @@
   "l_yt": 3,
   "c_yt": 14,
   "s_yt": 0,
-  "v_tt": 209,
+  "v_tt": 210,
   "l_tt": 5,
   "c_tt": 1,
   "s_tt": 0,
@@ -1949,8 +1949,8 @@
   "l_tt": 1,
   "c_tt": 0,
   "s_tt": 0,
-  "v_ig": 9,
-  "l_ig": 3,
+  "v_ig": 10,
+  "l_ig": 4,
   "c_ig": 2,
   "s_ig": 0
  },
@@ -2030,7 +2030,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-17T15:06:42Z"
   },
-  "v_tt": 72,
+  "v_tt": 74,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0
@@ -2057,7 +2057,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-18T15:08:37Z"
   },
-  "v_tt": 89,
+  "v_tt": 91,
   "l_tt": 5,
   "c_tt": 1,
   "s_tt": 1
@@ -2083,7 +2083,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "tt": "2026-11-19T15:07:35Z"
-  }
+  },
+  "v_tt": 139,
+  "l_tt": 1,
+  "c_tt": 0,
+  "s_tt": 0
  },
  {
   "id": "c83",
@@ -2133,22 +2137,26 @@
  },
  {
   "id": "c85",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "aguinaldo tu sueldo",
   "pilar": "finanzas",
   "gancho": "Si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000",
   "titulo": "Aguinaldo 2026 si ganas $30,000 al mes 💰",
   "diapositivas": 7,
-  "fondo": "auto",
-  "portada": "auto",
-  "horas": {},
+  "fondo": "jet.jpg",
+  "portada": "dinamica-home-office-alt.jpg",
+  "horas": {
+   "tt": "2026-11-22 09:00"
+  },
   "youtube_id": "",
-  "publica_utc": "",
+  "publica_utc": "2026-11-22T15:00:00Z",
   "linea": "si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "tt": "2026-11-22T15:00:00Z"
+  }
  },
  {
   "id": "c86",
@@ -2197,11 +2205,11 @@
    "yt": "2026-11-14T02:00:00Z",
    "fb": "2026-11-14T02:00:00Z"
   },
-  "v_yt": 342,
+  "v_yt": 341,
   "l_yt": 8,
   "c_yt": 13,
   "s_yt": 0,
-  "v_tt": 119,
+  "v_tt": 146,
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 1,
@@ -2232,7 +2240,7 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 920,
+  "v_yt": 923,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
@@ -2263,7 +2271,7 @@
    "yt": "2026-11-17T23:00:00Z",
    "fb": "2026-11-17T23:00:00Z"
   },
-  "v_yt": 73,
+  "v_yt": 76,
   "l_yt": 1,
   "c_yt": 2,
   "s_yt": 0,
@@ -2325,7 +2333,7 @@
    "yt": "2026-11-19T23:00:00Z",
    "fb": "2026-11-19T23:00:00Z"
   },
-  "v_yt": 28,
+  "v_yt": 56,
   "l_yt": 0,
   "c_yt": 2,
   "s_yt": 0,
@@ -2355,7 +2363,7 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 247,
+  "v_yt": 246,
   "l_yt": 1,
   "c_yt": 3,
   "s_yt": 0,
@@ -2416,7 +2424,7 @@
  },
  {
   "id": "c94u",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "fallecimiento pension beneficiarios y saldo afore",
   "pilar": "finanzas",
   "gancho": "Su Afore no se hereda sola: nombre hoy a sus beneficiarios",
@@ -2424,14 +2432,19 @@
   "diapositivas": 10,
   "fondo": "dinamica-estudio.jpg",
   "portada": "lora-prueba-4-casa.jpg",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "horas": {
+   "yt": "2026-11-23 17:00"
+  },
+  "youtube_id": "EJjUAp5TzcY",
+  "publica_utc": "2026-11-23T23:00:00Z",
   "linea": "si usted falta, ¿su familia sabría qué cobrar y dónde? 🗂️",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "yt": "2026-11-23T23:00:00Z"
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c95u",
@@ -2537,6 +2550,29 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "ig": "2026-11-22T17:00:00Z"
+  }
+ },
+ {
+  "id": "c100",
+  "estado": "programado",
+  "tema": "victoria verifica salario minimo 2027 352 84",
+  "pilar": "finanzas",
+  "gancho": "¿El salario mínimo 2027 ya quedó en $352.84? Lo verifiqué",
+  "titulo": "Salario mínimo 2027 ya en $352.84, es falso 🔍",
+  "diapositivas": 8,
+  "fondo": "palco-vip.jpg",
+  "portada": "dinamica-lectura.png",
+  "horas": {
+   "tt": "2026-11-20 19:00"
+  },
+  "youtube_id": "",
+  "publica_utc": "2026-11-21T01:00:00Z",
+  "linea": "salario mínimo 2027: ¿ya quedó en $352.84 diarios? lo verifiqué. sello: falso 🔍",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {
+   "tt": "2026-11-21T01:00:00Z"
   }
  }
 ]

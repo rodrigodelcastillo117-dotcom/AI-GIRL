@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-20T12:39:48Z",
+ "generado_utc": "2026-11-20T12:56:03Z",
  "estado": "aviso",
  "checks": [
   {
@@ -30,7 +30,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-20: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
+   "detalle": "2026-11-20: TikTok 5, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
@@ -40,7 +40,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-22: TikTok 2, Instagram 3, YouTube 3, Facebook 2 · la rutina de ese día llena: TikTok 2/3"
+   "detalle": "2026-11-22: TikTok 3, Instagram 3, YouTube 3, Facebook 2"
   },
   {
    "area": "Serie",
@@ -55,7 +55,7 @@
   {
    "area": "Serie",
    "estado": "ok",
-   "detalle": "2026-11-22: aún no tiene la parte de la serie; siguiente parte lista: c85 (prográmala como primer TikTok del día)"
+   "detalle": "2026-11-22: el primer TikTok es de la serie (c85)"
   },
   {
    "area": "Videos largos",
@@ -94,28 +94,18 @@
   },
   {
    "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA1-c02: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-22T02:30): recortes.py publicar LA1-c02"
-  },
-  {
-   "area": "Recortes",
-   "estado": "aviso",
-   "detalle": "LA3-c01: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-21T20:00): recortes.py publicar LA3-c01"
-  },
-  {
-   "area": "Recortes",
    "estado": "ok",
    "detalle": "31 recortes con fecha (se suben 48 h antes): LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "16 recortes programados en las 4 redes"
+   "detalle": "18 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "57 carruseles listos para TikTok (~19 días a 3 por día)"
+   "detalle": "55 carruseles listos para TikTok (~18 días a 3 por día)"
   },
   {
    "area": "Cola",
@@ -125,12 +115,12 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,261 vs mediana 171): ya tiene 4 clones"
+   "detalle": "c16 (TikTok 4,265 vs mediana 170): ya tiene 5 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,064 vs mediana 171): ya tiene 4 clones"
+   "detalle": "c70 (TikTok 1,065 vs mediana 170): ya tiene 5 clones"
   },
   {
    "area": "Ganadores",
