@@ -9650,6 +9650,176 @@
     "ig": "2026-11-22T17:00:00Z"
    },
    "publica_utc": "2026-11-22T17:00:00Z"
+  },
+  {
+   "id": "c100",
+   "estado": "borrador",
+   "tema": "victoria_verifica_salario_minimo_2027_352_84",
+   "serie": "Victoria verifica",
+   "funcion": "convencer",
+   "vigencia": "noticia",
+   "rasgos": [
+    "verifica"
+   ],
+   "clon_de": "c70",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/palco-vip.jpg",
+   "ventana": {
+    "desde": "2026-11-20",
+    "hasta": "2026-12-20"
+   },
+   "portada": {
+    "foto": "assets/fotos/dinamica-lectura.png",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "¿El salario mínimo 2027 ya quedó en $352.84? Lo verifiqué",
+    "voz": "¿Te llegó que el salario mínimo de dos mil veintisiete ya quedó en trescientos cincuenta y dos pesos? Lo verifiqué.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/habla-cocina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Lo único oficial hoy",
+     "texto": "El mínimo vigente es de $315.04 diarios, y $440.87 en la Zona Libre de la Frontera Norte. Rige desde el 1 de enero de 2026.\n\nCONASAMI, DOF 9-dic-2025 · STPS, 3-dic-2025",
+     "voz": "Lo único oficial hoy: trescientos quince pesos con cuatro centavos al día, vigente desde enero."
+    },
+    {
+     "titulo": "¿De dónde sale $352.84?",
+     "texto": "Es $315.04 más 12%. Ese 12% es lo que piden la CTM y la CROC. Es una propuesta sindical, no una resolución.\n\nUno TV e Infobae, 17-nov-2026 · cuenta propia",
+     "voz": "¿De dónde sale? Es el mínimo actual más doce por ciento: lo que piden dos centrales sindicales. Es propuesta, no decisión."
+    },
+    {
+     "titulo": "¿Cuándo se decide?",
+     "texto": "La ley dice que la Conasami fija el mínimo en diciembre y lo publica en el DOF a más tardar el 31. Rige desde el 1 de enero.\n\nLFT, arts. 570 y 571 · Uno TV e Infobae, 17-nov-2026",
+     "voz": "¿Cuándo se decide? La ley dice que en diciembre, y el nuevo mínimo rige desde el primero de enero."
+    },
+    {
+     "titulo": "Sello: FALSO",
+     "texto": "Al 20 de noviembre no hay resolución de la Conasami ni publicación en el DOF. Que habrá aumento, se ha dicho. De cuánto, todavía no.\n\nConasami, 6-nov-2026 · Expansión e Infobae, 17-nov-2026",
+     "voz": "Sello: falso. Hoy no hay nada publicado. Que habrá aumento, se ha dicho. De cuánto, todavía no."
+    },
+    {
+     "titulo": "¿Cuánto podría subir?",
+     "texto": "La Conasami habla de al menos 10%: serían $346.54. Los sindicatos piden de 12% a 18%. Los patrones, menos. Son propuestas.\n\nUno TV, 17-nov-2026 · El Sol de México, 20-nov-2026",
+     "voz": "La Conasami habla de al menos diez por ciento. Los sindicatos piden más, y los patrones, menos."
+    },
+    {
+     "titulo": "Antes de reenviar",
+     "texto": "La cifra buena saldrá en el DOF. Mi consejo: no gastes ni prometas un aumento que todavía no existe. Haz tus cuentas con lo que hoy cobras.\n\nLFT, art. 571, fr. V · Uno TV, 17-nov-2026",
+     "voz": "Antes de reenviar, espera el Diario Oficial. Y no gastes un aumento que todavía no existe."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándaselo a quien te lo pasó por WhatsApp.",
+    "texto": "Martes y viernes verifico un dato de dinero que circula, con su fuente oficial.",
+    "voz": "Martes y viernes verifico un dato de dinero. Mándaselo a quien te lo pasó por WhatsApp, y sígueme."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 20-nov-2026. 1) CONASAMI, 'RESOLUCIÓN del H. Consejo de Representantes de la Comisión Nacional de los Salarios Mínimos que fija los salarios mínimos generales y profesionales que habrán de regir a partir del 1 de enero de 2026' (DOF 9-dic-2025): 13.0% en la Zona del Salario Mínimo General, '315.04 pesos por jornada diaria de trabajo' (17.01 pesos de MIR más 6.5% por fijación); 5.0% en la Zona Libre de la Frontera Norte, '440.87 pesos por jornada diaria de trabajo'; 'tendrán vigencia a partir del 1º de enero de 2026'; cita el art. 570 LFT ('se fijarán cada año y comenzarán a regir el primero de enero del año siguiente'). https://dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025 2) STPS/CONASAMI, Boletín 14/2025, 'Consejo de Representantes de la Conasami acuerda incremento de 13% al salario mínimo general en 2026' (3-dic-2025): de 278.80 a 315.04 pesos diarios (9,582.47 mensuales); ZLFN de 419.88 a 440.87 (+5%, 13,409.80 mensuales); en vigor el 1-ene-2026. https://www.gob.mx/stps/prensa/consejo-de-representantes-de-la-conasami-acuerda-incremento-de-13-al-salario-minimo-general-en-2026-414320 3) Ley Federal del Trabajo (texto vigente, última reforma DOF 14-05-2026): art. 570 ('Los salarios mínimos se fijarán cada año y comenzarán a regir el primero de enero del año siguiente'); art. 571 fr. I (trabajadores y patrones presentan estudios hasta 'el último de noviembre'), fr. III (el Consejo de Representantes, 'durante el mes de Diciembre y antes del último día hábil del mismo mes, dictará resolución en la que fije los salarios mínimos'), fr. V (publicación en el DOF 'a más tardar el treinta y uno de Diciembre'); art. 94 (los fija una Comisión Nacional tripartita). https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf 4) STPS/CONASAMI, Boletín 07/2026, 'Comisión Consultiva de Conasami concluye trabajos y entrega informe al Consejo de Representantes' (6-nov-2026): el informe será insumo para la fijación de los salarios mínimos de 2027, proceso 'que dará inicio en las últimas semanas del mes de noviembre'; sin cifra para 2027. Es el comunicado más reciente del archivo de prensa de la Conasami al 20-nov-2026 (https://www.gob.mx/conasami/es/archivo/prensa); ninguno anuncia el mínimo 2027. https://www.gob.mx/stps/prensa/comision-consultiva-de-conasami-concluye-trabajos-y-entrega-informe-al-consejo-de-representantes-440002 5) Uno TV, 'Salario mínimo 2027: Conasami abrirá sesión permanente entre 23 y 27 de noviembre' (17-nov-2026): CTM y CROC proponen 12%; centrales sindicales de 12% a 18% (Congreso del Trabajo 15-18%, UNT 13% general y 8% frontera); Coparmex 9% a 9.9%; la presidencia de la Conasami, al menos 10%; las propuestas 'todavía deberán discutirse y no representan el monto definitivo'; nuevos montos en vigor el 1-ene-2027 tras su publicación en el DOF; vigentes 315.04 y 440.87. https://www.unotv.com/nacional/salario-minimo-2027-conasami-abrira-sesion-permanente-entre-23-y-27-de-noviembre/ 6) Infobae, 'Salario mínimo 2027: qué implica el aumento para el pago de impuestos y cuotas del IMSS' (17-nov-2026): 'todavía no tiene una cifra aprobada'; 'cualquier porcentaje en circulación corresponde a una estimación, no a una decisión formal'; CTM 12% y CROC 12%; UNT 13%/8%; Congreso del Trabajo 15-18%; Coparmex 9-9.9%; el Consejo puede votar desde el 1 de diciembre; en vigor el 1-ene-2027; 2026: 315.04 y 440.87. https://www.infobae.com/mexico/2026/11/17/salario-minimo-2027-que-implica-el-aumento-para-el-pago-de-impuestos-y-cuotas-del-imss/ 7) Expansión, Patricia Tapia, 'Empresarios ya no aguantan el ritmo a Sheinbaum con el salario mínimo' (17-nov-2026): el próximo aumento 'se definirá en la Conasami'; 'Sheinbaum ya adelantó que habrá un aumento al salario mínimo en 2027 y que su tamaño se negociará'; meta de cerca de 11% anual hacia 2030; Coparmex propone 5-6%; 2026: 315.04 (+13%) y 440.87 (+5%). https://expansion.mx/economia/2026/11/17/salario-minimo-2027-empresarios-sheinbaum-bajar-aumentos 8) El Sol de México, entrevista con el presidente de la Conasami, reproducida por Dossier Político, 'Aumento al salario mínimo para 2027 sería de hasta 15% y podría definirse a principios de diciembre' (20-nov-2026): 'Lo mínimo es que sean dos dígitos'; rango de 10 a 15% ('la verdad no lo sé todavía'); sector obrero 15-18%; sector empresarial 9-9.9% (informal); el Consejo de Representantes se instala el 26-nov; anuncio esperado en la primera semana de diciembre. https://dossierpolitico.com/2026/11/20/aumento-al-salario-minimo-para-2027-seria-de-hasta-15-y-podria-definirse-a-principios-de-diciembre/ 9) Buzos, 'Salario mínimo 2027: sindicatos exigen 12% de aumento...' (11-nov-2026): la CROC propuso 12% y la CTM solicitará el mismo porcentaje. https://buzos.com.mx/noticia/salario-minimo-2027-sindicatos-exigen-12-de-aumento-y-empresarios-advierten-riesgos-para-las-empresas Cuentas propias (python): 315.04 x 1.12 = 352.8448 -> $352.84; 315.04 x 1.10 = $346.54. Veredicto: FALSO que el mínimo 2027 'ya quedó' o 'ya es oficial' en $352.84: es la propuesta de 12% de CTM y CROC; al 20-nov-2026 no hay resolución del Consejo de Representantes ni publicación en el DOF, y por ley la resolución se dicta en diciembre (LFT art. 571 fr. III).",
+   "titulo_post": "Victoria verifica: ¿el salario mínimo 2027 ya quedó en $352.84?",
+   "texto_post": "Salario mínimo 2027: ¿ya quedó en $352.84 diarios? Lo verifiqué. Sello: FALSO 🔍\nLo único oficial hoy: $315.04 diarios en la zona general y $440.87 en la Zona Libre de la Frontera Norte, vigentes desde el 1 de enero de 2026 (CONASAMI, DOF 9-dic-2025).\n$352.84 es $315.04 más 12%: lo que piden la CTM y la CROC. Es una propuesta sindical, no una resolución. La Conasami habla de al menos 10% ($346.54), los sindicatos piden de 12% a 18% y los patrones, menos.\nLa Ley Federal del Trabajo dice que el Consejo de Representantes de la Conasami fija el mínimo en diciembre, lo publica en el DOF a más tardar el 31 y rige desde el 1 de enero (arts. 570 y 571). Al 20 de noviembre no hay resolución ni publicación. Que habrá aumento, se ha dicho; de cuánto, todavía no.\nMi consejo: no gastes ni prometas un aumento que todavía no existe. Haz tus cuentas con lo que hoy cobras.\n\n📚 CONASAMI, DOF 9-dic-2025 · STPS, boletines 14/2025 y 07/2026 · Ley Federal del Trabajo, arts. 570 y 571 · Uno TV, Infobae y Expansión, 17-nov-2026 · consultado el 20-nov-2026\n📩 Mándaselo a quien te lo pasó por WhatsApp.\n\n#salariominimo #salariominimo2027 #victoriaverifica #finanzaspersonales #victoriatheceo",
+   "seo": {
+    "palabra_clave": "salario mínimo 2027",
+    "titulo": "Salario mínimo 2027 en $352.84, es falso 🔍",
+    "tags_concretas": [
+     "salario minimo 2027",
+     "salario minimo 2027 mexico",
+     "aumento salario minimo 2027",
+     "salario minimo 2027 352.84",
+     "conasami 2027",
+     "salario minimo 2026 315.04",
+     "cuando se anuncia el salario minimo 2027",
+     "salario minimo frontera norte 2027"
+    ],
+    "hashtags": [
+     "#salariominimo",
+     "#salariominimo2027",
+     "#victoriaverifica",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿Ya es oficial el salario mínimo 2027?",
+     "¿De cuánto será el salario mínimo en 2027?",
+     "¿Cuándo se anuncia el aumento al salario mínimo 2027?",
+     "¿Cuánto es el salario mínimo en 2026?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 ¿Te alcanza tu sueldo? Haz tus cuentas gratis",
+    "url": "https://victoriatheceo.vercel.app/te-alcanza-tu-sueldo"
+   },
+   "revision": {
+    "fecha": "2026-11-20",
+    "segunda": "pendiente: falta la segunda revisión (docs/CARRUSELES.md, paso 7) antes de pasar a 'listo'",
+    "sello": "FALSO: lo que circula dice que el mínimo 2027 'ya quedó' o 'ya es oficial' en $352.84. Es la propuesta de 12% de CTM y CROC; al 20-nov-2026 no hay resolución de la Conasami ni publicación en el DOF, y la LFT (art. 571 fr. III) manda dictarla en diciembre.",
+    "cuentas_python": [
+     "315.04 * 1.12 = 352.8448 -> 352.84 (redondeo a centavos, ROUND_HALF_UP)",
+     "352.84 / 315.04 - 1 = 0.1199848 -> 12.0%",
+     "315.04 * 1.10 = 346.544 -> 346.54",
+     "352.84 - 315.04 = 37.80 pesos más al día con 12%",
+     "comprobación 2026: 315.04 / 278.80 - 1 = 12.9986% (13%); 440.87 / 419.88 - 1 = 4.9990% (5%); (278.80 + 17.01) * 1.065 = 315.04 (MIR + 6.5%, como dice el DOF)",
+     "comprobación mensual 2026 (x 365 / 12): 315.04 -> 9,582.47; 440.87 -> 13,409.80 (coincide con el boletín STPS 14/2025; no se usa en las láminas)",
+     "calendario: 20-nov-2026 viernes; 1-dic-2026 martes; 31-dic-2026 jueves"
+    ],
+    "fuentes_por_dato": [
+     {
+      "dato": "Mínimo vigente 2026: $315.04 general y $440.87 ZLFN, desde el 1-ene-2026",
+      "fuente1": "CONASAMI, Resolución DOF 9-dic-2025",
+      "fuente2": "STPS boletín 14/2025 (3-dic-2025); también Uno TV, Infobae y Expansión 17-nov-2026"
+     },
+     {
+      "dato": "$352.84 = $315.04 + 12%",
+      "fuente1": "cuenta propia (python)",
+      "fuente2": "n/a (aritmética)"
+     },
+     {
+      "dato": "El 12% es lo que piden CTM y CROC (propuesta, no resolución)",
+      "fuente1": "Uno TV 17-nov-2026",
+      "fuente2": "Infobae 17-nov-2026 (y Buzos 11-nov-2026)"
+     },
+     {
+      "dato": "La Conasami fija el mínimo en diciembre, lo publica en el DOF a más tardar el 31 y rige desde el 1 de enero",
+      "fuente1": "LFT arts. 570 y 571 fr. III y V (y la propia resolución DOF 9-dic-2025, que cita el art. 570)",
+      "fuente2": "Uno TV 17-nov-2026 (art. 571; en vigor 1-ene-2027) e Infobae 17-nov-2026 (vota desde el 1-dic; en vigor 1-ene-2027)"
+     },
+     {
+      "dato": "Al 20-nov-2026 no hay resolución ni publicación del mínimo 2027",
+      "fuente1": "Conasami/STPS: archivo de prensa (último boletín 07/2026, 6-nov-2026, sin cifra; el proceso 2027 empieza a finales de noviembre)",
+      "fuente2": "Infobae 17-nov-2026 ('todavía no tiene una cifra aprobada') y Uno TV 17-nov-2026"
+     },
+     {
+      "dato": "Que habrá aumento se ha dicho; el monto no",
+      "fuente1": "Expansión 17-nov-2026 (la Presidenta dijo que habrá aumento en 2027 y que 'se negociará')",
+      "fuente2": "El Sol de México/Dossier Político 20-nov-2026 (presidente de la Conasami: 'la verdad no lo sé todavía')"
+     },
+     {
+      "dato": "La Conasami habla de al menos 10%",
+      "fuente1": "Uno TV 17-nov-2026 (presidencia de la Conasami: al menos 10%)",
+      "fuente2": "El Sol de México/Dossier Político 20-nov-2026 ('Lo mínimo es que sean dos dígitos'; 10 a 15%)"
+     },
+     {
+      "dato": "Sindicatos piden de 12% a 18%",
+      "fuente1": "Uno TV 17-nov-2026",
+      "fuente2": "Infobae 17-nov-2026 (CTM 12, CROC 12, UNT 13, Congreso del Trabajo 15-18)"
+     },
+     {
+      "dato": "Los patrones proponen menos (todas las cifras reportadas están debajo de 10%)",
+      "fuente1": "Uno TV e Infobae 17-nov-2026 (Coparmex 9-9.9%)",
+      "fuente2": "Expansión 17-nov-2026 (Coparmex 5-6%) y Dossier Político 20-nov-2026 (9-9.9% informal). Las cifras no coinciden entre medios: por eso la lámina no da porcentaje de los patrones"
+     },
+     {
+      "dato": "La cifra se publica en el DOF",
+      "fuente1": "LFT art. 571 fr. V",
+      "fuente2": "Uno TV 17-nov-2026 (en vigor tras su publicación en el DOF)"
+     }
+    ],
+    "fuera": [
+     "Fecha exacta del anuncio (medios dicen 'primera semana de diciembre', no es oficial)",
+     "Plazo 'vence el 30 de diciembre' que dan algunos medios: la LFT dice 'antes del último día hábil' de diciembre y DOF a más tardar el 31; no se usa un día exacto",
+     "Porcentaje de los patrones (5-6% contra 9-9.9% según el medio)",
+     "Meta de 2.5 canastas y estimaciones de contadores (352-355)"
+    ],
+    "caducidad": "En cuanto la Conasami anuncie el mínimo 2027 (se espera a inicios de diciembre) el sello FALSO deja de servir: si la cifra final fuera 12%, el post confundiría. Sacarlo de la cola ese día o reescribirlo, aunque la ventana diga hasta el 20-dic."
+   }
   }
  ]
 }
