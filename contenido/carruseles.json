@@ -7446,9 +7446,9 @@
    },
    "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 400.00, aguinaldo 6000.00, exento 3519.30, gravado 2480.70); datos verificados por segundo agente el 12-nov.",
    "publica_utc_por_red": {
-    "tt": "2026-11-19T15:00:00Z"
+    "tt": "2026-11-19T15:07:35Z"
    },
-   "publica_utc": "2026-11-19T15:00:00Z"
+   "publica_utc": "2026-11-19T15:07:35Z"
   },
   {
    "id": "c83",
@@ -8411,7 +8411,8 @@
    "publica_utc_por_red": {
     "yt": "2026-11-19T23:00:00Z"
    },
-   "publica_utc": "2026-11-19T23:00:00Z"
+   "publica_utc": "2026-11-19T23:00:00Z",
+   "comentario_youtube": "Ugzxm6dgM5RwKIA1Zgx4AaABAg"
   },
   {
    "id": "c91u",

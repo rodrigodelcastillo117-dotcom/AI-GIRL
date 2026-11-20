@@ -3,8 +3,8 @@
   "hoy_usd": 0.0,
   "semana_usd": 3.37,
   "mes_usd": 70.9,
-  "otro_canal_semana_usd": 4.65,
-  "otro_canal_mes_usd": 14.73,
+  "otro_canal_semana_usd": 5.17,
+  "otro_canal_mes_usd": 15.24,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
@@ -14,7 +14,7 @@
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 25.08,
+ "saldo_estimado_usd": 24.56,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -23,7 +23,7 @@
  ],
  "gastado_desde_base": {
   "victoria": 29.86,
-  "otro": 7.23
+  "otro": 7.74
  },
  "gastado_7_dias": {
   "victoria": 6.76,
@@ -68,41 +68,46 @@
   {
    "dia": "2026-11-19",
    "victoria": 0.0,
+   "otro": 0.52
+  },
+  {
+   "dia": "2026-11-20",
+   "victoria": 0.0,
    "otro": 0.0
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 23.27,
   "bytedance/seedance-1-pro": 5.25,
-  "minimax/video-01": 4.0,
+  "minimax/video-01": 4.5,
   "minimax/voice-cloning": 3.0,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.23,
+  "black-forest-labs/flux-schnell": 0.24,
   "minimax/speech-02-hd": 0.0
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
   "rodrigodelcastillo117-dotcom/victoria-ceo-lora": 9,
-  "google/nano-banana-pro": 36,
+  "google/nano-banana-pro": 64,
   "google/veo-3.1-fast": 21,
   "meta/musicgen": 9,
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 29,
   "stability-ai/stable-audio-2.5": 15,
-  "victor-upmeet/whisperx": 160,
+  "victor-upmeet/whisperx": 178,
   "black-forest-labs/flux-1.1-pro": 124,
-  "elevenlabs/music": 48,
+  "elevenlabs/music": 56,
   "851-labs/background-remover": 7,
-  "minimax/speech-2.6-hd": 104,
-  "elevenlabs/v3": 95,
-  "nightmareai/real-esrgan": 27,
+  "minimax/speech-2.6-hd": 117,
+  "elevenlabs/v3": 104,
+  "nightmareai/real-esrgan": 28,
   "anthropic/claude-4.5-sonnet": 2,
   "black-forest-labs/flux-1.1-pro-ultra": 3,
-  "black-forest-labs/flux-kontext-pro": 32,
-  "google/veo-3.1": 23
+  "black-forest-labs/flux-kontext-pro": 33,
+  "google/veo-3.1": 27
  },
  "incompleto": true,
- "generado_utc": "2026-11-19T15:20:49Z",
+ "generado_utc": "2026-11-20T02:17:17Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }

@@ -123,8 +123,9 @@ def main():
         'generado_utc': AHORA.strftime('%Y-%m-%dT%H:%M:%SZ'),
         'victoria_hoy': bloque(victoria_hoy),
         'comunidad': bloque(comunidad),
-        'instagram': bloque(instagram),
-        'facebook': bloque(facebook),
+        # 19-nov-2026: Rodrigo canceló Instagram y Facebook ("NO FUNCIONABA NADA"); ya no se consultan.
+        'instagram': bloque(instagram) if 'instagram' in conf.get('redes_activas', ['instagram']) else {'cancelado': '2026-11-19'},
+        'facebook': bloque(facebook) if 'instagram' in conf.get('redes_activas', ['instagram']) else {'cancelado': '2026-11-19'},
         'web': bloque(web),
         'automatizaciones': conf.get('automatizaciones', {}),
     }

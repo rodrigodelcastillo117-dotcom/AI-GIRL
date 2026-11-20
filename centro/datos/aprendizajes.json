@@ -369,5 +369,12 @@
   "tipo": "tecnico",
   "aprendizaje": "p-video-avatar: aun con luz de día y de pecho para arriba, 2 de 10 cuadros cambiaron pelo y cara en el yate. Una copa o taza en la mano hace que beba mientras habla aunque el prompt lo prohíba. Fotos que ya salieron estables: habla-calle (M1), habla-cafe-cerca (E1 2º intento), habla-cocina-cerca (M2 2º intento).",
   "regla": "Foto hablando con las manos VACÍAS (nada que se pueda llevar a la boca). Preferir las fotos hablando ya probadas estables; una foto nueva se prueba primero con un short corto. Revisar SIEMPRE los 10 cuadros de videos/qa/<id>-cuadros.jpg: un solo cuadro con otro pelo o cara = se tira."
+ },
+ {
+  "fecha": "2026-11-19",
+  "fuente": "Medición del plan de MUSE (docs/MUSE_auditoria_2026-11-12.md, sección 9)",
+  "resultado": "No funcionó. Seguidores de Instagram 62 → 62. Reels: M1 20 vistas (1 compartido, 162 h), M2 31 (3, 138 h), M4 Afore 9 (0, 18 h); M3 no se pudo confirmar que salió. Carrusel c77 Buen Fin: 9 vistas y 0 compartidos a 62 h, contra 66 vistas del carrusel Buen Fin de la línea base. Las vistas siguen en el mismo rango que la línea base (8–33); los compartidos subieron de 0 a 4 en total, sin efecto en seguidores. Salto de reels y guardados no se pudieron leer (llave de Meta de otra marca). Datos: Publer analytics vía aprender.py medir, 19-nov 12:40 UTC.",
+  "decision": "Rodrigo canceló Instagram y Facebook el 19-nov (\"NO FUNCIONABA NADA\"). Victoria sigue solo en TikTok y YouTube (config.json → redes_activas).",
+  "regla": "Lo que en 3 semanas no pasa de ~30 vistas por pieza ni mueve seguidores se corta en vez de ajustarle ganchos."
  }
 ]

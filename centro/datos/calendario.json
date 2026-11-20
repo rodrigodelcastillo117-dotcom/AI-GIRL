@@ -17,7 +17,7 @@
   "que": "Sale el carrusel «Aguinaldo 2026 si ganas $12,000 al mes 💰»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00"
+   "tt": "09:07"
   },
   "confirmado": []
  },
@@ -55,9 +55,7 @@
    "tt": "16:00",
    "fb": "15:00"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-19",
@@ -70,19 +68,6 @@
    "ig": "21:30",
    "tt": "22:15",
    "fb": "21:30"
-  },
-  "confirmado": [
-   "tt"
-  ]
- },
- {
-  "fecha": "2026-11-19",
-  "tipo": "publer",
-  "id": "",
-  "estado": "programado",
-  "que": "«¿Tu aguinaldo paga ISR? Haz esta cuenta antes del 20 👥…»",
-  "horas": {
-   "tt": "19:00"
   },
   "confirmado": [
    "tt"
