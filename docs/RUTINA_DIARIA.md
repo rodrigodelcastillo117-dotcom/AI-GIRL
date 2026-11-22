@@ -97,6 +97,7 @@ Resumen para la rutina (manda sobre lo de abajo si chocan; mismo volumen, mismo 
 - PORTADA DE CARRUSELES NUEVOS EN TIKTOK (revisión del 15-nov, contenido/cambios.json): gancho 'sí' (pregunta de sí/no)
   o 'guarda esto' en la portada (portada.gancho_tipo); la postura va en la 2a lámina o en el pie. Medianas a 48 h: sí 466
   (3), guarda esto 250 (4), dato 223 (8), postura 145 (4). Los "listo" no se reescriben. Se revisa el 22-nov.
+- VARIANTES EN PAUSA desde el 22-nov (config.json → variantes.pausa): no se hacen variantes de los ganadores viejos; solo 1 de un hit NUEVO (3x la mediana). `variantes.py medir` sigue cada mañana.
 - VARIANTES DE GANADORES = NUESTRO BUZZFY (14-nov, Rodrigo: "haz eso justamente"): scripts/variantes.py. Cada mañana:
   1) `variantes.py medir` (fotos a 1/3/7 días; la que pasa 10k o la mitad del original "rompe" y se vuelve original).
   2) `variantes.py pendientes` (sube a YouTube lo que sale en 48 h o menos). 3) `variantes.py probar` (Trial Reels de

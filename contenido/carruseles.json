@@ -8998,7 +8998,7 @@
   },
   {
    "id": "c95u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "fraudes_a_pensionados_depositos_gestores_canales_oficiales",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -9154,7 +9154,13 @@
      "Diap. 7: 'Su Afore: SARTEL, 55 1328 5000, sin costo.' -> 'Dudas de su Afore: SARTEL de la CONSAR, 55 1328 5000, sin costo.' (SARTEL es de la CONSAR, no de la Afore); cita + 'CONSAR 8-oct-2026'.",
      "portada.foto_reel: assets/fotos/enero-oficina-casa.jpg -> assets/fotos/video-37-sala.jpg (scripts/revisar_texto_foto.py detecta 'January' (97%) en enero-oficina-casa.jpg; video-37-sala.jpg pasa y sale Capital)."
     ]
-   }
+   },
+   "youtube": "https://youtube.com/shorts/15rnvUqAicE",
+   "publica_utc_por_red": {
+    "yt": "2026-11-24T23:00:00Z"
+   },
+   "publica_utc": "2026-11-24T23:00:00Z",
+   "formato_youtube": "reel_texto (gratis, sin Replicate)"
   },
   {
    "id": "c96u",

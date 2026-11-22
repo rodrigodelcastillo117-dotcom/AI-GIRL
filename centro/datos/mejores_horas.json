@@ -92,7 +92,7 @@
  {
   "dia": "lun",
   "hora": 18,
-  "puntaje": 82.0
+  "puntaje": 83.0
  },
  {
   "dia": "lun",
@@ -207,7 +207,7 @@
  {
   "dia": "mar",
   "hora": 17,
-  "puntaje": 99.0
+  "puntaje": 100.0
  },
  {
   "dia": "mar",
@@ -227,7 +227,7 @@
  {
   "dia": "mar",
   "hora": 21,
-  "puntaje": 277.0
+  "puntaje": 280.0
  },
  {
   "dia": "mar",
@@ -292,7 +292,7 @@
  {
   "dia": "mié",
   "hora": 10,
-  "puntaje": 512.0
+  "puntaje": 513.0
  },
  {
   "dia": "mié",
@@ -357,7 +357,7 @@
  {
   "dia": "mié",
   "hora": 23,
-  "puntaje": 69.0
+  "puntaje": 70.0
  },
  {
   "dia": "jue",
@@ -412,7 +412,7 @@
  {
   "dia": "jue",
   "hora": 10,
-  "puntaje": 1217.0
+  "puntaje": 1219.0
  },
  {
   "dia": "jue",
@@ -447,7 +447,7 @@
  {
   "dia": "jue",
   "hora": 17,
-  "puntaje": 160.0
+  "puntaje": 161.0
  },
  {
   "dia": "jue",
@@ -462,12 +462,12 @@
  {
   "dia": "jue",
   "hora": 20,
-  "puntaje": 762.0
+  "puntaje": 152.0
  },
  {
   "dia": "jue",
   "hora": 21,
-  "puntaje": 217.0
+  "puntaje": 219.0
  },
  {
   "dia": "jue",
@@ -477,7 +477,7 @@
  {
   "dia": "jue",
   "hora": 23,
-  "puntaje": 139.0
+  "puntaje": 141.0
  },
  {
   "dia": "vie",
@@ -552,7 +552,7 @@
  {
   "dia": "vie",
   "hora": 14,
-  "puntaje": 330.0
+  "puntaje": 335.0
  },
  {
   "dia": "vie",
@@ -567,7 +567,7 @@
  {
   "dia": "vie",
   "hora": 17,
-  "puntaje": 217.0
+  "puntaje": 224.0
  },
  {
   "dia": "vie",
@@ -582,7 +582,7 @@
  {
   "dia": "vie",
   "hora": 20,
-  "puntaje": 4278.0
+  "puntaje": 4313.0
  },
  {
   "dia": "vie",
@@ -597,7 +597,7 @@
  {
   "dia": "vie",
   "hora": 23,
-  "puntaje": 146.0
+  "puntaje": 233.0
  },
  {
   "dia": "sáb",
@@ -652,7 +652,7 @@
  {
   "dia": "sáb",
   "hora": 10,
-  "puntaje": 0.0
+  "puntaje": 148.0
  },
  {
   "dia": "sáb",
@@ -687,12 +687,12 @@
  {
   "dia": "sáb",
   "hora": 17,
-  "puntaje": 90.0
+  "puntaje": 220.0
  },
  {
   "dia": "sáb",
   "hora": 18,
-  "puntaje": 121.0
+  "puntaje": 122.0
  },
  {
   "dia": "sáb",
@@ -702,7 +702,7 @@
  {
   "dia": "sáb",
   "hora": 20,
-  "puntaje": 4753.0
+  "puntaje": 4847.0
  },
  {
   "dia": "sáb",
@@ -717,7 +717,7 @@
  {
   "dia": "sáb",
   "hora": 23,
-  "puntaje": 93.0
+  "puntaje": 157.0
  },
  {
   "dia": "dom",
@@ -782,7 +782,7 @@
  {
   "dia": "dom",
   "hora": 12,
-  "puntaje": 140.0
+  "puntaje": 141.0
  },
  {
   "dia": "dom",
@@ -802,7 +802,7 @@
  {
   "dia": "dom",
   "hora": 16,
-  "puntaje": 4692.0
+  "puntaje": 4702.0
  },
  {
   "dia": "dom",

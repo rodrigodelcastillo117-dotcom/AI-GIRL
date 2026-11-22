@@ -547,11 +547,15 @@
    "aguinaldo 15 días",
    "aguinaldo si renuncio"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-24T02:30:00Z",
    "ig": "2026-11-24T03:37:00Z",
    "tt": "2026-11-24T04:19:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/F_GVXTMt9RE",
+   "ig_tt_fb": "2026-11-24T03:37:00Z"
   }
  },
  {

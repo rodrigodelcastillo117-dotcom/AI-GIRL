@@ -376,5 +376,11 @@
   "resultado": "No funcionó. Seguidores de Instagram 62 → 62. Reels: M1 20 vistas (1 compartido, 162 h), M2 31 (3, 138 h), M4 Afore 9 (0, 18 h); M3 no se pudo confirmar que salió. Carrusel c77 Buen Fin: 9 vistas y 0 compartidos a 62 h, contra 66 vistas del carrusel Buen Fin de la línea base. Las vistas siguen en el mismo rango que la línea base (8–33); los compartidos subieron de 0 a 4 en total, sin efecto en seguidores. Salto de reels y guardados no se pudieron leer (llave de Meta de otra marca). Datos: Publer analytics vía aprender.py medir, 19-nov 12:40 UTC.",
   "decision": "Rodrigo canceló Instagram y Facebook el 19-nov (\"NO FUNCIONABA NADA\"). Victoria sigue solo en TikTok y YouTube (config.json → redes_activas).",
   "regla": "Lo que en 3 semanas no pasa de ~30 vistas por pieza ni mueve seguidores se corta en vez de ajustarle ganchos."
+ },
+ {
+  "fecha": "2026-11-22",
+  "fuente": "variantes.py medir",
+  "resultado": "Variantes de ganadores (nuestro BuzzFy): 7 en 8 días, TikTok 64-149 vistas, YouTube (O1) 148-176. Ninguna llegó a la mediana de 150-170 ni a la mitad del original.",
+  "regla": "Cambiar solo el gancho de un ganador viejo no repite el resultado. Variantes en pausa; se prueban solo de hits nuevos."
  }
 ]
