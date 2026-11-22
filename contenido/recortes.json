@@ -516,11 +516,15 @@
    "aguinaldo 15 días",
    "aguinaldo si renuncio"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-23T02:30:00Z",
    "ig": "2026-11-23T03:37:00Z",
    "tt": "2026-11-23T04:19:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/qJy1bbRxWlw",
+   "ig_tt_fb": "2026-11-23T03:37:00Z"
   }
  },
  {
@@ -736,11 +740,15 @@
    "uma 2026",
    "recibo de nómina aguinaldo"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-22T20:00:00Z",
    "ig": "2026-11-22T21:07:00Z",
    "tt": "2026-11-22T22:04:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/6Ta2jcIUxRA",
+   "ig_tt_fb": "2026-11-22T21:07:00Z"
   }
  },
  {
@@ -763,11 +771,15 @@
    "uma 2026",
    "recibo de nómina aguinaldo"
   ],
-  "estado": "listo",
+  "estado": "programado",
   "publica_utc_por_red": {
    "yt": "2026-11-23T20:00:00Z",
    "ig": "2026-11-23T21:07:00Z",
    "tt": "2026-11-23T22:04:00Z"
+  },
+  "publicado_en": {
+   "yt": "https://youtube.com/shorts/1m8HBLLXPqQ",
+   "ig_tt_fb": "2026-11-23T21:07:00Z"
   }
  },
  {

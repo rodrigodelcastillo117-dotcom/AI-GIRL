@@ -912,11 +912,11 @@
   "linea": "¿ganas $15,000 al mes? tu aguinaldo mínimo es de $7,500 brutos. 🎄",
   "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
   "v_ig": 36,
-  "v_tt": 127,
-  "v_yt": 622,
+  "v_tt": 132,
+  "v_yt": 623,
   "v_fb": 7,
   "l_ig": 7,
-  "l_tt": 5,
+  "l_tt": 6,
   "l_yt": 6,
   "l_fb": 1,
   "c_ig": 5,
@@ -933,7 +933,7 @@
   "g_fb": null,
   "c_ig_reales": 2,
   "c_yt_reales": 5,
-  "r_yt": 108
+  "r_yt": 107.1
  },
  {
   "id": "18",
@@ -1746,11 +1746,11 @@
   "youtube_id": "qM_e2ImPA1s",
   "linea": "si tu pareja gana el doble que tú, mitad y mitad no es justo. cada quien pone según lo que gana. eso no es mantener a nadie: es ser equipo. 💸",
   "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
-  "v_ig": 22,
+  "v_ig": 23,
   "v_tt": 87,
   "v_yt": 1043,
   "v_fb": 2,
-  "l_ig": 5,
+  "l_ig": 6,
   "l_tt": 1,
   "l_yt": 22,
   "l_fb": 1,
@@ -1768,7 +1768,7 @@
   "g_fb": null,
   "c_yt_reales": 7,
   "c_ig_reales": 2,
-  "r_yt": 123.7
+  "r_yt": 123.2
  },
  {
   "id": "O2",
@@ -1926,11 +1926,11 @@
   "linea": "aguinaldo 2026: tu sueldo diario × 15 días, como mínimo. con $15,000 al mes son $7,500 brutos, y te lo deben pagar antes del 20 de diciembre (ley federal del trabajo, art. 87). los primeros $3,519.30 no pagan isr.",
   "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
   "v_ig": 33,
-  "v_tt": 121,
+  "v_tt": 122,
   "v_yt": 227,
   "v_fb": 6,
   "l_ig": 6,
-  "l_tt": 3,
+  "l_tt": 4,
   "l_yt": 3,
   "l_fb": 0,
   "c_ig": 5,
@@ -2013,7 +2013,7 @@
   "titulo": "Afore, así te baja los impuestos 💼",
   "v_ig": 16,
   "v_tt": 71,
-  "v_yt": 76,
+  "v_yt": 83,
   "v_fb": null,
   "l_ig": 5,
   "l_tt": 0,
@@ -2031,7 +2031,8 @@
   "g_tt": null,
   "g_yt": null,
   "g_fb": null,
-  "c_yt_reales": 0
+  "c_yt_reales": 0,
+  "r_yt": 31.6
  },
  {
   "id": "M5",

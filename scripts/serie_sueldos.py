@@ -63,7 +63,7 @@ def carrusel(cid, arg):
              'voz': 'Una parte va libre de impuestos: treinta UMAs.'},
             {'titulo': '¿Entraste o te fuiste este año?', 'texto': 'También te toca: la parte proporcional a los días que trabajaste.',
              'voz': 'Si entraste o te fuiste este año, te toca la parte proporcional.'},
-            {'titulo': 'Calcula el tuyo exacto', 'texto': 'victoriatheceo.vercel.app/aguinaldo\n(enlace en mi perfil)',
+            {'titulo': 'Calcula el tuyo exacto', 'texto': 'Calculadora gratis en\nvictoriatheceo.vercel.app\n/aguinaldo (enlace en mi perfil)',
              'voz': 'Calcula el tuyo exacto con el enlace de mi perfil.'}],
         'cierre': {'titulo': 'Guárdalo para diciembre.', 'texto': '¿Cuánto ganas tú? Comenta tu sueldo y te digo tu aguinaldo.',
                    'voz': 'Guárdalo para diciembre y comenta tu sueldo.'},

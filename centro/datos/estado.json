@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 0 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-20T15:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 si ganas $20,000 al mes 💰» (TikTok 09:00)",
+  "proxima_ejecucion_utc": "2026-11-22T14:00:00Z",
+  "proxima_que": "Sale el video «Aguinaldo primero a la deuda, luego regalos 🎁» · cada red a su mejor hora",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -56,15 +56,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-20T15:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $20,000 al mes 💰» (TikTok 09:00)"
+    "utc": "2026-11-22T14:00:00Z",
+    "que": "Sale el video «Aguinaldo primero a la deuda, luego regalos 🎁» · cada red a su mejor hora"
    },
    {
-    "utc": "2026-11-20T19:00:00Z",
-    "que": "Sale el carrusel «ISR aguinaldo 2026 en 5 datos para guardar 🔖» (TikTok 13:00)"
+    "utc": "2026-11-22T15:00:00Z",
+    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰» (TikTok 09:00)"
    }
   ],
-  "generado_utc": "2026-11-20T12:55:17Z",
+  "generado_utc": "2026-11-22T02:16:17Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -377,6 +377,10 @@
    {
     "fecha": "2026-11-20",
     "v": 24151
+   },
+   {
+    "fecha": "2026-11-21",
+    "v": 24796
    }
   ],
   "serie_publicaciones": [
@@ -471,6 +475,10 @@
    {
     "fecha": "2026-11-20",
     "v": 50
+   },
+   {
+    "fecha": "2026-11-21",
+    "v": 52
    }
   ],
   "serie_redes": [
@@ -620,6 +628,13 @@
     "tt": 12813,
     "ig": 693,
     "fb": 4
+   },
+   {
+    "fecha": "2026-11-21",
+    "yt": 10763,
+    "tt": 13332,
+    "ig": 697,
+    "fb": 4
    }
   ],
   "foto_perfil": "data:image/jpeg;base64,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",
@@ -628,18 +643,18 @@
     "hoy_usd": 0.0,
     "semana_usd": 3.37,
     "mes_usd": 70.9,
-    "otro_canal_semana_usd": 5.17,
-    "otro_canal_mes_usd": 15.24,
+    "otro_canal_semana_usd": 6.21,
+    "otro_canal_mes_usd": 16.28,
     "presupuesto_semanal_usd": 7,
     "presupuesto_mensual_usd": 28,
     "presupuesto_otro_canal_mensual_usd": 22,
-    "proyeccion_mes_usd": 106.34,
+    "proyeccion_mes_usd": 101.28,
     "semana_desde": "2026-11-16",
     "recarga_automatica": "Replicate recarga solo cuando el saldo llega a $5 USD (Rodrigo, 12-nov-2026)"
    },
    "saldo_base_usd": 27.16,
    "fecha_base_utc": "2026-11-12T06:22:02Z",
-   "saldo_estimado_usd": 24.56,
+   "saldo_estimado_usd": 23.52,
    "recargas_estimadas": [
     {
      "utc": "2026-11-12T14:49:22Z",
@@ -648,11 +663,11 @@
    ],
    "gastado_desde_base": {
     "victoria": 29.86,
-    "otro": 7.74
+    "otro": 8.78
    },
    "gastado_7_dias": {
-    "victoria": 6.45,
-    "otro": 7.23
+    "victoria": 3.37,
+    "otro": 7.22
    },
    "por_dia": [
     {
@@ -698,17 +713,22 @@
     {
      "dia": "2026-11-20",
      "victoria": 0.0,
-     "otro": 0.0
+     "otro": 0.52
+    },
+    {
+     "dia": "2026-11-21",
+     "victoria": 0.0,
+     "otro": 0.52
     }
    ],
    "por_modelo": {
     "prunaai/p-video-avatar": 23.27,
+    "minimax/video-01": 5.5,
     "bytedance/seedance-1-pro": 5.25,
-    "minimax/video-01": 4.5,
     "minimax/voice-cloning": 3.0,
     "google/nano-banana": 0.74,
     "zsxkib/mmaudio": 0.6,
-    "black-forest-labs/flux-schnell": 0.24,
+    "black-forest-labs/flux-schnell": 0.28,
     "minimax/speech-02-hd": 0.0
    },
    "costo_promedio_toma_usd": 0.46,
@@ -719,21 +739,21 @@
     "meta/musicgen": 9,
     "resemble-ai/chatterbox-multilingual": 11,
     "kwaivgi/kling-v2.5-turbo-pro": 29,
-    "stability-ai/stable-audio-2.5": 15,
-    "victor-upmeet/whisperx": 190,
+    "stability-ai/stable-audio-2.5": 16,
+    "victor-upmeet/whisperx": 198,
     "black-forest-labs/flux-1.1-pro": 124,
-    "elevenlabs/music": 67,
+    "elevenlabs/music": 71,
     "851-labs/background-remover": 7,
     "minimax/speech-2.6-hd": 117,
     "elevenlabs/v3": 104,
     "nightmareai/real-esrgan": 28,
-    "anthropic/claude-4.5-sonnet": 6,
+    "anthropic/claude-4.5-sonnet": 7,
     "black-forest-labs/flux-1.1-pro-ultra": 3,
     "black-forest-labs/flux-kontext-pro": 33,
     "google/veo-3.1": 27
    },
    "incompleto": true,
-   "generado_utc": "2026-11-20T12:55:30Z",
+   "generado_utc": "2026-11-22T02:16:34Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -816,7 +836,7 @@
    }
   },
   "salud": {
-   "generado_utc": "2026-11-20T12:39:48Z",
+   "generado_utc": "2026-11-22T02:12:09Z",
    "estado": "aviso",
    "checks": [
     {
@@ -837,7 +857,7 @@
     {
      "area": "Gasto",
      "estado": "aviso",
-     "detalle": "Replicate de Victoria: hoy $0.00 · semana $3.37 de $7 · mes $70.90 de $28 (proyección del mes $106.34) · El espacio, semana $5.17 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+     "detalle": "Replicate de Victoria: hoy $0.00 · semana $3.37 de $7 · mes $70.90 de $28 (proyección del mes $101.28) · El espacio, semana $6.21 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
     },
     {
      "area": "Créditos",
@@ -847,22 +867,17 @@
     {
      "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-20: TikTok 4, Instagram 2, YouTube 3, Facebook 2"
-    },
-    {
-     "area": "Calendario",
-     "estado": "ok",
      "detalle": "2026-11-21: TikTok 3, Instagram 2, YouTube 4, Facebook 3"
     },
     {
      "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-22: TikTok 2, Instagram 3, YouTube 3, Facebook 2 · la rutina de ese día llena: TikTok 2/3"
+     "detalle": "2026-11-22: TikTok 3, Instagram 3, YouTube 3, Facebook 2"
     },
     {
-     "area": "Serie",
+     "area": "Calendario",
      "estado": "ok",
-     "detalle": "2026-11-20: el primer TikTok es de la serie (c83)"
+     "detalle": "2026-11-23: TikTok 2, Instagram 2, YouTube 3, Facebook 2 · la rutina de ese día llena: TikTok 2/3"
     },
     {
      "area": "Serie",
@@ -872,7 +887,12 @@
     {
      "area": "Serie",
      "estado": "ok",
-     "detalle": "2026-11-22: aún no tiene la parte de la serie; siguiente parte lista: c85 (prográmala como primer TikTok del día)"
+     "detalle": "2026-11-22: el primer TikTok es de la serie (c85)"
+    },
+    {
+     "area": "Serie",
+     "estado": "aviso",
+     "detalle": "2026-11-23: no quedan partes listas de \"Tu sueldo, tu aguinaldo\": escribe la siguiente"
     },
     {
      "area": "Videos largos",
@@ -912,27 +932,32 @@
     {
      "area": "Recortes",
      "estado": "aviso",
-     "detalle": "LA1-c02: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-22T02:30): recortes.py publicar LA1-c02"
+     "detalle": "LA1-c03: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-23T02:30): recortes.py publicar LA1-c03"
     },
     {
      "area": "Recortes",
      "estado": "aviso",
-     "detalle": "LA3-c01: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-21T20:00): recortes.py publicar LA3-c01"
+     "detalle": "LA3-c02: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-22T20:00): recortes.py publicar LA3-c02"
+    },
+    {
+     "area": "Recortes",
+     "estado": "aviso",
+     "detalle": "LA3-c03: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-23T20:00): recortes.py publicar LA3-c03"
     },
     {
      "area": "Recortes",
      "estado": "ok",
-     "detalle": "31 recortes con fecha (se suben 48 h antes): LA1-c03, LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c02, LA3-c03, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
+     "detalle": "28 recortes con fecha (se suben 48 h antes): LA1-c04, LA1-c05, LA1-c06, LA1-c07, LA1-c08, LA1-c09, LA3-c04, LA3-c05, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
     },
     {
      "area": "Recortes",
      "estado": "ok",
-     "detalle": "16 recortes programados en las 4 redes"
+     "detalle": "18 recortes programados en las 4 redes"
     },
     {
      "area": "Cola",
      "estado": "ok",
-     "detalle": "57 carruseles listos para TikTok (~19 días a 3 por día)"
+     "detalle": "55 carruseles listos para TikTok (~18 días a 3 por día)"
     },
     {
      "area": "Cola",
@@ -942,12 +967,12 @@
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c16 (TikTok 4,261 vs mediana 171): ya tiene 4 clones"
+     "detalle": "c16 (TikTok 4,265 vs mediana 170): ya tiene 5 clones"
     },
     {
      "area": "Ganadores",
      "estado": "ok",
-     "detalle": "c70 (TikTok 1,064 vs mediana 171): ya tiene 4 clones"
+     "detalle": "c70 (TikTok 1,065 vs mediana 170): ya tiene 5 clones"
     },
     {
      "area": "Ganadores",
@@ -998,19 +1023,15 @@
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 en 5 datos para guardar 🔖",
     "por_red": {
-     "tt": 4265,
-     "ig": 25,
+     "tt": 4272,
+     "ig": 26,
      "yt": 177
     },
-    "total": 4467,
-    "ultimas_24h": {
-     "tt": 4,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 279.6,
-    "por_dia": 383,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 4475,
+    "ultimas_24h": null,
+    "horas": 317.1,
+    "por_dia": 339,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c70",
@@ -1022,14 +1043,10 @@
      "yt": 331
     },
     "total": 1418,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 1,
-     "yt": 0
-    },
-    "horas": 189.6,
-    "por_dia": 179,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 227.1,
+    "por_dia": 150,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c65",
@@ -1041,14 +1058,10 @@
      "yt": 859
     },
     "total": 1229,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 5,
-     "yt": 0
-    },
-    "horas": 235.5,
-    "por_dia": 125,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 273.1,
+    "por_dia": 108,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "O1",
@@ -1056,18 +1069,14 @@
     "titulo": "Gastos en pareja mitad y mitad no es justo 💸",
     "por_red": {
      "tt": 87,
-     "ig": 22,
+     "ig": 23,
      "yt": 1043
     },
-    "total": 1152,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 212.7,
-    "por_dia": 130,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 1153,
+    "ultimas_24h": null,
+    "horas": 250.2,
+    "por_dia": 111,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c01",
@@ -1112,15 +1121,13 @@
     "tipo": "Carrusel",
     "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
     "por_red": {
-     "yt": 923
+     "yt": 930
     },
-    "total": 923,
-    "ultimas_24h": {
-     "yt": 11
-    },
-    "horas": 133.7,
-    "por_dia": 166,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 930,
+    "ultimas_24h": null,
+    "horas": 171.2,
+    "por_dia": 130,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "02",
@@ -1146,19 +1153,15 @@
     "tipo": "Video",
     "titulo": "Aguinaldo 2026 si ganas 15 mil al mes 💰",
     "por_red": {
-     "tt": 127,
+     "tt": 132,
      "ig": 36,
-     "yt": 622
+     "yt": 623
     },
-    "total": 785,
-    "ultimas_24h": {
-     "tt": 2,
-     "ig": 1,
-     "yt": 2
-    },
-    "horas": 283.7,
-    "por_dia": 66,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 791,
+    "ultimas_24h": null,
+    "horas": 321.2,
+    "por_dia": 59,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "37",
@@ -1207,13 +1210,10 @@
      "yt": 530
     },
     "total": 629,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 2
-    },
-    "horas": 229.7,
-    "por_dia": 66,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 267.2,
+    "por_dia": 56,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c08",
@@ -1233,6 +1233,20 @@
     "horas": 333.6,
     "por_dia": 43,
     "medido_utc": "2026-11-20T12:39:50Z"
+   },
+   {
+    "id": "c71",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
+    "por_red": {
+     "tt": 181,
+     "yt": 389
+    },
+    "total": 570,
+    "ultimas_24h": null,
+    "horas": 203.1,
+    "por_dia": 67,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c06",
@@ -1256,40 +1270,19 @@
     "medido_utc": "2026-11-18T12:40:35Z"
    },
    {
-    "id": "c71",
-    "tipo": "Carrusel",
-    "titulo": "Salario mínimo 2026 en días de trabajo 🧾",
-    "por_red": {
-     "tt": 181,
-     "yt": 387
-    },
-    "total": 568,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 2
-    },
-    "horas": 165.5,
-    "por_dia": 82,
-    "medido_utc": "2026-11-20T12:39:50Z"
-   },
-   {
     "id": "c52",
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 cómo calcularlo en 5 datos 🧮",
     "por_red": {
-     "tt": 392,
-     "ig": 30,
-     "yt": 125
+     "tt": 406,
+     "ig": 31,
+     "yt": 126
     },
-    "total": 547,
-    "ultimas_24h": {
-     "tt": 12,
-     "ig": 0,
-     "yt": 4
-    },
-    "horas": 213.5,
-    "por_dia": 61,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 563,
+    "ultimas_24h": null,
+    "horas": 251.1,
+    "por_dia": 54,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c02",
@@ -1309,6 +1302,20 @@
     "horas": 354.7,
     "por_dia": 35,
     "medido_utc": "2026-11-14T12:40:03Z"
+   },
+   {
+    "id": "c86u",
+    "tipo": "Carrusel",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "por_red": {
+     "tt": 175,
+     "yt": 342
+    },
+    "total": 517,
+    "ultimas_24h": null,
+    "horas": 192.2,
+    "por_dia": 65,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "19",
@@ -1332,57 +1339,33 @@
     "medido_utc": "2026-11-17T12:39:47Z"
    },
    {
-    "id": "c86u",
-    "tipo": "Carrusel",
-    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
-    "por_red": {
-     "tt": 146,
-     "yt": 341
-    },
-    "total": 487,
-    "ultimas_24h": {
-     "tt": 27,
-     "yt": 0
-    },
-    "horas": 154.7,
-    "por_dia": 76,
-    "medido_utc": "2026-11-20T12:39:50Z"
-   },
-   {
     "id": "c11",
     "tipo": "Carrusel",
     "titulo": "Finiquito y liquidación, qué te toca 📄",
     "por_red": {
      "tt": 203,
-     "yt": 204
+     "yt": 205
     },
-    "total": 407,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 0
-    },
-    "horas": 257.6,
-    "por_dia": 38,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 408,
+    "ultimas_24h": null,
+    "horas": 295.1,
+    "por_dia": 33,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "M2",
     "tipo": "Video",
     "titulo": "Aguinaldo 2026, tu sueldo diario por 15 💰",
     "por_red": {
-     "tt": 121,
+     "tt": 122,
      "ig": 33,
      "yt": 227
     },
-    "total": 381,
-    "ultimas_24h": {
-     "tt": 4,
-     "ig": 2,
-     "yt": 1
-    },
-    "horas": 161.5,
-    "por_dia": 57,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 382,
+    "ultimas_24h": null,
+    "horas": 199.1,
+    "por_dia": 46,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c13",
@@ -1394,14 +1377,10 @@
      "yt": 133
     },
     "total": 363,
-    "ultimas_24h": {
-     "tt": 1,
-     "ig": 1,
-     "yt": 0
-    },
-    "horas": 253.7,
-    "por_dia": 34,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 291.2,
+    "por_dia": 30,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c07",
@@ -1449,29 +1428,24 @@
      "tt": 325
     },
     "total": 325,
-    "ultimas_24h": {
-     "tt": 0
-    },
-    "horas": 111.6,
-    "por_dia": 70,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 149.1,
+    "por_dia": 52,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c74",
     "tipo": "Carrusel",
     "titulo": "Buen Fin 2026 en 5 datos para guardar 🔖",
     "por_red": {
-     "tt": 210,
+     "tt": 211,
      "yt": 111
     },
-    "total": 321,
-    "ultimas_24h": {
-     "tt": 1,
-     "yt": 0
-    },
-    "horas": 181.7,
-    "por_dia": 42,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 322,
+    "ultimas_24h": null,
+    "horas": 219.2,
+    "por_dia": 35,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c68",
@@ -1479,18 +1453,14 @@
     "titulo": "Sueldo y renta en México, haz tus cuentas 🧮",
     "por_red": {
      "tt": 82,
-     "ig": 10,
+     "ig": 11,
      "yt": 206
     },
-    "total": 298,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 1,
-     "yt": 0
-    },
-    "horas": 185.6,
-    "por_dia": 39,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 299,
+    "ultimas_24h": null,
+    "horas": 223.1,
+    "por_dia": 32,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c09",
@@ -1502,14 +1472,10 @@
      "yt": 142
     },
     "total": 279,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 2
-    },
-    "horas": 308.7,
-    "por_dia": 22,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 346.2,
+    "por_dia": 19,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c12",
@@ -1521,29 +1487,23 @@
      "yt": 137
     },
     "total": 252,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 1
-    },
-    "horas": 261.5,
-    "por_dia": 23,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 299.1,
+    "por_dia": 20,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c91u",
     "tipo": "Carrusel",
     "titulo": "Pensión Bienestar enero 2027, aún sin fecha 🔍",
     "por_red": {
-     "yt": 246
+     "yt": 249
     },
-    "total": 246,
-    "ultimas_24h": {
-     "yt": 7
-    },
-    "horas": 85.7,
-    "por_dia": 69,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 249,
+    "ultimas_24h": null,
+    "horas": 123.2,
+    "por_dia": 49,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "M1",
@@ -1555,14 +1515,10 @@
      "yt": 97
     },
     "total": 240,
-    "ultimas_24h": {
-     "tt": 2,
-     "ig": 1,
-     "yt": 0
-    },
-    "horas": 185.8,
-    "por_dia": 31,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 223.4,
+    "por_dia": 26,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c04",
@@ -1582,6 +1538,19 @@
     "medido_utc": "2026-11-19T12:40:16Z"
    },
    {
+    "id": "c100",
+    "tipo": "Carrusel",
+    "titulo": "Salario mínimo 2027 ya en $352.84, es falso 🔍",
+    "por_red": {
+     "tt": 199
+    },
+    "total": 199,
+    "ultimas_24h": null,
+    "horas": 25.1,
+    "por_dia": 190,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
     "id": "c79",
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 con el mínimo fronterizo 💰",
@@ -1589,12 +1558,10 @@
      "tt": 185
     },
     "total": 185,
-    "ultimas_24h": {
-     "tt": 0
-    },
-    "horas": 93.6,
-    "por_dia": 47,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 131.1,
+    "por_dia": 34,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "M4",
@@ -1603,17 +1570,13 @@
     "por_red": {
      "tt": 71,
      "ig": 16,
-     "yt": 76
+     "yt": 83
     },
-    "total": 163,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 7,
-     "yt": 0
-    },
-    "horas": 41.5,
-    "por_dia": 94,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 170,
+    "ultimas_24h": null,
+    "horas": 79.1,
+    "por_dia": 52,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c43",
@@ -1625,14 +1588,10 @@
      "yt": 9
     },
     "total": 160,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 234.7,
-    "por_dia": 16,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 272.2,
+    "por_dia": 14,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "E1",
@@ -1644,14 +1603,10 @@
      "yt": 44
     },
     "total": 152,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
-    },
-    "horas": 137.5,
-    "por_dia": 27,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 175.1,
+    "por_dia": 21,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c27",
@@ -1662,26 +1617,23 @@
      "yt": 53
     },
     "total": 146,
-    "ultimas_24h": {
-     "tt": 0,
-     "yt": 0
-    },
-    "horas": 202.7,
-    "por_dia": 17,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 240.2,
+    "por_dia": 15,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c82",
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 si ganas $12,000 al mes 💰",
     "por_red": {
-     "tt": 139
+     "tt": 145
     },
-    "total": 139,
+    "total": 145,
     "ultimas_24h": null,
-    "horas": 21.5,
-    "por_dia": 139,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "horas": 59.1,
+    "por_dia": 59,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c69",
@@ -1693,14 +1645,36 @@
      "yt": 50
     },
     "total": 137,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 0,
-     "yt": 0
+    "ultimas_24h": null,
+    "horas": 199.1,
+    "por_dia": 17,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c83",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 si ganas $20,000 al mes 💰",
+    "por_red": {
+     "tt": 133
     },
-    "horas": 161.6,
-    "por_dia": 20,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 133,
+    "ultimas_24h": null,
+    "horas": 35.1,
+    "por_dia": 91,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c76",
+    "tipo": "Carrusel",
+    "titulo": "ISR aguinaldo 2026 en 5 datos para guardar 🔖",
+    "por_red": {
+     "tt": 120
+    },
+    "total": 120,
+    "ultimas_24h": null,
+    "horas": 31.1,
+    "por_dia": 93,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c89u",
@@ -1710,12 +1684,49 @@
      "yt": 96
     },
     "total": 96,
-    "ultimas_24h": {
-     "yt": 1
+    "ultimas_24h": null,
+    "horas": 147.2,
+    "por_dia": 16,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c90u",
+    "tipo": "Carrusel",
+    "titulo": "Semanas cotizadas IMSS gratis en 3 pasos 📄",
+    "por_red": {
+     "yt": 96
     },
-    "horas": 109.7,
-    "por_dia": 21,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 96,
+    "ultimas_24h": null,
+    "horas": 51.2,
+    "por_dia": 45,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c81",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 si ganas $10,000 al mes 💰",
+    "por_red": {
+     "tt": 94
+    },
+    "total": 94,
+    "ultimas_24h": null,
+    "horas": 83.1,
+    "por_dia": 27,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c88u",
+    "tipo": "Carrusel",
+    "titulo": "Ley 73 o Ley 97, su fecha de alta decide 🗓️",
+    "por_red": {
+     "yt": 93
+    },
+    "total": 93,
+    "ultimas_24h": null,
+    "horas": 99.2,
+    "por_dia": 22,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c77",
@@ -1726,71 +1737,49 @@
      "ig": 10
     },
     "total": 91,
-    "ultimas_24h": {
-     "tt": 0,
-     "ig": 1
-    },
-    "horas": 90.4,
-    "por_dia": 24,
-    "medido_utc": "2026-11-20T12:39:50Z"
-   },
-   {
-    "id": "c81",
-    "tipo": "Carrusel",
-    "titulo": "Aguinaldo 2026 si ganas $10,000 al mes 💰",
-    "por_red": {
-     "tt": 91
-    },
-    "total": 91,
-    "ultimas_24h": {
-     "tt": 2
-    },
-    "horas": 45.5,
-    "por_dia": 48,
-    "medido_utc": "2026-11-20T12:39:50Z"
-   },
-   {
-    "id": "c88u",
-    "tipo": "Carrusel",
-    "titulo": "Ley 73 o Ley 97, su fecha de alta decide 🗓️",
-    "por_red": {
-     "yt": 76
-    },
-    "total": 76,
-    "ultimas_24h": {
-     "yt": 11
-    },
-    "horas": 61.7,
-    "por_dia": 30,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "ultimas_24h": null,
+    "horas": 128.0,
+    "por_dia": 17,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c80",
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 si ganas $8,000 al mes 💰",
     "por_red": {
-     "tt": 74
+     "tt": 75
     },
-    "total": 74,
-    "ultimas_24h": {
-     "tt": 2
-    },
-    "horas": 69.6,
-    "por_dia": 26,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "total": 75,
+    "ultimas_24h": null,
+    "horas": 107.1,
+    "por_dia": 17,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
-    "id": "c90u",
+    "id": "c97u",
     "tipo": "Carrusel",
-    "titulo": "Semanas cotizadas IMSS gratis en 3 pasos 📄",
+    "titulo": "Pensión ISSSTE diciembre 2026, viernes 27 📅",
     "por_red": {
-     "yt": 56
+     "yt": 37
     },
-    "total": 56,
+    "total": 37,
     "ultimas_24h": null,
-    "horas": 13.7,
-    "por_dia": 56,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "horas": 3.2,
+    "por_dia": 37,
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c92u",
+    "tipo": "Carrusel",
+    "titulo": "En qué Afore estoy, véalo gratis hoy 🔎",
+    "por_red": {
+     "yt": 5
+    },
+    "total": 5,
+    "ultimas_24h": null,
+    "horas": 27.2,
+    "por_dia": 4,
+    "medido_utc": "2026-11-22T02:12:10Z"
    },
    {
     "id": "c86",
@@ -1798,10 +1787,21 @@
     "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
     "por_red": {},
     "total": 0,
-    "ultimas_24h": {},
-    "horas": 58.6,
+    "ultimas_24h": null,
+    "horas": 96.1,
     "por_dia": 0,
-    "medido_utc": "2026-11-20T12:39:50Z"
+    "medido_utc": "2026-11-22T02:12:10Z"
+   },
+   {
+    "id": "c84",
+    "tipo": "Carrusel",
+    "titulo": "Aguinaldo 2026 si ganas $25,000 al mes 💰",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 11.1,
+    "por_dia": 0,
+    "medido_utc": "2026-11-22T02:12:10Z"
    }
   ]
  }
