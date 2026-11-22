@@ -809,9 +809,35 @@
     "id": "c96u",
     "antes_de": "2026-12-31",
     "por_que": "retiro por desempleo (cuesta semanas)"
+   },
+   {
+    "id": "c104u",
+    "antes_de": "2026-12-15",
+    "por_que": "cesantía: % por edad"
+   },
+   {
+    "id": "c105u",
+    "antes_de": "2026-12-15",
+    "por_que": "conservación de derechos"
+   },
+   {
+    "id": "c106u",
+    "antes_de": "2026-12-15",
+    "por_que": "trámite paso a paso"
+   },
+   {
+    "id": "c107u",
+    "antes_de": "2026-12-15",
+    "por_que": "qué hacer si le niegan la pensión"
+   },
+   {
+    "id": "c108u",
+    "antes_de": "2026-12-15",
+    "por_que": "retiro de la Afore en Ley 73"
    }
   ],
-  "nota_17nov": "c87u-c92u ya programados; c97u (ISSSTE, 21-nov) y c93u (pensión mínima, 22-nov) subidos el 17-nov. Siguen c94u, c95u, c96u: uno al día desde el 23-nov, 17:00 MX, YouTube y Facebook."
+  "nota_17nov": "c87u-c92u ya programados; c97u (ISSSTE, 21-nov) y c93u (pensión mínima, 22-nov) subidos el 17-nov. Siguen c94u, c95u, c96u: uno al día desde el 23-nov, 17:00 MX, YouTube y Facebook.",
+  "nota_22nov": "c104u-c108u escritos y con segunda revisión el 22-nov; van 1 al día en YouTube después de c96u (25-nov), como reel de texto (gratis)."
  },
  "variantes": {
   "por_dia": {
