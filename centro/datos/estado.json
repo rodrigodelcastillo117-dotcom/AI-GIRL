@@ -3,8 +3,8 @@
   "canal": "@victoriatheceo",
   "frecuencia": "Al día: TikTok 3 · Instagram 0 (mañana y tarde) · YouTube 3 · Facebook: lo de Instagram y los shorts de YouTube · video de Victoria cada 3 días · auditoría diaria 06:37",
   "dias_entre_videos": 3,
-  "proxima_ejecucion_utc": "2026-11-22T15:00:00Z",
-  "proxima_que": "Sale el carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰» (TikTok 09:00)",
+  "proxima_ejecucion_utc": "2026-11-22T23:00:00Z",
+  "proxima_que": "Sale el carrusel «Pensión mínima garantizada 2027 sin monto 🔍» (YouTube 17:00)",
   "prioridad_publicar": [
    "O1",
    "O2"
@@ -56,15 +56,15 @@
   ],
   "proximas": [
    {
-    "utc": "2026-11-22T15:00:00Z",
-    "que": "Sale el carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰» (TikTok 09:00)"
+    "utc": "2026-11-22T23:00:00Z",
+    "que": "Sale el carrusel «Pensión mínima garantizada 2027 sin monto 🔍» (YouTube 17:00)"
    },
    {
-    "utc": "2026-11-22T17:00:00Z",
-    "que": "Sale el carrusel «Fechas de diciembre de tu dinero, guárdalas 📅» (Instagram 11:00)"
+    "utc": "2026-11-22T14:00:00Z",
+    "que": "Sale el video «Aguinaldo primero a la deuda, luego regalos 🎁» · cada red a su mejor hora"
    }
   ],
-  "generado_utc": "2026-11-22T12:42:38Z",
+  "generado_utc": "2026-11-22T17:28:52Z",
   "creditos_plan_mes": 12000,
   "similitud_minima": 0.85,
   "cuentas_publer": {
@@ -384,7 +384,7 @@
    },
    {
     "fecha": "2026-11-22",
-    "v": 25088
+    "v": 25114
    }
   ],
   "serie_publicaciones": [
@@ -646,7 +646,7 @@
    },
    {
     "fecha": "2026-11-22",
-    "yt": 10849,
+    "yt": 10875,
     "tt": 13538,
     "ig": 697,
     "fb": 4
@@ -658,8 +658,8 @@
     "hoy_usd": 0.0,
     "semana_usd": 3.37,
     "mes_usd": 70.9,
-    "otro_canal_semana_usd": 6.21,
-    "otro_canal_mes_usd": 16.28,
+    "otro_canal_semana_usd": 7.24,
+    "otro_canal_mes_usd": 17.32,
     "presupuesto_semanal_usd": 7,
     "presupuesto_mensual_usd": 28,
     "presupuesto_otro_canal_mensual_usd": 22,
@@ -669,7 +669,7 @@
    },
    "saldo_base_usd": 27.16,
    "fecha_base_utc": "2026-11-12T06:22:02Z",
-   "saldo_estimado_usd": 23.52,
+   "saldo_estimado_usd": 22.49,
    "recargas_estimadas": [
     {
      "utc": "2026-11-12T14:49:22Z",
@@ -678,11 +678,11 @@
    ],
    "gastado_desde_base": {
     "victoria": 29.86,
-    "otro": 8.78
+    "otro": 9.82
    },
    "gastado_7_dias": {
     "victoria": 3.37,
-    "otro": 7.22
+    "otro": 7.24
    },
    "por_dia": [
     {
@@ -738,17 +738,17 @@
     {
      "dia": "2026-11-22",
      "victoria": 0.0,
-     "otro": 0.0
+     "otro": 1.04
     }
    ],
    "por_modelo": {
     "prunaai/p-video-avatar": 23.27,
-    "minimax/video-01": 5.5,
+    "minimax/video-01": 6.5,
     "bytedance/seedance-1-pro": 5.25,
     "minimax/voice-cloning": 3.0,
     "google/nano-banana": 0.74,
     "zsxkib/mmaudio": 0.6,
-    "black-forest-labs/flux-schnell": 0.28,
+    "black-forest-labs/flux-schnell": 0.32,
     "minimax/speech-02-hd": 0.0
    },
    "costo_promedio_toma_usd": 0.46,
@@ -760,9 +760,9 @@
     "resemble-ai/chatterbox-multilingual": 11,
     "kwaivgi/kling-v2.5-turbo-pro": 29,
     "stability-ai/stable-audio-2.5": 16,
-    "victor-upmeet/whisperx": 223,
+    "victor-upmeet/whisperx": 224,
     "black-forest-labs/flux-1.1-pro": 124,
-    "elevenlabs/music": 72,
+    "elevenlabs/music": 73,
     "851-labs/background-remover": 7,
     "minimax/speech-2.6-hd": 117,
     "elevenlabs/v3": 104,
@@ -773,7 +773,7 @@
     "google/veo-3.1": 27
    },
    "incompleto": true,
-   "generado_utc": "2026-11-22T12:42:52Z",
+   "generado_utc": "2026-11-22T17:29:09Z",
    "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing.",
    "autorizaciones": [
     {
@@ -1038,10 +1038,14 @@
      "yt": 177
     },
     "total": 4485,
-    "ultimas_24h": null,
-    "horas": 327.6,
-    "por_dia": 329,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 10,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 332.3,
+    "por_dia": 324,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c70",
@@ -1053,10 +1057,14 @@
      "yt": 331
     },
     "total": 1418,
-    "ultimas_24h": null,
-    "horas": 237.5,
-    "por_dia": 143,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 242.3,
+    "por_dia": 140,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c65",
@@ -1068,10 +1076,14 @@
      "yt": 859
     },
     "total": 1229,
-    "ultimas_24h": null,
-    "horas": 283.5,
-    "por_dia": 104,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 288.3,
+    "por_dia": 102,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "O1",
@@ -1083,10 +1095,14 @@
      "yt": 1043
     },
     "total": 1153,
-    "ultimas_24h": null,
-    "horas": 260.7,
-    "por_dia": 106,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 265.4,
+    "por_dia": 104,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c01",
@@ -1131,13 +1147,15 @@
     "tipo": "Carrusel",
     "titulo": "Pensión IMSS diciembre 2026, martes 1 📅",
     "por_red": {
-     "yt": 930
+     "yt": 932
     },
-    "total": 930,
-    "ultimas_24h": null,
-    "horas": 181.7,
-    "por_dia": 123,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "total": 932,
+    "ultimas_24h": {
+     "yt": 2
+    },
+    "horas": 186.4,
+    "por_dia": 120,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "02",
@@ -1168,10 +1186,14 @@
      "yt": 623
     },
     "total": 792,
-    "ultimas_24h": null,
-    "horas": 331.7,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 336.4,
     "por_dia": 57,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "37",
@@ -1220,10 +1242,13 @@
      "yt": 530
     },
     "total": 629,
-    "ultimas_24h": null,
-    "horas": 277.7,
-    "por_dia": 54,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 282.4,
+    "por_dia": 53,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c08",
@@ -1253,10 +1278,13 @@
      "yt": 396
     },
     "total": 577,
-    "ultimas_24h": null,
-    "horas": 213.5,
-    "por_dia": 65,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 7
+    },
+    "horas": 218.3,
+    "por_dia": 63,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c06",
@@ -1289,10 +1317,14 @@
      "yt": 126
     },
     "total": 564,
-    "ultimas_24h": null,
-    "horas": 261.5,
-    "por_dia": 52,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 266.3,
+    "por_dia": 51,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c02",
@@ -1312,20 +1344,6 @@
     "horas": 354.7,
     "por_dia": 35,
     "medido_utc": "2026-11-14T12:40:03Z"
-   },
-   {
-    "id": "c86u",
-    "tipo": "Carrusel",
-    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
-    "por_red": {
-     "tt": 178,
-     "yt": 343
-    },
-    "total": 521,
-    "ultimas_24h": null,
-    "horas": 202.7,
-    "por_dia": 62,
-    "medido_utc": "2026-11-22T12:39:38Z"
    },
    {
     "id": "19",
@@ -1357,10 +1375,13 @@
      "yt": 205
     },
     "total": 408,
-    "ultimas_24h": null,
-    "horas": 305.6,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 310.3,
     "por_dia": 32,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "M2",
@@ -1372,10 +1393,14 @@
      "yt": 227
     },
     "total": 384,
-    "ultimas_24h": null,
-    "horas": 209.5,
-    "por_dia": 44,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 2,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 214.3,
+    "por_dia": 43,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c13",
@@ -1387,10 +1412,14 @@
      "yt": 133
     },
     "total": 363,
-    "ultimas_24h": null,
-    "horas": 301.7,
-    "por_dia": 29,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 306.4,
+    "por_dia": 28,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c07",
@@ -1431,6 +1460,21 @@
     "medido_utc": "2026-11-20T12:39:50Z"
    },
    {
+    "id": "c86u",
+    "tipo": "Carrusel",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "por_red": {
+     "yt": 343
+    },
+    "total": 343,
+    "ultimas_24h": {
+     "yt": 1
+    },
+    "horas": 207.4,
+    "por_dia": 40,
+    "medido_utc": "2026-11-22T17:26:53Z"
+   },
+   {
     "id": "c78",
     "tipo": "Carrusel",
     "titulo": "Aguinaldo 2026 con salario mínimo 💰",
@@ -1438,10 +1482,12 @@
      "tt": 325
     },
     "total": 325,
-    "ultimas_24h": null,
-    "horas": 159.6,
-    "por_dia": 49,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0
+    },
+    "horas": 164.3,
+    "por_dia": 47,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c74",
@@ -1452,10 +1498,13 @@
      "yt": 111
     },
     "total": 324,
-    "ultimas_24h": null,
-    "horas": 229.7,
-    "por_dia": 34,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 2,
+     "yt": 0
+    },
+    "horas": 234.4,
+    "por_dia": 33,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c68",
@@ -1467,10 +1516,14 @@
      "yt": 206
     },
     "total": 299,
-    "ultimas_24h": null,
-    "horas": 233.6,
-    "por_dia": 31,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 238.3,
+    "por_dia": 30,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c09",
@@ -1482,10 +1535,14 @@
      "yt": 143
     },
     "total": 281,
-    "ultimas_24h": null,
-    "horas": 356.7,
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0,
+     "yt": 1
+    },
+    "horas": 361.4,
     "por_dia": 19,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c12",
@@ -1497,10 +1554,14 @@
      "yt": 138
     },
     "total": 253,
-    "ultimas_24h": null,
-    "horas": 309.5,
-    "por_dia": 20,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 1
+    },
+    "horas": 314.3,
+    "por_dia": 19,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c91u",
@@ -1510,10 +1571,12 @@
      "yt": 249
     },
     "total": 249,
-    "ultimas_24h": null,
-    "horas": 133.7,
-    "por_dia": 45,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 138.4,
+    "por_dia": 43,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "M1",
@@ -1525,10 +1588,14 @@
      "yt": 97
     },
     "total": 240,
-    "ultimas_24h": null,
-    "horas": 233.8,
-    "por_dia": 25,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 238.6,
+    "por_dia": 24,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c04",
@@ -1555,10 +1622,12 @@
      "tt": 234
     },
     "total": 234,
-    "ultimas_24h": null,
-    "horas": 35.6,
-    "por_dia": 158,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 35
+    },
+    "horas": 40.3,
+    "por_dia": 139,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c79",
@@ -1568,10 +1637,27 @@
      "tt": 185
     },
     "total": 185,
-    "ultimas_24h": null,
-    "horas": 141.5,
-    "por_dia": 31,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0
+    },
+    "horas": 146.3,
+    "por_dia": 30,
+    "medido_utc": "2026-11-22T17:26:53Z"
+   },
+   {
+    "id": "c86",
+    "tipo": "Carrusel",
+    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "por_red": {
+     "tt": 178
+    },
+    "total": 178,
+    "ultimas_24h": {
+     "tt": 178
+    },
+    "horas": 111.3,
+    "por_dia": 38,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "M4",
@@ -1583,10 +1669,14 @@
      "yt": 83
     },
     "total": 170,
-    "ultimas_24h": null,
-    "horas": 89.5,
-    "por_dia": 46,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 94.3,
+    "por_dia": 43,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c43",
@@ -1598,10 +1688,14 @@
      "yt": 9
     },
     "total": 160,
-    "ultimas_24h": null,
-    "horas": 282.7,
-    "por_dia": 14,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 287.4,
+    "por_dia": 13,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "E1",
@@ -1613,10 +1707,14 @@
      "yt": 44
     },
     "total": 152,
-    "ultimas_24h": null,
-    "horas": 185.5,
-    "por_dia": 20,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 0
+    },
+    "horas": 190.3,
+    "por_dia": 19,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c82",
@@ -1626,10 +1724,12 @@
      "tt": 147
     },
     "total": 147,
-    "ultimas_24h": null,
-    "horas": 69.5,
-    "por_dia": 51,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 2
+    },
+    "horas": 74.3,
+    "por_dia": 47,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c27",
@@ -1640,10 +1740,13 @@
      "yt": 53
     },
     "total": 146,
-    "ultimas_24h": null,
-    "horas": 250.7,
+    "ultimas_24h": {
+     "tt": 0,
+     "yt": 0
+    },
+    "horas": 255.4,
     "por_dia": 14,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c84",
@@ -1653,10 +1756,12 @@
      "tt": 146
     },
     "total": 146,
-    "ultimas_24h": null,
-    "horas": 21.5,
-    "por_dia": 146,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 146
+    },
+    "horas": 26.3,
+    "por_dia": 133,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c69",
@@ -1668,10 +1773,29 @@
      "yt": 52
     },
     "total": 139,
-    "ultimas_24h": null,
-    "horas": 209.6,
+    "ultimas_24h": {
+     "tt": 0,
+     "ig": 0,
+     "yt": 2
+    },
+    "horas": 214.3,
     "por_dia": 16,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
+   },
+   {
+    "id": "c97u",
+    "tipo": "Carrusel",
+    "titulo": "Pensión ISSSTE diciembre 2026, viernes 27 📅",
+    "por_red": {
+     "yt": 134
+    },
+    "total": 134,
+    "ultimas_24h": {
+     "yt": 97
+    },
+    "horas": 18.4,
+    "por_dia": 134,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c83",
@@ -1681,10 +1805,12 @@
      "tt": 133
     },
     "total": 133,
-    "ultimas_24h": null,
-    "horas": 45.5,
-    "por_dia": 70,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0
+    },
+    "horas": 50.3,
+    "por_dia": 63,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c76",
@@ -1694,23 +1820,12 @@
      "tt": 122
     },
     "total": 122,
-    "ultimas_24h": null,
-    "horas": 41.6,
-    "por_dia": 70,
-    "medido_utc": "2026-11-22T12:39:38Z"
-   },
-   {
-    "id": "c97u",
-    "tipo": "Carrusel",
-    "titulo": "Pensión ISSSTE diciembre 2026, viernes 27 📅",
-    "por_red": {
-     "yt": 110
+    "ultimas_24h": {
+     "tt": 2
     },
-    "total": 110,
-    "ultimas_24h": null,
-    "horas": 13.7,
-    "por_dia": 110,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "horas": 46.3,
+    "por_dia": 63,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c90u",
@@ -1720,10 +1835,12 @@
      "yt": 97
     },
     "total": 97,
-    "ultimas_24h": null,
-    "horas": 61.7,
-    "por_dia": 38,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "yt": 1
+    },
+    "horas": 66.4,
+    "por_dia": 35,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c89u",
@@ -1733,10 +1850,12 @@
      "yt": 96
     },
     "total": 96,
-    "ultimas_24h": null,
-    "horas": 157.7,
-    "por_dia": 15,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 162.4,
+    "por_dia": 14,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c81",
@@ -1746,10 +1865,12 @@
      "tt": 94
     },
     "total": 94,
-    "ultimas_24h": null,
-    "horas": 93.5,
-    "por_dia": 24,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 0
+    },
+    "horas": 98.3,
+    "por_dia": 23,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c88u",
@@ -1759,10 +1880,12 @@
      "yt": 93
     },
     "total": 93,
-    "ultimas_24h": null,
-    "horas": 109.7,
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 114.4,
     "por_dia": 20,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c77",
@@ -1773,10 +1896,13 @@
      "ig": 10
     },
     "total": 92,
-    "ultimas_24h": null,
-    "horas": 138.4,
-    "por_dia": 16,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "ultimas_24h": {
+     "tt": 1,
+     "ig": 0
+    },
+    "horas": 143.2,
+    "por_dia": 15,
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c80",
@@ -1786,10 +1912,12 @@
      "tt": 75
     },
     "total": 75,
-    "ultimas_24h": null,
-    "horas": 117.5,
+    "ultimas_24h": {
+     "tt": 0
+    },
+    "horas": 122.3,
     "por_dia": 15,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
     "id": "c92u",
@@ -1799,21 +1927,34 @@
      "yt": 5
     },
     "total": 5,
-    "ultimas_24h": null,
-    "horas": 37.7,
+    "ultimas_24h": {
+     "yt": 0
+    },
+    "horas": 42.4,
     "por_dia": 3,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
    },
    {
-    "id": "c86",
+    "id": "c85",
     "tipo": "Carrusel",
-    "titulo": "Pago doble Pensión Bienestar, es rumor 🔍",
+    "titulo": "Aguinaldo 2026 si ganas $30,000 al mes 💰",
     "por_red": {},
     "total": 0,
     "ultimas_24h": null,
-    "horas": 106.6,
+    "horas": 2.3,
     "por_dia": 0,
-    "medido_utc": "2026-11-22T12:39:38Z"
+    "medido_utc": "2026-11-22T17:26:53Z"
+   },
+   {
+    "id": "c99",
+    "tipo": "Carrusel",
+    "titulo": "Fechas de diciembre de tu dinero, guárdalas 📅",
+    "por_red": {},
+    "total": 0,
+    "ultimas_24h": null,
+    "horas": 0.4,
+    "por_dia": 0,
+    "medido_utc": "2026-11-22T17:26:53Z"
    }
   ]
  }

@@ -2158,16 +2158,16 @@
   "fondo": "jet.jpg",
   "portada": "dinamica-home-office-alt.jpg",
   "horas": {
-   "tt": "2026-11-22 09:00"
+   "tt": "2026-11-22 09:06"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-22T15:00:00Z",
+  "publica_utc": "2026-11-22T15:06:35Z",
   "linea": "si ganas $30,000 al mes, tu aguinaldo mínimo es $15,000 💰",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "tt": "2026-11-22T15:00:00Z"
+   "tt": "2026-11-22T15:06:35Z"
   }
  },
  {
@@ -2191,7 +2191,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "tt": "2026-11-18T02:06:01Z"
-  }
+  },
+  "v_tt": 178,
+  "l_tt": 2,
+  "c_tt": 0,
+  "s_tt": 1
  },
  {
   "id": "c86u",
@@ -2221,10 +2225,6 @@
   "l_yt": 8,
   "c_yt": 13,
   "s_yt": 0,
-  "v_tt": 178,
-  "l_tt": 2,
-  "c_tt": 0,
-  "s_tt": 1,
   "r_yt": 82.9,
   "c_yt_reales": 6
  },
@@ -2252,7 +2252,7 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 930,
+  "v_yt": 932,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
@@ -2530,8 +2530,8 @@
    "yt": "2026-11-21T23:00:00Z",
    "fb": "2026-11-21T23:00:00Z"
   },
-  "v_yt": 110,
-  "l_yt": 0,
+  "v_yt": 134,
+  "l_yt": 1,
   "c_yt": 1,
   "s_yt": 0,
   "c_yt_reales": 0
@@ -2566,16 +2566,16 @@
   "fondo": "gimnasio-ciudad.jpg",
   "portada": "dinamica-cuarto-maquillaje.jpg",
   "horas": {
-   "ig": "2026-11-22 11:00"
+   "ig": "2026-11-22 11:01"
   },
   "youtube_id": "",
-  "publica_utc": "2026-11-22T17:00:00Z",
+  "publica_utc": "2026-11-22T17:01:05Z",
   "linea": "guarda esto: 5 fechas de tu dinero en diciembre. 1 dic haz tu lista, 12 dic la mayoría de los bancos no abre, antes del 20 dic tu aguinaldo ($15,000 → $7,500), 24 dic nochebuena con tope, 31 dic último día para que tus aportaciones deducibles cuenten este año.",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
   "publica_utc_por_red": {
-   "ig": "2026-11-22T17:00:00Z"
+   "ig": "2026-11-22T17:01:05Z"
   }
  },
  {

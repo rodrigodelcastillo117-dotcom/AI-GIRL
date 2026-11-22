@@ -135,13 +135,22 @@ def medir_publer(videos):
     # Facebook (9-nov-2026) se mide como 'fb': va en el centro y en la evolución diaria, pero no en la calificación
     # de videos (total() suma YouTube, TikTok e Instagram) ni en la prueba de horarios.
     fb = publer.CONFIG.get('facebook_victoria')
-    por_linea = {clave_linea(v.get('texto_post')): v['id'] for v in videos}
+    # 22-nov-2026: c86 (TikTok) y c86u (YouTube, de usted) empiezan igual y las vistas de TikTok de c86 se iban a c86u.
+    # Con la misma primera línea gana la pieza que de verdad se programó en esa red.
+    candidatos = {}
+    for v in videos:
+        candidatos.setdefault(clave_linea(v.get('texto_post')), []).append(v)
+
+    def por_texto(texto, red):
+        lista = candidatos.get(clave_linea(texto)) or []
+        propia = [v for v in lista if red in (v.get('publica_utc_por_red') or {})]
+        return (propia or lista or [{}])[0].get('id')
     por_minuto = {v['publica_utc'][:16]: v['id'] for v in videos if v.get('publica_utc')}
     # El Reel de un carrusel (mismo video del Short) va aparte, como 'igr': sumado al carrusel inflaría su hora.
     reels = {primera_linea(v['texto_reel']): v['id'] for v in videos if v.get('texto_reel')}
     hoy = datetime.date.today()
     datos = {}
-    for pagina in range(20):
+    for pagina in range(60):  # 22-nov: con 20 páginas (200 posts) se cortaban los más viejos de los 60 días
         r = publer._pedir('GET', f'/analytics/post_insights?from={(hoy - datetime.timedelta(days=60)).isoformat()}'
                                  f'&to={hoy.isoformat()}&page={pagina}', ws)
         lote = r.get('posts') or []
@@ -150,7 +159,7 @@ def medir_publer(videos):
             if not red:
                 continue
             minuto = a_utc(p['scheduled_at']).strftime('%Y-%m-%dT%H:%M') if p.get('scheduled_at') else ''
-            video = por_linea.get(clave_linea(p.get('text'))) or (por_minuto.get(minuto) if red != 'fb' else None)
+            video = por_texto(p.get('text'), red) or (por_minuto.get(minuto) if red != 'fb' else None)
             if primera_linea(p.get('text')) in reels:
                 video = reels[primera_linea(p.get('text'))]
                 red = 'fb' if red == 'fb' else 'igr'  # en Facebook el Reel del carrusel es su único video

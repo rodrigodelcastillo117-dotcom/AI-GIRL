@@ -26,6 +26,16 @@ Tu dinero en México. Nada de salud mental, productividad ni historias de empres
   - Seguidores: ninguna red ganó seguidores netos en la semana (TikTok 0 con 7,947 vistas; YouTube +3 en Analytics).
     No se puede saber qué serie da seguidores: las redes no dan seguidores por publicación por la API.
 
+- **Revisión del 22-nov-2026 (solo TikTok y YouTube: Instagram y Facebook cancelados el 19-nov):**
+  - TikTok, "Victoria verifica" (3 comparables: c70 1,065 · c100 234 a 40 h · c86 178 a 111 h): mediana 234 contra 146
+    de la serie "Tu sueldo, tu aguinaldo" con portada "sí" (7: c78 325, c79 185, c84 146, c82 147, c83 133, c81 94, c80 75).
+    La portada "sí" del 15-nov (466) NO se sostuvo con más publicaciones.
+  - YouTube, shorts "Pensión clara" (5: c88u 93, c89u 96, c90u 97, c97u 110, c92u 5): mediana 96. Verifica de pensión
+    (c91u) 249, pero es 1 sola: no se declara ganador.
+  - Videos largos (7): 1 a 28 vistas. No funcionan como video; solo sirven por sus recortes.
+  - Variantes de ganadores (7): 64-149 vistas en TikTok. Cambiar solo el gancho no repite el resultado.
+  - Seguidores de la semana: TikTok +5 (≈2.7 por 1,000 vistas de lo publicado), YouTube +4 (2.2 por 1,000 vistas del canal).
+
 ## Series (cada una es una promesa: "sígueme para la siguiente")
 
 | Serie | Formato | Por qué |

@@ -202,5 +202,29 @@
   "cambio": "Portada de carruseles NUEVOS de TikTok (desde el 16-nov; los 'listo' no se reescriben): gancho tipo 'sí' (pregunta de sí/no) o 'guarda esto'; la postura de Victoria pasa a la 2a lámina o al pie, no a la portada.",
   "por_que": "Vistas de TikTok a ~48 h por tipo de portada (mismas edades): 'sí' mediana 466 (3 carruseles), 'guarda esto' 250 (4), 'dato' 223 (8), 'postura' 145 (4). Postura es la más baja con 4 comparables.",
   "vigilar": "tt: mediana a 48 h de los carruseles nuevos con portada 'sí'/'guarda esto' contra 223 (dato) y 145 (postura); revisar el domingo 22-nov con al menos 3 nuevos."
+ },
+ {
+  "fecha": "2026-11-22",
+  "cambio": "TikTok: portada tipo 'verifica' (\"¿X? Lo verifiqué\" con sello) para los carruseles NUEVOS de datos que circulan; 'sí' queda para la serie de sueldos.",
+  "por_que": "3 publicaciones comparables de 'verifica' en TikTok (c70 1,065 · c100 234 a 40 h · c86 178 a 111 h): mediana 234 contra 146 de 7 de la serie 'sí' (c78-c84).",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-22",
+  "cambio": "Variantes de ganadores en pausa (config.json → variantes.pausa); solo de un hit nuevo.",
+  "por_que": "7 variantes: 64-149 vistas en TikTok, ninguna llegó a la mediana.",
+  "vigilar": "tt"
+ },
+ {
+  "fecha": "2026-11-22",
+  "cambio": "Medición: con la misma primera línea, las vistas van a la pieza programada en esa red (c86 vs c86u) y se leen 60 páginas de Publer en vez de 20.",
+  "por_que": "c86 no tenía vistas de TikTok: se las llevaba c86u; 200 posts era el tope y se cortaban los viejos.",
+  "vigilar": "todas"
+ },
+ {
+  "fecha": "2026-11-22",
+  "cambio": "Serie de sueldos: la lámina de la calculadora parte la dirección en dos renglones.",
+  "por_que": "\"victoriatheceo.vercel.app/aguinaldo\" se cortaba en el borde en c78-c85.",
+  "vigilar": "tt"
  }
 ]

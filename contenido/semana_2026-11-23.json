@@ -1,0 +1,28 @@
+{
+ "hecho_por": "planeación del domingo 22-nov-2026",
+ "largo_pension_lunes": {
+  "id": "LP2",
+  "fecha_publicacion": "2026-11-25T00:00:00Z",
+  "titulo_tentativo": "Semanas cotizadas 2027: cuántas pide el IMSS y cómo saber las suyas",
+  "bloques": [
+   "Gancho: en 2027 la Ley 97 pide 900 semanas, 25 más que en 2026",
+   "Ley 73 o Ley 97: la fecha de alta (antes o después del 1-jul-1997)",
+   "La tabla: 875 en 2026, 900 en 2027, +25 por año hasta 1,000 en 2031 (Ley 73: 500)",
+   "Ejemplo resuelto en pantalla: tiene 820 semanas y quiere pensionarse en 2028 → le faltan (cuenta con python)",
+   "Cómo consultar sus semanas gratis (IMSS Digital / reporte de semanas cotizadas)",
+   "Qué hacer si le faltan: seguir cotizando, Modalidad 40 solo como opción a revisar con el IMSS (sin recomendar)",
+   "Cierre: suscríbase, cada cambio de fechas o montos se lo explico aquí"
+  ],
+  "fuentes_a_confirmar": [
+   "Ley del Seguro Social art. 154 y transitorios (reforma DOF 16-dic-2020)",
+   "IMSS: semanas cotizadas requeridas por año",
+   "IMSS Digital: constancia de semanas cotizadas"
+  ],
+  "autorizacion": "largo-pension (tope $20/mes, gastado $1.96)",
+  "nota": "Los largos llevan 1-28 vistas (LP1 28 en 4 días). Se hace por la autorización vigente y por los recortes, pero si LP2 queda igual se propone a Rodrigo dejar los largos."
+ },
+ "sketch_miercoles": {
+  "estado": "no se hace esta semana",
+  "por_que": "Los videos de Victoria hablando trajeron 0 suscriptores en 4,249 vistas (suscriptores_video.py) y el sketch gasta Replicate (sketch-tiktok, $0 de $8). Se gasta solo si un formato hablado demuestra que trae seguidores."
+ }
+}

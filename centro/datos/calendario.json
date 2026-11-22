@@ -17,11 +17,9 @@
   "que": "Sale el carrusel «Aguinaldo 2026 si ganas $30,000 al mes 💰»",
   "estado": "programado",
   "horas": {
-   "tt": "09:00"
+   "tt": "09:06"
   },
-  "confirmado": [
-   "tt"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-22",
@@ -41,11 +39,9 @@
   "que": "Sale el carrusel «Fechas de diciembre de tu dinero, guárdalas 📅»",
   "estado": "programado",
   "horas": {
-   "ig": "11:00"
+   "ig": "11:01"
   },
-  "confirmado": [
-   "ig"
-  ]
+  "confirmado": []
  },
  {
   "fecha": "2026-11-22",
