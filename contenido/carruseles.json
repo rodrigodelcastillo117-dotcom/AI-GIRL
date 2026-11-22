@@ -10103,6 +10103,776 @@
     "tt": "2026-11-25T15:00:00Z"
    },
    "publica_utc": "2026-11-25T15:00:00Z"
+  },
+  {
+   "id": "c104u",
+   "estado": "borrador",
+   "tema": "pension_cesantia_ley73_porcentaje_por_edad",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "hagamos_cuentas"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-oficina-alt.jpg",
+   "ventana": {
+    "desde": "2026-11-22",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/dinamica-cafe.png",
+    "etiqueta": "LEY 73 · CESANTÍA",
+    "titulo": "Pensión a los 60 por Ley 73: le dan 75%, no 100%",
+    "voz": "A los sesenta, su pensión de Ley setenta y tres es del setenta y cinco por ciento. Así sube.",
+    "gancho_tipo": "dato",
+    "foto_reel": "assets/fotos/lora-prueba-3-estudio.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Qué es la cesantía?",
+     "texto": "Pensionarse desde los 60 años, sin empleo formal. En Ley 73 pide 500 semanas y estar dado de baja en el IMSS.\n\nIMSS, ficha IMSS-01-002 · IMSS, Guía para tramitar tu pensión (2024)",
+     "voz": "Cesantía es pensionarse desde los sesenta, sin empleo formal, con quinientas semanas."
+    },
+    {
+     "titulo": "A los 60: 75%",
+     "texto": "Si se pensiona a los 60, recibe el 75% de la pensión que le tocaría por vejez a los 65.\n\nIMSS, Guía para tramitar tu pensión (2024) · Uno TV, 6-ago-2026",
+     "voz": "A los sesenta le dan el setenta y cinco por ciento de lo que le tocaría a los sesenta y cinco."
+    },
+    {
+     "titulo": "Sube 5 puntos por año",
+     "texto": "61 años: 80%. 62 años: 85%. 63 años: 90%. 64 años: 95%.\n\nIMSS, Guía para tramitar tu pensión (2024) · Uno TV, 6-ago-2026 · Expansión, 26-feb-2026",
+     "voz": "Y sube cinco puntos por año hasta los sesenta y cuatro."
+    },
+    {
+     "titulo": "El 100%, antes de los 65",
+     "texto": "Desde los 64 años, 6 meses y 1 día, ya le corresponde el 100%.\n\nIMSS, Guía para tramitar tu pensión (2024) · Uno TV, 6-ago-2026",
+     "voz": "Desde los sesenta y cuatro años, seis meses y un día, ya le toca el cien por ciento."
+    },
+    {
+     "titulo": "Hagamos cuentas",
+     "texto": "Ejemplo hipotético: si a los 65 le tocaran $10,000 al mes, a los 60 serían $7,500 y a los 62, $8,500.\n\nPorcentajes: IMSS, Guía (2024) · cuenta con supuestos hipotéticos",
+     "voz": "Ejemplo: si a los sesenta y cinco le tocaran diez mil pesos, a los sesenta serían siete mil quinientos."
+    },
+    {
+     "titulo": "Ojo con la vigencia",
+     "texto": "Si ya dejó de cotizar, pídala dentro de su periodo de conservación de derechos: la cuarta parte del tiempo que cotizó.\n\nIMSS, ficha IMSS-01-002 · IMSS, Guía (2024) · Uno TV, 6-ago-2026",
+     "voz": "Si ya dejó de cotizar, pídala antes de que venza su conservación de derechos."
+    },
+    {
+     "titulo": "¿Y en Ley 97?",
+     "texto": "También desde los 60, con 875 semanas en 2026 y 900 en 2027. Esta tabla es de Ley 73: en Ley 97 el monto sale del ahorro de su Afore.\n\nIMSS, Guía (2024) y ficha IMSS-01-002 · CONSAR, Guía del SAR IMSS (2023)",
+     "voz": "En Ley noventa y siete, el monto sale del ahorro de su Afore."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Pensionarse a los 60 no es un error, pero cuesta: cada año antes son 5 puntos menos. Si puede esperar, haga la cuenta con sus números antes de firmar.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: pensionarse a los sesenta cuesta. Haga la cuenta con sus números antes de firmar."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: a quien ya va a cumplir 60.",
+    "texto": "Suscríbase: cuando cambien fechas o montos, se lo explico aquí.",
+    "voz": "Mándeselo a quien ya va a cumplir sesenta, y suscríbase."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 22-nov-2026. 1) IMSS, \"Guía para Tramitar tu Pensión IMSS\" (PDF, jul-2024), imss.gob.mx/sites/all/statics/pensiones/Guia-Tramitar-Pension.pdf: tabla \"Edad / Porcentaje\" de LSS 1973 para cesantía en edad avanzada y vejez: 60 años 75%, 61 80%, 62 85%, 63 90%, 64 95%, \"64 años, 6 meses más 1 día\" 100%; \"El porcentaje utilizado para calcular el importe de pensión de Cesantía en Edad Avanzada y Vejez se asigna dependiendo de la edad\"; requisitos LSS 1973: 60 años (CEA) y 65 (VE), en baja ante el IMSS, 500 semanas, dentro del periodo de gracia (cuarta parte del número de semanas registradas); LSS 1997: 60/65 años, en baja, semanas de la tabla (875 en 2026, 900 en 2027); la tabla de porcentaje solo aparece del lado LSS 1973. 2) IMSS, ficha IMSS-01-002 \"Solicitud de Pensión de Cesantía en Edad Avanzada o Vejez\", imss.gob.mx/tramites/imss01002: Ley 73: 60 años para cesantía o 65 para vejez, baja del régimen obligatorio y sin trabajo remunerado, mínimo 500 semanas, derechos vigentes o dentro del periodo de conservación; Ley 97: misma edad y baja, semanas de la tabla transitoria (875 en 2026, 900 en 2027). 3) Uno TV, \"¿Te vas a pensionar? Esta regla de la Ley 73 puede aumentar el porcentaje de tu pensión\" (6-ago-2026), unotv.com/pensiones/te-vas-a-pensionar-esta-regla-de-la-ley-73-puede-aumentar-el-porcentaje-de-tu-pension/: \"A los 60 años, corresponde el 75%\"; 61 80%; 62 85%; 63 90%; 64 95%; \"A los 64 años, 6 meses y 1 día, se alcanza el 100%\" de la pensión de vejez que le hubiera correspondido a los 65; requisitos: cotizar antes del 1-jul-1997, 60 años, dado de baja, 500 semanas, dentro del periodo de conservación de derechos. 4) Expansión, \"Cuánto aumenta la pensión del IMSS bajo la ley 73 si te jubilas a los 60 o 65\" (URL de 5-ago-2025, fecha mostrada 26-feb-2026), expansion.mx/finanzas-personales/2025/08/05/cuanto-aumenta-pension-del-imss-ley-73-si-te-jubilas-60-o-65: tabla 60 75%, 61 80%, 62 85%, 63 90%, 64 95%, 65 100%; 500 semanas. 5) CONSAR, \"Guía Infográfica del SAR IMSS\" (PDF, 21-sep-2023), gob.mx/cms/uploads/attachment/file/765537/Gui_a_Infogra_fica_SAR_IMSS_210923.pdf: Ley 97: \"El pago y monto de la pensión se realiza con el saldo acumulado en la Cuenta Afore\"; Ley 73: 60 años y 500 semanas, derechos vigentes. Diapositiva 5 = cuenta con supuestos hipotéticos (no es un monto de pensión). Diapositiva 8 = opinión de Victoria. Se dejó fuera, por tener una sola fuente: que el porcentaje reducido se queda aunque después cumpla 65 (solo El Cronista).",
+   "titulo_post": "Pensión por cesantía Ley 73: 75% a los 60, 100% a los 64 y medio",
+   "texto_post": "Pensión por cesantía en Ley 73: a los 60 le dan el 75%, no el 100% 📉\nCesantía es pensionarse desde los 60 años, sin empleo formal. En Ley 73 pide 500 semanas y estar dado de baja en el IMSS.\nEl porcentaje depende de su edad: 60 años 75% · 61 años 80% · 62 años 85% · 63 años 90% · 64 años 95%. Desde los 64 años, 6 meses y 1 día ya le corresponde el 100%.\nEjemplo hipotético: si a los 65 le tocaran $10,000 al mes, a los 60 serían $7,500 y a los 62, $8,500.\nOjo: si ya dejó de cotizar, pídala dentro de su periodo de conservación de derechos. En Ley 97 no hay esta tabla: el monto sale del ahorro de su Afore (875 semanas en 2026, 900 en 2027).\nMi opinión: pensionarse a los 60 no es un error, pero cuesta. Haga la cuenta con sus números antes de firmar.\n\n📚 IMSS, Guía para tramitar tu pensión y ficha IMSS-01-002 · Uno TV (6-ago-2026) · Expansión (26-feb-2026) · CONSAR, Guía del SAR IMSS · consultado el 22-nov-2026\n📩 Mándeselo por WhatsApp a su familia: a quien ya va a cumplir 60.\n🔔 Suscríbase: cuando cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #ley73 #pensionados #cesantia #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Pensión por cesantía",
+    "titulo": "Pensión por cesantía, 75% a los 60 años 📉",
+    "tags_concretas": [
+     "pension por cesantia",
+     "cesantia en edad avanzada ley 73",
+     "pension a los 60 años imss",
+     "porcentaje pension ley 73 por edad",
+     "tabla cesantia imss",
+     "pension ley 73 75 por ciento",
+     "cesantia o vejez imss",
+     "pencion por cesantia"
+    ],
+    "hashtags": [
+     "#pensionimss",
+     "#ley73",
+     "#pensionados",
+     "#cesantia"
+    ],
+    "preguntas": [
+     "¿Cuánto me dan de pensión si me jubilo a los 60 con la Ley 73?",
+     "¿Qué porcentaje de pensión me toca a los 62 años?",
+     "¿A qué edad me dan el 100% de la pensión Ley 73?",
+     "¿Cuál es la diferencia entre cesantía y vejez?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Cesantía: desde 60 años, en baja, sin trabajo remunerado; Ley 73 pide 500 semanas",
+     "fuente1": "IMSS ficha IMSS-01-002",
+     "fuente2": "IMSS Guía para tramitar tu pensión (2024) y Uno TV 6-ago-2026"
+    },
+    {
+     "dato": "Porcentajes Ley 73: 60=75%, 61=80%, 62=85%, 63=90%, 64=95%",
+     "fuente1": "IMSS Guía (2024), tabla Edad/Porcentaje",
+     "fuente2": "Uno TV 6-ago-2026 (y Expansión 26-feb-2026)"
+    },
+    {
+     "dato": "100% desde los 64 años, 6 meses y 1 día",
+     "fuente1": "IMSS Guía (2024)",
+     "fuente2": "Uno TV 6-ago-2026"
+    },
+    {
+     "dato": "El porcentaje es sobre la pensión de vejez que correspondería a los 65",
+     "fuente1": "Uno TV 6-ago-2026 (\"el 100% de la pensión de vejez que le hubiera correspondido a los 65 años\")",
+     "fuente2": "Expansión 26-feb-2026 (65 años = 100%) e IMSS Guía (porcentaje según edad para calcular el importe)"
+    },
+    {
+     "dato": "Ley 73 exige derechos vigentes o estar en el periodo de conservación (cuarta parte de las semanas)",
+     "fuente1": "IMSS ficha IMSS-01-002 e IMSS Guía (2024)",
+     "fuente2": "Uno TV 6-ago-2026"
+    },
+    {
+     "dato": "Ley 97: desde 60 años; 875 semanas en 2026 y 900 en 2027",
+     "fuente1": "IMSS Guía (2024), tabla de semanas",
+     "fuente2": "IMSS ficha IMSS-01-002, tabla transitoria"
+    },
+    {
+     "dato": "Ley 97: el monto sale del saldo de la Afore (sin tabla por edad)",
+     "fuente1": "CONSAR Guía Infográfica SAR IMSS (2023)",
+     "fuente2": "IMSS Guía (2024): tabla de porcentaje solo para LSS 1973; LSS 1997 = renta vitalicia con aseguradora"
+    }
+   ],
+   "revision": {
+    "fecha": "2026-11-22",
+    "agente": "redacción (primera revisión; falta la segunda revisión de datos antes de \"listo\")",
+    "resultado": "Borrador. Cada dato con dos fuentes (oficial primero). Cuentas en python: 10,000 x 0.75 = 7,500; 10,000 x 0.80 = 8,000; 10,000 x 0.85 = 8,500; 10,000 x 0.90 = 9,000; 10,000 x 0.95 = 9,500; (100 - 75) / 5 años = 5 puntos por año. El ejemplo de $10,000 es hipotético y se dice en pantalla; no es una promesa de monto. Fotos revisadas con scripts/revisar_texto_foto.py (sin texto legible).",
+    "correcciones": []
+   }
+  },
+  {
+   "id": "c105u",
+   "estado": "borrador",
+   "tema": "conservacion_de_derechos_ley73_si_dejo_de_cotizar",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "hagamos_cuentas"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-estudio.jpg",
+   "ventana": {
+    "desde": "2026-11-22",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/dinamica-home-office.jpg",
+    "etiqueta": "LEY 73 · CONSERVACIÓN DE DERECHOS",
+    "titulo": "Si dejó de cotizar, sus derechos de pensión Ley 73 tienen fecha de vencimiento",
+    "voz": "Si dejó de cotizar, su derecho a la pensión de Ley setenta y tres tiene fecha de vencimiento. Así la calcula.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/habla-lectura.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Un plazo que corre",
+     "texto": "Si dejó de cotizar, en Ley 73 conserva sus derechos por la cuarta parte del tiempo que cotizó, contado desde su baja.\n\nIMSS, Guía para tramitar tu pensión (2024) · IDC, 8-oct-2021",
+     "voz": "Si dejó de cotizar, conserva sus derechos por la cuarta parte del tiempo que cotizó."
+    },
+    {
+     "titulo": "Nunca menos de un año",
+     "texto": "Ese plazo no puede ser menor de 12 meses.\n\nIDC, 8-oct-2021 (LSS 1973, art. 182) · LSS, art. 150 · Expansión, 4-dic-2025",
+     "voz": "Y ese plazo nunca es menor de doce meses."
+    },
+    {
+     "titulo": "Hagamos cuentas",
+     "texto": "Ejemplo hipotético: 1,000 semanas cotizadas ÷ 4 = 250 semanas. Son unos 4 años y 9 meses desde su baja.\n\nRegla: IMSS, Guía (2024) · cuenta con supuestos hipotéticos",
+     "voz": "Ejemplo: con mil semanas, conserva sus derechos doscientas cincuenta semanas. Unos cuatro años y nueve meses."
+    },
+    {
+     "titulo": "¿Por qué importa?",
+     "texto": "Para pensionarse por Ley 73 necesita sus derechos vigentes o estar dentro de ese plazo. Si se le pasa, le pueden negar la pensión.\n\nIMSS, ficha IMSS-01-002 · CONSAR, Guía del SAR IMSS (2023) · El Imparcial, 10-mar-2025",
+     "voz": "Para la pensión de Ley setenta y tres necesita sus derechos vigentes. Si se le pasa, se la pueden negar."
+    },
+    {
+     "titulo": "Si vuelve a cotizar",
+     "texto": "Si regresa dentro de su plazo, o antes de 3 años sin cotizar, le reconocen todas sus semanas al reinscribirse.\n\nLey del Seguro Social, art. 151 · Expansión, 4-dic-2025",
+     "voz": "Si vuelve a cotizar dentro de su plazo, o antes de tres años, le reconocen todas sus semanas."
+    },
+    {
+     "titulo": "Más de 3 años fuera",
+     "texto": "De 3 a 6 años sin cotizar: se las reconocen tras 26 semanas nuevas. Más de 6 años: tras 52 semanas nuevas.\n\nLey del Seguro Social, art. 151 · Expansión, 4-dic-2025 y 24-nov-2025",
+     "voz": "Con más de tres años fuera, necesita veintiséis semanas nuevas. Con más de seis, cincuenta y dos."
+    },
+    {
+     "titulo": "Ley 97 es distinta",
+     "texto": "En Ley 97, para cesantía y vejez, este requisito no aplica: el IMSS pide la edad, estar de baja y las semanas.\n\nIMSS, Guía para tramitar tu pensión (2024) · IMSS, ficha IMSS-01-002",
+     "voz": "En Ley noventa y siete, para cesantía y vejez, este requisito no aplica."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Si tiene más de 55 y dejó de cotizar, saque hoy la cuenta de su plazo. Perder la vigencia por unos meses puede costarle la pensión.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: si dejó de cotizar, saque hoy la cuenta de su plazo. Unos meses pueden costarle la pensión."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: a quien dejó de cotizar.",
+    "texto": "Suscríbase: cuando cambien fechas o montos, se lo explico aquí.",
+    "voz": "Mándeselo a quien dejó de cotizar, y suscríbase."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 22-nov-2026. 1) IMSS, \"Guía para Tramitar tu Pensión IMSS\" (PDF, jul-2024), imss.gob.mx/sites/all/statics/pensiones/Guia-Tramitar-Pension.pdf: requisito LSS 1973 \"Dentro del periodo de gracia para solicitar pensión (cuarta parte del número de semanas registradas)\"; en LSS 1997 ese renglón dice \"No aplica\". 2) IDC, \"La LSS contempla la figura de la conservación de los derechos\" (8-oct-2021), idconline.mx/seguridad-social/2021/10/08/conservacion-de-derechos-para-pensiones-ceayv: LSS 1973 art. 182: conservación \"por un periodo igual a la cuarta parte del tiempo cubierto por sus cotizaciones semanales\", contado desde la baja, \"el cual no puede ser menor a 12 meses\". 3) Ley del Seguro Social, texto vigente, diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf (última reforma DOF 15-01-2026): art. 150 (misma regla en la ley vigente: cuarta parte, no menor de doce meses); art. 151 (reingreso: interrupción no mayor de 3 años = todas las cotizaciones al reinscribirse; de 3 a 6 años = tras 26 semanas nuevas; más de 6 años = tras 52 semanas; si el reingreso ocurre antes de expirar la conservación, se reconocen de inmediato). Equivalente en la LSS de 1973: arts. 182 y 183 (texto de 1973 no consultado directamente; IDC 8-oct-2021 cita el 182). 4) Expansión, \"Pensión IMSS Ley 73: así te afecta reingresar después de años sin cotizar\" (4-dic-2025), expansion.mx/finanzas-personales/2025/12/04/pension-imss-ley-73-afecta-reingresar-tras-anos-sin-cotizar: aplica a Ley 73 la cuarta parte del tiempo cotizado, \"nunca puede ser menor a 12 meses\"; hasta 3 años reconoce todas; 3-6 años 26 semanas; más de 6 años 52 semanas; dentro de la conservación, de inmediato. 5) Expansión, \"recuperar derechos ley 73 imss\" (24-nov-2025), expansion.mx/finanzas-personales/2025/11/24/recuperar-derechos-ley-73-imss: mismas reglas (26 semanas de 3 a 6 años; 52 semanas con más de 6 años). 6) IMSS, ficha IMSS-01-002 \"Solicitud de Pensión de Cesantía en Edad Avanzada o Vejez\", imss.gob.mx/tramites/imss01002: Ley 73: \"derechos vigentes o dentro del periodo de conservación\"; Ley 97: edad, baja y semanas. 7) CONSAR, \"Guía Infográfica del SAR IMSS\" (PDF, 21-sep-2023), gob.mx/cms/uploads/attachment/file/765537/Gui_a_Infogra_fica_SAR_IMSS_210923.pdf: Ley 73: \"Se requiere que los derechos del trabajador estén vigentes al momento de solicitar la pensión\" (no lo pide en Ley 97). 8) El Imparcial, \"IMSS: Por estos motivos pueden negarte la resolución de pensión\" (10-mar-2025), elimparcial.com/dinero/2025/03/10/imss-por-estos-motivos-pueden-negarte-la-resolucion-de-pension/: motivo de negativa: \"Si dejas de cotizar ante el IMSS por un largo periodo, es posible perder los derechos adquiridos.\" Diapositiva 3 = cuenta con supuestos hipotéticos. Diapositiva 8 = opinión de Victoria.",
+   "titulo_post": "Conservación de derechos IMSS: si dejó de cotizar, su plazo para la pensión Ley 73",
+   "texto_post": "Conservación de derechos en el IMSS: si dejó de cotizar, su pensión Ley 73 tiene fecha de vencimiento ⏳\nEn Ley 73 conserva sus derechos por la cuarta parte del tiempo que cotizó, contado desde su baja, y nunca menos de 12 meses.\nEjemplo hipotético: 1,000 semanas ÷ 4 = 250 semanas, unos 4 años y 9 meses.\nPara pensionarse por Ley 73 necesita sus derechos vigentes o estar dentro de ese plazo; si se le pasa, le pueden negar la pensión.\nSi vuelve a cotizar: dentro de su plazo o antes de 3 años, le reconocen todas sus semanas; de 3 a 6 años, tras 26 semanas nuevas; más de 6 años, tras 52.\nEn Ley 97, para cesantía y vejez, este requisito no aplica.\nMi opinión: si tiene más de 55 y dejó de cotizar, saque hoy la cuenta de su plazo.\n\n📚 Ley del Seguro Social, arts. 150 y 151 · IMSS, Guía para tramitar tu pensión y ficha IMSS-01-002 · CONSAR, Guía del SAR IMSS · IDC (8-oct-2021) · Expansión (4-dic-2025) · consultado el 22-nov-2026\n📩 Mándeselo por WhatsApp a su familia: a quien dejó de cotizar.\n🔔 Suscríbase: cuando cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #ley73 #semanascotizadas #pensionados #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Conservación de derechos",
+    "titulo": "Conservación de derechos IMSS, su plazo ⏳",
+    "tags_concretas": [
+     "conservacion de derechos imss",
+     "conservacion de derechos ley 73",
+     "deje de cotizar pierdo mis semanas",
+     "cuanto tiempo conservo mis derechos imss",
+     "reingreso imss 52 semanas",
+     "vigencia de derechos pension ley 73",
+     "recuperar derechos imss",
+     "conserbacion de derechos imss"
+    ],
+    "hashtags": [
+     "#pensionimss",
+     "#ley73",
+     "#semanascotizadas",
+     "#pensionados"
+    ],
+    "preguntas": [
+     "¿Si dejé de cotizar pierdo mis semanas del IMSS?",
+     "¿Cuánto tiempo conservo mis derechos en el IMSS?",
+     "¿Cuántas semanas necesito para recuperar mis derechos?",
+     "¿Cómo calculo mi conservación de derechos Ley 73?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Ley 73: conservación = cuarta parte del tiempo cotizado, desde la baja",
+     "fuente1": "IMSS Guía (2024) (\"cuarta parte del número de semanas registradas\")",
+     "fuente2": "IDC 8-oct-2021 (LSS 1973 art. 182)"
+    },
+    {
+     "dato": "No menor de 12 meses",
+     "fuente1": "IDC 8-oct-2021 (LSS 1973 art. 182) y LSS vigente art. 150",
+     "fuente2": "Expansión 4-dic-2025"
+    },
+    {
+     "dato": "Ley 73 exige derechos vigentes o estar en el periodo de conservación; si no, negativa",
+     "fuente1": "IMSS ficha IMSS-01-002 y CONSAR Guía SAR IMSS (2023)",
+     "fuente2": "El Imparcial 10-mar-2025"
+    },
+    {
+     "dato": "Reingreso: <3 años o dentro del plazo = todas las semanas al reinscribirse",
+     "fuente1": "LSS art. 151 fr. I y último párrafo",
+     "fuente2": "Expansión 4-dic-2025"
+    },
+    {
+     "dato": "Reingreso: 3-6 años = tras 26 semanas; >6 años = tras 52 semanas",
+     "fuente1": "LSS art. 151 fr. II y III",
+     "fuente2": "Expansión 4-dic-2025 y 24-nov-2025"
+    },
+    {
+     "dato": "En Ley 97 (cesantía y vejez) no aplica",
+     "fuente1": "IMSS Guía (2024): renglón \"No aplica\" en LSS 1997",
+     "fuente2": "IMSS ficha IMSS-01-002 (requisitos Ley 97 sin vigencia de derechos)"
+    }
+   ],
+   "revision": {
+    "fecha": "2026-11-22",
+    "agente": "redacción (primera revisión; falta la segunda revisión de datos antes de \"listo\")",
+    "resultado": "Borrador. Cuentas en python: 1,000 / 4 = 250 semanas; 250 x 7 = 1,750 días; 1,750 / 365.25 = 4.79 años = 4 años y 9.5 meses (\"unos 4 años y 9 meses\"). Ejemplo hipotético, dicho en pantalla. Pendiente para la segunda revisión: las reglas de reingreso se citan con la LSS vigente (art. 151) y Expansión, que las aplica a Ley 73; el texto literal del art. 183 de la LSS de 1973 no se consultó. Fotos revisadas con scripts/revisar_texto_foto.py.",
+    "correcciones": []
+   }
+  },
+  {
+   "id": "c106u",
+   "estado": "borrador",
+   "tema": "como_pedir_pension_imss_paso_a_paso_mi_pension_digital",
+   "serie": "Pensión clara",
+   "funcion": "convencer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "criterio"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-lectura.png",
+   "ventana": {
+    "desde": "2026-11-22",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/lora-prueba-1-oficina.jpg",
+    "etiqueta": "PENSIÓN IMSS · PASO A PASO",
+    "titulo": "No vaya al IMSS a pedir su pensión sin revisar esto",
+    "voz": "No vaya al Seguro Social a pedir su pensión sin revisar esto antes.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/estilo-b-oficina-2.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Cuándo se pide?",
+     "texto": "Cesantía desde los 60 años y vejez desde los 65, ya dado de baja. Ley 73: 500 semanas. Ley 97: 875 en 2026 y 900 en 2027.\n\nIMSS, ficha IMSS-01-002 · IMSS, Guía para tramitar tu pensión (2024)",
+     "voz": "Se pide desde los sesenta, ya dado de baja, con las semanas que pide su ley."
+    },
+    {
+     "titulo": "Sus datos, iguales",
+     "texto": "Revise que sus datos personales sean iguales en el IMSS y en su Afore. Si hay un error en su nombre o sus actas, corríjalo antes de empezar.\n\nIMSS, Guía (2024) · IMSS, servicio Compara tus datos Afore-IMSS",
+     "voz": "Revise que sus datos sean iguales en el IMSS y en su Afore. Si hay un error, corríjalo antes."
+    },
+    {
+     "titulo": "Su expediente en la Afore",
+     "texto": "Actualice su Expediente de Identificación del Trabajador en su Afore. Sin él no puede retirar su ahorro.\n\nCONSAR, Catálogo de Trámites del SAR · Expansión, 31-oct-2024",
+     "voz": "Actualice su expediente en su Afore: sin él no puede retirar su ahorro."
+    },
+    {
+     "titulo": "Paso 1: en internet",
+     "texto": "En Mi Pensión Digital (imss.gob.mx/pensiones), con su CURP, NSS, correo y cuenta bancaria, valida sus datos y obtiene una proyección de su pensión.\n\nIMSS, Guía (2024) · IDC, 22-sep-2025",
+     "voz": "Primero, en Mi Pensión Digital, en la página del IMSS, valida sus datos y ve una proyección."
+    },
+    {
+     "titulo": "Paso 2: ventanilla",
+     "texto": "Vaya a su Unidad de Medicina Familiar, a Prestaciones Económicas, de 8:00 a 15:00, con sus documentos.\n\nIMSS, ficha IMSS-01-002 · IMSS, Guía (2024) · IMSS, ¿Qué es una Proyección de Pensión?",
+     "voz": "Después, vaya a su clínica familiar, a prestaciones económicas, con sus documentos."
+    },
+    {
+     "titulo": "Lo que debe llevar",
+     "texto": "Identificación oficial, comprobante de domicilio, acta de nacimiento y un estado de cuenta bancario con su CLABE, a su nombre.\n\nIMSS, ficha IMSS-01-002 · IDC, 22-sep-2025",
+     "voz": "Lleve identificación, comprobante de domicilio, acta de nacimiento y su estado de cuenta del banco."
+    },
+    {
+     "titulo": "Cuenta nivel 4",
+     "texto": "Su pensión solo se deposita en cuenta bancaria. Pida que sea nivel 4, para que el banco no rechace el depósito.\n\nIMSS, Guía (2024) · IDC, 22-sep-2025",
+     "voz": "Su pensión solo se deposita en cuenta de banco. Pida que sea nivel cuatro."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Antes de firmar su resolución, revise sus semanas, su régimen y el monto. Y no le pague a ningún gestor: el trámite es gratis.\n\nOpinión de Victoria · base: IMSS, Guía (2024) y ficha IMSS-01-002 (gratuito)",
+     "voz": "Mi opinión: revise su resolución antes de firmar. Y no le pague a nadie: es gratis."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: a quien ya va a pedir su pensión.",
+    "texto": "Suscríbase: cuando cambien fechas o montos, se lo explico aquí.",
+    "voz": "Mándeselo a quien ya va a pedir su pensión, y suscríbase."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 22-nov-2026. 1) IMSS, ficha IMSS-01-002 \"Solicitud de Pensión de Cesantía en Edad Avanzada o Vejez\", imss.gob.mx/tramites/imss01002: cesantía 60 años, vejez 65; baja del régimen obligatorio y sin trabajo remunerado; Ley 73 mínimo 500 semanas; Ley 97 tabla transitoria (875 en 2026, 900 en 2027); en persona en la ventanilla de Control de Prestaciones Económicas de la Unidad de Medicina Familiar \"dentro del horario de 8:00 a 15:00 horas\" (en CDMX y Edomex también subdelegaciones); en línea por Mi Pensión Digital; documentos: identificación oficial vigente, comprobante de domicilio (máximo 3 meses), documento bancario con número de cuenta y CLABE, acta de nacimiento original o copia certificada; la cuenta debe estar a nombre del pensionado; \"Todos los trámites son gratuitos\". 2) IMSS, \"Guía para Tramitar tu Pensión IMSS\" (PDF, jul-2024), imss.gob.mx/sites/all/statics/pensiones/Guia-Tramitar-Pension.pdf: \"Compara tus datos entre IMSS y Afore. Asegúrate que tus datos personales entre el IMSS y tu Afore sean iguales\"; corregir nombre, vínculo o estado civil antes de iniciar; Mi Pensión Digital (CURP, NSS, CLABE) valida datos y da \"cálculo estimativo de pensión\"; ventanilla de la UMF de 8:00 a 15:00; pago \"únicamente por acreditamiento en cuenta bancaria\" con CLABE a su nombre; confirmar que la cuenta \"tenga asignado nivel 4 ... para evitar rechazos\"; resolución de pensión: validar semanas, régimen, promedio salarial, pensión mensual. 3) IMSS, servicio \"Compara tus datos AFORE - IMSS\", imss.gob.mx/pensiones/videos/compara-datos: permite \"validar la información de tus datos personales entre el IMSS y tu Afore\". 4) IDC, \"Mi Pensión Digital simplifica trámites para jubilación en el IMSS\" (22-sep-2025), idconline.mx/laboral/2025/09/22/mi-pension-digital-simplifica-tramites-para-jubilacion-en-el-imss: Mi Pensión Digital pide CURP, NSS, correo y \"una cuenta bancaria de nivel cuatro\"; \"genera una proyección de pensión\"; después se acude una vez a la UMF con identificación, comprobante de domicilio, acta de nacimiento y estado de cuenta. 5) IMSS, preguntas frecuentes \"¿Qué es una Proyección de Pensión?\", imss.gob.mx/pensiones/preguntas-frecuentes/que-es-proyeccion-pension: la Proyección de Pensión se emite en Mi Pensión Digital; luego se acude a la UMF de 8:00 a 15:00. 6) CONSAR, \"Catálogo de Trámites del SAR\" (PDF, mod. 10-mar-2022), ficha 19 \"Retiro total por Pensión y Negativa IMSS\", gob.mx/cms/uploads/attachment/file/710709/Cata_logo_de_Tra_mites_del_SAR.pdf: requisito \"Contar con un Expediente de Identificación del Trabajador actualizado que será generado por la AFORE\". 7) Expansión, \"Así puedes solicitar tu retiro total por Pensión y Negativa IMSS\" (31-oct-2024), expansion.mx/finanzas-personales/2024/10/31/retiro-total-por-pension-y-negativa-imss: mismo requisito del Expediente de Identificación del Trabajador actualizado para el retiro total. Diapositiva 8 = opinión de Victoria. Se dejó fuera, por tener una sola fuente: la vigencia de 30 días naturales de la Proyección de Pensión (solo IMSS, preguntas frecuentes) y el comprobante de domicilio \"de máximo 3 meses\" (solo la ficha).",
+   "titulo_post": "Trámite de pensión IMSS paso a paso: lo que debe revisar antes de ir",
+   "texto_post": "Trámite de pensión IMSS: no vaya a pedirla sin revisar esto 📝\nCuándo: cesantía desde los 60 años y vejez desde los 65, ya dado de baja. Ley 73: 500 semanas. Ley 97: 875 en 2026 y 900 en 2027.\nAntes: revise que sus datos sean iguales en el IMSS y en su Afore, y actualice su Expediente de Identificación del Trabajador en la Afore.\nPaso 1: Mi Pensión Digital (imss.gob.mx/pensiones) con CURP, NSS, correo y cuenta bancaria: valida sus datos y le da una proyección.\nPaso 2: su Unidad de Medicina Familiar, Prestaciones Económicas, de 8:00 a 15:00, con identificación, comprobante de domicilio, acta de nacimiento y estado de cuenta bancario con CLABE a su nombre. Pida que la cuenta sea nivel 4.\nMi opinión: revise su resolución antes de firmar. El trámite es gratis: no le pague a ningún gestor.\n\n📚 IMSS, ficha IMSS-01-002 y Guía para tramitar tu pensión · IDC (22-sep-2025) · CONSAR, Catálogo de Trámites del SAR · Expansión (31-oct-2024) · consultado el 22-nov-2026\n📩 Mándeselo por WhatsApp a su familia: a quien ya va a pedir su pensión.\n🔔 Suscríbase: cuando cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #pensionados #ley73 #ley97 #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Trámite de pensión IMSS",
+    "titulo": "Trámite de pensión IMSS, paso a paso 📝",
+    "tags_concretas": [
+     "tramite de pension imss",
+     "como pedir mi pension imss",
+     "mi pension digital imss",
+     "documentos para pension imss",
+     "requisitos pension imss 2026",
+     "cuenta nivel 4 pension imss",
+     "solicitud de pension cesantia vejez",
+     "tramite de pencion imss"
+    ],
+    "hashtags": [
+     "#pensionimss",
+     "#pensionados",
+     "#ley73",
+     "#ley97"
+    ],
+    "preguntas": [
+     "¿Cómo tramito mi pensión del IMSS?",
+     "¿Qué documentos piden para la pensión del IMSS?",
+     "¿Qué es Mi Pensión Digital del IMSS?",
+     "¿Dónde se pide la pensión del IMSS?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Cesantía 60, vejez 65, en baja; Ley 73 500 semanas; Ley 97 875 (2026) y 900 (2027)",
+     "fuente1": "IMSS ficha IMSS-01-002",
+     "fuente2": "IMSS Guía (2024)"
+    },
+    {
+     "dato": "Datos personales iguales en IMSS y Afore; corregir errores antes",
+     "fuente1": "IMSS Guía (2024)",
+     "fuente2": "IMSS servicio \"Compara tus datos AFORE - IMSS\""
+    },
+    {
+     "dato": "Expediente de Identificación del Trabajador actualizado, requisito para retirar recursos",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 31-oct-2024"
+    },
+    {
+     "dato": "Mi Pensión Digital: CURP, NSS, correo, cuenta bancaria; valida datos y genera proyección",
+     "fuente1": "IMSS Guía (2024)",
+     "fuente2": "IDC 22-sep-2025"
+    },
+    {
+     "dato": "Ventanilla de Prestaciones Económicas de la UMF, 8:00 a 15:00",
+     "fuente1": "IMSS ficha IMSS-01-002",
+     "fuente2": "IMSS Guía (2024) e IMSS preguntas frecuentes (Proyección de Pensión)"
+    },
+    {
+     "dato": "Documentos: identificación, comprobante de domicilio, acta de nacimiento, estado de cuenta con CLABE",
+     "fuente1": "IMSS ficha IMSS-01-002",
+     "fuente2": "IDC 22-sep-2025"
+    },
+    {
+     "dato": "Pago solo en cuenta bancaria a su nombre; nivel 4 para evitar rechazos",
+     "fuente1": "IMSS Guía (2024)",
+     "fuente2": "IDC 22-sep-2025 (\"cuenta bancaria de nivel cuatro\") e IMSS ficha (cuenta a nombre del pensionado)"
+    },
+    {
+     "dato": "El trámite es gratuito",
+     "fuente1": "IMSS ficha IMSS-01-002 (\"Todos los trámites son gratuitos\")",
+     "fuente2": "IMSS comunicado 3-oct-2022 (verificado en c95u)"
+    }
+   ],
+   "revision": {
+    "fecha": "2026-11-22",
+    "agente": "redacción (primera revisión; falta la segunda revisión de datos antes de \"listo\")",
+    "resultado": "Borrador. Sin cuentas (no hay cifras calculadas). Cada paso con dos fuentes; lo que tenía una sola se dejó fuera (ver fuente). Fotos revisadas con scripts/revisar_texto_foto.py.",
+    "correcciones": []
+   }
+  },
+  {
+   "id": "c107u",
+   "estado": "borrador",
+   "tema": "negativa_de_pension_imss_aclaracion_inconformidad_15_dias",
+   "serie": "Pensión clara",
+   "funcion": "convencer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "criterio"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-estados-de-cuenta.jpg",
+   "ventana": {
+    "desde": "2026-11-22",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/estilo-b-oficina-1.jpg",
+    "etiqueta": "NEGATIVA DE PENSIÓN · 15 DÍAS",
+    "titulo": "Si el IMSS le niega la pensión, no es la última palabra",
+    "voz": "Si el Seguro Social le niega la pensión, no es la última palabra. Pero el reloj corre.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/dinamica-oficina.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Lea el motivo",
+     "texto": "La negativa es una resolución del IMSS y dice por qué. Puede ser por semanas, por la edad o por haber perdido la vigencia de sus derechos.\n\nIMSS, Guía para tramitar tu pensión (2024) · El Imparcial, 10-mar-2025",
+     "voz": "Primero, lea el motivo: semanas, edad o vigencia de derechos."
+    },
+    {
+     "titulo": "¿Le faltan semanas?",
+     "texto": "Si no le cuentan semanas que sí trabajó, pida la aclaración de semanas cotizadas. Es gratis, en línea o en su subdelegación.\n\nIMSS, trámite IMSS-02-025, modalidad C · El Imparcial, 30-may-2026",
+     "voz": "Si le faltan semanas que sí trabajó, pida la aclaración. Es gratis."
+    },
+    {
+     "titulo": "15 días hábiles",
+     "texto": "Para el recurso de inconformidad tiene 15 días hábiles desde que surte efectos la notificación. Va por escrito al Consejo Consultivo Delegacional del IMSS.\n\nReglamento del Recurso de Inconformidad, art. 6 · IDC, 2-dic-2025",
+     "voz": "Para inconformarse tiene quince días hábiles. No los deje correr."
+    },
+    {
+     "titulo": "O directo a juicio",
+     "texto": "El recurso no es obligatorio: también puede demandar al IMSS ante los Tribunales Federales en materia laboral.\n\nLey del Seguro Social, arts. 294 y 295 · IDC, 2-dic-2025",
+     "voz": "El recurso no es obligatorio: también puede ir directo a un juicio laboral."
+    },
+    {
+     "titulo": "Su derecho no se pierde",
+     "texto": "Si cumple los requisitos, su derecho a la pensión no se extingue. Pero cada mensualidad sin cobrar prescribe en un año.\n\nLey del Seguro Social, arts. 300 y 301 · IDC, 26-mar-2018",
+     "voz": "Si cumple los requisitos, su derecho a la pensión no se pierde. Las mensualidades sí, al año."
+    },
+    {
+     "titulo": "Ayuda gratis",
+     "texto": "La PROFEDET le asesora, le acompaña y le representa gratis. Búsquela en gob.mx/profedet.\n\nSTPS, 8-abr-2022 · PROFEDET, micrositio",
+     "voz": "Pida ayuda gratis a la PROFEDET. No necesita pagarle a un gestor."
+    },
+    {
+     "titulo": "Si no le alcanzó",
+     "texto": "Con la negativa puede pedir a su Afore su ahorro en una sola exhibición. El SAR 92 se lo dan hasta los 65.\n\nCONSAR, Catálogo de Trámites del SAR · Expansión, 31-oct-2024 y 21-ago-2026",
+     "voz": "Si no le alcanzan las semanas, con la negativa puede retirar su ahorro de la Afore."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "No deje pasar los 15 días esperando una llamada. Lleve su resolución a la PROFEDET la misma semana en que se la notifiquen.\n\nOpinión de Victoria, no es un dato oficial",
+     "voz": "Mi opinión: no espere. Lleve su resolución a la PROFEDET esa misma semana."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: a quien está tramitando su pensión.",
+    "texto": "Suscríbase: cuando cambien fechas o montos, se lo explico aquí.",
+    "voz": "Mándeselo a quien está tramitando su pensión, y suscríbase."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 22-nov-2026. 1) IMSS, \"Guía para Tramitar tu Pensión IMSS\" (PDF, jul-2024), imss.gob.mx/sites/all/statics/pensiones/Guia-Tramitar-Pension.pdf: \"En la resolución de pensión se define el otorgamiento, negativa o modificación de pensión\"; \"Su carácter administrativo es definitivo y de efectos legales inmediatos\". 2) El Imparcial, \"IMSS: Por estos motivos pueden negarte la resolución de pensión\" (10-mar-2025), elimparcial.com/dinero/2025/03/10/imss-por-estos-motivos-pueden-negarte-la-resolucion-de-pension/: motivos de negativa: semanas (500 en Ley 73), edad (60 cesantía, 65 vejez), pérdida de la conservación de derechos. 3) Expansión, \"¿Qué pasa si no alcanzo pensión en el IMSS? El trámite para recibir los recursos de la cuenta Afore\" (21-ago-2026), expansion.mx/finanzas-personales/2026/08/21/que-hacer-no-alcanzas-pension-imss-negativa: negativa si tiene la edad pero no las semanas; con la \"resolución de pensión o de negativa de pensión emitida por el IMSS\" se pide el \"Retiro Total por Pensión y Negativa IMSS\". 4) IMSS, \"Constancia de aclaración de semanas cotizadas en el IMSS\", homoclave IMSS-02-025 modalidad C, imss.gob.mx/node/1476: si no está de acuerdo con sus semanas, \"Constancia de aclaración\"; en línea (CURP, NSS, correo) o en la Subdelegación; \"Trámite gratuito\"; plazo máximo 30 días hábiles. 5) El Imparcial, \"Los trabajadores de la Ley 73 y Ley 97 que tengan faltantes en el IMSS... pueden tramitar una aclaración oficial\" (30-may-2026), elimparcial.com/dinero/2026/05/30/los-trabajadores-de-la-ley-73-y-ley-97-que-tengan-faltantes-en-el-imss-por-errores-patronales-o-retiros-de-afore-pueden-tramitar-una-aclaracion-oficial-para-recuperar-sus-semanas-cotizadas-en-un-plazo-de-30-a-90-dias/: aclaración oficial gratuita para recuperar semanas faltantes; presencial en subdelegaciones; plazo de 30 a 90 días hábiles (por eso el plazo no va en la tarjeta). 6) Reglamento del Recurso de Inconformidad (DOF 30-jun-1997, última reforma DOF 28-nov-2000), imss.gob.mx/sites/all/statics/pdf/reglamentos/RRI.pdf: art. 6: \"se interpondrá dentro de los quince días hábiles siguientes a la fecha en que surta efectos la notificación del acto definitivo\"; escrito dirigido al Consejo Consultivo Delegacional; extemporáneo = desechado; arts. 4 y 5: requisitos del escrito y documentos. 7) IDC, \"Cómo defenderse de los actos del IMSS: vías legales disponibles\" (2-dic-2025), idconline.mx/seguridad-social/2025/12/02/como-defenderse-de-los-actos-del-imss-vias-legales-disponibles: asegurados y pensionados: recurso de inconformidad \"dentro de los 15 días hábiles siguientes a la fecha en que surta efectos la notificación\", \"ante el Consejo Consultivo Delegacional del IMSS correspondiente a su domicilio\" (arts. 294 LSS y 6 del Reglamento), o juicio laboral ante el Tribunal del lugar de la clínica (arts. 899-A LFT y 295 LSS). 8) Ley del Seguro Social, texto vigente, diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf (última reforma DOF 15-01-2026): art. 294 (\"podrán recurrir en inconformidad ... o bien proceder en los términos del artículo siguiente\"); art. 295 (controversias de asegurados con el IMSS ante los Tribunales Federales en materia laboral); art. 300 (cualquier mensualidad de una pensión prescribe en un año); art. 301 (\"Es inextinguible el derecho al otorgamiento de una pensión ... siempre y cuando el asegurado satisfaga todos y cada uno de los requisitos\"). 9) IDC, \"Prescripción oficiosa en seguridad social\" (26-mar-2018), idconline.mx/seguridad-social/2018/03/26/prescripcion-oficiosa-en-seguridad-social: art. 301 \"es inextinguible el derecho al otorgamiento de una pensión\"; art. 300 \"el reclamo del pago de cualquier mensualidad de una pensión ... prescribe al año\". 10) STPS, \"PROFEDET defiende tus derechos en materia de ahorro para el retiro\" (8-abr-2022), gob.mx/stps/es/articulos/profedet-defiende-tus-derechos-en-materia-de-ahorro-para-el-retiro: la PROFEDET \"asesora, acompaña y representa gratuitamente\". 11) PROFEDET, micrositio \"Pensión de viudez\", profedet.gob.mx/micrositio/index.php/pension-de-viudez: \"asesoría y representación jurídica GRATUITAS\"; juicio ante los tribunales laborales federales. 12) CONSAR, \"Catálogo de Trámites del SAR\" (PDF, mod. 10-mar-2022), ficha 19 \"Retiro total por Pensión y Negativa IMSS\", gob.mx/cms/uploads/attachment/file/710709/Cata_logo_de_Tra_mites_del_SAR.pdf: con una negativa, \"la AFORE entregará en una sola exhibición la totalidad de los recursos acumulados en la Cuenta Individual\"; SAR IMSS 92 y SAR INFONAVIT 92 \"se entregan hasta que el Trabajador cumpla 65 años\"; \"no todas las negativas otorgan el derecho\". 13) Expansión, \"Así puedes solicitar tu retiro total por Pensión y Negativa IMSS\" (31-oct-2024), expansion.mx/finanzas-personales/2024/10/31/retiro-total-por-pension-y-negativa-imss: misma regla (totalidad de los recursos; SAR 92 hasta los 65 años). Diapositiva 8 = opinión de Victoria. Se dejó fuera, por tener una sola fuente: que el recurso fuera de plazo se desecha (solo el Reglamento), qué debe llevar el escrito (solo el Reglamento), el plazo de respuesta de la aclaración (IMSS dice máximo 30 días hábiles; El Imparcial, 30 a 90), que \"no todas las negativas\" dan derecho a retirar la Afore (solo CONSAR) y los teléfonos de la PROFEDET (no coinciden entre fuentes: se manda a gob.mx/profedet).",
+   "titulo_post": "Negativa de pensión IMSS: qué hacer y en qué plazo",
+   "texto_post": "Negativa de pensión IMSS: no es la última palabra, pero el reloj corre ⚖️\nLea el motivo: la negativa es una resolución del IMSS. Puede ser por semanas, por la edad o por haber perdido la vigencia de sus derechos.\nSi no le cuentan semanas que sí trabajó: pida la aclaración de semanas cotizadas (gratis, en línea o en su subdelegación).\nRecurso de inconformidad: 15 días hábiles desde que surte efectos la notificación, por escrito al Consejo Consultivo Delegacional del IMSS. No es obligatorio: también puede ir directo a juicio ante los Tribunales Federales en materia laboral.\nSi cumple los requisitos, su derecho a la pensión no se extingue; cada mensualidad sin cobrar prescribe en un año.\nAyuda gratis: PROFEDET (gob.mx/profedet). Y si de verdad no le alcanzó, con la negativa puede retirar su ahorro de la Afore (el SAR 92, hasta los 65).\nMi opinión: no espere una llamada. Lleve su resolución a la PROFEDET esa misma semana.\n\n📚 Ley del Seguro Social, arts. 294, 295, 300 y 301 · Reglamento del Recurso de Inconformidad, art. 6 · IMSS, trámite IMSS-02-025-C · CONSAR · STPS/PROFEDET · IDC (2-dic-2025) · Expansión (21-ago-2026) · consultado el 22-nov-2026\n📩 Mándeselo por WhatsApp a su familia: a quien está tramitando su pensión.\n🔔 Suscríbase: cuando cambien fechas o montos, se lo explico aquí.\n\n#pensionimss #pensionados #negativadepension #ley73 #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Negativa de pensión IMSS",
+    "titulo": "Negativa de pensión IMSS, qué hacer ⚖️",
+    "tags_concretas": [
+     "negativa de pension imss",
+     "me negaron la pension imss que hago",
+     "recurso de inconformidad imss",
+     "plazo recurso de inconformidad 15 dias",
+     "aclaracion de semanas cotizadas",
+     "profedet pension imss",
+     "retiro afore con negativa de pension",
+     "negatiba de pension imss"
+    ],
+    "hashtags": [
+     "#pensionimss",
+     "#pensionados",
+     "#negativadepension",
+     "#ley73"
+    ],
+    "preguntas": [
+     "¿Qué hago si el IMSS me niega la pensión?",
+     "¿Cuánto tiempo tengo para el recurso de inconformidad del IMSS?",
+     "¿Puedo retirar mi Afore si me negaron la pensión?",
+     "¿Dónde me ayudan gratis si el IMSS me niega la pensión?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "La negativa es una resolución del IMSS; motivos: semanas, edad, conservación de derechos",
+     "fuente1": "IMSS Guía (2024) (la resolución define otorgamiento o negativa)",
+     "fuente2": "El Imparcial 10-mar-2025 y Expansión 21-ago-2026"
+    },
+    {
+     "dato": "Aclaración de semanas: gratis, en línea o en subdelegación",
+     "fuente1": "IMSS trámite IMSS-02-025 modalidad C",
+     "fuente2": "El Imparcial 30-may-2026"
+    },
+    {
+     "dato": "Recurso de inconformidad: 15 días hábiles desde que surte efectos la notificación; ante el Consejo Consultivo Delegacional",
+     "fuente1": "Reglamento del Recurso de Inconformidad art. 6",
+     "fuente2": "IDC 2-dic-2025"
+    },
+    {
+     "dato": "El recurso es optativo: también juicio ante Tribunales Federales en materia laboral",
+     "fuente1": "LSS arts. 294 y 295",
+     "fuente2": "IDC 2-dic-2025"
+    },
+    {
+     "dato": "Derecho a la pensión inextinguible si cumple requisitos; mensualidades prescriben en un año",
+     "fuente1": "LSS arts. 300 y 301",
+     "fuente2": "IDC 26-mar-2018"
+    },
+    {
+     "dato": "PROFEDET asesora, acompaña y representa gratis",
+     "fuente1": "STPS 8-abr-2022",
+     "fuente2": "PROFEDET micrositio (\"asesoría y representación jurídica GRATUITAS\")"
+    },
+    {
+     "dato": "Con negativa: la Afore entrega la totalidad en una exhibición; SAR 92 hasta los 65",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 31-oct-2024 (y 21-ago-2026: el trámite pide la negativa)"
+    }
+   ],
+   "revision": {
+    "fecha": "2026-11-22",
+    "agente": "redacción (primera revisión; falta la segunda revisión de datos antes de \"listo\")",
+    "resultado": "Borrador. Sin cuentas (el plazo de 15 días hábiles es tal cual el Reglamento, art. 6). Pendiente para la segunda revisión: el Reglamento del Recurso de Inconformidad publicado por el IMSS tiene última reforma DOF 28-nov-2000; IDC 2-dic-2025 lo cita como vigente. Fotos revisadas con scripts/revisar_texto_foto.py.",
+    "correcciones": []
+   }
+  },
+  {
+   "id": "c108u",
+   "estado": "borrador",
+   "tema": "retiro_afore_al_pensionarse_ley73_retiro97_sar92_vivienda",
+   "serie": "Pensión clara",
+   "funcion": "atraer",
+   "vigencia": "atemporal",
+   "rasgos": [
+    "criterio"
+   ],
+   "pilar": "finanzas",
+   "fondo": "assets/fotos/dinamica-home-office-alt.jpg",
+   "ventana": {
+    "desde": "2026-11-22",
+    "hasta": "2027-01-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/dinamica-lobby.png",
+    "etiqueta": "LEY 73 · SU AFORE",
+    "titulo": "Si se pensiona por Ley 73, parte de su Afore es para usted: pídala",
+    "voz": "Si se pensiona por Ley setenta y tres, parte de su Afore se la regresan. Así se pide.",
+    "gancho_tipo": "postura",
+    "foto_reel": "assets/fotos/habla-cafe-cerca.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "¿Quién le paga?",
+     "texto": "En Ley 73, su pensión la paga el Gobierno Federal, por medio del IMSS. Su Afore no la paga, pero le devuelve parte de su ahorro.\n\nIMSS, Guía para tramitar tu pensión (2024) · CONSAR, Guía del SAR IMSS (2023)",
+     "voz": "En Ley setenta y tres, la pensión la paga el gobierno. Pero su Afore le regresa una parte."
+    },
+    {
+     "titulo": "Lo que le dan",
+     "texto": "En una sola exhibición: Retiro 97, Vivienda 97, SAR 92 y Vivienda 92.\n\nIMSS, Guía (2024) · CONSAR, Catálogo de Trámites del SAR · Expansión, 21-ago-2026",
+     "voz": "En un solo pago: retiro noventa y siete, SAR noventa y dos y sus dos cuentas de vivienda."
+    },
+    {
+     "titulo": "Primero, su resolución",
+     "texto": "Necesita la resolución de pensión del IMSS y su Expediente de Identificación del Trabajador al día en la Afore.\n\nCONSAR, Catálogo de Trámites del SAR · Expansión, 31-oct-2024",
+     "voz": "Primero necesita su resolución de pensión del IMSS y su expediente al día en la Afore."
+    },
+    {
+     "titulo": "Cómo se pide",
+     "texto": "En una sucursal de su Afore, con su resolución, identificación oficial, estado de cuenta de la Afore y su CLABE. Tarda 6 días hábiles desde que firma.\n\nCONSAR, Catálogo de Trámites del SAR · Expansión, 31-oct-2024 y 26-feb-2026",
+     "voz": "Se pide en su Afore, con su resolución e identificación. Tarda seis días hábiles desde que firma."
+    },
+    {
+     "titulo": "Vivienda: Afore o Infonavit",
+     "texto": "Vivienda 92 y 97 los puede pedir en su Afore o en el Infonavit, como usted prefiera.\n\nCONSAR, 27-feb-2012 · Uno TV, 12-mar-2026",
+     "voz": "La vivienda la puede pedir en su Afore o en el Infonavit."
+    },
+    {
+     "titulo": "¿Y si es Ley 97?",
+     "texto": "Ahí solo le dan SAR 92 y Vivienda 92, y el excedente si lo hay. Lo demás es para su pensión.\n\nIMSS, Guía (2024) · CONSAR, Catálogo de Trámites y Guía del SAR IMSS · Expansión, 21-ago-2026",
+     "voz": "En Ley noventa y siete solo le dan SAR noventa y dos y vivienda noventa y dos. Lo demás es para su pensión."
+    },
+    {
+     "titulo": "¿Tiene 70 o más?",
+     "texto": "Si no lo reclamó, no cotizó en el último año y no tiene empleo formal, su ahorro pudo pasar al Fondo de Pensiones para el Bienestar. Sigue siendo suyo.\n\nLSS, art. 302 · CONSAR, 11-abr-2025",
+     "voz": "Con setenta o más, si no lo reclamó, pudo pasar al Fondo de Pensiones para el Bienestar. Sigue siendo suyo."
+    },
+    {
+     "titulo": "Mi opinión",
+     "texto": "Es su dinero y el trámite es gratis. Si alguien le cobra por \"recuperarlo\", desconfíe. Yo lo pediría el mismo mes de mi resolución.\n\nOpinión de Victoria · base: CONSAR, 25-feb-2025 (trámites del SAR gratuitos)",
+     "voz": "Mi opinión: es su dinero y es gratis. Pídalo el mismo mes de su resolución."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándeselo a su familia: a quien ya se pensionó por Ley 73.",
+    "texto": "Suscríbase: cuando cambien fechas o montos, se lo explico aquí.",
+    "voz": "Mándeselo a quien ya se pensionó por Ley setenta y tres, y suscríbase."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 22-nov-2026. 1) IMSS, \"Guía para Tramitar tu Pensión IMSS\" (PDF, jul-2024), imss.gob.mx/sites/all/statics/pensiones/Guia-Tramitar-Pension.pdf: Ley 1973: \"la pensión mensual te la pagará el Gobierno Federal (IMSS)\"; \"Podrás retirar de la cuenta Afore en una sola exhibición: SAR 92, Vivienda 92, Retiro 97, Vivienda 97\"; Ley 1997: SAR 92 y Vivienda 92; la resolución \"te servirá para retirar en la Afore\". 2) CONSAR, \"Guía Infográfica del SAR IMSS\" (PDF, 21-sep-2023), gob.mx/cms/uploads/attachment/file/765537/Gui_a_Infogra_fica_SAR_IMSS_210923.pdf: Ley 73: \"El pago de la pensión lo realiza el Gobierno Federal\". 3) CONSAR, \"Catálogo de Trámites del SAR\" (PDF, mod. 10-mar-2022), ficha 19 \"Retiro total por Pensión y Negativa IMSS\", gob.mx/cms/uploads/attachment/file/710709/Cata_logo_de_Tra_mites_del_SAR.pdf: requisitos: estar registrado en una Afore, Resolución de Pensión o de Negativa del IMSS, Expediente de Identificación del Trabajador actualizado; trámite: pre-solicitud en e-sar.com.mx o directo en sucursal; documentos: solicitud de disposición, resolución, identificación oficial vigente, estado de cuenta de la Afore o comprobante de registro, estado de cuenta bancario con CLABE (opcional); \"Plazo de solución 6 días hábiles (una vez firmada la solicitud de disposición de recursos)\"; Pensión Régimen 73: Retiro 97, INFONAVIT 97, SAR IMSS 92, SAR INFONAVIT 92; Régimen 97: SAR IMSS 92, SAR INFONAVIT 92 y \"Excedente de recursos (no utilizados para financiar pensión, en su caso)\"; en Ley 97 los recursos no entregados financian la renta vitalicia o el retiro programado; los saldos de vivienda los transfiere el INFONAVIT a la CLABE. 4) Expansión, \"¿Qué pasa si no alcanzo pensión en el IMSS? El trámite para recibir los recursos de la cuenta Afore\" (21-ago-2026), expansion.mx/finanzas-personales/2026/08/21/que-hacer-no-alcanzas-pension-imss-negativa: \"En el Régimen 73 se entregan retiro 97, INFONAVIT 97, SAR IMSS 92 y SAR INFONAVIT 92. En el Régimen 97 se entregan SAR IMSS 92, SAR INFONAVIT 92 y el excedente\". 5) Expansión, \"Así puedes solicitar tu retiro total por Pensión y Negativa IMSS\" (31-oct-2024), expansion.mx/finanzas-personales/2024/10/31/retiro-total-por-pension-y-negativa-imss: requisitos (Afore, resolución, Expediente de Identificación del Trabajador actualizado); documentos (solicitud, resolución, identificación, estado de cuenta bancario con CLABE); \"plazo de solución de 6 días hábiles, una vez firmada la solicitud\". 6) Expansión, mismo artículo de 26-feb-2026 (documentos: identificación, estado de cuenta de la Afore, estado de cuenta bancario con CLABE, resolución). 7) CONSAR, comunicado \"Devolución de recursos de retiro y vivienda ante el Infonavit o la AFORE\" (27-feb-2012), gob.mx/consar/prensa/devolucion-de-recursos-de-retiro-y-vivienda-ante-el-infonavit-o-la-afore: los pensionados \"podrán acudir indistintamente a la AFORE que les administra su cuenta individual o al Infonavit\" por Vivienda 92 (mayo 1992-junio 1997) y Vivienda 97 (desde 1-jul-1997). 8) Uno TV, \"Pensionados bajo la Ley 73 del IMSS pueden retirar su dinero del Infonavit\" (12-mar-2026), unotv.com/pensiones/como-retirar-ahorro-infonavit-pensionados-ley-73/: Ley 73: \"El trámite puede realizarse directamente en el Infonavit o a través de la Afore\"; la Afore entrega Vivienda 92 y 97; el Infonavit entrega además el Fondo de Ahorro 1972-1992 y Solo Infonavit; requisitos: resolución de pensión, CLABE, sin crédito vigente. (Coincide con la página oficial del Infonavit \"Retiro de mi ahorro\", vista en resultados de búsqueda; la página dio error 503 al abrirla directo.) 9) Ley del Seguro Social, texto vigente, diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf (última reforma DOF 15-01-2026): art. 302: el derecho a los recursos de la Subcuenta de Retiro, Cesantía en Edad Avanzada y Vejez \"es imprescriptible\"; al cumplir 70 años, sin relación laboral activa, se transfieren al Fondo de Pensiones para el Bienestar; \"podrán acudir ante el Instituto para acceder al mecanismo de devolución de forma permanente\". 10) CONSAR, \"¿Mis recursos están en el FPB?\" (11-abr-2025), gob.mx/consar/articulos/mis-recursos-estan-en-el-fpb: se transfieren los recursos de quienes tienen 70 años o más (IMSS) \"que no tengan una relación laboral vigente, que no hayan cotizado en el último año y que no hayan sido reclamados\"; \"no prescriben ... mantienen su derecho a reclamarlos cuando lo deseen\". 11) CONSAR, \"¡No te dejes engañar!\" (25-feb-2025): \"Los trámites del SAR son gratuitos\" (verificado en c95u). Diapositiva 8 = opinión de Victoria. Se dejó fuera, por no tener dos fuentes confirmadas: el Fondo de Ahorro 72-92 que entrega el Infonavit (Uno TV 12-mar-2026; la página oficial del Infonavit dio error 503 y solo se vio en resultados de búsqueda), que en Ley 73 lo de cesantía y vejez y la cuota social pasan al Gobierno Federal (solo CONSAR, Catálogo; La Jornada 2018 no se pudo abrir), la pre-solicitud en e-sar.com.mx (solo CONSAR) y requisitos del Infonavit como la e.firma.",
+   "titulo_post": "Retiro de Afore al pensionarse por Ley 73: Retiro 97, SAR 92 y vivienda",
+   "texto_post": "Retiro de Afore al pensionarse por Ley 73: parte de su ahorro es para usted 💰\nEn Ley 73 la pensión la paga el Gobierno Federal (IMSS), pero su Afore le devuelve en una sola exhibición: Retiro 97, Vivienda 97, SAR 92 y Vivienda 92.\nQué necesita: su resolución de pensión del IMSS y su Expediente de Identificación del Trabajador al día. En una sucursal de su Afore, con resolución, identificación, estado de cuenta de la Afore y CLABE. Tarda 6 días hábiles desde que firma.\nVivienda 92 y 97: en su Afore o en el Infonavit, como usted prefiera.\nEn Ley 97 solo le dan SAR 92, Vivienda 92 y el excedente si lo hay.\n¿70 años o más y no lo reclamó? Su ahorro pudo pasar al Fondo de Pensiones para el Bienestar. Sigue siendo suyo.\nMi opinión: es su dinero y es gratis. Si alguien le cobra por \"recuperarlo\", desconfíe.\n\n📚 IMSS, Guía para tramitar tu pensión · CONSAR, Catálogo de Trámites del SAR, 27-feb-2012 y 11-abr-2025 · Ley del Seguro Social, art. 302 · Expansión (31-oct-2024 y 21-ago-2026) · Uno TV (12-mar-2026) · consultado el 22-nov-2026\n📩 Mándeselo por WhatsApp a su familia: a quien ya se pensionó por Ley 73.\n🔔 Suscríbase: cuando cambien fechas o montos, se lo explico aquí.\n\n#afore #ley73 #pensionimss #pensionados #victoriatheceo",
+   "seo": {
+    "palabra_clave": "Retiro de Afore Ley 73",
+    "titulo": "Retiro de Afore Ley 73, lo que le regresan 💰",
+    "tags_concretas": [
+     "retiro de afore ley 73",
+     "retiro 97 ley 73",
+     "sar 92 como cobrarlo",
+     "vivienda 97 pensionados ley 73",
+     "retiro total por pension imss",
+     "que me devuelve la afore al pensionarme",
+     "fondo de pensiones para el bienestar reclamar",
+     "retiro de afore ley 73 requicitos"
+    ],
+    "hashtags": [
+     "#afore",
+     "#ley73",
+     "#pensionimss",
+     "#pensionados"
+    ],
+    "preguntas": [
+     "¿Qué dinero me devuelve la Afore si me pensiono por Ley 73?",
+     "¿Cómo cobro el Retiro 97 y el SAR 92?",
+     "¿Dónde pido mi subcuenta de vivienda si soy Ley 73?",
+     "¿Qué pasa con mi Afore si tengo 70 años y no la reclamé?"
+    ]
+   },
+   "enlace": null,
+   "redes": [
+    "yt",
+    "fb"
+   ],
+   "trato": "usted",
+   "calculadora": false,
+   "fuentes_verificadas": [
+    {
+     "dato": "Ley 73: la pensión la paga el Gobierno Federal (IMSS)",
+     "fuente1": "IMSS Guía (2024)",
+     "fuente2": "CONSAR Guía Infográfica SAR IMSS (2023)"
+    },
+    {
+     "dato": "Ley 73: la Afore entrega en una exhibición Retiro 97, Vivienda 97, SAR 92 y Vivienda 92",
+     "fuente1": "IMSS Guía (2024) y CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 21-ago-2026"
+    },
+    {
+     "dato": "Requisitos: resolución del IMSS y Expediente de Identificación del Trabajador actualizado",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 31-oct-2024"
+    },
+    {
+     "dato": "Documentos: resolución, identificación, estado de cuenta de la Afore, CLABE",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 26-feb-2026 (y 31-oct-2024)"
+    },
+    {
+     "dato": "Plazo: 6 días hábiles una vez firmada la solicitud",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR",
+     "fuente2": "Expansión 31-oct-2024"
+    },
+    {
+     "dato": "Vivienda 92 y 97: en la Afore o en el Infonavit",
+     "fuente1": "CONSAR comunicado 27-feb-2012",
+     "fuente2": "Uno TV 12-mar-2026 (y página Infonavit \"Retiro de mi ahorro\", vista en búsqueda)"
+    },
+    {
+     "dato": "Ley 97: SAR 92, Vivienda 92 y excedente; el resto del saldo financia la pensión",
+     "fuente1": "CONSAR Catálogo de Trámites del SAR (recursos no entregados financian renta vitalicia o retiro programado) e IMSS Guía (SAR 92 y Vivienda 92)",
+     "fuente2": "CONSAR Guía Infográfica SAR IMSS 2023 (\"El pago y monto de la pensión se realiza con el saldo acumulado en la Cuenta Afore\") y Expansión 21-ago-2026"
+    },
+    {
+     "dato": "70 años o más, sin relación laboral, sin cotizar en el último año y sin reclamar: pasa al Fondo de Pensiones para el Bienestar; no prescribe",
+     "fuente1": "LSS art. 302",
+     "fuente2": "CONSAR 11-abr-2025"
+    },
+    {
+     "dato": "Trámites del SAR gratuitos",
+     "fuente1": "CONSAR 25-feb-2025",
+     "fuente2": "CONDUSEF 24-ene-2017 (SAR 92 gratuito; verificado en c95u)"
+    }
+   ],
+   "revision": {
+    "fecha": "2026-11-22",
+    "agente": "redacción (primera revisión; falta la segunda revisión de datos antes de \"listo\")",
+    "resultado": "Borrador. Sin cuentas (no hay cifras calculadas; 6 días hábiles tal cual CONSAR). Se quitó de la diapositiva 5 y del texto del post el Fondo de Ahorro 72-92 (la página oficial del Infonavit dio error 503: sin segunda fuente confirmada). Fotos revisadas con scripts/revisar_texto_foto.py.",
+    "correcciones": []
+   }
   }
  ]
 }
