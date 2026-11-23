@@ -9165,7 +9165,7 @@
   },
   {
    "id": "c96u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "retiro_por_desempleo_afore_y_semanas_cotizadas",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -9324,7 +9324,13 @@
     "correcciones": [
      "portada.foto: assets/fotos/lora-prueba-2-cafe.jpg -> assets/fotos/habla-cafe-cerca.jpg. El script pasó lora-prueba-2-cafe.jpg (solo cuenta palabras de 3+ letras), pero a simple vista tiene un letrero colgante con una 'P' legible arriba a la izquierda (regla: ni letreros); habla-cafe-cerca.jpg pasa el script y no tiene letreros."
     ]
-   }
+   },
+   "youtube": "https://youtube.com/shorts/B88e-X2Q3Zw",
+   "publica_utc_por_red": {
+    "yt": "2026-11-25T23:00:00Z"
+   },
+   "publica_utc": "2026-11-25T23:00:00Z",
+   "formato_youtube": "reel_texto (gratis, sin Replicate)"
   },
   {
    "id": "c97u",
