@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-23T12:39:06Z",
+ "generado_utc": "2026-11-23T13:06:40Z",
  "estado": "aviso",
  "checks": [
   {
@@ -20,7 +20,7 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.00 · semana $0.00 de $7 · mes $70.90 de $28 (proyección del mes $92.47) · El espacio, semana $0.00 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.43 · semana $0.43 de $7 · mes $71.32 de $28 (proyección del mes $93.03) · El espacio, semana $0.00 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $1.96 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
   },
   {
    "area": "Créditos",
@@ -40,7 +40,7 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-25: TikTok 3, Instagram 2, YouTube 3, Facebook 3"
+   "detalle": "2026-11-25: TikTok 3, Instagram 2, YouTube 5, Facebook 4"
   },
   {
    "area": "Serie",
@@ -93,14 +93,14 @@
    "detalle": "LP1: YouTube y Facebook 2026-11-19, con recortes"
   },
   {
-   "area": "Recortes",
+   "area": "Videos largos",
    "estado": "aviso",
-   "detalle": "LA1-c05: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-25T02:30): recortes.py publicar LA1-c05"
+   "detalle": "LP2: en YouTube pero no en Facebook: largo.py facebook LP2"
   },
   {
    "area": "Recortes",
    "estado": "aviso",
-   "detalle": "LA3-c04: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-24T20:00): recortes.py publicar LA3-c04"
+   "detalle": "LP2: subido sin recortes: recortes.py LP2"
   },
   {
    "area": "Recortes",
@@ -110,12 +110,12 @@
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "22 recortes programados en las 4 redes"
+   "detalle": "24 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "59 carruseles listos para TikTok (~20 días a 3 por día)"
+   "detalle": "58 carruseles listos para TikTok (~19 días a 3 por día)"
   },
   {
    "area": "Cola",

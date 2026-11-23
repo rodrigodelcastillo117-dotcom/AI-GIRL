@@ -442,8 +442,8 @@
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 24,
-  "l_ig": 4,
+  "v_ig": 25,
+  "l_ig": 5,
   "c_ig": 7,
   "s_ig": 0,
   "r_yt": 96.4,
@@ -560,12 +560,12 @@
   "l_yt": 2,
   "c_yt": 8,
   "s_yt": 0,
-  "v_tt": 4282,
+  "v_tt": 4327,
   "l_tt": 71,
   "c_tt": 2,
-  "s_tt": 15,
-  "v_ig": 26,
-  "l_ig": 11,
+  "s_tt": 16,
+  "v_ig": 28,
+  "l_ig": 13,
   "c_ig": 10,
   "s_ig": 0,
   "r_yt": 45.6,
@@ -1136,8 +1136,8 @@
   "l_tt": 6,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 15,
-  "l_ig": 4,
+  "v_ig": 16,
+  "l_ig": 5,
   "c_ig": 5,
   "s_ig": 0,
   "r_yt": 64.2,
@@ -1306,12 +1306,12 @@
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
-  "v_tt": 407,
+  "v_tt": 416,
   "l_tt": 4,
   "c_tt": 1,
   "s_tt": 0,
   "v_ig": 31,
-  "l_ig": 5,
+  "l_ig": 6,
   "c_ig": 2,
   "s_ig": 0,
   "r_yt": 79.6,
@@ -1579,7 +1579,7 @@
   "l_tt": 3,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 19,
+  "v_ig": 21,
   "l_ig": 5,
   "c_ig": 2,
   "s_ig": 0,
@@ -1616,7 +1616,7 @@
   "l_yt": 10,
   "c_yt": 9,
   "s_yt": 0,
-  "v_tt": 99,
+  "v_tt": 100,
   "l_tt": 0,
   "c_tt": 0,
   "s_tt": 0,
@@ -1719,8 +1719,8 @@
   "l_tt": 2,
   "c_tt": 1,
   "s_tt": 0,
-  "v_ig": 9,
-  "l_ig": 5,
+  "v_ig": 10,
+  "l_ig": 6,
   "c_ig": 4,
   "s_ig": 0,
   "r_yt": 92.0,
@@ -1872,7 +1872,7 @@
   "l_yt": 3,
   "c_yt": 14,
   "s_yt": 0,
-  "v_tt": 213,
+  "v_tt": 214,
   "l_tt": 5,
   "c_tt": 1,
   "s_tt": 0,
@@ -1920,8 +1920,8 @@
   "publica_utc_por_red": {
    "tt": "2026-11-20T19:06:24Z"
   },
-  "v_tt": 122,
-  "l_tt": 1,
+  "v_tt": 123,
+  "l_tt": 2,
   "c_tt": 0,
   "s_tt": 0
  },
@@ -1954,7 +1954,7 @@
   "c_tt": 0,
   "s_tt": 0,
   "v_ig": 10,
-  "l_ig": 4,
+  "l_ig": 5,
   "c_ig": 2,
   "s_ig": 0
  },
@@ -2034,8 +2034,8 @@
   "publica_utc_por_red": {
    "tt": "2026-11-17T15:06:42Z"
   },
-  "v_tt": 75,
-  "l_tt": 0,
+  "v_tt": 77,
+  "l_tt": 1,
   "c_tt": 0,
   "s_tt": 0
  },
@@ -2115,8 +2115,8 @@
   "publica_utc_por_red": {
    "tt": "2026-11-20T15:08:23Z"
   },
-  "v_tt": 133,
-  "l_tt": 2,
+  "v_tt": 134,
+  "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0
  },
@@ -2142,8 +2142,8 @@
   "publica_utc_por_red": {
    "tt": "2026-11-21T15:06:41Z"
   },
-  "v_tt": 146,
-  "l_tt": 2,
+  "v_tt": 149,
+  "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0
  },
@@ -2168,7 +2168,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "tt": "2026-11-22T15:06:35Z"
-  }
+  },
+  "v_tt": 128,
+  "l_tt": 2,
+  "c_tt": 0,
+  "s_tt": 0
  },
  {
   "id": "c86",
@@ -2192,7 +2196,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-18T02:06:01Z"
   },
-  "v_tt": 178,
+  "v_tt": 183,
   "l_tt": 2,
   "c_tt": 0,
   "s_tt": 1
@@ -2252,7 +2256,7 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 933,
+  "v_yt": 935,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
@@ -2345,7 +2349,7 @@
    "yt": "2026-11-19T23:00:00Z",
    "fb": "2026-11-19T23:00:00Z"
   },
-  "v_yt": 97,
+  "v_yt": 100,
   "l_yt": 0,
   "c_yt": 3,
   "s_yt": 0,
@@ -2376,7 +2380,7 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 250,
+  "v_yt": 251,
   "l_yt": 1,
   "c_yt": 3,
   "s_yt": 0,
@@ -2407,7 +2411,7 @@
    "yt": "2026-11-20T23:00:00Z",
    "fb": "2026-11-20T23:00:00Z"
   },
-  "v_yt": 5,
+  "v_yt": 7,
   "l_yt": 0,
   "c_yt": 1,
   "s_yt": 0,
@@ -2438,7 +2442,7 @@
    "yt": "2026-11-22T23:00:00Z",
    "fb": "2026-11-22T23:00:00Z"
   },
-  "v_yt": 23,
+  "v_yt": 58,
   "l_yt": 0,
   "c_yt": 2,
   "s_yt": 0,
@@ -2494,7 +2498,7 @@
  },
  {
   "id": "c96u",
-  "estado": "listo",
+  "estado": "programado",
   "tema": "retiro por desempleo afore y semanas cotizadas",
   "pilar": "finanzas",
   "gancho": "Retiro por desempleo: sale el dinero y también sus semanas",
@@ -2502,14 +2506,19 @@
   "diapositivas": 10,
   "fondo": "dinamica-home-office-alt.jpg",
   "portada": "habla-cafe-cerca.jpg",
-  "horas": {},
-  "youtube_id": "",
-  "publica_utc": "",
+  "horas": {
+   "yt": "2026-11-25 17:00"
+  },
+  "youtube_id": "B88e-X2Q3Zw",
+  "publica_utc": "2026-11-25T23:00:00Z",
   "linea": "retiro por desempleo de la afore: sale el dinero y también sus semanas ⚠️",
   "tipo": "carrusel",
   "linea_reel": "",
   "reel_ig": "",
-  "publica_utc_por_red": {}
+  "publica_utc_por_red": {
+   "yt": "2026-11-25T23:00:00Z"
+  },
+  "c_yt_reales": 0
  },
  {
   "id": "c97u",
@@ -2535,7 +2544,7 @@
    "yt": "2026-11-21T23:00:00Z",
    "fb": "2026-11-21T23:00:00Z"
   },
-  "v_yt": 227,
+  "v_yt": 257,
   "l_yt": 1,
   "c_yt": 1,
   "s_yt": 0,
@@ -2581,7 +2590,11 @@
   "reel_ig": "",
   "publica_utc_por_red": {
    "ig": "2026-11-22T17:01:05Z"
-  }
+  },
+  "v_ig": 5,
+  "l_ig": 4,
+  "c_ig": 2,
+  "s_ig": 0
  },
  {
   "id": "c100",
@@ -2605,7 +2618,7 @@
   "publica_utc_por_red": {
    "tt": "2026-11-21T01:06:02Z"
   },
-  "v_tt": 234,
+  "v_tt": 239,
   "l_tt": 3,
   "c_tt": 0,
   "s_tt": 0

@@ -3042,5 +3042,27 @@
    "publica_utc": "2026-11-19T00:00:00Z",
    "estado": "programado"
   }
+ },
+ {
+  "id": "LP2",
+  "titulo_trabajo": "Pensión IMSS 2027, 5 cosas antes de pedirla",
+  "formato": "carruseles de pensión unidos en horizontal con la voz de Victoria (sin tomas habladas)",
+  "carruseles": [
+   "c88u",
+   "c90u",
+   "c104u",
+   "c105u",
+   "c106u"
+  ],
+  "seo": {
+   "titulo": "Pensión IMSS 2027, 5 cosas antes de pedirla"
+  },
+  "miniatura": "videos/largos/LP2/miniatura.jpg",
+  "playlist": "pension",
+  "estado": "programado",
+  "publica_utc": "2026-11-26T00:00:00Z",
+  "youtube": "https://youtube.com/watch?v=GUEd_hhj00k",
+  "gasto": "voz MiniMax con REPLICATE_AUTORIZACION=largo-pension",
+  "nota": "Formato barato a propósito: los largos con tomas habladas (LA1-LC2, LP1) sacaron 1-28 vistas. Si este rinde igual, se le propone a Rodrigo dejar los largos."
  }
 ]

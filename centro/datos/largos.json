@@ -180,5 +180,18 @@
     "segmento Victoria 'Enero 2027', voz: 'los mensajes que le mandan por WhatsApp' -> 'los mensajes que le mandan al celular' (sin nombres de marca)"
    ]
   }
+ },
+ {
+  "id": "LP2",
+  "titulo": "Pensión IMSS 2027, 5 cosas antes de pedirla",
+  "estado": "programado",
+  "publica_utc": "2026-11-26T00:00:00Z",
+  "youtube": "https://youtube.com/watch?v=GUEd_hhj00k",
+  "duracion_min": null,
+  "capitulos": [],
+  "segmentos": 0,
+  "tomas_victoria": 0,
+  "miniaturas": [],
+  "revision": ""
  }
 ]
