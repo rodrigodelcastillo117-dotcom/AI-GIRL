@@ -1302,7 +1302,7 @@
    "yt": "2026-11-11T20:00:00Z",
    "fb": "2026-11-11T20:00:00Z"
   },
-  "v_yt": 126,
+  "v_yt": 127,
   "l_yt": 3,
   "c_yt": 10,
   "s_yt": 0,
@@ -2252,11 +2252,11 @@
    "yt": "2026-11-14T23:00:00Z",
    "fb": "2026-11-14T23:00:00Z"
   },
-  "v_yt": 932,
+  "v_yt": 933,
   "l_yt": 6,
   "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 63.4,
+  "r_yt": 63.7,
   "c_yt_reales": 0
  },
  {
@@ -2287,7 +2287,7 @@
   "l_yt": 1,
   "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 73.8,
+  "r_yt": 81.7,
   "c_yt_reales": 0
  },
  {
@@ -2349,7 +2349,7 @@
   "l_yt": 0,
   "c_yt": 3,
   "s_yt": 0,
-  "r_yt": 44.1,
+  "r_yt": 41.4,
   "c_yt_reales": 0
  },
  {
@@ -2376,7 +2376,7 @@
    "yt": "2026-11-16T23:00:00Z",
    "fb": "2026-11-16T23:00:00Z"
   },
-  "v_yt": 249,
+  "v_yt": 250,
   "l_yt": 1,
   "c_yt": 3,
   "s_yt": 0,
@@ -2411,6 +2411,7 @@
   "l_yt": 0,
   "c_yt": 1,
   "s_yt": 0,
+  "r_yt": 30.9,
   "c_yt_reales": 0
  },
  {
@@ -2437,6 +2438,10 @@
    "yt": "2026-11-22T23:00:00Z",
    "fb": "2026-11-22T23:00:00Z"
   },
+  "v_yt": 23,
+  "l_yt": 0,
+  "c_yt": 2,
+  "s_yt": 0,
   "c_yt_reales": 0
  },
  {
@@ -2530,7 +2535,7 @@
    "yt": "2026-11-21T23:00:00Z",
    "fb": "2026-11-21T23:00:00Z"
   },
-  "v_yt": 134,
+  "v_yt": 227,
   "l_yt": 1,
   "c_yt": 1,
   "s_yt": 0,
@@ -2673,5 +2678,100 @@
   "publica_utc_por_red": {
    "tt": "2026-11-25T15:00:00Z"
   }
+ },
+ {
+  "id": "c104u",
+  "estado": "listo",
+  "tema": "pension cesantia ley73 porcentaje por edad",
+  "pilar": "finanzas",
+  "gancho": "Pensión a los 60 por Ley 73: le dan 75%, no 100%",
+  "titulo": "Pensión por cesantía, 75% a los 60 años 📉",
+  "diapositivas": 10,
+  "fondo": "dinamica-oficina-alt.jpg",
+  "portada": "dinamica-cafe.png",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "pensión por cesantía en ley 73: a los 60 le dan el 75%, no el 100% 📉",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c105u",
+  "estado": "listo",
+  "tema": "conservacion de derechos ley73 si dejo de cotizar",
+  "pilar": "finanzas",
+  "gancho": "Si dejó de cotizar, sus derechos de pensión Ley 73 tienen fecha de vencimiento",
+  "titulo": "Conservación de derechos IMSS, su plazo ⏳",
+  "diapositivas": 10,
+  "fondo": "dinamica-estudio.jpg",
+  "portada": "dinamica-home-office.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "conservación de derechos en el imss: si dejó de cotizar, su pensión ley 73 tiene fecha de vencimiento ⏳",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c106u",
+  "estado": "listo",
+  "tema": "como pedir pension imss paso a paso mi pension digital",
+  "pilar": "finanzas",
+  "gancho": "No vaya al IMSS a pedir su pensión sin revisar esto",
+  "titulo": "Trámite de pensión IMSS, paso a paso 📝",
+  "diapositivas": 10,
+  "fondo": "dinamica-lectura.png",
+  "portada": "lora-prueba-1-oficina.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "trámite de pensión imss: no vaya a pedirla sin revisar esto 📝",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c107u",
+  "estado": "listo",
+  "tema": "negativa de pension imss aclaracion inconformidad 15 dias",
+  "pilar": "finanzas",
+  "gancho": "Si el IMSS le niega la pensión, no es la última palabra",
+  "titulo": "Negativa de pensión IMSS, qué hacer ⚖️",
+  "diapositivas": 10,
+  "fondo": "dinamica-estados-de-cuenta.jpg",
+  "portada": "estilo-b-oficina-1.jpg",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "negativa de pensión imss: no es la última palabra, pero el reloj corre ⚖️",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
+ },
+ {
+  "id": "c108u",
+  "estado": "listo",
+  "tema": "retiro afore al pensionarse ley73 retiro97 sar92 vivienda",
+  "pilar": "finanzas",
+  "gancho": "Si se pensiona por Ley 73, parte de su Afore es para usted: pídala",
+  "titulo": "Retiro de Afore Ley 73, lo que le regresan 💰",
+  "diapositivas": 10,
+  "fondo": "dinamica-home-office-alt.jpg",
+  "portada": "dinamica-lobby.png",
+  "horas": {},
+  "youtube_id": "",
+  "publica_utc": "",
+  "linea": "retiro de afore al pensionarse por ley 73: parte de su ahorro es para usted 💰",
+  "tipo": "carrusel",
+  "linea_reel": "",
+  "reel_ig": "",
+  "publica_utc_por_red": {}
  }
 ]

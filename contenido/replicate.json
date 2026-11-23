@@ -3,8 +3,8 @@
   "hoy_usd": 0.0,
   "semana_usd": 3.37,
   "mes_usd": 70.9,
-  "otro_canal_semana_usd": 7.24,
-  "otro_canal_mes_usd": 17.32,
+  "otro_canal_semana_usd": 7.63,
+  "otro_canal_mes_usd": 17.7,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
@@ -14,7 +14,7 @@
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 22.49,
+ "saldo_estimado_usd": 22.1,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -23,11 +23,11 @@
  ],
  "gastado_desde_base": {
   "victoria": 29.86,
-  "otro": 9.82
+  "otro": 10.2
  },
  "gastado_7_dias": {
   "victoria": 3.37,
-  "otro": 7.24
+  "otro": 7.63
  },
  "por_dia": [
   {
@@ -84,6 +84,11 @@
    "dia": "2026-11-22",
    "victoria": 0.0,
    "otro": 1.04
+  },
+  {
+   "dia": "2026-11-23",
+   "victoria": 0.0,
+   "otro": 0.39
   }
  ],
  "por_modelo": {
@@ -93,8 +98,8 @@
   "minimax/voice-cloning": 3.0,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.32,
-  "minimax/speech-02-hd": 0.0
+  "minimax/speech-02-hd": 0.39,
+  "black-forest-labs/flux-schnell": 0.32
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
@@ -105,19 +110,19 @@
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 29,
   "stability-ai/stable-audio-2.5": 16,
-  "victor-upmeet/whisperx": 224,
-  "black-forest-labs/flux-1.1-pro": 124,
-  "elevenlabs/music": 73,
+  "victor-upmeet/whisperx": 315,
+  "black-forest-labs/flux-1.1-pro": 123,
+  "elevenlabs/music": 74,
   "851-labs/background-remover": 7,
-  "minimax/speech-2.6-hd": 117,
+  "minimax/speech-2.6-hd": 129,
   "elevenlabs/v3": 104,
-  "nightmareai/real-esrgan": 28,
+  "nightmareai/real-esrgan": 31,
   "anthropic/claude-4.5-sonnet": 7,
   "black-forest-labs/flux-1.1-pro-ultra": 3,
   "black-forest-labs/flux-kontext-pro": 33,
   "google/veo-3.1": 27
  },
  "incompleto": true,
- "generado_utc": "2026-11-22T17:29:09Z",
+ "generado_utc": "2026-11-23T02:16:29Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
