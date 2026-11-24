@@ -229,5 +229,28 @@
   "plan": {
    "tt": "2026-11-22T01:00:00Z"
   }
+ },
+ {
+  "id": "c101-v1",
+  "original": "c101",
+  "clon_de": "c101",
+  "gancho": "¿Ganas $15,000? Esto es lo mínimo que te toca de aguinaldo",
+  "edicion": "inicio",
+  "respuesta_a": null,
+  "archivo": "videos/variantes/c101-v1/video.mp4",
+  "titulo": "¿Ganas $15,000? Esto es lo mínimo que te toca de aguinaldo | aguinaldo 2026",
+  "palabra_clave": "aguinaldo 2026",
+  "creada_utc": "2026-11-24T12:43:35Z",
+  "estado": "programada",
+  "redes": {
+   "tt": {
+    "publica_utc": "2026-11-26T01:00:00Z",
+    "via": "publer"
+   }
+  },
+  "medidas": {},
+  "plan": {
+   "tt": "2026-11-26T01:00:00Z"
+  }
  }
 ]
