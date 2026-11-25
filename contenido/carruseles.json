@@ -10116,7 +10116,7 @@
   },
   {
    "id": "c104u",
-   "estado": "listo",
+   "estado": "programado",
    "tema": "pension_cesantia_ley73_porcentaje_por_edad",
    "serie": "Pensión clara",
    "funcion": "atraer",
@@ -10265,7 +10265,13 @@
     "resultado": "Borrador. Cada dato con dos fuentes (oficial primero). Cuentas en python: 10,000 x 0.75 = 7,500; 10,000 x 0.80 = 8,000; 10,000 x 0.85 = 8,500; 10,000 x 0.90 = 9,000; 10,000 x 0.95 = 9,500; (100 - 75) / 5 años = 5 puntos por año. El ejemplo de $10,000 es hipotético y se dice en pantalla; no es una promesa de monto. Fotos revisadas con scripts/revisar_texto_foto.py (sin texto legible).",
     "correcciones": [],
     "segunda_revision": "Segunda revisión 22-nov-2026: aprobado sin correcciones. Tabla Ley 73 60=75%, 61=80%, 62=85%, 63=90%, 64=95%, 64 años 6 meses y 1 día=100%, abierta en el PDF de la IMSS Guía (jul-2024) y en Uno TV 6-ago-2026 (cita LSS 1973 art. 171 y 100% de la pensión de vejez); Expansión (fecha mostrada 26-feb-2026) da 60-64 igual. Requisitos Ley 73 (60 años, baja, 500 semanas, derechos vigentes o en conservación) y Ley 97 (875 en 2026, 900 en 2027): ficha IMSS-01-002 y Guía. Ley 97 = saldo de la Afore: CONSAR Guía SAR IMSS 2023. Cuentas en python: 10,000 x 0.75 = 7,500; x 0.85 = 8,500; (100-75)/5 = 5 puntos por año. Ejemplo marcado como hipotético, sin promesa de monto; sin Afores ni productos; usted; láminas dibujadas revisadas (nada cortado). Voz: 153 palabras."
-   }
+   },
+   "youtube": "https://youtube.com/shorts/va8BBLU9bj0",
+   "publica_utc_por_red": {
+    "yt": "2026-11-26T23:00:00Z"
+   },
+   "publica_utc": "2026-11-26T23:00:00Z",
+   "formato_youtube": "reel_texto (gratis, sin Replicate)"
   },
   {
    "id": "c105u",
