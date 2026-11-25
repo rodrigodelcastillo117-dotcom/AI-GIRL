@@ -1,5 +1,5 @@
 {
- "generado_utc": "2026-11-24T12:38:40Z",
+ "generado_utc": "2026-11-25T12:40:49Z",
  "estado": "aviso",
  "checks": [
   {
@@ -20,7 +20,12 @@
   {
    "area": "Gasto",
    "estado": "aviso",
-   "detalle": "Replicate de Victoria: hoy $0.00 · semana $0.00 de $7 · mes $70.90 de $28 (proyección del mes $88.62) · El espacio, semana $0.00 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $2.39 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+   "detalle": "Replicate de Victoria: hoy $0.00 · semana $0.00 de $7 · mes $70.90 de $28 (proyección del mes $85.08) · El espacio, semana $0.52 · autorizado por Rodrigo: shorts-escena $14.16 de $15, largos-lc $10.01 de $10.5, sketch-tiktok $0.00 de $8, largo-pension $2.39 de $20, lora-victoria $1.36 de $5, ganchos-susto $4.54 de $5, reel-hormiga $1.71 de $2 · presupuesto base agotado: solo se gasta dentro de lo autorizado"
+  },
+  {
+   "area": "Gasto",
+   "estado": "aviso",
+   "detalle": "El espacio (otro canal) lleva $17.83 de $22 este mes en Replicate: avísale a Rodrigo (sus scripts no pasan por el freno de Victoria)"
   },
   {
    "area": "Créditos",
@@ -30,22 +35,17 @@
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-24: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
+   "detalle": "2026-11-25: TikTok 4, Instagram 2, YouTube 6, Facebook 4"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-25: TikTok 3, Instagram 2, YouTube 5, Facebook 4"
+   "detalle": "2026-11-26: TikTok 3, Instagram 2, YouTube 3, Facebook 2"
   },
   {
    "area": "Calendario",
    "estado": "ok",
-   "detalle": "2026-11-26: TikTok 2, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: TikTok 2/3, YouTube 2/3"
-  },
-  {
-   "area": "Serie",
-   "estado": "ok",
-   "detalle": "2026-11-24: el primer TikTok es de la serie (c102)"
+   "detalle": "2026-11-27: TikTok 3, Instagram 2, YouTube 2, Facebook 2 · la rutina de ese día llena: YouTube 2/3"
   },
   {
    "area": "Serie",
@@ -54,8 +54,13 @@
   },
   {
    "area": "Serie",
-   "estado": "aviso",
-   "detalle": "2026-11-26: no quedan partes listas de \"Tu sueldo, tu aguinaldo\": escribe la siguiente"
+   "estado": "ok",
+   "detalle": "2026-11-26: el primer TikTok es de la serie (c109)"
+  },
+  {
+   "area": "Serie",
+   "estado": "ok",
+   "detalle": "2026-11-27: el primer TikTok es de la serie (c110)"
   },
   {
    "area": "Videos largos",
@@ -105,27 +110,27 @@
   {
    "area": "Recortes",
    "estado": "aviso",
-   "detalle": "LA1-c06: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-26T02:30): recortes.py publicar LA1-c06"
+   "detalle": "LA1-c07: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-27T02:30): recortes.py publicar LA1-c07"
   },
   {
    "area": "Recortes",
    "estado": "aviso",
-   "detalle": "LA3-c05: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-25T20:00): recortes.py publicar LA3-c05"
+   "detalle": "LA3-c06: falta subir a YouTube, Instagram/TikTok/Facebook (sale 2026-11-26T20:00): recortes.py publicar LA3-c06"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "23 recortes con fecha (se suben 48 h antes): LA1-c07, LA1-c08, LA1-c09, LA3-c06, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
+   "detalle": "21 recortes con fecha (se suben 48 h antes): LA1-c08, LA1-c09, LA3-c07, LC1-c01, LC1-c02, LC1-c03, LC1-c04, LC1-c05, LC1-c06, LC1-c07, LC2-c01, LC2-c02, LC2-c03, LC2-c04, LC2-c05, LC2-c06, LP1-c02, LP1-c03, LP1-c04, LP1-c05, LP1-c06"
   },
   {
    "area": "Recortes",
    "estado": "ok",
-   "detalle": "24 recortes programados en las 4 redes"
+   "detalle": "26 recortes programados en las 4 redes"
   },
   {
    "area": "Cola",
    "estado": "ok",
-   "detalle": "58 carruseles listos para TikTok (~19 días a 3 por día)"
+   "detalle": "57 carruseles listos para TikTok (~19 días a 3 por día)"
   },
   {
    "area": "Cola",
@@ -135,17 +140,17 @@
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c16 (TikTok 4,327 vs mediana 168): ya tiene 5 clones"
+   "detalle": "c16 (TikTok 4,335 vs mediana 170): ya tiene 5 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "c70 (TikTok 1,065 vs mediana 168): ya tiene 5 clones"
+   "detalle": "c70 (TikTok 1,065 vs mediana 170): ya tiene 5 clones"
   },
   {
    "area": "Ganadores",
    "estado": "ok",
-   "detalle": "O1 (YouTube 1,043 vs mediana 150): ya tiene 3 clones"
+   "detalle": "O1 (YouTube 1,043 vs mediana 140): ya tiene 3 clones"
   }
  ]
 }
