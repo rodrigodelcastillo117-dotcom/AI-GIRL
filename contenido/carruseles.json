@@ -11168,6 +11168,171 @@
     "tt": "2026-11-28T15:00:00Z"
    },
    "publica_utc": "2026-11-28T15:00:00Z"
+  },
+  {
+   "id": "c112",
+   "estado": "borrador",
+   "tema": "victoria_verifica_multa_sat_35000_transferencias_familia",
+   "serie": "Victoria verifica",
+   "funcion": "convencer",
+   "vigencia": "noticia",
+   "rasgos": [
+    "verifica"
+   ],
+   "clon_de": "c100",
+   "pilar": "finanzas",
+   "fondo": "assets/fondos/recamara.jpg",
+   "ventana": {
+    "desde": "2026-11-25",
+    "hasta": "2026-12-31"
+   },
+   "portada": {
+    "foto": "assets/fotos/habla-cafe.jpg",
+    "etiqueta": "VICTORIA VERIFICA",
+    "titulo": "¿El SAT te multa con $35,000 por transferencias? Lo verifiqué",
+    "voz": "¿Te llegó que el SAT te multa con treinta y cinco mil pesos si tu familia te transfiere en diciembre? Lo verifiqué.",
+    "gancho_tipo": "verifica",
+    "foto_reel": "assets/fotos/lora-prueba-2-cafe.jpg"
+   },
+   "diapositivas": [
+    {
+     "titulo": "Transferir no es infracción",
+     "texto": "El Código Fiscal enlista las infracciones: no declarar, no dar avisos, no pagar a tiempo. Mandar o recibir una transferencia no está en esa lista.\n\nCFF, art. 81 · El Imparcial, 19-jul-2026",
+     "voz": "Transferir no es infracción. El Código Fiscal no castiga mandar ni recibir una transferencia."
+    },
+    {
+     "titulo": "¿Y los $35,000?",
+     "texto": "No hay una multa de $35,000 por transferir. Las multas por no declarar van de $2,050 a $50,710 según el caso, y castigan no cumplir una obligación.\n\nCFF, art. 82, fr. I · SAT, Anexo 5 RMF 2026",
+     "voz": "¿Y los treinta y cinco mil? Esa multa por transferir no existe. Las multas castigan no declarar."
+    },
+    {
+     "titulo": "Lo que sí existe: $600,000",
+     "texto": "Si en el año recibes préstamos, regalos o premios por más de $600,000 en total, lo informas en tu declaración anual. Son $50,000 al mes.\n\nLISR, art. 90 · El Imparcial, 19-jul-2026",
+     "voz": "Lo que sí existe: si en el año recibes más de seiscientos mil pesos en préstamos o regalos, lo informas en tu anual."
+    },
+    {
+     "titulo": "Sello: FALSO",
+     "texto": "Recibir transferencias de tu familia, en diciembre o cuando sea, no tiene multa. Y la reforma al ISR del 13 de noviembre no cambió estas reglas.\n\nCFF, arts. 81 y 82 · DOF, 13-nov-2026",
+     "voz": "Sello: falso. Recibir dinero de tu familia no tiene multa. Y la reforma de noviembre no cambió estas reglas."
+    },
+    {
+     "titulo": "¿Y si es de tu familia?",
+     "texto": "Los regalos en dinero entre esposos, y de papás o abuelos a hijos o nietos, no pagan ISR, sea cual sea el monto. Lo de los $600,000 es un aviso, no un cobro.\n\nLISR, art. 93, fr. XXIII · Grupo Animal, 21-jul-2026",
+     "voz": "Y los regalos entre esposos, o de papás a hijos, no pagan impuesto, sea cual sea el monto."
+    },
+    {
+     "titulo": "Antes de reenviar",
+     "texto": "Mi consejo: ponle concepto a cada transferencia (\"regalo de Navidad\", \"préstamo a mi hermana\") y guarda el comprobante. Si un día te preguntan, ya tienes la respuesta.\n\nLISR, art. 91 · El Imparcial, 19-jul-2026",
+     "voz": "Antes de reenviar: ponle concepto a cada transferencia y guarda el comprobante. Eso sí sirve."
+    }
+   ],
+   "cierre": {
+    "titulo": "Mándaselo a quien te lo pasó por WhatsApp.",
+    "texto": "Martes y viernes verifico un dato de dinero que circula, con su fuente oficial.",
+    "voz": "Martes y viernes verifico un dato de dinero. Mándaselo a quien te lo pasó por WhatsApp, y sígueme."
+   },
+   "llamado_unico": "mandar",
+   "fuente": "Consultadas el 24-nov-2026. 1) Código Fiscal de la Federación (texto vigente, última reforma DOF 09-04-2026, Cámara de Diputados): art. 81 enlista las infracciones 'relacionadas con la obligación de pago de las contribuciones; de presentación de declaraciones, reportes, solicitudes, documentación, avisos, información...' (fr. I: 'No presentar las declaraciones, las solicitudes, los avisos o las constancias que exijan las disposiciones fiscales...'); ninguna de sus fracciones menciona transferencias ni depósitos. Art. 82, fr. I (cantidades actualizadas por la RMF, DOF 28-12-2025): a) 'De $2,050.00 a $25,360.00, tratándose de declaraciones, por cada una de las obligaciones no declaradas'; b) de $2,050.00 a $50,710.00 (fuera del plazo del requerimiento o por su incumplimiento); c) de $19,460.00 a $38,890.00; d) 'De $20,790.00 a $41,590.00, por no presentar las declaraciones en los medios electrónicos...'; e) de $18,360.00 a $36,740.00; f) de $2,080.00 a $6,660.00. Ninguna es una multa fija de $35,000. https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf 2) SAT, 'Anexo 5 de la Resolución Miscelánea Fiscal para 2026. Cantidades actualizadas del Código Fiscal de la Federación' (DOF 28-12-2025): art. 82, fr. I, incisos a) $2,050.00 a $25,360.00, b) $2,050.00 a $50,710.00, c) $19,460.00 a $38,890.00, d) $20,790.00 a $41,590.00; coincide con el CFF; la cifra $35,000 no aparece. https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-5-RMF-2026_DOF-28122025.pdf 3) Ley del Impuesto sobre la Renta (texto compilado de la Cámara de Diputados): art. 90, párr. 2: 'Las personas físicas residentes en México están obligadas a informar, en la declaración del ejercicio, sobre los préstamos, los donativos y los premios, obtenidos en el mismo, siempre que éstos, en lo individual o en su conjunto, excedan de $600,000.00'; art. 93, fr. XXIII: no pagan ISR los donativos 'a) Entre cónyuges o los que perciban los descendientes de sus ascendientes en línea recta, cualquiera que sea su monto'; art. 91: discrepancia fiscal cuando las erogaciones (incluidos depósitos en cuentas bancarias) superan los ingresos declarados; no se toman en cuenta 'los traspasos entre cuentas del contribuyente o a cuentas de su cónyuge, de sus ascendientes o descendientes, en línea recta en primer grado'; art. 55, fr. IV: los bancos informan al SAT los depósitos en efectivo cuando el monto mensual acumulado 'exceda de $15,000.00'. https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf 4) DOF 13-nov-2026, 'DECRETO por el que se reforman, adicionan y derogan diversas disposiciones de la Ley del Impuesto sobre la Renta y se expiden disposiciones de vigencia transitoria' (en vigor el 1-ene-2027): reforma los arts. 22, 25, 27, 28, 36, 74, 77, 78, 113-E, 113-F, 113-H, 147, 153, 206, 209 y 214, adiciona los arts. 78-A a 78-F y deroga los arts. 59 a 71; no toca los arts. 55, 90, 91 ni 93 y no menciona transferencias. https://www.diputados.gob.mx/LeyesBiblio/ref/lisr/LISR_ref09_13nov26.pdf 5) El Imparcial, 'Recibiste dinero de un familiar: la Ley del ISR aclara cuándo debes informarlo al SAT...' (19-jul-2026): 'Recibir dinero de un familiar no genera una multa automática del SAT'; la autoridad no multa por recibir depósitos sino por incumplir obligaciones; 'La cifra de hasta 35 mil pesos no corresponde a una sanción por recibir una transferencia familiar'; préstamos, donativos y premios se informan cuando 'superen los 600 mil pesos durante un mismo ejercicio fiscal'; recomienda 'conservar la documentación que permita demostrar el origen de los recursos'. https://www.elimparcial.com/mexico/2026/07/19/recibiste-dinero-de-un-familiar-la-ley-del-isr-aclara-cuando-debes-informarlo-al-sat-y-por-que-podrias-recibir-una-multa-de-hasta-35-mil-pesos/ 6) Grupo Animal, '¿El SAT cobra multas de 35 mil pesos por transferencias a familiares? Falso' (21-jul-2026): califica el rumor como falso; umbral de 600 mil pesos (LISR art. 90); donativos entre cónyuges, padres e hijos, abuelos y nietos exentos sin importar el monto (LISR art. 93, fr. XXIII). https://grupoanimal.mx/explicaciones/sat-no-cobra-multas-de-35-mil-pesos-por-transferencias-a-familiares 7) Mis Kuentas, 'Transferencias bancarias y SAT 2027: qué revisará' (13-nov-2026): el decreto del 13-nov-2026 'no modifica los artículos 55 ni 91'; 'no existe un impuesto automático por recibir transferencias SPEI' ni multa general por monto; las transferencias electrónicas no son depósitos en efectivo para el aviso de $15,000; el SAT revisa congruencia entre depósitos e ingresos (art. 91). https://www.miskuentas.com/noticias/fiscal/sat-transferencias-bancarias-2027-depositos-multas Cuentas propias (python): 600,000 / 12 = 50,000 al mes; rango art. 82 fr. I: mínimo $2,050, máximo $50,710. Veredicto: FALSO que el SAT multe con $35,000 por recibir transferencias de familiares (en diciembre o en cualquier mes): transferir no es infracción (CFF art. 81) y no existe una multa fija de $35,000 (CFF art. 82, Anexo 5 RMF 2026). Lo que sí existe es el aviso en la declaración anual de préstamos, donativos y premios que sumen más de $600,000 al año (LISR art. 90).",
+   "titulo_post": "Victoria verifica: ¿el SAT te multa con $35,000 por recibir transferencias?",
+   "texto_post": "Multa del SAT por transferencias: ¿$35,000 si tu familia te deposita en diciembre? Lo verifiqué. Sello: FALSO 🔍\nEl Código Fiscal enlista las infracciones (art. 81): no declarar, no dar avisos, no pagar a tiempo. Mandar o recibir una transferencia no está en la lista.\nNo existe una multa fija de $35,000. Las multas por no declarar van de $2,050 a $50,710 según el caso (CFF art. 82, fr. I; SAT, Anexo 5 RMF 2026) y castigan no cumplir una obligación, no mover dinero.\nLo que sí existe: si en el año recibes préstamos, regalos o premios por más de $600,000 en total, lo informas en tu declaración anual (LISR art. 90). Los regalos en dinero entre esposos, y de papás o abuelos a hijos o nietos, no pagan ISR, sea cual sea el monto (LISR art. 93, fr. XXIII). Y la reforma al ISR publicada el 13 de noviembre no cambió nada de esto.\nMi consejo: ponle concepto a cada transferencia y guarda el comprobante. Si un día te preguntan, ya tienes la respuesta.\n\n📚 Código Fiscal de la Federación, arts. 81 y 82 · SAT, Anexo 5 RMF 2026 · Ley del ISR, arts. 90, 91 y 93 · DOF 13-nov-2026 · El Imparcial y Grupo Animal, jul-2026 · consultado el 24-nov-2026\n📩 Mándaselo a quien te lo pasó por WhatsApp.\n\n#sat #transferencias #victoriaverifica #finanzaspersonales #victoriatheceo",
+   "seo": {
+    "palabra_clave": "multa del SAT por transferencias",
+    "titulo": "Multa del SAT por transferencias, es falso 🔍",
+    "tags_concretas": [
+     "multa sat transferencias",
+     "multa sat 35000 pesos",
+     "sat transferencias familiares",
+     "sat multa transferencias diciembre",
+     "sat transferencias 2027",
+     "donativos familiares sat 600000",
+     "cuanto dinero puedo recibir sin que el sat me multe",
+     "sat depositos en efectivo 15000"
+    ],
+    "hashtags": [
+     "#sat",
+     "#transferencias",
+     "#victoriaverifica",
+     "#finanzaspersonales"
+    ],
+    "preguntas": [
+     "¿El SAT multa por recibir transferencias de familiares?",
+     "¿Es cierto que el SAT cobra 35 mil pesos de multa por transferencias?",
+     "¿Cuánto dinero puedo recibir de mi familia sin avisar al SAT?",
+     "¿Las transferencias pagan impuestos en 2027?"
+    ]
+   },
+   "enlace": {
+    "etiqueta": "🧮 ¿Cuánto ISR paga tu aguinaldo? Haz tus cuentas gratis",
+    "url": "https://victoriatheceo.vercel.app/aguinaldo"
+   },
+   "revision": {
+    "fecha": "2026-11-24",
+    "segunda": "Pendiente: la hace un segundo agente antes de pasar a listo (docs/CARRUSELES.md, paso 7).",
+    "sello": "FALSO: lo que circula dice que el SAT multa con hasta $35,000 a quien recibe transferencias de familiares o amigos (sobre todo en diciembre). Transferir o recibir no es infracción (CFF art. 81, ninguna fracción habla de transferencias o depósitos) y no existe una multa fija de $35,000: las de no declarar van de $2,050 a $50,710 según el inciso (CFF art. 82 fr. I, Anexo 5 RMF 2026). Lo único real detrás: informar en la anual préstamos, donativos y premios que sumen más de $600,000 en el año (LISR art. 90); omitirlo sí es infracción (CFF art. 81 fr. I). La reforma al ISR del DOF 13-nov-2026 no toca los arts. 55, 90, 91 ni 93.",
+    "circulacion": "Titulares de la última semana que repiten 'multas de hasta 35 mil pesos' por transferencias o préstamos a familiares y amigos: 16-nov, 19-nov y 24-nov-2026 (el del 24-nov lo liga a diciembre 2026), más el del 24-nov sobre la 'leyenda' en transferencias entre cuentas propias. Es un rumor que vuelve desde julio de 2026 (verificaciones de El Imparcial y Grupo Animal). En las láminas y el post no se nombra a ningún medio ni persona que lo difundió.",
+    "cuentas_python": [
+     "600,000 / 12 = 50,000 al mes (umbral del art. 90 LISR repartido en 12 meses)",
+     "CFF art. 82 fr. I (cantidades 2026): mínimo de los incisos a)-f) = 2,050; máximo = 50,710",
+     "35,000 cae dentro de los rangos b) 2,050-50,710, c) 19,460-38,890, d) 20,790-41,590 y e) 18,360-36,740: por eso la lámina dice 'no hay una multa de $35,000 por transferir', no que la multa nunca pueda llegar a esa cifra",
+     "ejemplo no usado en láminas: $5,000 al mes de la familia = 60,000 al año = 10% del umbral de 600,000",
+     "calendario: 24-nov-2026 martes; 13-nov-2026 viernes; 31-dic-2026 jueves"
+    ],
+    "fuentes_por_dato": [
+     {
+      "dato": "Mandar o recibir una transferencia no es infracción fiscal",
+      "fuente1": "CFF art. 81 (texto vigente, últ. reforma DOF 09-04-2026): ninguna fracción menciona transferencias ni depósitos",
+      "fuente2": "El Imparcial 19-jul-2026 ('Recibir dinero de un familiar no genera una multa automática del SAT') y Grupo Animal 21-jul-2026"
+     },
+     {
+      "dato": "No hay multa fija de $35,000; las de no declarar van de $2,050 a $50,710",
+      "fuente1": "CFF art. 82 fr. I (cantidades actualizadas DOF 28-12-2025)",
+      "fuente2": "SAT, Anexo 5 RMF 2026 (DOF 28-12-2025), mismas cantidades; El Imparcial 19-jul-2026 ('no corresponde a una sanción por recibir una transferencia familiar')"
+     },
+     {
+      "dato": "Préstamos, donativos y premios por más de $600,000 al año se informan en la declaración anual",
+      "fuente1": "LISR art. 90, párr. 2",
+      "fuente2": "El Imparcial 19-jul-2026 y Grupo Animal 21-jul-2026"
+     },
+     {
+      "dato": "$600,000 al año = $50,000 al mes",
+      "fuente1": "cuenta propia (python)",
+      "fuente2": "n/a (aritmética)"
+     },
+     {
+      "dato": "La reforma al ISR del 13-nov-2026 no cambió estas reglas",
+      "fuente1": "DOF 13-nov-2026, decreto de reformas a la LISR (lista de artículos reformados, adicionados y derogados: no incluye 55, 90, 91 ni 93)",
+      "fuente2": "Mis Kuentas 13-nov-2026 ('no modifica los artículos 55 ni 91'; 'no crea un impuesto general sobre las transferencias bancarias')"
+     },
+     {
+      "dato": "Regalos en dinero entre esposos y de papás o abuelos a hijos o nietos no pagan ISR, sin importar el monto",
+      "fuente1": "LISR art. 93 fr. XXIII inciso a)",
+      "fuente2": "Grupo Animal 21-jul-2026 (y El Imparcial 19-jul-2026: exenciones entre cónyuges, padres e hijos, abuelos y nietos)"
+     },
+     {
+      "dato": "Lo de los $600,000 es un aviso, no un cobro",
+      "fuente1": "LISR art. 90, párr. 2 y 3 ('están obligadas a informar')",
+      "fuente2": "El Imparcial 19-jul-2026 (obligación de informar en la anual)"
+     },
+     {
+      "dato": "El SAT puede comparar depósitos contra ingresos declarados (por eso conviene guardar comprobantes)",
+      "fuente1": "LISR art. 91 (discrepancia fiscal; excluye traspasos a cónyuge, padres e hijos)",
+      "fuente2": "Mis Kuentas 13-nov-2026 (revisión de congruencia) y El Imparcial 19-jul-2026 ('conservar la documentación que permita demostrar el origen de los recursos')"
+     },
+     {
+      "dato": "Poner concepto a cada transferencia",
+      "fuente1": "opinión de Victoria (hábito), marcada con 'Mi consejo'",
+      "fuente2": "n/a: la ley no obliga a poner concepto; no se presenta como regla"
+     }
+    ],
+    "fuera": [
+     "Donativos de otras personas (hermanos, tíos, amigos): la LISR art. 93 fr. XXIII c) dice 'tres veces el salario mínimo general... elevado al año' y los medios lo calculan con UMA (128 mil y pico) o con salario mínimo (344,968.80): cifras que no coinciden, no se usa",
+     "Que si no informas los $600,000 'pierdes la exención' (Grupo Animal): el art. 93 no incluye la fr. XXIII entre las exenciones que se pierden por no declarar; el art. 91 sí permite tratar préstamos y donativos no informados como ingresos omitidos, pero eso pide más contexto del que cabe",
+     "Aviso del banco por depósitos en efectivo de más de $15,000 al mes (LISR art. 55 fr. IV): es real, pero es otro tema; se queda en la fuente",
+     "La 'leyenda' obligatoria en transferencias entre cuentas propias: no hay norma que la exija; solo queda el consejo de poner concepto, marcado como opinión",
+     "Monto exacto de multa por no informar los $600,000: depende del inciso que aplique la autoridad; solo se da el rango del art. 82 fr. I"
+    ],
+    "caducidad": "Las cantidades del art. 82 son las de 2026 (Anexo 5 RMF 2026); la RMF 2027 puede actualizarlas a finales de diciembre o en enero. La ventana cierra el 31-dic-2026: después, revisar el Anexo 5 RMF 2027 antes de volver a usar el rango de multas."
+   }
   }
  ]
 }
