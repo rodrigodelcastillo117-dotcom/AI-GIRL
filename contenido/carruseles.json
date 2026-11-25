@@ -11171,7 +11171,7 @@
   },
   {
    "id": "c112",
-   "estado": "borrador",
+   "estado": "programado",
    "tema": "victoria_verifica_multa_sat_35000_transferencias_familia",
    "serie": "Victoria verifica",
    "funcion": "convencer",
@@ -11267,7 +11267,7 @@
    },
    "revision": {
     "fecha": "2026-11-24",
-    "segunda": "Pendiente: la hace un segundo agente antes de pasar a listo (docs/CARRUSELES.md, paso 7).",
+    "segunda": "Segunda revisión 24-nov-2026: todo cuadra, sin cambios en el texto. Oficiales descargados y leídos: CFF (Diputados, últ. reforma DOF 09-04-2026; el índice de reformas no muestra ninguna posterior): art. 81 enlista infracciones de pago, declaraciones, avisos e información y ninguna fracción menciona transferencias ni depósitos (de los arts. 81 a 91 solo el 84-A, para entidades financieras, habla de depósitos); art. 82 fr. I a) 2,050-25,360, b) 2,050-50,710, c) 19,460-38,890, d) 20,790-41,590, e) 18,360-36,740, f) 2,080-6,660, iguales en el Anexo 5 RMF 2026 (SAT, DOF 28-12-2025), donde no aparece 35,000. LISR (Diputados): art. 90 párr. 2, informar préstamos, donativos y premios que 'en lo individual o en su conjunto, excedan de $600,000.00'; art. 93 fr. XXIII a), donativos entre cónyuges o de ascendientes a descendientes en línea recta 'cualquiera que sea su monto'; art. 91, discrepancia fiscal y exclusión de traspasos a cónyuge, ascendientes o descendientes en primer grado; art. 55 fr. IV, $15,000 en efectivo. DOF 13-nov-2026 (decreto LISR, en vigor 1-ene-2027): leído completo, no toca los arts. 55, 90, 91 ni 93 ni menciona transferencias; es la única reforma a la LISR desde la del 01-04-2024 en el índice de Diputados, y el CFF no se reformó. Segundas fuentes abiertas: El Imparcial 19-jul-2026 (sin multa automática, 35 mil no es sanción por transferencia familiar, umbral 600 mil, conservar documentación), Grupo Animal 21-jul-2026 (falso; 600 mil; exentos sin importar el monto entre cónyuges, padres e hijos, abuelos y nietos), Mis Kuentas 13-nov-2026 (no modifica los arts. 55 ni 91; no hay impuesto ni multa general por transferencias). Python: 600,000/12 = 50,000; rango fr. I 2,050-50,710; 35,000 cae en b), c), d) y e), por eso 'no hay una multa de $35,000 por transferir' es justo. Sello FALSO justo: recibir no es infracción; lo sancionable es no informar más de $600,000 (lámina 3 lo dice). Láminas 00-07 y 00r leídas: nada cortado, sin faltas, tú neutro, sin productos ni bancos, no se nombra a quien difundió el rumor; revisar_texto_foto.py ok en habla-cafe.jpg y lora-prueba-2-cafe.jpg. Nota: la voz suma 146 palabras (c100 tenía 143); vigilar que el short no pase de 57 s.",
     "sello": "FALSO: lo que circula dice que el SAT multa con hasta $35,000 a quien recibe transferencias de familiares o amigos (sobre todo en diciembre). Transferir o recibir no es infracción (CFF art. 81, ninguna fracción habla de transferencias o depósitos) y no existe una multa fija de $35,000: las de no declarar van de $2,050 a $50,710 según el inciso (CFF art. 82 fr. I, Anexo 5 RMF 2026). Lo único real detrás: informar en la anual préstamos, donativos y premios que sumen más de $600,000 en el año (LISR art. 90); omitirlo sí es infracción (CFF art. 81 fr. I). La reforma al ISR del DOF 13-nov-2026 no toca los arts. 55, 90, 91 ni 93.",
     "circulacion": "Titulares de la última semana que repiten 'multas de hasta 35 mil pesos' por transferencias o préstamos a familiares y amigos: 16-nov, 19-nov y 24-nov-2026 (el del 24-nov lo liga a diciembre 2026), más el del 24-nov sobre la 'leyenda' en transferencias entre cuentas propias. Es un rumor que vuelve desde julio de 2026 (verificaciones de El Imparcial y Grupo Animal). En las láminas y el post no se nombra a ningún medio ni persona que lo difundió.",
     "cuentas_python": [
@@ -11332,7 +11332,11 @@
      "Monto exacto de multa por no informar los $600,000: depende del inciso que aplique la autoridad; solo se da el rango del art. 82 fr. I"
     ],
     "caducidad": "Las cantidades del art. 82 son las de 2026 (Anexo 5 RMF 2026); la RMF 2027 puede actualizarlas a finales de diciembre o en enero. La ventana cierra el 31-dic-2026: después, revisar el Anexo 5 RMF 2027 antes de volver a usar el rango de multas."
-   }
+   },
+   "publica_utc_por_red": {
+    "tt": "2026-11-25T18:00:00Z"
+   },
+   "publica_utc": "2026-11-25T18:00:00Z"
   }
  ]
 }
