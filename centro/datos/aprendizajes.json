@@ -382,5 +382,11 @@
   "fuente": "variantes.py medir",
   "resultado": "Variantes de ganadores (nuestro BuzzFy): 7 en 8 días, TikTok 64-149 vistas, YouTube (O1) 148-176. Ninguna llegó a la mediana de 150-170 ni a la mitad del original.",
   "regla": "Cambiar solo el gancho de un ganador viejo no repite el resultado. Variantes en pausa; se prueban solo de hits nuevos."
+ },
+ {
+  "fecha": "2026-11-24",
+  "fuente": "hit en TikTok",
+  "resultado": "c101 \"Si ganas $15,000 al mes, tu aguinaldo mínimo es $7,500\" (serie Tu sueldo, tu aguinaldo): 386 vistas a 21.5 h contra mediana de 123.5 a la misma edad (3.1x). Las otras partes de la serie: 75-325.",
+  "regla": "El sueldo de la portada importa: $15,000 (cerca del ingreso típico de un asalariado) jala más que los extremos. Seguir la serie con sueldos de $12,000 a $20,000 y medir. Sale también como short de YouTube (25-nov 14:00) y 1 variante en TikTok."
  }
 ]

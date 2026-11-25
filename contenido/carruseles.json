@@ -9162,7 +9162,8 @@
     "yt": "2026-11-24T23:00:00Z"
    },
    "publica_utc": "2026-11-24T23:00:00Z",
-   "formato_youtube": "reel_texto (gratis, sin Replicate)"
+   "formato_youtube": "reel_texto (gratis, sin Replicate)",
+   "comentario_youtube": "UgzAHfYaCYV3h8sRyTJ4AaABAg"
   },
   {
    "id": "c96u",
@@ -9933,7 +9934,7 @@
     "tt": "2026-11-23T15:08:18Z",
     "yt": "2026-11-25T20:00:00Z"
    },
-   "publica_utc": "2026-11-23T15:08:18Z",
+   "publica_utc": "2026-11-25T20:00:00Z",
    "youtube": "https://youtube.com/shorts/bRfG9yaXDUQ"
   },
   {
@@ -10021,9 +10022,9 @@
    },
    "revision": "12-nov-2026: cuentas con Decimal en scripts/serie_sueldos.py (diario 600.00, aguinaldo 9000.00, exento 3519.30, gravado 5480.70); datos verificados por segundo agente el 12-nov.",
    "publica_utc_por_red": {
-    "tt": "2026-11-24T15:00:00Z"
+    "tt": "2026-11-24T15:07:02Z"
    },
-   "publica_utc": "2026-11-24T15:00:00Z"
+   "publica_utc": "2026-11-24T15:07:02Z"
   },
   {
    "id": "c103",

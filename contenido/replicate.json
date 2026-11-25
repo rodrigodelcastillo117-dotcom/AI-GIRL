@@ -3,8 +3,8 @@
   "hoy_usd": 0.0,
   "semana_usd": 0.0,
   "mes_usd": 70.9,
-  "otro_canal_semana_usd": 0.0,
-  "otro_canal_mes_usd": 17.32,
+  "otro_canal_semana_usd": 0.56,
+  "otro_canal_mes_usd": 17.88,
   "presupuesto_semanal_usd": 7,
   "presupuesto_mensual_usd": 28,
   "presupuesto_otro_canal_mensual_usd": 22,
@@ -14,7 +14,7 @@
  },
  "saldo_base_usd": 27.16,
  "fecha_base_utc": "2026-11-12T06:22:02Z",
- "saldo_estimado_usd": 22.49,
+ "saldo_estimado_usd": 21.93,
  "recargas_estimadas": [
   {
    "utc": "2026-11-12T14:49:22Z",
@@ -23,11 +23,11 @@
  ],
  "gastado_desde_base": {
   "victoria": 29.86,
-  "otro": 9.82
+  "otro": 10.38
  },
  "gastado_7_dias": {
   "victoria": 1.71,
-  "otro": 6.63
+  "otro": 6.67
  },
  "por_dia": [
   {
@@ -89,17 +89,27 @@
    "dia": "2026-11-23",
    "victoria": 0.0,
    "otro": 0.0
+  },
+  {
+   "dia": "2026-11-24",
+   "victoria": 0.0,
+   "otro": 0.52
+  },
+  {
+   "dia": "2026-11-25",
+   "victoria": 0.0,
+   "otro": 0.04
   }
  ],
  "por_modelo": {
   "prunaai/p-video-avatar": 23.27,
-  "minimax/video-01": 6.5,
+  "minimax/video-01": 7.0,
   "bytedance/seedance-1-pro": 5.25,
   "minimax/voice-cloning": 3.0,
   "google/nano-banana": 0.74,
   "zsxkib/mmaudio": 0.6,
-  "black-forest-labs/flux-schnell": 0.32,
-  "minimax/speech-02-hd": 0.0
+  "black-forest-labs/flux-schnell": 0.33,
+  "minimax/speech-02-hd": 0.04
  },
  "costo_promedio_toma_usd": 0.46,
  "sin_precio": {
@@ -110,9 +120,9 @@
   "resemble-ai/chatterbox-multilingual": 11,
   "kwaivgi/kling-v2.5-turbo-pro": 29,
   "stability-ai/stable-audio-2.5": 16,
-  "victor-upmeet/whisperx": 322,
+  "victor-upmeet/whisperx": 327,
   "black-forest-labs/flux-1.1-pro": 124,
-  "elevenlabs/music": 74,
+  "elevenlabs/music": 75,
   "851-labs/background-remover": 7,
   "minimax/speech-2.6-hd": 129,
   "elevenlabs/v3": 104,
@@ -123,6 +133,6 @@
   "google/veo-3.1": 27
  },
  "incompleto": true,
- "generado_utc": "2026-11-24T12:38:40Z",
+ "generado_utc": "2026-11-25T02:16:24Z",
  "nota": "Estimado: Replicate no da el saldo por API. Confirmar en replicate.com/account/billing."
 }
