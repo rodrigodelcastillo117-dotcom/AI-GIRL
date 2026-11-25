@@ -950,5 +950,17 @@
  "caducan": {
   "c100": "Victoria verifica del salario mínimo 2027 (sello FALSO a \"ya quedó en $352.84\"). Sale en TikTok el 20-nov 19:00 MX. El día que la Conasami anuncie el mínimo 2027 (se espera principios de diciembre) NO se vuelve a usar ni se clona; ventana hasta 2026-12-01.",
   "c112": "Victoria verifica: multa del SAT de $35,000 por transferencias (FALSO). Montos de multas según Anexo 5 RMF 2026: no se reutiliza después del 31-dic-2026 sin revisar la RMF 2027."
+ },
+ "victoria_pausada": {
+  "desde": "2026-11-25T13:52Z",
+  "quien": "Rodrigo: \"Para por completo a Victoria !\"",
+  "tareas_apagadas": [
+   "trig_01XdJ5GF3JjVpS5PxYgy8w4q",
+   "trig_01EXtQ9grDepK8UfEun3YuXK",
+   "trig_01Asv9cMLPzGooKwijTDCo82",
+   "trig_01QcTxXkb1Lv2N12vgB2ETtF",
+   "trig_01Tubm3d6pTvBYiELPwi4y7D",
+   "trig_012SbGK36AuVogut3audHRqc"
+  ]
  }
 }

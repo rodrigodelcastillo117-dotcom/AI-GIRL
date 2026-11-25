@@ -1,5 +1,11 @@
 # Rutina diaria de VictoriatheCEO (6:37, hora de México)
 
+## ⛔ VICTORIA EN PAUSA TOTAL (Rodrigo, 25-nov-2026: "Para por completo a Victoria !")
+No se ejecuta ninguna rutina, no se programa ni se produce nada, no se gasta Replicate. Las tareas programadas de
+Victoria (6:37, 20:13, comentarios cada hora, planeación de los domingos, cortes del 30-nov y 15-dic) quedaron
+apagadas el 25-nov. Solo Rodrigo la reactiva.
+
+
 La tarea programada diaria solo dice "sigue docs/RUTINA_DIARIA.md". Todo lo que hace está aquí, en el repo, para que se
 pueda mejorar con un commit (12-nov-2026). Lo más nuevo va primero.
 
